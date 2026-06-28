@@ -21,7 +21,7 @@ YuResearchAgent 是一个面向长问题、强证据和可复现评测的 Deep R
 - **多智能体显著优于单轮 LLM**：在 ResearchBench 15 题头对头评测中，Agent 平均综合分 `0.6034` vs 单轮 LLM `0.5586`，相对提升约 **+8.0%**，配对 bootstrap `95% CI=[+0.0134,+0.0761]`，`p=0.0021`，`Cohen's d=0.83`。结果见 [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json)。
 - **完整评测体系**：自建 ResearchBench 35 题 × 11 领域，规则指标覆盖事实、引用、幻觉、逻辑和完备性；LLM-as-Judge 用于专家抽查；统计层提供 bootstrap CI、p-value、Cohen's d 和配对 t-test。
 - **工程化 Agent 内核**：自研 9 状态 Orchestrator、DAG 拓扑并发、失败重规划、全局超时降级、AgentPool 复用、多后端模型路由。
-- **质量与鲁棒性优化**：引用质量 prompt 从笼统 `[Result N]` 升级到具体作者/机构/年份格式；统一 JSON fallback 解析器把畸形 LLM 输出恢复率从 `1/9` 提升到 `9/9`；修复上下文截断、工具失败误判、路径沙箱、统计退化输入等真实问题。
+- **质量与鲁棒性优化**：引用质量从 `4/10` 提升到 `7/10`，LLM-Judge overall 从 `6/10` 提升到 `8/10`；合成器不再只看到 `[Result N]`，而是接收标题/作者/年份/链接结构化来源并生成规范参考文献表。统一 JSON fallback 解析器把畸形 LLM 输出恢复率从 `1/9` 提升到 `9/9`；修复上下文截断、工具失败误判、路径沙箱、统计退化输入等真实问题。
 - **GRPO 真训练研究**：在单卡 RTX 5090 上完成 4 组 TRL + LoRA + GRPO 训练实验，覆盖 Qwen2.5-7B-Instruct、Qwen2.5-1.5B-Instruct 和 Qwen2.5-1.5B base。结论不是夸大“显著提分”，而是证明训练闭环真实可跑通，并量化了轻量 LoRA GRPO 在 GSM8K 上的边界。
 - **可用界面**：提供 CLI、REPL 和 Gradio 流式 Web UI；Web UI 实时展示 planning → dispatching → synthesizing → done 的状态机进度，长任务不再黑盒等待。
 
@@ -90,6 +90,22 @@ The evaluation stack is deliberately two-layered:
 
 This avoids relying only on subjective judge output while still catching qualitative issues that string rules miss.
 
+### Citation Quality Validation
+
+The strongest recent quality work targeted the last Judge criticism: missing
+complete references and inconsistent citation format. The fix feeds structured
+source metadata into the synthesis prompt, so the final report can cite concrete
+papers and generate a normalized bibliography.
+
+| Version | Citation quality | Overall Judge score | Change |
+|---|---:|---:|---|
+| Baseline | 4/10 | 6/10 | generic `[Result N]` references |
+| v1 | 5/10 | - | researcher prompt prefers academic sources |
+| v2 | 6/10 | 7/10 | summarizer asks for real source citations |
+| v3 | 7/10 | 8/10 | structured source list with title/author/year/link |
+
+Compact evidence: [docs/evaluation/citation_quality_v3.json](docs/evaluation/citation_quality_v3.json).
+
 ### GRPO Training Study
 
 The GRPO work is documented as an honest engineering study, not inflated benchmark marketing.
@@ -106,7 +122,7 @@ Key takeaway: the system includes a real rollout → reward → gradient update 
 ## Engineering Work
 
 - **Robust JSON parser**: one shared parser handles markdown fences, trailing commas, line comments, balanced braces and noisy prefixes. Tests quantify `json.loads` baseline `1/9` vs fallback parser `9/9`.
-- **Citation quality**: researcher and summarizer prompts force source title + author/org + year, and prefer academic/primary sources for technical tasks.
+- **Citation quality**: researcher and summarizer prompts force source title + author/org + year, prefer academic/primary sources for technical tasks, and feed numbered structured sources into synthesis to avoid generic `[Result N]` references.
 - **Blue targeted edits**: adversarial repair no longer rewrites the whole report by default; it applies exact `before -> after` replacements to avoid truncating long reports.
 - **Timeout control**: OpenAI-compatible client uses explicit request timeout/retry bounds; adversarial stage is wrapped by remaining global timeout.
 - **Memory hygiene**: low-quality greetings/errors are rejected before entering long-term memory; session scoped vector retrieval prevents stale cross-run contamination.
@@ -202,6 +218,7 @@ YuResearchAgent/
 - Built a deep-research multi-agent system with DAG planning, async orchestration, shared vector memory, citation-aware synthesis, adversarial review, and statistical evaluation.
 - Demonstrated significant lift over single-shot LLM baseline on ResearchBench (`+8.0%`, n=15, `p=0.0021`, `d=0.83`) using paired bootstrap testing.
 - Designed a reproducible evaluation stack combining rule-based metrics, LLM-as-Judge audit, ResearchBench 35-question suite, and head-to-head benchmarking.
+- Improved citation quality from `4/10` to `7/10` and overall Judge score from `6/10` to `8/10` by passing structured source metadata into the synthesis prompt and producing normalized references.
 - Implemented and analyzed 4 real GRPO training runs on RTX 5090 with TRL + LoRA across 7B/1.5B/base models; identified small-sample lift collapse and reward-overfitting behavior.
 - Hardened production reliability with robust JSON parsing, timeout boundaries, memory quality filters, path sandboxing, targeted report repair, and 167 API-free unit tests in CI.
 

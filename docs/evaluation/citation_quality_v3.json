@@ -1,0 +1,49 @@
+{
+  "task": "citation_quality_validation",
+  "target_issue": "missing complete bibliography and inconsistent citation format",
+  "root_cause": "the synthesis prompt only saw subtask outputs such as [Result N], not structured source metadata",
+  "fix": {
+    "source_collection": "SummarizerAgent._collect_sources extracts web and paper sources from successful subtask trajectories",
+    "paper_metadata": ["title", "authors", "year", "pdf_url_or_url", "snippet", "task_id"],
+    "prompt_change": "the synthesis prompt receives a numbered source list and requires [N] citations plus a normalized reference section"
+  },
+  "trajectory": [
+    {
+      "version": "old_baseline",
+      "citation_quality": 4,
+      "overall": 6,
+      "notes": "generic or incomplete references"
+    },
+    {
+      "version": "v1_researcher_academic_sources",
+      "citation_quality": 5,
+      "overall": null,
+      "academic_source_signals": 7,
+      "notes": "researcher prompt prefers academic and primary sources"
+    },
+    {
+      "version": "v2_summarizer_real_sources",
+      "citation_quality": 6,
+      "overall": 7,
+      "academic_source_signals": 38,
+      "notes": "summarizer asks for real source citations"
+    },
+    {
+      "version": "v3_structured_sources_in_synthesis",
+      "citation_quality": 7,
+      "overall": 8,
+      "academic_source_signals": 22,
+      "notes": "structured title/author/year/link source list is available to synthesis"
+    }
+  ],
+  "unit_tests": {
+    "file": "tests/unit/test_summarizer_sources.py",
+    "cases": 4,
+    "coverage": [
+      "web source extraction",
+      "paper author and year preservation",
+      "deduplication by url",
+      "failed result skipping"
+    ]
+  }
+}

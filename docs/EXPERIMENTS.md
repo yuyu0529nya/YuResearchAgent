@@ -43,6 +43,35 @@ The project uses a two-layer evaluation design:
 Statistics are reported with paired bootstrap confidence intervals, p-values,
 Cohen's d, and paired t-test helpers.
 
+## Citation Quality Validation
+
+The citation-focused validation tracked the main remaining Judge criticism:
+"missing complete bibliography and inconsistent citation format." The root
+cause was that the synthesis step only saw subtask outputs such as `[Result N]`
+instead of structured source metadata.
+
+Fix:
+
+- Extract web and paper sources from subtask trajectories into a shared
+  `_collect_sources` helper.
+- Preserve arXiv-style paper metadata: title, first authors, publication year,
+  PDF/link, snippet, and task id.
+- Feed a numbered source list into the synthesis prompt.
+- Require body citations to use `[N]` and require a final `## 参考来源` section
+  with `[N] title -- author/org (year) -- link`.
+
+Observed Judge trajectory:
+
+| Version | Citation quality | Overall | Notes |
+|---|---:|---:|---|
+| old baseline | 4/10 | 6/10 | generic or incomplete references |
+| v1 | 5/10 | - | researcher prompt prefers academic sources |
+| v2 | 6/10 | 7/10 | summarizer cites real sources instead of `[Result N]` |
+| v3 | 7/10 | 8/10 | structured source list includes title/author/year/link |
+
+The latest Judge feedback noted that the report cited multiple concrete papers
+and conferences. Compact result: `docs/evaluation/citation_quality_v3.json`.
+
 ## GRPO Training Study
 
 Script directory: `scripts/grpo_poc/`
