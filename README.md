@@ -1,293 +1,210 @@
 <div align="center">
 
-# 🚀 YuResearchAgent
+# YuResearchAgent
 
-### *从复杂 Query 到结构化深度研究报告，全链路自动化*
+### 从复杂 Query 到可验证深度研究报告的多智能体系统
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Async](https://img.shields.io/badge/Async-asyncio-orange.svg)](https://docs.python.org/3/library/asyncio.html)
-[![Tests](https://img.shields.io/badge/tests-163%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-167%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 
 </div>
 
----
+YuResearchAgent 是一个面向长问题、强证据和可复现评测的 Deep Research Agent。它把复杂研究问题拆成 DAG 子任务，并通过多 Agent 并发检索、共享记忆、上下文压缩、报告合成、对抗审查和统计评测，生成结构化 Markdown 研究报告。
 
-## 📖 项目背景
+这个仓库是经过大幅改造和持续维护的版本；项目来源说明见 [NOTICE](NOTICE)。
 
-大语言模型在单一问答场景表现优异，但在**复杂深度研究任务**中面临三个核心挑战：
+## Highlights
 
-1. 🔥 **信息爆炸与上下文遗忘** —— 长文本检索后关键信息淹没在噪声中，模型难以聚焦
-2. 👻 **幻觉与事实漂移** —— 多轮推理过程中，模型倾向于"编造"未经验证的事实
-3. 📊 **缺乏系统性评估** —— 现有评测多以单轮 QA 为主，缺少对"深度研究报告"这一输出形态的端到端评价体系
+- **多智能体显著优于单轮 LLM**：在 ResearchBench 15 题头对头评测中，Agent 平均综合分 `0.6034` vs 单轮 LLM `0.5586`，相对提升约 **+8.0%**，配对 bootstrap `95% CI=[+0.0134,+0.0761]`，`p=0.0021`，`Cohen's d=0.83`。结果见 [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json)。
+- **完整评测体系**：自建 ResearchBench 35 题 × 11 领域，规则指标覆盖事实、引用、幻觉、逻辑和完备性；LLM-as-Judge 用于专家抽查；统计层提供 bootstrap CI、p-value、Cohen's d 和配对 t-test。
+- **工程化 Agent 内核**：自研 9 状态 Orchestrator、DAG 拓扑并发、失败重规划、全局超时降级、AgentPool 复用、多后端模型路由。
+- **质量与鲁棒性优化**：引用质量 prompt 从笼统 `[Result N]` 升级到具体作者/机构/年份格式；统一 JSON fallback 解析器把畸形 LLM 输出恢复率从 `1/9` 提升到 `9/9`；修复上下文截断、工具失败误判、路径沙箱、统计退化输入等真实问题。
+- **GRPO 真训练研究**：在单卡 RTX 5090 上完成 4 组 TRL + LoRA + GRPO 训练实验，覆盖 Qwen2.5-7B-Instruct、Qwen2.5-1.5B-Instruct 和 Qwen2.5-1.5B base。结论不是夸大“显著提分”，而是证明训练闭环真实可跑通，并量化了轻量 LoRA GRPO 在 GSM8K 上的边界。
+- **可用界面**：提供 CLI、REPL 和 Gradio 流式 Web UI；Web UI 实时展示 planning → dispatching → synthesizing → done 的状态机进度，长任务不再黑盒等待。
 
-YuResearchAgent 是一个经过大幅改造和持续维护的深度研究 Agent 项目，覆盖规划、执行、记忆、对抗、进化、评测全链路。项目来源和维护说明见 [NOTICE](NOTICE)。
-
----
-
-## 🎯 实验动机
-
-> **"如果一个 Agent 只能回答简单问题，那它和搜索引擎有什么区别？"**
-
-我们的动机是：**让 AI 真正具备"深度研究"的能力**——不只是检索信息，而是像人类研究员一样：
-- 🧩 **拆解复杂问题** → 将模糊的研究目标分解为可执行的子任务
-- 🔍 **多源信息整合** → 从网页、论文、数据库等多渠道收集证据
-- ⚖️ **批判性审视** → 主动发现并修正报告中的错误和偏见
-- 📝 **结构化输出** → 生成带引用、有逻辑、可验证的研究报告
-
----
-
-## 💡 解决方法
-
-### 六大模块协同工作
-
-| 模块 | 职责 | 核心技术 |
-|------|------|---------|
-| 🎛️ **M1 Orchestrator** | 多智能体编排与调度 | 自研 asyncio + DAG 执行引擎，9 状态状态机 |
-| 🗺️ **M2 Planner** | 复杂问题拆解 | JSON DAG 动态规划，支持执行中 replan |
-| 🗜️ **M3 Compressor** | 长上下文压缩 | Embedding 语义三级过滤 + TextRank 关键句提取 |
-| 🧠 **M4 Memory Store** | 跨 Agent 共享记忆 | SQLite + numpy 向量索引，去重/矛盾检测/LRU 淘汰 |
-| ⚔️ **M5 Adversarial Loop** | 对抗降噪 | Red-Blue 循环攻击-修复，内置收敛与震荡检测 |
-| 🧬 **M6 Evolution Engine** | 在线自进化 | GRPO 强化学习 + 符号规则学习（预留接口） |
-
-### 数据流全景
+## Architecture
 
 ```raw
-用户 Query
-    ↓
-🗺️ Planner 拆解为 DAG 子任务图
-    ↓
-🎛️ Orchestrator 按拓扑排序并发调度
-    ↓
-🤖 Worker Agents 调用 🔍 搜索 / 📄 论文 / 🌐 网页 工具
-    ↓
-🧠 Memory Store 写入中间结果（去重 + 矛盾检测）
-    ↓
-🗜️ Compressor 压缩长上下文（L1→L2→L3）
-    ↓
-⚔️ Red Agent 攻击 → Blue Agent 修复 → 评分引擎评估
-    ↓
-📝 Summarizer 合成最终 Markdown 报告
-    ↓
-📤 输出带元信息的结构化研究报告
+User Query
+    |
+    v
+Planner: JSON DAG decomposition
+    |
+    v
+Orchestrator: 9-state async scheduler + replan
+    |
+    v
+Worker Agents: web / paper / browser / file / calculator / sandbox tools
+    |
+    v
+Memory + Compressor: SQLite vector memory + semantic context compression
+    |
+    v
+Summarizer: cited Markdown report
+    |
+    v
+Optional Red-Blue Adversarial Review
+    |
+    v
+Evaluation: rules + LLM judge + statistical significance
 ```
 
----
+| 模块 | 职责 | 关键实现 |
+|---|---|---|
+| M1 Orchestrator | 多 Agent 调度 | 9 状态状态机、DAG 层级并发、Semaphore、replan、全局超时 |
+| M2 Planner | 复杂问题拆解 | LLM 生成 JSON DAG，强约束子任务相关性和依赖合法性 |
+| M3 Compressor | 长上下文压缩 | Embedding 粗筛、TextRank 关键句、query-biased 过滤 |
+| M4 Memory Store | 跨 Agent 记忆 | SQLite + numpy 向量索引、session 隔离、去重、矛盾检测 |
+| M5 Adversarial Loop | Red-Blue 审查 | 五维 Red verdict、Blue 定点编辑、self-verify、截断保护 |
+| M6 Evolution | 自进化实验 | GRPO 数据/训练接口 + 独立 TRL/LoRA 真训练 PoC |
+| Evaluation | 质量度量 | ResearchBench、HotpotQA variant、规则指标、LLM-Judge、bootstrap |
 
-## ✨ 项目精彩之处
+## Evaluation Results
 
-### 🏗️ 1. 自研编排引擎，不依赖 LangGraph/AutoGen
+### Agent vs Single-Shot LLM
 
-> 为什么不用现成的框架？因为深度研究任务需要**完全可控的调度逻辑**。
+`scripts/run_headtohead.py` 用同一批 ResearchBench 题目比较完整 Agent 流程和单轮 LLM 直答，使用规则综合分做配对统计。
 
-- 基于 `asyncio` + `Semaphore` 实现 **DAG 拓扑并发执行**
-- **9 状态状态机**：IDLE → PLANNING → DISPATCHING → COLLECTING → SYNTHESIZING → ADVERSARIAL → DONE
-- **三级降级策略**：单任务超时标记继续 → >50% 失败触发 replan → 全局超时强制合成
+| Setting | Agent | Single-shot LLM | Delta |
+|---|---:|---:|---:|
+| ResearchBench n=15 | 0.6034 | 0.5586 | +0.0448 |
 
-### ⚔️ 2. Red-Blue 对抗降噪 —— 主动抑制幻觉
+Statistical test:
 
-> 灵感来自 GAN 的对抗训练思想，但应用于**文本质量优化**。
+- `95% CI = [+0.0134, +0.0761]`
+- `p = 0.0021`
+- `Cohen's d = 0.83`
+- Relative lift over baseline: about `+8.0%`
 
-- **Red Agent** 从 5 个维度攻击报告：事实性、逻辑一致性、引用质量、覆盖面、时效性
-- **Blue Agent** 执行 4 种修复操作：ADD / DELETE / MODIFY / VERIFY
-- **收敛控制**：评分达标 / 变化收敛 / 轮数上限 三选一终止（默认 ≥9.5 / Δ<0.2 / ≤10 轮，可在 configs/default.yaml 调整）
-- **震荡检测**：已修复问题重新出现 → 判定震荡 → 优雅终止
+Raw summary: [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json).
 
-### 🗜️ 3. 语义级上下文压缩 —— 不是简单截断
+### Rule Metrics + LLM-as-Judge
 
-> 关键词匹配会丢失语义，简单截断会丢失关键信息。**我们用 Embedding 做语义压缩**。
+The evaluation stack is deliberately two-layered:
 
-- **L1 粗过滤**：cosine similarity < 0.6 丢弃，> 0.95 完整保留
-- **L2 细筛选**：TextRank + Query-Biased 提取关键句
-- **L3 精保留**：高度相关内容保留原文，避免摘要失真
+- **Rule-based metrics** are cheap and reproducible: semantic/factual coverage, hallucination risk, citation coverage, logical consistency, comprehensiveness, efficiency.
+- **LLM-as-Judge** is used for expert-style audit: factuality, logic, citation quality and confidence, then aggregated with rule scores when needed.
 
-### 🧠 4. 跨 Agent 共享记忆 —— 会"反思"的系统
+This avoids relying only on subjective judge output while still catching qualitative issues that string rules miss.
 
-- 写前自动**去重**（cosine > 0.92）
-- **矛盾检测**：启发式反义词 + 语义对立识别
-- 三种**矛盾消解策略**：Majority Vote / Source Weight / LLM Judge
-- **Session 隔离**：不同用户/会话的记忆物理隔离
+### GRPO Training Study
 
-### 🔌 5. 多后端 LLM 路由 —— 零源码切换模型
+The GRPO work is documented as an honest engineering study, not inflated benchmark marketing.
 
-```yaml
-# configs/default.yaml
-model:
-  backend_mapping:
-    solver: "deepseek"      # 强推理
-    planner: "deepseek"     # 结构化输出
-    red_agent: "mimo"       # 稳定、低成本
-    blue_agent: "mimo"
-    judge: "mimo"
-    compressor: "mimo"
-```
+| Experiment | Model | Setup | Baseline | After GRPO | Finding |
+|---|---|---|---:|---:|---|
+| 1 | Qwen2.5-7B-Instruct | LoRA, 400 steps | 89% | 91% | End-to-end pipeline works; gain not statistically significant |
+| 2 | Qwen2.5-1.5B-Instruct | LoRA, 400 steps | 66.6% | 69.4% | +2.8 points at n=500; not significant |
+| 3 | Qwen2.5-1.5B-Instruct | tuned accumulation/temp/500 steps | 66.6% | 69.4% | reward rose but held-out accuracy did not move |
+| 4 | Qwen2.5-1.5B base | R1-Zero-style cold start | 55% | 60% | larger headroom gives larger lift, still not p<0.05 |
 
-- 支持 DeepSeek / MiMo 2.5 Pro / vLLM / OpenAI **热切换**
-- 模块级采样参数集中管理，**避免配置漂移**
-- `.env` 驱动，**零源码修改**接入新后端
+Key takeaway: the system includes a real rollout → reward → gradient update → LoRA adapter → held-out eval loop, and the experiments exposed an important lesson: small-sample `+8` on n=200 collapsed to `+2.8` on n=500. See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) and [scripts/grpo_poc/SUMMARY.md](scripts/grpo_poc/SUMMARY.md).
 
-### 📊 6. 完整的深度研究评测体系
+## Engineering Work
 
-> 不做"跑几个例子看看"的评测，做**可复现、可量化、有统计显著性**的评测。
+- **Robust JSON parser**: one shared parser handles markdown fences, trailing commas, line comments, balanced braces and noisy prefixes. Tests quantify `json.loads` baseline `1/9` vs fallback parser `9/9`.
+- **Citation quality**: researcher and summarizer prompts force source title + author/org + year, and prefer academic/primary sources for technical tasks.
+- **Blue targeted edits**: adversarial repair no longer rewrites the whole report by default; it applies exact `before -> after` replacements to avoid truncating long reports.
+- **Timeout control**: OpenAI-compatible client uses explicit request timeout/retry bounds; adversarial stage is wrapped by remaining global timeout.
+- **Memory hygiene**: low-quality greetings/errors are rejected before entering long-term memory; session scoped vector retrieval prevents stale cross-run contamination.
+- **File sandboxing**: FileReader uses `Path.resolve()` + `is_relative_to()` instead of string-prefix checks.
+- **CI and tests**: 167 unit tests run without API keys or GPU; CI covers Python 3.10-3.13.
 
-| 评测层级 | 方法 | 特点 |
-|---------|------|------|
-| 📏 **规则指标** | 事实准确率 / 幻觉率 / 引用覆盖率 / 逻辑一致性 | 免费、可复现、零 API 成本 |
-| 📚 **公共数据集** | HotpotQA 多跳 QA 深度研究变体 | 传统 EM/F1 + 新增语义覆盖度 |
-| 🏗️ **自建评测集** | ResearchBench 35 题 × 11 领域 | 含 expected_topics + ground_truth |
-| 👨‍⚖️ **LLM-as-Judge** | MiMo 5 维度 0-10 分深度评分 | 定性+定量互补 |
-| 🥊 **Head-to-Head** | Agent vs 单轮 LLM 直接对比 | pairwise 更可靠 |
-| 📈 **统计显著性** | Bootstrap 95% CI + Cohen's d + t-test | 拒绝"随机波动" |
-
----
-
-## 🚀 快速开始
-
-### 环境准备
+## Quick Start
 
 ```bash
-# 1. 克隆项目
 git clone https://github.com/yuyu0529nya/YuResearchAgent.git
 cd YuResearchAgent
 
-# 2. 创建 uv 虚拟环境并激活
 uv venv .venv
 source .venv/bin/activate
-
-# 3. 安装核心依赖
 pip install -r requirements.txt
 
-# 4. 配置 API Key（复制模板后填入）
 cp .env.template .env
-# 编辑 .env：填入 DEEPSEEK_API_KEY、BOCHA_API_KEY 等
+# Fill one OpenAI-compatible backend, for example QWEN_API_KEY or GLM_API_KEY.
 ```
 
-### 三种运行方式
+Run one research query:
 
-**🎯 单条 Query（单次深度研究）**
 ```bash
 python scripts/run_single.py \
-    --query "2024-2025年大模型Agent技术趋势与落地案例研究" \
-    --config configs/default.yaml
+  --query "2024-2025年大模型Agent技术趋势与落地案例研究" \
+  --config configs/default.yaml
 ```
 
-**💬 交互式 REPL（支持 Session 继承与连续追问）**
+Interactive REPL:
+
 ```bash
 python scripts/run_repl.py
-# 交互命令: ls / sessions / save / q
 ```
 
-**🔬 批量实验（全量评测体系，overnight 可跑完）**
-```bash
-python scripts/run_all_experiments.py \
-    --report_file outputs/reports1/report_xxx.md \
-    --report_query "你的研究问题"
-```
-
-> 批量实验默认配置：模块消融 5×12 题 + 轮数消融 4×12 题 + 标准评测 35 题 + 领域对比 3×5 题 + Agent vs LLM 3 题 + Judge 1 次 = **165 次独立研究运行**
-
-### 🧪 运行单元测试
+Streaming Web UI:
 
 ```bash
-pip install -r requirements-test.txt   # 轻量测试依赖（不含 torch / sentence-transformers）
-pytest tests/unit -q                    # 163 个单测，无需 API Key / GPU
+pip install gradio
+python scripts/run_webui.py
+# http://localhost:7860
 ```
 
-> 覆盖 **M1 编排器**决策（重规划/全局超时）、**M2 规划器** DAG 构建与环检测、
-> **M3 压缩器** TextRank、**M4 记忆**矛盾检测启发式、**M5 Red-Blue 对抗**收敛判定与震荡检测、
-> 统一 JSON 解析器（多层 fallback 恢复率 **11% → 100%**）、统计显著性（Bootstrap CI / Cohen's d）、
-> 工具层（计算器安全求值 / 文件读取沙箱 / 记事本）等核心逻辑。
-> CI 在 **Python 3.10–3.13** 上自动运行（见 [`.github/workflows/ci.yml`](.github/workflows/ci.yml)）。
+Unit tests:
 
----
+```bash
+pip install -r requirements-test.txt
+pytest tests/unit -q
+```
 
-## 📁 仓库结构
+Head-to-head benchmark:
+
+```bash
+python scripts/run_headtohead.py --num_questions 15 --config configs/default.yaml
+```
+
+## Repository Structure
 
 ```raw
 YuResearchAgent/
-├── 📁 configs/                    # YAML 配置中心
-│   ├── default.yaml               # 全局默认配置
-│   ├── agents/                    # Agent 行为配置
-│   ├── planner/                   # 规划器配置
-│   ├── evolution/                 # 自进化配置
-│   └── tools/                     # 工具层配置
-│
-├── 📁 src/                        # 核心源码（~12000 行）
-│   ├── 📁 core/                   # 核心运行层
-│   │   ├── runner.py              # 初始化模块 + 执行完整研究流程
-│   │   ├── judge.py               # MiMo Judge 统一接口
-│   │   └── ablation.py            # 消融实验通用框架
-│   │
-│   ├── 📁 orchestrator/           # 🎛️ M1: 多智能体编排器
-│   ├── 📁 planner/                # 🗺️ M2: 自适应规划器
-│   ├── 📁 compressor/             # 🗜️ M3: 上下文压缩器
-│   ├── 📁 memory/                 # 🧠 M4: 共享记忆存储
-│   ├── 📁 adversarial/            # ⚔️ M5: 对抗降噪循环
-│   ├── 📁 evolution/              # 🧬 M6: 自进化引擎
-│   ├── 📁 agents/                 # 🤖 Agent 实现
-│   ├── 📁 models/                 # 🔌 模型路由层
-│   ├── 📁 tools/                  # 🛠️ 工具层
-│   └── 📁 utils/                  # 🧰 工具函数
-│
-├── 📁 evaluation/                 # 评测体系（~2000 行）
-│   ├── benchmarks/                # 评测集（ResearchBench / HotpotQA）
-│   ├── metrics/                   # 指标（规则 / Judge / 统计 / 综合）
-│   └── analyze_ablation.py        # 消融实验结果分析
-│
-├── 📁 scripts/                    # 可执行脚本
-│   ├── run_single.py              # 🎯 单条 query CLI
-│   ├── run_repl.py                # 💬 交互式 REPL
-│   ├── run_all_experiments.py     # 🔬 一键批量实验
-│   ├── run_ablation.py            # 消融实验独立入口
-│   ├── run_benchmark.py           # 🥊 Agent vs LLM
-│   ├── run_eval.py                # 标准评测入口
-│   ├── run_judge.py               # 👨‍⚖️ Judge 深度评分
-│   └── validate_env.py            # 环境配置检查
-│
-├── requirements.txt               # 依赖清单（分级安装）
-└── README.md                      # 📖 本文件
+├── configs/                  # YAML config center
+├── src/                      # core source, 11.8k LOC
+│   ├── orchestrator/         # M1 scheduler and schemas
+│   ├── planner/              # M2 DAG planner
+│   ├── compressor/           # M3 context compression
+│   ├── memory/               # M4 SQLite + vector memory
+│   ├── adversarial/          # M5 Red-Blue loop
+│   ├── evolution/            # M6 evolution interfaces
+│   ├── agents/               # researcher / summarizer agents
+│   ├── models/               # OpenAI-compatible model router
+│   ├── tools/                # search, browser, file, calculator, sandbox
+│   └── utils/                # JSON parsing, tracing, env
+├── evaluation/               # ResearchBench, metrics, reports
+├── scripts/                  # CLI, benchmark, Web UI, GRPO PoC
+├── docs/                     # summarized experiment evidence
+└── tests/                    # 167 unit tests
 ```
 
----
+## Tech Stack
 
-## 🛠️ 技术栈
+| Layer | Stack |
+|---|---|
+| Language | Python 3.10+ |
+| Concurrency | asyncio, Semaphore, background thread for Web UI streaming |
+| LLM Backends | Qwen / GLM / DeepSeek / MiMo / OpenAI / vLLM-compatible APIs |
+| Retrieval | Web search, browser extraction, ArXiv/Semantic Scholar/OpenAlex |
+| Memory | SQLite, numpy vector index, sentence-transformers |
+| Training PoC | TRL GRPOTrainer, LoRA, PEFT, RTX 5090 |
+| Evaluation | ResearchBench, HotpotQA variant, bootstrap, Cohen's d, LLM-as-Judge |
+| UI | CLI, REPL, Gradio streaming Web UI |
 
-| 层级 | 技术 |
-|------|------|
-| 🐍 语言 | Python 3.10+ |
-| ⚡ 异步框架 | asyncio |
-| 🧠 LLM 后端 | DeepSeek API / MiMo 2.5 Pro / vLLM / OpenAI |
-| 🔢 嵌入模型 | sentence-transformers (`all-MiniLM-L6-v2`) |
-| 💾 持久化 | SQLite + numpy 向量索引 |
-| 🎓 训练框架 | veRL / GRPO（M6 自进化，预留） |
-| 🔭 可观测性 | LangSmith |
-| 📦 虚拟环境 | uv |
+## Resume Bullets
 
----
+- Built a deep-research multi-agent system with DAG planning, async orchestration, shared vector memory, citation-aware synthesis, adversarial review, and statistical evaluation.
+- Demonstrated significant lift over single-shot LLM baseline on ResearchBench (`+8.0%`, n=15, `p=0.0021`, `d=0.83`) using paired bootstrap testing.
+- Designed a reproducible evaluation stack combining rule-based metrics, LLM-as-Judge audit, ResearchBench 35-question suite, and head-to-head benchmarking.
+- Implemented and analyzed 4 real GRPO training runs on RTX 5090 with TRL + LoRA across 7B/1.5B/base models; identified small-sample lift collapse and reward-overfitting behavior.
+- Hardened production reliability with robust JSON parsing, timeout boundaries, memory quality filters, path sandboxing, targeted report repair, and 167 API-free unit tests in CI.
 
-## 🗺️ Roadmap
-
-- [x] 自研编排引擎（asyncio + DAG）
-- [x] Red-Blue 对抗降噪
-- [x] 语义级上下文压缩
-- [x] 跨 Agent 共享记忆
-- [x] 多后端 LLM 路由
-- [x] 完整评测体系（规则 + Judge + 统计显著性）
-- [x] REPL 交互式会话
-- [ ] 实验结果填充（进行中 🔥）
-- [ ] Web UI（Gradio/Streamlit）
-- [ ] 用户反馈闭环
-- [ ] 多模态支持（图像/表格）
-
----
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 PR！无论是 bug 修复、功能增强还是文档改进，我们都非常感谢。
-
----
-
-## 📄 License
+## License
 
 [MIT](LICENSE) © 2025 YuResearchAgent Contributors. See [NOTICE](NOTICE) for provenance notes.

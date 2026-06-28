@@ -14,6 +14,7 @@ import copy
 from typing import Any
 
 from src.adversarial.verdict import (
+    Dimension,
     FixOperation,
     FixType,
     Issue,

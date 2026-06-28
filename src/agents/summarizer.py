@@ -111,6 +111,56 @@ class SummarizerAgent(BaseAgent):
             "At the end, provide an overall confidence score (0-1) and a summary of key sources."
         )
 
+    def _collect_sources(self, results: list[AgentResult]) -> list[dict]:
+        """从子结果轨迹提取去重来源：web(url/title) + arxiv 论文(含作者/年份)。"""
+        sources: list[dict] = []
+        for r in results:
+            if r.status != AgentStatus.SUCCESS:
+                continue
+            for step in r.trajectory:
+                if step.get("role") != "tool" or not isinstance(step.get("result"), dict):
+                    continue
+                res = step["result"]
+                if isinstance(res.get("results"), list):
+                    for item in res["results"]:
+                        if isinstance(item, dict) and item.get("url"):
+                            sources.append(
+                                {
+                                    "url": item["url"],
+                                    "title": item.get("title", ""),
+                                    "snippet": item.get("snippet", ""),
+                                    "authors": "",
+                                    "year": "",
+                                    "task_id": r.task_id,
+                                }
+                            )
+                if isinstance(res.get("papers"), list):
+                    for p in res["papers"]:
+                        if not isinstance(p, dict) or not (p.get("pdf_url") or p.get("title")):
+                            continue
+                        au = p.get("authors", [])
+                        if isinstance(au, list):
+                            au_str = ", ".join(au[:3]) + (" et al." if len(au) > 3 else "")
+                        else:
+                            au_str = str(au)
+                        sources.append(
+                            {
+                                "url": p.get("pdf_url", p.get("url", "")),
+                                "title": p.get("title", ""),
+                                "snippet": (p.get("summary", "") or "")[:200],
+                                "authors": au_str,
+                                "year": (p.get("published", "") or "")[:4],
+                                "task_id": r.task_id,
+                            }
+                        )
+        seen, unique = set(), []
+        for s in sources:
+            key = s["url"] or s["title"]
+            if key and key not in seen:
+                seen.add(key)
+                unique.append(s)
+        return unique
+
     def _build_synthesis_prompt(self, query: str, results: list[AgentResult]) -> str:
         """构建合成 prompt，按置信度降序排列结果。"""
         sorted_results = sorted(results, key=lambda r: r.confidence, reverse=True)
@@ -127,16 +177,29 @@ class SummarizerAgent(BaseAgent):
                 f"Output:\n{r.output}\n"
             )
 
+        sources = self._collect_sources(results)
+        if sources:
+            parts.append("\n# 可用来源（引用时用这些编号 [N]，正文末尾参考文献也用它们）")
+            for i, s in enumerate(sources[:25], 1):
+                line = f"[{i}] {s['title'] or s['url']}"
+                if s.get("authors"):
+                    line += f" — {s['authors']}"
+                if s.get("year"):
+                    line += f"（{s['year']}）"
+                if s.get("url") and s.get("title"):
+                    line += f" — {s['url']}"
+                parts.append(line)
+
         parts.append(
             "\n# Instructions\n"
             "1. Directly write the synthesized report based on the findings above. Do NOT say 'I will synthesize'.\n"
             "2. The report MUST be comprehensive and detailed (at least 3000 Chinese characters or 2000 English words).\n"
             "3. Structure: Executive Summary → Background → Key Findings (with details) → Analysis → Comparisons → Implications → Conclusion.\n"
             "4. Resolve any contradictions between sources.\n"
-            "5. 引用要**具体可验证**：关键论断后标注研究发现中出现的**真实来源**"
-            "（论文标题/作者/年份，或机构+年份，如 [Vaswani et al., 2017]、[OpenAI, 2024]）；"
-            "只有在确无来源信息时才退回 [N]，**避免笼统的 [Result N]**。每个主要段落至少一处引用；"
-            "正文末尾用「## 参考来源」按「标题 — 作者/机构（年份） — 链接」格式完整列出。\n"
+            "5. 引用要**具体可验证**：关键论断后用上面「可用来源」里的**编号 [N]** 标注"
+            "（如 [3]、[7]）；每个主要段落至少一处引用，**禁止用笼统的 [Result N]**。"
+            "正文末尾必须有「## 参考来源」，把正文用到的每个 [N] 按"
+            "「[N] 标题 — 作者/机构（年份） — 链接」完整、统一地列出（直接复用上面「可用来源」的条目）。\n"
             "6. End with: Overall Confidence: X.XX"
         )
         return "\n".join(parts)
@@ -161,48 +224,11 @@ class SummarizerAgent(BaseAgent):
         confidence = llm_confidence * (success_rate ** 0.5)
         confidence = round(max(0.0, min(1.0, confidence)), 2)
 
-        # 收集来源（从各个子结果的轨迹中提取）
-        sources: list[dict] = []
-        for r in results:
-            if r.status != AgentStatus.SUCCESS:
-                continue
-            # 简单启发式：从 trajectory 的 tool 结果中提取 url
-            for step in r.trajectory:
-                if step.get("role") == "tool" and isinstance(step.get("result"), dict):
-                    res = step["result"]
-                    if "results" in res and isinstance(res["results"], list):
-                        for item in res["results"]:
-                            if isinstance(item, dict) and "url" in item:
-                                sources.append({
-                                    "url": item["url"],
-                                    "title": item.get("title", ""),
-                                    "snippet": item.get("snippet", ""),
-                                    "task_id": r.task_id,
-                                })
-                    elif "papers" in res and isinstance(res["papers"], list):
-                        for paper in res["papers"]:
-                            if isinstance(paper, dict) and "pdf_url" in paper:
-                                sources.append({
-                                    "url": paper["pdf_url"],
-                                    "title": paper.get("title", ""),
-                                    "snippet": paper.get("summary", "")[:200],
-                                    "task_id": r.task_id,
-                                })
-
-        # 去重
-        seen = set()
-        unique_sources = []
-        for s in sources:
-            key = s["url"]
-            if key not in seen:
-                seen.add(key)
-                unique_sources.append(s)
+        # 收集去重后的来源（含 arxiv 论文的作者/年份）
+        unique_sources = self._collect_sources(results)
 
         # 统计实际工具调用次数（遍历所有子任务的 trajectory）
-        num_searches = sum(
-            len([t for t in r.trajectory if t.get("role") == "tool"])
-            for r in results
-        )
+        num_searches = sum(len([t for t in r.trajectory if t.get("role") == "tool"]) for r in results)
 
         return ResearchReport(
             query=query,

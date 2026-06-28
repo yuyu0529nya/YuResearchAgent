@@ -182,6 +182,18 @@ class ModelRouter:
         if name == "openai" and "base_url" not in config:
             config["base_url"] = "https://api.openai.com/v1"
 
+        # 为 qwen / DashScope OpenAI 兼容接口提供默认值
+        if name == "qwen" and "model_name" not in config:
+            config["model_name"] = "qwen-plus"
+        if name == "qwen" and "base_url" not in config:
+            config["base_url"] = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
+        # 为 zhipu GLM OpenAI 兼容接口提供默认值
+        if name == "glm" and "model_name" not in config:
+            config["model_name"] = "glm-4.6"
+        if name == "glm" and "base_url" not in config:
+            config["base_url"] = "https://open.bigmodel.cn/api/paas/v4"
+
         # 为 xiaomi mimo 提供默认值（官方 API，国内直连）
         # 官方平台: https://platform.xiaomimimo.com/
         # 如需走 OpenRouter 备选渠道，在 .env 中手动覆盖：

@@ -41,6 +41,7 @@ dependencies = [
     "datasets",
     "pandas",
     "matplotlib",
+    "beautifulsoup4>=4.12",
     # vLLM 推理服务（可选，本地部署时安装）
     # "vllm",
     # PEFT / LoRA 微调（自进化模块需要）
@@ -50,6 +51,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+web = [
+    "gradio>=4.0",
+]
 # vLLM 推理服务依赖
 serve = [
     "vllm>=0.4.0",
@@ -72,7 +76,7 @@ dev = [
 ]
 # 全部可选依赖
 all = [
-    "yu-research-agent[serve,train,dev]",
+    "yu-research-agent[web,serve,train,dev]",
 ]
 
 [project.scripts]
