@@ -1,0 +1,17 @@
+# GRPO PoC 依赖 —— 在租来的 5090(Linux + CUDA 12.8) 上安装
+#
+# ⚠️ RTX 5090 是 Blackwell(sm_120)，必须用 CUDA 12.8 的 torch 轮子：
+#     pip install torch --index-url https://download.pytorch.org/whl/cu128
+# 装完先验证：python -c "import torch; print(torch.cuda.get_device_name(0))"
+# 应打印 'NVIDIA GeForce RTX 5090'。
+
+torch>=2.7.0            # 用上面的 cu128 index 安装
+transformers>=4.49.0
+trl>=0.15.0             # 含 GRPOTrainer
+peft>=0.14.0
+datasets>=3.2.0
+accelerate>=1.3.0
+
+# 可选：vLLM 采样加速。Blackwell 支持需较新版本，先不强制；
+# 不装时 train_grpo.py 默认用 HF generate（更慢但零兼容坑）。
+# vllm>=0.8.0
