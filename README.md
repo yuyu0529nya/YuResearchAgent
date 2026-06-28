@@ -14,8 +14,6 @@
 
 YuResearchAgent 是一个面向长问题、强证据和可复现评测的 Deep Research Agent。它把复杂研究问题拆成 DAG 子任务，并通过多 Agent 并发检索、共享记忆、上下文压缩、报告合成、对抗审查和统计评测，生成结构化 Markdown 研究报告。
 
-这个仓库是经过大幅改造和持续维护的版本；项目来源说明见 [NOTICE](NOTICE)。
-
 ## Highlights
 
 - **多智能体显著优于单轮 LLM**：在 ResearchBench 15 题头对头评测中，Agent 平均综合分 `0.6034` vs 单轮 LLM `0.5586`，相对提升约 **+8.0%**，配对 bootstrap `95% CI=[+0.0134,+0.0761]`，`p=0.0021`，`Cohen's d=0.83`。结果见 [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json)。
@@ -224,4 +222,4 @@ YuResearchAgent/
 
 ## License
 
-[MIT](LICENSE) © 2025 YuResearchAgent Contributors. See [NOTICE](NOTICE) for provenance notes.
+[MIT](LICENSE) © 2025 YuResearchAgent Contributors.
