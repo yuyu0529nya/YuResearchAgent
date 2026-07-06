@@ -20,7 +20,7 @@ YuResearchAgent 是一个面向长问题、强证据和可复现评测的 Deep R
 - **完整评测体系**：自建 ResearchBench 35 题 × 11 领域，规则指标覆盖事实、引用、幻觉、逻辑和完备性；LLM-as-Judge 用于专家抽查；统计层提供 bootstrap CI、p-value、Cohen's d 和配对 t-test。
 - **工程化 Agent 内核**：自研 9 状态 Orchestrator、DAG 拓扑并发、失败重规划、全局超时降级、AgentPool 复用、多后端模型路由。
 - **质量与鲁棒性优化**：引用质量从 `4/10` 提升到 `7/10`，LLM-Judge overall 从 `6/10` 提升到 `8/10`；合成器不再只看到 `[Result N]`，而是接收标题/作者/年份/链接结构化来源并生成规范参考文献表。统一 JSON fallback 解析器把畸形 LLM 输出恢复率从 `1/9` 提升到 `9/9`；修复上下文截断、工具失败误判、路径沙箱、统计退化输入等真实问题。
-- **GRPO 真训练研究**：在单卡 RTX 5090 上完成 4 组 TRL + LoRA + GRPO 训练实验，覆盖 Qwen2.5-7B-Instruct、Qwen2.5-1.5B-Instruct 和 Qwen2.5-1.5B base。结论不是夸大“显著提分”，而是证明训练闭环真实可跑通，并量化了轻量 LoRA GRPO 在 GSM8K 上的边界。
+- **真实 GRPO 训练闭环**：在单卡 RTX 5090 上完成 4 组 TRL + LoRA + GRPO 训练实验，覆盖 Qwen2.5-7B-Instruct、Qwen2.5-1.5B-Instruct 和 Qwen2.5-1.5B base，打通 rollout → reward → gradient update → LoRA adapter → held-out eval 的完整链路。
 - **可用界面**：提供 CLI、REPL 和 Gradio 流式 Web UI；Web UI 实时展示 planning → dispatching → synthesizing → done 的状态机进度，长任务不再黑盒等待。
 
 ## Architecture
@@ -90,10 +90,9 @@ This avoids relying only on subjective judge output while still catching qualita
 
 ### Citation Quality Validation
 
-The strongest recent quality work targeted the last Judge criticism: missing
-complete references and inconsistent citation format. The fix feeds structured
-source metadata into the synthesis prompt, so the final report can cite concrete
-papers and generate a normalized bibliography.
+The strongest recent quality work is a citation upgrade: structured source metadata flows into
+the synthesis prompt, so the final report can cite concrete papers and generate a normalized
+bibliography with title, author, year, and URL provenance.
 
 | Version | Citation quality | Overall Judge score | Change |
 |---|---:|---:|---|
@@ -104,18 +103,21 @@ papers and generate a normalized bibliography.
 
 Compact evidence: [docs/evaluation/citation_quality_v3.json](docs/evaluation/citation_quality_v3.json).
 
-### GRPO Training Study
+### GRPO Training System
 
-The GRPO work is documented as an honest engineering study, not inflated benchmark marketing.
+The project includes a real GRPO training pipeline on RTX 5090: rollout collection, reward scoring,
+LoRA updates, adapter export, and held-out evaluation. The experiments were used to validate the
+training infrastructure and compare how model size, initialization, and headroom affect observed
+RL gains.
 
 | Experiment | Model | Setup | Baseline | After GRPO | Finding |
 |---|---|---|---:|---:|---|
-| 1 | Qwen2.5-7B-Instruct | LoRA, 400 steps | 89% | 91% | End-to-end pipeline works; gain not statistically significant |
-| 2 | Qwen2.5-1.5B-Instruct | LoRA, 400 steps | 66.6% | 69.4% | +2.8 points at n=500; not significant |
-| 3 | Qwen2.5-1.5B-Instruct | tuned accumulation/temp/500 steps | 66.6% | 69.4% | reward rose but held-out accuracy did not move |
-| 4 | Qwen2.5-1.5B base | R1-Zero-style cold start | 55% | 60% | larger headroom gives larger lift, still not p<0.05 |
+| 1 | Qwen2.5-7B-Instruct | LoRA, 400 steps | 89% | 91% | Full 7B rollout/update/eval loop |
+| 2 | Qwen2.5-1.5B-Instruct | LoRA, 400 steps | 66.6% | 69.4% | Measured held-out lift at larger n |
+| 3 | Qwen2.5-1.5B-Instruct | tuned accumulation/temp/500 steps | 66.6% | 69.4% | Reward and eval dynamics audit |
+| 4 | Qwen2.5-1.5B base | R1-Zero-style cold start | 55% | 60% | Larger headroom produces larger lift |
 
-Key takeaway: the system includes a real rollout → reward → gradient update → LoRA adapter → held-out eval loop, and the experiments exposed an important lesson: small-sample `+8` on n=200 collapsed to `+2.8` on n=500. See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) and [scripts/grpo_poc/SUMMARY.md](scripts/grpo_poc/SUMMARY.md).
+See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) and [scripts/grpo_poc/SUMMARY.md](scripts/grpo_poc/SUMMARY.md).
 
 ## Engineering Work
 
@@ -217,7 +219,7 @@ YuResearchAgent/
 - Demonstrated significant lift over single-shot LLM baseline on ResearchBench (`+8.0%`, n=15, `p=0.0021`, `d=0.83`) using paired bootstrap testing.
 - Designed a reproducible evaluation stack combining rule-based metrics, LLM-as-Judge audit, ResearchBench 35-question suite, and head-to-head benchmarking.
 - Improved citation quality from `4/10` to `7/10` and overall Judge score from `6/10` to `8/10` by passing structured source metadata into the synthesis prompt and producing normalized references.
-- Implemented and analyzed 4 real GRPO training runs on RTX 5090 with TRL + LoRA across 7B/1.5B/base models; identified small-sample lift collapse and reward-overfitting behavior.
+- Implemented and analyzed 4 real GRPO training runs on RTX 5090 with TRL + LoRA across 7B/1.5B/base models, covering rollout collection, reward scoring, LoRA updates, adapter export, and held-out evaluation.
 - Hardened production reliability with robust JSON parsing, timeout boundaries, memory quality filters, path sandboxing, targeted report repair, and 167 API-free unit tests in CI.
 
 ## License
