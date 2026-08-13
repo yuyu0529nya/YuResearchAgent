@@ -5,6 +5,7 @@ evaluation/metrics/stats.py 的单元测试：bootstrap CI / Cohen's d / 配对 
 直接按文件路径加载（避免 evaluation/metrics/__init__ 的连带导入）。需要 numpy。
 所有 bootstrap 用例都传 seed，保证确定性。
 """
+
 import importlib.util
 import os
 
@@ -12,7 +13,9 @@ import pytest
 
 _PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    "evaluation", "metrics", "stats.py",
+    "evaluation",
+    "metrics",
+    "stats.py",
 )
 _spec = importlib.util.spec_from_file_location("stats_under_test", _PATH)
 _mod = importlib.util.module_from_spec(_spec)
@@ -59,9 +62,21 @@ def test_cohens_d_large_effect():
 
 
 def test_cohens_d_degenerate_returns_zero_not_nan():
-    assert S.cohens_d([5.0], [3.0]) == 0.0          # n < 2
-    assert S.cohens_d([], []) == 0.0                # 空
+    assert S.cohens_d([5.0], [3.0]) == 0.0  # n < 2
+    assert S.cohens_d([], []) == 0.0  # 空
     assert S.cohens_d([5, 5, 5], [5, 5, 5]) == 0.0  # 零方差
+
+
+def test_cohens_dz_uses_paired_differences():
+    assert S.cohens_dz([3.0, 5.0, 8.0], [2.0, 3.0, 5.0]) == pytest.approx(2.0)
+
+
+def test_exact_randomization_enumerates_all_sign_flips():
+    result = S.paired_randomization_test([1.0] * 15)
+
+    assert result["method"] == "exact_paired_sign_flip"
+    assert result["permutations"] == 2**15
+    assert result["p_value"] == pytest.approx(1 / (2**15), abs=1e-6)
 
 
 def test_paired_t_test_consistent_schema():

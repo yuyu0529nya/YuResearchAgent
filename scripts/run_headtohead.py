@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Auditable paired evaluation: full research agent vs one-call LLM baseline."""
+"""Run the frozen Agent-vs-one-call protocol with resumable checkpoints."""
 
 from __future__ import annotations
 
 import argparse
 import asyncio
+import copy
 import json
 import shutil
 import sys
@@ -23,6 +24,14 @@ from evaluation.benchmarks.research_bench import (
     ResearchBench,
 )
 from evaluation.evidence_metrics import evidence_quality_metrics
+from evaluation.preregistration import (
+    BASELINE_SYSTEM_PROMPT,
+    HEADTOHEAD_ARTIFACT_SCHEMA,
+    audit_headtohead_artifact,
+    canonical_json,
+    evaluation_config_snapshot,
+    load_preregistration,
+)
 from evaluation.protocol import (
     atomic_write_json,
     load_report_artifact,
@@ -31,6 +40,12 @@ from evaluation.protocol import (
     save_report_artifact,
     sha256_text,
     usage_delta,
+)
+from evaluation.runtime_identity import (
+    configure_single_backend,
+    create_policy,
+    effective_module_policies,
+    policy_identity,
 )
 from src.core.judge import LLMJudge
 from src.core.runner import (
@@ -43,33 +58,14 @@ from src.models.model_router import ModelRouter
 from src.models.vllm_policy import VLLMPolicy
 
 
-ARTIFACT_SCHEMA = "headtohead-v3-auditable"
-_BASELINE_SYSTEM = (
-    "你是一位研究助手。针对用户问题，直接写一份全面、结构化的 Markdown 研究报告。"
-    "回答必须独立完成，不得声称已经联网或调用外部工具；只引用你确实知道的来源。"
-    "结尾给出 Overall Confidence: X.XX。"
-)
-
-
 def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
-
-
-def _sampling_for_baseline(config: dict[str, Any], backend: str) -> dict[str, Any]:
-    sampling = config.get("model", {}).get("backend_sampling", {})
-    resolved = dict(sampling.get(backend, {}))
-    resolved.update(sampling.get("modules", {}).get("summarizer", {}))
-    return {
-        key: resolved[key]
-        for key in ("temperature", "top_p", "max_tokens")
-        if key in resolved
-    }
 
 
 def run_baseline(query: str, policy: Any) -> str:
     response = policy(
         [
-            {"role": "system", "content": _BASELINE_SYSTEM},
+            {"role": "system", "content": BASELINE_SYSTEM_PROMPT},
             {"role": "user", "content": query},
         ]
     )
@@ -77,16 +73,6 @@ def run_baseline(query: str, policy: Any) -> str:
     if not content or content.lstrip().lower().startswith("error:"):
         raise RuntimeError(content or "baseline returned empty content")
     return content
-
-
-def _select_questions(bench: ResearchBench, args: argparse.Namespace) -> list[dict[str, Any]]:
-    if args.question_ids:
-        by_id = {question["id"]: question for question in bench.questions}
-        missing = [question_id for question_id in args.question_ids if question_id not in by_id]
-        if missing:
-            raise ValueError(f"Unknown ResearchBench question IDs: {', '.join(missing)}")
-        return [by_id[question_id] for question_id in args.question_ids]
-    return bench.get_questions(n=args.num_questions)
 
 
 def _copy_evidence_artifact(
@@ -102,7 +88,7 @@ def _copy_evidence_artifact(
     shutil.copyfile(source, target)
     payload = target.read_text(encoding="utf-8")
     try:
-        portable_path = target.resolve().relative_to(Path.cwd().resolve()).as_posix()
+        portable_path = target.resolve().relative_to(PROJECT_ROOT).as_posix()
     except ValueError:
         portable_path = target.resolve().as_posix()
     return {"path": portable_path, "sha256": sha256_text(payload)}
@@ -115,41 +101,38 @@ def _counterbalanced_judge(
     baseline_report: str,
     query: str,
     ground_truth: dict[str, Any],
-    orders: int,
-    reverse_first: bool,
+    presentation_orders: list[dict[str, str]],
 ) -> dict[str, Any]:
-    presentations = [
-        ({"A": "agent", "B": "baseline"}, agent_report, baseline_report),
-        ({"A": "baseline", "B": "agent"}, baseline_report, agent_report),
-    ]
-    if orders == 1 and reverse_first:
-        presentations.reverse()
+    reports = {"agent": agent_report, "baseline": baseline_report}
     judgments = []
-    for order, report_a, report_b in presentations[:orders]:
+    for order in presentation_orders:
         judgments.append(
             {
-                "order": order,
-                "result": judge.compare_two(report_a, report_b, query, ground_truth),
+                "order": dict(order),
+                "result": judge.compare_two(
+                    reports[order["A"]],
+                    reports[order["B"]],
+                    query,
+                    ground_truth,
+                ),
             }
         )
     return normalize_counterbalanced_judgments(judgments)
 
 
-def _has_requested_judgments(
+def _has_complete_judgments(
     row: dict[str, Any],
     backend: str,
-    orders: int,
+    expected_orders: list[dict[str, str]],
 ) -> bool:
     judge_result = row.get("judge", {})
-    if judge_result.get("orders_completed", 0) < orders:
+    if [item.get("order") for item in judge_result.get("raw", [])] != expected_orders:
         return False
     successful = [
-        item.get("result", {})
-        for item in judge_result.get("raw", [])
-        if not item.get("result", {}).get("error")
+        item.get("result", {}) for item in judge_result.get("raw", []) if not item.get("result", {}).get("error")
     ]
-    return len(successful) >= orders and all(
-        result.get("judge_backend") == backend for result in successful[:orders]
+    return len(successful) == len(expected_orders) and all(
+        result.get("judge_backend") == backend for result in successful
     )
 
 
@@ -174,16 +157,15 @@ def _mean(values: list[float]) -> float | None:
 def _build_artifact(
     *,
     rows: list[dict[str, Any]],
-    question_ids: list[str],
-    backend: str,
-    model_name: str,
-    baseline_sampling: dict[str, Any],
-    judge_backend: str | None,
-    judge_orders: int,
-    seed: int,
+    preregistration: dict[str, Any],
     started_at: str,
 ) -> dict[str, Any]:
+    question_ids = list(preregistration["question_ids"])
+    systems = preregistration["systems"]
+    judge_spec = preregistration["judge"]
+    analysis = preregistration["analysis"]
     valid_rows = [row for row in rows if row.get("status") == "complete"]
+    seed = int(analysis["bootstrap_seed"])
     metric_summaries = {
         metric: paired_summary(
             valid_rows,
@@ -214,35 +196,35 @@ def _build_artifact(
         "primary_source_ratio",
         "fulltext_source_ratio",
     )
-    evidence_summary = {
-        key: _mean(_values(valid_rows, "agent", "evidence_metrics", key))
-        for key in evidence_keys
-    }
     return {
-        "artifact_schema": ARTIFACT_SCHEMA,
+        "artifact_schema": HEADTOHEAD_ARTIFACT_SCHEMA,
         "status": "complete" if completed == len(question_ids) else "in_progress",
+        "preregistration_sha256": preregistration["fingerprint_sha256"],
+        "agent_configuration_sha256": systems["agent_configuration_sha256"],
         "evaluation_version": RESEARCHBENCH_EVALUATION_VERSION,
         "metric_weights": RESEARCHBENCH_METRIC_WEIGHTS,
         "protocol": {
-            "pairing": "same ResearchBench questions",
-            "agent": "full orchestrated retrieval and evidence pipeline",
-            "baseline": "same base model, one API call, no tools or retrieval",
+            "pairing": "same frozen ResearchBench questions",
+            "agent": systems["agent"],
+            "baseline": systems["baseline"],
+            "baseline_prompt_sha256": systems["baseline_prompt_sha256"],
+            "judge_implementation_sha256": judge_spec["implementation_sha256"],
             "report_retention": "exact Markdown reports and SHA-256 hashes",
-            "execution_failures": "excluded from quality pairs and reported separately",
-            "judge": (
-                f"{judge_backend}, {judge_orders} counterbalanced presentation order(s)"
-                if judge_backend and judge_orders
-                else "disabled"
-            ),
-            "bootstrap_seed": seed,
+            "execution_failures": analysis["missing_pair_policy"],
+            "run_level_retry_policy": analysis["run_level_retry_policy"],
+            "stopping_rule": analysis["stopping_rule"],
+            "primary_endpoint": analysis["primary_endpoint"],
+            "secondary_endpoint": analysis["secondary_endpoint"],
         },
         "models": {
-            "agent_backend": backend,
-            "agent_model": model_name,
-            "baseline_backend": backend,
-            "baseline_model": model_name,
-            "baseline_sampling": baseline_sampling,
-            "judge_backend": judge_backend,
+            "agent_backend": systems["backend"],
+            "agent_model": systems["model"],
+            "baseline_backend": systems["backend"],
+            "baseline_model": systems["model"],
+            "baseline_sampling": systems["effective_sampling"],
+            "judge_backend": judge_spec["backend"],
+            "judge_model": judge_spec["model"],
+            "judge_effective_sampling": judge_spec["effective_sampling"],
         },
         "question_ids": question_ids,
         "started_at": started_at,
@@ -254,20 +236,16 @@ def _build_artifact(
             "rule_composite": rule_summary,
             "rule_metrics": metric_summaries,
             "llm_judge": judge_summary if judge_summary["n_pairs"] else None,
-            "agent_evidence": evidence_summary,
+            "agent_evidence": {
+                key: _mean(_values(valid_rows, "agent", "evidence_metrics", key)) for key in evidence_keys
+            },
             "latency_seconds": {
-                "agent_mean": _mean(
-                    _values(valid_rows, "agent", "runtime", "elapsed_seconds")
-                ),
-                "baseline_mean": _mean(
-                    _values(valid_rows, "baseline", "runtime", "elapsed_seconds")
-                ),
+                "agent_mean": _mean(_values(valid_rows, "agent", "runtime", "elapsed_seconds")),
+                "baseline_mean": _mean(_values(valid_rows, "baseline", "runtime", "elapsed_seconds")),
             },
             "api_total_tokens": {
                 "agent_mean": _mean(_values(valid_rows, "agent", "usage", "total_tokens")),
-                "baseline_mean": _mean(
-                    _values(valid_rows, "baseline", "usage", "total_tokens")
-                ),
+                "baseline_mean": _mean(_values(valid_rows, "baseline", "usage", "total_tokens")),
                 "judge_mean": _mean(_values(valid_rows, "judge_usage", "total_tokens")),
             },
             "failed_questions": [row["qid"] for row in rows if row.get("status") != "complete"],
@@ -275,95 +253,158 @@ def _build_artifact(
     }
 
 
+def _write_checkpoint(
+    output_path: Path,
+    rows: list[dict[str, Any]],
+    preregistration: dict[str, Any],
+    started_at: str,
+) -> dict[str, Any]:
+    artifact = _build_artifact(
+        rows=rows,
+        preregistration=preregistration,
+        started_at=started_at,
+    )
+    audit = audit_headtohead_artifact(
+        artifact,
+        preregistration,
+        project_root=PROJECT_ROOT,
+    )
+    if not audit["valid"]:
+        raise ValueError("Checkpoint audit failed: " + "; ".join(audit["errors"]))
+    atomic_write_json(output_path, artifact)
+    return artifact
+
+
 async def main() -> None:
-    parser = argparse.ArgumentParser(description="Agent vs one-call LLM auditable evaluation")
-    parser.add_argument("--num_questions", type=int, default=15)
-    parser.add_argument("--question_ids", nargs="*", default=None)
+    parser = argparse.ArgumentParser(description="Run the frozen Agent-vs-one-call head-to-head protocol")
     parser.add_argument("--config", type=str, default=None)
-    parser.add_argument("--output", type=str, default="outputs/evaluation/headtohead_v3.json")
+    parser.add_argument(
+        "--preregistration",
+        type=str,
+        default="docs/evaluation/headtohead_v4_preregistration.json",
+    )
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="outputs/evaluation/headtohead_v4.json",
+    )
     parser.add_argument("--reports_dir", type=str, default=None)
-    parser.add_argument("--judge_backend", type=str, default=None)
-    parser.add_argument("--judge_orders", type=int, choices=(0, 1, 2), default=2)
-    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
-    parser.add_argument("--log_level", choices=("DEBUG", "INFO", "WARNING", "ERROR"), default="INFO")
+    parser.add_argument(
+        "--log_level",
+        choices=("DEBUG", "INFO", "WARNING", "ERROR"),
+        default="INFO",
+    )
     args = parser.parse_args()
 
     setup_logging(args.log_level)
+    preregistration = load_preregistration(args.preregistration)
+    systems = preregistration["systems"]
+    judge_spec = preregistration["judge"]
+    backend = str(systems["backend"])
+
     config = load_config(args.config)
-    backend = config.get("model", {}).get("backend", "kimi")
-    baseline_sampling = _sampling_for_baseline(config, backend)
-    baseline_policy = ModelRouter.create_backend(
+    configure_single_backend(config, backend)
+    effective_modules = effective_module_policies(config, backend)
+    agent_config = evaluation_config_snapshot(
+        config,
         backend,
-        use_cache=False,
-        **baseline_sampling,
+        effective_module_policies=effective_modules,
     )
-    judge = LLMJudge(args.judge_backend) if args.judge_backend and args.judge_orders else None
+    if sha256_text(canonical_json(agent_config)) != systems["agent_configuration_sha256"]:
+        raise ValueError("Current Agent configuration differs from preregistration")
+
+    baseline_policy = create_policy(config, backend, "summarizer")
+    if baseline_policy.model_name != systems["model"]:
+        raise ValueError("Current baseline model differs from preregistration")
+    if policy_identity(baseline_policy) != systems["effective_sampling"]:
+        raise ValueError("Current baseline sampling differs from preregistration")
+
+    judge_policy = ModelRouter.create_backend(
+        str(judge_spec["backend"]),
+        use_cache=False,
+    )
+    if judge_policy.model_name != judge_spec["model"]:
+        raise ValueError("Current Judge model differs from preregistration")
+    if policy_identity(judge_policy) != judge_spec["effective_sampling"]:
+        raise ValueError("Current Judge sampling differs from preregistration")
+    judge = LLMJudge(str(judge_spec["backend"]), policy=judge_policy)
 
     bench = ResearchBench()
-    questions = _select_questions(bench, args)
-    question_ids = [question["id"] for question in questions]
+    bench.questions = copy.deepcopy(preregistration["questions"])
+    questions = bench.questions
+    question_ids = list(preregistration["question_ids"])
     output_path = Path(args.output)
     reports_dir = Path(args.reports_dir or output_path.with_suffix(""))
     started_at = _utc_now()
     rows_by_id: dict[str, dict[str, Any]] = {}
     if args.resume and output_path.is_file():
         existing = json.loads(output_path.read_text(encoding="utf-8"))
-        if existing.get("artifact_schema") != ARTIFACT_SCHEMA:
-            raise ValueError(f"Cannot resume incompatible artifact: {output_path}")
+        audit = audit_headtohead_artifact(
+            existing,
+            preregistration,
+            project_root=PROJECT_ROOT,
+        )
+        if not audit["valid"]:
+            raise ValueError("Cannot resume invalid artifact: " + "; ".join(audit["errors"]))
         started_at = existing.get("started_at", started_at)
         rows_by_id = {row["qid"]: row for row in existing.get("rows", [])}
 
     print(
-        f"[H2H] {len(questions)} questions | agent vs one-call {backend} | "
-        f"judge={args.judge_backend or 'off'}"
+        f"[H2H v4] {len(questions)} frozen questions | {backend}/{systems['model']} | "
+        f"judge={judge_spec['backend']}/{judge_spec['model']}"
     )
 
     for index, question in enumerate(questions, 1):
         qid, query = question["id"], question["query"]
+        schedule = preregistration["schedule"][qid]
         existing_row = rows_by_id.get(qid, {})
-        if existing_row.get("status") == "complete":
-            if judge is not None and not _has_requested_judgments(
-                existing_row, args.judge_backend, args.judge_orders
+        has_retained_pair = all(existing_row.get(role, {}).get("report") for role in ("agent", "baseline"))
+        if existing_row and has_retained_pair:
+            if _has_complete_judgments(
+                existing_row,
+                str(judge_spec["backend"]),
+                schedule["judge_orders"],
             ):
-                agent_report = load_report_artifact(existing_row["agent"]["report"])
-                baseline_report = load_report_artifact(existing_row["baseline"]["report"])
-                before = VLLMPolicy.global_usage_snapshot()
-                existing_row["judge"] = await asyncio.to_thread(
-                    _counterbalanced_judge,
-                    judge,
-                    agent_report=agent_report,
-                    baseline_report=baseline_report,
-                    query=query,
-                    ground_truth=question.get("ground_truth", {}),
-                    orders=args.judge_orders,
-                    reverse_first=(index + args.seed) % 2 == 0,
-                )
-                existing_row["judge_usage"] = usage_delta(
-                    before, VLLMPolicy.global_usage_snapshot()
-                )
-                rows_by_id[qid] = existing_row
-                ordered_rows = [rows_by_id[item] for item in question_ids if item in rows_by_id]
-                atomic_write_json(
-                    output_path,
-                    _build_artifact(
-                        rows=ordered_rows,
-                        question_ids=question_ids,
-                        backend=backend,
-                        model_name=baseline_policy.model_name,
-                        baseline_sampling=baseline_sampling,
-                        judge_backend=args.judge_backend,
-                        judge_orders=args.judge_orders,
-                        seed=args.seed,
-                        started_at=started_at,
-                    ),
-                )
-                print(
-                    f"[{index}/{len(questions)}] {qid} reports resumed; "
-                    f"judge orders={existing_row['judge']['orders_completed']}"
-                )
-            else:
                 print(f"[{index}/{len(questions)}] {qid} resumed")
+                continue
+            agent_report = load_report_artifact(existing_row["agent"]["report"])
+            baseline_report = load_report_artifact(existing_row["baseline"]["report"])
+            before = VLLMPolicy.global_usage_snapshot()
+            existing_row["judge"] = await asyncio.to_thread(
+                _counterbalanced_judge,
+                judge,
+                agent_report=agent_report,
+                baseline_report=baseline_report,
+                query=query,
+                ground_truth=question.get("ground_truth", {}),
+                presentation_orders=schedule["judge_orders"],
+            )
+            existing_row["judge_usage"] = usage_delta(before, VLLMPolicy.global_usage_snapshot())
+            agent_status = existing_row.get("agent", {}).get("runtime", {}).get("run_status")
+            existing_row["status"] = (
+                "complete"
+                if agent_status == "complete"
+                and _has_complete_judgments(
+                    existing_row,
+                    str(judge_spec["backend"]),
+                    schedule["judge_orders"],
+                )
+                else agent_status or "partial"
+            )
+            rows_by_id[qid] = existing_row
+            ordered = [rows_by_id[item] for item in question_ids if item in rows_by_id]
+            _write_checkpoint(output_path, ordered, preregistration, started_at)
+            print(
+                f"[{index}/{len(questions)}] {qid} reports resumed; "
+                f"judge orders={existing_row['judge']['orders_completed']}"
+            )
+            continue
+        if existing_row:
+            print(
+                f"[{index}/{len(questions)}] {qid} retained as "
+                f"{existing_row.get('status', 'failed')}; frozen pair is not replaced"
+            )
             continue
 
         print(f"[{index}/{len(questions)}] {qid}")
@@ -371,9 +412,7 @@ async def main() -> None:
             "qid": qid,
             "domain": question.get("domain", ""),
             "query": query,
-            "generation_order": ["agent", "baseline"]
-            if (index + args.seed) % 2
-            else ["baseline", "agent"],
+            "generation_order": list(schedule["generation_order"]),
             "errors": [],
         }
         agent_report = ""
@@ -386,7 +425,7 @@ async def main() -> None:
                 if system_name == "agent":
                     modules = initialize_modules(
                         config,
-                        session_id=f"h2h_v3_{qid}_{time.time_ns()}",
+                        session_id=f"h2h_v4_{qid}_{time.time_ns()}",
                     )
                     agent_report, metadata = await run_research_with_metadata(query, config, modules)
                     audit = metadata.pop("evidence_audit", {})
@@ -402,9 +441,7 @@ async def main() -> None:
                             question_id=qid,
                             system_name="agent",
                         ),
-                        "evidence_artifact": _copy_evidence_artifact(
-                            evidence_path, reports_dir, qid
-                        ),
+                        "evidence_artifact": _copy_evidence_artifact(evidence_path, reports_dir, qid),
                     }
                 else:
                     baseline_report = await asyncio.to_thread(run_baseline, query, baseline_policy)
@@ -419,15 +456,16 @@ async def main() -> None:
                             system_name="baseline",
                         ),
                     }
-            except Exception as exc:
-                row["errors"].append(f"{system_name}: {type(exc).__name__}: {exc}")
+            except Exception as exc:  # noqa: BLE001 - retain failed frozen pairs
+                message = f"{system_name}: {type(exc).__name__}: {exc}"
+                row["errors"].append(message)
                 row[system_name] = {
-                    "error": f"{type(exc).__name__}: {exc}",
+                    "error": message,
                     "runtime": {"elapsed_seconds": round(time.monotonic() - started, 4)},
                     "usage": usage_delta(before, VLLMPolicy.global_usage_snapshot()),
                 }
 
-        if judge is not None and agent_report and baseline_report:
+        if agent_report and baseline_report:
             before = VLLMPolicy.global_usage_snapshot()
             row["judge"] = await asyncio.to_thread(
                 _counterbalanced_judge,
@@ -436,56 +474,53 @@ async def main() -> None:
                 baseline_report=baseline_report,
                 query=query,
                 ground_truth=question.get("ground_truth", {}),
-                orders=args.judge_orders,
-                reverse_first=(index + args.seed) % 2 == 0,
+                presentation_orders=schedule["judge_orders"],
             )
             row["judge_usage"] = usage_delta(before, VLLMPolicy.global_usage_snapshot())
 
-        agent_run_status = row.get("agent", {}).get("runtime", {}).get("run_status")
+        agent_status = row.get("agent", {}).get("runtime", {}).get("run_status")
         if not agent_report or not baseline_report:
             row["status"] = "failed"
-        elif agent_run_status != "complete":
-            row["status"] = agent_run_status or "partial"
+        elif agent_status != "complete":
+            row["status"] = agent_status or "partial"
+        elif not _has_complete_judgments(
+            row,
+            str(judge_spec["backend"]),
+            schedule["judge_orders"],
+        ):
+            row["status"] = "judge_incomplete"
         else:
             row["status"] = "complete"
+
         rows_by_id[qid] = row
-        ordered_rows = [rows_by_id[item] for item in question_ids if item in rows_by_id]
-        artifact = _build_artifact(
-            rows=ordered_rows,
-            question_ids=question_ids,
-            backend=backend,
-            model_name=baseline_policy.model_name,
-            baseline_sampling=baseline_sampling,
-            judge_backend=args.judge_backend,
-            judge_orders=args.judge_orders if judge is not None else 0,
-            seed=args.seed,
-            started_at=started_at,
+        ordered = [rows_by_id[item] for item in question_ids if item in rows_by_id]
+        _write_checkpoint(output_path, ordered, preregistration, started_at)
+        print(
+            f"    rule agent={row.get('agent', {}).get('rule', {}).get('composite_score')} "
+            f"baseline={row.get('baseline', {}).get('rule', {}).get('composite_score')} "
+            f"status={row['status']}"
         )
-        atomic_write_json(output_path, artifact)
-        agent_score = row.get("agent", {}).get("rule", {}).get("composite_score")
-        baseline_score = row.get("baseline", {}).get("rule", {}).get("composite_score")
-        print(f"    rule agent={agent_score} baseline={baseline_score} status={row['status']}")
 
     final_rows = [rows_by_id[item] for item in question_ids if item in rows_by_id]
-    artifact = _build_artifact(
-        rows=final_rows,
-        question_ids=question_ids,
-        backend=backend,
-        model_name=baseline_policy.model_name,
-        baseline_sampling=baseline_sampling,
-        judge_backend=args.judge_backend,
-        judge_orders=args.judge_orders if judge is not None else 0,
-        seed=args.seed,
-        started_at=started_at,
+    artifact = _write_checkpoint(output_path, final_rows, preregistration, started_at)
+    audit = audit_headtohead_artifact(
+        artifact,
+        preregistration,
+        project_root=PROJECT_ROOT,
+        require_complete=True,
     )
-    atomic_write_json(output_path, artifact)
     summary = artifact["summary"]["rule_composite"]
+    randomization = summary["paired_randomization_test"]
     print(
-        f"[H2H] complete={artifact['completed_questions']}/{artifact['num_questions']} | "
+        f"[H2H v4] complete={artifact['completed_questions']}/{artifact['num_questions']} | "
         f"delta={summary['bootstrap']['mean_diff']:+.4f} | "
         f"95% CI=[{summary['bootstrap']['ci_lower']:+.4f}, "
-        f"{summary['bootstrap']['ci_upper']:+.4f}] | {output_path}"
+        f"{summary['bootstrap']['ci_upper']:+.4f}] | "
+        f"exact p={randomization['p_value']:.6f} | audit={audit['valid']} | "
+        f"{output_path}"
     )
+    if not audit["valid"]:
+        raise SystemExit("Final preregistered experiment is incomplete or invalid")
 
 
 if __name__ == "__main__":

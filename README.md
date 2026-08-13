@@ -5,8 +5,8 @@
 ### Evidence-grounded multi-agent deep research
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
-[![Version](https://img.shields.io/badge/version-0.4.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-281%20passing-brightgreen.svg)](tests/unit)
+[![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
+[![Tests](https://img.shields.io/badge/tests-290%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -52,11 +52,14 @@ HTML or PDF full text rather than treating an abstract as a complete paper.
   usage are persisted in a WAL-mode SQLite ledger; interrupted processes are
   recovered explicitly instead of appearing successful.
 - **Auditable evaluation**: paired generation, exact report retention, SHA-256
-  integrity checks, counterbalanced LLM-as-Judge, bootstrap intervals, effect
-  sizes, token/latency telemetry, resume-safe checkpoints, and real config ablations.
-- **Streaming observability**: the Gradio workspace projects typed events rather
-  than parsing logs. It exposes live DAG progress, Stop, evidence coverage,
-  unresolved claims, high-value sources, durable run history, and artifact replay.
+  integrity checks, counterbalanced LLM-as-Judge, paired effect sizes, exact
+  sign-flip tests, token/latency telemetry, resume-safe checkpoints, and real
+  config ablations. The frozen n=15 protocol binds questions, execution order,
+  models, effective sampling, prompts, configuration, and source implementation.
+- **Keyless verified demo**: the first Web UI tab replays a committed Kimi K3
+  report and evidence graph after checking every SHA-256; visitors can inspect a
+  real run without configuring a model key. Gradio is a thin adapter over the
+  framework-neutral `src.web.ResearchRunService` lifecycle.
 
 ## Architecture
 
@@ -169,6 +172,20 @@ therefore reports `p=1.0`, `method=insufficient_n`, and makes no general lift
 claim. Reports, evidence, hashes, telemetry, and raw Judge verdicts are in the
 [v3 pilot artifact](docs/evaluation/artifacts/headtohead_v3/headtohead_v3_pilot.json).
 
+### Preregistered n=15 Protocol
+
+The next confirmatory comparison is frozen before execution. It deterministically
+selects 15 questions across all 11 ResearchBench domains, fixes generation and
+both Judge presentation orders, requires the same Kimi K3 model for Agent and
+one-call baseline, and names rule composite as the primary endpoint. Effective
+provider sampling, the baseline prompt, Agent configuration, benchmark code, and
+Judge implementation are hash-bound in the
+[preregistration manifest](docs/evaluation/headtohead_v4_preregistration.json).
+
+The API-free auditor verifies artifact hashes, recomputes every rule and evidence
+metric from retained files, reconstructs paired summaries, and rejects reordered
+or replaced samples. This is a registered protocol, not a completed n=15 result.
+
 ### Real Module Ablation Diagnostic
 
 The executable `full` versus `no_evidence` smoke ablation did **not** show a
@@ -230,6 +247,9 @@ python scripts/run_webui.py
 # http://127.0.0.1:7860
 ```
 
+The default `验证样例` tab needs no API key. Live research still uses the selected
+configured backend.
+
 The workspace can stop an active run cooperatively, retain completed sub-task
 output, and reopen reports, evidence audits, event timelines, and token usage
 from `outputs/runs/runs.db`. The ledger stores metadata and artifact paths, not
@@ -248,13 +268,18 @@ pip install -r requirements-test.txt
 pytest tests/unit -q
 ```
 
-Run the corrected, resume-safe paired protocol:
+Run the frozen, resume-safe paired protocol (this makes paid model calls):
 
 ```bash
-python scripts/run_headtohead.py \
-  --num_questions 15 \
-  --judge_backend deepseek \
-  --output outputs/evaluation/headtohead_v3.json
+python scripts/run_headtohead.py
+```
+
+Audit a completed or partial artifact without model or network access:
+
+```bash
+python scripts/audit_headtohead.py \
+  outputs/evaluation/headtohead_v4.json \
+  --no-require-complete
 ```
 
 Replay an exact report/evidence pair without an LLM:
@@ -323,7 +348,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `281` API-free tests cover orchestration, cancellation, deadline propagation,
+- `290` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
@@ -342,6 +367,7 @@ YuResearchAgent/
 │   ├── compressor/           # multilevel long-context control
 │   ├── memory/               # scoped SQLite/vector memory
 │   ├── runtime/              # typed events, cancellation, run ledger, UI projection
+│   ├── web/                  # UI-neutral run service and verified demo loader
 │   └── models/               # OpenAI-compatible backend router
 ├── evaluation/               # benchmark contracts, metrics, Judge, statistics
 ├── scripts/                  # CLI, UI, evaluation, replay, GRPO PoC

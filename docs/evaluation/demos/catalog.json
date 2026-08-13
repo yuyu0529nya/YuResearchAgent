@@ -1,0 +1,37 @@
+{
+  "artifact_schema": "research-demo-catalog-v1",
+  "default_demo": "qwen25-primary-sources",
+  "demos": [
+    {
+      "id": "qwen25-primary-sources",
+      "title": "Kimi K3 · Qwen2.5 一手来源核验",
+      "query": "仅依据 Qwen2.5 技术报告等一手来源，核验并说明 Qwen2.5 的预训练 token 规模、上下文窗口和后训练方法；不讨论其他模型。",
+      "report": {
+        "path": "docs/evaluation/artifacts/evidence_v2/qwen25_agent.md",
+        "sha256": "88ceae351a6c4077585121130a495bdf61c48f9c479f8af17d843b42ac202e79"
+      },
+      "evidence": {
+        "path": "docs/evaluation/artifacts/evidence_v2/qwen25_evidence.json",
+        "sha256": "cf1f7fd4cf8876c049b87bebf395160e14dd494af44c822b4b53ea6ec2aca09a"
+      },
+      "audit": {
+        "path": "docs/evaluation/artifacts/evidence_v2/qwen25_replay_hybrid.json",
+        "sha256": "8edc9b2b83ec25006f8bd7d3bc5529c8a02369b2a65f6f5f7a89b38794e5555a"
+      },
+      "runtime": {
+        "backend": "kimi",
+        "model": "k3",
+        "run_status": "complete",
+        "elapsed_seconds": 352.7568,
+        "api_calls": 11,
+        "total_tokens": 41267,
+        "search_calls": 3,
+        "source_count": 3,
+        "evidence_count": 15,
+        "primary_source_ratio": 1.0,
+        "fulltext_source_ratio": 0.3333
+      },
+      "interpretation": "真实 Kimi K3 运行及独立语义复核回放；用于验证运行链路、来源和工件完整性，不是总体质量或多智能体增益基准。"
+    }
+  ]
+}

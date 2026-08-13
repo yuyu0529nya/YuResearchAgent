@@ -25,18 +25,20 @@ logger = logging.getLogger("judge")
 class LLMJudge:
     """基于 MiMo 2.5 Pro 的 LLM-as-Judge 评审器。"""
 
-    def __init__(self, backend: str = "mimo") -> None:
+    def __init__(self, backend: str = "mimo", policy: Any | None = None) -> None:
         """
         Args:
             backend: Judge 后端名称，对应 ModelRouter 注册的后端。
+            policy: 可选的已配置策略，供可复现实验显式注入。
         """
         self.backend = backend
-        self._policy = None
+        self._policy = policy
 
     def _get_policy(self):
         """惰性初始化 policy，避免在导入时触发网络请求。"""
         if self._policy is None:
             from src.models.model_router import ModelRouter
+
             self._policy = ModelRouter.create_backend(self.backend, use_cache=False)
         return self._policy
 
@@ -106,11 +108,7 @@ class LLMJudge:
 
             result = self._extract_json(content)
             if result:
-                scores = [
-                    v["score"]
-                    for v in result.values()
-                    if isinstance(v, dict) and "score" in v
-                ]
+                scores = [v["score"] for v in result.values() if isinstance(v, dict) and "score" in v]
                 avg = sum(scores) / len(scores) if scores else 0.0
                 dimensions = {k: v for k, v in result.items() if k != "overall"}
                 overall = result.get("overall", {"score": avg, "reason": ""})

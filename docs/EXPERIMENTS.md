@@ -68,6 +68,25 @@ the statistics layer emits `p=1.0` and `method=insufficient_n`. The exact report
 evidence graph, raw Judge decisions, token counts, and SHA-256 values are retained
 under `docs/evaluation/artifacts/headtohead_v3/`.
 
+## Preregistered Confirmatory Protocol
+
+The v4 manifest freezes 15 questions spanning all 11 ResearchBench domains. A
+domain quota is applied first, then SHA-256 ordering with seed 42 determines both
+membership and final sequence. It also freezes alternating Agent/baseline
+generation order, two counterbalanced Judge presentations, Kimi K3 effective
+sampling, DeepSeek Judge identity, Agent configuration, prompts, and evaluator
+implementation hashes.
+
+Primary endpoint: paired ResearchBench v2 composite difference. The confirmatory
+test is a one-sided exact paired sign-flip randomization test; paired Cohen's
+`d_z` and a 95% bootstrap interval are reported. Failed questions are retained,
+never imputed or replaced, and no result-dependent early stopping is allowed.
+
+Status: **preregistered, pending execution**. The manifest and API-free auditor
+are committed; no n=15 outcome is claimed yet.
+
+Manifest: `docs/evaluation/headtohead_v4_preregistration.json`.
+
 ## Real Kimi K3 Evidence Run And Replay
 
 Date: 2026-08-13. Query: verify Qwen2.5 pre-training scale, context windows,
@@ -154,8 +173,8 @@ online policy updates in the research-agent runtime.
 
 ## Next Required Experiments
 
-1. Rerun all 15 paired head-to-head questions under ResearchBench v2 and retain
-   both generated reports plus per-metric rows.
+1. Execute the frozen v4 n=15 protocol and publish the independently audited
+   result plus all retained reports and evidence artifacts.
 2. Compare `evidence.enabled`, evidence-gap rounds, and verification modes on a
    fixed set with source/citation precision, claim coverage, latency, and cost.
 3. Ablate evidence-bounded revision on that fixed set, retaining every original,

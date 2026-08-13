@@ -8,7 +8,13 @@ import os
 from pathlib import Path
 from typing import Any, Iterable
 
-from evaluation.metrics.stats import bootstrap_ci_paired, cohens_d, paired_t_test
+from evaluation.metrics.stats import (
+    bootstrap_ci_paired,
+    cohens_d,
+    cohens_dz,
+    paired_randomization_test,
+    paired_t_test,
+)
 
 
 def sha256_text(text: str) -> str:
@@ -103,8 +109,10 @@ def paired_summary(
         "left_mean": round(sum(left) / len(left), 4) if left else None,
         "right_mean": round(sum(right) / len(right), 4) if right else None,
         "cohens_d": round(cohens_d(left, right), 4),
+        "cohens_dz": round(cohens_dz(left, right), 4),
         "bootstrap": bootstrap,
         "paired_t_test": paired_t_test(left, right),
+        "paired_randomization_test": paired_randomization_test(differences, seed=seed),
         "n_pairs": len(left),
     }
 
@@ -142,9 +150,9 @@ def normalize_counterbalanced_judgments(
         normalized[dimension] = {
             "agent": round(agent_mean, 4) if agent_mean is not None else None,
             "baseline": round(baseline_mean, 4) if baseline_mean is not None else None,
-            "delta": round(agent_mean - baseline_mean, 4)
-            if agent_mean is not None and baseline_mean is not None
-            else None,
+            "delta": (
+                round(agent_mean - baseline_mean, 4) if agent_mean is not None and baseline_mean is not None else None
+            ),
         }
         all_agent.extend(agent_values)
         all_baseline.extend(baseline_values)
@@ -155,9 +163,11 @@ def normalize_counterbalanced_judgments(
         "dimensions": normalized,
         "agent_mean": round(agent_overall, 4) if agent_overall is not None else None,
         "baseline_mean": round(baseline_overall, 4) if baseline_overall is not None else None,
-        "delta": round(agent_overall - baseline_overall, 4)
-        if agent_overall is not None and baseline_overall is not None
-        else None,
+        "delta": (
+            round(agent_overall - baseline_overall, 4)
+            if agent_overall is not None and baseline_overall is not None
+            else None
+        ),
         "orders_completed": sum(1 for item in raw if not item.get("result", {}).get("error")),
         "raw": raw,
     }

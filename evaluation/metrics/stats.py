@@ -144,6 +144,21 @@ def cohens_d(scores_a: list[float], scores_b: list[float]) -> float:
     return float((np.mean(a_arr) - np.mean(b_arr)) / pooled_std)
 
 
+def cohens_dz(scores_a: list[float], scores_b: list[float]) -> float:
+    """Paired-sample Cohen's d_z using the standard deviation of differences."""
+    a_arr = np.asarray(scores_a, dtype=float)
+    b_arr = np.asarray(scores_b, dtype=float)
+    if a_arr.size != b_arr.size:
+        raise ValueError("paired effect size requires equal-length samples")
+    if a_arr.size < 2:
+        return 0.0
+    differences = a_arr - b_arr
+    standard_deviation = float(np.std(differences, ddof=1))
+    if standard_deviation < 1e-9:
+        return 0.0
+    return float(np.mean(differences) / standard_deviation)
+
+
 def paired_t_test(scores_a: list[float], scores_b: list[float]) -> dict[str, Any]:
     """配对 t 检验（假设差值近似正态）。作为 bootstrap 的补充。
 
@@ -183,3 +198,65 @@ def paired_t_test(scores_a: list[float], scores_b: list[float]) -> dict[str, Any
             "p_value": round(p_value, 4),
             "method": "normal_approx_no_scipy",
         }
+
+
+def paired_randomization_test(
+    diffs: list[float],
+    *,
+    alternative: str = "greater",
+    seed: int = 42,
+    n_permutations: int = 100000,
+) -> dict[str, Any]:
+    """Exact sign-flip randomization test for small paired evaluations.
+
+    Under the paired null, each observed difference can exchange system labels.
+    Enumerating every sign assignment is exact for the preregistered n=15 suite.
+    """
+    if alternative not in {"greater", "two-sided"}:
+        raise ValueError("alternative must be 'greater' or 'two-sided'")
+    values = np.asarray(diffs, dtype=float)
+    n = len(values)
+    if n < 2:
+        return {
+            "mean_diff": round(float(np.mean(values)), 4) if n else 0.0,
+            "p_value": 1.0,
+            "n": n,
+            "permutations": 1 if n else 0,
+            "alternative": alternative,
+            "method": "insufficient_n",
+        }
+    observed = float(np.mean(values))
+    extreme = 0
+    tolerance = 1e-12
+    if n <= 20:
+        total = 1 << n
+        for assignment in range(total):
+            signed_sum = 0.0
+            for index, value in enumerate(values):
+                signed_sum += value if assignment & (1 << index) else -value
+            statistic = signed_sum / n
+            if alternative == "greater":
+                extreme += statistic >= observed - tolerance
+            else:
+                extreme += abs(statistic) >= abs(observed) - tolerance
+        p_value = extreme / total
+        method = "exact_paired_sign_flip"
+    else:
+        total = max(1000, int(n_permutations))
+        rng = np.random.default_rng(seed)
+        signs = rng.choice((-1.0, 1.0), size=(total, n))
+        statistics = (signs * values).mean(axis=1)
+        if alternative == "greater":
+            extreme = int(np.sum(statistics >= observed - tolerance))
+        else:
+            extreme = int(np.sum(np.abs(statistics) >= abs(observed) - tolerance))
+        p_value = (extreme + 1) / (total + 1)
+        method = "monte_carlo_paired_sign_flip"
+    return {
+        "mean_diff": round(observed, 4),
+        "p_value": round(p_value, 6),
+        "n": n,
+        "permutations": total,
+        "alternative": alternative,
+        "method": method,
+    }

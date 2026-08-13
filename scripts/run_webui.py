@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-"""Streaming Gradio workspace with durable runs and cooperative cancellation."""
+"""Gradio adapter for the research runtime, history, and verified demos."""
+
 from __future__ import annotations
 
-import asyncio
-import json
-import queue
 import sys
-import threading
-import time
 from pathlib import Path
-from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
@@ -17,31 +12,22 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import gradio as gr
 
-from src.core.runner import (
-    initialize_modules,
-    load_config,
-    run_research_with_metadata,
-    save_report,
-    setup_logging,
-)
-from src.runtime import RunController, RunStore
+from src.core.runner import setup_logging
 from src.runtime.presentation import (
-    apply_run_event,
     history_choices,
-    new_run_view,
     render_evidence,
     render_history_summary,
     render_progress,
 )
+from src.web import DemoArtifact, DemoCatalog, ResearchRunService
 
-
-_MODULES = ["solver", "planner", "summarizer", "judge", "red_agent", "blue_agent", "compressor"]
 _INIT_HINT = "尚无运行。"
 _EVIDENCE_INIT = "证据审计尚未开始。"
-_RUN_STORE = RunStore(PROJECT_ROOT / "outputs" / "runs" / "runs.db")
-_RUN_CONTROLLER = RunController(_RUN_STORE)
-_REPORT_ROOT = (PROJECT_ROOT / "outputs" / "reports").resolve()
-_EVIDENCE_ROOT = (PROJECT_ROOT / "outputs" / "evidence").resolve()
+_SERVICE = ResearchRunService(PROJECT_ROOT)
+_DEMOS = DemoCatalog(
+    PROJECT_ROOT,
+    "docs/evaluation/demos/catalog.json",
+)
 
 _APP_CSS = """
 .gradio-container { max-width: 1480px !important; }
@@ -68,48 +54,17 @@ button, textarea, input { border-radius: 6px !important; }
 """
 
 
-def _safe_artifact_path(raw_path: str, allowed_root: Path) -> Path | None:
-    """Resolve a ledger path without allowing the history UI to expose other files."""
-    if not raw_path:
-        return None
-    candidate = Path(raw_path)
-    if not candidate.is_absolute():
-        candidate = PROJECT_ROOT / candidate
-    try:
-        resolved = candidate.resolve(strict=True)
-    except (OSError, RuntimeError):
-        return None
-    if not resolved.is_file() or not resolved.is_relative_to(allowed_root):
-        return None
-    return resolved
-
-
-def _evidence_from_artifact(raw_path: str) -> dict[str, Any]:
-    path = _safe_artifact_path(raw_path, _EVIDENCE_ROOT)
-    if path is None:
-        return {}
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return {}
-    audit = dict(payload.get("audit") or {})
-    audit["sources"] = list(payload.get("sources") or [])
-    audit["artifact"] = str(path)
-    audit["revision"] = dict(payload.get("run_metadata", {}).get("evidence_revision") or {})
-    return audit
-
-
 def _request_cancel(run_id: str):
-    requested = _RUN_CONTROLLER.cancel(run_id, "Cancelled from the Web UI.")
-    if requested:
+    outcome = _SERVICE.request_cancel(run_id)
+    if outcome == "requested":
         return "`STOPPING` 当前调用结束后停止，并保留已完成结果。", gr.update(interactive=False)
-    if run_id and _RUN_STORE.get_run(run_id):
+    if outcome == "terminal":
         return "该运行已结束或正在停止。", gr.update(interactive=False)
     return "没有可停止的运行。", gr.update(interactive=False)
 
 
 def do_research_stream(query: str, backend: str, use_adversarial: bool):
-    """Yield structured progress, report, audit, artifact, and UI control state."""
+    """Project framework-neutral run updates into Gradio component values."""
     query = str(query or "").strip()
     if not query:
         yield (
@@ -124,205 +79,91 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
         )
         return
 
-    cfg = load_config()
-    cfg.setdefault("model", {})["backend"] = backend
-    cfg["model"]["backend_mapping"] = {module: backend for module in _MODULES}
-    cfg.setdefault("adversarial", {})["enabled"] = bool(use_adversarial)
-
-    handle = _RUN_CONTROLLER.create_run(
-        query=query,
-        backend=backend,
-        adversarial=bool(use_adversarial),
-    )
-    holder: dict[str, Any] = {}
-
-    def _worker() -> None:
-        try:
-            modules = initialize_modules(
-                cfg,
-                session_id=handle.run_id,
-                run_id=handle.run_id,
-                event_sink=_RUN_CONTROLLER.event_sink,
-                cancellation_token=handle.token,
-            )
-            report, metadata = asyncio.run(run_research_with_metadata(query, cfg, modules))
-            evidence = modules["orchestrator"].get_evidence_snapshot()
-            report_path = save_report(
-                report,
-                query,
-                output_dir=str(_REPORT_ROOT),
-            )
-            status = str(metadata.get("run_status") or "complete")
-            _RUN_STORE.complete_run(
-                handle.run_id,
-                status=status,
-                report_path=report_path,
-                evidence_path=str(metadata.get("evidence_artifact") or ""),
-                metadata=metadata,
-            )
-            holder.update(
-                {
-                    "report": report,
-                    "metadata": metadata,
-                    "evidence": evidence,
-                    "download": report_path,
-                }
-            )
-        except Exception as exc:  # noqa: BLE001 - all failures must reach UI and ledger
-            error = f"{type(exc).__name__}: {exc}"
-            holder["error"] = error
-            _RUN_STORE.fail_run(handle.run_id, error)
-        finally:
-            _RUN_CONTROLLER.finish(handle.run_id)
-
-    worker = threading.Thread(
-        target=_worker,
-        name=f"research-{handle.run_id}",
-        daemon=True,
-    )
-    started = time.monotonic()
-    view = new_run_view()
-    worker.start()
-
-    controls_running = (
-        gr.update(interactive=False),
-        gr.update(interactive=True),
-    )
-    yield (
-        render_progress(
-            view,
-            elapsed=0.0,
-            backend=backend,
-            adversarial=use_adversarial,
-            run_id=handle.run_id,
-        ),
-        "",
-        _EVIDENCE_INIT,
-        None,
-        handle.run_id,
-        *controls_running,
-        "",
-    )
-
-    while worker.is_alive() or not handle.events.empty():
-        changed = False
-        while True:
-            try:
-                event = handle.events.get_nowait()
-            except queue.Empty:
-                break
-            apply_run_event(view, event)
-            changed = True
-        if handle.token.is_cancelled and view.get("status") == "running":
-            view["status"] = "cancelling"
-            changed = True
-
-        elapsed = time.monotonic() - started
-        if changed or worker.is_alive():
-            controls_current = (
-                gr.update(interactive=False),
-                gr.update(interactive=not handle.token.is_cancelled),
-            )
-            yield (
-                render_progress(
-                    view,
-                    elapsed=elapsed,
-                    backend=backend,
-                    adversarial=use_adversarial,
-                    run_id=handle.run_id,
-                ),
-                "",
-                render_evidence(view.get("evidence")),
-                None,
-                handle.run_id,
-                *controls_current,
-                (
-                    "`STOPPING` 当前调用结束后停止，并保留已完成结果。"
-                    if handle.token.is_cancelled
-                    else ""
-                ),
-            )
-        if worker.is_alive():
-            time.sleep(0.35)
-
-    worker.join(timeout=1.0)
-    elapsed = time.monotonic() - started
-    controls_done = (
-        gr.update(interactive=True),
-        gr.update(interactive=False),
-    )
-    if holder.get("error"):
-        view["status"] = "failed"
+    for update in _SERVICE.stream(query, backend, bool(use_adversarial)):
+        status = str(update.view.get("status") or "running")
+        stopping = status == "cancelling"
+        notice = ""
+        if stopping:
+            notice = "`STOPPING` 当前调用结束后停止，并保留已完成结果。"
+        if update.error:
+            notice = f"**运行失败**：{update.error}"
         yield (
             render_progress(
-                view,
-                elapsed=elapsed,
-                backend=backend,
-                adversarial=use_adversarial,
-                run_id=handle.run_id,
+                update.view,
+                elapsed=update.elapsed_seconds,
+                backend=update.backend,
+                adversarial=update.adversarial,
+                run_id=update.run_id,
             ),
-            "",
-            render_evidence(view.get("evidence")),
-            None,
-            handle.run_id,
-            *controls_done,
-            f"**运行失败**：{holder['error']}",
+            update.report,
+            render_evidence(update.evidence),
+            update.download_path,
+            update.run_id,
+            gr.update(interactive=update.terminal),
+            gr.update(interactive=not update.terminal and not stopping),
+            notice,
         )
-        return
-
-    metadata = dict(holder.get("metadata") or {})
-    view["status"] = str(metadata.get("run_status") or view.get("status") or "complete")
-    final_evidence = holder.get("evidence")
-    if isinstance(final_evidence, dict) and final_evidence:
-        view["evidence"] = final_evidence
-    yield (
-        render_progress(
-            view,
-            elapsed=elapsed,
-            backend=backend,
-            adversarial=use_adversarial,
-            run_id=handle.run_id,
-        ),
-        str(holder.get("report") or "（无报告）"),
-        render_evidence(view.get("evidence")),
-        holder.get("download"),
-        handle.run_id,
-        *controls_done,
-        "",
-    )
 
 
 def _load_history_run(run_id: str):
-    row = _RUN_STORE.get_run(str(run_id or ""))
-    if not row:
+    artifact = _SERVICE.load_history(str(run_id or ""))
+    if artifact is None:
         return "暂无运行记录。", "", _EVIDENCE_INIT, None
-    events = _RUN_STORE.get_events(row["run_id"])
-    summary = render_history_summary(row, events)
-    report_path = _safe_artifact_path(str(row.get("report_path") or ""), _REPORT_ROOT)
-    try:
-        report = report_path.read_text(encoding="utf-8") if report_path else ""
-    except OSError:
-        report = ""
-    evidence = _evidence_from_artifact(str(row.get("evidence_path") or ""))
-    if not evidence:
-        evidence = dict(row.get("metadata", {}).get("evidence_summary") or {})
-        evidence["source_count"] = int(row.get("source_count", 0) or 0)
-        evidence["revision"] = dict(
-            row.get("metadata", {}).get("evidence_revision") or {}
-        )
-    return summary, report, render_evidence(evidence), str(report_path) if report_path else None
+    return (
+        render_history_summary(artifact.row, artifact.events),
+        artifact.report,
+        render_evidence(artifact.evidence),
+        artifact.download_path,
+    )
 
 
 def _refresh_history(selected_run_id: str = ""):
-    rows = _RUN_STORE.list_runs(limit=50)
-    choices = history_choices(rows)
+    choices = history_choices(_SERVICE.list_history(limit=50))
     available = {value for _, value in choices}
     selected = selected_run_id if selected_run_id in available else (choices[0][1] if choices else None)
     summary, report, evidence, download = _load_history_run(selected or "")
     return gr.update(choices=choices, value=selected), summary, report, evidence, download
 
 
+def _render_demo_summary(demo: DemoArtifact) -> str:
+    runtime = demo.runtime
+    return "\n".join(
+        [
+            "### VERIFIED · COMPLETE",
+            "",
+            f"**{demo.query}**",
+            "",
+            "| 运行指标 | 结果 |",
+            "|---|---:|",
+            f"| 后端 / 模型 | `{runtime.get('backend', '')}` / `{runtime.get('model', '')}` |",
+            f"| 总耗时 | {float(runtime.get('elapsed_seconds', 0.0) or 0.0):.1f}s |",
+            f"| LLM API 调用 | {int(runtime.get('api_calls', 0) or 0)} |",
+            f"| Provider tokens | {int(runtime.get('total_tokens', 0) or 0):,} |",
+            f"| 搜索调用 | {int(runtime.get('search_calls', 0) or 0)} |",
+            f"| 来源 / 证据块 | {int(runtime.get('source_count', 0) or 0)} / "
+            f"{int(runtime.get('evidence_count', 0) or 0)} |",
+            f"| 原始来源 | {float(runtime.get('primary_source_ratio', 0.0) or 0.0):.1%} |",
+            f"| 全文来源 | {float(runtime.get('fulltext_source_ratio', 0.0) or 0.0):.1%} |",
+            "",
+            "`SHA-256 VERIFIED`",
+            "",
+            demo.interpretation,
+        ]
+    )
+
+
+def _load_demo(demo_id: str):
+    demo = _DEMOS.load(str(demo_id or _DEMOS.default_id))
+    return (
+        _render_demo_summary(demo),
+        demo.report,
+        render_evidence(demo.evidence),
+        demo.report_path,
+    )
+
+
 def build_ui() -> gr.Blocks:
+    default_demo = _DEMOS.load(_DEMOS.default_id)
     with gr.Blocks(title="YuResearchAgent") as demo:
         active_run_id = gr.State("")
         gr.Markdown(
@@ -331,6 +172,27 @@ def build_ui() -> gr.Blocks:
         )
 
         with gr.Tabs():
+            with gr.Tab("验证样例"):
+                demo_select = gr.Dropdown(
+                    choices=_DEMOS.choices(),
+                    value=_DEMOS.default_id,
+                    label="不可变运行工件",
+                )
+                with gr.Row(equal_height=False):
+                    with gr.Column(scale=2, min_width=300):
+                        demo_summary = gr.Markdown(value=_render_demo_summary(default_demo))
+                    with gr.Column(scale=5):
+                        with gr.Tabs():
+                            with gr.Tab("样例报告"):
+                                demo_report = gr.Markdown(value=default_demo.report)
+                            with gr.Tab("证据复核"):
+                                demo_evidence = gr.Markdown(value=render_evidence(default_demo.evidence))
+                demo_download = gr.DownloadButton(
+                    "下载已验证报告",
+                    value=default_demo.report_path,
+                    elem_classes=["compact-action"],
+                )
+
             with gr.Tab("研究工作台"):
                 with gr.Row(elem_classes=["query-controls"]):
                     query = gr.Textbox(
@@ -409,6 +271,12 @@ def build_ui() -> gr.Blocks:
                     elem_classes=["compact-action"],
                 )
 
+        demo_select.change(
+            _load_demo,
+            inputs=[demo_select],
+            outputs=[demo_summary, demo_report, demo_evidence, demo_download],
+            show_progress="hidden",
+        )
         research_event = start_button.click(
             do_research_stream,
             inputs=[query, backend, use_adv],
@@ -479,7 +347,7 @@ def build_ui() -> gr.Blocks:
 
 if __name__ == "__main__":
     setup_logging("INFO")
-    recovered = _RUN_STORE.recover_interrupted()
+    recovered = _SERVICE.recover_interrupted()
     if recovered:
         print(f"Recovered {recovered} interrupted run(s) in the local ledger.")
     build_ui().queue(default_concurrency_limit=4).launch(
