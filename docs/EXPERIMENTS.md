@@ -158,7 +158,9 @@ online policy updates in the research-agent runtime.
    both generated reports plus per-metric rows.
 2. Compare `evidence.enabled`, evidence-gap rounds, and verification modes on a
    fixed set with source/citation precision, claim coverage, latency, and cost.
-3. Add a small expert-authored binary-rubric subset modeled after DeepResearch
+3. Ablate evidence-bounded revision on that fixed set, retaining every original,
+   candidate, gate decision, final report, and API-cost delta.
+4. Add a small expert-authored binary-rubric subset modeled after DeepResearch
    Bench II, without claiming compatibility with that benchmark.
-4. Preserve per-question GRPO predictions so paired tests can be computed rather
+5. Preserve per-question GRPO predictions so paired tests can be computed rather
    than inferred from aggregate accuracies.

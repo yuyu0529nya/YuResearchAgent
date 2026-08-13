@@ -9,7 +9,7 @@ import asyncio
 import time
 from types import SimpleNamespace
 
-from src.evidence import ClaimVerifier, EvidenceKind, EvidenceStore
+from src.evidence import ClaimVerifier, EvidenceKind, EvidenceStore, RevisionDraft
 from src.orchestrator.orchestrator import Orchestrator
 from src.orchestrator.schemas import AgentResult, AgentStatus, ResearchReport, RunConfig
 
@@ -221,3 +221,136 @@ def test_run_config_has_final_audit_reserve() -> None:
     )
 
     assert run_config.final_audit_reserve_seconds == 27
+
+
+def test_run_config_maps_evidence_revision_controls() -> None:
+    from src.core.runner import build_run_config
+
+    run_config = build_run_config(
+        {
+            "evidence": {
+                "enabled": True,
+                "revision": {
+                    "enabled": False,
+                    "trigger_coverage": 0.7,
+                    "min_coverage_gain": 0.08,
+                    "min_claim_retention": 0.75,
+                    "timeout_seconds": 23,
+                },
+            }
+        }
+    )
+
+    assert run_config.enable_evidence_revision is False
+    assert run_config.evidence_revision_trigger_coverage == 0.7
+    assert run_config.evidence_revision_min_coverage_gain == 0.08
+    assert run_config.evidence_revision_min_claim_retention == 0.75
+    assert run_config.evidence_revision_timeout_seconds == 23
+
+
+def test_evidence_refinement_accepts_supported_revision() -> None:
+    store = EvidenceStore(persist_enabled=False)
+    source = store.upsert_source(url="https://example.com/model", title="Model card")
+    store.add_evidence(
+        source.source_id,
+        "The model supports a context window of 128K tokens.",
+        EvidenceKind.FULL_TEXT,
+    )
+    original = (
+        "# Findings\n\n"
+        "The model supports a context window of 128K tokens [1].\n\n"
+        "An unrelated product claim has no supporting source [1].\n\n"
+        "## References\n\n[1] Model card - https://example.com/model"
+    )
+    revised = (
+        "# Findings\n\n"
+        "The model supports a context window of 128K tokens [1].\n\n"
+        "## References\n\n[1] Model card - https://example.com/model"
+    )
+
+    class _Reviser:
+        @staticmethod
+        def revise(**_kwargs):
+            return RevisionDraft(content=revised, valid=True, reason="ok")
+
+    o = Orchestrator(
+        planner=None,
+        agent_pool=None,
+        evidence_store=store,
+        evidence_verifier=ClaimVerifier(support_threshold=0.2),
+        evidence_reviser=_Reviser(),
+    )
+    o._query = "q"
+    o._config = RunConfig(
+        global_timeout_seconds=60,
+        enable_evidence=True,
+        enable_evidence_revision=True,
+        evidence_revision_trigger_coverage=0.9,
+        evidence_revision_min_coverage_gain=0.01,
+        evidence_revision_min_claim_retention=0.5,
+    )
+    o._start_time = time.monotonic()
+    report = ResearchReport(
+        query="q",
+        content=original,
+        sources=[{"source_id": source.source_id, "url": source.url}],
+        confidence=0.8,
+    )
+    o._memory_store["final_report"] = report
+
+    state = asyncio.run(o._do_evidence_refining())
+
+    assert state.value == "done"
+    assert report.content == revised
+    assert report.evidence_revision["accepted"] is True
+    assert report.evidence_revision["after"]["coverage"] > report.evidence_revision["before"]["coverage"]
+
+
+def test_evidence_refinement_rolls_back_invalid_revision() -> None:
+    store = EvidenceStore(persist_enabled=False)
+    source = store.upsert_source(url="https://example.com/model", title="Model card")
+    store.add_evidence(
+        source.source_id,
+        "The model supports a context window of 128K tokens.",
+        EvidenceKind.FULL_TEXT,
+    )
+    original = (
+        "# Findings\n\n"
+        "The model supports a context window of 128K tokens [1].\n\n"
+        "An unrelated product claim has no supporting source [1].\n\n"
+        "## References\n\n[1] Model card - https://example.com/model"
+    )
+
+    class _Reviser:
+        @staticmethod
+        def revise(**_kwargs):
+            return RevisionDraft(content="short", valid=False, reason="too short")
+
+    o = Orchestrator(
+        planner=None,
+        agent_pool=None,
+        evidence_store=store,
+        evidence_verifier=ClaimVerifier(support_threshold=0.2),
+        evidence_reviser=_Reviser(),
+    )
+    o._query = "q"
+    o._config = RunConfig(
+        global_timeout_seconds=60,
+        enable_evidence=True,
+        enable_evidence_revision=True,
+        evidence_revision_trigger_coverage=0.9,
+    )
+    o._start_time = time.monotonic()
+    report = ResearchReport(
+        query="q",
+        content=original,
+        sources=[{"source_id": source.source_id, "url": source.url}],
+        confidence=0.8,
+    )
+    o._memory_store["final_report"] = report
+
+    asyncio.run(o._do_evidence_refining())
+
+    assert report.content == original
+    assert report.evidence_revision["accepted"] is False
+    assert report.evidence_revision["reason"] == "too short"

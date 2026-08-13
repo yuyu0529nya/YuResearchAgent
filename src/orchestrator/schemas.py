@@ -27,9 +27,10 @@ __all__ = [
 # ============================================================================
 
 class OrchestratorState(Enum):
-    """M1 编排层 9 状态状态机。
+    """M1 编排层 10 状态状态机。
 
-    正常流: IDLE → PLANNING → DISPATCHING → COLLECTING → SYNTHESIZING → ADVERSARIAL → DONE
+    正常流: IDLE → PLANNING → DISPATCHING → COLLECTING → SYNTHESIZING
+            → ADVERSARIAL（可选）→ EVIDENCE_REFINING → DONE
     异常流:
       - 局部失败 → REPLANNING (增量重规划) → DISPATCHING
       - 全局失败 / 超过最大重规划次数 → FAILED
@@ -40,6 +41,7 @@ class OrchestratorState(Enum):
     COLLECTING = "collecting"
     SYNTHESIZING = "synthesizing"
     ADVERSARIAL = "adversarial"
+    EVIDENCE_REFINING = "evidence_refining"
     REPLANNING = "replanning"
     DONE = "done"
     FAILED = "failed"
@@ -124,6 +126,7 @@ class ResearchReport:
         final_score: 最终综合评分（由外部评测模块写入）。
         evidence_audit: claim 级证据覆盖与三态核验结果。
         evidence_artifact: 可复现的证据图 JSON 路径。
+        evidence_revision: 终审驱动修订的前后指标、哈希和验收结果。
         evidence_gap_rounds: 因证据不足触发的补充检索轮数。
         run_status: complete / partial_timeout / partial_failure / failed，区分完整与降级输出。
     """
@@ -137,6 +140,7 @@ class ResearchReport:
     final_score: float = 0.0
     evidence_audit: dict[str, Any] = field(default_factory=dict)
     evidence_artifact: str = ""
+    evidence_revision: dict[str, Any] = field(default_factory=dict)
     evidence_gap_rounds: int = 0
     run_status: str = "complete"
 
@@ -166,6 +170,11 @@ class RunConfig:
     max_evidence_gap_rounds: int = 1
     max_evidence_gap_tasks: int = 2
     min_evidence_coverage: float = 0.55
-    synthesis_reserve_seconds: float = 110.0
+    synthesis_reserve_seconds: float = 130.0
     evidence_gap_min_seconds: float = 100.0
-    final_audit_reserve_seconds: float = 35.0
+    final_audit_reserve_seconds: float = 70.0
+    enable_evidence_revision: bool = True
+    evidence_revision_trigger_coverage: float = 0.80
+    evidence_revision_min_coverage_gain: float = 0.03
+    evidence_revision_min_claim_retention: float = 0.60
+    evidence_revision_timeout_seconds: float = 40.0

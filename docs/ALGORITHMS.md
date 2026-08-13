@@ -14,6 +14,8 @@ evaluation protocol are actually present.
 | [FS-Researcher](https://arxiv.org/abs/2602.01566) | Durable workspace beyond the context window | SQLite memory plus JSON evidence artifacts with stable IDs and hashes | Partial; artifacts are durable, but workers do not navigate a hierarchical file workspace |
 | [ReSum](https://arxiv.org/abs/2509.13313) | Compress long trajectories into reusable reasoning state | Budget-triggered relevance filtering, TextRank extraction, and LLM summary before synthesis | Partial; periodic trajectory checkpointing and ReSum-GRPO are not implemented |
 | [DeepResearch Bench II](https://arxiv.org/abs/2601.08536) | Atomic, verifiable report diagnostics | Canonical factual metric, claim-level audit, separate rule/Judge layers | Methodological influence; the local 35-question suite is not benchmark-equivalent |
+| [RARR](https://arxiv.org/abs/2210.08726) | Research, attribute, then edit unsupported output while preserving its useful content | Final ClaimVerifier feedback becomes one evidence-bounded revision draft; deterministic coverage and retention gates decide accept/rollback | Partial; no RARR question-generation, evidence-agreement model, or paper evaluation protocol |
+| [CRITIC](https://arxiv.org/abs/2305.11738) | Use external-tool feedback to critique and amend an initial generation | Retrieved chunks and source-bounded verdicts provide external feedback before one report revision | Partial; not a progressive, task-general tool-interactive correction loop |
 
 ## 1. Claim-Evidence-Source Graph
 
@@ -111,7 +113,49 @@ not be repeated as facts. Unresolved claims must be qualified or omitted. A
 final audit parses the generated report again with the exact bibliography order,
 and report confidence is multiplied by an evidence-coverage factor.
 
-## 5. Long-Context Control
+## 5. Evidence-Bounded Revision And Quality Gate
+
+Code: `src/evidence/reviser.py` and `src/orchestrator/orchestrator.py`.
+
+When the final audit remains below `evidence.revision.trigger_coverage`, the
+editor receives only the current report, ordered source catalog, claim verdicts,
+and bounded evidence excerpts. It may remove or qualify unsupported claims but
+cannot retrieve new information. The candidate is structurally rejected if it:
+
+- cites a source number outside the supplied catalog;
+- rebinds a source number to another URL;
+- omits an in-text citation from the normalized reference list;
+- loses the Markdown report structure or shrinks below the configured length
+  ratio.
+
+Every structurally valid draft is re-audited under the same deterministic
+verifier as the original. Acceptance requires:
+
+```text
+claims_after >= ceil(claims_before * min_claim_retention)
+supported_after >= supported_before
+refuted_after <= refuted_before
+NEI_after <= NEI_before
+coverage_after >= coverage_before
+coverage_gain >= min_coverage_gain OR unresolved_after < unresolved_before
+```
+
+Previously supported findings are matched by material lexical overlap and shared
+support edges so a model cannot replace one supported statement with an unrelated
+supported statement. Failed gates preserve the original report. The evidence
+artifact records the original/candidate SHA-256 values, pre/post metrics, gate
+decision, and final report hash.
+
+The revision prompt also has an explicit character budget below the model
+wrapper's truncation threshold. Source metadata and evidence are serialized as
+bounded, untrusted JSON records; an oversized original report causes a safe
+rollback instead of a partial-context rewrite.
+
+This is inspired by RARR's preservation-aware post-editing and CRITIC's use of
+external feedback. It is an independent bounded implementation, not a reproduction
+of either paper's models or evaluation.
+
+## 6. Long-Context Control
 
 Code: `src/compressor/` and `src/memory/embedder.py`.
 
@@ -128,7 +172,7 @@ hashing over English words/bigrams and Chinese 2/3-grams. It preserves lexical
 similarity and is deterministic; it does not pretend to provide semantic model
 quality.
 
-## 6. Evaluation Algorithms
+## 7. Evaluation Algorithms
 
 Code: `evaluation/metrics/`, `evaluation/report_sampling.py`, and
 `evaluation/benchmarks/research_bench.py`.
@@ -161,6 +205,8 @@ the CLI can pin the SHA-256 of both input files before recomputing verdicts.
 - A learned retrieval policy or test-time compute controller.
 - CAGE's trained cognitive-map induction and structured citation model.
 - WebWeaver's continuously revised, section-level dynamic outline.
+- RARR's learned agreement/edit decomposition or CRITIC's progressive
+  task-general tool loop.
 - ReSum-GRPO or an online update from research trajectories to the live policy.
 - DeepResearch Bench II's 9,430 expert-reviewed binary rubrics.
 - A statistically valid rerun of Agent versus single-shot under the corrected

@@ -1,8 +1,9 @@
 """
 YuResearchAgent — 核心编排器 (M1: Multi-Agent Orchestrator)
 
-9 状态状态机驱动的异步任务编排引擎：
-  IDLE → PLANNING → DISPATCHING → COLLECTING → SYNTHESIZING → ADVERSARIAL → DONE
+10 状态状态机驱动的异步任务编排引擎：
+  IDLE → PLANNING → DISPATCHING → COLLECTING → SYNTHESIZING
+       → ADVERSARIAL（可选）→ EVIDENCE_REFINING → DONE
   失败时进入 REPLANNING，最终可进入 FAILED。
 
 设计亮点:
@@ -15,6 +16,7 @@ from __future__ import annotations
 
 import asyncio
 import copy
+import hashlib
 import logging
 import time
 from typing import Any, Callable
@@ -72,6 +74,7 @@ class Orchestrator:
         summarizer_policy: Any | None = None,
         evidence_store: Any | None = None,
         evidence_verifier: Any | None = None,
+        evidence_reviser: Any | None = None,
     ) -> None:
         self.planner = planner
         self.agent_pool = agent_pool
@@ -82,6 +85,7 @@ class Orchestrator:
         self.summarizer_policy = summarizer_policy
         self.evidence_store = evidence_store
         self.evidence_verifier = evidence_verifier
+        self.evidence_reviser = evidence_reviser
 
         # 运行时状态（保留 dict 作为快速缓存，M4 提供持久化 + 语义检索）
         self._memory_store: dict[str, Any] = {}
@@ -106,6 +110,7 @@ class Orchestrator:
             OrchestratorState.COLLECTING: self._do_collecting,
             OrchestratorState.SYNTHESIZING: self._do_synthesizing,
             OrchestratorState.ADVERSARIAL: self._do_adversarial,
+            OrchestratorState.EVIDENCE_REFINING: self._do_evidence_refining,
             OrchestratorState.REPLANNING: self._do_replanning,
             OrchestratorState.DONE: self._on_done,
             OrchestratorState.FAILED: self._on_failed,
@@ -146,7 +151,13 @@ class Orchestrator:
         while self._current_state not in (OrchestratorState.DONE, OrchestratorState.FAILED):
             # 全局超时检查
             if self._is_global_timeout():
-                if self._all_results or self._results:
+                if self._memory_store.get("final_report") is not None:
+                    logger.warning(
+                        "[Orchestrator] Global budget expired after report generation; "
+                        "preserving the synthesized report and using the local audit fallback"
+                    )
+                    self._current_state = OrchestratorState.DONE
+                elif self._all_results or self._results:
                     self._memory_store["final_report"] = self._build_timeout_report()
                     self._current_state = OrchestratorState.DONE
                 else:
@@ -171,7 +182,9 @@ class Orchestrator:
             report.num_replan = self._replan_count
             report.adversarial_rounds = self._adversarial_count
             report.evidence_gap_rounds = self._evidence_gap_rounds
-            if self._config.enable_evidence:
+            # Evidence refinement already audits the exact text users receive.
+            # The fallback keeps timeout/legacy state transitions auditable.
+            if self._config.enable_evidence and not report.evidence_audit:
                 await self._finalize_evidence(report)
 
             # M4: 将最终报告存入 SharedMemoryStore
@@ -219,6 +232,7 @@ class Orchestrator:
         snapshot["gap_rounds"] = self._evidence_gap_rounds
         report = self._memory_store.get("final_report")
         snapshot["artifact"] = getattr(report, "evidence_artifact", "") if report is not None else ""
+        snapshot["revision"] = getattr(report, "evidence_revision", {}) if report is not None else {}
         return snapshot
 
     # ------------------------------------------------------------------
@@ -533,7 +547,7 @@ class Orchestrator:
             logger.info("[Synthesize] ✓ 报告合成完成，进入对抗优化")
             return OrchestratorState.ADVERSARIAL
         logger.info("[Synthesize] ✓ 报告合成完成")
-        return OrchestratorState.DONE
+        return self._post_generation_state()
 
     async def _do_adversarial(self) -> OrchestratorState:
         """M5: Red-Blue 对抗降噪循环。
@@ -543,23 +557,23 @@ class Orchestrator:
         """
         report = self._memory_store.get("final_report")
         if report is None:
-            return OrchestratorState.DONE
+            return self._post_generation_state()
 
         # 置信度足够高时跳过对抗
         if report.confidence >= 0.8:
             logger.info("[Adversarial] ✓ 报告置信度已达标 (≥0.8)，跳过对抗优化")
-            return OrchestratorState.DONE
+            return self._post_generation_state()
 
         if self.adversarial_loop is None:
             logger.info("[Adversarial] AdversarialLoop 未配置，跳过")
-            return OrchestratorState.DONE
+            return self._post_generation_state()
 
         # 剩余全局时间预算：对抗循环是单个长状态，不限时会绕过状态机层面的全局超时检查，
         # 故用 asyncio.wait_for 显式套上剩余预算，避免限流重试时跑失控（实测曾达 1394s）。
         remaining = self._config.global_timeout_seconds - (time.monotonic() - self._start_time)
         if remaining <= 0:
             logger.warning("[Adversarial] 全局时间已耗尽，跳过对抗优化")
-            return OrchestratorState.DONE
+            return self._post_generation_state()
 
         try:
             logger.info(
@@ -591,6 +605,163 @@ class Orchestrator:
         except Exception as e:
             logger.warning(f"[Adversarial] ✗ 对抗优化失败: {e}，使用原始报告")
 
+        return self._post_generation_state()
+
+    def _post_generation_state(self) -> OrchestratorState:
+        if (
+            self._config.enable_evidence
+            and self.evidence_store is not None
+            and self.evidence_verifier is not None
+        ):
+            return OrchestratorState.EVIDENCE_REFINING
+        return OrchestratorState.DONE
+
+    async def _do_evidence_refining(self) -> OrchestratorState:
+        """Audit the final text, optionally revise it, then accept only a better draft."""
+        report = self._memory_store.get("final_report")
+        if report is None:
+            return OrchestratorState.DONE
+
+        # Acceptance uses a deterministic audit. Hybrid verification is also
+        # computed once here so cross-language evidence is not mislabeled as NEI
+        # in the editor prompt; it remains the final audit when no edit is used.
+        before_gate_audit = await self._audit_report_text(report, use_hybrid=False)
+        if before_gate_audit is None:
+            return OrchestratorState.DONE
+        before_audit = await self._audit_report_text(report, use_hybrid=True) or before_gate_audit
+
+        report.evidence_audit = before_audit.to_dict(self.evidence_store.evidence)
+        self._evidence_audit = before_audit
+        should_revise = (
+            self._config.enable_evidence_revision
+            and self.evidence_reviser is not None
+            and before_audit.claims
+            and before_audit.coverage < self._config.evidence_revision_trigger_coverage
+            and (before_audit.refuted_count > 0 or before_audit.nei_count > 0)
+        )
+        if not should_revise:
+            report.evidence_revision = {
+                "attempted": False,
+                "accepted": False,
+                "reason": "Revision trigger was not met.",
+                "before": self._audit_metrics(before_audit),
+                "after": self._audit_metrics(before_audit),
+            }
+            await self._commit_evidence_audit(report, before_audit)
+            logger.info(
+                "[EvidenceRevision] skipped | coverage=%.1f%% | unresolved=%d",
+                before_audit.coverage * 100,
+                before_audit.refuted_count + before_audit.nei_count,
+            )
+            return OrchestratorState.DONE
+
+        remaining = self._remaining_seconds()
+        timeout = min(self._config.evidence_revision_timeout_seconds, max(0.0, remaining - 2.0))
+        if timeout < 1.0:
+            report.evidence_revision = {
+                "attempted": False,
+                "accepted": False,
+                "reason": "Insufficient global time remained for evidence revision.",
+                "before": self._audit_metrics(before_audit),
+                "after": self._audit_metrics(before_audit),
+            }
+            await self._commit_evidence_audit(report, before_audit)
+            return OrchestratorState.DONE
+
+        original_content = report.content
+        sources = list(report.sources or self.evidence_store.to_source_dicts())
+        logger.info(
+            "[EvidenceRevision] starting | coverage=%.1f%% | refuted=%d | NEI=%d | budget=%.0fs",
+            before_audit.coverage * 100,
+            before_audit.refuted_count,
+            before_audit.nei_count,
+            timeout,
+        )
+        try:
+            draft = await asyncio.wait_for(
+                asyncio.to_thread(
+                    self.evidence_reviser.revise,
+                    query=self._query,
+                    content=original_content,
+                    audit=report.evidence_audit,
+                    sources=sources,
+                ),
+                timeout=timeout,
+            )
+        except asyncio.TimeoutError:
+            draft = None
+            rejection_reason = "Evidence revision timed out."
+        except Exception as exc:
+            draft = None
+            rejection_reason = f"Evidence revision failed: {type(exc).__name__}: {exc}"
+        else:
+            rejection_reason = draft.reason if not draft.valid else ""
+
+        if draft is None or not draft.valid:
+            revision_metadata = {
+                "attempted": True,
+                "accepted": False,
+                "reason": rejection_reason,
+                "before": self._audit_metrics(before_audit),
+                "after": self._audit_metrics(before_audit),
+                "original_sha256": self._text_sha256(original_content),
+            }
+            if draft is not None and draft.content:
+                revision_metadata["candidate_sha256"] = self._text_sha256(draft.content)
+            report.evidence_revision = revision_metadata
+            await self._commit_evidence_audit(report, before_audit)
+            logger.warning("[EvidenceRevision] rejected before re-audit: %s", rejection_reason)
+            return OrchestratorState.DONE
+
+        # Keep the acceptance pass deterministic. Hybrid verdict noise must not
+        # decide whether a model-authored revision replaces the original report.
+        after_gate_audit = await self._audit_report_text_content(draft.content, report, use_hybrid=False)
+        if after_gate_audit is None:
+            report.evidence_revision = {
+                "attempted": True,
+                "accepted": False,
+                "reason": "The revision could not be re-audited.",
+                "before": self._audit_metrics(before_audit),
+                "after": self._audit_metrics(before_audit),
+                "original_sha256": self._text_sha256(original_content),
+                "candidate_sha256": self._text_sha256(draft.content),
+            }
+            await self._commit_evidence_audit(report, before_audit)
+            return OrchestratorState.DONE
+
+        from ..evidence import evaluate_revision
+
+        decision = evaluate_revision(
+            before_gate_audit,
+            after_gate_audit,
+            min_coverage_gain=self._config.evidence_revision_min_coverage_gain,
+            min_claim_retention=self._config.evidence_revision_min_claim_retention,
+        )
+        report.evidence_revision = {
+            "attempted": True,
+            "accepted": decision.accepted,
+            "reason": decision.reason,
+            "before": decision.before,
+            "after": decision.after,
+            "original_sha256": self._text_sha256(original_content),
+            "candidate_sha256": self._text_sha256(draft.content),
+        }
+        accepted_audit = before_audit
+        if decision.accepted:
+            report.content = draft.content
+            accepted_audit = after_gate_audit
+            logger.info(
+                "[EvidenceRevision] accepted | coverage %.1f%% -> %.1f%% | claims %d -> %d",
+                before_gate_audit.coverage * 100,
+                after_gate_audit.coverage * 100,
+                len(before_gate_audit.claims),
+                len(after_gate_audit.claims),
+            )
+        else:
+            logger.warning("[EvidenceRevision] rejected by quality gate: %s", decision.reason)
+
+        accepted_audit = await self._audit_report_text(report, use_hybrid=True) or accepted_audit
+        await self._commit_evidence_audit(report, accepted_audit)
         return OrchestratorState.DONE
 
     async def _do_replanning(self) -> OrchestratorState:
@@ -828,43 +999,7 @@ class Orchestrator:
     async def _finalize_evidence(self, report: ResearchReport) -> None:
         if self.evidence_store is None or self.evidence_verifier is None:
             return
-        audit = None
-        remaining = self._remaining_seconds()
-        if report.content:
-            try:
-                # Always audit the text users actually receive. The heuristic
-                # pass is local and bounded, so it remains valid even when the
-                # network/LLM budget was exhausted during synthesis. Hybrid
-                # refinement is enabled only when enough global budget remains.
-                audit = await asyncio.to_thread(
-                    self.evidence_verifier.audit_text,
-                    report.content,
-                    self.evidence_store,
-                    "final_report",
-                    [source.get("source_id", "") for source in report.sources],
-                    use_llm=False,
-                )
-                if (
-                    self.evidence_verifier.mode == "hybrid"
-                    and self.evidence_verifier.policy is not None
-                    and remaining > 5
-                ):
-                    hybrid_timeout = min(60.0, max(1.0, remaining - 2.0))
-                    audit = await asyncio.wait_for(
-                        asyncio.to_thread(
-                            self.evidence_verifier.audit_text,
-                            report.content,
-                            self.evidence_store,
-                            "final_report",
-                            [source.get("source_id", "") for source in report.sources],
-                            use_llm=True,
-                        ),
-                        timeout=hybrid_timeout,
-                    )
-            except asyncio.TimeoutError:
-                logger.warning("[Evidence] hybrid final audit timed out; using heuristic final audit")
-            except Exception as exc:
-                logger.warning("[Evidence] final report audit failed: %s", exc)
+        audit = await self._audit_report_text(report, use_hybrid=True)
         if audit is None and self._evidence_audit is not None:
             logger.warning(
                 "[Evidence] no final-text audit available; falling back to pre-synthesis audit"
@@ -872,13 +1007,83 @@ class Orchestrator:
             audit = self._evidence_audit
         if audit is None:
             return
+        await self._commit_evidence_audit(report, audit)
+
+    async def _audit_report_text(
+        self,
+        report: ResearchReport,
+        *,
+        use_hybrid: bool,
+    ) -> Any | None:
+        return await self._audit_report_text_content(
+            report.content,
+            report,
+            use_hybrid=use_hybrid,
+        )
+
+    async def _audit_report_text_content(
+        self,
+        content: str,
+        report: ResearchReport,
+        *,
+        use_hybrid: bool,
+    ) -> Any | None:
+        if not content or self.evidence_store is None or self.evidence_verifier is None:
+            return None
+        citation_source_ids = [source.get("source_id", "") for source in report.sources]
+        try:
+            # Always produce a local result, even after the global network budget
+            # expires. Hybrid refinement may replace it only if time remains.
+            audit = await asyncio.to_thread(
+                self.evidence_verifier.audit_text,
+                content,
+                self.evidence_store,
+                "final_report",
+                citation_source_ids,
+                use_llm=False,
+            )
+            remaining = self._remaining_seconds()
+            if (
+                use_hybrid
+                and self.evidence_verifier.mode == "hybrid"
+                and self.evidence_verifier.policy is not None
+                and remaining > 5
+            ):
+                hybrid_timeout = min(20.0, max(1.0, remaining - 2.0))
+                try:
+                    audit = await asyncio.wait_for(
+                        asyncio.to_thread(
+                            self.evidence_verifier.audit_text,
+                            content,
+                            self.evidence_store,
+                            "final_report",
+                            citation_source_ids,
+                            use_llm=True,
+                        ),
+                        timeout=hybrid_timeout,
+                    )
+                except asyncio.TimeoutError:
+                    logger.warning("[Evidence] hybrid final audit timed out; using heuristic audit")
+            return audit
+        except Exception as exc:
+            logger.warning("[Evidence] report audit failed: %s", exc)
+            return None
+
+    async def _commit_evidence_audit(self, report: ResearchReport, audit: Any) -> None:
         self._evidence_audit = audit
         report.evidence_audit = audit.to_dict(self.evidence_store.evidence)
         if audit.claims:
             evidence_factor = 0.7 + 0.3 * audit.coverage
             report.confidence = round(report.confidence * evidence_factor, 2)
         try:
-            report.evidence_artifact = self.evidence_store.persist(audit, query=self._query)
+            report.evidence_artifact = self.evidence_store.persist(
+                audit,
+                query=self._query,
+                metadata={
+                    "final_report_sha256": self._text_sha256(report.content),
+                    "evidence_revision": report.evidence_revision,
+                },
+            )
         except Exception as exc:
             logger.warning("[Evidence] failed to persist evidence artifact: %s", exc)
         logger.info(
@@ -888,6 +1093,16 @@ class Orchestrator:
             len(audit.claims),
             report.evidence_artifact or "disabled",
         )
+
+    @staticmethod
+    def _audit_metrics(audit: Any) -> dict[str, Any]:
+        from ..evidence import audit_summary
+
+        return audit_summary(audit)
+
+    @staticmethod
+    def _text_sha256(content: str) -> str:
+        return hashlib.sha256((content or "").encode("utf-8")).hexdigest()
 
     def _build_memory_context(self) -> str:
         """构建给 planner 的上下文摘要。

@@ -295,8 +295,9 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
     evidence_cfg = config.get("evidence", {})
     evidence_store = None
     evidence_verifier = None
+    evidence_reviser = None
     if evidence_cfg.get("enabled", True):
-        from src.evidence import ClaimVerifier, EvidenceStore
+        from src.evidence import ClaimVerifier, EvidenceReviser, EvidenceStore
 
         evidence_store = EvidenceStore(
             artifact_dir=evidence_cfg.get("artifact_dir", "outputs/evidence"),
@@ -310,6 +311,13 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
             max_claims=evidence_cfg.get("max_claims", 60),
             max_llm_claims=evidence_cfg.get("max_llm_claims", 12),
         )
+        revision_cfg = evidence_cfg.get("revision", {})
+        if revision_cfg.get("enabled", True):
+            evidence_reviser = EvidenceReviser(
+                modules.get("summarizer_policy", default_policy),
+                min_length_ratio=revision_cfg.get("min_length_ratio", 0.50),
+                max_prompt_chars=revision_cfg.get("max_prompt_chars", 32_000),
+            )
         logger.info("[Evidence] Claim-Evidence graph 已启用 (%s)", evidence_verifier.mode)
 
     orchestrator = Orchestrator(
@@ -322,6 +330,7 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
         summarizer_policy=modules.get("summarizer_policy", default_policy),
         evidence_store=evidence_store,
         evidence_verifier=evidence_verifier,
+        evidence_reviser=evidence_reviser,
     )
     modules["orchestrator"] = orchestrator
     logger.info("[M1] Orchestrator 模块已初始化")
@@ -357,14 +366,29 @@ def build_run_config(config: dict):
         max_evidence_gap_tasks=config.get("evidence", {}).get("max_gap_tasks", 2),
         min_evidence_coverage=config.get("evidence", {}).get("min_coverage", 0.55),
         synthesis_reserve_seconds=config.get("orchestrator", {}).get(
-            "synthesis_reserve_seconds", 110
+            "synthesis_reserve_seconds", 130
         ),
         final_audit_reserve_seconds=config.get("orchestrator", {}).get(
-            "final_audit_reserve_seconds", 35
+            "final_audit_reserve_seconds", 70
         ),
         evidence_gap_min_seconds=config.get("evidence", {}).get(
             "gap_min_seconds", 100
         ),
+        enable_evidence_revision=config.get("evidence", {}).get("revision", {}).get(
+            "enabled", True
+        ),
+        evidence_revision_trigger_coverage=config.get("evidence", {}).get(
+            "revision", {}
+        ).get("trigger_coverage", 0.80),
+        evidence_revision_min_coverage_gain=config.get("evidence", {}).get(
+            "revision", {}
+        ).get("min_coverage_gain", 0.03),
+        evidence_revision_min_claim_retention=config.get("evidence", {}).get(
+            "revision", {}
+        ).get("min_claim_retention", 0.60),
+        evidence_revision_timeout_seconds=config.get("evidence", {}).get(
+            "revision", {}
+        ).get("timeout_seconds", 40.0),
     )
 
 
@@ -442,6 +466,7 @@ async def run_research_with_metadata(
         ),
         "evidence_artifact": report.evidence_artifact,
         "evidence_audit": audit,
+        "evidence_revision": report.evidence_revision,
     }
     return final_report, metadata
 
@@ -512,6 +537,23 @@ def _format_report(report, elapsed: float) -> str:
                     f"{claim.get('text', '')}"
                 )
         lines.append("")
+
+    revision = report.evidence_revision or {}
+    if revision.get("attempted"):
+        before = revision.get("before", {})
+        after = revision.get("after", {})
+        verdict = "已采用" if revision.get("accepted") else "已回滚"
+        lines.extend([
+            "## 证据约束修订",
+            "",
+            f"- **验收结果**: {verdict}",
+            f"- **覆盖率变化**: {before.get('coverage', 0.0):.1%} → "
+            f"{after.get('coverage', 0.0):.1%}",
+            f"- **Claim 数量**: {before.get('claim_count', 0)} → "
+            f"{after.get('claim_count', 0)}",
+            f"- **门控说明**: {revision.get('reason', '')}",
+            "",
+        ])
 
     has_reference_section = re.search(
         r"^#{1,4}\s*(参考来源|参考文献|引用|references|bibliography|sources)\s*$",

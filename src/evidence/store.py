@@ -414,7 +414,12 @@ class EvidenceStore:
             if chunk.kind in (EvidenceKind.FULL_TEXT, EvidenceKind.FILE)
         }
 
-    def persist(self, audit: EvidenceAudit | None = None, query: str = "") -> str:
+    def persist(
+        self,
+        audit: EvidenceAudit | None = None,
+        query: str = "",
+        metadata: dict[str, Any] | None = None,
+    ) -> str:
         if not self.persist_enabled:
             return ""
         self.artifact_dir.mkdir(parents=True, exist_ok=True)
@@ -430,5 +435,7 @@ class EvidenceStore:
         }
         if audit is not None:
             payload["audit"] = audit.to_dict(self.evidence)
+        if metadata:
+            payload["run_metadata"] = metadata
         path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         return str(path)

@@ -5,8 +5,8 @@
 ### Evidence-grounded multi-agent deep research
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
-[![Version](https://img.shields.io/badge/version-0.2.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-242%20passing-brightgreen.svg)](tests/unit)
+[![Version](https://img.shields.io/badge/version-0.3.0-2f855a.svg)](pyproject.toml)
+[![Tests](https://img.shields.io/badge/tests-259%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -36,9 +36,13 @@ HTML or PDF full text rather than treating an abstract as a complete paper.
 - **Evidence-constrained synthesis**: the writer receives source title, authors,
   year, URL, source ID, and claim verdicts; it must use mapped `[N]` citations and
   generate a normalized bibliography.
-- **Long-horizon runtime**: a 9-state async orchestrator provides DAG scheduling,
+- **Audited revision loop**: final `REFUTED`/`NEI` claims can trigger one
+  evidence-bounded edit. A deterministic gate rejects citation rebinding,
+  supported-claim loss, contradiction growth, deletion gaming, or no measurable
+  support gain; rejected drafts are rolled back.
+- **Long-horizon runtime**: a 10-state async orchestrator provides DAG scheduling,
   worker isolation, bounded retries, replanning, partial-report fallback, and
-  separate reserves for synthesis and final audit.
+  separate reserves for synthesis, evidence revision, and final audit.
 - **Auditable evaluation**: paired generation, exact report retention, SHA-256
   integrity checks, counterbalanced LLM-as-Judge, bootstrap intervals, effect
   sizes, token/latency telemetry, resume-safe checkpoints, and real config ablations.
@@ -59,7 +63,12 @@ flowchart LR
     G --> O
     V --> S["Evidence-constrained synthesis"]
     S --> A["Final report audit"]
-    A --> R["Report + evidence artifact"]
+    A -->|"unsupported claims"| D["Bounded revision draft"]
+    D --> QG["Deterministic quality gate"]
+    QG -->|"accepted"| FA["Re-audit revised report"]
+    QG -->|"rejected"| RB["Rollback original report"]
+    FA --> R["Report + evidence artifact"]
+    RB --> R
 ```
 
 | Layer | Implementation |
@@ -69,7 +78,8 @@ flowchart LR
 | Evidence | typed schemas, canonical URLs, source dedupe, hashes, claim attribution edges |
 | Verification | lexical/numeric/polarity pass plus strict, source-bounded LLM entailment |
 | Context | feature-hash fallback, query-biased filtering, TextRank, hierarchical summary |
-| Synthesis | structured source catalog, verdict constraints, normalized references, final audit |
+| Synthesis | structured source catalog, verdict constraints, normalized references |
+| Post-generation | final audit, evidence-bounded revision, deterministic accept/rollback gate |
 | Evaluation | rule metrics, balanced Judge sampling, paired statistics, executable ablations |
 
 ## Paper-Grounded Design
@@ -84,6 +94,8 @@ The project adapts research ideas without claiming paper-equivalent reproduction
 | [FS-Researcher](https://arxiv.org/abs/2602.01566) | persistent SQLite memory and hashed evidence artifacts | not a full file-system agent |
 | [ReSum](https://arxiv.org/abs/2509.13313) | budget-triggered multilevel context compression | no periodic ReSum-GRPO policy update |
 | [DeepResearch Bench II](https://arxiv.org/abs/2601.08536) | atomic claim diagnosis and separate rule/Judge layers | local suite is not benchmark-equivalent |
+| [RARR](https://arxiv.org/abs/2210.08726) | post-edit unsupported text while preserving the original | one bounded full-report edit plus explicit retention and support gates; no RARR agreement model |
+| [CRITIC](https://arxiv.org/abs/2305.11738) | revise generation from external tool feedback | ClaimVerifier feedback drives one revision; no progressive multi-tool self-correction loop |
 
 The exact algorithm-to-code mapping is documented in
 [docs/ALGORITHMS.md](docs/ALGORITHMS.md). The
@@ -245,8 +257,8 @@ Core switches live in [configs/default.yaml](configs/default.yaml):
 orchestrator:
   max_concurrent: 2
   global_timeout_seconds: 480
-  synthesis_reserve_seconds: 110
-  final_audit_reserve_seconds: 35
+  synthesis_reserve_seconds: 130
+  final_audit_reserve_seconds: 70
 
 evidence:
   enabled: true
@@ -254,6 +266,11 @@ evidence:
   min_coverage: 0.55
   max_gap_rounds: 1
   max_gap_tasks: 2
+  revision:
+    enabled: true
+    trigger_coverage: 0.80
+    min_coverage_gain: 0.03
+    min_claim_retention: 0.60
 ```
 
 `memory.enabled`, `compressor.enable_multilevel`, `planner.enable_replan`,
@@ -273,9 +290,12 @@ evidence did not establish a quality gain.
   equivalent normalization.
 - Exact reports and evidence graphs are retained with integrity hashes; resume
   rejects missing or modified report artifacts.
+- Revision acceptance uses deterministic pre/post audits and rejects source-number
+  rebinding, unsupported-claim growth, supported-finding loss, and excessive
+  deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `242` API-free unit tests cover orchestration, parsing, retrieval, evidence,
+- `259` API-free tests cover orchestration, parsing, retrieval, evidence,
   metrics, replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
 
@@ -286,7 +306,7 @@ YuResearchAgent/
 ├── configs/                  # runtime and module configuration
 ├── src/
 │   ├── orchestrator/         # state machine, DAG execution, AgentPool
-│   ├── evidence/             # typed store, verifier, gap planner
+│   ├── evidence/             # typed store, verifier, gap planner, gated reviser
 │   ├── planner/              # planning and replanning
 │   ├── agents/               # researcher and constrained synthesizer
 │   ├── tools/                # search, papers, browser, files, code
@@ -304,8 +324,9 @@ YuResearchAgent/
 The engineering system is complete enough to run and audit, but the strongest
 scientific claim is still pending: a corrected, report-retaining n=15 rerun has
 not yet established that multi-agent execution beats the one-call baseline.
-The repository treats that as the next experiment rather than reusing an invalid
-historical significance result.
+The new audited revision loop is covered by deterministic regression tests but
+does not yet have a multi-question quality/cost ablation. The repository treats
+both as next experiments rather than inferring gains from architecture alone.
 
 ## License
 

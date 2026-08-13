@@ -11,6 +11,13 @@ from .schemas import (
 )
 from .store import EvidenceStore
 from .verifier import ClaimVerifier
+from .reviser import (
+    EvidenceReviser,
+    RevisionDecision,
+    RevisionDraft,
+    audit_summary,
+    evaluate_revision,
+)
 
 __all__ = [
     "ClaimRecord",
@@ -19,7 +26,12 @@ __all__ = [
     "EvidenceChunk",
     "EvidenceKind",
     "EvidenceStore",
+    "EvidenceReviser",
+    "RevisionDecision",
+    "RevisionDraft",
     "SourceRecord",
     "VerificationStatus",
+    "audit_summary",
     "build_evidence_gap_tasks",
+    "evaluate_revision",
 ]

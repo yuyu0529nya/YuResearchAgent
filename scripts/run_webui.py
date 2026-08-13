@@ -38,7 +38,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import gradio as gr
 
-from src.core.runner import initialize_modules, load_config, run_research, setup_logging
+from src.core.runner import initialize_modules, load_config, run_research, save_report, setup_logging
 
 _MODULES = ["solver", "planner", "summarizer", "judge", "red_agent", "blue_agent", "compressor"]
 
@@ -49,6 +49,7 @@ _STAGE_MAP = {
     "collecting": ("汇总", "收集各子任务结果"),
     "synthesizing": ("合成", "撰写结构化报告"),
     "adversarial": ("对抗精修", "Red-Blue 降噪"),
+    "evidence_refining": ("证据终审", "复核并门控证据约束修订"),
 }
 _INIT_HINT = "点击「开始研究」后，这里实时显示编排器状态机进度。"
 _EVIDENCE_INIT = "证据审计尚未开始。"
@@ -91,6 +92,7 @@ def _render_progress(
     pipeline = ["planning", "dispatching", "collecting", "synthesizing"]
     if adversarial:
         pipeline.append("adversarial")
+    pipeline.append("evidence_refining")
 
     if done:
         cur_idx = len(pipeline)
@@ -167,6 +169,8 @@ def _event_from_log(message: str) -> str | None:
         return message.split("]", 1)[1].strip()
     if message.startswith("[Evidence]"):
         return message.split("]", 1)[1].strip()
+    if message.startswith("[EvidenceRevision]"):
+        return message.split("]", 1)[1].strip()
     if message.startswith("[Replan]"):
         return message.split("]", 1)[1].strip()
     return None
@@ -213,13 +217,31 @@ def _render_evidence(evidence: dict | None) -> str:
             lines.append(f"- {link} · quality `{quality:.2f}`")
     if evidence.get("artifact"):
         lines.extend(["", f"审计文件：`{evidence['artifact']}`"])
+    revision = evidence.get("revision", {})
+    if revision.get("attempted"):
+        before = revision.get("before", {})
+        after = revision.get("after", {})
+        result = "采用" if revision.get("accepted") else "回滚"
+        lines.extend(
+            [
+                "",
+                "#### 证据约束修订",
+                "",
+                f"- 质量门控：**{result}**",
+                f"- 覆盖率：{before.get('coverage', 0.0):.1%} → "
+                f"{after.get('coverage', 0.0):.1%}",
+                f"- Claim：{before.get('claim_count', 0)} → "
+                f"{after.get('claim_count', 0)}",
+                f"- 原因：{revision.get('reason', '')}",
+            ]
+        )
     return "\n".join(lines)
 
 
 def do_research_stream(query: str, backend: str, use_adversarial: bool):
-    """Gradio 流式生成器：yield (进度, 报告, 证据审计)。"""
+    """Gradio 流式生成器：yield (进度, 报告, 证据审计, 下载文件)。"""
     if not query or not query.strip():
-        yield "请输入研究问题。", "", _EVIDENCE_INIT
+        yield "请输入研究问题。", "", _EVIDENCE_INIT, None
         return
 
     cfg = load_config()
@@ -241,6 +263,7 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
             modules = initialize_modules(cfg, session_id=f"webui_{time.time_ns()}")
             holder["report"] = asyncio.run(run_research(query, cfg, modules))
             holder["evidence"] = modules["orchestrator"].get_evidence_snapshot()
+            holder["download"] = save_report(str(holder["report"]), query)
         except Exception as e:  # noqa: BLE001  — 任何失败都回传 UI，不让线程静默死掉
             holder["error"] = f"{type(e).__name__}: {e}"
 
@@ -270,6 +293,7 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
                     ),
                     "",
                     _render_evidence(evidence_state),
+                    None,
                 )
                 continue
             _update_evidence_from_log(msg, evidence_state)
@@ -294,6 +318,7 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
                         ),
                         "",
                         _render_evidence(evidence_state),
+                        None,
                     )
         t.join(timeout=5)
     finally:
@@ -303,7 +328,7 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
     elapsed = time.time() - t0
     if "error" in holder:
         panel = _render_progress(current, elapsed, backend, use_adversarial, replan=replan)
-        yield panel + f"\n\n**出错**：{holder['error']}", "", _render_evidence(evidence_state)
+        yield panel + f"\n\n**出错**：{holder['error']}", "", _render_evidence(evidence_state), None
         return
 
     report = str(holder.get("report", "（无结果，请重试）"))
@@ -323,6 +348,7 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
         ),
         report,
         _render_evidence(evidence_state),
+        holder.get("download"),
     )
 
 
@@ -359,11 +385,12 @@ def build_ui() -> gr.Blocks:
                         report = gr.Markdown(value="")
                     with gr.Tab("证据审计"):
                         evidence = gr.Markdown(value=_EVIDENCE_INIT)
+        download = gr.DownloadButton("下载 Markdown 报告", value=None)
 
         btn.click(
             do_research_stream,
             inputs=[query, backend, use_adv],
-            outputs=[progress, report, evidence],
+            outputs=[progress, report, evidence, download],
         )
 
     return demo

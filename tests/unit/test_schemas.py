@@ -13,11 +13,11 @@ from src.orchestrator.schemas import (
 )
 
 
-def test_orchestrator_has_nine_states():
-    # 坐实"9 状态状态机"
-    assert len(list(OrchestratorState)) == 9
+def test_orchestrator_has_ten_states():
+    assert len(list(OrchestratorState)) == 10
     assert OrchestratorState.REPLANNING in OrchestratorState
     assert OrchestratorState.ADVERSARIAL in OrchestratorState
+    assert OrchestratorState.EVIDENCE_REFINING in OrchestratorState
 
 
 def test_task_type_values():
