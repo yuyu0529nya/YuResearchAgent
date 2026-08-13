@@ -215,6 +215,47 @@ def test_reviser_restores_policy_tools_and_accepts_normalized_markdown() -> None
     assert "Non-negotiable rules" in policy.messages[1]["content"]
 
 
+def test_reviser_forwards_request_deadline_and_restores_tools() -> None:
+    candidate = (
+        "# Findings\n\n"
+        "The model supports a context window of 128K tokens [1].\n\n"
+        "## References\n\n"
+        "[1] Official model card - https://example.com/model"
+    )
+
+    class _Policy:
+        def __init__(self) -> None:
+            self.tools = ["tool"]
+            self.timeout = None
+
+        def __call__(self, _messages):
+            raise AssertionError("bounded revisions must use call_with_timeout")
+
+        def call_with_timeout(self, _messages, timeout_seconds):
+            assert self.tools is None
+            self.timeout = timeout_seconds
+            return {"content": candidate}
+
+    policy = _Policy()
+    draft = EvidenceReviser(policy, min_length_ratio=0.1).revise(
+        query="What is the context window?",
+        content="# Original\n\nA sufficiently long original report statement [1].",
+        audit={"claims": [{"status": "supported", "text": "claim"}]},
+        sources=[
+            {
+                "source_id": "src_1",
+                "title": "Official model card",
+                "url": "https://example.com/model",
+            }
+        ],
+        request_timeout_seconds=2.5,
+    )
+
+    assert draft.valid is True
+    assert policy.timeout == 2.5
+    assert policy.tools == ["tool"]
+
+
 def test_reviser_rejects_out_of_range_citation() -> None:
     candidate = (
         "# Findings\n\n"

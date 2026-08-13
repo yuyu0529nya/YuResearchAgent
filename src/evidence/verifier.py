@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from decimal import Decimal, InvalidOperation
 from typing import Any, Iterable
 
@@ -128,6 +129,7 @@ class ClaimVerifier:
         store: EvidenceStore,
         *,
         use_llm: bool = True,
+        timeout_seconds: float | None = None,
     ) -> EvidenceAudit:
         claims: list[ClaimRecord] = []
         seen: set[str] = set()
@@ -143,7 +145,12 @@ class ClaimVerifier:
                     break
             if len(claims) >= self.max_claims:
                 break
-        return self._verify(claims, store, use_llm=use_llm)
+        return self._verify(
+            claims,
+            store,
+            use_llm=use_llm,
+            timeout_seconds=timeout_seconds,
+        )
 
     def audit_text(
         self,
@@ -153,12 +160,14 @@ class ClaimVerifier:
         citation_source_ids: list[str] | None = None,
         *,
         use_llm: bool = True,
+        timeout_seconds: float | None = None,
     ) -> EvidenceAudit:
         return self._verify(
             self.extract_claims(text, task_id),
             store,
             citation_source_ids=citation_source_ids,
             use_llm=use_llm,
+            timeout_seconds=timeout_seconds,
         )
 
     def extract_claims(self, text: str, task_id: str = "") -> list[ClaimRecord]:
@@ -223,6 +232,7 @@ class ClaimVerifier:
         store: EvidenceStore,
         citation_source_ids: list[str] | None = None,
         use_llm: bool = True,
+        timeout_seconds: float | None = None,
     ) -> EvidenceAudit:
         evidence = list(store.evidence.values())
         for claim in claims:
@@ -290,7 +300,11 @@ class ClaimVerifier:
                 claim.reason = "Related evidence was found, but entailment was too weak."
 
         if self.mode == "hybrid" and use_llm and self.policy is not None:
-            self._apply_llm_verdicts(claims, store)
+            self._apply_llm_verdicts(
+                claims,
+                store,
+                timeout_seconds=timeout_seconds,
+            )
         verification_mode = self.mode if use_llm else "heuristic"
         return self._build_audit(claims, store, verification_mode=verification_mode)
 
@@ -339,7 +353,13 @@ class ClaimVerifier:
         evidence_numbers = _numbers(evidence)
         return bool(claim_numbers and evidence_numbers and not claim_numbers.issubset(evidence_numbers))
 
-    def _apply_llm_verdicts(self, claims: list[ClaimRecord], store: EvidenceStore) -> None:
+    def _apply_llm_verdicts(
+        self,
+        claims: list[ClaimRecord],
+        store: EvidenceStore,
+        *,
+        timeout_seconds: float | None = None,
+    ) -> None:
         ambiguous = [
             claim
             for claim in claims
@@ -375,6 +395,11 @@ class ClaimVerifier:
                 }
             )
         verdicts: list[dict[str, Any]] = []
+        deadline = (
+            time.monotonic() + max(0.25, float(timeout_seconds))
+            if timeout_seconds is not None
+            else None
+        )
         old_tools = getattr(self.policy, "tools", None)
         try:
             if hasattr(self.policy, "tools"):
@@ -382,6 +407,9 @@ class ClaimVerifier:
             # Keep each request below the policy's message truncation threshold.
             # A truncated JSON evidence payload cannot be audited reliably.
             for offset in range(0, len(items), 8):
+                remaining = deadline - time.monotonic() if deadline is not None else None
+                if remaining is not None and remaining <= 0.25:
+                    break
                 batch = items[offset : offset + 8]
                 prompt = (
                     "Verify each claim using ONLY its supplied evidence. Labels: SUPPORTED when evidence directly "
@@ -394,15 +422,18 @@ class ClaimVerifier:
                     + json.dumps(batch, ensure_ascii=False)
                 )
                 try:
-                    response = self.policy(
-                        [
-                            {
-                                "role": "system",
-                                "content": "You are a strict claim-evidence verifier. Output JSON only.",
-                            },
-                            {"role": "user", "content": prompt},
-                        ]
-                    )
+                    messages = [
+                        {
+                            "role": "system",
+                            "content": "You are a strict claim-evidence verifier. Output JSON only.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ]
+                    call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+                    if remaining is not None and callable(call_with_timeout):
+                        response = call_with_timeout(messages, max(0.25, remaining))
+                    else:
+                        response = self.policy(messages)
                 except Exception:
                     continue
                 parsed = extract_json_object(

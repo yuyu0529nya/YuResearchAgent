@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.3.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-259%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-263%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -42,7 +42,9 @@ HTML or PDF full text rather than treating an abstract as a complete paper.
   support gain; rejected drafts are rolled back.
 - **Long-horizon runtime**: a 10-state async orchestrator provides DAG scheduling,
   worker isolation, bounded retries, replanning, partial-report fallback, and
-  separate reserves for synthesis, evidence revision, and final audit.
+  separate reserves for synthesis, evidence revision, and final audit. Bounded
+  LLM stages propagate their deadlines to the provider client and disable SDK
+  retries, so cancelling an outer coroutine does not leave a paid HTTP call running.
 - **Auditable evaluation**: paired generation, exact report retention, SHA-256
   integrity checks, counterbalanced LLM-as-Judge, bootstrap intervals, effect
   sizes, token/latency telemetry, resume-safe checkpoints, and real config ablations.
@@ -295,7 +297,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `259` API-free tests cover orchestration, parsing, retrieval, evidence,
+- `263` API-free tests cover orchestration, parsing, retrieval, evidence,
   metrics, replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
 

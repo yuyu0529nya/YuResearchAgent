@@ -188,6 +188,27 @@ class VLLMPolicy:
         Returns:
             OpenAICompatibleDict: 包含 role, content, tool_calls 字段。
         """
+        return self._call(messages)
+
+    def call_with_timeout(
+        self,
+        messages: list,
+        timeout_seconds: float,
+    ) -> OpenAICompatibleDict:
+        """Call the provider with a request-level deadline and no SDK retries.
+
+        ``asyncio.wait_for(asyncio.to_thread(...))`` stops awaiting a sync call
+        but cannot stop its worker thread. Callers with a state-machine budget
+        use this method so the underlying HTTP request also terminates.
+        """
+        return self._call(messages, request_timeout_seconds=timeout_seconds)
+
+    def _call(
+        self,
+        messages: list,
+        request_timeout_seconds: float | None = None,
+    ) -> OpenAICompatibleDict:
+        """Internal implementation shared by regular and deadline-bound calls."""
         # 1. 深度清洗消息格式
         sanitized = []
         for m in messages:
@@ -249,7 +270,16 @@ class VLLMPolicy:
 
         self._record_usage(api_calls=1)
         try:
-            resp = self.client.chat.completions.create(**kwargs)
+            request_client = self.client
+            if request_timeout_seconds is not None:
+                timeout = max(0.25, float(request_timeout_seconds))
+                with_options = getattr(self.client, "with_options", None)
+                if not callable(with_options):
+                    raise RuntimeError(
+                        "Policy client cannot enforce a request-level timeout."
+                    )
+                request_client = with_options(timeout=timeout, max_retries=0)
+            resp = request_client.chat.completions.create(**kwargs)
             usage = getattr(resp, "usage", None)
             self._record_usage(
                 prompt_tokens=getattr(usage, "prompt_tokens", 0),

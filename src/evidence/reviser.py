@@ -235,6 +235,7 @@ class EvidenceReviser:
         content: str,
         audit: dict[str, Any],
         sources: list[dict[str, Any]],
+        request_timeout_seconds: float | None = None,
     ) -> RevisionDraft:
         if self.policy is None:
             return RevisionDraft(reason="No revision policy is configured.")
@@ -269,7 +270,14 @@ class EvidenceReviser:
         try:
             if hasattr(self.policy, "tools"):
                 self.policy.tools = None
-            response = self.policy(messages)
+            call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+            if request_timeout_seconds is not None and callable(call_with_timeout):
+                response = call_with_timeout(
+                    messages,
+                    max(0.25, float(request_timeout_seconds)),
+                )
+            else:
+                response = self.policy(messages)
         except Exception as exc:
             return RevisionDraft(reason=f"Revision policy failed: {type(exc).__name__}: {exc}")
         finally:

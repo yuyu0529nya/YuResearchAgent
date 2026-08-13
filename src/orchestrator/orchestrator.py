@@ -685,6 +685,7 @@ class Orchestrator:
                     content=original_content,
                     audit=report.evidence_audit,
                     sources=sources,
+                    request_timeout_seconds=max(0.25, timeout - 1.0),
                 ),
                 timeout=timeout,
             )
@@ -1059,6 +1060,7 @@ class Orchestrator:
                             "final_report",
                             citation_source_ids,
                             use_llm=True,
+                            timeout_seconds=max(0.25, hybrid_timeout - 1.0),
                         ),
                         timeout=hybrid_timeout,
                     )

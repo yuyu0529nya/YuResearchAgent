@@ -51,3 +51,59 @@ def test_policy_records_failed_calls() -> None:
     assert result["content"].startswith("Error:")
     assert policy.usage_snapshot()["api_calls"] == 1
     assert policy.usage_snapshot()["failed_calls"] == 1
+
+
+def test_policy_applies_request_deadline_and_disables_retries() -> None:
+    class _Client:
+        def __init__(self) -> None:
+            self.options = None
+            self.chat = SimpleNamespace(
+                completions=SimpleNamespace(
+                    create=lambda **_: (_ for _ in ()).throw(
+                        AssertionError("base client must not execute the bounded request")
+                    )
+                )
+            )
+
+        def with_options(self, **options):
+            self.options = options
+            return SimpleNamespace(
+                chat=SimpleNamespace(
+                    completions=SimpleNamespace(create=lambda **_: _response())
+                )
+            )
+
+    policy = VLLMPolicy(api_key="test")
+    client = _Client()
+    policy.client = client
+
+    result = policy.call_with_timeout(
+        [{"role": "user", "content": "hello"}],
+        timeout_seconds=7.5,
+    )
+
+    assert result["content"] == "ok"
+    assert client.options == {"timeout": 7.5, "max_retries": 0}
+
+
+def test_policy_deadline_fails_closed_when_client_cannot_enforce_it() -> None:
+    called = False
+
+    def create(**_):
+        nonlocal called
+        called = True
+        return _response()
+
+    policy = VLLMPolicy(api_key="test")
+    policy.client = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=create))
+    )
+
+    result = policy.call_with_timeout(
+        [{"role": "user", "content": "hello"}],
+        timeout_seconds=1,
+    )
+
+    assert result["content"].startswith("Error:")
+    assert "cannot enforce" in result["content"]
+    assert called is False

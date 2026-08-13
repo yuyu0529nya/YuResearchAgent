@@ -408,6 +408,64 @@ def test_hybrid_verifier_can_check_cited_cross_language_evidence() -> None:
     assert audit.claims[0].status == VerificationStatus.SUPPORTED
 
 
+def test_hybrid_verifier_forwards_request_deadline() -> None:
+    class _DeadlinePolicy:
+        def __init__(self) -> None:
+            self.tools = ["tool"]
+            self.timeout = None
+
+        def __call__(self, _messages):
+            raise AssertionError("bounded audits must use call_with_timeout")
+
+        def call_with_timeout(self, messages, timeout_seconds):
+            assert self.tools is None
+            self.timeout = timeout_seconds
+            payload = json.loads(messages[-1]["content"].rsplit("\n\n", 1)[-1])
+            return {
+                "content": json.dumps(
+                    {
+                        "verdicts": [
+                            {
+                                "claim_id": payload[0]["claim_id"],
+                                "label": "SUPPORTED",
+                                "clause_labels": ["SUPPORTED"],
+                                "score": 0.92,
+                                "reason": "The evidence entails the claim.",
+                            }
+                        ]
+                    }
+                )
+            }
+
+    store = EvidenceStore(persist_enabled=False)
+    source = store.upsert_source(
+        url="https://arxiv.org/abs/2412.15115",
+        title="Qwen2.5 Technical Report",
+    )
+    store.add_evidence(
+        source.source_id,
+        "Qwen2.5 was pretrained on up to 18 trillion tokens.",
+        EvidenceKind.ABSTRACT,
+    )
+    policy = _DeadlinePolicy()
+
+    audit = ClaimVerifier(
+        policy=policy,
+        mode="hybrid",
+        support_threshold=0.95,
+    ).audit_text(
+        "Qwen2.5 使用了 18 万亿 token 进行预训练 [1]。",
+        store,
+        citation_source_ids=[source.source_id],
+        timeout_seconds=2.0,
+    )
+
+    assert audit.claims[0].status == VerificationStatus.SUPPORTED
+    assert policy.timeout is not None
+    assert 0.25 <= policy.timeout <= 2.0
+    assert policy.tools == ["tool"]
+
+
 def test_candidate_ranking_prioritizes_matching_numeric_chunk() -> None:
     store = EvidenceStore(persist_enabled=False)
     source = store.upsert_source(url="https://arxiv.org/abs/2412.15115", title="Qwen2.5")
