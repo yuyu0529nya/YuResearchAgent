@@ -11,6 +11,8 @@ Red Agent 的职责是对研究报告进行多维度"攻击"，找出事实错�
 """
 from __future__ import annotations
 
+import asyncio
+import time
 from typing import Any
 
 from src.adversarial.verdict import (
@@ -266,7 +268,12 @@ class RedAgent:
         self.max_tokens = max_tokens
 
     @trace_agent(name="red_agent.attack", tags=["m5", "red", "adversarial"])
-    async def attack(self, report: ResearchReport) -> RedVerdict:
+    async def attack(
+        self,
+        report: ResearchReport,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
+    ) -> RedVerdict:
         """对研究报告执行五维度攻击。
 
         执行流程：
@@ -292,6 +299,13 @@ class RedAgent:
         sources_text = self._format_sources(report.sources, max_items=15)
 
         for dim, prompt_template in DIMENSION_PROMPTS.items():
+            if cancellation_token is not None and cancellation_token.is_cancelled:
+                break
+            if (
+                request_deadline_monotonic is not None
+                and request_deadline_monotonic <= time.monotonic()
+            ):
+                break
             # 使用安全替换，避免 report.content/sources_text 中的 { 被 format 误解析
             prompt = prompt_template
             prompt = prompt.replace("{query}", report.query)
@@ -302,14 +316,19 @@ class RedAgent:
                 {"role": "user", "content": prompt},
             ]
 
+            old_max = getattr(self.policy, "max_tokens", None)
             try:
                 # 临时调大 max_tokens 以容纳长输出
-                old_max = getattr(self.policy, "max_tokens", None)
                 if old_max is not None:
                     self.policy.max_tokens = self.max_tokens
-                resp = self.policy(messages)
-                if old_max is not None:
-                    self.policy.max_tokens = old_max
+                if cancellation_token is not None and cancellation_token.is_cancelled:
+                    break
+                call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+                if request_deadline_monotonic is not None and callable(call_with_timeout):
+                    remaining = max(0.25, request_deadline_monotonic - time.monotonic())
+                    resp = await asyncio.to_thread(call_with_timeout, messages, remaining)
+                else:
+                    resp = await asyncio.to_thread(self.policy, messages)
 
                 raw = resp.content or ""
                 raw_feedbacks.append(f"[{dim.value}]\n{raw}\n")
@@ -329,6 +348,9 @@ class RedAgent:
                         fix_type=FixType.IN_PLACE,
                     )
                 )
+            finally:
+                if old_max is not None:
+                    self.policy.max_tokens = old_max
 
         overall = VerdictEngine.compute_overall(dimension_scores)
         return RedVerdict(

@@ -10,7 +10,10 @@ Blue Agent 接收 Red Agent 的 Verdict，按优先级排序并执行三类修�
 """
 from __future__ import annotations
 
+import asyncio
 import copy
+import time
+from types import SimpleNamespace
 from typing import Any
 
 from src.adversarial.verdict import (
@@ -167,6 +170,20 @@ class BlueAgent:
         self.max_tokens = max_tokens
         # 缓存搜索工具
         self._search_tool = self._find_search_tool()
+        self._request_deadline_monotonic: float | None = None
+        self._cancellation_token: Any | None = None
+
+    async def _call_policy(self, messages: list[dict]) -> Any:
+        if self._cancellation_token is not None and self._cancellation_token.is_cancelled:
+            return SimpleNamespace(content="")
+        call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+        if self._request_deadline_monotonic is not None and callable(call_with_timeout):
+            remaining = max(
+                0.25,
+                self._request_deadline_monotonic - time.monotonic(),
+            )
+            return await asyncio.to_thread(call_with_timeout, messages, remaining)
+        return await asyncio.to_thread(self.policy, messages)
 
     def _find_search_tool(self) -> Any | None:
         """从 tools 列表中查找搜索工具。"""
@@ -178,7 +195,11 @@ class BlueAgent:
 
     @trace_agent(name="blue_agent.defend", tags=["m5", "blue", "adversarial"])
     async def defend(
-        self, report: ResearchReport, verdict: RedVerdict
+        self,
+        report: ResearchReport,
+        verdict: RedVerdict,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
     ) -> tuple[ResearchReport, list[FixOperation]]:
         """根据 Red Verdict 修复研究报告。
 
@@ -197,8 +218,14 @@ class BlueAgent:
         """
         current = copy.deepcopy(report)
         operations: list[FixOperation] = []
+        previous_deadline = self._request_deadline_monotonic
+        previous_cancellation = self._cancellation_token
+        self._request_deadline_monotonic = request_deadline_monotonic
+        self._cancellation_token = cancellation_token
 
         if not verdict.issues:
+            self._request_deadline_monotonic = previous_deadline
+            self._cancellation_token = previous_cancellation
             return current, operations
 
         # 按优先级降序排序
@@ -210,25 +237,39 @@ class BlueAgent:
 
         original_content = report.content
 
-        for issue in sorted_issues:
-            op = await self._fix_single_issue(current, issue)
-            operations.append(op)
+        try:
+            for issue in sorted_issues:
+                if (
+                    self._cancellation_token is not None
+                    and self._cancellation_token.is_cancelled
+                ):
+                    break
+                op = await self._fix_single_issue(current, issue)
+                operations.append(op)
 
-            # self_verify：检查修复是否引入新矛盾
-            verify_pass, verify_issues = await self._self_verify(
-                original_content, current.content, operations
-            )
-            if not verify_pass:
-                # 引入新问题：记录但继续（优先处理高优先级 issue，避免死锁）
-                for vi in verify_issues:
-                    operations.append(
-                        FixOperation(
-                            issue=vi,
-                            action="self_verify_detected_new_issue",
-                            success=False,
-                            detail=vi.description,
+                # self_verify：检查修复是否引入新矛盾
+                if (
+                    self._cancellation_token is not None
+                    and self._cancellation_token.is_cancelled
+                ):
+                    break
+                verify_pass, verify_issues = await self._self_verify(
+                    original_content, current.content, operations
+                )
+                if not verify_pass:
+                    # 引入新问题：记录但继续（优先处理高优先级 issue，避免死锁）
+                    for vi in verify_issues:
+                        operations.append(
+                            FixOperation(
+                                issue=vi,
+                                action="self_verify_detected_new_issue",
+                                success=False,
+                                detail=vi.description,
+                            )
                         )
-                    )
+        finally:
+            self._request_deadline_monotonic = previous_deadline
+            self._cancellation_token = previous_cancellation
 
         return current, operations
 
@@ -272,7 +313,7 @@ class BlueAgent:
             {"role": "system", "content": SYSTEM_BLUE_AGENT},
             {"role": "user", "content": prompt},
         ]
-        resp = self.policy(messages)
+        resp = await self._call_policy(messages)
         raw = resp.content or ""
 
         # 定点编辑：只对模型给出的 before→after 片段做精确替换，不重写全文（杜绝截断）。
@@ -307,7 +348,7 @@ class BlueAgent:
                         if inspect.iscoroutinefunction(self._search_tool.execute):
                             sr = await self._search_tool.execute(query)
                         else:
-                            sr = self._search_tool.execute(query)
+                            sr = await asyncio.to_thread(self._search_tool.execute, query)
                     else:
                         sr = None
                 else:
@@ -328,7 +369,7 @@ class BlueAgent:
             {"role": "system", "content": SYSTEM_BLUE_AGENT},
             {"role": "user", "content": prompt},
         ]
-        resp = self.policy(messages)
+        resp = await self._call_policy(messages)
         raw = resp.content or ""
 
         fixed_content, changes = self._parse_fix_json(raw)
@@ -358,7 +399,7 @@ class BlueAgent:
             {"role": "system", "content": SYSTEM_BLUE_AGENT},
             {"role": "user", "content": prompt},
         ]
-        resp = self.policy(messages)
+        resp = await self._call_policy(messages)
         raw = resp.content or ""
 
         fixed_content, removed = self._parse_removal_json(raw)
@@ -400,7 +441,7 @@ class BlueAgent:
             {"role": "system", "content": SYSTEM_BLUE_AGENT},
             {"role": "user", "content": prompt},
         ]
-        resp = self.policy(messages)
+        resp = await self._call_policy(messages)
         raw = resp.content or ""
 
         data = extract_json_object(raw)

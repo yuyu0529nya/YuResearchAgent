@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import time
 from typing import Any
 
 from .base_agent import BaseAgent
@@ -65,6 +66,35 @@ class ResearcherAgent(BaseAgent):
         """
         trajectory: list[dict] = []
         total_tokens: int = 0
+        cancellation_token = context.get("_cancellation_token")
+        request_deadline = context.get("_request_deadline_monotonic")
+
+        def _cancelled() -> bool:
+            return bool(
+                cancellation_token is not None
+                and getattr(cancellation_token, "is_cancelled", False)
+            )
+
+        def _cancelled_result() -> AgentResult:
+            reason = getattr(cancellation_token, "reason", "") or "Cancelled by user."
+            return AgentResult(
+                task_id=task.task_id,
+                status=AgentStatus.CANCELLED,
+                output=reason,
+                trajectory=trajectory,
+                token_usage=total_tokens,
+                confidence=0.0,
+            )
+
+        async def _call_policy(messages: list[dict]) -> dict:
+            call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+            if request_deadline is not None and callable(call_with_timeout):
+                remaining = max(0.25, float(request_deadline) - time.monotonic())
+                return await asyncio.to_thread(call_with_timeout, messages, remaining)
+            return await asyncio.to_thread(self.policy, messages)
+
+        if _cancelled():
+            return _cancelled_result()
 
         # 构建任务描述
         task_desc = self._build_task_prompt(task, context)
@@ -81,7 +111,9 @@ class ResearcherAgent(BaseAgent):
             try:
                 if hasattr(self.policy, "tools"):
                     self.policy.tools = None
-                response = await asyncio.to_thread(self.policy, messages)
+                response = await _call_policy(messages)
+                if _cancelled():
+                    return _cancelled_result()
                 content = response.get("content", "") or ""
                 if self._is_tool_failure_explanation(content):
                     raise RuntimeError(content)
@@ -112,7 +144,9 @@ class ResearcherAgent(BaseAgent):
                 {"role": "user", "content": task_desc},
             ]
             try:
-                response = self.policy(messages)
+                response = await _call_policy(messages)
+                if _cancelled():
+                    return _cancelled_result()
                 content = response.get("content", "") or ""
                 return AgentResult(
                     task_id=task.task_id,
@@ -151,6 +185,8 @@ class ResearcherAgent(BaseAgent):
         fallback_tool = "arxiv_reader" if any(kw in desc_lower for kw in academic_keywords) else "web_search"
         
         for turn in range(self.max_turns):
+            if _cancelled():
+                return _cancelled_result()
             # Fallback: if last turn had no tool_calls, force a search instruction
             if turn > 0 and messages and messages[-1].get("role") == "assistant":
                 last_tool_calls = messages[-1].get("tool_calls", [])
@@ -166,7 +202,9 @@ class ResearcherAgent(BaseAgent):
 
             try:
                 # 使用线程池执行同步 policy，避免阻塞 asyncio 事件循环
-                response = await asyncio.to_thread(self.policy, messages)
+                response = await _call_policy(messages)
+                if _cancelled():
+                    return _cancelled_result()
             except RuntimeError as e:
                 # 上下文长度超限等致命错误
                 trajectory.append({"turn": turn, "error": str(e)})
@@ -227,6 +265,8 @@ class ResearcherAgent(BaseAgent):
             # 执行工具调用
             tool_results = []
             for tc in tool_calls:
+                if _cancelled():
+                    return _cancelled_result()
                 func = tc.get("function", {})
                 tool_name = func.get("name", "")
                 try:
@@ -235,6 +275,8 @@ class ResearcherAgent(BaseAgent):
                     args = {}
 
                 result = await self._execute_tool(tool_name, args)
+                if _cancelled():
+                    return _cancelled_result()
 
                 # 单个工具失败不应判死整个子任务；把错误写回模型，让它在剩余
                 # 工具预算内切换检索后端或策略。

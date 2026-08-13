@@ -200,6 +200,30 @@ Exact report/evidence pairs can be re-audited with `scripts/replay_evidence.py`.
 The loader verifies every retained evidence chunk against its content hash and
 the CLI can pin the SHA-256 of both input files before recomputing verdicts.
 
+## 8. Runtime Control And Event Sourcing
+
+Code: `src/runtime/`, `src/orchestrator/orchestrator.py`, and
+`scripts/run_webui.py`.
+
+Every top-level run owns a thread-safe cancellation token, a monotonically
+increasing event sequence, and a per-run usage tracker. The orchestrator emits
+typed events at planning, DAG layer, task, evidence, synthesis, revision, and
+terminal boundaries. The UI derives its view model from event fields rather than
+regular expressions over log messages.
+
+Cancellation is cooperative because a synchronous provider request cannot be
+safely killed from another Python thread. The token is checked before and after
+each model or tool call. Absolute monotonic deadlines are propagated through
+planning, workers, L3 context compression, synthesis, Red-Blue review, hybrid
+verification, and evidence revision. Provider-bound calls use an HTTP timeout
+with retries disabled; outer `asyncio.wait_for` guards the corresponding state.
+Completed worker outputs are retained in a `cancelled_partial` report.
+
+The local run ledger uses SQLite in WAL mode and stores compact metadata, event
+payloads, artifact paths, evidence metrics, and model-token counters. It does
+not store API keys or report bodies. On process restart, nonterminal rows become
+`interrupted`, making crashes distinguishable from successful completion.
+
 ## What Is Not Yet Implemented
 
 - A learned retrieval policy or test-time compute controller.

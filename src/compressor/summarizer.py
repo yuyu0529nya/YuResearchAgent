@@ -11,7 +11,8 @@ LLM Summarizer 模块：层级摘要
 from __future__ import annotations
 
 import logging
-from typing import Any, Optional
+import time
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -63,11 +64,44 @@ class LLMSummarizer:
         """
         self.llm_policy = llm_policy
 
+    @staticmethod
+    def _is_cancelled(cancellation_token: Any | None) -> bool:
+        return bool(
+            cancellation_token is not None
+            and getattr(cancellation_token, "is_cancelled", False)
+        )
+
+    def _call_policy(
+        self,
+        messages: list[dict[str, str]],
+        *,
+        request_deadline_monotonic: float | None,
+        cancellation_token: Any | None,
+    ) -> Any:
+        if self._is_cancelled(cancellation_token):
+            raise RuntimeError("Context compression was cancelled.")
+
+        call_with_timeout = getattr(self.llm_policy, "call_with_timeout", None)
+        if request_deadline_monotonic is not None and callable(call_with_timeout):
+            remaining = request_deadline_monotonic - time.monotonic()
+            if remaining <= 0:
+                raise TimeoutError("Context compression deadline was exhausted.")
+            response = call_with_timeout(messages, max(0.25, remaining))
+        else:
+            response = self.llm_policy(messages)
+
+        if self._is_cancelled(cancellation_token):
+            raise RuntimeError("Context compression was cancelled.")
+        return response
+
     def summarize_document(
         self,
         doc: str,
         query: str = "",
         max_length: int = 500,
+        *,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
     ) -> str:
         """
         单文档摘要。
@@ -89,9 +123,13 @@ class LLMSummarizer:
             prompt = f"用户查询：{query}\n\n" + prompt
 
         try:
-            resp = self.llm_policy([{"role": "user", "content": prompt}])
+            resp = self._call_policy(
+                [{"role": "user", "content": prompt}],
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
+            )
             summary = str(resp.content or "").strip()
-            if not summary:
+            if not summary or summary.lower().startswith("error:"):
                 logger.warning("LLM returned empty summary, returning truncated original.")
                 return doc[:max_length] + "\n[TRUNCATED]"
             return summary
@@ -105,6 +143,9 @@ class LLMSummarizer:
         docs: list[str],
         query: str = "",
         max_length: int = 800,
+        *,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
     ) -> str:
         """
         多篇文档聚合摘要。
@@ -124,15 +165,44 @@ class LLMSummarizer:
         if not docs:
             return ""
         if len(docs) == 1:
-            return self.summarize_document(docs[0], query, max_length)
+            return self.summarize_document(
+                docs[0],
+                query,
+                max_length,
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
+            )
 
         # 第一阶段：逐文档摘要
         single_summaries: list[str] = []
         for i, doc in enumerate(docs, 1):
+            if self._is_cancelled(cancellation_token):
+                break
+            if (
+                request_deadline_monotonic is not None
+                and request_deadline_monotonic <= time.monotonic()
+            ):
+                break
             # 单文档摘要控制在较小长度，避免聚合时输入爆炸
             single_max = max(200, max_length // len(docs))
-            summary = self.summarize_document(doc, query, max_length=single_max)
+            summary = self.summarize_document(
+                doc,
+                query,
+                max_length=single_max,
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
+            )
             single_summaries.append(f"[文档{i}]\n{summary}")
+
+        if not single_summaries:
+            return "\n\n".join(docs)
+        if self._is_cancelled(cancellation_token):
+            return "\n\n".join(single_summaries)
+        if (
+            request_deadline_monotonic is not None
+            and request_deadline_monotonic <= time.monotonic()
+        ):
+            return "\n\n".join(single_summaries)
 
         # 第二阶段：聚合摘要
         combined_text = "\n\n".join(single_summaries)
@@ -143,9 +213,13 @@ class LLMSummarizer:
         )
 
         try:
-            resp = self.llm_policy([{"role": "user", "content": prompt}])
+            resp = self._call_policy(
+                [{"role": "user", "content": prompt}],
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
+            )
             aggregate = str(resp.content or "").strip()
-            if not aggregate:
+            if not aggregate or aggregate.lower().startswith("error:"):
                 logger.warning("LLM returned empty aggregate summary, concatenating singles.")
                 return "\n\n".join(single_summaries)
             return aggregate

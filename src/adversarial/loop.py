@@ -12,7 +12,9 @@ AdversarialLoop 驱动 Red Agent → Blue Agent → 评分的完整对抗流程�
 from __future__ import annotations
 
 import copy
+import inspect
 import logging
+import time
 from typing import Any
 
 from src.adversarial.blue_agent import BlueAgent
@@ -63,7 +65,10 @@ class AdversarialLoop:
 
     @trace_chain(name="adversarial_loop.run", tags=["m5", "loop", "adversarial"])
     async def run(
-        self, report: ResearchReport
+        self,
+        report: ResearchReport,
+        cancellation_token: Any | None = None,
+        timeout_seconds: float | None = None,
     ) -> tuple[ResearchReport, list[dict[str, Any]]]:
         """运行完整的对抗降噪循环。
 
@@ -88,12 +93,32 @@ class AdversarialLoop:
         resolved_issues: set[Issue] = set()  # 已修复的 issue 集合
         oscillation_detected = False
         stop_reason = ""
+        request_deadline = (
+            time.monotonic() + max(0.25, float(timeout_seconds))
+            if timeout_seconds is not None
+            else None
+        )
 
         for round_idx in range(1, self.max_rounds + 1):
+            if cancellation_token is not None and cancellation_token.is_cancelled:
+                stop_reason = "cancelled"
+                break
             logger.info(f"[AdversarialLoop] Round {round_idx} starting...")
 
             # ---- Step 1: Red Attack ----
-            verdict = await self.red_agent.attack(current)
+            if request_deadline is not None and request_deadline <= time.monotonic():
+                stop_reason = "deadline_exhausted"
+                break
+            attack_parameters = inspect.signature(self.red_agent.attack).parameters
+            attack_kwargs: dict[str, Any] = {}
+            if request_deadline is not None and "request_deadline_monotonic" in attack_parameters:
+                attack_kwargs["request_deadline_monotonic"] = request_deadline
+            if "cancellation_token" in attack_parameters:
+                attack_kwargs["cancellation_token"] = cancellation_token
+            verdict = await self.red_agent.attack(current, **attack_kwargs)
+            if cancellation_token is not None and cancellation_token.is_cancelled:
+                stop_reason = "cancelled"
+                break
             logger.info(
                 f"[AdversarialLoop] Red attack done: overall={verdict.overall_score:.2f}, "
                 f"issues={len(verdict.issues)}"
@@ -115,7 +140,20 @@ class AdversarialLoop:
                 break
 
             # ---- Step 3: Blue Defend ----
-            fixed_report, operations = await self.blue_agent.defend(current, verdict)
+            defend_parameters = inspect.signature(self.blue_agent.defend).parameters
+            defend_kwargs: dict[str, Any] = {}
+            if request_deadline is not None and "request_deadline_monotonic" in defend_parameters:
+                defend_kwargs["request_deadline_monotonic"] = request_deadline
+            if "cancellation_token" in defend_parameters:
+                defend_kwargs["cancellation_token"] = cancellation_token
+            fixed_report, operations = await self.blue_agent.defend(
+                current,
+                verdict,
+                **defend_kwargs,
+            )
+            if cancellation_token is not None and cancellation_token.is_cancelled:
+                stop_reason = "cancelled"
+                break
             logger.info(
                 f"[AdversarialLoop] Blue defend done: operations={len(operations)}"
             )

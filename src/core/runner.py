@@ -130,7 +130,14 @@ def _create_tools_factory(config: dict):
 # ---------------------------------------------------------------------------
 # 模块初始化
 # ---------------------------------------------------------------------------
-def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
+def initialize_modules(
+    config: dict,
+    session_id: str = "",
+    *,
+    run_id: str = "",
+    event_sink: Any | None = None,
+    cancellation_token: Any | None = None,
+) -> dict[str, Any]:
     """
     根据配置初始化所有核心模块。
 
@@ -149,11 +156,14 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
     # 多后端 LLM 初始化（从 .env + configs/default.yaml 读取配置）
     # ------------------------------------------------------------------
     from src.models.model_router import ModelRouter
+    from src.runtime import UsageTracker
 
     model_cfg = config.get("model", {})
     default_backend = model_cfg.get("backend", "vllm")
     backend_mapping = model_cfg.get("backend_mapping", {})
     backend_sampling = model_cfg.get("backend_sampling", {})
+    usage_tracker = UsageTracker()
+    modules["usage_tracker"] = usage_tracker
 
     # 辅助函数：根据模块名获取采样参数覆盖
     def _get_sampling_kwargs(module_name: str, backend_name: str) -> dict:
@@ -169,7 +179,12 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
 
     # 默认后端（所有模块共用）
     default_kwargs = _get_sampling_kwargs("default", default_backend)
-    default_policy = ModelRouter.create_backend(default_backend, **default_kwargs)
+    default_policy = ModelRouter.create_backend(
+        default_backend,
+        use_cache=False,
+        usage_tracker=usage_tracker,
+        **default_kwargs,
+    )
     modules["default_policy"] = default_policy
     logger.info(
         f"[LLM] 默认后端已加载: {default_backend} | 模型={default_policy.model_name} | "
@@ -179,7 +194,12 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
     # 多后端分工：不同模块用不同后端 + 不同采样参数
     for module_name, backend_name in backend_mapping.items():
         kwargs = _get_sampling_kwargs(module_name, backend_name)
-        policy = ModelRouter.create_backend(backend_name, **kwargs)
+        policy = ModelRouter.create_backend(
+            backend_name,
+            use_cache=False,
+            usage_tracker=usage_tracker,
+            **kwargs,
+        )
         modules[f"{module_name}_policy"] = policy
         logger.info(
             f"[LLM] {module_name} → 后端={backend_name} | 模型={policy.model_name} | "
@@ -280,6 +300,7 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
         policy_factory=lambda: ModelRouter.create_backend(
             solver_backend,
             use_cache=False,
+            usage_tracker=usage_tracker,
             **solver_kwargs,
         ),
         tools_factory=lambda: list(modules["tools"]),
@@ -331,6 +352,9 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
         evidence_store=evidence_store,
         evidence_verifier=evidence_verifier,
         evidence_reviser=evidence_reviser,
+        run_id=run_id or session_id,
+        event_sink=event_sink,
+        cancellation_token=cancellation_token,
     )
     modules["orchestrator"] = orchestrator
     logger.info("[M1] Orchestrator 模块已初始化")
@@ -452,6 +476,7 @@ async def run_research_with_metadata(
     final_report = _format_report(report, elapsed)
     audit = report.evidence_audit or {}
     metadata = {
+        "run_id": getattr(orchestrator, "run_id", ""),
         "run_status": report.run_status,
         "elapsed_seconds": round(elapsed, 4),
         "confidence": report.confidence,
@@ -463,6 +488,21 @@ async def run_research_with_metadata(
         "estimated_worker_tokens": sum(
             max(0, int(getattr(result, "token_usage", 0) or 0))
             for result in getattr(orchestrator, "_all_results", [])
+        ),
+        "model_usage": (
+            modules["usage_tracker"].snapshot()
+            if modules.get("usage_tracker") is not None
+            else {}
+        ),
+        "model_assignments": {
+            key.removesuffix("_policy"): str(getattr(policy, "model_name", ""))
+            for key, policy in modules.items()
+            if key.endswith("_policy") and getattr(policy, "model_name", "")
+        },
+        "compression": (
+            modules["compressor"].get_stats()
+            if modules.get("compressor") is not None
+            else {}
         ),
         "evidence_artifact": report.evidence_artifact,
         "evidence_audit": audit,
@@ -589,7 +629,7 @@ def save_report(report: str, query: str, output_dir: str = "outputs/reports") ->
     文件名格式：report_YYYYMMDD_HHMMSS_<query前20字>.md
     """
     os.makedirs(output_dir, exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     safe_query = "".join(c if c.isalnum() or c in "_-" else "_" for c in query[:20])
     filename = f"report_{timestamp}_{safe_query}.md"
     filepath = os.path.join(output_dir, filename)

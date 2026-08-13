@@ -1,6 +1,7 @@
 from types import SimpleNamespace
 
 from src.models.vllm_policy import VLLMPolicy
+from src.runtime import UsageTracker
 
 
 def _response(prompt_tokens: int = 10, completion_tokens: int = 4):
@@ -107,3 +108,30 @@ def test_policy_deadline_fails_closed_when_client_cannot_enforce_it() -> None:
     assert result["content"].startswith("Error:")
     assert "cannot enforce" in result["content"]
     assert called is False
+
+
+def test_usage_tracker_aggregates_multiple_policy_instances() -> None:
+    tracker = UsageTracker()
+    first = VLLMPolicy(api_key="test", usage_tracker=tracker)
+    second = VLLMPolicy(api_key="test", usage_tracker=tracker)
+    first.client = SimpleNamespace(
+        chat=SimpleNamespace(
+            completions=SimpleNamespace(create=lambda **_: _response(8, 2))
+        )
+    )
+    second.client = SimpleNamespace(
+        chat=SimpleNamespace(
+            completions=SimpleNamespace(create=lambda **_: _response(5, 3))
+        )
+    )
+
+    first([{"role": "user", "content": "one"}])
+    second([{"role": "user", "content": "two"}])
+
+    assert tracker.snapshot() == {
+        "api_calls": 2,
+        "failed_calls": 0,
+        "prompt_tokens": 13,
+        "completion_tokens": 5,
+        "total_tokens": 18,
+    }

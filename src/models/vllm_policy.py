@@ -13,7 +13,7 @@ import json
 import logging
 import re
 import threading
-from typing import Optional
+from typing import Any, Optional
 
 from openai import OpenAI
 
@@ -67,6 +67,7 @@ class VLLMPolicy:
         max_tokens: int = 1024,
         tools: Optional[list[dict]] = None,
         extra_body: Optional[dict] = None,
+        usage_tracker: Any | None = None,
     ):
         # 显式设置每次请求超时与重试上限：防止单个调用卡在限流重试中无限挂起
         # （此前无超时 → 配合"全局超时仅在状态间检查"会导致整轮跑失控）
@@ -81,6 +82,7 @@ class VLLMPolicy:
         self.tools = tools
         # 透传给 chat.completions.create 的额外参数（如 GLM 推理模型的 thinking 开关）
         self.extra_body = extra_body
+        self.usage_tracker = usage_tracker
         # [污染标记] 一旦发生过主动截断，整条 trajectory 作废
         self.was_truncated = False
         self._usage_lock = threading.Lock()
@@ -107,6 +109,10 @@ class VLLMPolicy:
             for key, value in clean.items():
                 if key in self._global_usage:
                     self._global_usage[key] += value
+        if self.usage_tracker is not None:
+            record = getattr(self.usage_tracker, "record", None)
+            if callable(record):
+                record(**clean)
 
     def set_tools(self, tools: list[dict]) -> None:
         """注册可用工具（OpenAI function calling schema）。"""

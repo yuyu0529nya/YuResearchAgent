@@ -59,6 +59,7 @@ class AgentStatus(Enum):
     SUCCESS = "success"
     FAILED = "failed"
     TIMEOUT = "timeout"
+    CANCELLED = "cancelled"
 
 
 # ============================================================================
@@ -128,7 +129,8 @@ class ResearchReport:
         evidence_artifact: 可复现的证据图 JSON 路径。
         evidence_revision: 终审驱动修订的前后指标、哈希和验收结果。
         evidence_gap_rounds: 因证据不足触发的补充检索轮数。
-        run_status: complete / partial_timeout / partial_failure / failed，区分完整与降级输出。
+        run_status: complete / partial_timeout / partial_failure /
+            cancelled_partial / cancelled / failed，区分完整与降级输出。
     """
     query: str
     content: str

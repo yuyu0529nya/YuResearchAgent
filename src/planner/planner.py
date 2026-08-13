@@ -143,6 +143,28 @@ class Planner:
         Raises:
             PlanParseError: LLM 输出无法解析为合法 DAG 时抛出。
         """
+        return self._generate_plan(query, memory_context, request_timeout_seconds=None)
+
+    def generate_plan_with_timeout(
+        self,
+        query: str,
+        memory_context: str,
+        request_timeout_seconds: float,
+    ) -> DAG:
+        """Generate a plan with a provider-level request deadline."""
+        return self._generate_plan(
+            query,
+            memory_context,
+            request_timeout_seconds=request_timeout_seconds,
+        )
+
+    def _generate_plan(
+        self,
+        query: str,
+        memory_context: str,
+        *,
+        request_timeout_seconds: float | None,
+    ) -> DAG:
         prompt = self._build_prompt(query, memory_context)
         messages = [
             {"role": "system", "content": "You are a research planning assistant. Output valid JSON only."},
@@ -150,7 +172,14 @@ class Planner:
         ]
 
         try:
-            response = self.policy(messages)
+            call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+            if request_timeout_seconds is not None and callable(call_with_timeout):
+                response = call_with_timeout(
+                    messages,
+                    max(0.25, float(request_timeout_seconds)),
+                )
+            else:
+                response = self.policy(messages)
         except RuntimeError as e:
             raise PlanParseError(f"LLM call failed during planning: {e}") from e
 
@@ -180,6 +209,40 @@ class Planner:
         Returns:
             DAG: 新的执行计划。
         """
+        return self._replan(
+            query,
+            failed_tasks,
+            existing_results,
+            reason,
+            request_timeout_seconds=None,
+        )
+
+    def replan_with_timeout(
+        self,
+        query: str,
+        failed_tasks: list[SubTask],
+        existing_results: list[AgentResult],
+        reason: str,
+        request_timeout_seconds: float,
+    ) -> DAG:
+        """Replan with a provider-level request deadline."""
+        return self._replan(
+            query,
+            failed_tasks,
+            existing_results,
+            reason,
+            request_timeout_seconds=request_timeout_seconds,
+        )
+
+    def _replan(
+        self,
+        query: str,
+        failed_tasks: list[SubTask],
+        existing_results: list[AgentResult],
+        reason: str,
+        *,
+        request_timeout_seconds: float | None,
+    ) -> DAG:
         # 筛选保留的结果（confidence >= 0.6 且状态为 SUCCESS）
         preserved = [
             {
@@ -210,7 +273,14 @@ class Planner:
         ]
 
         try:
-            response = self.policy(messages)
+            call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+            if request_timeout_seconds is not None and callable(call_with_timeout):
+                response = call_with_timeout(
+                    messages,
+                    max(0.25, float(request_timeout_seconds)),
+                )
+            else:
+                response = self.policy(messages)
         except RuntimeError as e:
             raise PlanParseError(f"LLM call failed during replanning: {e}") from e
 

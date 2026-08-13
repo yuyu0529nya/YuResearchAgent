@@ -25,7 +25,12 @@ def test_task_type_values():
 
 
 def test_agent_status_values():
-    assert {s.value for s in AgentStatus} == {"success", "failed", "timeout"}
+    assert {s.value for s in AgentStatus} == {
+        "success",
+        "failed",
+        "timeout",
+        "cancelled",
+    }
 
 
 def test_run_config_defaults():

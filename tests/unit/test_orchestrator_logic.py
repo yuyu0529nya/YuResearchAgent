@@ -175,6 +175,49 @@ def test_synthesis_compressor_changes_long_context_without_mutating_raw_results(
     assert raw.output.startswith("raw evidence")
 
 
+def test_synthesis_compressor_receives_runtime_deadline_and_cancellation():
+    token = object()
+
+    class _Compressor:
+        available_budget = 10
+        l1_threshold = 0.6
+
+        def __init__(self):
+            self.deadline = None
+            self.token = None
+
+        @staticmethod
+        def calculate_tokens(_texts):
+            return 100
+
+        def compress(
+            self,
+            texts,
+            query,
+            system_prompt_tokens,
+            request_deadline_monotonic=None,
+            cancellation_token=None,
+        ):
+            self.deadline = request_deadline_monotonic
+            self.token = cancellation_token
+            return texts
+
+    compressor = _Compressor()
+    orchestrator = Orchestrator(planner=None, agent_pool=None, compressor=compressor)
+    orchestrator._query = "q"
+    raw = AgentResult(task_id="t1", status=S, output="raw evidence", confidence=0.8)
+    deadline = time.monotonic() + 5
+
+    orchestrator._prepare_synthesis_results(
+        [raw],
+        request_deadline_monotonic=deadline,
+        cancellation_token=token,
+    )
+
+    assert compressor.deadline == deadline
+    assert compressor.token is token
+
+
 def test_final_evidence_audits_report_even_after_global_budget_expires():
     store = EvidenceStore(persist_enabled=False)
     source = store.upsert_source(url="https://example.com/model", title="Model card")

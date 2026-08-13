@@ -60,3 +60,28 @@ def test_build_prompt_uses_configured_subtask_limit():
     prompt = planner._build_prompt("test query", "")
     assert "no more than 5 sub_tasks" in prompt
     assert "up to 5 focused sub_tasks" in prompt
+
+
+def test_planner_forwards_provider_deadline():
+    class _Policy:
+        timeout = None
+
+        def __call__(self, _messages):
+            raise AssertionError("bounded planning must use call_with_timeout")
+
+        def call_with_timeout(self, _messages, timeout_seconds):
+            self.timeout = timeout_seconds
+            return {
+                "content": (
+                    '{"sub_tasks":[{"task_id":"t1","task_type":"search",'
+                    '"description":"find","dependencies":[]}]}'
+                )
+            }
+
+    policy = _Policy()
+    planner = Planner(policy=policy)
+
+    dag = planner.generate_plan_with_timeout("q", "", 4.5)
+
+    assert len(dag) == 1
+    assert policy.timeout == 4.5

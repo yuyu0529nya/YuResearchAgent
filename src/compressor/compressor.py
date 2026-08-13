@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 from typing import Any, Optional
 
 from src.memory.embedder import Embedder
@@ -100,6 +101,8 @@ class ContextCompressor:
         query: str = "",
         level: Optional[int] = None,
         system_prompt_tokens: int = 0,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
     ) -> list[str]:
         """
         对文本列表执行压缩。
@@ -153,9 +156,22 @@ class ContextCompressor:
         if level >= 2 and compressed:
             compressed = self._l2_extract(compressed, query, actual_budget)
 
-        # L3: 层级摘要
-        if level >= 3 and compressed:
-            compressed = self._l3_summarize(compressed, query, actual_budget)
+        # L3: 层级摘要。截止时间耗尽或取消后仅保留确定性压缩结果。
+        can_call_model = not (
+            cancellation_token is not None
+            and getattr(cancellation_token, "is_cancelled", False)
+        ) and (
+            request_deadline_monotonic is None
+            or request_deadline_monotonic > time.monotonic()
+        )
+        if level >= 3 and compressed and can_call_model:
+            compressed = self._l3_summarize(
+                compressed,
+                query,
+                actual_budget,
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
+            )
 
         # 如果压缩后仍然超限，兜底滑动窗口截断
         final_tokens = self.calculate_tokens(compressed)
@@ -256,6 +272,9 @@ class ContextCompressor:
         texts: list[str],
         query: str,
         budget: int,
+        *,
+        request_deadline_monotonic: float | None = None,
+        cancellation_token: Any | None = None,
     ) -> list[str]:
         """
         L3 层级摘要：逐文档摘要 → 聚合摘要。
@@ -270,15 +289,46 @@ class ContextCompressor:
         per_doc_max = max(200, budget // max(len(texts), 1))
         summaries = []
         for text in texts:
+            if (
+                cancellation_token is not None
+                and getattr(cancellation_token, "is_cancelled", False)
+            ):
+                break
+            if (
+                request_deadline_monotonic is not None
+                and request_deadline_monotonic <= time.monotonic()
+            ):
+                break
             summary = self.summarizer.summarize_document(
-                text, query, max_length=per_doc_max
+                text,
+                query,
+                max_length=per_doc_max,
+                request_deadline_monotonic=request_deadline_monotonic,
+                cancellation_token=cancellation_token,
             )
             summaries.append(summary)
+
+        if not summaries:
+            return texts
+        if (
+            cancellation_token is not None
+            and getattr(cancellation_token, "is_cancelled", False)
+        ):
+            return summaries
+        if (
+            request_deadline_monotonic is not None
+            and request_deadline_monotonic <= time.monotonic()
+        ):
+            return summaries
 
         # 聚合摘要
         aggregate_max = max(400, budget // 2)
         aggregate = self.summarizer.summarize_documents(
-            summaries, query, max_length=aggregate_max
+            summaries,
+            query,
+            max_length=aggregate_max,
+            request_deadline_monotonic=request_deadline_monotonic,
+            cancellation_token=cancellation_token,
         )
 
         after_tokens = self.calculate_tokens([aggregate])

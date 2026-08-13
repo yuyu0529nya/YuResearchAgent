@@ -8,7 +8,7 @@
 system:
   # 系统名称与版本号
   name: "YuResearchAgent"
-  version: "0.3.0"
+  version: "0.4.0"
   # 日志级别: DEBUG / INFO / WARNING / ERROR
   log_level: "INFO"
   # 工作目录，用于存放临时文件与输出报告

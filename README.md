@@ -5,8 +5,8 @@
 ### Evidence-grounded multi-agent deep research
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
-[![Version](https://img.shields.io/badge/version-0.3.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-263%20passing-brightgreen.svg)](tests/unit)
+[![Version](https://img.shields.io/badge/version-0.4.0-2f855a.svg)](pyproject.toml)
+[![Tests](https://img.shields.io/badge/tests-281%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -43,13 +43,20 @@ HTML or PDF full text rather than treating an abstract as a complete paper.
 - **Long-horizon runtime**: a 10-state async orchestrator provides DAG scheduling,
   worker isolation, bounded retries, replanning, partial-report fallback, and
   separate reserves for synthesis, evidence revision, and final audit. Bounded
-  LLM stages propagate their deadlines to the provider client and disable SDK
-  retries, so cancelling an outer coroutine does not leave a paid HTTP call running.
+  LLM stages propagate absolute deadlines through planning, workers, context
+  compression, synthesis, Red-Blue review, verification, and revision to the
+  provider client, with SDK retries disabled at the deadline boundary.
+- **Controllable and durable runs**: cooperative cancellation stops new paid
+  operations and preserves completed evidence as a partial report. Ordered typed
+  events, terminal status, artifacts, latency, evidence metrics, and per-run LLM
+  usage are persisted in a WAL-mode SQLite ledger; interrupted processes are
+  recovered explicitly instead of appearing successful.
 - **Auditable evaluation**: paired generation, exact report retention, SHA-256
   integrity checks, counterbalanced LLM-as-Judge, bootstrap intervals, effect
   sizes, token/latency telemetry, resume-safe checkpoints, and real config ablations.
-- **Streaming observability**: the Gradio UI exposes run state, tool events,
-  evidence coverage, unresolved claims, and high-value sources as research runs.
+- **Streaming observability**: the Gradio workspace projects typed events rather
+  than parsing logs. It exposes live DAG progress, Stop, evidence coverage,
+  unresolved claims, high-value sources, durable run history, and artifact replay.
 
 ## Architecture
 
@@ -57,6 +64,10 @@ HTML or PDF full text rather than treating an abstract as a complete paper.
 flowchart LR
     Q["Research query"] --> P["Planner: dependency DAG"]
     P --> O["Async orchestrator"]
+    O --> RE["Typed run events"]
+    RE --> RL["SQLite run ledger"]
+    RL --> UI["Live UI + history replay"]
+    UI -->|"cooperative stop"| O
     O --> W["Isolated research workers"]
     W --> T["Search, papers, browser, files, code"]
     T --> E["EvidenceStore"]
@@ -75,13 +86,14 @@ flowchart LR
 
 | Layer | Implementation |
 |---|---|
-| Orchestration | DAG layers, `asyncio`, bounded concurrency, retries, replan, hard deadline |
+| Orchestration | DAG layers, `asyncio`, bounded concurrency, retries, replan, cooperative stop, hard deadline |
 | Retrieval | Yahoo/Brave/Wikipedia, OpenAlex/Crossref, arXiv HTML/PDF, files, calculator, sandbox |
 | Evidence | typed schemas, canonical URLs, source dedupe, hashes, claim attribution edges |
 | Verification | lexical/numeric/polarity pass plus strict, source-bounded LLM entailment |
 | Context | feature-hash fallback, query-biased filtering, TextRank, hierarchical summary |
 | Synthesis | structured source catalog, verdict constraints, normalized references |
 | Post-generation | final audit, evidence-bounded revision, deterministic accept/rollback gate |
+| Runtime control | typed events, SQLite/WAL run ledger, recovery, history replay, per-run token telemetry |
 | Evaluation | rule metrics, balanced Judge sampling, paired statistics, executable ablations |
 
 ## Paper-Grounded Design
@@ -218,6 +230,11 @@ python scripts/run_webui.py
 # http://127.0.0.1:7860
 ```
 
+The workspace can stop an active run cooperatively, retain completed sub-task
+output, and reopen reports, evidence audits, event timelines, and token usage
+from `outputs/runs/runs.db`. The ledger stores metadata and artifact paths, not
+API keys or report bodies.
+
 Optional heavy features are explicit: `pip install -e '.[web]'` for Gradio,
 `.[semantic]` for sentence-transformers, `.[analysis]` for evaluation analysis,
 and `.[train]` for TRL/LoRA. The default core path does not install Torch.
@@ -286,6 +303,15 @@ evidence did not establish a quality gain.
   flags from leaking across concurrent trajectories.
 - Every network tool has a bounded timeout and returns a recoverable observation;
   completed work survives global timeout or synthesis failure as a partial report.
+- Planning, worker, compression, synthesis, adversarial, verifier, and revision
+  model calls share the run's remaining deadline. A user stop is cooperative:
+  the current HTTP request finishes or reaches its provider timeout, and no new
+  paid operation starts afterward.
+- Ordered runtime events and compact run summaries are transactionally persisted
+  to SQLite/WAL. Restart recovery marks unfinished runs as `interrupted`; history
+  artifact paths are constrained to the report and evidence output roots.
+- Per-run telemetry aggregates API calls, failures, prompt/completion tokens,
+  elapsed time, evidence coverage, source counts, and compression statistics.
 - Search snippets, abstracts, and full text remain distinct evidence types;
   browser errors cannot become evidence.
 - arXiv PDF/HTML URLs and versions canonicalize to one source; DOI URLs receive
@@ -297,8 +323,9 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `263` API-free tests cover orchestration, parsing, retrieval, evidence,
-  metrics, replay integrity, provider compatibility, and regressions. CI runs on
+- `281` API-free tests cover orchestration, cancellation, deadline propagation,
+  run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
+  replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
 
 ## Repository Layout
@@ -314,6 +341,7 @@ YuResearchAgent/
 │   ├── tools/                # search, papers, browser, files, code
 │   ├── compressor/           # multilevel long-context control
 │   ├── memory/               # scoped SQLite/vector memory
+│   ├── runtime/              # typed events, cancellation, run ledger, UI projection
 │   └── models/               # OpenAI-compatible backend router
 ├── evaluation/               # benchmark contracts, metrics, Judge, statistics
 ├── scripts/                  # CLI, UI, evaluation, replay, GRPO PoC

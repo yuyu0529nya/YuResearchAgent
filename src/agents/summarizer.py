@@ -12,6 +12,7 @@ from __future__ import annotations
 import asyncio
 import json
 import re
+import time
 from typing import Any
 
 from .base_agent import BaseAgent
@@ -51,6 +52,28 @@ class SummarizerAgent(BaseAgent):
         evidence_audit: dict = context.get("evidence_audit", {}) or {}
         evidence_sources: list[dict] = context.get("evidence_sources", []) or []
         evidence_sources = self._prioritize_evidence_sources(evidence_sources, evidence_audit)
+        cancellation_token = context.get("_cancellation_token")
+        request_deadline = context.get("_request_deadline_monotonic")
+
+        def _is_cancelled() -> bool:
+            return bool(
+                cancellation_token is not None
+                and getattr(cancellation_token, "is_cancelled", False)
+            )
+
+        def _cancelled_result() -> AgentResult:
+            reason = getattr(cancellation_token, "reason", "") or "Cancelled by user."
+            return AgentResult(
+                task_id=task.task_id,
+                status=AgentStatus.CANCELLED,
+                output=reason,
+                trajectory=[],
+                token_usage=0,
+                confidence=0.0,
+            )
+
+        if _is_cancelled():
+            return _cancelled_result()
 
         if not results:
             report = ResearchReport(
@@ -84,7 +107,19 @@ class SummarizerAgent(BaseAgent):
             old_tools = getattr(self.policy, "tools", None)
             self.policy.tools = None
             try:
-                response = await asyncio.to_thread(self.policy, messages)
+                call_with_timeout = getattr(self.policy, "call_with_timeout", None)
+                if request_deadline is not None and callable(call_with_timeout):
+                    remaining = max(
+                        0.25,
+                        float(request_deadline) - time.monotonic(),
+                    )
+                    response = await asyncio.to_thread(
+                        call_with_timeout,
+                        messages,
+                        remaining,
+                    )
+                else:
+                    response = await asyncio.to_thread(self.policy, messages)
             finally:
                 self.policy.tools = old_tools
         except RuntimeError as e:
@@ -97,6 +132,8 @@ class SummarizerAgent(BaseAgent):
                 confidence=0.0,
             )
 
+        if _is_cancelled():
+            return _cancelled_result()
         content = response.get("content", "") or ""
         if content.strip().lower().startswith("error:"):
             return AgentResult(
