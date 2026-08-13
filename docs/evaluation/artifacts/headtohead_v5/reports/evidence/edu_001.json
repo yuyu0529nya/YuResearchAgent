@@ -1,0 +1,2488 @@
+{
+  "schema_version": "1.0",
+  "query": "评估自适应学习系统（如 Khan Academy、松鼠 AI）在 K-12 数学教育中的效果，分析其个性化推荐算法、学习效果量化指标和师生接受度。",
+  "created_at": "2026-08-13T20:29:44.719848+00:00",
+  "sources": [
+    {
+      "source_id": "src_95373bed38baab9d",
+      "url": "https://en.wikipedia.org/wiki/Khan_Academy",
+      "title": "Khan Academy - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "09e08a77147c36bc71a56949c993067ce65b0c954bf99fd9ec6abc46db8da05f",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.4807,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_16f8639aa02e9f46",
+      "url": "https://khanacademy.org/",
+      "title": "Khan Academy | Free Online Courses, Lessons & Practice",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.721,
+        "host_domain": "khanacademy.org"
+      }
+    },
+    {
+      "source_id": "src_abb7cb04670364c5",
+      "url": "https://khanacademy.org/login",
+      "title": "Khan Academy",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.721,
+        "host_domain": "khanacademy.org"
+      }
+    },
+    {
+      "source_id": "src_5a326ea6919b141f",
+      "url": "https://khanted.org/",
+      "title": "Khan TED Institute",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy K-12 数学 教师接受度 学生满意度 课堂整合 研究",
+        "retrieval_relevance": 0.4632,
+        "host_domain": "khanted.org"
+      }
+    },
+    {
+      "source_id": "src_52e16df21909ae17",
+      "url": "https://youtube.com/c/@khanacademy",
+      "title": "Khan Academy - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.721,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_3c19429f351735c7",
+      "url": "https://en.wikipedia.org/wiki/Khan_(title)",
+      "title": "Khan (title ) - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "Khan Academy 松鼠AI 自适应学习系统 K-12 数学教育 应用格局 部署规模 效果评估",
+        "retrieval_relevance": 0.2267,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_cfa77c74730d5f44",
+      "url": "https://mdpi.com/2079-9292/13/18/3762/pdf?version=1726988994",
+      "title": "Leveraging AI in E-Learning: Personalized Learning and Adaptive Assessment through Cognitive Neuropsychology—A Systematic Analysis",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Constantinos Halkiopoulos, Evgenia Gkintoni",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4402762189",
+        "citation_count": 277,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning system K-12 mathematics personalized recommendation effectiveness evaluation",
+        "retrieval_relevance": 0.8167,
+        "host_domain": "mdpi.com"
+      }
+    },
+    {
+      "source_id": "src_b9036ba41ff154f8",
+      "url": "https://mdpi.com/2227-7102/13/12/1216/pdf?version=1701879185",
+      "title": "Adaptive Learning Using Artificial Intelligence in e-Learning: A Literature Review",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Ilie Gligorea, Marius Cioca, Romana Oancea, Andra-Teodora Gorski, Hortensia Gorski, Paul Tudorache",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4389365236",
+        "citation_count": 832,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning system K-12 mathematics personalized recommendation effectiveness evaluation",
+        "retrieval_relevance": 0.775,
+        "host_domain": "mdpi.com"
+      }
+    },
+    {
+      "source_id": "src_9834626a5477bfc0",
+      "url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-021-00289-4",
+      "title": "Adaptive e-learning environment based on learning styles and its impact on development students' engagement",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Hassan A. El-Sabagh",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3203800336",
+        "citation_count": 537,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning system K-12 mathematics personalized recommendation effectiveness evaluation",
+        "retrieval_relevance": 0.5167,
+        "host_domain": "educationaltechnologyjournal.springeropen.com"
+      }
+    },
+    {
+      "source_id": "src_bf11a24346cf83d8",
+      "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/09840390.pdf",
+      "title": "AI-Based Personalized E-Learning Systems: Issues, Challenges, and Solutions",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Mir Murtaza, Yamna Ahmed, Jawwad Ahmed Shamsi, Fahad Sherwani, Mariam Usman",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4288062238",
+        "citation_count": 360,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning system K-12 mathematics personalized recommendation effectiveness evaluation",
+        "retrieval_relevance": 0.775,
+        "host_domain": "ieeexplore.ieee.org"
+      }
+    },
+    {
+      "source_id": "src_e93bcaf8b9c601a4",
+      "url": "https://leiphone.com/category/smarteducation/sI2QRmnUPB5CPmhK.html",
+      "title": "松鼠AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.7651,
+        "host_domain": "leiphone.com"
+      }
+    },
+    {
+      "source_id": "src_6ea456d0da2a7d9f",
+      "url": "https://m.21jingji.com/article/20211025/herald/637d329356e3d5af1aa39bb68cf93d60_zaker.html",
+      "title": "松鼠Ai完成新一轮融资 联合阿里云、联想发布智慧教育产品 - 21...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.742,
+        "host_domain": "m.21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_84423f515254bb52",
+      "url": "https://m.bjnews.com.cn/detail/1721802968168207.html",
+      "title": "从一张稿纸识别解题过程，松鼠Ai用智适应大模型赋能因材施教",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.742,
+        "host_domain": "m.bjnews.com.cn"
+      }
+    },
+    {
+      "source_id": "src_6954a01cf66ed48a",
+      "url": "https://ithome.com/0/977/492.htm",
+      "title": "松鼠Ai到底有没有效果？ 深耕教育12年，真实实力一次性说透 - IT之家",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.742,
+        "host_domain": "ithome.com"
+      }
+    },
+    {
+      "source_id": "src_d9eed25154ebed01",
+      "url": "https://aipmgo.com/archives/peng-bo-she-song-shu-ai-li-song-cheng-ai-suan-fa-jiang-qu-dai-ren-lei-jiao-shi-cheng-wei-8f59e623",
+      "title": "彭博社：松鼠AI李松称AI算法将取代人类教师成未来教育主角 - AIPMGO",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.742,
+        "host_domain": "aipmgo.com"
+      }
+    },
+    {
+      "source_id": "src_a93d5fbbdc3cb28e",
+      "url": "https://0hang.com/2169.html",
+      "title": "教育大模型迎来新玩家：十年深耕剑指智适应，25... | 零航-0hang.com",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 智适应学习系统 知识点拆分 MCM 学生规模 效果研究",
+        "retrieval_relevance": 0.742,
+        "host_domain": "0hang.com"
+      }
+    },
+    {
+      "source_id": "src_d0463bebf374559f",
+      "url": "https://researching.cn/ArticlePdf/m00139/2024/41/5/178.pdf",
+      "title": "知识图谱和大语言模型在航天测控问答系统中的融合应用研究",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI Squirrel AI 自适应学习 知识图谱 错题诊断 路径推荐 算法",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "researching.cn"
+      }
+    },
+    {
+      "source_id": "src_6b7f19be22b62cbe",
+      "url": "https://blog.csdn.net/dev_csdn/article/details/78683576",
+      "title": "【BDTC 2017...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2017",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy 个性化推荐算法 知识图谱 掌握度建模 K-12 数学",
+        "retrieval_relevance": 0.7148,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_ead0bc4b36f3896b",
+      "url": "https://xblx.whu.edu.cn/rc-pub/front/front-article/download/55755469/lowqualitypdf/图模互补：知识图谱与大模型融合综述.pdf",
+      "title": "图模互补知识图谱与大模型融合综述",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI Squirrel AI 自适应学习 知识图谱 错题诊断 路径推荐 算法",
+        "retrieval_relevance": 0.7173,
+        "host_domain": "xblx.whu.edu.cn"
+      }
+    },
+    {
+      "source_id": "src_09db1050c6d1fecc",
+      "url": "https://163.com/dy/article/L3VDM4I10550ADBZ.html",
+      "title": "市面AI学伴那么多，赶考状元凭什么敢说“AI...”",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI Squirrel AI 自适应学习 知识图谱 错题诊断 路径推荐 算法",
+        "retrieval_relevance": 0.7712,
+        "host_domain": "163.com"
+      }
+    },
+    {
+      "source_id": "src_909e891490e6c9f7",
+      "url": "https://pad.zol.com.cn/1231/12312060.html",
+      "title": "AI学习机哪个品牌好？不吹不黑，一文讲透，家长别再乱花钱",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI Squirrel AI 自适应学习 知识图谱 错题诊断 路径推荐 算法",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "pad.zol.com.cn"
+      }
+    },
+    {
+      "source_id": "src_cc628538bf71f1c0",
+      "url": "https://blog.csdn.net/roccreed/article/details/150426784",
+      "title": "D034 vue+django...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI Squirrel AI 自适应学习 知识图谱 错题诊断 路径推荐 算法",
+        "retrieval_relevance": 0.7442,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_f4ef4846b29629ac",
+      "url": "https://doi.org/10.64090/3105-0972.20250208",
+      "title": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法 研究",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "海瑛 李, 娟 李, 玲 边, 智佳 程",
+      "year": "2025",
+      "publisher": "Hong Kong Qianhe Publishing Group Limited",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "231099a1febf4aa3fcad62ace236734207be5c21e9a5b0979122fc03feb531e5",
+      "metadata": {
+        "paper_id": "10.64090/3105-0972.20250208",
+        "citation_count": 1,
+        "provider": "crossref",
+        "retrieval_query": "个性化推荐算法 Khan Academy 松鼠 AI 知识图谱 掌握度建模 K-12 数学 调查 Khan Academy 与松鼠 AI 在 K-12 数学场景中使用的个性化推荐算法，包括知识图谱、掌握度建模、错题诊断与路径推荐机制。 academic paper survey benchmark",
+        "retrieval_relevance": 0.7747,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_0508437059a3e8a6",
+      "url": "https://chinagp.net/fileup/1007-9572/PDF/20230329.pdf",
+      "title": "针刺治疗膝骨关节炎随机对照试验结局指标现状分析",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "K-12 数学 自适应学习 随机对照试验 效应量 Khan Academy 松鼠AI 实证研究",
+        "retrieval_relevance": 0.7621,
+        "host_domain": "chinagp.net"
+      }
+    },
+    {
+      "source_id": "src_bdfe73c61fc5fe02",
+      "url": "https://researching.cn/ArticlePdf/m00009/2025/54/12/1211002.pdf",
+      "title": "基于深度自适应学习点扩散函数的简单光学?成像空变像差重建方法",
+      "source_type": "web",
+      "task_ids": [
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 自适应学习 师生接受度 满意度 效果 研究",
+        "retrieval_relevance": 0.77,
+        "host_domain": "researching.cn"
+      }
+    },
+    {
+      "source_id": "src_fcbd9d5e01a5d6a5",
+      "url": "https://53ai.com/news/zhinengyingxiao/2024102545928.html",
+      "title": "松鼠Ai栗浩洋：AI教育如何重塑学习未来？ - 53AI-AI知识库|企业AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 自适应学习 师生接受度 满意度 效果 研究",
+        "retrieval_relevance": 0.7014,
+        "host_domain": "53ai.com"
+      }
+    },
+    {
+      "source_id": "src_386e752892cc9416",
+      "url": "https://khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:computers/xcae6f4a7ff015e7d:logic-gates-and-circuits/a/logic-gates",
+      "title": "Khan Academy",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "K-12 数学 自适应学习 随机对照试验 效应量 Khan Academy 松鼠AI 实证研究",
+        "retrieval_relevance": 0.4571,
+        "host_domain": "khanacademy.org"
+      }
+    },
+    {
+      "source_id": "src_10b6d335939c3497",
+      "url": "https://sciencedirect.com/science/article/am/pii/S0277953617307359?via%3Dihub",
+      "title": "Understanding and misunderstanding randomized controlled trials",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Angus Deaton, Nancy Cartwright",
+      "year": "2017",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W2515189678",
+        "citation_count": 1854,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning mathematics K-12 randomized controlled trial effect size",
+        "retrieval_relevance": 0.7917,
+        "host_domain": "sciencedirect.com"
+      }
+    },
+    {
+      "source_id": "src_83e14edb5dfe9896",
+      "url": "https://jneurosci.org/content/jneuro/14/5/3208.full.pdf",
+      "title": "Adaptive representation of dynamics during learning of a motor task",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Reza Shadmehr, FA Mussa-Ivaldi",
+      "year": "1994",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W1922715780",
+        "citation_count": 2684,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning mathematics K-12 randomized controlled trial effect size",
+        "retrieval_relevance": 0.5167,
+        "host_domain": "jneurosci.org"
+      }
+    },
+    {
+      "source_id": "src_d001e9fa4630ccdc",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10994-006-6226-1.pdf",
+      "title": "Extremely randomized trees",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Pierre Geurts, Damien Ernst, Louis Wehenkel",
+      "year": "2006",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W2056132907",
+        "citation_count": 8937,
+        "provider": "openalex",
+        "retrieval_query": "adaptive learning mathematics K-12 randomized controlled trial effect size",
+        "retrieval_relevance": 0.2583,
+        "host_domain": "link.springer.com"
+      }
+    },
+    {
+      "source_id": "src_e3cad015556da1f8",
+      "url": "https://khanmigo.ai/",
+      "title": "Meet Khanmigo: Khan Academy's AI-powered teaching assistant & tutor",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.721,
+        "host_domain": "khanmigo.ai"
+      }
+    },
+    {
+      "source_id": "src_d0fe6779bca00392",
+      "url": "https://tandfonline.com/doi/full/10.1080/10408398.2020.1741505",
+      "title": "tandfonline.com/doi/full/10.1080/10408398.2020.1741505",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.721,
+        "host_domain": "tandfonline.com"
+      }
+    },
+    {
+      "source_id": "src_43288c5e7a07329e",
+      "url": "https://grokipedia.com/page/Digital_learning",
+      "title": "Digital learning — Grokipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.49,
+        "host_domain": "grokipedia.com"
+      }
+    },
+    {
+      "source_id": "src_cd4ee6a9e3be0539",
+      "url": "https://astra-ai.co/",
+      "title": "Astra AI – Study & Exam Prep | AI Tutor for All Subjects",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy randomized controlled trial math achievement effect size SRI study; Squirrel AI adaptive learning meta-analysis effect size",
+        "retrieval_relevance": 0.49,
+        "host_domain": "astra-ai.co"
+      }
+    },
+    {
+      "source_id": "src_999448fe256e258c",
+      "url": "https://signin.co/khan-academy",
+      "title": "Khan Academy Login - www.khanacademy.org Account Sign In",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Khan Academy K-12 数学 教师接受度 学生满意度 课堂整合 研究",
+        "retrieval_relevance": 0.4632,
+        "host_domain": "signin.co"
+      }
+    },
+    {
+      "source_id": "src_5e38dd480cd420cc",
+      "url": "https://zh.m.wikipedia.org/wiki/%E6%9D%BE%E9%BC%A0",
+      "title": "松鼠 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "松鼠AI 自适应学习 师生接受度 满意度 效果 研究",
+        "retrieval_relevance": 0.2338,
+        "host_domain": "zh.m.wikipedia.org"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_f6fb9474ce934a68",
+      "source_id": "src_95373bed38baab9d",
+      "text": "Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan. The organization provides free …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "85928366a37d3fe1f72c2bffe498b0d44806ae998897bc9e58180f6620b9848f"
+    },
+    {
+      "evidence_id": "ev_06927ff56ec0ffb4",
+      "source_id": "src_16f8639aa02e9f46",
+      "text": "Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more. …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "cfa49479aeff3cd0d1922917df6434cd33c5f99901879e9b522d215a0052b5ba"
+    },
+    {
+      "evidence_id": "ev_02589e553072479e",
+      "source_id": "src_abb7cb04670364c5",
+      "text": "Did you know? Regardless of who you are, mastering even just one more skill on Khan Academy results in learning gains.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e647e194e02ff8e5e233af717ee6f7e988ac2b56ff44da1e9e5402342961e25c"
+    },
+    {
+      "evidence_id": "ev_cb98d7fe9a3d809a",
+      "source_id": "src_5a326ea6919b141f",
+      "text": "The Khan TED Institute, in partnership with Khan Academy, TED, and ETS, will world-class higher education that is globally …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9d2232dac64f815e87ba37e1b6cb992aee369a12b8ce554a2d193f0bc5bb85cf"
+    },
+    {
+      "evidence_id": "ev_91ceb714da2bfd9e",
+      "source_id": "src_52e16df21909ae17",
+      "text": "Our interactive practice problems, articles, and videos help students succeed in math, biology, chemistry, physics, history, …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4481d3903a8d076c4c60c3e248f3c22d9ddab1a356ce20c35c6369f99ea7f16f"
+    },
+    {
+      "evidence_id": "ev_f4cf308c8a33c352",
+      "source_id": "src_3c19429f351735c7",
+      "text": "In the Mongol Empire it signified the ruler of a horde (ulus), while the ruler of all the Mongols was the khagan or great khan. It is a title …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5946b65d9d0038e014b84dd66c9107b389493843368e8f12e0e5fa722685b36c"
+    },
+    {
+      "evidence_id": "ev_b6925a2f309c5e61",
+      "source_id": "src_cfa77c74730d5f44",
+      "text": "This paper reviews the literature on integrating AI in e-learning, from the viewpoint of cognitive neuropsychology, for Personalized Learning (PL) and Adaptive Assessment (AA). This review follows the PRISMA systematic review methodology and synthesizes the results of 85 studies that were selected from an initial pool of 818 records across several databases. The results indicate that AI can improve students’ performance, engagement, and motivation; at the same time, some challenges like bias and discrimination should be noted. The review covers the historic development of AI in education, its theoretical grounding, and its practical applications within PL and AA with high promise and ethical issues of AI-powered educational systems. Future directions are empirical validation of effectiveness and equity, development of algorithms that reduce bias, and exploration of ethical implications regarding data privacy. The review identifies the transformative potential of AI in developing personalized and adaptive learning (AL) environments, thus, it advocates continued development and exploration as a means to improve educational outcomes.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "ce879e7eb49ea8ea4ce8124e4888b929a64f538530c74c44acfe6c7d83312442"
+    },
+    {
+      "evidence_id": "ev_1f17663ae3c2efff",
+      "source_id": "src_b9036ba41ff154f8",
+      "text": "The rapid evolution of e-learning platforms, propelled by advancements in artificial intelligence (AI) and machine learning (ML), presents a transformative potential in education. This dynamic landscape necessitates an exploration of AI/ML integration in adaptive learning systems to enhance educational outcomes. This study aims to map the current utilization of AI/ML in e-learning for adaptive learning, elucidating the benefits and challenges of such integration and assessing its impact on student engagement, retention, and performance. A comprehensive literature review was conducted, focusing on articles published from 2010 onwards, to document the integration of AI/ML in e-learning. The review analyzed 63 articles, employing a systematic approach to evaluate the deployment of adaptive learning algorithms and their educational implications. Findings reveal that AI/ML algorithms are instrumental in personalizing learning experiences. These technologies have been shown to optimize learning paths, enhance engagement, and improve academic performance, with some studies reporting increased test scores. The integration of AI/ML in e-learning platforms significantly contributes to the personalization and effectiveness of the educational process. Despite challenges like data privacy and the complexity of AI/ML systems, the results underscore the potential of adaptive learning to revolutionize education by catering to individual learner needs.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "d4542a0dc9b914cdc19ceb58125367c921b7248b26b1571a9d5850bfea63b262"
+    },
+    {
+      "evidence_id": "ev_1827d40786dd2e9d",
+      "source_id": "src_9834626a5477bfc0",
+      "text": "Abstract Adaptive e-learning is viewed as stimulation to support learning and improve student engagement, so designing appropriate adaptive e-learning environments contributes to personalizing instruction to reinforce learning outcomes. The purpose of this paper is to design an adaptive e-learning environment based on students' learning styles and study the impact of the adaptive e-learning environment on students’ engagement. This research attempts as well to outline and compare the proposed adaptive e-learning environment with a conventional e-learning approach. The paper is based on mixed research methods that were used to study the impact as follows: Development method is used in designing the adaptive e-learning environment, a quasi-experimental research design for conducting the research experiment. The student engagement scale is used to measure the following affective and behavioral factors of engagement (skills, participation/interaction, performance, emotional). The results revealed that the experimental group is statistically significantly higher than those in the control group. These experimental results imply the potential of an adaptive e-learning environment to engage students towards learning. Several practical recommendations forward from this paper: how to design a base for adaptive e-learning based on the learning styles and their implementation; how to increase the impact of adaptive e-learning in education; how to raise cost efficiency of education. The proposed adaptive e-learning approach and the results can help e-learning institutes in designing and developing more customized and adaptive e-learning environments to reinforce student engagement.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "04745f1f530ec4e3c288d526fbc4b30b15a4344ef56a30ec88c56418bfd7624b"
+    },
+    {
+      "evidence_id": "ev_071f233b562dd31c",
+      "source_id": "src_bf11a24346cf83d8",
+      "text": "A personalized e-learning system is effective in imparting enhanced learning to its users. As compared to a conventional e-learning system, which provides similar contents to each learner, a personalized learning system provides specific learning contents and assessments to the learners. Personalization is based on Artificial Intelligence (AI) based techniques in which appropriate contents for each learner are determined using the level of comprehension of the learner and the preferred modes of learning. This paper presents requirements and challenges for a personalized e-learning system. The paper is focused in elaborating four research questions, which are related to identifying key factors of personalized education, elaborating on state of the art research in the domain, utilizing benefits of AI in personalized education, and determining future research directions. The paper utilizes an extensive survey of current research papers in answering these questions. It provides a comprehensive review of existing solutions in offering personalized e-learning solutions. It also elaborates on different learning models and learning theories, which are significant in providing personalized education. It proposes an efficient framework, which can offer personalized e-learning to each learner and identifies significant directions for future research. The paper is beneficial for academicians and researchers in understanding the requirements of such a system, comprehending its methodologies, and identifying challenges which are needed to be addressed.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "f1ac128bf4ea73483da90cac2cef0fc8f7daee8e02d5f3bbbc30e160aa260b75"
+    },
+    {
+      "evidence_id": "ev_568bbc39f59fb90b",
+      "source_id": "src_e93bcaf8b9c601a4",
+      "text": "松鼠AI系统可以根据每个学生的知识点状态进行精准画像。智慧教育 栗浩洋 松鼠AI 智适应教育.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7615c5957d9478f4bf29d97da0acecbe2fed84f3b4d009408526e5a216594982"
+    },
+    {
+      "evidence_id": "ev_65f7dcc3c825369c",
+      "source_id": "src_6ea456d0da2a7d9f",
+      "text": "在第80届中国教育装备展上，松鼠Ai还发布了智能教育硬件产品——松鼠Ai智能学习机-V11，通过AI技术实现智能诊断、知识点细致拆分、MCM训练（思想、能力、方. 法训练）及L5级人机互助等十大教学功能。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2a746fae41c189131a39b898c0609cdcbfb6c4d6e815e2271ba05b233f4479e6"
+    },
+    {
+      "evidence_id": "ev_3aefb53315e747d8",
+      "source_id": "src_84423f515254bb52",
+      "text": "松鼠Ai的智适应大模型则通过数据层、模型层和应用层搭建起专属的智适应引擎架构，并叠加独创的MCM模型，穿透学科知识的表面内容，确保即使是在应. 试教育的框架下也能有效提高学生的整体素养。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6921123667ebcdad2b596e6fd01dc73e3f92886458e385d0bfc46494295e1e98"
+    },
+    {
+      "evidence_id": "ev_b23ad6ccf5eb5a28",
+      "source_id": "src_6954a01cf66ed48a",
+      "text": "从 AI 打地基、针对性知识点精讲，到流程式分层学习、MCM 学习能力训练，再到遗忘规律复习、错题溯源巩固，形成测-学-练-测的完整闭环，循序渐进帮孩子夯实基.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "b55beefe473cb22da9825897225ab70e90953c1c859a82d35bdead4c33416fc2"
+    },
+    {
+      "evidence_id": "ev_96cbcffcbef25833",
+      "source_id": "src_d9eed25154ebed01",
+      "text": "松鼠AI自适应系统. 传统教师课堂. 课程定制.5.1 自适应学习成教育科技主赛道.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "539450af26ea871fec98795f68f14aa71f397d0eae1eaf01c4bab403b8aa9450"
+    },
+    {
+      "evidence_id": "ev_d64f70bf176043f1",
+      "source_id": "src_a93d5fbbdc3cb28e",
+      "text": "松鼠Ai智适应教育大模型.第二是MCM系统。 第一个M是Model of thinking，就是思维模式，第二个C是Capacity，是学习能力，第三个M是Methodology，是学习方法论。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "785f400274ed1a2a1a7cbafc629b596611201081cac16b7c070f698482c79fb9"
+    },
+    {
+      "evidence_id": "ev_d2a5000d3dd4ae76",
+      "source_id": "src_95373bed38baab9d",
+      "text": "From Wikipedia, the free encyclopedia Nonprofit educational organization Khan Academy Type of site 501(c)(3) Available Multiple languages Owner Khan Academy, Inc. Founder Sal Khan KhanAcademy. org Launched 2008 years ago 2008 YouTube information Channel Khan Academy Years active 2008–present Genre Education Subscribers 9,280,594 Views 2,205,163,846 Last updated: March 2, 2026 Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan . The organization provides free online learning resources for students and teachers worldwide. The Khan Academy platform offers instructional videos, practice exercises, teaching tools, test preparation and assessment tests, across a range of subjects including mathematics sciences history literature economics computer science . Lessons are typically delivered through short instructional videos paired with interactive practice activities. Khan Academy is supported primarily through philanthropic donations, allowing its educational materials to remain freely available to users. History edit Sal Khan presenting during TED 2011 The origins of Khan Academy date to 2004, when Salman \"Sal\" Khan began tutoring a cousin in mathematics online using a service called Yahoo! Doodle Images.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "28ddef98e121afd12b471d5b0dd929739d6296c5dd38c10ec55f7b6d60d4820e"
+    },
+    {
+      "evidence_id": "ev_46ffa0ed457cf8f0",
+      "source_id": "src_95373bed38baab9d",
+      "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project full time. The organization was established with the goal of providing free learning resources to students worldwide. Khan Academy's lessons are primarily delivered through short instructional videos paired with interactive practice exercises and assessments. Studies have found that use of Khan Academy resources is associated with improved student academic performance. In 2014, Khan Lab School , a laboratory school associated with Khan Academy and founded by Sal Khan, opened in Mountain View, California May-Li Khoe served as Vice President of Design at Khan Academy from 2014 to 2019, and contributed to the development of the platform's user experience and design strategy. In January 2026, Khan Academy and Google shared their long-running partnership on -supported learning at Bett UK 2026.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "796966c13ce1968104c6a4986f5f9705cf56748c8d19adc7621a7ab2b19b03fb"
+    },
+    {
+      "evidence_id": "ev_a72cd90849180012",
+      "source_id": "src_95373bed38baab9d",
+      "text": "The pair created tools designed to support classroom instruction, rather than automate it, and to increase transparency in student learning and progress. The following month, Khan Academy expanded their collaboration with Google to integrate its Gemini AI model into literacy tools. Funding edit Khan Academy is a 501(c)(3) non-profit organization , mostly funded by donations from philanthropic organizations. On its form 990 , the organization reported $31 million in revenues in 2018 and $28 million in 2019, including $839,000 in 2019 compensation for Khan as CEO. In 2010, Google donated $2 million for creating new courses and translating content into other languages, as part of their Project 10 program. In 2013, Carlos Slim from the Luis Alcazar Foundation in Mexico, made a donation for creating Spanish versions of videos. In 2015, AT&T contributed $2. 25 million to Khan Academy for mobile versions of the content accessible through apps The Bill & Melinda Gates Foundation, now called The Gates Foundation, has donated above $10 million to Khan Academy. On January 11, 2021, Elon Musk donated $5 million through his Musk Foundation Content edit The narrator writes to an electronic blackboard during a recorded lecture. Khan Academy offers classes with educational videos hosted on YouTube .",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "460070eca31deb2cbec4ff77ba56b62c6084f98fdddba7d4e5e38db679c2fc96"
+    },
+    {
+      "evidence_id": "ev_c352697a6d8dc69c",
+      "source_id": "src_95373bed38baab9d",
+      "text": "The website is meant to be used as a supplement to the videos, because it includes other features such as progress tracking, practice exercises, and teaching tools. The material can also be accessed through mobile applications. The videos enable students to acquire knowledge at their own learning speed according to the concept of mastery learning . They can be used by teachers to teach according to the principle of the Flipped Classroom The videos display a recording of drawings on an electronic blackboard, which are similar to the style of a teacher giving a lecture. The narrator describes each drawing and how the drawings relate to the material being taught. Furthermore, throughout the lessons, users can earn badges and energy points, which can be displayed on their profiles. Non-profit groups have distributed offline versions of the videos to rural areas in Asia, Latin America, and Africa. Videos range from all subjects covered in school and for all grades from kindergarten up through high school. The Khan Academy website also hosts content from educational YouTube channels and organizations such as Crash Course and t [CONTENT_TRUNCATED: 21054 chars total, showing first 5000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "e10fa74a52a0146144afa78743675d9ce406d3a20e461f1da52aabd672156dd9"
+    },
+    {
+      "evidence_id": "ev_2d83bff4470505d9",
+      "source_id": "src_d0463bebf374559f",
+      "text": "关键词: 知识图谱大语言模型两步优化低阶适应性微调LoRAPrompt 模板航天测控. 中图分类号: TP 18 文献标志码: A.图 3 知识图谱样例结构 Fig.3 Structure diagram of a knowledge map sample.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fe486e64c559f128b3dccb4c6952a8656540be3960557372b2b3027901a98f5f"
+    },
+    {
+      "evidence_id": "ev_bb8d0bfd350349f6",
+      "source_id": "src_6b7f19be22b62cbe",
+      "text": "【知识图谱】阿里巴巴电商知识图谱.10-12 1706. I. 知识图谱 应用案例 — 阿里巴巴电商知识图谱 概述 通用知识图谱：实体之间的客观存在的关系 常识知识图谱：概念之间的常识关系 什么是常识 社会对同.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "384ea8f86c87d33c3098aa0d4f0b4243ae4d7cf5c3bdb1114e9ce2bfe1c2f2ad"
+    },
+    {
+      "evidence_id": "ev_722756d2e8542454",
+      "source_id": "src_ead0bc4b36f3896b",
+      "text": "因 此 知 识 图 谱 和 大. 模型是互补的本文称为图模互补。 本文系统性地介绍知识图谱与大模型融合的方法分别从 1大模型增强知识图谱2知.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "dc9dc43fcf3bafcf75c41726ec1a739d8678d8dbf97ecd5e62bee6e1d2da316c"
+    },
+    {
+      "evidence_id": "ev_a59de912baf6b476",
+      "source_id": "src_09db1050c6d1fecc",
+      "text": "赶考状元的AI智能测功能，支持全学科、全版本教材的智能测评，孩子花5到30分钟完成一套测评，系统便会自动生成一张可视化的知识图谱，将知识点按“.诊断结果出来后，系统基于学情数据动态匹配学习路径。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0aa99d5ff7b6795d2cf68cb6544354507f9ae849a95c91a2b3d5e2c56a44059a"
+    },
+    {
+      "evidence_id": "ev_6c330795696a7ad1",
+      "source_id": "src_909e891490e6c9f7",
+      "text": "（一）松鼠Ai：国内AI教育独角兽，智适应教育标杆.依托自研LAM智适应大模型体系，可实现精准学情诊断、错因溯源、个性化学习路径规划、多模态智能互动与精准教学评估，真正做到因材施教。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e3ee593be5e1211ea22533aec994aeef57c2f1904526d19dd8a75f7c209c3c11"
+    },
+    {
+      "evidence_id": "ev_9841bd4d6f8f5a4e",
+      "source_id": "src_cc628538bf71f1c0",
+      "text": "D034 vue+django 中医知识图谱推荐问答系统 【 推荐算法+知识图谱+检索式中医问答 】vue+python前后端分离架构，neo4j图数据，界面美观大. 最新推荐文章于 2025-08-20 15:37:55 发布.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "3c500cc43749b0d036798a6aec724cc748206fd515f4e7000b65b7cd9527485c"
+    },
+    {
+      "evidence_id": "ev_bcb7000972552450",
+      "source_id": "src_f4ef4846b29629ac",
+      "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "941b081ab4e2fb44fdfb83d9a24e92648ec50c996df741bff8e032b02389ad03"
+    },
+    {
+      "evidence_id": "ev_6b0c76ba0dafa763",
+      "source_id": "src_f4ef4846b29629ac",
+      "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模型比较分析研究 [J].计算机技术与发展 ,2023,33(12):1-7 [6] 孙佑焮 , 马家君 . 一种新的协同过滤算法在 电 子 商 务 产 品 推 荐 中 的 应 用 [J]. 电 子 商 务 评论 ,2024,13(3):5659-5671 [7] 黄锐潇 . 基于线性加权融合的推荐方法 [J].信息与电脑 ,2020,32(4):27-29.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "5d1296ca989cc1652d9ed00b85d227c1b9e8e2a8e3ed76c49d0584a34b1212d0"
+    },
+    {
+      "evidence_id": "ev_68358cc7abb5ead7",
+      "source_id": "src_0508437059a3e8a6",
+      "text": "针刺治疗膝骨关节炎随机对照试验结局指标现状分析.1.1 文献纳入标准 1研究类型RCT2研究对象KOA 患者.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2483a131a46022d7f7ba614375ba5f2ff391b46b440139df02392cfc23332da7"
+    },
+    {
+      "evidence_id": "ev_52cbe80451daaba8",
+      "source_id": "src_bdfe73c61fc5fe02",
+      "text": "2 深度自适应学习点扩散函数网络.图 4 深度自适应迭代学习点扩散函数网络 Fig.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "0f19767074f3cbf7bf5337dce57ef11b402d95d06676e7d242b00d0c032208a7"
+    },
+    {
+      "evidence_id": "ev_1edc94a95a7d9fba",
+      "source_id": "src_fcbd9d5e01a5d6a5",
+      "text": "Open AI因有千亿参数，能找到最合适的表达，而松鼠Ai的大模型也有其独特之处，它给孩子的学习方案是反人类常规的，不像通常的同步课或超前学习，而是.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b8b33d453151274d56f0eae436a3cfde36ba6d67756c858879561398cecc109e"
+    },
+    {
+      "evidence_id": "ev_a0f24a98bffcc3da",
+      "source_id": "src_10b6d335939c3497",
+      "text": "Randomized Controlled Trials (RCTs) are increasingly popular in the social sciences, not only in medicine. We argue that the lay public, and sometimes researchers, put too much trust in RCTs over other methods of investigation. Contrary to frequent claims in the applied literature, randomization does not equalize everything other than the treatment in the treatment and control groups, it does not automatically deliver a precise estimate of the average treatment effect (ATE), and it does not relieve us of the need to think about (observed or unobserved) covariates. Finding out whether an estimate was generated by chance is more difficult than commonly believed. At best, an RCT yields an unbiased estimate, but this property is of limited practical value. Even then, estimates apply only to the sample selected for the trial, often no more than a convenience sample, and justification is required to extend the results to other groups, including any population to which the trial sample belongs, or to any individual, including an individual in the trial. Demanding 'external validity' is unhelpful because it expects too much of an RCT while undervaluing its potential contribution. RCTs do indeed require minimal assumptions and can operate with little prior knowledge. This is an advantage when persuading distrustful audiences, but it is a disadvantage for cumulative scientific progress, where prior knowledge should be built upon, not discarded. RCTs can play a role in building scientific knowledge and useful predictions but they can only do so as part of a cumulative program, combining with other methods, including conceptual and theoretical development, to discover not 'what works', but 'why things work'.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "bd4e601cfe915a7d07cf923aedadb1089a03b5080aa6c25f4f3e9dbc6edcf6f5"
+    },
+    {
+      "evidence_id": "ev_0dc3608904808993",
+      "source_id": "src_83e14edb5dfe9896",
+      "text": "We investigated how the CNS learns to control movements in different dynamical conditions, and how this learned behavior is represented. In particular, we considered the task of making reaching movements in the presence of externally imposed forces from a mechanical environment. This environment was a force field produced by a robot manipulandum, and the subjects made reaching movements while holding the end-effector of this manipulandum. Since the force field significantly changed the dynamics of the task, subjects' initial movements in the force field were grossly distorted compared to their movements in free space. However, with practice, hand trajectories in the force field converged to a path very similar to that observed in free space. This indicated that for reaching movements, there was a kinematic plan independent of dynamical conditions. The recovery of performance within the changed mechanical environment is motor adaptation. In order to investigate the mechanism underlying this adaptation, we considered the response to the sudden removal of the field after a training phase. The resulting trajectories, named aftereffects, were approximately mirror images of those that were observed when the subjects were initially exposed to the field. This suggested that the motor controller was gradually composing a model of the force field, a model that the nervous system used to predict and compensate for the forces imposed by the environment. In order to explore the structure of the model, we investigated whether adaptation to a force field, as presented in a small region, led to aftereffects in other regions of the workspace. We found that indeed there were aftereffects in workspace regions where no exposure to the field had taken place; that is, there was transfer beyond the boundary of the training data. This observation rules out the hypothesis that the subject's model of the force field was constructed as a narrow association between visited states and experienced forces; that is, adaptation was not via composition of a look-up table. In contrast, subjects modeled the force field by a combination of computational elements whose output was broadly tuned across the motor state space. These elements formed a model that extrapolated to outside the training region in a coordinate system similar to that of the joints and muscles rather than end-point forces. This geometric property suggests that the elements of the adaptive process represent dynamics of a motor task in terms of the intrinsic coordinate system of the sensors and actuators.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "16afbc0b453a40a8204b8d5eb7faa0e6b4425fae9f380939d192692581c8eca9"
+    },
+    {
+      "evidence_id": "ev_1ae62058a5c74b79",
+      "source_id": "src_e3cad015556da1f8",
+      "text": "Khanmigo, built by nonprofit Khan Academy, is a top-rated AI for education. Save time on prep, tackle homework challenges, and get personalized tutoring.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "65ad9b3f4221aef6c986606998a31e3aabbbfe0a7fceeb1cbac18820dc280d8d"
+    },
+    {
+      "evidence_id": "ev_3e81a9efdaebc783",
+      "source_id": "src_d0fe6779bca00392",
+      "text": "...prospective, case control, randomized controlled trial (RCT), longitudinal).",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6f485ed1e3eb8328c0462c803d9b8fef14317c15dd86b698b95fdf705ecf12c8"
+    },
+    {
+      "evidence_id": "ev_606f7c82b131aa29",
+      "source_id": "src_43288c5e7a07329e",
+      "text": "[22] Regarding learning outcomes, meta-analyses of controlled studies demonstrate that purely online instruction performs modestly better than face-to-face equivalents in higher education contexts, with average effect sizes of approximately...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fa0cb89642f9b101f2a20ef1444837e25878c2c8033c4d68c845bb2f200b3c6f"
+    },
+    {
+      "evidence_id": "ev_8e76f126b4579fda",
+      "source_id": "src_cd4ee6a9e3be0539",
+      "text": "AI for all school and university levels. Pass exams and achieve better grades 2x faster. Join over 11,288,000+ students who are already learning with our AI tutor. If your grade doesn’t improve by at least two levels, you get your money back!",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "a191fd4167cf90afd05ea303e56aa85ddb489d3db9d923c73374cd531ee53c0b"
+    },
+    {
+      "evidence_id": "ev_9486726839c5f1ba",
+      "source_id": "src_95373bed38baab9d",
+      "text": "The website is meant to be used as a supplement to the videos, because it includes other features such as progress tracking, practice exercises, and teaching tools. The material can also be accessed through mobile applications. The videos enable students to acquire knowledge at their own learning speed according to the concept of mastery learning . They can be used by teachers to teach according to the principle of the Flipped Classroom The videos display a recording of drawings on an electronic blackboard, which are similar to the style of a teacher giving a lecture. The narrator describes each drawing and how the drawings relate to the material being taught. Furthermore, throughout the lessons, users can earn badges and energy points, which can be displayed on their profiles. Non-profit groups have distributed offline versions of the videos to rural areas in Asia, Latin America, and Africa. Videos range from all subjects covered in school and for all grades from kindergarten up through high school. The Khan Academy website also hosts content from educational YouTube channels and organizations such as Crash Course and the Museum of Modern Art It also provides online courses for preparing for standardized tests, including the AP Chemistry Praxis Core MCAT and released LSAT preparation lessons in 2018.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "5bd0c4bcbe4f56fc1271be980fcf6bbfc3c7d70d2a8cf2e622f34b2df414692a"
+    },
+    {
+      "evidence_id": "ev_e70c66986a0e070a",
+      "source_id": "src_95373bed38baab9d",
+      "text": "It also has a collaboration with independent chemists, which are mentioned in \"Meet the chemistry professional\". Khan Academy has also supported Code. org 's Hour of Code, providing coding lessons on its website. In July 2017, Khan Academy became the official practice partner for the College Board's Advanced Placement Khanmigo edit Khanmigo is a chatbot designed to assist users with mathematics, science, humanities, and coding inquiries, as well as aiding in learning these subjects. Khan Academy introduced Khanmigo on March 14, 2023. It was initially based on GPT-4 large language model OpenAI Users can have access for $4 per month. Users who want to register must be over 18. The pilot provided access to approximately 65,000 students across 53 school districts. In November 2023, Khanmingo Writing Coach was [CONTENT_TRUNCATED: 21054 chars total, showing first 6000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "73dfcda81daac309f171d2a4b059ffa174dbeb0bd7ec9c8c0d898c52afc8f84c"
+    },
+    {
+      "evidence_id": "ev_b2c175d4a38467c6",
+      "source_id": "src_999448fe256e258c",
+      "text": "Khan Academy. The Khan Academy is an educational website, as well as a non-for-profit organization that provides “free world class education for anyone, anywhere”.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e6338b64654ed2a220235b1f5556b43dac53b16bf84be6171cad4af29dba81b3"
+    },
+    {
+      "evidence_id": "ev_4ea9dc9c6785a1c3",
+      "source_id": "src_6954a01cf66ed48a",
+      "text": "七、松鼠 AI-FAQ 常见问题解答Q1：松鼠 AI 学习机价格是否偏高？ 性价比如何？",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6e22e55da1890737bc1600755e9d79775f4443814ea88ca9d0d2030337c52478"
+    },
+    {
+      "evidence_id": "ev_89c9e7fe5ff812ea",
+      "source_id": "src_e93bcaf8b9c601a4",
+      "text": "导语：11月12日，松鼠创始人栗浩洋在全球AI+智适应教育峰会上发表演讲，他表示用AI提高学习效率可以解决教育减负的难题。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "76edfc5eddf520be54d2059ffee7477a9a27ad94e13b00686deac450755cec76"
+    },
+    {
+      "evidence_id": "ev_5ad01b84fc60cc1b",
+      "source_id": "src_5e38dd480cd420cc",
+      "text": "松鼠 ... 松鼠科 （學名： Sciuridae），是 哺乳綱 啮齿目 一個 科，其下包括 松鼠亞科 （Sciurinae）和 非洲地松鼠亞科 …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "d5adbe9d41c2e2b3ffd8143d4d962c8d69f4f1745bc12040c3f025c806ced21e"
+    },
+    {
+      "evidence_id": "ev_b68e89c96e13deb9",
+      "source_id": "src_95373bed38baab9d",
+      "text": "It also has a collaboration with independent chemists, which are mentioned in \"Meet the chemistry professional\". Khan Academy has also supported Code. org 's Hour of Code, providing coding lessons on its website. In July 2017, Khan Academy became the official practice partner for the College Board's Advanced Placement Khanmigo edit Khanmigo is a chatbot designed to assist users with mathematics, science, humanities, and coding inquiries, as well as aiding in learning these subjects. Khan Academy introduced Khanmigo on March 14, 2023. It was initially based on GPT-4 large language model OpenAI Users can have access for $4 per month. Users who want to register must be over 18. The pilot provided access to approximately 65,000 students across 53 school districts. In November 2023, Khanmingo Writing Coach was introduced to provide essay-writing support for students and analytical insights for teachers. In August 2024, Khanmigo for Teachers, a set of free generative AI tools for educators, was announced in partnership with Microsoft. In December 2024, Khanmigo was featured on an episode of 60 Minutes with host Anderson Cooper , who tried the Writing Coach on one of his essays from middle school. Language availability edit Khan Academy videos have been translated into several languages, with nearly 20,000 subtitle translations available.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "8fb1110376a5477a6a809f289985262e40472e96a2046e5ec3fcc3738ab0beab"
+    },
+    {
+      "evidence_id": "ev_3da9b1cb21b02ae6",
+      "source_id": "src_95373bed38baab9d",
+      "text": "These translations are mainly volunteer-driven with help from international partnerships. The Khan Academy platform is fully available in English (en), Bangla (bn), Hindi, Bulgarian (bg), Chinese (zh), French (fr), German (de), Georgian (ka), Norwegian (nb), Polish (pl) Portuguese (pt), Spanish (es), Serbian (sr), Turkish (tr) and Uzbek (uz), and partially available in 28 other languages. Official SAT preparation edit Since 2015, Khan Academy has been one of the official preparation websites. According to reports, studying for the SAT for at least 20 hours at Khan Academy is associated with a 115-point average score increase. Pixar in a Box edit In 2015, Khan Academy teamed up with Pixar to create a new course named Pixar in a Box, which teaches how skills learned in school help the creators at Pixar. Official Test Preparation edit Khan Academy also provides free test preps for PSAT/NMSQT LSAT Praxis Core , and MCAT Khan Academy Kids edit In 2018, Khan Academy launched an application called Khan Academy Kids for children aged two to seven to learn basic maths, reading and social skills. Teachers edit Teachers can set up a classroom within Khan Academy. This classroom allows teachers to assign courses within Khan Academy's database to their students. Teachers can also track their student's progress as they work through the assigned tutorials.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "12aca7f3debacb642a03425fac86bc3fd06a9bf1b93638c73be2c987a4a35cf9"
+    },
+    {
+      "evidence_id": "ev_47e7ddf9cb3ac05d",
+      "source_id": "src_95373bed38baab9d",
+      "text": "Criticism edit Khan Academy has been criticized because its creator, Sal Khan, lacks a formal teac [CONTENT_TRUNCATED: 21054 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "550f6d9e3b58051d89f252c9e4164ce4f3d64c4605ae100f621badcfe9d38009"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_0518b7edecc04ff8",
+        "text": "两系统共享当前自适应学习的主流技术范式：\"知识图谱 + 诊断—推荐闭环\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.312,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_a59de912baf6b476"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_09db1050c6d1fecc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5e5f324bc4427c55",
+        "text": "学术研究表明，将 AI 与学科知识图谱结合、通过深度学习提取答题特征与学习模式，是当前实现错题诊断与精准个性化推荐的主流方案 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "supported",
+        "verification_score": 0.6094,
+        "support_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e369ff18cf812798",
+        "text": "综述文献亦确认 AI/ML 自适应算法能够优化学习路径、提升参与度 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4,
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b6925a2f309c5e61",
+          "ev_1f17663ae3c2efff"
+        ],
+        "source_ids": [
+          "src_cfa77c74730d5f44",
+          "src_b9036ba41ff154f8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b6925a2f309c5e61",
+            "source_id": "src_cfa77c74730d5f44",
+            "text": "This paper reviews the literature on integrating AI in e-learning, from the viewpoint of cognitive neuropsychology, for Personalized Learning (PL) and Adaptive Assessment (AA). This review follows the PRISMA systematic review methodology and synthesizes the results of 85 studies that were selected from an initial pool of 818 records across several databases. The results indicate that AI can improve students’ performance, engagement, and motivation; at the same time, some challenges like bias and",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_1f17663ae3c2efff",
+            "source_id": "src_b9036ba41ff154f8",
+            "text": "The rapid evolution of e-learning platforms, propelled by advancements in artificial intelligence (AI) and machine learning (ML), presents a transformative potential in education. This dynamic landscape necessitates an exploration of AI/ML integration in adaptive learning systems to enhance educational outcomes. This study aims to map the current utilization of AI/ML in e-learning for adaptive learning, elucidating the benefits and challenges of such integration and assessing its impact on stude",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c09693f11bc59bed",
+        "text": "Khan Academy 的推荐机制相对透明：课程内容以技能（skill）为单位按先修依赖组织，掌握度状态随练习表现动态更新，系统据此推荐下一技能并推送同类练习与提示 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0327,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2a5000d3dd4ae76",
+          "ev_46ffa0ed457cf8f0",
+          "ev_a72cd90849180012"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2a5000d3dd4ae76",
+            "source_id": "src_95373bed38baab9d",
+            "text": "From Wikipedia, the free encyclopedia Nonprofit educational organization Khan Academy Type of site 501(c)(3) Available Multiple languages Owner Khan Academy, Inc. Founder Sal Khan KhanAcademy. org Launched 2008 years ago 2008 YouTube information Channel Khan Academy Years active 2008–present Genre Education Subscribers 9,280,594 Views 2,205,163,846 Last updated: March 2, 2026 Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan . The organization provides fr",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_46ffa0ed457cf8f0",
+            "source_id": "src_95373bed38baab9d",
+            "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project f",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_083f18cdcd9ba166",
+        "text": "其机制可视为贝叶斯知识追踪（BKT）式状态估计与掌握学习教学法的结合。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1045,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_65f7dcc3c825369c"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6ea456d0da2a7d9f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_824710a96d921a18",
+        "text": "松鼠 AI 的差异化在于知识点的\"超细粒度拆分\"：通过细颗粒知识图谱定位学生的前置薄弱知识点（错因溯源），再动态规划学习路径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1335,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a59de912baf6b476",
+          "ev_6c330795696a7ad1",
+          "ev_6b0c76ba0dafa763"
+        ],
+        "source_ids": [
+          "src_09db1050c6d1fecc",
+          "src_909e891490e6c9f7",
+          "src_f4ef4846b29629ac"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a59de912baf6b476",
+            "source_id": "src_09db1050c6d1fecc",
+            "text": "赶考状元的AI智能测功能，支持全学科、全版本教材的智能测评，孩子花5到30分钟完成一套测评，系统便会自动生成一张可视化的知识图谱，将知识点按“.诊断结果出来后，系统基于学情数据动态匹配学习路径。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6c330795696a7ad1",
+            "source_id": "src_909e891490e6c9f7",
+            "text": "（一）松鼠Ai：国内AI教育独角兽，智适应教育标杆.依托自研LAM智适应大模型体系，可实现精准学情诊断、错因溯源、个性化学习路径规划、多模态智能互动与精准教学评估，真正做到因材施教。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_81fbbecca40295f5",
+        "text": "同类产品的通行流程是先以短时智能测评生成可视化知识图谱，再基于学情数据动态匹配学习内容 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1462,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_92f1040fe2ed3d49",
+        "text": "需要注意，两家公司的核心算法均未开源，松鼠 AI 的具体模型归属（IRT、认知诊断或深度知识追踪）仅见于厂商宣传，缺乏同行评审的算法细节披露。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.156,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_65f7dcc3c825369c"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6ea456d0da2a7d9f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e3d2f263b6d6566d",
+        "text": "评估此类系统的标准量化指标包括：（1）前后测成绩差与标准化测验（如 NWEA MAP Growth）增益；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1009,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_68358cc7abb5ead7",
+          "ev_722756d2e8542454"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_0508437059a3e8a6",
+          "src_ead0bc4b36f3896b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_68358cc7abb5ead7",
+            "source_id": "src_0508437059a3e8a6",
+            "text": "针刺治疗膝骨关节炎随机对照试验结局指标现状分析.1.1 文献纳入标准 1研究类型RCT2研究对象KOA 患者.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_65f46568dd695d50",
+        "text": "效应量（Cohen's d / Hedges' g），教育技术领域 d≈0.2–0.4 即具实际意义；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1219,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_65f7dcc3c825369c",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6ea456d0da2a7d9f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f7dcc3c825369c",
+            "source_id": "src_6ea456d0da2a7d9f",
+            "text": "在第80届中国教育装备展上，松鼠Ai还发布了智能教育硬件产品——松鼠Ai智能学习机-V11，通过AI技术实现智能诊断、知识点细致拆分、MCM训练（思想、能力、方. 法训练）及L5级人机互助等十大教学功能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_16f7c75d1bea4d75",
+        "text": "掌握速度（达到掌握标准所需练习量）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_68358cc7abb5ead7"
+        ],
+        "source_ids": [
+          "src_0508437059a3e8a6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_68358cc7abb5ead7",
+            "source_id": "src_0508437059a3e8a6",
+            "text": "针刺治疗膝骨关节炎随机对照试验结局指标现状分析.1.1 文献纳入标准 1研究类型RCT2研究对象KOA 患者.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_63082bda64082114",
+        "text": "延迟后测的知识保持与平台留存率。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_568bbc39f59fb90b",
+          "ev_b23ad6ccf5eb5a28",
+          "ev_a59de912baf6b476"
+        ],
+        "source_ids": [
+          "src_e93bcaf8b9c601a4",
+          "src_6954a01cf66ed48a",
+          "src_09db1050c6d1fecc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_568bbc39f59fb90b",
+            "source_id": "src_e93bcaf8b9c601a4",
+            "text": "松鼠AI系统可以根据每个学生的知识点状态进行精准画像。智慧教育 栗浩洋 松鼠AI 智适应教育.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_b23ad6ccf5eb5a28",
+            "source_id": "src_6954a01cf66ed48a",
+            "text": "从 AI 打地基、针对性知识点精讲，到流程式分层学习、MCM 学习能力训练，再到遗忘规律复习、错题溯源巩固，形成测-学-练-测的完整闭环，循序渐进帮孩子夯实基.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5eafb751987758f6",
+        "text": "金标准为随机对照试验（RCT），但需注意随机化并不能均衡处理以外的一切因素，对 RCT 结果亦应保持方法学审慎 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0237,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a0f24a98bffcc3da"
+        ],
+        "source_ids": [
+          "src_10b6d335939c3497"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a0f24a98bffcc3da",
+            "source_id": "src_10b6d335939c3497",
+            "text": "Randomized Controlled Trials (RCTs) are increasingly popular in the social sciences, not only in medicine. We argue that the lay public, and sometimes researchers, put too much trust in RCTs over other methods of investigation. Contrary to frequent claims in the applied literature, randomization does not equalize everything other than the treatment in the treatment and control groups, it does not automatically deliver a precise estimate of the average treatment effect (ATE), and it does not reli",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0dc381b5fbf13d51",
+        "text": "Khan Academy：已有研究确认其资源使用与学生学业表现改善相关 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2a5000d3dd4ae76",
+          "ev_46ffa0ed457cf8f0",
+          "ev_a72cd90849180012"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2a5000d3dd4ae76",
+            "source_id": "src_95373bed38baab9d",
+            "text": "From Wikipedia, the free encyclopedia Nonprofit educational organization Khan Academy Type of site 501(c)(3) Available Multiple languages Owner Khan Academy, Inc. Founder Sal Khan KhanAcademy. org Launched 2008 years ago 2008 YouTube information Channel Khan Academy Years active 2008–present Genre Education Subscribers 9,280,594 Views 2,205,163,846 Last updated: March 2, 2026 Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan . The organization provides fr",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_46ffa0ed457cf8f0",
+            "source_id": "src_95373bed38baab9d",
+            "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project f",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7e024fc2217a04a8",
+        "text": "与 College Board 合作的 SAT 备考分析显示学习 ≥20 小时与平均 115 分提分相关——但此类为相关性证据而非严格因果。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0771,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3da9b1cb21b02ae6",
+          "ev_9841bd4d6f8f5a4e",
+          "ev_b68e89c96e13deb9"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d",
+          "src_cc628538bf71f1c0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3da9b1cb21b02ae6",
+            "source_id": "src_95373bed38baab9d",
+            "text": "These translations are mainly volunteer-driven with help from international partnerships. The Khan Academy platform is fully available in English (en), Bangla (bn), Hindi, Bulgarian (bg), Chinese (zh), French (fr), German (de), Georgian (ka), Norwegian (nb), Polish (pl) Portuguese (pt), Spanish (es), Serbian (sr), Turkish (tr) and Uzbek (uz), and partially available in 28 other languages. Official SAT preparation edit Since 2015, Khan Academy has been one of the official preparation websites. Ac",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9841bd4d6f8f5a4e",
+            "source_id": "src_cc628538bf71f1c0",
+            "text": "D034 vue+django 中医知识图谱推荐问答系统 【 推荐算法+知识图谱+检索式中医问答 】vue+python前后端分离架构，neo4j图数据，界面美观大. 最新推荐文章于 2025-08-20 15:37:55 发布.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3b63b704809a627b",
+        "text": "独立的两年期学校评估（SRI International，2012–2014）发现总体效应较小且高度依赖使用强度与教师整合程度，\"每周 30 分钟以上\"是常见的效果阈值。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0187,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_46ffa0ed457cf8f0",
+          "ev_3da9b1cb21b02ae6",
+          "ev_a59de912baf6b476"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d",
+          "src_09db1050c6d1fecc"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_46ffa0ed457cf8f0",
+            "source_id": "src_95373bed38baab9d",
+            "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project f",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3da9b1cb21b02ae6",
+            "source_id": "src_95373bed38baab9d",
+            "text": "These translations are mainly volunteer-driven with help from international partnerships. The Khan Academy platform is fully available in English (en), Bangla (bn), Hindi, Bulgarian (bg), Chinese (zh), French (fr), German (de), Georgian (ka), Norwegian (nb), Polish (pl) Portuguese (pt), Spanish (es), Serbian (sr), Turkish (tr) and Uzbek (uz), and partially available in 28 other languages. Official SAT preparation edit Since 2015, Khan Academy has been one of the official preparation websites. Ac",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_eb3688a9969907bb",
+        "text": "领域层面：智能辅导与自适应系统的元分析一致表明，计算机自适应个性化学习在 K-12 数学上的平均效应量约为 d≈0.2–0.4，属小到中等效应；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1867,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bb8d0bfd350349f6",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6b7f19be22b62cbe"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bb8d0bfd350349f6",
+            "source_id": "src_6b7f19be22b62cbe",
+            "text": "【知识图谱】阿里巴巴电商知识图谱.10-12 1706. I. 知识图谱 应用案例 — 阿里巴巴电商知识图谱 概述 通用知识图谱：实体之间的客观存在的关系 常识知识图谱：概念之间的常识关系 什么是常识 社会对同.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_55926697c8676945",
+        "text": "基于学习风格的自适应环境在准实验设计中显著提升学习投入度 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1827d40786dd2e9d"
+        ],
+        "source_ids": [
+          "src_9834626a5477bfc0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1827d40786dd2e9d",
+            "source_id": "src_9834626a5477bfc0",
+            "text": "Abstract Adaptive e-learning is viewed as stimulation to support learning and improve student engagement, so designing appropriate adaptive e-learning environments contributes to personalizing instruction to reinforce learning outcomes. The purpose of this paper is to design an adaptive e-learning environment based on students' learning styles and study the impact of the adaptive e-learning environment on students’ engagement. This research attempts as well to outline and compare the proposed ad",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9740d02ea494c49d",
+        "text": "AI 个性化系统相较\"千人一面\"的传统在线学习能提供针对性内容与测评 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_071f233b562dd31c"
+        ],
+        "source_ids": [
+          "src_bf11a24346cf83d8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_071f233b562dd31c",
+            "source_id": "src_bf11a24346cf83d8",
+            "text": "A personalized e-learning system is effective in imparting enhanced learning to its users. As compared to a conventional e-learning system, which provides similar contents to each learner, a personalized learning system provides specific learning contents and assessments to the learners. Personalization is based on Artificial Intelligence (AI) based techniques in which appropriate contents for each learner are determined using the level of comprehension of the learner and the preferred modes of ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8bcb2feb9678514f",
+        "text": "PRISMA 综述（85 项研究）同时指出，长期效果、公平性与数据隐私风险仍缺乏充分实证 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b6925a2f309c5e61"
+        ],
+        "source_ids": [
+          "src_cfa77c74730d5f44"
+        ],
+        "reason": "证据确认了PRISMA方法、85项研究，以及偏见与歧视等挑战和未来需对有效性与公平性进行实证验证，但未提及'长期效果'或'数据隐私风险'缺乏实证。复合声明的多个子句未被证据支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b6925a2f309c5e61",
+            "source_id": "src_cfa77c74730d5f44",
+            "text": "This paper reviews the literature on integrating AI in e-learning, from the viewpoint of cognitive neuropsychology, for Personalized Learning (PL) and Adaptive Assessment (AA). This review follows the PRISMA systematic review methodology and synthesizes the results of 85 studies that were selected from an initial pool of 818 records across several databases. The results indicate that AI can improve students’ performance, engagement, and motivation; at the same time, some challenges like bias and",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f2a96c88e81e231e",
+        "text": "松鼠 AI：其宣称的\"提分率\"\"掌握速度数倍于传统教学\"等数据均来自公司自办对比实验，样本与随机化设计不透明，未见独立同行评审 RCT，引用时必须标注为厂商口径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.016,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a0f24a98bffcc3da",
+          "ev_3e81a9efdaebc783",
+          "ev_96cbcffcbef25833"
+        ],
+        "source_ids": [
+          "src_10b6d335939c3497",
+          "src_d0fe6779bca00392",
+          "src_d9eed25154ebed01"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a0f24a98bffcc3da",
+            "source_id": "src_10b6d335939c3497",
+            "text": "Randomized Controlled Trials (RCTs) are increasingly popular in the social sciences, not only in medicine. We argue that the lay public, and sometimes researchers, put too much trust in RCTs over other methods of investigation. Contrary to frequent claims in the applied literature, randomization does not equalize everything other than the treatment in the treatment and control groups, it does not automatically deliver a precise estimate of the average treatment effect (ATE), and it does not reli",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_3e81a9efdaebc783",
+            "source_id": "src_d0fe6779bca00392",
+            "text": "...prospective, case control, randomized controlled trial (RCT), longitudinal).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_da0252e2eab2a086",
+        "text": "矛盾与解决：厂商宣传的高效应与学术元分析的中等效应（d≈0.2–0.4）之间存在明显落差。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0975,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_bb8d0bfd350349f6"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6b7f19be22b62cbe"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_afb2bf7b584c4d95",
+        "text": "应以独立同行评审证据为准，将厂商数据视为上限估计；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0342,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3aefb53315e747d8",
+          "ev_a59de912baf6b476",
+          "ev_9841bd4d6f8f5a4e"
+        ],
+        "source_ids": [
+          "src_84423f515254bb52",
+          "src_09db1050c6d1fecc",
+          "src_cc628538bf71f1c0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3aefb53315e747d8",
+            "source_id": "src_84423f515254bb52",
+            "text": "松鼠Ai的智适应大模型则通过数据层、模型层和应用层搭建起专属的智适应引擎架构，并叠加独创的MCM模型，穿透学科知识的表面内容，确保即使是在应. 试教育的框架下也能有效提高学生的整体素养。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_a59de912baf6b476",
+            "source_id": "src_09db1050c6d1fecc",
+            "text": "赶考状元的AI智能测功能，支持全学科、全版本教材的智能测评，孩子花5到30分钟完成一套测评，系统便会自动生成一张可视化的知识图谱，将知识点按“.诊断结果出来后，系统基于学情数据动态匹配学习路径。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6e12666f6d2a90de",
+        "text": "效应实现的关键调节变量是使用强度与课堂整合深度，而非系统本身。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1444,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_96cbcffcbef25833"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_d9eed25154ebed01"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6b63dc542ed425db",
+        "text": "教师定位：教师普遍将自适应系统作为课堂补充（翻转课堂、分层作业、学情追踪），而非教学替代。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1435,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_96cbcffcbef25833",
+          "ev_6c330795696a7ad1",
+          "ev_568bbc39f59fb90b"
+        ],
+        "source_ids": [
+          "src_d9eed25154ebed01",
+          "src_909e891490e6c9f7",
+          "src_e93bcaf8b9c601a4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_96cbcffcbef25833",
+            "source_id": "src_d9eed25154ebed01",
+            "text": "松鼠AI自适应系统. 传统教师课堂. 课程定制.5.1 自适应学习成教育科技主赛道.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6c330795696a7ad1",
+            "source_id": "src_909e891490e6c9f7",
+            "text": "（一）松鼠Ai：国内AI教育独角兽，智适应教育标杆.依托自研LAM智适应大模型体系，可实现精准学情诊断、错因溯源、个性化学习路径规划、多模态智能互动与精准教学评估，真正做到因材施教。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_07d2b5ccabbaa438",
+        "text": "Khan Academy 官方亦明确将新工具定位为\"支持课堂教学而非自动化教学\"，并提高学生学习进程的透明度 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2a5000d3dd4ae76",
+          "ev_46ffa0ed457cf8f0",
+          "ev_a72cd90849180012"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2a5000d3dd4ae76",
+            "source_id": "src_95373bed38baab9d",
+            "text": "From Wikipedia, the free encyclopedia Nonprofit educational organization Khan Academy Type of site 501(c)(3) Available Multiple languages Owner Khan Academy, Inc. Founder Sal Khan KhanAcademy. org Launched 2008 years ago 2008 YouTube information Channel Khan Academy Years active 2008–present Genre Education Subscribers 9,280,594 Views 2,205,163,846 Last updated: March 2, 2026 Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan . The organization provides fr",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_46ffa0ed457cf8f0",
+            "source_id": "src_95373bed38baab9d",
+            "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project f",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6823a0516e0e0e08",
+        "text": "其 Khanmigo 试点覆盖 53 个学区约 6.5 万学生，2024 年起与微软合作向教师免费提供 AI 助教工具，反映以教师为中心的推广策略 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b68e89c96e13deb9",
+          "ev_e70c66986a0e070a",
+          "ev_d2a5000d3dd4ae76"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "试点覆盖约65,000名学生、53个学区得到支持，但证据中未见与微软合作、2024年起向教师免费提供AI助教工具的内容，也未见'以教师为中心的推广策略'的论述。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b68e89c96e13deb9",
+            "source_id": "src_95373bed38baab9d",
+            "text": "It also has a collaboration with independent chemists, which are mentioned in \"Meet the chemistry professional\". Khan Academy has also supported Code. org 's Hour of Code, providing coding lessons on its website. In July 2017, Khan Academy became the official practice partner for the College Board's Advanced Placement Khanmigo edit Khanmigo is a chatbot designed to assist users with mathematics, science, humanities, and coding inquiries, as well as aiding in learning these subjects. Khan Academy",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e70c66986a0e070a",
+            "source_id": "src_95373bed38baab9d",
+            "text": "It also has a collaboration with independent chemists, which are mentioned in \"Meet the chemistry professional\". Khan Academy has also supported Code. org 's Hour of Code, providing coding lessons on its website. In July 2017, Khan Academy became the official practice partner for the College Board's Advanced Placement Khanmigo edit Khanmigo is a chatbot designed to assist users with mathematics, science, humanities, and coding inquiries, as well as aiding in learning these subjects. Khan Academy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_465258892d9d7888",
+        "text": "接受度影响因素：设备条件、教师培训、与课程标准的对齐程度是主要障碍；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0552,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_96cbcffcbef25833",
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_d9eed25154ebed01",
+          "src_f4ef4846b29629ac"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_96cbcffcbef25833",
+            "source_id": "src_d9eed25154ebed01",
+            "text": "松鼠AI自适应系统. 传统教师课堂. 课程定制.5.1 自适应学习成教育科技主赛道.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2a6823c2cf1a1114",
+        "text": "对创始人教学资质的批评亦见诸报道 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2a5000d3dd4ae76",
+          "ev_46ffa0ed457cf8f0",
+          "ev_a72cd90849180012"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2a5000d3dd4ae76",
+            "source_id": "src_95373bed38baab9d",
+            "text": "From Wikipedia, the free encyclopedia Nonprofit educational organization Khan Academy Type of site 501(c)(3) Available Multiple languages Owner Khan Academy, Inc. Founder Sal Khan KhanAcademy. org Launched 2008 years ago 2008 YouTube information Channel Khan Academy Years active 2008–present Genre Education Subscribers 9,280,594 Views 2,205,163,846 Last updated: March 2, 2026 Khan Academy is an American educational nonprofit organization founded in 2008 by Sal Khan . The organization provides fr",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_46ffa0ed457cf8f0",
+            "source_id": "src_95373bed38baab9d",
+            "text": "As additional relatives began using the lessons, Khan started recording instructional videos and publishing them on YouTube to make the material more widely accessible. Early tutorials were recorded on Khan's personal computer using drawing applications such as SmoothDraw and ArtRage , often with the aid of a Wacom tablet. Public response, including coverage in USA Today led Khan to incorporate Khan Academy as a nonprofit organization in 2008 and leave his job in finance to work on the project f",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5297d4279711f1bd",
+        "text": "松鼠 AI：采用\"AI 教学 + 真人督学\"双师模式以提升家长与学生信任，但其学生满意度与教师整合障碍缺乏独立量化调查，现有证据多为案例描述与媒体转述。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0271,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_568bbc39f59fb90b",
+          "ev_65f7dcc3c825369c",
+          "ev_3aefb53315e747d8"
+        ],
+        "source_ids": [
+          "src_e93bcaf8b9c601a4",
+          "src_6ea456d0da2a7d9f",
+          "src_84423f515254bb52"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_568bbc39f59fb90b",
+            "source_id": "src_e93bcaf8b9c601a4",
+            "text": "松鼠AI系统可以根据每个学生的知识点状态进行精准画像。智慧教育 栗浩洋 松鼠AI 智适应教育.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_65f7dcc3c825369c",
+            "source_id": "src_6ea456d0da2a7d9f",
+            "text": "在第80届中国教育装备展上，松鼠Ai还发布了智能教育硬件产品——松鼠Ai智能学习机-V11，通过AI技术实现智能诊断、知识点细致拆分、MCM训练（思想、能力、方. 法训练）及L5级人机互助等十大教学功能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c2cb516ed7bbdae",
+        "text": "证据缺口：针对两系统的师生接受度，目前缺乏基于 TAM/UTAUT 等框架的同行评议问卷研究，这是该领域评估中最薄弱的一环。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0886,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450",
+          "ev_a59de912baf6b476"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_09db1050c6d1fecc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0231569a516bcc46",
+        "text": "效果层面：自适应学习系统在 K-12 数学中的正面效应有稳健的中等强度证据支持（d≈0.2–0.4），但实现前提是足量使用（每周 ≥30–60 分钟）与教师的深度整合；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.075,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bb8d0bfd350349f6",
+          "ev_96cbcffcbef25833"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac",
+          "src_6b7f19be22b62cbe",
+          "src_d9eed25154ebed01"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bb8d0bfd350349f6",
+            "source_id": "src_6b7f19be22b62cbe",
+            "text": "【知识图谱】阿里巴巴电商知识图谱.10-12 1706. I. 知识图谱 应用案例 — 阿里巴巴电商知识图谱 概述 通用知识图谱：实体之间的客观存在的关系 常识知识图谱：概念之间的常识关系 什么是常识 社会对同.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2748e9c2f3b52028",
+        "text": "对低成就学生的长期效果与公平性仍属未决问题 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b6925a2f309c5e61"
+        ],
+        "source_ids": [
+          "src_cfa77c74730d5f44"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b6925a2f309c5e61",
+            "source_id": "src_cfa77c74730d5f44",
+            "text": "This paper reviews the literature on integrating AI in e-learning, from the viewpoint of cognitive neuropsychology, for Personalized Learning (PL) and Adaptive Assessment (AA). This review follows the PRISMA systematic review methodology and synthesizes the results of 85 studies that were selected from an initial pool of 818 records across several databases. The results indicate that AI can improve students’ performance, engagement, and motivation; at the same time, some challenges like bias and",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_33a8f073d1eee269",
+        "text": "算法层面：知识图谱 + 掌握度诊断 + 闭环推荐已成为行业收敛范式 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2659,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b0c76ba0dafa763",
+          "ev_bcb7000972552450"
+        ],
+        "source_ids": [
+          "src_f4ef4846b29629ac"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b0c76ba0dafa763",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "AI+ 知识图谱驱动的在线考试系统错题诊断与推荐算法研究 李海瑛 李娟 边玲 程智佳 河北医科大学,河北石家庄,050000 在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。 关键词： 在线考试系统；错题诊断；精准推荐；AI；知识图谱；深度学习 [1] IT 之家 .( 2024-02-05) 人工智能进一步促进教育数字化发展 . [2] 樊海玮 , 鲁芯丝雨 , 张丽苗 , 等 . 融合知识图谱和图注意力网络的引文推荐算法 [J]. 计算机应用 ,2023,43(8):2420-2425. [3] 金口碑网络 .(2025-05-27) 知识图谱：AI 时代语义认知的底层重构逻辑 . [4] 王 冬 青 , 殷 红 岩 . 基 于 知 识 图 谱 的 个 性化习题推荐系统设计研究 [J]. 中国教育信息化 ,2019(17):6.DOI:CNKI:SUN:JYXX.0.2019-17-022. [5] 丁泽元等 . 现代智慧教育下的认知诊断模",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bcb7000972552450",
+            "source_id": "src_f4ef4846b29629ac",
+            "text": "摘要：在线教育的发展给在线考试系统的错题诊断与精准推荐带来新的挑战。本文提出将 AI 与知识图谱相结合，构建学科知识图谱，通过深度学习提取答题特点和学习模式，实现对错题的高效诊断和精准的个性化推荐。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1c73a93cc7fd21d6",
+        "text": "大模型（Khanmigo/Gemini、智适应大模型）正将系统从\"内容推荐\"扩展为\"对话式辅导\"，但其增量效果尚待独立评估 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.029,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a72cd90849180012",
+          "ev_e70c66986a0e070a",
+          "ev_b68e89c96e13deb9"
+        ],
+        "source_ids": [
+          "src_95373bed38baab9d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a72cd90849180012",
+            "source_id": "src_95373bed38baab9d",
+            "text": "The pair created tools designed to support classroom instruction, rather than automate it, and to increase transparency in student learning and progress. The following month, Khan Academy expanded their collaboration with Google to integrate its Gemini AI model into literacy tools. Funding edit Khan Academy is a 501(c)(3) non-profit organization , mostly funded by donations from philanthropic organizations. On its form 990 , the organization reported $31 million in revenues in 2018 and $28 milli",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e70c66986a0e070a",
+            "source_id": "src_95373bed38baab9d",
+            "text": "It also has a collaboration with independent chemists, which are mentioned in \"Meet the chemistry professional\". Khan Academy has also supported Code. org 's Hour of Code, providing coding lessons on its website. In July 2017, Khan Academy became the official practice partner for the College Board's Advanced Placement Khanmigo edit Khanmigo is a chatbot designed to assist users with mathematics, science, humanities, and coding inquiries, as well as aiding in learning these subjects. Khan Academy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bee0f154c1f4d881",
+        "text": "评估层面：对商业系统（如松鼠 AI）应强制区分厂商自报与独立证据；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0652,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_568bbc39f59fb90b",
+          "ev_96cbcffcbef25833",
+          "ev_d64f70bf176043f1"
+        ],
+        "source_ids": [
+          "src_e93bcaf8b9c601a4",
+          "src_d9eed25154ebed01",
+          "src_a93d5fbbdc3cb28e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_568bbc39f59fb90b",
+            "source_id": "src_e93bcaf8b9c601a4",
+            "text": "松鼠AI系统可以根据每个学生的知识点状态进行精准画像。智慧教育 栗浩洋 松鼠AI 智适应教育.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_96cbcffcbef25833",
+            "source_id": "src_d9eed25154ebed01",
+            "text": "松鼠AI自适应系统. 传统教师课堂. 课程定制.5.1 自适应学习成教育科技主赛道.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6f208631e9d0c0e3",
+        "text": "未来研究需补充长期留存 RCT 与师生接受度的标准化量化调查。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0386,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a0f24a98bffcc3da",
+          "ev_3e81a9efdaebc783",
+          "ev_68358cc7abb5ead7"
+        ],
+        "source_ids": [
+          "src_10b6d335939c3497",
+          "src_d0fe6779bca00392",
+          "src_0508437059a3e8a6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a0f24a98bffcc3da",
+            "source_id": "src_10b6d335939c3497",
+            "text": "Randomized Controlled Trials (RCTs) are increasingly popular in the social sciences, not only in medicine. We argue that the lay public, and sometimes researchers, put too much trust in RCTs over other methods of investigation. Contrary to frequent claims in the applied literature, randomization does not equalize everything other than the treatment in the treatment and control groups, it does not automatically deliver a precise estimate of the average treatment effect (ATE), and it does not reli",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_3e81a9efdaebc783",
+            "source_id": "src_d0fe6779bca00392",
+            "text": "...prospective, case control, randomized controlled trial (RCT), longitudinal).",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 36,
+    "evidence_count": 46,
+    "supported_count": 1,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 36,
+    "coverage": 0.027,
+    "primary_source_ratio": 0.25,
+    "fulltext_source_ratio": 0.0556,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 30
+  },
+  "run_metadata": {
+    "final_report_sha256": "c3f26f1df9f7c981a5bdd8fd0f74bcb99ac79f42472a92dbf24b47cb31973e27",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 37,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.027,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 30
+      },
+      "after": {
+        "claim_count": 37,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.027,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 30
+      }
+    }
+  }
+}

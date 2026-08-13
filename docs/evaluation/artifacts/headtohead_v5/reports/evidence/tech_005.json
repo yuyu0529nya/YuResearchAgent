@@ -1,0 +1,3107 @@
+{
+  "schema_version": "1.0",
+  "query": "探讨空间计算（Spatial Computing）和 Apple Vision Pro 对混合现实产业生态的影响，分析内容创作、企业应用和消费级落地的关键障碍。",
+  "created_at": "2026-08-13T20:52:46.643803+00:00",
+  "sources": [
+    {
+      "source_id": "src_d6590dfc54627a0b",
+      "url": "https://ipsw.me/",
+      "title": "Download iOS Firmware for iPhone, iPad, iPod Touch, Apple Watch...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 出货量 销量 2024 2025 IDC Counterpoint",
+        "retrieval_relevance": 0.7455,
+        "host_domain": "ipsw.me"
+      }
+    },
+    {
+      "source_id": "src_1c3a6268b2c20032",
+      "url": "https://youtube.com/watch?v=Kk1KdTMhFs8",
+      "title": "Ted Lasso — Season 4 Official Trailer (Trust the Process) | Apple TV",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 出货量 销量 2024 2025 IDC Counterpoint",
+        "retrieval_relevance": 0.7455,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_629b5a7fd2f145ac",
+      "url": "https://dzen.ru/a/anlyKF_t_ztBbC6k",
+      "title": "Apple переработает линейку своих умных часов | Hi-Tech Mail | Дзен",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 出货量 销量 2024 2025 IDC Counterpoint",
+        "retrieval_relevance": 0.497,
+        "host_domain": "dzen.ru"
+      }
+    },
+    {
+      "source_id": "src_bf09994404ff7b00",
+      "url": "https://best-magazin.com/apple/ipad/apple-ipad-2025/apple-ipad-11-2025-wi-fi-cellular-128gb-blue.html",
+      "title": "Планшет Apple iPad 11 (2025) Wi-Fi + Cellular 128GB Blue (Синий)",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 出货量 销量 2024 2025 IDC Counterpoint",
+        "retrieval_relevance": 0.497,
+        "host_domain": "best-magazin.com"
+      }
+    },
+    {
+      "source_id": "src_f6351b1325d34777",
+      "url": "https://en.wikipedia.org/wiki/Apple_Inc.",
+      "title": "Apple Inc. - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 出货量 销量 2024 2025 IDC Counterpoint",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_68e20ed67c60bf87",
+      "url": "https://pbcsf.tsinghua.edu.cn/__local/2/EE/A0/687B96FC94E48CA445B7B9EACEC_70CBA5AB_255DA6.pdf",
+      "title": "研究报告 - Tsinghua University",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "a8f125d60bec9527f4dc1da064236e1a60a8bbf65907f9f670e7570e4c339182",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 混合现实产业生态 Vision Pro 开发者生态 visionOS 应用数量",
+        "retrieval_relevance": 0.7266,
+        "host_domain": "pbcsf.tsinghua.edu.cn"
+      }
+    },
+    {
+      "source_id": "src_d0683a111cd4ecb2",
+      "url": "https://21cto.com/article/1269585374726052",
+      "title": "关于 VisionOS：开发者需要知道的 17 件事",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 混合现实产业生态 Vision Pro 开发者生态 visionOS 应用数量",
+        "retrieval_relevance": 0.8359,
+        "host_domain": "21cto.com"
+      }
+    },
+    {
+      "source_id": "src_8623f037d1b5d5cc",
+      "url": "https://cloud.tencent.com/developer/news/1217730",
+      "title": "为建立Vision Pro应用生态，苹果公司再出手 - 腾讯云开发者社区-腾讯云",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 混合现实产业生态 Vision Pro 开发者生态 visionOS 应用数量",
+        "retrieval_relevance": 0.7922,
+        "host_domain": "cloud.tencent.com"
+      }
+    },
+    {
+      "source_id": "src_0360c139bbffb7e3",
+      "url": "https://cww.net.cn/article?id=580476",
+      "title": "古尔曼：苹果Vision Pro应用生态预计不会爆发_通信世界网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 混合现实产业生态 Vision Pro 开发者生态 visionOS 应用数量",
+        "retrieval_relevance": 0.7922,
+        "host_domain": "cww.net.cn"
+      }
+    },
+    {
+      "source_id": "src_02e77d2d896cdfdb",
+      "url": "https://nmsoyi.com/news/2026-06-10_2164c5.html",
+      "title": "NG大舞台：苹果Vision Pro...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 混合现实产业生态 Vision Pro 开发者生态 visionOS 应用数量",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "nmsoyi.com"
+      }
+    },
+    {
+      "source_id": "src_4c47239dea2be713",
+      "url": "https://macworld.com/article/2318517/macalope-apple-doomed-iphone-vision-pro-sales.html",
+      "title": "Wait, is Apple actually doomed for real this time? | Macworld",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "\"Vision Pro\" shipments 2024 units 400,000 IDC estimate Apple cut production",
+        "retrieval_relevance": 0.9125,
+        "host_domain": "macworld.com"
+      }
+    },
+    {
+      "source_id": "src_ffbe0f9d880f1414",
+      "url": "https://appleinsider.com/articles/24/04/23/apple-vision-pro-shipments-reportedly-cut-as-us-demand-for-headset-wanes",
+      "title": "Apple Vision Pro shipments cut as demand wanes",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "\"Vision Pro\" shipments 2024 units 400,000 IDC estimate Apple cut production",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "appleinsider.com"
+      }
+    },
+    {
+      "source_id": "src_414863b80e20053a",
+      "url": "https://macrumors.com/2024/04/23/apple-cuts-vision-pro-shipments",
+      "title": "Apple Cuts Vision Pro Shipments as Demand Falls... - MacRumors",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "\"Vision Pro\" shipments 2024 units 400,000 IDC estimate Apple cut production",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "macrumors.com"
+      }
+    },
+    {
+      "source_id": "src_8fb959e9fadd9ace",
+      "url": "https://idropnews.com/opinion/is-apple-giving-up-vision-pro/257796",
+      "title": "Is Apple Giving Up on the Vision Pro?",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "\"Vision Pro\" shipments 2024 units 400,000 IDC estimate Apple cut production",
+        "retrieval_relevance": 0.825,
+        "host_domain": "idropnews.com"
+      }
+    },
+    {
+      "source_id": "src_1765812663bc6228",
+      "url": "https://businesstats.com/apple-vision-pro-shipments",
+      "title": "Apple Vision Pro Sales 2024-2028: Shipments & Forecast",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "\"Vision Pro\" shipments 2024 units 400,000 IDC estimate Apple cut production",
+        "retrieval_relevance": 0.7958,
+        "host_domain": "businesstats.com"
+      }
+    },
+    {
+      "source_id": "src_bb885488f93b8042",
+      "url": "https://dolc.de/thread-2432788-1-1.html",
+      "title": "【AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 开发者数量 应用数量 杀手级应用 缺失 2024 2025",
+        "retrieval_relevance": 0.6977,
+        "host_domain": "dolc.de"
+      }
+    },
+    {
+      "source_id": "src_3ef136d17d3f1458",
+      "url": "https://visioncenter.org/resources/visual-acuity-score",
+      "title": "Visual Acuity Score: Tests, Charts & Scores Explained - Vision Center",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 销量 低迷 退货 价格 重量 续航 2024 2025 分析",
+        "retrieval_relevance": 0.5006,
+        "host_domain": "visioncenter.org"
+      }
+    },
+    {
+      "source_id": "src_355f9dbadf18afef",
+      "url": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)",
+      "title": "Vision (Marvel Comics ) - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "822b096cdb5e4b3b6065a2f4cb02be516acbb8da91dfd4051590b2f8d0362a22",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.2556,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_9f4d4ee8f0b54990",
+      "url": "https://1.lakorn365.press/plohoy-paren-2024",
+      "title": "Дорама Плохой парень (2024) смотреть онлайн — все серии...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 开发者数量 应用数量 杀手级应用 缺失 2024 2025",
+        "retrieval_relevance": 0.2326,
+        "host_domain": "1.lakorn365.press"
+      }
+    },
+    {
+      "source_id": "src_345eb4653031b317",
+      "url": "https://vk.com/video626645157_456239022",
+      "title": "Hard trample — Видео от Door Matt | ВКонтакте",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 开发者数量 应用数量 杀手级应用 缺失 2024 2025",
+        "retrieval_relevance": 0.2326,
+        "host_domain": "vk.com"
+      }
+    },
+    {
+      "source_id": "src_ba2ac27dbfb4159d",
+      "url": "https://merriam-webster.com/dictionary/vision",
+      "title": "VISION Definition & Meaning - Merriam-Webster",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 销量 低迷 退货 价格 重量 续航 2024 2025 分析",
+        "retrieval_relevance": 0.2503,
+        "host_domain": "merriam-webster.com"
+      }
+    },
+    {
+      "source_id": "src_e57056e45a747326",
+      "url": "https://nvidia.cn/glossary/spatial-computing",
+      "title": "什么是 空间计算 ？| NVIDIA",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 内容创作 3D内容生产成本 障碍 混合现实",
+        "retrieval_relevance": 0.748,
+        "host_domain": "nvidia.cn"
+      }
+    },
+    {
+      "source_id": "src_1b74e4e94a4f04f0",
+      "url": "https://zhuanlan.zhihu.com/p/635004323",
+      "title": "什么是 空间计算 - 知乎 - 知乎专栏",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 内容创作 3D内容生产成本 障碍 混合现实",
+        "retrieval_relevance": 0.72,
+        "host_domain": "zhuanlan.zhihu.com"
+      }
+    },
+    {
+      "source_id": "src_4a494647f2b82ade",
+      "url": "https://xueqiu.com/3966435964/324908534",
+      "title": "空间计算 行业深度：发展趋势、关键技术、行业应用及相关公司深度梳理（一）（慧博出品） 作者：慧博智能投研 空间计算 …",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "343f20774246b2f02d4fea47979454ee8ef5f2ff20205920c53fdd6f83a3ec9f",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 内容创作 3D内容生产成本 障碍 混合现实",
+        "retrieval_relevance": 0.72,
+        "host_domain": "xueqiu.com"
+      }
+    },
+    {
+      "source_id": "src_3ba25c99225017ec",
+      "url": "https://zhuanlan.zhihu.com/p/678848717",
+      "title": "一篇文章讲透 空间计算 spatial computing，ChatGPT生成式 AI 热潮开 …",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 内容创作 3D内容生产成本 障碍 混合现实",
+        "retrieval_relevance": 0.72,
+        "host_domain": "zhuanlan.zhihu.com"
+      }
+    },
+    {
+      "source_id": "src_98c8db0f4cb0856a",
+      "url": "https://baike.baidu.com/item/%E7%A9%BA%E9%97%B4%E8%AE%A1%E7%AE%97/10614385",
+      "title": "空间计算 _百度百科",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "空间计算 内容创作 3D内容生产成本 障碍 混合现实",
+        "retrieval_relevance": 0.72,
+        "host_domain": "baike.baidu.com"
+      }
+    },
+    {
+      "source_id": "src_beab146f857519ec",
+      "url": "https://newly.app/",
+      "title": "Newly AI | Build Native iOS & Android Apps with AI",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro native apps number developers killer app IDC Appfigures",
+        "retrieval_relevance": 0.755,
+        "host_domain": "newly.app"
+      }
+    },
+    {
+      "source_id": "src_0c034031726ede13",
+      "url": "https://draftbit.com/",
+      "title": "Draftbit — Build Native & Web Apps with AI and Visual Editing",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro native apps number developers killer app IDC Appfigures",
+        "retrieval_relevance": 0.755,
+        "host_domain": "draftbit.com"
+      }
+    },
+    {
+      "source_id": "src_828c2aec40ddda2b",
+      "url": "https://mcpmarket.com/server/appfigures",
+      "title": "Appfigures CLI: App Metrics, ASO & AI Agent Integration",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro native apps number developers killer app IDC Appfigures",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "mcpmarket.com"
+      }
+    },
+    {
+      "source_id": "src_e718be9447e65e22",
+      "url": "https://appnation.co/",
+      "title": "AppNation - Challenge the Unthinkable",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro native apps number developers killer app IDC Appfigures",
+        "retrieval_relevance": 0.2768,
+        "host_domain": "appnation.co"
+      }
+    },
+    {
+      "source_id": "src_46e5500b56a28ecf",
+      "url": "https://bolt.new/",
+      "title": "Bolt AI builder: Websites, apps & prototypes",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro native apps number developers killer app IDC Appfigures",
+        "retrieval_relevance": 0.2517,
+        "host_domain": "bolt.new"
+      }
+    },
+    {
+      "source_id": "src_9cbd6b56cc8f7961",
+      "url": "https://discussionschinese.apple.com/thread/254441013",
+      "title": "苹果ID注销重新注册 - Apple 社区",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 企业应用 医疗 制造 培训 落地 案例",
+        "retrieval_relevance": 0.7577,
+        "host_domain": "discussionschinese.apple.com"
+      }
+    },
+    {
+      "source_id": "src_22decd4caee4463a",
+      "url": "https://discussions.apple.com/thread/254985824?sortBy=rank",
+      "title": "Mac Book Pro 2019, Touch Bar started flic… - Apple Community",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2019",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 企业应用 医疗 制造 培训 落地 案例",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "discussions.apple.com"
+      }
+    },
+    {
+      "source_id": "src_150c97f2ecc752b6",
+      "url": "https://e-ham.ru/2025/02/01/7-простых-китайских-текстов",
+      "title": "7 простых китайских текстов — Мой Лангугаге",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 企业应用 医疗 制造 培训 落地 案例",
+        "retrieval_relevance": 0.4872,
+        "host_domain": "e-ham.ru"
+      }
+    },
+    {
+      "source_id": "src_6b74a3468b2ca7bd",
+      "url": "https://mew.design/design",
+      "title": "Mew.Design - Free Online AI Design Generator",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 企业应用 医疗 制造 培训 落地 案例",
+        "retrieval_relevance": 0.2436,
+        "host_domain": "mew.design"
+      }
+    },
+    {
+      "source_id": "src_df95c4ca73692ad4",
+      "url": "https://apple.com/",
+      "title": "Apple",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 企业应用 医疗 制造 培训 落地 案例",
+        "retrieval_relevance": 0.2436,
+        "host_domain": "apple.com"
+      }
+    },
+    {
+      "source_id": "src_502b64f835fb47d6",
+      "url": "https://codergen.org/apple-vision-pro-enterprise-deployment-challenges",
+      "title": "Apple Vision Pro Enterprise Deployment Challenges... | codergen.org",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "77e50226e013b62b3a9bdd52cf07a381541af6a5b3c8b9b7eb3e616759c98829",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "codergen.org"
+      }
+    },
+    {
+      "source_id": "src_4df48a1efd057e46",
+      "url": "https://applemagazine.com/apple-vision-pro-refresh-lighter-cheaper",
+      "title": "Apple Vision Pro 2025: A Lighter, Cheaper Headset and Enterprise...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "applemagazine.com"
+      }
+    },
+    {
+      "source_id": "src_06e1becd99ce261a",
+      "url": "https://vr.org/articles/enterprise-vr-training-219-percent-roi",
+      "title": "Enterprise VR Training Now Returns 219% ROI. The... | VR.org",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "vr.org"
+      }
+    },
+    {
+      "source_id": "src_26729587d9875c31",
+      "url": "https://ibm.com/think/insights/ai-adoption-challenges",
+      "title": "The Biggest AI Adoption Challenges for 2026 | IBM",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "ibm.com"
+      }
+    },
+    {
+      "source_id": "src_d8e0effb12ca7938",
+      "url": "https://dilium.com/news/dilium-spatial-computing-mwc-barcelona",
+      "title": "dilium at MWC Barcelona 2026: Spatial Computing Demos with...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro enterprise deployment challenges adoption 2025 spatial computing",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "dilium.com"
+      }
+    },
+    {
+      "source_id": "src_e7263c0e1c7a779b",
+      "url": "https://sheincorp.com/",
+      "title": "SHEIN全球招商官网",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "混合现实 消费级 障碍 头显 价格 舒适度 续航 Vision Pro 消费者 接受度",
+        "retrieval_relevance": 0.3838,
+        "host_domain": "sheincorp.com"
+      }
+    },
+    {
+      "source_id": "src_1c3074b4c4a8266a",
+      "url": "https://kalviexpress.in/2024/07/10Th-Supplementary-Exam-Question-Paper-2024-And-Answer-Key.html",
+      "title": "10Th Supplementary Exam Question Paper 2024 And Answer Key",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 销量 低迷 退货 价格 重量 续航 2024 2025 分析",
+        "retrieval_relevance": 0.5006,
+        "host_domain": "kalviexpress.in"
+      }
+    },
+    {
+      "source_id": "src_edd6271dc602762d",
+      "url": "https://chromewebstore.google.com/detail/image-downloader-fatkun-a/mojcdcedhidldcgaokbelcmffoaengkj",
+      "title": "Image Downloader - Fatkun AI Batch Save - Chrome Web Store",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 销量 低迷 退货 价格 重量 续航 2024 2025 分析",
+        "retrieval_relevance": 0.2503,
+        "host_domain": "chromewebstore.google.com"
+      }
+    },
+    {
+      "source_id": "src_d7ac793e7d1b3632",
+      "url": "https://my.clevelandclinic.org/health/articles/21204-vision",
+      "title": "Vision : How It Works and Visual Acuity - Cleveland Clinic",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 销量 低迷 退货 价格 重量 续航 2024 2025 分析",
+        "retrieval_relevance": 0.2503,
+        "host_domain": "my.clevelandclinic.org"
+      }
+    },
+    {
+      "source_id": "src_bfb40b1f132407ac",
+      "url": "https://apps.apple.com/us/iphone/apps",
+      "title": "Apps for iPhone - App Store",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro sales consumer adoption barriers price comfort battery killer app",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "apps.apple.com"
+      }
+    },
+    {
+      "source_id": "src_4cb9438ff9e07917",
+      "url": "https://wccftech.com/apple-still-working-on-its-standalone-ar-glasses",
+      "title": "Apple Still Keen On Launching Its Standalone Pair Of AR Glasses But...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro sales consumer adoption barriers price comfort battery killer app",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "wccftech.com"
+      }
+    },
+    {
+      "source_id": "src_a86d14e105e377f4",
+      "url": "https://linton.ai/after-waiting-30-years-for-the-apple-vision-pro-i-finally-got-one-47806d0c7bb6",
+      "title": "After waiting 30 years for the Apple Vision Pro, I finally got one",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro sales consumer adoption barriers price comfort battery killer app",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "linton.ai"
+      }
+    },
+    {
+      "source_id": "src_fa70dcd83f7540eb",
+      "url": "https://youtube.com/watch?v=3cYkx360800",
+      "title": "Dji Drone Battery Fix-PART-1- DJI KILLER -cp 2112... - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro sales consumer adoption barriers price comfort battery killer app",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_8ac3660cd3ea18ca",
+      "url": "https://dribbble.com/tags/vision-pro-ui",
+      "title": "Vision Pro UI designs, themes, templates and downloadable graphic...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro sales consumer adoption barriers price comfort battery killer app",
+        "retrieval_relevance": 0.4917,
+        "host_domain": "dribbble.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_6ad53d7d345ddba0",
+      "source_id": "src_d6590dfc54627a0b",
+      "text": "Download current and previous versions of Apple's iOS, iPadOS, macOS, watchOS, tvOS, audioOS and visionOS firmware and receive notifications when new firmwares are released. 1 Choose a product.July 27, 2026. Apple Vision Pro (M5).",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c138b0768901a7dc85bd1a04c20682dd525843f8fa411148d77fa7a4ab9efe21"
+    },
+    {
+      "evidence_id": "ev_92c7cd87c16ba5b5",
+      "source_id": "src_1c3a6268b2c20032",
+      "text": "Apple TV is available on the Apple TV app in over 100 countries and regions, on over 1 billion screens, including iPhone, iPad, Apple TV 4K, Apple Vision Pro, Mac, popular smart TVs from Samsung, LG, Sony, VIZIO, TCL and others, Roku and Amazon Fire TV devices...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9f865cc996ca13f18c2180f843e9bbdd17ef8e70d001618c0859b67290f9b329"
+    },
+    {
+      "evidence_id": "ev_47e42c870c279a0c",
+      "source_id": "src_629b5a7fd2f145ac",
+      "text": "Apple в сентябре 2026 года выпустит как минимум пять новых устройств: две модели iPhone 18 Pro, первый складной iPhone и две модели Apple Watch. Некоторые другие новинки могут появиться позднее – на отдельном осеннем мероприятии.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "de7ff45912f964b09af0e387258e8775d740cd05a83ba2afea666e8160575c64"
+    },
+    {
+      "evidence_id": "ev_de3a2db36e519000",
+      "source_id": "src_bf09994404ff7b00",
+      "text": "Преимущества apple ipad 11 (2025). Современный чип A16 Bionic — плавная работа и высокая производительность. Поддержка стилусов Apple Pencil и клавиатур Magic Keyboard Folio. Живой 11-дюймовый Retina-дисплей с разрешением 2160×1640 пикселей.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f6830df460b09f0da14e162d59eeb498bc73c8d7d1e27e77f07f3b5451ec03b7"
+    },
+    {
+      "evidence_id": "ev_0acb537dbe02ccec",
+      "source_id": "src_f6351b1325d34777",
+      "text": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "940653bd4646f4e47855580dca2773ce108d3997ea60b5fd5f0eaf3d6969a21d"
+    },
+    {
+      "evidence_id": "ev_387532b75cd83f10",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "本文首先从技术定义出发,阐明空间计算的概念和发展历程,介绍空间计算全球的政策情况和应用场景,重点从技术流程和产业链两个角度 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "397112791c9bc92f6c56b8ac1152d2980842822bd308f50a2867abb70fabac2c"
+    },
+    {
+      "evidence_id": "ev_206ecd5ba018c31c",
+      "source_id": "src_d0683a111cd4ecb2",
+      "text": "Apple 的新款Vision Pro 是 Apple 生态系统中的一款全新设备，被人们称为基于混合现实的新型「空间计算机」。2. VisionOS 是 iOS 和 iPad OS 开发的延伸.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "36d3c879cf22700afe52d6445ab5e3277709fe717638c778997b61ba1f3706cc"
+    },
+    {
+      "evidence_id": "ev_c272443056d7e821",
+      "source_id": "src_8623f037d1b5d5cc",
+      "text": "苹果推出Vision Pro开发者工具，开创全新的空间计算应用体验. 2023-06-23. 苹果发文分享多位visionOS开发者感想，野生开发者怎么说？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f6c6a60898d470fb460cef53dd915466d07db21519b0a0f693e912c74f48d99d"
+    },
+    {
+      "evidence_id": "ev_5fd7417e3d38b241",
+      "source_id": "src_0360c139bbffb7e3",
+      "text": "2、转换后的iPad应用程序。 这可以作为原生visionOS应用程序运行，开发者需要更新软件的用户界面，并针对MR混合现实进行优化。开发者投资Vision Pro应用的热情。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "cd3b3aab94509e7c992b7401364c1b3f71bd2d7349ff45920ea72ebddc355438"
+    },
+    {
+      "evidence_id": "ev_0b77ebb3735713c8",
+      "source_id": "src_02e77d2d896cdfdb",
+      "text": "Vision Pro的红利依赖于苹果构建的完整生态。截至4月，已有超过3000家开发者注册visionOS开发者计划，提交的应用审核通过率约72%，高于iOS的65%。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a7220a221234a66c953e94609514522ac3f4e612d9d17e3f6284d89d5deb9761"
+    },
+    {
+      "evidence_id": "ev_c00bd2fd6580cb54",
+      "source_id": "src_4c47239dea2be713",
+      "text": "Apple has cut its 2024 Vision Pro shipments to 400–450k units (vs. market consensus of 700–800k units or more).The Financial Times also has a report confirming Kuo by stating Apple is making “drastic cuts” and will “make fewer than 400,000 units in 2024.”",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "10e26fd6f9909bf846e4dc141f54697bd52e65a4a3f4116dee825734ccfb63dc"
+    },
+    {
+      "evidence_id": "ev_69c1a49fe0ebde3f",
+      "source_id": "src_ffbe0f9d880f1414",
+      "text": "Apple Vision Pro shipments reportedly cut as US demand for headset wanes.According to TF Securities analyst Ming-Chi Kuo on Tuesday, Apple has cut its shipment orders for the Apple Vision Pro in 2024 down to between 400,000 and 450,000 units.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d0ce3f38d10bbdd3b5b41d878df7417943478026457159a1d74b876641d47d7"
+    },
+    {
+      "evidence_id": "ev_ba5ba4d8ade6d0eb",
+      "source_id": "src_414863b80e20053a",
+      "text": "Apple has dropped the number of Vision Pro units that it plans to ship in 2024, going from an expected 700 to 800k units to just 400k to 450k units, according to Apple analyst Ming-Chi Kuo.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "414b99dbeb9f05f66f61c1cdb5c5659543c90f6bacec42b42801a5d642ae2c29"
+    },
+    {
+      "evidence_id": "ev_fdd339c9104af98b",
+      "source_id": "src_8fb959e9fadd9ace",
+      "text": "The Vision Pro is still only available in 13 countries, and most of those also came later in the year. By all accounts, Apple sold fewer than 100,000 units in the first quarter of 2024 when it went on sale exclusively in the United States.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "39a7af07016db0dc510200cbcdbef5143c4cc38ad3f66279e47f14d65e397c86"
+    },
+    {
+      "evidence_id": "ev_e44022887524dc17",
+      "source_id": "src_1765812663bc6228",
+      "text": "Data: Apple Vision Pro shipment estimates and forecast, in thousands of units. Apple does not report Vision Pro sales. The 2024 and 2025 figures are industry estimates, chiefly from IDC. The 2026 to 2028 figures are forecasts.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e240e0429d08cd90fa6fa5bbfcd2ef30a5f2a252d50695ff8c78201e96d6058a"
+    },
+    {
+      "evidence_id": "ev_2148c00b70b29cf7",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪生则是 一种虚拟模型，它通过收集、整合现实世界物体或系统的数据，实时 反映其状态、行为和性能，并且能够模拟其未来发展和行为。 空间计 算提供了将数字信息与物理空间相结合的能力，而数字孪生则提供了 模拟和管理物理系统的能力。 空间计算的应用场景可涵盖零售业、远程教育、广告、游戏、医 疗、军事、演示、培训、旅游等，为用户提供更加沉浸式、交互性强， 并且与现实世界紧密结合的计算体验。 空间计算也在仓 库自动化、自 动驾驶汽车和供应链自动化中发挥作用。 从技术角度，空间计算技术链上游为空间数据采集。 空间数据可 以分为场景数据、网格数据和深度数据，这些数据的采集基于结构光 传感器、飞行时间传感器等。 中游包括空间数据处理、空间数据显示， 空间数据处理涉及到空间计算芯片和机器学习、数据处理算法，以实 现空间定位、运动跟踪、手势交互等功能。 空间数据显示在硬件上主 要分为光学器件和显示屏，在算法上包括场景渲染、环境映射、虚实 整合等。 下游为空间数据交互，硬件上为终端，软件上包括操作系统、 开发工具和内容应用部分。 从产业角度，产业链核心技术集中在上中游，硬件方面包括传感 器、芯片和光学器件的制造，算法方面包括动态环境建模、实时 3D 图形生成、空间定位等技术。 中国的优势在于光学器件和显示屏制造、 软件开发与内容创作。 从行业角度，空间计算国际头部企业较多，国际企业技术平台主 要有 Microsoft、Meta、Magic Leap 、Google、Apple、Nreal 等，国 内头部企业较少，如PICO、维享时空、宸境科技、虚拟动点等。 但国 内在空间计算产业链一些环节中发挥重要作用，如传感器方面：韦尔 股份、水木智芯；光学器件方面：蓝特 光学、水晶光电、韦尔股份等； 显示屏方面：利亚德、奥拓电子、中微公司、精测电子等；芯片方面： 万有引力、之行无界、瑞芯微等；整机代工方面：歌尔股份、闻泰科 技、兆威机电、长盈精密等；开发工具方面：华为、爱奇艺等；内容 方面：腾讯、网易、风语筑等 。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "2aa4e93dc8b13cc5f6ff4b095d026005a05ea532424af210a45284f477ea82d8"
+    },
+    {
+      "evidence_id": "ev_ba93233d3efe612f",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "随着元宇宙的兴起，以及 Meta 在消 费级空间计算上的商业成功，中国的空间计算市场迎来了第二次风口， 华为、小米和 OPPO 等纷纷推出空间计算产品。 从科研角度，空间计算领域中国研究者发力点多集中在产业链 中 的某一环节，而非全流程都涉及，主要集中在光学硬件、视觉算法和 内容端。 Research Report April 12, 2024 Atlas of the Spatial Computing Industry3 Research Center for Sci-Tech and Finance Yashu Zhu, Li An Abstract: Spatial computing is a new computing paradigm that utilizes the unique properties of space to guide the calculation process, based on three - dimensional principles, with a people -oriented approach, connecting and integrating the virtual world and the real world. In the report, we first give a brief introduction about spatial computing, including the technolog y definition, the development process, the global policy situation and application. Then we analyze the spatial computing industry from the perspectives of technical processes and industrial chains, and further conducts in-depth research and positioning on the global market status and research progress. Space computing and digital twins are fundamental technologies for 3 Thanks to intern Yuhao Zhang of Research Center for Sci-Tech and Finance at PBCSF Tsinghua University for his research assistance in this report. Yuhao Zhang is PhD. student at School of Medicine, Tsinghua University. building the metaverse to create a more realistic, open, and interactive virtual world. Here is their differences and connections.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "0146b76d035afce97b9d479631b00694ddc4a49504bacfd0b69353f22e35ce80"
+    },
+    {
+      "evidence_id": "ev_9503f39f7707fd3c",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "For indus try analysis of digital twins, please refer to the \"Atlas of the Digital Twin Industry\" 4 . Spacial computing is a computing paradigm that utilizes spatial and environmental perception technologies to combine digital information with physical space, creating an interactive experience that is more integrated with the real world. However, digital twin is a virtual model that collects and integrates data from real -world objects or systems to reflect their state, behavior and performance in real -time, which can s imulate their future development and behavior. Spacial computing provides the ability to combine digital information with physical space, while digital twins provide the ability to simulate and manage physical systems. The application scenarios of spatial computing include retail, remote education, advertising, games, healthcare, military, demonstration, training, tourism, etc. , providing users with a more immersive, interactive, and closely integrated computing experience with the real world. Spatial computing also plays a role in warehouse automation, autonomous vehicle and supply chain automation. From technical perspective, the upstream of the spatial computing technology chain is the collection of spatial data.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "a878e7d8a9a2faa9a36468beb0bb7671bf047d8141dccd46ee7808c080ed5a1b"
+    },
+    {
+      "evidence_id": "ev_23d65a92d2b13b22",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "Spacial data can be divided into scene dat a, grid data, and depth data, which are collected based on structured light sensors, Time of flight sensors, etc. The midstream includes 4 “Atlas of the Digital Twin Industry” is a research report produced by the Research Center for Sci-Tech and Finance, PBCSF, Tsinghua University, 2024 series. spatial data processing, spatial data display. Spatial data processing involves spatial computing chips, machine learni ng, and data processing algorithms to achieve functions such as spatial positioning, motion tracking and gesture interaction. Spacial data display is mainly divided into optical devices and display screens in hardware, and algorithms include scene renderin g, environment mapping, virtual and real integration, etc. Downstream is interaction using spatial data, hardware is the terminal, and software includes operating systems, development tools and content application parts. From industrial perspective, the co re technologies are concentrated in the upper and middle of the spacial computing industrial chain. In terms of hardware, including the manufacturing of sensors, chips, and optical components. In terms of algorithms, including technologies such as dynamic environment modeling, real -time 3D graphics generation, and spatial positioning.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "0fd04512f56e742728c2ed7c0be134a60da8e30d93c682554cf95c605cda86ab"
+    },
+    {
+      "evidence_id": "ev_637e0dcf6f59ebc7",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "China's advantages lie in the manufacturing of optical components and display screens, software development, and content creation. From sector perspective, there are many leading international companies in spatial computing, with international enterprise technology platforms including Microsoft, Meta, Magic Leap, Google, Apple, Nreal, etc. There are relatively few leading domestic companies, such as PICO, pgverse, deepmirror, Virtual Point, etc. But China plays an important role in some aspects of the spacial computing industry chain, such as sensors: Will Semiconductor, TuMEMS; In terms of optical devices, such as Lante Optics, CrystalOptech, and Will Semiconductor; In terms of display screens: Leyard, Aoto, AMEC, Jingce Electronics, etc; In terms of chips: GravityXR, Zhixing Wujie, Rockchip, etc; In terms of whole machine OEM: Goertek, Wingtech Technology, Zhaowei Machinery & Electronic, Evenwin Precision Technology, etc; In terms of development tools: Huawei, iQiyi, etc; In terms of content: Tencent, NetEase, Fengyuzhu, etc. With the rise of the metaverse and the commercial success of Meta in consumer grade space computing, China's spacial computing market has ushered in a seco nd wave of growth, with Huawei, Xiaomi, and OPPO launching spacial computing products one after another.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "4bcd80fbc4ec755f55d5c17e16fcfe60673b15435600fe52a58f68e13f4d7f50"
+    },
+    {
+      "evidence_id": "ev_a900791ef8583317",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 （一）技术定义 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 （二）发展历程 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 （三）全球政策情况 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 （四）中国政策情况 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-6",
+      "content_hash": "b9949ecb42d616f063e08bd7f7a2b3aee39816bdcff277bb52df4e21878bb18e"
+    },
+    {
+      "evidence_id": "ev_8441e30b5e41c3ab",
+      "source_id": "src_68e20ed67c60bf87",
+      "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 （五）应用场景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 二、空间计算技术流程 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 （一）技术流程概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18 （二）空间数据采集 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . [CONTENT_TRUNCATED: 15943 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-7",
+      "content_hash": "fed5ea4c9f82f7ade67683839c150d749dc1d8b01a818e84950934ac9bb49d9a"
+    },
+    {
+      "evidence_id": "ev_bd45814ff3d8c828",
+      "source_id": "src_bb885488f93b8042",
+      "text": "The Displacement项目使用Bass扩散系数k量化——电气化k≈0.09、PC k≈0.15、互联网k≈0.22、生成式AI k≈0.80，扩散速度为电气化10倍（The Displacement, 2025）。15年+、万亿美元市值却无大众级杀手应用（CoinTrust & MEXC, 2025）。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "4c9fe58c33613a567e2940fd5afc5ed2e45a684e0ae4d3484dee3f42ad1cf363"
+    },
+    {
+      "evidence_id": "ev_6090cce325306c3d",
+      "source_id": "src_3ef136d17d3f1458",
+      "text": "Oct 10, 2024 · A visual acuity test will help assess your visual function and diagnose common vision problems, such as refractive …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e1554eb79763a2db62d2f822fcad4ecc6ec642f1e04a7bbe0fdb7161b77c08cf"
+    },
+    {
+      "evidence_id": "ev_ed3363bfda4c9d97",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "A great fan of Golden Age heroes, he first thought to bring back Aarkus, a 1940s hero who had been called the Vision due to his …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "19f3ec714438d09895ccd7875765e21da60f6182648fe0ac8a3ff450c5522a51"
+    },
+    {
+      "evidence_id": "ev_d68c5409e796d641",
+      "source_id": "src_9f4d4ee8f0b54990",
+      "text": "Плохой парень (2024) — дорама (Южная Корея, сериал) смотреть онлайн все серии бесплатно на lakorn365.press : русская озвучка, субтитры, HD 1080p. Описание сюжета, актёрский состав и новые эпизоды по выходу.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c0f9a6ec5ec07a542da831e1c5b96680b1447e478ad55d7e9f79da99f55ab989"
+    },
+    {
+      "evidence_id": "ev_2ae5cfd97115af1f",
+      "source_id": "src_345eb4653031b317",
+      "text": "Смотрите онлайн «Hard trample» от автора Door Matt. Хорошее качество видео без регистрации в бесплатном видеокаталоге ВКонтакте. Опубликовано 17 января 2024. 48742 — просмотрели, 683 — оценили.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ff2bf605283b8a31ea4308c1c44183c6f865f75322bc02e6ef71f3c408fd563c"
+    },
+    {
+      "evidence_id": "ev_6de242b94eba31d9",
+      "source_id": "src_ba2ac27dbfb4159d",
+      "text": "2 days ago · The meaning of VISION is the act or power of seeing : sight. How to use vision in a sentence.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "2cad333f748c133aafde659940a8f0b6d96adfdadbb7f6f22ae53729ff454cb4"
+    },
+    {
+      "evidence_id": "ev_590fbcad316afb8d",
+      "source_id": "src_e57056e45a747326",
+      "text": "世界捕获与渲染技术的进步促进了 数字孪生 的创建，将现实世界的数据带入空间计算设备，实现身临其境的体验。 这种数字内容与物 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "2b51e214356a9fbb3c07bc702e47cbb487b85948be94f9b63e0390caeb4a5bbf"
+    },
+    {
+      "evidence_id": "ev_16228c6e836af97d",
+      "source_id": "src_1b74e4e94a4f04f0",
+      "text": "空间计算产业链可大略分为 终端设备 、软件工具、应用和服务。 应用和服务方面，空间计算在商业、文旅、工业、会展、金融、游戏 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e46a94aebc1a5676cec9992f5f07f792ad908ad6ae7154b7837863917519ebf0"
+    },
+    {
+      "evidence_id": "ev_ceedd993eec75b58",
+      "source_id": "src_4a494647f2b82ade",
+      "text": "Feb 25, 2025 · 它以低计算代价实现高效的三维场景渲染，特别适用于AR大空间的动态重建和实时交互。 例如VastGaussian通过分治 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e092724a21d965d2fe5cf0390ba834fb33345502bba8a35b6721b932a814c2e5"
+    },
+    {
+      "evidence_id": "ev_ef9148240b9dacf6",
+      "source_id": "src_3ba25c99225017ec",
+      "text": "作为 麻省理工学院媒体实验室 美学和计算小组的研究员，格林沃尔德探索了计算结构的空间环境。 在 2003 年的论文中，他将空间计 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "443282a38a7df0a27b38a8ed28a08adef4fda691971493fa669859ed93b7a38f"
+    },
+    {
+      "evidence_id": "ev_1a52deb956faa7e2",
+      "source_id": "src_98c8db0f4cb0856a",
+      "text": "其核心技术包括光学定位算法、无标记点识别计算及三维激光点云配准方法，应用涵盖动作识别、三维重建、文旅体验，并延伸至XR …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "bf324554c75f4306babe3a85975be6ee083927b4c3488636a0f80fd156aa3fc6"
+    },
+    {
+      "evidence_id": "ev_bd1025f0669579c6",
+      "source_id": "src_beab146f857519ec",
+      "text": "Newly AI (newly.app) is an AI app builder for native iOS and Android apps. Describe your idea, generate React Native code, preview it, and ship.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "53c42e8f11bacb15e906d56cc94edbfda5b6e479946703e422483876fc7b3b56"
+    },
+    {
+      "evidence_id": "ev_c7706a36b0b2a7ba",
+      "source_id": "src_0c034031726ede13",
+      "text": "Build web and mobile apps with AI agents, full visual control, and human experts when you need them. Build for web, iOS & Android. Use your own Claude & OpenAI accounts. Live preview as you build. Drag & drop, full visual editing. 1-click publish to web & app stores.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7bfe3507d4e25f21f7f299d3efbca18185ab5e1a9fd4ca7db2bbbe5c2f90f933"
+    },
+    {
+      "evidence_id": "ev_dc7506e8988a4ef9",
+      "source_id": "src_828c2aec40ddda2b",
+      "text": "Query app metrics, reviews, and store data directly from your terminal with Appfigures CLI. Integrate with AI agents via MCP for advanced ASO, market intelligence, and Apple Ads management.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "04b76d812da2fb1129677e153c3cb01cfaf3426e0e01a531abbf66bb887a34a6"
+    },
+    {
+      "evidence_id": "ev_76648b2c77c5e391",
+      "source_id": "src_e718be9447e65e22",
+      "text": "As one of the world's top app publisher, AppNation is not just creating apps; we're shaping the future. Our goal? To put cutting-edge, AI-driven technology into the hands of everyday people.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "aaef5ab8852ff6c2ad631d08b85a38df4744bd99ae87e5c147b3ece35f93e4bc"
+    },
+    {
+      "evidence_id": "ev_0ae69234f251ce23",
+      "source_id": "src_46e5500b56a28ecf",
+      "text": "Build and scale high-performing websites & apps using your words. Join millions and start building today.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c76bf55c33a6542f83f4a1b09a17d348666ad9aaf77866b6d10ce21398ad7c7c"
+    },
+    {
+      "evidence_id": "ev_f0686b416ab75f36",
+      "source_id": "src_4a494647f2b82ade",
+      "text": "{\"_waf_bd8ce2ce37\":\"uaB4VMBJ0pVbbnRGqh81TbAEIi3cOCeF/uv5VFAh5zg=\"} 3EJ9CvTop9bk6/H7t9vaQn2/46Cw69DroCpv3j1lpnghAd/VREDaEEU/6aCE4tpCJ3Pzhobt3dwQT/t5AbR7B7iOFiKFt4/0/anQ3Uwaa638qeq/qZLd69Gvht7LiRY1d4P8jPwrZR5LLBihdgTtP/6ZQiH8K0sIaWK/XuSJFiObqdK7490WYXFzAFiARWkg/7bvr4ARX1D/juui0bC873JQUICh6/Hn6Gg3eAZVc1+xeABZegiw7fGM5YjzKAZT/ur4rildsXNWWC9c64kWL22//I3ovarcEG0teQu/pnhzEWchMPuCoCpn4WCJtl7DoHhBoDW82edxoCxi7j61jhB1weHXu7/cEGnNtb3q+7/dmtq37oKmKlf7TN1MEq+j6Ln0sa3Y3ff1vamhdghXn3r5wfV2RMRVsBIk3Uyvn4q81/r6+i4HV9Hz1NAvVgL5++Pt+K0Z8ncH3BZoOt/Xr4fyLAihYLGaDCXaER1d46oIjYeJTEBM9Y7vpdzq7unyKnH7OfwrV2JrvhUcnIkWE7+1/KfwqYfVoCrAYvV2gmHcQiUasLzjuui5t6GnpvKhqv6qkZHAkcyTzsyDioDyoKX/8/X86LfmtO3j7evSht3Wit7d3ZTFkFkABlVQXlwKE0WHc1a0L1Tr3BZgumVtMShQtGp5U+J5BbZyVrh5D757B7l6WON8AbQzP2Zq9SwhjSamfz8dbQkqmbChdiLJhTLxkYlMUGLzvuGK3UyH3aiC6/ry+90WdQ/xrveJ+9pCX33nprb5/t3cECUo0uaB29xCTeLY3q++oO3h9ff0s44QPXPz8726luj679G66NpCY5vZoIrj5Pbqr9oRP4dzCOTU2kUDe2k+NmFyXrYuCbNpc1i8BWgQf1O5f1bga3oIsntZ7YARdxj3lt+uoai+/dDl2kV5Ofeoipvq7vv1LHPBPzDpMLnaEH1bh4Ky8eTc7r+mfyGtZxfCXcrdTChzq/yM2kUb8Wk+NnleuGIuC1dpZWZr/Ctb6muQubA89SwPkz0iZxLR2hBfwdG8+u3W/tTiodHyoSwlA2fIcMfI2kJD4feoiqHQ/uvcFmKI6fOJsPj60O3c2hAhE2k+NnleuGIuBb9pZWZr3BBvtP7cu+jk5fvVs+ys8qAqL1QzBNM5w44WJkF5AbRrAKYreZ3NzTOOFnon2bnw+6/n7PispngSt0o+gBF1HsM+2YrXOK7t3O5qjofv8+X05q34q4kWfymD/KfcpbLcEGdF5a/K1vIqP5c/gBFVhEMF2hF9G/ryKgWrOhgf0eLcEFPM1vq5+rzupn8dp0DcEHc316/i74//ltq70qf2q",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "73d1cf8af5714667f9dac442c7aa10145d95d5357e030c20ece4553eee5d0da6"
+    },
+    {
+      "evidence_id": "ev_1eb4859ebf8b491a",
+      "source_id": "src_4a494647f2b82ade",
+      "text": "[CONTENT_TRUNCATED: 34071 chars total, showing first 6000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "a921343f1836e0046f7fa73f5dae204d516c7d557adbc576435eb45188fa4112"
+    },
+    {
+      "evidence_id": "ev_d8ad97ddfe67e17c",
+      "source_id": "src_9cbd6b56cc8f7961",
+      "text": "Mac 商务应用. 教育.Apple Vision Pro 支持. AppleCare. OS 27 预览.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7ac0f4227c3d4429a45a4e6c75faa62faf5c29a7e4b9b2cb554928bff3220856"
+    },
+    {
+      "evidence_id": "ev_a956980840cfe17c",
+      "source_id": "src_22decd4caee4463a",
+      "text": "Apple Vision Pro Accessories. Book a Demo. Financing. Personal Setup. More from Vision. Apple Vision Pro Support. AppleCare. visionOS 26.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "99c1561237ec6b1554bc0eedb42e3da3b8db8312a433c287f69a1623c060ee19"
+    },
+    {
+      "evidence_id": "ev_82833fad5a095f91",
+      "source_id": "src_150c97f2ecc752b6",
+      "text": "yìngyòng. 应用. применять. rìcháng.Скачать. Microsoft Office LTSC 2021. Windows 10 x86-x64 Pro VL 22H2 Ru by OVGorskiy 08.2023.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3471ddd85d27aeac53d6b42f87dc97654aeae0fa072be7e36122a09131af17e1"
+    },
+    {
+      "evidence_id": "ev_67f13656be3bce12",
+      "source_id": "src_6b74a3468b2ca7bd",
+      "text": "Digital vision board wallpaper Попробуйте бесплатно.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "e6a6f78c9e41cf2c6121c9662f770d0a7af2532a4cf29fe2cc8bbbfc81fe9f1a"
+    },
+    {
+      "evidence_id": "ev_cc27395fa3304769",
+      "source_id": "src_df95c4ca73692ad4",
+      "text": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fd799c67a5d0925005388073ed39f6dca6338c8c0bbd79e43f53287ba9c7e061"
+    },
+    {
+      "evidence_id": "ev_31e4a34908a2a8fb",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "Spatial computing introduces new sensor and capture risks. Vision Pro’s camera array, depth sensors, eye tracking generate continuous streams of environmental and behavioral data. You need explicit policies for what gets logged, where it’s stored, who accesses it.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "cca6d6f453b7220e0477cf3a102d02992480cf0e2c003c575582f40df48c3b0e"
+    },
+    {
+      "evidence_id": "ev_8cabda0617cf57bf",
+      "source_id": "src_4df48a1efd057e46",
+      "text": "Redefining Spatial Computing’s Future. The Vision Pro’s first year was a proof of concept—stunning but niche, with a price and weight that kept it from mass adoption. These 2025 updates show Apple iterating fast.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "277668c37f149bb85450ea8f9a28213e9ec500672a76cd8411a8f4f50d2e7a63"
+    },
+    {
+      "evidence_id": "ev_ddb7076605c0d485",
+      "source_id": "src_06e1becd99ce261a",
+      "text": "The adoption numbers. This is no longer an early adopter conversation. According to multiple industry surveys, 91% of enterprises are either actively using or planning to adopt VR and AR training. 75% of Fortune 500 companies are implementing VR in 2026.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "03c3b2a55acc96ba8c6b7a6e8d746d66acf28fd2fef39c1db9b000ef30c13ee6"
+    },
+    {
+      "evidence_id": "ev_5da8524977e2fd82",
+      "source_id": "src_26729587d9875c31",
+      "text": "Another significant AI adoption challenge involves governance, accountability and autonomous system risk. Agentic AI systems can now complete tasks across multiple applications, make decisions and interact with sensitive data with limited human oversight.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2050dcebd58c2562bb7adee2b1c98a2c14bccfe4c9988d5031cac90f9ff4607c"
+    },
+    {
+      "evidence_id": "ev_03120b972b035d07",
+      "source_id": "src_d8e0effb12ca7938",
+      "text": "Live demos and Spatial Collaboration use cases with 3DtoMe at the Italian booth. dilium is heading to MWC Barcelona 2026 on March 2-5 as part of the Italian Trade Agency (ICE) delegation to present its latest Spatial Computing solutions live on the global stage.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4f8cd83b69d77518c0ec1d8e03824b25804d2e6ae0437c4e40399d54a2e25be1"
+    },
+    {
+      "evidence_id": "ev_8a5aa80476d668e6",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "Home Apple Vision Pro Enterprise Deployment Challenges at Scale Apple Vision Pro Enterprise Deployment Challenges at Scale Published on March 18, 2026 dylanhartfield Facebook Twitter Pinterest WhatsApp Think Vision Pro will slide into your existing Apple fleet tooling? Think again. visionOS 1. 1 has no Automated Device Enrollment and no supervision, so each headset needs hands-on setup. On top of that, two-hour batteries, custom optical inserts, app-distribution gaps, high per-device bandwidth, and new sensor-data rules create logistics, network, and compliance headaches. The thesis: deploying Vision Pro at scale needs more than MDM tweaks — it requires new workflows, site upgrades, legal reviews and a clear pilot before you buy hundreds. Bottom line: plan for overhead, not plug-and-play. Core Obstacles in Apple Vision Pro Enterprise Deployment If you’re planning to roll out Apple Vision Pro across your organization, you’ll hit blockers fast. As of visionOS 1. 1, there’s no Automated Device Enrollment. No supervision either. Those are the two pillars most IT teams lean on when they’re managing hundreds of Apple devices. Without them, you’re stuck with manual or account-driven enrollment using Managed Apple IDs. Every single device needs hands-on setup. That doesn’t scale. Then there’s the hardware. You get about two hours of battery per charge, tethered to an external pack.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "b542706f56f979b27fd6ffe599457a3769f2ffdddd824556e7d4bdb40bc89e0e"
+    },
+    {
+      "evidence_id": "ev_2507685d933294a0",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility with more than 1,000,000 iOS and iPadOS apps. Most of those iPhone and iPad apps? They show up as flat 2D windows floating in space. Not exactly immersive. You want real mixed-reality features, you’ll need to port or rebuild using visionOS APIs. That means rethinking UI for 3D placement, gaze tracking, gesture controls. Native visionOS apps can’t fully distribute through Apple Business Manager yet, so enterprise licensing and deployment get complicated fast. Your network is about to feel it. Each active Vision Pro can pull tens to low hundreds of megabits per second during spatial sessions. Multiply that across a floor full of headsets and your Wi‑Fi infrastructure better be ready. Security and identity need attention now. Optic ID iris authentication runs locally in the M2’s Secure Enclave. Biometric data never leaves the device.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "239b268180cc90b2066c667bbbb01372b06950b278db9bf9844d9b6816223f32"
+    },
+    {
+      "evidence_id": "ev_ab5932262b9a9d81",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "But spatial sessions generate new data types: gaze telemetry, spatial captures, sensor logs. If you’re in healthcare, aviation, government, you’ll need explicit compliance controls, audit trails, data-retention policies built for immersive workflows. Managed Apple IDs require directory integration. If your systems assume device-based enrollment, expect delays. Critical enterprise blockers at launch: No Automated Device Enrollment or supervision. Manual setup per device slows fleet rollouts, blocks kiosk configs. Two-hour battery with tethered pack. You’ll need charging rotations, spare batteries, and that cable creates safety risks on factory floors. User-specific optical inserts. Shared-device setups get complicated. Tracking accessories per user, ordering replacements, managing inventory. High bandwidth per device. Spatial streaming and multi-user sessions need dense Wi‑Fi, low-latency backhaul, QoS planning for each headset. Native visionOS app distribution gaps. No full volume-store support yet. Enterprise licensing, updates, internal software-approval processes all get harder. Compliance and sensor-data governance unknowns. New biometric and spatial-capture modalities need policy updates, legal review, explicit data handling for HIPAA, GDPR, industry regs. Device Management Limitations in Vision Pro Deployment Apple added MDM support for Vision Pro in visionOS 1. 1.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "6188026ef0fb39e50346e01fb28e5d187c59a40c30e8099fc4101d8b58783882"
+    },
+    {
+      "evidence_id": "ev_b4973eac07697ebd",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "You get declarative device management, standard MDM payloads. IT can configure Wi‑Fi, per-app VPN, single sign-on, restrictions, identity certs, push apps, pull inventory, remote wipe. It’s the same model you’re used to from iPhone and iPad management. Inventory endpoints report device status, installed apps, compliance posture. Feeds into your existing UEM dashboards, ITSM systems. Here’s what’s missing. Automated Device Enrollment. The zero-touch provisioning method that ties devices to Apple Business Manager or Apple School Manager at purchase? Not supported on visionOS 1. 1. Device supervision, which unlocks advanced restrictions, app controls, lockdown modes? Also absent. You’re forced into account-driven Device Enrollment or account-driven User Enrollment. Both need manual interaction during setup and depend on Managed Apple ID provisioning. For fleets of 50, 100, 500 devices, that per-unit overhead becomes a bottleneck fast. Workaround involves pre-provisioning Managed Apple IDs through directory sync, scripting enrollment steps where you can, accepting higher setup times per device. Third-party UEM vendors are updating agents for visionOS, but feature parity and declarative-management maturity will vary. Pilot test with your specific UEM stack before you commit to broad deployment.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "13c65f5b33b55221318d9886e35841c544638abd925b8e64d173bf81e0071c7d"
+    },
+    {
+      "evidence_id": "ev_db2683862287003d",
+      "source_id": "src_502b64f835fb47d6",
+      "text": "Management Area Current visionOS Support Status Enrollment options Account-driven Device Enrollment and User Enrollment only; no Automated Device Enrollment Supervision Not supported; limits lockdown configurations and advanced restrictions App deployment MDM can push compatible and in-house apps; native visionOS apps lack full volume-store distribution channel Inventory and remote actions Inventory reporting and remote erase supported via standard MDM protocols Security, Biometrics, and Governance Constraints in Vision Pro Rollouts Apple Vision Pro uses [CONTENT_TRUNCATED: 32170 chars total, showing first 6000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "d1abdd32b8d57696b1d2709205e3a8a6c9c6defd06eed2a4363fae56410cb8ce"
+    },
+    {
+      "evidence_id": "ev_51fe331cefac8ecb",
+      "source_id": "src_e7263c0e1c7a779b",
+      "text": "Cape Robbin凭借大胆街头风女鞋在SHEIN精准触达Z世代和千禧消费者，通过参与平台大促、发放优惠券和数字化选品，迅速打开美国市场，并从洛杉矶走向更多城.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "41f2a93f35ad0873bb3897b78d0f81628bb654d9d6c0cd451af12fbccae351d1"
+    },
+    {
+      "evidence_id": "ev_7d1e95902902a085",
+      "source_id": "src_1c3074b4c4a8266a",
+      "text": "10Th Revision Question Paper 2026 - 3rd Revision Exam. February 14, 2026. 10Th Half Yearly Question Paper 2025 And Answer key.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "d39177e4f50cba77162966521c95a32eb3c0f6f2c79841e9d7d2b106e6ef29ee"
+    },
+    {
+      "evidence_id": "ev_d3e15b25876f02ed",
+      "source_id": "src_edd6271dc602762d",
+      "text": "We don't collect personal data or browsing history. All processing happens locally in your browser. SUPPORT Have questions or suggestions? Contact us at fatkunimage@gmail.com Upgrade to Fatkun Pro for unlimited downloads and advanced features!",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e9ddffc83f7310819a42d770f121e9779bea23f60ee066be884ced6da1d31bbe"
+    },
+    {
+      "evidence_id": "ev_9adcdbd97b524f9a",
+      "source_id": "src_d7ac793e7d1b3632",
+      "text": "Nov 17, 2022 · What is vision? Vision is the process where your eyes and brain work together and use light reflecting off things …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "905efd39253fca54f65eecf8e0b7144fed6ffd7fd37e048ad4c601a2928e08ae"
+    },
+    {
+      "evidence_id": "ev_ff13040379fac2f4",
+      "source_id": "src_bfb40b1f132407ac",
+      "text": "Entertainment. Apple Vision Pro Apps.Award-Winning Apps. Apps honored by Apple. View. SmartGym: Gym & Home Workouts.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6750bb90ae13edd1be7d07ea86cb8ba83016a122c52abc312674779503dd1c5d"
+    },
+    {
+      "evidence_id": "ev_d2da001dee6b4e36",
+      "source_id": "src_4cb9438ff9e07917",
+      "text": "To prevent overheating and allow the smart spectacles to deliver above-average battery life, Apple needs a chip that can provide the same performance as an A18 or an A18 Pro while consuming one-tenth of its power.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "cb7c1b68f0decd7ece5616c44d60c6737c626c75b79de2b09e50305e17a90ec9"
+    },
+    {
+      "evidence_id": "ev_a1810c43adccd75f",
+      "source_id": "src_a86d14e105e377f4",
+      "text": "The day that Apple announced the Vision Pro was a bit surreal for me, I was incredibly excited, but at the same time I also felt shocked that it took this long. And up until this weekend, as I’ve told so many people who laugh a bit when I say it — I feel like we’ve all been living in the past.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "db341e51eef1ac87612de2ea8370076e1275eeb2e072200ea6fed0ddbeb29e0c"
+    },
+    {
+      "evidence_id": "ev_e66f30d48232d8d5",
+      "source_id": "src_fa70dcd83f7540eb",
+      "text": "Ressurecting Dead DJI Mavic Pro Batteries - CP2112 + DJI Battery Killer WORKS! TechnoSavage. 2K views • 8 months ago.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "079dc3551b970a9d16b10e58686648dbd8b941eda9db75557632bab2dc896bcd"
+    },
+    {
+      "evidence_id": "ev_3fe19daeb6ae7bfe",
+      "source_id": "src_8ac3660cd3ea18ca",
+      "text": "Discover 51 Vision Pro UI designs on Dribbble. Your resource to discover and connect with designers worldwide.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c2c18e634e4e638befe8c81040ec9f3ad383d92ea4b0a0d75f49c3b4da8dc8d8"
+    },
+    {
+      "evidence_id": "ev_c248137591e2fa3e",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "From Wikipedia, the free encyclopedia Comic book superhero Comics character Vision Vision taken from the variant cover of Avengers (April 2017). Originally drawn by the character's co-creator Sal Buscema for the corner box of the first volume of the comic book series (1963 - 1996) and painted over by Joe Jusko Publication information Publisher Marvel Comics First appearance Avengers (August 1968) Created by Roy Thomas (writer) John Buscema (artist) In-story information Species Android Place of origin Brooklyn, New York Team affiliations Avengers West Coast Avengers Avengers A. I. Defenders Mighty Avengers New Avengers Partnerships Scarlet Witch (ex-wife) Viv Vision (daughter) Notable aliases Victor Shade Abilities Superhuman strength , stamina, durability, speed, intelligence, and senses Solar energy absorption and projection Holographic disguise Dimensional tunneling Possession Cyberpathy Mechanical Regeneration Flight Nanotech mimicry Invisibility Living database Vision is a superhero appearing in American comic books published by Marvel Comics . Created by Roy Thomas and artist John Buscema , the character first appeared in The Avengers #57 (published in August 1968). The Vision is loosely based on the Timely Comics character of the same name who was an alien from another dimension.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "b578faefcbff5b0d10dae45a51e3ea8cbc52e2dcc3b63d9739336bee06eea3fe"
+    },
+    {
+      "evidence_id": "ev_17460ac1d45e457d",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "The character is an android (sometimes called a \"synthezoid\") built by the villainous robot Ultron created by Hank Pym . Originally intended to act as Ultron's \"son\" and destroy the Avengers , Vision instead turned on his creator and joined the Avengers to fight for the forces of good. Since then, he has been depicted as a frequent member of the team, and, for a time, was married to his teammate Scarlet Witch . He also served as a member of the Defenders , and is the father of Viv Vision The Vision was created from a copy of the original Human Torch , a synthetic man created by Phineas T. Horton . Ultron took this inert android and added more advanced technology to it, as well as new programming of his own design and a copy of human brainwave patterns. The result was the Vision, a synthezoid driven by logic, but possessing emotions and being able to achieve emotional growth. As an android, the Vision has a variety of abilities and super-powers. In the 1989 story \"Vision Quest\", Vision was dismantled, then was rebuilt with a chalk-white appearance and now lacked the capacity for emotions. A greater understanding of emotions was regained in 1991, his original red appearance was restored in 1993, and his full personality and emotional connections to memories were restored in 1994 in his first self-titled limited series, Vision .",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "3e514e3d5324018d817f42c5e7ee46a97a0b5bbf11dedf18d171f202d0b60b7a"
+    },
+    {
+      "evidence_id": "ev_4a5430f701d1869c",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "Another four-issue limited series, Avengers Icons: The Vision , was published in late 2002. From 2015 to 2016, Vision had his own series again written by Tom King , during which he attempted to live in the suburbs with an android family, of which the only surviving member, his daughter Viv Vision , then joins the Champions , whom Vision oversees. Since his conception, the character has been adapted into several forms of media outside comics. Paul Bettany plays Vision in the Marvel Cinematic Universe films Avengers: Age of Ultron (2015), Captain America: Civil War (2016), and Avengers: Infinity War (2018), the television miniseries WandaVision (2021), and the animated series What If. . . ? (2021). Publication history edit Creation and development edit While working as the writer of the superhero-team series Avengers Roy Thomas wanted to add a new character to the roster. A great fan of Golden Age heroes, he first thought to bring back Aarkus , a 1940s hero who had been called the Vision due to his spectral appearance and smoke-based abilities. This original Vision had appeared in stories published by Timely Comics, the company that later rebranded as Marvel Comics. Roy Thomas discussed the matter with Marvel editor Stan Lee , who co-created the Avengers team with artist Jack Kirby .",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "aca36fd3e11e5379189c91a5f0d2ba36d84e1fce49411b6a00faa7c3e0250b8f"
+    },
+    {
+      "evidence_id": "ev_e754dc5147c3a3ef",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "Lee enjoyed the idea of a new member, but did not want it to be an alien or visitor from another dimension. After he suggested creating a new character entirely and that it could be an android instead, Thomas compromised by creating a new android character who resembled Aarkus and also called himself Vision. Thomas spoke further into the design by stating, \"I suspect I suggested a cowl instead of a bald head, although the jewel on his forehead (now so important in the films) may have been either my idea or, I suspect, a design element tossed in by John. I did ask him to give Vision a chest symbol a diamond as a focal point, because he could make his body as hard as diamond. I took that from the WWII comic hero Spy-Smasher The character has a capacity for emotions but is primarily driven by logic and curiosity. Unused to emotions and how they could influence his behavior, he would be at times guarded or unsure how to express himself. His personality has been compared with Spock from Star Trek , but Thomas said he was barely aware of the TV series at the time and was influenced by the Adam Link character created by Otto Binder , one of the first fictional robots treated as a sympathetic character rather than only a mechanical tool or a monster. Artist John Buscema designed the character by adjusting the appearance of Aarkus.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "1b08a51af972821a06699a8a2ce9add533fd10824efc443764fc70cd5fa79d72"
+    },
+    {
+      "evidence_id": "ev_b8dd83e68d8ac0de",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "Originally, Thomas wanted the character to be colored chalk-white, befitting his ghostly name. Printing limitations of the time would have rendered him colorless by leaving that portion of the page un-inked rather than using white ink, meaning it would be more vulnerable to smudges because images and text on the other side of the page would possibly be visible and seem to overlap the character. Thomas and Buscema settled on giving the character a colorful costume and red skin. The original Vision, Aarkus, had been depicted with light green or sometimes light blue skin in his original comics. Red was chosen for the new android character because Thomas believed Marvel readers had gotten used to blue skin indicating a member of the Atlantean race, while green skin could bring comparisons to the Hulk 1960s and 1970s edit The android Vision first appeared in The Avengers #57 (published in August 1968 but with a cover date indicating October). The cover of the issue was an homage to the first page of the first comic story to feature Aarkus. When Thomas created Ultron, he gave the robot an origin of having been created by Dr. Hank Pym and then turning on his creator. Thomas mirrored this by having Ultron create the Vision to be his son and ally, only to then have the new android join his enemies, the Avengers.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "81631a17cbd5eb29dc9c8183eeb4c4ce9ec13a6404d6f2e0037d1275767a44f8"
+    },
+    {
+      "evidence_id": "ev_af8ededf69243e4f",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "To cement the character was not truly as cold and emotionless as he might appear, and that the stories would not treat him as if he were, The Avengers #58 included a scene where, after realizing he has been accepted by the Avengers not only as a new teammate but as a person, Vision excuses himself and silently cries. Vision appeared with Spider-Man Marvel Team-Up #5 (1972), \"A Passion of the Mind\", in which they defeat a giant robot scout from the Kree-Skrull War that was interfering with Vision's brain waves. The Avengers #75 (1970), Wanda Maximoff (the Scarlet Witch ) rejoins the team with her brother Pietro ( Quicksilver ). Over time, Wanda became a love interest for Vision. Thomas recounted, \"I felt that a romance of some sort would help the character development in The Avengers , and the Vision was a prime candidate because he appeared only in that mag. . . as did Wanda, for that matter. So they became a pair, for just such practical considerations. It would also, I felt, add to the development I was doing on the Vision's attempting to become 'human. '\" Originally, Thomas considered the Vision to be an android entirely created by Ultron. Later, Ultron had built the Vision from the body of the original Human Torch , who had been described in his Golden Age stories as a perfect, synthetic replica of a human being. Thomas only planted a vague clue to thi",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "bc72b7acf7e43d888b1abe78ad314055f024b3a97297a2b1f4e85fd083231d10"
+    },
+    {
+      "evidence_id": "ev_fec7bb01c333922e",
+      "source_id": "src_355f9dbadf18afef",
+      "text": "[CONTENT_TRUNCATED: 79381 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "2411a5620eefce36a02e2cec898d87167ef9a845b18654ca93fd8b377eb0399c"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_8230cf7e7a3ce8bf",
+        "text": "空间计算是一种利用空间感知与环境感知技术、将数字信息与物理空间结合的计算范式，以三维为基础、以人为本，连通并融合虚拟世界与现实世界 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.7926,
+        "support_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_8441e30b5e41c3ab"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_db5ba82f85e110cb",
+        "text": "其产业链可分为三层：上游空间数据采集（结构光、ToF 传感器），中游空间数据处理（空间计算芯片、SLAM 与手势追踪算法）与显示（光学器件、微显示屏、虚实融合渲染），下游终端、操作系统、开发工具与内容应用 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.6737,
+        "support_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_ba93233d3efe612f",
+          "ev_8441e30b5e41c3ab"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_54f1e662e944dc3a",
+        "text": "中国厂商的比较优势在光学器件、显示制造与软件/内容环节 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.4813,
+        "support_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_ba93233d3efe612f",
+          "ev_a900791ef8583317"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_010d04979319e502",
+        "text": "Apple 于 2024 年 2 月在美国发售 Vision Pro（起价 3,499 美元），刻意以\"空间计算\"替代\"元宇宙/MR\"叙事，确立了眼动+手势+语音交互、视频透视（passthrough）混合现实的产品范式。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3134,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_2507685d933294a0",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_502b64f835fb47d6",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1566fcb7fec23a8c",
+        "text": "这一动作重塑了整个产业的竞争坐标：Meta（Quest 3）、Google/Samsung（Android XR）加速跟进，华为、小米、OPPO 亦相继入局空间计算产品 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_23d65a92d2b13b22"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Evidence is a Tsinghua report on spatial computing concepts, industry chain, and applications; it does not mention Meta Quest 3, Google/Samsung Android XR, or Huawei/Xiaomi/OPPO entering spatial computing, nor any reshaping of competitive landscape.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a900791ef8583317",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ec5bffa1556575e9",
+        "text": "多方报道显示 Vision Pro 出货量大幅低于预期：分析师郭明錤 2024 年 4 月报告 Apple 将当年出货预期从 70–80 万台下调至 40–45 万台，《金融时报》确认其\"大幅砍单\"，美国上市首季销量估计不足 10 万台（Apple 官方不披露该品类销量，各第三方机构口径普遍在年 50 万台以下）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0363,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c00bd2fd6580cb54",
+          "ev_ba5ba4d8ade6d0eb",
+          "ev_69c1a49fe0ebde3f"
+        ],
+        "source_ids": [
+          "src_4c47239dea2be713",
+          "src_414863b80e20053a",
+          "src_ffbe0f9d880f1414"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c00bd2fd6580cb54",
+            "source_id": "src_4c47239dea2be713",
+            "text": "Apple has cut its 2024 Vision Pro shipments to 400–450k units (vs. market consensus of 700–800k units or more).The Financial Times also has a report confirming Kuo by stating Apple is making “drastic cuts” and will “make fewer than 400,000 units in 2024.”",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_ba5ba4d8ade6d0eb",
+            "source_id": "src_414863b80e20053a",
+            "text": "Apple has dropped the number of Vision Pro units that it plans to ship in 2024, going from an expected 700 to 800k units to just 400k to 450k units, according to Apple analyst Ming-Chi Kuo.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_692151ee9e028de0",
+        "text": "2025 年 10 月 Apple 推出搭载 M5 芯片的升级版，属小幅迭代，未见销量结构性质变。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1203,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_6ad53d7d345ddba0",
+          "ev_de3a2db36e519000"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_d6590dfc54627a0b",
+          "src_bf09994404ff7b00"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ad53d7d345ddba0",
+            "source_id": "src_d6590dfc54627a0b",
+            "text": "Download current and previous versions of Apple's iOS, iPadOS, macOS, watchOS, tvOS, audioOS and visionOS firmware and receive notifications when new firmwares are released. 1 Choose a product.July 27, 2026. Apple Vision Pro (M5).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ad1338f16fac37b2",
+        "text": "发布初期产能仅约 13–15 万台，单价 3,499 美元使企业大规模采购面临 CFO 层面的 ROI 质疑 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_8a5aa80476d668e6",
+          "ev_ab5932262b9a9d81"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8a5aa80476d668e6",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "Home Apple Vision Pro Enterprise Deployment Challenges at Scale Apple Vision Pro Enterprise Deployment Challenges at Scale Published on March 18, 2026 dylanhartfield Facebook Twitter Pinterest WhatsApp Think Vision Pro will slide into your existing Apple fleet tooling? Think again. visionOS 1. 1 has no Automated Device Enrollment and no supervision, so each headset needs hands-on setup. On top of that, two-hour batteries, custom optical inserts, app-distribution gaps, high per-device bandwidth, ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f9d4106fb061808b",
+        "text": "低装机量的直接后果是生态冷启动困难：Netflix、YouTube、Spotify 等未推出原生 visionOS 应用；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0828,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c272443056d7e821",
+          "ev_5fd7417e3d38b241",
+          "ev_0b77ebb3735713c8"
+        ],
+        "source_ids": [
+          "src_8623f037d1b5d5cc",
+          "src_0360c139bbffb7e3",
+          "src_02e77d2d896cdfdb"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c272443056d7e821",
+            "source_id": "src_8623f037d1b5d5cc",
+            "text": "苹果推出Vision Pro开发者工具，开创全新的空间计算应用体验. 2023-06-23. 苹果发文分享多位visionOS开发者感想，野生开发者怎么说？",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5fd7417e3d38b241",
+            "source_id": "src_0360c139bbffb7e3",
+            "text": "2、转换后的iPad应用程序。 这可以作为原生visionOS应用程序运行，开发者需要更新软件的用户界面，并针对MR混合现实进行优化。开发者投资Vision Pro应用的热情。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f87cca5018d980b1",
+        "text": "生态规模约为 1,000 余款原生空间应用加 100 万+ 兼容 iOS/iPadOS 应用，但后者多以 2D 窗口呈现、缺乏沉浸感，真正的 MR 功能需用 visionOS API 重写 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "supported",
+        "verification_score": 1.0,
+        "support_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_b4973eac07697ebd"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_b4973eac07697ebd",
+          "ev_8a5aa80476d668e6"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Evidence states over 1,000 spatial apps for Vision Pro plus compatibility with more than 1,000,000 iOS/iPadOS apps, that most appear as flat 2D windows and are not immersive, and that real mixed-reality features require porting/rebuilding with visionOS APIs, directly entailing both clauses.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b4973eac07697ebd",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "You get declarative device management, standard MDM payloads. IT can configure Wi‑Fi, per-app VPN, single sign-on, restrictions, identity certs, push apps, pull inventory, remote wipe. It’s the same model you’re used to from iPhone and iPad management. Inventory endpoints report device status, installed apps, compliance posture. Feeds into your existing UEM dashboards, ITSM systems. Here’s what’s missing. Automated Device Enrollment. The zero-touch provisioning method that ties devices to Apple ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_62d6389ea29a5912",
+        "text": "彭博社亦判断该应用生态\"预计不会爆发\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0957,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b77ebb3735713c8",
+          "ev_2148c00b70b29cf7",
+          "ev_8441e30b5e41c3ab"
+        ],
+        "source_ids": [
+          "src_02e77d2d896cdfdb",
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b77ebb3735713c8",
+            "source_id": "src_02e77d2d896cdfdb",
+            "text": "Vision Pro的红利依赖于苹果构建的完整生态。截至4月，已有超过3000家开发者注册visionOS开发者计划，提交的应用审核通过率约72%，高于iOS的65%。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e980fc2395a3b572",
+        "text": "这印证了\"高设备价格 → 小装机量 → 开发者投入不足 → 内容匮乏 → 需求疲软\"的自增强冷启动循环。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0718,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5fd7417e3d38b241",
+          "ev_2148c00b70b29cf7",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_0360c139bbffb7e3",
+          "src_68e20ed67c60bf87",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5fd7417e3d38b241",
+            "source_id": "src_0360c139bbffb7e3",
+            "text": "2、转换后的iPad应用程序。 这可以作为原生visionOS应用程序运行，开发者需要更新软件的用户界面，并针对MR混合现实进行优化。开发者投资Vision Pro应用的热情。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ca4b7b4da9f17b1b",
+        "text": "空间计算产业链中，内容创作属\"软件工具+应用\"环节，被行业研究确认为当前短板 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.5704,
+        "support_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_ba93233d3efe612f",
+          "ev_387532b75cd83f10"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fe6f03e6689103f9",
+        "text": "工具链不成熟：主流 3D 引擎（Unity/Unreal）面向专业开发者、学习曲线陡峭；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1833,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_23d65a92d2b13b22",
+          "ev_a900791ef8583317"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_23d65a92d2b13b22",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "Spacial data can be divided into scene dat a, grid data, and depth data, which are collected based on structured light sensors, Time of flight sensors, etc. The midstream includes 4 “Atlas of the Digital Twin Industry” is a research report produced by the Research Center for Sci-Tech and Finance, PBCSF, Tsinghua University, 2024 series. spatial data processing, spatial data display. Spatial data processing involves spatial computing chips, machine learni ng, and data processing algorithms to ach",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5cb3af596b122854",
+        "text": "visionOS 开发依赖 SwiftUI/RealityKit 新范式，存量 iOS 开发者迁移成本高。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2242,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b77ebb3735713c8",
+          "ev_206ecd5ba018c31c",
+          "ev_2507685d933294a0"
+        ],
+        "source_ids": [
+          "src_02e77d2d896cdfdb",
+          "src_d0683a111cd4ecb2",
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b77ebb3735713c8",
+            "source_id": "src_02e77d2d896cdfdb",
+            "text": "Vision Pro的红利依赖于苹果构建的完整生态。截至4月，已有超过3000家开发者注册visionOS开发者计划，提交的应用审核通过率约72%，高于iOS的65%。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_206ecd5ba018c31c",
+            "source_id": "src_d0683a111cd4ecb2",
+            "text": "Apple 的新款Vision Pro 是 Apple 生态系统中的一款全新设备，被人们称为基于混合现实的新型「空间计算机」。2. VisionOS 是 iOS 和 iPad OS 开发的延伸.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1f4c5e1de7519d37",
+        "text": "空间视频与 3D 资产缺乏统一格式和低成本采集管线。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1444,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_23d65a92d2b13b22"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a900791ef8583317",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_524c3936638c3d0e",
+        "text": "生产成本高：传统 3D 建模、扫描、动捕为人工密集型工作，高质量空间内容单分钟成本远高于 2D 视频；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1805,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_2507685d933294a0",
+          "ev_03120b972b035d07"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_502b64f835fb47d6",
+          "src_d8e0effb12ca7938"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8409641e13d25e37",
+        "text": "数字孪生级内容需激光扫描与专业渲染。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3008,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_590fbcad316afb8d",
+          "ev_ba93233d3efe612f"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_e57056e45a747326"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_590fbcad316afb8d",
+            "source_id": "src_e57056e45a747326",
+            "text": "世界捕获与渲染技术的进步促进了 数字孪生 的创建，将现实世界的数据带入空间计算设备，实现身临其境的体验。 这种数字内容与物 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_536578d1096f8ccd",
+        "text": "破局变量：3D Gaussian Splatting、NeRF 及生成式 3D 模型等 AI 重建技术（2025 年起兴起）有望以低计算代价实现高效三维场景渲染，方向明确但尚未产品化普及，规模化降本证据不足。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1575,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_7d1e95902902a085"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_1c3074b4c4a8266a"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a900791ef8583317",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_49d22b559f1b2958",
+        "text": "需要说明的是，本轮可核实的一手行业报告原文受限，相关量化数据（精确应用数、开发者数）未能取得权威交叉验证，此为本报告的主要证据缺口。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1699,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_5fd7417e3d38b241",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_0360c139bbffb7e3",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5fd7417e3d38b241",
+            "source_id": "src_0360c139bbffb7e3",
+            "text": "2、转换后的iPad应用程序。 这可以作为原生visionOS应用程序运行，开发者需要更新软件的用户界面，并针对MR混合现实进行优化。开发者投资Vision Pro应用的热情。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7fbc02b7d7a49a3f",
+        "text": "企业端是目前最有希望的方向——行业调查显示 91% 企业已使用或计划采用 VR/AR 培训，但需求主要由更便宜的设备（如 Meta Quest）承载，Vision Pro 处于高端小众位置。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0143,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ddb7076605c0d485",
+          "ev_2148c00b70b29cf7",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_06e1becd99ce261a",
+          "src_68e20ed67c60bf87",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ddb7076605c0d485",
+            "source_id": "src_06e1becd99ce261a",
+            "text": "The adoption numbers. This is no longer an early adopter conversation. According to multiple industry surveys, 91% of enterprises are either actively using or planning to adopt VR and AR training. 75% of Fortune 500 companies are implementing VR in 2026.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a0aeb61413f61742",
+        "text": "其典型场景包括：医疗手术规划与 3D 解剖可视化、制造业共享设备培训轮换、多用户空间设计协作 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_8a5aa80476d668e6",
+          "ev_ab5932262b9a9d81"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8a5aa80476d668e6",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "Home Apple Vision Pro Enterprise Deployment Challenges at Scale Apple Vision Pro Enterprise Deployment Challenges at Scale Published on March 18, 2026 dylanhartfield Facebook Twitter Pinterest WhatsApp Think Vision Pro will slide into your existing Apple fleet tooling? Think again. visionOS 1. 1 has no Automated Device Enrollment and no supervision, so each headset needs hands-on setup. On top of that, two-hour batteries, custom optical inserts, app-distribution gaps, high per-device bandwidth, ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e55c2c7ebcddc1a4",
+        "text": "MDM 设备管理缺陷：visionOS 1.1 无自动设备注册（ADE）、无监督模式，每台设备需手动设置加 Managed Apple ID，无法规模化；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1411,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8a5aa80476d668e6",
+          "ev_ab5932262b9a9d81",
+          "ev_b4973eac07697ebd"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8a5aa80476d668e6",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "Home Apple Vision Pro Enterprise Deployment Challenges at Scale Apple Vision Pro Enterprise Deployment Challenges at Scale Published on March 18, 2026 dylanhartfield Facebook Twitter Pinterest WhatsApp Think Vision Pro will slide into your existing Apple fleet tooling? Think again. visionOS 1. 1 has no Automated Device Enrollment and no supervision, so each headset needs hands-on setup. On top of that, two-hour batteries, custom optical inserts, app-distribution gaps, high per-device bandwidth, ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab5932262b9a9d81",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "But spatial sessions generate new data types: gaze telemetry, spatial captures, sensor logs. If you’re in healthcare, aviation, government, you’ll need explicit compliance controls, audit trails, data-retention policies built for immersive workflows. Managed Apple IDs require directory integration. If your systems assume device-based enrollment, expect delays. Critical enterprise blockers at launch: No Automated Device Enrollment or supervision. Manual setup per device slows fleet rollouts, bloc",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_71f0b6f809fabbe5",
+        "text": "应用分发缺口：原生 visionOS 应用不能通过 Apple Business Manager 批量分发；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2188,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_b4973eac07697ebd",
+          "ev_2148c00b70b29cf7"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6",
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b4973eac07697ebd",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "You get declarative device management, standard MDM payloads. IT can configure Wi‑Fi, per-app VPN, single sign-on, restrictions, identity certs, push apps, pull inventory, remote wipe. It’s the same model you’re used to from iPhone and iPad management. Inventory endpoints report device status, installed apps, compliance posture. Feeds into your existing UEM dashboards, ITSM systems. Here’s what’s missing. Automated Device Enrollment. The zero-touch provisioning method that ties devices to Apple ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_df8fc1ce7e78485c",
+        "text": "硬件约束：约 2 小时续航加外挂电池、蔡司定制光学镜片造成共享轮换的物流难题，线缆在车间存在安全隐患；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0722,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_2507685d933294a0",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_502b64f835fb47d6",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_febbf99a14f7118f",
+        "text": "网络成本：多用户空间会话单设备需数十至数百 Mbps 带宽，需场地级 Wi-Fi 密集部署与 QoS 规划；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0292,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab5932262b9a9d81",
+          "ev_2148c00b70b29cf7",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6",
+          "src_68e20ed67c60bf87",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab5932262b9a9d81",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "But spatial sessions generate new data types: gaze telemetry, spatial captures, sensor logs. If you’re in healthcare, aviation, government, you’ll need explicit compliance controls, audit trails, data-retention policies built for immersive workflows. Managed Apple IDs require directory integration. If your systems assume device-based enrollment, expect delays. Critical enterprise blockers at launch: No Automated Device Enrollment or supervision. Manual setup per device slows fleet rollouts, bloc",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b85f6c43a0390f4a",
+        "text": "安全与合规：Optic ID 虹膜数据本地存储于 Secure Enclave，但凝视追踪、空间传感器日志属新型数据，医疗（HIPAA）、航空、政府行业需新的审计与法律审查流程 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0372,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_ab5932262b9a9d81",
+          "ev_8a5aa80476d668e6"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab5932262b9a9d81",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "But spatial sessions generate new data types: gaze telemetry, spatial captures, sensor logs. If you’re in healthcare, aviation, government, you’ll need explicit compliance controls, audit trails, data-retention policies built for immersive workflows. Managed Apple IDs require directory integration. If your systems assume device-based enrollment, expect delays. Critical enterprise blockers at launch: No Automated Device Enrollment or supervision. Manual setup per device slows fleet rollouts, bloc",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_196d46918ba8a0db",
+        "text": "需指出，Apple 官方披露的企业客户案例属厂商自述，缺乏独立第三方 ROI 验证；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_2148c00b70b29cf7",
+          "ev_637e0dcf6f59ebc7"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6",
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6ad778cef151afa8",
+        "text": "行业共识是先小范围试点、再扩量。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0802,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a7401cc7832dabf5",
+        "text": "价格：3,499 美元（国内 29,999 元）对比 Quest 3 的 499 美元，属发烧友定价，直接压缩潜在用户池并导致砍单；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0648,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2507685d933294a0",
+          "ev_17460ac1d45e457d",
+          "ev_2148c00b70b29cf7"
+        ],
+        "source_ids": [
+          "src_502b64f835fb47d6",
+          "src_355f9dbadf18afef",
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2507685d933294a0",
+            "source_id": "src_502b64f835fb47d6",
+            "text": "And each headset needs user-specific magnetic Zeiss optical inserts. If you’re thinking shared devices—training labs, hospital rotations, field techs rotating shifts—you just inherited a logistics problem. Supply is tight too. Initial production estimates put first-year output somewhere between 130,000 and 150,000 units. At $3,499 each, your CFO is going to ask hard ROI questions. The app situation is messy. Apple says there are over 1,000 spatial apps built for Vision Pro, plus compatibility wi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_17460ac1d45e457d",
+            "source_id": "src_355f9dbadf18afef",
+            "text": "The character is an android (sometimes called a \"synthezoid\") built by the villainous robot Ultron created by Hank Pym . Originally intended to act as Ultron's \"son\" and destroy the Avengers , Vision instead turned on his creator and joined the Avengers to fight for the forces of good. Since then, he has been depicted as a frequent member of the team, and, for a time, was married to his teammate Scarlet Witch . He also served as a member of the Defenders , and is the father of Viv Vision The Vis",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c95f42577baa21f7",
+        "text": "舒适度：约 600–650g 重量集中于前脸，\"半小时到一小时不适\"是评测与退货反馈的高频问题，近视用户还需另购镜片；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0507,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_ba93233d3efe612f",
+          "ev_5fd7417e3d38b241"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_0360c139bbffb7e3"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ba93233d3efe612f",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "随着元宇宙的兴起，以及 Meta 在消 费级空间计算上的商业成功，中国的空间计算市场迎来了第二次风口， 华为、小米和 OPPO 等纷纷推出空间计算产品。 从科研角度，空间计算领域中国研究者发力点多集中在产业链 中 的某一环节，而非全流程都涉及，主要集中在光学硬件、视觉算法和 内容端。 Research Report April 12, 2024 Atlas of the Spatial Computing Industry3 Research Center for Sci-Tech and Finance Yashu Zhu, Li An Abstract: Spatial computing is a new computing paradigm that utilizes the unique properties of space to guide the calculation process, based on three - dimensional principles, with a people -oriented approach, connecting and in",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8e91326b3a7abb1f",
+        "text": "续航形态：外挂电池约 2–2.5 小时，本质是\"坐着的设备\"，无法支撑全天候空间计算愿景；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_206ecd5ba018c31c",
+          "ev_2507685d933294a0"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_d0683a111cd4ecb2",
+          "src_502b64f835fb47d6"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_206ecd5ba018c31c",
+            "source_id": "src_d0683a111cd4ecb2",
+            "text": "Apple 的新款Vision Pro 是 Apple 生态系统中的一款全新设备，被人们称为基于混合现实的新型「空间计算机」。2. VisionOS 是 iOS 和 iPad OS 开发的延伸.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8e2bd8e86d3e0091",
+        "text": "算力/功耗/重量不可能三角是全行业瓶颈；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0687,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bb3a7b23ffe99f69",
+        "text": "留存：初期退货潮与\"新鲜感消退后吃灰\"普遍，头显月活/售出比远低于手机；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_318875e9b5532c54",
+        "text": "场景缺失：验证过的强场景（沉浸观影、虚拟大屏、游戏）均为\"锦上添花\"而非不可替代，缺乏类似智能手机时代\"微信/抖音\"级的原生刚需应用。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1146,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_8441e30b5e41c3ab",
+          "ev_387532b75cd83f10"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8441e30b5e41c3ab",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 （五）应用场景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 二、空间计算技术流程 . . . . . . . . . . . . . . . . . . . . .",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bd27f3c99dda27fb",
+        "text": "综合来看，Vision Pro 的历史意义在于范式定义与供应链拉动，而非销量本身：它以双 micro-OLED 4K 屏等高端规格抬高了 MR 技术上限，推动显示与光学供应链的技术升级，并倒逼竞争对手加速布局 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1397,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_ba93233d3efe612f",
+          "ev_a900791ef8583317"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ba93233d3efe612f",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "随着元宇宙的兴起，以及 Meta 在消 费级空间计算上的商业成功，中国的空间计算市场迎来了第二次风口， 华为、小米和 OPPO 等纷纷推出空间计算产品。 从科研角度，空间计算领域中国研究者发力点多集中在产业链 中 的某一环节，而非全流程都涉及，主要集中在光学硬件、视觉算法和 内容端。 Research Report April 12, 2024 Atlas of the Spatial Computing Industry3 Research Center for Sci-Tech and Finance Yashu Zhu, Li An Abstract: Spatial computing is a new computing paradigm that utilizes the unique properties of space to guide the calculation process, based on three - dimensional principles, with a people -oriented approach, connecting and in",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7c33cc2db648759b",
+        "text": "但其低于预期的出货暴露了消费级 MR 在价格、重量、内容生态上的根本性障碍。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1069,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ba93233d3efe612f",
+          "ev_2148c00b70b29cf7",
+          "ev_206ecd5ba018c31c"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_d0683a111cd4ecb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ba93233d3efe612f",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "随着元宇宙的兴起，以及 Meta 在消 费级空间计算上的商业成功，中国的空间计算市场迎来了第二次风口， 华为、小米和 OPPO 等纷纷推出空间计算产品。 从科研角度，空间计算领域中国研究者发力点多集中在产业链 中 的某一环节，而非全流程都涉及，主要集中在光学硬件、视觉算法和 内容端。 Research Report April 12, 2024 Atlas of the Spatial Computing Industry3 Research Center for Sci-Tech and Finance Yashu Zhu, Li An Abstract: Spatial computing is a new computing paradigm that utilizes the unique properties of space to guide the calculation process, based on three - dimensional principles, with a people -oriented approach, connecting and in",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_03e0177bc7fbfeb1",
+        "text": "产业演进更可能沿三条路径展开：（1）企业先行——医疗、培训、设计等任务制场景 ROI 可量化，待 MDM 与分发工具成熟后逐步放量；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1643,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_6ad53d7d345ddba0"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87",
+          "src_d6590dfc54627a0b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a900791ef8583317",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_10553ee60d871602",
+        "text": "影音娱乐渗透——以更低价位头显（预期中的廉价版 Vision、Android XR 设备）扩大装机基数，缓解开发者冷启动困境；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0529,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c248137591e2fa3e",
+          "ev_17460ac1d45e457d",
+          "ev_4a5430f701d1869c"
+        ],
+        "source_ids": [
+          "src_355f9dbadf18afef"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c248137591e2fa3e",
+            "source_id": "src_355f9dbadf18afef",
+            "text": "From Wikipedia, the free encyclopedia Comic book superhero Comics character Vision Vision taken from the variant cover of Avengers (April 2017). Originally drawn by the character's co-creator Sal Buscema for the corner box of the first volume of the comic book series (1963 - 1996) and painted over by Joe Jusko Publication information Publisher Marvel Comics First appearance Avengers (August 1968) Created by Roy Thomas (writer) John Buscema (artist) In-story information Species Android Place of o",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_17460ac1d45e457d",
+            "source_id": "src_355f9dbadf18afef",
+            "text": "The character is an android (sometimes called a \"synthezoid\") built by the villainous robot Ultron created by Hank Pym . Originally intended to act as Ultron's \"son\" and destroy the Avengers , Vision instead turned on his creator and joined the Avengers to fight for the forces of good. Since then, he has been depicted as a frequent member of the team, and, for a time, was married to his teammate Scarlet Witch . He also served as a member of the Defenders , and is the father of Viv Vision The Vis",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4b0f14057a21befe",
+        "text": "轻量 AR 眼镜普及——待算力/功耗/重量三角突破后走向真正的全天候消费级形态。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0552,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_51fe331cefac8ecb",
+          "ev_ba93233d3efe612f"
+        ],
+        "source_ids": [
+          "src_e7263c0e1c7a779b",
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_51fe331cefac8ecb",
+            "source_id": "src_e7263c0e1c7a779b",
+            "text": "Cape Robbin凭借大胆街头风女鞋在SHEIN精准触达Z世代和千禧消费者，通过参与平台大促、发放优惠券和数字化选品，迅速打开美国市场，并从洛杉矶走向更多城.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_ba93233d3efe612f",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "随着元宇宙的兴起，以及 Meta 在消 费级空间计算上的商业成功，中国的空间计算市场迎来了第二次风口， 华为、小米和 OPPO 等纷纷推出空间计算产品。 从科研角度，空间计算领域中国研究者发力点多集中在产业链 中 的某一环节，而非全流程都涉及，主要集中在光学硬件、视觉算法和 内容端。 Research Report April 12, 2024 Atlas of the Spatial Computing Industry3 Research Center for Sci-Tech and Finance Yashu Zhu, Li An Abstract: Spatial computing is a new computing paradigm that utilizes the unique properties of space to guide the calculation process, based on three - dimensional principles, with a people -oriented approach, connecting and in",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_df68b41dc69f86eb",
+        "text": "其中最关键的破局变量，是 AI 驱动的 3D 内容生成能否把空间内容生产成本降低一个数量级，从而解开\"无内容—无用户—无开发者\"的死循环。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1791,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2148c00b70b29cf7",
+          "ev_a900791ef8583317",
+          "ev_23d65a92d2b13b22"
+        ],
+        "source_ids": [
+          "src_68e20ed67c60bf87"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2148c00b70b29cf7",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "研究报告 （2024 年第 6 期 总第 38 期） 2024 年 4 月 12 日 空间计算行业图谱1 科创金融研究中心 朱雅姝，安砾 【摘要】空间计算是在利用空间的特有属性来指导计算过程，在 三维的基础之上，以人为本，连通及融合虚拟世界与现实世界的一个 全新的计算范式。 本文首先从技术定义出发，阐明空间计算的概念和 发展历程，介绍空间计算全球的政策情况和应用场景，重点从技术流 程和产业链两个角度对空间计算行业进行分析，并进一步对全球市场 现状和研发进度做了深入的调研定位。 空间计算和数字孪生都是构建元宇宙的基础技术，以创造出更加 逼真、开放和互动的虚拟世界。 下面简要介绍其区别与联系，关于数 字孪生的行业分析详见《数字孪生行业图谱》 。 空间计算是一种计 算范式，它利用空间感知和环境感知技术，将数字信息与物理空间相 1 感谢科创金融研究中心的实习生张与豪同学对本报告的助研工作。 张与豪同学是清华大学医学院 2023 级博 2 《数字孪生行业图谱》是清华大学五道口金融学院科创金融研究中心出品的行业研究报告。 2024 年系列。 结合，创造出一种与现实世界更加融合的交互体验。 而数字孪",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a900791ef8583317",
+            "source_id": "src_68e20ed67c60bf87",
+            "text": "From scientific research perspective, Chinese researchers in the field of spacial computing tend to focus their efforts on a certain link in the industry chain, rather than covering the entire process, mainly on optical hardware, visual algorithms and content. 目 录 一、空间计算概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 50,
+    "evidence_count": 71,
+    "supported_count": 5,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 36,
+    "coverage": 0.122,
+    "primary_source_ratio": 0.02,
+    "fulltext_source_ratio": 0.08,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 34
+  },
+  "run_metadata": {
+    "final_report_sha256": "dd0cd5d5b70bc6507c045986de527f83ca4fbe9a5fb21006991243c8c15cda28",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 41,
+        "supported_count": 5,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.122,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 34
+      },
+      "after": {
+        "claim_count": 41,
+        "supported_count": 5,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.122,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 34
+      }
+    }
+  }
+}

@@ -6,7 +6,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-290%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-342%20passing-brightgreen.svg)](tests/unit)
+[![Evaluation](https://img.shields.io/badge/audited%20evaluation-n%3D15-2f855a.svg)](docs/evaluation/artifacts/headtohead_v5/result.json)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -19,9 +20,36 @@ typed Claim-Evidence-Source graph, identifies unsupported claims, and synthesize
 a report under an explicit global time budget.
 
 The default model is **Kimi Code K3** through its OpenAI-compatible endpoint.
-Zero-key retrieval cascades through Yahoo, Brave, and Wikipedia; scholarly
-metadata cascades through OpenAlex and Crossref. The browser can extract arXiv
-HTML or PDF full text rather than treating an abstract as a complete paper.
+Zero-key retrieval starts with Yandex/DuckDuckGo and falls back through Yahoo,
+Brave, and Wikipedia; scholarly metadata cascades through OpenAlex and Crossref.
+The browser can extract arXiv HTML or PDF full text rather than treating an
+abstract as a complete paper.
+
+## Audited Result
+
+A preregistered comparison ran the full Agent and a one-call Kimi K3 baseline on
+the same 15 unseen questions across 11 domains. DeepSeek evaluated every retained
+pair twice with reversed A/B order. The manifest, exact reports, evidence graphs,
+raw Judge decisions, telemetry, hashes, and an API-free auditor are committed.
+
+| Confirmatory result (`n=15`) | Agent | One-call baseline | Difference |
+|---|---:|---:|---:|
+| ResearchBench v2 rule composite | 0.6803 | 0.6174 | **+0.0629** |
+| Counterbalanced Judge mean (1-5) | 4.2000 | 4.2417 | -0.0417 |
+| Citation coverage | 37.0% | 0.0% | **+37.0 pp** |
+| Mean wall time | 246.94 s | 75.26 s | 3.28x |
+| Mean API tokens | 75,301 | 2,850 | 26.42x |
+
+The preregistered primary endpoint passed: 95% bootstrap CI
+`[+0.0452, +0.0828]`, exact one-sided paired sign-flip `p=0.000061`, paired
+`d_z=1.65`, with 14/15 rule-score wins. The independent Judge endpoint did not
+show an answer-quality gain (`p=0.593`); its source-quality score favored the
+Agent, while completeness, accuracy, and structure favored the baseline. The
+rule gain is therefore evidence for substantially better citation behavior, not
+a blanket claim that multi-agent reports are better on every quality dimension.
+
+[Inspect the full artifact](docs/evaluation/artifacts/headtohead_v5/) or
+[read the experiment ledger](docs/EXPERIMENTS.md).
 
 ## Technical Core
 
@@ -90,7 +118,7 @@ flowchart LR
 | Layer | Implementation |
 |---|---|
 | Orchestration | DAG layers, `asyncio`, bounded concurrency, retries, replan, cooperative stop, hard deadline |
-| Retrieval | Yahoo/Brave/Wikipedia, OpenAlex/Crossref, arXiv HTML/PDF, files, calculator, sandbox |
+| Retrieval | Yandex/DuckDuckGo with Yahoo/Brave/Wikipedia fallback, OpenAlex/Crossref, arXiv HTML/PDF, files, calculator, sandbox |
 | Evidence | typed schemas, canonical URLs, source dedupe, hashes, claim attribution edges |
 | Verification | lexical/numeric/polarity pass plus strict, source-bounded LLM entailment |
 | Context | feature-hash fallback, query-biased filtering, TextRank, hierarchical summary |
@@ -172,19 +200,26 @@ therefore reports `p=1.0`, `method=insufficient_n`, and makes no general lift
 claim. Reports, evidence, hashes, telemetry, and raw Judge verdicts are in the
 [v3 pilot artifact](docs/evaluation/artifacts/headtohead_v3/headtohead_v3_pilot.json).
 
-### Preregistered n=15 Protocol
+### Preregistered n=15 Confirmatory Run
 
-The next confirmatory comparison is frozen before execution. It deterministically
-selects 15 questions across all 11 ResearchBench domains, fixes generation and
-both Judge presentation orders, requires the same Kimi K3 model for Agent and
-one-call baseline, and names rule composite as the primary endpoint. Effective
-provider sampling, the baseline prompt, Agent configuration, benchmark code, and
-Judge implementation are hash-bound in the
-[preregistration manifest](docs/evaluation/headtohead_v4_preregistration.json).
+The final v5 manifest was committed before execution. It deterministically fixes
+15 questions across all 11 ResearchBench domains, generation order, both Judge
+presentation orders, effective model sampling, prompts, Agent configuration,
+evaluator implementation, and the source-tree hash. All 15 pairs completed with
+no replacements or result-dependent early stopping.
 
-The API-free auditor verifies artifact hashes, recomputes every rule and evidence
-metric from retained files, reconstructs paired summaries, and rejects reordered
-or replaced samples. This is a registered protocol, not a completed n=15 result.
+The primary rule composite improved by `+0.0629` (95% CI
+`[+0.0452, +0.0828]`; exact `p=0.000061`; paired `d_z=1.65`). The secondary
+counterbalanced Judge comparison was effectively tied (`-0.0417/5`, 95% CI
+`[-0.4417, +0.3667]`, `p=0.593`). Strict final evidence audit remained weak:
+mean claim-support coverage was `5.79%`, cited-claim support precision `16.67%`,
+primary-source ratio `11.12%`, and full-text-source ratio `7.19%`.
+
+The [preregistration](docs/evaluation/headtohead_v5_preregistration.json),
+[portable result](docs/evaluation/artifacts/headtohead_v5/result.json), all exact
+reports/evidence, and [artifact notes](docs/evaluation/artifacts/headtohead_v5/README.md)
+are committed. The API-free auditor recomputes metrics and statistics and rejects
+hash, schedule, prompt, configuration, or implementation drift.
 
 ### Real Module Ablation Diagnostic
 
@@ -199,9 +234,9 @@ latest full-text and verifier fixes and is only a development diagnostic.
 
 An older n=15 artifact reported a significant gain, but audit found that a metric
 name mismatch silently removed the intended 25% factuality weight. It is marked
-`superseded_pending_rerun`; its compact reports were insufficient to recompute
-the corrected score. ResearchBench v2 now emits canonical factual accuracy and
-stores its metric contract in every artifact. See
+`superseded`; its compact reports were insufficient to recompute the corrected
+score. ResearchBench v2 now emits canonical factual accuracy, stores its metric
+contract in every artifact, and the corrected v5 rerun retains all inputs. See
 [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md).
 
 ### Citation And GRPO Studies
@@ -271,15 +306,20 @@ pytest tests/unit -q
 Run the frozen, resume-safe paired protocol (this makes paid model calls):
 
 ```bash
-python scripts/run_headtohead.py
+python scripts/run_headtohead.py \
+  --preregistration docs/evaluation/headtohead_v5_preregistration.json \
+  --output outputs/evaluation/headtohead_v5.json \
+  --reports_dir outputs/evaluation/headtohead_v5_reports \
+  --resume
 ```
 
-Audit a completed or partial artifact without model or network access:
+Audit the committed complete artifact without model or network access:
 
 ```bash
 python scripts/audit_headtohead.py \
-  outputs/evaluation/headtohead_v4.json \
-  --no-require-complete
+  docs/evaluation/artifacts/headtohead_v5/result.json \
+  --preregistration docs/evaluation/headtohead_v5_preregistration.json \
+  --require-complete
 ```
 
 Replay an exact report/evidence pair without an LLM:
@@ -348,7 +388,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `290` API-free tests cover orchestration, cancellation, deadline propagation,
+- `342` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
@@ -377,12 +417,13 @@ YuResearchAgent/
 
 ## Current Boundary
 
-The engineering system is complete enough to run and audit, but the strongest
-scientific claim is still pending: a corrected, report-retaining n=15 rerun has
-not yet established that multi-agent execution beats the one-call baseline.
-The new audited revision loop is covered by deterministic regression tests but
-does not yet have a multi-question quality/cost ablation. The repository treats
-both as next experiments rather than inferring gains from architecture alone.
+The system now has a complete, independently auditable n=15 run. It establishes
+a significant gain on the preregistered rule composite and citation coverage,
+but not on the independent Judge endpoint or factual accuracy alone. Its current
+bottlenecks are strict claim-support coverage, primary/full-text source yield,
+and a 3.28x latency / 26.42x token premium over one-call Kimi K3. The audited
+revision loop also still needs a multi-question quality/cost ablation. These are
+measured engineering targets rather than hidden limitations.
 
 ## License
 

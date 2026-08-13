@@ -1,0 +1,3460 @@
+{
+  "schema_version": "1.0",
+  "query": "分析中国新消费品牌（喜茶、完美日记、泡泡玛特）的崛起路径、供应链策略和海外扩张挑战。",
+  "created_at": "2026-08-13T21:24:07.604082+00:00",
+  "sources": [
+    {
+      "source_id": "src_ac1045aa1bb6baa2",
+      "url": "https://m.21jingji.com/article/20201130/herald/e927e9fb74b84cc3d63fc39ba14fc82c.html",
+      "title": "不计代价，抓住那只新消费独角兽 - 21财经",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国新消费品牌 崛起路径 喜茶 完美日记 泡泡玛特 里程碑 增长",
+        "retrieval_relevance": 0.8571,
+        "host_domain": "m.21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_844a31c7c67efe8b",
+      "url": "https://garygeng.net/consumer/xinxiaofeipinpaidexinjihui2-6yilaonianrenkoushichang",
+      "title": "新消费品牌的新机会？ 2.6亿老年人口市场 - Gary Geng",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国新消费品牌 崛起路径 喜茶 完美日记 泡泡玛特 里程碑 增长",
+        "retrieval_relevance": 0.7996,
+        "host_domain": "garygeng.net"
+      }
+    },
+    {
+      "source_id": "src_dcffd35c5f096d65",
+      "url": "https://m.winshang.com/news684001.html",
+      "title": "花西子、花知晓、喜茶、奈雪组团出海，国货品牌硬气了",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国新消费品牌 崛起路径 喜茶 完美日记 泡泡玛特 里程碑 增长",
+        "retrieval_relevance": 0.7814,
+        "host_domain": "m.winshang.com"
+      }
+    },
+    {
+      "source_id": "src_e376ba366e980d9c",
+      "url": "https://h5.ifeng.com/c/vivoArticle/v002t-_8v5hOctj5-_0yZ7NmZrUjnt8qaus3qaLg7AOcgicJ4__?isNews=1&showComments=0",
+      "title": "这三大新消费正在让年轻人买单",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国新消费品牌 崛起路径 喜茶 完美日记 泡泡玛特 里程碑 增长",
+        "retrieval_relevance": 0.7535,
+        "host_domain": "h5.ifeng.com"
+      }
+    },
+    {
+      "source_id": "src_aee99b3b0646ef03",
+      "url": "https://aisixiang.com/data/164997.html",
+      "title": "汤敏：泡泡玛特现象：中国潮玩崛起的全球启示_爱思想",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国新消费品牌 崛起路径 喜茶 完美日记 泡泡玛特 里程碑 增长",
+        "retrieval_relevance": 0.7354,
+        "host_domain": "aisixiang.com"
+      }
+    },
+    {
+      "source_id": "src_bd5060d76647094e",
+      "url": "https://nanmoxx.com/PC/9/748",
+      "title": "泡泡玛特旗下“LABUBU”在国外被疯抢，国内二手平台溢价出售-南洺财径",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 2024 财报 海外扩张 营收增长 LABUBU",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "nanmoxx.com"
+      }
+    },
+    {
+      "source_id": "src_6dbeb87cc7110c12",
+      "url": "https://zh.wikipedia.org/wiki/%E6%B3%A1%E6%B3%A1%E7%8E%9B%E7%89%B9",
+      "title": "泡泡玛特 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "bf13c0fc348dd08ac0d636e4de023c22b22eeae5de4ca31950a39f783dcbab7d",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 海外扩张 挑战 本地化 Labubu 2025",
+        "retrieval_relevance": 0.7594,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_46a4803483b2ea0d",
+      "url": "https://growthbox.net/pop-mart-labubu-overseas-reverse-growth-strategy",
+      "title": "泡泡玛特Labubu出海拆解：从泰国突围到海外反攻国内的增长方法论",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "529fc343bf7c1d2897c24302053c6b6a0d0e821b338824b6228cd37f4b0abe0e",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 2024 财报 海外扩张 营收增长 LABUBU",
+        "retrieval_relevance": 0.825,
+        "host_domain": "growthbox.net"
+      }
+    },
+    {
+      "source_id": "src_93ada35b6e2d72d8",
+      "url": "https://36kr.com/p/3318621348915716",
+      "title": "泡泡玛特总市值超三丽鸥，海外店铺要增8成-36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 2024 财报 海外扩张 营收增长 LABUBU",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "36kr.com"
+      }
+    },
+    {
+      "source_id": "src_30c3d305f1c2f107",
+      "url": "https://toutiao.com/topic/7503047423728666676",
+      "title": "泡泡玛特抢labubu-今日头条",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 2024 财报 海外扩张 营收增长 LABUBU",
+        "retrieval_relevance": 0.7861,
+        "host_domain": "toutiao.com"
+      }
+    },
+    {
+      "source_id": "src_0194a70cd2491ecd",
+      "url": "http://bmronline.com.cn/index.php?m=content&c=index&a=show&catid=23&id=5590",
+      "title": "欧莱雅VS完美日记，敏捷组织怎么建",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 2012 江门 融资 估值 完美日记 逸仙电商 2017 纽交所上市 发展历程",
+        "retrieval_relevance": 0.8415,
+        "host_domain": "bmronline.com.cn"
+      }
+    },
+    {
+      "source_id": "src_e4879ad76f50663b",
+      "url": "https://finance.eastmoney.com/a/202011201707898868.html",
+      "title": "完美日记母公司逸仙电商正式登陆纽交所 估值三年暴涨70...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 2012 江门 融资 估值 完美日记 逸仙电商 2017 纽交所上市 发展历程",
+        "retrieval_relevance": 0.8287,
+        "host_domain": "finance.eastmoney.com"
+      }
+    },
+    {
+      "source_id": "src_be17584eece732d8",
+      "url": "https://mp.ofweek.com/finance/a356714562487",
+      "title": "完美日记母公司逸仙电商失守美妆护城河，押注科兰黎、EVE LOM...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 2012 江门 融资 估值 完美日记 逸仙电商 2017 纽交所上市 发展历程",
+        "retrieval_relevance": 0.8032,
+        "host_domain": "mp.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_98cce79a402af2b1",
+      "url": "https://brandstar.com.cn/news/1863",
+      "title": "亲爱男友、两只兔子和 DTC 泳装 Cupshe... | 品牌星球BrandStar",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 2012 江门 融资 估值 完美日记 逸仙电商 2017 纽交所上市 发展历程",
+        "retrieval_relevance": 0.7904,
+        "host_domain": "brandstar.com.cn"
+      }
+    },
+    {
+      "source_id": "src_877557924148f780",
+      "url": "https://21jingji.com/article/20210222/herald/685b4e07849135d9dd88a333f6fde0fe.html",
+      "title": "“行业老二”奈雪的茶冲刺“新茶饮第一股”，喜茶慌吗？ - 21经济网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 2012 江门 融资 估值 完美日记 逸仙电商 2017 纽交所上市 发展历程",
+        "retrieval_relevance": 0.7011,
+        "host_domain": "21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_7d476c8021319423",
+      "url": "https://tmtpost.com/6353233.html",
+      "title": "比起星巴克，喜茶们更想成为蜜雪冰城-钛媒体官方网站",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 崛起路径 品牌定位 营销 联名 转折点 2023 降价 开放加盟",
+        "retrieval_relevance": 0.7717,
+        "host_domain": "tmtpost.com"
+      }
+    },
+    {
+      "source_id": "src_65c9e54f8ae05e9c",
+      "url": "https://itopmarketing.com/info13179",
+      "title": "喜茶&FENDI事件营销：给品牌从业者的启示录 -TopMarketing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 崛起路径 品牌定位 营销 联名 转折点 2023 降价 开放加盟",
+        "retrieval_relevance": 0.7109,
+        "host_domain": "itopmarketing.com"
+      }
+    },
+    {
+      "source_id": "src_d3abb7d3d11f9bf0",
+      "url": "https://morketing.com/detail/26906",
+      "title": "近30+品牌联名大起底，跨界营销怎么“玩”？| Morketing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 崛起路径 品牌定位 营销 联名 转折点 2023 降价 开放加盟",
+        "retrieval_relevance": 0.6957,
+        "host_domain": "morketing.com"
+      }
+    },
+    {
+      "source_id": "src_4c12899e2528ecdb",
+      "url": "http://letterstosantacharity.com/index.php/xw/1266.html",
+      "title": "奶茶十年王者路：从1点点到喜茶，再到霸王茶姬 -半岛tiyu官方网站入口",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 崛起路径 品牌定位 营销 联名 转折点 2023 降价 开放加盟",
+        "retrieval_relevance": 0.4638,
+        "host_domain": "letterstosantacharity.com"
+      }
+    },
+    {
+      "source_id": "src_d2eb9697cd67289c",
+      "url": "https://ganhuoku.cn/archives/57500",
+      "title": "ganhuoku.cn/archives/57500",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 崛起路径 品牌定位 营销 联名 转折点 2023 降价 开放加盟",
+        "retrieval_relevance": 0.4638,
+        "host_domain": "ganhuoku.cn"
+      }
+    },
+    {
+      "source_id": "src_45711e1c21dd9dcd",
+      "url": "https://yunyingpai.com/product-operation/630480.html",
+      "title": "估值40亿美金的完美日记，会是互联网版的欧莱雅吗？ | 运营派",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.825,
+        "host_domain": "yunyingpai.com"
+      }
+    },
+    {
+      "source_id": "src_a47fb6a2bf6aba03",
+      "url": "https://m.pedaily.cn/news/490748",
+      "title": "蕉下在走完美日记的老路|投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.7846,
+        "host_domain": "m.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_8981ef005a9a5aa8",
+      "url": "https://woshipm.com/it/3191736.html",
+      "title": "完美日记崛起，成功秘诀不止李佳琦 | 人人都是产品经理",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "5645f968d50b3727e696ffc8ef590ee43102aaf2f3a2931454a7982b47726303",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "woshipm.com"
+      }
+    },
+    {
+      "source_id": "src_744d267c6ee52daf",
+      "url": "https://36kr.com/p/1465780113198080",
+      "title": "抄袭者，正在围攻 “完美日记们”-36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "36kr.com"
+      }
+    },
+    {
+      "source_id": "src_5221482f3ecba951",
+      "url": "https://pangjing.cn/perfect-diary-daily-news-0223-2021",
+      "title": "完美日记的私域零售，真的有行业说得那么好吗？ – 胖鲸",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "pangjing.cn"
+      }
+    },
+    {
+      "source_id": "src_4b6b7b55b7c3a608",
+      "url": "https://blog.csdn.net/nidelaidongdong/article/details/122113918",
+      "title": "二选一？ 小红书博主快速对比方案_博客csdn vs 小红书-CSDN博客",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 崛起路径 小红书 KOL 私域运营 DTC 逸仙电商 上市",
+        "retrieval_relevance": 0.7846,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_d19332bfdcd86b2b",
+      "url": "https://yunyingpai.com/extend/1055652.html",
+      "title": "从Labubu海外反攻国内，看泡泡玛特给消费品出海的启示 | 运营派",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 崛起路径 Molly 盲盒 IP运营 上市 出海 Labubu",
+        "retrieval_relevance": 0.8559,
+        "host_domain": "yunyingpai.com"
+      }
+    },
+    {
+      "source_id": "src_36b3ab7544b62d67",
+      "url": "https://h5.ifeng.com/c/vivoArticle/v002zYj5s67bMXyg7MdaaDLQt--rZBHhw7q3tzYBSvTExys8__?isNews=1&showComments=0",
+      "title": "“年轻人的茅台”排队上市，泡泡玛特被炒成大牛股，基金经理们狂“吃谷”",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 崛起路径 Molly 盲盒 IP运营 上市 出海 Labubu",
+        "retrieval_relevance": 0.8559,
+        "host_domain": "h5.ifeng.com"
+      }
+    },
+    {
+      "source_id": "src_07eda70cbb7d1a0d",
+      "url": "https://woshipm.com/marketing/6241975.html",
+      "title": "从Labubu...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 崛起路径 Molly 盲盒 IP运营 上市 出海 Labubu",
+        "retrieval_relevance": 0.8147,
+        "host_domain": "woshipm.com"
+      }
+    },
+    {
+      "source_id": "src_42bd027908c5c336",
+      "url": "https://yilantop.com/article/25374",
+      "title": "阅文集团，重走LABUBU“老路”_壹览商业",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 崛起路径 Molly 盲盒 IP运营 上市 出海 Labubu",
+        "retrieval_relevance": 0.8147,
+        "host_domain": "yilantop.com"
+      }
+    },
+    {
+      "source_id": "src_1ce602d8f4510ad2",
+      "url": "https://morketing.com/detail/27422",
+      "title": "“新首富”泡泡玛特王宁：在下行周期里卖 “情绪” 的人|Morketing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 崛起路径 Molly 盲盒 IP运营 上市 出海 Labubu",
+        "retrieval_relevance": 0.8147,
+        "host_domain": "morketing.com"
+      }
+    },
+    {
+      "source_id": "src_b5f41cbb80f2e28d",
+      "url": "https://shwczx.com/classes/6929.html",
+      "title": "shwczx.com/classes/6929.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 供应链策略 自建供应链 库存 数字化",
+        "retrieval_relevance": 0.825,
+        "host_domain": "shwczx.com"
+      }
+    },
+    {
+      "source_id": "src_f618226ac0f15289",
+      "url": "https://m.pedaily.cn/news/528303",
+      "title": "奶茶供应商业绩缩水：一场产业链利润的大转移|投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "baf7779379243a3830d1268fe04d8d6ee37153edd8e804131ff96c4b573ea7e4",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 供应链策略 自建供应链 库存 数字化",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "m.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_2dd66e0ac26e6ab1",
+      "url": "https://100ec.cn/detail--6560158.html",
+      "title": "100ec.cn/detail--6560158.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 供应链策略 自建供应链 库存 数字化",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "100ec.cn"
+      }
+    },
+    {
+      "source_id": "src_d10eab53371dbf8e",
+      "url": "https://drinknewspaper.com/news/391.html",
+      "title": "drinknewspaper.com/news/391.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 供应链策略 自建供应链 库存 数字化",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "drinknewspaper.com"
+      }
+    },
+    {
+      "source_id": "src_94fd8c79d1c0342b",
+      "url": "https://sf-express.com/chn/sc",
+      "title": "顺丰官网|一路相伴 不负所托",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 供应链策略 自建供应链 库存 数字化",
+        "retrieval_relevance": 0.2385,
+        "host_domain": "sf-express.com"
+      }
+    },
+    {
+      "source_id": "src_bd2b475f8d6a14a4",
+      "url": "https://m.liepin.com/company-jobs/9106540/jc-N13",
+      "title": "【逸仙生产/制造/研发招聘】_逸仙电商招聘信息-猎聘",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 供应链策略 代工 ODM 逸仙电商",
+        "retrieval_relevance": 0.8342,
+        "host_domain": "m.liepin.com"
+      }
+    },
+    {
+      "source_id": "src_49d92a72c12b254f",
+      "url": "https://pai.com.cn/168231.html",
+      "title": "完美日记母公司逸仙电商收购彩妆品牌Kevyn Aucoin - 电商派",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 供应链策略 代工 ODM 逸仙电商",
+        "retrieval_relevance": 0.8342,
+        "host_domain": "pai.com.cn"
+      }
+    },
+    {
+      "source_id": "src_52d4fd00dd0ce5ed",
+      "url": "https://juejin.cn/post/7073471846754025486",
+      "title": "完美日记母公司逸仙电商发布Q4财报净亏损同比收窄42.5%3月10...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 供应链策略 代工 ODM 逸仙电商",
+        "retrieval_relevance": 0.8342,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_67d7e027d22855c5",
+      "url": "https://m.ebrun.com/593059.html",
+      "title": "泡泡玛特上半年海外业务占比已达40...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 供应链策略 代工 库存管理 海外",
+        "retrieval_relevance": 0.7789,
+        "host_domain": "m.ebrun.com"
+      }
+    },
+    {
+      "source_id": "src_4e7accb9fd59f9e6",
+      "url": "https://adquan.com/article/352542",
+      "title": "泡泡玛特 vs...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 供应链策略 代工 库存管理 海外",
+        "retrieval_relevance": 0.7605,
+        "host_domain": "adquan.com"
+      }
+    },
+    {
+      "source_id": "src_98204eb59b381bb4",
+      "url": "https://tmtpost.com/6472302.html",
+      "title": "泡泡玛特出海，寻找下一个Molly-钛媒体官方网站",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 供应链策略 代工 库存管理 海外",
+        "retrieval_relevance": 0.7605,
+        "host_domain": "tmtpost.com"
+      }
+    },
+    {
+      "source_id": "src_1f18756f72f6ce2e",
+      "url": "https://meetgames.com/academy/article/1000042986",
+      "title": "一年21家新店，出海的泡泡玛特究竟“谨慎”还是“激进”",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 供应链策略 代工 库存管理 海外",
+        "retrieval_relevance": 0.7421,
+        "host_domain": "meetgames.com"
+      }
+    },
+    {
+      "source_id": "src_8cefc24b50d3d03f",
+      "url": "https://fortunenote.com.au/bubbletea",
+      "title": "行业调查：布里斯班奶茶店的内卷与出路 | FortuneNote",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 海外扩张 现状 挑战 市场",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "fortunenote.com.au"
+      }
+    },
+    {
+      "source_id": "src_3d9ad338fedd6f75",
+      "url": "https://m.mp.oeeee.com/oe/BAAFRD000020230413783339.html",
+      "title": "瑞幸喜茶凑凑等中餐加速出海！ 业内称供应链和本土化是挑战",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 海外扩张 现状 挑战 市场",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "m.mp.oeeee.com"
+      }
+    },
+    {
+      "source_id": "src_7f03eca1deb69aa7",
+      "url": "https://uhootea.com/archives/3454",
+      "title": "喜茶海外门店一年增6倍，国内「茶特调」新品类兴起。 -UhooGlobal...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 海外扩张 现状 挑战 市场",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "uhootea.com"
+      }
+    },
+    {
+      "source_id": "src_16f843f39bb8b29b",
+      "url": "https://cbern.net.cn/post/6208.html",
+      "title": "喜茶关店近700...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 海外扩张 现状 挑战 市场",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "cbern.net.cn"
+      }
+    },
+    {
+      "source_id": "src_619e03351a202957",
+      "url": "https://21jingji.com/article/20230712/herald/3fa4cc5ee0c3064c9a3f5f40fdf1d447.html",
+      "title": "从CoCo到喜茶，新茶饮品牌领悟出海的“九阴真经”了吗？ - 21经济网",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "喜茶 海外扩张 现状 挑战 市场",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_5f771563e9dc1d30",
+      "url": "https://yumaochuhai.com/article-666923.html",
+      "title": "收购海外品牌、发力护肤业务，逸仙电商黄锦峰的“新故事”-羽毛出海",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 逸仙电商 出海 海外扩张 挑战",
+        "retrieval_relevance": 0.8971,
+        "host_domain": "yumaochuhai.com"
+      }
+    },
+    {
+      "source_id": "src_b5b803ae07c2d01d",
+      "url": "https://wallstreetcn.com/articles/3622191",
+      "title": "国货品牌海外“扫货”！ 完美日记母公司收购贵妇级英国品牌Eve Lom",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 逸仙电商 出海 海外扩张 挑战",
+        "retrieval_relevance": 0.8765,
+        "host_domain": "wallstreetcn.com"
+      }
+    },
+    {
+      "source_id": "src_d9256341dc1a1c75",
+      "url": "https://yilantop.com/article/26414",
+      "title": "年轻人的化妆包，找不出一支完美日记_壹览商业",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 逸仙电商 出海 海外扩张 挑战",
+        "retrieval_relevance": 0.8559,
+        "host_domain": "yilantop.com"
+      }
+    },
+    {
+      "source_id": "src_3c7492c2bf69f6d6",
+      "url": "https://m.pedaily.cn/news/500035",
+      "title": "又到退市边缘，完美日记转型路难走|投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 逸仙电商 出海 海外扩张 挑战",
+        "retrieval_relevance": 0.8559,
+        "host_domain": "m.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_8b200f61998ea841",
+      "url": "https://m.ebrun.com/529175.html",
+      "title": "广州美妆大变局：东南亚版“完美日记”TikTok...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "完美日记 逸仙电商 出海 海外扩张 挑战",
+        "retrieval_relevance": 0.7941,
+        "host_domain": "m.ebrun.com"
+      }
+    },
+    {
+      "source_id": "src_0fb2e6b65b4305b9",
+      "url": "https://pai.com.cn/p/01kq77a2m7j2r63gq9h3h3h1nt",
+      "title": "Labubu冰箱被疯抢，泡泡玛特找到新财路 - 电商派",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 海外扩张 挑战 本地化 Labubu 2025",
+        "retrieval_relevance": 0.825,
+        "host_domain": "pai.com.cn"
+      }
+    },
+    {
+      "source_id": "src_c387f4eecd624e74",
+      "url": "https://tmtpost.com/7666742.html",
+      "title": "赚麻了的泡泡玛特，又掏出mini LABUBU-钛媒体官方网站",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 海外扩张 挑战 本地化 Labubu 2025",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "tmtpost.com"
+      }
+    },
+    {
+      "source_id": "src_26574a455ed6705a",
+      "url": "https://36kr.com/p/3432419080507014",
+      "title": "半年大赚47亿，泡泡玛特狂飙，喊出“300...”",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 海外扩张 挑战 本地化 Labubu 2025",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "36kr.com"
+      }
+    },
+    {
+      "source_id": "src_7dbd9dfda7a270b8",
+      "url": "https://morketing.com/detail/28236",
+      "title": "一周一个新IP，泡泡玛特正在主动“去LABUBU化”|Morketing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "泡泡玛特 海外扩张 挑战 本地化 Labubu 2025",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "morketing.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_dd554da17c05a4ec",
+      "source_id": "src_ac1045aa1bb6baa2",
+      "text": "新消费品牌的魔力究竟是什么？新消费无疑是今年最受资本宠爱的赛道之一。 以喜茶、完美日记、泡泡玛特等为代表的新消费品牌，正站在浪潮之巅。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1b8d0c2cb500cdf2ef58e3d60b8a8af04d532f45075d6286bda24e6b7fb1d517"
+    },
+    {
+      "evidence_id": "ev_8d2acd26670b2153",
+      "source_id": "src_844a31c7c67efe8b",
+      "text": "新消费品牌可通过品类创新来打造品牌.以新国货美妆品牌完美日记为例，2017年诞生的完美日记崛起于彼时的新流量平台小红书、抖音和B站。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "cde1cb89dd4f280e577b33941248dba5e36088adc2eca202890f92274aa53b75"
+    },
+    {
+      "evidence_id": "ev_83b5fd4d6e99b5c4",
+      "source_id": "src_dcffd35c5f096d65",
+      "text": "*中国台湾奶茶品牌铺路。这表明，中国新消费品牌出海之路，未来或将持续扩散至更多品类。 03. 中国新消费品牌出海，有哪些推力？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ac41787d7024c60072c4e8455b6b340844c43eb64e2bd068dd07fd6703e2574e"
+    },
+    {
+      "evidence_id": "ev_9a92fef117247403",
+      "source_id": "src_e376ba366e980d9c",
+      "text": "北京乐自天成旗下经营52TOYS盲盒潮玩品牌，截至2024年底，公司营收为6.3亿元，收入体量相较泡泡玛特较小，仅约为后者的5%，市占率为1.2%，处于第二梯队。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1f3261b22b152bc86621c2864b5de445fe311a5bde06b0746f9894dd69efc7a8"
+    },
+    {
+      "evidence_id": "ev_cde63d137275a14b",
+      "source_id": "src_aee99b3b0646ef03",
+      "text": "汤敏：泡泡玛特现象：中国潮玩崛起的全球启示.二、泡泡玛特现象级发展的底层逻辑. 泡泡玛特的崛起本质上是代际消费价值观变迁的一个缩影。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d548409a40528403104c9a5642b753ce91d91a9f269f2518a0e3db74da9eb69"
+    },
+    {
+      "evidence_id": "ev_64d118ccccdb1963",
+      "source_id": "src_bd5060d76647094e",
+      "text": "泡泡玛特旗下“LABUBU”在国外被疯抢，国内二手平台溢价出售.泡泡玛特的海外市场增速较快。 2024年，泡泡玛特实现营收130.4亿元，同比增长106.9%，其中海外及港澳台业务营收50.7亿元，同比增长375.2%，收入占比近四成。 今年一季度，泡泡玛特海外业务收益同比增长475...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "fd9b6e64b88f2d3082bfcd34d774a849b97559b6f52c59116b5c195bd5684594"
+    },
+    {
+      "evidence_id": "ev_f8242e8bee84681f",
+      "source_id": "src_6dbeb87cc7110c12",
+      "text": "泡泡玛特 ... 泡泡玛特 （英語： POP MART， 港交所： 9992， 新三板 除牌前： 870578）全称 北京泡泡玛特文化创意有限公司，是 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6cdf1a851ff56e6e5e11b79db41128a550f347bd05d96e28a39ef9535cc2ecd9"
+    },
+    {
+      "evidence_id": "ev_0d2e43de46ca01e9",
+      "source_id": "src_46a4803483b2ea0d",
+      "text": "得益于Labubu在欧美市场的强劲表现，2024年泡泡玛特在北美市场的收入同比增长556.9%，北美也成为除东南亚之外，增速最快的市场。 泡泡玛特全球各区域收入增长数据对比.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4303a1e04767bf5763c39d7d9627b53262c4b7e5ef9bbf15a1be62cd88eb62b5"
+    },
+    {
+      "evidence_id": "ev_f62bffb612a0143c",
+      "source_id": "src_93ada35b6e2d72d8",
+      "text": "LABUBU是香港出身的插画家龙家升(Kasing Lung)的绘本中出现的角色。 泡泡玛特将其作为“The Monsters”系列，制成公仔和手办等销售。泡泡玛特的LABUBU相关销售额在2024财年增至上财年的8.3倍，达到30亿元人民币。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2820f3a438061fbfd1718448bbd1ec97adb1b1395fdd7330ef7112790e55f64c"
+    },
+    {
+      "evidence_id": "ev_5c757c00a7578aaa",
+      "source_id": "src_30c3d305f1c2f107",
+      "text": "泡泡玛特抢labubu.泡泡玛特今年股价已翻倍，海外抢LABUBU队伍排了两条街. 28日早盘，泡泡玛特股价再创历史新高。 截至发稿，泡泡玛特涨约11%。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "91cfe54950a65274cc3f08619e5151da3e47e6c6d9073959f35956f7a22bc4c8"
+    },
+    {
+      "evidence_id": "ev_75b000e7638b592e",
+      "source_id": "src_0194a70cd2491ecd",
+      "text": "2020年11月，创立四年的逸仙电商（YSG.US）在美国纽交所挂牌上市，成为国内首个美股上市的美妆集团。2017年4月上线的完美日记就是一个生来DTC的品牌（Direct-to-Consumer直接触达消费者）。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1374996eea37604effa1cd60bc0c45228e596fa6b78a92f9e8afaaf08ab73e23"
+    },
+    {
+      "evidence_id": "ev_d706db310bdb38bf",
+      "source_id": "src_e4879ad76f50663b",
+      "text": "完美日记母公司逸仙电商正式登陆纽交所 估值三年暴涨70倍高瓴或成最大赢家.文章来源：21世纪经济报道 责任编辑：DF524. 原标题：完美日记母公司逸仙电商正式登陆纽交所，估值三年暴涨70倍高瓴或成最大赢家.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4a2da16e9f4d76387b87dc1f0c6a2fddc61cc9bc470d4544665f47a6d8307a43"
+    },
+    {
+      "evidence_id": "ev_0da1761f1718368f",
+      "source_id": "src_be17584eece732d8",
+      "text": "完美日记母公司逸仙电商失守美妆护城河，押注科兰黎、EVE LOM能否转乾坤？高增长撑起了成长性估值，即便在上市的2020年，逸仙电商归属净亏损高达39.84亿元，资本也心甘情愿为未来的成长性买单。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c98c76a7e2b1c3c9a4b469cae194dbbdad2a9802a0218534e808d94a8111a7c9"
+    },
+    {
+      "evidence_id": "ev_205d51869403dd92",
+      "source_id": "src_98cce79a402af2b1",
+      "text": "亲爱男友、两只兔子和 DTC 泳装 Cupshe 获融资；上美启动 IPO；逸仙电商收购 Eve Lom｜品牌日报.完美日记母公司逸仙电商于 2021 年 3 月 2 日宣布收购欧洲护肤品牌 Eve Lom，此次交易的卖方为 Manzanita Capital。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "880beb11e4358302e1691e10a3c86221735401ac8cddaa119bf81fd187c9797c"
+    },
+    {
+      "evidence_id": "ev_da81930931f5b8d4",
+      "source_id": "src_877557924148f780",
+      "text": "奈雪的茶频频获得资本追捧已是不争的事实，这一点可以从招股书对公司融资历程的回顾见之——. 公司于2017年1月获得天图投资的7000万元A轮投资； 同年8月，获得A+轮融资，总额为2200万元，主要投资方依然是天图投资；",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1ae4a1f075ef9056ed0cc6c13cc2fd3276662349ee3ba97815935eacc5351ab3"
+    },
+    {
+      "evidence_id": "ev_400cc611c7994a5e",
+      "source_id": "src_46a4803483b2ea0d",
+      "text": "2026年，中国品牌出海最该关注的趋势可能只有一个 核心结论 AI正在成为全球消费者购物的”第一决策层”。 2025年假日购物季AI工具访问零售电商流量同比增长760%，AI影响了20%的购买决策，驱动了670亿美元订单。近四分之三的全球消费者已在购物中使用AI，53%的消费者会因AI推荐尝试新品牌。 中国出海品牌在AI搜索增长上全面领先美国本土品牌。 追踪200个品牌数据显示，中国品牌AI搜索量整体增长率达31.65%，美 Read More »",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "ea50bcd35e7e26824961af69eefc3bf8d3df664d3f480df03a3acd89ecf565ad"
+    },
+    {
+      "evidence_id": "ev_03ea17dc4b06b2e0",
+      "source_id": "src_7d476c8021319423",
+      "text": "降价、开放加盟后，喜茶更像是瑞幸.喜茶在非一线城市以“招募事业合伙人”的形式放开加盟。 加盟费在50万以内，与行业其他品牌35万-40万加盟费相当。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "aa169647607db40473711719aacfdb66b9d78b2ff7f7343c20d68a2a4be74182"
+    },
+    {
+      "evidence_id": "ev_89d45459dd2ec249",
+      "source_id": "src_65c9e54f8ae05e9c",
+      "text": "5月17日，喜茶与奢侈品牌FENDI事件营销共同出圈。 名为“喜悦黄”的茶饮，让喜茶又一次因为联名爆红出圈。品牌联名打造话题是喜茶营销惯用手法。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "35bd842086902259d080507d0ffc71db2d7354b0943afe385dc5f5b02ae0ed0a"
+    },
+    {
+      "evidence_id": "ev_cc1e449269036418",
+      "source_id": "src_d3abb7d3d11f9bf0",
+      "text": "近30+品牌联名大起底，跨界营销怎么“玩”？2024 年，品牌联名以破竹之势惊艳了整个行业。 对此，有哪些品牌联名值得关注与借鉴？ Morketing从游戏、艺术、动漫、影视、文旅、代言人六大板块出发，回顾一下。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "759cfccd508a6404c5e03e677b5e74cb29576f72e2479ba0cda71cb606c3f97a"
+    },
+    {
+      "evidence_id": "ev_0a6f09158941c8a8",
+      "source_id": "src_4c12899e2528ecdb",
+      "text": "如果您对餐饮产业链相关创业和资本运作感兴趣，欢迎联系K先生（微信号：Ksir1102），添加请标明身份和备注来意，感谢～. 参考文献： 1、《对话霸王茶姬创始人张俊杰：2023年的核心发展任务仍然是开店》.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fa83ea65709de957b0067bb6d6ccd623c1a27d47e5c0e69fb6f7692a75e8a037"
+    },
+    {
+      "evidence_id": "ev_8e9a7b2042b7a9b7",
+      "source_id": "src_d2eb9697cd67289c",
+      "text": "营销生命力。作者公众号：黑马品牌（ID：heimapinpai）.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "b0cfcacc676ef76082785ff0cc41cf977d4b35b0060b9a66f5cf0048d66db136"
+    },
+    {
+      "evidence_id": "ev_0aae614eb386d1f5",
+      "source_id": "src_45711e1c21dd9dcd",
+      "text": "完美日记在小红书/抖音平台的投放.如何搭建私域运营体系？ 1年累计10万私域用户，复购率38%，每日黑巧是如何做私域运营的？",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0751f5678e83b6fb951deb8f736a11a567f64de800e353c0f6bb0a6957462e4a"
+    },
+    {
+      "evidence_id": "ev_c1f285e11b9585cc",
+      "source_id": "src_a47fb6a2bf6aba03",
+      "text": "逸仙电商股价，图/富途牛牛.相关企业. 完美日记. 完美日记广州逸仙电子商务有限公司.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "2cec6ec29cbb3b17bdffd402ee59897b168c79fd12924741c6f7bed901b1a6ba"
+    },
+    {
+      "evidence_id": "ev_2cd7562d8ed312f8",
+      "source_id": "src_8981ef005a9a5aa8",
+      "text": "完美日记崛起，成功秘诀不止李佳琦.一、完美日记发迹史. 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "4fee0772b0a9663d05331902fcc6c31e9ab0c599cb440038b7602b8a5b3f7275"
+    },
+    {
+      "evidence_id": "ev_99aef5e10161aad3",
+      "source_id": "src_744d267c6ee52daf",
+      "text": "“完美日记们”的优势不再？colorkey、Blank Me等新锐品牌的崛起势头，不得不让“完美日记们”产生危机感。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ee6a8124d3371a662e31c997727ae590c24860c402cc3f49ec7dca4aba831681"
+    },
+    {
+      "evidence_id": "ev_43ef6d33493ee7a4",
+      "source_id": "src_5221482f3ecba951",
+      "text": "在抖音，完美日记有360.1万粉丝，相关视频播放量达7.8亿；在微博，完美日记粉丝达57万，其中，#完美日记#阅读量2.2亿，#朱正廷完美日记#阅读量7.2亿，#完美.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "b03cafb28ca23358288aba66f85ec78fcb1767a7b5c69a44c7da36692c89274c"
+    },
+    {
+      "evidence_id": "ev_ebc38b6af1e9cd37",
+      "source_id": "src_4b6b7b55b7c3a608",
+      "text": "本文关键词：小红书达人对比、千瓜数据、小红书数据分析. 12月22日，2022小红书商业生态大会在上海举办。其实，自2018年完美日记崛起，小红书KOL营销的价值已经成为市场共识。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0c0d2d5b807c37f52033faa4a78be365392f72e0bfcbd1155f22220624a88f09"
+    },
+    {
+      "evidence_id": "ev_ff97ef932cb3ad07",
+      "source_id": "src_d19332bfdcd86b2b",
+      "text": "要知道，泡泡玛特2019年就拿下了Labubu的版权，但2019-2022年，Labubu不仅人气远低于“当家花旦”Molly，在泡泡玛特整个IP序列中也排不上号，是家族中的常年“冷板凳选手”。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "73196fb905f7b00b1d26e7b0c050ac1d0ec6d650b54e123fc14c23da44125106"
+    },
+    {
+      "evidence_id": "ev_af125899139a8d33",
+      "source_id": "src_36b3ab7544b62d67",
+      "text": "泡泡玛特全新发布的Labubu第三代搪胶毛绒产品再次风靡全球。在那两年，泡泡玛特在盲盒之外开拓了毛绒、MEGA等产品线，在Molly之外相继培育了SKULLPANDA等大IP；并将海外市场培育成新的增长曲线。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "b34091ed48411274aa139433632d780d28e1b2652929bda5b25587339102cc93"
+    },
+    {
+      "evidence_id": "ev_6e15a6c9067da8d0",
+      "source_id": "src_07eda70cbb7d1a0d",
+      "text": "要知道，泡泡玛特2019年就拿下了Labubu的版权，但2019-2022年，Labubu不仅人气远低于“当家花旦”Molly，在泡泡玛特整个IP序列中也排不上号，是家族中的常年“冷板凳选手”。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "73196fb905f7b00b1d26e7b0c050ac1d0ec6d650b54e123fc14c23da44125106"
+    },
+    {
+      "evidence_id": "ev_6eb10736839f7573",
+      "source_id": "src_42bd027908c5c336",
+      "text": "2024年，泡泡玛特四个自主IP营收破十亿，分别是卖到断货的LABUBU所属IP “THE MONSTERS”、泡泡玛特老牌IP “MOLLY”、“SKULLPANDA”，以及2024年收入暴增的新锐“CRYBABY”。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e417e86c90fbfc947b9020957b3eca43d300eba4e96f43aa26e54f4bbef8bf03"
+    },
+    {
+      "evidence_id": "ev_c5a12c1870f0a3c4",
+      "source_id": "src_1ce602d8f4510ad2",
+      "text": "2024年，泡泡玛特财报显示，四大头部IP（THE MONSTERS、MOLLY、SKULLPANDA、CRYBABY）均实现超10亿元营收，其中THE MONSTERS（也就是Labubu系列）以30.4亿元营收，726.6%的增长...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6ffb8d28e67ceb02269ace09b376971d4aec94f2041b5b1e53cc68eef0d45a7e"
+    },
+    {
+      "evidence_id": "ev_6dd3aa176d24cf19",
+      "source_id": "src_8981ef005a9a5aa8",
+      "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 2019年天猫618，完美日记跻身“亿元俱乐部”、位居美妆类目第一，销售增速达1193%，成为消费品行业的明星品牌。 2019年9月11日，完美日记完成了C轮融资，高瓴资本领投，红杉中国和华人文化跟投，此轮融资的估值超10亿美金。 这意味着目前中国最顶尖的两家投资机构同时身居完美日记股东之列。 2019年天猫双11，完美日记仅用28分钟就超过了2018年双11全天销售额，成为天猫首个销售破亿的彩妆品牌，还 成为第一个登上天猫双11彩妆榜首的国货品牌。 完美日记曾表示其目标是 打造互联网时代的欧莱雅 ，这家成立短短3年时间的彩妆品牌也正在以惊人的成长速度向偶像努力着。 二、抓住红利是技术活 据测算，2019年我国美妆行业市场规模将达到4225亿元，2022年将突破5000亿元，2023年将增长至5490亿元，2019-2023年均复合增长率约为6. 77%，伴随着95后及下沉市场的拓展，国内美妆市场呈现出清晰的增长空间。 行业红利之外， 对于完美日记的增长神话而言，平台红利更是有效药。 天猫总裁蒋凡提出天猫核心战略，分别为新客战略、新品战略和旗舰店升级战略。 同时宣布，天猫未来三年交易规模将翻番，完成1亿次新品首发，孵化100个10亿品牌。 也就是说， 天猫品牌和商家的生意规模在未来三年内将出现2万亿的纯新增量空间，天猫也会在运营和流量方面给予新品牌更多的倾斜与资源支持。 今年双11，天猫推出新锐品牌计划，并上线“新锐品牌计划双11好奇心会场”，66家新锐品牌入驻。 这些品牌通常入驻天猫平台在3年以内，代表未来消费趋势、具有高成长性。 回首2010年前后，阿里电商从淘宝演化出天猫，带动了淘品牌的崛起，比如御泥坊、阿芙精油、三只松鼠等。 如今完美日记这些新锐品牌也迎来了新的平台红利期。 三、打造完美营销教科书 小红书投放种草引流 小红书目前用户数已经超过3亿，其中70%是90后。 热爱分享的小红薯们生产了数千万条UGC，使小红书成为全球最大的消费类口碑库，成为年轻人的生活方式展示平台和消费决策入口。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "aba9400d9d419b1ea21927d6672083d3d5783dda064dcf9a7c6d86a56aabd4d4"
+    },
+    {
+      "evidence_id": "ev_7798ce8455ef4d49",
+      "source_id": "src_8981ef005a9a5aa8",
+      "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立了良好的信任感，意见更容易被潜在客户接受。 微信私域留存复购 在小红书、微博建立了用户的品牌认知和购买欲望后，友好的产品价格及促销手段让完美日记顺利达成首单转化。 但是如何留存这些对新鲜感高度敏感的年轻女性并且获得复购成为完美日记制胜的下一个关键。 完美日记用私域流量交出值得让消费品牌朗读并背诵的标准答案。 完美日记的私域流量池增长主要有两种方式： 一是对访问店铺的用户进行福利引流，引导用户添加个人微信号“小完子”； 二是完美日记会随订单向用户发出一张“红包卡”，同样引导用户添加个人微信号“小完子”。 小完子会继续引导用户进一步打开“小完子福利社”下程序及加入群聊。 完美日记设粉丝运营岗位（社群运营）岗位对微信号及微信群进行运营： 小完子个人号由真人运营，输出真人出镜测评内容，进行社群运营的同时，还注重与用户信任感的打造，在朋友圈分享日常生活。 完美日记现在有几百个这样的“小完子”个人号，个人号、微信群和小程序组成了品牌的私域流量池，与用户建立长期稳定的互动性和信任感，引导用户留存复购。 四、给产品注入网红基因 完美日记的美妆生产之初就被注入网红基因，极具话题性和传播度。 大牌同厂提供信任背书 在初期的投放中，KOL经常会提到完美日记是大牌同厂、大牌平替。 完美日记的部分产品由韩国科丝美诗集团生产的，这家厂商也是Dior、YSL、雅诗兰黛等知名品牌化妆品的代工厂商。 大牌同厂成为完美日记籍籍无名时期的品质背书，摆脱了国货彩妆平价低质的刻板印象。 跨界联名助力品牌出圈 跨界联名可以帮助品牌触达自身品牌的受众盲区，“出圈”获得更多新客。 天猫美妆的分析结果显示，IP合作款的品牌新客比例较非IP合作款高11%，获客成果显著。 完美日记先后与Discovery探索频道、大英博物馆、纽约大都会艺术博物馆、中国国家地理联名推出眼影及口红。 与Discovery探索频道的“探险家十二色眼影”系列，配合出彩的产品设计和内容推广，成为完美日记一次成功的大爆发。 与中国国家地理联名的4款“上眼中国色”眼影盘，都以中国的山河美色为灵感，主题为赤彤丹霞、粉黛高原、碧蓝湖泊、焕彩梯田。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "1457e27d3b1244e7dd7f234387e35a51581af16cc2598b46067592c09b286784"
+    },
+    {
+      "evidence_id": "ev_4aedc9fab151db1b",
+      "source_id": "src_8981ef005a9a5aa8",
+      "text": "“也许一生都无法欣赏完这片你深爱着的土地，那么如果它主动奔向你呢”等一系列广告词扣人心弦，极大提升了品牌调性，赋予了产品天然的传播话题。 总而言之，李佳琦虽好，完美日记们的新打法也是功不可没。 中国消费品市场上，互联网挟裹新消费巨浪滚滚，看来每一种消费品都真值得重新做一遍了。 本文由 @董洛 原创发布于人人都是产品经理，未经作者许可，禁止转载。 题图来自Unsplash，基于CC0协议。 {{ postmeta. bookmark }} {{ postmeta. postlike }} 更多精彩内容，请关注人人都是产品经理微信公众号或下载App 完美日记 互联网营销观察员，公众号:习惯嗷 1篇作品 22589总阅读量 SaaS客户成功的裁撤潮，已经来了吗？ 10-13 2334 浏览 剑指大众点评，抖音为何挖起点评用户的“墙角”？ 12-29 3229 浏览 淘宝也需要“榜一大哥” 06-17 5253 浏览 多媒体系列专题｜蓝牙音乐 12-15 2718 浏览 万字长文：AI产品经理视角下的ChatGPT全解析 02-06 61969 浏览 评论请登录 粮仓·企微管家 学习收藏了，今天就当一回课代表吧。 搭建私域流量运营，当然必须要有工具。 给大家推荐一款由【人人都是产品经理】【起点课堂】旗下独立研发的私域流量运营工具——粮仓·企微管家。 粮仓·企微管家是一款基于企业微信的一款营销型SCRM系统。 集裂变获客、留存促活、销售变现、客户管理于一体的私域增长闭环系统。 覆盖企业客户运营的生命周期，助力企业私域流量运营，提升售前/售后服务能力。 还可以免费开始使用哦~ http://996. pm/M0A06 来自广东 AI做SEO，3个月流量暴涨30倍！ 09-22 6115 浏览 小红书站内转化如何做？ 看这3个商家案例 11-23 5218 浏览 如何提高应用唤起率？ 02-15 8980 浏览",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "80667422d57727efcf85fd53bd9056c15dcd2ac9dcda40f4e32399fe7b421cd1"
+    },
+    {
+      "evidence_id": "ev_0d1663ccab825f1f",
+      "source_id": "src_b5f41cbb80f2e28d",
+      "text": "供应链战略策划. ‐ 敏捷供应链与高效低成本供应链策略. 供应链高度集成化跨企业组织与协同运作赋能敏捷供应链.三、供应链核心企业库存管理. 库存物料传统的A、B、C分类法. 比A、B、C分类更细化的方法.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "70aa0ce38f569860fa364968cfffc0f3bc929f5aa1f9f13ac3aec7f2b4358c77"
+    },
+    {
+      "evidence_id": "ev_1adb873b8e47e43a",
+      "source_id": "src_f618226ac0f15289",
+      "text": "2、奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自主采购和生产原材料的比例，部分品牌甚至开始自建农产品基地。 而头部供应商都是靠绑定大客户，大客户削藩后，供应商受到极大影响。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3ac2eb890d9890116d63fe796274af4d14b6425c741a5166cd46c7cec567d119"
+    },
+    {
+      "evidence_id": "ev_d48a6dadeb7a124c",
+      "source_id": "src_2dd66e0ac26e6ab1",
+      "text": "这对供应链数字化提出了新的以及更有挑战的要求。 - 1 - 至关重要的供应链. 1）供应链的重要性.2）端到端供应链优化.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fbf2eced1ac0f24eb51d2dfcbed7a50b7a8adb48eff956f3cf4ca6bb086bf843"
+    },
+    {
+      "evidence_id": "ev_2fefedc86bd3f09a",
+      "source_id": "src_d10eab53371dbf8e",
+      "text": "训，确保不同区域的原料品质、仓储操作一致，从源头保障全国门店产品风味统一。 在数字化赋能层面，搭建集SRM、OMS、WMS、TMS为一体的数字化管理中台，彻底打通全国各区域仓储、配送、采购的数据壁垒，实现 “全国供应链一盘棋”的可视化、可追踪、",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "099cdf797f32590d0e639cd7e9ac1703a07595b6fb5e1c418881ba627513bfef"
+    },
+    {
+      "evidence_id": "ev_daa7f7bdc20ed4e7",
+      "source_id": "src_94fd8c79d1c0342b",
+      "text": "Cookies使用策略. 我们的网站使用cookie来优化用户体验和分析。 我们可能会与我们的分析合作伙伴共享您的信息。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d5935a23ac2205d529255ef4a5497de4903dd6d517fdb2a7063077d76163d0e9"
+    },
+    {
+      "evidence_id": "ev_a47063666c362292",
+      "source_id": "src_bd2b475f8d6a14a4",
+      "text": "逸仙电商. 批发/零售 电子商务 1000-2000人 美股上市. 09:30-18:30 周末双休.产品服务. 完美日记致力于提供“高品质、有创意、带惊喜感”的产品，让人人都可轻松变美，打造属于中国的新时尚美妆品牌。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "795bd465eff7d073ac9c275d009b8f6f3576a3ff50cc68848bfc7861820c9616"
+    },
+    {
+      "evidence_id": "ev_f02088b1e420c4f9",
+      "source_id": "src_49d92a72c12b254f",
+      "text": "完美日记母公司逸仙电商收购彩妆品牌Kevyn Aucoin.9月1日，完美日记母公司逸仙电商成立五周年，CEO黄锦峰发表内部讲话，正式宣布公司全新价值观“乐活青春，Keep Young，Be Happy”。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b89166c8c7006ae338a813786d92076568531eb06b0a9cb60d246a76cd12c14a"
+    },
+    {
+      "evidence_id": "ev_662409bdc0c4b058",
+      "source_id": "src_52d4fd00dd0ce5ed",
+      "text": "完美日记母公司逸仙电商发布Q4财报净亏损同比收窄42.5%.阅读9分钟. 3月10日晚，完美日记母公司逸仙电商（YSG）发布2021年第四季度及全年未经审计业绩报告。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "20307c6f2b60ab8f4cbfe46211b4744cc07ae02d055ed940bba5b613e52906df"
+    },
+    {
+      "evidence_id": "ev_2815897ff3491532",
+      "source_id": "src_67d7e027d22855c5",
+      "text": "泡泡玛特上半年海外业务占比已达40% 美洲营收增速超十倍 | 财报分析.1.产业新动向：全球零售IP化加速，海外业务占比40%；毛绒品类首次超手办占比44.2%，反映消费升级趋势；泡泡玛特国际化策略成功四大区域均三位数增长。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bb08eb5ca43fe574527e27aee7c044efe0ff734f9cc047152c3923abd352c127"
+    },
+    {
+      "evidence_id": "ev_3be1ace28c90076a",
+      "source_id": "src_4e7accb9fd59f9e6",
+      "text": "4、选品策略：聚焦IP衍生 vs 全品类扩张.泡泡玛特是潮玩赛道的“独角兽”，市占率30%：国内盲盒市场CR5达69%，泡泡玛特以绝对优势领先（52TOYS占15%，TOPTOY占12%）。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "680b4c775a1a6b30a2988791e3dc766d32064dca261c23ce47165931667c1ac3"
+    },
+    {
+      "evidence_id": "ev_3d92441c793382b8",
+      "source_id": "src_98204eb59b381bb4",
+      "text": "至于市场最关心的IP问题，泡泡玛特进一步加大了Molly、Dimoo和SKULLPANDA三大IP的开发力度，但新IP小野的营收占比仅有3%。资者们对泡泡玛特的信心不足。 国内业务增长遇阻，泡泡玛特开始押注海外市场。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6a7c7c7eea1194c60975a8753d1c59f11efd848c4c5ec6eeaae214f4ad7452cc"
+    },
+    {
+      "evidence_id": "ev_8e3d2daeb5966c05",
+      "source_id": "src_1f18756f72f6ce2e",
+      "text": "这次近距离接触泡泡玛特，笔者了解到了更多泡泡玛特出海实操上的细节，也对泡泡玛特整体的发展状态有了一些新的理解。 但在此之前，我们具体分析下泡泡玛特的现状，再来看出海对于泡泡玛特的意义。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "1083812c76495f49d57452c8c48177b4ac34aeee7695968ef1a6be6327c70d21"
+    },
+    {
+      "evidence_id": "ev_1d5b6f916decd974",
+      "source_id": "src_f618226ac0f15289",
+      "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自主采购和生产原材料的比例，部分品牌甚至开始自建农产品基地。 而头部供应商都是靠绑定大客户，大客户削藩后，供应商受到极大影响。 奶茶供应商不是一个好生意。 奶茶供应商在渠道、成本、产品上都没有护城河，甚至连产品都开始被品牌商反向定制。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 / 01 / 奶茶供应商告别红利期 曾几何时，现制茶饮行业有一个怪现象：奈雪的茶、喜茶等新式茶饮公司亏的“死去活来”，但供应链上的一大批企业，却赚盆地满钵满。 就拿2022年来说，奈雪全年经调整净亏损达到4. 61亿。 但给新茶饮卖原料果汁的田野股份、卖赤藓糖醇的三元生物、卖植脂末的佳禾食品等等一众供应商却都实现了稳定盈利。 其中， 三元生物、田野股份的净利润率甚至能达到10%以上。 品牌亏钱，供应商赚钱是因为供应商抓住了一波扩张红利。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 在市场发展初期，新茶饮产业链既散又乱的特征，产业链中既有茶叶、水果、奶制品、小料等农副产品，也有设备供应、包装等工业品，一家新茶饮品牌，其供应商往往多达数十家，甚至上百家。 这时候，茶饮品牌想要跑马圈地，抢占市场，需要先标准化产业链，品牌就会选择甚至扶持各个细分领域内已经规模化的公司，茶饮供应链也尽享红利，部分供应商的产能利用率超过100%。 但如今现制茶饮已经告别高速发展期，据艾媒咨询预测，2024年现制茶饮市场规模同比增长6. 4%，加上产业链的成熟，奶茶供应商为品牌优化供给，提高标准化流程的作用越来越小， 产业链利润开始向溢价能力更强的品牌商转移。 2023年上半年，奈雪经调整净利润7020万，实现上市来的首次盈利。 而供应商却普遍出现了营收、利润下滑的情况。 2023年前三季度，三元生物、田野股份营收同比下滑37. 7%、8. 9%。 比起营收，利润下滑的幅度更大，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 品牌商与供应商遇到利润转折点的直接原因是，品牌商开始削藩。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "a41d89d8d67dd8ee603a06e15ae5b18967f6665e4c36601a5106ef449b59bb47"
+    },
+    {
+      "evidence_id": "ev_cea610565f2a7eb8",
+      "source_id": "src_f618226ac0f15289",
+      "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌都已经走上了加盟模式，除奈雪、喜茶之外的其他品牌更是主打加盟。 在现制茶饮的加盟模式中，品牌商不以加盟费和销售分成赚钱，而是把加盟商当作终端售渠道，公司通过卖给加盟商“食材”赚钱。 这时候，大部分现制茶饮品牌实质上已经变成了一家供应商。 而对于供应商来说，利润*化的方式就是通过自建供应链打通产地与加盟商，赚取更多的产业链利润。 从数据上看，现制供应链公司的利润大概在8%-20%。 一旦品牌商自建工厂，这部分利润自然就留给了品牌方。 从这个角度看，现制茶饮品牌的尽头就是自建工厂和种地产原料。 在行业初期，品牌商还需要上游供应商把上游产业链跑通，并形成标准化、规模化。 而如今行业成熟已经成熟，品牌商也到了亲自下场的时候。 而手握下游数亿消费者，茶饮品牌一旦有了自建供应链的能力，就很容易替换掉现在的供应商。 / 03 / 奶茶供应商的生意不太行 能被品牌商换掉，很大程度上在于奶茶供应商的生意不太行。 奶茶供应商的生意有很大的弊病，在营收上高度依赖少数大客户，并且自身的产品又很难形成护城河。 由于现制茶饮连锁化率在50%左右，奶茶供应商无一例外地患上了大客户依赖症，田野股份前五大客户收入占比超过70%，德馨食品前五大客户占比也超过四成。 营收过于依赖大客户，意味着营收波动大，且盈利能力更容易被产业链各个方面影响。 比如，供应商很难将成本压力向下游传导。 2021年食品饮料行业原料价普遍上涨，但供应商不仅没有对品牌商提价，还在品牌商价格战压力下，减少了产品售价，最终供应链利润受到上下游两头挤压，供应链毛利率大多出现了下降，尤其是三元生物2022年毛利率下滑了25个百分点。 茶饮供应商两头受气，核心在于奶茶供应商没有护城河。 消费品行业护城河主要是产品、价格、渠道。 而奶茶供应商做的是TOB生意，且客户集中，对渠道要求不高。 而成本优势是相对同行，在与品牌的博弈中，品牌自建的产业链成本长期看也低于外购。 因此，理论上只有产品才有可能形成奶茶供应商的护城河。 但遗憾的是，供应链也没有在产品上形成护城河，现制茶饮发展早期，新茶饮研发能力还不强，很多时候，都是供应商推什么就用什么。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "35268456342f3d029b8a2cc5d3a3891d09d1b9b7e530114dd38e31af66958106"
+    },
+    {
+      "evidence_id": "ev_66b8404afc69a174",
+      "source_id": "src_f618226ac0f15289",
+      "text": "但之后市场竞争倒逼现制茶饮卷产品，每个品牌几乎每周都有新品上市，品牌的研发能力也普遍增强，最后甚至形成了反向定制。 比如，喜茶自己先从产地源头采购了芋泥原材料，之后根据产品的标准研发了芋泥原料加工的配方，最后再找到一家芋头加工企业按照配方反向定制。 换句话说，奶茶供应商在产品层面的开发很大程度上是被品牌商主导和推动的。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 奶茶供应商的故事也再次印证了，搭上时代红利时，很多企业都会昙花一现，但当红利褪去后，只有形成自身壁垒的企业才能穿越周期。 免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。 在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。 打开投资界APP 阅读全文 【本文由投资界合作伙伴微信公众号：读懂财经授权发布，本平台仅提供信息存储服务。 】如有任何疑问题，请联系（editor@zero2ipo. com. cn）投资界处理。 食品饮料 新消费行业",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "19d5554fbe249098fa320deb4813138a6c5e4b8ba4668a8a35829441492f3f40"
+    },
+    {
+      "evidence_id": "ev_cef02bed4b6005c0",
+      "source_id": "src_8cefc24b50d3d03f",
+      "text": "喜茶进军伦敦，蜜雪冰城扩张至悉尼。 在快销饮品纷纷走出国门的今天，奶茶行业正在掀起一股强劲的海外扩张浪潮。 如你所见，国内奶茶已经进入了“存量搏杀”的时代。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4cdff653b18cf3c110042bc1f3d56d9153c20cc5f9fcfb410cf7f71af89454d2"
+    },
+    {
+      "evidence_id": "ev_632bde315185f956",
+      "source_id": "src_3d9ad338fedd6f75",
+      "text": "“我们的未来扩张将优先考虑华人众多的国家及城市，例如北美、东南亚、大洋洲及其他华人社区。 ”据九毛九相关负责人透露，九毛九扩张海外市场仍将以太二品牌为主。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c7928b322ab7f2b22531e7872fa5893a73c2c67dbbead2a81d0f90737b09ebe5"
+    },
+    {
+      "evidence_id": "ev_5dbe88c927e2353a",
+      "source_id": "src_7f03eca1deb69aa7",
+      "text": "喜茶在海外市场的发展势头迅猛，海外门店数量在过去一年增长超过6倍，成为全球新茶饮市场中的一匹黑马。 当地时间8月1日，喜茶位于美国加利福尼亚州库比蒂诺（Cupertino）Main Street的门店正式营业，标志着其在美国市场的快速扩张。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "bc133dba00d8b02ff1338b2acc935d0a1509a4f7d6b8adc6d5b90a0e076ded0c"
+    },
+    {
+      "evidence_id": "ev_698110eb9fb5d5a3",
+      "source_id": "src_16f843f39bb8b29b",
+      "text": "喜茶近期关闭近700家门店，面临扩张的“大考”，创始人聂云宸以70亿的身价继续迎难而上，力图推动品牌发展，这一举措将考验喜茶的市场策略、运营能力和.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0d30bfdfceedf5eafd29c639cfd65f914a4b9b16b526e5d4898cfa03af1af17d"
+    },
+    {
+      "evidence_id": "ev_b4a5410358a5feb5",
+      "source_id": "src_619e03351a202957",
+      "text": "2023年07月12日 15:23 松果财经. 随着新茶饮迈入“万店时代”，国内市场已经出现了明显的内卷现象，头部品牌之间的竞争日趋激烈，中小品牌的生存空间被挤压，创新力和差异化越来越难.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "56d0b55069a673ff7e407971bca357866b5374ac75bab3104d92501a49b8642b"
+    },
+    {
+      "evidence_id": "ev_e97d7eedf5197c8a",
+      "source_id": "src_5f771563e9dc1d30",
+      "text": "据刚刚发布的完美日记母公司逸仙电商财报显示，其全年总收入34.1亿元，同比下降7.9%。由上图表不难发现，从2022年Q1开始，逸仙电商收入就开始有了跌势。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "83c844b5255fcad87ae705d6808ccabbdd8fd3afd463821a06a347d1c3ce615c"
+    },
+    {
+      "evidence_id": "ev_2b58f5c77b72c3a6",
+      "source_id": "src_b5b803ae07c2d01d",
+      "text": "继收购收购法国护肤品Galenic之后，完美日记的海外“扫货”之旅还在继续。 3月2日美股盘前，完美日记母公司逸仙电商宣布，公司将收购欧洲著名护肤品牌Eve Lom。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "b2d4383fb2b0ea95d3a45ab40a701a99117ddbdfa4fc41b6906064c6d99bb3ca"
+    },
+    {
+      "evidence_id": "ev_61d926e1d3703f13",
+      "source_id": "src_d9256341dc1a1c75",
+      "text": "渐渐地，对于消费者而言，购买完美日记，开始缺乏理由。 再说完美日记背后的逸仙电商，在完美日记主品牌增长见顶后，母公司逸仙电商给出的解决方案是：复制欧莱雅模式，通过收购构建多品牌矩阵。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ca8196ba39358a949abb8095fc1e8ce80cec8467d89ca3be1c400be1875cba88"
+    },
+    {
+      "evidence_id": "ev_572571d1125f39d4",
+      "source_id": "src_3c7492c2bf69f6d6",
+      "text": "又到退市边缘，完美日记转型路难走.财报数据显示，除了营收大幅下降和持续亏损外，彩妆板块也似乎成为了逸仙电商近年来难以逆转的失利板块，旗下主打彩妆的品牌除了*日记，还有Pink Bear.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "492be0a931d7019ea5629a2d6b9bc1ec6f7cbf07cd0a6a4a2cedbecf310f8273"
+    },
+    {
+      "evidence_id": "ev_fd95a5b01efafeee",
+      "source_id": "src_8b200f61998ea841",
+      "text": "广州美妆大变局：东南亚版“完美日记”TikTok卖了3.5亿.HEBE BEAUTY，出海东南亚的国货美妆，拥有Y.O.U、Glamfix等子品牌。 相比于国内代工+海外品牌的模式，这种新组合也将是一种崭新出海模式的起点。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "65cd30b61c2cc3c72d330fc69cd5141715abc89a1d09e5d59c04195d2e9f1225"
+    },
+    {
+      "evidence_id": "ev_3420f07533a75da2",
+      "source_id": "src_0fb2e6b65b4305b9",
+      "text": "两款Labubu主题冰箱 图源：泡泡玛特.2025年海外收入达71.77亿元 图源：泡泡玛特. 然而，过度依赖单一热门IP的弊端逐步显现，泡泡玛特早早触碰增长天花板。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6a11817f197e7a142e10c9d85ec3654f092a4c5d27efa5e083432a6a6ec84db9"
+    },
+    {
+      "evidence_id": "ev_6e1594bad8a1b40f",
+      "source_id": "src_c387f4eecd624e74",
+      "text": "在LABUBU的带动下，泡泡玛特业绩“狂飙”。 尽管泡泡玛特此前已展现良好增长势头，但8月19日发布的2025年中期财报仍超出市场预期。 财报显示，上半年泡泡玛特营收138.8亿元，同比增长204.4%；经调整净利润47.1亿元...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6a1a708291d3b4e4a9128a47ec30ca47dfc2f43f8c7ecf940de474cb0abcb5b0"
+    },
+    {
+      "evidence_id": "ev_7b00ad47ee1db922",
+      "source_id": "src_26574a455ed6705a",
+      "text": "三年后，财报里的数字给出了另一种注脚。 2025 年上半年，LABUBU所在的 THE MONSTERS 系列收入48.1 亿元，同比增长668%，占公司总营收的34.7%。”8月20日，在泡泡玛特业绩会上，泡泡玛特副总裁袁俊杰表示。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "de92980e870617c64a43a1719f2164eefbcc346aa4db0055bd24bbe3258c53bc"
+    },
+    {
+      "evidence_id": "ev_08b13cdc2c05a5c9",
+      "source_id": "src_7dbd9dfda7a270b8",
+      "text": "一周一个新IP，泡泡玛特正在主动“去LABUBU化”.2025年，对泡泡玛特来说，是被LABUBU推到巅峰的一年。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "320713beb1a25cc7200a41fcbf7c79e84cc2050b89a0aa9d6bde0ab7100e716c"
+    },
+    {
+      "evidence_id": "ev_66bfb7815ed86b6d",
+      "source_id": "src_6dbeb87cc7110c12",
+      "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Angel，逐渐成为一家潮流 公司，主要产品是 。 2017年在 挂牌上市，2019年4月已除牌。 2020年6月递交招股书，拟在 香港交易所 挂牌上市。 2020年12月11日在 香港交易所 挂牌上市。 2021年3月26日，泡泡玛特公布了2020年财报。 据披露，过去一年泡泡玛特实现营收25. 1亿元，同比增长49. 3%，调整后净利5. 9亿元，同比增长25. 9% 2025年6月8日，泡泡玛特的创始人王宁凭借 系列的热销，以203亿美元成为河南新首富 。 6月20日，该公司表示已建立电影工作室，计划推出《LABUBU与朋友们》动画剧集 2026年5月28日， 及其全资控股的企业买入泡泡玛特982. 32万股份，持股比例5. 69%，使其成为泡泡玛特的第二大股东。 相关条目 福袋营销 虚拟抽奖 参考来源 估值一年翻14倍，泡泡玛特到底是家什么公司？ 页面存档备份 互联网档案馆 ），第1财经。 那个卖「盲盒」暴赚的泡泡玛特，能被轻松复制么？ 页面存档备份 互联网档案馆 ），36氪。 泡泡玛特上市背后，成年人的玩具有多赚钱？ 页面存档备份 互联网档案馆 ），新浪新闻。 泡泡瑪特國際集團有限公司招股通告 泡泡瑪特國際集團有限公司招股資料 (PDF) 2021-01-02 . （原始内容 (PDF) 于2021-01-25）. 泡泡玛特发布财报，2020为何逆势增长？ . finance. huanqiu. com. 2021-04-12 . （原始内容 于2021-04-12）. 水芙蓉. Labubu把王宁送上河南首富 . 国际金融报. 2025-06-10 2025-06-20 泡泡玛特已成立电影工作室 . 南京晨报. 2025-06-20 2025-06-20 赵述评; 毛思怡. 段永平增持泡泡玛特，成为仅次于王宁的第二大股东 . 北京商报.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "8fd1f3f166f7382b7d3e2b0176522356de68db63f21fd70cf9ccea652e0d2fca"
+    },
+    {
+      "evidence_id": "ev_4dfcba5f61efd74c",
+      "source_id": "src_6dbeb87cc7110c12",
+      "text": "2026-05-28 2026-06-05 外部链接 页面存档备份 互联网档案馆 泡泡玛特 （Kasing Lung） （Kenny Wong） Nisa Srikumdee（Molly Yllom） （Kiking） （Ayan Deng） （Lang） （A Li）、 （A Li） （Pucky） Agee、Yep Yumi （Bao Bao） （Dan Wu） Nickel （Will Chen） IP产品 The Monsters（ Zimomo） Molly Crybaby（哭娃） Skullpanda Dimoo Hirono（小野） Twinkle Twinkle（星星人） Pucky（畢奇） Hacipupu Pino Jelly Sweet Bean（小甜豆） Kubo Zsiga Supertutu（TUTU妹） Merodi 检索自“ https://zh. wikipedia. org/w/index. php? title=泡泡玛特&oldid=92953417 香港交易所上市公司 新三板已除牌公司 泡泡玛特 中国玩具制造商 朝阳区公司 北京上市公司 2010年成立的公司 2020年首次公開募股 香港上市工業公司 北京民营企业 开曼群岛离岸公司 香港交易所上市認股證 2010年北京建立 隐藏分类：​ 含有英語的條目",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "f6f9f1f10932477eb94ccf5edbab8e467c79193ddbf9a3a9417fc19206b711f5"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_66c03bd5ca8506e5",
+        "text": "三者共同受益于2016—2020年的新消费浪潮：Z世代消费价值观变迁、新流量平台（小红书、抖音、B站）红利、以及资本对新消费赛道的追捧。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0552,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_75b000e7638b592e",
+          "ev_66bfb7815ed86b6d",
+          "ev_4dfcba5f61efd74c"
+        ],
+        "source_ids": [
+          "src_0194a70cd2491ecd",
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_75b000e7638b592e",
+            "source_id": "src_0194a70cd2491ecd",
+            "text": "2020年11月，创立四年的逸仙电商（YSG.US）在美国纽交所挂牌上市，成为国内首个美股上市的美妆集团。2017年4月上线的完美日记就是一个生来DTC的品牌（Direct-to-Consumer直接触达消费者）。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_39960c6a7ecb259b",
+        "text": "但各自的崛起杠杆截然不同。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1591,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6dd3aa176d24cf19",
+          "ev_cde63d137275a14b",
+          "ev_99aef5e10161aad3"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_aee99b3b0646ef03",
+          "src_744d267c6ee52daf"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cde63d137275a14b",
+            "source_id": "src_aee99b3b0646ef03",
+            "text": "汤敏：泡泡玛特现象：中国潮玩崛起的全球启示.二、泡泡玛特现象级发展的底层逻辑. 泡泡玛特的崛起本质上是代际消费价值观变迁的一个缩影。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e8359f9fbb86b4f3",
+        "text": "喜茶走\"产品升级+品牌溢价\"路线。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.3889,
+        "support_evidence_ids": [
+          "ev_1d5b6f916decd974"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d5b6f916decd974",
+          "ev_cea610565f2a7eb8",
+          "ev_66b8404afc69a174"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c2d4737a1c149b95",
+        "text": "它以真奶、真茶、真果替代粉末冲泡，开创芝士奶盖茶品类，凭借排队效应形成社交货币式传播。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.053,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66b8404afc69a174",
+          "ev_83b5fd4d6e99b5c4",
+          "ev_66bfb7815ed86b6d"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_dcffd35c5f096d65",
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66b8404afc69a174",
+            "source_id": "src_f618226ac0f15289",
+            "text": "但之后市场竞争倒逼现制茶饮卷产品，每个品牌几乎每周都有新品上市，品牌的研发能力也普遍增强，最后甚至形成了反向定制。 比如，喜茶自己先从产地源头采购了芋泥原材料，之后根据产品的标准研发了芋泥原料加工的配方，最后再找到一家芋头加工企业按照配方反向定制。 换句话说，奶茶供应商在产品层面的开发很大程度上是被品牌商主导和推动的。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 奶茶供应商的故事也再次印证了，搭上时代红利时，很多企业都会昙花一现，但当红利褪去后，只有形成自身壁垒的企业才能穿越周期。 免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。 在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。 打开投资界APP 阅读全文 【本文由投资界合作伙伴微信公众号：读懂财经授权发布，本平台仅提供信息存储服务。 】如有任何疑问题，请联系（editor@zero2ipo. com. cn）投资界处理。 食品饮料 新消费行业",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_83b5fd4d6e99b5c4",
+            "source_id": "src_dcffd35c5f096d65",
+            "text": "*中国台湾奶茶品牌铺路。这表明，中国新消费品牌出海之路，未来或将持续扩散至更多品类。 03. 中国新消费品牌出海，有哪些推力？",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0e8ea829f52d50b4",
+        "text": "其关键转折发生在2022年：年初主动降价告别30元价格带，年底开放\"事业合伙人\"加盟模式（加盟费50万元以内），从对标星巴克的直营模式转向瑞幸/蜜雪冰城式的规模化下沉。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2303,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_03ea17dc4b06b2e0",
+          "ev_1d5b6f916decd974"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_7d476c8021319423"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_03ea17dc4b06b2e0",
+            "source_id": "src_7d476c8021319423",
+            "text": "降价、开放加盟后，喜茶更像是瑞幸.喜茶在非一线城市以“招募事业合伙人”的形式放开加盟。 加盟费在50万以内，与行业其他品牌35万-40万加盟费相当。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_30961699643e87f6",
+        "text": "这一转变折射出高端茶饮在同质化竞争中的增长焦虑。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1193,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66b8404afc69a174",
+          "ev_5dbe88c927e2353a",
+          "ev_6dd3aa176d24cf19"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_7f03eca1deb69aa7",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66b8404afc69a174",
+            "source_id": "src_f618226ac0f15289",
+            "text": "但之后市场竞争倒逼现制茶饮卷产品，每个品牌几乎每周都有新品上市，品牌的研发能力也普遍增强，最后甚至形成了反向定制。 比如，喜茶自己先从产地源头采购了芋泥原材料，之后根据产品的标准研发了芋泥原料加工的配方，最后再找到一家芋头加工企业按照配方反向定制。 换句话说，奶茶供应商在产品层面的开发很大程度上是被品牌商主导和推动的。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 奶茶供应商的故事也再次印证了，搭上时代红利时，很多企业都会昙花一现，但当红利褪去后，只有形成自身壁垒的企业才能穿越周期。 免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。 在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。 打开投资界APP 阅读全文 【本文由投资界合作伙伴微信公众号：读懂财经授权发布，本平台仅提供信息存储服务。 】如有任何疑问题，请联系（editor@zero2ipo. com. cn）投资界处理。 食品饮料 新消费行业",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5dbe88c927e2353a",
+            "source_id": "src_7f03eca1deb69aa7",
+            "text": "喜茶在海外市场的发展势头迅猛，海外门店数量在过去一年增长超过6倍，成为全球新茶饮市场中的一匹黑马。 当地时间8月1日，喜茶位于美国加利福尼亚州库比蒂诺（Cupertino）Main Street的门店正式营业，标志着其在美国市场的快速扩张。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e6abe98a75f17193",
+        "text": "完美日记是教科书级的流量打法。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4712,
+        "support_evidence_ids": [
+          "ev_6dd3aa176d24cf19"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6dd3aa176d24cf19",
+          "ev_7798ce8455ef4d49",
+          "ev_4aedc9fab151db1b"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e9b02098410aaf66",
+        "text": "2018年2月起在小红书采用\"明星/头部KOL造势→腰部KOL种草→素人UGC二次传播\"的三段式投放，辅以李佳琦直播带货和微信私域\"小完子\"体系（数百个真人运营微信号+社群+小程序），以\"大牌平替\"定位瞄准18—28岁女性，宣称要做\"互联网时代的欧莱雅\" 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "supported",
+        "verification_score": 0.4555,
+        "support_evidence_ids": [
+          "ev_7798ce8455ef4d49"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7798ce8455ef4d49",
+          "ev_6dd3aa176d24cf19",
+          "ev_4aedc9fab151db1b"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ce98a41c55f2705e",
+        "text": "2019年618居美妆类目第一（增速1193%），同年9月获高瓴领投C轮、估值超10亿美元，2020年11月母公司逸仙电商登陆纽交所，成为国货彩妆第一股。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2093,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_6dd3aa176d24cf19",
+          "ev_75b000e7638b592e"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12",
+          "src_8981ef005a9a5aa8",
+          "src_0194a70cd2491ecd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ae19411f4c22afe6",
+        "text": "但上市当年归母净亏损高达39.84亿元，\"重营销轻研发\"模式随即遭遇股价与口碑双重困境。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.157,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0da1761f1718368f",
+          "ev_1d5b6f916decd974",
+          "ev_66bfb7815ed86b6d"
+        ],
+        "source_ids": [
+          "src_be17584eece732d8",
+          "src_f618226ac0f15289",
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0da1761f1718368f",
+            "source_id": "src_be17584eece732d8",
+            "text": "完美日记母公司逸仙电商失守美妆护城河，押注科兰黎、EVE LOM能否转乾坤？高增长撑起了成长性估值，即便在上市的2020年，逸仙电商归属净亏损高达39.84亿元，资本也心甘情愿为未来的成长性买单。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5b03fcace4491969",
+        "text": "泡泡玛特卖的不是玩具而是情绪价值。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.24,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_4dfcba5f61efd74c",
+          "ev_cde63d137275a14b"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12",
+          "src_aee99b3b0646ef03"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4dfcba5f61efd74c",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "2026-05-28 2026-06-05 外部链接 页面存档备份 互联网档案馆 泡泡玛特 （Kasing Lung） （Kenny Wong） Nisa Srikumdee（Molly Yllom） （Kiking） （Ayan Deng） （Lang） （A Li）、 （A Li） （Pucky） Agee、Yep Yumi （Bao Bao） （Dan Wu） Nickel （Will Chen） IP产品 The Monsters（ Zimomo） Molly Crybaby（哭娃） Skullpanda Dimoo Hirono（小野） Twinkle Twinkle（星星人） Pucky（畢奇） Hacipupu Pino Jelly Sweet Bean（小甜豆） Kubo Zsiga Supertutu（TUTU妹） Merodi 检索自“ https://zh. wikipedia. org/w/index. php? title=泡泡玛特&oldid=92953417 香港交易所上市公司 新三板已除牌公司 泡泡玛特 中国玩具制造商 朝阳区公司 北京上市公司 2010",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a1b8a9985cff4a84",
+        "text": "2016年签约Molly并推出盲盒，以\"不确定性+收集欲+隐藏款\"的游戏化机制，从亏损的杂货渠道商转型为IP孵化平台，2020年12月在港交所上市 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4dfcba5f61efd74c",
+          "ev_66bfb7815ed86b6d"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "证据仅支持'2020年12月11日在港交所上市'及'2010年最初为潮流杂货店'；但未提及2016年签约Molly、盲盒游戏化机制（不确定性+收集欲+隐藏款）、亏损及转型为IP孵化平台等关键内容，复合claim仅部分被支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4dfcba5f61efd74c",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "2026-05-28 2026-06-05 外部链接 页面存档备份 互联网档案馆 泡泡玛特 （Kasing Lung） （Kenny Wong） Nisa Srikumdee（Molly Yllom） （Kiking） （Ayan Deng） （Lang） （A Li）、 （A Li） （Pucky） Agee、Yep Yumi （Bao Bao） （Dan Wu） Nickel （Will Chen） IP产品 The Monsters（ Zimomo） Molly Crybaby（哭娃） Skullpanda Dimoo Hirono（小野） Twinkle Twinkle（星星人） Pucky（畢奇） Hacipupu Pino Jelly Sweet Bean（小甜豆） Kubo Zsiga Supertutu（TUTU妹） Merodi 检索自“ https://zh. wikipedia. org/w/index. php? title=泡泡玛特&oldid=92953417 香港交易所上市公司 新三板已除牌公司 泡泡玛特 中国玩具制造商 朝阳区公司 北京上市公司 2010",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_647c2c122102c6d9",
+        "text": "2022年股价低谷后，2019年即获得版权、长期坐\"冷板凳\"的LABUBU（THE MONSTERS系列）于2023—2024年在东南亚、欧美爆火，实现\"海外反攻国内\"：2024年营收130.4亿元（同比+106.9%），四大头部IP营收均破10亿元，其中THE MONSTERS达30.4亿元、同比增长726.6% 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_400cc611c7994a5e"
+        ],
+        "source_ids": [
+          "src_46a4803483b2ea0d"
+        ],
+        "reason": "证据文本实际讨论的是AI购物趋势，与claim中LABUBU版权时间、海外爆火、2024年营收130.4亿元、THE MONSTERS营收30.4亿元及同比增长726.6%等内容完全无关，无法验证。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_400cc611c7994a5e",
+            "source_id": "src_46a4803483b2ea0d",
+            "text": "2026年，中国品牌出海最该关注的趋势可能只有一个 核心结论 AI正在成为全球消费者购物的”第一决策层”。 2025年假日购物季AI工具访问零售电商流量同比增长760%，AI影响了20%的购买决策，驱动了670亿美元订单。近四分之三的全球消费者已在购物中使用AI，53%的消费者会因AI推荐尝试新品牌。 中国出海品牌在AI搜索增长上全面领先美国本土品牌。 追踪200个品牌数据显示，中国品牌AI搜索量整体增长率达31.65%，美 Read More »",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b5349ffcf9ecacf2",
+        "text": "喜茶代表了茶饮行业的供应链内化趋势。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3281,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d5b6f916decd974",
+          "ev_cea610565f2a7eb8",
+          "ev_6dd3aa176d24cf19"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_96b58639bb2e99b0",
+        "text": "行业数据显示，2016—2022年现制茶饮市场复合增长率达47%，但早期最大受益者是供应商而非品牌——部分供应商净利率超过10%并登陆资本市场；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6016,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d5b6f916decd974",
+          "ev_6dd3aa176d24cf19",
+          "ev_cea610565f2a7eb8"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7df7d5434acafa19",
+        "text": "2023年起喜茶、奈雪等品牌开始\"削藩\"，品牌从产地源头直采原料（如芋泥）、自行研发配方、再找加工企业反向定制，导致三元生物、田野股份等供应商2023年前三季度净利润同比下滑72.4%、44.5%，产业链利润发生大转移 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "supported",
+        "verification_score": 0.4692,
+        "support_evidence_ids": [
+          "ev_1d5b6f916decd974"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d5b6f916decd974",
+          "ev_cea610565f2a7eb8",
+          "ev_66b8404afc69a174"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9cd4faec78ad7ef8",
+        "text": "在加盟模式下，品牌实质成为\"供应商\"，靠向加盟商销售食材盈利；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5,
+        "support_evidence_ids": [
+          "ev_cea610565f2a7eb8"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_1d5b6f916decd974",
+          "ev_6dd3aa176d24cf19"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6bef0137064bda08",
+        "text": "行业层面普遍搭建SRM、OMS、WMS、TMS一体化数字化中台，实现全国仓储配送可视化。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.41,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2fefedc86bd3f09a",
+          "ev_1d5b6f916decd974",
+          "ev_cea610565f2a7eb8"
+        ],
+        "source_ids": [
+          "src_d10eab53371dbf8e",
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2fefedc86bd3f09a",
+            "source_id": "src_d10eab53371dbf8e",
+            "text": "训，确保不同区域的原料品质、仓储操作一致，从源头保障全国门店产品风味统一。 在数字化赋能层面，搭建集SRM、OMS、WMS、TMS为一体的数字化管理中台，彻底打通全国各区域仓储、配送、采购的数据壁垒，实现 “全国供应链一盘棋”的可视化、可追踪、",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_df4c3f1e534d1698",
+        "text": "完美日记以ODM/OEM代工为核心，合作科丝美诗、莹特丽等国际大牌同厂代工厂，以\"同厂背书\"建立品质信任，并依靠DTC数据中台驱动小单快反。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3111,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7798ce8455ef4d49",
+          "ev_75b000e7638b592e",
+          "ev_205d51869403dd92"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_0194a70cd2491ecd",
+          "src_98cce79a402af2b1"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_75b000e7638b592e",
+            "source_id": "src_0194a70cd2491ecd",
+            "text": "2020年11月，创立四年的逸仙电商（YSG.US）在美国纽交所挂牌上市，成为国内首个美股上市的美妆集团。2017年4月上线的完美日记就是一个生来DTC的品牌（Direct-to-Consumer直接触达消费者）。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ff989823b378f642",
+        "text": "上市后逐步向自建研发与产能过渡，通过收购Eve Lom、Galénic等补齐高端护肤与研发短板。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0926,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_205d51869403dd92",
+          "ev_2b58f5c77b72c3a6",
+          "ev_0da1761f1718368f"
+        ],
+        "source_ids": [
+          "src_98cce79a402af2b1",
+          "src_b5b803ae07c2d01d",
+          "src_be17584eece732d8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_205d51869403dd92",
+            "source_id": "src_98cce79a402af2b1",
+            "text": "亲爱男友、两只兔子和 DTC 泳装 Cupshe 获融资；上美启动 IPO；逸仙电商收购 Eve Lom｜品牌日报.完美日记母公司逸仙电商于 2021 年 3 月 2 日宣布收购欧洲护肤品牌 Eve Lom，此次交易的卖方为 Manzanita Capital。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2b58f5c77b72c3a6",
+            "source_id": "src_b5b803ae07c2d01d",
+            "text": "继收购收购法国护肤品Galenic之后，完美日记的海外“扫货”之旅还在继续。 3月2日美股盘前，完美日记母公司逸仙电商宣布，公司将收购欧洲著名护肤品牌Eve Lom。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_91d99aef911119f5",
+        "text": "需要说明的是，其具体代工比例、库存周转与自建工厂进展缺乏公开一手数据支撑，本报告不做断言。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1655,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_7798ce8455ef4d49",
+          "ev_1d5b6f916decd974"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_52f77c01b0b99298",
+        "text": "泡泡玛特核心竞争力在IP运营而非制造，生产依托珠三角玩具代工厂。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.18,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_4dfcba5f61efd74c",
+          "ev_7798ce8455ef4d49"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4dfcba5f61efd74c",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "2026-05-28 2026-06-05 外部链接 页面存档备份 互联网档案馆 泡泡玛特 （Kasing Lung） （Kenny Wong） Nisa Srikumdee（Molly Yllom） （Kiking） （Ayan Deng） （Lang） （A Li）、 （A Li） （Pucky） Agee、Yep Yumi （Bao Bao） （Dan Wu） Nickel （Will Chen） IP产品 The Monsters（ Zimomo） Molly Crybaby（哭娃） Skullpanda Dimoo Hirono（小野） Twinkle Twinkle（星星人） Pucky（畢奇） Hacipupu Pino Jelly Sweet Bean（小甜豆） Kubo Zsiga Supertutu（TUTU妹） Merodi 检索自“ https://zh. wikipedia. org/w/index. php? title=泡泡玛特&oldid=92953417 香港交易所上市公司 新三板已除牌公司 泡泡玛特 中国玩具制造商 朝阳区公司 北京上市公司 2010",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6e9186d8a0642539",
+        "text": "盲盒\"小批量、多SKU、隐藏款\"模式对需求预测和库存管理提出极高要求；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0936,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d1663ccab825f1f",
+          "ev_cea610565f2a7eb8",
+          "ev_d48a6dadeb7a124c"
+        ],
+        "source_ids": [
+          "src_b5f41cbb80f2e28d",
+          "src_f618226ac0f15289",
+          "src_2dd66e0ac26e6ab1"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d1663ccab825f1f",
+            "source_id": "src_b5f41cbb80f2e28d",
+            "text": "供应链战略策划. ‐ 敏捷供应链与高效低成本供应链策略. 供应链高度集成化跨企业组织与协同运作赋能敏捷供应链.三、供应链核心企业库存管理. 库存物料传统的A、B、C分类法. 比A、B、C分类更细化的方法.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6d80ad38bfbfc4ac",
+        "text": "渠道上采用\"线下直营门店+机器人商店（Roboshop）+线上抽盒机小程序\"的全渠道履约体系。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0667,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_7798ce8455ef4d49",
+          "ev_cea610565f2a7eb8"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12",
+          "src_8981ef005a9a5aa8",
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_37dbfcad68e928d8",
+        "text": "LABUBU爆红后毛绒品类占比首次超过手办（44.2%），海外产能紧张与黄牛炒价成为新的供应链压力点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0797,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_af125899139a8d33",
+          "ev_64d118ccccdb1963",
+          "ev_66bfb7815ed86b6d"
+        ],
+        "source_ids": [
+          "src_36b3ab7544b62d67",
+          "src_bd5060d76647094e",
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_af125899139a8d33",
+            "source_id": "src_36b3ab7544b62d67",
+            "text": "泡泡玛特全新发布的Labubu第三代搪胶毛绒产品再次风靡全球。在那两年，泡泡玛特在盲盒之外开拓了毛绒、MEGA等产品线，在Molly之外相继培育了SKULLPANDA等大IP；并将海外市场培育成新的增长曲线。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_64d118ccccdb1963",
+            "source_id": "src_bd5060d76647094e",
+            "text": "泡泡玛特旗下“LABUBU”在国外被疯抢，国内二手平台溢价出售.泡泡玛特的海外市场增速较快。 2024年，泡泡玛特实现营收130.4亿元，同比增长106.9%，其中海外及港澳台业务营收50.7亿元，同比增长375.2%，收入占比近四成。 今年一季度，泡泡玛特海外业务收益同比增长475...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1d76cfa07f3ff397",
+        "text": "三者的共性是\"轻制造、重品牌/IP\"，差异在于：喜茶被迫向上游延伸以夺回利润，完美日记试图从代工走向自研以摆脱\"平替\"标签，泡泡玛特则把制造彻底外包、将资源集中于IP孵化与渠道。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1291,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7798ce8455ef4d49",
+          "ev_cea610565f2a7eb8",
+          "ev_dd554da17c05a4ec"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_f618226ac0f15289",
+          "src_ac1045aa1bb6baa2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_10da426749ff1809",
+        "text": "泡泡玛特是出海最成功的样本。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2392,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2815897ff3491532",
+          "ev_3be1ace28c90076a",
+          "ev_8e3d2daeb5966c05"
+        ],
+        "source_ids": [
+          "src_67d7e027d22855c5",
+          "src_4e7accb9fd59f9e6",
+          "src_1f18756f72f6ce2e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2815897ff3491532",
+            "source_id": "src_67d7e027d22855c5",
+            "text": "泡泡玛特上半年海外业务占比已达40% 美洲营收增速超十倍 | 财报分析.1.产业新动向：全球零售IP化加速，海外业务占比40%；毛绒品类首次超手办占比44.2%，反映消费升级趋势；泡泡玛特国际化策略成功四大区域均三位数增长。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3be1ace28c90076a",
+            "source_id": "src_4e7accb9fd59f9e6",
+            "text": "4、选品策略：聚焦IP衍生 vs 全品类扩张.泡泡玛特是潮玩赛道的“独角兽”，市占率30%：国内盲盒市场CR5达69%，泡泡玛特以绝对优势领先（52TOYS占15%，TOPTOY占12%）。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ab18fd95342562a8",
+        "text": "2024年海外及港澳台营收50.7亿元（同比+375.2%），2025年上半年总营收138.8亿元（+204.4%）、经调整净利47.1亿元，其中THE MONSTERS系列收入48.1亿元（+668%），占总营收34.7%；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3075,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7b00ad47ee1db922",
+          "ev_c5a12c1870f0a3c4",
+          "ev_6eb10736839f7573"
+        ],
+        "source_ids": [
+          "src_26574a455ed6705a",
+          "src_1ce602d8f4510ad2",
+          "src_42bd027908c5c336"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7b00ad47ee1db922",
+            "source_id": "src_26574a455ed6705a",
+            "text": "三年后，财报里的数字给出了另一种注脚。 2025 年上半年，LABUBU所在的 THE MONSTERS 系列收入48.1 亿元，同比增长668%，占公司总营收的34.7%。”8月20日，在泡泡玛特业绩会上，泡泡玛特副总裁袁俊杰表示。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c5a12c1870f0a3c4",
+            "source_id": "src_1ce602d8f4510ad2",
+            "text": "2024年，泡泡玛特财报显示，四大头部IP（THE MONSTERS、MOLLY、SKULLPANDA、CRYBABY）均实现超10亿元营收，其中THE MONSTERS（也就是Labubu系列）以30.4亿元营收，726.6%的增长...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f5a9837d66d3eec0",
+        "text": "LABUBU从泰国突围后引爆欧美，北美市场收入一度同比+556.9%。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.287,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d2e43de46ca01e9",
+          "ev_64d118ccccdb1963",
+          "ev_6e1594bad8a1b40f"
+        ],
+        "source_ids": [
+          "src_46a4803483b2ea0d",
+          "src_bd5060d76647094e",
+          "src_c387f4eecd624e74"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d2e43de46ca01e9",
+            "source_id": "src_46a4803483b2ea0d",
+            "text": "得益于Labubu在欧美市场的强劲表现，2024年泡泡玛特在北美市场的收入同比增长556.9%，北美也成为除东南亚之外，增速最快的市场。 泡泡玛特全球各区域收入增长数据对比.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_64d118ccccdb1963",
+            "source_id": "src_bd5060d76647094e",
+            "text": "泡泡玛特旗下“LABUBU”在国外被疯抢，国内二手平台溢价出售.泡泡玛特的海外市场增速较快。 2024年，泡泡玛特实现营收130.4亿元，同比增长106.9%，其中海外及港澳台业务营收50.7亿元，同比增长375.2%，收入占比近四成。 今年一季度，泡泡玛特海外业务收益同比增长475...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e511e694d4ba1fc3",
+        "text": "其方法论是先以机器人商店和快闪店低成本试水、验证市场后再开大店，并辅以潮玩展运营核心玩家社群 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_400cc611c7994a5e"
+        ],
+        "source_ids": [
+          "src_46a4803483b2ea0d"
+        ],
+        "reason": "证据文本讨论的是AI购物趋势，未提及机器人商店、快闪店低成本试水、开大店或潮玩展社群运营等方法论内容，无法验证。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_400cc611c7994a5e",
+            "source_id": "src_46a4803483b2ea0d",
+            "text": "2026年，中国品牌出海最该关注的趋势可能只有一个 核心结论 AI正在成为全球消费者购物的”第一决策层”。 2025年假日购物季AI工具访问零售电商流量同比增长760%，AI影响了20%的购买决策，驱动了670亿美元订单。近四分之三的全球消费者已在购物中使用AI，53%的消费者会因AI推荐尝试新品牌。 中国出海品牌在AI搜索增长上全面领先美国本土品牌。 追踪200个品牌数据显示，中国品牌AI搜索量整体增长率达31.65%，美 Read More »",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a2f23cfd03771fed",
+        "text": "2025年6月王宁凭LABUBU热销成为河南首富，公司已成立电影工作室推进LABUBU动画 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.72,
+        "support_evidence_ids": [
+          "ev_66bfb7815ed86b6d"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_4dfcba5f61efd74c"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3eb97cd2d9a16ef7",
+        "text": "但风险同样突出：单一IP依赖（公司主动\"去LABUBU化\"、高频推新IP）、热门IP生命周期不确定、海外仿冒品泛滥。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1281,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3420f07533a75da2",
+          "ev_66bfb7815ed86b6d",
+          "ev_64d118ccccdb1963"
+        ],
+        "source_ids": [
+          "src_0fb2e6b65b4305b9",
+          "src_6dbeb87cc7110c12",
+          "src_bd5060d76647094e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3420f07533a75da2",
+            "source_id": "src_0fb2e6b65b4305b9",
+            "text": "两款Labubu主题冰箱 图源：泡泡玛特.2025年海外收入达71.77亿元 图源：泡泡玛特. 然而，过度依赖单一热门IP的弊端逐步显现，泡泡玛特早早触碰增长天花板。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7843c6abb90729dc",
+        "text": "喜茶优先布局华人密集市场——新加坡、美国加州、伦敦、大洋洲，海外门店一年内增长超6倍。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2722,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5dbe88c927e2353a",
+          "ev_632bde315185f956",
+          "ev_6dd3aa176d24cf19"
+        ],
+        "source_ids": [
+          "src_7f03eca1deb69aa7",
+          "src_3d9ad338fedd6f75",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5dbe88c927e2353a",
+            "source_id": "src_7f03eca1deb69aa7",
+            "text": "喜茶在海外市场的发展势头迅猛，海外门店数量在过去一年增长超过6倍，成为全球新茶饮市场中的一匹黑马。 当地时间8月1日，喜茶位于美国加利福尼亚州库比蒂诺（Cupertino）Main Street的门店正式营业，标志着其在美国市场的快速扩张。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_632bde315185f956",
+            "source_id": "src_3d9ad338fedd6f75",
+            "text": "“我们的未来扩张将优先考虑华人众多的国家及城市，例如北美、东南亚、大洋洲及其他华人社区。 ”据九毛九相关负责人透露，九毛九扩张海外市场仍将以太二品牌为主。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_256ee55c20247e83",
+        "text": "核心挑战在于现制饮品的跨境供应链：新鲜水果原料必须在本地重建采购与冷链体系，成本高企；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2601,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_1d5b6f916decd974",
+          "ev_7798ce8455ef4d49"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7c7262de4f8eede4",
+        "text": "同时国内同期关闭近700家门店，\"内卷\"与扩张并行导致资源承压；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2283,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_698110eb9fb5d5a3",
+          "ev_6dd3aa176d24cf19",
+          "ev_cea610565f2a7eb8"
+        ],
+        "source_ids": [
+          "src_16f843f39bb8b29b",
+          "src_8981ef005a9a5aa8",
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_698110eb9fb5d5a3",
+            "source_id": "src_16f843f39bb8b29b",
+            "text": "喜茶近期关闭近700家门店，面临扩张的“大考”，创始人聂云宸以70亿的身价继续迎难而上，力图推动品牌发展，这一举措将考验喜茶的市场策略、运营能力和.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5c6acc424f463d90",
+        "text": "在海外还要与蜜雪冰城等低价品牌同场竞争，中高端定位的品牌认知需要从零培育。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_7798ce8455ef4d49",
+          "ev_cef02bed4b6005c0"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8",
+          "src_8cefc24b50d3d03f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_66bb2b15ccd0f6db",
+        "text": "完美日记出海路径最迂回，以\"收购海外品牌+多品牌矩阵\"为主（法国Galénic、英国Eve Lom），试图复制欧莱雅模式，自主品牌彩妆主要面向东南亚。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1468,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2b58f5c77b72c3a6",
+          "ev_61d926e1d3703f13",
+          "ev_205d51869403dd92"
+        ],
+        "source_ids": [
+          "src_b5b803ae07c2d01d",
+          "src_d9256341dc1a1c75",
+          "src_98cce79a402af2b1"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2b58f5c77b72c3a6",
+            "source_id": "src_b5b803ae07c2d01d",
+            "text": "继收购收购法国护肤品Galenic之后，完美日记的海外“扫货”之旅还在继续。 3月2日美股盘前，完美日记母公司逸仙电商宣布，公司将收购欧洲著名护肤品牌Eve Lom。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_61d926e1d3703f13",
+            "source_id": "src_d9256341dc1a1c75",
+            "text": "渐渐地，对于消费者而言，购买完美日记，开始缺乏理由。 再说完美日记背后的逸仙电商，在完美日记主品牌增长见顶后，母公司逸仙电商给出的解决方案是：复制欧莱雅模式，通过收购构建多品牌矩阵。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9eed95f1b86bab35",
+        "text": "挑战多重叠加：2022年起营收持续下滑（全年34.1亿元，-7.9%）、持续亏损一度逼近退市；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.07,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6dd3aa176d24cf19",
+          "ev_ff97ef932cb3ad07",
+          "ev_6e15a6c9067da8d0"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_d19332bfdcd86b2b",
+          "src_07eda70cbb7d1a0d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ff97ef932cb3ad07",
+            "source_id": "src_d19332bfdcd86b2b",
+            "text": "要知道，泡泡玛特2019年就拿下了Labubu的版权，但2019-2022年，Labubu不仅人气远低于“当家花旦”Molly，在泡泡玛特整个IP序列中也排不上号，是家族中的常年“冷板凳选手”。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_33ea9afc8886d7f9",
+        "text": "主品牌海外认知几乎从零起步；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7798ce8455ef4d49",
+          "ev_66b8404afc69a174",
+          "ev_632bde315185f956"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_f618226ac0f15289",
+          "src_3d9ad338fedd6f75"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_66b8404afc69a174",
+            "source_id": "src_f618226ac0f15289",
+            "text": "但之后市场竞争倒逼现制茶饮卷产品，每个品牌几乎每周都有新品上市，品牌的研发能力也普遍增强，最后甚至形成了反向定制。 比如，喜茶自己先从产地源头采购了芋泥原材料，之后根据产品的标准研发了芋泥原料加工的配方，最后再找到一家芋头加工企业按照配方反向定制。 换句话说，奶茶供应商在产品层面的开发很大程度上是被品牌商主导和推动的。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 奶茶供应商的故事也再次印证了，搭上时代红利时，很多企业都会昙花一现，但当红利褪去后，只有形成自身壁垒的企业才能穿越周期。 免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。 在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。 打开投资界APP 阅读全文 【本文由投资界合作伙伴微信公众号：读懂财经授权发布，本平台仅提供信息存储服务。 】如有任何疑问题，请联系（editor@zero2ipo. com. cn）投资界处理。 食品饮料 新消费行业",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0ed829be75e0878c",
+        "text": "欧美美妆成分与备案合规门槛高；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6dd3aa176d24cf19",
+          "ev_7798ce8455ef4d49",
+          "ev_8d2acd26670b2153"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8",
+          "src_844a31c7c67efe8b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ae986b194f21d4bc",
+        "text": "还面临HEBE BEAUTY等借TikTok渠道崛起的\"东南亚版完美日记\"的正面竞争。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3075,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fd95a5b01efafeee",
+          "ev_6dd3aa176d24cf19",
+          "ev_7798ce8455ef4d49"
+        ],
+        "source_ids": [
+          "src_8b200f61998ea841",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fd95a5b01efafeee",
+            "source_id": "src_8b200f61998ea841",
+            "text": "广州美妆大变局：东南亚版“完美日记”TikTok卖了3.5亿.HEBE BEAUTY，出海东南亚的国货美妆，拥有Y.O.U、Glamfix等子品牌。 相比于国内代工+海外品牌的模式，这种新组合也将是一种崭新出海模式的起点。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7fa05a0815c34420",
+        "text": "三者的分化揭示了新消费品牌出海的三条逻辑：IP驱动（泡泡玛特）能够实现品牌溢价、跨文化穿透力最强，因为潮玩不依赖口味与肤质差异，且盲盒的游戏化机制具有全球通用性；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_66bfb7815ed86b6d",
+          "ev_6dd3aa176d24cf19",
+          "ev_1d5b6f916decd974"
+        ],
+        "source_ids": [
+          "src_6dbeb87cc7110c12",
+          "src_8981ef005a9a5aa8",
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a0f2dd49e7cd9f51",
+        "text": "供应链驱动（喜茶）受限于重资产现制模式的跨境复制成本，每进入一个市场都要重建本地供应链；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1801,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d5b6f916decd974",
+          "ev_cea610565f2a7eb8",
+          "ev_66b8404afc69a174"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d5b6f916decd974",
+            "source_id": "src_f618226ac0f15289",
+            "text": "在过去几年的新消费故事里，现制茶饮是*产业机会的赛道之一。 从2016年到2022年，现制茶饮市场规模复合增长率达到47%。 但过去几年，现制茶饮*的受益者不是品牌而是供应商，当喜茶、奈雪都在为盈利绞尽脑汁时，供应商却赚地盆满钵满，部分企业净利率甚至超过10%。 一众奶茶供应商企业也纷纷登陆资本市场，部分企业甚至超过百亿市值。 但如今奶茶供应商已经告别了好日子。 三元生物、佳禾食品等企业股价距离高点已经腰斩。 股价急转直下是因为现制茶饮正进行产业链利润的大转移。 2023年上半年，奈雪实现了上市以来的首次经调整盈利。 但奶茶供应商纷纷出现利润下滑的情况，2023年前三季度，三元生物、田野股份净利润同比下滑72. 4%、44. 5%。 那么，现制茶饮的利润转移是如何发生的？ 本文持有以下观点： 、奶茶供应商告别红利期。 行业早期，新茶饮产业链既散又乱，茶饮品牌为快速抢市场，需要先标准化产业链，由此扶持和让利了头部供应商。 但如今现制茶饮告别高速发展，再加上产业链的成熟，产业链利润开始向溢价能力更强的品牌商转移。 奶茶供应商正在被品牌削藩。 茶饮品牌经历过快速发展后，开始自建供应链，增加自",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3cda504ea822617b",
+        "text": "流量驱动（完美日记）的国内打法难以平移——小红书与微信私域在海外没有对应生态，流量红利不可携带，最终只能诉诸资本收购。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2333,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6dd3aa176d24cf19",
+          "ev_4aedc9fab151db1b",
+          "ev_7798ce8455ef4d49"
+        ],
+        "source_ids": [
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6dd3aa176d24cf19",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "完美日记崛起，成功秘诀不止李佳琦 2019-12-10 0 评论 22589 浏览 60 收藏 11 分钟 本文盘点了完美日记的发展史以及它如何与互联网结合产出优秀的营销策略。 双11的货还没发完，双12又悄悄来了。 经历了短暂8天休息之后，李佳琦的直播间又热闹开播。 今年的电商品牌和剁手党们好像都再也离不开他。 根据官方数据，2019年天猫双11当天销售额过亿的品牌有299个，更有15个品牌进入十亿俱乐部。 其中新锐品牌表现尤为亮眼，黑马频现。 完美日记、HFP、花西子、Dr. Arrivo、小仙炖、燕之屋等品牌单日成交超过1亿，三顿半、王饱饱等品牌还拿下所在细分行业第一。 这些新锐品牌很多是李佳琦直播间的常客，国货回潮尤其是国货彩妆的崛起与KOL的推广密不可分。 但复盘国货之光“完美日记”的打法，你会发现它绝对不只靠李佳琦。 仅用8个月时间，销量增长了近50倍，完美日记堪称消费品界的营销教科书。 一、完美日记发迹史 完美日记成立于2016年，创始人黄锦峰曾担任御泥坊COO。 2017年8月，完美日记天猫旗舰店上线。 2018年天猫双11，完美日记仅用90分钟即突破1亿销售额。 20",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4aedc9fab151db1b",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "“也许一生都无法欣赏完这片你深爱着的土地，那么如果它主动奔向你呢”等一系列广告词扣人心弦，极大提升了品牌调性，赋予了产品天然的传播话题。 总而言之，李佳琦虽好，完美日记们的新打法也是功不可没。 中国消费品市场上，互联网挟裹新消费巨浪滚滚，看来每一种消费品都真值得重新做一遍了。 本文由 @董洛 原创发布于人人都是产品经理，未经作者许可，禁止转载。 题图来自Unsplash，基于CC0协议。 {{ postmeta. bookmark }} {{ postmeta. postlike }} 更多精彩内容，请关注人人都是产品经理微信公众号或下载App 完美日记 互联网营销观察员，公众号:习惯嗷 1篇作品 22589总阅读量 SaaS客户成功的裁撤潮，已经来了吗？ 10-13 2334 浏览 剑指大众点评，抖音为何挖起点评用户的“墙角”？ 12-29 3229 浏览 淘宝也需要“榜一大哥” 06-17 5253 浏览 多媒体系列专题｜蓝牙音乐 12-15 2718 浏览 万字长文：AI产品经理视角下的ChatGPT全解析 02-06 61969 浏览 评论请登录 粮仓·企微管家 学习收藏了，今",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_62014ddd9d831bc3",
+        "text": "共性挑战可以归纳为四点：本地化供应链重建、海外合规门槛、品牌认知从零建立，以及本地与国际品牌的竞争挤压。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.175,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_7798ce8455ef4d49",
+          "ev_b4a5410358a5feb5"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8",
+          "src_619e03351a202957"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f06f11aac50ecfe5",
+        "text": "对后续出海品牌的启示是：优先选择\"文化摩擦力小\"的品类（IP、潮玩、游戏），把国内积累的供应链效率转化为海外的成本或体验优势，并对单一爆款IP建立组合化管理机制。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1509,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_7798ce8455ef4d49",
+          "ev_1d5b6f916decd974"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289",
+          "src_8981ef005a9a5aa8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7798ce8455ef4d49",
+            "source_id": "src_8981ef005a9a5aa8",
+            "text": "而完美日记的目标用户是18-28岁的年轻女性，她们追求时尚，热爱分享，相信用户口碑胜过传统广告。 2018年2月，完美日记将小红书作为重点渠道开始运营，加大投放力度，规划投放节奏，打响品牌知名度，培养用户心智，随后其销量开始快速上升。 目前完美日记小红书官方账号粉丝173 万+，笔记564条，获赞200万+，全平台笔记数12万+条。 小红书目前的用户组成可以简单划分为有明星（认证），头部kol（粉丝数>50万），腰部kol（5万<粉丝数<50万）、初级KOL或素人（粉丝数<5万）。 完美日记在小红书上采用了三段式的投放路径，首先与品牌明星和头部KOL合作，短时间内引发大量关注；接着大量投放产出精致深入内容的腰部KOL，通过试色、教程等图文视频内容，引发消费者种草和购买；最后通过购买产品后的素人在平台上分享使用体验，沉淀UGC内容，引发二次传播和声量叠加。 完美日记的高明之处就在于不死磕品牌明星和头部KOL，而是广泛投放腰部和初级KOL。 明星和头部KOL在扩大品牌声量上效果显著，但是对于转化而言成本高，灵活度不高。 腰部和初级KOL相对成本较低、配合度高，且通过长期稳定运营，与粉丝建立",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2b06c1a7d963b845",
+        "text": "需要指出的是，本报告中喜茶因未上市缺乏公开财务数据，其估值与门店数以媒体口径为主；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.175,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cea610565f2a7eb8",
+          "ev_66b8404afc69a174",
+          "ev_1d5b6f916decd974"
+        ],
+        "source_ids": [
+          "src_f618226ac0f15289"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cea610565f2a7eb8",
+            "source_id": "src_f618226ac0f15289",
+            "text": "/ 02 / 遇到品牌削藩 过去三年，茶饮供应商产品的售价在持续降低。 从2020年到2022年， 德馨食品的饮品浓浆每1KG的平均售价从13. 78元降低到11. 66元。 同期，鲜活饮品的口感颗粒类产品每1KG平均售价从13. 30元降为7. 55 元，产品售价直接腰斩。 茶饮供应商对产品售价降低的解释是，市场竞争激烈。 而 竞争变激烈的原因正是因为供应商的削藩。 茶饮品牌正在减少对供应商的采购额， 比如2023年奈雪净增门店数量145家，但同期奈雪对田野股份的采购额却出现了下降的情况。 早在2022年，瑞幸咖、星巴克也减少了对德馨食品的采购额。 茶饮品牌减少对头部供应商的采购额很大程度上与自建供应链有关。 比如，古茗在云南西双版纳自建了柠檬生产基地。 另据浙江诸暨媒体报道，2023年古茗已投入10亿元在诸暨建立了原料生产基地，项目建成后，将为古茗茶提供茶、果等轻食饮品原料。 蜜雪冰城已经容纳了咖啡、果酱、糖浆、奶源、包装等数十条生产线的全自动化生产，蜜雪冰城也已经实现了60%以上的食材自产。 品牌商自建供应链与新茶饮的商业模式有关。 为了更低的成本与更快地扩张，所有的现制茶饮品牌",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_66b8404afc69a174",
+            "source_id": "src_f618226ac0f15289",
+            "text": "但之后市场竞争倒逼现制茶饮卷产品，每个品牌几乎每周都有新品上市，品牌的研发能力也普遍增强，最后甚至形成了反向定制。 比如，喜茶自己先从产地源头采购了芋泥原材料，之后根据产品的标准研发了芋泥原料加工的配方，最后再找到一家芋头加工企业按照配方反向定制。 换句话说，奶茶供应商在产品层面的开发很大程度上是被品牌商主导和推动的。 这也意味着，供应商的命脉被掌握在下游品牌客户手里，自身并没有太强的不可替代性，很容易被客户抛弃。 奶茶供应商的故事也再次印证了，搭上时代红利时，很多企业都会昙花一现，但当红利褪去后，只有形成自身壁垒的企业才能穿越周期。 免责声明:本文（报告）基于已公开的资料信息或受访人提供的信息撰写，但读懂财经及文章作者不保证该等信息资料的完整性、准确性。 在任何情况下，本文（报告）中的信息或所表述的意见均不构成对任何人的投资建议。 打开投资界APP 阅读全文 【本文由投资界合作伙伴微信公众号：读懂财经授权发布，本平台仅提供信息存储服务。 】如有任何疑问题，请联系（editor@zero2ipo. com. cn）投资界处理。 食品饮料 新消费行业",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9073e7f4c20406aa",
+        "text": "泡泡玛特2025年数据为中期业绩口径，部分二手报道未与财报原文逐一核对。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1794,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6e1594bad8a1b40f",
+          "ev_66bfb7815ed86b6d",
+          "ev_7b00ad47ee1db922"
+        ],
+        "source_ids": [
+          "src_c387f4eecd624e74",
+          "src_6dbeb87cc7110c12",
+          "src_26574a455ed6705a"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6e1594bad8a1b40f",
+            "source_id": "src_c387f4eecd624e74",
+            "text": "在LABUBU的带动下，泡泡玛特业绩“狂飙”。 尽管泡泡玛特此前已展现良好增长势头，但8月19日发布的2025年中期财报仍超出市场预期。 财报显示，上半年泡泡玛特营收138.8亿元，同比增长204.4%；经调整净利润47.1亿元...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_66bfb7815ed86b6d",
+            "source_id": "src_6dbeb87cc7110c12",
+            "text": "维基百科，自由的百科全书 泡泡瑪特國際集團有限公司 POP MART INTERNATIONAL GROUP LIMITED 公司類型 上市公司 股票代號 9992 ISIN KYG7170M1033 机构代码 911101055636846881 2010年 ，​16年前 2010 代表人物 大望京科技商務園區宏泰東街浦項中心A座36及37樓 在中國和全球經營各類玩具产品 16. 83434億人民幣元（截至2019年12月31日止） 5. 98375億人民幣元（截至2019年12月31日止） 10. 66481億人民幣元（截至2019年12月31日止） 1400億港元（2021年2月18日） popmart. com/ 泡泡玛特 （英語： POP MART 9992 除牌前： 870578 北京泡泡玛特文化创意有限公司 ，是一家中国玩具制造商，公司主要创始人及 。 主要生產 北京龙湖丽泽天街的泡泡玛特商店 POP MART ROBOSHOP 朝阳公园 的泡泡玛特城市乐园，于2023年9月26日开园 2010年在 成立，最初是一家潮流杂货店，2015年代理 角色玩偶Sonny Ange",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 57,
+    "evidence_count": 66,
+    "supported_count": 6,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 42,
+    "coverage": 0.125,
+    "primary_source_ratio": 0.0,
+    "fulltext_source_ratio": 0.0702,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 37
+  },
+  "run_metadata": {
+    "final_report_sha256": "7c7342f60413eef14a45fef5c6cb08c3c8519b3b4a4b1b5d27b38e94b0ede5eb",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 48,
+        "supported_count": 6,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 42,
+        "coverage": 0.125,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 37
+      },
+      "after": {
+        "claim_count": 48,
+        "supported_count": 6,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 42,
+        "coverage": 0.125,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 37
+      }
+    }
+  }
+}

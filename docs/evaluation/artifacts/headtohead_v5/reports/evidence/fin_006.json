@@ -1,0 +1,2788 @@
+{
+  "schema_version": "1.0",
+  "query": "比较绿色债券（Green Bond）与可持续发展挂钩债券（SLB）在募集资金用途、信息披露和投资者保护方面的差异。",
+  "created_at": "2026-08-13T20:32:35.672019+00:00",
+  "sources": [
+    {
+      "source_id": "src_9945bf3136d8ea6c",
+      "url": "https://news.goalfore.cn/a/1343.html",
+      "title": "企业绿色债券境外发行步伐加快 - 国复咨询 - 国际工程与海外投资专家",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 募集资金用途 KPI SPT 差异",
+        "retrieval_relevance": 0.9272,
+        "host_domain": "news.goalfore.cn"
+      }
+    },
+    {
+      "source_id": "src_a610ef8049249d15",
+      "url": "https://nafmii.org.cn/xhdt/202104/t20210428_197371.html",
+      "title": "交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "01018ba96764702ec409cd194886fad75ba9b89327e8163ca1e626ede42b813c",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 募集资金用途 KPI SPT 差异",
+        "retrieval_relevance": 0.9158,
+        "host_domain": "nafmii.org.cn"
+      }
+    },
+    {
+      "source_id": "src_1f4c546d266dd75d",
+      "url": "https://21jingji.com/article/20250321/herald/35f1f93afca3ecddc02888585c8c3e8d.html",
+      "title": "可持续发展挂钩债券增速显著，中企跨境融资工具再升级 - 21经济网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 募集资金用途 KPI SPT 差异",
+        "retrieval_relevance": 0.8638,
+        "host_domain": "21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_7057144d27c11158",
+      "url": "https://climatebonds.net/files/documents/publications/a890aae9-067b-4314-8b13-6ef28a9af3dd.pdf",
+      "title": "SLB和实体层面认证",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 募集资金用途 KPI SPT 差异",
+        "retrieval_relevance": 0.825,
+        "host_domain": "climatebonds.net"
+      }
+    },
+    {
+      "source_id": "src_82b23446dfdbd913",
+      "url": "https://esgtraining.net/2025/07/04/772",
+      "title": "什么是可持续发展挂钩债券？ – 联合国可持续发展证书 | ESG...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 募集资金用途 KPI SPT 差异",
+        "retrieval_relevance": 0.825,
+        "host_domain": "esgtraining.net"
+      }
+    },
+    {
+      "source_id": "src_710d5ae9d5a428fc",
+      "url": "https://nsd.pku.edu.cn/docs/20221013161240442843.pdf",
+      "title": "nsd.pku.edu.cn/docs/20221013161240442843.pdf",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "可持续发展挂钩债券 SLB 募集资金用途 不限制 信息披露 投资者保护 绿色债券 GBP ICMA",
+        "retrieval_relevance": 0.8382,
+        "host_domain": "nsd.pku.edu.cn"
+      }
+    },
+    {
+      "source_id": "src_a8c31b0b6da221aa",
+      "url": "https://icmagroup.org/assets/documents/regulatory/green-bonds/translations/2020/chinese-slbp2020-june-280920.pdf",
+      "title": "Sustainability-Linked Bond Principles",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "f77da29f9eb927d6a534d5a1a8d57d7dc3f9278a7d2267a0ce73a11a9d130d22",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 区别 募集资金用途 信息披露 投资者保护",
+        "retrieval_relevance": 0.8226,
+        "host_domain": "icmagroup.org"
+      }
+    },
+    {
+      "source_id": "src_1593c52a97fb01b6",
+      "url": "https://spgchinaratings.cn/upload/20250808_green-finance1_clean.pdf",
+      "title": "spgchinaratings.cn/upload/20250808_green-finance1_clean.pdf",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "可持续发展挂钩债券 SLB 募集资金用途 不限制 信息披露 投资者保护 绿色债券 GBP ICMA",
+        "retrieval_relevance": 0.8382,
+        "host_domain": "spgchinaratings.cn"
+      }
+    },
+    {
+      "source_id": "src_02c8a7b7edb53f8d",
+      "url": "https://ep.ycwb.com/epaper/ycwb/resfile/2021-05-12/A14/ycwb20210512A14.pdf",
+      "title": "YDAA1420210512C",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 与 可持续发展挂钩债券 SLB 投资者保护 票息调整 SPT未达标 违约条款",
+        "retrieval_relevance": 0.8095,
+        "host_domain": "ep.ycwb.com"
+      }
+    },
+    {
+      "source_id": "src_0232e4f91fd02c71",
+      "url": "https://djckb.com/choice/20230202/64100.html",
+      "title": "djckb.com/choice/20230202/64100.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "可持续发展挂钩债券 SLB 募集资金用途 不限制 信息披露 投资者保护 绿色债券 GBP ICMA",
+        "retrieval_relevance": 0.7688,
+        "host_domain": "djckb.com"
+      }
+    },
+    {
+      "source_id": "src_55eeb824ca60fdbb",
+      "url": "https://cj.sina.com.cn/articles/view/6314832590/17864b2ce0010144yf",
+      "title": "可持续发展挂钩债券的实践与探索__财经头条__新浪财经",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 GBP 与 SLB 可持续发展挂钩债券 SLBP 信息披露 外部评审 差异",
+        "retrieval_relevance": 0.9075,
+        "host_domain": "cj.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_51001fb9db237b0b",
+      "url": "https://cnfin.com/hb-lb/detail/20211225/3495745_1.html",
+      "title": "可持续发展挂钩债券及贷款案例分析",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 GBP 与 SLB 可持续发展挂钩债券 SLBP 信息披露 外部评审 差异",
+        "retrieval_relevance": 0.8415,
+        "host_domain": "cnfin.com"
+      }
+    },
+    {
+      "source_id": "src_d201601fb54ac0af",
+      "url": "https://m.thepaper.cn/newsDetail_forward_22554691",
+      "title": "邱慈观专栏｜可持续发展挂钩债券：解析答疑",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 GBP 与 SLB 可持续发展挂钩债券 SLBP 信息披露 外部评审 差异",
+        "retrieval_relevance": 0.8195,
+        "host_domain": "m.thepaper.cn"
+      }
+    },
+    {
+      "source_id": "src_7614dde8e800870d",
+      "url": "https://climatebonds.net/files/documents/publications/365faea8-641e-452e-9b59-fcc2986d6972.pdf",
+      "title": "GBP : ICMA 的绿色债券原则",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 GBP 与 SLB 可持续发展挂钩债券 SLBP 信息披露 外部评审 差异",
+        "retrieval_relevance": 0.7975,
+        "host_domain": "climatebonds.net"
+      }
+    },
+    {
+      "source_id": "src_735d48c072c14c27",
+      "url": "https://pwc.lu/en/sustainable-finance/docs/pwc-green-social-and-sustainability-linked-bonds.pdf",
+      "title": "Green, Social, and Sustainability (linked) Bonds",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "497bc85fd73d0a1e86670f9248d9b5c76a2428dbb4f3128f85cdddab68f1f48d",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles reporting external review requirements",
+        "retrieval_relevance": 0.825,
+        "host_domain": "pwc.lu"
+      }
+    },
+    {
+      "source_id": "src_6373d9d3ccb27b83",
+      "url": "https://spowidget.iss-corporate.com/icsspoapp/file/documents/spo/externalreview-20220509-credem1.pdf",
+      "title": "External Review - Green, Social & Sustainability Bond Reporting of...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles reporting external review requirements",
+        "retrieval_relevance": 0.86,
+        "host_domain": "spowidget.iss-corporate.com"
+      }
+    },
+    {
+      "source_id": "src_3d0f4b73eb4e707c",
+      "url": "https://esgweise.com/insights/green-bonds-icma-principles-explained",
+      "title": "Green Bonds Explained — ICMA Principles & GCC... — ESGweise",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles reporting external review requirements",
+        "retrieval_relevance": 0.79,
+        "host_domain": "esgweise.com"
+      }
+    },
+    {
+      "source_id": "src_6787909e997ea91a",
+      "url": "https://bank.rbinternational.com/en/regulatory-fastlane/home/rbi-regulatory-fastlane/regulatory-learning1/sustainable-finance/Article-N6.html",
+      "title": "ICMA Green Bond Principles vs. EU Green Bond Standard",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles reporting external review requirements",
+        "retrieval_relevance": 0.79,
+        "host_domain": "bank.rbinternational.com"
+      }
+    },
+    {
+      "source_id": "src_949a78d5ab9a47e3",
+      "url": "https://sustainalytics.com/esg-research/resource/corporate-esg-blog/about-green-bond-principles",
+      "title": "Green Bond Principles: What Issuers Need to Know",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles reporting external review requirements",
+        "retrieval_relevance": 0.755,
+        "host_domain": "sustainalytics.com"
+      }
+    },
+    {
+      "source_id": "src_9c9b3c0f252a219b",
+      "url": "https://climatebonds.net/files/documents/publications/全球可持续债券市场2022年第三季度概览_2025-02-17-162916_vozx.pdf",
+      "title": "ABS 5%",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 与 可持续发展挂钩债券 SLB 投资者保护 票息调整 SPT未达标 违约条款",
+        "retrieval_relevance": 0.8009,
+        "host_domain": "climatebonds.net"
+      }
+    },
+    {
+      "source_id": "src_22430773e914916e",
+      "url": "https://chinachild.ru/blog/delovaya-perepiska-na-kitayskom-shablony",
+      "title": "Деловая переписка на китайском — 15 шаблонов писем",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 与 可持续发展挂钩债券 SLB 投资者保护 票息调整 SPT未达标 违约条款",
+        "retrieval_relevance": 0.2253,
+        "host_domain": "chinachild.ru"
+      }
+    },
+    {
+      "source_id": "src_1699631aa6e2af6f",
+      "url": "https://un.org/en/climatechange/science/climate-issues/greenwashing",
+      "title": "Greenwashing – the deceptive tactics behind... | United Nations",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Sustainability-Linked Bond step-up coupon SPT missed default investor protection greenwashing recourse",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "un.org"
+      }
+    },
+    {
+      "source_id": "src_9fcd8054bbe4838c",
+      "url": "https://legalclarity.org/how-to-invest-in-sustainability-esg-bonds-and-etfs",
+      "title": "How to Invest in Sustainability: ESG, Bonds, and ETFs - LegalClarity",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Sustainability-Linked Bond step-up coupon SPT missed default investor protection greenwashing recourse",
+        "retrieval_relevance": 0.497,
+        "host_domain": "legalclarity.org"
+      }
+    },
+    {
+      "source_id": "src_1815f443d090b29c",
+      "url": "https://todayesg.com/icma-greenwashing-report-on-sustainable-finance",
+      "title": "International Capital Market Association Releases Greenwashing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Sustainability-Linked Bond step-up coupon SPT missed default investor protection greenwashing recourse",
+        "retrieval_relevance": 0.497,
+        "host_domain": "todayesg.com"
+      }
+    },
+    {
+      "source_id": "src_ca9300fa9c559ee1",
+      "url": "https://phenomenalworld.org/analysis/greenwashing-structural-adjustment",
+      "title": "“Greenwashing” Structural Adjustment - Lara Merling",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Sustainability-Linked Bond step-up coupon SPT missed default investor protection greenwashing recourse",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "phenomenalworld.org"
+      }
+    },
+    {
+      "source_id": "src_ff396a464ce5da16",
+      "url": "https://institutionalassetmanager.co.uk/recalibrating-transition-finance-and-green-bonds",
+      "title": "Recalibrating transition finance and green bonds",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Sustainability-Linked Bond step-up coupon SPT missed default investor protection greenwashing recourse",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "institutionalassetmanager.co.uk"
+      }
+    },
+    {
+      "source_id": "src_aaa664fb86809059",
+      "url": "https://en.wikipedia.org/wiki/SLB",
+      "title": "SLB - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_d6fafb1a529537f5",
+      "url": "https://slb.com/",
+      "title": "SLB , a global technology company | SLB",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "slb.com"
+      }
+    },
+    {
+      "source_id": "src_1d4095a02d2a4174",
+      "url": "https://careers.slb.com/",
+      "title": "Careers | SLB Careers",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "careers.slb.com"
+      }
+    },
+    {
+      "source_id": "src_6cb93d21158b5473",
+      "url": "https://finance.yahoo.com/quote/SLB",
+      "title": "SLB N.V. ( SLB ) Stock Price, News, Quote & History - Yahoo Finance",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "finance.yahoo.com"
+      }
+    },
+    {
+      "source_id": "src_6d3a8c7e5103b417",
+      "url": "https://slb.com/about/who-we-are",
+      "title": "Who We Are | SLB",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "slb.com"
+      }
+    },
+    {
+      "source_id": "src_dfe02b0a341d659d",
+      "url": "https://careers.slb.com/job-listing",
+      "title": "Jobs | SLB Careers",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "SLB 票息上调 25bp 触发事件 是否构成违约 绿色债券 募集资金挪用 追索权 法律",
+        "retrieval_relevance": 0.2254,
+        "host_domain": "careers.slb.com"
+      }
+    },
+    {
+      "source_id": "src_5cfb5d227ac716c6",
+      "url": "https://icmagroup.org/sustainable-finance/the-principles-guidelines-and-handbooks/green-bond-principles-gbp",
+      "title": "Green Bond Principles »",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "b215c4c6bb74b20075a2c7593cbdd2faec2796b1dacdba91697e0d91d3bd59fe",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles differences use of proceeds KPI disclosure",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "icmagroup.org"
+      }
+    },
+    {
+      "source_id": "src_55111447df41f069",
+      "url": "https://deepmentor.co/prelims-pyq/2026/2026-Q92-economy-sustainability-bonds",
+      "title": "UPSC Prelims 2026: A bond whose proceeds are used... | deepmentor",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles differences use of proceeds KPI disclosure",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "deepmentor.co"
+      }
+    },
+    {
+      "source_id": "src_1f89e086d5f70b48",
+      "url": "https://planetarypl.com/the-archive/sustainable-bonds-and-fixed-income/analysis-of-green-bonds",
+      "title": "Analysis of Green Bonds",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles differences use of proceeds KPI disclosure",
+        "retrieval_relevance": 0.825,
+        "host_domain": "planetarypl.com"
+      }
+    },
+    {
+      "source_id": "src_271378bbcc587c49",
+      "url": "https://morganlewis.com/-/media/files/publication/presentation/webinar/2023/gpca-recent-trends-sustainable-financing_12jan23.pdf",
+      "title": "Recent Trends in Sustainability Financing",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles differences use of proceeds KPI disclosure",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "morganlewis.com"
+      }
+    },
+    {
+      "source_id": "src_a4c6510248d095ba",
+      "url": "https://greenfinanceportal.env.go.jp/pdf/greenbond_guideline_eng.pdf",
+      "title": "Green Bond and Sustainability Linked Bond Guidelines",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "ICMA Green Bond Principles vs Sustainability-Linked Bond Principles differences use of proceeds KPI disclosure",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "greenfinanceportal.env.go.jp"
+      }
+    },
+    {
+      "source_id": "src_6cee039413cad40c",
+      "url": "https://climatebonds.net/news-events/blog/转型金融工具指南-可持续发展挂钩债券slbs",
+      "title": "Climate Bonds | 转型金融工具指南：可持续发展挂钩债券(SLBs)",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 区别 募集资金用途 信息披露 投资者保护",
+        "retrieval_relevance": 0.8902,
+        "host_domain": "climatebonds.net"
+      }
+    },
+    {
+      "source_id": "src_e12477fbab01492b",
+      "url": "https://finance.sina.com.cn/zl/china/2021-04-29/zl-ikmxzfmk9743408.shtml",
+      "title": "施懿宸：可持续发展挂钩债券的国际实践分析与借鉴_新浪财经_新浪网",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 区别 募集资金用途 信息披露 投资者保护",
+        "retrieval_relevance": 0.8226,
+        "host_domain": "finance.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_fcad9d97c0cef841",
+      "url": "http://ccxgf.com.cn/article/342.html",
+      "title": "2024...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "绿色债券 可持续发展挂钩债券 SLB 区别 募集资金用途 信息披露 投资者保护",
+        "retrieval_relevance": 0.7803,
+        "host_domain": "ccxgf.com.cn"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_a001a098854eeae7",
+      "source_id": "src_9945bf3136d8ea6c",
+      "text": "目前，已有两家中资企业赴境外发行3笔可持续发展挂钩债券（SLB），募集资金约15.5亿美元。 那么，什么类型的企业适合境外发行绿色债券呢？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2f536ef774d226eb08cdd61fc59bcf569fceff2db312eab90a9af469746d581b"
+    },
+    {
+      "evidence_id": "ev_1852024ee0fdbda1",
+      "source_id": "src_a610ef8049249d15",
+      "text": "二、什么是可持续发展挂钩债券？ 该产品在募集资金用途以及结构设计上有什么具体要求？ 答：可持续发展挂钩债券是指将债券条款与发行人可持续发展目标相挂钩的债务融资工具。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "07c7365ca78a1a67bf458bb99ac6feb8eca3942d14fdaeafc9405ba2a88a490f"
+    },
+    {
+      "evidence_id": "ev_495ed0680e8e510e",
+      "source_id": "src_1f4c546d266dd75d",
+      "text": "随着全球可持续金融市场规模突破5万亿美元，Wilson-Otto预测，兼具高透明度和政策导向性的可持续债券将持续主导跨境资本流动。 目前绿色债券、社会债券、可持续挂钩债券的表现有哪些差异？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d92bf45437b471ec9fb15c9e3b09253a1bd33ae78dcf56d2dc6518cab43d9fe4"
+    },
+    {
+      "evidence_id": "ev_e11d47e39331627e",
+      "source_id": "src_7057144d27c11158",
+      "text": "国绿色及可持续主题债券市场的发展状 SLB和实体层面认证. 况涵盖了绿色、社会责任和可持续发展 债券GSS市场以及可持续发展挂钩债 券SLB和转型债券市场统称为GSS+ 市场等范围。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d009d0e3e264fd74a3cbf7ea24ab7df3342539d5d1b8df422ef909bad4a3f1f"
+    },
+    {
+      "evidence_id": "ev_43512c0ddc5e85cd",
+      "source_id": "src_82b23446dfdbd913",
+      "text": "什么是可持续发展挂钩债券？ 07/04/2025ESG术语. 可持续发展挂钩债券（Sustainability-Linked Bond, SLB）是一种创新型债务工具，其核心特征是将债券条款与发行人预先设定的可持续发展绩效目标（SPTs）直接挂钩。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "87db2f3ac86b2ac49d42b56eda580ffcbff24db9416d02bee69df60dd5501854"
+    },
+    {
+      "evidence_id": "ev_580a58b8ed9dbfba",
+      "source_id": "src_710d5ae9d5a428fc",
+      "text": "有 700 多支绿色基金以及 很多创新的绿色金融产品如 ABS、ETF、绿色 保险、碳金融等。 总之我国的绿色金融成长很快尤其是在 去年绿色信贷增长 33%绿色债券发行量增长 170%。而转型 债券与可持续发展挂钩债券的不同之处为转型 债券对募集资金的具体用途做出了要求。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9561f5ebe62a50017dc709871b37a34e4925269c02bbc86ab6e5b13cc9539aef"
+    },
+    {
+      "evidence_id": "ev_2f79210dce70abf7",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "Regardless, in select cases, issuers may choose to combine the GBP/SBP approach with the SLBP. Thus, please note that SLB are not to be. 2 Chinese language translation courtesy of Bank of China and reviewed by ICMA.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "8573d97cdec06bc256ec9a86cdcc904e30356f2cd1491ebec1b3b4f39cfe5951"
+    },
+    {
+      "evidence_id": "ev_129030ba78fc7f0c",
+      "source_id": "src_1593c52a97fb01b6",
+      "text": "年末中国的本外币绿色贷款余额已达. 万亿元累计发行绿色债券、碳中和债券、 可持续发展挂钩债券和其他可持续发展债券超过 万亿元已成为全球最重要的绿色金融市场之一。会《绿色债券存续期信息披 性风险纳入投资决策过程 息披露标准。 露指南》等。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7a15dd65ca33bd36762680442b94e8fcbcbc3c68371f14ff1959c28f84998311"
+    },
+    {
+      "evidence_id": "ev_8b3d20e4477e539a",
+      "source_id": "src_02c8a7b7edb53f8d",
+      "text": "因可持续发展挂钩债券对 募 集 资 金 用 途 无 特 定 要 求 能 够让前期无法发行绿色债券的 企业参与到可持续债券市场 中。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9fc3d72d896384fdabd4b43a189319058c04eb5c995ede311334cea131cfce7a"
+    },
+    {
+      "evidence_id": "ev_529e43f0d114f44f",
+      "source_id": "src_0232e4f91fd02c71",
+      "text": "可持续发展挂钩债券为什么会受到市场追捧 「指数挂钩型债券」.与ESG领域传统的绿色、社会和可持续发展（GSS）债券相比，可持续发展挂钩债券有两大亮点——. 第一，它与绩效指标绑定，体现了管理前瞻性。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ffea8841e8d225ad9213e12c307bde223972ceffe8725c423bfe269b925fe670"
+    },
+    {
+      "evidence_id": "ev_e6f4337236dec5dc",
+      "source_id": "src_a610ef8049249d15",
+      "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。 截至目前，可持续发展挂钩债券累计发行总额约 亿美元，发行人涉及电力、钢铁、水泥、建筑等多个行业。 目标”提出后，传统行业加速出清，部分行业尤其是钢铁、煤炭等碳密集或高环境影响行业面临着严峻挑战，转型发展面临巨大资金缺口。 为进一步落实碳达峰、碳中和重大决策部署，加大金融对传统行业低碳转型的支持力度，交易商协会在借鉴国际经验的基础上，创新推出可持续发展挂钩债券，通过债券结构设计，在为企业提供资金支持的同时，锁定发行人公司整体的减排目标或主营业务的减排效果，敦促企业有计划、有目标的实现可持续发展，助推经济可持续发展。 二、什么是可持续发展挂钩债券？ 该产品在募集资金用途以及结构设计上有什么具体要求？ 答：可持续发展挂钩债券是指将债券条款与发行人可持续发展目标相挂钩的债务融资工具。 挂钩目标包括关键绩效指标（ ）和可持续发展绩效目标（ ），其中，关键绩效指标（ ）是对发行人运营有核心作用的可持续发展业绩指标；可持续发展绩效目标（ ）是对关键绩效指标的量化评估目标，并需明确达成时限。 第三方机构对相关指标进行验证，如果关键绩效指标在上述时限未达到（或达到）预定的可持续发展绩效目标，将触发债券条款的调整。 同时，挂钩目标与被挂钩的债券条款设置原则上不允许变更，应在募集说明书中披露，如存续期确因宏观经济、政策环境及发行人发生重大变化等导致挂钩目标或被挂钩的债券条款需变动的应对措施，包括但不限于召开持有人会议、第三方机构出具专项报告等。 募集资金用途方面， 可持续发展挂钩债券募集资金可用于一般用途，无特殊要求。 但如与绿色债务融资工具、乡村振兴票据等创新产品相结合，募集资金用途应满足专项产品的要求，用于绿色项目或乡村振兴领域。 债券结构设计方面 ，不设具体要求或限制，发行人可根据实际情况进行条款设计，可以包括但不限于票面利率调升（或调降）、提前到期、一次性额外支付等。 三、哪些类型的发行人适合注册发行可持续发展挂钩债券？ 答：可持续发展挂钩债券可以引导发行人从机构层面实质性推动可持续发展目标的实现，有助于实现发行人主体层面的“碳减排”、“碳中和”。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "5daef04d4f3ebc9029d345d3069419fe79b9824a28e717ef623c508449a2662b"
+    },
+    {
+      "evidence_id": "ev_ad807e2e0c9ca391",
+      "source_id": "src_a610ef8049249d15",
+      "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置明确的基准值与目标值； （三）指标的量化结果可以被权威第三方机构事后校验和重复验算； （四）可以体现一个时间阶段内的成效并具备可持续性，不建议设立短期指标、与长期运营关系不大的一次性指标或仅体现某一具体时点状态的指标。 可持续发展绩效目标（ ）的设定，应遵循“实质性、可验证、时限性”原则，应当具体、量化、可测度，可与基准值、行业标准值或平均值等进行比较，可被实际值所验证，与“一切照常”的运营情景相比在可持续发展方面有实质性改进。 五、发行人在 可持续发展挂钩债券 注册发行及存续期信息披露至少应包括哪些内容？ 注册发行阶段 ，发行人应在募集说明书中明确披露挂钩目标的定义与表述、挂钩目标遴选依据（相关性、稳定性、可靠性）、挂钩目标测算方法与评估频率、触发债券结构改变的具体绩效表现数值、债券结构可能发生的变化等，应尽可能披露至少过往三年的挂钩目标历史数据。 同时，披露发行人与第三方机构的权责义务相关内容，包括但不限于明确各方权利义务、应承担的责任、投资人救济机制以及承诺不得利用内幕消息进行交易，确保各方权责利对等。 存续期内 ，发行人最晚应于存续期内每年 日前披露可持续发展挂钩债券专项报告，直至最后一次触发事件的时间段结束。 报告内容包括但不限于报告期内挂钩目标的绩效结果、实现可持续发展效益、挂钩目标绩效结果对债券结构所产生的影响，以及任何有助于投资人了解发行人相关行为的信息。 六、可持续发展挂钩债券是否需要聘请第三方机构进行评估验证？ 对开展可持续发展挂钩债券评估验证业务的第三方机构有哪些具体要求？ 发行人聘请第三方机构开展发行前评估认证，确保可持续发展挂钩债券在关键绩效指标遴选、可持续发展绩效目标选择、计算方法及依据、基数计算等方面客观公正，有助于企业整体转型并与国家未来发展方向相契合。 同时，存续期内发行人必须聘请第三方机构就关键绩效指标的可持续发展绩效目标表现开展评估认证并出具验证报告，验证频率至少一年一次，直至完成最后一次触发事件验证为止。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "af2c3d96184500498c2e0a6d62c61af8f61f7e5c2e683b076238a97b2c9a5e28"
+    },
+    {
+      "evidence_id": "ev_3dfe82109df96abd",
+      "source_id": "src_a610ef8049249d15",
+      "text": "第三方机构应具有完善的内部管理制度和专业人员配备，拥有气候环境测评或评估认证工作经历的专业人员； 参与绿色债券评估认证项目不少于 个，或在国内完成的清洁发展机制（ ）或自愿减排项目的审定与核查、 ISO14064 企业温室气体核查等领域项目总计不少于 个，承担过绿色金融、温室气体控制和管理、碳排放核算等若干国家级、省市级或监管机构等的课题研究。 公司具有良好的业绩、项目经验和市场声誉。 同时，评估或验证方法需依照国家相关部委或主管部门制定的测算方法，确保测算方法有据可依。 七、在可持续发展挂钩债券注册发行及存续期， 第三方机构 出具的评估 验证报告至少应包括哪些内容？ 注册发行阶段， 第三方机构应按照“可计算、可核查、可检验”的原则开展评估工作并出具评估报告，报告内容包括但不限于声明与介绍、机构职责与评估范围、工作方法与实施程序、挂钩目标定义与遴选依据（相关性、稳定性、可靠性）、历史数据可得性与基准值选取依据、挂钩目标测算方法与评估频率等。 存续期内 ，第三方机构最晚应于存续期内每年 日前出具独立的验证报告，且应与发行人专项报告同步披露。 报告应包括但不限于该期间内挂钩目标的验证结果与测算依据和方法，是否会导致债券结构调整等。 如测量范围、挂钩目标的遴选或验证等方面发生任何重大变化，第三方机构应评估有关变化。 可持续发展挂钩债券的全称命名规则如何设定？ 答：满足可持续发展挂钩债券相关要求的，注册发行时可添加“可持续挂钩”专项标识。 如债务融资工具全称为“张三公司 2021 年度第一期中期票据（可持续挂钩）”。 对触发年份的验证报告出具时间有何要求，在报告出具后如何与债券条款的调整相结合？ 答：触发年份验证报告应最晚于付息日 支付日前至少 个工作日出具，且应不晚于 日。 发行人需同步披露行权公告，行权操作须按照《银行间市场清算所股份有限公司含权债券行权业务操作须知》进行操作。 如触发提前赎回条款，则应于赎回日前 个工作日，由发行人通过交易商协会认可的网站披露《提前赎回公告》；如触发调整票面利率条款，则于付息日前 个工作日，由发行人通过交易商协会认可的网站披露《债券票面利率以及幅度调整的公告》；如触发一次性支付条款，由发行人通过交易商协会认可的网站披露《一次性支付公告》。 十、统一注册模式或 常规品种既有注册额度是否可以变更为可持续发展挂钩债券？ 如何完成变更流程？ 答：统一注册模式 DFI/TDFI 项下，或中期票据（ ）、定向债务融资工具（ ）等常规性单独注册品种的既有额度可变更为可持续发展挂钩债券（ ），需报交易商协会按照发行前变更流程办理。 如通过发行前变更转为可持续发展挂钩债券的，需向交易商协会提交更新后的募集说明书、法律意见书等变更资料，以及评估报告等补充要件，并在孔雀开屏系统流程提交时在“发行条款要素变更”处注明“拟变更为中期票据 定向债务融资工具（可持续挂钩）”。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "632eea43176fc44b963aaba3c1e418c784b9f1bf526c7813ed652828b5706ef2"
+    },
+    {
+      "evidence_id": "ev_1d64667d990c8a29",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Sustainability-Linked Bond Principles 可持续发展挂钩债券原则 Voluntary Process Guidelines 自愿性流程指引 June 2020 2020 年 6 月 DISCLAIMER: “For the avoidance of doubt, the English language version of Sustainability-Linked Bond Principles published on the ICMA website is the official version of the document. This translation is provided for general reference only. ” 免责声明：“为避免产生歧义，请以 ICMA 网站发布的英文版 《Sustainability-Linked Bond Principles》为准，中文版仅供参考。 ” INTRODUCTION Sustainability-Linked Bonds (“SLBs”) aim to further develop the key role that debt markets can play in funding and encouraging companies that contribute to sustainability (from an Environmental and/or Social and/or Governance perspective, “ESG”). For such a role to be played and the market to thrive, integrity is of the utmost importance. The Sustainability- Linked Bond Principles (“SLBP”) provide guidelines that recommend structuring features, disclosure and reporting. They are intended for use by market participants and are designed to drive the provision of information needed to increase capital allocation to such financial products. The SLBP are applicable to all types of issuers and any type of financial capital market instruments. 可持续发展挂钩债券（“SLB”）是为了进一步促进、鼓励对于可持续发展（从环境及 /或社会及/或公司治理的角度，亦称为“ESG”）做出贡献的公司进行债务资本市场融 资的一个债券种类 。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "9f503e7c6d32f5a3e65524641798de7a055a2eace8e1e09458222b1d8554dfc7"
+    },
+    {
+      "evidence_id": "ev_72af851a6195dfc1",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of material, quantitative, pre-determined, ambitious, regularly monitored and externally verified sustainability (ESG) objectives through Key Performance Indicators “KPIs” and Sustainability Performance Targets (“SPT”). 符合本《原则》的可持续发展挂钩 债券为投资人提供了透明、可靠、 且具备可持续发 展资质的产品投资机会。 可持续发展挂钩债券通过设定关键绩效指标 “KPI”和可持续 发展绩效目标（“SPT”），激励发行人实现具有实质性、可计量、可预测、具有一定 宏伟规划的可持续发展（ESG）目标，并对该目标定期监控，并且进行外部验证。 The SLBP are collaborative and consultative in nature based on the contributions of Members and Observers of the Green Bond and Social Bond Principles (referred to as the Principles or “GBP/SBP”), and of the wider community of stakeholders. The Principles are coordinated by the Executive Committee. The SLBP will be updated from time to time in order to reflect the development and growth of the global Sustainability-Linked Bond market. 本《原则》是《绿色债券原则》 和《社会责任债券原则》（下文简称“GBP/SBP ”） 成员和观察员单位 以及其他相关机构协商合作 、在执行委员会 协调下得出的成果。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "7659b39aaf4536700f0d8329a45fec4ad0e7f2aa57e8bf68a940f5bc42d2eaf1"
+    },
+    {
+      "evidence_id": "ev_6ce778d2259483de",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forward-looking performance-based instrument. 可持续发展 挂钩债券具有一定财务和/ 或结构特性，该财务和/ 或结构特征将会 根据发 行人是否实现其 预设的可持续发展/ESG 目标而发生改变。 这 意味着，发行人须 明确 （包括在债券文件中）承诺在预定时间内 改善其在可持续发展方面的绩效表现 。 可持 续发展挂钩债券是前瞻性的、基于绩效指标的债券工具。 Those objectives are (i) measured through predefined Key Performance Indicators (KPIs) and (ii) assessed against predefined Sustainability Performance Targets (SPTs). 可持续发展/ESG 目标：（1）通过预设关键绩效指标（KPI）进行衡量；（2）根据预设 的可持续发展绩效目标（SPT）进行比对评估。 The proceeds of SLBs are intended to be used for general purposes, hence the use of proceeds is not a determinant in its categorisation. Regardless, in select cases, issuers may choose to combine the GBP/SBP approach with the SLBP. Thus, please note that SLB are not to be Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 confused with Sustainability Bonds (i. e.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "f68f9af72edd1a23eb81040dce613eadc0b193264a193d91f1fb65574ee17916"
+    },
+    {
+      "evidence_id": "ev_8172854fc9427899",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity in the development of the Sustainability-Linked Bond market by clarifying the approach for issuance of a SLB. 本《原则》是一套自愿性流程指引，通过明确可持续发展挂钩债券的发行 方法和最佳 实践，将前瞻性的 ESG 目标嵌套进债券发行过程中，提升可持续发展挂钩债券市场发 展中的互信程度。 The SLBP are intended for broad use by the market: they provide issuers with guidance on the key components involved in launching a credible and ambitious SLB; they aid investors by promoting accountability of issuers in their sustainability strategy and availability of information necessary to evaluate their SLB investments; and they assist underwriters by moving the market towards expected approaches to structuring and disclosures that will facilitate credible transactions. 本《原则》可供市场广泛使用：为发行人发行具备可信度、在可持续发展方面有宏伟 规划决心的可持续发展 挂钩债券所需满足的关键要素内容 提供指引；通过推动发行人 建立可持续发展战略并 促使发行人为 其战略负责，并进行必要的信息披露，以供 投资 人评估其可持续发展挂钩 债券的投资绩效；建立债券结构化与信息披露标准规范，为 承销商提供指引从而促进交易的可信度。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "eb801507a37a78a5762ea1951b5bd6b325c0227bb2a2af198fdaa2e47954188a"
+    },
+    {
+      "evidence_id": "ev_a004211c0537cc9f",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必要披露信息 ，且该信息必须 透明、准确及真实。 The SLBP have five core components: Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 1. Selection of Key Performance Indicators (KPIs) 2. Calibration of Sustainability Performance Targets (SPTs) 3. Bond characteristics 4. Reporting 5. Verification 本《原则》的五大核心要素： 1. 关键绩效指标（KPI）的遴选 2. 可持续发展绩效目标（SPT）的校验 3. 债券特性 4. 报告 5. 验证 The SLBP recommend that issuers publicly communicate their rationale for the selection of their KPI(s) (i. e. relevance, materiality), the motivation for the SPT(s) (i. e.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "6523bb2e8d1adcccec8ff5f3b6a089e54a00d91ad920b47368a789c43f7f5b79"
+    },
+    {
+      "evidence_id": "ev_ebf347a2d85802a4",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "ambition level, consistency with overall strategic planning and benchmarking approach), the potential change of bond financial and/or structural characteristics and the trigger events leading to such a change, intended post issuance reporting and independent verification, as well as an overall representation of the issuer’ s alignment with the SLBP. 本《原则》建议发行人公开披露其选择关键绩效指标的 依据（例如指标相关性、重要 性）、可持续发展绩效目标的动机（即在可持续发展方面的规划决心 、与其总体战略 计划及基准标杆的一致性）、债券在财务和/或结构特征上可能的变化、导致该变化的 触发事件、预期的债券存续期报告和独立验证，以及发行人是否 遵照本《原则》的整 体声明。 For the sake of clarity, a non-exhaustive checklist of recommended or necessary pre and post issuance disclosures is provided in Appendix II. 附录 2 提供了可持续发展挂钩债券在发行前和债券存续期内，建议或必须要做出的信 息披露清单，并非详尽清单，仅供参考。 1 Selection of KPIs 关键绩效指标的遴选 The credibility of the Sustainability Linked Bond market will rest on the selection of one or more KPI(s). It is important to the success of this instrument to avoid the proliferation of KPIs that are not credible. The issuer’ s sustainability performance is measured using sustainability KPIs that can be external or internal. 可持续发展挂钩债券市场的信誉将取决于一个或多个关键绩效指标的遴选。 避免不可 靠的关键指标被广泛使用，对于该工具的市场成功至关重要。 衡量 发行人的可持续发 展绩效的关键绩效指标，可以是外部机构或发行人自行公布的指标。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-6",
+      "content_hash": "2dac75f935165e373a21645d12f991c784cf8fc19b14f3f8fe4cda6bdad70b1d"
+    },
+    {
+      "evidence_id": "ev_0cf506d33bda0535",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "First and foremost, the KPIs should be material to the issuer’s core sustainability and business strategy and address relevant environmental, social and/ [CONTENT_TRUNCATED: 16677 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-7",
+      "content_hash": "4826e56c1842a0ab5dd0eb9e77f355e4100b42946557c3cc5c679001ad28c3db"
+    },
+    {
+      "evidence_id": "ev_3c2e1174c73addbb",
+      "source_id": "src_55eeb824ca60fdbb",
+      "text": "可持续发展挂钩债券在助力传统行业转型升级和可持续发展方面具有重要意义，是绿色债券市场的有益补充。 本文分析了可持续发展挂钩债券的特点，梳理了当前我国可持续发展挂钩债券的发行情况，剖三是可持续发展挂钩债券信息披露要求较高，有利于对融资的全流程监管。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c7e8a5e1411a31f99495ccce00cb9c20891e745111ed41334afaac22ed0fa23f"
+    },
+    {
+      "evidence_id": "ev_c524fe58d5038313",
+      "source_id": "src_51001fb9db237b0b",
+      "text": "可持续发展挂钩债券原则（SLBP）旨在实施可持续发展挂钩债券（SLB）结构和披露的标准方法，使投资者可以相信可持续挂钩债券的资金用途。 可持续发展挂钩债券原则包括五个核心组件：",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "19f0e0f9a916b18584a9ed56e102909be1a20eb589ed257311531bd6131492be"
+    },
+    {
+      "evidence_id": "ev_1593c22bafeb7c06",
+      "source_id": "src_d201601fb54ac0af",
+      "text": "邱慈观专栏｜可持续发展挂钩债券：解析答疑.在有限的转型金融工具里，可持续发展挂钩债券（Sustainability Linked Bond，SLB）是其中一种债务融资工具。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "184d64ee8d5606a89fa3c9ce45684fa977cbcc04460ff2c76e00c62caead6e4f"
+    },
+    {
+      "evidence_id": "ev_7cec395b76cb8199",
+      "source_id": "src_a610ef8049249d15",
+      "text": "答：可持续发展挂钩债券是指将债券条款与发行人可持续发展目标相挂钩的债务融资工具。八、可持续发展挂钩债券的全称命名规则如何设定？ 答：满足可持续发展挂钩债券相关要求的，注册发行时可添加“可持续挂钩”专项标识。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "31a9f788b0ddb8c04429ffd39b3b3e54f5802e45f7a7f8a9190f6cdba3f2fe17"
+    },
+    {
+      "evidence_id": "ev_fcf1f004e6c63dd1",
+      "source_id": "src_7614dde8e800870d",
+      "text": "GBDB: 绿色债券数据库 GBP: ICMA 的绿色债券原则 GHG: 温室气体排放 GSS: 绿色、社会责任、与可持续 发展债券 GSS+: GSS 和可持续挂钩债券 KPI: 关键绩效 S&S: 社会责任和可持.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ec18266f1b6a798b6e60f0a9a80d7d47b149e10824b6f42b9672383b1e9867f8"
+    },
+    {
+      "evidence_id": "ev_0488c5e9a77a9b27",
+      "source_id": "src_735d48c072c14c27",
+      "text": "ICMA - Sustainability-Linked Bond Principles. Luxembourg Stock Exchange and displayed on LGX.External review requirements. Required verification of the Green Bond Framework and the Final Allocation Report by an accredited verifier to confirm conformity with the EU-GBS.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "824a5d000b7334a55f9a1b7faa8f374937fb228ff2c7f0ddbe9b45ada321a8be"
+    },
+    {
+      "evidence_id": "ev_632f7ab031acc334",
+      "source_id": "src_6373d9d3ccb27b83",
+      "text": "Green bond issuers are required to report on both the use of green bond proceeds, as well as the expected environmental impacts at least on an annual basis. ICMA’s HFIR has been chosen as the benchmark for this analysis as it represents the most widely adopted standard.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "5ab277babeec088152395f8d375f38231a01f6c0683ed3731e49f1d816f5a6d4"
+    },
+    {
+      "evidence_id": "ev_0a237c1d4038a8e4",
+      "source_id": "src_3d0f4b73eb4e707c",
+      "text": "Green Bonds Explained: The ICMA Principles and GCC Issuance. What green bonds are, how the ICMA Green Bond Principles structure them, and why green and sustainable debt issuance is growing rapidly across the GCC.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "574696e6ef9eb00e615498801acef433d7bcb31ada58f71ebea89d1b7f9a5702"
+    },
+    {
+      "evidence_id": "ev_222999337a3c822f",
+      "source_id": "src_6787909e997ea91a",
+      "text": "Green bonds are financial instruments whose proceeds are used to finance sustainable investments. Currently, there are several voluntary green bond frameworks financial institutions can follow when issuing green bonds.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "4d90769970a55b8b472147b525a4c7813c90c3f001b6ecb47de9dac46e288623"
+    },
+    {
+      "evidence_id": "ev_4ba7d67beeb9348a",
+      "source_id": "src_949a78d5ab9a47e3",
+      "text": "The Green Bond Principles explicitly define the eligible categories under which projects can be labeled green.Reporting: It’s an integral part of an issuer’s green bond framework. Issuers are required to report on the allocation of proceeds to eligible green projects.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0045d6f8ee74dd3bcc195736d7d5cc74eba278cd100dc39c3cab12246c390b1a"
+    },
+    {
+      "evidence_id": "ev_3a751aee129d1eec",
+      "source_id": "src_735d48c072c14c27",
+      "text": "Green, Social and Sustainability (linked) Bonds The role of a verifier/certifier 2 | Green, Social and Sustainability (linked) Bonds Table of Contents Foreword by the CEO of the Luxembourg Stock Exchange 3 1. Definitions 4 2. A glance at the market 10 3. Labeling principles and standards 16 4. The role of a verifier/certifier 22 5. Contacts 24 Green, Social and Sustainability (linked) Bonds | 3 Table of Contents Foreword The COVID-19 pandemic accelerated the focus on sustainability and sustainable finance is gaining ground. According to some estimates, new sustainable debt issuance across the world almost doubled in 2020 compared to new issuance in 2019. The Luxembourg Green Exchange (LGX) saw record levels of new sustainable bonds in 2020, and reached the 1,000 sustainable bonds mark in May 2021, within 5 years of launch. Sustainable debt instruments have raised financing for numerous sustainable development projects in multiple countries over the past years and are crucial in the transition to a low-carbon and more inclusive economy. Since the pandemic hit, the social dimension has been brought to the fore, with a steep uptick in social bond issuances as a result. Given the new sense of urgency in addressing climate change and societal issues, the strong growth in green, social, sustainability and sustainability-linked bonds is likely to continue.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "6e695f2f1cebb624ce68985cbf142f0ae66fa86ab806dfb016082ead6ae4c1e2"
+    },
+    {
+      "evidence_id": "ev_155129d6cd165189",
+      "source_id": "src_735d48c072c14c27",
+      "text": "With the evolving European initiatives and regulatory framework on sustainable finance, including the upcoming EU Green Bond Standard (EU GBS), Europe is in the driving seat of sustainable finance worldwide. Other important drivers behind the growth of sustainable debt instruments are increasing awareness and education, changes in investors’ behaviour, and last but not least, access to more reliable, comparable, and harmonised sustainability data. Leading international standards for green, social, sustainability and sustainability- linked bonds, such as those provided by the International Capital Market Association, recommend that issuers of such bonds undergo an external review of their bond framework and their allocation report. The draft EU GBS proposes to make the pre- and post-issuance external review mandatory, and furthermore introduces the idea of a market-based registration scheme for external verifiers. This development highlights the increasingly important role of the external review in the sustainable debt issuance and reporting processes, to reduce the risk of greenwashing and make sure that all issuers deliver on their commitments.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "96c60a2534a22a54cc4fe79bc6f18af8dec39c44eacf82dc95993b54f25ffdc8"
+    },
+    {
+      "evidence_id": "ev_7d0310c43a74218d",
+      "source_id": "src_735d48c072c14c27",
+      "text": "If we are to reach the global objectives defined in the United Nations Sustainable Development Goals and the Paris Agreement, we need to transform our financial system, mobilise massive amount of capital and reorient these capital flows towards investments with a positive social or environmental impact. As we have just entered the “make or break decade for climate action”, as stated by European Commission President Ursula von der Leyen, we need to make finance part of the solution to our global challenges and contribute to making finance sustainable by default. Julie Becker, CEO of the Luxembourg Stock Exchange 4 | Green, Social and Sustainability (linked) Bonds The International Capital Market Association (“ICMA”) defines Green Bonds as any type of bond instrument where the proceeds will be exclusively applied to finance or re-finance projects with clear environmental benefits. 1 The Climate Bonds Initiative (“CBI”) refers to Climate Bonds as themed asset-backed or ring-fenced bonds issued to raise finance for climate change mitigation or adaptation related projects or programmes. 2 The World Bank defines Green Bonds as debt securities that are issued to raise capital specifically to support climate related or environmental projects.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "33eecf13da315ec36388c1cf3ddfac3a8e660aa0bc5c58109fef13c8afa5b19f"
+    },
+    {
+      "evidence_id": "ev_d711b6acee942800",
+      "source_id": "src_735d48c072c14c27",
+      "text": "3 The European Investment Bank (“EIB”) names their bonds issued to finance or re-finance projects with environmental sustainability objectives as Climate Awareness Bonds. 4 Finally, the European Commission (“EC”), through the appointed Technical Expert Group (“TEG”) on sustainable finance, has defined EU Green Bonds (“EU GBS”) as any type of listed or unlisted bond or capital market debt instrument whose proceeds shall be exclusively used to finance or refinance in part or in full new and/or existing green projects meeting environmentally objectives as defined in the EU Taxonomy. 5 While different definitions exist, a common aspect embedded into these, is how the use of proceeds of all the above defined bonds are to be allocated, i. e. towards projects that bring environmental and climate benefits. Going a step further into definitions of Green Bonds, there are four types of Green Bonds being used nowadays in the market: Standard Green Use of Proceeds Bond: a standard recourse-to-the- issuer debt obligation. Green Revenue Bond: a non- recourse-to-the issuer debt obligation in which the credit exposure in the bond is to the pledged cash flows of the revenue streams, fees, taxes etc. , and whose use of proceeds go to related or unrelated green project(s).",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "c84ef6c601714e02b86a8d3c76b3d32510398c298fe975ce1927f0c8dcd7b506"
+    },
+    {
+      "evidence_id": "ev_a39a76795db9352d",
+      "source_id": "src_735d48c072c14c27",
+      "text": "Green Project Bond: a project bond for a single or multiple green project(s) for which the investor has direct exposure to the risk of the project(s) with or without potential recourse to the issuer. Green Securitised Bond and Covered Bond: a bond collateralised by one or more specific green project(s), including but not limited to Covered Bonds, Asset-Backed Securities (“ABS”), Mortgage-Backed Security (“MBS”), and other structures. The first source of repayment is generally the cash flows of the assets. Green Bonds 1 Although for financial market participants, the definition of a bond might be clear and widely understood, can we say the same when it comes to Green Bonds? Are Green Bonds the same as Climate Bonds or Climate Awareness Bonds? Let’s try to clear it all up: 1. https://www. icmagroup. org/assets/ documents/Regulatory/Green-Bonds/ Guidance-Handbook-March-2020-120320. 2. https://www. climatebonds. net/standard/ about/history 3. http://documents. worldbank. org/curated/ en/400251468187810398/pdf/99662- REVISED-WB-Green-Bond-Box393208B- PUBLIC. pdf 4. https://www. eib. org/en/investor_relations/ cab/index. htm 5. https://ec. europa. eu/info/sites/info/files/ business_economy_euro/banking_and_ finance/documents/200309-sustainable- finance-teg-green-bond-standard-usability- guide_en.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "36202e41e69e7539e5c1e743529842a905735f3746ebfa384bd7baeac57e2fc1"
+    },
+    {
+      "evidence_id": "ev_184eedabb67bc130",
+      "source_id": "src_735d48c072c14c27",
+      "text": "pdf Definitions 4 | Green, Social and Sustainability (linked) Bonds Green, Social and Sustainability (linked) Bonds | 5Green, Social and Sustainability (linked) Bonds | 5 Case study 1 Case study 2 Issuer Volvo Category Standard Green Use of Proceeds Bond Standards used ICMA - Green Bond Principles Green listing venue Luxembourg Stock Exchange and displayed on LGX Market Euro Multilateral Trading Facility (“Euro MTF”) Amount EUR 500 mio issued (Programme amount EUR 3 bn) Use of proceeds To finance or refinance, in whole or in part, new or existing, projects, assets or activities within the Green Bond Principles category Clean transportation (e. g. Research and Development (“R&D”) and the production of zero emission battery electric vehicles) Issuer Nord/LB Luxembourg S. A. Covered Bond Bank Category Green Securitised Bond and covered bonds Standards used ICMA - Green Bond Principles Green listing venue Luxembourg Stock Exchange and displayed on LGX Market Euro Multilateral Trading Facility (“Euro MTF”) Amount EUR 10 bn Programme for the Issuance of Debt Instruments Use of proceeds Exclusively to finance and/or refinance projects within the renewable energy sector.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-6",
+      "content_hash": "50dfd094c371715915a7c59400bb0815429722c01f432ece7f8f36a958843034"
+    },
+    {
+      "evidence_id": "ev_9371d3d9225faf2e",
+      "source_id": "src_735d48c072c14c27",
+      "text": "Eligible Assets are renewable energy projects in EU, EEA, OECD and countries with a high quality rating by recognised rating agencies of the following two categories: (i) Financing of the purchase, design, construction, development and/or installation of the generation of renewable energy from the following renewable energy sources: On- and offshore wind power; Solar power; and (ii) Financing for the connection, transmission, transformation and storage of renewable energy. 6 | Green, Social and Sustainability (linked) Bonds Focusing on the macro-categories of bonds that are being issued in the market: Social Bonds are any type of bond instrument where the proceeds will be exclusively applied to finance or re-finance in part or in full new and/or existing eligible social projects and which are aligned with the four core components of the Social Bond Principles (“SBP”). Different types of Social Bonds exist in the market. Similarly to Green Bonds, Social Bonds can be classified as follows: Social and Sustainability Bonds The basic idea around Green Bonds is being applied to other areas and has set a blueprint for the launch of Social Bonds, Sustainability Bonds, Blue Bonds and other Thematic Bonds that raise financing dedicated to a specific social development purpose, might it be a social project, a sea protection or yet another type of sustainability-related project.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-7",
+      "content_hash": "58b54ea610237e267a6081bb11f89d7ef81b849a29ccd254124f6380d70938f7"
+    },
+    {
+      "evidence_id": "ev_74f7c4346cdd7c90",
+      "source_id": "src_735d48c072c14c27",
+      "text": "• Standard Social Use of Proceeds Bond: a standard recourse-to-the-issuer debt obligation aligned with the SBP . • Social Revenue Bond: a non-recourse-to-the-issuer debt obligation aligned with the SBP in which the credit exposure in the bond is to the pledged cash flows of the revenue streams, fees, taxes etc. , and whose use of proceeds go to related or unrelated social project(s). • Social Project Bond: a project bond for a single or multiple social project(s) for which the investor has direct exposure to the risk of the project(s) with or without potential recourse to the issuer, and that is aligned with the SBP . • Social Securitised and Covered Bond: a bond collateralised by one or more specific social project(s), including but not limited to covered bonds, ABS, MBS, and other structures; and aligned with the SBP . The first source of repayment is generally the cash flows of the assets. This type of bond covers, for example, covered bonds backed by social housing, hospitals, schools. 6 6. https://www. icmagroup. org/assets/docum [CONTENT_TRUNCATED: 16041 chars total, showing first 10000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-8",
+      "content_hash": "35f62b6624bc2634f63af408957a434ade92b89c2e454669bd4804923af83683"
+    },
+    {
+      "evidence_id": "ev_5d4543617e31596b",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "The cornerstone of a SLB is that the bond’s financial and/or structural characteristics can vary depending on whether the selected KPI(s) reach (or not) the predefined SPT(s), i.e. the SLB will need to include a financial and/or structural impact involving trigger event(s).",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "f17730cace1f0e94ca79da69e0a1a07e1cdbe4e6e5a92ad9c8e7f77370fc36fc"
+    },
+    {
+      "evidence_id": "ev_0bbb02657da98d53",
+      "source_id": "src_9c9b3c0f252a219b",
+      "text": "截至2022年9月30日据CBI统计绿色、 社会责任、可持续发展、可持续发展挂钩和转 型债券的累计发行量已超过3.5万亿美元。可持续发展挂钩债券 SLB必须明确表明实体的可持续发展绩 效目标SPT。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5381ffee712e78fe3a0fba0d8156617e5737a6d5fa83814eaeac6e96e419753c"
+    },
+    {
+      "evidence_id": "ev_59924c42255ad3a7",
+      "source_id": "src_22430773e914916e",
+      "text": "> 张总,您好!合同第三条关于交货期的描述,我们想稍作修改:从\"30天内\"改为\"30个工作日内\",以排除节假日影响。 其他条款我方均同意。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bf5fce990421b0be3ec3d2590ec6995ca26f5ef51a3c913ac0ce930339123cbf"
+    },
+    {
+      "evidence_id": "ev_37a8d7a09ac2a469",
+      "source_id": "src_1699631aa6e2af6f",
+      "text": "Greenwashing presents a significant obstacle to tackling climate change. By misleading the public to believe that a company or other entity is doing more to protect the environment than it is, greenwashing promotes false solutions to the climate crisis that distract from and delay...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "011d0f42356b071ab46a562d9f16c22edf93a139708df955e0d425e393295616"
+    },
+    {
+      "evidence_id": "ev_44c3fc302f08b1f5",
+      "source_id": "src_9fcd8054bbe4838c",
+      "text": "Sustainability-linked bonds work differently from green bonds.If the company misses its renewable energy or emissions reduction goal, the coupon rate steps up — the issuer pays a penalty in the form of higher interest to bondholders.13International Finance Corporation (IFC).",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "8ea53348e3a3247946a3a20b169f380a8fe8d5a9a2e97b9e44325ffe6008882d"
+    },
+    {
+      "evidence_id": "ev_5ee0827735db6731",
+      "source_id": "src_1815f443d090b29c",
+      "text": "ToggleGreenwashing Report on Sustainable FinanceICMA’s Perspective on Greenwashing Definition...in the areas of sustainable bonds, sustainability-linked loans and sustainable funds.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5fd79579e6a9cbf1d40fc47dfec9466654aac7727491058662d37df5858fc0d4"
+    },
+    {
+      "evidence_id": "ev_f020cf3c45929327",
+      "source_id": "src_ca9300fa9c559ee1",
+      "text": "Countries of the global South have few options for dealing with debt distress. Seeking relief generally means that the debtor nation must enter into an IMF agreement, and most negotiations around restructuring rely heavily on the IMF’s debt sustainability assessments.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6ce64492d69019420253073c323ea8bfcf7604576ec7923d4074736e5bab83db"
+    },
+    {
+      "evidence_id": "ev_53ea4793b837903a",
+      "source_id": "src_ff396a464ce5da16",
+      "text": "In contrast, Sustainability-Linked Loans and Bonds (SLLs and SLBs) are simply meant to be broadly used by the issuing/borrowing corporation to fund its transition.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b0ba214ce294520c99f9a4bcbf709e14b5ba48cd13aa6152603237a622b6d968"
+    },
+    {
+      "evidence_id": "ev_16dceea98c2617c4",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必要披露信息 ，且该信息必须 [CONTENT_TRUNCATED: 16677 chars total, showing first 6000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "db0b0d95739b74ff57a14683e071b2518adb9ff8ef8e0dfde470fc38eea193e6"
+    },
+    {
+      "evidence_id": "ev_cb642cd95b9d6f35",
+      "source_id": "src_aaa664fb86809059",
+      "text": "SLB supplies the petroleum industry with services such as seismic data processing, formation evaluation, well testing and directional …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bfa2028127ce4a633008cc6e024b79b95e2e1f54726548c50ac90da7369ffb3d"
+    },
+    {
+      "evidence_id": "ev_8553256abefff2e5",
+      "source_id": "src_d6fafb1a529537f5",
+      "text": "Explore the latest news, stories and perspectives from SLB. Step into energy's future with thought leaders from around the world. …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bd68292b63b09cb4767c274cfee2da43576e331a2115ebd4d36d05ff465a9038"
+    },
+    {
+      "evidence_id": "ev_a35e960ee8e31ce4",
+      "source_id": "src_1d4095a02d2a4174",
+      "text": "We are a global technology company driving energy innovation for a balanced planet. Global in outlook, local in practice, we're united …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "8775cb475a6b0ee831ade6546fc8648694b6a7cf19e21cf692a6f1ff8fff6b93"
+    },
+    {
+      "evidence_id": "ev_633cc64de2ce9d7d",
+      "source_id": "src_6cb93d21158b5473",
+      "text": "Find the latest SLB N.V. (SLB) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "1d58cb2437cfb5f9a997adfe4241a8b3fc4d6b555d56799abb276fef4f44820d"
+    },
+    {
+      "evidence_id": "ev_628ecabfe41df3cc",
+      "source_id": "src_6d3a8c7e5103b417",
+      "text": "Schlumberger is the world’s leading provider of technology for reservoir characterization, drilling, production, and processing to a …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c4b78658c937da9b76875f70e42a716b7ecf6d9e26ada52ed3da58b5743d8b07"
+    },
+    {
+      "evidence_id": "ev_a60eb20460217034",
+      "source_id": "src_dfe02b0a341d659d",
+      "text": "Filter by experience level below to view all Early Careers openings, or learn about our opportunities and offerings for those just …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "50da312ab1131b3af645aece61110330d92f269bfe5545391deacb5136b554e5"
+    },
+    {
+      "evidence_id": "ev_f15487679a237bf4",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "Green Bond Principles. Green Project Mapping. Pre-issuance Checklist.The Green Bond Principles (GBP) seek to support issuers in financing environmentally sound and sustainable projects that foster a net-zero emissions economy and protect the environment.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "49af0a0f5f6a85e1c2416d0e6dfd89359d54bef72539517d3addea722da1ab98"
+    },
+    {
+      "evidence_id": "ev_b5700d47fb9c5e59",
+      "source_id": "src_55111447df41f069",
+      "text": "ICMA taxonomy of thematic bonds, Green vs Social vs Sustainability bonds (Use-of-Proceeds principles).The key word in the question is \"combination of both environmental and social\", only the Sustainability Bond carries that dual mandate.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "57d598b206c594840166cf4a126b9b25c332a31fb1e258bcd83ed2cc5cbd4c24"
+    },
+    {
+      "evidence_id": "ev_467a18807f039604",
+      "source_id": "src_1f89e086d5f70b48",
+      "text": "ICMA Green & Sustainability-Linked Bond Principles. Principle.Sustainability-Linked Bond Principles (SLBP): The Sustainability-Linked Bond Principles, also established by ICMA, differ from the GBP because they focus on performance rather than project financing.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "b74243f7899916d7ffc9597419d8cdc91d5ec416519742f8b278ccc40c8f293a"
+    },
+    {
+      "evidence_id": "ev_8222521f9a85d651",
+      "source_id": "src_271378bbcc587c49",
+      "text": "• Green Bond Principles • Social Bond Principles • Sustainability Bond Guidelines • Sustainability-Linked Bond Principles. The principles and guidelines are available at www.icmagroup.org. 5. What are the core components for alignment with the ICMA...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "096b4845bfc1f9a0ab31abcbd23cf5c00e240042783c7f2720f99d44b8837bd0"
+    },
+    {
+      "evidence_id": "ev_1644d05705aaab4b",
+      "source_id": "src_a4c6510248d095ba",
+      "text": "Green bonds and green loans commit to using the funds raised for green projects, while sustainability-linked bonds and sustainability-linked loans commit to achieving certain sustainability performance targets. Investors and financial institutions also take these...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e1faf884b57a2c1be3ff6f488e0eb6bfac87b01bed5d68bde1fa8bfa06f8289a"
+    },
+    {
+      "evidence_id": "ev_af1f061256f4be38",
+      "source_id": "src_a8c31b0b6da221aa",
+      "text": "SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义.此版中文翻译由中国银行提供并由 ICMA 香港办公室复核。 APPENDIX II 附录2 SLB DISCLOSURE DATA CHECKLIST 可持续发展挂钩债券信息披露清单.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "fa61a6e36b689b28f6c7015caca1980fb845faa684253d0d1c4166e97181ac93"
+    },
+    {
+      "evidence_id": "ev_0cf6f0ff749b206d",
+      "source_id": "src_6cee039413cad40c",
+      "text": "可持续发展挂钩债券是一种将债券条款与发行人可持续发展目标相挂钩的债务融资工具，和绿色债券、碳中和债券等限定募集资金用途的产品相比，其. 在发行主体、募资用途、债券结构等方面都更加灵活。4）投资人偏好结构最稳健的SLB.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "d33447de301b6bf8d2b8b9743e6d70580f8ab42ece78089635184837bdf93ee1"
+    },
+    {
+      "evidence_id": "ev_62ad889a877fddd8",
+      "source_id": "src_e12477fbab01492b",
+      "text": "相较于国际的SLB原则，我国的可持续发展挂钩债券呈现出如下特点：可持续发展挂钩债券与其他两者的区别在于SLB是由《可持续发展挂钩债券原则》界定的，而其他两者则分别由《绿色债券原则》（GBP）、《社会责任债券原则》（SBP）两套.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "31ba8ed99736e1d16b323ae758e27f3a1759df7c859a9224d34035e5ed2372ce"
+    },
+    {
+      "evidence_id": "ev_63eff641ec6f3c17",
+      "source_id": "src_a610ef8049249d15",
+      "text": "等其他行业可持续发展的资金需求，4月28日，交易商协会推出可持续发展挂钩债券（Sustainability-Linked Bond，简称SLB），并汇总整理了常见的业务问答，形成《可持续发展挂钩. 债券（SLB）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "171f410404d0fbdb78d03bb1ccd51b0bf09b27380c3ba61351a6c85542a06da5"
+    },
+    {
+      "evidence_id": "ev_6aa72b28adb8977a",
+      "source_id": "src_fcad9d97c0cef841",
+      "text": "可持续发展挂钩债券（含低碳转型挂钩债券，以下统称为“SLB”）是指将债券条款与发行人可持续发展目标（含低碳转型目标）相挂钩的融资工具，通过债券结构.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "2ec93ee71e503e28de89d6451131dc536d24384a76216a4c02be9f0f7bef1a65"
+    },
+    {
+      "evidence_id": "ev_8399a32def0203ff",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "About ICMA Membership Market Practice & Regulatory Policy Sustainable Finance FinTech & Digitalisation Education & Training Events Media & Market Data Welcome to the International Capital Market Association For over 50 years ICMA and its members have worked together to promote the development of the international capital and securities markets, pioneering the rules, principles and recommendations which have laid the foundations for their successful operation. Mission statement History Governance Members The Board The Chief Executive The Executive Committee The General Meeting The Nomination Committee The Auditors ICMA Competition Law Guidelines The Regions ICMA Councils & Committees ICMA in Asia Pacific ICMA Social Networks ICMA Future Leaders ICMA Women's Network ICMA Mentoring Platform International Affiliations Capacity Building ICMA product information ICMA Brussels Portal Employment Opportunities A global community for the capital markets ICMA has over 630 members located in 71 jurisdictions drawn from both the sell and buy-side of the market. Benefits of Membership Apply for Membership List of ICMA Member Firms ICMA Members Register ICMA engages with its global membership on market practice and regulatory policy issues through its expert forums. Here are the key sections covering our work programmes, including contact details of ICMA staff responsible for each area.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "956cb3547722fa40d7dc0aca2ddf8c100ce31911129370d7eb2662be0e4fdf1e"
+    },
+    {
+      "evidence_id": "ev_ebb5ac598c0ad385",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "Primary Markets ICMA Primary Market Handbook - Home Primary Market Committees ICMA Primary Market Practices Committee ICMA Asia Pacific Bond Syndicate Forum ICMA Legal and Documentation Committee ICMA Asia Pacific Legal & Documentation Forum Public Sector Issuer Forum ICMA Corporate Issuer Forum ICMA Financial Institution Issuer Forum Primary Market Topics Accounting and Auditing Benchmark Reform and Transition to Risk-Free Rates MiFID II/R in Primary Markets Primary Markets Conduct (non-MiFID) Electronification Primary Markets Technology Mapping Directory Dialogue with Investors Prospectuses PRIIPs KIDs Retail Access to Bond Markets Market Infrastructure and Asset Servicing Market Abuse Regulation (MAR) - Primary Market Aspects Periodic Reporting / Continuing Obligations Taxation (Primary Markets) Other ICMA Primary Market Materials Primary Market Products Bank Capital Infrastructure Financing Islamic Finance Private Placements Retail Structured Products Securitisation Sovereign Debt Securitisation (Asset Management Perspective) Primary Market Innovation (including FinTech & Digitalisation) Secondary Markets ICMA’s Rules and Recommendations for the Secondary Market ICMA Consultation on the Buy-in Rules Secondary Market Practices Committee (SMPC) and related Working Groups ICMA SMPC and Terms of Reference MiFID II/R Working Group CSDR-SD Working Group SMPC - Secondary Market Ru",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "c07070d83b3d7319efa5dd4f51703aaeb0e63d70ab05753b395aa8ef96b753b3"
+    },
+    {
+      "evidence_id": "ev_652534b54ce3a9bc",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "S. Treasuries Latest ICMA Repo News Sanctions on Russia: Considerations for repo and secondary trading Asset Management ICMA AMIC Councils and Committees AMIC Committee Composition Current Active Subcommittees and Working Groups AMIC Publications AMIC Reports and Reviews AMIC Responses Regulatory Issues EU Sustainable Finance Disclosure Regulation (SFDR) MiFID II/R - Research Unbundling Securitisation Other Euro Commercial Paper and Certificates of Deposit Capital Markets Union / Savings & Investment Union International Capital Market Fragmentation ICMA Quarterly Report ICMA Legal & Regulatory Helpdesk ICMA serves as Secretariat to the GBP, the SBP, the SBG and the SLBP, providing support while advising on governance and other issues. ICMA also leads numerous other initiatives in sustainable finance. ICMA is at the forefront of the financial industry’s contribution to the development of sustainable finance and in the dialogue with the regulatory and policy community.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "1bd7183496acf0bf56eb4a3befefc1733c4cad771564893c10030ed24d2251b9"
+    },
+    {
+      "evidence_id": "ev_8eda17fe4b78f5cf",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "The Principles & related guidance Codes of Conduct for ESG Ratings and Data Products Providers Membership, governance & working groups of the Principles Sustainable Bond Market Data Regulatory responses & commentary Other sustainable finance guidance, research & initiatives Contacts & Principles Helpdesk Archive ICMA Quarterly Report ICMA seeks to mainstream relevant FinTech developments and market electronification through all of its initiatives, activities and fora. FinTech and market electronification are addressed through ICMA’s various committees, working groups and work streams as well as through bilateral discussions with member firms and technology providers.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "9b9a8baf68362eb537adf474a231d629466a564ecb30258423d4dbaa52e21606"
+    },
+    {
+      "evidence_id": "ev_d1c11d4261d2afc4",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "FinTech Advisory Committee and related groups ICMA FinTech Advisory Committee DLT Bonds Working Group ICMA Bond Data Taxonomy Working Group Electronic Trading Council (ETC) FINOS Common Domain Model (CDM) Artificial Intelligence in Capital Markets (AICM) Working Group ICMA FinTech Directories ICMA Primary Markets FinTech Directory ICMA Electronic Trading FinTech Directory ICMA Repo Trading FinTech Directory ICMA Operations FinTech Directory ICMA Distributed Ledger Technology (DLT) Regulatory directory FinTech resources Frequently Asked Questions on DLT and blockchain in bond markets FinTech Publications, Consultations and Reports FinTech Regulatory Roadmap Tracker of New FinTech Applications in Bond Markets FinTech Glossary Showcase of ICMA member FinTech & software vendors Artificial Intelligence Regulatory Developments Tracker ICMA Quarterly Report Studying with ICMA ICMA Education has been setting the standard of training excellence in the capital markets for almost five decades with courses covering everything from market fundamentals to latest developments and more. FIND OUT MORE LINKEDIN DOWNLOAD THE BROCHURE Already studying? MY ICMA EDUCATION Accreditations Online Self-Study Courses Financial Market Foundations Courses Debt Capital Markets Courses Fixed Income Trading & Strategies Courses Financial Markets Operations Courses Fintech & Digitalis",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "6a8b06448647982c379f98e3adb1b22515d02bce3be608cc7f62a707b04cf729"
+    },
+    {
+      "evidence_id": "ev_3de842db798f4e7c",
+      "source_id": "src_5cfb5d227ac716c6",
+      "text": "[CONTENT_TRUNCATED: 8325 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "12c1870d47a7711e92d82a124f69bfab04363bdf439e7e601c2f203a7b0a2cb1"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_e162b7141882e069",
+        "text": "这是两类工具最根本的分野。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0886,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_72af851a6195dfc1",
+          "ev_6ce778d2259483de",
+          "ev_ebf347a2d85802a4"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_454b699ee6c41614",
+        "text": "绿色债券遵循 ICMA《绿色债券原则》（GBP）的\"募集资金用途\"（Use-of-Proceeds）模式，募集资金须专项投向可再生能源、节能、污染防治等合格绿色项目类别，并要求对资金进行分配追踪 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_652534b54ce3a9bc",
+          "ev_8399a32def0203ff",
+          "ev_ebb5ac598c0ad385"
+        ],
+        "source_ids": [
+          "src_5cfb5d227ac716c6"
+        ],
+        "reason": "证据仅说明ICMA担任GBP秘书处及机构介绍，未直接陈述GBP的募集资金用途模式、合格项目类别或资金分配追踪要求。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_652534b54ce3a9bc",
+            "source_id": "src_5cfb5d227ac716c6",
+            "text": "S. Treasuries Latest ICMA Repo News Sanctions on Russia: Considerations for repo and secondary trading Asset Management ICMA AMIC Councils and Committees AMIC Committee Composition Current Active Subcommittees and Working Groups AMIC Publications AMIC Reports and Reviews AMIC Responses Regulatory Issues EU Sustainable Finance Disclosure Regulation (SFDR) MiFID II/R - Research Unbundling Securitisation Other Euro Commercial Paper and Certificates of Deposit Capital Markets Union / Savings & Inves",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8399a32def0203ff",
+            "source_id": "src_5cfb5d227ac716c6",
+            "text": "About ICMA Membership Market Practice & Regulatory Policy Sustainable Finance FinTech & Digitalisation Education & Training Events Media & Market Data Welcome to the International Capital Market Association For over 50 years ICMA and its members have worked together to promote the development of the international capital and securities markets, pioneering the rules, principles and recommendations which have laid the foundations for their successful operation. Mission statement History Governance",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8344ce71e18ca7d8",
+        "text": "在中国语境下，资金还须对照《绿色债券支持项目目录》并接受专户或台账管理。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1875,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dd0d2fbdc13b90d2",
+        "text": "ICMA《可持续发展挂钩债券原则》（SLBP，2020年6月）原文明确指出：\"可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因素\" 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3329,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1d64667d990c8a29",
+          "ev_8172854fc9427899",
+          "ev_72af851a6195dfc1"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1d64667d990c8a29",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Sustainability-Linked Bond Principles 可持续发展挂钩债券原则 Voluntary Process Guidelines 自愿性流程指引 June 2020 2020 年 6 月 DISCLAIMER: “For the avoidance of doubt, the English language version of Sustainability-Linked Bond Principles published on the ICMA website is the official version of the document. This translation is provided for general reference only. ” 免责声明：“为避免产生歧义，请以 ICMA 网站发布的英文版 《Sustainabili",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5b76824b18899336",
+        "text": "SLBP 同时提醒勿将 SLB 与可持续发展债券混淆——后者才是有特定募集资金用途的债券种类；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.7312,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8172854fc9427899",
+          "ev_1d64667d990c8a29",
+          "ev_e6f4337236dec5dc"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa",
+          "src_a610ef8049249d15"
+        ],
+        "reason": "A possible polarity conflict requires semantic verification.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1d64667d990c8a29",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Sustainability-Linked Bond Principles 可持续发展挂钩债券原则 Voluntary Process Guidelines 自愿性流程指引 June 2020 2020 年 6 月 DISCLAIMER: “For the avoidance of doubt, the English language version of Sustainability-Linked Bond Principles published on the ICMA website is the official version of the document. This translation is provided for general reference only. ” 免责声明：“为避免产生歧义，请以 ICMA 网站发布的英文版 《Sustainabili",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_515913625d82f5c8",
+        "text": "在某些情况下发行人可将 SLBP 与 GBP/SBP 结合参照使用 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.7042,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8172854fc9427899",
+          "ev_72af851a6195dfc1",
+          "ev_6ce778d2259483de"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "A possible polarity conflict requires semantic verification.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8e84ec85fa3835d2",
+        "text": "由此产生约束逻辑的差异：绿色债券是资产端约束，监管对象是资金流向；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.245,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_8172854fc9427899",
+          "ev_e6f4337236dec5dc"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f974d15d19f1e5a9",
+        "text": "SLB 是主体端约束，通过关键绩效指标（KPI）和可持续发展绩效目标（SPT）锁定发行人整体的可持续发展承诺。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5909,
+        "support_evidence_ids": [
+          "ev_6ce778d2259483de",
+          "ev_72af851a6195dfc1"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6ce778d2259483de",
+          "ev_72af851a6195dfc1",
+          "ev_e6f4337236dec5dc"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9c6851d30dda3e59",
+        "text": "这也决定了两者的适配主体不同——绿色债券要求发行人有可识别的绿色资产，对高碳行业形成进入门槛；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2019,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_ad807e2e0c9ca391",
+          "ev_72af851a6195dfc1"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_22472634982aecdc",
+        "text": "SLB 则不限主体，交易商协会 2021 年推出 SLB 时即明确其旨在\"满足传统行业转型或新能源等其他行业可持续发展的资金需求\" 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6919,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_3dfe82109df96abd",
+          "ev_ad807e2e0c9ca391"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3dfe82109df96abd",
+            "source_id": "src_a610ef8049249d15",
+            "text": "第三方机构应具有完善的内部管理制度和专业人员配备，拥有气候环境测评或评估认证工作经历的专业人员； 参与绿色债券评估认证项目不少于 个，或在国内完成的清洁发展机制（ ）或自愿减排项目的审定与核查、 ISO14064 企业温室气体核查等领域项目总计不少于 个，承担过绿色金融、温室气体控制和管理、碳排放核算等若干国家级、省市级或监管机构等的课题研究。 公司具有良好的业绩、项目经验和市场声誉。 同时，评估或验证方法需依照国家相关部委或主管部门制定的测算方法，确保测算方法有据可依。 七、在可持续发展挂钩债券注册发行及存续期， 第三方机构 出具的评估 验证报告至少应包括哪些内容？ 注册发行阶段， 第三方机构应按照“可计算、可核查、可检验”的原则开展评估工作并出具评估报告，报告内容包括但不限于声明与介绍、机构职责与评估范围、工作方法与实施程序、挂钩目标定义与遴选依据（相关性、稳定性、可靠性）、历史数据可得性与基准值选取依据、挂钩目标测算方法与评估频率等。 存续期内 ，第三方机构最晚应于存续期内每年 日前出具独立的验证报告，且应与发行人专项报告同步披露。 报告应包括但不限于该期间内挂钩目标的验证结果与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_eee7e34ee0161f44",
+        "text": "值得注意的是，中国的\"转型债券\"与 SLB 的区别恰在于前者对募集资金具体用途做出了要求 ，可见\"是否限定用途\"是中国可持续债务工具谱系中的关键分界线。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2485,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_580a58b8ed9dbfba"
+        ],
+        "source_ids": [
+          "src_710d5ae9d5a428fc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_580a58b8ed9dbfba",
+            "source_id": "src_710d5ae9d5a428fc",
+            "text": "有 700 多支绿色基金以及 很多创新的绿色金融产品如 ABS、ETF、绿色 保险、碳金融等。 总之我国的绿色金融成长很快尤其是在 去年绿色信贷增长 33%绿色债券发行量增长 170%。而转型 债券与可持续发展挂钩债券的不同之处为转型 债券对募集资金的具体用途做出了要求。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_290050f84ba516f0",
+        "text": "两类债券的披露框架均由 ICMA 原则搭建，但重心截然相反。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3412,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a004211c0537cc9f",
+          "ev_72af851a6195dfc1",
+          "ev_6ce778d2259483de"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a004211c0537cc9f",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0ccf37df7eb54cce",
+        "text": "绿色债券的披露围绕四大核心组件展开：募集资金用途、项目评估与遴选流程、募集资金管理、存续期报告 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f15487679a237bf4",
+          "ev_8399a32def0203ff",
+          "ev_ebb5ac598c0ad385"
+        ],
+        "source_ids": [
+          "src_5cfb5d227ac716c6"
+        ],
+        "reason": "证据未列出GBP四大核心组件（募集资金用途、项目评估与遴选、资金管理、报告）。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f15487679a237bf4",
+            "source_id": "src_5cfb5d227ac716c6",
+            "text": "Green Bond Principles. Green Project Mapping. Pre-issuance Checklist.The Green Bond Principles (GBP) seek to support issuers in financing environmentally sound and sustainable projects that foster a net-zero emissions economy and protect the environment.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8399a32def0203ff",
+            "source_id": "src_5cfb5d227ac716c6",
+            "text": "About ICMA Membership Market Practice & Regulatory Policy Sustainable Finance FinTech & Digitalisation Education & Training Events Media & Market Data Welcome to the International Capital Market Association For over 50 years ICMA and its members have worked together to promote the development of the international capital and securities markets, pioneering the rules, principles and recommendations which have laid the foundations for their successful operation. Mission statement History Governance",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_24f432d3a7f588f5",
+        "text": "存续期内发行人须发布年度资金分配报告与环境影响（效益）报告，直至募集资金全部投放完毕。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3447,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_e6f4337236dec5dc",
+          "ev_3dfe82109df96abd"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5fcadda39d14c5dc",
+        "text": "披露性质偏\"事后\"——回答\"钱去了哪里、产生了什么环境效益\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1944,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_e6f4337236dec5dc",
+          "ev_1d64667d990c8a29"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5748832cc324353d",
+        "text": "SLB 的披露围绕 SLBP 五大核心组件：KPI 选择、SPT 校验（目标雄心度）、债券结构设计、报告、外部验证 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.4527,
+        "support_evidence_ids": [
+          "ev_a004211c0537cc9f",
+          "ev_72af851a6195dfc1"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a004211c0537cc9f",
+          "ev_72af851a6195dfc1",
+          "ev_ebf347a2d85802a4"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a004211c0537cc9f",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b57d2ecce3e1eccc",
+        "text": "发行前须披露 KPI 的定义与遴选依据、SPT 的基准与测算方法、触发数值以及条款变化机制；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5195,
+        "support_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd",
+          "ev_ebf347a2d85802a4"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3dfe82109df96abd",
+            "source_id": "src_a610ef8049249d15",
+            "text": "第三方机构应具有完善的内部管理制度和专业人员配备，拥有气候环境测评或评估认证工作经历的专业人员； 参与绿色债券评估认证项目不少于 个，或在国内完成的清洁发展机制（ ）或自愿减排项目的审定与核查、 ISO14064 企业温室气体核查等领域项目总计不少于 个，承担过绿色金融、温室气体控制和管理、碳排放核算等若干国家级、省市级或监管机构等的课题研究。 公司具有良好的业绩、项目经验和市场声誉。 同时，评估或验证方法需依照国家相关部委或主管部门制定的测算方法，确保测算方法有据可依。 七、在可持续发展挂钩债券注册发行及存续期， 第三方机构 出具的评估 验证报告至少应包括哪些内容？ 注册发行阶段， 第三方机构应按照“可计算、可核查、可检验”的原则开展评估工作并出具评估报告，报告内容包括但不限于声明与介绍、机构职责与评估范围、工作方法与实施程序、挂钩目标定义与遴选依据（相关性、稳定性、可靠性）、历史数据可得性与基准值选取依据、挂钩目标测算方法与评估频率等。 存续期内 ，第三方机构最晚应于存续期内每年 日前出具独立的验证报告，且应与发行人专项报告同步披露。 报告应包括但不限于该期间内挂钩目标的验证结果与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4141b12b7c0fe0af",
+        "text": "存续期须披露 KPI 绩效进展与 SPT 达标情况，且绩效数据须经独立第三方年度核验——这是 SLBP 的强制性要求，比绿债框架下的建议性外部评审约束力更强。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1472,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a004211c0537cc9f",
+          "ev_72af851a6195dfc1",
+          "ev_ebf347a2d85802a4"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a004211c0537cc9f",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_063b6bf130ad8534",
+        "text": "披露性质呈\"前瞻承诺 + 事后验证\"的双层结构：先回答\"目标是否可信\"，再回答\"目标是否兑现、未兑现的后果是什么\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1976,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd",
+          "ev_6ce778d2259483de"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3dfe82109df96abd",
+            "source_id": "src_a610ef8049249d15",
+            "text": "第三方机构应具有完善的内部管理制度和专业人员配备，拥有气候环境测评或评估认证工作经历的专业人员； 参与绿色债券评估认证项目不少于 个，或在国内完成的清洁发展机制（ ）或自愿减排项目的审定与核查、 ISO14064 企业温室气体核查等领域项目总计不少于 个，承担过绿色金融、温室气体控制和管理、碳排放核算等若干国家级、省市级或监管机构等的课题研究。 公司具有良好的业绩、项目经验和市场声誉。 同时，评估或验证方法需依照国家相关部委或主管部门制定的测算方法，确保测算方法有据可依。 七、在可持续发展挂钩债券注册发行及存续期， 第三方机构 出具的评估 验证报告至少应包括哪些内容？ 注册发行阶段， 第三方机构应按照“可计算、可核查、可检验”的原则开展评估工作并出具评估报告，报告内容包括但不限于声明与介绍、机构职责与评估范围、工作方法与实施程序、挂钩目标定义与遴选依据（相关性、稳定性、可靠性）、历史数据可得性与基准值选取依据、挂钩目标测算方法与评估频率等。 存续期内 ，第三方机构最晚应于存续期内每年 日前出具独立的验证报告，且应与发行人专项报告同步披露。 报告应包括但不限于该期间内挂钩目标的验证结果与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b1eca3fef0b2af6d",
+        "text": "绿色债券的保护是\"用途约束 + 透明度\"型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4062,
+        "support_evidence_ids": [
+          "ev_72af851a6195dfc1",
+          "ev_8172854fc9427899"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_72af851a6195dfc1",
+          "ev_8172854fc9427899",
+          "ev_ad807e2e0c9ca391"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_18ba4f95dd9eae57",
+        "text": "其防线包括项目合规审查、第三方第二意见或认证（如 CBI 认证）、资金追踪和年度披露。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.25,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd",
+          "ev_7d0310c43a74218d"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_735d48c072c14c27"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3dfe82109df96abd",
+            "source_id": "src_a610ef8049249d15",
+            "text": "第三方机构应具有完善的内部管理制度和专业人员配备，拥有气候环境测评或评估认证工作经历的专业人员； 参与绿色债券评估认证项目不少于 个，或在国内完成的清洁发展机制（ ）或自愿减排项目的审定与核查、 ISO14064 企业温室气体核查等领域项目总计不少于 个，承担过绿色金融、温室气体控制和管理、碳排放核算等若干国家级、省市级或监管机构等的课题研究。 公司具有良好的业绩、项目经验和市场声誉。 同时，评估或验证方法需依照国家相关部委或主管部门制定的测算方法，确保测算方法有据可依。 七、在可持续发展挂钩债券注册发行及存续期， 第三方机构 出具的评估 验证报告至少应包括哪些内容？ 注册发行阶段， 第三方机构应按照“可计算、可核查、可检验”的原则开展评估工作并出具评估报告，报告内容包括但不限于声明与介绍、机构职责与评估范围、工作方法与实施程序、挂钩目标定义与遴选依据（相关性、稳定性、可靠性）、历史数据可得性与基准值选取依据、挂钩目标测算方法与评估频率等。 存续期内 ，第三方机构最晚应于存续期内每年 日前出具独立的验证报告，且应与发行人专项报告同步披露。 报告应包括但不限于该期间内挂钩目标的验证结果与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b9b2587ad7f47de0",
+        "text": "但若资金被挪用或环境效益不达标，在 GBP 这一自愿性指引层面通常仅构成声誉风险与\"洗绿\"争议，一般不触发违约或经济补偿条款。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0203,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_72af851a6195dfc1",
+          "ev_6ce778d2259483de",
+          "ev_652534b54ce3a9bc"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa",
+          "src_5cfb5d227ac716c6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7cd3eed92f7f2531",
+        "text": "联合国将\"洗绿\"界定为通过误导公众相信企业做了更多环保工作来推广虚假解决方案的行为 ，这正是绿债投资者面临的核心风险。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_37a8d7a09ac2a469"
+        ],
+        "source_ids": [
+          "src_1699631aa6e2af6f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_37a8d7a09ac2a469",
+            "source_id": "src_1699631aa6e2af6f",
+            "text": "Greenwashing presents a significant obstacle to tackling climate change. By misleading the public to believe that a company or other entity is doing more to protect the environment than it is, greenwashing promotes false solutions to the climate crisis that distract from and delay...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_48243c19e1b7c985",
+        "text": "监管层面，欧盟《绿色债券条例》（EU GBS）已为绿债引入法定披露与外部审查要求，部分弥补了自愿框架的不足 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_155129d6cd165189",
+          "ev_d711b6acee942800",
+          "ev_0488c5e9a77a9b27"
+        ],
+        "source_ids": [
+          "src_735d48c072c14c27"
+        ],
+        "reason": "证据提到EU GBS草案拟强制发行前后外部审查，但为草案（draft/upcoming）而非已生效的法定要求，且未提及法定披露要求及弥补自愿框架不足。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_155129d6cd165189",
+            "source_id": "src_735d48c072c14c27",
+            "text": "With the evolving European initiatives and regulatory framework on sustainable finance, including the upcoming EU Green Bond Standard (EU GBS), Europe is in the driving seat of sustainable finance worldwide. Other important drivers behind the growth of sustainable debt instruments are increasing awareness and education, changes in investors’ behaviour, and last but not least, access to more reliable, comparable, and harmonised sustainability data. Leading international standards for green, socia",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d711b6acee942800",
+            "source_id": "src_735d48c072c14c27",
+            "text": "3 The European Investment Bank (“EIB”) names their bonds issued to finance or re-finance projects with environmental sustainability objectives as Climate Awareness Bonds. 4 Finally, the European Commission (“EC”), through the appointed Technical Expert Group (“TEG”) on sustainable finance, has defined EU Green Bonds (“EU GBS”) as any type of listed or unlisted bond or capital market debt instrument whose proceeds shall be exclusively used to finance or refinance in part or in full new and/or exi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7c422fadb9804c49",
+        "text": "SLB 的保护是\"绩效触发 + 合同罚息\"型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2625,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_6ce778d2259483de",
+          "ev_8172854fc9427899"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0cf950381871e242",
+        "text": "债券结构中将 SPT 写入条款，未达标即触发预设的财务惩罚——市场实践中最常见的是票息上调（step-up，常见 25–75bp），亦有到期溢价赎回等安排，形成对持有人的直接、可执行补偿 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1157,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6ce778d2259483de",
+          "ev_72af851a6195dfc1",
+          "ev_a004211c0537cc9f"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_084836d4045739ad",
+        "text": "但需强调两个关键法律细节：其一，SPT 未达标不构成违约事件（event of default），仅是合同约定的票息调整，投资者获得的是事先定价的惩罚而非加速到期的追索权；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0281,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5d4543617e31596b",
+          "ev_a004211c0537cc9f",
+          "ev_72af851a6195dfc1"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5d4543617e31596b",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The cornerstone of a SLB is that the bond’s financial and/or structural characteristics can vary depending on whether the selected KPI(s) reach (or not) the predefined SPT(s), i.e. the SLB will need to include a financial and/or structural impact involving trigger event(s).",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_a004211c0537cc9f",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The SLBP recommend a clear process and transparent commitments for issuers, which investors, banks, underwriters, placement agents and others may use to understand the financial and/or structural characteristics of any given SLB. The SLBP emphasise the recommended and necessary transparency, accuracy and integrity of information that will be disclosed and reported by issuers to stakeholders. 本《原则》为发行人规划了清晰的流程和信息披露框架，投资人 、银行、承销商、销 售机构及其他各方可据此了解可持续发展 挂钩债券的财务和/或结构特点。 本《原则》 强调发行人向利益相关方披露和报告的建议披露信息和必",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c5cd9dade77140c0",
+        "text": "其二，两类债券在发行人信用违约（不付本息）时求偿地位完全相同，差异仅在 ESG 维度。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1393,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_72af851a6195dfc1",
+          "ev_6ce778d2259483de",
+          "ev_8172854fc9427899"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1d33c717cfe8674f",
+        "text": "SLB 保护机制的固有弱点在于其效果完全取决于条款设计质量：若 SPT 设置宽松（\"低垂果实\"式目标）、基准可回溯调整、或罚息幅度过小且仅在后期一次性触发，持有人实际获得的保护非常有限。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1801,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_6ce778d2259483de",
+          "ev_0bbb02657da98d53"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa",
+          "src_9c9b3c0f252a219b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_544100873e2e7918",
+        "text": "换言之，SLB 将绿债的\"洗绿\"风险转化为\"目标注水\"风险——操纵点从资金流向转移到了 KPI 选择与 SPT 雄心度上。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1219,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6ce778d2259483de",
+          "ev_5d4543617e31596b",
+          "ev_72af851a6195dfc1"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5d4543617e31596b",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The cornerstone of a SLB is that the bond’s financial and/or structural characteristics can vary depending on whether the selected KPI(s) reach (or not) the predefined SPT(s), i.e. the SLB will need to include a financial and/or structural impact involving trigger event(s).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2765b1948dece1a2",
+        "text": "且目前 SLB 尚无类似 EU GBS 的法定框架，保护更依赖个案合同设计与第三方核验的执行质量。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1641,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_a001a098854eeae7",
+          "ev_1d64667d990c8a29"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_9945bf3136d8ea6c",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a001a098854eeae7",
+            "source_id": "src_9945bf3136d8ea6c",
+            "text": "目前，已有两家中资企业赴境外发行3笔可持续发展挂钩债券（SLB），募集资金约15.5亿美元。 那么，什么类型的企业适合境外发行绿色债券呢？",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2cb2ed383390c89d",
+        "text": "本质上是两种治理范式：绿色债券以事前用途限定防范\"资金挪用\"，SLB 以事后绩效罚息防范\"承诺落空\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2007,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8172854fc9427899",
+          "ev_e6f4337236dec5dc",
+          "ev_6ce778d2259483de"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa",
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_64255bea2073c38f",
+        "text": "前者管\"投入\"，后者管\"产出\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_c36f5caac28a1019",
+        "text": "互补而非替代：对拥有充足绿色资产的新能源等行业，绿债的用途约束更直接；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.181,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_ad807e2e0c9ca391",
+          "ev_8172854fc9427899"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15",
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_856b7cccb5cba852",
+        "text": "对钢铁、水泥、煤炭等缺乏合格项目但确有转型意愿的高碳行业，SLB 提供了可及的转型融资渠道 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3603,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6f4337236dec5dc",
+          "ev_ad807e2e0c9ca391",
+          "ev_3dfe82109df96abd"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bf8aab94e144c343",
+        "text": "两者结合（如限定用途 + 挂钩条款的混合结构）亦是 SLBP 允许的路径 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2321,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8172854fc9427899",
+          "ev_72af851a6195dfc1",
+          "ev_a004211c0537cc9f"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8172854fc9427899",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "Use-of-Proceeds bonds as currently defined by the Sustainability Bond Guidelines). 可持续发展挂钩债券募集资金用于一般用途，因此募集资金用途不是其分类的决定因 素。 然而在某些情况下，发行人可以结合 《绿色债券原则》 / 《社会债券原则》与 《可持续发展挂钩 债券原则》参照使用。 因此，请 特别注意勿将可持续发展挂钩 债券 与可持续发展债券相混淆（ 根据《可持续发展债券原则》可持续发展债券是有特定募 集资金用途的债券种类）。 SUSTAINABILITY-LINKED BOND PRINCIPLES 可持续发展挂钩债券原则 The Sustainability-Linked Bond Principles are voluntary process guidelines that outline best practices for financial instruments to incorporate forward-looking ESG outcomes and promote integrity",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_72af851a6195dfc1",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "为促进资本市场蓬勃发展并鼓励其对可持续发展 提供推动作用， 诚信与 信誉至关重要。 《可持续发展挂钩 债券原则》（“ SLBP”，下文简称《原 则》）在债券的结构特征、信息披露和报告等方面提供了指导原则。 本《原则》供市 场参与者使用，并 旨在通过引导市场参与者提供 、披露必要的信息，促使更多的资本 流向此类金融产品。 本 《原则》可供所有类别的发行人 参考使用，并可 作为各种类型 债务资本市场工具的发行参考。 Chinese language translation courtesy of Bank of China and reviewed by ICMA 此版中文翻译由中国银行提供，并由 ICMA 香港办公室复核。 Issuance aligned to the SLBP should provide an investment opportunity with transparent sustainability credentials. Sustainability-Linked Bonds incentivise the issuer’ s achievement of m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_629dddad373b0dcc",
+        "text": "对投资者的实务含义：评估绿债应聚焦项目筛选流程、资金追踪机制与影响报告质量；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ad807e2e0c9ca391",
+          "ev_e6f4337236dec5dc",
+          "ev_3dfe82109df96abd"
+        ],
+        "source_ids": [
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ad807e2e0c9ca391",
+            "source_id": "src_a610ef8049249d15",
+            "text": "因此，可持续发展挂钩债券适合注重声誉、希望扩大 投资人基础、有信心和实力实现可持续发展目标的主体发行，尤其是暂无足够绿色项目而较难发行绿色债务融资工具的发行人和想参与可持续金融的传统行业发行人。 可持续发展挂钩债券对发行主体、发行方式、债券品种等不设限制，常规债务融资工具发行主体均可注册发行可持续发展挂钩债券，鼓励发行中长期债务融资工具品种，督促企业在一定时期内完成挂钩目标。 同时，发行主体还应符合城建、房地产等相关行业政策要求，确保募集资金用途合法合规，在碳中和约束框架下满足企业低碳转型需求。 四、关键绩效指标（ ）和可持续发展绩效目标（ ）遴选的原则和基本要求？ 答：发行人在遴选拟挂钩的关键绩效指标（ ）和可持续发展绩效目标（ ）时，应以被选目标与发行人主营业务及整体战略规划具有较强关联性为首要原则。 具体目标设置可为企业整体可持续发展目标、选定重点区域发展目标、与企业整体业务关联度较高或收入占 及以上业务的发展规划，体现发行人在可持续发展领域的整体贡献与完成度。 同时，关键绩效指标还应具备以下四个特征： （一）与国家可持续发展战略保持一致； （二）可以被客观计算与量化，并可以设置",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e6f4337236dec5dc",
+            "source_id": "src_a610ef8049249d15",
+            "text": "工作动态 交易商协会推出可持续发展挂钩债券 --可持续发展挂钩债券（SLB）十问十答 信息来源：共产党员网 分享到微信朋友圈 用微信“扫一扫”，点击右上角分享按钮， 即可将网页分享给您的微信好友或朋友圈。 为深入贯彻落实党中央、国务院关于碳达峰、碳中和重大决策部署，进一步提升债务融资工具市场服务实体经济能力和水平，满足传统行业转型或新能源等其他行业可持续发展的资金需求， 日，交易商协会推出可持续发展挂钩债券（ Sustainability-Linked Bond 汇总整理了常见的业务问答，形成《可持续发展挂钩债券（ ）十问十答》，提升企业注册便利，为企业可持续发展拓宽新的融资渠道。 本业务问答系在国际资本市场协会（ ICMA ）《可持续发展挂钩债券原则》的基础上，结合现有自律规则与国内实际情况进行的总结梳理。 鼓励发行人注册发行同时符合国际原则和本十问十答的可持续发展挂钩债券（ 一、为什么推出可持续发展挂钩债券？ 国际上，可持续发展挂钩债券（ ）最早出现于 2019 年的欧洲，国际资本市场协会 2020 月推出指导性文件《可持续发展挂钩债券原则》，提供了可持续发展挂钩债券具体指导标准。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_63310e8035b1aef8",
+        "text": "评估 SLB 则应穿透审查 KPI 的实质性、SPT 相对\"一切照常\"情景的改进幅度、罚息的经济显著性及基准调整条款——保护力度在发行条款签署之时即已锁定，事后救济路径比违约追索更窄。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0774,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6ce778d2259483de",
+          "ev_5d4543617e31596b",
+          "ev_e6f4337236dec5dc"
+        ],
+        "source_ids": [
+          "src_a8c31b0b6da221aa",
+          "src_a610ef8049249d15"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6ce778d2259483de",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "本 《原则》将不时更新，以配合全球可持续发展挂钩债券市场的发展与增长。 SUSTAINABILITY-LINKED BOND DEFINITION 可持续发展挂钩债券的定义 Sustainability-Linked Bonds (“SLBs”) are any type of bond instrument for which the financial and/or structural characteristics can vary depending on whether the issuer achieves predefined Sustainability/ ESG objectives. In that sense, issuers are thereby committing explicitly (including in the bond documentation) to future improvements in sustainability outcome(s) within a predefined timeline. SLBs are a forwa",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5d4543617e31596b",
+            "source_id": "src_a8c31b0b6da221aa",
+            "text": "The cornerstone of a SLB is that the bond’s financial and/or structural characteristics can vary depending on whether the selected KPI(s) reach (or not) the predefined SPT(s), i.e. the SLB will need to include a financial and/or structural impact involving trigger event(s).",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 40,
+    "evidence_count": 69,
+    "supported_count": 4,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 34,
+    "coverage": 0.1053,
+    "primary_source_ratio": 0.125,
+    "fulltext_source_ratio": 0.1,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 33
+  },
+  "run_metadata": {
+    "final_report_sha256": "4311202d68763959dd0a3f7543993afb12b0c31d2498e047d7a4cea5939d0d42",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 38,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 34,
+        "coverage": 0.1053,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 33
+      },
+      "after": {
+        "claim_count": 38,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 34,
+        "coverage": 0.1053,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 33
+      }
+    }
+  }
+}

@@ -1,0 +1,2610 @@
+{
+  "schema_version": "1.0",
+  "query": "评估中国游戏出海（《原神》《PUBG Mobile》《黑神话：悟空》）的全球化策略、文化本地化挑战和各国监管差异。",
+  "created_at": "2026-08-13T21:03:06.218658+00:00",
+  "sources": [
+    {
+      "source_id": "src_a2d638930024afba",
+      "url": "https://gnn.gamer.com.tw/detail.php?sn=280368",
+      "title": "Sensor Tower 數據顯示《勝利女神：妮姬》全球營收達 10...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 海外收入 全球化策略 用户规模 Sensor Tower",
+        "retrieval_relevance": 0.7025,
+        "host_domain": "gnn.gamer.com.tw"
+      }
+    },
+    {
+      "source_id": "src_b06f2730c2c1e711",
+      "url": "https://sensortower.com/",
+      "title": "Digital Intelligence & App Data Analysis by Sensor Tower",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 海外收入 全球化策略 用户规模 Sensor Tower",
+        "retrieval_relevance": 0.4683,
+        "host_domain": "sensortower.com"
+      }
+    },
+    {
+      "source_id": "src_2ca9b6178119cdb9",
+      "url": "https://susmeat.com/showinfo-20-16339-0.html",
+      "title": "[VikLodn] Tea Party",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 海外收入 全球化策略 用户规模 Sensor Tower",
+        "retrieval_relevance": 0.4683,
+        "host_domain": "susmeat.com"
+      }
+    },
+    {
+      "source_id": "src_202d0e256e3f37e5",
+      "url": "https://yuanshen.com/",
+      "title": "《 原神 》官方网站-米哈游开放世界冒险RPG",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7353,
+        "host_domain": "yuanshen.com"
+      }
+    },
+    {
+      "source_id": "src_4906e8172d29380b",
+      "url": "https://ys.mihoyo.com/",
+      "title": "《 原神 》官方网站-全新「7.0」新版本「无神怜爱的雪国」上线！",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7353,
+        "host_domain": "ys.mihoyo.com"
+      }
+    },
+    {
+      "source_id": "src_82ce0e7bbe18460d",
+      "url": "https://ys.mihoyo.com/cloud",
+      "title": "云· 原神",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7353,
+        "host_domain": "ys.mihoyo.com"
+      }
+    },
+    {
+      "source_id": "src_48544e0d93db4176",
+      "url": "https://post.smzdm.com/p/am9698ek",
+      "title": "黑神话》海外销量破1500...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "post.smzdm.com"
+      }
+    },
+    {
+      "source_id": "src_e5a452bfa97e8aec",
+      "url": "https://zh.wikipedia.org/wiki/%E9%BB%91%E7%A5%9E%E8%AF%9D%EF%BC%9A%E6%82%9F%E7%A9%BA",
+      "title": "黑神话 ： 悟空 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "34b9ca52da82797a1c95a8395ed03a7624e8aac74ae1bae6c654d81681b5dc21",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.7472,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_f5a2449346f2565d",
+      "url": "http://baoju36720.beeb8.cn/guanyutianchenzhuce/210575.html",
+      "title": "《黑神话：悟空》海外销量600万份？ 当事人：我是猜的 - 天辰注册",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.825,
+        "host_domain": "baoju36720.beeb8.cn"
+      }
+    },
+    {
+      "source_id": "src_d8f5f444bb3f2d4e",
+      "url": "https://bigbigads.io/blog/2024061601",
+      "title": "3天预售破亿！ 《黑神话悟空》为什么这么能打",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "bigbigads.io"
+      }
+    },
+    {
+      "source_id": "src_548640dd60673b10",
+      "url": "https://mob.iyingdi.com/post/5442133",
+      "title": "《黑神话》 Steam销量1980万份 将达成新里程碑-旅法师营地",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "1980",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.7861,
+        "host_domain": "mob.iyingdi.com"
+      }
+    },
+    {
+      "source_id": "src_7d954dde7b6eda5e",
+      "url": "https://gamersky.com/news/202608/2188051.shtml",
+      "title": "《影之刃零》登Steam...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "黑神话悟空 海外销量 全球发行 Steam 销量",
+        "retrieval_relevance": 0.7861,
+        "host_domain": "gamersky.com"
+      }
+    },
+    {
+      "source_id": "src_3d1636fbda714dad",
+      "url": "https://m.21jingji.com/article/20230415/herald/c5bf0b33d768c3d0add356b7078ece07.html",
+      "title": "游戏周报：腾讯《PUBG Mobile...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 海外收入 下载量 腾讯 发行模式 全球",
+        "retrieval_relevance": 0.8419,
+        "host_domain": "m.21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_f98a4f48d8a8a281",
+      "url": "https://aiyingli.com/18691.html",
+      "title": "腾讯手游开启外部联运模式 |爱盈利",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 海外收入 下载量 腾讯 发行模式 全球",
+        "retrieval_relevance": 0.4848,
+        "host_domain": "aiyingli.com"
+      }
+    },
+    {
+      "source_id": "src_388d268222748478",
+      "url": "https://pubgmobile.com/en-US/home.shtml",
+      "title": "PUBG MOBILE | THE BEST BATTLE ROYALE MOBILE GAME",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "5d8699e4c34cdb9ab4a693b16de24f21b500e201c8dedc13a07ccc89ccb6c94c",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 本地化 中东 印度 监管 封禁",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "pubgmobile.com"
+      }
+    },
+    {
+      "source_id": "src_822eed16361fe071",
+      "url": "https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en-us",
+      "title": "PUBG MOBILE - Apps on Google Play",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 本地化 中东 印度 监管 封禁",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "play.google.com"
+      }
+    },
+    {
+      "source_id": "src_b279d996f5076167",
+      "url": "https://en.wikipedia.org/wiki/PUBG:_Battlegrounds",
+      "title": "PUBG : Battlegrounds - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "d213d0cb8d3b616852282178eeea95d81669937eaae7bc633e75eed97bc6ce32",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 海外收入 下载量 腾讯 发行模式 全球",
+        "retrieval_relevance": 0.238,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_ba4f2a2b6b33f14f",
+      "url": "https://pubg.com/en/main",
+      "title": "PUBG : BATTLEGROUNDS",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 本地化 中东 印度 监管 封禁",
+        "retrieval_relevance": 0.2556,
+        "host_domain": "pubg.com"
+      }
+    },
+    {
+      "source_id": "src_0cda69da80065b49",
+      "url": "https://maoyicang.com/wen-hua-ben-di-hua-de-xian-jing-yu-ji-yu-wei-shi-me-fan-yi-yuan-yuan-bu-gou",
+      "title": "文化本地化的陷阱与机遇：为什么翻译远远不够 – 环球数字贸易仓",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 文化本地化 争议 翻译 文化符号",
+        "retrieval_relevance": 0.85,
+        "host_domain": "maoyicang.com"
+      }
+    },
+    {
+      "source_id": "src_6bf01839c4dbec4f",
+      "url": "https://erciyuangame.com/genshin/genshin-lorne-controversy-analysis",
+      "title": "原神洛恩引爆“媚外”争议？ 揭秘文化出海背后的全球化硬实力",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 文化本地化 争议 翻译 文化符号",
+        "retrieval_relevance": 0.725,
+        "host_domain": "erciyuangame.com"
+      }
+    },
+    {
+      "source_id": "src_e588785aa5c441cd",
+      "url": "https://quizthink.com/ru/pubg-mobile-quiz",
+      "title": "Викторина PUBG Mobile - Проверьте свой IQ в Battle... | Quizthink",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 本地化 中东 印度 监管 封禁",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "quizthink.com"
+      }
+    },
+    {
+      "source_id": "src_44b217329640f89a",
+      "url": "https://transwww.marcelf.com/en/dvaj-633-uncensored-leak",
+      "title": "DVAJ-633 I can't get home from the job due to a sudden heavy rain...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 本地化 中东 印度 监管 封禁",
+        "retrieval_relevance": 0.2556,
+        "host_domain": "transwww.marcelf.com"
+      }
+    },
+    {
+      "source_id": "src_e173ed7402a037ce",
+      "url": "https://timesofindia.indiatimes.com/sports/esports/news/krafton-accused-of-allegedly-selling-user-data-bgmi-ban-probability-details-of-fir-filed-data-breach-specifics-and-more/articleshow/120149276.cms",
+      "title": "BGMI developer Krafton accused of selling user data - BGMI ban...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile India ban 2020 Krafton BGMI data localization Middle East斋月活动",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "timesofindia.indiatimes.com"
+      }
+    },
+    {
+      "source_id": "src_0827da2f6188dced",
+      "url": "https://en.wikipedia.org/wiki/Battlegrounds_Mobile_India",
+      "title": "Battlegrounds Mobile India - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile India ban 2020 Krafton BGMI data localization Middle East斋月活动",
+        "retrieval_relevance": 0.7156,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_57f306005da2ad58",
+      "url": "https://medianama.com/2021/06/223-pubg-ping-china-2",
+      "title": "Why would PUBG Mobile India ping servers in China... - MEDIANAMA",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile India ban 2020 Krafton BGMI data localization Middle East斋月活动",
+        "retrieval_relevance": 0.7594,
+        "host_domain": "medianama.com"
+      }
+    },
+    {
+      "source_id": "src_5e1d1f6688926d96",
+      "url": "https://tech.hindustantimes.com/gaming/news/bgmi-banned-but-you-can-still-play-battlegrounds-mobile-india-this-way-71659097608182.html",
+      "title": "BGMI banned, but you can still play Battlegrounds Mobile India THIS...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile India ban 2020 Krafton BGMI data localization Middle East斋月活动",
+        "retrieval_relevance": 0.7156,
+        "host_domain": "tech.hindustantimes.com"
+      }
+    },
+    {
+      "source_id": "src_0f3e0ba9114efefe",
+      "url": "https://indianexpress.com/article/technology/concerns-over-data-transfer-overseas-chinese-ownership-behind-bgmi-ban-8060023",
+      "title": "Concerns over data transfer overseas, Chinese... - The Indian Express",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile India ban 2020 Krafton BGMI data localization Middle East斋月活动",
+        "retrieval_relevance": 0.4771,
+        "host_domain": "indianexpress.com"
+      }
+    },
+    {
+      "source_id": "src_96f889018cd0e3aa",
+      "url": "https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS",
+      "title": "PUBG : BATTLEGROUNDS on Steam",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 印度封禁 监管 中国游戏出海",
+        "retrieval_relevance": 0.238,
+        "host_domain": "store.steampowered.com"
+      }
+    },
+    {
+      "source_id": "src_b1914b7ee12fb298",
+      "url": "https://pubg.com/en/game-info/overview",
+      "title": "GAME - PUBG : BATTLEGROUNDS",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 印度封禁 监管 中国游戏出海",
+        "retrieval_relevance": 0.238,
+        "host_domain": "pubg.com"
+      }
+    },
+    {
+      "source_id": "src_6a36146052299098",
+      "url": "https://manoramayearbook.in/current-affairs/india/2020/09/03/india-bans-pubg-and-other-117-apps.html",
+      "title": "India bans 118 more mobile apps with Chinese links | IT rules | meitY",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "India bans PUBG Mobile 118 Chinese apps 2020 data security",
+        "retrieval_relevance": 0.9628,
+        "host_domain": "manoramayearbook.in"
+      }
+    },
+    {
+      "source_id": "src_1caa68efe2de4698",
+      "url": "https://techcrunch.com/2020/09/02/india-bans-pubg-and-over-100-additional-chinese-apps",
+      "title": "India bans PUBG Mobile, and over 100 other Chinese apps",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "India bans PUBG Mobile 118 Chinese apps 2020 data security",
+        "retrieval_relevance": 0.8883,
+        "host_domain": "techcrunch.com"
+      }
+    },
+    {
+      "source_id": "src_8e78a89552d2d004",
+      "url": "https://siliconangle.com/2020/09/02/india-bans-pubg-slew-apps",
+      "title": "India bans PUBG and a slew of other Chinese apps - SiliconANGLE",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "India bans PUBG Mobile 118 Chinese apps 2020 data security",
+        "retrieval_relevance": 0.8883,
+        "host_domain": "siliconangle.com"
+      }
+    },
+    {
+      "source_id": "src_784d82a371e64567",
+      "url": "https://indiatodayne.in/business/story/india-bans-118-chinese-apps-including-pubg-403659-2020-09-02",
+      "title": "India bans 118 Chinese Apps including PUBG - india bans 118...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "India bans PUBG Mobile 118 Chinese apps 2020 data security",
+        "retrieval_relevance": 0.8883,
+        "host_domain": "indiatodayne.in"
+      }
+    },
+    {
+      "source_id": "src_393e91205f354f27",
+      "url": "https://knowyourmeme.com/news/india-bans-pubg-mobile-and-over-100-chinese-apps",
+      "title": "India Bans PUBG Mobile And Over 100 Chinese Apps",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "India bans PUBG Mobile 118 Chinese apps 2020 data security",
+        "retrieval_relevance": 0.8883,
+        "host_domain": "knowyourmeme.com"
+      }
+    },
+    {
+      "source_id": "src_8f6c674b8d212b12",
+      "url": "https://bilibili.com/video/BV1H1LS6SEXS",
+      "title": "bilibili.com/video/BV1H1LS6SEXS",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国游戏出海 策略对比 原神 PUBG Mobile 黑神话悟空 自研自发 代理 本地化",
+        "retrieval_relevance": 0.727,
+        "host_domain": "bilibili.com"
+      }
+    },
+    {
+      "source_id": "src_387e4a1c8432689e",
+      "url": "https://app.onesproxy.com/",
+      "title": "OnesProxy",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国游戏出海 策略对比 原神 PUBG Mobile 黑神话悟空 自研自发 代理 本地化",
+        "retrieval_relevance": 0.1252,
+        "host_domain": "app.onesproxy.com"
+      }
+    },
+    {
+      "source_id": "src_396019cf2fce4ce6",
+      "url": "https://notebooklm.google/",
+      "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国游戏出海 策略对比 原神 PUBG Mobile 黑神话悟空 自研自发 代理 本地化",
+        "retrieval_relevance": 0.1252,
+        "host_domain": "notebooklm.google"
+      }
+    },
+    {
+      "source_id": "src_fc2193575ee283e3",
+      "url": "https://36kr.com/p/917824890991360",
+      "title": "看不懂吧，骂了一年抄袭的《原神》还是火了-36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7868,
+        "host_domain": "36kr.com"
+      }
+    },
+    {
+      "source_id": "src_9aff2c9064c87b05",
+      "url": "https://yumaochuhai.com/article-500231.html",
+      "title": "米哈游贴身卷向网易，却在海外被37互娱逆袭-羽毛出海",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7566,
+        "host_domain": "yumaochuhai.com"
+      }
+    },
+    {
+      "source_id": "src_75e306ef33e45519",
+      "url": "https://youxituoluo.com/533099.html",
+      "title": "二游轰炸出海榜：米哈游收入涨77...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "原神 米哈游 海外发行 全球化 本地化 策略 分析",
+        "retrieval_relevance": 0.7566,
+        "host_domain": "youxituoluo.com"
+      }
+    },
+    {
+      "source_id": "src_79a4ba3cd7092373",
+      "url": "https://levelinfinite.com/game/pubg-mobile",
+      "title": "PUBG MOBILE - Level Infinite",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 腾讯 海外发行 Level Infinite 监管 印度封禁 应对",
+        "retrieval_relevance": 0.7324,
+        "host_domain": "levelinfinite.com"
+      }
+    },
+    {
+      "source_id": "src_5f72e389643aa4c8",
+      "url": "https://login.levelinfiniteapps.com/",
+      "title": "Level infinite apps login",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PUBG Mobile 腾讯 海外发行 Level Infinite 监管 印度封禁 应对",
+        "retrieval_relevance": 0.4745,
+        "host_domain": "login.levelinfiniteapps.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_1572ff140bc49aa8",
+      "source_id": "src_a2d638930024afba",
+      "text": "根據 Sensor Tower 數據顯示，騰訊於日本市場的「行動小隊 RPG」類別中的廣告費與曝光量雙雙排名第一，甚至與第二名的差距來到兩倍之多。 YouTube 的廣告支出高達 89%，其次是 X（Twitter）7%、TikTok 4%。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4f01fe2841a0fe8b77032348e5e84e1af22d430faf468603c534f61f92a2f020"
+    },
+    {
+      "evidence_id": "ev_5e7c6301269fd2d5",
+      "source_id": "src_b06f2730c2c1e711",
+      "text": "Discover Sensor Tower's platform to measure the digital economy. Access app download data, app analysis, and ad performance insights to optimize your strategy.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7df1ea168bed485a41345f38125c4e0f234f6a5e34e6ce4dc03e0086766842c8"
+    },
+    {
+      "evidence_id": "ev_935b02c0574ccbc2",
+      "source_id": "src_2ca9b6178119cdb9",
+      "text": "忘记用户名或密码？ 没有收到确认EMAIL？双马尾 阿黑颜 碧蓝航线 原神 兽耳 NTR 丝袜 无圣光.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5dee98a3dce88777e1b37d824ae6c368bc11c88e446af5d008047d32049629dd"
+    },
+    {
+      "evidence_id": "ev_49175fc59a25bbc6",
+      "source_id": "src_202d0e256e3f37e5",
+      "text": "适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "abaf0d8fe93626aba42b088ed491e9526cac2534390b8b15b0dfc64ee5e03923"
+    },
+    {
+      "evidence_id": "ev_f06e6e5abdc7b545",
+      "source_id": "src_4906e8172d29380b",
+      "text": "《原神》是由米哈游自研的一款开放世界冒险RPG。 你将在游戏中探索一个被称作「提瓦特」的幻想世界。 在这广阔的世界中，你可 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a0f40e3d9a60f75325849cf69e47de6a1ee84649037b73466fc7e489fa9dfd99"
+    },
+    {
+      "evidence_id": "ev_76d3cabb19b41bb9",
+      "source_id": "src_82ce0e7bbe18460d",
+      "text": "《原神》是由米哈游自研的一款开放世界冒险RPG。 你将在游戏中探索一个被称作「提瓦特」的幻想世界。 在这广阔的世界中，你可 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a0f40e3d9a60f75325849cf69e47de6a1ee84649037b73466fc7e489fa9dfd99"
+    },
+    {
+      "evidence_id": "ev_3e6435cc411232ef",
+      "source_id": "src_48544e0d93db4176",
+      "text": "黑神话》海外销量破1500万份，国产3A用这套打法征服全球玩家. 源自9位全网作者.来自微信公众号. 2. [流言板]《黑神话：悟空》全球销量突破3000万份，海外市场占比过半.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2cc06c71a164a70f3d7868148cbe578ccead6faed9b27303df1ee8da51a48262"
+    },
+    {
+      "evidence_id": "ev_94b734971b6b6da0",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "《黑神话：悟空》是一款由 游戏科学 开发和发行的 动作角色扮演游戏，被 新华社 称为 中国 首款“ 3A游戏 ” [5]，游戏于2024年8月20 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a96374c56724dfbb89bc379e6f3e3f631fdde1b96c44d254f8dfdc4621a3681a"
+    },
+    {
+      "evidence_id": "ev_943923390dad5a86",
+      "source_id": "src_f5a2449346f2565d",
+      "text": "你的位置：天辰注册 > 关于天辰注册 > 《黑神话：悟空》海外销量600万份？《黑神话：悟空》海外销量600万份？ 当事人：我是猜的.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d769a3102c463732db5e8e9af4b26f10aa44a82f60f0a02b8f887ccfe40d302"
+    },
+    {
+      "evidence_id": "ev_cecbe7b5b6a99b8b",
+      "source_id": "src_d8f5f444bb3f2d4e",
+      "text": "3天预售破亿！ 《黑神话悟空》为什么这么能打？国产3A级大作《黑神话：悟空》于6月8日正式启动预购活动，覆盖Steam紧接着，在6月10日晚上8点，《黑神话：悟空》的实体版预售也全面开启。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5b031b0bac04ab06ded72122ed71260328302897dc59c69e5ff010e0af9a51ef"
+    },
+    {
+      "evidence_id": "ev_3023230eee47982a",
+      "source_id": "src_548640dd60673b10",
+      "text": "国产大作《黑神话：悟空》已在全球大火，其发售即将满一个月，Steam版销量已达1980万份，该作将冲击新的里程碑——首月销量破2000万份。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0134b90c5cfbeab5bc27b61adb7fc8dcfe3c75fee4e8a0de4cd2848fb1a6fd28"
+    },
+    {
+      "evidence_id": "ev_9dbddd0bbeecc9e9",
+      "source_id": "src_7d954dde7b6eda5e",
+      "text": "《影之刃零》登Steam预购榜全球第一！ 海外市场巨大.此次预购的火爆表现，也让其被视为继《黑神话：悟空》之后，又一款具备全球影响力的国产单机大作。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d0d10c90c831f11768c74c8aa1ce3b8b4109060dfd760a7910c3f24828a1566d"
+    },
+    {
+      "evidence_id": "ev_fe2d1b3447534300",
+      "source_id": "src_3d1636fbda714dad",
+      "text": "1. 3月中国手游出海情况：腾讯《PUBG Mobile》重新登顶海外收入增长榜、下载榜. 4月13日，Sensor Tower公布了3月中国手游产品出海情况。本期下载榜TOP 3依次为：《PUBG Mobile》《Doomsday: Last Survivors》和《Piano Fire》。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "41b6e08695d032ce970c9119a36920d95d0ddf615af6d0e4baf384264d482fe7"
+    },
+    {
+      "evidence_id": "ev_6c4e2c28197a261a",
+      "source_id": "src_f98a4f48d8a8a281",
+      "text": "腾讯手游开启外部联运模式.2014年年底，腾讯启动了一个名为“行业发行”的计划，其主要内容，就是将腾讯的自研产品、独代产品推向整个android联运市场，根据当时gamelook的报道，腾讯最初的合作.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c7682fb23fd5ffaa644ab8284d44821bbb499f052a9835c96c1b1398100f9a1f"
+    },
+    {
+      "evidence_id": "ev_ef79e564ee9910dd",
+      "source_id": "src_388d268222748478",
+      "text": "PUBG MOBILE is the FREE battle royale shooter that chosen by over 1 billion players worldwide. Extreme battles in 10-minute …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6984212437b4d057ce46b3256e916df306ef44c9400bc263b3a907855bbefb8d"
+    },
+    {
+      "evidence_id": "ev_23111a8d66e9a75d",
+      "source_id": "src_822eed16361fe071",
+      "text": "PUBG MOBILE has the highest fidelity items and gameplay experience. PUBG MOBILE can fulfill any wish you might have. Choose …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "075ac56608e1291d6f1ec72f58467b5ff8a0f68e0e98f66153440eed7117a220"
+    },
+    {
+      "evidence_id": "ev_122fdf5f22df9415",
+      "source_id": "src_b279d996f5076167",
+      "text": "PUBG: Battlegrounds, originally titled PlayerUnknown's Battlegrounds (PUBG), is a 2017 battle royale game published by Krafton …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "94cbd81dd83ba1847a2ccc219f935ec81505886014dfdc10b8c195a46aeaeb82"
+    },
+    {
+      "evidence_id": "ev_bd5f718881eb0a45",
+      "source_id": "src_ba4f2a2b6b33f14f",
+      "text": "3 days ago · PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other. Outplay your opponents to …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "08bb67bdffd2c40805f792e0b1a72c5f0f6b3ca6197009d62ce21ac68ec7a9bf"
+    },
+    {
+      "evidence_id": "ev_b34ae84d404161d9",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与评论家们的普遍好评，称赞其在 战斗系统 视觉设计 方面的构建。 游戏上线后迅速登顶多个平台的销量榜首，官方宣布首发3天内全球销量超过1000万份 ，发售后一个月内全球销量超过2000万份 ，8个月超过3000万份 ，成为有史以来销售速度最快的游戏之一。 《黑神话：悟空》是一款 动作角色扮演游戏 单人模式 第三人称视角 。 尽管在游戏发布前因為本作借鑒了不少 遊戲要素，曾有人讨论其是否属于 游戏，但其开发商 游戏科学 并不认为它属于这一类型 ，许多评论者也认为该游戏并不完全符合“魂类”游戏的定义。 玩家将操控一位名为“天命人”的 灵明石猴 。 主角的主要武器是 如意金箍棒 等棍棒类武器，能在战斗中伸缩自如。 游戏的战斗系统包括三种主要棍法：劈棍、戳棍和立棍，为战斗提供多样化选择。 战斗还涉及资源管理，玩家可以积累气力值，用于连招或蓄力重击。 冲刺、闪避和攻击都会消耗气力值。 除了物理战斗，玩家还可以使用“奇术”、“身法”、“毫毛”和“ ”等四类法术。 这些法术有冷却时间并消耗法力值。 各类法术按技能可再细分，例如：“定身”奇术可以在短时间内定住敌人；“聚形散气”身法可散气遁走并留下假身，聚形时可再行突袭，造成更高的伤害；“身外身法”的毫毛法术能召唤多个分身协助战斗，而各种变化法术允许主角变形为不同的游戏内角色，并拥有独特的招式和 此外，玩家可以通过击败强大的敌人获得“ ”技能，这些技能类似于一次性的变身，例如，“幽魂”精魄可以让玩家进行头锤攻击。 游戏的进程大多是线性的，亦有较为宽阔的区域供玩家探索。 玩家会遇到各种 作为敌人。 玩家的检查点是世界各地的 ）。 游戏地图无法由玩家调整，但会随游戏进展而变化。 此外，游戏也支持 模式，为玩家提供“再入轮回”的玩法和 例如，进入 可以解锁“救命”的毫毛法术，在战斗中死亡可以立即复活； 三周目怪物变强；四周目敌人强度大幅提升，并触发四段棍势彩蛋等。 一至六周目游戏难度（敌人伤害）逐渐提升，第七周目起游戏难度不再变化。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "8f52d30853445d66ad9af1862b4209ce92f721e3fc62194c92628ea56411b90d"
+    },
+    {
+      "evidence_id": "ev_4de96561077e2a89",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "是游戏中的地标之一 《黑神话：悟空》的故事可分为六个章节，名为“火照黑云”、“风起黄昏”、“夜生白露”、“曲度紫鸳”、“日落红尘”和“未竟”， 并且拥有两个结局，玩家的选择和经历将影响最终的结局。 每个章节结尾，附有 的动画过场，展示和探索《黑神话：悟空》中的叙事和主题元素。 游戏的设定融合了中國的文化和自然地标。 例如重慶的 大足石刻 等，都在游戏中出现。 游戏也融入了 的哲学元素。 《西游记》 《黑神话：悟空》的故事情节发生在《 》故事之后。 在老猴子的说书故事中，据传 成佛后依旧不愿受到拘束，待 东归后便辞去佛位，欲回到 逍遥快活，未料遭到 四大天王 率领天兵天将再次杀奔花果山。 就在孙悟空与二郎神激战时，本已消失的 却再次出现，孙悟空不敌二郎神，就此殒命，肉身残躯化为石卵，魂魄分为六件根器，名为 ，隐藏世间。 多年后，玩家扮演的花果山“天命人”踏上了寻找遗失根器、解救和复活孙悟空的旅程。 寻找根器 “天命人”前往黑风山寻找根器，得到土地公的帮助，来到火后重建的观音禅院。 与各个妖王和头目决斗后，天命人最后在黑风山山顶的宝塔上击败 ，找回孙悟空的第一件根器“眼看喜”。 但黑熊精之后透露自己是被天庭逼迫参与谋害孙悟空，他向天命人表达歉意，并自愿回到观音禅院赎罪。 接着，天命人穿越荒凉的黄风岭，期间无头僧边 ，提供帮助。 天命人击杀 黄风大圣 ，黄风大圣利用 灵吉菩萨 的头颅封存了孙悟空第二件根器“耳听怒”。 无头僧在重新接回自己的头颅后，天命人这才发现他其实就是灵吉菩萨。 灵吉为了表示感谢，将根器亲手交给了天命人。 天命人继续前往寒冷的 ，擒杀投靠 ，解救被亢金龙囚禁的 ，两人合力击败黄眉，黃眉逃至结冰的湖面，因冰破而墜入湖里。 原本打算亲自收服黄眉的 弥勒菩萨 ，将被偷走的孙悟空第三件根器“鼻嗅爱”，从湖中捞出并交给天命人。 接下来，天命人和猪八戒前往盘丝岭的 。 猪八戒被 百眼魔君 计划利用蜘蛛精的母亲紫蛛儿与猪八戒结婚，然后将其吞食，从而引出天命人一网打尽，但因紫蛛儿和猪八戒情缘未了，迟迟未能动手。 天命人赶到救出猪八戒，并联合六个蜘蛛精一起杀死 百眼魔君 ，最终获得孙悟空的第四件根器“舌尝思”。 两人来到 手中偷走第五件根器，得知昔日 和五大妖王合谋陷害孙悟空。 天庭胜利后瓜分了孙悟空的六根，牛魔王得到了第五件根器。 红孩儿为复仇觊觎根器力量，最终被天命人击败。 红孩儿的母亲 铁扇公主 出面为儿子求情，并献上她的芭蕉扇，揭露红孩儿身世悲惨，其实是 部的残余血脉。 但红孩儿并不屈服，反而悲愤自杀，随着红孩儿的身躯消散，天命人也因此获得孙悟空的第五件根器“身本忧” 。 在决定结局的可选故事线上， 弥勒菩萨 于小西天浮屠塔将二郎神 和天命人引导至梅山。 天命人与 在梅山展开激战。 天命人击败杨戬，杨戬的“ ”释放出孙悟空的第六件根器“意见欲”交给天命人，并分享他的领悟——原来之前的战斗实际上是让孙悟空通过肉身的死亡，从而让孙悟空找到摆脱束缚的道路。 天命人和猪八戒回到 ，到达天真顶的石卵后，进入孙悟空 所化的识海“石中境”。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "e9c15df437943b09970e71a5feb86982137c13573606623561a163a83777b98b"
+    },
+    {
+      "evidence_id": "ev_a2196b61ba7029df",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台主流，便决定新项目为暗黑风格西游题材动作角色扮演游戏 。 《黑神话：悟空》于2018年2月25日开始立项 ，同年年底开发团队由深圳迁至杭州，花果山关卡基本制作完成。 随后团队开始制作黑风山关卡并借此摸索大型游戏的开发流程。 2020年8月20日，游戏科学公布首段实机演示视频。 游戏预告片展示基于 虚幻引擎4 开发的游戏内容，主角在黑风山探索环境，并与各种敌人战斗。 发布一天内，预告片在 YouTube 上获得近200万次观看，在 bilibili 上则达到1000万次观看。 据电子游戏分析师丹尼爾·艾哈邁德（Daniel Ahmad）称，公布此段实机演示的主要目的是开发团队缺人，想通过这段视频吸引人才。 最初，开发团队只有7个人，但在游戏预告时，团队人数已增至约30人。 至游戏开发完成时，团队规模为140人 2021年2月8日，开发团队释出了另一支3分钟的演示预告，以庆祝即将到来的 农历牛年 。 2021年8月20日开发团队再次释出一支12分钟的演示预告，由 Epic Games 虚幻引擎5 实机录制。 2022年8月20日，开发团队发布一支6分20秒剧情短片， GeForce 再次发布一支8分22秒实机演示。 制作人冯骥表示，《黑神话：悟空》是“黑神话系列”的第一部作品，内部的开发代号是“B1”，全称是“Black Myth One”。 根据他的构想，黑神话系列将是一个讲述中国东方神话体系里，不同传奇英雄的 魔幻历险 故事系列。 在规划这个系列的第一部作品之后，他对后两部黑神话游戏的名称和方向有一些想法。 开发团队最初计划从《西游记》中挑出未被打死的妖怪，并以六贼、六根设定为线索，构思了狮驼岭、女儿国等13个关卡，并选出部分关卡优先制作，但因工期问题，最终只完成了优先制作的关卡 。 团队早期按箱庭式设计的方向制作关卡，2019年底改为采用多个开放式关卡与关卡中进行传送的方式设计，在单个关卡中保留一定箱庭感 2024年7月，《黑神话：悟空》大体制作完成。 团队于8月12日至19日进行了最后一轮测试 。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "1a942640c7d785a58937c4e38c630e17c837cee928a2eb1ac624c2875d96d65d"
+    },
+    {
+      "evidence_id": "ev_7a1d284e3abeac20",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "遊戲開發成本超過3億人民幣，2023年獲杭州市稅務部2800萬人民幣的扣除優惠 开发团队所扫描的 大足石刻 图为宝顶山摩崖造像。 在设计游戏环境时，为提升建筑资产制作效率，游戏科学决定实地扫描不同地点的建筑和雕像，并将这些元素复制到游戏中或作为设计的基础。 在首段实机演示视频发布前，团队已经开始相关考察和扫描工作。 实机演示发布后，团队的扫描工作得到了当地政府支持。 作品中的许多建筑元素取材自现存的中国古代建筑，类型包括寺庙、佛塔、宫殿、城堡、住宅、园林等。 根据已公布的36个取景地名单显示，山西境内的取景地多达27个， 佑国寺、 云冈石窟 西溪二仙庙 应县木塔 山西省之外，其他的取景地具有浙江 梅氏宗祠 ；重庆的 大足石刻 塔林；陕西 攀龙门；贵州 ；四川的 安岳石刻 ；河北的 南安寺塔 除了自有的建筑扫描和模型制作团队外，游戏科学还与南京图形科学合作。 游戏科学完成扫描后，由南京图形科学负责五台山部分建筑的二次设计创作 游戏中的一些角色，如亢金龙（左）、娄金狗（右），其创作灵感源自 的彩塑。 角色亢金龙以人形和龙形出现，作为敌方的头目。 《黑神话：悟空》中的主要角色源自《西游记》中的人物，除了天命人扮演 的角色外，玩家还会遇到其他主要的《西游记》角色诸如 铁扇公主 等人物。 在游戏中，这些主要角色是凭借多位 动作捕捉 配音演员 完成扮演和塑造。 身为武术家的演员殷凯，主要饰演主角“天命人”与妖怪战斗时的动作，特别是棍法和法术的技能动作；他除了负责主角的动作外，还饰演游戏中其他60%的角色。 以下是游戏的主要角色及其动捕演员、 配音演员， 担任配音导演。 动作捕捉演员/脸模 普通话配音演员 英语配音演员 Mark Ota 王国豪杰 安德魯·小路 老猴子（ Steven Pacey Ashley Alymann 无头僧（ Kay Eluvian 黄风大圣 Andrew James Spooner 灵吉菩萨 Vincent Lai 弥勒菩萨 Molly Harris （亢金星君） Millie Hikasa Jack Ayres 天蓬元帅 黄眉大王 Ramon Tikaram Millie Hikasa 祖拉娅媞·阿不都拉 Megan Richards Melody Chikakane Brown Hanako Footman Leader Looi 铁扇公主 Arina Ii 詹姆斯·亚历山大 毒敌大王 詹姆斯·亚历山大 艺人熊竹英使用 乐器为无头僧表演 游戏的音乐、音效和语音由八零八二音频工作室（简称8082Audio）联合制作，李佳骐为音频总监 ，翟锦彦负责多数配乐创作 游戏的配乐创作从2020年7月开始，配乐风格主要为管弦乐融合传统中国民族风格，包括 陕北说书 佛教音乐 。 开发团队为每个关卡都设计有不同乐器和旋律主题 。 中国传统民族乐器部分由 中央民族乐团 演奏。 游戏的主题旋律最初来自于翟锦彦大学时期的作品，采用了五度音程的叠加式模进写作手法 。 此外，游戏获得电视剧《 》片头曲《 云宫迅音 》的授权，此曲由作曲家 在1986年制作 。 作品还使用了该剧片尾曲《 敢问路在何方 》作为游戏第一次通關後的片尾曲，该版本由 和杨恩硕演唱。 2023年1月，官方发布兔年贺岁短片，公布游戏的发布日期为2024年夏 。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "9405c23fc308f8c2bebf1788211d0e462421eecaf692036b3ce04dd1ac0a9f0f"
+    },
+    {
+      "evidence_id": "ev_0b3f3e19dd2ea5d6",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍咒、“乱蟠桃”画卷、风铎项链、雷榍指环、金乌徽章、邮票和 以及保修证书。 实体收藏版：同样包含数字豪华版的啟動碼和实体收藏品，收藏品包括：收藏铁盒、主角1:6可动人偶“直面天命”、“受心经”画卷、风铎项链、雷榍指环、金乌徽章、邮票和明信片以及保修证书。 实体豪华版和实体收藏版的啟動碼支持WeGame（ 购买）或Steam（海外购买），但所有版本均不包含实体光盘。 游戏科学表示正在探索提供实体光盘的可能性，但由于线下资源有限，无法与游戏发布同步提供。 2025年6月6日，微软和游戏科学共同宣布本作即将于游戏发售一周年当日（2025年8月20日）登陆 Xbox Series X/S ，并将于6月18日开始预售。 游戏科学还同时宣布预定于2025年6月18日当天发售国行 PlayStation 5 ，早前已获 国家新闻出版署 追加平台信息审核 。 全平台同时开始八折优惠活动。 缺少有關 对游戏本身的评价 的信息。 2025年1月22日 擴充此章节 相關信息。 可能有詳細細節。 汇总得分 汇总媒体 Metacritic PC：81/100 PS5：76/100 OpenCritic （推荐率） 评论得分 GamesRadar+ GameSpot 8/10 HardcoreGamer 4. 5/5 8/10 PC Gamer美国 87/100 PCGamesN 8/10 3DMGAME 10/10 游民星空 10/10 IGN中国 10/10 GamingBolt 10/10 COGconnected 93/100 Metacritic 针对遊戲统计了各家媒体的评分，PC版的平均得分为81/100分 ，PS5版的平均得分为75/100分 。 IGN中国给游戏打出了10分的满分，认为游戏和国际知名的3A大作相比固然存在一定的差距，但游戏科学作为一家刚成立十年的公司游戏品质达到了相当的高度，可称得上是中国游戏行业的里程碑。 《黑神话：悟空》被认为是中国 电子游戏产业 向高端游戏和国际受众转型的一个重要因素。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "5d76f2f46aadc3df489421c45ed05a35e614c33b1828cf657bcd19155f0285eb"
+    },
+    {
+      "evidence_id": "ev_65f63d34694ac878",
+      "source_id": "src_e5a452bfa97e8aec",
+      "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改成“甘露”等 。 《星島日報》引述一些網民批評監管部門「思想陈旧落后，脱节不入流」 。 遊民星空引述玩家意見，反映WeGame版只修改了文案內容，「血池、残躯、骷髅头堆等元素」仍然保留 2024年6月，《黑神话：悟空》正式开启预购， 截至发行当日，游戏预售额已达人民币4亿元。 游戏上线后迅速登顶 Steam WeGame 等多个平台的销量榜首 ，在Steam平台，游戏在所有国家及地区的热销榜单中位列第一，同时位列全球第一 。 截止当日晚间，游戏在Steam平台上的同时在线玩家人数突破220万，位列当日全球在线玩家人数第一， 亦成为该平台历史同时在线最多的 单机游戏 报道指出，这款游戏的迅速崛起可能在游戏行业中可留下重要的一席之地。 遊戲也是2024年8月北美（美国和加拿大）、欧洲以及日本下载量最高的PlayStation 5游戏。 發售三天後，开发商游戏科学宣布全平台游戏销量已经超过1000万套， 全平台上的同时在线玩家人数突破300万。 首月銷售超過2000萬份 ，成為歷史上销售速度最快的游戏之一。 实体豪华版和实体收藏版銷量方面，以 为例，有70万人登记购买3万套的实体版本 。 《黑神话：悟空》的首月销量使其入选 吉尼斯世界纪录 “根据经典小说改编的销售最快的电子游戏” 根据博主“国游销量榜 ”推算，2024年《黑神话：悟空》全年销量超过2800万份，销售额达到人民币90亿元 。 2025年10月17日， 中共浙江省委 宣传部部长赵承在世界互联网大会乌镇峰会新闻发布会上也提供了相同的销售数据 2023 Gamescom 最佳視覺效果 最佳史詩游戲 2024 泰國遊戲獎 年度遊戲 最佳動作游戲 最佳游戲指導 最佳PC/主機游戲 金摇杆奖 終極年度游戲 Golden Joystick Award for Game of the Year 最佳視覺設計 直播者大奖 The Streamer Awards 年度直播游 [CONTENT_TRUNCATED: 24214 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-6",
+      "content_hash": "4b89b483ea7ff8f1093092e09e3cc35b28a67aa779aa1fa10f876c970b7e44d3"
+    },
+    {
+      "evidence_id": "ev_20b7990a7f73f205",
+      "source_id": "src_0cda69da80065b49",
+      "text": "这就是文化本地化的力量。 但文化本地化不是简单的\"入乡随俗\"。邀请本地KOL、讲本地故事、参与本地热点。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "418da92cb1281fe5316ed74df3a8c8a8f4521bd5758f6aa35b8a384ee01c05b0"
+    },
+    {
+      "evidence_id": "ev_7cddf1feff0e2374",
+      "source_id": "src_6bf01839c4dbec4f",
+      "text": "原神新角色洛恩立绘曝光引发国内外争议.从文化出海到赚取外汇，正太角色背后的经济账. 这种双重标准，折射出的恰恰是某些人骨子里的极度自卑。 抛开文化维度的争端，单从最基础的经济学常识来看，这些指控更是滑天下之大稽。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "2b0f965ab5b9842a5a3770821c9b9e973c2616754e21739917b084e19550a8c5"
+    },
+    {
+      "evidence_id": "ev_73e548ed9f6c27a4",
+      "source_id": "src_e588785aa5c441cd",
+      "text": "Викторина PUBG Mobile. Только настоящий мастер Battle Royale наберёт 100 очков.Подробные объяснения. Полные интересных фактов о PUBG Mobile! Начать викторину.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "46ad7e3d59038bc9640365bf597dfcc4a19485ae236c28d8ec45eb7f41c2d7cb"
+    },
+    {
+      "evidence_id": "ev_4c09b9b9fa482a5f",
+      "source_id": "src_44b217329640f89a",
+      "text": "Watch free high-definition Japanese AV online, no download required, high-speed playback without delay, over 100,000 videos, updated daily, no ads after playback starts, supports any device including mobile phones, computers and smart TVs.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c99ac5663d3e70567ca2ac0b44808b1d906f9f0ac54f06da77a61b432f0a36e5"
+    },
+    {
+      "evidence_id": "ev_84afc1bd5ed064a2",
+      "source_id": "src_e173ed7402a037ce",
+      "text": "These data theft allegations against Krafton raise data privacy concerns in India, especially when a foreign country might be involved. The original source for BGMI, PUBG Mobile, was banned in 2020 by the Indian government, alongside 118 other apps.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "71d5e11a61014b324c0b1e9fca2ff2b243887af4297e2337e08b337a33203e85"
+    },
+    {
+      "evidence_id": "ev_886ac08f0f7a4bea",
+      "source_id": "src_0827da2f6188dced",
+      "text": "Battlegrounds Mobile India, previously known as PUBG Mobile India, is a version of PUBG Mobile, available in India. It is an online multiplayer battle royale game by Krafton. The game was initially released on 2 July 2021 for Android devices, and on 18 August 2021 for iOS devices.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "714844e3ba242241a9b431d5da1af3231e561b8232b939c220ce3bfef6d85eb6"
+    },
+    {
+      "evidence_id": "ev_ea9c2feb935d375d",
+      "source_id": "src_57f306005da2ad58",
+      "text": "August, 2020: Krafton, the Korean company that owns PUBG and develops the game for PC and consoles, meets with Indian embassy officials to discuss the company’s plans in India. September, 2020: The game is banned in India along with other Chinese-developed apps.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "34fe6b90698e166890e6d5ba78a673f7d788491899a72950495d4f03c24a0dac"
+    },
+    {
+      "evidence_id": "ev_8e9ad7fd13f579b4",
+      "source_id": "src_5e1d1f6688926d96",
+      "text": "Battlegrounds Mobile India (BGMI) is no longer available to download on Google Play Store or Apple App store, but this is how you can still play. By: HT TECH | Updated on: Jul 29 2022, 17:58 IST.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7b15d08636f0aebe04dc44edd50d3ed63f40da8ce6d44c0ec39caee5537658b0"
+    },
+    {
+      "evidence_id": "ev_31a213386072056b",
+      "source_id": "src_0f3e0ba9114efefe",
+      "text": "The official said that concerns were raised over the possibility of Krafton sharing Indian users’ personal data with foreign nations, especially China, and its ownership patterns, as an entity controlled by China’s Tencent is among the largest shareholders in Krafton.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ac5c29384e1b2fa7eddae8670ce5530254f05d4038352df26565caf22dc3ba92"
+    },
+    {
+      "evidence_id": "ev_4304eee9e6d5bce7",
+      "source_id": "src_96f889018cd0e3aa",
+      "text": "Dec 21, 2017 · PUBG: BATTLEGROUNDS, the high-stakes winner-take-all shooter that started the Battle Royale craze, is free-to …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "287dbea2081959b60526bf8c29060d5d242ff22386a8971d5e2e32887c46a07e"
+    },
+    {
+      "evidence_id": "ev_34fc1fd06166e2bc",
+      "source_id": "src_b1914b7ee12fb298",
+      "text": "PUBG: BATTLEGROUNDS is a battle royale that pits 100 players against each other. Players will land, loot, and survive in a …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6c7e923bb2545e35ea9baf5756276e1d594b7b24d95b063fb5ba1bd9a188cab3"
+    },
+    {
+      "evidence_id": "ev_da367f2b3a15e6c2",
+      "source_id": "src_6a36146052299098",
+      "text": "This takes the total count of Chinese-linked mobile apps banned by India to 224.According to data company Sensor Tower, PUBG had roughly 175 million installs in India. Manorama Yearbook app is now available on Google Play Store and iOS App Store.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7d46bc9b6cb7a1f0b29f7f12075e2d94a6ff8cf53f280cd125b37d877bac9453"
+    },
+    {
+      "evidence_id": "ev_521160f07b44e02e",
+      "source_id": "src_1caa68efe2de4698",
+      "text": "India has banned more than 100 additional apps with linkage to China, including popular mobile game PUBG, citing cybersecurity concerns as geopolitical.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d135d6eeb4c0bb9a6ff3e232270762004075730b4b555ed3d2061142c9254a1c"
+    },
+    {
+      "evidence_id": "ev_2abac50fbc6aaa18",
+      "source_id": "src_8e78a89552d2d004",
+      "text": "The ban has now happened, with India stating in an official press release that PlayerUnknown’s Battlegrounds, or PUBG, and the other apps “are engaged in activities which is prejudicial to sovereignty and integrity of India, defence of India, security of state and public order.”",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3723ba15d5e59789a4e6ac97e616e295805269c49ade76b17d437e93bc9b19ed"
+    },
+    {
+      "evidence_id": "ev_ea1dcac9882ae5a4",
+      "source_id": "src_784d82a371e64567",
+      "text": "The Centre banned 118 Chinese Apps including PUBG on Wednesday, amid the prolonged standoff with China at the Line of Actual Control. As per the Union government, they were engaged in activities that are prejudicial to sovereignty, integrity and security of the state.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d6af1d211ca9ce87abca215977052abbe1d3eb7367bcd0a2a10be81438f10155"
+    },
+    {
+      "evidence_id": "ev_7d04706075493380",
+      "source_id": "src_393e91205f354f27",
+      "text": "India has banned over 118 mobile apps with links to China, including one of the most popular mobile multiplayer games PUBG MOBILE. The bans take place amid the escalation of tensions between China and India which followed a deadly border dispute.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "99e27bc4c0e1076881449784bfb079d0a75da785707a5a7c9bb787360dcd44e6"
+    },
+    {
+      "evidence_id": "ev_8fc655ee269e26b5",
+      "source_id": "src_388d268222748478",
+      "text": "APK download 1. 4 GB Download complete. Start playing now! APK download 1. 4 GB Download complete. Start playing now! More EVENTS PREVIEW More Enter PUBGMOBILE X ATTACH 2025/10. 25 Gameplay Classic HOME Metro Royale Co-Create Space More World of Wonder is a creative mode in PUBG MOBILE, where you can freely combine gameplay devices, scene objects, and game parameters to create your own custom games. Hurry and try creating your very own map! More The Ptopia Design Project is PUBG MOBILE's first global creation project. It's a world created by players, for players. Your design has a chance to be added to the game More Let the world see your talent! PRIZE POLL WORTH US $50,000 ESPORTS 2025 PMGO Open Qualifiers Round 2 kicks off NOW across all regions! More Redeem PURCHASE SECURITY CENTER FACEBOOK LIKE YOUTUBE SUBSCRIBE REDDIT Join FOLLOW INSTAGRAM FOLLOW DISCORD Join FOLLOW US FACEBOOK YOUTUBE INSTAGRAM REDDIT discord Customer Support: service@pubgmobile. com Partnership Inquiry: pubgmobile_business@tencent. com © 2026 KRAFTON, lnc. AII RIGHTS RESERVED. © 2019-2026 Proxima Beta Pte. Limited. AII RIGHTS RESERVED. Privacy Policy Cookies Policy User Agreement Law Enforcement Requests Digital Services Act Open Source JOIN THE COMMUNITY FOLLOW US FACEBOOK LIKE FOLLOW YOUTUBE SUBSCRIBE INSTAGRAM FOLLOW REDDIT Join discord Join Customer Support: service@pubgmobile.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "15aa7614e238c9cf48e42aecb36cdca2a482c398eca0c6086349ddea024f8644"
+    },
+    {
+      "evidence_id": "ev_14ce05a04a64a72a",
+      "source_id": "src_388d268222748478",
+      "text": "com Partnership Inquiry: pubgmobile_business@tencent. com © 2026 KRAFTON, lnc. AII RIGHTS RESERVED. © 2019-2026 Proxima Beta Pte. Limited. AII RIGHTS RESERVED. Privacy Policy Cookies Policy User Agreement Law Enforcement Requests Digital Services Act Open Source",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "889572fe10ae2442f6a4a055ff84abbbfedb8a46bc5ce3fadc95baf76c10927b"
+    },
+    {
+      "evidence_id": "ev_f6b1dc06e4bbf88a",
+      "source_id": "src_8f6c674b8d212b12",
+      "text": "比亚迪海洋携手黑神话悟空 广州车展海豹06GT《黑神话：悟空》官方痛车. 01:47.索尼:《黑神话悟空》的成功弥补了《星鸣特攻》的损失 感谢黑神话悟空！",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "efdc2f535f977f656d3df93df7c9d74dc39acd1d34893c065f319a0312cdae46"
+    },
+    {
+      "evidence_id": "ev_acbc3e0e492f8216",
+      "source_id": "src_387e4a1c8432689e",
+      "text": "...High-performance proxy service with global static, dynamic, and mobile IPs...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c1d37b461addf0a21009487b7efa094cc653c44b80c3ba8a9b95cd171d402a59"
+    },
+    {
+      "evidence_id": "ev_ca8753de3f6591d7",
+      "source_id": "src_396019cf2fce4ce6",
+      "text": "This reflects a natural evolution of the product. We're continuing to expand notebooks beyond a standalone app into an integrated workspace that brings your context across our AI products. You can continue to use Gemini Notebook across web and mobile as a standalone tool.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8f1691e3a0950f5d2c6a561bcb2f2edc4a00df46cccd6b6e1add76bdd3c17f40"
+    },
+    {
+      "evidence_id": "ev_622fca6422624d9b",
+      "source_id": "src_fc2193575ee283e3",
+      "text": "国庆前夕，开放商米哈游正式向全球市场推出了《原神》。《原神》为什么能火？ App Annie的分析师以及其他一些海外媒体均认为，《原神》的游戏设计是其发布之初成功的关键原因。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "2b29ae52db860f0350489ead964ed71e9eb0b0d0cea408659eb516fd4c170148"
+    },
+    {
+      "evidence_id": "ev_421d66c494c6c7b6",
+      "source_id": "src_9aff2c9064c87b05",
+      "text": "01 、二强格局正在松动. Can't wait to be in Genshin Impact.」特斯拉品牌创始人马斯克曾在社交媒体上表达了对《原神》的迫不及待。 继米哈游这款游戏产品在海外出圈后，多款中国游戏正攻占海外玩家的手机内存。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "fa67b37b3b3ab9d1db7a638c69bb085c8c9dd96140b3251db015204e4244f1af"
+    },
+    {
+      "evidence_id": "ev_44553ee40c909683",
+      "source_id": "src_75e306ef33e45519",
+      "text": "而米哈游的《崩坏：星穹铁道》、《原神》和《绝区零》包揽了收入榜的5-7名，多款热门手游收入均有不同程度的上涨，带动了米哈游的全球收入暴涨77%。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "05f5f0675ede07014109d1317b3988c3217b7928276f3c785bb5ffdd615aa0ef"
+    },
+    {
+      "evidence_id": "ev_bc97504a391ec491",
+      "source_id": "src_79a4ba3cd7092373",
+      "text": "Publisher. Level Infinite. Platform. Mobile. PUBG MOBILE, as the original mobile version of PUBG: BATTLEGROUNDS, co-developed by LightSpeed Studios and KRAFTON, Inc., was released globally in March 2018. Full website.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "d0655d8f094de9b6c9d3f23b2f6262e7d9493e25f9559cdaf495119f28ac8d47"
+    },
+    {
+      "evidence_id": "ev_02820630de5b2b09",
+      "source_id": "src_5f72e389643aa4c8",
+      "text": "8-16 Characters. The password must include a combination of at least three of the following: uppercase letters, lowercase letters, numbers, and symbols. 8-16 Characters. The password must include a combination of at least three of the following: uppe...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "5e76aab855687217bd3a6e34c138093f44e3faceb76857883cbd853760594225"
+    },
+    {
+      "evidence_id": "ev_9ef00b9f4b2627da",
+      "source_id": "src_b279d996f5076167",
+      "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Designer Brendan Greene Artist Jang Tae-seok Composer Tom Salta Series PUBG Engine Unreal Engine 4 Platforms Windows Android Xbox One PlayStation 4 Stadia Xbox Series X/S PlayStation 5 Release December 20, 2017 Windows December 20, 2017 Android March 19, 2018 Xbox One September 4, 2018 PlayStation 4 December 7, 2018 Stadia April 28, 2020 Xbox Series X/S PlayStation 5 November 13, 2025 Genre Battle royale Mode Multiplayer PUBG: Battlegrounds , originally titled PlayerUnknown's Battlegrounds PUBG ), is a 2017 battle royale game published by Krafton and developed by Krafton's PUBG Studios . Inspired by the Japanese film Battle Royale (2000), the game is based on mods created by Brendan \"PlayerUnknown\" Greene and was developed under his creative direction.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "96a08baf576782bdea4b553f4554f1dc5f5c205f0ff038d313429b17425bca32"
+    },
+    {
+      "evidence_id": "ev_24a443e17b5315c5",
+      "source_id": "src_b279d996f5076167",
+      "text": "Played from a third-person first-person perspective, up to one hundred players parachute onto an island where they search for weapons and equipment to fight against each other while trying to survive as the last one standing. The safe area of the game's map decreases over time, directing players into an ever-tightening space to force encounters. PlayerUnknown's Battlegrounds was first released for Windows Steam early access beta program in March 2017, with a full release in December 2017; the same month, Microsoft Studios released it for the Xbox One via the Xbox Game Preview program, with a full release in September 2018. Afterwards the game was ported to the PlayStation 4 Xbox Series X/S PlayStation 5 consoles, and the Stadia streaming platform, and has also spawned a mobile version, PUBG Mobile , for Android . The game was renamed PUBG: Battlegrounds in 2021 and has been free-to-play for all platforms since January 2022. It is continuously developed under the games as a service model. The game received positive reviews from critics, who found that despite technical flaws, it presented a new type of gameplay that could be easily approached by players of any skill level and was highly replayable . It was credited with popularizing the battle royale genre, with a number of unofficial Chinese clones being produced following its success.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "2e3776f74ed937a5226bfa76fe3912764fbe967609228a90a282452f86968169"
+    },
+    {
+      "evidence_id": "ev_ac0627251d94988d",
+      "source_id": "src_b279d996f5076167",
+      "text": "The game received several Game of the Year nominations and set seven Guinness World Records , among many other accolades. PUBG Corporation has run several small tournaments and introduced in-game tools to help with broadcasting the game to spectators, as they wish for it to become a popular esport title. It has sold over 75 million copies on personal computers game consoles , becoming the second-best-selling game on PC best-selling game on Xbox One , as well as the fifth best-selling video game overall. Until Q3 2022, the game has accumulated $13 billion in worldwide revenue, including from its more successful mobile version, making it one of the highest-grossing video games of all time. Gameplay PUBG is a player versus player -based shooter game in which up to one hundred players fight in a battle royale , a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match solo, duo, or with a small team of up to four people. The last person or team alive wins the match. Each match starts with players parachuting from a plane onto one of the eight maps which have different sizes and terrain ranging from 1 to 64 square kilometers. The plane's flight path across the map varies with each round, requiring players to quickly determine the best time to eject and parachute to the ground.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "bbdeeed041e1c140f3c4ce8dec779257fc2a82bb51d1d170b48082240802453e"
+    },
+    {
+      "evidence_id": "ev_53f8e454c22f3298",
+      "source_id": "src_b279d996f5076167",
+      "text": "Players start with no gear beyond customized clothing selections which do not affect gameplay. Once they land, players can search buildings, ghost towns and other sites to find weapons, vehicles, armor, and other equipment. These items are procedurally distributed throughout the map at the start of a match, with certain high-risk zones typically having better equipment. Killed players can be looted to acquire their gear as well. Players can opt to play either from the first-person third-person perspective , each having their own advantages and disadvantages in combat and situational awareness; though server-specific settings can be used to force all players into one perspective to eliminate some advantages. As of 2026, all official competitive modes are only in third-person. Every few minutes, the playable area of the map begins to shrink down towards a random location, with any player caught outside the safe area taking damage incrementally, and eventually being eliminated if the safe zone is not entered in time; in game, the players see the boundary as a shimmering blue wall that contracts over time. This results in a more confined map, in turn increasing the chances of encounters. During the course of the match, random regions of the map are highlighted in red and bombed, posing a threat to players who remain in that area.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "d665b52c3af1625a7fa9c44fed2aa80e5178841046450a8cb4df67dcbaad7294"
+    },
+    {
+      "evidence_id": "ev_1713f27f3cb58bc4",
+      "source_id": "src_b279d996f5076167",
+      "text": "In both cases, players are warned a few minutes before these events, giving them time to relocate to safety. A plane will fly over various parts of the playable map occasionally at random, or wherever a player uses a flare gun , and drop a loot package, containing items which are typically unobtainable during normal gameplay. These packages emit highly visible red smoke, drawing interested players near it and creating further confrontations. On average, a full round takes no more than 30 minutes. At the completion of each round, players gain in-game currency based on their performance. The currency is used to purchase crates which contain cosmetic items for character or weapon customization. A rotating \"event mode\" was added to the game in March 2018. These events change up the normal game rules, such as establishing larger teams or squads, or altering the distribution of weapons and armor across the game map.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "7eb0e2fe436cee7819be7cf5c3d5cbb086f4145e7a519a9740ccba31023dd460"
+    },
+    {
+      "evidence_id": "ev_c9e45a23c62b9062",
+      "source_id": "src_b279d996f5076167",
+      "text": "Development Game creator Brendan \"PlayerUnknown\" Greene in 2018 The game's concept and design was led by Brendan Greene, better known by his online handle PlayerUnknown, who had previously created a mod for ARMA 2 called DayZ: Battle Royale , an offshoot of the popular mod DayZ , and inspired by the 2000 Japanese film Battle Royale At the time he created DayZ: Battle Royale , around 2013, Irish-born Greene had been living in Brazil for a few years as a photographer, graphic designer, and web designer, and played video games such as Delta Force: Black Hawk Down America's Army DayZ mod caught his interest as it is a realistic military simulation and its open-ended gameplay, and he started playing around with a custom server, learning programming as he went along. Greene found most multiplayer first-person shooters too repetitive, considering maps small and easy to memorize. He wanted to create something with more random aspects so that players would not know what to expect, creating a high degree of replayability; this was done by creating vastly larger maps that could not be easily memorized, and using random item placement across it.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "a0d589c4bb66064034c01650ab6169435afdb4b1f407aac862e11d2389e4f50b"
+    },
+    {
+      "evidence_id": "ev_934aac398e9a33f1",
+      "source_id": "src_b279d996f5076167",
+      "text": "Greene was also inspired by an online competition for DayZ called Survivor GameZ , which featured a number of streamers Twitch YouTube fighting until only a few were left; as he was not a streamer himself, Greene wanted to create a similar game mode that anyone could play. His initial efforts on this mod were more inspired by The Hunger Games novels, where players would try to vie for stockpiles of weapons at a central location, but he moved away from this partially to give players a better chance at survival by spreading weapons around, and to avoid copyright issues with the novel [CONTENT_TRUNCATED: 112470 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "0123f6351939663942854b8f4feea60f3297426033ecec2ae407c22edcc87877"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_b7568537e1438432",
+        "text": "《黑神话：悟空》代表\"内容驱动+文化符号输出\"路径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3462,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a2196b61ba7029df",
+          "ev_b34ae84d404161d9",
+          "ev_4de96561077e2a89"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fd9691a8bfc1bf45",
+        "text": "游戏科学作为开发商自主承担全球发行，不依赖第三方海外发行商 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.324,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_65f63d34694ac878"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_30498aeb891bd710",
+        "text": "其市场表现为中国单机出海树立了新标杆：预售额约4亿元人民币，发售3天全球销量超1000万份，首月超2000万份，发售当月为北美、欧洲、日本下载量最高的 PS5 游戏（据行业媒体聚合报道）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.45,
+        "support_evidence_ids": [
+          "ev_65f63d34694ac878"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d3a2a4d4785a6270",
+        "text": "文化策略上，团队实地扫描山西古建、大足石刻等实景素材，并采用\"音译+意译混合\"的翻译策略（如 Yaoguai 保留音译），不做文化适配妥协，依靠产品品质让海外玩家\"反向接受\"高语境中国文化。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1737,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7a1d284e3abeac20",
+          "ev_4de96561077e2a89",
+          "ev_a2196b61ba7029df"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7a1d284e3abeac20",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "遊戲開發成本超過3億人民幣，2023年獲杭州市稅務部2800萬人民幣的扣除優惠 开发团队所扫描的 大足石刻 图为宝顶山摩崖造像。 在设计游戏环境时，为提升建筑资产制作效率，游戏科学决定实地扫描不同地点的建筑和雕像，并将这些元素复制到游戏中或作为设计的基础。 在首段实机演示视频发布前，团队已经开始相关考察和扫描工作。 实机演示发布后，团队的扫描工作得到了当地政府支持。 作品中的许多建筑元素取材自现存的中国古代建筑，类型包括寺庙、佛塔、宫殿、城堡、住宅、园林等。 根据已公布的36个取景地名单显示，山西境内的取景地多达27个， 佑国寺、 云冈石窟 西溪二仙庙 应县木塔 山西省之外，其他的取景地具有浙江 梅氏宗祠 ；重庆的 大足石刻 塔林；陕西 攀龙门；贵州 ；四川的 安岳石刻 ；河北的 南安寺塔 除了自有的建筑扫描和模型制作团队外，游戏科学还与南京图形科学合作。 游戏科学完成扫描后，由南京图形科学负责五台山部分建筑的二次设计创作 游戏中的一些角色，如亢金龙（左）、娄金狗（右），其创作灵感源自 的彩塑。 角色亢金龙以人形和龙形出现，作为敌方的头目。 《黑神话：悟空》中的主要角色源自《西游记》中",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4de96561077e2a89",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "是游戏中的地标之一 《黑神话：悟空》的故事可分为六个章节，名为“火照黑云”、“风起黄昏”、“夜生白露”、“曲度紫鸳”、“日落红尘”和“未竟”， 并且拥有两个结局，玩家的选择和经历将影响最终的结局。 每个章节结尾，附有 的动画过场，展示和探索《黑神话：悟空》中的叙事和主题元素。 游戏的设定融合了中國的文化和自然地标。 例如重慶的 大足石刻 等，都在游戏中出现。 游戏也融入了 的哲学元素。 《西游记》 《黑神话：悟空》的故事情节发生在《 》故事之后。 在老猴子的说书故事中，据传 成佛后依旧不愿受到拘束，待 东归后便辞去佛位，欲回到 逍遥快活，未料遭到 四大天王 率领天兵天将再次杀奔花果山。 就在孙悟空与二郎神激战时，本已消失的 却再次出现，孙悟空不敌二郎神，就此殒命，肉身残躯化为石卵，魂魄分为六件根器，名为 ，隐藏世间。 多年后，玩家扮演的花果山“天命人”踏上了寻找遗失根器、解救和复活孙悟空的旅程。 寻找根器 “天命人”前往黑风山寻找根器，得到土地公的帮助，来到火后重建的观音禅院。 与各个妖王和头目决斗后，天命人最后在黑风山山顶的宝塔上击败 ，找回孙悟空的第一件根器“眼看喜”。 但黑熊精之",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a6264bceacb26c76",
+        "text": "这一模式的挑战在于叙事门槛——86版《西游记》的集体记忆在海外缺失，部分海外评测指出术语翻译存在不一致。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0692,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4de96561077e2a89",
+          "ev_a2196b61ba7029df",
+          "ev_7a1d284e3abeac20"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4de96561077e2a89",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "是游戏中的地标之一 《黑神话：悟空》的故事可分为六个章节，名为“火照黑云”、“风起黄昏”、“夜生白露”、“曲度紫鸳”、“日落红尘”和“未竟”， 并且拥有两个结局，玩家的选择和经历将影响最终的结局。 每个章节结尾，附有 的动画过场，展示和探索《黑神话：悟空》中的叙事和主题元素。 游戏的设定融合了中國的文化和自然地标。 例如重慶的 大足石刻 等，都在游戏中出现。 游戏也融入了 的哲学元素。 《西游记》 《黑神话：悟空》的故事情节发生在《 》故事之后。 在老猴子的说书故事中，据传 成佛后依旧不愿受到拘束，待 东归后便辞去佛位，欲回到 逍遥快活，未料遭到 四大天王 率领天兵天将再次杀奔花果山。 就在孙悟空与二郎神激战时，本已消失的 却再次出现，孙悟空不敌二郎神，就此殒命，肉身残躯化为石卵，魂魄分为六件根器，名为 ，隐藏世间。 多年后，玩家扮演的花果山“天命人”踏上了寻找遗失根器、解救和复活孙悟空的旅程。 寻找根器 “天命人”前往黑风山寻找根器，得到土地公的帮助，来到火后重建的观音禅院。 与各个妖王和头目决斗后，天命人最后在黑风山山顶的宝塔上击败 ，找回孙悟空的第一件根器“眼看喜”。 但黑熊精之",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e86c8a953cc0bff9",
+        "text": "《PUBG Mobile》代表\"IP合作+区域代理灵活调整\"路径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.15,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ef00b9f4b2627da",
+          "ev_24a443e17b5315c5",
+          "ev_ac0627251d94988d"
+        ],
+        "source_ids": [
+          "src_b279d996f5076167"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ef00b9f4b2627da",
+            "source_id": "src_b279d996f5076167",
+            "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Des",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_24a443e17b5315c5",
+            "source_id": "src_b279d996f5076167",
+            "text": "Played from a third-person first-person perspective, up to one hundred players parachute onto an island where they search for weapons and equipment to fight against each other while trying to survive as the last one standing. The safe area of the game's map decreases over time, directing players into an ever-tightening space to force encounters. PlayerUnknown's Battlegrounds was first released for Windows Steam early access beta program in March 2017, with a full release in December 2017; the sa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_27661aae84a8500b",
+        "text": "该作由腾讯光子工作室群与 Krafton 联合开发，2018年3月全球发行，腾讯负责多数市场的移动端发行，韩国等市场则由本地厂商代理 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ef00b9f4b2627da",
+          "ev_8fc655ee269e26b5",
+          "ev_14ce05a04a64a72a"
+        ],
+        "source_ids": [
+          "src_b279d996f5076167",
+          "src_388d268222748478"
+        ],
+        "reason": "证据仅显示PUBG Studios为开发商，Tencent负责移动版发行、Kakao Games负责韩国，Android版2018年3月19日发布；但未提及腾讯光子工作室群与Krafton联合开发该作，也未明确腾讯负责多数市场移动发行，复合 claim 的多个关键子句未被证据支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ef00b9f4b2627da",
+            "source_id": "src_b279d996f5076167",
+            "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Des",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8fc655ee269e26b5",
+            "source_id": "src_388d268222748478",
+            "text": "APK download 1. 4 GB Download complete. Start playing now! APK download 1. 4 GB Download complete. Start playing now! More EVENTS PREVIEW More Enter PUBGMOBILE X ATTACH 2025/10. 25 Gameplay Classic HOME Metro Royale Co-Create Space More World of Wonder is a creative mode in PUBG MOBILE, where you can freely combine gameplay devices, scene objects, and game parameters to create your own custom games. Hurry and try creating your very own map! More The Ptopia Design Project is PUBG MOBILE's first g",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_931342b9ce13a236",
+        "text": "PUBG 系列全球累计收入超130亿美元（截至2022年三季度，据维基百科汇总）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_24a443e17b5315c5",
+          "ev_ac0627251d94988d"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24a443e17b5315c5",
+          "ev_ac0627251d94988d",
+          "ev_9ef00b9f4b2627da"
+        ],
+        "source_ids": [
+          "src_b279d996f5076167"
+        ],
+        "reason": "证据明确说明截至2022年三季度（Until Q3 2022）PUBG全球累计收入达130亿美元（$13 billion worldwide revenue），包含移动版，数字与时间点均吻合，且来源为维基百科。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24a443e17b5315c5",
+            "source_id": "src_b279d996f5076167",
+            "text": "Played from a third-person first-person perspective, up to one hundred players parachute onto an island where they search for weapons and equipment to fight against each other while trying to survive as the last one standing. The safe area of the game's map decreases over time, directing players into an ever-tightening space to force encounters. PlayerUnknown's Battlegrounds was first released for Windows Steam early access beta program in March 2017, with a full release in December 2017; the sa",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ac0627251d94988d",
+            "source_id": "src_b279d996f5076167",
+            "text": "The game received several Game of the Year nominations and set seven Guinness World Records , among many other accolades. PUBG Corporation has run several small tournaments and introduced in-game tools to help with broadcasting the game to spectators, as they wish for it to become a popular esport title. It has sold over 75 million copies on personal computers game consoles , becoming the second-best-selling game on PC best-selling game on Xbox One , as well as the fifth best-selling video game ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_67f71c6710cee7fb",
+        "text": "其核心能力不是文化内容，而是区域化合规架构：在监管敏感市场迅速更换发行主体、推出特供版本。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1216,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_b34ae84d404161d9",
+          "ev_0b3f3e19dd2ea5d6"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_324a5133fe15ab5d",
+        "text": "《原神》代表\"自研自发+深度结构性本地化\"路径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1104,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f06e6e5abdc7b545",
+          "ev_76d3cabb19b41bb9",
+          "ev_20b7990a7f73f205"
+        ],
+        "source_ids": [
+          "src_4906e8172d29380b",
+          "src_82ce0e7bbe18460d",
+          "src_0cda69da80065b49"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f06e6e5abdc7b545",
+            "source_id": "src_4906e8172d29380b",
+            "text": "《原神》是由米哈游自研的一款开放世界冒险RPG。 你将在游戏中探索一个被称作「提瓦特」的幻想世界。 在这广阔的世界中，你可 …",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_76d3cabb19b41bb9",
+            "source_id": "src_82ce0e7bbe18460d",
+            "text": "《原神》是由米哈游自研的一款开放世界冒险RPG。 你将在游戏中探索一个被称作「提瓦特」的幻想世界。 在这广阔的世界中，你可 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_70c947f70993778b",
+        "text": "米哈游通过注册于新加坡的 HoYoverse 自建全球发行、运营与社区体系，支持13种以上语言文本和中/英/日/韩四国语音，并在游戏世界观层面原生嵌入多国文化母体。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1145,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_a2196b61ba7029df",
+          "ev_65f63d34694ac878"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f98e616c38f8d759",
+        "text": "这一\"全球内容工厂\"模式使其长期位居中国手游出海收入榜前列，但也带来独特的文化争议与合规负担（见下节）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1537,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_65f63d34694ac878",
+          "ev_fe2d1b3447534300"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_3d1636fbda714dad"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a5298ee7ea5026cb",
+        "text": "需要说明的是，本轮检索未获得《原神》海外收入的权威一手数据，相关规模判断主要基于 Sensor Tower 历年报告的公开常识。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0875,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe2d1b3447534300",
+          "ev_1572ff140bc49aa8",
+          "ev_5e7c6301269fd2d5"
+        ],
+        "source_ids": [
+          "src_3d1636fbda714dad",
+          "src_a2d638930024afba",
+          "src_b06f2730c2c1e711"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe2d1b3447534300",
+            "source_id": "src_3d1636fbda714dad",
+            "text": "1. 3月中国手游出海情况：腾讯《PUBG Mobile》重新登顶海外收入增长榜、下载榜. 4月13日，Sensor Tower公布了3月中国手游产品出海情况。本期下载榜TOP 3依次为：《PUBG Mobile》《Doomsday: Last Survivors》和《Piano Fire》。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1572ff140bc49aa8",
+            "source_id": "src_a2d638930024afba",
+            "text": "根據 Sensor Tower 數據顯示，騰訊於日本市場的「行動小隊 RPG」類別中的廣告費與曝光量雙雙排名第一，甚至與第二名的差距來到兩倍之多。 YouTube 的廣告支出高達 89%，其次是 X（Twitter）7%、TikTok 4%。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9aecee4860df5d1d",
+        "text": "翻译与可译性挑战（黑神话）：《西游记》及佛道术语属于高语境文化，86版影视记忆在海外缺位，买断制单机的本地化重在一次性翻译质量与文化注释，与长线运营游戏\"持续活动本地化\"的逻辑根本不同。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1059,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a2196b61ba7029df",
+          "ev_b34ae84d404161d9",
+          "ev_7a1d284e3abeac20"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8f3731ca844fb8a0",
+        "text": "文化符号挪用争议（原神）：多文化拼盘设计在扩大受众的同时引发反弹——须弥地区上线时曾遭海外\"肤色漂白\"（whitewashing）与文化挪用批评；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1256,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_7cddf1feff0e2374"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_6bf01839c4dbec4f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bbf453737662c236",
+        "text": "国内则出现角色设计\"媚外/文化讨好\"的舆论争议。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1794,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7cddf1feff0e2374",
+          "ev_7a1d284e3abeac20",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_6bf01839c4dbec4f",
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7cddf1feff0e2374",
+            "source_id": "src_6bf01839c4dbec4f",
+            "text": "原神新角色洛恩立绘曝光引发国内外争议.从文化出海到赚取外汇，正太角色背后的经济账. 这种双重标准，折射出的恰恰是某些人骨子里的极度自卑。 抛开文化维度的争端，单从最基础的经济学常识来看，这些指控更是滑天下之大稽。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7a1d284e3abeac20",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "遊戲開發成本超過3億人民幣，2023年獲杭州市稅務部2800萬人民幣的扣除優惠 开发团队所扫描的 大足石刻 图为宝顶山摩崖造像。 在设计游戏环境时，为提升建筑资产制作效率，游戏科学决定实地扫描不同地点的建筑和雕像，并将这些元素复制到游戏中或作为设计的基础。 在首段实机演示视频发布前，团队已经开始相关考察和扫描工作。 实机演示发布后，团队的扫描工作得到了当地政府支持。 作品中的许多建筑元素取材自现存的中国古代建筑，类型包括寺庙、佛塔、宫殿、城堡、住宅、园林等。 根据已公布的36个取景地名单显示，山西境内的取景地多达27个， 佑国寺、 云冈石窟 西溪二仙庙 应县木塔 山西省之外，其他的取景地具有浙江 梅氏宗祠 ；重庆的 大足石刻 塔林；陕西 攀龙门；贵州 ；四川的 安岳石刻 ；河北的 南安寺塔 除了自有的建筑扫描和模型制作团队外，游戏科学还与南京图形科学合作。 游戏科学完成扫描后，由南京图形科学负责五台山部分建筑的二次设计创作 游戏中的一些角色，如亢金龙（左）、娄金狗（右），其创作灵感源自 的彩塑。 角色亢金龙以人形和龙形出现，作为敌方的头目。 《黑神话：悟空》中的主要角色源自《西游记》中",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fb50c71ece5a3d79",
+        "text": "这反映出\"全球内容工厂\"模式必须同时管理多个文化圈的敏感性。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1875,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_65f63d34694ac878",
+          "ev_a2196b61ba7029df"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c80766bd6e2da4d5",
+        "text": "合规换壳式本地化（PUBG Mobile/BGMI）：印度特供版 BGMI 进行了系统性内容改编——降低血腥表现、角色着装更保守、增加\"虚拟世界\"提示和游玩时长限制，并承诺用户数据本地存储。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0391,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_84afc1bd5ed064a2",
+          "ev_9ef00b9f4b2627da",
+          "ev_24a443e17b5315c5"
+        ],
+        "source_ids": [
+          "src_e173ed7402a037ce",
+          "src_b279d996f5076167"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_84afc1bd5ed064a2",
+            "source_id": "src_e173ed7402a037ce",
+            "text": "These data theft allegations against Krafton raise data privacy concerns in India, especially when a foreign country might be involved. The original source for BGMI, PUBG Mobile, was banned in 2020 by the Indian government, alongside 118 other apps.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_9ef00b9f4b2627da",
+            "source_id": "src_b279d996f5076167",
+            "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Des",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4b95b34abe31d91f",
+        "text": "这是以内容改造换取监管准入的典型案例。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1059,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_a2196b61ba7029df",
+          "ev_0b3f3e19dd2ea5d6"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e3c2fdf576741203",
+        "text": "印度——国家安全逻辑：2020年9月，印度依据《IT法案》第69A条封禁包括 PUBG Mobile 在内的118款中国背景应用，理由是国家安全与数据外流担忧。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0486,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a2196b61ba7029df",
+          "ev_84afc1bd5ed064a2",
+          "ev_9ef00b9f4b2627da"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_e173ed7402a037ce",
+          "src_b279d996f5076167"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a2196b61ba7029df",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "老猴子带领天命人和猪八戒渡过识海，老猴子欺骗天命人和猪八戒，编造谎言说只要集齐孙悟空的六根就能将其复活，但现如今却说孙悟空的第六件根器“意见欲”已经消逝，因为“ ”是每个生命独特的本质，注定会在生命终结时消散，所以孙悟空永远不会回来。 这次旅程的真正目的，是要天命人成为替身，继承孙悟空的根本和名号。 为了完成 ，西游重续，天命人必须击败 齐天大圣 残躯才能完成天命。 最后，天命人与代表孙悟空“ ”的大圣残躯战斗。 大圣残躯被击败后逐渐消散，紧箍儿掉入水中。 在决战之前如果天命人没有从二郎神那里获得孙悟空的第六件根器，老猴子会将紧箍儿戴在天命人头上，天命人沦为没有孙悟空的“反抗意志”的 执行意志的新工具；但如果在决战之前天命人已经获得孙悟空的第六件根器“意见欲”，则 齐聚，齐天大圣 复活，老猴子虽然拿起了紧箍儿，但却无法给孙悟空戴上，孙悟空避免了天庭的束缚，将和天庭斗争到底。 制作人与创意总监冯骥 游戏科学的7位初创成员在 工作期间曾参与2010年网络游戏《 》研发，该作描绘了一个黑暗风格的西游世界。 2016年，游戏科学发现 Steam 平台上有大量中国玩家，且动作角色扮演游戏占据平台",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_84afc1bd5ed064a2",
+            "source_id": "src_e173ed7402a037ce",
+            "text": "These data theft allegations against Krafton raise data privacy concerns in India, especially when a foreign country might be involved. The original source for BGMI, PUBG Mobile, was banned in 2020 by the Indian government, alongside 118 other apps.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1dc72b771b7a2e5d",
+        "text": "Krafton 通过剥离腾讯发行权、以 BGMI 换壳回归，但2022年 BGMI 仍因数据跨境与\"中国股权\"疑虑被短暂下架，2023年5月获试运营许可后才恢复——表明此类封禁由地缘政治驱动，而非内容审查驱动。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0763,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_7a1d284e3abeac20",
+          "ev_84afc1bd5ed064a2"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_e173ed7402a037ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7a1d284e3abeac20",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "遊戲開發成本超過3億人民幣，2023年獲杭州市稅務部2800萬人民幣的扣除優惠 开发团队所扫描的 大足石刻 图为宝顶山摩崖造像。 在设计游戏环境时，为提升建筑资产制作效率，游戏科学决定实地扫描不同地点的建筑和雕像，并将这些元素复制到游戏中或作为设计的基础。 在首段实机演示视频发布前，团队已经开始相关考察和扫描工作。 实机演示发布后，团队的扫描工作得到了当地政府支持。 作品中的许多建筑元素取材自现存的中国古代建筑，类型包括寺庙、佛塔、宫殿、城堡、住宅、园林等。 根据已公布的36个取景地名单显示，山西境内的取景地多达27个， 佑国寺、 云冈石窟 西溪二仙庙 应县木塔 山西省之外，其他的取景地具有浙江 梅氏宗祠 ；重庆的 大足石刻 塔林；陕西 攀龙门；贵州 ；四川的 安岳石刻 ；河北的 南安寺塔 除了自有的建筑扫描和模型制作团队外，游戏科学还与南京图形科学合作。 游戏科学完成扫描后，由南京图形科学负责五台山部分建筑的二次设计创作 游戏中的一些角色，如亢金龙（左）、娄金狗（右），其创作灵感源自 的彩塑。 角色亢金龙以人形和龙形出现，作为敌方的头目。 《黑神话：悟空》中的主要角色源自《西游记》中",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c61a7d3f79df5b72",
+        "text": "欧盟——隐私与博彩逻辑：GDPR 与《数字服务法》（DSA）约束数据跨境传输与算法透明度；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0346,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_65f63d34694ac878"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_97651e0f3b75bc91",
+        "text": "比利时、荷兰等禁止战利品箱的地区对抽卡机制构成直接限制，《原神》需相应调整。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0621,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_b34ae84d404161d9",
+          "ev_4de96561077e2a89"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7b9b2892467d0079",
+        "text": "日韩——分级与概率披露逻辑：日本 CERO、韩国 GRAC 分级为上线前置条件；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.09,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_b34ae84d404161d9",
+          "ev_0b3f3e19dd2ea5d6"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ac08a8ed49a2c6eb",
+        "text": "韩国2024年3月生效的《概率型道具信息公开法》强制披露抽卡概率。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1714,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_b34ae84d404161d9",
+          "ev_a2196b61ba7029df"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f78583a4c11cf272",
+        "text": "中东——宗教文化逻辑：涉性、赌博、LGBT 等元素需删减或本地化，巴基斯坦、约旦等国曾以\"成瘾、暴力、有违宗教价值观\"为由短期封禁 PUBG。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0231,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ef00b9f4b2627da",
+          "ev_24a443e17b5315c5",
+          "ev_ac0627251d94988d"
+        ],
+        "source_ids": [
+          "src_b279d996f5076167"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ef00b9f4b2627da",
+            "source_id": "src_b279d996f5076167",
+            "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Des",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_24a443e17b5315c5",
+            "source_id": "src_b279d996f5076167",
+            "text": "Played from a third-person first-person perspective, up to one hundred players parachute onto an island where they search for weapons and equipment to fight against each other while trying to survive as the last one standing. The safe area of the game's map decreases over time, directing players into an ever-tightening space to force encounters. PlayerUnknown's Battlegrounds was first released for Windows Steam early access beta program in March 2017, with a full release in December 2017; the sa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0a0de29ff0cb7b5b",
+        "text": "中国本土——版号与双版本差异：《黑神话：悟空》WeGame 国内版因审查对文案做了和谐处理，而 Steam 海外版未作修改 ，直观体现了国内外双轨监管。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.55,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_65f63d34694ac878",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "证据支持WeGame版文案被和谐（如“酒”改“甘露”）且与Steam版不同，可推论Steam版未改；但“直观体现了国内外双轨监管”这一评价性子句未被证据直接支持，且证据未明确将差异归因于审查制度的双轨安排，复合 claim 未获完整支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dad55064f5f3c13b",
+        "text": "结构性启示：买断制单机（黑神话）天然规避抽卡、数据、防沉迷等监管雷区，暴露面最小；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1333,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_9dbddd0bbeecc9e9",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_7d954dde7b6eda5e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9dbddd0bbeecc9e9",
+            "source_id": "src_7d954dde7b6eda5e",
+            "text": "《影之刃零》登Steam预购榜全球第一！ 海外市场巨大.此次预购的火爆表现，也让其被视为继《黑神话：悟空》之后，又一款具备全球影响力的国产单机大作。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_13e8c469abfffce5",
+        "text": "F2P 长线产品（原神、PUBG Mobile）则必须建立制度化合规能力，并通过海外主体架构（HoYoverse 新加坡、Krafton 接盘印度）隔离地缘风险。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0711,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ef00b9f4b2627da",
+          "ev_8fc655ee269e26b5",
+          "ev_84afc1bd5ed064a2"
+        ],
+        "source_ids": [
+          "src_b279d996f5076167",
+          "src_388d268222748478",
+          "src_e173ed7402a037ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ef00b9f4b2627da",
+            "source_id": "src_b279d996f5076167",
+            "text": "From Wikipedia, the free encyclopedia 2017 video game \"PUBG\" and \"PlayerUnknown's Battlegrounds\" redirect here. For the franchise, see PUBG (franchise) . For the game's mobile version, see PUBG Mobile . For the Indian version, see Battlegrounds Mobile India 2017 video game PUBG: Battlegrounds 2021 edition cover art Developer PUBG Studios Publishers Krafton Microsoft Studios (Xbox One) Tencent Games mobile Kakao Games (South Korea) Directors Brendan Greene Jang Tae-seok Producer Kim Chang-han Des",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8fc655ee269e26b5",
+            "source_id": "src_388d268222748478",
+            "text": "APK download 1. 4 GB Download complete. Start playing now! APK download 1. 4 GB Download complete. Start playing now! More EVENTS PREVIEW More Enter PUBGMOBILE X ATTACH 2025/10. 25 Gameplay Classic HOME Metro Royale Co-Create Space More World of Wonder is a creative mode in PUBG MOBILE, where you can freely combine gameplay devices, scene objects, and game parameters to create your own custom games. Hurry and try creating your very own map! More The Ptopia Design Project is PUBG MOBILE's first g",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_46d4dd7491a1cf03",
+        "text": "中国游戏出海已从\"代理换市场\"演进到\"自研自发+全球品牌\"阶段。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.225,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_65f63d34694ac878",
+          "ev_421d66c494c6c7b6",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec",
+          "src_9aff2c9064c87b05"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_421d66c494c6c7b6",
+            "source_id": "src_9aff2c9064c87b05",
+            "text": "01 、二强格局正在松动. Can't wait to be in Genshin Impact.」特斯拉品牌创始人马斯克曾在社交媒体上表达了对《原神》的迫不及待。 继米哈游这款游戏产品在海外出圈后，多款中国游戏正攻占海外玩家的手机内存。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e3118fb073bc789a",
+        "text": "三款产品验证的共同范式是：产品品质打底、全球同步多平台发行、海外架构隔离地缘风险、按市场逻辑分层本地化。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1537,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_65f63d34694ac878",
+          "ev_b34ae84d404161d9"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_65f63d34694ac878",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "例如，在该游戏发布之前，《 影之刃零 梁其伟就表示，他认为这款游戏会大受欢迎，大家都在关注它，而这款游戏的成功将给其他國產 3A遊戲 带来信心 ，中华人民共和国外交部发言人毛寧在記者會上被問及该游戏時稱，這款遊戲反映了中国文化的吸引力 ，而文旅部門亦借助游戏宣传旅游。 《數位時代》評論員陳建鈞表示中國大陸官方曾將電子遊戲視為「電子海洛因」，是諸多社會問題的根源，加上長期 禁止家用主機進口 ，讓當地 單機遊戲 發展缺乏土壤，該作商業上的成功，也在中國大陸視為「難能可貴」 小島工作室 與韓國《 》團隊等其他亞洲遊戲開發商多有祝賀 ，甚至全球首富 伊隆馬斯克 也合成自己的照片，參與《黑神話：悟空》的全球風潮。 《黑神話：悟空》的流行帮助提升 PlayStation 5 （PS5）的销量，在中国市场上，比如在 阿里巴巴 平台上，PS5成为电子游戏硬件销售榜的冠军。 游戏还带动许多玩家前往游戏的取景地旅游。 此外，游戏中的蜘蛛精四妹角色在 等平台上成为热门的 Cosplay 星島日報 遊民星空 報道遊戲 WeGame 版部分文案和角色名稱與Steam版不同，明顯遭到「 」，例如将所有的“酒”字改",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_191f9d284031dc92",
+        "text": "路径选择取决于品类与资源禀赋——长线服务型产品比拼合规与运营体系，买断制内容型产品比拼文化表达力；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0711,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b34ae84d404161d9",
+          "ev_4de96561077e2a89",
+          "ev_a2196b61ba7029df"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4de96561077e2a89",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "是游戏中的地标之一 《黑神话：悟空》的故事可分为六个章节，名为“火照黑云”、“风起黄昏”、“夜生白露”、“曲度紫鸳”、“日落红尘”和“未竟”， 并且拥有两个结局，玩家的选择和经历将影响最终的结局。 每个章节结尾，附有 的动画过场，展示和探索《黑神话：悟空》中的叙事和主题元素。 游戏的设定融合了中國的文化和自然地标。 例如重慶的 大足石刻 等，都在游戏中出现。 游戏也融入了 的哲学元素。 《西游记》 《黑神话：悟空》的故事情节发生在《 》故事之后。 在老猴子的说书故事中，据传 成佛后依旧不愿受到拘束，待 东归后便辞去佛位，欲回到 逍遥快活，未料遭到 四大天王 率领天兵天将再次杀奔花果山。 就在孙悟空与二郎神激战时，本已消失的 却再次出现，孙悟空不敌二郎神，就此殒命，肉身残躯化为石卵，魂魄分为六件根器，名为 ，隐藏世间。 多年后，玩家扮演的花果山“天命人”踏上了寻找遗失根器、解救和复活孙悟空的旅程。 寻找根器 “天命人”前往黑风山寻找根器，得到土地公的帮助，来到火后重建的观音禅院。 与各个妖王和头目决斗后，天命人最后在黑风山山顶的宝塔上击败 ，找回孙悟空的第一件根器“眼看喜”。 但黑熊精之",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_afbaa1e82d5d5e88",
+        "text": "而监管差异（印度重安全、欧盟重隐私、中东重宗教、日韩重分级）要求企业将合规能力前置到产品设计阶段。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0486,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0b3f3e19dd2ea5d6",
+          "ev_b34ae84d404161d9",
+          "ev_a2196b61ba7029df"
+        ],
+        "source_ids": [
+          "src_e5a452bfa97e8aec"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0b3f3e19dd2ea5d6",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "开发团队致力于将游戏发布于 游戏主机 。 游戏将以 的形式发行，并可能有 。 2023年8月20日，游戏科学在 举办线下试玩会，体验内容包括多个首领挑战以及独立的关卡片段 。 12月官方发布发售日预告，公布该游戏将登陆 PC、PS5 和 Xbox Series X/S 平台，也不排除支持可流畅运行的云游戏平台。 2024年2月， 国家新闻出版署 发布了當月国产网络游戏审批信息以及版号变更信息，包括《黑神话：悟空》在内的共111款游戏过审，标志着《黑神话：悟空》可以在中国大陆公开发售。 5月，在WeGame游戏之夜上，官方公布游戏将同步上线 WeGame 企业联合创始人刘卓解释游戏主角衍生品的设计过程。 2024年8月20日，《黑神话：悟空》正式发售，并发布四个版本：数字标准版、数字豪华版、实体豪华版和实体收藏版。 数字标准版：包含基础游戏。 数字豪华版：除了基础游戏，还提供游戏内的额外内容和精选数字原声音乐，额外内容包括兵器“铜云棒”，披挂“百戏傩面、百戏衬钱衣、百戏护手、百戏吊腿”和珍玩“风铎”。 实体豪华版：包含数字豪华版的啟動碼和一系列实体收藏品，收藏品包括：收藏铁盒、1:1紧箍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b34ae84d404161d9",
+            "source_id": "src_e5a452bfa97e8aec",
+            "text": "维基百科，自由的百科全书 本條目的 參考資料 可能不符合維基百科關於 可靠來源 的指引。 2025年9月14日 請幫助檢查參考資料是否符合可靠來源的標準。 黑神话：悟空 動作角色扮演 Windows PlayStation 5 Xbox Series X/S 游戏科学 全球：游戏科学 臺灣：4Divinity 、王怡新 8082 Audio 黑神话系列 虚幻引擎5 单人游戏 2024年8月20日 Windows 全球：2024年8月20日 PlayStation 5 全球：2024年8月20日 臺灣：2024年11月1日 全球：2024年12月 （實體豪華版） 中国大陆：2025年6月18日 Xbox Series X/S 全球：2025年8月20日 黑神话：悟空 》是一款由 游戏科学 开发和发行的 动作角色扮演游戏 3A游戏 ，游戏于2024年8月20日登入 Windows Steam Epic Games WeGame PlayStation 5 平台，2025年8月20日登录 Xbox Series X/S 游戏内容改编自中国古典 神魔小說 》，在正式发布前，游戏已获得业界媒体与",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2859bd762049268c",
+        "text": "局限说明：《原神》的收入与用户规模数据、PUBG Mobile 中东运营细节、BGMI 截至2026年的最新监管状态等，本轮检索未获得可直接引用的一手来源，相关表述以定性判断为主。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0378,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_84afc1bd5ed064a2",
+          "ev_8fc655ee269e26b5",
+          "ev_fe2d1b3447534300"
+        ],
+        "source_ids": [
+          "src_e173ed7402a037ce",
+          "src_388d268222748478",
+          "src_3d1636fbda714dad"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_84afc1bd5ed064a2",
+            "source_id": "src_e173ed7402a037ce",
+            "text": "These data theft allegations against Krafton raise data privacy concerns in India, especially when a foreign country might be involved. The original source for BGMI, PUBG Mobile, was banned in 2020 by the Indian government, alongside 118 other apps.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8fc655ee269e26b5",
+            "source_id": "src_388d268222748478",
+            "text": "APK download 1. 4 GB Download complete. Start playing now! APK download 1. 4 GB Download complete. Start playing now! More EVENTS PREVIEW More Enter PUBGMOBILE X ATTACH 2025/10. 25 Gameplay Classic HOME Metro Royale Co-Create Space More World of Wonder is a creative mode in PUBG MOBILE, where you can freely combine gameplay devices, scene objects, and game parameters to create your own custom games. Hurry and try creating your very own map! More The Ptopia Design Project is PUBG MOBILE's first g",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 42,
+    "evidence_count": 57,
+    "supported_count": 2,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 32,
+    "coverage": 0.0588,
+    "primary_source_ratio": 0.0,
+    "fulltext_source_ratio": 0.0714,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 31
+  },
+  "run_metadata": {
+    "final_report_sha256": "2f8ce0801d862a629cc6543f2f85c3b640a3520982628e4217d8c0ec1c2595b7",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 34,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 32,
+        "coverage": 0.0588,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 31
+      },
+      "after": {
+        "claim_count": 34,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 32,
+        "coverage": 0.0588,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 31
+      }
+    }
+  }
+}

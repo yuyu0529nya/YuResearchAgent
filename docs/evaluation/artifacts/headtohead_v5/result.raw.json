@@ -1,0 +1,4349 @@
+{
+  "artifact_schema": "headtohead-v5-preregistered",
+  "status": "complete",
+  "preregistration_sha256": "e9eae2f9e164a8e5d0f436955d42e740d6bdc35685d8f4d17dd200ef3236857f",
+  "agent_configuration_sha256": "0a1cad14fa117b9331b621553ba12df2f1b63e38bf6718ecb23e343e8e285b4e",
+  "evaluation_version": "researchbench-v2-factual-weight-fix",
+  "metric_weights": {
+    "factual_accuracy": 0.25,
+    "logical_consistency": 0.2,
+    "citation_coverage": 0.2,
+    "bias": 0.2,
+    "comprehensiveness": 0.15
+  },
+  "protocol": {
+    "pairing": "same frozen ResearchBench questions",
+    "agent": "full orchestrated retrieval and evidence pipeline",
+    "baseline": "same model, one API call, no tools or retrieval",
+    "baseline_prompt_sha256": "0a58a50ab997bbb0f7019c6d3763064b357100c29444048adf56a9c6726b8ecf",
+    "judge_implementation_sha256": "49af706a8090af2ac161c000a44dcbaefb99ea72a0cbd6cd934f8eafed431f6e",
+    "report_retention": "exact Markdown reports and SHA-256 hashes",
+    "execution_failures": "report failures; do not impute or replace questions",
+    "run_level_retry_policy": "do not regenerate a recorded pair; resume missing Judge orders only",
+    "stopping_rule": "run every frozen question; no early stopping on significance",
+    "primary_endpoint": "rule_composite_agent_minus_baseline",
+    "secondary_endpoint": "counterbalanced_judge_agent_minus_baseline",
+    "temporal_context": {
+      "as_of_date": "2026-08-14",
+      "policy": "same frozen knowledge cutoff for Agent, baseline, and Judge"
+    }
+  },
+  "models": {
+    "agent_backend": "kimi",
+    "agent_model": "k3",
+    "baseline_backend": "kimi",
+    "baseline_model": "k3",
+    "baseline_sampling": {
+      "model": "k3",
+      "endpoint": "https://api.kimi.com/coding/v1",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "max_tokens": 4000,
+      "max_input_chars": 35000,
+      "extra_body": {
+        "reasoning_effort": "low"
+      }
+    },
+    "judge_backend": "deepseek",
+    "judge_model": "deepseek-chat",
+    "judge_effective_sampling": {
+      "model": "deepseek-chat",
+      "endpoint": "https://api.deepseek.com/v1",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 1024,
+      "max_input_chars": 35000,
+      "extra_body": {}
+    }
+  },
+  "question_ids": [
+    "med_006",
+    "edu_001",
+    "fin_006",
+    "auto_001",
+    "cross_002",
+    "tech_002",
+    "tech_005",
+    "tech_007",
+    "game_002",
+    "law_001",
+    "fin_004",
+    "retail_002",
+    "media_001",
+    "energy_002",
+    "med_004"
+  ],
+  "started_at": "2026-08-13T20:20:26.144792+00:00",
+  "updated_at": "2026-08-13T21:43:10.466170+00:00",
+  "completed_questions": 15,
+  "num_questions": 15,
+  "rows": [
+    {
+      "qid": "med_006",
+      "domain": "医疗",
+      "query": "评估数字疗法（Digital Therapeutics）在慢病管理（糖尿病、高血压、抑郁症）中的临床证据、监管路径和商业化挑战。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "med_006",
+          "domain": "医疗",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.2857142857142857,
+            "bias": 0.92,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6911428571428573,
+          "hallucination_rate": 0.08
+        },
+        "runtime": {
+          "run_id": "h2h_v4_med_006_1786652426144838000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 215.4312,
+          "confidence": 0.49,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 4,
+          "estimated_worker_tokens": 36982,
+          "model_usage": {
+            "api_calls": 16,
+            "failed_calls": 0,
+            "prompt_tokens": 53501,
+            "completion_tokens": 8811,
+            "total_tokens": 62312
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 44,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 40,
+              "coverage": 0.0909,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 36
+            },
+            "after": {
+              "claim_count": 44,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 40,
+              "coverage": 0.0909,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 36
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 16,
+          "completion_tokens": 8811,
+          "failed_calls": 0,
+          "prompt_tokens": 53501,
+          "total_tokens": 62312
+        },
+        "evidence_metrics": {
+          "claim_count": 44,
+          "claim_support_coverage": 0.0909,
+          "claim_citation_rate": 0.1591,
+          "cited_claim_support_precision": 0.1429,
+          "supported_claim_citation_rate": 0.25,
+          "attribution_coverage": 0.0909,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9091,
+          "source_count": 64,
+          "evidence_count": 75,
+          "primary_source_ratio": 0.0312,
+          "fulltext_source_ratio": 0.0312
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/med_006_agent.md",
+          "sha256": "d0c69b19eb25b27d3de98abf2baae3be8efaefc04724752020acf57245237e4e",
+          "characters": 4671
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/med_006.json",
+          "sha256": "b7a0ec11862e68f09ad00b7bef5b2185fc8d3ca2fc75cce7e664c620e2187f2d"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "med_006",
+          "domain": "医疗",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9651162790697675,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6430232558139536,
+          "hallucination_rate": 0.03488372093023256
+        },
+        "runtime": {
+          "elapsed_seconds": 74.1317,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2337,
+          "failed_calls": 0,
+          "prompt_tokens": 205,
+          "total_tokens": 2542
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/med_006_baseline.md",
+          "sha256": "28bd9fe06fcf823375546b665053a3db2ba832f7d222d15c6f31eab4b3199328",
+          "characters": 4281
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 4.0,
+            "delta": 0.0
+          },
+          "structure": {
+            "agent": 4.5,
+            "baseline": 4.5,
+            "delta": 0.0
+          },
+          "sources": {
+            "agent": 3.5,
+            "baseline": 2.5,
+            "delta": 1.0
+          }
+        },
+        "agent_mean": 4.0,
+        "baseline_mean": 4.0,
+        "delta": 0.0,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了三个病种的临床证据、监管路径和商业化挑战，但未深入讨论远程监测等替代方案；报告B更全面，涵盖了更多产品、监管细节（如FDA Pre-Cert、PCCP）和商业化模式（如B2B2C），并提供了未来展望。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "两份报告均准确引用了关键事实（如Pear破产、CureApp获批、Rejoyn获批），但报告A中BlueStar的HbA1c降幅（1.2-1.9%）可能偏高，且未注明来源；报告B中Omada的HbA1c降幅（0.3-0.8%）更保守，但部分数据（如CureApp降压幅度）与参考事实一致。两者均无明显幻觉。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，有核心结论对比表、分病种分析、监管和商业化分节，逻辑连贯；报告B结构合理，但分节较多，部分内容（如监管共性挑战）略显冗余，整体逻辑通顺。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 2.0,
+                "reason": "报告A提供了4个参考文献，包含URL和部分机构信息，但部分引用（如[1]）未明确映射到正文具体主张；报告B未提供任何参考文献列表，仅提及期刊名称（如JMIR、European Heart Journal），缺乏可核验的URL或DOI，引用质量较低。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A覆盖了三个病种的临床证据、监管路径和商业化挑战，并包含综合评估与展望，内容全面；报告B同样覆盖了这些维度，但商业化部分对支付端细节和商业模式分析较简略，且缺少对监管共性挑战的讨论。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "报告A和B均准确引用了关键事实，如Pear破产、CureApp获批、Rejoyn获批等。报告A中BlueStar的HbA1c降幅（0.4%-0.7%）与报告B的1.2-1.9%存在差异，但报告B注明该数字来自行业媒体，且报告A的数值更保守合理。报告B关于NMPA分类界定为三类器械的表述与参考事实不冲突，但报告A未提及此点。两者均无明显幻觉。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，按概述、临床证据、监管、商业化、综合评估的逻辑展开，层次分明；报告B结构也合理，但核心结论与对比表置于开头，后续内容有重复，且部分段落（如商业化挑战）组织稍显松散。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A未提供参考文献列表，正文中提及的期刊和监管文件缺乏可核验的定位信息；报告B提供了4条参考文献，包含URL和部分作者/机构，但部分引用（如[2]）为新闻来源，且未提供DOI，整体可核验性优于A。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 794,
+        "failed_calls": 0,
+        "prompt_tokens": 9850,
+        "total_tokens": 10644
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "edu_001",
+      "domain": "教育",
+      "query": "评估自适应学习系统（如 Khan Academy、松鼠 AI）在 K-12 数学教育中的效果，分析其个性化推荐算法、学习效果量化指标和师生接受度。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "edu_001",
+          "domain": "教育",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9770992366412213,
+            "comprehensiveness": 0.8571428571428571
+          },
+          "composite_score": 0.6239912758996728,
+          "hallucination_rate": 0.022900763358778626
+        },
+        "runtime": {
+          "elapsed_seconds": 67.5531,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 3499,
+          "failed_calls": 0,
+          "prompt_tokens": 213,
+          "total_tokens": 3712
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/edu_001_baseline.md",
+          "sha256": "eac03f4a32f6725be9b86ec697397017160931cfa406b075eb6850adc808d699",
+          "characters": 6913
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "edu_001",
+          "domain": "教育",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.45652173913043476,
+            "bias": 0.9571428571428572,
+            "comprehensiveness": 0.8571428571428571
+          },
+          "composite_score": 0.711304347826087,
+          "hallucination_rate": 0.04285714285714286
+        },
+        "runtime": {
+          "run_id": "h2h_v4_edu_001_1786652792169987000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 192.5365,
+          "confidence": 0.41,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 10,
+          "estimated_worker_tokens": 54961,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 67167,
+            "completion_tokens": 8215,
+            "total_tokens": 75382
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 37,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.027,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 30
+            },
+            "after": {
+              "claim_count": 37,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.027,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 30
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 8215,
+          "failed_calls": 0,
+          "prompt_tokens": 67167,
+          "total_tokens": 75382
+        },
+        "evidence_metrics": {
+          "claim_count": 37,
+          "claim_support_coverage": 0.027,
+          "claim_citation_rate": 0.4054,
+          "cited_claim_support_precision": 0.0667,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.027,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.973,
+          "source_count": 36,
+          "evidence_count": 46,
+          "primary_source_ratio": 0.25,
+          "fulltext_source_ratio": 0.0556
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/edu_001_agent.md",
+          "sha256": "8c0b0fbaebb4dd7a8f6bef638c1d96b0a5fdf2634ccdcc29183c7fbf0ac84f24",
+          "characters": 4778
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/edu_001.json",
+          "sha256": "e5845723d59978bb05576b458d219e24ed1da01b2d7f59c6dd068a527e4d8de9"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 3.0,
+            "baseline": 4.5,
+            "delta": -1.5
+          }
+        },
+        "agent_mean": 3.75,
+        "baseline_mean": 4.875,
+        "delta": -1.125,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了算法原理、效果证据、师生接受度及政策影响，并包含详细比较和边界条件；报告B覆盖了核心维度，但深度和细节略逊，如对松鼠AI的争议和教师接受度分析较简略。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A引用具体研究（如Cheung & Slavin, Kulik & Fletcher, SRI等）且数据准确，对松鼠AI证据等级判断严谨；报告B事实基本正确，但部分表述（如Khan Academy与Google合作）缺乏具体来源，且对RCT的批评略显笼统。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从背景到算法、证据、接受度、比较、结论层层递进，逻辑连贯；报告B结构合理，但部分内容（如参考来源编号不连续）略显松散，结论部分整合度稍弱。"
+              },
+              "sources": {
+                "A": 5.0,
+                "B": 3.0,
+                "reason": "报告A提供了完整文献列表，包含作者、年份、期刊等，可核验性强；报告B虽有URL和DOI，但部分来源（如Wikipedia）权威性不足，且编号不连续，个别引用（如[1]）未完全对应正文。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了核心特征、算法、效果证据和师生接受度，但接受度部分证据缺口明显；报告B更全面，涵盖算法原理、效果边界、接受度、政策影响及比较评估，且对松鼠AI的争议分析更深入。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A事实基本准确，但个别表述如'2026年起与Google合作'可能超出已知信息，且对松鼠AI的批评较笼统；报告B引用具体研究（如Cheung & Slavin, Kulik & Fletcher）和事件（如'人机大战'、'双减'），数据与事实更精确，无明显错误。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，但部分内容（如参考来源编号跳跃）稍显松散；报告B逻辑严密，从背景到算法、效果、接受度、比较评估再到结论，层次分明，过渡自然。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A提供了部分URL和DOI，但编号不连续（如缺[5][6][8]），且部分来源（如维基百科）权威性一般；报告B列出了具体文献和报告，但缺少URL或DOI，可核验性稍弱，不过整体引用更规范。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 691,
+        "failed_calls": 0,
+        "prompt_tokens": 12056,
+        "total_tokens": 12747
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "fin_006",
+      "domain": "金融",
+      "query": "比较绿色债券（Green Bond）与可持续发展挂钩债券（SLB）在募集资金用途、信息披露和投资者保护方面的差异。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "fin_006",
+          "domain": "金融",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.37777777777777777,
+            "bias": 0.9620253164556962,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.7179606188466948,
+          "hallucination_rate": 0.0379746835443038
+        },
+        "runtime": {
+          "run_id": "h2h_v4_fin_006_1786652993049220000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 162.6216,
+          "confidence": 0.62,
+          "num_searches": 14,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 6,
+          "estimated_worker_tokens": 45851,
+          "model_usage": {
+            "api_calls": 17,
+            "failed_calls": 0,
+            "prompt_tokens": 62741,
+            "completion_tokens": 7674,
+            "total_tokens": 70415
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 38,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 34,
+              "coverage": 0.1053,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 33
+            },
+            "after": {
+              "claim_count": 38,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 34,
+              "coverage": 0.1053,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 33
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 17,
+          "completion_tokens": 7674,
+          "failed_calls": 0,
+          "prompt_tokens": 62741,
+          "total_tokens": 70415
+        },
+        "evidence_metrics": {
+          "claim_count": 38,
+          "claim_support_coverage": 0.1053,
+          "claim_citation_rate": 0.3158,
+          "cited_claim_support_precision": 0.0833,
+          "supported_claim_citation_rate": 0.25,
+          "attribution_coverage": 0.1053,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.8947,
+          "source_count": 40,
+          "evidence_count": 69,
+          "primary_source_ratio": 0.125,
+          "fulltext_source_ratio": 0.1
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/fin_006_agent.md",
+          "sha256": "7cb878ad7b8eefbeb84aa821daace26ef050025ac95ae38c3f5888086fb40f71",
+          "characters": 4587
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/fin_006.json",
+          "sha256": "efc649983958d493ea12e78227fc14b5d475ed1dbb5c0a0b9f81849028f14265"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "fin_006",
+          "domain": "金融",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.991651376146789,
+            "citation_coverage": 0.0,
+            "bias": 0.9908256880733946,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6464954128440368,
+          "hallucination_rate": 0.009174311926605505
+        },
+        "runtime": {
+          "elapsed_seconds": 102.235,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 3114,
+          "failed_calls": 0,
+          "prompt_tokens": 202,
+          "total_tokens": 3316
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/fin_006_baseline.md",
+          "sha256": "de1116cd34f3483eb8eb6c19b1bf15b23c952e9aae899172677d48b61006dc64",
+          "characters": 4630
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "accuracy": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "structure": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "sources": {
+            "agent": 5.0,
+            "baseline": 3.5,
+            "delta": 1.5
+          }
+        },
+        "agent_mean": 4.625,
+        "baseline_mean": 4.625,
+        "delta": 0.0,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告均全面覆盖了募集资金用途、信息披露和投资者保护三个维度，并提供了详细的比较、风险分析和实务建议。报告A还额外讨论了法律细节和适用发行人，报告B则提供了评估清单，两者均非常全面。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告的事实陈述准确，与ICMA原则和常见市场实践一致。报告A引用了SLBP原文和NAFMII文件，报告B对EU GBS的引用也正确。未发现明显幻觉或错误。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告结构清晰，逻辑连贯。报告A采用总分总结构，先给出核心差异总览，再分维度详细分析，最后综合启示；报告B则从核心结论到逐项比较，再到实务清单，层次分明。两者均易于阅读和理解。"
+              },
+              "sources": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A提供了详细的参考文献，包括URL、机构名称和年份，且正文引用与参考文献对应良好。报告B仅列出参考框架名称，未提供具体URL或定位信息，可核验性稍弱，但引用内容本身准确。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了募集资金用途、信息披露和投资者保护三个维度，并提供了详细的比较表格、实务评估清单和风险分析，内容深入且系统。报告B也覆盖了核心维度，但深度和细节略逊于A，例如在投资者保护的具体机制和风险分析上不如A详尽。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A准确描述了绿色债券和SLB的核心差异，引用了ICMA原则和欧盟法规，事实无误。报告B同样准确，但存在少量表述不够精确之处，如将SLB的外部验证描述为'强制性'，而ICMA原则中验证是建议性的，但报告B在后续也提到了'强制性'，可能略有夸大。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从核心结论到逐项比较，再到具体维度分析，最后给出实务清单和结论，逻辑流畅。报告B结构也合理，但部分内容重复，如核心差异总览与后续章节有重叠，且章节划分不如A细致。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 5.0,
+                "reason": "报告A仅提及参考框架名称，未提供具体URL或详细定位信息，可核验性较低。报告B提供了详细的参考文献列表，包含URL、机构名称和年份，可核验性强，符合引用质量要求。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 674,
+        "failed_calls": 0,
+        "prompt_tokens": 10096,
+        "total_tokens": 10770
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "auto_001",
+      "domain": "汽车",
+      "query": "对比比亚迪、特斯拉和理想汽车在增程式/纯电技术路线、智能驾驶能力和全球化策略上的差异。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "auto_001",
+          "domain": "汽车",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9512195121951219,
+            "citation_coverage": 0.0,
+            "bias": 0.975609756097561,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6353658536585366,
+          "hallucination_rate": 0.024390243902439025
+        },
+        "runtime": {
+          "elapsed_seconds": 56.6826,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 4000,
+          "failed_calls": 0,
+          "prompt_tokens": 197,
+          "total_tokens": 4197
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/auto_001_baseline.md",
+          "sha256": "45be3633ccebf4e4480e87eb1d5b642e915134ab32382bc00e402df82396a31d",
+          "characters": 5593
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "auto_001",
+          "domain": "汽车",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.2857142857142857,
+            "bias": 0.922077922077922,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6915584415584416,
+          "hallucination_rate": 0.07792207792207792
+        },
+        "runtime": {
+          "run_id": "h2h_v4_auto_001_1786653323298886000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 193.1768,
+          "confidence": 0.5,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 5,
+          "estimated_worker_tokens": 36248,
+          "model_usage": {
+            "api_calls": 16,
+            "failed_calls": 0,
+            "prompt_tokens": 56084,
+            "completion_tokens": 7143,
+            "total_tokens": 63227
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 40,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 38,
+              "coverage": 0.05,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 30
+            },
+            "after": {
+              "claim_count": 40,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 38,
+              "coverage": 0.05,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 30
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 16,
+          "completion_tokens": 7143,
+          "failed_calls": 0,
+          "prompt_tokens": 56084,
+          "total_tokens": 63227
+        },
+        "evidence_metrics": {
+          "claim_count": 40,
+          "claim_support_coverage": 0.05,
+          "claim_citation_rate": 0.125,
+          "cited_claim_support_precision": 0.4,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.05,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.95,
+          "source_count": 51,
+          "evidence_count": 60,
+          "primary_source_ratio": 0.098,
+          "fulltext_source_ratio": 0.0784
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/auto_001_agent.md",
+          "sha256": "9b4b75dc66adffa7b9d978e31b94de9e24b04c0bdedc4c23d049f9c39ff64233",
+          "characters": 3874
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/auto_001.json",
+          "sha256": "bd698b06bd2d8164e21d93bb3bf66292b31cc5dc1e2373932fd3a1ef6d4f0aed"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 4.5,
+            "delta": -0.5
+          },
+          "structure": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "sources": {
+            "agent": 4.0,
+            "baseline": 2.5,
+            "delta": 1.5
+          }
+        },
+        "agent_mean": 4.25,
+        "baseline_mean": 4.25,
+        "delta": 0.0,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了技术路线、智能驾驶和全球化策略，并深入分析了各公司的战略逻辑、风险与未来展望，内容详尽。报告B覆盖了核心维度，但深度和细节略逊，例如对技术路线的分析较简略，全球化部分对理想的分析较少。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A事实准确，与参考事实一致，且对技术细节（如DM-i与增程的区别）描述正确，未发现明显错误。报告B整体准确，但部分数据（如欧洲市场份额）来源单一，且对理想纯电转型的描述可能过于绝对，但未与已知事实冲突。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从执行摘要、核心对比表到分维度详细分析，逻辑连贯，层次分明。报告B结构合理，但部分内容（如智驾商业模式）穿插在技术路线中，略显松散，整体逻辑不如A紧凑。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 4.0,
+                "reason": "报告A未提供任何参考文献或可核验的引用，仅提及公开资料，但无具体来源，可核验性差。报告B提供了5个参考文献，包含URL和部分作者/年份，但部分来源权威性一般，且正文引用与参考文献映射不够清晰，但整体可核验性优于A。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告均全面覆盖了技术路线、智能驾驶和全球化策略三个维度，并提供了详细对比。报告A还包含了欧洲市场份额等具体数据，报告B则对技术细节和战略逻辑进行了深入分析。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "两份报告均准确描述了比亚迪的DM-i技术、特斯拉的纯电与FSD、理想的增程路线等核心事实。报告A引用了2026年欧洲市场份额数据，但该数据可能超出预训练知识，且未提供独立验证；报告B对MEGA上市时间等描述准确，但部分表述如'2024年中之后'略显保守。整体无明显事实错误。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告结构均清晰合理。报告A采用速览表、分维度论述和综合判断，逻辑连贯；报告B包含执行摘要、核心对比表、分章节详细分析，层次分明。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A提供了5个参考文献，包含URL和部分DOI，但部分来源为媒体或非权威网站，且正文引用与参考文献映射不够明确。报告B未提供具体参考文献列表，仅提及公开资料，可核验性较差。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 694,
+        "failed_calls": 0,
+        "prompt_tokens": 11386,
+        "total_tokens": 12080
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "cross_002",
+      "domain": "交叉",
+      "query": "评估 AI 制药（AlphaFold、Atomwise 等）在靶点发现和临床试验设计中的进展，分析其对传统 Pharma 研发投入回报率的潜在改变。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "cross_002",
+          "domain": "交叉",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.26666666666666666,
+            "factual_accuracy_str": 0.6666666666666666,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9964864864864865,
+            "citation_coverage": 0.5,
+            "bias": 0.9054054054054054,
+            "comprehensiveness": 0.6666666666666666
+          },
+          "composite_score": 0.6470450450450451,
+          "hallucination_rate": 0.0945945945945946
+        },
+        "runtime": {
+          "run_id": "h2h_v4_cross_002_1786653523519215000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 225.81,
+          "confidence": 0.5,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 10,
+          "estimated_worker_tokens": 59101,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 1,
+            "prompt_tokens": 68483,
+            "completion_tokens": 8957,
+            "total_tokens": 77440
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 36,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 35,
+              "coverage": 0.0278,
+              "verification_mode": "hybrid_unavailable",
+              "semantic_reviewed_count": 0,
+              "semantic_candidate_count": 34
+            },
+            "after": {
+              "claim_count": 36,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 35,
+              "coverage": 0.0278,
+              "verification_mode": "hybrid_unavailable",
+              "semantic_reviewed_count": 0,
+              "semantic_candidate_count": 34
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 8957,
+          "failed_calls": 1,
+          "prompt_tokens": 68483,
+          "total_tokens": 77440
+        },
+        "evidence_metrics": {
+          "claim_count": 36,
+          "claim_support_coverage": 0.0278,
+          "claim_citation_rate": 0.4722,
+          "cited_claim_support_precision": 0.0,
+          "supported_claim_citation_rate": 0.0,
+          "attribution_coverage": 0.0278,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9722,
+          "source_count": 57,
+          "evidence_count": 81,
+          "primary_source_ratio": 0.0877,
+          "fulltext_source_ratio": 0.0877
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/cross_002_agent.md",
+          "sha256": "7edb00c67afd9bd9230613a80eeaf839e8bac133a2a4857183904dd558c29583",
+          "characters": 5558
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/cross_002.json",
+          "sha256": "2b686cd595778ee3b9c89dcba2fd26eb35e2d3a9dc816c0a23ad8da4f5a250b8"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "cross_002",
+          "domain": "交叉",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.26666666666666666,
+            "factual_accuracy_str": 0.6666666666666666,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9555555555555556,
+            "comprehensiveness": 0.8333333333333334
+          },
+          "composite_score": 0.5827777777777778,
+          "hallucination_rate": 0.044444444444444446
+        },
+        "runtime": {
+          "elapsed_seconds": 53.2733,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2789,
+          "failed_calls": 0,
+          "prompt_tokens": 209,
+          "total_tokens": 2998
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/cross_002_baseline.md",
+          "sha256": "33828706d1afb2e9fbb630e6bab63f0f42d4687fe41afd00d195365443874c40",
+          "characters": 5307
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 4.5,
+            "delta": -0.5
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 3.0,
+            "baseline": 4.0,
+            "delta": -1.0
+          }
+        },
+        "agent_mean": 3.75,
+        "baseline_mean": 4.625,
+        "delta": -0.875,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了靶点发现、临床试验设计、ROI影响及风险，但缺少对行业并购、市场出清等结构性变化的讨论；报告B更全面，涵盖了靶点发现、临床试验设计、ROI量化情景、行业采纳行为、风险制约等，且对AI原生管线案例（如ISM001-055）和商业挫折（如Exscientia收购）有更深入分析。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "两份报告均准确引用了AlphaFold、Atomwise等关键事实，无重大幻觉。报告A在I期通过率、成本压缩等数据上给出具体数字但部分来源为行业媒体或估计，报告B在引用Deloitte、Tufts等数据时更谨慎，但两者均存在对AI疗效改善的推断性表述，未与已知事实冲突。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有核心对比表格和分节论述，但部分段落信息密度高，逻辑跳跃；报告B结构更系统，摘要、分章节、表格、情景测算和结论层次分明，逻辑连贯，易于跟随。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A提供了具体URL和部分作者/年份，但部分来源为行业媒体或博客，且[5]缺失；报告B引用了权威期刊和机构报告，但缺少URL和具体页码，可核验性略低。两者均需改进引用完整性，但报告B的引用来源更权威。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了靶点发现、临床试验设计、对RROI的影响及风险，并提供了量化情景和行业采纳行为；报告B覆盖了主要维度，但临床试验设计部分相对简略，且对风险讨论不够深入。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A事实准确，引用具体数据（如AlphaFold 2/3、ISM001-055、Deloitte IRR等）与已知事实一致；报告B部分数据（如CDK20案例、命中率）有依据，但个别表述（如'AlphaFold 3首款抗癌药'）来源为行业媒体，且对Atomwise的定位描述略有偏差。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从摘要到分章节再到结论，逻辑连贯，表格辅助说明；报告B有核心对比表和分章节，但部分内容（如背景与结论）略显重复，逻辑流畅性稍逊。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A引用了权威期刊和机构报告（如Nature、Deloitte、Tufts），但部分引用缺少URL或DOI；报告B提供了较多URL，但部分来源为博客或行业媒体，权威性不足，且个别引用（如[5]缺失）不完整。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 746,
+        "failed_calls": 0,
+        "prompt_tokens": 11262,
+        "total_tokens": 12008
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "tech_002",
+      "domain": "科技",
+      "query": "分析当前 AI 芯片市场格局，比较 NVIDIA、AMD、Intel 及中国厂商（华为昇腾、寒武纪）在训练与推理场景下的竞争力。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "tech_002",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9887640449438202,
+            "comprehensiveness": 0.875
+          },
+          "composite_score": 0.629002808988764,
+          "hallucination_rate": 0.011235955056179775
+        },
+        "runtime": {
+          "elapsed_seconds": 29.7788,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2348,
+          "failed_calls": 0,
+          "prompt_tokens": 211,
+          "total_tokens": 2559
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_002_baseline.md",
+          "sha256": "4dcd4acb90e31c5d8f3bbd2fd40cb29a5b0081f887859ded811dbe31b85ffb87",
+          "characters": 4293
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "tech_002",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.37777777777777777,
+            "bias": 0.8732394366197183,
+            "comprehensiveness": 0.875
+          },
+          "composite_score": 0.6814534428794993,
+          "hallucination_rate": 0.1267605633802817
+        },
+        "runtime": {
+          "run_id": "h2h_v4_tech_002_1786653841047333000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 211.96,
+          "confidence": 0.52,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 6,
+          "estimated_worker_tokens": 51255,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 73091,
+            "completion_tokens": 8884,
+            "total_tokens": 81975
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 36,
+              "supported_count": 2,
+              "refuted_count": 1,
+              "not_enough_evidence_count": 33,
+              "coverage": 0.0556,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 33
+            },
+            "after": {
+              "claim_count": 36,
+              "supported_count": 2,
+              "refuted_count": 1,
+              "not_enough_evidence_count": 33,
+              "coverage": 0.0556,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 33
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 8884,
+          "failed_calls": 0,
+          "prompt_tokens": 73091,
+          "total_tokens": 81975
+        },
+        "evidence_metrics": {
+          "claim_count": 36,
+          "claim_support_coverage": 0.0556,
+          "claim_citation_rate": 0.25,
+          "cited_claim_support_precision": 0.1111,
+          "supported_claim_citation_rate": 0.5,
+          "attribution_coverage": 0.0556,
+          "refuted_rate": 0.0278,
+          "nei_rate": 0.9167,
+          "source_count": 48,
+          "evidence_count": 83,
+          "primary_source_ratio": 0.0208,
+          "fulltext_source_ratio": 0.125
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_002_agent.md",
+          "sha256": "a79c4bb1525b89be4963b908fef92dd0244e14b973e23d53bb1348187c8caa0e",
+          "characters": 4552
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/tech_002.json",
+          "sha256": "026799172dd6a55f14b19c4d95b1d4319cda7cff8bfb9f219dd9bce9adccef52"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.5,
+            "baseline": 4.5,
+            "delta": 0.0
+          },
+          "accuracy": {
+            "agent": 3.5,
+            "baseline": 4.0,
+            "delta": -0.5
+          },
+          "structure": {
+            "agent": 4.5,
+            "baseline": 4.5,
+            "delta": 0.0
+          },
+          "sources": {
+            "agent": 4.0,
+            "baseline": 2.0,
+            "delta": 2.0
+          }
+        },
+        "agent_mean": 4.125,
+        "baseline_mean": 3.75,
+        "delta": 0.375,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了市场格局、各厂商训练与推理竞争力、横向对比及趋势，且包含中国厂商细节；报告B覆盖了主要维度，但部分内容（如Intel）较简略，且未提供横向对比矩阵。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A事实基本准确，与参考事实一致，但部分数据（如市场份额）未给出具体来源；报告B包含具体数据（如份额、财务）但部分数据（如推理市场3倍、昇腾910C性能）缺乏权威验证，且存在与参考事实（如NVIDIA份额）的潜在冲突。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从市场概览到厂商分析、对比矩阵、趋势结论，逻辑连贯；报告B结构合理，但对比表格后分析略显重复，且结论部分稍显仓促。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 4.0,
+                "reason": "报告A未提供任何参考文献或可核验的引用，仅有一句注记；报告B提供了5个参考来源，包含URL和部分机构信息，但部分来源权威性不足，且正文引用与参考文献映射不够明确。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A覆盖了市场格局、各厂商训练与推理竞争力、关键趋势与风险，并提供了具体数据（如份额、营收）和案例（如DeepSeek适配），全面回应研究问题。报告B虽覆盖各维度，但数据细节较少，部分分析较笼统。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "报告A引用具体数据（如TrendForce、IDC）和事件（如DeepSeek-V4适配），但部分数据来源为媒体或厂商自报，且自报置信度低，存在不确定性。报告B基于常识性描述，未发现明显错误，但缺乏具体数据支撑，准确性中等。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，有市场概览、对比表格、分场景分析、趋势与结论，逻辑连贯。报告B结构合理，但部分内容重复（如风险点分散），且对比矩阵较简略。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 2.0,
+                "reason": "报告A提供了5个参考文献，包含URL和部分机构信息，但部分来源权威性不足（如ShaneTheGamer），且正文引用映射基本清晰。报告B未提供任何参考文献或可核验来源，仅提及'公开信息'，无法验证。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 669,
+        "failed_calls": 0,
+        "prompt_tokens": 9914,
+        "total_tokens": 10583
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "tech_005",
+      "domain": "科技",
+      "query": "探讨空间计算（Spatial Computing）和 Apple Vision Pro 对混合现实产业生态的影响，分析内容创作、企业应用和消费级落地的关键障碍。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "tech_005",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.20408163265306123,
+            "bias": 0.9493670886075949,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6806897442521312,
+          "hallucination_rate": 0.05063291139240506
+        },
+        "runtime": {
+          "run_id": "h2h_v4_tech_005_1786654060254331000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 306.3945,
+          "confidence": 0.44,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 4,
+          "estimated_worker_tokens": 48024,
+          "model_usage": {
+            "api_calls": 21,
+            "failed_calls": 0,
+            "prompt_tokens": 79043,
+            "completion_tokens": 9352,
+            "total_tokens": 88395
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 41,
+              "supported_count": 5,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.122,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 34
+            },
+            "after": {
+              "claim_count": 41,
+              "supported_count": 5,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.122,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 34
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 21,
+          "completion_tokens": 9352,
+          "failed_calls": 0,
+          "prompt_tokens": 79043,
+          "total_tokens": 88395
+        },
+        "evidence_metrics": {
+          "claim_count": 41,
+          "claim_support_coverage": 0.122,
+          "claim_citation_rate": 0.2439,
+          "cited_claim_support_precision": 0.5,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.122,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.878,
+          "source_count": 50,
+          "evidence_count": 71,
+          "primary_source_ratio": 0.02,
+          "fulltext_source_ratio": 0.08
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_005_agent.md",
+          "sha256": "2db0eb8df6b0eef57311c3f8455b8e70288937696d607c10f670323f0fd889c6",
+          "characters": 4591
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/tech_005.json",
+          "sha256": "f21a9595e158363a0765297d55c6fd2af7b6eee640f0b044fa3c7e8ff8c4e061"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "tech_005",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.2,
+            "factual_accuracy_str": 0.5,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9868421052631579,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.5973684210526315,
+          "hallucination_rate": 0.013157894736842105
+        },
+        "runtime": {
+          "elapsed_seconds": 51.7859,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2443,
+          "failed_calls": 0,
+          "prompt_tokens": 207,
+          "total_tokens": 2650
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_005_baseline.md",
+          "sha256": "32d1c8b085f062bb81c7757994f0f4b591e4a7ad8d55e2c7200771fcfb5c913b",
+          "characters": 4533
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 3.0,
+            "baseline": 3.0,
+            "delta": 0.0
+          }
+        },
+        "agent_mean": 3.75,
+        "baseline_mean": 4.5,
+        "delta": -0.75,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了消费与企业市场对比、三大障碍（内容、企业、消费）及产业影响，但企业部分依赖单一来源，内容创作部分量化数据不足。报告B更全面，涵盖概念、产业影响、内容/企业/消费障碍、趋势研判及中国市场，各维度均有详细分析。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A事实基本正确，如Vision Pro发售时间、价格、郭明錤预测等，但部分数据（如生态规模）缺乏权威验证，且自述证据缺口。报告B事实准确，包括发布时间、配置、销量估计、生态情况等，与参考事实一致，且未发现明显错误。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有背景、对比表、障碍分析、产业影响，但部分内容（如企业障碍）依赖单一来源，逻辑连贯但深度稍逊。报告B结构严谨，摘要、分章节、趋势研判、结论，逻辑流畅，层次分明。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 3.0,
+                "reason": "报告A仅列出两个来源，其中[1]有URL和机构，但[3]为个人博客且无URL，正文引用映射不完整，可核验性差。报告B未列出参考文献，但正文中提及具体事件和机构，可核验性中等，但缺乏正式引用列表。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了研究问题的所有子维度，包括概念、产业影响、内容创作、企业应用和消费级障碍，并提供了趋势研判；报告B覆盖了主要维度，但内容创作部分相对简略，且缺少对产业生态影响的详细分析。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A事实准确，与参考事实一致，且提供了具体数据（如发售日期、价格、配置）和合理推断；报告B基本准确，但部分数据（如首季销量不足10万台）缺乏权威来源，且对某些事件（如2025年AI技术）的描述可能超出预训练知识，但未与已知事实冲突。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，逻辑严密，从概念到影响再到障碍和趋势，层次分明；报告B结构合理，但部分内容（如背景和障碍分析）有重复，且表格使用不如A充分。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A未提供参考文献列表，正文中提及的引用无法映射到具体来源，可核验性差；报告B提供了两个参考文献，包含作者、机构、年份和URL，但引用数量有限，且部分数据（如销量）未明确标注来源。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 712,
+        "failed_calls": 0,
+        "prompt_tokens": 10146,
+        "total_tokens": 10858
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "tech_007",
+      "domain": "科技",
+      "query": "探讨量子计算在密码学（后量子密码 PQC）和药物发现领域的应用前景，分析 NIST 标准化进程和当前技术瓶颈。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "tech_007",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9743589743589743,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6448717948717949,
+          "hallucination_rate": 0.02564102564102564
+        },
+        "runtime": {
+          "elapsed_seconds": 40.3328,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 1987,
+          "failed_calls": 0,
+          "prompt_tokens": 207,
+          "total_tokens": 2194
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_007_baseline.md",
+          "sha256": "4bd39610de2dc4e52d4d2cee4f398eb877b4a5e58a4c66d96614d638206db9fe",
+          "characters": 3579
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "tech_007",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.6440677966101694,
+            "bias": 0.967741935483871,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.7723619464188082,
+          "hallucination_rate": 0.03225806451612903
+        },
+        "runtime": {
+          "run_id": "h2h_v4_tech_007_1786654467523885000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 233.0504,
+          "confidence": 0.55,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 20,
+          "estimated_worker_tokens": 64226,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 74773,
+            "completion_tokens": 9590,
+            "total_tokens": 84363
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 40,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 39,
+              "coverage": 0.025,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 32
+            },
+            "after": {
+              "claim_count": 40,
+              "supported_count": 1,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 39,
+              "coverage": 0.025,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 32
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 9590,
+          "failed_calls": 0,
+          "prompt_tokens": 74773,
+          "total_tokens": 84363
+        },
+        "evidence_metrics": {
+          "claim_count": 40,
+          "claim_support_coverage": 0.025,
+          "claim_citation_rate": 0.55,
+          "cited_claim_support_precision": 0.0455,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.025,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.975,
+          "source_count": 58,
+          "evidence_count": 70,
+          "primary_source_ratio": 0.3793,
+          "fulltext_source_ratio": 0.0345
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/tech_007_agent.md",
+          "sha256": "e7a80cab6c2fe818223147ac0a44142c225bbf7577e972ecef979b52c53b46e7",
+          "characters": 7592
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/tech_007.json",
+          "sha256": "e7ffee9023261fea067cb19babc6ed86582d07e325804b95ff2d48ff2c915f70"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "accuracy": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "structure": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "sources": {
+            "agent": 5.0,
+            "baseline": 3.0,
+            "delta": 2.0
+          }
+        },
+        "agent_mean": 5.0,
+        "baseline_mean": 3.75,
+        "delta": 1.25,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了量子计算在密码学和药物发现的主要方面，包括威胁模型、NIST时间线、迁移现状、药物发现的理论与产业进展、技术瓶颈等，但药物发现部分对具体研究案例的引用较少。报告B不仅覆盖了所有子维度，还提供了更详细的标准化时间线、政策驱动（如OMB M-26-15）、具体研究案例（如Li等2024）和更深入的瓶颈分析，并对比了两大领域，因此更全面。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A事实基本正确，如NIST 2024年发布标准、CRYSTALS-Kyber等，但存在个别不精确之处，如将FN-DSA与FALCON混为一谈（FN-DSA是FALCON的标准化名称，但报告表述为'FN-DSA/FALCON'可能引起混淆），且未提及OMB M-26-15等最新政策。报告B事实准确，引用了具体文献和官方文件，如FIPS 203、OMB M-26-15，且对量子优势的审慎判断符合当前共识，未发现明显错误。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有摘要、分章节、表格和结论，逻辑通顺，但部分内容（如药物发现部分）组织稍显松散。报告B结构更严谨，开篇有对比概览，后续分章节详细展开，逻辑层次分明，结论有力，且参考文献列表完整，整体结构优于A。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 5.0,
+                "reason": "报告A未提供参考文献列表，正文中提及的NIST标准、企业案例等缺乏可核验的引用，仅靠叙述性描述，引用质量低。报告B提供了详细的参考文献列表，包含作者、年份、URL或DOI，且正文引用与参考文献对应良好，可核验性强，符合评分标准。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了PQC标准化进程、政策驱动、迁移瓶颈、药物发现的科学逻辑、代表性进展、审慎判断以及共同技术瓶颈，并提供了详细的时间线和对比；报告B覆盖了威胁模型、标准化时间线、迁移现状、药物发现理论、产业进展和瓶颈，但相对简略，缺乏对政策细节和具体案例的深入分析。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A事实准确，如NIST 2024年发布FIPS 203/204/205，CRYSTALS-Kyber对应ML-KEM，OMB M-26-15等，且对量子优势的审慎判断符合当前共识；报告B基本准确，但存在个别不精确表述，如将FALCON列为2022年首批入选算法（实际为2022年公布，但最终标准为FIPS 206，尚未发布），且对HQC的标准化时间描述略有偏差。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从对比概览到分领域分析，再到共同瓶颈和结论，逻辑连贯，层次分明；报告B结构合理，但部分内容如产业进展和瓶颈的划分略显松散，结论部分对比表格简洁但缺乏深度。"
+              },
+              "sources": {
+                "A": 5.0,
+                "B": 3.0,
+                "reason": "报告A提供了详细的参考文献，包含作者、年份、URL或DOI，且正文引用与参考文献映射清晰；报告B的参考文献列表缺失，正文中提及的引用（如NSM-10、OMB M-23-02）未在文末列出，且无URL或DOI，可核验性较差。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 906,
+        "failed_calls": 0,
+        "prompt_tokens": 10970,
+        "total_tokens": 11876
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "game_002",
+      "domain": "游戏",
+      "query": "评估中国游戏出海（《原神》《PUBG Mobile》《黑神话：悟空》）的全球化策略、文化本地化挑战和各国监管差异。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "game_002",
+          "domain": "游戏",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.26666666666666666,
+            "factual_accuracy_str": 0.6666666666666666,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9857142857142858,
+            "citation_coverage": 0.18604651162790697,
+            "bias": 0.9571428571428572,
+            "comprehensiveness": 0.8333333333333334
+          },
+          "composite_score": 0.6174473975636767,
+          "hallucination_rate": 0.04285714285714286
+        },
+        "runtime": {
+          "run_id": "h2h_v4_game_002_1786654711800215000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 274.4229,
+          "confidence": 0.47,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 3,
+          "estimated_worker_tokens": 37370,
+          "model_usage": {
+            "api_calls": 17,
+            "failed_calls": 0,
+            "prompt_tokens": 61411,
+            "completion_tokens": 8447,
+            "total_tokens": 69858
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 34,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 32,
+              "coverage": 0.0588,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 31
+            },
+            "after": {
+              "claim_count": 34,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 32,
+              "coverage": 0.0588,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 31
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 17,
+          "completion_tokens": 8447,
+          "failed_calls": 0,
+          "prompt_tokens": 61411,
+          "total_tokens": 69858
+        },
+        "evidence_metrics": {
+          "claim_count": 34,
+          "claim_support_coverage": 0.0588,
+          "claim_citation_rate": 0.1176,
+          "cited_claim_support_precision": 0.25,
+          "supported_claim_citation_rate": 0.5,
+          "attribution_coverage": 0.0588,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9412,
+          "source_count": 42,
+          "evidence_count": 57,
+          "primary_source_ratio": 0.0,
+          "fulltext_source_ratio": 0.0714
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/game_002_agent.md",
+          "sha256": "c13ea085eebc6ce590b0de97413b1667d68fcf5baf588f8be90839af41b83efc",
+          "characters": 3930
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/game_002.json",
+          "sha256": "40deb37d49f380c7f23c6ff96160d61b7468ad1fbfd4e1c6c2befa4807192a54"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "game_002",
+          "domain": "游戏",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.26666666666666666,
+            "factual_accuracy_str": 0.6666666666666666,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9736842105263158,
+            "comprehensiveness": 0.8333333333333334
+          },
+          "composite_score": 0.5864035087719298,
+          "hallucination_rate": 0.02631578947368421
+        },
+        "runtime": {
+          "elapsed_seconds": 44.1865,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2164,
+          "failed_calls": 0,
+          "prompt_tokens": 208,
+          "total_tokens": 2372
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/game_002_baseline.md",
+          "sha256": "9e5fb896589f164587e4c37b3db0dc68253fd479f908d0789182fe782d54ba48",
+          "characters": 3814
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 3.0,
+            "baseline": 4.0,
+            "delta": -1.0
+          }
+        },
+        "agent_mean": 3.75,
+        "baseline_mean": 4.75,
+        "delta": -1.0,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了全球化策略、文化本地化挑战和监管差异，但未深入讨论商业模式、市场表现等细节；报告B更全面，涵盖背景、策略对比、本地化分层、监管趋势和综合评估，各维度均有详细分析。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A事实基本准确，但部分数据（如黑神话销量）未注明来源，且对原神收入等表述模糊；报告B数据具体且与参考事实一致，如黑神话销量、FTC和解等，未发现明显错误。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有对比表格和分节，但部分内容（如监管差异）略显零散；报告B逻辑严密，从背景到策略、本地化、监管、评估层层递进，表格和总结使结构更优。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A仅列出3个来源，且多为维基百科和官网，缺乏具体URL和作者信息，正文引用映射不完整；报告B虽未列出具体参考文献，但提及了权威机构（如Sensor Tower、FTC、韩国法律），可核验性较高，但缺少URL等定位信息。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了全球化策略、文化本地化挑战和各国监管差异，并提供了详细的对比表格和趋势研判；报告B覆盖了主要维度，但深度和细节略逊于A。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A事实准确，引用了具体数据（如销量、FTC和解、韩国法律）且与参考事实一致；报告B基本准确，但部分数据（如PUBG收入）来源为维基百科，且对《原神》收入缺乏一手数据，表述较模糊。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，分章节系统论述，逻辑连贯，对比表格直观；报告B结构合理，但部分内容（如监管差异）整合不够紧凑，结论部分略显重复。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A提供了来源类别但缺少具体URL和作者，可核验性一般；报告B列出了维基百科和官网链接，但部分引用未直接映射到正文，且权威性不足。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 634,
+        "failed_calls": 0,
+        "prompt_tokens": 9222,
+        "total_tokens": 9856
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "law_001",
+      "domain": "法律",
+      "query": "分析生成式 AI 训练数据中的版权问题，比较美国合理使用原则（Fair Use）与欧盟《AI 法案》在训练数据授权方面的法律冲突。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "law_001",
+          "domain": "法律",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.13333333333333333,
+            "factual_accuracy_str": 0.3333333333333333,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 1.0,
+            "comprehensiveness": 0.5
+          },
+          "composite_score": 0.5083333333333333,
+          "hallucination_rate": 0.0
+        },
+        "runtime": {
+          "elapsed_seconds": 55.6717,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2943,
+          "failed_calls": 0,
+          "prompt_tokens": 209,
+          "total_tokens": 3152
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/law_001_baseline.md",
+          "sha256": "d79204d3f83ca6b82a064a78ca8b749fadc8238159f222170334204d81c30cd8",
+          "characters": 5328
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "law_001",
+          "domain": "法律",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.13333333333333333,
+            "factual_accuracy_str": 0.3333333333333333,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9885057471264368,
+            "citation_coverage": 0.3269230769230769,
+            "bias": 0.9425287356321839,
+            "comprehensiveness": 0.5
+          },
+          "composite_score": 0.5599248452696728,
+          "hallucination_rate": 0.05747126436781609
+        },
+        "runtime": {
+          "run_id": "h2h_v4_law_001_1786655093592184000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 283.4602,
+          "confidence": 0.58,
+          "num_searches": 14,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 6,
+          "estimated_worker_tokens": 45545,
+          "model_usage": {
+            "api_calls": 17,
+            "failed_calls": 0,
+            "prompt_tokens": 59181,
+            "completion_tokens": 10024,
+            "total_tokens": 69205
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 52,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 50,
+              "coverage": 0.0385,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 34
+            },
+            "after": {
+              "claim_count": 52,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 50,
+              "coverage": 0.0385,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 34
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 17,
+          "completion_tokens": 10024,
+          "failed_calls": 0,
+          "prompt_tokens": 59181,
+          "total_tokens": 69205
+        },
+        "evidence_metrics": {
+          "claim_count": 52,
+          "claim_support_coverage": 0.0385,
+          "claim_citation_rate": 0.1923,
+          "cited_claim_support_precision": 0.2,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.0385,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9615,
+          "source_count": 52,
+          "evidence_count": 70,
+          "primary_source_ratio": 0.0577,
+          "fulltext_source_ratio": 0.0577
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/law_001_agent.md",
+          "sha256": "46885cd57f4f7c483681d518abc8a246f8f80e1d6154fa7c437b3c991aa19e8e",
+          "characters": 5458
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/law_001.json",
+          "sha256": "d0cc2713c67d3874eba9ba6e9b075ea445bb7ad2b1392c521c108b104660786d"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "structure": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "sources": {
+            "agent": 3.5,
+            "baseline": 3.5,
+            "delta": 0.0
+          }
+        },
+        "agent_mean": 4.125,
+        "baseline_mean": 4.625,
+        "delta": -0.5,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了研究问题的各个维度，包括法律框架、判例、冲突场景、趋势研判，并提供了详细的对比表格和具体案例；报告B覆盖了核心制度对比和冲突机制，但缺少对趋势研判和具体冲突场景的深入分析，略显简略。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A的事实陈述与参考事实一致，且对判例细节（如Bartz、Kadrey、Ross）的描述准确，未发现明显错误；报告B整体准确，但存在个别细节偏差，如罚款金额（报告B称最高3500万欧元或7%，实际AI法案为1500万欧元或3%），且对NYT案进展的描述依赖二手来源，准确性略逊。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从背景、美国路径、欧盟路径、冲突分析到趋势结论，逻辑严密，层次分明；报告B结构合理，但部分内容（如待决问题）与前面章节有重叠，且结论部分略显仓促，整体逻辑性稍弱。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A在正文中引用了具体判例和法规，但参考文献列表缺失，仅靠正文提及，可核验性一般；报告B提供了参考文献列表，但部分来源（如Skadden、Norton Rose Fulbright）未给出具体URL或DOI，且依赖二手媒体，可核验性较差。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告均全面覆盖了研究问题的各个子维度，包括法律框架、关键判例、制度对比、冲突机制及未来趋势。报告A深入分析了冲突的机制和域外效力，报告B则详细列举了更多案例和具体冲突场景，两者均表现出高度的全面性。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A在关键事实上与参考事实一致，但部分细节（如15亿美元和解金额）依赖二手来源且未交叉验证，且对欧盟高风险条款延期说法未获官方确认，存在轻微不确定性。报告B的事实陈述准确，与参考事实及已知判例一致，未发现明显错误或幻觉。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告结构均清晰合理，逻辑连贯。报告A以背景、对比、分析、结论为线索，层次分明；报告B采用分章节对比，并附有表格和具体冲突场景，结构严谨，易于理解。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A的参考文献包含作者、机构、年份和URL，可核验性较高，但部分关键信息（如NYT案进展）未提供直接来源。报告B的参考文献列表未在正文中明确标注，且缺少URL或DOI等定位信息，可核验性较低。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 736,
+        "failed_calls": 0,
+        "prompt_tokens": 11772,
+        "total_tokens": 12508
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "fin_004",
+      "domain": "金融",
+      "query": "比较被动指数基金（ETF）与主动管理基金在 2020-2024 年间的风险调整后收益表现，分析其背后的市场结构变化。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "fin_004",
+          "domain": "金融",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.14634146341463414,
+            "bias": 0.922077922077922,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6636838770985113,
+          "hallucination_rate": 0.07792207792207792
+        },
+        "runtime": {
+          "run_id": "h2h_v4_fin_004_1786655386502056000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 276.0212,
+          "confidence": 0.5,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 3,
+          "estimated_worker_tokens": 44153,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 62316,
+            "completion_tokens": 9914,
+            "total_tokens": 72230
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 45,
+              "supported_count": 0,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 45,
+              "coverage": 0.0,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 24
+            },
+            "after": {
+              "claim_count": 45,
+              "supported_count": 0,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 45,
+              "coverage": 0.0,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 24
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 9914,
+          "failed_calls": 0,
+          "prompt_tokens": 62316,
+          "total_tokens": 72230
+        },
+        "evidence_metrics": {
+          "claim_count": 45,
+          "claim_support_coverage": 0.0,
+          "claim_citation_rate": 0.1333,
+          "cited_claim_support_precision": 0.0,
+          "supported_claim_citation_rate": 0.0,
+          "attribution_coverage": 0.0,
+          "refuted_rate": 0.0,
+          "nei_rate": 1.0,
+          "source_count": 48,
+          "evidence_count": 68,
+          "primary_source_ratio": 0.0208,
+          "fulltext_source_ratio": 0.0417
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/fin_004_agent.md",
+          "sha256": "5c1450f6d4163aaec07462bba484da78a8d9d5bb6ba156816f38d5e0047ebc40",
+          "characters": 4397
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/fin_004.json",
+          "sha256": "e0adc716ec7152b518240b596e346e8f2b2648e9c3ab95b0197d40d0cc59d954"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "fin_004",
+          "domain": "金融",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9310344827586207,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6362068965517242,
+          "hallucination_rate": 0.06896551724137931
+        },
+        "runtime": {
+          "elapsed_seconds": 296.6502,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 1788,
+          "failed_calls": 0,
+          "prompt_tokens": 209,
+          "total_tokens": 1997
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/fin_004_baseline.md",
+          "sha256": "b44916fbb8ae263ea5967493f1e61e2db15d391a2f15c2ada9faa5e686341ab2",
+          "characters": 3188
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "accuracy": {
+            "agent": 4.5,
+            "baseline": 3.5,
+            "delta": 1.0
+          },
+          "structure": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "sources": {
+            "agent": 3.5,
+            "baseline": 2.0,
+            "delta": 1.5
+          }
+        },
+        "agent_mean": 4.5,
+        "baseline_mean": 3.375,
+        "delta": 1.125,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了被动与主动基金在2020-2024年间的表现、风险调整后收益、市场结构变化（费率、被动化、集中度、交易流动性），并讨论了细分市场例外和区间敏感性，内容深入且系统。报告B覆盖了美国和中国市场，但对中国市场细节较多，对市场结构变化的分析（如因子化、行为因素）虽全面，但部分维度（如交易流动性变化）不如A深入。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A引用SPIVA、Morningstar、ICI等权威数据，事实准确，如主动基金跑输比例、费率差异、被动资产占比等，且明确指出了数据缺口（如夏普数值未核验），无重大幻觉。报告B数据基本准确，但部分表述如'2023年主动大盘基金表现一度较好'与SPIVA数据（2023年约65%跑输）存在矛盾，且'标普500夏普比率约0.8-1.0'可能偏高，准确性略逊。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从总体结论、分阶段表现、市场结构归因到分歧与启示，逻辑严密，层次分明。报告B结构合理，但摘要与正文部分内容重复，且中国市场与美国市场切换略显突兀，整体逻辑不如A流畅。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 2.0,
+                "reason": "报告A提供了两个具体来源，包含机构、年份和URL，可核验性较好，但仅两个来源覆盖不足。报告B未提供任何具体参考文献或URL，仅提及'SPIVA'、'Wind'等名称，缺乏定位信息，无法核验，引用质量低。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了美国和中国市场、分阶段表现、风险调整指标及市场结构变化，但对中国市场细节和例外领域讨论较少；报告B更全面，涵盖多资产类别、分阶段表现、风险调整口径、市场结构归因、例外领域和启示，且引用了SPIVA、Morningstar、ICI等权威来源。"
+              },
+              "accuracy": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A部分数据（如美国主动基金跑输比例、中国ETF规模）与参考事实基本一致，但存在一些未精确核实的表述（如夏普比率区间），且对中国市场2020年主动基金收益的估计可能偏高；报告B数据更严谨，明确区分了毛收益与净收益、幸存者偏差校正，并指出数据缺口，但个别引用（如T. Rowe Price报告）未提供完整定位信息。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有摘要、分节和结论，但部分内容（如市场结构变化）与表现对比的衔接稍显松散；报告B逻辑严密，从总体结论到分阶段表现、归因、分歧与启示，层次分明，且表格和引用整合良好。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 3.0,
+                "reason": "报告A未提供任何参考文献或URL，仅提及SPIVA、Wind等机构名称，缺乏可核验的定位信息；报告B提供了两个参考来源，但其中一个（清华大学五道口金融学院）缺少年份和完整URL，另一个（T. Rowe Price）有URL但年份为2026年（在截止日之后），且未提供作者或DOI，可核验性有限。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 863,
+        "failed_calls": 0,
+        "prompt_tokens": 8972,
+        "total_tokens": 9835
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "retail_002",
+      "domain": "消费",
+      "query": "分析中国新消费品牌（喜茶、完美日记、泡泡玛特）的崛起路径、供应链策略和海外扩张挑战。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "retail_002",
+          "domain": "消费",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9896907216494846,
+            "citation_coverage": 0.0,
+            "bias": 0.9896907216494846,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6458762886597939,
+          "hallucination_rate": 0.010309278350515464
+        },
+        "runtime": {
+          "elapsed_seconds": 30.6733,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2127,
+          "failed_calls": 0,
+          "prompt_tokens": 202,
+          "total_tokens": 2329
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/retail_002_baseline.md",
+          "sha256": "7e9a2bd6bde915516ebfb606d6ab022280219e567ce48e883a50b031e67e1ebf",
+          "characters": 3714
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "retail_002",
+          "domain": "消费",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 0.9873417721518988,
+            "citation_coverage": 0.23809523809523808,
+            "bias": 0.9367088607594937,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.6824291742013261,
+          "hallucination_rate": 0.06329113924050633
+        },
+        "runtime": {
+          "run_id": "h2h_v4_retail_002_1786655999136744000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 248.4628,
+          "confidence": 0.53,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 4,
+          "estimated_worker_tokens": 38335,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 66038,
+            "completion_tokens": 8903,
+            "total_tokens": 74941
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 48,
+              "supported_count": 6,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 42,
+              "coverage": 0.125,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 37
+            },
+            "after": {
+              "claim_count": 48,
+              "supported_count": 6,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 42,
+              "coverage": 0.125,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 37
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 8903,
+          "failed_calls": 0,
+          "prompt_tokens": 66038,
+          "total_tokens": 74941
+        },
+        "evidence_metrics": {
+          "claim_count": 48,
+          "claim_support_coverage": 0.125,
+          "claim_citation_rate": 0.125,
+          "cited_claim_support_precision": 0.5,
+          "supported_claim_citation_rate": 0.5,
+          "attribution_coverage": 0.125,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.875,
+          "source_count": 57,
+          "evidence_count": 66,
+          "primary_source_ratio": 0.0,
+          "fulltext_source_ratio": 0.0702
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/retail_002_agent.md",
+          "sha256": "9d985e5277639ce14f85a745a9d4a799553f32f65a1ff1d33cc94edd8cd94fcc",
+          "characters": 4403
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/retail_002.json",
+          "sha256": "d5fb0738a9b14ef6f87a78537820b079954c3815feac935ffeeb847263e12ce5"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 5.0,
+            "baseline": 4.5,
+            "delta": 0.5
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 4.0,
+            "delta": 0.0
+          },
+          "structure": {
+            "agent": 5.0,
+            "baseline": 4.5,
+            "delta": 0.5
+          },
+          "sources": {
+            "agent": 4.0,
+            "baseline": 2.0,
+            "delta": 2.0
+          }
+        },
+        "agent_mean": 4.5,
+        "baseline_mean": 3.75,
+        "delta": 0.75,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告均全面覆盖了崛起路径、供应链策略和海外扩张挑战三个核心维度，并提供了丰富的细节和对比分析。报告A在供应链策略上对每个品牌进行了深入剖析，报告B则通过表格和案例增强了覆盖的广度。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "两份报告均准确反映了参考事实，如泡泡玛特海外收入占比提升、喜茶开放加盟、完美日记面临盈利压力等。报告A在具体数据（如泡泡玛特2024年营收超130亿元）上可能略有偏差，但整体事实准确；报告B引用了具体财务数据（如泡泡玛特2024年营收130.4亿元），但部分数据来自二手来源，且喜茶财务数据缺失，但未发现明显幻觉。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告结构均清晰合理。报告A采用分章节论述，逻辑连贯，对比表格增强了可读性；报告B以表格开篇，分维度展开，并附有参考来源，结构完整。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 4.0,
+                "reason": "报告A未提供任何参考文献或可核验的引用，仅以文字说明数据来源，缺乏定位信息，不符合引用质量要求。报告B提供了4个参考文献，包含URL和部分作者/机构信息，但部分来源为二手媒体，且未逐一核对，但整体可核验性优于报告A。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了三个品牌的崛起路径、供应链策略和海外扩张挑战，并提供了详细的数据和案例，包括财务数据、市场表现和具体策略。报告B也覆盖了所有维度，但在深度和细节上略逊于A，例如对供应链策略的对比分析较简略。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 4.0,
+                "reason": "报告A的数据和事实基本准确，与参考事实一致，但部分数据来自二手媒体，且喜茶财务数据缺失。报告B同样准确，但个别表述如'海外收入占比快速提升至40%左右'与参考事实相符，但未提供具体数据来源。两者均无明显幻觉。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从核心画像、崛起路径、供应链策略到海外扩张，逻辑连贯，层次分明。报告B结构合理，但部分内容重复，如供应链对比表与正文内容有重叠，略显冗余。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 2.0,
+                "reason": "报告A提供了4个参考文献，包含URL和部分作者/机构信息，但部分来源为维基百科和自媒体，权威性一般。报告B未提供任何参考文献，仅以'公开信息记忆'说明，缺乏可核验性，不符合引用质量要求。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 718,
+        "failed_calls": 0,
+        "prompt_tokens": 10056,
+        "total_tokens": 10774
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "media_001",
+      "domain": "传媒",
+      "query": "分析短视频平台（TikTok / 抖音）推荐算法的核心机制，评估其对用户注意力、内容创作生态和信息茧房的影响。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "media_001",
+          "domain": "传媒",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.5535714285714286,
+            "bias": 0.967032967032967,
+            "comprehensiveness": 0.6666666666666666
+          },
+          "composite_score": 0.7041208791208792,
+          "hallucination_rate": 0.03296703296703297
+        },
+        "runtime": {
+          "run_id": "h2h_v4_media_001_1786656256340152000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 295.4488,
+          "confidence": 0.56,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 20,
+          "estimated_worker_tokens": 69606,
+          "model_usage": {
+            "api_calls": 18,
+            "failed_calls": 0,
+            "prompt_tokens": 81235,
+            "completion_tokens": 10224,
+            "total_tokens": 91459
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 36,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 34,
+              "coverage": 0.0556,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 36
+            },
+            "after": {
+              "claim_count": 36,
+              "supported_count": 2,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 34,
+              "coverage": 0.0556,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 36
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 18,
+          "completion_tokens": 10224,
+          "failed_calls": 0,
+          "prompt_tokens": 81235,
+          "total_tokens": 91459
+        },
+        "evidence_metrics": {
+          "claim_count": 36,
+          "claim_support_coverage": 0.0556,
+          "claim_citation_rate": 0.6667,
+          "cited_claim_support_precision": 0.0833,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.0556,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9444,
+          "source_count": 51,
+          "evidence_count": 67,
+          "primary_source_ratio": 0.3725,
+          "fulltext_source_ratio": 0.0588
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/media_001_agent.md",
+          "sha256": "e758d0abaac61bd09f47765db7b6e0ddeaa5ce2569a32315d8cf23cd5b46ac21",
+          "characters": 7594
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/media_001.json",
+          "sha256": "5a43049c1e1defbd2e830ae5dc4ccfc191657572afc52b33c352349eb54d57b0"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "media_001",
+          "domain": "传媒",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.975,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.645,
+          "hallucination_rate": 0.025
+        },
+        "runtime": {
+          "elapsed_seconds": 57.4334,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 1841,
+          "failed_calls": 0,
+          "prompt_tokens": 205,
+          "total_tokens": 2046
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/media_001_baseline.md",
+          "sha256": "d9fff9abae16ef3005540be16aa9c5eeec2e0ef816c22d4d015f5e0bd7faaa1b",
+          "characters": 3350
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "accuracy": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "structure": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "sources": {
+            "agent": 5.0,
+            "baseline": 3.0,
+            "delta": 2.0
+          }
+        },
+        "agent_mean": 5.0,
+        "baseline_mean": 3.75,
+        "delta": 1.25,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了算法机制、注意力影响、创作生态和信息茧房，且对每个维度进行了深入分析，包括神经科学证据、争议讨论和治理建议；报告B覆盖了所有子维度，但深度稍逊，如信息茧房部分缺乏具体实证细节。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A引用具体研究（如fMRI、心流机制、注意力控制）并明确区分证据强度，无事实错误；报告B部分表述如'TikTok全球月活超10亿'与参考事实（15亿）不符，且对监管时间线描述略有模糊，但整体准确。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，有速览表、分节论述、结论与启示，逻辑连贯；报告B结构合理，但部分内容（如监管回应）与主题关联性稍弱，且缺乏总结性表格。"
+              },
+              "sources": {
+                "A": 5.0,
+                "B": 3.0,
+                "reason": "报告A提供18个参考文献，均含URL/DOI，正文引用映射清晰；报告B引用多为泛化描述（如'多篇论文'），缺乏具体可核验的URL或DOI，仅提及官方博客但未给出链接。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了算法机制、注意力影响、创作生态和信息茧房，但信息茧房部分对争议的讨论较简略；报告B不仅覆盖所有维度，还深入探讨了神经科学证据、信息茧房的概念争议，并指出了证据缺口，内容更全面。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A事实基本正确，但部分数据（如TikTok月活超10亿）与参考事实（超15亿）有出入，且对信息茧房的描述偏向共识性结论；报告B引用了具体研究（如fMRI、强化学习论文），并明确区分了证据强度，准确性更高。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，但部分段落（如监管回应）与主题衔接稍显松散；报告B采用表格速览、分节明确，逻辑连贯，且结论与启示部分总结到位，结构更优。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 5.0,
+                "reason": "报告A引用较少，且部分引用（如官方博客）未提供完整定位信息；报告B提供了大量带URL和DOI的参考文献，且正文引用与文献列表对应清晰，可核验性强。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 664,
+        "failed_calls": 0,
+        "prompt_tokens": 10680,
+        "total_tokens": 11344
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "energy_002",
+      "domain": "能源",
+      "query": "分析中国光伏产业从硅料到组件的全产业链竞争力，评估美国《通胀削减法案》(IRA) 对中国光伏出口的影响。",
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "errors": [],
+      "baseline": {
+        "rule": {
+          "question_id": "energy_002",
+          "domain": "能源",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9565217391304348,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.641304347826087,
+          "hallucination_rate": 0.043478260869565216
+        },
+        "runtime": {
+          "elapsed_seconds": 55.9775,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 2280,
+          "failed_calls": 0,
+          "prompt_tokens": 203,
+          "total_tokens": 2483
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/energy_002_baseline.md",
+          "sha256": "d5826abd8319e72c6eaf71f8042cbefd92909bcbc80a1e38435a924eae0dc4ce",
+          "characters": 3932
+        }
+      },
+      "agent": {
+        "rule": {
+          "question_id": "energy_002",
+          "domain": "能源",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.26666666666666666,
+            "factual_accuracy_str": 0.6666666666666666,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.4444444444444444,
+            "bias": 0.8823529411764706,
+            "comprehensiveness": 0.7142857142857143
+          },
+          "composite_score": 0.6391690009337068,
+          "hallucination_rate": 0.11764705882352941
+        },
+        "runtime": {
+          "run_id": "h2h_v4_energy_002_1786656673252075000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 337.2941,
+          "confidence": 0.46,
+          "num_searches": 16,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 9,
+          "estimated_worker_tokens": 38315,
+          "model_usage": {
+            "api_calls": 20,
+            "failed_calls": 0,
+            "prompt_tokens": 71527,
+            "completion_tokens": 9431,
+            "total_tokens": 80958
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 46,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 42,
+              "coverage": 0.087,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 41
+            },
+            "after": {
+              "claim_count": 46,
+              "supported_count": 4,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 42,
+              "coverage": 0.087,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 41
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 20,
+          "completion_tokens": 9431,
+          "failed_calls": 0,
+          "prompt_tokens": 71527,
+          "total_tokens": 80958
+        },
+        "evidence_metrics": {
+          "claim_count": 46,
+          "claim_support_coverage": 0.087,
+          "claim_citation_rate": 0.3696,
+          "cited_claim_support_precision": 0.1176,
+          "supported_claim_citation_rate": 0.5,
+          "attribution_coverage": 0.087,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.913,
+          "source_count": 47,
+          "evidence_count": 61,
+          "primary_source_ratio": 0.0851,
+          "fulltext_source_ratio": 0.1064
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/energy_002_agent.md",
+          "sha256": "de15869ac9b2ea4ee9dd83342d4a80e517f0e32de6c4a2bb17790dbb7d60a720",
+          "characters": 4968
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/energy_002.json",
+          "sha256": "d3f0d62e08eae04b10efced6b1148bb1a4fff731c33346c7145c29a7e0ced60c"
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 3.5,
+            "baseline": 4.5,
+            "delta": -1.0
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 3.5,
+            "baseline": 3.5,
+            "delta": 0.0
+          }
+        },
+        "agent_mean": 3.75,
+        "baseline_mean": 4.5,
+        "delta": -0.75,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了硅料、硅片、电池片、组件各环节竞争力，并深入分析了IRA的直接影响、间接影响及应对策略，内容详实；报告B覆盖了主要维度，但部分分析（如技术细节、应对策略）不如A深入。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A数据准确，与参考事实一致，且对IRA条款、贸易政策等描述符合公开信息；报告B部分数据（如硅片产能负增长）可能需核实，但整体无明显错误，且对FEOC等描述准确。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从摘要、分环节分析到IRA影响评估，逻辑连贯，层次分明；报告B结构合理，但部分内容（如背景与核心结论）略显重复，影响流畅性。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A未提供参考文献列表，正文中提及的数据和事件缺乏可核验的引用来源；报告B提供了参考文献列表，包含URL、作者、年份等定位信息，但部分引用（如[6]）未在正文中明确映射，且来源权威性参差不齐。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了产业链各环节、IRA条款及影响，但缺少对辅材、设备等配套环节的深入分析；报告B不仅覆盖四大环节，还详细讨论了辅材、设备、技术迭代、企业布局及多维度影响，更全面。"
+              },
+              "accuracy": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A部分数据（如硅片产能负增长、TOPCon占比）与参考事实一致，但引用来源多为行业媒体，且对IRA条款的量化描述（如45X补贴额）未提供官方来源，存在一定不确定性；报告B数据更具体（如硅片占比97%、组件成本），且与参考事实相符，但部分细节（如对柬埔寨税率）未注明来源，略有瑕疵。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有背景、对比、机制、影响和展望，但部分段落信息密度高，逻辑跳跃；报告B层次分明，从摘要到分环节分析再到影响评估，逻辑连贯，易于理解。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A提供了多个引用来源，但部分引用（如[6]）仅有博客链接，缺乏作者或机构信息，且正文引用与参考文献映射不够清晰；报告B虽未列出参考文献列表，但正文中提及了CPIA、Wood Mackenzie等机构，且数据来源相对明确，但缺乏可核验的URL或DOI。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 703,
+        "failed_calls": 0,
+        "prompt_tokens": 10504,
+        "total_tokens": 11207
+      },
+      "status": "complete"
+    },
+    {
+      "qid": "med_004",
+      "domain": "医疗",
+      "query": "评估 CRISPR 基因编辑疗法在镰状细胞病和 β 地中海贫血中的临床疗效与长期安全性数据。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "med_004",
+          "domain": "医疗",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.5227272727272727,
+            "bias": 0.95,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.7445454545454546,
+          "hallucination_rate": 0.05
+        },
+        "runtime": {
+          "run_id": "h2h_v4_med_004_1786657019585241000",
+          "run_status": "complete",
+          "as_of_date": "2026-08-14",
+          "elapsed_seconds": 248.079,
+          "confidence": 0.56,
+          "num_searches": 15,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 10,
+          "estimated_worker_tokens": 44785,
+          "model_usage": {
+            "api_calls": 17,
+            "failed_calls": 0,
+            "prompt_tokens": 58737,
+            "completion_tokens": 8617,
+            "total_tokens": 67354
+          },
+          "model_assignments": {
+            "default": "k3",
+            "solver": "k3",
+            "planner": "k3",
+            "summarizer": "k3",
+            "judge": "k3",
+            "red_agent": "k3",
+            "blue_agent": "k3",
+            "compressor": "k3"
+          },
+          "compression": {
+            "total_compresses": 0,
+            "avg_compression_ratio": 1.0,
+            "avg_retention": 1.0,
+            "level_distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0
+            },
+            "history": []
+          },
+          "evidence_revision": {
+            "attempted": false,
+            "accepted": false,
+            "reason": "Revision trigger was not met.",
+            "before": {
+              "claim_count": 36,
+              "supported_count": 0,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.0,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 24
+            },
+            "after": {
+              "claim_count": 36,
+              "supported_count": 0,
+              "refuted_count": 0,
+              "not_enough_evidence_count": 36,
+              "coverage": 0.0,
+              "verification_mode": "hybrid_partial",
+              "semantic_reviewed_count": 3,
+              "semantic_candidate_count": 24
+            }
+          }
+        },
+        "usage": {
+          "api_calls": 17,
+          "completion_tokens": 8617,
+          "failed_calls": 0,
+          "prompt_tokens": 58737,
+          "total_tokens": 67354
+        },
+        "evidence_metrics": {
+          "claim_count": 36,
+          "claim_support_coverage": 0.0,
+          "claim_citation_rate": 0.4167,
+          "cited_claim_support_precision": 0.0,
+          "supported_claim_citation_rate": 0.0,
+          "attribution_coverage": 0.0,
+          "refuted_rate": 0.0,
+          "nei_rate": 1.0,
+          "source_count": 50,
+          "evidence_count": 67,
+          "primary_source_ratio": 0.12,
+          "fulltext_source_ratio": 0.08
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/med_004_agent.md",
+          "sha256": "cb411ecb551fab812dcea857e47546ac096059892faace6d81d22a28fa8aa935",
+          "characters": 5438
+        },
+        "evidence_artifact": {
+          "path": "outputs/evaluation/headtohead_v5_reports/evidence/med_004.json",
+          "sha256": "515aa7bbc84dfb85896505a862ea6c066b6e2a87040e0c08c4c7aea8fd9c2d04"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "med_004",
+          "domain": "医疗",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.2,
+            "factual_accuracy_str": 0.5,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9773584905660377,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.5954716981132075,
+          "hallucination_rate": 0.022641509433962263
+        },
+        "runtime": {
+          "elapsed_seconds": 112.5456,
+          "as_of_date": "2026-08-14"
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 4000,
+          "failed_calls": 0,
+          "prompt_tokens": 202,
+          "total_tokens": 4202
+        },
+        "report": {
+          "path": "outputs/evaluation/headtohead_v5_reports/med_004_baseline.md",
+          "sha256": "ae8be2c6b241b15a87733651d7c0d6fab10c11af1e7841f988fcb95ae41d3f19",
+          "characters": 6693
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "accuracy": {
+            "agent": 4.5,
+            "baseline": 5.0,
+            "delta": -0.5
+          },
+          "structure": {
+            "agent": 4.0,
+            "baseline": 5.0,
+            "delta": -1.0
+          },
+          "sources": {
+            "agent": 4.0,
+            "baseline": 3.0,
+            "delta": 1.0
+          }
+        },
+        "agent_mean": 4.125,
+        "baseline_mean": 4.5,
+        "delta": -0.375,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A覆盖了疗效、安全性、监管和证据缺口，但未深入讨论其他治疗选择（如异基因移植、慢病毒疗法）和患者亚组差异。报告B更全面，涵盖了机制、临床试验、疗效持久性、安全性（包括清髓毒性、脱靶、克隆造血）、与其他治疗比较、证据局限性等，对研究问题的各个子维度均有详细阐述。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 5.0,
+                "reason": "两份报告的核心数据（如97%无VOC、91%输血独立、监管日期）与参考事实一致，且未发现明显事实错误。报告A引用了NEJM论文和FDA标签，报告B也准确描述了关键试验和监管事件。两者均未出现与已知事实冲突的表述。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "报告A结构清晰，有核心数据对比表格和分节论述，但部分内容（如监管历程）略显简略。报告B逻辑严密，从机制、临床试验、疗效、安全性到比较和局限性，层次分明，且每个部分都有小标题，便于阅读。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A提供了具体参考文献，包含URL和部分作者/期刊信息，可核验性较好。报告B虽然正文中提及了NEJM论文和监管文件，但未在参考文献中列出具体URL或DOI，仅以叙述形式提及，降低了可核验性。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A覆盖了机制、监管、疗效、持久性、安全性（短期/长期）、比较治疗、局限性等所有维度，且对证据缺口和长期风险有深入讨论；报告B覆盖了核心疗效和安全性，但比较治疗和局限性讨论较简略。"
+              },
+              "accuracy": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A数据准确，如97%无VOC、91%输血独立、监管日期等均与参考事实一致，且对安全性风险表述谨慎；报告B数据基本准确，但部分表述如'全部患者实现≥12个月无VOC相关住院'可能过于绝对，且'无恶性肿瘤'的表述需注意随访时间限制。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，从机制到疗效、安全性、比较、局限性层层递进，逻辑连贯；报告B有核心数据对比表，但后续章节组织稍显松散，部分内容重复。"
+              },
+              "sources": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "报告A正文未提供具体参考文献或URL，仅提及研究名称和期刊，可核验性较低；报告B提供了多个带URL的参考文献，且标注了来源类型（如NEJM、FDA标签），但部分来源为厂商新闻稿，且未提供作者或DOI，可核验性中等。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 726,
+        "failed_calls": 0,
+        "prompt_tokens": 13384,
+        "total_tokens": 14110
+      },
+      "status": "complete"
+    }
+  ],
+  "summary": {
+    "rule_composite": {
+      "left_mean": 0.6803,
+      "right_mean": 0.6174,
+      "cohens_d": 1.3877,
+      "cohens_dz": 1.6477,
+      "bootstrap": {
+        "mean_diff": 0.0629,
+        "ci_lower": 0.0452,
+        "ci_upper": 0.0828,
+        "p_value": 0.0,
+        "significant": true,
+        "n": 15
+      },
+      "paired_t_test": {
+        "mean_diff": 0.0629,
+        "n": 15,
+        "t_statistic": 6.3817,
+        "p_value": 0.0,
+        "method": "normal_approx_no_scipy"
+      },
+      "paired_randomization_test": {
+        "mean_diff": 0.0629,
+        "p_value": 6.1e-05,
+        "n": 15,
+        "permutations": 32768,
+        "alternative": "greater",
+        "method": "exact_paired_sign_flip"
+      },
+      "n_pairs": 15
+    },
+    "rule_metrics": {
+      "factual_accuracy": {
+        "left_mean": 0.3556,
+        "right_mean": 0.3378,
+        "cohens_d": 0.199,
+        "cohens_dz": 0.2181,
+        "bootstrap": {
+          "mean_diff": 0.0178,
+          "ci_lower": -0.0178,
+          "ci_upper": 0.0578,
+          "p_value": 0.2142,
+          "significant": false,
+          "n": 15
+        },
+        "paired_t_test": {
+          "mean_diff": 0.0178,
+          "n": 15,
+          "t_statistic": 0.8446,
+          "p_value": 0.3983,
+          "method": "normal_approx_no_scipy"
+        },
+        "paired_randomization_test": {
+          "mean_diff": 0.0178,
+          "p_value": 0.25,
+          "n": 15,
+          "permutations": 32768,
+          "alternative": "greater",
+          "method": "exact_paired_sign_flip"
+        },
+        "n_pairs": 15
+      },
+      "logical_consistency": {
+        "left_mean": 0.9972,
+        "right_mean": 0.9955,
+        "cohens_d": 0.1749,
+        "cohens_dz": 0.121,
+        "bootstrap": {
+          "mean_diff": 0.0017,
+          "ci_lower": -0.0037,
+          "ci_upper": 0.0094,
+          "p_value": 0.3492,
+          "significant": false,
+          "n": 15
+        },
+        "paired_t_test": {
+          "mean_diff": 0.0017,
+          "n": 15,
+          "t_statistic": 0.4687,
+          "p_value": 0.6393,
+          "method": "normal_approx_no_scipy"
+        },
+        "paired_randomization_test": {
+          "mean_diff": 0.0017,
+          "p_value": 0.4375,
+          "n": 15,
+          "permutations": 32768,
+          "alternative": "greater",
+          "method": "exact_paired_sign_flip"
+        },
+        "n_pairs": 15
+      },
+      "citation_coverage": {
+        "left_mean": 0.37,
+        "right_mean": 0.0,
+        "cohens_d": 3.5332,
+        "cohens_dz": 2.4983,
+        "bootstrap": {
+          "mean_diff": 0.37,
+          "ci_lower": 0.2988,
+          "ci_upper": 0.4436,
+          "p_value": 0.0,
+          "significant": true,
+          "n": 15
+        },
+        "paired_t_test": {
+          "mean_diff": 0.37,
+          "n": 15,
+          "t_statistic": 9.6761,
+          "p_value": 0.0,
+          "method": "normal_approx_no_scipy"
+        },
+        "paired_randomization_test": {
+          "mean_diff": 0.37,
+          "p_value": 3.1e-05,
+          "n": 15,
+          "permutations": 32768,
+          "alternative": "greater",
+          "method": "exact_paired_sign_flip"
+        },
+        "n_pairs": 15
+      },
+      "bias": {
+        "left_mean": 0.9343,
+        "right_mean": 0.9745,
+        "cohens_d": -1.6553,
+        "cohens_dz": -1.3719,
+        "bootstrap": {
+          "mean_diff": -0.0402,
+          "ci_lower": -0.0553,
+          "ci_upper": -0.027,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 15
+        },
+        "paired_t_test": {
+          "mean_diff": -0.0402,
+          "n": 15,
+          "t_statistic": -5.3135,
+          "p_value": 0.0,
+          "method": "normal_approx_no_scipy"
+        },
+        "paired_randomization_test": {
+          "mean_diff": -0.0402,
+          "p_value": 1.0,
+          "n": 15,
+          "permutations": 32768,
+          "alternative": "greater",
+          "method": "exact_paired_sign_flip"
+        },
+        "n_pairs": 15
+      },
+      "comprehensiveness": {
+        "left_mean": 0.8742,
+        "right_mean": 0.9266,
+        "cohens_d": -0.3462,
+        "cohens_dz": -0.4628,
+        "bootstrap": {
+          "mean_diff": -0.0524,
+          "ci_lower": -0.1127,
+          "ci_upper": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 15
+        },
+        "paired_t_test": {
+          "mean_diff": -0.0524,
+          "n": 15,
+          "t_statistic": -1.7923,
+          "p_value": 0.0731,
+          "method": "normal_approx_no_scipy"
+        },
+        "paired_randomization_test": {
+          "mean_diff": -0.0524,
+          "p_value": 1.0,
+          "n": 15,
+          "permutations": 32768,
+          "alternative": "greater",
+          "method": "exact_paired_sign_flip"
+        },
+        "n_pairs": 15
+      }
+    },
+    "llm_judge": {
+      "left_mean": 4.2,
+      "right_mean": 4.2417,
+      "cohens_d": -0.0916,
+      "cohens_dz": -0.0503,
+      "bootstrap": {
+        "mean_diff": -0.0417,
+        "ci_lower": -0.4417,
+        "ci_upper": 0.3667,
+        "p_value": 0.5937,
+        "significant": false,
+        "n": 15
+      },
+      "paired_t_test": {
+        "mean_diff": -0.0417,
+        "n": 15,
+        "t_statistic": -0.1947,
+        "p_value": 0.8456,
+        "method": "normal_approx_no_scipy"
+      },
+      "paired_randomization_test": {
+        "mean_diff": -0.0417,
+        "p_value": 0.593018,
+        "n": 15,
+        "permutations": 32768,
+        "alternative": "greater",
+        "method": "exact_paired_sign_flip"
+      },
+      "n_pairs": 15
+    },
+    "agent_evidence": {
+      "claim_support_coverage": 0.0579,
+      "claim_citation_rate": 0.3028,
+      "cited_claim_support_precision": 0.1667,
+      "attribution_coverage": 0.0579,
+      "primary_source_ratio": 0.1112,
+      "fulltext_source_ratio": 0.0719
+    },
+    "latency_seconds": {
+      "agent_mean": 246.9447,
+      "baseline_mean": 75.2608
+    },
+    "api_total_tokens": {
+      "agent_mean": 75300.9333,
+      "baseline_mean": 2849.9333,
+      "judge_mean": 11413.3333
+    },
+    "failed_questions": []
+  }
+}

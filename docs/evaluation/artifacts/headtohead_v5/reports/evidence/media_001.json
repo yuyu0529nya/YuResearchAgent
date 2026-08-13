@@ -1,0 +1,2910 @@
+{
+  "schema_version": "1.0",
+  "query": "分析短视频平台（TikTok / 抖音）推荐算法的核心机制，评估其对用户注意力、内容创作生态和信息茧房的影响。",
+  "created_at": "2026-08-13T21:29:11.785028+00:00",
+  "sources": [
+    {
+      "source_id": "src_0333ccee07a0bc62",
+      "url": "https://developer.aliyun.com/article/1579426",
+      "title": "基于用户画像及协同过滤算法的音乐推荐系统，采用Django...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音推荐算法机制 流量池 完播率 协同过滤 用户画像",
+        "retrieval_relevance": 0.7948,
+        "host_domain": "developer.aliyun.com"
+      }
+    },
+    {
+      "source_id": "src_0a6607e2bf56c9a0",
+      "url": "https://chuhaizhinan.com/2023/07/04/tiktok-algorithm-2",
+      "title": "2023 TikTok推荐算法,流量池算法机制以及内容分发机制 - 出海指南",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音推荐算法机制 流量池 完播率 协同过滤 用户画像",
+        "retrieval_relevance": 0.7948,
+        "host_domain": "chuhaizhinan.com"
+      }
+    },
+    {
+      "source_id": "src_ea411cfa298691d7",
+      "url": "https://adjulianghui.cn/product/310.html",
+      "title": "adjulianghui.cn/product/310.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音推荐算法机制 流量池 完播率 协同过滤 用户画像",
+        "retrieval_relevance": 0.7828,
+        "host_domain": "adjulianghui.cn"
+      }
+    },
+    {
+      "source_id": "src_5a253e136903bdca",
+      "url": "https://juejin.cn/post/7662339239129038891",
+      "title": "juejin.cn/post/7662339239129038891",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音推荐算法机制 流量池 完播率 协同过滤 用户画像",
+        "retrieval_relevance": 0.7707,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_7e8a75a63e7a293f",
+      "url": "https://666bear.com/3191.html",
+      "title": "基于协同过滤算法SpringBoot Vue...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音推荐算法机制 流量池 完播率 协同过滤 用户画像",
+        "retrieval_relevance": 0.7466,
+        "host_domain": "666bear.com"
+      }
+    },
+    {
+      "source_id": "src_53e8aa5139f5cd8d",
+      "url": "https://e3s-conferences.org/articles/e3sconf/pdf/2021/11/e3sconf_netid2021_03029.pdf",
+      "title": "Analysis on the “Douyin (Tiktok) Mania” Phenomenon Based on Recommendation Algorithms",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "Zhao Zhengwei",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3128810778",
+        "citation_count": 119,
+        "provider": "openalex",
+        "retrieval_query": "TikTok Douyin recommendation algorithm short video ranking collaborative filtering",
+        "retrieval_relevance": 0.9611,
+        "host_domain": "e3s-conferences.org"
+      }
+    },
+    {
+      "source_id": "src_4dc14af24e9806e7",
+      "url": "https://formative.jmir.org/2024/1/e51513/PDF",
+      "title": "The Quality of Short Videos as a Source of Coronary Heart Disease Information on TikTok: Cross-Sectional Study",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Xun Gong, M L Chen, L Ning, Lingzhong Zeng, Bo Dong",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4402209098",
+        "citation_count": 33,
+        "provider": "openalex",
+        "retrieval_query": "TikTok Douyin recommendation algorithm short video ranking collaborative filtering",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "formative.jmir.org"
+      }
+    },
+    {
+      "source_id": "src_8d598cb9f6746535",
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/poi3.287",
+      "title": "From content moderation to <i>visibility moderation</i>: A case study of platform governance on TikTok",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Jing Zeng, D. Bondy Valdovinos Kaye",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4213068013",
+        "citation_count": 193,
+        "provider": "openalex",
+        "retrieval_query": "TikTok Douyin recommendation algorithm short video ranking collaborative filtering",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "onlinelibrary.wiley.com"
+      }
+    },
+    {
+      "source_id": "src_59185045b52f617c",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1683561/pdf",
+      "title": "Quality, reliability, and dissemination of lung cancer information on short-video platforms in China: a cross-platform content analysis of TikTok, Kwai, and Rednote",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Xiaoran Zheng, Qing Li, Lu Jin, Kaihang Shi, Mengqi Deng",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4416841209",
+        "citation_count": 7,
+        "provider": "openalex",
+        "retrieval_query": "TikTok Douyin recommendation algorithm short video ranking collaborative filtering",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "public-pages-files-2025.frontiersin.org"
+      }
+    },
+    {
+      "source_id": "src_c028d2e70e3c1f38",
+      "url": "https://magicpiano.cc/blog/short-videos-drain-kids-focus",
+      "title": "孩子刷完短视频\"脑袋空空\"？ 这是专注力在流失 | 西西魔法钢琴",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.911,
+        "host_domain": "magicpiano.cc"
+      }
+    },
+    {
+      "source_id": "src_0f24223affcbb19d",
+      "url": "https://xinwen.bjd.com.cn/content/s68612821e4b0aabe0a02f862.html",
+      "title": "人均每天刷短视频2.6小时！ 如何“自救”",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.8434,
+        "host_domain": "xinwen.bjd.com.cn"
+      }
+    },
+    {
+      "source_id": "src_94f4defdbc8a67a3",
+      "url": "https://linggandianbo.com/duo-ba-e-zhuan-jia-jing-gao-duan-shi-pin-zheng-zai-shao-pi-ni-de-da-nao-zhe-shi-yi-chang-duo-ba-e-zai-nan",
+      "title": "多巴胺专家警告：短视频正在“烧坏”你的大脑——这是一场多巴胺灾难",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.8434,
+        "host_domain": "linggandianbo.com"
+      }
+    },
+    {
+      "source_id": "src_100aa3f867a4488e",
+      "url": "https://tongwang.cn/Research/7181.html",
+      "title": "王通：短视频是如何让人上瘾的？ - 网络营销策划·王通",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.8327,
+        "host_domain": "tongwang.cn"
+      }
+    },
+    {
+      "source_id": "src_48a3889aa6f3be26",
+      "url": "https://sklib.cn/booklib/bookPreview?SiteID=122&ID=8472142&fromSubID=",
+      "title": "青少年手机游戏成瘾研究",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.7651,
+        "host_domain": "sklib.cn"
+      }
+    },
+    {
+      "source_id": "src_0a7ae1a67debb82e",
+      "url": "https://buluozhi.com/baike/840983",
+      "title": "刷短视频停不下来？ 短视频成瘾如何重塑我们的身心",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "短视频 注意力 成瘾 研究 多巴胺 青少年",
+        "retrieval_relevance": 0.7651,
+        "host_domain": "buluozhi.com"
+      }
+    },
+    {
+      "source_id": "src_a465caea58c08a04",
+      "url": "https://cdn.techscience.press/files/ijmhp/2025/TSP_IJMHP-27-3/IntJMentHealthPromot-27-03-59929/IntJMentHealthPromot-27-59929.pdf",
+      "title": "Potential Effect of Short Video Usage Intensity on Short Video Addiction, Perceived Mood Enhancement (‘TikTok Brain’), and Attention Control among Chinese Adolescents",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Jian‐Hong Ye, Junpeng Zheng, Weiguaju Nong, Xiantong Yang",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "4f308e950d648a99cd84ca2711f59075875028955422a5bd79f5cc37517d14a4",
+      "metadata": {
+        "paper_id": "W4408768342",
+        "citation_count": 35,
+        "provider": "openalex",
+        "retrieval_query": "short video app addiction attention TikTok use disorder",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "cdn.techscience.press"
+      }
+    },
+    {
+      "source_id": "src_306117cb3a36ac82",
+      "url": "https://doi.org/10.3389/fpsyg.2022.932805",
+      "title": "The addiction behavior of short-form video app TikTok: The information quality and system quality perspective",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Yao Qin, Bahiyah Omar, Alessandro Musetti",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4294739250",
+        "citation_count": 210,
+        "provider": "openalex",
+        "retrieval_query": "short video app addiction attention TikTok use disorder",
+        "retrieval_relevance": 0.825,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_d58c5d82efb805e6",
+      "url": "https://frontiersin.org/articles/10.3389/fpsyg.2022.893599/pdf",
+      "title": "Adolescent Addiction to Short Video Applications in the Mobile Internet Era",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Lihong Lu, Liu Mei, Binchao Ge, Zijin Bai, Ziqi Liu",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4229442680",
+        "citation_count": 77,
+        "provider": "openalex",
+        "retrieval_query": "short video app addiction attention TikTok use disorder",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "frontiersin.org"
+      }
+    },
+    {
+      "source_id": "src_eae19c0ae634295b",
+      "url": "https://frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1391204/pdf",
+      "title": "Analysis of the causes, psychological mechanisms, and coping strategies of short video addiction in China",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Mingyue Liao",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4401374775",
+        "citation_count": 56,
+        "provider": "openalex",
+        "retrieval_query": "short video app addiction attention TikTok use disorder",
+        "retrieval_relevance": 0.825,
+        "host_domain": "frontiersin.org"
+      }
+    },
+    {
+      "source_id": "src_5d7ae06cc6955471",
+      "url": "https://sciencedirect.com/science/article/pii/S1053811921004134/pdf",
+      "title": "Viewing personalized video clips recommended by TikTok activates default mode network and ventral tegmental area",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Conghui Su, Hui Zhou, Liangyu Gong, Binyu Teng, Fengji Geng, Yuzheng Hu",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3158122678",
+        "citation_count": 144,
+        "provider": "openalex",
+        "retrieval_query": "short video app addiction attention TikTok use disorder",
+        "retrieval_relevance": 0.825,
+        "host_domain": "sciencedirect.com"
+      }
+    },
+    {
+      "source_id": "src_b79f12ac38b1b0a5",
+      "url": "https://juejin.cn/post/7115303969970192421",
+      "title": "宏观视角看抖音全生态宏观视角看抖音全生态 截止2021...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 使用时长 用户注意力 短视频 数据 2025 报告",
+        "retrieval_relevance": 0.7789,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_5bdc07baa6c0d70c",
+      "url": "https://chinaooi.com/tongling/show30.html",
+      "title": "铜陵抖音代运营价格表｜企业短视频推广费用解析-颐抖网",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 使用时长 用户注意力 短视频 数据 2025 报告",
+        "retrieval_relevance": 0.7237,
+        "host_domain": "chinaooi.com"
+      }
+    },
+    {
+      "source_id": "src_61fed74afcb93043",
+      "url": "https://pingxiang.dianzana.com/",
+      "title": "萍乡抖音推广|抖音代运营公司|短视频SEO优化服务-佰抖网",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 使用时长 用户注意力 短视频 数据 2025 报告",
+        "retrieval_relevance": 0.7237,
+        "host_domain": "pingxiang.dianzana.com"
+      }
+    },
+    {
+      "source_id": "src_e0d321d1736520fe",
+      "url": "https://y2gb5e.cn/",
+      "title": "抖音风+混剪弹力摇",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 使用时长 用户注意力 短视频 数据 2025 报告",
+        "retrieval_relevance": 0.7237,
+        "host_domain": "y2gb5e.cn"
+      }
+    },
+    {
+      "source_id": "src_56c72f293c93d4a2",
+      "url": "https://tiktok.com/zh-Hans",
+      "title": "TikTok - Make Your Day",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 使用时长 用户注意力 短视频 数据 2025 报告",
+        "retrieval_relevance": 0.7053,
+        "host_domain": "tiktok.com"
+      }
+    },
+    {
+      "source_id": "src_07874a610965e4c9",
+      "url": "https://mp.ofweek.com/Internet/a856714553587",
+      "title": "所谓推荐算法“有罪论”，是真相还是背锅？ - 维科号",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "da0ba42fb6a3f547e1f46a76de5fd7018f9219d47a3d34293513b6f41766422d",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.8386,
+        "host_domain": "mp.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_7f1b835b687b46a6",
+      "url": "https://woshipm.com/it/6207494.html",
+      "title": "所谓推荐算法“有罪论”，是真相还是背锅？ | 人人都是产品经理",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.8386,
+        "host_domain": "woshipm.com"
+      }
+    },
+    {
+      "source_id": "src_3da95348ef49297c",
+      "url": "https://tfcaijing.com/article/page/6e7048493856466d326c4e74652b706f415a756f66513d3d",
+      "title": "消道长辟谣｜App偷听用户对话？ 算法导致信息茧房？ 真相是",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.8286,
+        "host_domain": "tfcaijing.com"
+      }
+    },
+    {
+      "source_id": "src_57002a569cd0e897",
+      "url": "https://juejin.cn/post/7621853436889186346",
+      "title": "我搭了一套信息系统，然后发现自己才是最大的过滤气泡 | 从RSS...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.8043,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_f3463f2020d20a71",
+      "url": "https://chinanews.com.cn/cj/2024/05-15/10216944.shtml",
+      "title": "这些年 我们可能误解了算法与“信息茧房”的关系-中新网",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.7771,
+        "host_domain": "chinanews.com.cn"
+      }
+    },
+    {
+      "source_id": "src_6b0a343962590af7",
+      "url": "https://yunyingpai.com/content/1022243.html",
+      "title": "批「信息茧房」者，困在了「认知茧房」里 | 运营派",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "抖音 推荐算法 信息茧房 实证研究 过滤气泡",
+        "retrieval_relevance": 0.7357,
+        "host_domain": "yunyingpai.com"
+      }
+    },
+    {
+      "source_id": "src_b398c42c6191af10",
+      "url": "https://ojs.tdmu.edu.ua/index.php/med_osvita/en/article/view/15855",
+      "title": "Analysis of the phenomenon of the information filter...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.8866,
+        "host_domain": "ojs.tdmu.edu.ua"
+      }
+    },
+    {
+      "source_id": "src_67087939a1bd9d69",
+      "url": "https://kanal.umsida.ac.id/index.php/kanal/article/view/2062",
+      "title": "Analysis of the Use of TikTok Filter Bubble to Increase Content...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.858,
+        "host_domain": "kanal.umsida.ac.id"
+      }
+    },
+    {
+      "source_id": "src_1a377161d29b0e65",
+      "url": "https://journal.uii.ac.id/AJMC/article/download/36711/17856/131521",
+      "title": "Reflecting on the Information Bubbles Phenomenon in Light of",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.8393,
+        "host_domain": "journal.uii.ac.id"
+      }
+    },
+    {
+      "source_id": "src_746b53d1e82b0316",
+      "url": "https://themalaysianinsight.com/s/447322",
+      "title": "Bursting the algorithmic filter bubble of TikTok | The Malaysian Insight",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.792,
+        "host_domain": "themalaysianinsight.com"
+      }
+    },
+    {
+      "source_id": "src_d89580bc8b9f1ceb",
+      "url": "https://parango46.medium.com/help-im-trapped-in-a-filter-bubble-5a67f34ed8f7",
+      "title": "Help! I’m Trapped In A Filter Bubble! | by Peter Arango | Medium",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.8393,
+        "host_domain": "parango46.medium.com"
+      }
+    },
+    {
+      "source_id": "src_0ce2e82455c50d34",
+      "url": "https://repository.kisti.re.kr/bitstream/10580/13511/1/Zimmer_Scheibe_Stock_Stock_v7n2_40-53.pdf",
+      "title": "Fake News in Social Media: Bad Algorithms or Biased Users?",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "TikTok filter bubble echo chamber algorithm empirical study",
+        "retrieval_relevance": 0.528,
+        "host_domain": "repository.kisti.re.kr"
+      }
+    },
+    {
+      "source_id": "src_e641318f6543dbd5",
+      "url": "https://redfame.com/journal/index.php/ijsss/article/download/5664/5849",
+      "title": "Recommendation Algorithm in TikTok: Strengths, Dilemmas, and Possible Directions",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Pengda Wang",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "d0a3dcfaa7c2be0d041c4030312dbba5ff89ad00b1413f5db3446ad084a1ece2",
+      "metadata": {
+        "paper_id": "W4295210952",
+        "citation_count": 35,
+        "provider": "openalex",
+        "retrieval_query": "short video recommendation algorithm user attention filter bubble TikTok",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "redfame.com"
+      }
+    },
+    {
+      "source_id": "src_4912a81126c5d6e3",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3447535.3462512",
+      "title": "Trick and Please. A Mixed-Method Study On User Assumptions About the TikTok Algorithm",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Daniel Klug, Yiluo Qin, Morgan C. Evans, Geoff Kaufman",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3176799022",
+        "citation_count": 191,
+        "provider": "openalex",
+        "retrieval_query": "short video recommendation algorithm user attention filter bubble TikTok",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "dl.acm.org"
+      }
+    },
+    {
+      "source_id": "src_9d52f2e2af0afc86",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3543507.3583259",
+      "title": "Two-Stage Constrained Actor-Critic for Short Video Recommendation",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Qingpeng Cai, Zhenghai Xue, Chi Zhang, Wanqi Xue, Shuchang Liu, Ruohan Zhan, Xueliang Wang, Tianyou Zuo, Wentao Xie, Dong Zheng",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4367047389",
+        "citation_count": 44,
+        "provider": "openalex",
+        "retrieval_query": "short video recommendation algorithm user attention filter bubble TikTok",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "dl.acm.org"
+      }
+    },
+    {
+      "source_id": "src_8fa136a14958e5e7",
+      "url": "https://doi.org/10.1371/journal.pone.0315140",
+      "title": "The impact of TikTok short video factors on tourists’ behavioral intention among Generation Z and Millennials: The role of flow experience",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Congying Liu, Mingdi Jiang, Zulqarnain Arshad Muhammad",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4405056342",
+        "citation_count": 42,
+        "provider": "openalex",
+        "retrieval_query": "short video recommendation algorithm user attention filter bubble TikTok",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_1bf2ed40a3691e4a",
+      "url": "https://eprints.qut.edu.au/131675/1/It%E2%80%99s%20Not%20the%20Technology%2C%20Stupid%20%28paper%2019771%29.pdf",
+      "title": "It’s not the technology, stupid: How the ‘Echo Chamber’ and ‘Filter Bubble’ metaphors have failed us",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Axel Bruns",
+      "year": "2019",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W2965327022",
+        "citation_count": 27,
+        "provider": "openalex",
+        "retrieval_query": "recommender system echo chamber filter bubble empirical evidence debate",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "eprints.qut.edu.au"
+      }
+    },
+    {
+      "source_id": "src_20bd0e32fb421553",
+      "url": "https://api.taylorfrancis.com/content/chapters/oa-edit/download?identifierName=doi&identifierValue=10.4324/9781003109891-4&type=chapterpdf",
+      "title": "Echo chambers? Filter bubbles? The misleading metaphors that obscure the real problem",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Axel Bruns",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3188521623",
+        "citation_count": 55,
+        "provider": "openalex",
+        "retrieval_query": "recommender system echo chamber filter bubble empirical evidence debate",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "api.taylorfrancis.com"
+      }
+    },
+    {
+      "source_id": "src_cc1d51fda600a57a",
+      "url": "https://api.taylorfrancis.com/content/chapters/edit/download?identifierName=doi&identifierValue=10.4324/9781003004431-10&type=chapterpdf",
+      "title": "Filter bubbles and digital echo chambers 1",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Judith Möller",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3129594837",
+        "citation_count": 37,
+        "provider": "openalex",
+        "retrieval_query": "recommender system echo chamber filter bubble empirical evidence debate",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "api.taylorfrancis.com"
+      }
+    },
+    {
+      "source_id": "src_49b48800b1cc7829",
+      "url": "https://policyreview.info/pdf/policyreview-2019-4-1426.pdf",
+      "title": "Filter bubble",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Axel Bruns",
+      "year": "2019",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4206182481",
+        "citation_count": 184,
+        "provider": "openalex",
+        "retrieval_query": "recommender system echo chamber filter bubble empirical evidence debate",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "policyreview.info"
+      }
+    },
+    {
+      "source_id": "src_6e21af8c06047be3",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10462-021-10043-x.pdf",
+      "title": "News recommender system: a review of recent progress, challenges, and opportunities",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Shaina Raza, Chen Ding",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3186240982",
+        "citation_count": 207,
+        "provider": "openalex",
+        "retrieval_query": "recommender system echo chamber filter bubble empirical evidence debate",
+        "retrieval_relevance": 0.5111,
+        "host_domain": "link.springer.com"
+      }
+    },
+    {
+      "source_id": "src_f85bc0c615735d22",
+      "url": "https://en.wikipedia.org/wiki/Empirical_evidence",
+      "title": "Empirical evidence - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "empirical study algorithmic feed engagement addiction TikTok Nature 2023 \"Like a source\" filter bubble evidence for and against",
+        "retrieval_relevance": 0.4776,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_0a812c1aedeaa38a",
+      "url": "https://en.wikipedia.org/wiki/Empirical_research",
+      "title": "Empirical research - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "empirical study algorithmic feed engagement addiction TikTok Nature 2023 \"Like a source\" filter bubble evidence for and against",
+        "retrieval_relevance": 0.4776,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_dc70940bdee764fb",
+      "url": "https://moses-conner.pages.dev/posts/filter-wajah-glowing-language-id",
+      "title": "Filter Wajah Glowing Language:id / 5 Filter TikTok Viral 2021, Buat...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "empirical study algorithmic feed engagement addiction TikTok Nature 2023 \"Like a source\" filter bubble evidence for and against",
+        "retrieval_relevance": 0.4865,
+        "host_domain": "moses-conner.pages.dev"
+      }
+    },
+    {
+      "source_id": "src_4c95cc9fa3e415fd",
+      "url": "https://merriam-webster.com/dictionary/empirical",
+      "title": "EMPIRICAL Definition & Meaning - Merriam-Webster",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "empirical study algorithmic feed engagement addiction TikTok Nature 2023 \"Like a source\" filter bubble evidence for and against",
+        "retrieval_relevance": 0.2476,
+        "host_domain": "merriam-webster.com"
+      }
+    },
+    {
+      "source_id": "src_9fd72b54629b1f65",
+      "url": "https://dictionary.cambridge.org/dictionary/english/empirical",
+      "title": "EMPIRICAL | English meaning - Cambridge Dictionary",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "empirical study algorithmic feed engagement addiction TikTok Nature 2023 \"Like a source\" filter bubble evidence for and against",
+        "retrieval_relevance": 0.2388,
+        "host_domain": "dictionary.cambridge.org"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_d42ab2f4557381b1",
+      "source_id": "src_0333ccee07a0bc62",
+      "text": "简介： 本文介绍了一个基于用户画像和协同过滤算法的音乐推荐系统，使用Django框架、Bootstrap前端和MySQL数据库构建，旨在为用户提供个性化的音乐推荐服务，提高. 推荐准确性和用户满意度。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "948cc58cfe88145ca5ec01ee8a97d557fb509afc88428f9cf001f98c91a740ef"
+    },
+    {
+      "evidence_id": "ev_993e02f07e9350ec",
+      "source_id": "src_0a6607e2bf56c9a0",
+      "text": "Noxinfluencer 4 7 月, 2023 23:45 阅读(1412) 评论(0). 但与Instagram、Facebook算法不同，TikTok算法最大的特点就是去中心化。因此对于TikTok的主要算法，我们主要需要了解流量池算法机制以及内容分发机制。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "12f5f77ad20365972c268bcf799991ffc627b2bc7f476632d9fb9c9ac3fef136"
+    },
+    {
+      "evidence_id": "ev_279ebbc31acb7f0c",
+      "source_id": "src_ea411cfa298691d7",
+      "text": "这包括 A/B 测试、调整推荐参数等。 二、抖音八种算法机制. 1、流量池算法. 抖音的流量池是一个庞大的内容分发网络，是通过一系列复杂的算法和机制，将不同的内容推荐给不同的用户群体。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "490a86ef165d37afa97e6de960ea782769e06fc3eaf0a7c4fbb15e57c755bcd0"
+    },
+    {
+      "evidence_id": "ev_e82aee64426bd68d",
+      "source_id": "src_5a253e136903bdca",
+      "text": "今天，我们就来一层层拆开抖音推荐系统的黑盒。 第一步：给你画一张\"数字肖像\"——用户画像. 在你刷到第一条推荐视频之前，抖音已经为你建立了一份用户画像。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "8f574cd788f3693fbad2d0082e050b9d0fd0363837697c583d3fc097189b0569"
+    },
+    {
+      "evidence_id": "ev_90b6b3d6b9b5a233",
+      "source_id": "src_7e8a75a63e7a293f",
+      "text": "一、 项目介绍. 基于协同过滤算法SpringBoot Vue音乐推荐系统. 角色：管理员、用户.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4cc21f415ede39a7854b1805cd63d875a1abe646cebf4965c5160722239f648c"
+    },
+    {
+      "evidence_id": "ev_8bc54c8430c95c43",
+      "source_id": "src_53e8aa5139f5cd8d",
+      "text": "As one of the most popular short video platform, Douyin has accumulated more than half of the Chinese netizens as its daily active users. Many users spend plenty of time viewing Douyin short videos, which make Douyin addiction become a widespread phenomenon. In this paper, the author analyzes algorithm principles used in Douyin. Combining both perspectives of mass media communication and algorithm technology to explain how it effects Douyin addiction. For one thing, the recommendation algorithm caters users by fully meeting their needs. Using the hierarchical interest label tree, the user persona and the partitioned data buckets strategy to recommend more accurate and personalized contents. For another, the algorithm uses the collaborative filtering algorithm and low-cost interaction design mechanism to make traps for users. The author also finds that there is a closed-loop relationship between Douyin addiction and algorithm optimization. The algorithm principles positively effects users’ continuance intention. Meanwhile, the more frequent the user uses Douyin, the more accurate the algorithm will be. If not intervened, the addiction may be severely exacerbated. So, the author comes up with a few suggestions for Douyin developers and users, trying to break the closed-loop.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "442f42b3f6b686c610c1d0b2790324f86280bc9f1265ed11632fb660dff4a838"
+    },
+    {
+      "evidence_id": "ev_1dfcc9d210de1999",
+      "source_id": "src_4dc14af24e9806e7",
+      "text": "BACKGROUND: Coronary heart disease (CHD) is a leading cause of death worldwide and imposes a significant economic burden. TikTok has risen as a favored platform within the social media sphere for disseminating CHD-related information and stands as a pivotal resource for patients seeking knowledge about CHD. However, the quality of such content on TikTok remains largely unexplored. OBJECTIVE: This study aims to assess the quality of information conveyed in TikTok CHD-related videos. METHODS: A comprehensive cross-sectional study was undertaken on TikTok videos related to CHD. The sources of the videos were identified and analyzed. The comprehensiveness of content was assessed through 6 questions addressing the definition, signs and symptoms, risk factors, evaluation, management, and outcomes. The quality of the videos was assessed using 3 standardized evaluative instruments: DISCERN, the Journal of the American Medical Association (JAMA) benchmarks, and the Global Quality Scale (GQS). Furthermore, correlative analyses between video quality and characteristics of the uploaders and the videos themselves were conducted. RESULTS: The search yielded 145 CHD-related videos from TikTok, predominantly uploaded by health professionals (n=128, 88.3%), followed by news agencies (n=6, 4.1%), nonprofit organizations (n=10, 6.9%), and for-profit organizations (n=1, 0.7%). Content comprehensiveness achieved a median score of 3 (IQR 2-4). Median values for the DISCERN, JAMA, and GQS evaluations across all videos stood at 27 (IQR 24-32), 2 (IQR 2-2), and 2 (IQR 2-3), respectively. Videos from health professionals and nonprofit organizations attained significantly superior JAMA scores in comparison to those of news agencies (P<.001 and P=.02, respectively), whereas GQS scores for videos from health professionals were also notably higher than those from news agencies (P=.048). Within health professionals, cardiologists demonstrated discernibly enhanced performance over noncardiologists in both DISCERN and GQS assessments (P=.02). Correlative analyses unveiled positive correlations between video quality and uploader metrics, encompassing the positive correlations between the number of followers; total likes; average likes per video; and established quality indices such as DISCERN, JAMA, or GQS scores. Similar investigations relating to video attributes showed correlations between user engagement factors-likes, comments, collections, shares-and the aforementioned quality indicators. In contrast, a negative correlation emerged between the number of days since upload and quality indices, while a longer video duration corresponded positively with higher DISCERN and GQS scores. CONCLUSIONS: The quality of the videos was generally poor, with significant disparities based on source category. The content comprehensiveness coverage proved insufficient, casting doubts on the reliability and quality of the information relayed through these videos. Among health professionals, video contributions from cardiologists exhibited superior quality compared to noncardiologists. As TikTok's role in health information dissemination expands, ensuring accurate and reliable content is crucial to better meet patients' needs for CHD information that conventional health education fails to fulfill.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "7298206b3d6dc7b45f0796d27785732029cf3e2d68d429fa5f60041c611ca3ee"
+    },
+    {
+      "evidence_id": "ev_1ba5371cdee6d16b",
+      "source_id": "src_8d598cb9f6746535",
+      "text": "Abstract TikTok, a short‐video app featuring video content typically between 15 and 60 s long, has become immensely popular around the world in the last few years. However, the worldwide popularity of TikTok requires the platform to constantly negotiate with the rules, norms and regulatory frameworks of the regions where it operates. Failure to do so has had significant consequences. For example, for content‐related reasons, the platform has been (temporarily and permanently) banned in several countries, including India, Indonesia and Pakistan. Moreover, its Chinese ownership and popularity among underage users have made the platform subject to heightened scrutiny and criticism. In this paper, we introduce the notion of visibility moderation, defined as the process through which digital platforms manipulate the reach of user‐generated content through algorithmic or regulatory means. We discuss particular measures TikTok implements to shape visibility and issues arising from it. This paper presents findings from interviews with content creators, which takes a user‐centric approach to understand their sense‐making of and negotiation with TikTok's visibility moderation. Findings from this study also highlight concerns that leave these stakeholders feeling confused, frustrated or powerless, which offer important directions for further research.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "98e7572f54e2751424102655656c642b01a5a56ab81613182586472ef0fb6a95"
+    },
+    {
+      "evidence_id": "ev_a79fda3d33b52cab",
+      "source_id": "src_59185045b52f617c",
+      "text": "Background: Short-video platforms have become major sources of health information in China, influencing public awareness and health behavior. However, the quality and dissemination patterns of lung cancer-related content across different platforms remain unclear. This study aimed to evaluate the informational quality, reliability, and engagement patterns of lung cancer short videos on three leading Chinese platforms. Methods: We conducted a comprehensive cross-sectional content analysis of 1,288 lung cancer-related videos retrieved from TikTok, Kwai and Rednote. Video quality was systematically evaluated using a multidimensional toolkit, including the Journal of the American Medical Association (JAMA) benchmark criteria, Global Quality Scale (GQS), modified DISCERN (mDISCERN), and the Patient Education Materials Assessment Tool (PEMAT-U/A). We analyzed heterogeneity and correlations of quality and engagement metrics (likes, comments, shares, collections) across platforms, creator types, content themes, and presentation formats. Results: < 0.001). Disease knowledge videos-particularly those focusing on prevention, definitions, and risk factors-exhibited superior quality compared to personal experience or metastasis-related content. Expert monolog videos were the most common and effective presentation format. Engagement did not align linearly with quality. Patient vlogs and metastasis-related videos achieved higher interaction rates despite lower accuracy, indicating a \"quality-engagement paradox.\" Weak-to-moderate positive correlations were found between GQS and engagement, while PEMAT-A was negatively correlated with likes and comments. Conclusion: Marked disparities in the quality and dissemination of lung cancer-related short videos exist across Chinese platforms. Professional, evidence-based content enhances reliability, whereas emotional and visually driven content drives engagement. Strengthening algorithmic governance, metadata transparency, and expert involvement-alongside audience-centered, evidence-informed communication-may enhance the educational value and public health impact of short-video platforms.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "592339df86127617a107df7e4b87c99c0df58a5969672ee649a37080e5fbb644"
+    },
+    {
+      "evidence_id": "ev_96df8c041740ada8",
+      "source_id": "src_c028d2e70e3c1f38",
+      "text": "摘要： 刷完短视频后发呆、什么都记不住，不是孩子偷懒，是大脑多巴胺机制被短视频系统性损耗。香港基督教服务处的报告也指出，青少年使用 Facebook、Twitter 的成瘾性越高，ADHD 评分越高。 这不是危言耸听。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9ab6d6ff60be4f3a7c28230a512dd5591ca60b7928e5faf6e7d38ebf42ebf320"
+    },
+    {
+      "evidence_id": "ev_058cd647534eaf0d",
+      "source_id": "src_0f24223affcbb19d",
+      "text": "题时，那就要高度怀疑是否患上了短视频成瘾。 研究表明，短视频成瘾与大脑的奖励系统过度激活和认知控制系统功能减弱有关。因此，与成年人相比，青少年更容易对短视频成瘾。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fee361b41a15d3ad99d93e0de821d1375b58ffc55855552f48285bec4d327f4b"
+    },
+    {
+      "evidence_id": "ev_3152a62d7390becd",
+      "source_id": "src_94f4defdbc8a67a3",
+      "text": "我们请来了安娜·伦布克医生（Dr. Anna Lembke）。 她是斯坦福成瘾诊所（Stanford Addiction Clinic）负责人，也是研究多巴胺的顶尖专家。成瘾者 vs 非成瘾者的大脑：成瘾是一种“多巴胺赤字”.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "de5c01730e1963da9b02b2f901b5ea16dc14dc45c0d10dc89cb2e7e2e75956b6"
+    },
+    {
+      "evidence_id": "ev_296bdd0e55afce33",
+      "source_id": "src_100aa3f867a4488e",
+      "text": "2、注意力机制重塑：六、如何应对短视频成瘾？ 1、设定使用边界：",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "86b7cfdf500e0451314ffddad99828310200b504aa94db791980bba9381fea18"
+    },
+    {
+      "evidence_id": "ev_d0c0a0d7a62a73e2",
+      "source_id": "src_48a3889aa6f3be26",
+      "text": "作为国内第一部对青少年手机游戏成瘾这一社会问题进行系统性研究的专著，本书在回顾国内外手机游戏产业发展简史的基础上，对青少年手机游戏. 成瘾的影响因素、影响效应以及干预体系进行了全面深入的研究。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c4bb05fdf218b1fad03fef60e2c4d40aaa8b6c68557719b11a21c8d05ca48277"
+    },
+    {
+      "evidence_id": "ev_db2d4c08826b3e3e",
+      "source_id": "src_0a7ae1a67debb82e",
+      "text": "短视频成瘾的分子根源何在？清华大学健康中国研究院团队在《Computers in Human Behavior》期刊发表的研究，首次从纵向维度揭示短视频成瘾与抑郁症状间的动态关系。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "be6401b5c6dc68257753cc09fbf3747b398c144d8829f603c990b37c79c7bb6d"
+    },
+    {
+      "evidence_id": "ev_39e2507d7f4714a0",
+      "source_id": "src_a465caea58c08a04",
+      "text": "Objectives: Short video addiction has emerged as a significant public health issue in recent years, with a growing trend toward severity. However, research on the causes and impacts of short video addiction remains limited, ... | Find, read and cite all the research you need on Tech Science Press",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "27389dec716563d200f4223710e46c873683f8a6003104482560367f789a4a4b"
+    },
+    {
+      "evidence_id": "ev_bcf2490b7c42aee8",
+      "source_id": "src_306117cb3a36ac82",
+      "text": "TikTok has one of the most advanced algorithm systems and is the most addictive as compared to other social media platforms. While research on social media addiction is abundant, we know much less about how the TikTok information system environment affects users' internal states of enjoyment, concentration, and time distortion (which scholars define as the flow experience), which in turn influences their addiction behavior. To fill this gap, this study collects responses from 659 adolescents in China aged between 10 and 19 years old, and the data is then analyzed using Partial Least Square (PLS). We find that the system quality has a stronger influence than information quality in determining adolescents' experience with TikTok and that the flow experience has significant direct and indirect effects on TikTok addiction behavior. Notably, this study finds that TikTok addiction is determined by users' mental concentration on the medium and its content. Several theoretical insights from the stimulus-organism-response (S-O-R) model and the flow theory are used to explain the findings.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "8ee26a32cdc388b525b94b5fdad36f91d22bf751c9f9a2f347300d7b1b9b45ec"
+    },
+    {
+      "evidence_id": "ev_5e7feb7b0a6b50bc",
+      "source_id": "src_d58c5d82efb805e6",
+      "text": "The adolescent addiction to short video applications is becoming increasingly prominent, which has brought great challenges to the physical and mental health and daily life of the adolescents. This manuscript conducts an empirical study on the contributing factors of the adolescent addiction to short video applications based on the user generated content (UGC). In our study, 96 participants aged 15-25 were surveyed by questionnaire, and then cross-analysis of individual factors and SEM analysis of UGC content factors were carried out. Through the analysis of individual factors of the adolescent addiction from the perspective of gender, age, and family environment, this study reveals that male users are more addicted to the use of applications (APP), and such addiction varies with age, and prolonged family members' use of short video APP can also exacerbate the adolescent addiction degree. Furthermore, through verification of the theoretical model, it indicates that UGC perception and the degree of boredom in daily life have a significant positive effect on the level of addiction to short video applications, and the degree of boredom in daily life plays a significant mediating role between them. Based on the research on the influences of UGC on the adolescent immersive experience, this study proposes a mechanism of the adolescent addiction to the use of short video applications in the mobile Internet age to provide a better service guarantee for the adolescents.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "6a32a124a999a916217f5c26717abbd0fd785aec69136c6b5d4b2740effd96cc"
+    },
+    {
+      "evidence_id": "ev_125c0a7e68cf6b10",
+      "source_id": "src_eae19c0ae634295b",
+      "text": "Short video addiction refers to the uncontrollable desire of users to watch short videos, leading to significant behavioral loss of control or attention disorders, which in turn result in difficulties in social interaction, learning, and work adaptation. With the \"invasion\" of short videos into people's daily lives and their spread among underage groups, the issue of short video addiction has attracted widespread social attention. Firstly, based on the causes of short video addiction, this study analyzes it from four levels: algorithm design, content services, platform control, and user experience. Secondly, combining relevant scientific theories, the psychological mechanisms of short video addiction are explained from four levels: cognition, emotion, motivation, and social factors. Finally, in terms of coping strategies, on the theoretical level, further research on the occurrence mechanism of short video addiction should be deepened, and attention should be paid to the influence of recommendation algorithms on short video addiction. On the practical level, the obligations and responsibilities of relevant stakeholders such as short video producers, platforms, and regulators in preventing short video addiction should be clarified, aiming to promote prevention and management of short video addiction.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "74d36ade1ec34bbea84344427d86a0e5624b1e5fad9cd30fec5dc5c64c6c0ff9"
+    },
+    {
+      "evidence_id": "ev_1f3282b33d1cbd5d",
+      "source_id": "src_5d7ae06cc6955471",
+      "text": "Cutting-edge recommendation algorithms have been widely used by media platforms to suggest users with personalized content. While such user-specific recommendations may satisfy users' needs to obtain intended information, some users may develop a problematic use pattern manifested by addiction-like undesired behaviors. Using a popular video sharing and recommending platform (TikTok) as an example, the present study first characterized use-related undesired behaviors with a questionnaire, then investigated how personally recommended videos modulated brain activity with an fMRI experiment. We found more undesired symptoms were related to lower self-control ability among young adults, and about 5.9% of TikTok users may have significant problematic use. The fMRI results showed higher brain activations in sub-components of the default mode network (DMN), ventral tegmental area, and discrete regions including lateral prefrontal, anterior thalamus, and cerebellum when viewing personalized videos in contrast to non-personalized ones. Psychophysiological interaction analyses revealed stronger coupling between activated DMN subregions and neural pathways underlying auditory and visual processing, as well as the frontoparietal network. This study highlights the functional heterogeneity of DMN in viewing personalized videos and may shed light on the neural underpinnings of how recommendation algorithms are able to keep the user's attention to suggested contents.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "85dd05315f912cc700d32ad60f0430c03c67d9517bbef26f5dc0f19196776041"
+    },
+    {
+      "evidence_id": "ev_ada6df5a38d8bc63",
+      "source_id": "src_b79f12ac38b1b0a5",
+      "text": "宏观视角看抖音全生态. 截止2021年6月，抖音日活跃用户（DAU）高达3.35亿， 平均使用时长月均达1800分钟，相当于每个用户每天至少花了一个小时在抖音上， 当然这远远不止。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "b3db8d086f3c31003af30d2332d1705e000c77f6cb4f0654ba95a5f05e84cf0e"
+    },
+    {
+      "evidence_id": "ev_31f94af185d33516",
+      "source_id": "src_5bdc07baa6c0d70c",
+      "text": "铜陵短视频代运营. 铜陵抖音广告.TAG标签：抖音推广 抖音代运营.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d3bcbd0df208185b8d3bf38151df9e81af23f994d7ef545453e406fe937935ea"
+    },
+    {
+      "evidence_id": "ev_3da2243412267160",
+      "source_id": "src_61fed74afcb93043",
+      "text": "萍乡抖音推广. 全方位提供抖音短视频营销解决方案.抖音推广资讯. 网络推广，萍乡抖音广告开户，短视频代运营资讯.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "bc3935449d04e7bca32ad1459afe3b451fb218c2efa07bf384e10381e778547d"
+    },
+    {
+      "evidence_id": "ev_802044b36e748716",
+      "source_id": "src_e0d321d1736520fe",
+      "text": "抖音风抖音风短视频：街头潮流穿搭视频演示合集2026.抖音风支持多种视频格式，包括MP4、AVI、MOV等，单个视频文件大小最大支持4GB。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "1cbbbbcc82a2c77137aea4053d4fd75ee99bc2a45e270b47d0c46c7aed9d2dfc"
+    },
+    {
+      "evidence_id": "ev_da71f29513650e0b",
+      "source_id": "src_56c72f293c93d4a2",
+      "text": "TikTok - 热门视频皆汇于此。 观众可以在设备或网页上观看及探索数百万段个性化短视频。 立即下载应用，开启你的观影之旅。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "af2734a50e16d50ba0128af915be8f440c7ddb4a3a96996b5b1645bee789a0ee"
+    },
+    {
+      "evidence_id": "ev_e4d765db43b55458",
+      "source_id": "src_a465caea58c08a04",
+      "text": "echT PressScience Doi:10. 32604/ijmhp. 2025. 059929 ARTICLE PotentialEffectofShortVideoUsageIntensityonShortVideoAddiction, PerceivedMoodEnhancement(‘TikTokBrain’),andAttentionControlamong ChineseAdolescents Jian-HongYe1,2,J u n p e n gZ h e n g3,W e i g u a j uN o n g4 andXiantongYang5,* 1F acul tyo fEd uca tio n,Bei jingN o rmalU niversi ty ,Bei jing,10087 5,China 2National Institute of Vocational Education, Beijing Normal University, Beijing, 100875, China 3PublicityDepartment,NingboUniversity,Ningbo,315211,China 4SchoolofEducation,GuangxiUniversityofForeignLanguages,Nanning,530222,China 5FacultyofPsychology,BeijingNormalUniversity,Beijing,100875,China *CorrespondingAuthor:XiantongYang. Email:xtyang93@foxmail. com Received:20October2024;Accepted:13February2025;Published:31March2025 ABSTRACT: Objectives:Shortvideoaddictionhasemergedasasignificantpublichealthissueinrecentyears,witha growingtrendtowardseverity. However,researchonthecausesandimpactsofshortvideoaddictionremainslimited, and understanding of the variable “TikTok brain” is still in its infancy. Therefore, based on the Stimulus-Organism- Behavior-Consequence (SOBC) framework, we proposed six research hypotheses and constructed a model to explore the relationships between short video usage intensity, TikTok brain, short video addiction, and decreased attention control.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "b57d8ebd9e2d989a3d64e6a8c3f2690a57c0db3a35afd1e1d5fe86e3b0fe770c"
+    },
+    {
+      "evidence_id": "ev_4559bb8fa11ab8f3",
+      "source_id": "src_a465caea58c08a04",
+      "text": "Methods:Giventhatstudentsareconsideredahigh-riskgroupforexcessiveshortvideouse,wecollected1086 valid participants from Chinese student users, including 609 males (56. 1%) and 477 females (43. 9%), with an average participant age of 19. 84 years, to test the hypotheses. Results: (1) Short video usage intensity was positively related to short video addiction, TikTok brain, and decreased attention control; (2) TikTok brain was positively related to shortvideoaddictionanddecreasedattentioncontrol;and(3)Shortvideoaddictionwaspositivelyrelatedtodecreased attention control. Conclusions: These findings suggest that although excessive use of short video applications brings negative consequences, users still spend significant amounts of time on these platforms, indicating a need for strict self-regulationofusagetime. KEYWORDS: Decreased attention control; short video addiction; excessive short video use; stimulus-organism- behavior-consequence(SOBC)framework;TikTokaddiction;TikTokbrain 1I n t r o d u c t i o n Although short videos are a new form of social media that has only emerged in the past decade, their average monthly usage time now exceeds 22 h per user, surpassing mobile games to become the most time-consuming and fastest-growing sector in the entertainment industry [1] . Th i sr a p i dg r o w thh a sr a i se d public concerns about the risks of overuse [2].",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "a527a51878ad2546a8b4c289d120ff1c807f9b2868155656ea340c7f5b19d39a"
+    },
+    {
+      "evidence_id": "ev_bc03a2990745a5c7",
+      "source_id": "src_a465caea58c08a04",
+      "text": "In addition to viewing and sharing videos, these apps offer featuressuchaslivestreaming,shopping,andgroupchats,makingthemespeciallypopularamongstudents. However,theirimmersivenaturecanleadtoproblematicusageorevenaddiction[ 3]. Shenetal. foundthat internet addiction is prevalent among Chinese universities [4]. Additionally, Shao et al. reported that the overalldetectionrateofinternetaddictionamongChineseuniversitystudentsis11%,whichishigherthanin some other countries, highlighting a concerning situation [5]. This is because university students are easily Copyright©2025TheAuthors. PublishedbyTechSciencePress. This work is licensed under a Creative Commons Attribution 4. 0 International License, which permits unrestricteduse,distribution,andreproductioninan ymedium,providedtheoriginalworkisproperlycited. 272 IntJMentHealthPromot. 2025;27(3) tempted by the ready availability and instant gratification of online entertainment, leading them to spend excessive time online, and potentially develop addiction [6]. Moreover, with the advancement of mobile internet technology and the widespread use of smartphones, social media has become an integral part of university students’ daily lives, making recreational use more likely to result in social media addiction [7].",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "79f3bf14b3ef560b2cf43a74a0922a2da590c3bf16fbaafbe5f43b5437b6ecd3"
+    },
+    {
+      "evidence_id": "ev_36a03a530de10006",
+      "source_id": "src_a465caea58c08a04",
+      "text": "Short video applications use algorithms to recommend personalized content based on user preferences, making it easy for users to follow specific creators and topics [8]. While these apps enrich users’ leisure activities, the algorithmic recommendations can lead to compulsive usage and addiction, earning short videos the monikers “digital fentanyl”, “electronic opium”, or “digital heroin” [9]. Empirical research on the effects of short video addiction, especially on student populations, remains limited and requires further investigation [3]. Short video addiction negatively impacts students, and studying this phenomenon holds both theoretical and practical significance [10]. Therefore, this study explored the relationship between studentusers’shortvideousageandshortvideoaddiction. Shortvideoaddiction,alsoreferredtoaspathologicalorexcessiveshortvideouse,occurswhenusersfail toregulatetheirbehaviorandengageincompulsiveviewing[ 3,10]. Studieshavehighlightedtheimportance of short videos in students’ daily lives and their irreplaceability, especially among university students, who represent a high-risk group for developing short video addiction [11]. Although short video addiction has attracted increasing public attention, more research is needed to explain its impact, particularly among studentusers.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "a77e92426e8f19e94d70dac1fa01188fbb616da116327ee3a58484d5a6724654"
+    },
+    {
+      "evidence_id": "ev_4ecc68a227189747",
+      "source_id": "src_a465caea58c08a04",
+      "text": "Thepopularityofshortvideosisgrowingworldwide,withusersspendingmoretimewatchingthem[ 12]. Apps with autoplay features encourage prolonged usage unless manually stopped, resulting in extended viewingperiods[ 11]. Researchindicatesthatexcessivetimespentonsocialmediacorrelateswithbehavioral problems [13]. Usage intensity is, therefore, a crucial factor in understanding the psychological impact of short video addiction[11]. As the social media landscape evolves, each platform introduces unique features and algorithms that shape how users engage with them [14]. Short videos, often accompanied by lively music, eye-catching text, and engaging visuals, provide a multi-sensory experience that enhances user interaction with the content [9]. These elements bring users joy and satisfaction while reducing negative emotions [1], offering high emotional value. Su et al. conducted fMRI experiments and found that the region containing dopamine neurons (substantia nigra, SN) is significantly activated when watching short videos[15]. Thisstate,whichrequirescontinuouslyobtaininghighemotionalarousalthroughshortvideos, canbereferredtoasthe‘TikTokbrain’(perceivedmoodenhancement)phenomenon. Itisapreliminaryand unprovenhypotheticalconstruct.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "c5a1df2b8a549fceef23ad2282712ae02831a44337fdf96d2985721f7af4f0f2"
+    },
+    {
+      "evidence_id": "ev_bafa912f7adb0f25",
+      "source_id": "src_a465caea58c08a04",
+      "text": "TikTokbrainreferstoapsychologicalorcognitivepatternresultingfrom prolonged short video consumption, specifically the excessive use of short video platforms such as TikTok. It is used to describe the negative psychological and behavioral traits that result from the overuse of short videosandisconsideredamoreseveremanifestationofshortvideoaddiction. Witheachvideoconsumed, the brain experiences a surge of dopamine. This hypothetical variable also aligns with Li et al. ’s findings that short videos possess intrinsic rewarding properties, as well as their collective impact on processing visually engaging and emotionally resonant stimuli [16]. In summary, the surge in dopamine is a result of the continuous imagery generated and selected by viewers to obtain rewards from the next video [17]. The negative psychological and neurological impacts of TikTok brain are evident, highlighting the need for greater attention to this issue. However, the negative impacts of new media use on adolescents have not yet been thoroughly examined [18]. Thus, this study took the TikTok brain as a core variable for furtherexploration. Research by Brunborg et al. suggested that excessive social media usage can have negative effects [13].",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-6",
+      "content_hash": "ec37501e0320d6a36bf1608d57261ec4c3fd423bfa853a23f06f2f4782c28ad8"
+    },
+    {
+      "evidence_id": "ev_c6d9b49ea50ae32e",
+      "source_id": "src_a465caea58c08a04",
+      "text": "Asindividualsspendmoretimemultitaskingacrossdigitaldevices,thesebehaviorsnotonlycausepersistent changes but also impair cognitive abilities, an issue of growing importance [19]. Watching short videos can IntJMentHealthPromot. 2025;27(3) [CONTENT_TRUNCATED: 16020 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-7",
+      "content_hash": "41eaae8edb43aab9126d66e8a372d2661c8d2f35a8c484f9332ebdd585d59d9c"
+    },
+    {
+      "evidence_id": "ev_8445ad8301676eb0",
+      "source_id": "src_07874a610965e4c9",
+      "text": "最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7a958cfa94f2a159ea4e61e090674cc28d0e457eae01f61280a34cd6e6882ef7"
+    },
+    {
+      "evidence_id": "ev_5300fefc4c60bd78",
+      "source_id": "src_7f1b835b687b46a6",
+      "text": "最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "12b654e23e7b5f2f8d980ca09b8c752731c678e7ed704eb3f742c6129c1a852f"
+    },
+    {
+      "evidence_id": "ev_f8aafb69dd1de6ca",
+      "source_id": "src_3da95348ef49297c",
+      "text": "算法导致信息茧房？用户使用、算法推荐与信息茧房研究报告》显示，70%的用户对个性化推荐算法持肯定态度，认可算法技术是海量信息时代的一种有效策略，帮助用户解决信.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bc27456d2e24e8234e784882ff3f12946efd3a0fbaa013e768b5751ae70ea671"
+    },
+    {
+      "evidence_id": "ev_87db9135f5ea6399",
+      "source_id": "src_57002a569cd0e897",
+      "text": "抖音的推荐循环： 用户行为 → 算法建模 → 推荐同类内容 → 强化用户偏好 → 更精准的推荐. 我的信息系统：",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "244637d6e82a8086bd5dfeb913d0ddf6f8f157b7c3f1459f674436ac49975323"
+    },
+    {
+      "evidence_id": "ev_266584d1d1195793",
+      "source_id": "src_f3463f2020d20a71",
+      "text": "但有趣的是，这些试图证明“信息茧房”存在的研究，在定义、推理、数据采集等方面存在缺陷，不能肯定地说算法推荐一定会导致“信息茧房”。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "a08782559643b1e36aa4e3c9981fe35f7debf9ab8be1f14ed3ca232ece719910"
+    },
+    {
+      "evidence_id": "ev_d734ec6ed5c20e2c",
+      "source_id": "src_6b0a343962590af7",
+      "text": "批「信息茧房」者，困在了「认知茧房」里.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2224a0a3613a087dc0a52afcd08426a6e8ca49eeeb7aa9e52c80301ed6c959f0"
+    },
+    {
+      "evidence_id": "ev_dd7ec418e310c5c5",
+      "source_id": "src_b398c42c6191af10",
+      "text": "filter bubble; echo chamber; algorithmic curation; scientific communication; interdisciplinarity; cognitive bias; information hygiene; evidence-based medicine.Foster, A., & Ford, N. (2003). Serendipity and information seeking: an empirical study.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6a6f6150812ef649379f75794863dea4057edd7c2c948eb70b865e0fa5697628"
+    },
+    {
+      "evidence_id": "ev_1ee1ddf0a0772490",
+      "source_id": "src_67087939a1bd9d69",
+      "text": "In this study, Filter Bubble is examined through three analytical dimensions: information personalization, algorithmic curation, and selective exposure.On the Psychology. of TikTok Use: A First Glimpse From Empirical Findings.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "85e81dfa4dd8dc7346de67bb9d8abfc3c5dabf9c9068b7cb819274a0bc837506"
+    },
+    {
+      "evidence_id": "ev_9b857247cb04477e",
+      "source_id": "src_1a377161d29b0e65",
+      "text": "TikTok has raised significant filter bubble concerns in Asia for three main reasons. Firstly, its strong presence in the Asian market.The triple-filter bubble: Using agent-based modelling to test a meta-theoretical framework for the emergence of filter bubbles and echo chambers.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d42e7b761931d3584c7f7292f59ee075be70d502530bb038773b14644ea11b36"
+    },
+    {
+      "evidence_id": "ev_76661abd3da2bc4e",
+      "source_id": "src_746b53d1e82b0316",
+      "text": "The filter bubble created by TikTok can exacerbate divisions and barriers among cultural groups in society. In a multicultural country like Malaysia, this issue needs to be addressed. Cultural influence and algorithmic biases contribute to the filter bubble phenomenon on TikTok.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5303f5b03b57c9613c10e1db1f459074fbe85ecc6a2ae640ed5385b844e824ff"
+    },
+    {
+      "evidence_id": "ev_1c3c25e2cd33cd0d",
+      "source_id": "src_d89580bc8b9f1ceb",
+      "text": "Once filtered, once trapped in an echo chamber, the user’s world shrinks to a complement of sources sharing the same political, social, or cultural views.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "65c442ac47a10ad90c14cd4abd38a3bfe5ef4b18c80abb7e9d2b52cb66f74d7c"
+    },
+    {
+      "evidence_id": "ev_44f5c65b311bdc5c",
+      "source_id": "src_0ce2e82455c50d34",
+      "text": "As filter bubbles and echo chambers are often discussed in the press Bruns (2019) asks, “are filter bubbles real,” and are they overstated? “Bad algorithms” are related to “filter bubbles,” being applications of personalized information retrieval as well as of recommender systems.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "77a83e8dac9d6d6181fcf7f0e960e7f49c3dcac33281d473720b9265329d5870"
+    },
+    {
+      "evidence_id": "ev_cbc27d90514c9996",
+      "source_id": "src_07874a610965e4c9",
+      "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音内容的认知一直是“短平快”。 然而，除了头部网红，去年在抖音上最火的作家，竟然是史铁生。 根据抖音发布《2024抖音读书生态数据报告》，抖音上时长大于等于5分钟的读书类视频总数量达1143. 43万个，收藏量达3. 91亿次；读书类直播累计730万场，场均观看人数3076人；读书书评相关内容共有541万个，总评论量为2306万次，《我与地坛》成抖音最受欢迎的名著经典，报告显示抖音上史铁生相关视频累计18. 6万个，增长192%，总时长增长415%，总分享量增加51%。 这似乎与民间总结的所谓的“流量密码”背道而驰。 举个例子，不少“教人做内容”的博主，科普的内容基本都是要先了解“内容平台的算法逻辑”，才能把握住“流量密码”，做出爆款。 而民间总结的很多算法逻辑，就是给内容和用户贴标签，然后算法就能向具有特定品位的观众推送相匹配的视频。 再就是说算法是通过完播率、点赞率、分享率、粉丝转化率和评论率等各种指标来评估内容的质量水平，再推进内容流量池。 如果根据以上的逻辑来判断一个视频是否能成为爆款，那关于“史铁生”的内容显然不符合大众认知里的“热点”和“流量”。 但实际上，民间总结的所谓的“流量密码”，大部分总结都过于简单、不够客观，甚至出现事实错误。 在抖音安全与信任中心中，其实详细解释了算法到底是怎么推荐的。 首先，算法是通过数据收集、特征工程、模型训练等复杂流程预测用户的行为，其本质是数学模型的运算过程。 推荐算法的本质是个极其高效的信息过滤系统。 个性化推荐算法，好比给每个人量身定制了一个信息“快递员”，能更高效、准确地把合适的信息推送到用户面前，满足每个用户各不相同的需求。 而观众从打开抖音、观看视频、划过视频，以及点赞收藏视频，都是一次反馈动作。 抖音公开的推荐算法核心逻辑可以简化为“推荐优先级公式”：综合预测用户行为概率 × 行为价值权重 = 视频推荐优先级。 也就是说在打开抖音的内容推荐上，是多目标推荐系统，通过非常复杂的体系，优化对内容价值的评估，不仅仅是点赞收藏，不同用户、作者的行为价值权重等等，共同构成了视频推荐优先级。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "913b2b3891ef88e22c89d4f5ecfb7e4ed2eaf7213aab40559e1685319a8eeaa9"
+    },
+    {
+      "evidence_id": "ev_ae6bb9f65ed0586b",
+      "source_id": "src_07874a610965e4c9",
+      "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人获取信息的方式是通过亲朋好友，再多一点是报刊、书籍，而现在，据IDC（国际数据公司）发布的《数据时代2025》报告显示，全球每年产生的数据将从2018年的33 ZB（1 ZB等于10万亿亿个字节）增长到175 ZB，以25Mb/秒的下载速度计算，一个人下载全人类2025年产生的数据需要18亿年。 具体到每个人，我们每天面对的各个平台的信息增量，远超个人所能处理的极限。 所以算法从海量数据中精挑细选，通过计算得出更为优质的内容进行推送，某种程度上来说也可以成为打破信息茧房的存在。 从商业理性出发，让用户看到更多元的内容，有利于平台的长期价值，因此和用户的利益是一致的，各个平台早就做了不少打破信息茧房的实践。 比如现在大部分平台都有“关闭个性化推荐”的选项。 更进一步的是各个平台都在持续不断优化算法逻辑，比如从最初的单一点赞，增加到对“负反馈机制”的完善，将“不感兴趣”等数据纳入模型训练。 像小红书之前就强调用户可以通过“内容偏好调节”来掌握对内容的自主选择和管理权。 这样就更方便用户主动打破“看过什么就一直推送什么”的循环，让算法更加高效。 抖音算法在多目标建模体系下，设置了专门的探索维度，通过多样性探索、兴趣探索等目标，引导算法打破“茧房”。 实际上，在各个平台对算法的不断完善和实践中，我们基本已经可以认识到算法虽然复杂，但是同样可以被“调教”。 抖音总裁韩尚佑曾表示：“真正实现算法的‘向上’和‘向善’，需要回到算法的原理和生效机制层面去持续改进。 ” 比如曾经抖音也尝试过直接给知识、历史、科技等内容做简单的加热，但这种做法改变了模型正常的计算逻辑，反而让内容的后续推荐受到了干扰。 为了解决这个问题，抖音转换思路，专门训练了预估收藏和重复观看概率的模型，并且将收藏按钮，放在了首页最容易点的地方。 通过反复的实践和不断试错，2024年，一条《450分钟解读红楼梦》的超长视频，在抖音获得了超过3亿的播放，700万的收藏。 同样，这也意味着，算法在各个平台的不断努力下，更加适配当下的网络环境和用户心态了。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "823d639a367ed7e6a37ae9f250e367d5c8d4fc6443d0a974090665a4037a4d87"
+    },
+    {
+      "evidence_id": "ev_822c8e01763b4166",
+      "source_id": "src_07874a610965e4c9",
+      "text": "当算法走进生活 实际上，前文也提到算法在发展的过程中不断完善，平台也是阶段性针对市场反馈，主动做出举措调整。 而更重要的意义是，在算法不断完善的过程中，它带来的社会价值也正在一点点显现出来。 首先，推荐算法基本原理是高效分发，将信息、人原本孤立的点连接起来，当不同的信息遇到不同的群体，就会带来不同的效应，进而带来更大的社会价值。 2015年，当大部分实体书店都在走下坡路的时候，电商巨头亚马逊开出一家实体书店，一年半就实现了盈亏平衡。 当所有传统书店都在震惊的时候，大家发现这家书店最出色的设计就是能够根据线上的读者评分、预售情况、销量排行等通过算法得出“推荐书单”，而很多读者就是通过这样高效的推荐方式在货架上买到了自己想要的书。 而现在，抖音算法更进一步通过精准分法、兴趣连接和生态共建，推动实现了知识普惠。 抖音上有个非常有趣的例子，去年一颗长蘑菇的 在抖音上成为了网红。 故事起因于一位浙江网友分享黄梅天里自己家里的苹果长出了蘑菇，于是被中国科学院昆明植物研究所许博士注意到，并买下来这个蘑菇样本做研究，并且在抖音上向网友实时汇报进度，还有不少网友在评论区发出自己见到的菌落请教博士，6000多万网友共同围观了这场全民知识接力。 现在，抖音的算法在协同过滤算法和知识图谱推理的共同作用下，能够基于用户行为，推荐相关科普内容，拓展到相关领域形成“知识链式反应”，甚至一些甲骨文、弦理论的小众知识，都能通过算法找到受众。 再比如，算法正在推动更为实际的惠民。 从淄博烧烤、到哈尔滨、天水等小众城市的走红，到农产品走出大山，都离不开背后算法的积极作用。 抖音算法通过召回、过滤、排序等环节，重点学习用户的兴趣爱好、浏览历史、购买行为等，通过分析数据，将大山里的农产品精准推送给对农产品感兴趣、有需求的用户，并且通过算法助力打造“新农人IP”，让大众通过对农人故事的关注关联到土特产上。 根据抖音电商发布的《2024丰收节抖音电商助农数据报告》2023年9月至2024年9月，抖音电商累计销售农特产品71亿单，平均每天有1740万单农特产包裹销往全国各地，持续带动优质农特产品“出村进城”。 平台全年农货商家数量同比增长63%，三农创作者数量同比增长52%。 总而言之，算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 值得肯定的是，抖音公开算法，是个积极的实践，至少让公众知道，有人工运营和平台治理做导航，算法会持续向上向善，为人们的数字生活增添绚丽的色彩。 声明：本文为OFweek维科号作者发布，不代表OFweek维科号立场。 如有侵权或其他问题，请及时联系我们举报。 侵权举报 查看更多评论 没有更多评论了 相关阅读 暂无数据 陆玖商业评论 真相无法揭露，只能接近。 陆玖商业评论 推荐商品 热门文章排行榜 长鑫上市或浮盈万亿，这座当年被嘲笑的小城，赌赢了中国芯片 晶圆级芯片，正在升温 “宁王”的“铁王座”正在出现裂痕 半年预亏超34亿、高瓴资本割肉减持，隆基绿能押注BC背水一战 靠“炒美股”大赚超10亿，组件主业却仍陷亏损，天合光能的底牌还剩多少？ 灵巧手：人形机器人真正落地的那道关",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "bf59b6b86a24ad94f5d777ef3cf21a353837436987b6c99dc9fa0ab987144f2b"
+    },
+    {
+      "evidence_id": "ev_292c5321c58ab583",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "Recommendation algorithms are reshaping the ecology of digital video-sharing platforms and users' media usage behaviors. TikTok's recommender system is widely considered to be an outstanding representative among them. Although a large amount of research has been conducted in relation to TikTok, most of these studies pay attention to content analysis, platform features study, user behavior examination and technical aspects of platform algorithm. However, there is markedly less research into TikTok’s recommendation algorithm as well as relevant theoretical and empirical support for this. Based on a slightly simplified variant of the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analysis) guidelines (Page et al., 2021), this paper reviews the literature on the use of recommendation algorithm in TikTok, aiming to serve as a brief primer to answer the strengths and dilemmas of the adoption of recommendation algorithm on the TikTok platform, and to propose possible directions for short-form mobile video platforms.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "a3f2dbd34bda492b2880be407cb445e001e201b3d4d825b1c386b101fd77d8d1"
+    },
+    {
+      "evidence_id": "ev_0709e82c332c2b91",
+      "source_id": "src_4912a81126c5d6e3",
+      "text": "The short-form video sharing app TikTok is characterized by content-based interactions that largely depend on individually customized video feeds curated by the app’s recommendation algorithm. Algorithms are generally invisible mechanisms within socio-technical systems that can influence how we perceive online and offline reality, and how we interact with each other. Based on experiences from consuming and creating videos, users develop assumptions about how the TikTok algorithm might work, and about how to trick and please the algorithm to make their videos trend so it pushes them to other users’ ‘for you’ pages. We conducted 28 qualitative interviews with TikTok users and identified three main criteria they assume influence the platform’s algorithm: video engagement, posting time, and adding and piling up hashtags. We then collected 300,617 videos from the TikTok trending section and performed a series of data exploration and analysis to test these user assumption by determining criteria for trending videos. Our data analysis confirms that higher video engagement through comments, likes, and shares leads to a higher chance of the algorithm pushing a video to the trending section. We also find that posting videos at certain times increases the chances of it trending and reaching higher popularity. In contrast, the highly common assumption that using trending hashtags, algorithm related hashtags (e.g. #fyp, #foryou), and piling up trending hashtags would significantly push videos to the trending section was found not applicable. Our results contribute to existing research on user understanding of social media algorithms using TikTok as an example for a short-video app that is explicitly built around algorithmic content recommendation. Our results provide a broader perspective on user beliefs and behavior in the context of socio-technical systems and social media content creation and consumption.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "518db032baf712a4743906ee4a87698b8b653d9750aabab865dae2329f03ca51"
+    },
+    {
+      "evidence_id": "ev_1b58b91b82cbe0ff",
+      "source_id": "src_9d52f2e2af0afc86",
+      "text": "The wide popularity of short videos on social media poses new opportunities and challenges to optimize recommender systems on the video-sharing platforms. Users sequentially interact with the system and provide complex and multi-faceted responses, including WatchTime and various types of interactions with multiple videos. On the one hand, the platforms aim at optimizing the users’ cumulative WatchTime (main goal) in the long term, which can be effectively optimized by Reinforcement Learning. On the other hand, the platforms also need to satisfy the constraint of accommodating the responses of multiple user interactions (auxiliary goals) such as Like, Follow, Share, etc. In this paper, we formulate the problem of short video recommendation as a Constrained Markov Decision Process (CMDP). We find that traditional constrained reinforcement learning algorithms fail to work well in this setting. We propose a novel two-stage constrained actor-critic method: At stage one, we learn individual policies to optimize each auxiliary signal. In stage two, we learn a policy to (i) optimize the main signal and (ii) stay close to policies learned in the first stage, which effectively guarantees the performance of this main policy on the auxiliaries. Through extensive offline evaluations, we demonstrate the effectiveness of our method over alternatives in both optimizing the main goal as well as balancing the others. We further show the advantage of our method in live experiments of short video recommendations, where it significantly outperforms other baselines in terms of both WatchTime and interactions. Our approach has been fully launched in the production system to optimize user experiences on the platform.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "c592dc5ac336dbdf6adb8bf9f9f6cfd7eadacd7243948c5a5c55ebc1b0fc9828"
+    },
+    {
+      "evidence_id": "ev_2397f58b40dc9451",
+      "source_id": "src_8fa136a14958e5e7",
+      "text": "Tourism advertising and tourism promotion have over the years been the core functions of tourism departments and major tourist sites. In relation to the progressing development of new media, the mobile short-form videos, which are short, focused, and have an engaging content, appear to be a useful means of advertising tourist destinations. In the digital era, short videos have become a new communication tool between destinations and consumers. This current study, based on the S-O-R model and flow experience, investigated the psychological processes through which TikTok attributes and technology evoke flow and lead to tourists' behavioral intention. Moreover, the TAM, i.e., PU and PEOU, as two technology factors, as well as three content attributes (entertainment, informativeness, and interactivity) were examined. The study utilized a quantitative approach and collected data from 412 respondents in China. The authors adopted the PLS-SEM method to confirm the directions hypothesized in this model. There are significant effects of PU, PEOU, and entertainment on flow experience (telepresence, time distortion, and focused attention). Interactivity impacts telepresence and time distortion, while informativeness impacts focused attention. Moreover, time distortion and focused attention impact tourists' behavioral intention. The results highlight several limitations and offer implications for future research as well.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "358c8e8286267b7cf9b8eb6f5f140722586c102eb607813d847a2f9bba311199"
+    },
+    {
+      "evidence_id": "ev_89a9667507449cdc",
+      "source_id": "src_1bf2ed40a3691e4a",
+      "text": "Following the surprise victories of Brexit and Trump in 2016, even Barack Obama (2017) warned that “it’s become safer to retreat into our own bubbles”, thereby linking increased electoral volatility and polarisation with concepts such as “echo chambers” (Sunstein 2001) and “filter bubbles” (Pariser 2011). The politicians, journalists, and scholars who support these concepts suggest that, with online and social media as the key sources of information for an ever-growing percentage of the public (Newman et al. 2016), echo chambers and filter bubbles are chiefly responsible for the emergence of communities that espouse contrarian and counterfactual perspectives and ideologies, and for their disconnect from the mainstream. Echo chambers are said enable these groups to reinforce their views by connecting with likeminded others; filter bubbles to shield them from encountering contrary perspectives. Such disconnection from and ignorance of alternative perspectives is assumed to result from a combination of individual choice, in selecting the news sources to consult or the social media accounts to follow, and the algorithmic shaping of such choices, as search engines, news portals, and social media platforms highlight and recommend some sources over others. As platform algorithms learn from the users’ choices, and users make those choices predominantly from the options promoted by the algorithms, a self-reinforcing feedback loop gradually curtails choice to an increasingly narrow and homogeneous set of options. Rigorous empirical evidence for the operation of such processes is sorely lacking, however. Building on empirical studies that show no significant evidence of filter bubbles or echo chambers in search (e.g. Haim et al. 2018; Krafft et al. 2018; Nechushtai &amp;amp; Lewis 2018) or social media (e.g. Beam et al. 2018; Bruns, 2017), this paper argues that echo chambers and filter bubbles principally constitute an unfounded moral panic that presents a convenient technological scapegoat (search and social platforms and their affordances and algorithms) for a much more critical, fundamentally human-made problem: growing social and political polarisation. This is a problem that cannot be solved by technological means. Research shows that even – indeed, perhaps especially – the most hyperpartisan users still encounter material that challenges their perspectives, and engage with users who represent opposing views (e.g. Garrett et al. 2013; Weeks et al. 2016). The central question is what they do with such information when they encounter it: do they dismiss it immediately as running counter to their own views? Do they engage in a critical reading, turning it into material to support their own worldview, perhaps as evidence for their own conspiracy theories? Do they respond by offering counter-arguments, by vocally and event violently disagreeing, by making ad hominem attacks, or by knowingly disseminating all-out lies as ‘alternative facts’? More important yet, why do they do so? What is it that has so entrenched and cemented their beliefs that they are no longer open to contestation? This is the debate we need to have: not a proxy argument about the impact of platforms and algorithms, but a meaningful discussion about the complex and compound causes of political and societal polarisation. The ‘echo chamber’ and ‘filter bubble’ concepts have seriously distracted us from that debate, and must now be put to rest.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "0741fafeb803ded6bdfb5ad6e7035348561b3858bc4d2012e99496700c1ba207"
+    },
+    {
+      "evidence_id": "ev_fc06f91f4347bde8",
+      "source_id": "src_20bd0e32fb421553",
+      "text": "Many politicians, journalists and scholars suggest that echo chambers and filter bubbles are chiefly responsible for the emergence of communities, particularly online, that espouse contrarian and counterfactual perspectives and ideologies, and for their disconnect from the societal mainstream. Echo chambers are said to enable these groups to reinforce their views by connecting with like-minded others; filter bubbles to shield them from encountering contrary perspectives. They are assumed to result from a combination of individual choice, in selecting the news sources to consult or the social media accounts to follow, and the algorithmic shaping of such choices, as search engines, news portals and social media platforms highlight and recommend some sources over others. Rigorous empirical evidence for the operation of such processes is sorely lacking, however. Building on empirical studies that show no significant evidence of filter bubbles or echo chambers in search or social media, this chapter argues that echo chambers and filter bubbles principally constitute an unfounded moral panic that presents a convenient technological scapegoat for a much more critical, fundamentally human-made problem: growing social and political polarization. The ‘echo chamber’ and ‘filter bubble’ metaphors have seriously distracted us from addressing that problem, and must now be put to rest.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "8c145c2394d2f5f4046ac643cd18d6a127b9e794d8cc7797bc9d5b289c0ff057"
+    },
+    {
+      "evidence_id": "ev_120fb9401aab95f2",
+      "source_id": "src_cc1d51fda600a57a",
+      "text": "Filter bubbles and echo chambers are often named as key drivers of political polarisation and societal fragmentation. The conceptualisation of echo chambers and filter bubbles and their relationship is still subject to an ongoing academic debate. For echo chambers, the constituting affordances of online communication mainly pertain to online social networks. The large-scale, multi-platform studies all show that the prevalence of filter bubble and echo chamber effects among the majority of the population is low. In the review of literature on filter bubbles and echo chambers, it became clear that both concepts are frequently operationalised as ideological bubbles. The mismatch of theoretical work and empirical work on echo chambers and filters bubbles might also be a manifestation of a lack of explicit normative research in the field. It can be argued that ideas and attitudes expressed in fringe bubbles hold higher news value because of their novelty and extremity.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "509dfdeb11506a36fa075ceba1324fa80a2266c5eace67104532e1b7e1feab58"
+    },
+    {
+      "evidence_id": "ev_b37332c5677cd50a",
+      "source_id": "src_49b48800b1cc7829",
+      "text": "Concepts such as ‘filter bubble’ enjoy considerable popularity in scholarly as well as mainstream debates, but are rarely defined with any rigour. This has led to highly contradictory research findings. This article provides a critical review of the ‘filter bubble’ idea, and concludes that its persistence has served only to distract scholarly attention from far more critical areas of enquiry.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "b8d7769893ec14317642a8ce0e0a37961ef08d675815941b77cb98ecc61db908"
+    },
+    {
+      "evidence_id": "ev_10c8daf1bcf39152",
+      "source_id": "src_f85bc0c615735d22",
+      "text": "Empirical evidence is evidence obtained through sense experience or experimental procedure. [1] It is of central importance to the …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "48123ad76c98881beba909cff48d8ed25a2ba5b5cfd3a30c80b85af9a0a9d0a5"
+    },
+    {
+      "evidence_id": "ev_b1c01241031a83af",
+      "source_id": "src_0a812c1aedeaa38a",
+      "text": "In scientific use, the term empirical refers to the gathering of data using only evidence that is observable by the senses or in some …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1ce7e74ed6972a2c85c4862f148f0b4dfb6d09c7807bf09e409b03f8eb02f0e7"
+    },
+    {
+      "evidence_id": "ev_46653ad4121314c9",
+      "source_id": "src_dc70940bdee764fb",
+      "text": "Tiktok's glow look filter has totally taken over the social app and this user is teaching us how to recreate it irl. Dalam video itu awalnya memperlihatkan wajah hasil filter yang terlihat glowing.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6169821eb417315827218b6268b18794f4f997e1c4febeeaddac2549d400cf16"
+    },
+    {
+      "evidence_id": "ev_5cb9b119cfb2647a",
+      "source_id": "src_4c95cc9fa3e415fd",
+      "text": "Aug 3, 2026 · Empirical can still be used critically to describe ideas and practices that rely on experience or observation alone and …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4fa44bf59cf5960b84a945c4446a2acf9a1001704fd7beeeb42b6330409b2edf"
+    },
+    {
+      "evidence_id": "ev_f9e5f551ea716688",
+      "source_id": "src_9fd72b54629b1f65",
+      "text": "EMPIRICAL definition: 1. based on what is experienced or seen rather than on theory: 2. based on what is experienced or…. Learn …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "61bb3d3a9bb7a01ff02debc8cb6aa7ad4a7def03719616beca3d251f6c3f85e6"
+    },
+    {
+      "evidence_id": "ev_9c1416ec4958b328",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "Recomm 1 Centre for In Corresponden 7AL, United K Received: July doi:10. 11114/i Abstract Recommendat behaviors. Ti k Although a l a content anal y However, ther empirical su p Systematic Re recommendati adoption of r mobile video p Keywords: Ti 1. Introductio A s a s h o r t - fo personalized v achieved gre a Facebook as COVID-19, T by download s those incumbe So far, most Zhang, Ma, in various dom and communi O m a r & D e q algorithm. Given the ab o the area of re c strives to clar What challeng Here comes t h TikTok, and recommendati short-form mo mendation nterdisciplinary nce: Pengda W Kingdom. y 31, 2022 ijsss. v10i5. 566 tion algorith m kTok's reco m arge amount o f ysis, platform re is markedl y pport for this. eviews and M ion algorithm recommendatio platforms. ikTok, recomm orm mobile v video feeds d at popularity the most do w TikTok has gro s i n Q 4 2 0 2 1( ents in the inte TikTok resear & Evans, 2021; mains (Miao, H cation. Many uan, 2020).",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "6e5f05f931416070433cc18ba050c7dad4d9d1a35e54572e5bea6f6588bf2544"
+    },
+    {
+      "evidence_id": "ev_6c233c29392ad9c8",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "H ove literature g commendation rify and answe ges and revolu he structure o f the next sec t ion algorith m obile video pla n Algorith y Methodologi Wang, Centre A c c e p t ed ms are reshap i mmender syste m f research has features stud y y less researc h Based on a Meta-Analysis) in TikTok, aim on algorithm mendation algo video platfor m driven by its r i n q u i t e a sh wnloaded app own to over 1 (Sensor Tower ernational digit rc h h a s f o c u se ; Sun, H. Zhan Huang, & Huan scholars have However, only gap, this essa y n algorithm in er the followin utions such algo f this essay: i t tion focuses o m. What outli n atforms. hm in Tik ies, University for Interdiscip d: September 2 URL: https://d ing the ecolo g m i s w i d e l y been conduc t y, user beha v h into TikTok’s slightly simp guidelines (Pa ming to serve on the TikTo k orithm, recomm m, TikTok is recommendati hort time, esp in the Unit e billion monthl r, 2022). Fro m tal platform ma ed on the co n ng, S. Zhang, & ng, 2021; Vija also observed limited paper y focuses on t h TikTok as we ng questions: W orithm mechan t first identifi e on the existi n ned in the la s kTok: Stre irections ngda Wang1 y of Warwick, plinary Metho 2, 2 0 2 2 doi. org/10. 111 gy of digital considered t o ted in relation vior examinati s recommenda lified variant age et al.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "b34669d81391f570c27c226bc6801262001f7ded5b3f24d996c51120ee06efe2"
+    },
+    {
+      "evidence_id": "ev_0ce579d41d885cd9",
+      "source_id": "src_e641318f6543dbd5",
+      "text": ", 20 2 as a brief pr i k platform, a n mender system characterized ion algorithm pecially for it s ed States (Vij a ly active users m this point, T arket (Gray, 20 ntent-based an a & Luo, 2020) ay & Gekker, 2 user motivatio s have paid p he discussion ell as its twin s Why is the re c nism may pose es the outstan d ng and potent i st part are th e Intern engths, D Coventry, Uni dologies, Univ Available onl 14/ijsss. v10i5. video-sharing o b e a n o u t s ta to TikTok, m on and techn ation algorithm of the PRIS M 21), this paper imer to answe nd to propos e m, artificial inte d by conten t- (Klug, Qin, E s excellent d o ay & Gekker , s (TikT ok T eam TikTok indeed 021). alysis (Bandy of this emergi 2021; Zhu, 202 on and behavi articular atten of strengths, d service for the commendation e to digital soc ding advantage ial harm and e future patt e national Journal o V ol. 10, ISSN 2324-80 3 Published URL: Dilemmas ited Kingdom versity of Wa r line: Septembe . 5664 g platforms a n anding repres e most of these s t ical aspects o m as well as r e MA (Preferre d reviews the l r the strength s e possible dir e elligence, digit based interac t Evans, & Ka u ownloading p e , 2021). Muc h m, 2021) and r provides sig n & Diakopou l ing platform, a 20), such as po or for TikTok ntion to the Ti k dilemmas, and e Chinese mark algorithm so ciety?",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "5638babca2b17715eea0ff4230175e5d59b28aafd65c3170b9ae937bf4200071"
+    },
+    {
+      "evidence_id": "ev_3ac1650a9f724008",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "es of recomm e challenges b erns and the p of Social Scienc No. 5; Septe m 33 E - I S S N 2 by Redfame P http://ijsss. redf s, and Pos rwick, Covent er 9, 2022 nd users' me d entative amo n tudies pay att e of platform a l elevant theoret d Reporting I t iterature on t h s and dilemm a ections for s h tal platform tions that de p ufman, 2021) . erformance, u h accelerated ranked 2nd wo nificant compe los, 2020; Ch e and its potentia olitics, econom use (Klug et a kTok recomm d possible dire ket, namely D important for endation algor rought by th e possible dire c ce Studies mber 2022 324-8041 Publishing fame. com ssible try, CV4 ia usage ng them. ention to gorithm. tical and tems for he use of as of the hort-form pend on T i k T ok unseating through orldwide etition to en, Min, al power my, media, al. , 2021; endation ctions in ouyin. It TikTok? rithm for e u s e o f ctions of International Jo 2. Methodolo The systemati Items for Sy s graphically d e Taylor & Fran After removi n Reference sc r keywords “Tik ByteDance co could compris 3. Significanc The analysis 2016). With d recommended massive user adaptability of 3. 1 Content D From the pers effective cont content drasti TikTok is re p personalized v Recommendat recommender of user data l hierarchical i 2021).",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "d732857e39ec7c7a7c5cc7c04d2e400ac4219da8ca85344eede3ea5cf8b9cfd9"
+    },
+    {
+      "evidence_id": "ev_409eded84f817b62",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "What’s more, ournal of Social ic literature rev stematic Revi e epicted in Fi g ncis, and CNK ng duplicates , reening was a l kTok, Douyin, ompany and in se a total of 48 Figur ce of the Use o of a platform direct networ k d videos that ar data availab f the tailored v Distribution spective of com tent distributio cally (X. Lu, programing us video feed with tion recallin g systems. The ibrary, while t nterest label se the multiple Science Studies view was cond ew s a n d M e ta gure 1. Indivi d KI. Only texts i , t h e s c r e e n in ls o u s e d t o re , and recomme nternational me 8 studies and 1 re 1. Literature of Recommen case starts w i ks effects, Ti k re 15 seconds ility, making video feed. mmunication th on strategies. V Z. Lu, & Liu , with the alg o hout initiative, g and recom m former require the latter is e x et, which can c machine learn ducted based o a-Analysis) 2 0 dual databases in English or C ng process in c educe the risk endation algori edia) were als 1 reports. e selection wo ndation Algori ith determinin kTok is an al or less in dura TikTok eligi b heory, the AI r Video sharing , 2020). As a orithm techno l , reducing the mendation ra n es the algorithm xpected to det e clearly show th ning algorithm on the guidelin 020 statemen t searched inc l Chinese that ha cluding attrib u of overlooki n ithm”.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "0cf668afb925782df0a38496893d7c55bf99a1a5e976b80f5f0ece93a997ce1f"
+    },
+    {
+      "evidence_id": "ev_0e38959977d76723",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "In addit o included in rking flow bas ithm for TikT ng the platfor m gorithm-driven ation. The pote ble to enhan c recommendatio platforms hav new interface logy. It is a f u time cost for in nking are tw o m to extract a ermine the or d he inclusion an ms enable bett e nes suggested i t ( P a g e e t a l . , luded: Web o f ad been publis ute, title, abs t ng important l tion, several w the literature s sed on the PRI m characteristi n, conten t-orie ential of recom ce the effecti v on algorithm is ve transformed e culture, also urther benefit nformation sea o m a i n m a t te fraction of con der of recom m nd hierarchical er feature inte r in the PRISMA 2021). The a f Science, Sc o shed online aft tract, and ful l literature that website reports selection. The ISMA method ics (Nooren, v ented produc t mmendation alg veness of co n s of crucial sig d the way that a new digital that TikTok c arching to a la ers waiting f o ntent from tho mendation list. l relationship b raction disclos V o l . 1 0 , No A (Preferred R adopted fram e opus, Elsevie r ter 2016 were l t e x t w a s co was not foun d s (e. g. , reports final literatur van Gorp, & v t (Zhao, 2021 gorithm is grou ntent distribu t gnificance for T users consum medium (Han can make use r arge extent. or addressing ose tremendous TikTok const between the da sure of user b o.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "78c59098b0320abb678f94ded3103097ebb7cd1de863f9af452897d0b54598a8"
+    },
+    {
+      "evidence_id": "ev_57cd12ce24393717",
+      "source_id": "src_e641318f6543dbd5",
+      "text": "5; 2022 Reporting ework is , S A G E , selected. nducted. d b y t h e from the e review van Eijk, ), where unded in tion and TikTok’s me online n, 2017), rs accept by the s amount tructed a ata (Zhao, ehaviors I n t e r n a t i o n a l J o u r n a l o f S o c i a l S c i e n c e S t u d i e s [CONTENT_TRUNCATED: 18421 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "0f4b89b5fcf66d36db8d7d0dcee3d734a6a111b53b39bce8ad86765edc20a958"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_c729be95a990b36c",
+        "text": "TikTok/抖音采用业界通用的\"内容召回（recall）+ 排序（ranking）\"两段式架构，结合协同过滤、分层兴趣标签树、用户画像与数据分桶策略，实现低成本、高精度的个性化分发 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1,
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0187,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9c1416ec4958b328",
+          "ev_6c233c29392ad9c8",
+          "ev_0ce579d41d885cd9"
+        ],
+        "source_ids": [
+          "src_e641318f6543dbd5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9c1416ec4958b328",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "Recomm 1 Centre for In Corresponden 7AL, United K Received: July doi:10. 11114/i Abstract Recommendat behaviors. Ti k Although a l a content anal y However, ther empirical su p Systematic Re recommendati adoption of r mobile video p Keywords: Ti 1. Introductio A s a s h o r t - fo personalized v achieved gre a Facebook as COVID-19, T by download s those incumbe So far, most Zhang, Ma, in various dom and communi O m a r & D e q algorithm. Given the ab o the area of re c strives to clar What chall",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6c233c29392ad9c8",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "H ove literature g commendation rify and answe ges and revolu he structure o f the next sec t ion algorith m obile video pla n Algorith y Methodologi Wang, Centre A c c e p t ed ms are reshap i mmender syste m f research has features stud y y less researc h Based on a Meta-Analysis) in TikTok, aim on algorithm mendation algo video platfor m driven by its r i n q u i t e a sh wnloaded app own to over 1 (Sensor Tower ernational digit rc h h a s f o c u se ; Sun, H. Zhan Huang, & Huan scholars have",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fe8e985c3c638e68",
+        "text": "平台为每位用户建立基于基础属性、观看行为、互动与搜索记录的\"数字肖像\"，内容侧由 AI 识别打标签，二者匹配后由深度排序模型预估完播、点赞、评论等行为概率 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8bc54c8430c95c43"
+        ],
+        "source_ids": [
+          "src_53e8aa5139f5cd8d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8bc54c8430c95c43",
+            "source_id": "src_53e8aa5139f5cd8d",
+            "text": "As one of the most popular short video platform, Douyin has accumulated more than half of the Chinese netizens as its daily active users. Many users spend plenty of time viewing Douyin short videos, which make Douyin addiction become a widespread phenomenon. In this paper, the author analyzes algorithm principles used in Douyin. Combining both perspectives of mass media communication and algorithm technology to explain how it effects Douyin addiction. For one thing, the recommendation algorithm ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1d7281265652a178",
+        "text": "与 Instagram/Facebook 基于关注关系的分发不同，TikTok/抖音让每条新视频先进入约 200–500 次曝光的初级流量池，依据完播率（权重最高）、点赞率、评论率、转发率等指标决定是否晋级更大流量池，形成阶梯式叠加推荐。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0857,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_993e02f07e9350ec",
+          "ev_cbc27d90514c9996",
+          "ev_9c1416ec4958b328"
+        ],
+        "source_ids": [
+          "src_0a6607e2bf56c9a0",
+          "src_07874a610965e4c9",
+          "src_e641318f6543dbd5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_993e02f07e9350ec",
+            "source_id": "src_0a6607e2bf56c9a0",
+            "text": "Noxinfluencer 4 7 月, 2023 23:45 阅读(1412) 评论(0). 但与Instagram、Facebook算法不同，TikTok算法最大的特点就是去中心化。因此对于TikTok的主要算法，我们主要需要了解流量池算法机制以及内容分发机制。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e581697f68722456",
+        "text": "需说明：流量池的具体曝光量级与指标权重均来自行业经验总结，缺乏字节跳动官方一手验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1215,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cbc27d90514c9996",
+          "ev_ae6bb9f65ed0586b",
+          "ev_993e02f07e9350ec"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9",
+          "src_0a6607e2bf56c9a0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ac252c54a8b88c2e",
+        "text": "工业界已将短视频推荐建模为约束马尔可夫决策过程（CMDP）：以长期累计观看时长（WatchTime）为主目标，点赞、关注、分享等互动为辅助约束，用两阶段约束 Actor-Critic 强化学习求解，并已在生产系统上线 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0441,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b58b91b82cbe0ff"
+        ],
+        "source_ids": [
+          "src_9d52f2e2af0afc86"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b58b91b82cbe0ff",
+            "source_id": "src_9d52f2e2af0afc86",
+            "text": "The wide popularity of short videos on social media poses new opportunities and challenges to optimize recommender systems on the video-sharing platforms. Users sequentially interact with the system and provide complex and multi-faceted responses, including WatchTime and various types of interactions with multiple videos. On the one hand, the platforms aim at optimizing the users’ cumulative WatchTime (main goal) in the long term, which can be effectively optimized by Reinforcement Learning. On ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0cffe886ce56c8e3",
+        "text": "这从技术上证实平台显式以延长用户停留时间为优化目标，而非中立的信息匹配工具。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2316,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cbc27d90514c9996",
+          "ev_ae6bb9f65ed0586b",
+          "ev_822c8e01763b4166"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_796c93d93da3b649",
+        "text": "Klug 等基于 28 次深度访谈和 30 万条热门视频的混合方法研究发现：互动数据（评论、点赞、分享）显著提高视频进入热门流量池的概率；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0215,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0709e82c332c2b91",
+          "ev_0ce579d41d885cd9",
+          "ev_3ac1650a9f724008"
+        ],
+        "source_ids": [
+          "src_4912a81126c5d6e3",
+          "src_e641318f6543dbd5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0709e82c332c2b91",
+            "source_id": "src_4912a81126c5d6e3",
+            "text": "The short-form video sharing app TikTok is characterized by content-based interactions that largely depend on individually customized video feeds curated by the app’s recommendation algorithm. Algorithms are generally invisible mechanisms within socio-technical systems that can influence how we perceive online and offline reality, and how we interact with each other. Based on experiences from consuming and creating videos, users develop assumptions about how the TikTok algorithm might work, and ",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_0ce579d41d885cd9",
+            "source_id": "src_e641318f6543dbd5",
+            "text": ", 20 2 as a brief pr i k platform, a n mender system characterized ion algorithm pecially for it s ed States (Vij a ly active users m this point, T arket (Gray, 20 ntent-based an a & Luo, 2020) ay & Gekker, 2 user motivatio s have paid p he discussion ell as its twin s Why is the re c nism may pose es the outstan d ng and potent i st part are th e Intern engths, D Coventry, Uni dologies, Univ Available onl 14/ijsss. v10i5. video-sharing o b e a n o u t s ta to TikTok, m on and techn ation algori",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_69a9ae55759b508a",
+        "text": "但\"堆砌 #fyp 等标签有效\"这一普遍民间假设被数据证伪 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0709e82c332c2b91"
+        ],
+        "source_ids": [
+          "src_4912a81126c5d6e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0709e82c332c2b91",
+            "source_id": "src_4912a81126c5d6e3",
+            "text": "The short-form video sharing app TikTok is characterized by content-based interactions that largely depend on individually customized video feeds curated by the app’s recommendation algorithm. Algorithms are generally invisible mechanisms within socio-technical systems that can influence how we perceive online and offline reality, and how we interact with each other. Based on experiences from consuming and creating videos, users develop assumptions about how the TikTok algorithm might work, and ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5d7501877ac68a13",
+        "text": "创作者对算法可见性调控普遍感到困惑与无力，Zeng 与 Kaye 将此概念化为\"可见性审核\"（visibility moderation）——平台不仅审核内容本身，更通过推荐权重隐形地决定内容命运 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          8
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0356,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1ba5371cdee6d16b"
+        ],
+        "source_ids": [
+          "src_8d598cb9f6746535"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1ba5371cdee6d16b",
+            "source_id": "src_8d598cb9f6746535",
+            "text": "Abstract TikTok, a short‐video app featuring video content typically between 15 and 60 s long, has become immensely popular around the world in the last few years. However, the worldwide popularity of TikTok requires the platform to constantly negotiate with the rules, norms and regulatory frameworks of the regions where it operates. Failure to do so has had significant consequences. For example, for content‐related reasons, the platform has been (temporarily and permanently) banned in several c",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_51f7208ac90f5a71",
+        "text": "Su 等（浙江大学，2021）的 fMRI 研究显示：观看 TikTok 个性化推荐视频（对比非个性化视频）时，被试的默认模式网络与腹侧被盖区（VTA，富多巴胺区）显著激活，并增强与视听/额顶网络的耦合；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9c1416ec4958b328",
+          "ev_6c233c29392ad9c8",
+          "ev_0ce579d41d885cd9"
+        ],
+        "source_ids": [
+          "src_e641318f6543dbd5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9c1416ec4958b328",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "Recomm 1 Centre for In Corresponden 7AL, United K Received: July doi:10. 11114/i Abstract Recommendat behaviors. Ti k Although a l a content anal y However, ther empirical su p Systematic Re recommendati adoption of r mobile video p Keywords: Ti 1. Introductio A s a s h o r t - fo personalized v achieved gre a Facebook as COVID-19, T by download s those incumbe So far, most Zhang, Ma, in various dom and communi O m a r & D e q algorithm. Given the ab o the area of re c strives to clar What chall",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6c233c29392ad9c8",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "H ove literature g commendation rify and answe ges and revolu he structure o f the next sec t ion algorith m obile video pla n Algorith y Methodologi Wang, Centre A c c e p t ed ms are reshap i mmender syste m f research has features stud y y less researc h Based on a Meta-Analysis) in TikTok, aim on algorithm mendation algo video platfor m driven by its r i n q u i t e a sh wnloaded app own to over 1 (Sensor Tower ernational digit rc h h a s f o c u se ; Sun, H. Zhan Huang, & Huan scholars have",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_69dac4f56bb7549f",
+        "text": "约 5.9% 的用户存在显著问题性使用，症状越重自我控制越低 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          13
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_1f3282b33d1cbd5d"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1f3282b33d1cbd5d"
+        ],
+        "source_ids": [
+          "src_5d7ae06cc6955471"
+        ],
+        "reason": "证据直接陈述约 5.9% 的 TikTok 用户可能有显著问题性使用，且更多不良症状与更低的自我控制能力相关，与声明完全一致。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1f3282b33d1cbd5d",
+            "source_id": "src_5d7ae06cc6955471",
+            "text": "Cutting-edge recommendation algorithms have been widely used by media platforms to suggest users with personalized content. While such user-specific recommendations may satisfy users' needs to obtain intended information, some users may develop a problematic use pattern manifested by addiction-like undesired behaviors. Using a popular video sharing and recommending platform (TikTok) as an example, the present study first characterized use-related undesired behaviors with a questionnaire, then in",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4a94d8a86da37b8d",
+        "text": "需限定：该研究测量的是脑区激活而非多巴胺浓度本身，\"多巴胺灾难\"类表述属于科普外推。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0847,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_822c8e01763b4166",
+          "ev_3152a62d7390becd",
+          "ev_ae6bb9f65ed0586b"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9",
+          "src_94f4defdbc8a67a3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_822c8e01763b4166",
+            "source_id": "src_07874a610965e4c9",
+            "text": "当算法走进生活 实际上，前文也提到算法在发展的过程中不断完善，平台也是阶段性针对市场反馈，主动做出举措调整。 而更重要的意义是，在算法不断完善的过程中，它带来的社会价值也正在一点点显现出来。 首先，推荐算法基本原理是高效分发，将信息、人原本孤立的点连接起来，当不同的信息遇到不同的群体，就会带来不同的效应，进而带来更大的社会价值。 2015年，当大部分实体书店都在走下坡路的时候，电商巨头亚马逊开出一家实体书店，一年半就实现了盈亏平衡。 当所有传统书店都在震惊的时候，大家发现这家书店最出色的设计就是能够根据线上的读者评分、预售情况、销量排行等通过算法得出“推荐书单”，而很多读者就是通过这样高效的推荐方式在货架上买到了自己想要的书。 而现在，抖音算法更进一步通过精准分法、兴趣连接和生态共建，推动实现了知识普惠。 抖音上有个非常有趣的例子，去年一颗长蘑菇的 在抖音上成为了网红。 故事起因于一位浙江网友分享黄梅天里自己家里的苹果长出了蘑菇，于是被中国科学院昆明植物研究所许博士注意到，并买下来这个蘑菇样本做研究，并且在抖音上向网友实时汇报进度，还有不少网友在评论区发出自己见到的菌落请教博士，600",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3152a62d7390becd",
+            "source_id": "src_94f4defdbc8a67a3",
+            "text": "我们请来了安娜·伦布克医生（Dr. Anna Lembke）。 她是斯坦福成瘾诊所（Stanford Addiction Clinic）负责人，也是研究多巴胺的顶尖专家。成瘾者 vs 非成瘾者的大脑：成瘾是一种“多巴胺赤字”.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8ab6142f51d93fe4",
+        "text": "Qin 等对中国 659 名 10–19 岁青少年的研究发现，TikTok 的系统质量（推荐算法流畅度）比信息质量更强地诱发心流体验（沉浸感、时间失真），心流直接和间接驱动成瘾 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "supported",
+        "verification_score": 0.92,
+        "support_evidence_ids": [
+          "ev_bcf2490b7c42aee8"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bcf2490b7c42aee8"
+        ],
+        "source_ids": [
+          "src_306117cb3a36ac82"
+        ],
+        "reason": "证据直接确认：Qin 等对中国 659 名 10–19 岁青少年的研究；系统质量比信息质量更强地影响心流体验（enjoyment, concentration, time distortion）；心流对 TikTok 成瘾有直接和间接效应。推荐算法流畅度为系统质量的合理解释，沉浸感对应 enjoyment/concentration。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bcf2490b7c42aee8",
+            "source_id": "src_306117cb3a36ac82",
+            "text": "TikTok has one of the most advanced algorithm systems and is the most addictive as compared to other social media platforms. While research on social media addiction is abundant, we know much less about how the TikTok information system environment affects users' internal states of enjoyment, concentration, and time distortion (which scholars define as the flow experience), which in turn influences their addiction behavior. To fill this gap, this study collects responses from 659 adolescents in ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cda662ce10f25d34",
+        "text": "Lu 等进一步发现日常无聊感在 UGC 感知与青少年成瘾间起中介作用 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.037,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5e7feb7b0a6b50bc"
+        ],
+        "source_ids": [
+          "src_d58c5d82efb805e6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5e7feb7b0a6b50bc",
+            "source_id": "src_d58c5d82efb805e6",
+            "text": "The adolescent addiction to short video applications is becoming increasingly prominent, which has brought great challenges to the physical and mental health and daily life of the adolescents. This manuscript conducts an empirical study on the contributing factors of the adolescent addiction to short video applications based on the user generated content (UGC). In our study, 96 participants aged 15-25 were surveyed by questionnaire, and then cross-analysis of individual factors and SEM analysis ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_236a58d5d83a3fb1",
+        "text": "Zhao 将其概括为\"成瘾—算法优化\"正反馈闭环：使用越频繁，画像越精准，推荐越契合，持续使用意愿越强 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8bc54c8430c95c43"
+        ],
+        "source_ids": [
+          "src_53e8aa5139f5cd8d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8bc54c8430c95c43",
+            "source_id": "src_53e8aa5139f5cd8d",
+            "text": "As one of the most popular short video platform, Douyin has accumulated more than half of the Chinese netizens as its daily active users. Many users spend plenty of time viewing Douyin short videos, which make Douyin addiction become a widespread phenomenon. In this paper, the author analyzes algorithm principles used in Douyin. Combining both perspectives of mass media communication and algorithm technology to explain how it effects Douyin addiction. For one thing, the recommendation algorithm ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ac8a23b44669b6f0",
+        "text": "Ye 等对 1086 名中国学生（平均年龄 19.84 岁）的研究基于 SOBC 框架验证了三条显著路径：短视频使用强度 → 成瘾、\"TikTok brain\"（感知情绪增强）→ 注意力控制下降 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4559bb8fa11ab8f3",
+          "ev_e4d765db43b55458",
+          "ev_bafa912f7adb0f25"
+        ],
+        "source_ids": [
+          "src_a465caea58c08a04"
+        ],
+        "reason": "证据支持 1086 名中国学生、平均年龄 19.84 岁，以及短视频使用强度→成瘾、TikTok brain（感知情绪增强）→注意力控制下降两条路径，但证据中未提及 SOBC 框架，'三条显著路径'框架性陈述无法被证据证实。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4559bb8fa11ab8f3",
+            "source_id": "src_a465caea58c08a04",
+            "text": "Methods:Giventhatstudentsareconsideredahigh-riskgroupforexcessiveshortvideouse,wecollected1086 valid participants from Chinese student users, including 609 males (56. 1%) and 477 females (43. 9%), with an average participant age of 19. 84 years, to test the hypotheses. Results: (1) Short video usage intensity was positively related to short video addiction, TikTok brain, and decreased attention control; (2) TikTok brain was positively related to shortvideoaddictionanddecreasedattentioncontrol;an",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e4d765db43b55458",
+            "source_id": "src_a465caea58c08a04",
+            "text": "echT PressScience Doi:10. 32604/ijmhp. 2025. 059929 ARTICLE PotentialEffectofShortVideoUsageIntensityonShortVideoAddiction, PerceivedMoodEnhancement(‘TikTokBrain’),andAttentionControlamong ChineseAdolescents Jian-HongYe1,2,J u n p e n gZ h e n g3,W e i g u a j uN o n g4 andXiantongYang5,* 1F acul tyo fEd uca tio n,Bei jingN o rmalU niversi ty ,Bei jing,10087 5,China 2National Institute of Vocational Education, Beijing Normal University, Beijing, 100875, China 3PublicityDepartment,NingboUniversit",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_db43c27de37baae0",
+        "text": "但作者明确\"TikTok brain\"仍是初步的假设性构念，且横断面设计无法确定因果方向。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0696,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e4d765db43b55458",
+          "ev_4559bb8fa11ab8f3",
+          "ev_bafa912f7adb0f25"
+        ],
+        "source_ids": [
+          "src_a465caea58c08a04"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e4d765db43b55458",
+            "source_id": "src_a465caea58c08a04",
+            "text": "echT PressScience Doi:10. 32604/ijmhp. 2025. 059929 ARTICLE PotentialEffectofShortVideoUsageIntensityonShortVideoAddiction, PerceivedMoodEnhancement(‘TikTokBrain’),andAttentionControlamong ChineseAdolescents Jian-HongYe1,2,J u n p e n gZ h e n g3,W e i g u a j uN o n g4 andXiantongYang5,* 1F acul tyo fEd uca tio n,Bei jingN o rmalU niversi ty ,Bei jing,10087 5,China 2National Institute of Vocational Education, Beijing Normal University, Beijing, 100875, China 3PublicityDepartment,NingboUniversit",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4559bb8fa11ab8f3",
+            "source_id": "src_a465caea58c08a04",
+            "text": "Methods:Giventhatstudentsareconsideredahigh-riskgroupforexcessiveshortvideouse,wecollected1086 valid participants from Chinese student users, including 609 males (56. 1%) and 477 females (43. 9%), with an average participant age of 19. 84 years, to test the hypotheses. Results: (1) Short video usage intensity was positively related to short video addiction, TikTok brain, and decreased attention control; (2) TikTok brain was positively related to shortvideoaddictionanddecreasedattentioncontrol;an",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_eaa058c624133659",
+        "text": "Liao 的综述进一步从算法设计、内容、平台、体验四个层面归因短视频成瘾 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          12
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_125c0a7e68cf6b10"
+        ],
+        "source_ids": [
+          "src_eae19c0ae634295b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_125c0a7e68cf6b10",
+            "source_id": "src_eae19c0ae634295b",
+            "text": "Short video addiction refers to the uncontrollable desire of users to watch short videos, leading to significant behavioral loss of control or attention disorders, which in turn result in difficulties in social interaction, learning, and work adaptation. With the \"invasion\" of short videos into people's daily lives and their spread among underage groups, the issue of short video addiction has attracted widespread social attention. Firstly, based on the causes of short video addiction, this study",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e6d8a0875ad8afa8",
+        "text": "赋能面：去中心化流量池降低了冷启动门槛，互动数据表现好的中小创作者可绕过粉丝积累直接\"上热门\" ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          4,
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_292c5321c58ab583",
+          "ev_0709e82c332c2b91",
+          "ev_9c1416ec4958b328"
+        ],
+        "source_ids": [
+          "src_e641318f6543dbd5",
+          "src_4912a81126c5d6e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_292c5321c58ab583",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "Recommendation algorithms are reshaping the ecology of digital video-sharing platforms and users' media usage behaviors. TikTok's recommender system is widely considered to be an outstanding representative among them. Although a large amount of research has been conducted in relation to TikTok, most of these studies pay attention to content analysis, platform features study, user behavior examination and technical aspects of platform algorithm. However, there is markedly less research into TikTo",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_0709e82c332c2b91",
+            "source_id": "src_4912a81126c5d6e3",
+            "text": "The short-form video sharing app TikTok is characterized by content-based interactions that largely depend on individually customized video feeds curated by the app’s recommendation algorithm. Algorithms are generally invisible mechanisms within socio-technical systems that can influence how we perceive online and offline reality, and how we interact with each other. Based on experiences from consuming and creating videos, users develop assumptions about how the TikTok algorithm might work, and ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_928e6c0cb2220b24",
+        "text": "平台算法也让医学健康等专业信息获得大规模触达——对 TikTok、快手、小红书上肺癌信息的内容分析显示，短视频已成为中国公众健康信息的重要来源 ，冠心病相关科普亦在 TikTok 上广泛传播 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5,
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0147,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1dfcc9d210de1999",
+          "ev_a79fda3d33b52cab"
+        ],
+        "source_ids": [
+          "src_4dc14af24e9806e7",
+          "src_59185045b52f617c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1dfcc9d210de1999",
+            "source_id": "src_4dc14af24e9806e7",
+            "text": "BACKGROUND: Coronary heart disease (CHD) is a leading cause of death worldwide and imposes a significant economic burden. TikTok has risen as a favored platform within the social media sphere for disseminating CHD-related information and stands as a pivotal resource for patients seeking knowledge about CHD. However, the quality of such content on TikTok remains largely unexplored. OBJECTIVE: This study aims to assess the quality of information conveyed in TikTok CHD-related videos. METHODS: A co",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_a79fda3d33b52cab",
+            "source_id": "src_59185045b52f617c",
+            "text": "Background: Short-video platforms have become major sources of health information in China, influencing public awareness and health behavior. However, the quality and dissemination patterns of lung cancer-related content across different platforms remain unclear. This study aimed to evaluate the informational quality, reliability, and engagement patterns of lung cancer short videos on three leading Chinese platforms. Methods: We conducted a comprehensive cross-sectional content analysis of 1,288",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_708c6881041b9d58",
+        "text": "异化面：①创作者普遍以算法信号（完播率、互动率）为导向调整生产，\"流量密码\"培训产业的存在表明算法导向内容生产已产业化；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1969,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cbc27d90514c9996",
+          "ev_ae6bb9f65ed0586b",
+          "ev_822c8e01763b4166"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7fdba4c8cb349c31",
+        "text": "②互动率与内容质量并不线性相关，健康信息内容分析发现存在\"质量—互动悖论\"，低质量内容可能获得更高传播 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a79fda3d33b52cab"
+        ],
+        "source_ids": [
+          "src_59185045b52f617c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a79fda3d33b52cab",
+            "source_id": "src_59185045b52f617c",
+            "text": "Background: Short-video platforms have become major sources of health information in China, influencing public awareness and health behavior. However, the quality and dissemination patterns of lung cancer-related content across different platforms remain unclear. This study aimed to evaluate the informational quality, reliability, and engagement patterns of lung cancer short videos on three leading Chinese platforms. Methods: We conducted a comprehensive cross-sectional content analysis of 1,288",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_906f86516ca31665",
+        "text": "③可见性调控的不透明使创作者陷入流量焦虑 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          8
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1ba5371cdee6d16b"
+        ],
+        "source_ids": [
+          "src_8d598cb9f6746535"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1ba5371cdee6d16b",
+            "source_id": "src_8d598cb9f6746535",
+            "text": "Abstract TikTok, a short‐video app featuring video content typically between 15 and 60 s long, has become immensely popular around the world in the last few years. However, the worldwide popularity of TikTok requires the platform to constantly negotiate with the rules, norms and regulatory frameworks of the regions where it operates. Failure to do so has had significant consequences. For example, for content‐related reasons, the platform has been (temporarily and permanently) banned in several c",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a1b28d49b4822f26",
+        "text": "MCN 生态与内容同质化的定量一手实证研究仍是明显的证据缺口。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.101,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ae6bb9f65ed0586b",
+          "ev_822c8e01763b4166",
+          "ev_cbc27d90514c9996"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_822c8e01763b4166",
+            "source_id": "src_07874a610965e4c9",
+            "text": "当算法走进生活 实际上，前文也提到算法在发展的过程中不断完善，平台也是阶段性针对市场反馈，主动做出举措调整。 而更重要的意义是，在算法不断完善的过程中，它带来的社会价值也正在一点点显现出来。 首先，推荐算法基本原理是高效分发，将信息、人原本孤立的点连接起来，当不同的信息遇到不同的群体，就会带来不同的效应，进而带来更大的社会价值。 2015年，当大部分实体书店都在走下坡路的时候，电商巨头亚马逊开出一家实体书店，一年半就实现了盈亏平衡。 当所有传统书店都在震惊的时候，大家发现这家书店最出色的设计就是能够根据线上的读者评分、预售情况、销量排行等通过算法得出“推荐书单”，而很多读者就是通过这样高效的推荐方式在货架上买到了自己想要的书。 而现在，抖音算法更进一步通过精准分法、兴趣连接和生态共建，推动实现了知识普惠。 抖音上有个非常有趣的例子，去年一颗长蘑菇的 在抖音上成为了网红。 故事起因于一位浙江网友分享黄梅天里自己家里的苹果长出了蘑菇，于是被中国科学院昆明植物研究所许博士注意到，并买下来这个蘑菇样本做研究，并且在抖音上向网友实时汇报进度，还有不少网友在评论区发出自己见到的菌落请教博士，600",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b9ccb01d6d0d0016",
+        "text": "质疑方证据较强：Bruns 系统论证\"过滤气泡/回音室\"概念缺乏严格实证支持，多项大规模搜索与社交媒体研究未发现显著气泡效应，他称之为\"道德恐慌\"和技术替罪羊 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          15,
+          16,
+          18
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0165,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_89a9667507449cdc",
+          "ev_fc06f91f4347bde8",
+          "ev_b37332c5677cd50a"
+        ],
+        "source_ids": [
+          "src_1bf2ed40a3691e4a",
+          "src_20bd0e32fb421553",
+          "src_49b48800b1cc7829"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_89a9667507449cdc",
+            "source_id": "src_1bf2ed40a3691e4a",
+            "text": "Following the surprise victories of Brexit and Trump in 2016, even Barack Obama (2017) warned that “it’s become safer to retreat into our own bubbles”, thereby linking increased electoral volatility and polarisation with concepts such as “echo chambers” (Sunstein 2001) and “filter bubbles” (Pariser 2011). The politicians, journalists, and scholars who support these concepts suggest that, with online and social media as the key sources of information for an ever-growing percentage of the public (",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_fc06f91f4347bde8",
+            "source_id": "src_20bd0e32fb421553",
+            "text": "Many politicians, journalists and scholars suggest that echo chambers and filter bubbles are chiefly responsible for the emergence of communities, particularly online, that espouse contrarian and counterfactual perspectives and ideologies, and for their disconnect from the societal mainstream. Echo chambers are said to enable these groups to reinforce their views by connecting with like-minded others; filter bubbles to shield them from encountering contrary perspectives. They are assumed to resu",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8a5b763d6778f37a",
+        "text": "Möller 的综述亦指出过滤气泡/回音室在多数人群中发生率低，且概念操作化混乱 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          17
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_120fb9401aab95f2"
+        ],
+        "source_ids": [
+          "src_cc1d51fda600a57a"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_120fb9401aab95f2",
+            "source_id": "src_cc1d51fda600a57a",
+            "text": "Filter bubbles and echo chambers are often named as key drivers of political polarisation and societal fragmentation. The conceptualisation of echo chambers and filter bubbles and their relationship is still subject to an ongoing academic debate. For echo chambers, the constituting affordances of online communication mainly pertain to online social networks. The large-scale, multi-platform studies all show that the prevalence of filter bubble and echo chamber effects among the majority of the po",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1b9d550ed954a938",
+        "text": "国内亦有评论指出试图证明\"信息茧房\"的实证研究在定义、推理与数据采集上存在缺陷 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ae6bb9f65ed0586b",
+          "ev_cbc27d90514c9996",
+          "ev_822c8e01763b4166"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9b73ad05dc82b348",
+        "text": "支持方的结构性论证：短视频场景与传统新闻/搜索消费本质不同——TikTok 用户\"无主动性地接受算法推送\"，纯算法驱动、无主动搜索、无限下滑、被动消费的结构特征理论上更易形成同质化反馈回路 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0157,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9c1416ec4958b328",
+          "ev_6c233c29392ad9c8",
+          "ev_0ce579d41d885cd9"
+        ],
+        "source_ids": [
+          "src_e641318f6543dbd5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9c1416ec4958b328",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "Recomm 1 Centre for In Corresponden 7AL, United K Received: July doi:10. 11114/i Abstract Recommendat behaviors. Ti k Although a l a content anal y However, ther empirical su p Systematic Re recommendati adoption of r mobile video p Keywords: Ti 1. Introductio A s a s h o r t - fo personalized v achieved gre a Facebook as COVID-19, T by download s those incumbe So far, most Zhang, Ma, in various dom and communi O m a r & D e q algorithm. Given the ab o the area of re c strives to clar What chall",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6c233c29392ad9c8",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "H ove literature g commendation rify and answe ges and revolu he structure o f the next sec t ion algorith m obile video pla n Algorith y Methodologi Wang, Centre A c c e p t ed ms are reshap i mmender syste m f research has features stud y y less researc h Based on a Meta-Analysis) in TikTok, aim on algorithm mendation algo video platfor m driven by its r i n q u i t e a sh wnloaded app own to over 1 (Sensor Tower ernational digit rc h h a s f o c u se ; Sun, H. Zhan Huang, & Huan scholars have",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2af45be1e3eb6201",
+        "text": "兴趣标签树与协同过滤本身即包含偏好强化机制 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8bc54c8430c95c43"
+        ],
+        "source_ids": [
+          "src_53e8aa5139f5cd8d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8bc54c8430c95c43",
+            "source_id": "src_53e8aa5139f5cd8d",
+            "text": "As one of the most popular short video platform, Douyin has accumulated more than half of the Chinese netizens as its daily active users. Many users spend plenty of time viewing Douyin short videos, which make Douyin addiction become a widespread phenomenon. In this paper, the author analyzes algorithm principles used in Douyin. Combining both perspectives of mass media communication and algorithm technology to explain how it effects Douyin addiction. For one thing, the recommendation algorithm ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3e80e0c0308f8abd",
+        "text": "综合判断：信息茧房在概念与实证层面均未达学界共识，不宜作为已确证的因果危害。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ae6bb9f65ed0586b",
+          "ev_cbc27d90514c9996",
+          "ev_8445ad8301676eb0"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_05bc04c21719222d",
+        "text": "传统场景的大规模实证多不支持强茧房效应，但短视频\"纯算法+被动消费\"的结构为茧房机制提供了更有利条件，而针对该场景的大规模因果研究仍不足——这是最重要的未解决证据缺口。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1111,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ae6bb9f65ed0586b",
+          "ev_822c8e01763b4166",
+          "ev_cbc27d90514c9996"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ae6bb9f65ed0586b",
+            "source_id": "src_07874a610965e4c9",
+            "text": "同时抖音还有自己的价值模型评估，简单来说，通过价值模型，对用户的互动行为进行价值计算，并通过不断调整参数，对各类价值进行加权。 不仅会关注内容本身以及用户反馈，还会考虑到作者收益以及平台生态。 这也就解释了，为什么史铁生可以成为抖音上最火的作家：是创作者的精彩输出、用户的积极反馈、平台对优质内容推动等因素的共同作用。 打破信息茧房，才是算法的目标 每当提到算法，必然会有人提及现代网络世界里的“信息茧房”。 “信息茧房”一词，最为人熟知的来源是美国法学教授凯斯·桑斯坦的《信息乌托邦》，是指当个体只关注自我选择的或能够愉悦自身的内容，而减少对其他信息的接触，久而久之，便会像蚕一样逐渐桎梏于自我编织的“茧房”之中。 这一没有实证的假说，在当下互联网环境中，逐渐被概念泛化和被营销炒作。 一方面，这个“茧”有可能被技术强化，但不得不承认的是，这种现象更大程度上是由个人偏好引发。 简单来说，人类天生就倾向于接触符合自己喜好的信息，这才是最终造成所谓“信息茧房”的最主要原因。 但是算法存在的意义，其实是在当下信息过载时代，让用户更为高效地获取信息。 让我们来看一组数据对比。 在信息时代之间，大部分人",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_822c8e01763b4166",
+            "source_id": "src_07874a610965e4c9",
+            "text": "当算法走进生活 实际上，前文也提到算法在发展的过程中不断完善，平台也是阶段性针对市场反馈，主动做出举措调整。 而更重要的意义是，在算法不断完善的过程中，它带来的社会价值也正在一点点显现出来。 首先，推荐算法基本原理是高效分发，将信息、人原本孤立的点连接起来，当不同的信息遇到不同的群体，就会带来不同的效应，进而带来更大的社会价值。 2015年，当大部分实体书店都在走下坡路的时候，电商巨头亚马逊开出一家实体书店，一年半就实现了盈亏平衡。 当所有传统书店都在震惊的时候，大家发现这家书店最出色的设计就是能够根据线上的读者评分、预售情况、销量排行等通过算法得出“推荐书单”，而很多读者就是通过这样高效的推荐方式在货架上买到了自己想要的书。 而现在，抖音算法更进一步通过精准分法、兴趣连接和生态共建，推动实现了知识普惠。 抖音上有个非常有趣的例子，去年一颗长蘑菇的 在抖音上成为了网红。 故事起因于一位浙江网友分享黄梅天里自己家里的苹果长出了蘑菇，于是被中国科学院昆明植物研究所许博士注意到，并买下来这个蘑菇样本做研究，并且在抖音上向网友实时汇报进度，还有不少网友在评论区发出自己见到的菌落请教博士，600",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a6589decae3ee400",
+        "text": "效率收益证据充分：多阶段推荐架构与强化学习优化已被工业界部署证实 ，分发效率与创作赋能是真实收益。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4,
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_292c5321c58ab583",
+          "ev_1b58b91b82cbe0ff",
+          "ev_9c1416ec4958b328"
+        ],
+        "source_ids": [
+          "src_e641318f6543dbd5",
+          "src_9d52f2e2af0afc86"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_292c5321c58ab583",
+            "source_id": "src_e641318f6543dbd5",
+            "text": "Recommendation algorithms are reshaping the ecology of digital video-sharing platforms and users' media usage behaviors. TikTok's recommender system is widely considered to be an outstanding representative among them. Although a large amount of research has been conducted in relation to TikTok, most of these studies pay attention to content analysis, platform features study, user behavior examination and technical aspects of platform algorithm. However, there is markedly less research into TikTo",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_1b58b91b82cbe0ff",
+            "source_id": "src_9d52f2e2af0afc86",
+            "text": "The wide popularity of short videos on social media poses new opportunities and challenges to optimize recommender systems on the video-sharing platforms. Users sequentially interact with the system and provide complex and multi-faceted responses, including WatchTime and various types of interactions with multiple videos. On the one hand, the platforms aim at optimizing the users’ cumulative WatchTime (main goal) in the long term, which can be effectively optimized by Reinforcement Learning. On ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_279c0a92f6bce387",
+        "text": "注意力负面效应证据最强：fMRI 神经证据 、心流中介机制 、大样本注意力控制下降路径  形成多方法互证链；",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          9,
+          13
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0287,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4ecc68a227189747",
+          "ev_1f3282b33d1cbd5d",
+          "ev_39e2507d7f4714a0"
+        ],
+        "source_ids": [
+          "src_a465caea58c08a04",
+          "src_5d7ae06cc6955471"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4ecc68a227189747",
+            "source_id": "src_a465caea58c08a04",
+            "text": "Thepopularityofshortvideosisgrowingworldwide,withusersspendingmoretimewatchingthem[ 12]. Apps with autoplay features encourage prolonged usage unless manually stopped, resulting in extended viewingperiods[ 11]. Researchindicatesthatexcessivetimespentonsocialmediacorrelateswithbehavioral problems [13]. Usage intensity is, therefore, a crucial factor in understanding the psychological impact of short video addiction[11]. As the social media landscape evolves, each platform introduces unique featur",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1f3282b33d1cbd5d",
+            "source_id": "src_5d7ae06cc6955471",
+            "text": "Cutting-edge recommendation algorithms have been widely used by media platforms to suggest users with personalized content. While such user-specific recommendations may satisfy users' needs to obtain intended information, some users may develop a problematic use pattern manifested by addiction-like undesired behaviors. Using a popular video sharing and recommending platform (TikTok) as an example, the present study first characterized use-related undesired behaviors with a questionnaire, then in",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_689e166bdbff03d9",
+        "text": "平台显式最大化 WatchTime 的目标  使\"算法中立\"的辩护难以成立。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b58b91b82cbe0ff"
+        ],
+        "source_ids": [
+          "src_9d52f2e2af0afc86"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b58b91b82cbe0ff",
+            "source_id": "src_9d52f2e2af0afc86",
+            "text": "The wide popularity of short videos on social media poses new opportunities and challenges to optimize recommender systems on the video-sharing platforms. Users sequentially interact with the system and provide complex and multi-faceted responses, including WatchTime and various types of interactions with multiple videos. On the one hand, the platforms aim at optimizing the users’ cumulative WatchTime (main goal) in the long term, which can be effectively optimized by Reinforcement Learning. On ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fce3a8c0ebe10751",
+        "text": "信息茧房应谨慎定性：概念之争未决 ，短视频场景风险结构性更高但因果证据不足，治理上宜要求平台提供关闭个性化推荐选项与多样性探索机制，而非预设\"算法有罪\"。",
+        "task_id": "final_report",
+        "cited_indices": [
+          15,
+          17
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_89a9667507449cdc",
+          "ev_120fb9401aab95f2"
+        ],
+        "source_ids": [
+          "src_1bf2ed40a3691e4a",
+          "src_cc1d51fda600a57a"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_89a9667507449cdc",
+            "source_id": "src_1bf2ed40a3691e4a",
+            "text": "Following the surprise victories of Brexit and Trump in 2016, even Barack Obama (2017) warned that “it’s become safer to retreat into our own bubbles”, thereby linking increased electoral volatility and polarisation with concepts such as “echo chambers” (Sunstein 2001) and “filter bubbles” (Pariser 2011). The politicians, journalists, and scholars who support these concepts suggest that, with online and social media as the key sources of information for an ever-growing percentage of the public (",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_120fb9401aab95f2",
+            "source_id": "src_cc1d51fda600a57a",
+            "text": "Filter bubbles and echo chambers are often named as key drivers of political polarisation and societal fragmentation. The conceptualisation of echo chambers and filter bubbles and their relationship is still subject to an ongoing academic debate. For echo chambers, the constituting affordances of online communication mainly pertain to online social networks. The large-scale, multi-platform studies all show that the prevalence of filter bubble and echo chamber effects among the majority of the po",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cda292dd35a82b45",
+        "text": "治理关键在透明度：目前算法细节多来自平台第一方披露或行业经验推断，缺乏独立审计，未来研究的重点应是跨平台因果设计与算法审计制度。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0991,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_822c8e01763b4166",
+          "ev_cbc27d90514c9996",
+          "ev_ae6bb9f65ed0586b"
+        ],
+        "source_ids": [
+          "src_07874a610965e4c9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_822c8e01763b4166",
+            "source_id": "src_07874a610965e4c9",
+            "text": "当算法走进生活 实际上，前文也提到算法在发展的过程中不断完善，平台也是阶段性针对市场反馈，主动做出举措调整。 而更重要的意义是，在算法不断完善的过程中，它带来的社会价值也正在一点点显现出来。 首先，推荐算法基本原理是高效分发，将信息、人原本孤立的点连接起来，当不同的信息遇到不同的群体，就会带来不同的效应，进而带来更大的社会价值。 2015年，当大部分实体书店都在走下坡路的时候，电商巨头亚马逊开出一家实体书店，一年半就实现了盈亏平衡。 当所有传统书店都在震惊的时候，大家发现这家书店最出色的设计就是能够根据线上的读者评分、预售情况、销量排行等通过算法得出“推荐书单”，而很多读者就是通过这样高效的推荐方式在货架上买到了自己想要的书。 而现在，抖音算法更进一步通过精准分法、兴趣连接和生态共建，推动实现了知识普惠。 抖音上有个非常有趣的例子，去年一颗长蘑菇的 在抖音上成为了网红。 故事起因于一位浙江网友分享黄梅天里自己家里的苹果长出了蘑菇，于是被中国科学院昆明植物研究所许博士注意到，并买下来这个蘑菇样本做研究，并且在抖音上向网友实时汇报进度，还有不少网友在评论区发出自己见到的菌落请教博士，600",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cbc27d90514c9996",
+            "source_id": "src_07874a610965e4c9",
+            "text": "所谓推荐算法“有罪论”，是真相还是背锅？ 陆玖商业评论 2025-04-18 17:13 发布于北京 算法作为工具，使用不好是脱缰的野马，但如果平台精准把控、不断迭代升级，则会成为技术的良驹。 小到拍张照片，大到智能 ，算法早已悄悄全面“融入”我们的生活。 从简单的规则到复杂的自我学习，算法不断赋予机器更接近人类的智能。 在算法的推动下，以DeepSeek为代表的生成式AI迅速发展。 不仅如此，无论是社交平台的短视频，还是新闻、电子书，甚至购物软件，手机里的每一个APP能够精准判断用户喜好，完成“猜你喜欢”，都是靠着算法的推动。 一方面，算法不断推动着技术的进步，与此同时，关于算法“技术阴谋论”的想象也从未缺席，互联网上从不缺对“信息茧房”和“算法造神”的批评，并把很多关于“算法阴谋”的想象最终指向平台们的商业行为。 最近，抖音安全与信任中心网站上线，并首次公开抖音推荐算法原理，介绍其推荐算法如何预估用户行为概率。 那么，“信息茧房”到底存不存在？ 所谓推荐算法“有罪论”，究竟是真相还是背锅？ 爆款视频真存在所谓的 “流量密码”？ 多年前，抖音凭借音乐卡点短视频火爆全网，让不少人对抖音",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 51,
+    "evidence_count": 67,
+    "supported_count": 2,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 34,
+    "coverage": 0.0556,
+    "primary_source_ratio": 0.3725,
+    "fulltext_source_ratio": 0.0588,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 36
+  },
+  "run_metadata": {
+    "final_report_sha256": "235b3d6227bc85ab25f2283daaa640030a8ec4bd9acfb8fe1f9c3a890e1812d7",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 36,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 34,
+        "coverage": 0.0556,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 36
+      },
+      "after": {
+        "claim_count": 36,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 34,
+        "coverage": 0.0556,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 36
+      }
+    }
+  }
+}

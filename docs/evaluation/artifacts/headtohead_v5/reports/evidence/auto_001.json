@@ -1,0 +1,3057 @@
+{
+  "schema_version": "1.0",
+  "query": "对比比亚迪、特斯拉和理想汽车在增程式/纯电技术路线、智能驾驶能力和全球化策略上的差异。",
+  "created_at": "2026-08-13T20:38:36.483460+00:00",
+  "sources": [
+    {
+      "source_id": "src_98d66746c083849d",
+      "url": "https://modiauto.com.cn/bk/50522.html",
+      "title": "理想ONE的增程式原理，理想增程式电动汽车原理解析-无敌电动",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "ad81a126fa03ea32161336e4fa88e0ac594b3e9e189b29004324c0edae718478",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.8951,
+        "host_domain": "modiauto.com.cn"
+      }
+    },
+    {
+      "source_id": "src_e7b8a80d8fb81e3a",
+      "url": "https://arfgc.com/a-d-50712.html",
+      "title": "特斯拉铁粉不做纯电动，理想汽车能理想吗",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.8461,
+        "host_domain": "arfgc.com"
+      }
+    },
+    {
+      "source_id": "src_992599838b23b27e",
+      "url": "https://auto-time.36kr.com/p/1055492686270598",
+      "title": "理想汽车会成为最大的黑马吗？_ 36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.7807,
+        "host_domain": "auto-time.36kr.com"
+      }
+    },
+    {
+      "source_id": "src_c87550a6bef30623",
+      "url": "https://m.pedaily.cn/news/556203",
+      "title": "理想汽车，「尖子生」不好当|投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.7644,
+        "host_domain": "m.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_a30a05aa8ab44ef6",
+      "url": "https://nev.ofweek.com/2021-09/ART-71008-8500-30525735.html",
+      "title": "对手蜂拥而至，招式层出不穷，理想汽车“一招鲜”的隐忧显现 - OFweek...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.7481,
+        "host_domain": "nev.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_a5ae44e571ecf341",
+      "url": "https://bydglobal.com/cn/index.html",
+      "title": "比亚迪 (BYD)集团",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 技术路线 对比 2025",
+        "retrieval_relevance": 0.7317,
+        "host_domain": "bydglobal.com"
+      }
+    },
+    {
+      "source_id": "src_0029b21a57fb91f2",
+      "url": "https://ievchina.com/data/bev-surpasses-ice-china-top-powertrain-q2-2026-pure-electric",
+      "title": "BEV Surpasses ICE as China's Top Powertrain in Q2",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.825,
+        "host_domain": "ievchina.com"
+      }
+    },
+    {
+      "source_id": "src_cce08d717ea5724d",
+      "url": "https://goodtrade.by/blog/polnyj-gid-po-gibridam-2026-hev-phev-erev-bev",
+      "title": "Гибриды 2026: HEV, PHEV, EREV, BEV и MHEV — как они...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "goodtrade.by"
+      }
+    },
+    {
+      "source_id": "src_0582c2efab659224",
+      "url": "https://evchina.co/news/li-auto-erev-technology-whitepaper",
+      "title": "Li Auto EREV Whitepaper: What It Means for Shoppers | Chinese EV...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.7594,
+        "host_domain": "evchina.co"
+      }
+    },
+    {
+      "source_id": "src_b597ccc2d0730a16",
+      "url": "https://finance.yahoo.com/quote/LI",
+      "title": "Li Auto Inc. ( LI ) Stock Price, News, Quote & History - Yahoo Finance",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.7156,
+        "host_domain": "finance.yahoo.com"
+      }
+    },
+    {
+      "source_id": "src_51911777aea6170d",
+      "url": "https://marketwatch.com/investing/stock/li",
+      "title": "Li Auto Inc. ADR Stock Quote (U.S.: Nasdaq) - MarketWatch",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.4771,
+        "host_domain": "marketwatch.com"
+      }
+    },
+    {
+      "source_id": "src_a8e85f4596a9afa2",
+      "url": "https://liauto.com/L7",
+      "title": "Li Auto | Premium Smart Electric Vehicles (REV) | Official Site",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Li Auto EREV to BEV transition i8 i6 BYD DM-i vs Tesla pure EV strategy 2025",
+        "retrieval_relevance": 0.3936,
+        "host_domain": "liauto.com"
+      }
+    },
+    {
+      "source_id": "src_f4c2a08c03498a16",
+      "url": "https://shichangbu.com/know_info/70083.html",
+      "title": "比亚迪掀翻智驾牌桌：当“天神之眼”把NOA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.8663,
+        "host_domain": "shichangbu.com"
+      }
+    },
+    {
+      "source_id": "src_1deab728fefb33dc",
+      "url": "https://chedongxi.com/p/309965.html",
+      "title": "城市NOA的那些“大饼”，车企们都兑现了吗？ - 车东西",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.8122,
+        "host_domain": "chedongxi.com"
+      }
+    },
+    {
+      "source_id": "src_15949550a8ac6910",
+      "url": "https://youjia-pc.bdstatic.com/article/9940547784718042092.html",
+      "title": "比亚迪智驾逆袭！ 海豹06GT单挑华为小鹏，天神之眼真能翻盘？ -有驾",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.7942,
+        "host_domain": "youjia-pc.bdstatic.com"
+      }
+    },
+    {
+      "source_id": "src_34eb0e1352da3948",
+      "url": "http://aikahao.xcar.com.cn/video/2515401.html",
+      "title": "泊车真兜底 买车送“老司机” 比亚迪天神之眼试驾体验-爱卡汽车爱咖号",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.7942,
+        "host_domain": "aikahao.xcar.com.cn"
+      }
+    },
+    {
+      "source_id": "src_3f093d0a69698dbf",
+      "url": "https://zh.wikipedia.org/wiki/%E6%AF%94%E4%BA%9A%E8%BF%AA",
+      "title": "比亚迪 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.7041,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_9da3a51baaf489d4",
+      "url": "https://post.smzdm.com/p/anvee4g2",
+      "title": "三万块的城市NOA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.7837,
+        "host_domain": "post.smzdm.com"
+      }
+    },
+    {
+      "source_id": "src_d511d09da1763e5a",
+      "url": "https://car.tom.com/202608/1143349811.html",
+      "title": "比亚迪秦MAX将8月13日正式上市 搭载天神之眼B_TOM汽车",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.8663,
+        "host_domain": "car.tom.com"
+      }
+    },
+    {
+      "source_id": "src_707a0761a01444dd",
+      "url": "https://auto-time.36kr.com/p/2551551392274820",
+      "title": "城市NOA的那些“大饼”，车企们不好兑现_36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 天神之眼 特斯拉 FSD 理想 AD Max 城市NOA 对比 硬件 算力",
+        "retrieval_relevance": 0.7401,
+        "host_domain": "auto-time.36kr.com"
+      }
+    },
+    {
+      "source_id": "src_65038ddf4109726b",
+      "url": "https://doi.org/10.12677/wer.2022.114033",
+      "title": "Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2",
+        "task_3"
+      ],
+      "authors": "捷 刘",
+      "year": "2022",
+      "publisher": "Hans Publishers",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "6d87fef1682bd3c3db7d76bbfe52dd7af2685b99736e61b3148ef2b96ac14d8a",
+      "metadata": {
+        "paper_id": "10.12677/wer.2022.114033",
+        "citation_count": 4,
+        "provider": "crossref",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 BYD Tesla Li Auto globalization strategy overseas factories 收集比亚迪、特斯拉和理想汽车全球化策略差异：海外市场、工厂与本地化、出口/销量结构、监管与充电生态布局。 academic paper survey benchmark",
+        "retrieval_relevance": 0.4417,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_2d794017f99e21d1",
+      "url": "https://basenor.com/blogs/news/chinese-influencer-flies-25-000-km-to-test-tesla-fsd-what-he-found",
+      "title": "Chinese Influencer Flies 25,000 km to Test Tesla FSD: What He Found",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Tesla FSD subscription price HW4 sensors availability China 2025",
+        "retrieval_relevance": 0.875,
+        "host_domain": "basenor.com"
+      }
+    },
+    {
+      "source_id": "src_8198f0f9ff9c1b3b",
+      "url": "https://teslarati.com/tesla-autosteer-stop-light-warning-autopilot-first-look-video",
+      "title": "First look at Tesla's Autosteer Stop Light Warning for Autopilot in action",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Tesla FSD subscription price HW4 sensors availability China 2025",
+        "retrieval_relevance": 0.5167,
+        "host_domain": "teslarati.com"
+      }
+    },
+    {
+      "source_id": "src_7b85aca7e9c56966",
+      "url": "https://finance.yahoo.com/quote/TSLA",
+      "title": "Tesla , Inc. (TSLA) Stock Price, News, Quote & History - Yahoo Finance",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Tesla FSD subscription price HW4 sensors availability China 2025",
+        "retrieval_relevance": 0.5167,
+        "host_domain": "finance.yahoo.com"
+      }
+    },
+    {
+      "source_id": "src_42aaea4dd42fd879",
+      "url": "https://youtube.com/watch?v=d7acStPtKV4",
+      "title": "Tesla FSD Package Delivery - Can My Self Driving Car... - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Tesla FSD subscription price HW4 sensors availability China 2025",
+        "retrieval_relevance": 0.5167,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_1998707e8f0e3486",
+      "url": "https://en.wikipedia.org/wiki/Tesla,_Inc.",
+      "title": "Tesla , Inc. - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Tesla FSD subscription price HW4 sensors availability China 2025",
+        "retrieval_relevance": 0.2583,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_9d277d600993cf88",
+      "url": "https://txnews.zjol.com.cn/tongxiangxinwen/tongxiangjingji/202411/t20241130_23073338.html",
+      "title": "比亚迪、特斯拉、理想，背后都有桐乡这家“超级工厂”",
+      "source_type": "web",
+      "task_ids": [
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外扩张 最新进展",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "txnews.zjol.com.cn"
+      }
+    },
+    {
+      "source_id": "src_1c6e5606f02e4503",
+      "url": "https://nev.ofweek.com/2026-07/ART-71008-8420-30692951.html",
+      "title": "nev.ofweek.com/2026-07/ART-71008-8420-30692951.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 策略对比",
+        "retrieval_relevance": 0.7649,
+        "host_domain": "nev.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_d776e3d3216b2b96",
+      "url": "https://bnomtechnologies.com/news/tesla-shanghai-factory-pandemic-temporary-stop-203",
+      "title": "特斯拉上海工厂因疫情突发临时停产，全球供应链再遭考验 - 1xBET...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 策略对比",
+        "retrieval_relevance": 0.7266,
+        "host_domain": "bnomtechnologies.com"
+      }
+    },
+    {
+      "source_id": "src_0964fa712927f2c1",
+      "url": "https://pai.com.cn/p/01jv77fg98w5194drqbpwr9sk3",
+      "title": "比亚迪汽车热销新加坡，拿下销量第一 - 电商派",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 策略对比",
+        "retrieval_relevance": 0.7266,
+        "host_domain": "pai.com.cn"
+      }
+    },
+    {
+      "source_id": "src_02ebae32b01456c0",
+      "url": "https://modiauto.com.cn/bk/53057.html",
+      "title": "理想汽车是哪里生产的？ 理想代工厂是谁-无敌电动",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 策略对比",
+        "retrieval_relevance": 0.7266,
+        "host_domain": "modiauto.com.cn"
+      }
+    },
+    {
+      "source_id": "src_9f8c5fe17ca27c35",
+      "url": "https://auto-time.36kr.com/p/1246798957356036",
+      "title": "盈利“昙花一现”，理想汽车回到“解放前”_36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 策略对比",
+        "retrieval_relevance": 0.7266,
+        "host_domain": "auto-time.36kr.com"
+      }
+    },
+    {
+      "source_id": "src_8afecd0219d10b9b",
+      "url": "https://chinaevhome.com/2026/07/01/byd-eyes-spain-france-as-it-weighs-second-european-factory",
+      "title": "BYD Eyes Spain, France as It Weighs Second European Factory",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.86,
+        "host_domain": "chinaevhome.com"
+      }
+    },
+    {
+      "source_id": "src_cabb876e332b12d0",
+      "url": "https://eletric-vehicles.com/byd/byd-sells-296500-nevs-in-january-overseas-deliveries-hit-record-high",
+      "title": "BYD Sells 296,500 NEVs in January, Overseas Deliveries Hit Record...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.825,
+        "host_domain": "eletric-vehicles.com"
+      }
+    },
+    {
+      "source_id": "src_6bfe80673a91bf15",
+      "url": "https://tesorb.com/tesla-vs-byd-europe-market-share-2026",
+      "title": "Tesla vs BYD in Europe: Dead Even at 2.4% Market Share - Tesorb",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "3b8df39a03fd532b60b5f3524e4fe5aa0b3219a9b3b84e206b79e443d7a23e45",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.755,
+        "host_domain": "tesorb.com"
+      }
+    },
+    {
+      "source_id": "src_c57d6d7954da0fa1",
+      "url": "https://businessinsider.com/i-drive-a-tesla-model-3-and-a-byd-song-2025-6",
+      "title": "I Drive a Tesla Model 3 and a BYD Song. - Business Insider",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "businessinsider.com"
+      }
+    },
+    {
+      "source_id": "src_bc04759b16935e7a",
+      "url": "https://bydautoamerica.com/",
+      "title": "Electric Cars, Sedans and SUVs | BYD USA",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "bydautoamerica.com"
+      }
+    },
+    {
+      "source_id": "src_4a430973ea6342b8",
+      "url": "https://youtube.com/watch?v=iLHxqTxuvJA",
+      "title": "Tesla vs BYD | Best Selling Electric Car Brands (2011-2026) - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2011",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BYD Tesla Li Auto overseas factories exports localization strategy 2025",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_bac45f7f5f69173e",
+      "url": "https://doi.org/10.12677/mos.2025.142173",
+      "title": "A Study on Satisfaction of New Energy Vehicles Based on Text Categorization—Taking BYD and Tesla as an Example",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "嘉麒 赵",
+      "year": "2025",
+      "publisher": "Hans Publishers",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.12677/mos.2025.142173",
+        "citation_count": 1,
+        "provider": "crossref",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外工厂 出口 本地化 BYD Tesla Li Auto globalization strategy overseas factories 收集比亚迪、特斯拉和理想汽车全球化策略差异：海外市场、工厂与本地化、出口/销量结构、监管与充电生态布局。 academic paper survey benchmark",
+        "retrieval_relevance": 0.4417,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_6704a13b780eb80e",
+      "url": "https://m.modiauto.com.cn/bk/62236.html",
+      "title": "理想汽车是混动还是纯电？ 理想有纯电动车吗-无敌电动",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "理想汽车 增程式 纯电 车型布局 最新 2025",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "m.modiauto.com.cn"
+      }
+    },
+    {
+      "source_id": "src_1629dc948fca8a0b",
+      "url": "https://qcwp.com/news/997602",
+      "title": "理想汽车的“纯电元年”，2026...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "理想汽车 增程式 纯电 车型布局 最新 2025",
+        "retrieval_relevance": 0.8469,
+        "host_domain": "qcwp.com"
+      }
+    },
+    {
+      "source_id": "src_dcdcad9ef06c8043",
+      "url": "https://youjia-pc.bdstatic.com/article/9822429131831672302.html",
+      "title": "千亿现金挡不住利润暴跌85%！ 理想汽车增程失守、纯电折戟，2026...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "理想汽车 增程式 纯电 车型布局 最新 2025",
+        "retrieval_relevance": 0.8469,
+        "host_domain": "youjia-pc.bdstatic.com"
+      }
+    },
+    {
+      "source_id": "src_dffbf4b1e6258079",
+      "url": "https://zh.wikipedia.org/wiki/%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6",
+      "title": "理想汽车 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "理想汽车 增程式 纯电 车型布局 最新 2025",
+        "retrieval_relevance": 0.7594,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_45183b8a1eb620c4",
+      "url": "https://chejiahao.m.autohome.com.cn/info/21028428",
+      "title": "理想汽车，不想做温水里的那只蛙_车家号_汽车之家",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "理想汽车 增程式 纯电 车型布局 最新 2025",
+        "retrieval_relevance": 0.825,
+        "host_domain": "chejiahao.m.autohome.com.cn"
+      }
+    },
+    {
+      "source_id": "src_ea1008e6a0436b94",
+      "url": "https://post.smzdm.com/p/a3m696od",
+      "title": "比亚迪海外逆袭，在全球22...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外扩张 最新进展",
+        "retrieval_relevance": 0.825,
+        "host_domain": "post.smzdm.com"
+      }
+    },
+    {
+      "source_id": "src_772efc394b9eae6d",
+      "url": "https://nev.ofweek.com/2023-02/ART-71008-8420-30588221.html",
+      "title": "收购福特德国工厂？ 比亚迪不差钱，但风险不容忽视 - OFweek...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外扩张 最新进展",
+        "retrieval_relevance": 0.7521,
+        "host_domain": "nev.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_cac86b7682f159ec",
+      "url": "https://auto-time.36kr.com/p/892719317969667",
+      "title": "理想汽车2022年将推全尺寸SUV...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外扩张 最新进展",
+        "retrieval_relevance": 0.7229,
+        "host_domain": "auto-time.36kr.com"
+      }
+    },
+    {
+      "source_id": "src_1bb8ee972b059c19",
+      "url": "https://byd.com/cn/index.html",
+      "title": "比亚迪 汽车官方网站首页 - 新能源汽车世界冠军",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 全球化 海外扩张 最新进展",
+        "retrieval_relevance": 0.7083,
+        "host_domain": "byd.com"
+      }
+    },
+    {
+      "source_id": "src_56e7550436a59517",
+      "url": "https://doi.org/10.63887/jfem.2025.1.5.5",
+      "title": "国外新能源汽车中国市场企业竞争力分析——以特斯拉为例",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "张紫烟",
+      "year": "2025",
+      "publisher": "Academic Frontiers Publishing Group",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "664bc87f112f2867d901001e07f3dcaaf7409049fbeefc2cbd484de7d76c0cbc",
+      "metadata": {
+        "paper_id": "10.63887/jfem.2025.1.5.5",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 智能驾驶 全球化 最新 核验三项对比中的关键事实点是否一致且最新：理想是否仍以增程为主并推进纯电、特斯拉是否坚持纯电、比亚迪海外扩张与特斯拉/理想全球化范围。 academic paper survey benchmark",
+        "retrieval_relevance": 0.662,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_62195a5087f9197b",
+      "url": "https://doi.org/10.64649/yh.shfzykjcx.2026030009",
+      "title": "拉喜彭斯克《水晶珠》中的思想方法与特质研究（13-17世纪）",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "海涛 肖",
+      "year": "2026",
+      "publisher": "Hong Kong Yuanhong Publishing House Co., Limited",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.64649/yh.shfzykjcx.2026030009",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 智能驾驶 全球化 最新 核验三项对比中的关键事实点是否一致且最新：理想是否仍以增程为主并推进纯电、特斯拉是否坚持纯电、比亚迪海外扩张与特斯拉/理想全球化范围。 academic paper survey benchmark",
+        "retrieval_relevance": 0.4393,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_92227c3ef400f570",
+      "url": "https://doi.org/10.37155/2717-5197-0709-31",
+      "title": "智能化变电站对值班员工作模式的影响与优化策略",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "特古斯吉日嘎拉",
+      "year": "2025",
+      "publisher": "Omniscient Pte Ltd",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.37155/2717-5197-0709-31",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "比亚迪 特斯拉 理想汽车 增程式 纯电 智能驾驶 全球化 最新 核验三项对比中的关键事实点是否一致且最新：理想是否仍以增程为主并推进纯电、特斯拉是否坚持纯电、比亚迪海外扩张与特斯拉/理想全球化范围。 academic paper survey benchmark",
+        "retrieval_relevance": 0.2197,
+        "host_domain": "doi.org"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_3e025190507d6bc4",
+      "source_id": "src_98d66746c083849d",
+      "text": "理想ONE. 品牌：理想汽车.特斯拉刹车失灵事件后续. 比亚迪海豹纯电动2022款正式上市，比亚迪海豹纯电动报价20.98万起.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "674db428e0c23a233ad3cc600fc861ea80365830e2206ab2d2bba2a547de140f"
+    },
+    {
+      "evidence_id": "ev_d0bb3705e6c758eb",
+      "source_id": "src_e7b8a80d8fb81e3a",
+      "text": "特斯拉铁粉不做纯电动，理想汽车能理想吗？而目前理想唯一的在售车型理想ONE其实也是一款很不理想的产品。 因为这是一台“增程式”新能源汽车。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1c4038fbde02d71d21a5fb351e707adf1175dcb408106c4f570041bd3fb508cb"
+    },
+    {
+      "evidence_id": "ev_71f37f4a5942a890",
+      "source_id": "src_992599838b23b27e",
+      "text": "[4]未来汽车日报，李想：理想从不缺钱，从0-1的生存期要节约. [5]中信证券，理想汽车会是中国的特斯拉么？[7]中信证券，理想汽车：智能电动SUV制造商.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "dda007d357413a54672e304be1121c9c7c9a144ae140bbfd73317d89bdc80e7d"
+    },
+    {
+      "evidence_id": "ev_71278293d748ff2d",
+      "source_id": "src_c87550a6bef30623",
+      "text": "新能源汽车 理想汽车 纯电技术 汽车制造行业.相关上市企业. 理想汽车. 理想汽车北京车和家信息技术有限公司.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d68e8f90bfa833512a4967570a81c3803ef70ae81dd8bc6f8675a80483862b9"
+    },
+    {
+      "evidence_id": "ev_14c42c39ed2bff36",
+      "source_id": "src_a30a05aa8ab44ef6",
+      "text": "9港元／股。 理想汽车内部认为，中国智能电动车市场规模将在2025年达到800万台，淘汰赛已经开启，只有至少占据 20％ 的市场份额，也就是160万台，才有机会拿到下一场比. 赛的入场券。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0f6cf2b5cde997677f0450cd679a4710ff2eb48325d587572055da8cc139bf98"
+    },
+    {
+      "evidence_id": "ev_a147cef68303d8fc",
+      "source_id": "src_a5ae44e571ecf341",
+      "text": "比亚迪 (BYD)集团始终坚持“技术为王，创新为本”的发展理念，业务布局涵盖汽车、电池、电子、新能源和轨道交通等领域，从能源的 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "af2f95cdedda8aa8376dd289db720604dd6553447a9494da146d6a5b7d75130b"
+    },
+    {
+      "evidence_id": "ev_ff42763d35fb5db9",
+      "source_id": "src_0029b21a57fb91f2",
+      "text": "Li Auto, BYD DM-i, Huawei HIMA. ICE.The PHEV/EREV segment continues to grow in absolute terms but is losing share relative to BEV, a reversal from 2024 and 2025 when extended-range vehicles from Li Auto, AITO and Leapmotor were the primary growth engine.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "95499608d7e009d0e95e858286419e7243ff4f5e10daaebbefc03910b5b73c42"
+    },
+    {
+      "evidence_id": "ev_64502feaf7035093",
+      "source_id": "src_cce08d717ea5724d",
+      "text": "Представители: BYD DM-i (Song Plus, Qin Plus), Geely Galaxy, Changan Qiyuan. Плюсы и минусы.Представители: Li Auto (Lixiang) L6/L7/L8/L9, AITO M5/M7/M8/M9, Avatr 07, Leapmotor C10 (EREV-версия). Плюсы и минусы.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "54606ec83428c00a1a1b033600233c2d6d81dce887bdf3ec68c124baeed56435"
+    },
+    {
+      "evidence_id": "ev_5706fd1958de9072",
+      "source_id": "src_0582c2efab659224",
+      "text": "Li Auto’s EREV whitepaper range-extended EVs vs pure BEVs. Claims, 5-year costs, and European relevance for L7, L8, L9 buyers. By Editorial Team • Updated March 4, 2026.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6ee6b7195f1090b7d54d5e2d23cd1fba0fe01097f4b9175db82de80435ac668f"
+    },
+    {
+      "evidence_id": "ev_f8622ebec31e1f54",
+      "source_id": "src_b597ccc2d0730a16",
+      "text": "Find the latest Li Auto Inc. (LI) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e82b75426cded31fa190fa27014cf2d11ea9c7edda65129b933de29088ef241b"
+    },
+    {
+      "evidence_id": "ev_92d8dad0c4951d0e",
+      "source_id": "src_51911777aea6170d",
+      "text": "20 hours ago · Li Auto, Inc. designs, develops, manufactures and sells premium smart electric SUVs energy vehicle. It provides safe, …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "05300ba23339f13f686fcb9c746f42230de775dd151fbf5b223b6b06df04168c"
+    },
+    {
+      "evidence_id": "ev_016fbed4893aa98e",
+      "source_id": "src_a8e85f4596a9afa2",
+      "text": "Li Auto, premium smart electric vehicles built to extend your lifestyle. Explore our innovative Range-Extended Electric SUVs and …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "01f4829a64c79c59a540110362ba54a952ca26917f2333759e145dd24070a011"
+    },
+    {
+      "evidence_id": "ev_01fd632f662228d2",
+      "source_id": "src_98d66746c083849d",
+      "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱动电机的输出，该模式适合几乎不充电的用户使用。 以上就是理想增程式电动汽车原理的解析，凭借出色的增程系统，根据路况的不同以及日常用车习惯的不同，车主可以自行切换驾驶模式。 推荐阅读 二手理想ONE还有质保吗？ 理想首任车主终身质保能转让吗 2022-04-24 二手的理想ONE是有质保的，但不是首任车主的终身质保或者十年质保，而是标准质保，质保的. . . 理想电池终身免费更换吗？ 理想终身免费换电池骗局 2023-04-20 最近网络上不少网友都在讨论理想终身免费换电池的骗局问题，然而事实是，理想终身免费免. . . 理想ONE电池终身质保吗？ 2021款理想ONE终身质保政策解析 2022-04-25 理想ONE的电池只有第一批首任车主才享有终身质保权益，2022年2月1日前订购理想ONE的用户享有. . . 理想ONE换一套电池多少钱？ 理想ONE电池更换价格 2022-04-30 理想ONE换一套电池大约需要5-6万块钱，第一款理想ONE是于2018年10月份发布的，到如今仅仅只有. . . 理想ONE充满电是多少度？ 理想ONE充电时间长吗 2023-04-04 理想ONE充满电是40. 5度，也就是40. 5kwh，官方公布的电池满电续航为188公里，实际续航可达140公. . . 理想ONE没电纯油跑多远？ 理想ONE纯油能跑多少公里 2022-04-22 理想ONE没电纯油理论上可以跑700公里，如果全程跑高速的话实际续航一般在550公里左右，因为. . . 理想ONE纯电能跑多少公里？ 理想ONE纯电续航里程 2022-04-24 理想ONE官方公布纯电能跑188公里，根据大部分的车主使用反馈来看，纯电的实际续航一般在. . . 理想ONE可以边开边充电吗？ 理想ONE充电时可以起步吗 2022-04-27 理想ONE是不可以边开边充电的，这是十分危险的行为，而且当理想ONE挂入P档并插上充电枪开始. . . 理想ONE怎么充电？",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "de09ef8fd337dc6ce51e75b5ece50d0c2d0d8cf7b748732b57835c0acd46e411"
+    },
+    {
+      "evidence_id": "ev_8e98d3ea78559d5b",
+      "source_id": "src_98d66746c083849d",
+      "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所 长春车管所 哈尔滨车管所 杭州车管所 合肥车管所 福州车管所 南昌车管所 济南车管所 郑州车管所 长沙车管所 南宁车管所 海口车管所 贵阳车管所 昆明车管所 拉萨车管所 兰州车管所 西宁车管所 银川车管所 乌鲁木齐车管所 北京充电桩 天津充电桩 上海充电桩 重庆充电桩 河北充电桩 山西充电桩 内蒙充电桩 辽宁充电桩 吉林充电桩 黑龙江充电桩 江苏充电桩 浙江充电桩 安徽充电桩 福建充电桩 江西充电桩 山东充电桩 河南充电桩 湖北充电桩 湖南充电桩 广东充电桩 广西充电桩 海南充电桩 四川充电桩 贵州充电桩 云南充电桩 西藏充电桩 陕西充电桩 甘肃充电桩 青海充电桩 宁夏充电桩 新疆充电桩 广东服务区 四川服务区 云南服务区 贵州服务区 河北服务区 重庆服务区 河南服务区 湖南服务区 山东服务区 湖北服务区 广西服务区 江苏服务区 安徽服务区 福建服务区 江西服务区 陕西服务区 浙江服务区 山西服务区 甘肃服务区 辽宁服务区 内蒙古服务区 吉林服务区 黑龙江服务区 天津服务区 新疆服务区 上海服务区 北京服务区 海南服务区 宁夏服务区 青海服务区 车主工具 高速路况 城市限行 全国车管所 全国充电桩 全国电价 汽车销量榜 汽车百科 高速服务区 电车资讯 五菱缤果电动车2023款上市，五菱缤果售价5. 98万起 新能源电池排名前十名，动力电池排行榜前十名 比亚迪宋PLUS DMi冠军版售价15. 98万元起，2023宋PLUS DM-i冠军版正式上市 中国固态电池三巨头是谁？ 国内固态电池上市公司排名 电车百科 特斯拉汽车2023款最新款价格，特斯拉电动汽车最新价格调整 油电混合汽车排行榜前十名品牌，混动汽车十大名牌排名及价格 新能源车标大全图片及名称，2023常见电动汽车标志图片大全 电动汽车十大名牌排名及价格，纯电动汽车排名及价格一览 电车知识 BYD是什么意思？ 网络用语BYD是什么梗 电动车仪表盘符号图解，电动汽车故障灯标志图解大全 车没电打不着火的临时办法，汽车电瓶没电怎么搭线(图解) 理想蔚来小鹏都是谁代工的？",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "204150063a26ad0d68b942b2119e667be43a91a6df1bd602a8c9f0894577fa99"
+    },
+    {
+      "evidence_id": "ev_1071deb09686073a",
+      "source_id": "src_98d66746c083849d",
+      "text": "造车新势力代工厂分别是哪些 增程式电动车是什么意思？ 增程式电动汽车优缺点 CLTC和WLTC的区别，CLTC和WLTC哪个更准确 电车一公里 多少钱啊？ 纯电动汽车100公里多少度电 倒三角车标是什么车？ 倒三角标志的新能源车 ModiAuto内容仅供个人学习使用 如果Modiauto. com. cn的个别行为侵犯了任何一方的正当权益，请联系我们；我们在核实后将在最短的时间内删除，并致以诚挚歉意。 联系邮箱：modiauto@foxmail. com 网站备案： 粤ICP备20063297号",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "669301f247c3d704018f4eb7ac7f51a5166d42e44c8952418c6494b9bf466df2"
+    },
+    {
+      "evidence_id": "ev_d57144ce3e80e438",
+      "source_id": "src_f4c2a08c03498a16",
+      "text": "02、算法、算力、数据,比亚迪智驾的暴力美学.在算力分层上，天神之眼A版（508TOPS）用双Orin X对标特斯拉HW4.0，C版（80TOPS）则靠自研低算力芯片守住成本线。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "68d61ebbe90f889af686b0f31e8e309c04dabf664c8f00f9ef5ef2fde0c35897"
+    },
+    {
+      "evidence_id": "ev_f19a80a03a720a09",
+      "source_id": "src_1deab728fefb33dc",
+      "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0c39e14147063e2392a427cbcb3a0be0395e3e8e3024ae5e27974bee40a6c2dd"
+    },
+    {
+      "evidence_id": "ev_ca8e4366b0dccc06",
+      "source_id": "src_15949550a8ac6910",
+      "text": "比亚迪智驾逆袭！ 海豹06GT单挑华为小鹏，天神之眼真能翻盘？比亚迪智驾逆袭！",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ab00f51b50b453fa339afbc793170b148f549ac4dc48759177f682627c24c7ba"
+    },
+    {
+      "evidence_id": "ev_b9eaad3b04237251",
+      "source_id": "src_34eb0e1352da3948",
+      "text": "当前位置 爱咖号首页 泊车真兜底 买车送“老司机” 比亚迪天神之眼试驾体验. 泊车真兜底 买车送“老司机” 比亚迪天神之眼试驾体验. 汽车观察家 4034浏览 2025-08-06 IP属地: 未知. 视频简介：",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "dfe7fbbb5886f9fd3eeefa1619bc10e2bb051398a80762286bf30cefd29cb2c6"
+    },
+    {
+      "evidence_id": "ev_d4eaf30e459fe65c",
+      "source_id": "src_3f093d0a69698dbf",
+      "text": "它是一家 垂直整合 的公司，且拥有多个子公司，主要包括生产 汽车 的 比亚迪汽车 、从事电子零部件生产与组装的 比亞迪電子，以 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "5cc393214ea077fafaed9c8ba80496ea2678f039b6840c94d5a5eba784853a97"
+    },
+    {
+      "evidence_id": "ev_f313e762bc1d7302",
+      "source_id": "src_9da3a51baaf489d4",
+      "text": "169. 城市 NOA 算力分水岭大揭秘 特斯拉淘汰 100 多 TOPS 智驾芯片，直接点透城市 NOA 的算力刚需！173. 智驾芯片算力终极对比：小米、小鹏、理想、蔚来、华为 vs 特斯拉.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "1b3ef22a764dd334ae56c571920d6bda9d3d21547153091cd15d3fdd4cb1f840"
+    },
+    {
+      "evidence_id": "ev_9d4011f56454e1ad",
+      "source_id": "src_d511d09da1763e5a",
+      "text": "比亚迪秦MAX将8月13日正式上市 搭载天神之眼B.比亚迪方程豹豹5盲订价格30万起：零百加速4.8秒. 特斯拉压力大！ 新款比亚迪秦PLUS曝光：续航更长，内饰大升级.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c290d69b9f09c1eb8032e54402621531df93b55ade66573f099a5aff0f56861d"
+    },
+    {
+      "evidence_id": "ev_ea46aee246231c94",
+      "source_id": "src_707a0761a01444dd",
+      "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落. 地推送。 理想汽车今年4月上海车展发布会现场.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "0f1ff09d8b997696b40e8eeace7451c4fcf18d386e09a8b2738651c1c09abf4c"
+    },
+    {
+      "evidence_id": "ev_07998dad43bdfdd6",
+      "source_id": "src_2d794017f99e21d1",
+      "text": "FSD subscription price (US). $99/month. Outright purchase eliminated Feb 14, 2026.Tesla's FSD availability in China is currently limited by local data laws, with a broader rollout expected later in 2026 following local data center operations.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a58b13fcb3b5822e32911f3207d7f4f209acff4f03b0ca861cfd70846a68f64e"
+    },
+    {
+      "evidence_id": "ev_6813f4e1f8d77c6d",
+      "source_id": "src_8198f0f9ff9c1b3b",
+      "text": "Tesla confirmed HW3 can’t do Unsupervised FSD but there’s more to the story. Tesla confirmed HW3 vehicles cannot run unsupervised FSD, replacing its free upgrade promise with a discounted trade-in.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "b8a447a6e73ec4baaf8502687c40b1e2deb416f665ba8b40fe763b6a18c8dd88"
+    },
+    {
+      "evidence_id": "ev_505ca88c1277b706",
+      "source_id": "src_7b85aca7e9c56966",
+      "text": "Find the latest Tesla, Inc. (TSLA) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "058ef712a4579157ff9bc3720e281bd9a233e628f40b7fa2603a47d15a51a860"
+    },
+    {
+      "evidence_id": "ev_0917fc2f9f00f5c4",
+      "source_id": "src_42aaea4dd42fd879",
+      "text": "In this Tesla FSD video, I'm doing a performance test of 12.6.4 to see if my self driving car can deliver a package.Use My Referral Code to Get $1,000 off ...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9b1a97e6b41f13ac7c7993f3c9800fac4fff647442a1899df0d7647e047b3a59"
+    },
+    {
+      "evidence_id": "ev_d2b7baf9588d807d",
+      "source_id": "src_1998707e8f0e3486",
+      "text": "The company was incorporated in July 2003 by Martin Eberhard and Marc Tarpenning as Tesla Motors. Its name is a tribute to the …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "25e0809ea9b5e0d9456f2a12c9d964cc042269c2fde8d084edd1b72ab0e3a878"
+    },
+    {
+      "evidence_id": "ev_135632b615cd1f5d",
+      "source_id": "src_65038ddf4109726b",
+      "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些建议。 Abstract: In the global “low-carbon” environment, the new energy vehicle industry has become an important area of national development, and has also become one of the key factors to determine whether China’s auto industry can successfully transition and upgrade. SWOT is used to analyze environmental factors in the new energy vehicle industry. The paper selects Tesla and BYD to compare financial ratios. Based on the difference of four financial abilities between two new energy automobile enterprises, some suggestions are provided for the future high-quality development of new energy automobile industry in China. 文章引用： 刘捷, 李涵雯. 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司[J]. 世界经济探索, 2022, 11(4): 290-298. https://doi. org/10. 12677/WER. 2022. 114033 参考文献 唐宁蔓. 中国新能源汽车企业国际化动因及模式研究[D]: [硕士学位论文]. 长春: 吉林大学, 2022. [ CrossRef 高萌. 我国现行市场条件下PPP模式的应用及对教育培训行业的影响——基于SWOT-PEST分析模型[J]. 中国市场, 2018(1): 67-70.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "c2b93a20875b050789f634d6a040b0df8ebef31c904b03d2755e675f564b51fa"
+    },
+    {
+      "evidence_id": "ev_93675ffd5c5b860a",
+      "source_id": "src_65038ddf4109726b",
+      "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar CrossRef 为你推荐 友情链接 科研出版社 开放图书馆",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "86725a1f9c0dec8c4261c3709ceaca074c6975914ba0ef9ec11cb24ed3d6b06e"
+    },
+    {
+      "evidence_id": "ev_ea95b834a0da6da1",
+      "source_id": "src_9d277d600993cf88",
+      "text": "比亚迪、特斯拉、理想，背后都有桐乡这家“超级工厂”！”任德虎说。 目前，泰瑞已为比亚迪、特斯拉、理想等新能源汽车品牌及传统汽车品牌提供完整的解决方案。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "66a2ba15313f7824d99646a061b4c8c784969d2cfba0c16057973c7691ca39ba"
+    },
+    {
+      "evidence_id": "ev_020181baaaeaf8be",
+      "source_id": "src_1c6e5606f02e4503",
+      "text": "全球化迎来关键节点，上半年海外出口近10万台，西班牙工厂计划四季度启动本地化组装，借助Stellantis网络全球渠道突破2000家，正以国内规模与海外盈利并重. 的模式加速向百万台目标迈进。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "944b3ed8c984b5b352cb2c5405643605476e71abe2d68a19e0f4319e4c82cd22"
+    },
+    {
+      "evidence_id": "ev_62d3a095071cd3f2",
+      "source_id": "src_d776e3d3216b2b96",
+      "text": "特斯拉上海工厂因疫情突发临时停产，全球供应链再遭考验.特斯拉上海工厂（Giga Shanghai）是全球最大单一电动汽车生产基地，贡献约全球总产量的40%。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "77b08b9141c0e41671bd5fc3ffeba683708b7b8cab1aa5f7882358b3286f629a"
+    },
+    {
+      "evidence_id": "ev_a722e7fed3e3e696",
+      "source_id": "src_0964fa712927f2c1",
+      "text": "比亚迪泰国工厂竣工 图源：比亚迪.长城汽车出口俄罗斯22万辆，占其总出口量的50%左右。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "62590df1c916299f7da2b146919f2ea58c2370e466da33db54230ed82e414bfb"
+    },
+    {
+      "evidence_id": "ev_f74f7262a14c94a1",
+      "source_id": "src_02ebae32b01456c0",
+      "text": "理想汽车三大工厂. 1、江苏常州武进区工厂. 理想汽车在2018年12月，以6.5亿元收购了重庆力帆汽车有限公司，获得了整车生产资质，之后便在江苏建立了重庆理想汽车有限公司常州分公司，也就是.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "08b7a301bf788c1b954450cf2e2d29e115a44b267482c6773ebced8164d48e1e"
+    },
+    {
+      "evidence_id": "ev_47f6ae499cd3d977",
+      "source_id": "src_9f8c5fe17ca27c35",
+      "text": "相比蔚来和小鹏，理想的产能水平目前已落于下风。 蔚来汽车江淮工厂的年产能计划在年底提升至30万辆，小鹏汽车的三座工厂产能规划也在30万辆。 目前，理想汽车仅有常州工厂一个生产基地，设计产能为10万辆。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "496b614d8637f41597307fb22d9d97605dd1dbfc5c2c9f92f5feaa81af26e75c"
+    },
+    {
+      "evidence_id": "ev_f096c9e770c69e31",
+      "source_id": "src_8afecd0219d10b9b",
+      "text": "NIO. Tesla. Li Auto. Xiaomi.He added that BYD is assessing a “brownfield” strategy, acquiring or leasing existing vehicle plants for conversion rather than building new factories from scratch. BYD’s presence at a past overseas auto show.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7ded529f955e0cac0c9ce89a9d0e96460f735bbd1d07e0256c8ed4fab6843ce4"
+    },
+    {
+      "evidence_id": "ev_9d2ba7c3369fa374",
+      "source_id": "src_cabb876e332b12d0",
+      "text": "Li Auto, Xiaomi and Tesla held the strongest one-year residual values among China's new-energy vehicle (NEV) brands in June, each retaining more than 80.0% of the price paid, according to a monthly tracking study by Chinese consultancy LandRoads.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5cf156e712de77e3e691a0af306a03adbe75974f1defeee71a70e9a83478df7b"
+    },
+    {
+      "evidence_id": "ev_a6639ed2d5161ce8",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "Tesla’s European production advantage is structural. Gigafactory Berlin has a rated annual capacity of 375,000 vehicles, and Tesla is targeting a 20% output increase in 2026 to roughly 7,500 vehicles per week. The factory operated at about 65% utilization in Q1 2026, up from 40% in 2025.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c76e1f08383a0e17cad1b494fa0b91cc8a606f7cd0124d68cba5c20cfcea0efa"
+    },
+    {
+      "evidence_id": "ev_5ba2959114cc12ed",
+      "source_id": "src_c57d6d7954da0fa1",
+      "text": "The BYD feels very solid, the interior is very well upholstered, and in my opinion, it has a better quality of construction than the Tesla. I'm a real tech person, and the BYD has all kinds of advanced technology.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "054b127f8bb13981bcce3ff83e0582856cb40ad87fb9dd5eb27846d97aae00d4"
+    },
+    {
+      "evidence_id": "ev_d9f1b5f653653a69",
+      "source_id": "src_bc04759b16935e7a",
+      "text": "BYD Auto America is a company that manufactures electric vehicles, buses, trucks, and other vehicles, and is dedicated to creating a …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "cc9cffeb9af991153df25ebed29f99e7d465b9a7e6b5f3ec47a3cdb1e58ebb48"
+    },
+    {
+      "evidence_id": "ev_686fb0b67fde3599",
+      "source_id": "src_4a430973ea6342b8",
+      "text": "Explore the rise of the world's best-selling electric car brands from 2011 to 2026. Witness the ultimate sales race among Tesla, BYD, and legacy automotive giants.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "f4d92eb489578819bd16f9b4bbd71182d8ee7edda920a2cf97f8de87547654b3"
+    },
+    {
+      "evidence_id": "ev_6932f8e064313c00",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "For the first time, Tesla and BYD finished a half-year period with identical European market share. Both companies closed H1 2026 at 2. 4% of total new car registrations across the EU, EFTA, and the UK. The number is the same, but the trajectories that produced it could not be more different. BYD climbed from 1. 0% in H1 2025 to 2. 4%, more than doubling its position in twelve months. Tesla rose from 1. 6% to 2. 4%, a meaningful recovery after two years of European declines. In absolute registrations, BYD edged ahead with 174,144 units to Tesla’s 170,351. But that headline number hides a critical difference: BYD’s total includes plug-in hybrids and budget models, while Tesla sells only fully electric vehicles starting above 40,000 euros. The Tariff Wall BYD Climbed Over The EU imposed countervailing duties on Chinese-made battery electric vehicles in October 2024 for a five-year period. BYD’s specific rate is 17. 0%, layered on top of the standard 10% EU vehicle import tariff, bringing its total duty burden to 27%. Other Chinese manufacturers face steeper penalties. SAIC pays up to 35. 3% in countervailing duties alone, pushing its combined rate past 45%. The fact that BYD doubled its European share while absorbing a 27% tariff is the single most important data point in this comparison.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "90f745dc8d022c3ee88f18e8d7f9080ffb6d6e71a795c8a31a1075c74de2c663"
+    },
+    {
+      "evidence_id": "ev_dd3d25dc903fb8ef",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "It means BYD’s cost structure has enough margin to eat the tariff and still undercut European competitors on price. The Dolphin Surf starts at 19,990 euros. The Atto 3 opens at around 36,990 euros. These prices include the tariff penalty. A price undertaking framework negotiated between China and the EU in January 2026 could eventually replace fixed duties with a minimum import price mechanism. If that deal takes effect, BYD’s pricing flexibility would increase further. Meanwhile, the European Commission is preparing to extend countervailing duties to Chinese-made plug-in hybrids, a move that would hit BYD’s growing PHEV lineup directly. Factory Footprints: Local vs. Imported Tesla’s European production advantage is structural. Gigafactory Berlin has a rated annual capacity of 375,000 vehicles, and Tesla is targeting a 20% output increase in 2026 to roughly 7,500 vehicles per week. The factory operated at about 65% utilization in Q1 2026, up from 40% in 2025. Every Model Y sold in Europe avoids import tariffs entirely. BYD is working to close this gap. Its Szeged plant in southern Hungary will begin mass production in Q4 2026, starting with the Dolphin Surf. Initial annual capacity is 150,000 vehicles, with plans to scale to 300,000. Once operational, vehicles produced in Hungary will be tariff-free within the EU.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "20fffdebce53e5c1091bb7045f71a3a855cb5d972f88209d980e4cd9711233ec"
+    },
+    {
+      "evidence_id": "ev_8f04caa1a8d71fa6",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "The Turkey factory, originally announced as a $1 billion investment with a 2026 production start, is now on hold. BYD has paused construction and is reportedly evaluating alternative locations for a second European plant. Until Hungary is running at scale, every BYD sold in Europe carries that 27% duty cost. Model Lineup: Breadth vs. Focus BYD’s European strategy relies on range. The lineup now spans from the Dolphin Surf at 19,990 euros to the Han sedan above 70,000 euros. The updated Atto 3 Evo, available from April 2026, offers a 74. 8 kWh battery and up to 316 miles of WLTP range. The Seal competes directly with the Tesla Model 3 and Volkswagen ID. 7 on performance per euro. BYD covers price points that Tesla simply does not address. Tesla’s approach is the opposite: sell fewer models, but dominate the segments they enter. The Model Y Juniper refresh launched in Europe in early 2026 with updated styling, a lower drag coefficient of 0. 22, revised suspension, and an available seven-seat configuration. The Standard trim starts at 40,990 euros in Germany. The refresh drove a 10% registration increase across Europe in February, with France up 55%, Spain up 74%, and Norway up 32%. The Model Y remains the best-selling EV in Europe’s premium segment, and the Juniper update extended its lifecycle without a full redesign. That is capital-efficient execution.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "d26ab968b87e8016f08cc38d10ff6079494c2c6c463ddf9464cff734e9c7a387"
+    },
+    {
+      "evidence_id": "ev_1c9efad497e13163",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "The Charging Network Advantage Tesla’s Supercharger network is a competitive moat that rarely appears in market share charts but matters to every buyer. With over 75,000 active charging points worldwide and V4 stations now deployed across Europe at up to 500 kW, Tesla ranks first in Germany for fast charging and holds top-three positions in Spain, Italy, Switzerland, and the Netherlands. The network is now open to non-Tesla vehicles via CCS connectors, and Tesla has launched a white-label program allowing businesses to purchase V4 equipment. This turns charging from a cost center into a revenue line, while reinforcing Tesla’s infrastructure lead. BYD has no equivalent network. Its customers rely on third-party charging providers like Ionity, Fastned, and national operators. The charging experience is adequate but inconsistent. For buyers choosing between two vehicles at similar price points, Tesla’s integrated charging ecosystem is a measurable advantage. Who Is Better Positioned for H2 2026 The thesis is straightforward. Tesla has the structural advantages: local production, a proprietary charging network, brand recognition in the premium segment, and a refreshed Model Y driving strong order momentum. BYD has the cost advantages: a broader model range, aggressive pricing that absorbs tariffs, and a growth rate that is outpacing Tesla’s in percentage terms.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "b58bda45a39c03bb4fb535b8af130d39da31bd9fd25d4fef42b52eb4de88f6e2"
+    },
+    {
+      "evidence_id": "ev_5c73930f8dbfbb4a",
+      "source_id": "src_6bfe80673a91bf15",
+      "text": "Two developments will determine who pulls ahead. First, BYD’s Hungary factory. If Szeged reaches meaningful output in Q4 2026, BYD can redirect tariff savings into even lower prices or higher margins. That changes the competitive math. Second, Tesla’s Gigafactory Berlin utilization. Moving from 65% to 80% or above would increase Tesla’s European supply without new capital expenditure, improving both availability and per-unit economics. The conditions that would break the current equilibrium are clear. If the EU finalizes price undertakings that effectively lower BYD’s tariff burden, BYD gains pricing ro [CONTENT_TRUNCATED: 6759 chars total, showing first 6000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "a9314b0eb37f198da66a6254d7289a9cfd582d542c29ca872ad509cf02716db6"
+    },
+    {
+      "evidence_id": "ev_b2e3d274e4a47b57",
+      "source_id": "src_6704a13b780eb80e",
+      "text": "到2025年，理想汽车将形成 “1款超级旗舰+5款增程电动车型+5款高压纯电车型”的产品布局，面向20万以上的市场，全面满足家庭用户需求。 理想为什么要发布纯电动汽车？",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "cb73848b8bd1c70946d6e1df2a1b0795c7a763d0a0ef0ab083a32759b023e63b"
+    },
+    {
+      "evidence_id": "ev_7da953305856d451",
+      "source_id": "src_1629dc948fca8a0b",
+      "text": "理想汽车的“纯电元年”，2026年多款纯电车型能否复制增程成功？理想汽车2025年凭借增程路线盈利，但面临市场天花板和政策退潮，2026年将开启“纯电元年”，推出多款新车型。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "60b06cb4dd4959250c9f6f3ce62ddbaa2191e973504c475d412d303c155808d3"
+    },
+    {
+      "evidence_id": "ev_a919c84504df4bae",
+      "source_id": "src_dcdcad9ef06c8043",
+      "text": "L系列增程车处于换代节点，老款车型的折扣力度加大，直接拉低了客单价和毛利率。 2025年第四季度，理想汽车销售收入273亿元，同比下滑36.1%，卖车单价环比下滑了2.7万元至25万元。 理想L系列销量同比下滑了60%，导致四季度整体销量同比下滑31%。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "33b8fe219701f455e996ea3cb1f723c76b67c01e557ed75091a0e1272634b12c"
+    },
+    {
+      "evidence_id": "ev_79dc6e99869efe91",
+      "source_id": "src_dffbf4b1e6258079",
+      "text": "理想汽车 （英語： Li Auto Inc.， NASDAQ： LI 、 港交所： 2015），是一家汽车公司，首席执行官为创始人 李想，总部设于 北京 …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "22eb823bd438789fae3b51f2ffde9b3f005a879e97d4c5eef6c012854916a904"
+    },
+    {
+      "evidence_id": "ev_29c5bcd0c3ad7fe9",
+      "source_id": "src_45183b8a1eb620c4",
+      "text": "纯电市场当前的红利相比增程来说，更为可观。 乘联分会数据显示，今年上半年，纯电车累计零售量为332.9万辆，同比增长37.4%，是混动车累销的超1.5倍。 图/2025年6月新能源市场分析表.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e480f1c7522a7d1dbda870a1f9694436b75a435ceacc1b940c6277c341775896"
+    },
+    {
+      "evidence_id": "ev_68dde2643b894f73",
+      "source_id": "src_ea1008e6a0436b94",
+      "text": "比亚迪海外逆袭，在全球22个国家和地区销量超越特斯拉 智能速览比亚迪已在22个国家和地区的销量超越特斯拉。海外扩张遭遇贸易壁垒，墨西哥建厂计划被迫取消。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "da8c67ca660d96709918a4583fa5dc993a2ded2e4dfb94c777829606d66e3e0e"
+    },
+    {
+      "evidence_id": "ev_2a7d5381cf91f5b8",
+      "source_id": "src_9d277d600993cf88",
+      "text": "比亚迪、特斯拉、理想，背后都有桐乡这家“超级工厂”！目前，泰瑞已为比亚迪、特斯拉、理想等新能源汽车品牌及传统汽车品牌提供完整的解决方案。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9aff25e6319301e86e99229d68988aaa6f177073bcb4ae780fc2e7c603645a30"
+    },
+    {
+      "evidence_id": "ev_dd4fa012d386bc0f",
+      "source_id": "src_772efc394b9eae6d",
+      "text": "02. 海外产能和本土化，才能支撑得起比亚迪全球战略.2022年，比亚迪新能源销量达到186万辆，成为全球新能源汽车销量冠军。 与此同时，比亚迪还在向海外市场扩张。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "de375534e894676bf5919815165ecec129b8869044190acdab20ab75dc92f6c9"
+    },
+    {
+      "evidence_id": "ev_ff6dc39089cf64e0",
+      "source_id": "src_cac86b7682f159ec",
+      "text": "在完成0到1的阶段性跨越之后，理想汽车也开始寻找新的想象空间，智能化首当其冲成为其迈向下一个阶段的关键。 9月22日，理想汽车与英伟达（NVIDIA）及德赛西威正式签订三方战略合作协议。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4e21a2b2cc2685a50cf5e5913adadabfc644c52d338f2e37f803f5c0b6c5de51"
+    },
+    {
+      "evidence_id": "ev_0511df2ff8e7c3a9",
+      "source_id": "src_1bb8ee972b059c19",
+      "text": "提供官方报价、经销商查询、试驾预约、在线购车、精诚服务等服务.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "75e5f165754a5e2de31653cc68a663d90b6a871881d26f9a63aacc13b306831b"
+    },
+    {
+      "evidence_id": "ev_b80596aebe55c26c",
+      "source_id": "src_56e7550436a59517",
+      "text": "近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "a3a86f9fcfb27f01856ffc79029d5ac01b52e6ea3b374435c08ea1552068f0ab"
+    },
+    {
+      "evidence_id": "ev_1335f83be3fe9046",
+      "source_id": "src_62195a5087f9197b",
+      "text": "本文以清代蒙古族学者拉喜彭斯克所著《水晶珠》为研究对象，通过文本分析，探讨其中所蕴含的独特思想方法与特质。《水晶珠》成书于18世纪，但内容广泛涉及13-17世纪的蒙古历史与思想观念。研究表明，该书在叙述历史、评判人物、阐发见解的过程中，系统体现出一种基于实践观察、善于质疑反思、注重辩证综合并具有开放包容倾向的思想方法。这一思想特质根植于蒙古族游牧文化的实践经验，并在与多元文明（如汉、藏等）的接触交融中得以丰富和发展。本文旨在通过《水晶珠》这一具体文本，揭示13-17世纪蒙古族思想世界中的一个重要侧面，即其理性、审慎与务实的精神传统，为理解蒙古族历史文化及其在中华文明交流互鉴中的作用提供新的视角。",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "6f6c9da2444a2c73fab0dc319845c1b307d68fe32b5cb98f25e2a747460f4915"
+    },
+    {
+      "evidence_id": "ev_99e360866331ad48",
+      "source_id": "src_56e7550436a59517",
+      "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财政为新能源汽车发展保驾护航[N].中国财经报,2022-04-07(005). 袁竹.加强人力资源管理优化推动新能源汽车行业发展[N].中国工业报,2025-01-20(013). 高惠民.汽车电子电气架构的“前世、今生和未来”(二)[J].汽车维修与保养,2023,(08):57-61. 朱旭.白酒新周期下JG公司营销策略优化研究[D].云南师范大学,2024. 马铭斓.欧拉新能源汽车营销策略分析[J].中国市场,2023,(33):119-122. 谢哲伟.双碳目标背景下新能源汽车市场营销策略创新研究[J].时代汽车,2024,(01):177-179. 作者简介 上海理工大学 , 中国 未提供许可协议",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "67dd885317cc72c58589b599ac0ec41e419ab6430a5facd9144ad0b802bf4cc9"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_fd9c696cb4114838",
+        "text": "比亚迪走的是\"双轨对冲\"路线。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2167,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_93675ffd5c5b860a",
+          "ev_8e98d3ea78559d5b"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_52adef62c1a550ab",
+        "text": "2022年4月停产纯燃油车后，形成纯电（e平台3.0、刀片电池）与DM-i插混并行的产品矩阵。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1346,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_01fd632f662228d2",
+          "ev_8e98d3ea78559d5b",
+          "ev_ff42763d35fb5db9"
+        ],
+        "source_ids": [
+          "src_98d66746c083849d",
+          "src_0029b21a57fb91f2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_01fd632f662228d2",
+            "source_id": "src_98d66746c083849d",
+            "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8e98d3ea78559d5b",
+            "source_id": "src_98d66746c083849d",
+            "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_03a2cabe4455c21e",
+        "text": "需要澄清的是，DM-i属于串并联插电混动，发动机在高速工况可直接驱动车轮，与理想的纯串联增程在技术本质上不同。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1193,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8e98d3ea78559d5b",
+          "ev_01fd632f662228d2",
+          "ev_ff42763d35fb5db9"
+        ],
+        "source_ids": [
+          "src_98d66746c083849d",
+          "src_0029b21a57fb91f2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8e98d3ea78559d5b",
+            "source_id": "src_98d66746c083849d",
+            "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_01fd632f662228d2",
+            "source_id": "src_98d66746c083849d",
+            "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2f719f17fb6fea77",
+        "text": "这一双轨结构使比亚迪在充电设施欠完善的市场（包括海外新兴市场）具备更强的适应性。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1182,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_99e360866331ad48",
+          "ev_dd4fa012d386bc0f"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517",
+          "src_772efc394b9eae6d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c56939a814e30818",
+        "text": "特斯拉是三者中唯一没有任何混动或增程产品的企业，始终坚持纯电路线。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1484,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d0bb3705e6c758eb",
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "source_ids": [
+          "src_e7b8a80d8fb81e3a",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d0bb3705e6c758eb",
+            "source_id": "src_e7b8a80d8fb81e3a",
+            "text": "特斯拉铁粉不做纯电动，理想汽车能理想吗？而目前理想唯一的在售车型理想ONE其实也是一款很不理想的产品。 因为这是一台“增程式”新能源汽车。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_514a710fc1946a56",
+        "text": "学术研究也印证了这一点：其在中国市场的竞争压力主要来自本土新能源品牌，而非技术路线调整 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "source_ids": [
+          "src_56e7550436a59517"
+        ],
+        "reason": "证据仅为论文摘要，说明用PEST/SWOT分析特斯拉在中国的竞争力，未明确陈述竞争压力主要来自本土新能源品牌而非技术路线调整。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b80596aebe55c26c",
+            "source_id": "src_56e7550436a59517",
+            "text": "近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b355ef58feedaecf",
+        "text": "特斯拉的押注在于一体化压铸带来的成本优势和纯电架构的长期终局。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2353,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_56e7550436a59517",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b80596aebe55c26c",
+            "source_id": "src_56e7550436a59517",
+            "text": "近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8b9dc42e2e109284",
+        "text": "理想汽车是增程路线的代表。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7da953305856d451",
+          "ev_d0bb3705e6c758eb",
+          "ev_b2e3d274e4a47b57"
+        ],
+        "source_ids": [
+          "src_1629dc948fca8a0b",
+          "src_e7b8a80d8fb81e3a",
+          "src_6704a13b780eb80e"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7da953305856d451",
+            "source_id": "src_1629dc948fca8a0b",
+            "text": "理想汽车的“纯电元年”，2026年多款纯电车型能否复制增程成功？理想汽车2025年凭借增程路线盈利，但面临市场天花板和政策退潮，2026年将开启“纯电元年”，推出多款新车型。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d0bb3705e6c758eb",
+            "source_id": "src_e7b8a80d8fb81e3a",
+            "text": "特斯拉铁粉不做纯电动，理想汽车能理想吗？而目前理想唯一的在售车型理想ONE其实也是一款很不理想的产品。 因为这是一台“增程式”新能源汽车。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a77bbb67a6176417",
+        "text": "其增程原理为发动机不直接驱动车轮、仅作为增程器发电，提供纯电优先、油电混合、燃油优先三种模式 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.5,
+        "support_evidence_ids": [
+          "ev_01fd632f662228d2"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_01fd632f662228d2",
+          "ev_8e98d3ea78559d5b",
+          "ev_1071deb09686073a"
+        ],
+        "source_ids": [
+          "src_98d66746c083849d"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_01fd632f662228d2",
+            "source_id": "src_98d66746c083849d",
+            "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_579fa25915ed56e5",
+        "text": "理想官方产品规划为\"1款超级旗舰+5款增程+5款高压纯电\"车型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b2e3d274e4a47b57",
+          "ev_71f37f4a5942a890",
+          "ev_99e360866331ad48"
+        ],
+        "source_ids": [
+          "src_6704a13b780eb80e",
+          "src_992599838b23b27e",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b2e3d274e4a47b57",
+            "source_id": "src_6704a13b780eb80e",
+            "text": "到2025年，理想汽车将形成 “1款超级旗舰+5款增程电动车型+5款高压纯电车型”的产品布局，面向20万以上的市场，全面满足家庭用户需求。 理想为什么要发布纯电动汽车？",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_71f37f4a5942a890",
+            "source_id": "src_992599838b23b27e",
+            "text": "[4]未来汽车日报，李想：理想从不缺钱，从0-1的生存期要节约. [5]中信证券，理想汽车会是中国的特斯拉么？[7]中信证券，理想汽车：智能电动SUV制造商.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_27d53ece56f59dc1",
+        "text": "但增程红利正在消退：2025年Q4理想L系列增程销量同比下滑约60%，公司利润承压，因此将2026年定位为\"纯电元年\"，推出MEGA及i系列纯电车型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2152,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a919c84504df4bae",
+          "ev_29c5bcd0c3ad7fe9",
+          "ev_99e360866331ad48"
+        ],
+        "source_ids": [
+          "src_dcdcad9ef06c8043",
+          "src_45183b8a1eb620c4",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a919c84504df4bae",
+            "source_id": "src_dcdcad9ef06c8043",
+            "text": "L系列增程车处于换代节点，老款车型的折扣力度加大，直接拉低了客单价和毛利率。 2025年第四季度，理想汽车销售收入273亿元，同比下滑36.1%，卖车单价环比下滑了2.7万元至25万元。 理想L系列销量同比下滑了60%，导致四季度整体销量同比下滑31%。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_29c5bcd0c3ad7fe9",
+            "source_id": "src_45183b8a1eb620c4",
+            "text": "纯电市场当前的红利相比增程来说，更为可观。 乘联分会数据显示，今年上半年，纯电车累计零售量为332.9万辆，同比增长37.4%，是混动车累销的超1.5倍。 图/2025年6月新能源市场分析表.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bb53e96e3f8edd98",
+        "text": "这一转型既是主动布局，也是被动应对——行业数据显示中国BEV份额已超过燃油车，PHEV/EREV份额相对下滑。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0615,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ff42763d35fb5db9",
+          "ev_dd3d25dc903fb8ef",
+          "ev_5706fd1958de9072"
+        ],
+        "source_ids": [
+          "src_0029b21a57fb91f2",
+          "src_6bfe80673a91bf15",
+          "src_0582c2efab659224"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ff42763d35fb5db9",
+            "source_id": "src_0029b21a57fb91f2",
+            "text": "Li Auto, BYD DM-i, Huawei HIMA. ICE.The PHEV/EREV segment continues to grow in absolute terms but is losing share relative to BEV, a reversal from 2024 and 2025 when extended-range vehicles from Li Auto, AITO and Leapmotor were the primary growth engine.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_dd3d25dc903fb8ef",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "It means BYD’s cost structure has enough margin to eat the tariff and still undercut European competitors on price. The Dolphin Surf starts at 19,990 euros. The Atto 3 opens at around 36,990 euros. These prices include the tariff penalty. A price undertaking framework negotiated between China and the EU in January 2026 could eventually replace fixed duties with a minimum import price mechanism. If that deal takes effect, BYD’s pricing flexibility would increase further. Meanwhile, the European C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ec1bdbc023a916d1",
+        "text": "三家的智驾差异不仅是技术差异，更是商业模式差异。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0542,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bf07c300d45f9cf1",
+        "text": "硬件路线上，特斯拉是唯一的纯视觉派（无激光雷达、无毫米波雷达），比亚迪和理想均采用\"激光雷达+视觉\"的高配方案。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1434,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_93675ffd5c5b860a",
+          "ev_8e98d3ea78559d5b"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a0b9300d35b89544",
+        "text": "比亚迪的\"天神之眼\"采取独特的算力分层策略：A版双Orin X（508 TOPS）对标特斯拉HW4.0，C版则使用自研低算力芯片（80 TOPS），目标是将智驾下放到低价车型实现\"智驾平权\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3236,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d57144ce3e80e438",
+          "ev_f313e762bc1d7302",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_f4c2a08c03498a16",
+          "src_9da3a51baaf489d4",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d57144ce3e80e438",
+            "source_id": "src_f4c2a08c03498a16",
+            "text": "02、算法、算力、数据,比亚迪智驾的暴力美学.在算力分层上，天神之眼A版（508TOPS）用双Orin X对标特斯拉HW4.0，C版（80TOPS）则靠自研低算力芯片守住成本线。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f313e762bc1d7302",
+            "source_id": "src_9da3a51baaf489d4",
+            "text": "169. 城市 NOA 算力分水岭大揭秘 特斯拉淘汰 100 多 TOPS 智驾芯片，直接点透城市 NOA 的算力刚需！173. 智驾芯片算力终极对比：小米、小鹏、理想、蔚来、华为 vs 特斯拉.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a743ed3f7957c944",
+        "text": "理想AD Max为双Orin X+激光雷达，AD Pro为无激光雷达降配版。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1104,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f19a80a03a720a09",
+          "ev_ea46aee246231c94",
+          "ev_d57144ce3e80e438"
+        ],
+        "source_ids": [
+          "src_1deab728fefb33dc",
+          "src_707a0761a01444dd",
+          "src_f4c2a08c03498a16"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f19a80a03a720a09",
+            "source_id": "src_1deab728fefb33dc",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_ea46aee246231c94",
+            "source_id": "src_707a0761a01444dd",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落. 地推送。 理想汽车今年4月上海车展发布会现场.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_52703d6034bc36df",
+        "text": "商业模式上分歧最大：特斯拉FSD采用$99/月订阅制，并于2026年2月起取消一次性买断、全面转订阅；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0718,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_07998dad43bdfdd6",
+          "ev_f19a80a03a720a09",
+          "ev_6813f4e1f8d77c6d"
+        ],
+        "source_ids": [
+          "src_2d794017f99e21d1",
+          "src_1deab728fefb33dc",
+          "src_8198f0f9ff9c1b3b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_07998dad43bdfdd6",
+            "source_id": "src_2d794017f99e21d1",
+            "text": "FSD subscription price (US). $99/month. Outright purchase eliminated Feb 14, 2026.Tesla's FSD availability in China is currently limited by local data laws, with a broader rollout expected later in 2026 following local data center operations.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f19a80a03a720a09",
+            "source_id": "src_1deab728fefb33dc",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f1d1b13dd02d7a1b",
+        "text": "比亚迪和理想则将智驾功能随车型标配、不额外收费。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1462,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_93675ffd5c5b860a",
+          "ev_8e98d3ea78559d5b",
+          "ev_3e025190507d6bc4"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8e98d3ea78559d5b",
+            "source_id": "src_98d66746c083849d",
+            "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9fbc39b65923a9e3",
+        "text": "这反映出两种不同的收入逻辑——特斯拉将智驾视为软件订阅收入源，中国厂商则将其作为整车竞争力的组成部分。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1134,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_56e7550436a59517",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b80596aebe55c26c",
+            "source_id": "src_56e7550436a59517",
+            "text": "近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b694efa20622346a",
+        "text": "落地节奏上，理想是国内最早大规模推送无图城市NOA的厂商之一（2023年底落地100城）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1537,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f19a80a03a720a09",
+          "ev_ea46aee246231c94",
+          "ev_f313e762bc1d7302"
+        ],
+        "source_ids": [
+          "src_1deab728fefb33dc",
+          "src_707a0761a01444dd",
+          "src_9da3a51baaf489d4"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f19a80a03a720a09",
+            "source_id": "src_1deab728fefb33dc",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_ea46aee246231c94",
+            "source_id": "src_707a0761a01444dd",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落. 地推送。 理想汽车今年4月上海车展发布会现场.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_45707ef594c2f112",
+        "text": "比亚迪2025年通过\"全民智驾\"战略将NOA下放全系；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f19a80a03a720a09",
+          "ev_f313e762bc1d7302",
+          "ev_ea46aee246231c94"
+        ],
+        "source_ids": [
+          "src_1deab728fefb33dc",
+          "src_9da3a51baaf489d4",
+          "src_707a0761a01444dd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f19a80a03a720a09",
+            "source_id": "src_1deab728fefb33dc",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f313e762bc1d7302",
+            "source_id": "src_9da3a51baaf489d4",
+            "text": "169. 城市 NOA 算力分水岭大揭秘 特斯拉淘汰 100 多 TOPS 智驾芯片，直接点透城市 NOA 的算力刚需！173. 智驾芯片算力终极对比：小米、小鹏、理想、蔚来、华为 vs 特斯拉.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_611701476d195e96",
+        "text": "特斯拉FSD则受中国数据法规限制，在华可用性有限，推广依赖本地数据中心落地。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0769,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f19a80a03a720a09",
+          "ev_07998dad43bdfdd6",
+          "ev_6813f4e1f8d77c6d"
+        ],
+        "source_ids": [
+          "src_1deab728fefb33dc",
+          "src_2d794017f99e21d1",
+          "src_8198f0f9ff9c1b3b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f19a80a03a720a09",
+            "source_id": "src_1deab728fefb33dc",
+            "text": "早在今年4月18日，理想汽车在上海车展上宣布，其智驾系统AD Max 3.0的城市NOA导航辅助驾驶将于第二季度内开启推送，并于年底前完成100个城市的落.最后，特斯拉FSD V12的出现也将会是一个非常重要的变量。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_07998dad43bdfdd6",
+            "source_id": "src_2d794017f99e21d1",
+            "text": "FSD subscription price (US). $99/month. Outright purchase eliminated Feb 14, 2026.Tesla's FSD availability in China is currently limited by local data laws, with a broader rollout expected later in 2026 following local data center operations.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3c1f0c3ad960fee1",
+        "text": "需要说明的是，目前缺乏对三者智驾能力的独立第三方验证，厂商自报性能指标不应视为独立证据；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0527,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_1335f83be3fe9046",
+          "ev_01fd632f662228d2"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_62195a5087f9197b",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1335f83be3fe9046",
+            "source_id": "src_62195a5087f9197b",
+            "text": "本文以清代蒙古族学者拉喜彭斯克所著《水晶珠》为研究对象，通过文本分析，探讨其中所蕴含的独特思想方法与特质。《水晶珠》成书于18世纪，但内容广泛涉及13-17世纪的蒙古历史与思想观念。研究表明，该书在叙述历史、评判人物、阐发见解的过程中，系统体现出一种基于实践观察、善于质疑反思、注重辩证综合并具有开放包容倾向的思想方法。这一思想特质根植于蒙古族游牧文化的实践经验，并在与多元文明（如汉、藏等）的接触交融中得以丰富和发展。本文旨在通过《水晶珠》这一具体文本，揭示13-17世纪蒙古族思想世界中的一个重要侧面，即其理性、审慎与务实的精神传统，为理解蒙古族历史文化及其在中华文明交流互鉴中的作用提供新的视角。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1917c91df9d64e14",
+        "text": "已有的学术对比研究仅覆盖财务与用户满意度层面 ，不涉及智驾技术指标。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.25,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_93675ffd5c5b860a"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b"
+        ],
+        "reason": "证据显示一篇财务能力对比论文及若干参考文献（含营销战略比较），但未提及用户满意度研究，也无法确立'仅覆盖财务与用户满意度、不涉及智驾技术'这一排他性论断。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b91e69b54326f8ad",
+        "text": "比亚迪是扩张最激进的一方。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1957,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_68dde2643b894f73",
+          "ev_dd4fa012d386bc0f",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_ea1008e6a0436b94",
+          "src_772efc394b9eae6d",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_68dde2643b894f73",
+            "source_id": "src_ea1008e6a0436b94",
+            "text": "比亚迪海外逆袭，在全球22个国家和地区销量超越特斯拉 智能速览比亚迪已在22个国家和地区的销量超越特斯拉。海外扩张遭遇贸易壁垒，墨西哥建厂计划被迫取消。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_dd4fa012d386bc0f",
+            "source_id": "src_772efc394b9eae6d",
+            "text": "02. 海外产能和本土化，才能支撑得起比亚迪全球战略.2022年，比亚迪新能源销量达到186万辆，成为全球新能源汽车销量冠军。 与此同时，比亚迪还在向海外市场扩张。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_554cdeb9e13cffdd",
+        "text": "其欧洲市场份额从2025年上半年的1.0%升至2026年上半年的2.4%，注册量174,144辆，首次超过特斯拉的170,351辆——尽管双方份额持平，但比亚迪\"翻倍上升\"与特斯拉\"震荡回升\"的轨迹截然不同 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6932f8e064313c00",
+          "ev_dd3d25dc903fb8ef",
+          "ev_8f04caa1a8d71fa6"
+        ],
+        "source_ids": [
+          "src_6bfe80673a91bf15"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6932f8e064313c00",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "For the first time, Tesla and BYD finished a half-year period with identical European market share. Both companies closed H1 2026 at 2. 4% of total new car registrations across the EU, EFTA, and the UK. The number is the same, but the trajectories that produced it could not be more different. BYD climbed from 1. 0% in H1 2025 to 2. 4%, more than doubling its position in twelve months. Tesla rose from 1. 6% to 2. 4%, a meaningful recovery after two years of European declines. In absolute registra",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_dd3d25dc903fb8ef",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "It means BYD’s cost structure has enough margin to eat the tariff and still undercut European competitors on price. The Dolphin Surf starts at 19,990 euros. The Atto 3 opens at around 36,990 euros. These prices include the tariff penalty. A price undertaking framework negotiated between China and the EU in January 2026 could eventually replace fixed duties with a minimum import price mechanism. If that deal takes effect, BYD’s pricing flexibility would increase further. Meanwhile, the European C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c9b837f946e2b10c",
+        "text": "本地化方面，泰国工厂已投产，匈牙利工厂规划2026年量产（初期15万辆/年），量产后可规避欧盟关税；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.099,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a722e7fed3e3e696",
+          "ev_020181baaaeaf8be",
+          "ev_47f6ae499cd3d977"
+        ],
+        "source_ids": [
+          "src_0964fa712927f2c1",
+          "src_1c6e5606f02e4503",
+          "src_9f8c5fe17ca27c35"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a722e7fed3e3e696",
+            "source_id": "src_0964fa712927f2c1",
+            "text": "比亚迪泰国工厂竣工 图源：比亚迪.长城汽车出口俄罗斯22万辆，占其总出口量的50%左右。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_020181baaaeaf8be",
+            "source_id": "src_1c6e5606f02e4503",
+            "text": "全球化迎来关键节点，上半年海外出口近10万台，西班牙工厂计划四季度启动本地化组装，借助Stellantis网络全球渠道突破2000家，正以国内规模与海外盈利并重. 的模式加速向百万台目标迈进。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0421b86c6ff3e127",
+        "text": "同时评估西班牙、法国作为第二座欧洲工厂。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1345,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_020181baaaeaf8be",
+          "ev_01fd632f662228d2",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_1c6e5606f02e4503",
+          "src_98d66746c083849d",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_020181baaaeaf8be",
+            "source_id": "src_1c6e5606f02e4503",
+            "text": "全球化迎来关键节点，上半年海外出口近10万台，西班牙工厂计划四季度启动本地化组装，借助Stellantis网络全球渠道突破2000家，正以国内规模与海外盈利并重. 的模式加速向百万台目标迈进。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_01fd632f662228d2",
+            "source_id": "src_98d66746c083849d",
+            "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_93a31a34b6922a9f",
+        "text": "其产品价格带从2万欧元级的Dolphin Surf到7万欧元以上的汉，覆盖面最广。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1193,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_dd3d25dc903fb8ef",
+          "ev_8f04caa1a8d71fa6",
+          "ev_01fd632f662228d2"
+        ],
+        "source_ids": [
+          "src_6bfe80673a91bf15",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_dd3d25dc903fb8ef",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "It means BYD’s cost structure has enough margin to eat the tariff and still undercut European competitors on price. The Dolphin Surf starts at 19,990 euros. The Atto 3 opens at around 36,990 euros. These prices include the tariff penalty. A price undertaking framework negotiated between China and the EU in January 2026 could eventually replace fixed duties with a minimum import price mechanism. If that deal takes effect, BYD’s pricing flexibility would increase further. Meanwhile, the European C",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8f04caa1a8d71fa6",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "The Turkey factory, originally announced as a $1 billion investment with a 2026 production start, is now on hold. BYD has paused construction and is reportedly evaluating alternative locations for a second European plant. Until Hungary is running at scale, every BYD sold in Europe carries that 27% duty cost. Model Lineup: Breadth vs. Focus BYD’s European strategy relies on range. The lineup now spans from the Dolphin Surf at 19,990 euros to the Han sedan above 70,000 euros. The updated Atto 3 Ev",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_429b1aa4c18dae96",
+        "text": "风险在于欧盟已对中国产BEV征收反补贴税（比亚迪税率17%，叠加10%关税共27%），且拟扩展至插混车型，将直接冲击其PHEV出口。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.035,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ff42763d35fb5db9",
+          "ev_dd3d25dc903fb8ef",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_0029b21a57fb91f2",
+          "src_6bfe80673a91bf15",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ff42763d35fb5db9",
+            "source_id": "src_0029b21a57fb91f2",
+            "text": "Li Auto, BYD DM-i, Huawei HIMA. ICE.The PHEV/EREV segment continues to grow in absolute terms but is losing share relative to BEV, a reversal from 2024 and 2025 when extended-range vehicles from Li Auto, AITO and Leapmotor were the primary growth engine.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_dd3d25dc903fb8ef",
+            "source_id": "src_6bfe80673a91bf15",
+            "text": "It means BYD’s cost structure has enough margin to eat the tariff and still undercut European competitors on price. The Dolphin Surf starts at 19,990 euros. The Atto 3 opens at around 36,990 euros. These prices include the tariff penalty. A price undertaking framework negotiated between China and the EU in January 2026 could eventually replace fixed duties with a minimum import price mechanism. If that deal takes effect, BYD’s pricing flexibility would increase further. Meanwhile, the European C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3d5c60f9a348404b",
+        "text": "特斯拉是布局最成熟的一方。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1773,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_93675ffd5c5b860a",
+          "ev_99e360866331ad48"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0225a686134ad718",
+        "text": "四大超级工厂（上海贡献约全球产量40%）加柏林工厂（欧洲销售车辆完全规避关税）构成结构性优势。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1688,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_62d3a095071cd3f2",
+          "ev_93675ffd5c5b860a",
+          "ev_ea95b834a0da6da1"
+        ],
+        "source_ids": [
+          "src_d776e3d3216b2b96",
+          "src_65038ddf4109726b",
+          "src_9d277d600993cf88"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_62d3a095071cd3f2",
+            "source_id": "src_d776e3d3216b2b96",
+            "text": "特斯拉上海工厂因疫情突发临时停产，全球供应链再遭考验.特斯拉上海工厂（Giga Shanghai）是全球最大单一电动汽车生产基地，贡献约全球总产量的40%。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7174f840c9448eb6",
+        "text": "其另一护城河是充电网络：全球超7.5万个充电桩，欧洲部署500kW V4超充，并已向非特斯拉车辆开放、推出贴牌计划，使充电本身成为收入来源。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.106,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_8e98d3ea78559d5b",
+          "ev_93675ffd5c5b860a"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_98d66746c083849d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8e98d3ea78559d5b",
+            "source_id": "src_98d66746c083849d",
+            "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_02273a8aad141ee6",
+        "text": "但在中国市场其份额持续萎缩 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "supported",
+        "verification_score": 0.7312,
+        "support_evidence_ids": [
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "source_ids": [
+          "src_56e7550436a59517"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b80596aebe55c26c",
+            "source_id": "src_56e7550436a59517",
+            "text": "近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ef3fb18aeb6ea94f",
+        "text": "理想是全球化程度最低的一方。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1196,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_020181baaaeaf8be",
+          "ev_62d3a095071cd3f2",
+          "ev_135632b615cd1f5d"
+        ],
+        "source_ids": [
+          "src_1c6e5606f02e4503",
+          "src_d776e3d3216b2b96",
+          "src_65038ddf4109726b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_020181baaaeaf8be",
+            "source_id": "src_1c6e5606f02e4503",
+            "text": "全球化迎来关键节点，上半年海外出口近10万台，西班牙工厂计划四季度启动本地化组装，借助Stellantis网络全球渠道突破2000家，正以国内规模与海外盈利并重. 的模式加速向百万台目标迈进。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_62d3a095071cd3f2",
+            "source_id": "src_d776e3d3216b2b96",
+            "text": "特斯拉上海工厂因疫情突发临时停产，全球供应链再遭考验.特斯拉上海工厂（Giga Shanghai）是全球最大单一电动汽车生产基地，贡献约全球总产量的40%。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ca47f7a168813179",
+        "text": "长期仅有常州单一生产基地，无海外工厂，出口规模远小于另外两家。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2009,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_47f6ae499cd3d977",
+          "ev_62d3a095071cd3f2",
+          "ev_020181baaaeaf8be"
+        ],
+        "source_ids": [
+          "src_9f8c5fe17ca27c35",
+          "src_d776e3d3216b2b96",
+          "src_1c6e5606f02e4503"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_47f6ae499cd3d977",
+            "source_id": "src_9f8c5fe17ca27c35",
+            "text": "相比蔚来和小鹏，理想的产能水平目前已落于下风。 蔚来汽车江淮工厂的年产能计划在年底提升至30万辆，小鹏汽车的三座工厂产能规划也在30万辆。 目前，理想汽车仅有常州工厂一个生产基地，设计产能为10万辆。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_62d3a095071cd3f2",
+            "source_id": "src_d776e3d3216b2b96",
+            "text": "特斯拉上海工厂因疫情突发临时停产，全球供应链再遭考验.特斯拉上海工厂（Giga Shanghai）是全球最大单一电动汽车生产基地，贡献约全球总产量的40%。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bc95fdadbd56662f",
+        "text": "增程路线虽降低了对海外充电设施的依赖，但其纯电车型（MEGA/i系列）若要出海，将受制于缺乏自有补能网络——而这恰是特斯拉的强项。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1117,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8e98d3ea78559d5b",
+          "ev_01fd632f662228d2",
+          "ev_7da953305856d451"
+        ],
+        "source_ids": [
+          "src_98d66746c083849d",
+          "src_1629dc948fca8a0b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8e98d3ea78559d5b",
+            "source_id": "src_98d66746c083849d",
+            "text": "理想ONE在家充电教程 2022-04-29 理想ONE可以使用充电桩进行充电，目前大部分理想车主都选择了安装家用充电桩，具体使用方. . . 理想ONE快充好还是慢充好？ 理想ONE一直用快充有影响吗 2022-04-25 理想ONE选择快充比较好，首要原因肯定是速度快，使用快充时电量从30%充到80%仅需半个小时，. . . 高速路况 热门车管所 全国充电桩 全国服务区 北京高速路况 上海高速路况 天津高速路况 重庆高速路况 山东高速路况 湖南高速路况 安徽高速路况 江西高速路况 陕西高速路况 四川高速路况 甘肃高速路况 河北高速路况 云南高速路况 湖北高速路况 辽宁高速路况 贵州高速路况 广东高速路况 广西高速路况 青海高速路况 江苏高速路况 浙江高速路况 吉林高速路况 内蒙古高速路况 河南高速路况 山西高速路况 宁夏高速路况 福建高速路况 黑龙江高速路况 海南高速路况 新疆高速路况 西藏高速路况 北京车管所 上海车管所 天津车管所 重庆车管所 广州车管所 沈阳车管所 南京车管所 武汉车管所 成都车管所 眉山车管所 资阳车管所 西安车管所 石家庄车管所 太原车管所 呼和浩特车管所",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_01fd632f662228d2",
+            "source_id": "src_98d66746c083849d",
+            "text": "无敌电动网 电动百科 电车资讯 选车推荐 用车百科 无敌电动网 电车手册 > 正文 理想ONE的增程式原理，理想增程式电动汽车原理解析 时间：2022-04-15 22:03:01 编辑：无敌电动网 关于理想ONE的增程式原理，详解如下： 首先需要知道理想ONE的发动机并不参与直接驱动车辆，而是作为一台增程器，维持发电机运作，所产生的电量主要用于驱动电机以及为电池包充电。 理想ONE根据工况的不同可分为以下几种驾驶模式： １、纯电优先：处于该模式时，将优先使用动力电池包为驱动电机供电，当电池电量下降到20％时，发动机就会启动，此时发动机优先为驱动电机供电，并将一小部分发电量给电池包充电，让电池包的电量一直维持在20％，避免电池长期处于低电量状态。 ２、油电混合：切换到该模式下，在低速行驶时依旧优先使用电池的电量驱动车辆，发动机只有在中高速时才会运转，同时电池电量低于80％时发动机也会开始工作为驱动电机供电以及维持电池的电量。 ３、燃油优先：在该模式下，理想ONE的增程系统会尽量维持电池电量在高位，一般在电量低于70％时发动机就会开始工作进行发电，此时将会优先维持电池的电量，继而再保证驱",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_08617ec803eb7c84",
+        "text": "三者的差异本质是三种风险敞口的分布：比亚迪的双轨技术+多点建厂是对政策与市场不确定性的对冲，代价是战线过长、面临欧盟关税扩围；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1104,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_93675ffd5c5b860a",
+          "ev_135632b615cd1f5d",
+          "ev_99e360866331ad48"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_93675ffd5c5b860a",
+            "source_id": "src_65038ddf4109726b",
+            "text": "[ Google Scholar CrossRef 徐瑶, 赵天文, 周爽, 王钰, 陈国庆. 新能源汽车行业发展困境及对策研究[J]. 内蒙古科技与经济, 2021(14): 6-7. 孙建阳, 孙彤, 罗俊琳. 我国新能源汽车行业的投资价值分析及其发展策略——以比亚迪为例[J]. 大陆桥视野, 2021(5): 82-83+86. 梁博锐. 基于哈佛分析框架的新能源汽车企业财务分析——以比亚迪公司为例[J]. 河北企业, 2022(8): 106-109. [ Google Scholar CrossRef 刘妮, 尹珍丽. 经济新常态对我国新能源汽车行业的影响[J]. 广西质量监督导报, 2021(2): 210-211. 姜滨滨, 徐保罗. 环境不确定性下新能源汽车企业营销战略研究——比亚迪和特斯拉的比较[J]. 中国商论, 2022(2): 37-40. [ Google Scholar CrossRef 张世宇. 浅析我国发展新能源汽车产业面临的挑战——以特斯拉在中国上海工厂为例[J]. 环渤海经济瞭望, 2021(5): 50-51. [ Google Scholar C",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_733885ff89d7afb3",
+        "text": "特斯拉的纯电单押+订阅模式依赖智驾软件兑现，其纯视觉路线若被证明正确将获得最低硬件成本，但中国市场数据合规是现实瓶颈；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1147,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_99e360866331ad48",
+          "ev_b80596aebe55c26c"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2962588c332a9f91",
+        "text": "理想的增程曾是精准的市场卡位，但随着行业向纯电迁移，其\"纯电元年\"转型成败将决定公司下一个五年的位置，而全球化短板使其在转型期缺少海外第二增长曲线的缓冲。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0929,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_135632b615cd1f5d",
+          "ev_99e360866331ad48",
+          "ev_7da953305856d451"
+        ],
+        "source_ids": [
+          "src_65038ddf4109726b",
+          "src_56e7550436a59517",
+          "src_1629dc948fca8a0b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_135632b615cd1f5d",
+            "source_id": "src_65038ddf4109726b",
+            "text": "期刊菜单 最新文章 历史文章 投稿须知 文章处理费 最新文章 历史文章 投稿须知 文章处理费 新能源汽车企业财务能力分析——基于特斯拉和比亚迪公司 Financial Capabilities Analysis of New Energy Automobile Enterprise—Based on Tesla and BYD DOI: 10. 12677/WER. 2022. 114033 科研立项经费支持 刘 捷 ：北方工业大学经济管理学院，北京 关键词: 新能源汽车企业 SWOT分析 财务能力分析 New Energy Automobile Enterprise SWOT Analysis Financial Capability Analysis 在全球呼吁“低碳”的大环境下，新能源汽车行业成为各国发展的重要领域，也成为决定我国汽车行业是否可以成功转型升级的关键因素之一。 文章使用SWOT对新能源汽车行业的环境因素进行分析，同时选取特斯拉和比亚迪两家新能源汽车企业来比较各项财务比率。 基于两家国内外新能源汽车企业的四大财务能力的差距，为我国新能源汽车行业未来的高质量发展提供一些",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_99e360866331ad48",
+            "source_id": "src_56e7550436a59517",
+            "text": "• 栏目 文章 国外新能源汽车中国市场企业竞争力分析——以特斯拉为例 https://doi.org/10.63887/jfem.2025.1.5.5 上海理工大学 , 中国 第 1 卷第 5 期 (2025 年): 《财经管理》 关键词: 新能源汽车；PEST分析；SWOT分析；市场竞争力 引用格式 参考文献 作者信息 版权信息 近些年，国外新能源汽车品牌在中国的市场份额持续萎缩，为了探究此原因，本文通过PEST模型与SWOT模型相结合的方法对其中较有代表性的特斯拉汽车进行分析。PEST用于分析研究特斯拉等国外新能源汽车在中国所处的政治、经济、社会以及技术环境，分析当前汽车市场宏观环境对于特斯拉等国外新能源汽车品牌的利弊。SWOT分析用于研究特斯拉的内部优劣势以及机会和威胁，最后总结在这种环境下特斯拉等国外新能源汽车品牌如何保持原有的优势弥补现有不足，进而提升其在中国市场的企业竞争力，并对其未来的发展战略提出相应建议。 唐子晴,任芳容,孙芳怡.我国新能源汽车推广效率及影响因素分析——基于SBM-DEA和Tobit模型[J].时代经贸,2025,22(03):63-66. 董丽.中央财",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 51,
+    "evidence_count": 60,
+    "supported_count": 2,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 38,
+    "coverage": 0.05,
+    "primary_source_ratio": 0.098,
+    "fulltext_source_ratio": 0.0784,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 30
+  },
+  "run_metadata": {
+    "final_report_sha256": "3ced4005994bd9cea7a2367d50f1784607aad1713a08afc2685e2d31b1c81952",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 40,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 38,
+        "coverage": 0.05,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 30
+      },
+      "after": {
+        "claim_count": 40,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 38,
+        "coverage": 0.05,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 30
+      }
+    }
+  }
+}

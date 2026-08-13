@@ -1,0 +1,3051 @@
+{
+  "schema_version": "1.0",
+  "query": "分析当前 AI 芯片市场格局，比较 NVIDIA、AMD、Intel 及中国厂商（华为昇腾、寒武纪）在训练与推理场景下的竞争力。",
+  "created_at": "2026-08-13T20:47:33.002856+00:00",
+  "sources": [
+    {
+      "source_id": "src_d4fbf16c252845de",
+      "url": "https://aipmgo.com/archives/aws-xie-shou-anthropic-ya-zhu-trainium2-zheng-duo-sheng-cheng-shi-ai-suan-li-shi-chang-fen-e",
+      "title": "AWS携手Anthropic押注Trainium2 争夺生成式AI算力市场份额 - AIPMGO",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片市场格局 市场份额 训练芯片 推理芯片 NVIDIA AMD 2025",
+        "retrieval_relevance": 0.776,
+        "host_domain": "aipmgo.com"
+      }
+    },
+    {
+      "source_id": "src_8e5ef85d1df5667b",
+      "url": "https://rfi.fr/cn/中国/20260812-费加罗报-中国ai产业突飞猛进，从芯片到机器人无不颠覆硅谷的格局",
+      "title": "费加罗报：中国AI... - RFI - 法国国际广播电台",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片市场格局 市场份额 训练芯片 推理芯片 NVIDIA AMD 2025",
+        "retrieval_relevance": 0.762,
+        "host_domain": "rfi.fr"
+      }
+    },
+    {
+      "source_id": "src_c95e0641d3b4b972",
+      "url": "https://watermelonwater.tech/insights/6万亿估值52市场份额ai平行宇宙",
+      "title": "6万亿估值与52%市场份额：AI平行宇宙下的资本飞轮与自主创新双路径",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片市场格局 市场份额 训练芯片 推理芯片 NVIDIA AMD 2025",
+        "retrieval_relevance": 0.748,
+        "host_domain": "watermelonwater.tech"
+      }
+    },
+    {
+      "source_id": "src_e527e11e96ca50ed",
+      "url": "https://dapingtime.com/article/159.html",
+      "title": "亚马逊推出第三代AI训练芯片 Trainum3，推动AI计算性能革命 | 大屏时代",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片市场格局 市场份额 训练芯片 推理芯片 NVIDIA AMD 2025",
+        "retrieval_relevance": 0.734,
+        "host_domain": "dapingtime.com"
+      }
+    },
+    {
+      "source_id": "src_3510870460b34fa1",
+      "url": "https://youtube.com/watch?v=-9_bYPgKqFQ",
+      "title": "蘇姿豐告別RDNA時代？ AMD UDNA架構曝光：AI... - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片市场格局 市场份额 训练芯片 推理芯片 NVIDIA AMD 2025",
+        "retrieval_relevance": 0.706,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_89dbc3e925f78bf5",
+      "url": "https://m.mp.oeeee.com/a/BAAFRD0000202605091587100.html",
+      "title": "DeepSeek点燃国产算力热情，寒武纪们谁是最大赢家",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "46f7149bfde9a5588916e848a4fd208098504c4ddaa483d0fa4ef974ed5f8e12",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 出货量 市场份额 2025 中国",
+        "retrieval_relevance": 0.8918,
+        "host_domain": "m.mp.oeeee.com"
+      }
+    },
+    {
+      "source_id": "src_724b59c4891228c7",
+      "url": "https://app.myzaker.com/news/article.php?pk=69eb434f8e9f09139d10bda4",
+      "title": "DeepSeek适配华为昇腾 国产AI的自主化之路步入加速期_ZAKER新闻",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 产能 生态 2025 现状",
+        "retrieval_relevance": 0.875,
+        "host_domain": "app.myzaker.com"
+      }
+    },
+    {
+      "source_id": "src_1418e54e8fb8b858",
+      "url": "https://c.m.163.com/news/a/K7VSKIHA0556DKZT.html",
+      "title": "AI巨头对比：英伟达VS寒武纪，差距到底有多大",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 出货量 市场份额 2025 中国",
+        "retrieval_relevance": 0.8017,
+        "host_domain": "c.m.163.com"
+      }
+    },
+    {
+      "source_id": "src_7342f1710f1189dd",
+      "url": "https://semi.ofweek.com/2026-06/ART-202539-8420-30691879.html",
+      "title": "GPU四小龙上桌，寒武纪们不再孤单 - OFweek半导体网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 产能 生态 2025 现状",
+        "retrieval_relevance": 0.9,
+        "host_domain": "semi.ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_82948c9b03f1fbb9",
+      "url": "https://forbeschina.com/insights/70292",
+      "title": "国产AI算力板块全线沸腾：寒武纪市值突破5,000... | Forbes China",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 产能 生态 2025 现状",
+        "retrieval_relevance": 0.775,
+        "host_domain": "forbeschina.com"
+      }
+    },
+    {
+      "source_id": "src_dc8ba45858233a6f",
+      "url": "https://t.cj.sina.com.cn/articles/view/1649252577/624d98e100101jua2",
+      "title": "英伟达200亿美元“吞掉”Groq，中国对标公司借壳上市，市值飙至229亿",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "全球AI芯片市场规模 2025 英伟达 90%份额 数据中心GPU 训练 推理",
+        "retrieval_relevance": 0.888,
+        "host_domain": "t.cj.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_120e47da7f3ddbf9",
+      "url": "https://doccdn.yicai.com/doc/2025/01/2d68df55f7ff8c33dc64e6280035a180.pdf",
+      "title": "AI GPU 市场规模",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "全球AI芯片市场规模 2025 英伟达 90%份额 数据中心GPU 训练 推理",
+        "retrieval_relevance": 0.832,
+        "host_domain": "doccdn.yicai.com"
+      }
+    },
+    {
+      "source_id": "src_e4b5890c770b1250",
+      "url": "https://m.gelonghui.com/p/6039023",
+      "title": "“山寨机之王”失守手机，联发科50亿美元豪赌AI，能逃过“高通们”围剿吗",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "全球AI芯片市场规模 2025 英伟达 90%份额 数据中心GPU 训练 推理",
+        "retrieval_relevance": 0.762,
+        "host_domain": "m.gelonghui.com"
+      }
+    },
+    {
+      "source_id": "src_36b89275f53faf4f",
+      "url": "https://wallstreetcn.com/articles/3779195",
+      "title": "万亿参数！ 英伟达被曝正在开发新一代AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "全球AI芯片市场规模 2025 英伟达 90%份额 数据中心GPU 训练 推理",
+        "retrieval_relevance": 0.72,
+        "host_domain": "wallstreetcn.com"
+      }
+    },
+    {
+      "source_id": "src_d343ba73a951c208",
+      "url": "https://bbc.com/zhongwen/articles/clyxr681dn7o/simp",
+      "title": "AI将减少工作时间？ 科技业员工称每周工时高达90小时 - BBC News 中文",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "全球AI芯片市场规模 2025 英伟达 90%份额 数据中心GPU 训练 推理",
+        "retrieval_relevance": 0.692,
+        "host_domain": "bbc.com"
+      }
+    },
+    {
+      "source_id": "src_2a9af76528bcbc2c",
+      "url": "https://nvidia.com/en-us",
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "ce7b47e3f146ff429619c3c3efede021a3ba6a000a20cb5eba9d8b3fbabea826",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.4819,
+        "host_domain": "nvidia.com"
+      }
+    },
+    {
+      "source_id": "src_7868d7583351a663",
+      "url": "https://autonainews.com/intel-gaudi-3-amd-mi300x-tpus-challenge-nvidias-ai-dominance-2",
+      "title": "Nvidia Alternatives Gain Ground With Gaudi 3 and MI300X",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.8929,
+        "host_domain": "autonainews.com"
+      }
+    },
+    {
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "url": "https://ainewsgrid.com/blog/ai-chip-wars-amd-mi400-nvidia-blackwell-intel-gaudi-3",
+      "title": "AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "364b6950d75f7b85ed05d1bc496fdb59403110a5212504a836c66ef6b116394e",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.8686,
+        "host_domain": "ainewsgrid.com"
+      }
+    },
+    {
+      "source_id": "src_5cc90e614eb1476d",
+      "url": "https://linkedin.com/posts/hostrunway_????????-???-??-???-??????-activity-7422507935311912960-qYrP",
+      "title": "NVIDIA H100 vs AMD MI300X vs Intel Gaudi3: AI GPU Comparison",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.8543,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_02add68fcefbbf68",
+      "url": "https://inferencex.semianalysis.com/compare/minimax-m27-b200-vs-mi300x",
+      "title": "B200 vs MI300X: MiniMax M2.7 Inference Benchmark | InferenceX",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.8543,
+        "host_domain": "inferencex.semianalysis.com"
+      }
+    },
+    {
+      "source_id": "src_e750cba1d8c1ba44",
+      "url": "https://norrisai.us/analysis/nvda-2026",
+      "title": "NVIDIA (NVDA) AI Infrastructure Analysis 2026 | NorrisAI AlphaLens",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NVIDIA H100 B200 vs AMD MI300X vs Intel Gaudi 3 AI training inference performance price comparison",
+        "retrieval_relevance": 0.8443,
+        "host_domain": "norrisai.us"
+      }
+    },
+    {
+      "source_id": "src_c89b765b3ba7fc07",
+      "url": "https://caifuhao.eastmoney.com/news/20251205003447549114330",
+      "title": "caifuhao.eastmoney.com/news/20251205003447549114330",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 训练 推理 性能对比 CUDA ROCm 生态 2025",
+        "retrieval_relevance": 0.8043,
+        "host_domain": "caifuhao.eastmoney.com"
+      }
+    },
+    {
+      "source_id": "src_30c25eba6067ddc6",
+      "url": "https://eet-china.com/mp/a396399.html",
+      "title": "全球AI系统计算平台对比：CUDA、CANN、Neuware和ROCm...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 训练 推理 性能对比 CUDA ROCm 生态 2025",
+        "retrieval_relevance": 0.7771,
+        "host_domain": "eet-china.com"
+      }
+    },
+    {
+      "source_id": "src_34e018df4b6410f6",
+      "url": "https://163.com/dy/article/IJEPPTHN0511A3UP.html",
+      "title": "GPU框架，从ROCm、Pytorch看生态壁垒|gpu|大模型|cuda|pytorch...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 训练 推理 性能对比 CUDA ROCm 生态 2025",
+        "retrieval_relevance": 0.7771,
+        "host_domain": "163.com"
+      }
+    },
+    {
+      "source_id": "src_db2408cccf0de231",
+      "url": "https://blog.csdn.net/m0_49711991/article/details/135109487",
+      "title": "一文读懂AI计算平台库_海光的dtk-CSDN博客",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 训练 推理 性能对比 CUDA ROCm 生态 2025",
+        "retrieval_relevance": 0.7257,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_d7798b5d7117fe6a",
+      "url": "https://datawhalechina.github.io/hello-rocm/zh/03-infra",
+      "title": "hello-rocm",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 训练 推理 性能对比 CUDA ROCm 生态 2025",
+        "retrieval_relevance": 0.2338,
+        "host_domain": "datawhalechina.github.io"
+      }
+    },
+    {
+      "source_id": "src_2081bdcac8d46d30",
+      "url": "https://juejin.cn/post/7380995631790964772",
+      "title": "大模型国产化适配11-LLM...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "昇腾910B 思元590 训练 推理 性能 对比",
+        "retrieval_relevance": 0.8393,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_65b1c8d3addbbd6d",
+      "url": "https://askfilo.com/user-question-answers-smart-solutions/dan-xuan-ti-2-20-ben-ti-fen-shu-2-2-guan-yu-sheng-teng-3432323338393336",
+      "title": "单选题(2/20)...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "昇腾910B 思元590 训练 推理 性能 对比",
+        "retrieval_relevance": 0.8393,
+        "host_domain": "askfilo.com"
+      }
+    },
+    {
+      "source_id": "src_fabff2e97b579fb5",
+      "url": "http://chinasihan.com/news/cyxw/20537.html",
+      "title": "华为昇腾：384...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "昇腾910B 思元590 训练 推理 性能 对比",
+        "retrieval_relevance": 0.8393,
+        "host_domain": "chinasihan.com"
+      }
+    },
+    {
+      "source_id": "src_e279d1bfb5e1bd8a",
+      "url": "https://t.cj.sina.com.cn/articles/view/2329708737/8adc88c100101gopk",
+      "title": "特朗普解禁H200背后：国产昇腾910B性能逼平90%，英伟达的让步？",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "昇腾910B 思元590 训练 推理 性能 对比",
+        "retrieval_relevance": 0.792,
+        "host_domain": "t.cj.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_6cf669e568224220",
+      "url": "https://blog.csdn.net/2502_90485365/article/details/145743358",
+      "title": "DeepSeek推理：910B为何是绝佳之选-CSDN博客",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "昇腾910B 思元590 训练 推理 性能 对比",
+        "retrieval_relevance": 0.792,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_a6670ebbcdebfc4c",
+      "url": "https://hstong.com/news/detail/25082718520618585",
+      "title": "寒武纪因何一个月市值翻倍？ 港美股资讯 | 华盛通",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "cb405001edb56bb44ccb0c554d95b9c72f794a13ff61641ff7437731d1bd4be1",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 产能 生态 2025 现状",
+        "retrieval_relevance": 0.925,
+        "host_domain": "hstong.com"
+      }
+    },
+    {
+      "source_id": "src_0338f34edf086805",
+      "url": "https://h5.ifeng.com/c/vivoArticle/v002BPSqLNXO-_f3GBlITvSHHUwXcHYEE1HKefMzIqyFtpNI__?isNews=1&showComments=0",
+      "title": "80后两兄弟，三次被逼到绝境，狂飙三年干到6600亿",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "华为昇腾 寒武纪 AI芯片 产能 生态 2025 现状",
+        "retrieval_relevance": 0.925,
+        "host_domain": "h5.ifeng.com"
+      }
+    },
+    {
+      "source_id": "src_467082c42313f8c6",
+      "url": "https://cnblogs.com/zuoyang/p/20669946",
+      "title": "DeepSeek-R1 端侧 LLM 工程【左扬精讲】—— llama.cpp...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "寒武纪 思元590 MLU590 性能 FP16 TFLOPS 昇腾910B 对比 A100",
+        "retrieval_relevance": 0.791,
+        "host_domain": "cnblogs.com"
+      }
+    },
+    {
+      "source_id": "src_c60e935c2bf10ce3",
+      "url": "https://iotdt.com/news/xingyezixun/2693.html",
+      "title": "iotdt.com/news/xingyezixun/2693.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "寒武纪 思元590 MLU590 性能 FP16 TFLOPS 昇腾910B 对比 A100",
+        "retrieval_relevance": 0.7628,
+        "host_domain": "iotdt.com"
+      }
+    },
+    {
+      "source_id": "src_cecb4ed7e081b08f",
+      "url": "http://cambricon.com/",
+      "title": "Cambricon - 寒武纪",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "寒武纪 思元590 MLU590 性能 FP16 TFLOPS 昇腾910B 对比 A100",
+        "retrieval_relevance": 0.7628,
+        "host_domain": "cambricon.com"
+      }
+    },
+    {
+      "source_id": "src_64fe84de28d94358",
+      "url": "https://forum.cambricon.com/index.php?m=content&c=index&a=show&catid=158&id=3470",
+      "title": "mlu-590 驱动资源 - 经验案例与实践分享 - 开发者论坛",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "寒武纪 思元590 MLU590 性能 FP16 TFLOPS 昇腾910B 对比 A100",
+        "retrieval_relevance": 0.7346,
+        "host_domain": "forum.cambricon.com"
+      }
+    },
+    {
+      "source_id": "src_01e0ac68a4f39a44",
+      "url": "https://cambricon.com/index.php?m=content&c=index&a=lists&catid=7",
+      "title": "关于我们 - 寒武纪 - Cambricon",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "寒武纪 思元590 MLU590 性能 FP16 TFLOPS 昇腾910B 对比 A100",
+        "retrieval_relevance": 0.7346,
+        "host_domain": "cambricon.com"
+      }
+    },
+    {
+      "source_id": "src_6726aa309018c055",
+      "url": "https://tmtpost.com/7954258.html",
+      "title": "你等的DeepSeek，早已变了-钛媒体官方网站",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片对比分析 NVIDIA AMD Intel 华为昇腾 寒武纪 训练 推理 竞争力 2025",
+        "retrieval_relevance": 0.772,
+        "host_domain": "tmtpost.com"
+      }
+    },
+    {
+      "source_id": "src_5f3062e7e3c65cc1",
+      "url": "https://lengm.cn/post/20260425_deepseek_v4",
+      "title": "DeepSeek V4 实测：1.6万亿参数跑在国产芯片上，好用吗？ - 冷眸",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片对比分析 NVIDIA AMD Intel 华为昇腾 寒武纪 训练 推理 竞争力 2025",
+        "retrieval_relevance": 0.772,
+        "host_domain": "lengm.cn"
+      }
+    },
+    {
+      "source_id": "src_f0880ac6c3b71ded",
+      "url": "https://forbeschina.com/woman/70292",
+      "title": "国产AI算力板块全线沸腾：寒武纪市值突破5,000... | Forbes China",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片对比分析 NVIDIA AMD Intel 华为昇腾 寒武纪 训练 推理 竞争力 2025",
+        "retrieval_relevance": 0.7449,
+        "host_domain": "forbeschina.com"
+      }
+    },
+    {
+      "source_id": "src_cc425f53edbe29a2",
+      "url": "https://arena.amd.com/",
+      "title": "arena.amd.com",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 芯片对比分析 NVIDIA AMD Intel 华为昇腾 寒武纪 训练 推理 竞争力 2025",
+        "retrieval_relevance": 0.2532,
+        "host_domain": "arena.amd.com"
+      }
+    },
+    {
+      "source_id": "src_2834c9a927af3d47",
+      "url": "https://chelidze.group/post/ai-china-2025",
+      "title": "Artificial intelligence market in China in 2025 | Dzhimsher Chelidze",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "78b23b87d5de606b5e30895aae93aaabdf82f057327428b4d2b6182d9f67154f",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.8367,
+        "host_domain": "chelidze.group"
+      }
+    },
+    {
+      "source_id": "src_a4dc1ee02273bb90",
+      "url": "https://nextomoro.com/cambricon",
+      "title": "Cambricon Technologies | nextomoro",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "nextomoro.com"
+      }
+    },
+    {
+      "source_id": "src_4c9e238a1167b49c",
+      "url": "https://aiwiki.ai/wiki/nvidia",
+      "title": "Nvidia | AI Wiki",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "aiwiki.ai"
+      }
+    },
+    {
+      "source_id": "src_7d79ca3450e84c5f",
+      "url": "https://shanethegamer.com/pc-mac/trendforce-nvidia-amd-combined-china-ai-chip-share-to-fall-to-21-in-2026",
+      "title": "TrendForce: Nvidia, AMD Combined China AI Chip Share to Fall to 21...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "63bf89026498f45e87080095bc1e5513ec51fc8b75e17ab24dda21b0e43af794",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "shanethegamer.com"
+      }
+    },
+    {
+      "source_id": "src_dce6c32f3e6e1623",
+      "url": "https://globaltimes.cn/page/202608/1367828.shtml",
+      "title": "China’s ‘Nvidia alternative’ Moore Threads posts... - Global Times",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.72,
+        "host_domain": "globaltimes.cn"
+      }
+    },
+    {
+      "source_id": "src_77d7b1752ca845e7",
+      "url": "https://secure.fundsupermart.com/fsmone/article/rcms332721/amd-fy25-outlook-in-the-race-but-not-in-the-lead",
+      "title": "AMD FY25 Outlook: In the race, but not in the lead | FSMOne Singapore",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 AI accelerator market share NVIDIA AMD Instinct MI355X vs H200 Ascend 910C Cambricon inference",
+        "retrieval_relevance": 0.48,
+        "host_domain": "secure.fundsupermart.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_438c7a3208f62d03",
+      "source_id": "src_d4fbf16c252845de",
+      "text": "Anthropic AI芯片 算力 大语言模型. 1. AWS的市场份额危机与战略破局.以下为Trainium2与Nvidia H100在AI训练场景下的关键性能对比：",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "93fe7dec1e6d878d6dd2bebeaf718335bcdab728553203967efa3a15627aac99"
+    },
+    {
+      "evidence_id": "ev_807e7811f0a593d3",
+      "source_id": "src_8e5ef85d1df5667b",
+      "text": "费加罗报：中国AI产业突飞猛进，从芯片到机器人无不颠覆硅谷的格局.他指出：“在开发者市场OpenRouter上，中国模型的市场份额在一年内从30%跃升至60%。”",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "61a26a98994e48fdb5bff7b39a6cc80443a6e0a6e3a4becd91197ca4ef0f1832"
+    },
+    {
+      "evidence_id": "ev_606e890d96d32080",
+      "source_id": "src_c95e0641d3b4b972",
+      "text": "二、52%市场份额的背后：国产AI芯片的逆袭拐点 与此同时，就在Anthropic抢占市场份额的同一周，另一组数据虽低调出炉，却意义深远。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "b50b1c9ec712590ca41e3c75b9d5e6e3b84894c541831eeaa9d388e91ca3d016"
+    },
+    {
+      "evidence_id": "ev_260da0c71d3199ba",
+      "source_id": "src_e527e11e96ca50ed",
+      "text": "大屏时代 (DapingTime.com) 12月5日 消息 — 亚马逊近日宣布推出其第三代AI训练芯片——Trainum3。亚马逊推出第三代AI训练芯片 Trainum3.jpg.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6f121fbf7b5f3bf7e39f1d5143f3eb09ee0b4b8c7c8acb7a7f6026645456ff0a"
+    },
+    {
+      "evidence_id": "ev_0a68c129143b22be",
+      "source_id": "src_3510870460b34fa1",
+      "text": "#AMD#NVIDIA#RTX 5090 #RDNA5#UDNA#PS6#PlayStation 6 #Xbox#蘇姿豐#Lisa Su #AI晶片#顯示卡#GPU#台積電#TSMC#硬體分析#電腦硬體 … ...ещё.#英偉達 #芯片 #nvidia #特斯拉 #自动驾驶.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "8aa0c5cbaeb56b319ecd0a42c5022a4d33831e0e1bc983a80360166c8ede0e65"
+    },
+    {
+      "evidence_id": "ev_da1095d90ca4c8ea",
+      "source_id": "src_89dbc3e925f78bf5",
+      "text": "IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e0419b94108f477cfc931377ae8ef6f86f069d756419d2becfe85b241dfe4f02"
+    },
+    {
+      "evidence_id": "ev_9bee658447ec7fef",
+      "source_id": "src_724b59c4891228c7",
+      "text": "手机中国 04-24. DeepSeek适配华为昇腾 国产AI的自主化之路步入加速期.寒武纪在官方微信号宣布，已基于 vLLM 推理框架完成对 285B DeepSeek-V4-Flash 和 1.6T DeepSeek-V4-Pro 的 Day 0 适配，适配代码已开源到 GitHub 社区。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1ae471932da4cbdb47fd3941566c9f5b8f717b0f6522329afcc8fed8917a47d6"
+    },
+    {
+      "evidence_id": "ev_344b39336729b063",
+      "source_id": "src_1418e54e8fb8b858",
+      "text": "而中国AI芯片领域的第一股，非寒武纪莫属。从全球市场看，英伟达拿走了92%的份额，寒武纪的份额几乎可以忽略不计；即便聚焦中国市场，2025年英伟达预计占54%，寒武纪仅占4%，差距依然明显。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "8879a414a80fd61b8da00c3300b703ae6c045cc7e11d070473646385ae7375ac"
+    },
+    {
+      "evidence_id": "ev_fb638579f0befb5f",
+      "source_id": "src_7342f1710f1189dd",
+      "text": "从2025年12月到2026年6月，短短半年时间，至少6家AI芯片企业登陆或即将登陆资本市场。 如果加上此前已上市的寒武纪、海光信息、天数智芯，国产GPU军团的总市值正在逼近2万亿元。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4c25683b5feb07c2e62d4cac78835cb1635b8e1e7353700a52f4d5c5bb0a52f1"
+    },
+    {
+      "evidence_id": "ev_d0352b99d494923e",
+      "source_id": "src_82948c9b03f1fbb9",
+      "text": "与此同时，寒武纪作为AI算力龙头，其业绩的改善也对资本市场起到了推动作用。 寒武纪2025年第一季度营收11.11亿元，同比增长42倍，首次实现单季盈利3.55亿元，业绩爆发源于云端产品线的高速增长。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "09c046bd5547d13403eb531849c41016ea516c711dc9b34e3518852eeb5ad6bf"
+    },
+    {
+      "evidence_id": "ev_b8c919d413c0793b",
+      "source_id": "src_89dbc3e925f78bf5",
+      "text": "DeepSeek点燃国产算力热情，寒武纪们谁是最大赢家？ 南都N视频APP · 政商数据 2026-05-09 19:11 以上内容由AI大模型生成，仅供参考 近期，科创板国产芯片厂商陆续交出2026年第一季度成绩单，其中，寒武纪延续2025年的业绩增长势头，营收、净利润实现双增长，摩尔线程则在营收增长的同时，首次实现季度盈利，沐曦股份营收同样增长，不过，其暂时还未扭亏为盈。 总体来看，国产芯片厂商的业绩是在持续向好，这离不开近年国产算力需求的整体提升。 就在各家业绩“出炉”同时，DeepSeek发布了其最新一代模型，多家国产芯片厂商实现Day0适配，再次点燃了业内对国产算力的热情。 就目前而言，国产算力生态正从“可用”逐步走向“可规模商用”。 寒武纪一季度净利翻倍，摩尔线程靠政府补助扭亏 具体来看，寒武纪今年一季度实现营业收入28. 85亿元，同比增长159. 56%，归母净利润为10. 13亿元，同比增长185. 04%。 谈及业绩增长，寒武纪在财报中表示，营收增长主要系报告期内受益于人工智能行业算力需求的持续攀升，公司凭借产品竞争力持续拓展市场，积极推动人工智能应用场景落地。 而营收的增长则进一步带动了利润总额、归属于上市公司股东的净利润及归属于上市公司股东的扣除非经常性损益的净利润较上年同期增长。 寒武纪一季度财报 摩尔线程一季度实现营收7. 38亿元，同比增长155. 35%，归母净利润为0. 29亿元，首次实现单季度盈利。 摩尔线程在财报中表示，收入增长主要系报告期内公司专注于全功能GPU的研发与创新，产品实现规模化落地，进而促进了收入的快速增长。 不过，南都记者注意到，摩尔线程能够扭亏很大程度上依靠政府补助。 一季度，其非经常性损益合计8364万元，其中计入当期损益的政府补助为7006万元，占比约84%，扣非净利润为亏损5428万元，虽然同比收窄60. 1%，但亏损依然存在。 摩尔线程一季度财报 沐曦股份一季度实现营业收入5. 62亿元，同比增长75. 37%，归母净利润亏损0. 99亿元，较之上年同期亏损2. 33亿元有所收窄。 沐曦股份表示，其收入增长的核心驱动力来自GPU产品销量的持续放量。 受益于人工智能产业的高速发展，依托自身产品性能与软件生态，公司产品与服务获得下游客户认可，业务规模较上年同期实现增长。 沐曦股份一季度财报 另外，在毛利率方面，寒武纪和摩尔线程的毛利率出现些许下滑，据同花顺数据，今年一季度，寒武纪的毛利率为54. 33%，较之去年一季度的55. 99%，同比下降1. 66个百分点，较之去年四季度的54. 81%，环比下降0. 48个百分点。 摩尔线程一季度毛利率为67. 35%，处于同行中较高水平，不过，较去年一季度的77. 64%，同比下降10. 29个百分点。 沐曦股份毛利率有所提升，今年一季度为60. 05%，上年同期为55. 26%。 华源证券认为，国产算力芯片企业迎来业绩兑现关键期。 AI大模型迭代、智算中心规模化建设与边缘智能场景全面渗透，持续推高国内AI算力市场需求。 整体来看，行业呈现头部企业盈利稳固、二线厂商减亏甚至扭亏提速、梯队化成长格局清晰的特征。 寒武纪现金流转正但存货高企，沐曦、摩尔线程还在“失血” 现金流方面，除了寒武纪已经实现由负转正外，沐曦股份与摩尔线程依旧处于“失血”阶段。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "91811f35d8776cc875e517548e78e02a67bc051e251b431da52cf0b04dcad09d"
+    },
+    {
+      "evidence_id": "ev_05e7f09c6eaf8400",
+      "source_id": "src_89dbc3e925f78bf5",
+      "text": "财报显示，寒武纪经营活动产生的现金流量净额约为8. 34亿元，上年同期这一数值为-13. 99亿元；沐曦股份一季度经营活动产生的现金流量净额为-5. 5亿元，较上年同期的-5. 31亿元略有扩大；摩尔线程一季度经营活动产生的现金流量净额为-14. 87亿元，较上年同期的-7. 52亿元大幅扩大。 针对现金流情况，摩尔线程在财报业绩交流会上表示，经营性现金流扩大原因有两方面，一是根据市场情况积极进行战略备货，二是持续保持高强度研发投入，2026年一季度研发投入为3. 69亿元，同比增长约50%。 “上述两方面因素均与公司当前的发展阶段和经营策略相匹配，能够有效支撑业务扩张和持续研发投入，后续公司将在保持战略备货和研发强度的同时，持续优化营运资金管理，改善现金流状况”。 除摩尔线程外，寒武纪和沐曦股份也都维持着高强度的研发投入。 财报显示，寒武纪一季度研发费用为3. 24亿元，上年同期研发费用为2. 73亿元。 沐曦股份一季度研发投入为2. 53亿元，同比增长16. 27%。 从存货及预付款来看，财报显示，截至一季度末，寒武纪应收账款余额为12. 19亿元，较上年末的6. 71亿元，增长81. 64%，预付款项则由上年末7. 45亿元飙升至18. 97亿元，增幅超154. 6%。 另外，其存货账面价值较上年末的49. 44亿元虽有所下降，但仍高达44. 97亿元。 沐曦股份一季度应收账款余额为9. 33亿元，较上年末的7. 26亿元，增长28. 51%，预付款项则由上年末8. 34亿元增长至12. 33亿元，另外，存货账面价值较上年末的14. 96亿元略微下降至14. 22亿元。 此前，沐曦股份方面在年报业绩交流会上回复过有关囤货的问题，其表示，“由于公司始终处于扩产过程中，公司为保障下游客户的需求和按时交付，需提前储备原材料、半成品及库存商品等存货，提前备货比例较高，因此公司存货金额较大、增长较快。 公司高度重视存货管理，随着公司营业收入和营业成本的快速增长，公司存货周转率呈快速增长趋势”。 摩尔线程一季度应收账款余额为6. 38亿元，较上年末的4. 34亿元，增长47%，预付款项则由上年末17. 82亿元增长至23. 61亿元，另外，存货账面价值较上年末的13. 32亿元上升至21. 95亿元。 针对一季度囤货和预付款上涨，摩尔线程在业绩交流会上回应称，“为应对下游市场需求的持续增长，结合市场情况，并保障供应链稳定，公司主动增加了原材料采购和战略备货力度。 ” eek再次点燃国产算力热情，各家走向“可规模商用” 从当前产业进展来看，国产算力生态正从“可用”走向“可规模商用”，各家国产芯片厂商的业绩还有着较大增长空间。 就在一季度报出炉同期，DeepSeek正式发布了最新一代大模型DeepSeek-V4系列，包括DeepSeek-V4-Pro和DeepSeek-V4-Flash两款模型。 在此之中，DeepSeek-V4首次将华为昇腾NPU与英伟达GPU同时写入硬件验证清单，并主动向英伟达和AMD提供早期访问权限。 在模型发布当天，华为昇腾、寒武纪、海光信息、摩尔线程、沐曦股份、百度昆仑芯、阿里平头哥、天数智芯等八家国产AI芯片厂商，纷纷宣布实现“发布即适配”（Day0适配），集体完成了全链路适配与性能优化。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "a2a7f5789be7ee57da192a402c48f900444d04cd6734a3a682824d03ea08c094"
+    },
+    {
+      "evidence_id": "ev_97a05adcd76172c3",
+      "source_id": "src_89dbc3e925f78bf5",
+      "text": "同时，由智源研究院牵头的众智FlagOS社区，也在Day0完成了DeepSeek-V4-Flash在8款以上AI芯片上的全量适配与推理部署，并正在推进V4-Pro在多个芯片上的迁移。 实现这样的Day0适配有什么难点？ 智源研究院副院长兼总工程师林咏华告诉南都记者，对于DeepSeek-V4这种量级的模型，整个架构有很多变化，所以在适配上比起其他模型难度要高很多，因此提前需要做大量的技术准备工作。 具体来讲，“第一，为了支持多芯片适配，我们需要将DeepSeek的原版算子用FlagOS的技术栈全部替换，从而保证之前已经适配过我们技术栈的芯片都能跑这些算子”。 第二，要解决模型对硬件的精度依赖问题。 DeepSeek这次采用的是FP4和FP8混合精度，而国内上市的芯片多数都是以BF16为主，必须转换成这些芯片所能支持的精度。 第三，要解决显存并行限制的问题。 国内主流显卡基本是32G或64G显存，需要张量并行大于8份才能放得下，但DeepSeek-V4最多切8份，所以就需要重新做并行策略的切割。 “这些都是在工程上、技术上怎么让它跑起来，后面更重要的要对齐精度。 我们端到端测试了所有芯片，把精度误差控制在5%以内，然后才发布开源出来，让大家能下载代码，开箱即用。 ”林咏华说道。 值得一提的是，在介绍DeepSeek-V4两个版本的API调用价格时候，DeepSeek方面还在图片下方注释小字写道，受限于高端算力，目前Pro的服务吞吐十分有限，预计下半年昇腾950超节点批量上市后，Pro的价格会大幅下调。 业内分析认为，这显示出DeepSeek-V4或与国产算力芯片做针对性的深度联动适配，为中国顶尖大模型向国产算力迁移提供强有力的背书。 华西证券认为，DeepSeek-V4并非只带动单一硬件厂商，而是在推动国产AI芯片、开源推理框架和模型服务之间形成更广泛的协同，国产算力建设正在从单点硬件替代，走向“模型发布—芯片适配—推理框架优化—云端服务—行业应用”的完整协同链条。 业内分析还指出，DeepSeek-V4让国产芯片优先适配，从根本上绕开了“先基于英伟达开发、再向国产芯片迁移”的被动局面，国内顶级AI模型正逐步摆脱对英伟达的单一依赖，DeepSeek正在为国产AI芯片打开结构性替代的想象空间。 事实上，DeepSeek牵手国产芯片的全国产生态布局早已开启。 早在去年8月，DeepSeek V3. 1就支持了UE8M0 FP8 Scale参数精度，并特别表示这一数据格式是针对即将发布的下一代国产芯片设计，为脱离英伟达生态埋下伏笔。 ay0适配常态化，英伟达市场空间受国产替代挤压 南都记者也注意到，近期，一旦有国产新模型上新，国内芯片厂商总能迅速实现适配，国产芯片Day0适配国产模型已成为常态。 摩尔线程此前在业绩交流会上提到，在模型适配方面，其与各类合作伙伴持续开展技术合作，对DeepSeek、智谱、MiniMax、月之暗面、阿里巴巴等发布的SOTA大模型实现了Day0适配常态化支持。 沐曦股份、壁仞科技和天数智芯也均曾公告称自身Day0适配多家国产大模型。 谈及Day0适配的意义，林咏华告诉南都记者， 今年很大的变化是，智能体拉动国内大模型的部署使用需求大幅上升，普遍需要更多的算力进入推理市场。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "e9eefe9078f78ed24461b36ecd86b851fcb53edb27b899f75c2ccccbe9f96648"
+    },
+    {
+      "evidence_id": "ev_71108b1813a7f3a2",
+      "source_id": "src_89dbc3e925f78bf5",
+      "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值得一提的是，在DeepSeek-V4发布之前，英伟达CEO黄仁勋还曾在访谈中直言，若DeepSeek的最新一代大模型，率先选择在华为平台上发布并全面适配，那么这对美国在全球人工智能领域的战略地位而言，无疑将是灾难性的打击。 也就是说，当中国顶尖大模型与国产算力基座完成深度绑定，美国长期推行的芯片封锁将会失去关键“抓手”。 摩根士丹利在研报中提到，当前，国产芯片单颗与英伟达存在些许差距，但通过多芯片封装、先进封装、软硬件协同等系统工程思路，已经有效弥补短板。 摩根士丹利维持对中国AI芯片市场的长期看好判断，其预计到 2030年 ，中国AI芯片自给率将从当前 33%飙升至86%，市场规模突破670亿美元，国产替代进入全面冲刺期。 谈及今年的国产芯片发展，龚明德对南都记者表示，“因应全球地缘风险影响，观察国内业者有两大成长驱动来源，其一为本土供货商，以今年需求量面向来看，有机会实现双倍以上成长；其二为大型互联网厂商投入AI芯片自研发展，也将成为未来重要的支撑动能。 整体而言，预估今年本土高阶AI芯片（包含本土供货商及CSP自研部分）合计需求量同比增长率将达六成以上”。 采写：南都N视频记者 朱可轩 发自上海 编辑：甄芹 更多报道请看专题： 逐浪“AI资本局” AI资本局 人工智能 南都N视频，未经授权不得转载、授权联系方式 banquan@nandu. cc. 020-87006626 本文作者 南方都市报记者 南方都市报记者 说点什么 分享成功 南方都市报 获取最值得一读的好新闻 DeepSeek下周涨价！ V4 Pro高峰期涨幅达11倍 芯原股份股权激励收监管工作函，第一季度亏损出现扩大 滴滴二季度订单同比增13. 2%，国际出行上半年持续盈利 查看更多独家报道 国产算力生态正从“可用”逐步走向“可规模商用”。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "9c8f69bb1c0dc493c619601a57dfcb1e797f9bf1220c586ac941ac9b2a0bc87d"
+    },
+    {
+      "evidence_id": "ev_c11c246f8d1558b3",
+      "source_id": "src_dc8ba45858233a6f",
+      "text": "作为美国AI芯片初创黑马公司，Groq推出的新型AI加速芯片LPU，专为大语言模型量身定制，具有高速推理性能。IDC发布的报告显示，2025年全球AI推理芯片市场规模将达训练市场的3倍。 推理芯片市场已成为兵家必争之地。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "682b9f391710ad6566ca72c43c1f92f0b70a8efa2652aa733945824c355359d0"
+    },
+    {
+      "evidence_id": "ev_19bbc4bfa913b26a",
+      "source_id": "src_120e47da7f3ddbf9",
+      "text": "边缘推理 GPU、SoC、Apple Silicon. 2022-2024E 全球 AI GPU 市场规模.微软使用FPGA为Bing 搜索智能化进行加速. 寒武纪的NPU、地平 线的BPU、Google的 TPU. 英伟达、AMD的GPU.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e8843b0abc4e15f2a39b18549ecefc596a80ab8fdce6a8f0b13fccc9b23f6ff4"
+    },
+    {
+      "evidence_id": "ev_e1542a41761c6292",
+      "source_id": "src_e4b5890c770b1250",
+      "text": "CounterpointResearch的数据显示，2025年第一季度，联发科以36%的整体市场份额位居全球榜首，高通以28%紧随其后。连OpenAI也在6月24日发布了与博通联合打造的首款定制AI推理芯片Jalapeño。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5bc237baf5e356fe0a425c8fea44b39c90e652f912847566bf06912425a9f28f"
+    },
+    {
+      "evidence_id": "ev_31bf74bfeaede855",
+      "source_id": "src_36b89275f53faf4f",
+      "text": "AI模型评估机构Arena的首席执行官Anastasios Angelopoulos表示：\"无论哪家公司做出优秀的开源模型，英伟达都是赢家。 \"英伟达的核心逻辑在于：开源生态越繁荣、参与主体越多元，GPU的整体需求就越旺盛。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "842397ba38fb0837cc350d2b145d03116f1e8e3d71900dac490a0096e655425f"
+    },
+    {
+      "evidence_id": "ev_0b92037288dade2e",
+      "source_id": "src_d343ba73a951c208",
+      "text": "AI将减少工作时间？ 科技业员工称每周工时高达90小时.四年前，Google一名工程总监曾表示，人工智慧将在2025年前实现每周工作四天的愿景。 到了今年稍早，在上述预测提出一年后，OpenAI某种程度上也接过了这个主张。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3d474d94637b849d09e3306704f21dc0db44479742ac438fd3cfbedbff0308fc"
+    },
+    {
+      "evidence_id": "ev_ca5598a5fc2f773a",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "015837a81de00286f61e88c2c1de8134dfff20910b10680eb7bbbd1e2a3b80ee"
+    },
+    {
+      "evidence_id": "ev_0a484f9401c53e01",
+      "source_id": "src_7868d7583351a663",
+      "text": "Intel Gaudi 3, AMD MI300X, TPUs Challenge Nvidia's AI Dominance. Key Takeaways. Intel’s Gaudi 3 accelerator claims up to 50% better inference performance and 40% better power efficiency than Nvidia’s H100, shipping at a competitive system price.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6d737a838053995f0de8ff54b10adcfff20f46a1c0f40a09858202e3af4967c8"
+    },
+    {
+      "evidence_id": "ev_91605d6c19f13337",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9442567edf4a313d4c7bc696f1400bf45e1a872ee469afaf2ad77508c98a1cb8"
+    },
+    {
+      "evidence_id": "ev_fe25ecde8afcfdb5",
+      "source_id": "src_5cc90e614eb1476d",
+      "text": "In inference, MI300X delivers 920 requests/sec, ideal for large models. TCO Breakdown: Gaudi3 saves 48% over H100's $865K for an 8-GPU node, making it perfect for cost-conscious teams. Best Picks: H100 for production reliability; MI300X for memo...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "957288e73cd1a8ea59d23c100bc459fdd11326bbff5baca335e398bd4473806d"
+    },
+    {
+      "evidence_id": "ev_c61b4c797f1b83ea",
+      "source_id": "src_02add68fcefbbf68",
+      "text": "Head-to-head AI inference benchmark comparison of B200 (NVIDIA Blackwell) and MI300X (AMD CDNA 3) on MiniMax M2.5/M2.7.Interpolated from real benchmark data. Edit target interactivity values below to compare at different operating points.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "96b189d46ffbf6f28d09807fc6e99293d8dfe0ba41d502e0ee4f59843afd6496"
+    },
+    {
+      "evidence_id": "ev_5a6b8b25a1bea50d",
+      "source_id": "src_e750cba1d8c1ba44",
+      "text": "MI300X price/performance for inference; ROCm improving. Intel. ~1–3%. Gaudi — competitive benchmarks, limited commercial traction. Custom silicon (TPU, Trainium, Maia, MTIA). Captive only. Per-workload cost efficiency — not merchant market.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d04fb8b5ac7f876c8f7987b221d8d037b6cc6ff2b8c28a5657ab37c54acf4818"
+    },
+    {
+      "evidence_id": "ev_0fbb5e3d11f73993",
+      "source_id": "src_c89b765b3ba7fc07",
+      "text": "依托x86架构生态，在服务器CPU市场占据53.6%份额，DCU（深度计算处理器）兼容ROCm平台，实现对CUDA生态的平滑替代，尤其适合金融、电信等传统行业升级需求。 - **摩尔线程**：- **技术标杆**：寒武纪在AI专用芯片的性能突破仍是国产替代核心标杆。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "05e6d7450828857b29c04d795b763a179c6a838e5bc4b3f343ca11e9a931634b"
+    },
+    {
+      "evidence_id": "ev_67db7937b7b14df2",
+      "source_id": "src_30c25eba6067ddc6",
+      "text": "CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构。寒武纪Cambricon Neuware是针对其云、边、端的AI芯片打造的软件开发平台。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "66ef24a6a8cfe7a6773d4681b0cee064c1b54a99899c8f9c762e50bf472ac720"
+    },
+    {
+      "evidence_id": "ev_3cbc0ccb802da712",
+      "source_id": "src_34e018df4b6410f6",
+      "text": "从上述性能对比可见，早期的 Instinct MI 系列 GPU 性能与 V100 相比仍有差距，也在一定程度上影响了 ROCm 生态的推广。通过上述研究结果可见，Pytorch 模型性能基本准确反映了 A100 与 MI210 的性能区别，从而也说明 ROCm 在支持完善的框架领域相比 CUDA 并无明显性能损失。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "4b3a9aa3d397060128c53a3940d8f5910451ff5bf9211a82522c31ad44e1dc85"
+    },
+    {
+      "evidence_id": "ev_75e2dca129b18845",
+      "source_id": "src_db2408cccf0de231",
+      "text": "CUDA和ROCm的对比.CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "223d6bed4aa7c380e99e3cbc5288a7bcf6f4dcf85f4a693f791b7224d9704ac0"
+    },
+    {
+      "evidence_id": "ev_bace09332b93db16",
+      "source_id": "src_d7798b5d7117fe6a",
+      "text": "AMD ROCm tutorials and examples.为 PyTorch 编写自定义 ROCm 算子.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "80f951fefa2d5d56a34817bb91f7326d73c8b6f722903156dc1b7de481bfdcae"
+    },
+    {
+      "evidence_id": "ev_b3ebf806f9de80f6",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This article compares all three on the specifications, benchmarks, and economics that matter for AI training and inference. Specification Comparison NVIDIA Blackwell B200: 208B transistors, 192GB HBM3e, 8 TB/s memory bandwidth, 4. 5 PetaFLOPs FP4, NVLink 5 at 1. 8 TB/s. The current production king. Available now from all major cloud providers. AMD MI400: CDNA 4 architecture, 192GB HBM3e, 6. 4 TB/s memory bandwidth, estimated 3. 8 PetaFLOPs FP8. AMD’s first chiplet-based AI GPU. Sampling now with volume availability in Q3 2026. Intel Gaudi 3: 128GB HBM2e, 3. 7 TB/s memory bandwidth, 1. 8 PetaFLOPs BF16. Lower raw specs than AMD and NVIDIA but Intel positions on software integration with its own compiler stack. Available since late 2025. Training Performance On LLM training benchmarks, the picture is clear but nuanced. NVIDIA B200 leads on raw training throughput.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "806da2667be33db51635ac4cf784a2ef4416455d53690ceeb43bd9f5e63b3ef4"
+    },
+    {
+      "evidence_id": "ev_828751e6ad8afdde",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing advantage (estimated 25-30% lower per GPU) makes the total cost of training competitive. Intel Gaudi 3 reaches approximately 65% of B200 training performance. Gaudi 3’s strength is not raw speed but cost efficiency. Intel prices Gaudi 3 at approximately 40% less than B200, and its compiler stack handles common training workloads (BERT, GPT, Vision Transformers) without manual CUDA optimization. “NVIDIA still wins on absolute performance. But the question for most buyers is not ‘which chip is fastest? ’ It is ‘which chip gives me the best training throughput per dollar? ’ That answer is getting closer to AMD. ” — AI infrastructure analyst. Inference Performance LLM inference is memory-bandwidth bound, which means the chip with the highest memory bandwidth per dollar delivers the best inference economics. AMD MI400 leads on inference cost-efficiency. Its 6.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "e3f7ab7cb990e22e1df245d7d6d29fb06285817991e6f3733f5c887e40949cd4"
+    },
+    {
+      "evidence_id": "ev_b9896666d6b572f0",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "4 TB/s memory bandwidth matches NVIDIA B200 in raw bandwidth, and the lower price per GPU (estimated $25,000-$30,000 vs $30,000-$40,000 for B200) gives AMD a 15-25% inference cost advantage. For companies running large inference fleets, this difference compounds significantly. NVIDIA B200 leads on inference software maturity. TensorRT-LLM, vLLM, and other inference optimization frameworks are most polished on NVIDIA hardware. The software advantage means that NVIDIA GPUs reach closer to their theoretical bandwidth maximum in practice. Intel Gaudi 3 is viable for dedicated inference workloads. Cloud providers offering Gaudi 3 instances price them 40-50% below equivalent NVIDIA instances. For teams that can handle the less mature software stack, the cost savings are significant. Software Ecosystem Hardware performance only matters if the software stack works. This is where NVIDIA’s advantage is largest. NVIDIA CUDA: The industry standard. Every major AI framework, optimization library, and deployment tool supports CUDA. When a new model architecture launches, it works on NVIDIA first. This ecosystem lock-in is NVIDIA’s most durable competitive advantage. AMD ROCm: ROCm 7 dramatically improved compatibility with PyTorch and JAX. Most training workloads now run on ROCm with minimal code changes. Inference frameworks (vLLM, TGI) have added ROCm support.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "cc7cca380d94af75d5d811663711f2eff150ba39087818920eddc2c7c0134a36"
+    },
+    {
+      "evidence_id": "ev_460b3db620f48ba8",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "The gap has narrowed from “major limitation” to “minor inconvenience” for mainstream workloads. Intel Habana Synapse AI: Intel’s proprietary compiler stack handles standard model architectures well but requires effort for custom architectures. The ecosystem is smallest of the three, which limits flexibility for research workloads. Cloud Availability and Pricing NVIDIA B200 instances are available on AWS (p6), GCP (a3-ultra), Azure (ND-H200), and Oracle Cloud. Pricing ranges from $3. 50-$5. 00 per GPU-hour depending on provider and commitment level. AMD MI400 instances are available on AWS and Azure with limited availability. Pricing is approximately 25-30% below equivalent NVIDIA instances when available. Intel Gaudi 3 is hosted on AWS (DL2q instances) and Intel’s own developer cloud. Pricing is 40-50% below NVIDIA for comparable compute tiers. Which AI Chip Should You Buy? Training frontier models: NVIDIA Blackwell B200. The software ecosystem and multi-GPU scaling remain unmatched for large-scale training. Inference at scale: AMD MI400 if ROCm compatibility works for your model. Test thoroughly before committing to a large order. Budget-constrained inference: Intel Gaudi 3 for standard model architectures where the 40-50% cost savings justify the software trade-offs. Flexibility and future-proofing: NVIDIA B200.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "560880e87ba1cf780203e9a393e679af47d6a8f561c772af6325419d39cbefc9"
+    },
+    {
+      "evidence_id": "ev_60b4ce3420ea5d66",
+      "source_id": "src_3fe0bb8ab6bac0ca",
+      "text": "If you do not know exactly what workloads you will run next year, CUDA compatibility guarantees that any model or framework will work. The AI chip market finally has real competition. That competition is driving prices down and performance up, which benefits every company building AI products. The monopoly era is ending, even if NVIDIA remains the default choice for most workloads today. Share this article",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "a8d58b92cf408e761ea780331cd56e261324b5fb9ae445aff749eaada6e25b63"
+    },
+    {
+      "evidence_id": "ev_edbeb89004586ad2",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "Artificial Intelligence Computing Leadership from NVIDIA Agentic AI Faster, Smarter, More Efficient Agentic AI NVIDIA Nemotron™ 3. 5 Lightning helps agents complete specialized tasks faster, while NeMo™ Switchyard routes each step to the right model for efficiency and control. Read Blog Data Center Scaling AI Compute Performance Requires a New Power Architecture NVIDIA 800 VDC helps existing and future AI factories scale compute performance beyond the limits of traditional power distribution. Read Blog Data Center Firebird Launches CIS Region’s Largest AI Factory in Armenia Firebird, NVIDIA, Dell Technologies, CoreWeave, and regional leaders mark a milestone in building AI infrastructure to deliver intelligence at global scale. Read More Data Center SpaceX Partners With NVIDIA to Design Starmind AI1 Satellite SpaceX’s Starmind AI1 satellite compute payload is powered by NVIDIA Vera Rubin NVL72, bringing AI factory compute closer to the stars. Learn More Agentic AI Why AI Agents Need More Than One Model See how frontier and open models work together in production applications, intelligently routing each task to balance accuracy, efficiency, customization, and control. Watch Video Automotive The Frontier Open Model for Robotaxis and Autonomous Vehicles Alpamayo 2 Super is now commercially available under OpenMDW-1.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "90bb58c2494fa45c2dab2beed991b62b3d651df0cdf05d2eac2c4e7bff954be1"
+    },
+    {
+      "evidence_id": "ev_e7089ecedc256f06",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "1, ranking #1 on LingoQA and bringing trajectories, reasoning traces, meta actions, and auto-labeling into one model. Read Blog Agentic AI Faster, Smarter, More Efficient Agentic AI Data Center Scaling AI Compute Performance Requires a New Power Architecture Data Center Firebird Launches CIS Region’s Largest AI Factory in Armenia Data Center SpaceX Partners With NVIDIA to Design Starmind AI1 Satellite Agentic AI Why AI Agents Need More Than One Model Automotive The Frontier Open Model for Robotaxis and Autonomous Vehicles Previous Next Agentic AI Data Center Data Center Data Center Agentic AI Automotive Building in America, for America NVIDIA and our partners are strengthening American manufacturing, creating jobs, and accelerating healthcare and scientific discovery for growth and prosperity. Learn More GTC Berlin 2026 Registration Is Now Open Join developers, researchers, and industry leaders on October 20–22 to explore the next wave of AI innovation. Get Your Pass Now Artificial Intelligence AI is powering change in every industry. From generative AI and speech recognition to medical imaging and improved supply chain management, AI is providing enterprises that compute power, tools, and algorithms their teams need to do their life's work.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "b11871e0260d6f20920e5372d0662ccb3d2b1ed2c8bb8847c578bae6b0613145"
+    },
+    {
+      "evidence_id": "ev_5f41aa8b9b5a44cf",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "Quick Links Overview Data Analytics Machine Learning Predictive Analytics Recommender Systems Speech AI Apache Spark RAPIDS Agentic AI | News NVIDIA Nemotron 3. 5 Lightning for Fast, Specialized Agent Tasks This open 30B MoE model has 3B active parameters for specialized tasks in always-on agents. Agentic AI | Blog Switchyard LLM Model Routing: Smarter, Faster, More Efficient AI NVIDIA NeMo™ Switchyard is an intelligent orchestration layer for smart model routing. Agentic AI | Blog Faster, Smarter, More Efficient Agentic AI NVIDIA Nemotron 3. 5 Lightning helps agents complete specialized tasks faster, while NeMo Switchyard routes each step to the right model for efficiency and control. Artificial Intelligence | Blog Open World Models and the Frontier of Physical AI From robotics and AVs to vision AI, developers need models that understand the physical world. Agentic AI | Video Why AI Agents Need More Than One Model See how frontier and open models work together in production applications, intelligently routing each task to balance accuracy, efficiency, customization, and control. Cybersecurity | Blog New Contributions for a More Secure AI Ecosystem More companies join the Open Secure AI Alliance to contribute open tools and advance AI security.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "e9cc9179223a9df5fcfc48a08fe7f1170891f004992d8bf55cf031a9765053a2"
+    },
+    {
+      "evidence_id": "ev_f8a3b986750c3f62",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "Artificial Intelligence | Blog AI Training on NVIDIA GB300 NVL72 Sets World Record NVIDIA Blackwell Ultra pre-trained DeepSeek-V3 671B, achieving 1,648 TFLOPs per GPU. Agentic AI | Blog NVIDIA Harnesses Vera CPU to Speed Up Next-Gen CPU and GPU Design NVIDIA Vera CPU speeds next-gen chip designs with up to 1. 5x higher performance. Cybersecurity | Blog Industry Leaders Join Open Secure AI Alliance for AI Safety NVIDIA and industry leaders are founding an initiative for open, collaborative, trustworthy AI. Artificial Intelligence | Blog NVIDIA Local AI: NVIDIA and Local AI Community Fuel Open Source Models and Agents Explore the latest in local AI with Nemotron 3. 5 Lightning, new DGX Spark tools, and open models built for coding, research, and creation. Previous Next Short Description NVIDIA Nemotron 3.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "8c0b79787adaf6e362ea3963ea3dc79754c3fb300da02d9abe6c65a8d3131b6c"
+    },
+    {
+      "evidence_id": "ev_9d699d42ab0064bb",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "5 Lightning Switchyard LLM Model Routing Faster, Smarter, More Efficient Open World Models and the Why AI Agents Need New Contributions for a More AI Training on NVIDIA GB300 NVIDIA Harnesses Vera CPU Industry Leaders Join Open Secure Creating SFG CMPTX 6 Design and Simulation NVIDIA accelerated computing, libraries and AI models enable software makers and industry manufacturers to develop products for large-scale, physically accurate simulations and interactive digital twins so teams can efficiently build, train, and test advanced systems before deployment, bringing products to market faster. Quick Links Overview Newsroom Shop Physical AI Industrial AI Computer Aided Engineering Rendering and Visualization Virtual and Augmented Reality Simulation | Solution Arup Advances Low-Carbon Structural Design With NVIDIA DGX Spark GNN-based surrogate models on DGX Spark transformed Arup’s structural design workflow. Simulation | Announcement NVIDIA Agent Toolkit Expands With NVIDIA PhysicsNeMo, CUDA-X Learn how industry leaders are accelerating chip-to-systems design workflows with long-running agents. Simulation | Blog Integrate NVIDIA Omniverse RTX Sensor Simulation into Existing Apps Learn how agents can help add camera, lidar and radar outputs to physical AI workflows.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "086f553f1c8c27a8760c9eafecfc037e796ebb5e6f22946fc635c9177ece0a6b"
+    },
+    {
+      "evidence_id": "ev_a2582b35f4f48925",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "Rendering | Solution Digital Twins for Ecommerce: Zalando Scales 3D Visualization Zalando is making online fashion shopping more realistic by using ALLSIDES’ NVIDIA‑powered 3D platform to turn footwear into high‑fidelity digital product twins that customers can explore from every angle. Agentic AI | Blog Industrial Software Leaders Build Autonomous AI Engineers Secure, specialized agents compress weeks of simulation work into hours. Semiconductor | News NVIDIA and TSMC Bring AI Into Fabs to Advance Chipmaking TSMC is using NVIDIA accelerated computing and AI to advance semiconductor design and manufacturing. Simulation | Video How Dassault Systèmes Is Building AI That Understands Physics Nicolas Cerisier, VP of 3DEXPERIENCE Platform R&D at Dassault Systèmes, explains how industrial world models go beyond pattern recognition to embed the actual laws of physics, chemistry, and engineering. Simulation | News The Future of AI-Driven Manufacturing at Hannover Messe Sovereign AI infrastructure, AI physics, agents, and robotics are powering industrial innovation. Siemens, Accenture, KION, GXO Simulation | Event NVIDIA at Hannover Messe 2026 The next era of industrial AI and software-defined manufacturing has arrived. NVIDIA and our partners will explore the latest breakthroughs in industrial AI.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-6",
+      "content_hash": "8ec1e8db8a391bc013a0f2424d4385d571e57cabc157618c8dcf036bf34a09ad"
+    },
+    {
+      "evidence_id": "ev_302943f77ed4a746",
+      "source_id": "src_2a9af76528bcbc2c",
+      "text": "Data Center | Announcement New NVIDIA Vera Rubin DSX AI Factory Reference Design The new reference design provides a guide for building codesigned AI infrastructure that delivers maximum token per watt and accelerated time to first production. AR / VR | Announcement NVIDIA RTX-Accelerated Computers Now Connect to Apple Vision Pro CloudXR 6. 0 brings native visionOS support, streaming RTX-powered 3D apps to Apple Vision Pro. Previous Next Short Description Arup Advances Low-Carbon NVIDIA Agent Toolkit Expands Build Simulation-Ready SIGG26 1 Digital Twins for Ecommerce Industrial Software CMPTX26 1 NVIDIA and TSMC CMPTX26 2 How Dassault Systèmes NVIDIA and Synopsys NVIDIA at Hannover Messe 2026 New NVIDIA Vera Rubin GTC26 6 NVI [CONTENT_TRUNCATED: 22413 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-7",
+      "content_hash": "4a42545812034106c127a0e3ffd633ccb0fcfff52a142367259ef35304bb5413"
+    },
+    {
+      "evidence_id": "ev_c87c18729b80c00a",
+      "source_id": "src_2081bdcac8d46d30",
+      "text": "大模型国产化适配11-LLM训练性能基准测试（昇腾910B3）. 吃果冻不吐果冻皮.下面对训练框架（ModelLink/MindFormers）进行训练测试。 训练性能的定义.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "41904b681c7d4850a468cc11062b16c85691f07eb989c780bb9a3a38522a5b35"
+    },
+    {
+      "evidence_id": "ev_815dac35f50ad598",
+      "source_id": "src_65b1c8d3addbbd6d",
+      "text": "昇腾910B的计算性能相关选项分析.昇腾910B（Ascend 910B）是华为推出的AI训练芯片，其主要参数如下：",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2404c7b0c33ea0edaac34b51625c734c5ba7bbc2452cfa7b6c0f694cbdad4c6d"
+    },
+    {
+      "evidence_id": "ev_9bde4fd8336adf13",
+      "source_id": "src_fabff2e97b579fb5",
+      "text": "通过自研的 AI 推理引擎，昇腾 910B 与高端 GPU 之间的性能鸿沟有望逐步弥补。昇腾910B 在性能上暂时难以与 B200 直接竞争。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "e3cef34c1fc12b695ac97b17f51769a51ffadefde71fdc023ae4a88d5d273298"
+    },
+    {
+      "evidence_id": "ev_667a6414b05b396c",
+      "source_id": "src_e279d1bfb5e1bd8a",
+      "text": "他们的昇腾910C在大多数负载下已经只比H100慢8-12%，而且他们现在每月能造20万片。” 这就是黄仁勋不停地与特朗普与美国高层不停勾兑的原因，也是这次特朗普放开H200禁令的根源。 美国芯片从断供向“精准管控”转变.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "e75dd6a05f8a5fc11e3361068ccfea044b2a86562ea380afc95ae1b8184dabc2"
+    },
+    {
+      "evidence_id": "ev_dc447157cf0ca7f7",
+      "source_id": "src_6cf669e568224220",
+      "text": "DeepSeek推理：910B为何是绝佳之选.单卡拥有 140 TOPS INT8 和 70 TFLOPS FP16，这个性能足够推理用，但关键的内存则使用了LPDDR4X 24 GB，总带宽204.8 GB/s。，因此单柜性能在12TB推理内存, 推理速度极限.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "67e5abf143f4bc08f784c651a66ea0d788d78e59ed9bc6755d489cc83c41cf59"
+    },
+    {
+      "evidence_id": "ev_aada2cd98b1637cc",
+      "source_id": "src_a6670ebbcdebfc4c",
+      "text": "国际投资研究机构伯恩斯坦（Bernstein）今年8月预估称，华为昇腾、寒武纪等国产AI芯的地位日益提升。2025年，百度昆仑芯3代、阿里APG智算芯片等国产AI芯片都在大规模出货。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7650236199df60d762fa6e1c0b6f64698ca185472bac84b6f4d391ab1bb35140"
+    },
+    {
+      "evidence_id": "ev_790708744f8acba2",
+      "source_id": "src_0338f34edf086805",
+      "text": "2025-08-28. AI市场远没有到存量竞争阶段，英伟达自己也一直处于产能不足、巨头哄抢、售价高昂的状态，市场有很大的蛋糕留给寒武纪，也留给华为昇腾、天数智芯等. 中国企业。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6d00dbe47e0a2fe9070a0f68a8b5f8a87d95d03a5cda115fbbe6cda1730128dc"
+    },
+    {
+      "evidence_id": "ev_b07daf1cf7912187",
+      "source_id": "src_7342f1710f1189dd",
+      "text": "以壁仞科技为例，其2025年营收10.35亿元，同比增长高达207%，手握客户覆盖国家级算力平台、电信运营商和AI大模型公司。 53.8%的毛利率表明，其产品在市场中拥有充分议价地位。 背后是DeepSeek-V4撞开的市场窗口，从华为昇腾的订单激增、到寒武纪的扭亏为盈...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "ec911e632f4c347ad0b7c3b1946980d420c2b39f033710c31fb9702cf6852a95"
+    },
+    {
+      "evidence_id": "ev_7f1b934a9140a24a",
+      "source_id": "src_724b59c4891228c7",
+      "text": "寒武纪在官方微信号宣布，已基于 vLLM 推理框架完成对 285B DeepSeek-V4-Flash 和 1.6T DeepSeek-V4-Pro 的 Day 0 适配，适配代码已开源到 GitHub 社区。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "cfaa2d3c16a089167c1cabce2d70c502a5da1ac43beb71c2cb9045365037afb5"
+    },
+    {
+      "evidence_id": "ev_8d6455869cf37e63",
+      "source_id": "src_467082c42313f8c6",
+      "text": "昇腾 910B 是国产最强 NPU，FP16 算力 780 TFLOPS，对标 NVIDIA A100。 通过 CANN 工具链 + vLLM-Ascend 分支支持 LLM 推理。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "83f16350b3575e36f5efe4420ec33df1fb14bcce819830638df444d0cf4689f4"
+    },
+    {
+      "evidence_id": "ev_76935d3d2ade1bb0",
+      "source_id": "src_c60e935c2bf10ce3",
+      "text": "3. 昇腾 910B2（320 TFLOPS FP16）：国内落地量最大，昇腾全栈 CANN 生态完善，万卡集群成熟，政企智算中心首选.4. 昇腾 NPU（CANN 独立栈，不兼容 CUDA）.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "334be637c319077e1028690ea448cbd4498cb7f37855320c0c518dd3e57b22a0"
+    },
+    {
+      "evidence_id": "ev_48d474680779308a",
+      "source_id": "src_cecb4ed7e081b08f",
+      "text": "寒武纪第三代云端AI芯片 先进chiplet技术，最新MLUarch03架构，AI性能全面升级 了解更多 寒武纪® AIDC® MLU370®-S4云端AI加 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "401e5d27de14abc83cc5f17f904c71e4a78e197586e8b42c48582fe2a18dc552"
+    },
+    {
+      "evidence_id": "ev_4e2f9f959272a7d9",
+      "source_id": "src_64fe84de28d94358",
+      "text": "mlu-590 驱动资源. 0 赞 0 收藏 快速回复. 分享到Proxmox直通-寒武纪MLU fengyunkai 0 回复.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4969e7a6db3942baec606e78717cd7a79f916bc1a2153781b33331d1e6555d1b"
+    },
+    {
+      "evidence_id": "ev_40c0b982d7f1b3df",
+      "source_id": "src_01e0ac68a4f39a44",
+      "text": "寒武纪成立于2016年，专注于人工智能芯片产品的研发与技术创新， 致力于打造人工智能领域的核心处理器芯片，让机器更好地理解 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "dc3b163e8ba6541cb410fdc2eebd6cdb0b6ae4071aad645338cec2da0b1aeb2e"
+    },
+    {
+      "evidence_id": "ev_6ee8f27a26018f85",
+      "source_id": "src_a6670ebbcdebfc4c",
+      "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116%。 近一个月（7月28日-8月27日），寒武纪市值上涨102%。 市场一种常见的讨论是，寒武纪营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 寒武纪是国内新兴的AI芯片企业，成立于2016年，目前处于指数级增长初期。 英特尔是全球半导体行业的巨头，拥有悠久历史和深厚技术积累，在PC和服务器芯片市场占据主导地位，处于成熟期。 2025上半年营收255. 3亿美元，但同比下降0. 1%，净利润-37. 4亿美元，自由现金流连续三年下滑。 寒武纪在资本市场的高估值主要基于未来增长潜力，资本市场对其技术突破和市场空间有较高预期；英特尔估值相对较低且较为稳定，主要基于其现有的业务和现金流情况。 寒武纪的高市值有一定支撑。 它处于蓬勃发展的朝阳赛道。 中国AI训练和推理算力正在爆发。 算力总量位居全球第二，占比超过30%。 国际投资研究机构伯恩斯坦（Bernstein）今年8月预估称，华为昇腾、寒武纪等国产AI芯的地位日益提升。 中国AI芯片国产化率将从2023年的17%提升至2027年的55%。 寒武纪作为国产AI芯片企业，有望受益于这一趋势。 在美国对华AI芯片管制的大背景下，英伟达AI芯片获取难度不断变大，且随时面临断供风险。 寒武纪和华为昇腾、百度昆仑芯、阿里平头哥、海光DCU等国产AI芯片共同承担起了国产替代的重要任务。 寒武纪又是国内唯一一家已上市的AI芯片企业，是稀缺标的。 指数化投资的推动力量也不可小觑。 寒武纪被纳入上证50、科创50、沪深300等多个重要指数。 相关指数基金需要按规则买入该股，这为其股价提供了稳定的资金支持。 从某种程度上看，指数化投资对寒武纪等算力股的上涨起到了推动作用。 它形成了“指数上涨—资金流入—股票上涨”的良性循环。 指数级进步的新贵 寒武纪业绩增速极快。 2023年营收仅为7. 1亿元，2024营收11. 2亿元，2025年上半年攀升至28. 8亿元。 在国产AI芯片公司普遍亏损时，寒武纪在2025上半年实现了盈利。 寒武纪目前在中国AI芯片市场处于何种地位？",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "b64271071758c742323dc3d7d5bba27d62a20c7fbcc87583c8cb5a2eac8481ad"
+    },
+    {
+      "evidence_id": "ev_9e989cbb966ee0f2",
+      "source_id": "src_a6670ebbcdebfc4c",
+      "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片售价约为6万-8万元/枚，八卡服务器不超过100万元/台。 它的定价略低于其他国产主流AI芯片——比如，目前昇腾910系列八卡服务器约为140万元/台，昆仑芯三代八卡服务器约为130万元/台，阿里APG16卡智算服务器约为180万元/台。 寒武纪的主要客户包括中国大型科技公司、电信运营商、政府部门等。 它的客户集中度较高，2025年客户集中度高的问题有所改善。 这表现在，寒武纪2024年最大客户占其营收近八成，但2025年最大客户占其营收仅有四成。 寒武纪2024年财报曾披露，第一大客户占其年度营收总额的79. 2%，该客户是公司长期合作伙伴。 不过寒武纪公布未披露该客户其他信息。 到了2025上半年，寒武纪前五大客户应收账款和合同资产期末余额（企业尚未收到的钱，还需要完成其他履约义务才可以收款）合计占总额的85. 31%。 前五名客户的占比分别是42. 5%、18. 0%、8. 9%、8. 4%、7. 6%。 寒武纪并未公布披露这些客户的具体信息。 从市场占比看，最大客户占了寒武纪的小一半营收来源。 早在2023年，寒武纪曾和 中国移动 等组成联合体以7. 53亿元中标浙东南数字经济产业园数字基础项目。 中国移动曾披露，截至2023年12月，有12个省公司、超过70个AI业务完成寒武纪思元系列AI芯片的迁移。 伯恩斯坦预计，寒武纪2025年收入可能超过100亿元，几乎是2024年收入的十倍。 该销售额在中国市场的份额将提升至4%。 不过，一位半导体产业链人士对《财经》表示，这个预测偏乐观。 2025年，百度昆仑芯3代、阿里APG智算芯片等国产AI芯片都在大规模出货。 国内客户通常会优先采购华为、百度、阿里等大型科技公司的AI芯片，寒武纪面临的竞争很大。 一位国资背景投资机构人士此前的看法与上述半导体产业链人士不同，他曾对《财经》表示，政企客户通常不想被单一供应商绑定，寒武纪是大型科技公司之外的一个好的选择。 支撑寒武纪股价上涨的一个核心因素是——市场长期传闻，字节跳动是寒武纪第一大客户。 今年3月，有消息称，字节跳动向寒武纪下单了4万枚单价2.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "fac8091f652e6324f226e52e0b807a28b31f5033e6b397eb6c9454cd601720d8"
+    },
+    {
+      "evidence_id": "ev_d1179ffc2c06de1f",
+      "source_id": "src_a6670ebbcdebfc4c",
+      "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武纪现在高市值有其合理性——稀缺性，造就了寒武纪的高市值。 一位中国科技公司战略规划人士直言，寒武纪是国内唯一一家已上市的AI芯片企业。 华为昇腾、百度昆仑芯、阿里平头哥虽然也在提供AI芯片，但它们都没有上市。 燧原科技、壁仞科技、摩尔线程、沐曦等和寒武纪几乎同期起价的AI芯片创业公司，目前又都处于IPO（首次公开募股）阶段。 因此，寒武纪目前是中国A股市场AI芯片赛道的稀缺标的。 在A股市场，和寒武纪最具可比性的是 海光信息 ——这是中国市场唯一一家上市的服务器CPU（中央处理器）厂商。 它在2025上半年营收55亿元，同比增长45. 2%；净利润16. 1亿元，同比增长33. 9%。 海光信息的营收、净利润均高于寒武纪，但市值却低于寒武纪。 一个重要原因是，海光信息过去所处的CPU赛道被认为成长和想象空间低于AI芯片。 英特尔市值仅比寒武纪高25%，一个重要原因是，它连续四年营收下滑，管理层频繁变动，长期需要为芯片代工业务输血，公司目前亏损严重，并不被投资者看好。 市销率（P/S，即市值/营收）是评估成长型企业市值合理性的一个重要指标。 市销率越低，一般说明企业可能越被低估。 截至2025年二季度，寒武纪、海光信息、英特尔的市销率分别是111倍、33倍、4. 2倍。 不过，资本市场最终总会回归均值，公司业务基本面永远是决定股价的核心因素。 美国政府2024年末开始，限制台积电16nm以下AI芯片对中国代工。 此后，寒武纪AI芯片主要依赖 中芯国际 的7nm工艺代工。 寒武纪能否持续获得大客户的采购和支持，能否抵御华为、百度、阿里带来的竞争压力，以及未来工艺制程能够持续演进迭代，决定了它的未来。 责任编辑：杨红卜 推荐文章 美股前瞻 | 空头力竭？ SpaceX做空头寸大幅下降；Anthropic或于10月上市！ 估值高达2万亿美元 08-13 20:34 港股异动 | 存储概念普升，南方两倍做多海力士涨逾12%，澜起科技、兆易创新涨逾4%；韩国Kospi指数较7月末低点已反弹逾2成 08-13 09:34 华盛早报 | 腾讯ADR大跌5%！",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "6ed5946494d13901758dc64ad99546250b0450cb89fac6b03c390516a4bce192"
+    },
+    {
+      "evidence_id": "ev_b1cf621f12a251ed",
+      "source_id": "src_a6670ebbcdebfc4c",
+      "text": "押注AI致Q2自由现金流转负；NEBIUS绩后飙升34%；中芯、华虹、联想、京东今日齐放榜 08-13 08:22 美股前瞻 | 全面符合预期！ 7月CPI重磅来袭；AI才是SpaceX“命门”？ 马斯克：明年底将算力规模扩大十倍！ 08-12 20:37 一图看懂 | 腾讯Q2营收、经调整净利超预期！ 资本支出狂飙至528亿元，自由现金流转负 08-12 17:56 CoreWeave营收随AI基础设施需求加速翻倍，股价盘后大涨12% 08-12 06:43 8月12日外盘头条：美军向违反封锁船只开火 苹果支付负责人退休 谷歌Gemini月活超10亿 超微电脑盘后股价大涨 08-12 05:30 城堡证券看好股市反弹 建议投资者为杠杆押注卷土重来做好准备 08-12 03:20 风险及免责提示：以上内容仅代表作者的个人立场和观点，不代表华盛的任何立场，华盛亦无法证实上述内容的真实性、准确性和原创性。 投资者在做出任何投资决定前，应结合自身情况，考虑投资产品的风险。 必要时，请咨询专业投资顾问的意见。 华盛不提供任何投资建议，对此亦不做任何承诺和保证。 立即下载 问答大全 关于我们 服务协议 意见反馈 在线客服 （工作日09：30 - 次日05：30） 客户端： 关注我们： © 2026 深圳市时代华盛网络科技有限公司版权所有 粤ICP备16068286号",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "3bc1aef61316016a5aa44bb799347d83d7148a4c35683d2e2f2a7008b733077a"
+    },
+    {
+      "evidence_id": "ev_e6abe79d7a6f06b6",
+      "source_id": "src_6726aa309018c055",
+      "text": "据外媒报道，DeepSeek在2025年初确实尝试过用华为昇腾910C芯片训练下一代模型。结果是妥协性的，DeepSeek训练阶段继续切回英伟达GPU，昇腾芯片仅用于推理环节。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1e2e6b705651cf9102ddd7fc544768b87fe5c498053eb65e403951b49bb21a3d"
+    },
+    {
+      "evidence_id": "ev_8f21747d125a2bc5",
+      "source_id": "src_5f3062e7e3c65cc1",
+      "text": "过去一周 AI 圈发了七八个新模型，光最近 24 小时就来了四个——MiMo、HY3、GPT-5.5、DeepSeek V4，排着队上。 V4 有两个版本：V4-Pro 和 V4-Flash。 总参数 1.6 万亿（V3.2 是 6710 亿，翻了两倍半），上下文 100 万 Token，训练和推理全程跑在华为昇腾芯片上。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ae2b6697f113987613ef4e6698918fcaf702f4e4f00aa81fdef9d3db9028adba"
+    },
+    {
+      "evidence_id": "ev_c8d6fa4c44c71078",
+      "source_id": "src_f0880ac6c3b71ded",
+      "text": "最为关键的是，新模型采用UE8M0 FP8精度格式，专门为下一代国产芯片设计，表明未来基于DeepSeek模型的训练与推理将更多应用国产AI芯片。 8月18日，中国移动50亿AI服务器集采结果落地，总规模达51.12亿元。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "dbbefc0dfa6e22e82a068dd034fbcd86bb944fa414a3829a3ac3793fa90574ef"
+    },
+    {
+      "evidence_id": "ev_113985a616787a4b",
+      "source_id": "src_8e5ef85d1df5667b",
+      "text": "7月中旬，Anthropic和OpenAI与Nvidia、微软、Meta、Palantir、Perplexity、Dell、IBM等行业巨头在开源问题上展开争论。然而，近几个月来，AI芯片对存储芯片的需求激增，导致全球出现短缺。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8802c30a786abaf8c40c342cd360162685699738eb6ae116a288bd0dbba58f81"
+    },
+    {
+      "evidence_id": "ev_26c0861401851aa4",
+      "source_id": "src_cc425f53edbe29a2",
+      "text": "AMD Ryzen™ 8040-Serie im Vergleich zu Intel Core Ultra – Kurs.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0e80a8ee0783ac6ae8877f3551b0f52eecf1ac94b18f1a995e2da813621eb498"
+    },
+    {
+      "evidence_id": "ev_1c2a60730d4fc8dc",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Huawei Ascend 910C vs NVIDIA H100 - AI Chip Comparison.China's Cambricon posts first profit as demand for this Nvidia rival's AI processors explodes.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "7282b89bf61c0cf49c4fcfb3546629e52fc4e8d0ccd137281022143342ad69de"
+    },
+    {
+      "evidence_id": "ev_5d28b2b426a8f566",
+      "source_id": "src_a4dc1ee02273bb90",
+      "text": "Cambricon's 2024 China AI chip market share was reported at approximately 1 percent, with NVIDIA at 66 percent, Huawei Ascend at 23 percent, and AMD at 5 percent per industry coverage.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "49ac7451c98a84ed0845017b65ead3ea312b3e7941cc202da5f351bf3a94785b"
+    },
+    {
+      "evidence_id": "ev_f9b91a3b79df6e02",
+      "source_id": "src_4c9e238a1167b49c",
+      "text": "AMD's Instinct MI300X, launched in late 2023, offered 192 GB of HBM3 memory and competitive inference performance. The MI325X and MI355X followed in 2024-2025. At CES 2026, AMD unveiled the MI400 series, with 432 GB of HBM4 memory targeting Nvidia's Rubin generation.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "392d576c4a577c602d5c0f36daf861b8a189d7c0051c76c216bfa8acab8703f2"
+    },
+    {
+      "evidence_id": "ev_68b004461db22290",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "Nvidia and AMD’s combined share of China’s AI server chip market is on track to shrink to just 21 percent in 2026, down sharply from 34 percent last year, according to a new forecast from Taiwan-based market research firm TrendForce.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "847d4c8ac612562241917150359eafc91fbcb7e53ae709fe844a510d0e8b49ec"
+    },
+    {
+      "evidence_id": "ev_0867d3ba2ef7043d",
+      "source_id": "src_dce6c32f3e6e1623",
+      "text": "Cambricon said that it completed adaptation support for major Chinese open-source AI models including GLM, DeepSeek, Qwen, Kimi and MiniMax, strengthening its domestic AI computing ecosystem.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9edde340055e596f8385a1d5bad626738c04bb32755efba859aaa637e0b9f807"
+    },
+    {
+      "evidence_id": "ev_7cec23597da456a6",
+      "source_id": "src_77d7b1752ca845e7",
+      "text": "AMD is scaling its AI roadmap (MI350, MI400), forming key partnerships, and building open ecosystems like ROCm and Helios. Chiplet design enables AMD to deliver modular, high-performance, and cost-effective chips with better scalability.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "07a3adeebbf3c8abd207f1551a9c2c29ec597d5d3da4e34658c3769d052d1d74"
+    },
+    {
+      "evidence_id": "ev_422d2338614f714c",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Introduction Attention! The material was prepared using artificial intelligence technologies. Strategic value for business leaders This article presents a comprehensive analysis of the state and prospects of the artificial intelligence market in the People's Republic of China for the period 2024-2025 with forecasts up to 2030. Its practical value for managers and owners of companies lies in the following key aspects: 1. Understanding the competitive landscape The article reveals the structure of the Chinese AI ecosystem, describes the leading players (from technology giants Alibaba, Baidu, Tencent to promising startups), their strategies and investments. This is critical for companies that want to: assess the threat of competition from Chinese AI solutions. identify opportunities for partnership or licensing agreements with Chinese developers. understand what technological approaches (multi-modal models, open-source initiatives, hybrid architectures) they are becoming the industry standard. 2. Investment and operational insights The article contains up-to-date information about: the volume of investment in AI in China (84-98 billion US dollars in 2025); market growth rates (20-34% annually, in the generative AI segment — 46. 57%); Computing infrastructure development trajectories, including the EDWC (Eastern Data — Western Computing) initiative.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "c29494d2d887df7a7cb86a8436f55d8e9ee1b0df6f21f1b108ad857a0def15d9"
+    },
+    {
+      "evidence_id": "ev_17f5c14ab35bf1f0",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "the number and status of AI companies (more than 4,300 companies, 70-75 unicorns). For company managers, this information is a guide for: drawing up multi-year strategic plans that take into account the growing market size and availability of AI tools; R&D planning and budget allocation for technological development; assessment of the investment attractiveness of the AI segment. 3. Practical models and support mechanisms The article describes China's systematic approach to AI development, including: state programs (\"AI+\", \"1397\") with specific targets and stages; infrastructure initiatives (eight national computing hubs, specialized parks, accelerators); financial mechanisms (state venture funds, grant programs, conditions for IPOs). For Russian and foreign executives, this serves as a model for adaptation within their companies and countries: how to create internal AI competence centers and invest in computing infrastructure; how to create partnerships with universities and research centers for training personnel; how to develop multi-level strategies for implementing AI in operational processes (production, sales, analytics, customer support). 4.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "dd36b730f843b43f9b25485f50e5f623385d19bf744b0f842d4521b902e0ed43"
+    },
+    {
+      "evidence_id": "ev_a4bc89450b5b9478",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Personnel and organizational conclusions The material shows that China provides mass training in AI competencies (the target audience is 10 million specialists by 2030), integrates AI literacy into school curricula, and creates new career paths. This is important for managers who: They plan to prepare their own teams for the AI era. they want to understand what professional roles will be in demand. they are looking for models of continuous learning and adaptation to technological changes. 5. Export risks and opportunities Analysis of technological bans (US sanctions, restrictions on the export of microprocessors) shows that China is actively developing its own microelectronics. For CEOs, this is a signal about: the need to consider domestic and friendly alternatives to American solutions; opportunities to export AI technologies to developing countries using China's strategies; the importance of carefully monitoring the regulatory environment in the field of AI. Recommendations for using the material The article is suitable for studying: C-level managers (general directors, deputy directors).",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "ab64f532a80cb3710d5caf4dc1d1e6cd07a9ec3d8ee97779ca1334990d58089d"
+    },
+    {
+      "evidence_id": "ev_f35c477bd6e5fd3e",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "chief Technology Officer) for strategic planning and positioning of the company against the background of the global AI economy; Heads of IT and R&D departments to select technology platforms and architectures, adapt to ecosystem trends; HR managers for planning HR policy, selecting specialists, and organizing training; Analysts and consultants involved in digital transformation and strategic planning; Investors and owners of companies to assess investment opportunities and risks. Table of contents Introduction The scale and dynamics of the artificial intelligence market in China Leading manufacturers of computing equipment and promising startups Software developers: basic models and application solutions Infrastructure programs and industry support: national clusters, research centers, accelerators Geography and structure of innovation ecosystems Development prospects for the period up to 2030 Applications Conclusions and recommendations List of sources and files to download Introduction Artificial intelligence has become one of the key areas of the state strategy for technological development in the People's Republic of China. By 2025, the national artificial intelligence industry is demonstrating accelerated development, forming a sustainable ecosystem that covers both industrial and scientific segments.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "7928178e51e1b1f7705b4f185ca5b15ded982114a5cceb58c1aa490237a9f0ca"
+    },
+    {
+      "evidence_id": "ev_06351531eb5417ff",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Chinese corporations integrate artificial intelligence solutions into corporate, government, and consumer services, while the government provides multi-faceted support for the development of computing infrastructure, the creation of research clusters, and the promotion of new technology companies. The deep industrialization of artificial intelligence is accompanied by the construction of specialized data centers, the development of proprietary microprocessor technologies, the introduction of high-performance cloud solutions, and the formation of research alliances. An important aspect is the support of innovative startups, as well as the promotion of open models of artificial intelligence and open software. This article analyzes the key aspects of the development of the artificial intelligence market in China, describes the leading players and demonstrates the directions of state policy that ensure the country's leadership in the global technology race. Also, within the framework of AI development in China, there are strategic development plans. For example, the plan of the State Council of the People's Republic of China \"AI+\", as well as the strategy \"1397\", which was formulated in Zhejiang Lab (based in China AI TownTown in Hangzhou).",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "1cacc9915f0416aa9ad79c297bd2a362eb0dde4df04909a6e4e6c508268b2983"
+    },
+    {
+      "evidence_id": "ev_bdd1736ecb2200dd",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Scale and dynamics of the artificial intelligence market in China The artificial intelligence market in the People's Republic of China is showing rapid expansion, becoming a critical sector of the national economy and the country's technological strategy. As of 2024-2025, the Chinese artificial intelligence industry is experiencing an intense growth phase, characterized by massive technology adoption, increased computing power, the creation of a broad ecosystem of players, and unprecedented government support. Market size and economic contribution The size of the artificial intelligence market in China has reached significant levels by 2024. According to various analytical estimates, the volume of the Chinese market ranged from US $ 21. 9 billion to US $ 29. 0 billion in 2024. Forecasts for the coming years indicate a dynamic expansion: by 2031, the market can grow to 219 billion US dollars, and by 2032-2033, it can reach the range from 202 to 327 billion US dollars. This corresponds to an average annual growth rate of 20-34 percent, which is significantly higher than in many other sectors of the national economy. The generative artificial intelligence segment is developing particularly rapidly. In 2025, its volume is estimated at US $ 11. 46 billion, with a projected increase to US $ 113. 61 billion by 2031, with an average annual growth rate of 46. 57 percent.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "d4f96f8bc086f3310d4138ba08afae24872dd7784ef4bd3b65189f41a9bc900b"
+    },
+    {
+      "evidence_id": "ev_8926517f6457c392",
+      "source_id": "src_2834c9a927af3d47",
+      "text": "Chinese experts predict that by 2035, the economic contribution of generative artificial intelligence to the country's gross domestic product will reach 30 trillion yuan, equivalent to about 4. 2 trillion US dollars. Goldman Sachs estimates that artificial intelligence could add between 0. 2 and 0. 3 percentage points to China's gross domestic product annually by 2030, offsetting slowing prod [CONTENT_TRUNCATED: 94701 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "af6759bf4cdfc8c1b4efeb5cb460c09faada43250286895a9cc03dcf667eaa6d"
+    },
+    {
+      "evidence_id": "ev_031c349c0fe0813e",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "PC / Mac TrendForce: Nvidia, AMD Combined China AI Chip Share to Fall to 21% in 2026 Tane Wharekura 10/08/2026 5 min read Nvidia and AMD’s combined share of China’s AI server chip market is on track to shrink to just 21 percent in 2026, down sharply from 34 percent last year, according to a new forecast from Taiwan-based market research firm TrendForce. Geopolitical tensions continue to erode the position of Nvidia, Advanced Micro Devices and other foreign suppliers, whose combined share of China’s AI server market is forecast to fall to 21 per cent in 2026 from 34 per cent last year, according to the Taipei-based research firm. The forecast, presented at a TrendForce industry event in Shenzhen, underscores how quickly Beijing’s self-sufficiency drive is reshaping the world’s second-largest AI hardware market. The flip side of that decline is a rapid rise for domestic Chinese chipmakers. Domestic chip suppliers, led by Huawei and Cambricon, are expected to increase their market share to 56 per cent in 2026, up from 46 per cent in 2025. Layer in the custom silicon that Chinese internet giants are designing for their own data centres, and homegrown compute is closing in on four-fifths of the entire domestic market.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "826c35aad4fa6bc1de1f7bf1b8ccd4b8b175ac491e870330de8444d81fbbbdd2"
+    },
+    {
+      "evidence_id": "ev_8872e93ece77ddea",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "Huawei, Cambricon and In-House ASICs Fill the Gap Beyond the headline GPU-versus-domestic-chip split, TrendForce is also tracking a parallel trend: Chinese tech giants building their own application-specific chips instead of buying off-the-shelf silicon. Highly specialised application-specific integrated circuits (ASICs) designed by Chinese internet companies are projected to account for 23 per cent of the market, compared with 20 per cent a year earlier. Add that figure to the 56 percent share expected for dedicated AI chipmakers, and Chinese-designed silicon of one form or another is set to cover close to 80 percent of the country’s AI server hardware this year, a threshold flagged by outlets including South China Morning Post and Korea’s Digital Today. Huawei and Cambricon sit at the centre of that shift. SCMP reported that Huawei and Cambricon are ready to dominate China’s AI server market, putting pressure on Nvidia, as the firms continue following the “self-reliant” path. TrendForce research manager Frank Kung, speaking at the company’s Shenzhen conference, said “this segment will continue to scale up” as geopolitical uncertainty and Beijing’s push for technological self-reliance accelerate adoption.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "767a2bb458bd57a1b6fdfa3773d08b4f04d1fe7118824bee9f8cc99aa353ac2b"
+    },
+    {
+      "evidence_id": "ev_cc069b47aca65411",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "Kung added that China’s largest internet companies are driving AI chip growth, rapidly expanding their deployment of domestic processors from suppliers such as Huawei and Cambricon, with ByteDance and Alibaba named among the most aggressive builders of AI infrastructure. Nvidia Still Leads Globally Despite the China Squeeze The China figures don’t tell the whole story for Nvidia’s business. On the global stage, TrendForce still expects the company to dominate the AI server GPU market this coming year. Global AI server shipments are expected to grow by more than 28 percent this year, with Nvidia predicted to hold about 64 percent of the worldwide market next year, followed by AMD with 8. 6 percent. By contrast, Chinese AI GPU makers led by Huawei and Cambricon could take up to 20 percent of the global market next year, TrendForce predicted. That gap between Nvidia’s dominant worldwide position and its retreat inside China highlights how narrowly the export-control fight is concentrated in one geography rather than threatening the company’s overall AI leadership. Kung reportedly cautioned that geopolitical tensions and tariff-related uncertainty remain the biggest risk factors for the global market next year, suggesting the China trend could still spill into broader supply chain planning for both Nvidia and AMD.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "0df3461b4698cdc456bdda414501172f7c3bf297965291d3b63c7dfff2f9468f"
+    },
+    {
+      "evidence_id": "ev_488a243e37e3539c",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "Export Curbs Behind China’s Push for Chip Independence The reshuffle didn’t happen overnight. Since Washington tightened export rules on advanced AI accelerators, Nvidia’s China share has been on a multi-year slide — the company reportedly held around 95 percent of the Chinese market four years ago before controls on chips like the H20 and H200 began cutting into shipments. Beijing has simultaneously pushed government-linked data centres and major cloud providers to prioritise homegrown alternatives from Huawei, Cambricon and in-house ASIC teams at Alibaba, Baidu and Tencent, accelerating the transition TrendForce is now quantifying. Silicon UK, corroborating the same TrendForce data, reported that the local surge is being driven by China’s biggest technology firms building out AI infrastructure at scale. China’s largest tech firms are driving the expansion of AI infrastructure, such as data centres running AI GPUs alongside general-purpose processing units, TrendForce said at its conference in China’s tech hub, Shenzhen. The pattern mirrors what’s happening among Western hyperscalers, where large tech firms in the West, including Amazon and Google, are similarly developing and using ASICs alongside third-party chips, and in some cases are selling the chips or renting capacity to customers.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "365c4131cd03ef340976eaf778c50c805bb0e8b036222113a633846b82297773"
+    },
+    {
+      "evidence_id": "ev_1d16882b4f99ae68",
+      "source_id": "src_7d79ca3450e84c5f",
+      "text": "Why This Matters Beyond the Data Centre For gamers and PC hardware watchers outside China, this isn’t a story about graphics cards under your desk — it’s about where Nvidia and AMD’s AI revenue, and by extension their R&D budgets for future GeForce and Radeon silicon, are ultimately generated. Both companies have leaned heavily on data centre AI income in recent years, and a shrinking China slice of that pie adds pressure to diversify sales elsewhere, including through gaming and consumer GPU lines. It also points to a longer-term structural shift in the global chip industry that Australian and New Zealand tech buyers should watch: as Chinese AI accelerator makers scale domestically, TrendForce’s own figures suggest they could begin exporting spare capacity, competing for slices of the global AI market that Nvidia and AMD currently dominate. Whether that translates into cheaper or more varied hardware options down the line remains speculative, but the shift in China is already reshaping how the world’s two biggest GPU makers plan their next few years. Read also: NVIDIA Vera Rubin’s Memory Bill Hits $2M, More Than Doubling Grace Blackwell’s Cost Sources South China Morning Post Silicon UK Huawei Central Cambricon China AI chips empty huawei nvidia TrendForce",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "0d85ae2e96781453cbcdd28f20b184fac3c0087dcdc3383df7558f0b6f9601e9"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_71834a8104c32b1f",
+        "text": "全球 AI 芯片市场正经历结构性转折：推理需求快速超越训练，推理芯片市场规模已达训练市场的约 3 倍；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3009,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c11c246f8d1558b3",
+          "ev_71108b1813a7f3a2",
+          "ev_9e989cbb966ee0f2"
+        ],
+        "source_ids": [
+          "src_dc8ba45858233a6f",
+          "src_89dbc3e925f78bf5",
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c11c246f8d1558b3",
+            "source_id": "src_dc8ba45858233a6f",
+            "text": "作为美国AI芯片初创黑马公司，Groq推出的新型AI加速芯片LPU，专为大语言模型量身定制，具有高速推理性能。IDC发布的报告显示，2025年全球AI推理芯片市场规模将达训练市场的3倍。 推理芯片市场已成为兵家必争之地。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8fcb4936f9552d22",
+        "text": "与此同时，中国市场在美国出口管制与国产替代的双重作用下加速重构。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3438,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d1179ffc2c06de1f",
+          "ev_6ee8f27a26018f85",
+          "ev_71108b1813a7f3a2"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ee8f27a26018f85",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_161afb2497643cec",
+        "text": "据 TrendForce 预测，NVIDIA 与 AMD 在华 AI 服务器芯片合计份额将从 2025 年的 34% 降至 2026 年的约 21%，国产芯片（华为昇腾、寒武纪等）份额升至约 56%，叠加互联网大厂自研 ASIC（约 23%），国产算力已占中国市场近八成；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3659,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_71108b1813a7f3a2",
+          "ev_05e7f09c6eaf8400"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_32a7614ad30f9a01",
+        "text": "而四年前 NVIDIA 在华份额曾高达约 95% 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_488a243e37e3539c",
+          "ev_031c349c0fe0813e",
+          "ev_8872e93ece77ddea"
+        ],
+        "source_ids": [
+          "src_7d79ca3450e84c5f"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_488a243e37e3539c",
+            "source_id": "src_7d79ca3450e84c5f",
+            "text": "Export Curbs Behind China’s Push for Chip Independence The reshuffle didn’t happen overnight. Since Washington tightened export rules on advanced AI accelerators, Nvidia’s China share has been on a multi-year slide — the company reportedly held around 95 percent of the Chinese market four years ago before controls on chips like the H20 and H200 began cutting into shipments. Beijing has simultaneously pushed government-linked data centres and major cloud providers to prioritise homegrown alternat",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_031c349c0fe0813e",
+            "source_id": "src_7d79ca3450e84c5f",
+            "text": "PC / Mac TrendForce: Nvidia, AMD Combined China AI Chip Share to Fall to 21% in 2026 Tane Wharekura 10/08/2026 5 min read Nvidia and AMD’s combined share of China’s AI server chip market is on track to shrink to just 21 percent in 2026, down sharply from 34 percent last year, according to a new forecast from Taiwan-based market research firm TrendForce. Geopolitical tensions continue to erode the position of Nvidia, Advanced Micro Devices and other foreign suppliers, whose combined share of Chin",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2c1aeb2c11a7e110",
+        "text": "IDC 数据显示，2025 年中国市场 AI 加速卡出货量约 400 万张，其中 NVIDIA 约 220 万张（份额约 55%，仍居首位但持续收窄），AMD 约 16 万张（约 4%），中国厂商合计约 165 万张（约 41%）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6829,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_05e7f09c6eaf8400",
+          "ev_b8c919d413c0793b"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_05e7f09c6eaf8400",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "财报显示，寒武纪经营活动产生的现金流量净额约为8. 34亿元，上年同期这一数值为-13. 99亿元；沐曦股份一季度经营活动产生的现金流量净额为-5. 5亿元，较上年同期的-5. 31亿元略有扩大；摩尔线程一季度经营活动产生的现金流量净额为-14. 87亿元，较上年同期的-7. 52亿元大幅扩大。 针对现金流情况，摩尔线程在财报业绩交流会上表示，经营性现金流扩大原因有两方面，一是根据市场情况积极进行战略备货，二是持续保持高强度研发投入，2026年一季度研发投入为3. 69亿元，同比增长约50%。 “上述两方面因素均与公司当前的发展阶段和经营策略相匹配，能够有效支撑业务扩张和持续研发投入，后续公司将在保持战略备货和研发强度的同时，持续优化营运资金管理，改善现金流状况”。 除摩尔线程外，寒武纪和沐曦股份也都维持着高强度的研发投入。 财报显示，寒武纪一季度研发费用为3. 24亿元，上年同期研发费用为2. 73亿元。 沐曦股份一季度研发投入为2. 53亿元，同比增长16. 27%。 从存货及预付款来看，财报显示，截至一季度末，寒武纪应收账款余额为12. 19亿元，较上年末的6. 71亿元，增长8",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d554830a10a7acc6",
+        "text": "NVIDIA 的统治地位未被撼动。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1083,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_edbeb89004586ad2",
+          "ev_e7089ecedc256f06",
+          "ev_5f41aa8b9b5a44cf"
+        ],
+        "source_ids": [
+          "src_2a9af76528bcbc2c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_edbeb89004586ad2",
+            "source_id": "src_2a9af76528bcbc2c",
+            "text": "Artificial Intelligence Computing Leadership from NVIDIA Agentic AI Faster, Smarter, More Efficient Agentic AI NVIDIA Nemotron™ 3. 5 Lightning helps agents complete specialized tasks faster, while NeMo™ Switchyard routes each step to the right model for efficiency and control. Read Blog Data Center Scaling AI Compute Performance Requires a New Power Architecture NVIDIA 800 VDC helps existing and future AI factories scale compute performance beyond the limits of traditional power distribution. Re",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e7089ecedc256f06",
+            "source_id": "src_2a9af76528bcbc2c",
+            "text": "1, ranking #1 on LingoQA and bringing trajectories, reasoning traces, meta actions, and auto-labeling into one model. Read Blog Agentic AI Faster, Smarter, More Efficient Agentic AI Data Center Scaling AI Compute Performance Requires a New Power Architecture Data Center Firebird Launches CIS Region’s Largest AI Factory in Armenia Data Center SpaceX Partners With NVIDIA to Design Starmind AI1 Satellite Agentic AI Why AI Agents Need More Than One Model Automotive The Frontier Open Model for Robota",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3b55d55bef8577ad",
+        "text": "其最新路线图已推进至 Blackwell Ultra GB300 NVL72 与下一代 Vera Rubin 平台，官方宣称在 DeepSeek-V3 671B 预训练中达到 1,648 TFLOPs/GPU 的纪录（厂商自报数据，非第三方实测）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "supported",
+        "verification_score": 0.9,
+        "support_evidence_ids": [
+          "ev_f8a3b986750c3f62",
+          "ev_edbeb89004586ad2"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f8a3b986750c3f62",
+          "ev_edbeb89004586ad2",
+          "ev_302943f77ed4a746"
+        ],
+        "source_ids": [
+          "src_2a9af76528bcbc2c"
+        ],
+        "reason": "Evidence directly confirms: Blackwell Ultra on GB300 NVL72 pre-trained DeepSeek-V3 671B achieving 1,648 TFLOPs per GPU (world record claim, from NVIDIA's own site, matching the vendor-reported caveat), and Vera Rubin platform is referenced in the second evidence. All material clauses entailed.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f8a3b986750c3f62",
+            "source_id": "src_2a9af76528bcbc2c",
+            "text": "Artificial Intelligence | Blog AI Training on NVIDIA GB300 NVL72 Sets World Record NVIDIA Blackwell Ultra pre-trained DeepSeek-V3 671B, achieving 1,648 TFLOPs per GPU. Agentic AI | Blog NVIDIA Harnesses Vera CPU to Speed Up Next-Gen CPU and GPU Design NVIDIA Vera CPU speeds next-gen chip designs with up to 1. 5x higher performance. Cybersecurity | Blog Industry Leaders Join Open Secure AI Alliance for AI Safety NVIDIA and industry leaders are founding an initiative for open, collaborative, trust",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edbeb89004586ad2",
+            "source_id": "src_2a9af76528bcbc2c",
+            "text": "Artificial Intelligence Computing Leadership from NVIDIA Agentic AI Faster, Smarter, More Efficient Agentic AI NVIDIA Nemotron™ 3. 5 Lightning helps agents complete specialized tasks faster, while NeMo™ Switchyard routes each step to the right model for efficiency and control. Read Blog Data Center Scaling AI Compute Performance Requires a New Power Architecture NVIDIA 800 VDC helps existing and future AI factories scale compute performance beyond the limits of traditional power distribution. Re",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_93322918225b2426",
+        "text": "CUDA + NVLink 的软硬件壁垒使其在全球高端训练市场占据 80% 以上份额，万卡级集群的稳定性仍是竞争对手难以企及的护城河。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.038,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b3ebf806f9de80f6",
+          "ev_0fbb5e3d11f73993",
+          "ev_71108b1813a7f3a2"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca",
+          "src_c89b765b3ba7fc07",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0fbb5e3d11f73993",
+            "source_id": "src_c89b765b3ba7fc07",
+            "text": "依托x86架构生态，在服务器CPU市场占据53.6%份额，DCU（深度计算处理器）兼容ROCm平台，实现对CUDA生态的平滑替代，尤其适合金融、电信等传统行业升级需求。 - **摩尔线程**：- **技术标杆**：寒武纪在AI专用芯片的性能突破仍是国产替代核心标杆。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6c7176c5f23f3d70",
+        "text": "AMD 是唯一规模化的西方挑战者，但\"在场而未领先\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1544,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_05e7f09c6eaf8400",
+          "ev_9e989cbb966ee0f2"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5",
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_05e7f09c6eaf8400",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "财报显示，寒武纪经营活动产生的现金流量净额约为8. 34亿元，上年同期这一数值为-13. 99亿元；沐曦股份一季度经营活动产生的现金流量净额为-5. 5亿元，较上年同期的-5. 31亿元略有扩大；摩尔线程一季度经营活动产生的现金流量净额为-14. 87亿元，较上年同期的-7. 52亿元大幅扩大。 针对现金流情况，摩尔线程在财报业绩交流会上表示，经营性现金流扩大原因有两方面，一是根据市场情况积极进行战略备货，二是持续保持高强度研发投入，2026年一季度研发投入为3. 69亿元，同比增长约50%。 “上述两方面因素均与公司当前的发展阶段和经营策略相匹配，能够有效支撑业务扩张和持续研发投入，后续公司将在保持战略备货和研发强度的同时，持续优化营运资金管理，改善现金流状况”。 除摩尔线程外，寒武纪和沐曦股份也都维持着高强度的研发投入。 财报显示，寒武纪一季度研发费用为3. 24亿元，上年同期研发费用为2. 73亿元。 沐曦股份一季度研发投入为2. 53亿元，同比增长16. 27%。 从存货及预付款来看，财报显示，截至一季度末，寒武纪应收账款余额为12. 19亿元，较上年末的6. 71亿元，增长8",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6ca758d396a9c589",
+        "text": "MI300X（192GB HBM3）及 MI400 系列训练性能约达 NVIDIA 同代的 85%，价格低 25–30%；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2303,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_828751e6ad8afdde",
+          "ev_460b3db620f48ba8",
+          "ev_f9b91a3b79df6e02"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca",
+          "src_4c9e238a1167b49c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_828751e6ad8afdde",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_460b3db620f48ba8",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "The gap has narrowed from “major limitation” to “minor inconvenience” for mainstream workloads. Intel Habana Synapse AI: Intel’s proprietary compiler stack handles standard model architectures well but requires effort for custom architectures. The ecosystem is smallest of the three, which limits flexibility for research workloads. Cloud Availability and Pricing NVIDIA B200 instances are available on AWS (p6), GCP (a3-ultra), Azure (ND-H200), and Oracle Cloud. Pricing ranges from $3. 50-$5. 00 pe",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fefb5989eadf9744",
+        "text": "ROCm 7 与 CUDA 的差距明显缩小，但大规模集群训练案例仍然稀少。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1193,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_828751e6ad8afdde",
+          "ev_b9896666d6b572f0",
+          "ev_91605d6c19f13337"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_828751e6ad8afdde",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b9896666d6b572f0",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "4 TB/s memory bandwidth matches NVIDIA B200 in raw bandwidth, and the lower price per GPU (estimated $25,000-$30,000 vs $30,000-$40,000 for B200) gives AMD a 15-25% inference cost advantage. For companies running large inference fleets, this difference compounds significantly. NVIDIA B200 leads on inference software maturity. TensorRT-LLM, vLLM, and other inference optimization frameworks are most polished on NVIDIA hardware. The software advantage means that NVIDIA GPUs reach closer to their th",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b966bc6751bae1bf",
+        "text": "Intel 已基本边缘化。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde",
+          "ev_b9896666d6b572f0"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_828751e6ad8afdde",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2ca9162571ed1e5b",
+        "text": "Gaudi 3 强调性价比与以太网互联，但训练市场份额仅 1–3%，生态与产品线动荡使其退出一线竞争。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0615,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5a6b8b25a1bea50d",
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde"
+        ],
+        "source_ids": [
+          "src_e750cba1d8c1ba44",
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5a6b8b25a1bea50d",
+            "source_id": "src_e750cba1d8c1ba44",
+            "text": "MI300X price/performance for inference; ROCm improving. Intel. ~1–3%. Gaudi — competitive benchmarks, limited commercial traction. Custom silicon (TPU, Trainium, Maia, MTIA). Captive only. Per-workload cost efficiency — not merchant market.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_61041628f342ae48",
+        "text": "华为昇腾是中国训练市场的政策+生态双轮驱动主力。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.35,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d1179ffc2c06de1f",
+          "ev_6ee8f27a26018f85",
+          "ev_9e989cbb966ee0f2"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ee8f27a26018f85",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_58bc42d02fc052a7",
+        "text": "昇腾 910C 已支撑万亿参数级训练（DeepSeek V4 全程基于昇腾训练的报道见 2026-04），CANN/MindSpore 全栈生态为国产最完善；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b3ebf806f9de80f6",
+          "ev_9bee658447ec7fef",
+          "ev_b8c919d413c0793b"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca",
+          "src_724b59c4891228c7",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9bee658447ec7fef",
+            "source_id": "src_724b59c4891228c7",
+            "text": "手机中国 04-24. DeepSeek适配华为昇腾 国产AI的自主化之路步入加速期.寒武纪在官方微信号宣布，已基于 vLLM 推理框架完成对 285B DeepSeek-V4-Flash 和 1.6T DeepSeek-V4-Pro 的 Day 0 适配，适配代码已开源到 GitHub 社区。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4687e90da63ee94a",
+        "text": "但需注意曾有国产大模型在试用昇腾训练后回流 NVIDIA 的案例，说明超大规模集群训练稳定性仍有差距，且先进制程产能受制裁约束。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0439,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_438c7a3208f62d03",
+          "ev_8d6455869cf37e63",
+          "ev_edbeb89004586ad2"
+        ],
+        "source_ids": [
+          "src_d4fbf16c252845de",
+          "src_467082c42313f8c6",
+          "src_2a9af76528bcbc2c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_438c7a3208f62d03",
+            "source_id": "src_d4fbf16c252845de",
+            "text": "Anthropic AI芯片 算力 大语言模型. 1. AWS的市场份额危机与战略破局.以下为Trainium2与Nvidia H100在AI训练场景下的关键性能对比：",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8d6455869cf37e63",
+            "source_id": "src_467082c42313f8c6",
+            "text": "昇腾 910B 是国产最强 NPU，FP16 算力 780 TFLOPS，对标 NVIDIA A100。 通过 CANN 工具链 + vLLM-Ascend 分支支持 LLM 推理。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_33f43962b805475c",
+        "text": "寒武纪处于训练第二梯队。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.525,
+        "support_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_6ee8f27a26018f85"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_6ee8f27a26018f85",
+          "ev_b8c919d413c0793b"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ee8f27a26018f85",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cf8d1e3b6b50c773",
+        "text": "思元590 纸面 TPP 接近 A100、略高于 H20，八卡服务器售价低于 100 万元（昇腾约 140 万元），价格竞争力强；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6157,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_8f21747d125a2bc5",
+          "ev_d1179ffc2c06de1f"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c",
+          "src_5f3062e7e3c65cc1"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8f21747d125a2bc5",
+            "source_id": "src_5f3062e7e3c65cc1",
+            "text": "过去一周 AI 圈发了七八个新模型，光最近 24 小时就来了四个——MiMo、HY3、GPT-5.5、DeepSeek V4，排着队上。 V4 有两个版本：V4-Pro 和 V4-Flash。 总参数 1.6 万亿（V3.2 是 6710 亿，翻了两倍半），上下文 100 万 Token，训练和推理全程跑在华为昇腾芯片上。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_500cfb4a1c2871f4",
+        "text": "但实际性能受软件工具链限制，适配需数周至数月 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3684,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_d1179ffc2c06de1f",
+          "ev_6ee8f27a26018f85"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b92e10d0f603e7a1",
+        "text": "推理对 CUDA 生态粘性低、替代门槛低，是竞争最激烈、国产突破最快的战场。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1495,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0fbb5e3d11f73993",
+          "ev_3cbc0ccb802da712",
+          "ev_76935d3d2ade1bb0"
+        ],
+        "source_ids": [
+          "src_c89b765b3ba7fc07",
+          "src_34e018df4b6410f6",
+          "src_c60e935c2bf10ce3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0fbb5e3d11f73993",
+            "source_id": "src_c89b765b3ba7fc07",
+            "text": "依托x86架构生态，在服务器CPU市场占据53.6%份额，DCU（深度计算处理器）兼容ROCm平台，实现对CUDA生态的平滑替代，尤其适合金融、电信等传统行业升级需求。 - **摩尔线程**：- **技术标杆**：寒武纪在AI专用芯片的性能突破仍是国产替代核心标杆。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3cbc0ccb802da712",
+            "source_id": "src_34e018df4b6410f6",
+            "text": "从上述性能对比可见，早期的 Instinct MI 系列 GPU 性能与 V100 相比仍有差距，也在一定程度上影响了 ROCm 生态的推广。通过上述研究结果可见，Pytorch 模型性能基本准确反映了 A100 与 MI210 的性能区别，从而也说明 ROCm 在支持完善的框架领域相比 CUDA 并无明显性能损失。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5f2834cd0c6b3ed3",
+        "text": "NVIDIA 凭 TensorRT-LLM 与 vLLM 的软件成熟度保持推理性能领先 ，但在华受 H20/H200 管制影响持续失血。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0938,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b9896666d6b572f0",
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b9896666d6b572f0",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "4 TB/s memory bandwidth matches NVIDIA B200 in raw bandwidth, and the lower price per GPU (estimated $25,000-$30,000 vs $30,000-$40,000 for B200) gives AMD a 15-25% inference cost advantage. For companies running large inference fleets, this difference compounds significantly. NVIDIA B200 leads on inference software maturity. TensorRT-LLM, vLLM, and other inference optimization frameworks are most polished on NVIDIA hardware. The software advantage means that NVIDIA GPUs reach closer to their th",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c583a78a9994d3d2",
+        "text": "AMD 凭借大 HBM 显存在长上下文、高并发推理中具明显性价比——MI400 内存带宽对标 B200（4 TB/s），单卡价格低约 15–25%，对大规模推理集群 TCO 影响显著 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "refuted",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [
+          "ev_b9896666d6b572f0"
+        ],
+        "candidate_evidence_ids": [
+          "ev_b9896666d6b572f0",
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Evidence states MI400 has 6.4 TB/s memory bandwidth, directly contradicting the claimed 4 TB/s. While the 15-25% cost advantage and TCO significance are supported, the bandwidth figure is contradicted, so the compound claim fails.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b9896666d6b572f0",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "4 TB/s memory bandwidth matches NVIDIA B200 in raw bandwidth, and the lower price per GPU (estimated $25,000-$30,000 vs $30,000-$40,000 for B200) gives AMD a 15-25% inference cost advantage. For companies running large inference fleets, this difference compounds significantly. NVIDIA B200 leads on inference software maturity. TensorRT-LLM, vLLM, and other inference optimization frameworks are most polished on NVIDIA hardware. The software advantage means that NVIDIA GPUs reach closer to their th",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c011f75a33222557",
+        "text": "华为昇腾是国产推理事实标准：DeepSeek 早期即采用\"训练用 NVIDIA、推理用昇腾\"的折中方案，目前昇腾已完成 DeepSeek 全系模型适配。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2674,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_97a05adcd76172c3",
+          "ev_05e7f09c6eaf8400",
+          "ev_71108b1813a7f3a2"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_97a05adcd76172c3",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "同时，由智源研究院牵头的众智FlagOS社区，也在Day0完成了DeepSeek-V4-Flash在8款以上AI芯片上的全量适配与推理部署，并正在推进V4-Pro在多个芯片上的迁移。 实现这样的Day0适配有什么难点？ 智源研究院副院长兼总工程师林咏华告诉南都记者，对于DeepSeek-V4这种量级的模型，整个架构有很多变化，所以在适配上比起其他模型难度要高很多，因此提前需要做大量的技术准备工作。 具体来讲，“第一，为了支持多芯片适配，我们需要将DeepSeek的原版算子用FlagOS的技术栈全部替换，从而保证之前已经适配过我们技术栈的芯片都能跑这些算子”。 第二，要解决模型对硬件的精度依赖问题。 DeepSeek这次采用的是FP4和FP8混合精度，而国内上市的芯片多数都是以BF16为主，必须转换成这些芯片所能支持的精度。 第三，要解决显存并行限制的问题。 国内主流显卡基本是32G或64G显存，需要张量并行大于8份才能放得下，但DeepSeek-V4最多切8份，所以就需要重新做并行策略的切割。 “这些都是在工程上、技术上怎么让它跑起来，后面更重要的要对齐精度。 我们端到端测试了所有芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_05e7f09c6eaf8400",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "财报显示，寒武纪经营活动产生的现金流量净额约为8. 34亿元，上年同期这一数值为-13. 99亿元；沐曦股份一季度经营活动产生的现金流量净额为-5. 5亿元，较上年同期的-5. 31亿元略有扩大；摩尔线程一季度经营活动产生的现金流量净额为-14. 87亿元，较上年同期的-7. 52亿元大幅扩大。 针对现金流情况，摩尔线程在财报业绩交流会上表示，经营性现金流扩大原因有两方面，一是根据市场情况积极进行战略备货，二是持续保持高强度研发投入，2026年一季度研发投入为3. 69亿元，同比增长约50%。 “上述两方面因素均与公司当前的发展阶段和经营策略相匹配，能够有效支撑业务扩张和持续研发投入，后续公司将在保持战略备货和研发强度的同时，持续优化营运资金管理，改善现金流状况”。 除摩尔线程外，寒武纪和沐曦股份也都维持着高强度的研发投入。 财报显示，寒武纪一季度研发费用为3. 24亿元，上年同期研发费用为2. 73亿元。 沐曦股份一季度研发投入为2. 53亿元，同比增长16. 27%。 从存货及预付款来看，财报显示，截至一季度末，寒武纪应收账款余额为12. 19亿元，较上年末的6. 71亿元，增长8",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ad73154dfaad38c2",
+        "text": "寒武纪以推理见长：已基于 vLLM 完成 DeepSeek-V4（285B/1.6T）Day 0 适配并开源，并适配 GLM、Qwen、Kimi、MiniMax 等主流国产模型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.324,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9bee658447ec7fef",
+          "ev_7f1b934a9140a24a",
+          "ev_97a05adcd76172c3"
+        ],
+        "source_ids": [
+          "src_724b59c4891228c7",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9bee658447ec7fef",
+            "source_id": "src_724b59c4891228c7",
+            "text": "手机中国 04-24. DeepSeek适配华为昇腾 国产AI的自主化之路步入加速期.寒武纪在官方微信号宣布，已基于 vLLM 推理框架完成对 285B DeepSeek-V4-Flash 和 1.6T DeepSeek-V4-Pro 的 Day 0 适配，适配代码已开源到 GitHub 社区。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7f1b934a9140a24a",
+            "source_id": "src_724b59c4891228c7",
+            "text": "寒武纪在官方微信号宣布，已基于 vLLM 推理框架完成对 285B DeepSeek-V4-Flash 和 1.6T DeepSeek-V4-Pro 的 Day 0 适配，适配代码已开源到 GitHub 社区。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6c36a6e511014db2",
+        "text": "财务上寒武纪 2025H1 营收 28.9 亿元（同比 +4347.8%）、净利润 10.4 亿元首次扭亏，2026Q1 营收进一步增至 28.85 亿元（+159.6%）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4213,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6ee8f27a26018f85",
+          "ev_d1179ffc2c06de1f",
+          "ev_b1cf621f12a251ed"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6ee8f27a26018f85",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7423033371e811de",
+        "text": "Intel 仅在边缘与企业轻量推理保留有限空间。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde",
+          "ev_b9896666d6b572f0"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_828751e6ad8afdde",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f846d1ffca468ca1",
+        "text": "\"国模国芯\"协同取代被动迁移。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.35,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_97a05adcd76172c3",
+          "ev_9e989cbb966ee0f2"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5",
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_97a05adcd76172c3",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "同时，由智源研究院牵头的众智FlagOS社区，也在Day0完成了DeepSeek-V4-Flash在8款以上AI芯片上的全量适配与推理部署，并正在推进V4-Pro在多个芯片上的迁移。 实现这样的Day0适配有什么难点？ 智源研究院副院长兼总工程师林咏华告诉南都记者，对于DeepSeek-V4这种量级的模型，整个架构有很多变化，所以在适配上比起其他模型难度要高很多，因此提前需要做大量的技术准备工作。 具体来讲，“第一，为了支持多芯片适配，我们需要将DeepSeek的原版算子用FlagOS的技术栈全部替换，从而保证之前已经适配过我们技术栈的芯片都能跑这些算子”。 第二，要解决模型对硬件的精度依赖问题。 DeepSeek这次采用的是FP4和FP8混合精度，而国内上市的芯片多数都是以BF16为主，必须转换成这些芯片所能支持的精度。 第三，要解决显存并行限制的问题。 国内主流显卡基本是32G或64G显存，需要张量并行大于8份才能放得下，但DeepSeek-V4最多切8份，所以就需要重新做并行策略的切割。 “这些都是在工程上、技术上怎么让它跑起来，后面更重要的要对齐精度。 我们端到端测试了所有芯片",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7f788c72f139dc97",
+        "text": "DeepSeek-V4 发布时 8 家国产芯片厂商实现 Day 0 适配，跨芯片适配时间从数周缩短至数天，开发者切换芯片的成本大幅下降，生态壁垒随之松动 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4185,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_97a05adcd76172c3",
+          "ev_05e7f09c6eaf8400"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_97a05adcd76172c3",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "同时，由智源研究院牵头的众智FlagOS社区，也在Day0完成了DeepSeek-V4-Flash在8款以上AI芯片上的全量适配与推理部署，并正在推进V4-Pro在多个芯片上的迁移。 实现这样的Day0适配有什么难点？ 智源研究院副院长兼总工程师林咏华告诉南都记者，对于DeepSeek-V4这种量级的模型，整个架构有很多变化，所以在适配上比起其他模型难度要高很多，因此提前需要做大量的技术准备工作。 具体来讲，“第一，为了支持多芯片适配，我们需要将DeepSeek的原版算子用FlagOS的技术栈全部替换，从而保证之前已经适配过我们技术栈的芯片都能跑这些算子”。 第二，要解决模型对硬件的精度依赖问题。 DeepSeek这次采用的是FP4和FP8混合精度，而国内上市的芯片多数都是以BF16为主，必须转换成这些芯片所能支持的精度。 第三，要解决显存并行限制的问题。 国内主流显卡基本是32G或64G显存，需要张量并行大于8份才能放得下，但DeepSeek-V4最多切8份，所以就需要重新做并行策略的切割。 “这些都是在工程上、技术上怎么让它跑起来，后面更重要的要对齐精度。 我们端到端测试了所有芯片",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5e5c67638233f287",
+        "text": "国产替代从\"备选项\"升级为\"必选项\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.875,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_0fbb5e3d11f73993",
+          "ev_97a05adcd76172c3"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5",
+          "src_c89b765b3ba7fc07"
+        ],
+        "reason": "A possible polarity conflict requires semantic verification.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0fbb5e3d11f73993",
+            "source_id": "src_c89b765b3ba7fc07",
+            "text": "依托x86架构生态，在服务器CPU市场占据53.6%份额，DCU（深度计算处理器）兼容ROCm平台，实现对CUDA生态的平滑替代，尤其适合金融、电信等传统行业升级需求。 - **摩尔线程**：- **技术标杆**：寒武纪在AI专用芯片的性能突破仍是国产替代核心标杆。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d8be7e0846df34a5",
+        "text": "出口管制使 NVIDIA 在华重要性系统性减弱；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_edbeb89004586ad2",
+          "ev_e7089ecedc256f06"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5",
+          "src_2a9af76528bcbc2c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edbeb89004586ad2",
+            "source_id": "src_2a9af76528bcbc2c",
+            "text": "Artificial Intelligence Computing Leadership from NVIDIA Agentic AI Faster, Smarter, More Efficient Agentic AI NVIDIA Nemotron™ 3. 5 Lightning helps agents complete specialized tasks faster, while NeMo™ Switchyard routes each step to the right model for efficiency and control. Read Blog Data Center Scaling AI Compute Performance Requires a New Power Architecture NVIDIA 800 VDC helps existing and future AI factories scale compute performance beyond the limits of traditional power distribution. Re",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a21b144f9ec8d0a9",
+        "text": "TrendForce 预计 2026 年中国本土高阶 AI 芯片需求同比增长超 60%，国产份额近 80% 的跃升主要发生在推理与互联网自研场景 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0438,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_031c349c0fe0813e",
+          "ev_8872e93ece77ddea",
+          "ev_cc069b47aca65411"
+        ],
+        "source_ids": [
+          "src_7d79ca3450e84c5f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_031c349c0fe0813e",
+            "source_id": "src_7d79ca3450e84c5f",
+            "text": "PC / Mac TrendForce: Nvidia, AMD Combined China AI Chip Share to Fall to 21% in 2026 Tane Wharekura 10/08/2026 5 min read Nvidia and AMD’s combined share of China’s AI server chip market is on track to shrink to just 21 percent in 2026, down sharply from 34 percent last year, according to a new forecast from Taiwan-based market research firm TrendForce. Geopolitical tensions continue to erode the position of Nvidia, Advanced Micro Devices and other foreign suppliers, whose combined share of Chin",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8872e93ece77ddea",
+            "source_id": "src_7d79ca3450e84c5f",
+            "text": "Huawei, Cambricon and In-House ASICs Fill the Gap Beyond the headline GPU-versus-domestic-chip split, TrendForce is also tracking a parallel trend: Chinese tech giants building their own application-specific chips instead of buying off-the-shelf silicon. Highly specialised application-specific integrated circuits (ASICs) designed by Chinese internet companies are projected to account for 23 per cent of the market, compared with 20 per cent a year earlier. Add that figure to the 56 percent share ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_476ffe829338632b",
+        "text": "风险点：昇腾与寒武纪均受制于中芯国际先进制程产能；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2917,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d1179ffc2c06de1f",
+          "ev_6ee8f27a26018f85",
+          "ev_9e989cbb966ee0f2"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6ee8f27a26018f85",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "简体中文 繁体中文 港美股资讯 登录/注册 简体中文 繁体中文 热门资讯 > 正文 寒武纪因何一个月市值翻倍？ 2025-08-27 17:50 英特尔(INTC) C3. ai(AI) 做空标普500指数ETF-ProShares(SH) 炒股就看 金麒麟分析师研报 ，权威，专业，及时，全面，助您挖掘潜力主题机会！ 营收只有英特尔的1. 6%，为何市值可以达到英特尔的75%？ 寒武纪业务基本面是否足以支撑它在资本市场的表现？ 文|《财经》研究员 吴俊宇 编辑|谢丽容 寒武纪正在成为中国AI芯片市场不可忽视的一股势力。 国产AI芯片公司寒武纪（SHA： 688256）8月26日发布2025上半年财报。 财报显示，寒武纪当期营收28. 9亿元，同比增长4347. 8%；净利润10. 4亿元，同比扭亏为盈，去年同期净利润为-5. 3亿元。 截至8月27日时，寒武纪收盘价1372. 10元，总市值5794亿元。 当日美国老牌芯片巨头英特尔市值1077亿美元（约合7701亿元）。 按照这个数据计算，寒武纪市值约等于英特尔的75%。 2025年以来（1月1日-8月27日），寒武纪市值已上涨116",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e7c63f4768e7cd55",
+        "text": "昇腾 910B/C 各版本算力参数缺乏官方统一口径；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1345,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_815dac35f50ad598",
+          "ev_8d6455869cf37e63",
+          "ev_9bde4fd8336adf13"
+        ],
+        "source_ids": [
+          "src_65b1c8d3addbbd6d",
+          "src_467082c42313f8c6",
+          "src_fabff2e97b579fb5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_815dac35f50ad598",
+            "source_id": "src_65b1c8d3addbbd6d",
+            "text": "昇腾910B的计算性能相关选项分析.昇腾910B（Ascend 910B）是华为推出的AI训练芯片，其主要参数如下：",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8d6455869cf37e63",
+            "source_id": "src_467082c42313f8c6",
+            "text": "昇腾 910B 是国产最强 NPU，FP16 算力 780 TFLOPS，对标 NVIDIA A100。 通过 CANN 工具链 + vLLM-Ascend 分支支持 LLM 推理。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_55429f283c68636d",
+        "text": "各机构对中国市场份额的统计口径差异较大（时间点不同可部分解释 2024 年寒武纪 1% 与 2026 年国产合计 56% 的差异），全球训练/推理芯片精确出货量亦无权威披露。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3438,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e989cbb966ee0f2",
+          "ev_d1179ffc2c06de1f",
+          "ev_05e7f09c6eaf8400"
+        ],
+        "source_ids": [
+          "src_a6670ebbcdebfc4c",
+          "src_89dbc3e925f78bf5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d1179ffc2c06de1f",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "5万元的思元580芯片，总价值达10亿元。 字节跳动第一时间否定了这件事情的真实性。 和字节跳动之间的传闻和关联，为寒武纪带来了巨大的想象空间。 伯恩斯坦今年4月研报提到，寒武纪2024年向字节跳动交付了约2万-3万片思元590芯片，预计2025年的出货量将增至15万片。 《财经》就“字节跳动是否是寒武纪第一大客户”向字节跳动发出了置评请求。 截至发稿前，字节跳动方面未对《财经》做出回应。 一位半导体产业人士对《财经》解释，谷歌通过自研TPU（一种AI芯片）替代了一部分英伟达AI芯片，这降低了谷歌的训练、推理成本。 目前，市场一种期待是，寒武纪和字节跳动形成类似关系。 字节跳动带动寒武纪的出货量，并在大规模使用中解决寒武纪的软件适配问题。 但这种设想尚无明确依据，且并没有落地。 寒武纪的高市值合理吗？ 寒武纪诞生于2016年，这家年轻的芯片公司成立至今不到10年。 它最新的营收只有英特尔的1. 6%，市值却飙升到了英特尔的75%。 市场的常见疑问是，寒武纪被高估了么？ 结论是，在美国AI芯片管制出口管制不断强化，国产替代又是未来趋势，以及中国政企客户不愿意依赖单一供应商的大背景下，寒武",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_62ef01dbef20e4d8",
+        "text": "结论：训练端 NVIDIA 全球垄断延续，AMD 是唯一规模化西方替代者，Intel 边缘化，昇腾在中国政策庇护下快速补位；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0729,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b3ebf806f9de80f6",
+          "ev_828751e6ad8afdde",
+          "ev_b9896666d6b572f0"
+        ],
+        "source_ids": [
+          "src_3fe0bb8ab6bac0ca"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b3ebf806f9de80f6",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "Machine Learning AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 Nadia Okwuosa April 9, 2026 AI Chip Wars: AMD MI400 vs NVIDIA Blackwell vs Intel Gaudi 3 AI chip comparison 2026 landscape has three serious contenders for data center AI workloads: AMD’s MI400, NVIDIA’s Blackwell B200, and Intel’s Gaudi 3. NVIDIA still dominates the market with over 80% revenue share, but AMD and Intel are shipping competitive hardware that gives buyers real alternatives for the first time. This artic",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_828751e6ad8afdde",
+            "source_id": "src_3fe0bb8ab6bac0ca",
+            "text": "On a standard GPT-3 175B training benchmark, a cluster of 64 B200s completes the job in approximately 72 hours. NVIDIA’s CUDA ecosystem, combined with libraries like Megatron-LM and NeMo, provides the most mature training infrastructure. AMD MI400 reaches approximately 85% of B200 training performance. Early benchmarks from AMD partners show that MI400 with ROCm 7 delivers competitive throughput on PyTorch-based training workloads. The gap is smaller than previous generations, and AMD’s pricing ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f98a10c69e89ac56",
+        "text": "推理端替代加速，AMD 以性价比抢全球份额，昇腾+寒武纪在中国形成结构性优势，市场呈现\"全球一超、中国多元\"的分化格局。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2468,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_71108b1813a7f3a2",
+          "ev_9e989cbb966ee0f2",
+          "ev_da1095d90ca4c8ea"
+        ],
+        "source_ids": [
+          "src_89dbc3e925f78bf5",
+          "src_a6670ebbcdebfc4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_71108b1813a7f3a2",
+            "source_id": "src_89dbc3e925f78bf5",
+            "text": "如果模型厂商手上没有更多的算力资源，就很难支撑它去做更多的推理任务，吸引更多的用户。 即便模型性能卓越，若算力支撑不足、难以满足用户需求，用户仍将转向替代方案。 正因如此，今年模型厂商普遍呈现出更积极的姿态，主动推进甚至提前布局与芯片厂商的适配工作。 林咏华还表示，“行业内跨芯片适配时间已从原来的数周缩短至数天，当开发者发现用各种AI芯片跑模型都很简单时，生态才会真正发展起来”。 TrendForce集邦咨询分析师龚明德也对南都记者提到，Day0适配的意义主要包含兼容更多本土AI芯片硬件、LLM软件平台的开放性，以及更加重视上市时间，强调了AI未来能够更快速地在更多应用领域实现落地商转时机。 国模国芯生态正在逐步建立，而随着国产芯片替代从“备选项”升级为“必选项”，英伟达的重要性也已逐步减弱，这点在市占率下滑上亦有所体现。 IDC数据显示，2025年中国市场AI加速卡总出货量约为400万张，其中英伟达出货约220万张，占据约55%的市场份额，在中国市场的领先优势正在收窄。 AMD则出货约16万张，市场份额约为4%。 另外，中国厂商合计出货约165万张，占总市场比例已攀升至约41%。 值",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9e989cbb966ee0f2",
+            "source_id": "src_a6670ebbcdebfc4c",
+            "text": "从销售量、销售额来看，寒武纪在英伟达、昇腾、昆仑芯之后，处于第二至第三梯队。 伯恩斯坦在今年7月一份名为《中国AI芯片供需状况》的研报指出，2024年寒武纪在中国AI芯片市场份额1%，位居第四，在英伟达（66%）、华为昇腾（23%）、AMD（5%）之后。 国际市场调研机构IDC公布的2024年中国市场AI芯片出货量显示，英伟达出货量超过190万片，占比70%；华为昇腾出货量超过60万枚，占比约23%；百度昆仑芯6. 9万枚、天数智芯3. 8万枚、寒武纪2. 6万片、沐曦2. 4万枚、燧原1. 3万枚，其他厂商的出货量均未过万。 寒武纪主要产品包括思元590AI训练芯片、思元370系列AI推理芯片。 思元590性能参数（TPP，总处理性能，Total Processing Performance）接近英伟达A100，略高于英伟达H20。 不过，性能参数并不代表实际性能。 国产芯片性能受限于开发工具，实际性能通常低于英伟达。 某中国科技公司的一位基础设施负责人曾对《财经》表示，芯片和开发工具、模型要经过数周、数月深度适配才有可能充分发挥性能。 《财经》多方了解到，目前寒武纪的思元590芯片",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 48,
+    "evidence_count": 83,
+    "supported_count": 2,
+    "refuted_count": 1,
+    "not_enough_evidence_count": 33,
+    "coverage": 0.0556,
+    "primary_source_ratio": 0.0208,
+    "fulltext_source_ratio": 0.125,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 33
+  },
+  "run_metadata": {
+    "final_report_sha256": "025a41930af5eb3bcb43df284b44117191759d65488880798f909ea98fc005a9",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 36,
+        "supported_count": 2,
+        "refuted_count": 1,
+        "not_enough_evidence_count": 33,
+        "coverage": 0.0556,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 33
+      },
+      "after": {
+        "claim_count": 36,
+        "supported_count": 2,
+        "refuted_count": 1,
+        "not_enough_evidence_count": 33,
+        "coverage": 0.0556,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 33
+      }
+    }
+  }
+}

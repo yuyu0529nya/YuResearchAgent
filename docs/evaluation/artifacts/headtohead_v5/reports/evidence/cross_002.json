@@ -1,0 +1,3202 @@
+{
+  "schema_version": "1.0",
+  "query": "评估 AI 制药（AlphaFold、Atomwise 等）在靶点发现和临床试验设计中的进展，分析其对传统 Pharma 研发投入回报率的潜在改变。",
+  "created_at": "2026-08-13T20:42:29.325794+00:00",
+  "sources": [
+    {
+      "source_id": "src_463e1343949ada0d",
+      "url": "https://deepmind.google/science/alphafold",
+      "title": "AlphaFold — Google DeepMind",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "c474d6371f48333681534e474a0ef12fe3cd49ced9d81223a03462cdd81ea7a0",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.4722,
+        "host_domain": "deepmind.google"
+      }
+    },
+    {
+      "source_id": "src_26acd5f7accc4844",
+      "url": "https://finance.sina.com.cn/tech/digi/2025-07-07/doc-infervxe9659994.shtml",
+      "title": "谷歌 AI 制药将迎里程碑：人体试验启动在即，正为癌症研发新药",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "finance.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_7528fa26b8cae5ce",
+      "url": "https://winzheng.com/article/alphafold-3-ai-designed-drug-enters-clinical-trials",
+      "title": "DeepMind AlphaFold 3首创AI设计抗癌药进入临床试验：AI... | 赢政天下",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.7861,
+        "host_domain": "winzheng.com"
+      }
+    },
+    {
+      "source_id": "src_909870c43f07440c",
+      "url": "https://neican.ai/insights/alphafold-3aiisomorphic-labs6-20250703093252765-9",
+      "title": "AlphaFold 3：AI重塑药物发现的新篇章——Isomorphic Labs...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "b56f8958fe033961986c6370205aab83ab8adcf805f3c8f1cd3cef99b1cfde38",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "neican.ai"
+      }
+    },
+    {
+      "source_id": "src_90cbd6cdc3e1b0fc",
+      "url": "https://airosetta.com/zh/news/isomorphic-labs-isodde-drug-design-engine",
+      "title": "DeepMind/Isomorphic Labs发布AlphaFold... - Airosetta News",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.7472,
+        "host_domain": "airosetta.com"
+      }
+    },
+    {
+      "source_id": "src_a738815900e7b3f3",
+      "url": "https://general.medsci.cn/article/show_article.do?id=c9d582531936",
+      "title": "Nature：AlphaFold...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold 里程碑 药物研发 AlphaFold 3 Isomorphic Labs 临床试验 进展",
+        "retrieval_relevance": 0.7278,
+        "host_domain": "general.medsci.cn"
+      }
+    },
+    {
+      "source_id": "src_c919d06c2cce4a4c",
+      "url": "https://163.com/dy/article/L41V4IF705119734.html",
+      "title": "机器学习先驱Daphne Koller警告：AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "163.com"
+      }
+    },
+    {
+      "source_id": "src_76ae8da02f4feeb7",
+      "url": "https://toolsworld.ai/zh-hans/atomwise",
+      "title": "Atomwise：利用 AI 驱动的解决方案加速药物发现",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.825,
+        "host_domain": "toolsworld.ai"
+      }
+    },
+    {
+      "source_id": "src_01d082467595bec5",
+      "url": "https://b.atyun.com/atomwise",
+      "title": "Atomwise... | ATYUN.COM 官网-人工智能教程资讯全方位服务平台",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "b.atyun.com"
+      }
+    },
+    {
+      "source_id": "src_a97d06c976d4d6ae",
+      "url": "https://cnjiyin.com/guowaiyanjiu/20190608_13453.html",
+      "title": "Lilly与Atomwise签订了高达5.6亿美元的AI药物发现协作 - 中国基因网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "cnjiyin.com"
+      }
+    },
+    {
+      "source_id": "src_8d8c7548362c894d",
+      "url": "https://mg21.com/atomwise.html",
+      "title": "基于结构的小分子药物发现深度学习AI技术公司：Atomwise, Inc.",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.8031,
+        "host_domain": "mg21.com"
+      }
+    },
+    {
+      "source_id": "src_50ab1f7276ff2810",
+      "url": "https://m.gelonghui.com/p/4675755",
+      "title": "全球药物研发AI工具研究报告：市场规模、头部企业竞争及产业链分析",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise 药物发现 AI 里程碑 合作 成果 靶点发现",
+        "retrieval_relevance": 0.7156,
+        "host_domain": "m.gelonghui.com"
+      }
+    },
+    {
+      "source_id": "src_5d9e8b97b164a034",
+      "url": "https://winzheng.com/article/insilico-medicine-ai-drug-ipf-phase-3-trials",
+      "title": "Insilico Medicine AI药物挺进IPF III期临床试验 | 赢政天下",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.7516,
+        "host_domain": "winzheng.com"
+      }
+    },
+    {
+      "source_id": "src_285639eb09399f77",
+      "url": "https://bigmoleculewatch.cn/tag/insilico-medicine",
+      "title": "Insilico Medicine | 聚焦大分子",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.7177,
+        "host_domain": "bigmoleculewatch.cn"
+      }
+    },
+    {
+      "source_id": "src_290e3be31d03e386",
+      "url": "https://segmentfault.com/a/1190000044790641",
+      "title": "人工智能 - 透视 Insilico 英矽智能：AI... - SegmentFault 思否",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.7065,
+        "host_domain": "segmentfault.com"
+      }
+    },
+    {
+      "source_id": "src_3807c09476a94a5e",
+      "url": "https://med-tech.world/zh/news/insilico-medicine-bora-partnership",
+      "title": "Insilico Medicine达成 25 亿美元 Bora 合作协议",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.6952,
+        "host_domain": "med-tech.world"
+      }
+    },
+    {
+      "source_id": "src_28a941d70fef311f",
+      "url": "https://youtube.com/watch?v=bdM88ycENCo",
+      "title": "AI医生正在上岗？ Tempus AI、Recursion、Insilico... - YouTube",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.729,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_4bffdea5c7e780bf",
+      "url": "https://insilico.com/news/ok6co4kgd1-science-signaling-insilico-medicine-cont",
+      "title": "Science Signaling | Insilico Medicine Contributes to Research Using...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 制药 临床试验设计 研发回报率 Insilico Medicine INS018_055 时间成本 量化成果",
+        "retrieval_relevance": 0.4559,
+        "host_domain": "insilico.com"
+      }
+    },
+    {
+      "source_id": "src_d3d0e4b1c332744e",
+      "url": "https://researchgate.net/publication/408159133_Artificial_Intelligence_and_Large_Language_Models_in_Drug_Discovery_and_Pharmacogenomics_A_Comprehensive_Pharmacological_Review_of_AlphaFold_Generative_AI_for_De_Novo_Design_Clinical_Decision_Support_",
+      "title": "Artificial Intelligence and Large Language Models in Drug Discovery...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold drug discovery target identification validated case studies success rate timeline reduction",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "researchgate.net"
+      }
+    },
+    {
+      "source_id": "src_1cdbff858a1e4c14",
+      "url": "https://bioskepsis.ai/blog/ai-drug-target-validation-genetic-mechanistic-clinical-evidence-pubmed",
+      "title": "AI for Drug Target Validation: How to Assess... | BioSkepsis Blog",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "67d763414681786cc95516bbaf5deba9918f6842a6396392b1bd2874527ac767",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold drug discovery target identification validated case studies success rate timeline reduction",
+        "retrieval_relevance": 0.7958,
+        "host_domain": "bioskepsis.ai"
+      }
+    },
+    {
+      "source_id": "src_fd4e87b85d7d7c1b",
+      "url": "https://digitaldefynd.com/IQ/ai-in-pharmaceutical-industry",
+      "title": "AI in the Pharmaceutical Industry [10 Success Stories][2026]",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold drug discovery target identification validated case studies success rate timeline reduction",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "digitaldefynd.com"
+      }
+    },
+    {
+      "source_id": "src_b58a83553bc271b4",
+      "url": "https://articsledge.com/post/ai-drug-discovery",
+      "title": "AI Drug Discovery: How Machine Learning Accelerates Pharma R&D",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold drug discovery target identification validated case studies success rate timeline reduction",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "articsledge.com"
+      }
+    },
+    {
+      "source_id": "src_076c6d92a9714a28",
+      "url": "https://analyticsvidhya.com/blog/2024/05/deepmind-ai-alphafold",
+      "title": "AlphaFold 3: The Next Generation in Molecular Prediction",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AlphaFold drug discovery target identification validated case studies success rate timeline reduction",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "analyticsvidhya.com"
+      }
+    },
+    {
+      "source_id": "src_a0e43fcfba2ff314",
+      "url": "https://nature.com/articles/s41392-022-00994-0.pdf",
+      "title": "Artificial intelligence in cancer target identification and drug discovery",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Yujie You, Xin Lai, Yi Pan, Huiru Zheng, Julio Vera, Suran Liu, Senyi Deng, Le Zhang",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4229447215",
+        "citation_count": 426,
+        "provider": "openalex",
+        "retrieval_query": "AlphaFold protein structure prediction drug discovery target identification",
+        "retrieval_relevance": 0.825,
+        "host_domain": "nature.com"
+      }
+    },
+    {
+      "source_id": "src_c6f729aa9fbaac6f",
+      "url": "https://nature.com/articles/s41586-021-03828-1.pdf",
+      "title": "Highly accurate protein structure prediction for the human proteome",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Kathryn Tunyasuvunakool, Jonas Adler, Zachary Wu, Tim Green, Michał Zieliński, Augustin Žídek, Alex Bridgland, Andrew Cowie, Clemens Meyer, Agata Laydon",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3183475563",
+        "citation_count": 3278,
+        "provider": "openalex",
+        "retrieval_query": "AlphaFold protein structure prediction drug discovery target identification",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "nature.com"
+      }
+    },
+    {
+      "source_id": "src_a4c9e9bbea763bea",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2023/sc/d2sc05709c",
+      "title": "AlphaFold accelerates artificial intelligence powered drug discovery: efficient discovery of a novel CDK20 small molecule inhibitor",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Feng Ren, Xiao Ding, Min Zheng, Mikhail Korzinkin, Xin Cai, Wei Zhu, Alexey B. Mantsyzov, Alex Aliper, Vladimir Aladinskiy, Zhongying Cao",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4313880353",
+        "citation_count": 338,
+        "provider": "openalex",
+        "retrieval_query": "AlphaFold protein structure prediction drug discovery target identification",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "pubs.rsc.org"
+      }
+    },
+    {
+      "source_id": "src_cfcb5a1be5cd2f0e",
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.15252/msb.202211081",
+      "title": "Benchmarking AlphaFold‐enabled molecular docking predictions for antibiotic discovery",
+      "source_type": "paper",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "Felix Wong, Aarti Krishnan, Erica J. Zheng, H. Stärk, Abigail L. Manson, Ashlee M. Earl, Tommi Jaakkola, James J. Collins",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4294719209",
+        "citation_count": 275,
+        "provider": "openalex",
+        "retrieval_query": "AlphaFold protein structure prediction drug discovery target identification",
+        "retrieval_relevance": 0.9125,
+        "host_domain": "onlinelibrary.wiley.com"
+      }
+    },
+    {
+      "source_id": "src_603cafd4bc56f868",
+      "url": "https://pswordpress-production.s3.amazonaws.com/2018/08/Applications-of-AI-in-Drug-Discovery-and-Development-PreScouter.pdf",
+      "title": "What are the applications of artificial",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise AI drug discovery clinical development applications results",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "pswordpress-production.s3.amazonaws.com"
+      }
+    },
+    {
+      "source_id": "src_c2631eefa58fefec",
+      "url": "https://moge.ai/product/atomwise",
+      "title": "Atomwise:Innovative platform accelerating small molecule drug...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise AI drug discovery clinical development applications results",
+        "retrieval_relevance": 0.825,
+        "host_domain": "moge.ai"
+      }
+    },
+    {
+      "source_id": "src_5980a2b390706323",
+      "url": "https://venturebeat.com/ai/atomwise-raises-123-million-to-accelerate-drug-discovery-with-ai",
+      "title": "venturebeat.com/ai/atomwise-raises-123-million-to-accelerate-drug...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise AI drug discovery clinical development applications results",
+        "retrieval_relevance": 0.825,
+        "host_domain": "venturebeat.com"
+      }
+    },
+    {
+      "source_id": "src_16bd14155be3cb05",
+      "url": "https://fiercebiotech.com/cro/ai-driven-drug-discovery-startup-atomwise-raises-45m-series-a",
+      "title": "AI-driven drug discovery startup Atomwise raises... | Fierce Biotech",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise AI drug discovery clinical development applications results",
+        "retrieval_relevance": 0.825,
+        "host_domain": "fiercebiotech.com"
+      }
+    },
+    {
+      "source_id": "src_b7dd3f731dc9006c",
+      "url": "https://genengnews.com/topics/artificial-intelligence/ten-companies-to-watch-in-ai-drug-discovery",
+      "title": "Ten Companies to Watch in AI Drug Discovery",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Atomwise AI drug discovery clinical development applications results",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "genengnews.com"
+      }
+    },
+    {
+      "source_id": "src_c9af2533954dce1e",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-10277-5_4",
+      "title": "Machine Learning in Clinical Trial Design and Optimization",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI platforms clinical trial design patient stratification recruitment optimization endpoints Unlearn Tempus results metrics",
+        "retrieval_relevance": 0.825,
+        "host_domain": "link.springer.com"
+      }
+    },
+    {
+      "source_id": "src_c3fab60996d178bd",
+      "url": "https://intuitionlabs.ai/articles/pharma-ai-vendor-landscape-2026",
+      "title": "Pharma AI Vendor Landscape 2026: Drug Discovery & Trials",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "8ba04cbf32614f37f7a84f4cd9508254d6ec5b2025644e571d7939fd663c5051",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI platforms clinical trial design patient stratification recruitment optimization endpoints Unlearn Tempus results metrics",
+        "retrieval_relevance": 0.8,
+        "host_domain": "intuitionlabs.ai"
+      }
+    },
+    {
+      "source_id": "src_2749cf5c421b359b",
+      "url": "https://biomednexus.com/digital-health-platforms-clinical-trials-2026",
+      "title": "25 Digital Health Platforms Transforming Clinical Trials in 2026",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI platforms clinical trial design patient stratification recruitment optimization endpoints Unlearn Tempus results metrics",
+        "retrieval_relevance": 0.775,
+        "host_domain": "biomednexus.com"
+      }
+    },
+    {
+      "source_id": "src_ebb429f0c403caf5",
+      "url": "https://aitoolclinic.com/ai-agentic-systems-clinical-trials-guide-2026",
+      "title": "AI Agentic Systems in Clinical Trials: Complete Guide... - AI Tool Clinic",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI platforms clinical trial design patient stratification recruitment optimization endpoints Unlearn Tempus results metrics",
+        "retrieval_relevance": 0.4833,
+        "host_domain": "aitoolclinic.com"
+      }
+    },
+    {
+      "source_id": "src_9ccd762eae86edc7",
+      "url": "https://globenewswire.com/news-release/2025/06/09/3095666/28124/en/AI-Enabled-Drug-Discovery-and-Clinical-Trials-Research-Report-2025-2035-Featuring-AiCure-Aitia-Atomwise-BenevolentAI-Insilico-Medicine-PathAI-Recursion-Saama-Schroedinger-Tempus-Un.html",
+      "title": "AI-Enabled Drug Discovery and Clinical Trials Research",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI platforms clinical trial design patient stratification recruitment optimization endpoints Unlearn Tempus results metrics",
+        "retrieval_relevance": 0.2417,
+        "host_domain": "globenewswire.com"
+      }
+    },
+    {
+      "source_id": "src_2ddc1920a50a2f21",
+      "url": "https://pharmaaiatlas.com/vendors/unlearn-ai",
+      "title": "Unlearn.AI — Pharma AI Vendor Profile | PharmaAiAtlas",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Unlearn.AI digital twin clinical trial sample size reduction results FDA EMA qualification; Atomwise 2024 layoffs pipeline status",
+        "retrieval_relevance": 0.7735,
+        "host_domain": "pharmaaiatlas.com"
+      }
+    },
+    {
+      "source_id": "src_b72a48e7a0a9c988",
+      "url": "https://treeview.studio/blog/top-digital-twins-healthcare-companies",
+      "title": "Top Digital Twins in Healthcare Companies (2026) | Treeview",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Unlearn.AI digital twin clinical trial sample size reduction results FDA EMA qualification; Atomwise 2024 layoffs pipeline status",
+        "retrieval_relevance": 0.7529,
+        "host_domain": "treeview.studio"
+      }
+    },
+    {
+      "source_id": "src_55b4524d1c4b2b9a",
+      "url": "https://patientanalog.com/technology/digital-twins-healthcare",
+      "title": "Digital Twins in Healthcare & Drug Development | Patient Analog",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Unlearn.AI digital twin clinical trial sample size reduction results FDA EMA qualification; Atomwise 2024 layoffs pipeline status",
+        "retrieval_relevance": 0.7324,
+        "host_domain": "patientanalog.com"
+      }
+    },
+    {
+      "source_id": "src_7a93d16016929780",
+      "url": "https://unlearn.ai/about",
+      "title": "Revolutionizing Medicine | AI and Digital Twins of Trial Participants",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Unlearn.AI digital twin clinical trial sample size reduction results FDA EMA qualification; Atomwise 2024 layoffs pipeline status",
+        "retrieval_relevance": 0.7118,
+        "host_domain": "unlearn.ai"
+      }
+    },
+    {
+      "source_id": "src_f9cb0c967fb6f21b",
+      "url": "https://techlifesci.com/p/the-virtual-patient-and-the-bottleneck",
+      "title": "Simulating the Control Arm: Virtual Patients at the Trial Bottleneck",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Unlearn.AI digital twin clinical trial sample size reduction results FDA EMA qualification; Atomwise 2024 layoffs pipeline status",
+        "retrieval_relevance": 0.4745,
+        "host_domain": "techlifesci.com"
+      }
+    },
+    {
+      "source_id": "src_7407a364f558259f",
+      "url": "https://linkedin.com/pulse/excluding-glp-1-expected-return-innovation-drops-from-smaye",
+      "title": "Pharma R&D Returns Rise to 5.9% in 2024",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "e0259a8295be5533146210f7d115cffc6dab8ef3d4ac183f193e63050625ae9e",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "pharma R&D ROI Deloitte measuring the return from pharmaceutical innovation declining 2024",
+        "retrieval_relevance": 0.9327,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_1fbf6c328c2482ea",
+      "url": "https://hitconsultant.net/2025/03/25/pharma-rd-returns-surge-in-2024",
+      "title": "Pharma R&D Returns Surge in 2024, Driven by GLP-1 Therapies",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "pharma R&D ROI Deloitte measuring the return from pharmaceutical innovation declining 2024",
+        "retrieval_relevance": 0.9327,
+        "host_domain": "hitconsultant.net"
+      }
+    },
+    {
+      "source_id": "src_7a118c2f164254cc",
+      "url": "https://fiercebiotech.com/biotech/drug-development-cost-pharma-22b-asset-2024-plus-how-glp-1s-impact-roi-deloitte",
+      "title": "R&D cost per drug up year over year: Deloitte",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "pharma R&D ROI Deloitte measuring the return from pharmaceutical innovation declining 2024",
+        "retrieval_relevance": 0.8991,
+        "host_domain": "fiercebiotech.com"
+      }
+    },
+    {
+      "source_id": "src_af3ad9f4f686e9dd",
+      "url": "https://deloitte.com/uk/en/about/press-room/global-pharma-rd-returns-rise-as-one-glp-drugs-help-drive-forecast-growth.html",
+      "title": "Global pharma R&D returns rise as GLP-1 drugs help... | Deloitte UK",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "pharma R&D ROI Deloitte measuring the return from pharmaceutical innovation declining 2024",
+        "retrieval_relevance": 0.8991,
+        "host_domain": "deloitte.com"
+      }
+    },
+    {
+      "source_id": "src_a3a06878a91408c7",
+      "url": "https://themalaysianreserve.com/2024/04/25/deloittes-14th-annual-pharmaceutical-innovation-report-pharma-rd-return-on-investment-rebounds-after-record-low",
+      "title": "Deloitte's 14th Annual Pharmaceutical Innovation Report: Pharma...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "pharma R&D ROI Deloitte measuring the return from pharmaceutical innovation declining 2024",
+        "retrieval_relevance": 0.8991,
+        "host_domain": "themalaysianreserve.com"
+      }
+    },
+    {
+      "source_id": "src_c69114a845cd83b2",
+      "url": "https://linkedin.com/pulse/ai-use-cases-drug-discovery-2026-rising-max-inc-zizhc",
+      "title": "AI Use Cases in Drug Discovery | 2026",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI drug discovery target identification clinical trial design cost cycle time success rate impact pharma",
+        "retrieval_relevance": 0.82,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_5a932ae29ec13756",
+      "url": "https://pharmanow.live/pharma-it/pharma-ai-investment-roi-delivering-results",
+      "title": "Does Pharma AI Investment Actually Deliver Real ROI?",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI drug discovery target identification clinical trial design cost cycle time success rate impact pharma",
+        "retrieval_relevance": 0.7957,
+        "host_domain": "pharmanow.live"
+      }
+    },
+    {
+      "source_id": "src_b0c03c000081828d",
+      "url": "https://business20channel.tv/top-10-ai-in-drug-discovery-trends-in-2026-uk-europe-us-india-china-25-december-2025",
+      "title": "Top 10 AI in Drug Discovery Trends in 2026 in UK, Europe, US, India...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI drug discovery target identification clinical trial design cost cycle time success rate impact pharma",
+        "retrieval_relevance": 0.7957,
+        "host_domain": "business20channel.tv"
+      }
+    },
+    {
+      "source_id": "src_92976eb3d97a1afa",
+      "url": "https://big-europe.eu/publications/2026-03-25-opportunities-for-europe-s-pharma-sector-how-ai-pricing-pressures-and-chinese-innovation-are-redrawing-pharma-s-map",
+      "title": "Brussels Institute for Geopolitics – Opportunities for Europe’s pharma",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI drug discovery target identification clinical trial design cost cycle time success rate impact pharma",
+        "retrieval_relevance": 0.7229,
+        "host_domain": "big-europe.eu"
+      }
+    },
+    {
+      "source_id": "src_b052d580bd538bb1",
+      "url": "https://flcube.com/?p=72180",
+      "title": "Recursion and Roche‑Genentech Reach First Validated Target...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI drug discovery target identification clinical trial design cost cycle time success rate impact pharma",
+        "retrieval_relevance": 0.265,
+        "host_domain": "flcube.com"
+      }
+    },
+    {
+      "source_id": "src_13fbbbdd402a7cc3",
+      "url": "https://linkedin.com/posts/dimastar_for-the-first-time-a-medicine-whose-biological-activity-7490787495983579136-kM0q",
+      "title": "AI-Discovered Medicine Enters Final Human Trials for... | LinkedIn",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BCG AI-discovered molecules clinical success rate phase 1 80-90% study 2024",
+        "retrieval_relevance": 0.8648,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_69202e6326ce995e",
+      "url": "https://banki.ru/products/currency/cash/kazan~",
+      "title": "Курсы валют в Казани на сегодня, выгодный курс обмена наличной...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BCG AI-discovered molecules clinical success rate phase 1 80-90% study 2024",
+        "retrieval_relevance": 0.742,
+        "host_domain": "banki.ru"
+      }
+    },
+    {
+      "source_id": "src_7cb2525e6145df0c",
+      "url": "https://en.wikipedia.org/wiki/BCG_vaccine",
+      "title": "BCG vaccine - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BCG AI-discovered molecules clinical success rate phase 1 80-90% study 2024",
+        "retrieval_relevance": 0.2473,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_2511e28a29327559",
+      "url": "https://pnas.org/doi/10.1073/pnas.2024292118",
+      "title": "pnas.org/doi/10.1073/pnas.2024292118",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BCG AI-discovered molecules clinical success rate phase 1 80-90% study 2024",
+        "retrieval_relevance": 0.2598,
+        "host_domain": "pnas.org"
+      }
+    },
+    {
+      "source_id": "src_8697ef84810f4a2b",
+      "url": "https://my.clevelandclinic.org/health/treatments/17908-bacillus-calmette-guerin-bcg-treatment",
+      "title": "BCG Treatment: What It Is, Procedure & Side Effects",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BCG AI-discovered molecules clinical success rate phase 1 80-90% study 2024",
+        "retrieval_relevance": 0.2473,
+        "host_domain": "my.clevelandclinic.org"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_efd6bd5d34cea733",
+      "source_id": "src_463e1343949ada0d",
+      "text": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life’s molecules …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0e28a4775404041ae2fbbf62b06baeb0b2cb5772099cf11c36aa5549abca083f"
+    },
+    {
+      "evidence_id": "ev_33f319d59819fe2a",
+      "source_id": "src_26acd5f7accc4844",
+      "text": "这项进展让 AlphaFold 在药物开发中的实用价值大大提升，为加速药物设计提供了可能，也促成了 Isomorphic Labs 的诞生。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "b4813b5e6d7318d1af78c574219bbd6d80b4e48cbf788981b5a09927401d4bd7"
+    },
+    {
+      "evidence_id": "ev_41fd32fc69175261",
+      "source_id": "src_7528fa26b8cae5ce",
+      "text": "DeepMind AlphaFold 3首创AI设计抗癌药进入临床试验：AI制药从预测到创造的质变. 2026年03月21日 80 约6分钟 News Factory.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "63da8186d61c196ace4c6e4100a89dcf60c14dfc4dfc4029ef0016b3c2500cf6"
+    },
+    {
+      "evidence_id": "ev_49c187e25e15268c",
+      "source_id": "src_909870c43f07440c",
+      "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9efb60caa35fdae803b706b482ae8927a9ee8c70828a9f046188f4a90abca0fd"
+    },
+    {
+      "evidence_id": "ev_a8fcc4d58f70b08c",
+      "source_id": "src_90cbd6cdc3e1b0fc",
+      "text": "2026年Isomorphic Labs推出IsoDDE，将AlphaFold 3从静态结构预测扩展为端到端药物设计管线，涵盖动态构象模拟、配体优化与亲和力预测。平台不开放代码与权重，引发学界对开放性与商业化保护的争论。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ab9cdb39e267046310325c2c6d4c328d2fc399d91df5f1e26b728ed296022427"
+    },
+    {
+      "evidence_id": "ev_dba50ec367ad56a6",
+      "source_id": "src_a738815900e7b3f3",
+      "text": "2024年5月9日，DeepMind与Isomorphic Labs的研究人员在 Nature 期刊发表了题为：Accurate structure prediction of biomolecular interactions with AlphaFold 3 的研究论文。Isomorphic Labs在日常工作中使用AlphaFold3并发现：",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ff9e18d67f109d0d69a681ea0a675ee6005320b1efd1d0a09e30d144c452fc5f"
+    },
+    {
+      "evidence_id": "ev_8f98c74a985fba20",
+      "source_id": "src_c919d06c2cce4a4c",
+      "text": "机器学习先驱Daphne Koller警告：AI制药不是魔法棒，下一代药物发现还缺1000倍数据. 2026-08-11 10:35:17 来源: DeepTech深科技 北京 举报.这款用于特发性肺纤维化的药物，其 TNIK 靶点发现和分子设计都使用了 AI。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c4212ba9694c49fabd7aa289ee25898f3e2e47f628b9e02ced77f0bfafaa4f77"
+    },
+    {
+      "evidence_id": "ev_13c11afa3f45de6e",
+      "source_id": "src_76ae8da02f4feeb7",
+      "text": "Atomwise 是 AI 驱动药物发现领域的领先力量。 其创新技术有可能加速新疗法的开发并改善全球患者的生活。 如果您是从事药物发现的研究人员或公司，Atomwise 是值得考虑的合作伙伴。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f7dcb0fb36650fba2db8dfe4d363daf2f793aa43e82e3a0a869ed1f85a84d566"
+    },
+    {
+      "evidence_id": "ev_a86cdc3be611d3fc",
+      "source_id": "src_01d082467595bec5",
+      "text": "Atomwise. 研发了首个设计药物结构的深度神经网络的公司. 利用超级计算机进行药品研发的公司，利用超级计算机、AI和复杂的算法模拟制药过程，来预测新药品的效果，同时降低研发成本。降低开发药物成本的一个关键工具是计算药物发现。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f98a5e3a6d211c7b381884e80e9553e37d4854cdf261079d83b856e70346d88d"
+    },
+    {
+      "evidence_id": "ev_7289165e81e3b17d",
+      "source_id": "src_a97d06c976d4d6ae",
+      "text": "Atomwise表示，它现在支持19个国家100多所大学和医院的发现项目，遍布每个主要治疗领域。 例如，1月份，Atomwise与Charles River Laboratories签署了一项战略联盟，可能为AI平台开发商带来超过24亿美元的版税。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0d1a94b7bc7a90985eca5993a89ac45be2fb41c4923a0ff0ecfa01d0c1d12cf1"
+    },
+    {
+      "evidence_id": "ev_6637edb52dbff1ac",
+      "source_id": "src_8d8c7548362c894d",
+      "text": "Atomwise发明了将深度学习用于基于结构的药物发现的方法，开发了进入临床前研究的小分子药物候选产品管道。 公司的AtomNet®技术已被用来解锁比任何其他AI药物发现平台都更多的目标。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "bfa2869a942bc3d56b64b149aa45e6e75d0749b50864335bee79c10f1eb249d9"
+    },
+    {
+      "evidence_id": "ev_5773bc69ef0bba5a",
+      "source_id": "src_50ab1f7276ff2810",
+      "text": "药物研发AI工具主要企业包括：Atomwise、 BenevolentAI、 Recursion、 Exscientia、 Insilico Medicine、 Valo Health、 Owkin、 XtalPi、 Healx).",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7037efa8546b13cfddfb159dc799aadd23bb61e591dec8f9d03bae677d85aae1"
+    },
+    {
+      "evidence_id": "ev_c051f111a85b754f",
+      "source_id": "src_5d9e8b97b164a034",
+      "text": "—Insilico Medicine创始人兼CEO Alex Zhavoronkov.INS018_055进入III期，无疑给了所有相信AI制药的人一支强心剂。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "111fb03b34a8df5d2266f1e047ca5af81e8e34e9013cc2166e6b43a1f6f9a6e1"
+    },
+    {
+      "evidence_id": "ev_32683ce9371da925",
+      "source_id": "src_285639eb09399f77",
+      "text": "英矽智能 (Insilico Medicine) ，一家总部位于香港的由生成式 AI 驱动的临床阶段生物技术初创公司，于6月27日宣布其已经开始AI研制药物的首批人体试验，为一名中.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5de99ebefa65367ac43d955acd339bf17d473f85a508dadf00bd8b30a9bca9e3"
+    },
+    {
+      "evidence_id": "ev_25928b1030e4f886",
+      "source_id": "src_290e3be31d03e386",
+      "text": "其中，一家由生成式人工智能驱动的生物医药科技公司英矽智能 (Insilico Medicine)，已经悄然成为了 AI 制药领域的翘楚。尽管 INS018_055 正处于高速推进之中，但英矽智能的积累远不止于此。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "62e709b09584c402729847adba5d03510b1c8589d4adcdcb3e0d05b120d3f2d7"
+    },
+    {
+      "evidence_id": "ev_53158b50b2e9ea8c",
+      "source_id": "src_3807c09476a94a5e",
+      "text": "Insilico Medicine and Bora Pharmaceuticals签署最高25亿美元战略合作协议. Insilico Medicine 是一家由生成式人工智能（AI）驱动的临床阶段生物技术公司。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3979a3bfa7ee8a9ffb7aac43c8bf95522ed059326d49c33602bb157746387354"
+    },
+    {
+      "evidence_id": "ev_cc267a5c4898bea1",
+      "source_id": "src_28a941d70fef311f",
+      "text": "#AI医生 #TempusAI #Recursion.生成式 AI 设计新药”的先锋。 谁离“颠覆医疗规则”更近？ 谁更可能先把故事落到真实世界的诊室、病房，或者临床试验中心？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "cce5efc308df7f710eab85285c12995293a7703d0ec23ae90e55b67f14d05228"
+    },
+    {
+      "evidence_id": "ev_d1fb362c0e4964e0",
+      "source_id": "src_4bffdea5c7e780bf",
+      "text": "A joint study by Insilico Medicine, the University of Copenhagen, and academic partners identifies NDRG1 as a key regulator of DNA damage repair, demonstrating that targeting this pathway via the antimalarial drug quinacrine triggers synthetic lethality in specific cancer subtypes.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "da157b61544d52671a984e854ce8a6ae9f25b0953f20fd0f1b0b10bcd91e7ee9"
+    },
+    {
+      "evidence_id": "ev_2243d51cc9bf9c9c",
+      "source_id": "src_909870c43f07440c",
+      "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命活动的关键，往往在于解析生物分子（尤其是蛋白质）的结构与相互作用。 传统上，这依赖于耗时耗力的实验方法，如X射线晶体学和冷冻电子显微镜。 然而，随着AI技术的飞速发展，这一领域正经历着一场范式变革。 DeepMind在2020年发布的AlphaFold 2，凭借深度学习算法，实现了从氨基酸序列准确预测蛋白质三维结构的突破，震惊了生物学界。 这项成就不仅解决了困扰学界半个世纪的难题，更荣获了包括生命科学突破奖在内的多项殊荣，并在疟疾疫苗、癌症靶向治疗等领域得到广泛应用。 2024年，哈萨比斯团队与谷歌DeepMind联合发布的AlphaFold 3，则实现了技术的又一次跨越式进步，将分子结构预测能力推向了前所未有的高度。 其核心改进包括： Evoformer核心模块的进化： AlphaFold 3的核心Evoformer模块，灵感来源于Transformer模型，能够更高效地处理输入分子信息，捕捉分子间复杂的进化关系和相互作用模式，为精准预测奠定基础。 扩散网络生成分子3D结构： 引入了类似AI图像生成技术的扩散网络，模型能从模糊的原子云状态逐步优化，迭代生成能量最低、最符合物理规律的精确3D结构。 这一创新让模型能够“创造”出高精度的分子结构。 从单一蛋白质到全类别生物分子： 相较于AlphaFold 2仅聚焦蛋白质，AlphaFold 3的预测范围扩展至DNA、RNA、配体等全类别生物分子，实现了对细胞内更广泛分子种类结构和相互作用的分析。 这意味着它能更好地理解生物体内的多分子协同机制，这对于药物设计至关重要。 分子相互作用预测精度突破： 在蛋白质与其他分子的相互作用预测上，AlphaFold 3的精度较传统方法提升至少50%，在某些关键场景甚至翻倍。 这使得科学家能更准确地理解药物与靶点结合的方式，加速了药物分子的筛选与设计。 如果说AlphaFold 3是AI制药领域的基础科学突破，那么Isomorphic Labs的AI药物设计引擎，则是在此基础上构建的产业应用典范。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "ecf935bba1326ea988d361244ec76501a082f22876f2006c79f4d77ff030b8d4"
+    },
+    {
+      "evidence_id": "ev_925bee3064f76d57",
+      "source_id": "src_909870c43f07440c",
+      "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。 效率层面： 引擎替代了大量人工实验和数据处理，能够高效识别有潜力的药物候选分子，从而缩短药物发现的周期，降低研发成本，加速创新药物的推出，最终为患者更快地提供有效治疗方案。 应用层面： 传统药物研发受限于技术瓶颈，对疾病领域和药物类型往往有所限制。 而Isomorphic Labs的引擎因兼容全类别生物分子，可同时探索肿瘤、免疫病、罕见病等多个领域，以及小分子、生物制剂等多种药物形式。 它对配体结合、复合体稳定性等药物设计关键维度具备强大的预测力，极大拓展了药物研发的边界。 这些优势在Isomorphic Labs近期的战略合作中得到了验证。 2024年初，公司先后与诺华（Novartis）和礼来（Eli Lilly）达成战略合作，分别获得3750万美元与4500万美元的预付款，共同开展AI辅助药物研发，聚焦于高难度靶点。 仅一年后，诺华便宣布扩大合作范围，进一步证实了Isomorphic Labs的AI技术在探索传统方法无法触及的新化学空间方面的巨大潜力。 AI制药的未来图景与挑战 AI在生物制药领域扮演的角色正日益重要。 根据《2025年AI制药市场分析及未来发展趋势报告》，全球AI制药市场规模预计到2025年将达到200亿美元，年复合增长率超过30%。 全球已有上百家初创公司和大型制药企业投入重金进行研发。 Max Jaderberg预言，未来十年将是药物研发的变革期，生物学领域正迎来“GPT-3时刻”——AI模型将从被动模拟转向主动创造，催生具备自主探索能力的“科学智能体”。 其中，AI与蛋白质的结合，随着靶向药物和合成生物学的流行，正受到前所未有的重视。 以AlphaFold 3为代表的动态结构模拟技术，使得药物设计不再局限于静态分子结构，而是能聚焦蛋白质在溶液中的真实运动状态及其与药物的相互作用，显著提升候选药物的有效性。 值得注意的是，AI驱动的蛋白质预测数据库和设计工具正在成为新药研发的重要基础设施。 谷歌公开了约2亿个蛋白质结构模型，Meta的ESM-Fold软件免费提供了超6亿个蛋白质三维结构数据。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "ca2a60d3986ffde5f5554b23b8454f41966791aa6605e481ec444e4b311ac1a4"
+    },
+    {
+      "evidence_id": "ev_6d97355f24280ca9",
+      "source_id": "src_909870c43f07440c",
+      "text": "RoseTTA Fold、AlphaFold 3以及国际蛋白质数据库PDB的全新服务，都为相关研究提供了强大助力。 在实际应用中，AI已取得显著成果，例如斯坦福医学院与麦克马斯特大学研究人员开发的SyntheMol模型成功设计出抑制超级细菌的分子；英矽智能利用其AI平台识别了罕见肺部疾病的全新药物靶点。 然而，AI制药的发展并非坦途。 尽管技术突破带来了巨大希望，但实际落地仍需跨越数据质量、监管审批、以及行业协作模式等多重障碍。 数据作为AI训练的基石，其规模、多样性和标注质量直接影响模型性能；监管机构对于AI辅助设计的新药审批流程和标准尚在探索中；而制药公司与AI科技公司之间的深度融合与协作模式，也仍在磨合之中。 尽管挑战犹存，但不可否认的是，AI正从医药研发的辅助工具转变为核心驱动力，其影响已几乎覆盖从药物靶点发现到临床研究的全链条环节。 Isomorphic Labs凭借其强大的AI药物设计引擎，无疑正站在这场深刻变革的前沿，推动人类快速研发各类新药、攻克疑难疾病的愿景逐渐变为现实。 融资6亿美元，诺贝尔奖团队开发AI制药大模型·ByDrug·（2025/7/3）·检索日期2025/7/3 融资6亿美元，诺贝尔奖团队开发AI制药大模型·新浪财经·（2025/7/3）·检索日期2025/7/3 融资6亿美元！ 诺奖得主创办的Isomorphic Labs高管：五年后·joyyears. com·（2025/7/3）·检索日期2025/7/3 AI制药 AlphaFold 3 Isomorphic Labs 药物研发 人工智能 Demis Hassabis 生物医药 风险投资",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "cc8acbb691241d4aea23d771d4b3668e5169883075e1f60d760959176eb11bd5"
+    },
+    {
+      "evidence_id": "ev_6b4ef8e0c1bf0850",
+      "source_id": "src_d3d0e4b1c332744e",
+      "text": "Examples include target validation, identification of prognostic biomarkers and analysis of digital pathology data in clinical trials. Applications have ranged in context and methodology, with some approaches yielding accurate predictions and insights.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a939eafa4260f4ad21b19cc924d2e31576ac93ee48360c28994a5e569827e1ca"
+    },
+    {
+      "evidence_id": "ev_5a6be3f6669a183b",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "AlphaFold Drug Screening Hit Rates. What Prospective Studies Actually Show vs. AI Discovery Claims. AlphaFold-predicted protein structures achieve 26–60% hit rates in prospective virtual drug screens - matching or exceeding experimental crystal structures on the same targets.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9dc7578ced0429f2c71c675fa1b1cefddf3299afe56a160fd22368774f3899a3"
+    },
+    {
+      "evidence_id": "ev_f00829d8a19257f3",
+      "source_id": "src_fd4e87b85d7d7c1b",
+      "text": "The identification of effective drug targets is one of the most critical and time-consuming stages in pharmaceutical research.d. AlphaFold’s success represents a paradigm shift in how scientists approach the study of proteins, diseases, and drug discovery.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "21146fb96a5a31506fd6e1f1a3ba1cf4e714aa631db2b1fd0714a0e7746916ae"
+    },
+    {
+      "evidence_id": "ev_07cc6f7cecc35b39",
+      "source_id": "src_b58a83553bc271b4",
+      "text": "AI can reduce drug discovery timelines by 70%, from 10-15 years to 1-2 years for early stages. 2. Cost Savings. Early-stage discovery costs drop from $50-100 million to under $5 million. Capital costs can decrease by 80% compared to traditional methods. 3. Higher Success Rates.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fa88c165046c71d9f69921e63f982c4111edc511ae73d78914999fccc64c34e9"
+    },
+    {
+      "evidence_id": "ev_4ee960358cbdf5b6",
+      "source_id": "src_076c6d92a9714a28",
+      "text": "Drug Discovery: First, as demonstrated above, AlphaFold 3 can drastically reduce drug discovery time by simulating and predicting the action of substances on proteins. This can result in the development of drugs for currently untreatable diseases, potentially curing them.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "38818a284bae8bf4e10bb17968a745d5db4f7c0a504520f894f81f3ae7aa49ba"
+    },
+    {
+      "evidence_id": "ev_be925588cd4e0fad",
+      "source_id": "src_a0e43fcfba2ff314",
+      "text": "Artificial intelligence is an advanced method to identify novel anticancer targets and discover novel drugs from biology networks because the networks can effectively preserve and quantify the interaction between components of cell systems underlying human diseases such as cancer. Here, we review and discuss how to employ artificial intelligence approaches to identify novel anticancer targets and discover drugs. First, we describe the scope of artificial intelligence biology analysis for novel anticancer target investigations. Second, we review and discuss the basic principles and theory of commonly used network-based and machine learning-based artificial intelligence algorithms. Finally, we showcase the applications of artificial intelligence approaches in cancer target identification and drug discovery. Taken together, the artificial intelligence models have provided us with a quantitative framework to study the relationship between network characteristics and cancer, thereby leading to the identification of potential anticancer targets and the discovery of novel drug candidates.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "65900fce09ccc3530d3e94c37175fe52b9c41376f501c86483f7fc239c856418"
+    },
+    {
+      "evidence_id": "ev_fc99ce2093b84aa5",
+      "source_id": "src_c6f729aa9fbaac6f",
+      "text": "Abstract Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues in human protein sequences are covered by an experimentally determined structure 1 . Here we markedly expand the structural coverage of the proteome by applying the state-of-the-art machine learning method, AlphaFold 2 , at a scale that covers almost the entire human proteome (98.5% of human proteins). The resulting dataset covers 58% of residues with a confident prediction, of which a subset (36% of all residues) have very high confidence. We introduce several metrics developed by building on the AlphaFold model and use them to interpret the dataset, identifying strong multi-domain predictions as well as regions that are likely to be disordered. Finally, we provide some case studies to illustrate how high-quality predictions could be used to generate biological hypotheses. We are making our predictions freely available to the community and anticipate that routine large-scale and high-accuracy structure prediction will become an important tool that will allow new questions to be addressed from a structural perspective.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "728410f4c5c2f7d14bda2608224c2a898c5f2f04dd2ac49f961a61d04c83b69d"
+    },
+    {
+      "evidence_id": "ev_3e64250ba520bb9f",
+      "source_id": "src_a4c9e9bbea763bea",
+      "text": "A novel CDK20 small molecule inhibitor discovered by artificial intelligence based on an AlphaFold-predicted structure demonstrates the first application of AlphaFold in hit identification for efficient drug discovery.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "73d6b764e0c18c54f1c99e7d19b3efa0e6bb230518c78237159fbca028e98df4"
+    },
+    {
+      "evidence_id": "ev_d5cc1397e1bfeda8",
+      "source_id": "src_cfcb5a1be5cd2f0e",
+      "text": "Efficient identification of drug mechanisms of action remains a challenge. Computational docking approaches have been widely used to predict drug binding targets; yet, such approaches depend on existing protein structures, and accurate structural predictions have only recently become available from AlphaFold2. Here, we combine AlphaFold2 with molecular docking simulations to predict protein-ligand interactions between 296 proteins spanning Escherichia coli's essential proteome, and 218 active antibacterial compounds and 100 inactive compounds, respectively, pointing to widespread compound and protein promiscuity. We benchmark model performance by measuring enzymatic activity for 12 essential proteins treated with each antibacterial compound. We confirm extensive promiscuity, but find that the average area under the receiver operating characteristic curve (auROC) is 0.48, indicating weak model performance. We demonstrate that rescoring of docking poses using machine learning-based approaches improves model performance, resulting in average auROCs as large as 0.63, and that ensembles of rescoring functions improve prediction accuracy and the ratio of true-positive rate to false-positive rate. This work indicates that advances in modeling protein-ligand interactions, particularly using machine learning-based approaches, are needed to better harness AlphaFold2 for drug discovery.",
+      "kind": "abstract",
+      "task_id": "task_2",
+      "locator": "abstract",
+      "content_hash": "611aa387ef7a09b076e1220365c1ca331e8cb2e2835de1ea8e5d09fba48115b4"
+    },
+    {
+      "evidence_id": "ev_84697d8cdc3e5c0b",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "AI for Drug Target Validation: How to Assess Genetic, Mechanistic, and Clinical Evidence From PubMed May 19, 2026 Reviewed 19 May 2026 Example research study AlphaFold Drug Screening Hit Rates What Prospective Studies Actually Show vs. AI Discovery Claims AlphaFold-predicted protein structures achieve 26–60% hit rates in prospective virtual drug screens - matching or exceeding experimental crystal structures on the same targets. Yet no AI-discovered drug has reached clinical approval, and unrefined models predict correct binding poses only 15% of the time. The gap between discovery-phase success and translational failure defines the current state of AI-driven drug design. This post is derived from a verified BioSkepsis research thread View the research on BioSkepsis Prospective Hit Rates for AlphaFold-Based Virtual Drug Screening The strongest evidence for AlphaFold's utility in drug design comes from prospective validation - experiments where AF-predicted structures were used to screen real compound libraries and the resulting hits were tested biochemically. These studies directly contradict earlier retrospective benchmarks that suggested AlphaFold models were unsuitable for virtual screening (PMID: 38753765; PMID: 39110804).",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "df285bd2a87730e315cb1d84789fab1809b43de57b19e6bf06f3c9afc156b458"
+    },
+    {
+      "evidence_id": "ev_edcbaeda87dae8e6",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "In a landmark GPCR study, docking ultralarge libraries (up to 490 million molecules) against AlphaFold2 models of the sigma-2 and serotonin 5-HT receptors produced hit rates of 54% and 26%, respectively. These were statistically indistinguishable from the 51% and 23% rates achieved using experimental crystal and cryo-EM structures for the same targets (PMID: 38753765). For trace amine–associated receptor 1 (TAAR1) - a target with no experimental structure at the time - AlphaFold models identified 18 agonists out of 30 tested: a 60% hit rate. Traditional homology modeling reached only 22% on the same target (PMID: 39110804). The lead compound showed antipsychotic-like activity in wild-type mice, providing in vivo confirmation of pharmacological relevance. Sub-nanomolar leads from AlphaFold-based screens Prospective campaigns have identified binders with potencies typically associated with optimised clinical candidates: TrkB at 220 pM, GSK3α at 540 pM, and sigma-2 at 1. 6 nM - all from screens of fewer than 50 compounds per target (PMID: 38753765; DOI: 10. 48550/arXiv. 2508. 02137). AlphaFold structures also enabled screens against previously intractable targets: orphan GPCRs GPR151 and GPR160 yielded hit rates of 16–30%, and five unexplored Trypanosoma cruzi proteins produced a 9% specific hit rate for novel trypanocidal agents (PMID: 40470316; DOI: 10. 48550/arXiv. 2508.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "e6610a0e3ea3621b246b7b7e2a990fa3f888ebefedad6cd08d0c039750141a1e"
+    },
+    {
+      "evidence_id": "ev_12d538123f3800f5",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "02137). Head-to-Head Benchmarks: AlphaFold vs. Experimental Structures in Drug Screening Independent academic benchmarks paint a nuanced picture. Prospective hit rates match or exceed experimental structures, but retrospective enrichment factors and pose accuracy consistently favour crystal and cryo-EM data. AlphaFold2 vs. experimental structures - published metrics Metric AlphaFold2 Experimental (X-ray / Cryo-EM) Source Prospective hit rate (sigma-2) PMID: 38753765 Prospective hit rate (5-HT PMID: 38753765 Prospective hit rate (TAAR1) 22% (homology) PMID: 39110804 Mean enrichment factor (32 GPCRs) 1. 82 2. 24–2. 42 PMID: 39337622 Correct binding poses PMID: 38131311 Binding pocket backbone RMSD 1. 3 Å PMID: 38131311 The apparent contradiction - high prospective hit rates alongside low pose accuracy - reflects a structural bias in retrospective testing. Experimental structures are typically co-crystallised with known ligands, which adapts the pocket geometry to those specific chemotypes. AlphaFold models, unbiased by any ligand, sample distinct low-energy conformations that turn out to be effective for discovering novel scaffolds (PMID: 38753765).",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "5c781a2fd6b63b9fa39589c8994f4de1c229356160504264798c6ecbf536f385"
+    },
+    {
+      "evidence_id": "ev_f30c0415c0c2beef",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "Chemotype divergence between AlphaFold and experimental screens For the sigma-2 receptor, only 1 of 134 new ligands shared a core scaffold between the AlphaFold campaign and the experimental-structure campaign - confirming that the two approaches sample distinct chemical space (PMID: 38753765). The Clinical Translation Gap in AI-Driven Drug Discovery High hit rates in virtual screens have not translated into approved medicines. As of April 2024, eight leading AI drug discovery (AIDD) companies had advanced 31 drugs into human clinical trials: 17 in Phase I, 5 in Phase I/II, and 9 in Phase II/III. No novel drug discovered entirely through an AI platform has reached clinical approval (PMID: 39722473). The overall number of new drug approvals has increased only marginally since the deep learning revolution of 2013–2014. Platform partnerships between AIDD companies and large pharmaceutical firms (2012–2024) have failed to move AI-discovered targets or AI-designed molecules into late-stage success (PMID: 39722473). This is not necessarily a failure of AlphaFold or AI - clinical attrition reflects biological complexity that extends far beyond initial structural modeling. Off-target toxicity, pharmacokinetics, formulation, and immune responses are challenges no structure-prediction tool can resolve.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "190170732b94648b07ea4d8b34ed60d679799db565117fb129d91b1a91e16ec1"
+    },
+    {
+      "evidence_id": "ev_99faca921d6ff218",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "The gap is between what AI platforms claim they can deliver (end-to-end drug design) and what the evidence supports (accelerated hit identification). Timeline compression is real; approval compression is not AI pipelines have reduced preclinical candidate nomination to 12–18 months from program initiation. A TNIK inhibitor for idiopathic pulmonary fibrosis completed Phase IIa in this accelerated window. But several AI-nominated Phase II candidates have already failed for lack of efficacy - the same biological risk faced by traditional programs (PMID: 39722473). Documented Failure Cases: When AlphaFold Structures Fail for Drug Docking Not all targets are amenable to unrefined AlphaFold-based screening. Published cases of poor performance share common structural features: disordered loops collapsing into binding cavities, missing co-factors, and compressed orthosteric pockets. Renin: The AF-predicted structure exhibited a disordered N-terminal loop that collapsed into and blocked the binding cavity entirely, preventing docking simulations (PMID: 36686396). HSP90: Virtual screening yielded zero enrichment; the model lacked crystallographic water molecules essential for ligand recognition and showed large backbone differences in the loop spanning residues N106–G137 (PMID: 36686396).",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "b640087ad3a2cc5c986f1cadb2b737b8595bc91da374dbf11dddfd3ceec48862"
+    },
+    {
+      "evidence_id": "ev_ae0ee9af57ebe661",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "MRGPRX4: The AF orthosteric site was too compressed for ligand fitting; superimposing a known ligand produced clashes at 4 of 26 atom positions (PMID: 38753765). For GPCRs CCR5, CB1, and the delta-opioid receptor, extracellular loops were pulled into the binding site in AlphaFold models, narrowing available space and reducing docking performance (PMID: 39337622; PMID: 41223357). In each case, post-prediction refinement - adding catalytic ions, running molecular dynamics, or manually correcting side-chain rotamers - was required to rescue screening power (PMID: 38279359; PMID: 36686396). Structural features that cause AlphaFold screening failures Feature Effect on screening Example target Disordered loop collapse Blocks binding cavity completely Renin, Protein Kinase C β Missing metal ions / co-factors Distorted pocket geometry HDAC11 (zinc), COX1 (heme) Pocket compression Ligand clashes, false negatives MRGPRX4 Side-chain rotamer errors Pose accuracy drops from 44% to 15% GPCRs broadly Single-state bias Misses apo/holo transitions E3 ligases, fold-switching proteins AlphaFold Binding Site Accuracy: Backbone Precision vs. Side-Chain Fidelity AlphaFold2 achieves a median binding pocket backbone RMSD of 1. 3 Å compared to experimental structures - better than traditional homology models (3.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-6",
+      "content_hash": "bd4016fcfe08cea7702ffbebd89b07313e6930d8cbec9014e2b7e6f52080a6ab"
+    },
+    {
+      "evidence_id": "ev_78d40739254c2166",
+      "source_id": "src_1cdbff858a1e4c14",
+      "text": "3 Å) and comparable to the variation between two experimental structures of the same protein bound to different ligands (PMID: 38131311; PMID: 34282049). This global accuracy is remarkable. But drug design requires more than backbone topology. Side-chain orientations determine the s [CONTENT_TRUNCATED: 18419 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-7",
+      "content_hash": "260afb703a3d71420151c57a0833f4b815ef0dad10803a71661384fc6452a52d"
+    },
+    {
+      "evidence_id": "ev_9bd66a2258b262ab",
+      "source_id": "src_463e1343949ada0d",
+      "text": "13th March 2016 AlphaGo’s success proves AI’s readiness to tackle protein folding DeepMind’s AlphaGo program defeats legendary Go player Lee Sae Dol in a challenge match in Seoul. This watershed moment demonstrated that DeepMind’s AI techniques were potentially advanced enough to be applied to scientific challenges. A small team is established to start working on protein structure prediction.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "7e5dc911f95df1a23a8e09593f40584d2d9c1b8425b04ccc23d2d855900481eb"
+    },
+    {
+      "evidence_id": "ev_6cb8a65cb46dd3f4",
+      "source_id": "src_603cafd4bc56f868",
+      "text": "Atomwise’s AI technology is also used to develop safer, more effective agricultural pesticides. AI Drug Discovery: Atomwise Introduced the first structure-based deep CNN, called AtomNet, designed to predict the bioactivity of small molecules for drug discovery applications.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "124a7da1ac05599d4fa967dfe8f0f972b45bfead701822fde70e7f95151f29e5"
+    },
+    {
+      "evidence_id": "ev_0d164f5453d7fe8b",
+      "source_id": "src_c2631eefa58fefec",
+      "text": "Atoms - Build websites & apps with AI, no code needed. Product Overview. What is Atomwise? Atomwise transforms early-stage drug discovery by applying deep convolutional neural networks to analyze vast chemical spaces and predict how small molecules bind to protein targets.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "0135cd78c558f5c9b6d97c460f51b811d8ef0f980f79bf0349d8bc65a5a19800"
+    },
+    {
+      "evidence_id": "ev_8430cb42660af13f",
+      "source_id": "src_5980a2b390706323",
+      "text": "Atomwise raises $123 million to accelerate drug discovery with AI.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "018bc783bdb48344062a1524276a21a7321ffcaa2ddc2b613dc2f635d5266a5a"
+    },
+    {
+      "evidence_id": "ev_d3a02f2589a5750e",
+      "source_id": "src_16bd14155be3cb05",
+      "text": "Clinical Development. Ophthalmology. Cell & Gene Therapy.Artificial intelligence-driven drug discovery has attracted many investments lately. Atomwise, the first company to commercialize deep neural networks for drug discovery, joined the growing list with a $45 million series A.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "55eb1fe93745421b5ffe64079219bc10c8c190cd8052f95bbe352dcf32717649"
+    },
+    {
+      "evidence_id": "ev_1f841a85b142878d",
+      "source_id": "src_b7dd3f731dc9006c",
+      "text": "In AI-based drug discovery—a field benefiting from a cumulative investment of $60 billion—the leaders are making real progress toward approved therapies. By Alex Philippidis. November 29, 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "bb0d8fd7808884ecb53b88f3561a454d12ee3c25efc78ad77558fa06e7c6083f"
+    },
+    {
+      "evidence_id": "ev_9d9f1bd2ce7783b9",
+      "source_id": "src_c9af2533954dce1e",
+      "text": "AI tools streamline recruitment by automating patient matching, leveraging electronic health records, and engaging underrepresented groups. Adaptive trial designs benefit from AI’s ability to simulate outcomes, optimize protocols, and enable dynamic modifications during trials.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fa6799d51bc114ac6181fb036a8f9fa2240c203dabdc834a5b5bbab8dadbc8c5"
+    },
+    {
+      "evidence_id": "ev_fbbe82a96259a623",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Patient Recruitment & Stratification: AI helps identify eligible patients and optimal sites. Platforms ingest electronic health records (EHR) and claims data to match trial criteria at scale. For example, machine learning can screen millions of records to find rare disease patients faster.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2e8245029f2d8819d6fb7eb60a1c1f2e98224361e7b5ad7e24461d67cda7ec85"
+    },
+    {
+      "evidence_id": "ev_ef5315e1cb2c5779",
+      "source_id": "src_2749cf5c421b359b",
+      "text": "From decentralized trial platforms and wearable endpoints to AI-powered recruitment and real-world evidence — 25 digital health companies reshaping how clinical trials run in 2026.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "17c5dda25f6dd0f8742e1b3b4006c880ef6ea4adb132d56fc1d59c97a5b4b7f2"
+    },
+    {
+      "evidence_id": "ev_efe73a2447c0195b",
+      "source_id": "src_ebb429f0c403caf5",
+      "text": "Unlearn.AI’s approach to adaptive trials represents the most sophisticated agentic capability I’ve evaluated. The platform generates “digital twins” — prognostic models for individual patients based on their baseline characteristics and disease trajectory predictions from real-world data.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "934fed2fa4a0f3c81b88206f32924042feda52af8c28fe1cb5b7932611b4034a"
+    },
+    {
+      "evidence_id": "ev_3e85026117bdb946",
+      "source_id": "src_9ccd762eae86edc7",
+      "text": "Overall world revenue for the AI-Enabled Drug Discovery and Clinical Trials Market will surpass US$3.00 billion in 2025 with strong revenue growth projected through to 2035. The report identifies which organizations hold the greatest potential.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "ae39206728f82f3ca6272dd46e4cf095bce99fe154d292bf870e84dc7fe5a291"
+    },
+    {
+      "evidence_id": "ev_c52dccfb977f53da",
+      "source_id": "src_2ddc1920a50a2f21",
+      "text": "Unlearn.AI. Digital twin technology for clinical trials to reduce placebo arm size and accelerate evidence generation. Unlearn creates prognostic digital twins for each clinical trial participant using machine learning trained on historical data.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3420dfd1f07c08f621f5734ad45593ae987da552135e0e5e2d6a648e52d6aa6e"
+    },
+    {
+      "evidence_id": "ev_b62f0c7b0918a62c",
+      "source_id": "src_b72a48e7a0a9c988",
+      "text": "Unlearn.AI builds AI-generated digital twins of clinical trial participants to reduce control arm size without compromising trial integrity.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "24a97adf9d9227033b758db43de4405b4f89ade80ea4230fd975164afb4970c8"
+    },
+    {
+      "evidence_id": "ev_c9ef2bd061651026",
+      "source_id": "src_55b4524d1c4b2b9a",
+      "text": "Virtual clinical trials use digital twin populations to simulate drug effects across diverse patient groups. This approach can: Reduce Trial Size. Synthetic control arms reduce patient recruitment needs by 30-50%. Accelerate Timelines.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "cbdb07201b5106098b6991b2bc4b4392bb427268ecd2b4574616559a4b58e8c0"
+    },
+    {
+      "evidence_id": "ev_e3e00af71cdb4f53",
+      "source_id": "src_7a93d16016929780",
+      "text": "Unlearn pioneers AI-driven solutions for clinical trials with digital twins of trial participants that streamline clinical development and will eliminate trial and error in medicine tomorrow.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b7a84463bea18891eeda5e219d353c653f3af76bd428c79c4f7058b3ee41a83d"
+    },
+    {
+      "evidence_id": "ev_0e74001d37703930",
+      "source_id": "src_f9cb0c967fb6f21b",
+      "text": "Digital twins promise smaller, faster trials, and the regulatory scaffolding is forming. But there’s still a validation gap.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b7cdc38f4e115d200afb771ce1c4f6303454e6c292c27ce04ddde9c436754775"
+    },
+    {
+      "evidence_id": "ev_a66b0af519e9e317",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheaper, and more data-driven. This report surveys 150+ AI vendors active in these domains (2026), analyzing market trends, case studies , and future implications. We find that AI-enabled drug discovery remains the largest and most populated segment – with hundreds of biotech firms (like Insitro, Exscientia, Recursion, Atomwise, BenevolentAI, Deep Genomics) using machine learning to generate novel molecules and predict targets ( ). The AI drug discovery market is projected at ~$5 billion by 2026 and is growing rapidly ( ). In clinical development , AI is used for patient stratification, trial simulation, real-world evidence and monitoring; the clinical trials AI market is forecast to jump from ~$2. 8 billion (2024) to over $54 billion by 2032 ( Commercial AI powers sales and marketing (e. g. personalized HCP targeting, sales forecasting), with enterprise CRM platforms (e. g.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "daa370b7587e81a35f1913db86feed3b58a3e74f55fce7298c85e0ec5bb9809d"
+    },
+    {
+      "evidence_id": "ev_7642de8c195160ab",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet been approved ( ), and the real bottleneck remains late-stage trials ( [10] ). This report provides a comprehensive analysis of current solutions, underlying data, case studies (from Insitro’s big-pharma partnerships to Salesforce and Pfizer digital twins), and a vendor landscape chart highlighting the major players and technologies in each category. Introduction Pharmaceutical research and development has never been more expensive and challenging. Adjusted for inflation, R&D spending per drug has increased tenfold since the 1980s, and leading companies now devote roughly 25% of revenue to R&D – nearly double the share of the early 2000s ( [11] ). Discovery, safety testing, trials and regulatory approval routinely take 10–15 years $2–4 billion per successful drug.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "46c63d8cd885f37e02edec8a123aa776afcc617e7e42a6d0d2df7abe537c0d97"
+    },
+    {
+      "evidence_id": "ev_8c85521f8452c1c9",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Despite these efforts, the annual count of new drug approvals has remained flat (≈50/year) even as research budgets climbed ( [10] ). In the face of such high stakes, AI and machine learning have been hailed as critical accelerants. From deep learning models that can predict protein structures and small-molecule interactions (e. g. DeepMind’s AlphaFold [12] )) to advanced analytics that can nominate trials and targets optimize manufacturing , AI tools are being applied to every link in the value chain. Major pharmaceutical companies and startups alike are investing heavily. For example, Eli Lilly partnered with NVIDIA in 2025 to build an “AI supercomputer” platform and deploy “scientific AI agents” for experiment planning ( [13] ). AstraZeneca, GSK, Sanofi and others have announced broad AI initiatives integrating in-house data with third-party ML tools. At the 2026 World Economic Forum, NVIDIA’s CEO Jensen Huang pointed to the shift from conventional labs to AI-driven platforms, predicting that “drug research will shift from traditional labs to AI platforms” (citing Lilly as an early adopter) ( [13] ).",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "ff3871f73eb14f7cd11597bac96920dead29ce89f184eff7c961f505f7b570c3"
+    },
+    {
+      "evidence_id": "ev_9fee1c0b470f90f6",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Startups are also flourishing: for example, Cambridge’s Exscientia has raised hundreds of millions (including a $510M IPO) and struck multi-billion-dollar partnerships to design AI-originated molecules ( [14] This report synthesizes academic studies, industry reports, news analysis, and case studies to map the current AI vendor landscape in pharma (2026). We categorize vendors by their primary focus – Drug Discovery/Preclinical R&D Clinical Trials Commercial Operations , and Quality & Manufacturing – and analyze key trends, metrics and evidence in each area. Wherever possible, claims and data are supported by industry research or peer-reviewed sources ( ). We also highlight representative case studies and real-world examples (e. g. AI-enabled discovery platforms, clinical trial optimization tools, AI-driven marketing campaigns, factory automation) to illustrate the promise and pitfalls of this technology. Finally, we discuss emerging issues (e. g. regulatory oversight of AI, data quality, generative AI) and look ahead to 2026–2030 market projections. The goal is a comprehensive, evidence-based picture of how AI is reshaping pharmaceuticals today and in the near future. F. 01 Global AI in Drug Discovery Market Growth Projections 2025 4. 46 2026 2030 (Est. ) 2034 (Est. ) 12.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "ebce7a3aa47193793410ff126a9f5763381530a5aa9c8080da8bb4771e0c396a"
+    },
+    {
+      "evidence_id": "ev_bfd8a9fe67cff66b",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "56 AI in Drug Discovery & Preclinical R&D Market Trends and Motivations Artificial intelligence first gained traction in early-stage drug R&D because this phase involves massive data and long lead times – precisely where computational models can add value. Chemical databases (billions of compounds) and biological assays (genomics/proteomics) are ripe for machine learning. Recent advances have seen generative AI used to propose novel molecules around specific targets, and deep learning models to predict ADMET properties (absorption, distribution, metabolism, excretion, toxicity) in silico. Market Size & Growth: According to market research firm Fortune Business Insights, the global AI in drug discovery market was estimated at $4. 46 billion in 2025 , rising to $5. 00 billion in 2026 and projected to reach $12. 56 billion by 2034 (CAGR ≈12. 2%) ( ). North America dominates (~66% share in 2025). Similar forecasts report turnover reaching $10+ billion by 2030 ( ), reflecting rapid startup funding and big-pharma spending. Notably, an analysis by David Kim (Jan 2026) estimated the total AI in pharma market (all stages) at $3. 2B (2026) and $21. 5B by 2030 (CAGR ≈28%) ( ) – underscoring that drug discovery comprises a large portion of overall AI investment.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "4a7e3d9f7746503d452eed3cf309ff78adea258c1259788b0966adb2bda24651"
+    },
+    {
+      "evidence_id": "ev_0cb87e73394368b4",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Cost and Efficiency Pressures: The rationale is clear: if AI can drastically reduce time-to-hit or flag poor candidates early, firms could save hundreds of millions per molecule. R&D budgets in pharma have soared (inflation-adjusted tenfold since 1980 ( [11] )), and companies now pour ~=25% of revenue into R&D. As one CB Insights report noted, “Billion-dollar drug development costs are redefining priorities…pharma companies are using AI to make R&D more efficient” ( [15] ). For example, engines like AlphaFold (DeepMind) have democratized protein structure prediction, dramatically accelerating target validation ( [12] Key Applications and Techniques Broadly, AI in discovery spans target identification hit finding and lead optimization , and even project portfolio planning . Specific applications include: Target Identification & Validation: Machine learning on genomic and phenotypic data to suggest novel targets or reposition existing ones. Startups like BenevolentAI (UK) and Insilico Medicine (Hong Kong) use knowledge graphs and deep learning on biomedical literature to propose targets for complex diseases ( Molecular Design (Hit Finding & Optimization): Deep generative models (e. g. variational autoencoders, reinforcement learning) propose new small molecules predicted to bind desired proteins.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-6",
+      "content_hash": "ba34fca53ae8ef949c76df8389a2c056b48468491fcfdd7af933b59d6b7d1a78"
+    },
+    {
+      "evidence_id": "ev_8127f2d069c98135",
+      "source_id": "src_c3fab60996d178bd",
+      "text": "Firms like Exscientia Tamarind Bio Converge Bio , and InSilico Medicine employ proprietary AI platforms to generate candidate compounds. Notably, Exscientia’s platform has already produced multiple AI-designed molecules entering human trials ( ). Tamarind Bio (2026 Series A) and Converge Bio ($25M Series A) are recent examples focusing on turnkey AI design; T [CONTENT_TRUNCATED: 52701 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-7",
+      "content_hash": "4becf4a7eff27eecc82bd6b21820b3f40c39a4d1aa62dbdd45606ec079ff4707"
+    },
+    {
+      "evidence_id": "ev_b3614e4def6ee161",
+      "source_id": "src_7407a364f558259f",
+      "text": "According to Deloitte’s 2024 report, Measuring the Return from Pharmaceutical Innovation, the expected IRR of late-stage pipelines for the world's top 20 biopharmaceutical companies has risen to 5.9% in 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "921347a7566ddd3b42a1f532ce84898eb1a41108173e96e31aad5305eeb922ed"
+    },
+    {
+      "evidence_id": "ev_d7993f47415b8973",
+      "source_id": "src_1fbf6c328c2482ea",
+      "text": "Deloitte’s 15th annual report, “Measuring the return from pharmaceutical innovation 2024” report provides insights into the biopharmaceutical industry’s performance, analyzing 20 leading global pharmaceutical companies using consistent methodology.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e6e595dfbdf1d4b4f4bd50ab64e7ac9c0386ecf32a3961564fa320702f6b5fae"
+    },
+    {
+      "evidence_id": "ev_fd2b73eff78d8bee",
+      "source_id": "src_7a118c2f164254cc",
+      "text": "Drug development cost pharma $2.2B per asset in 2024 as GLP-1s drive financial return: Deloitte.The data come from 20 pharmas that had the highest R&D budgets in 2020, as reported in Deloitte’s annual report, “Measuring the return from pharmaceutical innovation.”",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ed6a55e6f6e304474d8467c88cad619bd3ab33fc1c4a0b061d26b5ecd2d5f209"
+    },
+    {
+      "evidence_id": "ev_cc3680e5a3c6ce6a",
+      "source_id": "src_af3ad9f4f686e9dd",
+      "text": "Measuring the return from pharmaceutical innovation, is the 15th report in the series from the Deloitte Centre for Health Solutions, the research arm of Deloitte’s Life Sciences and Health Care practice.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ca9244470f1ec07b84da2a068b1f5ab31966a8fc850709754cf2eae9d748d344"
+    },
+    {
+      "evidence_id": "ev_eda8fd15aa3bce96",
+      "source_id": "src_a3a06878a91408c7",
+      "text": "Projected return on investment in pharma research and development (R&D) in 2023 has risen to 4.1%, climbing back from 2022’s record low of 1.2%. The leading 20 global pharmaceutical companies collectively spent $145 billion on R&D in 2023, up 4.5% from 2022.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "720b108638bfe8b275f81668ab17ddb5fc05df621e0a15477ebdfc4fd5040fe3"
+    },
+    {
+      "evidence_id": "ev_725be05f76bc287b",
+      "source_id": "src_c69114a845cd83b2",
+      "text": "AI development in pharma allows researchers to analyze massive datasets, identify promising molecules, and optimize clinical trials, dramatically reducing the time and cost required to discover new therapies.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0dcce3c379ba83c2db4911a05428571022b5e23a4963dc4b828c6f82d6c42295"
+    },
+    {
+      "evidence_id": "ev_8d874735eb1e5ea4",
+      "source_id": "src_5a932ae29ec13756",
+      "text": "2. Clinical Trial Design and Patient Recruitment. Clinical trials are where most development costs concentrate. A Phase III trial for a single indication can cost $300 million to $600 million and take three to five years.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e93c6e3d8e92f908937a21f5292b6b1fd240aa275f092143e2e3f5a826fb7d1c"
+    },
+    {
+      "evidence_id": "ev_0a9779db982e6521",
+      "source_id": "src_b0c03c000081828d",
+      "text": "# 4. Clinical Trial Optimisation AI transforms clinical trial design, patient recruitment, and outcome prediction across the pharmaceutical industry. Platforms analyse electronic health records and genomic data to identify optimal patient populations for specific therapies.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0aaed42297a89f15b08aa4eaf78b166587097b137c94e99d13a262c0c1a24c95"
+    },
+    {
+      "evidence_id": "ev_baf66d8d648878f3",
+      "source_id": "src_92976eb3d97a1afa",
+      "text": "Opportunities for Europe’s pharma sector: How AI, pricing pressures and Chinese innovation are redrawing pharma’s map. Milena Richter. AI is rewriting the rules of drug discovery. MFN pricing is already changing behaviour.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "51a18275f32c7b971eb9732adb82101034df6ff40e2aaa9fce5afb65a3a81063"
+    },
+    {
+      "evidence_id": "ev_abcd46584777bc1a",
+      "source_id": "src_b052d580bd538bb1",
+      "text": "First validated target discovered via jointly created AI map. Trigger. Genentech exercised the collaboration’s first validated target option. Payment Triggered.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "251f61464a13225a7553185cc358a70bb0b4d1cca850aee299454cecb74d6670"
+    },
+    {
+      "evidence_id": "ev_9e3f910130641588",
+      "source_id": "src_13fbbbdd402a7cc3",
+      "text": "AI-discovered molecules clear Phase I at 80-90%, against an industry norm closer to half.What evidence should define success for AI drug discovery at this stage: clinical outcomes, development speed or prospective comparisons with conventional discovery?",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1a7f4797dd962892d36c26a384465e9fee2ea800da5c2bb8b873ee6638206f9b"
+    },
+    {
+      "evidence_id": "ev_e5945ffe24447b85",
+      "source_id": "src_69202e6326ce995e",
+      "text": "-1,80 RUB. +0,0214%.подскажите займ без отказа оформить займ на карту без отказа срочно с плохой кредитной историей долгосрочные займы наличными микрозайм экспресс деньги мфо на карту мгновенно получить займ с плохой ки новые мфо 2024 года выдающие займы...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8de73c2177ca03b1334d05ed04844f234a10b036dd7ee3614413845bc27442e1"
+    },
+    {
+      "evidence_id": "ev_cdc49f640d6ec9dd",
+      "source_id": "src_7cb2525e6145df0c",
+      "text": "BCG seems to have its greatest effect in preventing miliary tuberculosis or tuberculosis meningitis, so it is still extensively used even …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c0134999ee1923d4062f4790e8e5843db69e8c20c748d59e683bc279d33a5b0b"
+    },
+    {
+      "evidence_id": "ev_17f2c18dc38c2c45",
+      "source_id": "src_2511e28a29327559",
+      "text": "A 2024 study in the Proceedings of the National Academy of Sciences found.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c9a2e2eba90d8e7a6ca162700576b57c9e959428b913eb0b2c13cfd78a1832ff"
+    },
+    {
+      "evidence_id": "ev_63a5abaf61344ced",
+      "source_id": "src_8697ef84810f4a2b",
+      "text": "Mar 21, 2025 · With BCG treatment, your healthcare provider delivers immunotherapy drugs directly to your bladder through a …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "474ec5fc7f8beb49c5617adcfd314c50515b0b3c7721d9ed30f7301c04eec13c"
+    },
+    {
+      "evidence_id": "ev_9835ecc98bca8b10",
+      "source_id": "src_7407a364f558259f",
+      "text": "If the GLP-1 category is excluded, the average forecasted peak sales per asset would drop from $510 million to $370 million, reducing the internal rate of return (IRR) from 5. 9% to 3. 8%. The average cost of developing a drug for major pharmaceutical companies continues to rise, reaching $2. 23 billion in 2024. The two late-stage pipeline areas expected to see the most significant growth are oral GLP-1 therapies (ranked first) and subcutaneous NSCLC therapies (ranked second). Focusing on diversified therapeutic areas and novel mechanism-of-action (MoA) products can help sustain IRR growth. After more than a decade of declining R&D returns and fluctuations caused by the COVID-19 pandemic, the industry is at a turning point. According to Deloitte’s 2024 report, Measuring the Return from Pharmaceutical Innovation , the expected IRR of late-stage pipelines for the world's top 20 biopharmaceutical companies has risen to 5. 9% in 2024. This positive shift is primarily driven by high-value GLP-1 products in the diabetes and weight-loss segments entering late-stage pipelines, as well as improved clinical trial outcomes leading to higher commercial return expectations. However, the average cost of developing a new drug for large pharmaceutical companies has reached $2. 23 billion in 2024, up from $2. 12 billion the previous year.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "3757b60f1b8d56d6f4575853db4d1f142c9e5141635f6f4a5169f363ef98c915"
+    },
+    {
+      "evidence_id": "ev_425b411febf96b23",
+      "source_id": "src_7407a364f558259f",
+      "text": "Expected Return on Innovation Rebounded Since 2022 Analysis shows that the IRR for the top 20 global pharmaceutical companies reached 5. 9% in 2024, an increase of 1. 6 percentage points from 2023, continuing an upward trend. Among the 20 companies surveyed, 13 saw IRR increases between 0. 4% and 6. 9%, with three companies experiencing growth exceeding 5%. IRR is determined by efficiency (development time and cost) and value creation (risk-adjusted forecasted sales). Despite the continued rise in R&D costs in 2024, the introduction of high-value late-stage assets and positive clinical trial results boosted commercial projections, leading to an increase in average IRR. Rising R&D Costs and Longer Development Cycles In 2024, the average cost per asset increased to $2. 23 billion. Among the 20 companies analyzed, 12 experienced rising costs. Deloitte’s report attributes the increase in R&D costs to several factors: Complexity of research : Developing treatments for diseases with complex biological mechanisms—such as Alzheimer’s, coronary artery disease, cancer, and rheumatoid arthritis—requires more sophisticated molecules like gene therapies, antibody-drug conjugates (ADCs), radioligand therapies, and trispecific antibodies, leading to more complex and expensive research methods. Precision medicine further amplifies this complexity.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "1a73b17dcd7f032049fce70f7aa986a970e18d694e1c7f3284079d0e503edc6e"
+    },
+    {
+      "evidence_id": "ev_ceacaaa3f732cf25",
+      "source_id": "src_7407a364f558259f",
+      "text": "Challenges in clinical trials : Stringent trials are essential for ensuring drug safety and efficacy. However, meeting evolving regulatory standards and recruiting eligible trial participants is time-consuming and expensive, particularly in rare disease areas. Additionally, the high concentration of indications intensifies competition for patient recruitment, further increasing complexity, time, and cost. High failure rates : Drug development inherently carries a high failure rate, and unsuccessful therapies represent significant investment losses. In 2024 alone, the top 20 pharmaceutical companies spent $7. 7 billion on terminated clinical trials. Technological advancements : While robotic process automation and artificial intelligence offer long-term cost-reduction potential, their initial R&D costs remain high. Economic factors : Rising inflation, increased taxes and tariffs, and higher costs of specialized labor and material supplies are further driving up overall R&D expenses. Additionally, analysis reveals that drug development timelines are lengthening, with the average time from Phase 1 clinical trials to regulatory submission exceeding 100 months. Over the past five years, all clinical trial phases have lengthened, with Phase 3 trials experiencing the most significant increase—up by 12%.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "52554a3ec67b8f962badf8b002a868ca8f75294d28fb9743f830eda45d4fe653"
+    },
+    {
+      "evidence_id": "ev_c56746bdd4bc4baa",
+      "source_id": "src_7407a364f558259f",
+      "text": "Longer development timelines lead to higher costs and delays in bringing innovative therapies to market. The Massive Market Impact of GLP-1 The average forecasted peak sales per asset increased to $510 million in 2024, with two companies expecting their assets to surpass $2 billion in peak sales. However, excluding GLP-1 products, the average forecasted peak sales drop to $370 million, and IRR declines from 5. 9% to 3. 8%, highlighting the massive market impact of GLP-1 therapies. The resurgence of “blockbuster” drugs in late-stage pipelines has significantly boosted industry IRR, driven by two key factors: 29 new blockbuster drugs entered late-stage pipelines, a 53% increase from 2023. 20 products saw their peak sales forecasts increase by over $1 billion. Oral GLP-1 weight-loss drugs, in particular, have seen the largest growth due to improved efficiency and lower production costs. The second-largest growth category is subcutaneous NSCLC therapies, which have reduced administration time from a 1-hour IV infusion to a 2–3 minute injection, significantly enhancing patient experience and healthcare efficiency. Diversification Across Therapeutic Areas Deloitte’s report covers 20 companies spanning 15 therapeutic areas, with 19 companies actively engaged in five or more areas.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "b7dff0c12b078623b79d41c0992f5cb01da2bf4216deafd90961f2acc13ec1d1"
+    },
+    {
+      "evidence_id": "ev_aad50b6793a9f98e",
+      "source_id": "src_7407a364f558259f",
+      "text": "Oncology remains the primary focus, with 37% of pipeline assets concentrated in this area (consistently above 35% over the past five years), intensifying competition for research centers and trial participants. Among the 20 companies, only two do not have oncology programs. Infectious diseases are another competitive field, with 15 companies developing treatments and over 10% of potential assets targeting this area. The rapid growth of GLP-1, particularly in the obesity market, underscores the significant return potential of addressing unmet population health needs. Forecasted revenue from obesity indications has increased from 1% of total revenue in 2022 to 8% in 2023 and 16% in 2024. Replicating the success of GLP-1 in other high-unmet-need areas could unlock major opportunities for the industry. Late-stage pipelines currently include: 9 drugs for Alzheimer’s disease 6 drugs for stroke prevention 2 drugs for multiple sclerosis relapse prevention and disease progression reduction All these drugs have transformative potential to improve patient outcomes and enhance industry IRR. Investing in Novel Mechanism-of-Action (MoA) Products Developing therapies with new MoAs is another way to boost industry IRR. Over the past four years, while entirely new and fast-following MoAs accounted for 23. 5% of all investigated MoAs, they contributed 37. 3% of forecasted revenue.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "6765bb66529b295281fc4746f3ab2f366680eca0cc938c8f4393fa9290a23528"
+    },
+    {
+      "evidence_id": "ev_aa5e999b6dc631b1",
+      "source_id": "src_7407a364f558259f",
+      "text": "With the proportion of new MoAs in late-stage pipelines increasing, major pharmaceutical companies are also increasing their focus on rare diseases. In 2024, 37. 4% of late-stage assets targeted rare diseases, up from 31. 1% in 2023. A Diversified Pipeline Strategy Deloitte’s report highlights that over the next decade, the world’s top 20 biopharmaceutical companies will face over $200 billion in revenue losses due to patent expirations. To counteract this, large pharmaceutical firms are increasingly using bolt-on acquisitions to offset the decline. This trend is evident in the study, with externally sourced assets in late-stage pipelines rising from 59% in 2023 to 61% in 2024, underscoring the growing reliance on external innovation. However, compared to in-house R&D pipelines, large pharmaceutical companies are more likely to terminate externally sourced assets in late-stage development. To enhance returns, Deloitte suggests adopting bold strategies, including: Prioritizing high-unmet-need areas and novel MoAs Embracing cutting-edge technologies such as gene editing and AI Using evidence-driven decision-making Pursuing innovative collaboration and acquisition models By leveraging these approaches, the industry can sustain long-term innovation and financial growth. Reference https://www2. deloitte. co [CONTENT_TRUNCATED: 8088 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "8052821636919c1251d280ae8f6aeee9a36b4cb351a7cbc2ac3df18fef7ba5c2"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_f7803f4099a5352b",
+        "text": "传统药物研发的低回报率由\"高成本 × 长周期 × 低成功率\"三因素复合决定：2024 年大型药企单资产研发成本达 22.3 亿美元，I 期到申报平均超过 100 个月，Top 20 药企当年在终止的临床试验上花费约 77 亿美元 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0547,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ceacaaa3f732cf25",
+          "ev_425b411febf96b23",
+          "ev_9835ecc98bca8b10"
+        ],
+        "source_ids": [
+          "src_7407a364f558259f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ceacaaa3f732cf25",
+            "source_id": "src_7407a364f558259f",
+            "text": "Challenges in clinical trials : Stringent trials are essential for ensuring drug safety and efficacy. However, meeting evolving regulatory standards and recruiting eligible trial participants is time-consuming and expensive, particularly in rare disease areas. Additionally, the high concentration of indications intensifies competition for patient recruitment, further increasing complexity, time, and cost. High failure rates : Drug development inherently carries a high failure rate, and unsuccess",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_425b411febf96b23",
+            "source_id": "src_7407a364f558259f",
+            "text": "Expected Return on Innovation Rebounded Since 2022 Analysis shows that the IRR for the top 20 global pharmaceutical companies reached 5. 9% in 2024, an increase of 1. 6 percentage points from 2023, continuing an upward trend. Among the 20 companies surveyed, 13 saw IRR increases between 0. 4% and 6. 9%, with three companies experiencing growth exceeding 5%. IRR is determined by efficiency (development time and cost) and value creation (risk-adjusted forecasted sales). Despite the continued rise ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_189d40e94b3f1ea6",
+        "text": "AI 的两条主要介入路径——靶点/分子发现（AlphaFold、Atomwise 等）与临床试验设计优化（Unlearn.AI、Tempus 等）——分别作用于不同杠杆，其对 ROI 的弹性也截然不同。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.175,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57",
+          "ev_6d97355f24280ca9"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d8a2dfb76860490a",
+        "text": "AlphaFold 系列已实现从基础科学到产业化的跨越。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4118,
+        "support_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57",
+          "ev_49c187e25e15268c"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_942e4d6e843c14b6",
+        "text": "AlphaFold 2（2020）解决了蛋白质结构预测难题，其团队对人类蛋白质组的预测将此前仅 17% 残基有实验结构覆盖的局面大幅扩展 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0662,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fc99ce2093b84aa5"
+        ],
+        "source_ids": [
+          "src_c6f729aa9fbaac6f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fc99ce2093b84aa5",
+            "source_id": "src_c6f729aa9fbaac6f",
+            "text": "Abstract Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues in human protein sequences are covered by an experimentally determined structure 1 . Here we markedly expand the structural coverage of the proteome by applying the state-of-the-art machine learning method, AlphaFold 2 , at a scale that cover",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_eb76fdd7a9643d12",
+        "text": "DeepMind 官方时间线显示该项目源于 2016 年 AlphaGo 成功后组建的小团队 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.133,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9bd66a2258b262ab",
+          "ev_efd6bd5d34cea733"
+        ],
+        "source_ids": [
+          "src_463e1343949ada0d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9bd66a2258b262ab",
+            "source_id": "src_463e1343949ada0d",
+            "text": "13th March 2016 AlphaGo’s success proves AI’s readiness to tackle protein folding DeepMind’s AlphaGo program defeats legendary Go player Lee Sae Dol in a challenge match in Seoul. This watershed moment demonstrated that DeepMind’s AI techniques were potentially advanced enough to be applied to scientific challenges. A small team is established to start working on protein structure prediction.",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_efd6bd5d34cea733",
+            "source_id": "src_463e1343949ada0d",
+            "text": "AlphaFold has revealed millions of intricate 3D protein structures, and is helping scientists understand how all of life’s molecules …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ecad3f24226ca98f",
+        "text": "2024 年 5 月发表的 AlphaFold 3 将预测范围从蛋白质扩展到 DNA、RNA、配体等生物分子互作，为基于结构的药物设计提供了更完整的工具 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57",
+          "ev_6d97355f24280ca9"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8bf144b4130c1e84",
+        "text": "关键的前瞻性验证已经存在：首个基于 AlphaFold 预测结构完成的 hit 发现案例是 CDK20 小分子抑制剂，证明了在无实验结构的靶点上进行虚拟筛选的可行性 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0524,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3e64250ba520bb9f"
+        ],
+        "source_ids": [
+          "src_a4c9e9bbea763bea"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3e64250ba520bb9f",
+            "source_id": "src_a4c9e9bbea763bea",
+            "text": "A novel CDK20 small molecule inhibitor discovered by artificial intelligence based on an AlphaFold-predicted structure demonstrates the first application of AlphaFold in hit identification for efficient drug discovery.",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_123d6706cdb192ea",
+        "text": "更广的基准研究显示，AlphaFold 结构在前瞻性筛选中命中率达 26–60%，与实验结构相当 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0938,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_84697d8cdc3e5c0b",
+          "ev_edcbaeda87dae8e6",
+          "ev_ae0ee9af57ebe661"
+        ],
+        "source_ids": [
+          "src_1cdbff858a1e4c14"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_84697d8cdc3e5c0b",
+            "source_id": "src_1cdbff858a1e4c14",
+            "text": "AI for Drug Target Validation: How to Assess Genetic, Mechanistic, and Clinical Evidence From PubMed May 19, 2026 Reviewed 19 May 2026 Example research study AlphaFold Drug Screening Hit Rates What Prospective Studies Actually Show vs. AI Discovery Claims AlphaFold-predicted protein structures achieve 26–60% hit rates in prospective virtual drug screens - matching or exceeding experimental crystal structures on the same targets. Yet no AI-discovered drug has reached clinical approval, and unrefi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edcbaeda87dae8e6",
+            "source_id": "src_1cdbff858a1e4c14",
+            "text": "In a landmark GPCR study, docking ultralarge libraries (up to 490 million molecules) against AlphaFold2 models of the sigma-2 and serotonin 5-HT receptors produced hit rates of 54% and 26%, respectively. These were statistically indistinguishable from the 51% and 23% rates achieved using experimental crystal and cryo-EM structures for the same targets (PMID: 38753765). For trace amine–associated receptor 1 (TAAR1) - a target with no experimental structure at the time - AlphaFold models identifie",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6797ad93a65f8fb1",
+        "text": "但也需指出局限：在分子对接的回顾性富集指标上，AlphaFold 预测结构仍落后于实验结构 ，且结合姿态准确率明显偏低——结构预测不等于可成药性预测。",
+        "task_id": "final_report",
+        "cited_indices": [
+          8
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d5cc1397e1bfeda8"
+        ],
+        "source_ids": [
+          "src_cfcb5a1be5cd2f0e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d5cc1397e1bfeda8",
+            "source_id": "src_cfcb5a1be5cd2f0e",
+            "text": "Efficient identification of drug mechanisms of action remains a challenge. Computational docking approaches have been widely used to predict drug binding targets; yet, such approaches depend on existing protein structures, and accurate structural predictions have only recently become available from AlphaFold2. Here, we combine AlphaFold2 with molecular docking simulations to predict protein-ligand interactions between 296 proteins spanning Escherichia coli's essential proteome, and 218 active an",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b55a1d63588a5a26",
+        "text": "Atomwise 的定位需要澄清：其核心产品 AtomNet 是首个商业化结构基础深度卷积神经网络，用于小分子—靶点结合活性预测，属于早期发现/虚拟筛选平台，并非临床试验设计工具 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0148,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a603552d754edf96",
+        "text": "截至 2026 年，Atomwise 仍被列为 AI 药物发现代表厂商 ，但尚无其主导分子获批或进入关键性临床的公开证据，且 2023–2024 年后业务收缩缺乏权威量化披露。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0525,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b12c526186317f96",
+        "text": "行业标杆案例来自英矽智能（Insilico Medicine）：其 TNIK 靶点由 AI 发现、分子由生成式 AI 设计，临床前提名仅约 12–18 个月，相比传统临床前阶段压缩约 50–70%。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.061,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0cb87e73394368b4",
+          "ev_edcbaeda87dae8e6",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd",
+          "src_1cdbff858a1e4c14"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0cb87e73394368b4",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Cost and Efficiency Pressures: The rationale is clear: if AI can drastically reduce time-to-hit or flag poor candidates early, firms could save hundreds of millions per molecule. R&D budgets in pharma have soared (inflation-adjusted tenfold since 1980 ( [11] )), and companies now pour ~=25% of revenue into R&D. As one CB Insights report noted, “Billion-dollar drug development costs are redefining priorities…pharma companies are using AI to make R&D more efficient” ( [15] ). For example, engines ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edcbaeda87dae8e6",
+            "source_id": "src_1cdbff858a1e4c14",
+            "text": "In a landmark GPCR study, docking ultralarge libraries (up to 490 million molecules) against AlphaFold2 models of the sigma-2 and serotonin 5-HT receptors produced hit rates of 54% and 26%, respectively. These were statistically indistinguishable from the 51% and 23% rates achieved using experimental crystal and cryo-EM structures for the same targets (PMID: 38753765). For trace amine–associated receptor 1 (TAAR1) - a target with no experimental structure at the time - AlphaFold models identifie",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_abdcdad37e03d2b9",
+        "text": "不过整体而言，截至 2026 年中尚无任何\"纯 AI 发现\"药物获批，AI 分子的 II 期疗效失败率与传统项目相当——成功率的决定性改善尚未证实。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0342,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a8fcc4d58f70b08c",
+          "ev_41fd32fc69175261",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_90cbd6cdc3e1b0fc",
+          "src_7528fa26b8cae5ce",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a8fcc4d58f70b08c",
+            "source_id": "src_90cbd6cdc3e1b0fc",
+            "text": "2026年Isomorphic Labs推出IsoDDE，将AlphaFold 3从静态结构预测扩展为端到端药物设计管线，涵盖动态构象模拟、配体优化与亲和力预测。平台不开放代码与权重，引发学界对开放性与商业化保护的争论。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41fd32fc69175261",
+            "source_id": "src_7528fa26b8cae5ce",
+            "text": "DeepMind AlphaFold 3首创AI设计抗癌药进入临床试验：AI制药从预测到创造的质变. 2026年03月21日 80 约6分钟 News Factory.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dc4ce195fe41d6ce",
+        "text": "临床试验设计环节的 AI 落地证据弱于发现端，但方向明确。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2188,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d97355f24280ca9",
+          "ev_41fd32fc69175261",
+          "ev_cc267a5c4898bea1"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c",
+          "src_7528fa26b8cae5ce",
+          "src_28a941d70fef311f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d97355f24280ca9",
+            "source_id": "src_909870c43f07440c",
+            "text": "RoseTTA Fold、AlphaFold 3以及国际蛋白质数据库PDB的全新服务，都为相关研究提供了强大助力。 在实际应用中，AI已取得显著成果，例如斯坦福医学院与麦克马斯特大学研究人员开发的SyntheMol模型成功设计出抑制超级细菌的分子；英矽智能利用其AI平台识别了罕见肺部疾病的全新药物靶点。 然而，AI制药的发展并非坦途。 尽管技术突破带来了巨大希望，但实际落地仍需跨越数据质量、监管审批、以及行业协作模式等多重障碍。 数据作为AI训练的基石，其规模、多样性和标注质量直接影响模型性能；监管机构对于AI辅助设计的新药审批流程和标准尚在探索中；而制药公司与AI科技公司之间的深度融合与协作模式，也仍在磨合之中。 尽管挑战犹存，但不可否认的是，AI正从医药研发的辅助工具转变为核心驱动力，其影响已几乎覆盖从药物靶点发现到临床研究的全链条环节。 Isomorphic Labs凭借其强大的AI药物设计引擎，无疑正站在这场深刻变革的前沿，推动人类快速研发各类新药、攻克疑难疾病的愿景逐渐变为现实。 融资6亿美元，诺贝尔奖团队开发AI制药大模型·ByDrug·（2025/7/3）·检索日期202",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_41fd32fc69175261",
+            "source_id": "src_7528fa26b8cae5ce",
+            "text": "DeepMind AlphaFold 3首创AI设计抗癌药进入临床试验：AI制药从预测到创造的质变. 2026年03月21日 80 约6分钟 News Factory.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ad473c655e6e3b76",
+        "text": "覆盖该环节的不是 Atomwise 类结构生物学平台，而是数字孪生与数据驱动平台：Unlearn.AI 为受试者生成基于历史数据的\"数字孪生\"以缩小对照组规模（业界估计可减少入组需求 30–50%，为厂商及综述口径，尚待监管确认）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0208,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c9ef2bd061651026",
+          "ev_7642de8c195160ab",
+          "ev_6637edb52dbff1ac"
+        ],
+        "source_ids": [
+          "src_55b4524d1c4b2b9a",
+          "src_c3fab60996d178bd",
+          "src_8d8c7548362c894d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c9ef2bd061651026",
+            "source_id": "src_55b4524d1c4b2b9a",
+            "text": "Virtual clinical trials use digital twin populations to simulate drug effects across diverse patient groups. This approach can: Reduce Trial Size. Synthetic control arms reduce patient recruitment needs by 30-50%. Accelerate Timelines.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c91cf7c65eb928cd",
+        "text": "Tempus、PathAI 等基于基因组/EHR/病理图像做患者分层与生物标志物识别 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d29460b73d53a62f",
+        "text": "EHR 匹配类工具可自动筛选数百万病历以加速招募 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9da472443d30e6fd",
+        "text": "此外，AI 在药物警戒、预后生物标志物识别和数字病理分析等临床试验支持环节已有综述级应用记录 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6b4ef8e0c1bf0850"
+        ],
+        "source_ids": [
+          "src_d3d0e4b1c332744e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6b4ef8e0c1bf0850",
+            "source_id": "src_d3d0e4b1c332744e",
+            "text": "Examples include target validation, identification of prognostic biomarkers and analysis of digital pathology data in clinical trials. Applications have ranged in context and methodology, with some approaches yielding accurate predictions and insights.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_446656f9a6a2ddd4",
+        "text": "该路径直击最大成本池：III 期单项成本 3–6 亿美元、患者招募占试验时间 30–40%，且正是 Deloitte 数据显示过去五年延长最多（+12%）的阶段 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0398,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ceacaaa3f732cf25",
+          "ev_425b411febf96b23",
+          "ev_c56746bdd4bc4baa"
+        ],
+        "source_ids": [
+          "src_7407a364f558259f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ceacaaa3f732cf25",
+            "source_id": "src_7407a364f558259f",
+            "text": "Challenges in clinical trials : Stringent trials are essential for ensuring drug safety and efficacy. However, meeting evolving regulatory standards and recruiting eligible trial participants is time-consuming and expensive, particularly in rare disease areas. Additionally, the high concentration of indications intensifies competition for patient recruitment, further increasing complexity, time, and cost. High failure rates : Drug development inherently carries a high failure rate, and unsuccess",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_425b411febf96b23",
+            "source_id": "src_7407a364f558259f",
+            "text": "Expected Return on Innovation Rebounded Since 2022 Analysis shows that the IRR for the top 20 global pharmaceutical companies reached 5. 9% in 2024, an increase of 1. 6 percentage points from 2023, continuing an upward trend. Among the 20 companies surveyed, 13 saw IRR increases between 0. 4% and 6. 9%, with three companies experiencing growth exceeding 5%. IRR is determined by efficiency (development time and cost) and value creation (risk-adjusted forecasted sales). Despite the continued rise ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1adb0dac0d989cac",
+        "text": "但需强调，数字孪生对照等方法对 FDA/EMA 的监管认可仍在形成中，降本幅度主要来自行业综述估计而非同行评议研究。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0795,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d97355f24280ca9",
+          "ev_925bee3064f76d57",
+          "ev_6637edb52dbff1ac"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c",
+          "src_8d8c7548362c894d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d97355f24280ca9",
+            "source_id": "src_909870c43f07440c",
+            "text": "RoseTTA Fold、AlphaFold 3以及国际蛋白质数据库PDB的全新服务，都为相关研究提供了强大助力。 在实际应用中，AI已取得显著成果，例如斯坦福医学院与麦克马斯特大学研究人员开发的SyntheMol模型成功设计出抑制超级细菌的分子；英矽智能利用其AI平台识别了罕见肺部疾病的全新药物靶点。 然而，AI制药的发展并非坦途。 尽管技术突破带来了巨大希望，但实际落地仍需跨越数据质量、监管审批、以及行业协作模式等多重障碍。 数据作为AI训练的基石，其规模、多样性和标注质量直接影响模型性能；监管机构对于AI辅助设计的新药审批流程和标准尚在探索中；而制药公司与AI科技公司之间的深度融合与协作模式，也仍在磨合之中。 尽管挑战犹存，但不可否认的是，AI正从医药研发的辅助工具转变为核心驱动力，其影响已几乎覆盖从药物靶点发现到临床研究的全链条环节。 Isomorphic Labs凭借其强大的AI药物设计引擎，无疑正站在这场深刻变革的前沿，推动人类快速研发各类新药、攻克疑难疾病的愿景逐渐变为现实。 融资6亿美元，诺贝尔奖团队开发AI制药大模型·ByDrug·（2025/7/3）·检索日期202",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7aa9d01b8a967a58",
+        "text": "短期（至 2028 年前后）：改善集中在发现端，但 ROI 弹性有限。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0957,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_13c11afa3f45de6e",
+          "ev_925bee3064f76d57",
+          "ev_6d97355f24280ca9"
+        ],
+        "source_ids": [
+          "src_76ae8da02f4feeb7",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_13c11afa3f45de6e",
+            "source_id": "src_76ae8da02f4feeb7",
+            "text": "Atomwise 是 AI 驱动药物发现领域的领先力量。 其创新技术有可能加速新疗法的开发并改善全球患者的生活。 如果您是从事药物发现的研究人员或公司，Atomwise 是值得考虑的合作伙伴。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_73dd40b46c726ac2",
+        "text": "临床阶段占总研发成本约 60–70%，即使 AI 将临床前周期压缩一半、成本显著下降，对整体 IRR 的拉动也有限。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1856,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_925bee3064f76d57",
+          "ev_07cc6f7cecc35b39",
+          "ev_9835ecc98bca8b10"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c",
+          "src_b58a83553bc271b4",
+          "src_7407a364f558259f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_07cc6f7cecc35b39",
+            "source_id": "src_b58a83553bc271b4",
+            "text": "AI can reduce drug discovery timelines by 70%, from 10-15 years to 1-2 years for early stages. 2. Cost Savings. Early-stage discovery costs drop from $50-100 million to under $5 million. Capital costs can decrease by 80% compared to traditional methods. 3. Higher Success Rates.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_74f32650af491a24",
+        "text": "Deloitte 数据显示 2024 年行业 IRR 从 2022 年低点 1.2% 回升至 5.9%，但主要由 GLP-1 类资产的商业预期驱动——剔除后仅 3.8% ，说明 AI 尚未成为回报率改善的可识别因素。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1117,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9835ecc98bca8b10",
+          "ev_c56746bdd4bc4baa",
+          "ev_425b411febf96b23"
+        ],
+        "source_ids": [
+          "src_7407a364f558259f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9835ecc98bca8b10",
+            "source_id": "src_7407a364f558259f",
+            "text": "If the GLP-1 category is excluded, the average forecasted peak sales per asset would drop from $510 million to $370 million, reducing the internal rate of return (IRR) from 5. 9% to 3. 8%. The average cost of developing a drug for major pharmaceutical companies continues to rise, reaching $2. 23 billion in 2024. The two late-stage pipeline areas expected to see the most significant growth are oral GLP-1 therapies (ranked first) and subcutaneous NSCLC therapies (ranked second). Focusing on divers",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c56746bdd4bc4baa",
+            "source_id": "src_7407a364f558259f",
+            "text": "Longer development timelines lead to higher costs and delays in bringing innovative therapies to market. The Massive Market Impact of GLP-1 The average forecasted peak sales per asset increased to $510 million in 2024, with two companies expecting their assets to surpass $2 billion in peak sales. However, excluding GLP-1 products, the average forecasted peak sales drop to $370 million, and IRR declines from 5. 9% to 3. 8%, highlighting the massive market impact of GLP-1 therapies. The resurgence",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5c29de999379b9b4",
+        "text": "药企的大额预付款交易（如礼来与 Atomwise 最高 5.6 亿美元的合作）表明传统药企已为 AI 平台定价，但这属于成本项投入而非已兑现的回报。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0797,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7289165e81e3b17d",
+          "ev_13c11afa3f45de6e",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_a97d06c976d4d6ae",
+          "src_76ae8da02f4feeb7",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7289165e81e3b17d",
+            "source_id": "src_a97d06c976d4d6ae",
+            "text": "Atomwise表示，它现在支持19个国家100多所大学和医院的发现项目，遍布每个主要治疗领域。 例如，1月份，Atomwise与Charles River Laboratories签署了一项战略联盟，可能为AI平台开发商带来超过24亿美元的版税。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_13c11afa3f45de6e",
+            "source_id": "src_76ae8da02f4feeb7",
+            "text": "Atomwise 是 AI 驱动药物发现领域的领先力量。 其创新技术有可能加速新疗法的开发并改善全球患者的生活。 如果您是从事药物发现的研究人员或公司，Atomwise 是值得考虑的合作伙伴。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8547348c21024843",
+        "text": "中长期：试验设计路径是 ROI 弹性最大的杠杆。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1167,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57",
+          "ev_6d97355f24280ca9"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_07baf9ae305876df",
+        "text": "成功率每提高 1 个百分点对 IRR 的贡献远大于等比例成本下降。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0761,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c56746bdd4bc4baa",
+          "ev_9835ecc98bca8b10",
+          "ev_fc99ce2093b84aa5"
+        ],
+        "source_ids": [
+          "src_7407a364f558259f",
+          "src_c6f729aa9fbaac6f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c56746bdd4bc4baa",
+            "source_id": "src_7407a364f558259f",
+            "text": "Longer development timelines lead to higher costs and delays in bringing innovative therapies to market. The Massive Market Impact of GLP-1 The average forecasted peak sales per asset increased to $510 million in 2024, with two companies expecting their assets to surpass $2 billion in peak sales. However, excluding GLP-1 products, the average forecasted peak sales drop to $370 million, and IRR declines from 5. 9% to 3. 8%, highlighting the massive market impact of GLP-1 therapies. The resurgence",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9835ecc98bca8b10",
+            "source_id": "src_7407a364f558259f",
+            "text": "If the GLP-1 category is excluded, the average forecasted peak sales per asset would drop from $510 million to $370 million, reducing the internal rate of return (IRR) from 5. 9% to 3. 8%. The average cost of developing a drug for major pharmaceutical companies continues to rise, reaching $2. 23 billion in 2024. The two late-stage pipeline areas expected to see the most significant growth are oral GLP-1 therapies (ranked first) and subcutaneous NSCLC therapies (ranked second). Focusing on divers",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a2f7ca312ecc3f77",
+        "text": "若 AI 分层与合成对照将总体临床成功率从约 8% 提升至 10–12%，配合约 20% 的试验成本压缩，行业 IRR 有望从约 5% 基准提升 2–4 个百分点——幅度相当于再造一个 GLP-1 效应。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c56746bdd4bc4baa",
+          "ev_aad50b6793a9f98e",
+          "ev_9835ecc98bca8b10"
+        ],
+        "source_ids": [
+          "src_7407a364f558259f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c56746bdd4bc4baa",
+            "source_id": "src_7407a364f558259f",
+            "text": "Longer development timelines lead to higher costs and delays in bringing innovative therapies to market. The Massive Market Impact of GLP-1 The average forecasted peak sales per asset increased to $510 million in 2024, with two companies expecting their assets to surpass $2 billion in peak sales. However, excluding GLP-1 products, the average forecasted peak sales drop to $370 million, and IRR declines from 5. 9% to 3. 8%, highlighting the massive market impact of GLP-1 therapies. The resurgence",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_aad50b6793a9f98e",
+            "source_id": "src_7407a364f558259f",
+            "text": "Oncology remains the primary focus, with 37% of pipeline assets concentrated in this area (consistently above 35% over the past five years), intensifying competition for research centers and trial participants. Among the 20 companies, only two do not have oncology programs. Infectious diseases are another competitive field, with 15 companies developing treatments and over 10% of potential assets targeting this area. The rapid growth of GLP-1, particularly in the obesity market, underscores the s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c541a589d791dbee",
+        "text": "这是推断而非实证：AI 对 II/III 期成功率的对照数据目前不存在。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0342,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c051f111a85b754f",
+          "ev_8d874735eb1e5ea4",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_5d9e8b97b164a034",
+          "src_5a932ae29ec13756",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c051f111a85b754f",
+            "source_id": "src_5d9e8b97b164a034",
+            "text": "—Insilico Medicine创始人兼CEO Alex Zhavoronkov.INS018_055进入III期，无疑给了所有相信AI制药的人一支强心剂。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8d874735eb1e5ea4",
+            "source_id": "src_5a932ae29ec13756",
+            "text": "2. Clinical Trial Design and Patient Recruitment. Clinical trials are where most development costs concentrate. A Phase III trial for a single indication can cost $300 million to $600 million and take three to five years.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_468e08bddf3aca61",
+        "text": "主要风险与不确定性：其一，AI 分子 I 期 80–90% 通过率的样本量很小，且安全性通过不等于疗效成功；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0463,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9e3f910130641588",
+          "ev_41fd32fc69175261",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_13fbbbdd402a7cc3",
+          "src_7528fa26b8cae5ce",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9e3f910130641588",
+            "source_id": "src_13fbbbdd402a7cc3",
+            "text": "AI-discovered molecules clear Phase I at 80-90%, against an industry norm closer to half.What evidence should define success for AI drug discovery at this stage: clinical outcomes, development speed or prospective comparisons with conventional discovery?",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41fd32fc69175261",
+            "source_id": "src_7528fa26b8cae5ce",
+            "text": "DeepMind AlphaFold 3首创AI设计抗癌药进入临床试验：AI制药从预测到创造的质变. 2026年03月21日 80 约6分钟 News Factory.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a21ea7025f749ef9",
+        "text": "其二，Daphne Koller 等从业者警告训练数据规模差距仍大，ROI 改善预期可能过度乐观；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8f98c74a985fba20",
+          "ev_925bee3064f76d57",
+          "ev_6d97355f24280ca9"
+        ],
+        "source_ids": [
+          "src_c919d06c2cce4a4c",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8f98c74a985fba20",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "机器学习先驱Daphne Koller警告：AI制药不是魔法棒，下一代药物发现还缺1000倍数据. 2026-08-11 10:35:17 来源: DeepTech深科技 北京 举报.这款用于特发性肺纤维化的药物，其 TNIK 靶点发现和分子设计都使用了 AI。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_925bee3064f76d57",
+            "source_id": "src_909870c43f07440c",
+            "text": "Isomorphic Labs：从基础突破到产业深耕 Isomorphic Labs成立于2021年，是谷歌DeepMind剥离出的子公司，旨在将AlphaFold的强大能力转化为实际的药物研发成果。 其核心在于一个统一的AI药物设计引擎，融合了AlphaFold 3、扩散模型和多任务强化学习框架等前沿AI技术，形成了一个有机协同的整体架构。 Max Jaderberg，Isomorphic Labs的首席AI官，曾指出，药物研发的本质是在近乎无限的分子空间（约10^60种可能性）中寻找最优解。 Isomorphic Labs的目标，正是通过AI技术，实现对药物分子更高效的筛选和设计，将传统上耗时5-10年的药物发现周期，大幅缩短至1-2年甚至更短，从而实现药物研发效率的质的飞跃。 Isomorphic Labs的AI药物设计引擎展现出三大核心优势： 技术层面： 凭借AlphaFold 3对所有生命分子结构和相互作用的高精度预测能力，引擎能准确解析药物与靶点的结合模式，为药物设计提供更精准的分子结构信息。 这使得研发人员能够基于对分子机制的深入理解来设计药物，显著提升药物设计的成功率。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_65d0f600eac21e26",
+        "text": "其三，2026 年关于\"AlphaFold 3 首款抗癌药进入临床\"及 Isomorphic 新设计引擎的报道  来源为行业媒体，尚待权威期刊或官方确认；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2303,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2243d51cc9bf9c9c",
+          "ev_6d97355f24280ca9",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6d97355f24280ca9",
+            "source_id": "src_909870c43f07440c",
+            "text": "RoseTTA Fold、AlphaFold 3以及国际蛋白质数据库PDB的全新服务，都为相关研究提供了强大助力。 在实际应用中，AI已取得显著成果，例如斯坦福医学院与麦克马斯特大学研究人员开发的SyntheMol模型成功设计出抑制超级细菌的分子；英矽智能利用其AI平台识别了罕见肺部疾病的全新药物靶点。 然而，AI制药的发展并非坦途。 尽管技术突破带来了巨大希望，但实际落地仍需跨越数据质量、监管审批、以及行业协作模式等多重障碍。 数据作为AI训练的基石，其规模、多样性和标注质量直接影响模型性能；监管机构对于AI辅助设计的新药审批流程和标准尚在探索中；而制药公司与AI科技公司之间的深度融合与协作模式，也仍在磨合之中。 尽管挑战犹存，但不可否认的是，AI正从医药研发的辅助工具转变为核心驱动力，其影响已几乎覆盖从药物靶点发现到临床研究的全链条环节。 Isomorphic Labs凭借其强大的AI药物设计引擎，无疑正站在这场深刻变革的前沿，推动人类快速研发各类新药、攻克疑难疾病的愿景逐渐变为现实。 融资6亿美元，诺贝尔奖团队开发AI制药大模型·ByDrug·（2025/7/3）·检索日期202",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_76193ad6fc41e520",
+        "text": "其四，监管对 AI 支持证据的接受度和高质量临床数据的可及性是结构性约束。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1296,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d97355f24280ca9",
+          "ev_2243d51cc9bf9c9c",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d97355f24280ca9",
+            "source_id": "src_909870c43f07440c",
+            "text": "RoseTTA Fold、AlphaFold 3以及国际蛋白质数据库PDB的全新服务，都为相关研究提供了强大助力。 在实际应用中，AI已取得显著成果，例如斯坦福医学院与麦克马斯特大学研究人员开发的SyntheMol模型成功设计出抑制超级细菌的分子；英矽智能利用其AI平台识别了罕见肺部疾病的全新药物靶点。 然而，AI制药的发展并非坦途。 尽管技术突破带来了巨大希望，但实际落地仍需跨越数据质量、监管审批、以及行业协作模式等多重障碍。 数据作为AI训练的基石，其规模、多样性和标注质量直接影响模型性能；监管机构对于AI辅助设计的新药审批流程和标准尚在探索中；而制药公司与AI科技公司之间的深度融合与协作模式，也仍在磨合之中。 尽管挑战犹存，但不可否认的是，AI正从医药研发的辅助工具转变为核心驱动力，其影响已几乎覆盖从药物靶点发现到临床研究的全链条环节。 Isomorphic Labs凭借其强大的AI药物设计引擎，无疑正站在这场深刻变革的前沿，推动人类快速研发各类新药、攻克疑难疾病的愿景逐渐变为现实。 融资6亿美元，诺贝尔奖团队开发AI制药大模型·ByDrug·（2025/7/3）·检索日期202",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2243d51cc9bf9c9c",
+            "source_id": "src_909870c43f07440c",
+            "text": "Demis Hassabis及其诺贝尔奖团队创办的Isomorphic Labs近日成功完成6亿美元融资，标志着以AlphaFold 3为核心的AI药物设计引擎正加速从基础科学突破走向临床应用。 这不仅预示着药物研发效率的质变，更开启了利用人工智能全面理解生命分子互作用，从而攻克人类顽疾的全新时代。 在人工智能领域，少有人能像德米斯·哈萨比斯（Demis Hassabis）这样，将远大的愿景一步步变为现实。 这位被“互联网之父”蒂姆·伯纳斯·李赞誉为“地球上最聪明的人”，从围棋程序AlphaGo的横空出世，到破解蛋白质折叠半世纪难题的AlphaFold，再到因此荣获2024年诺贝尔化学奖，他的职业生涯轨迹清晰地指向一个核心目标：利用AI探索智能的极限，并将其力量应用于人类面临的最复杂挑战。 如今，他的新篇章——Isomorphic Labs，一家专注于AI药物研发的初创公司——再次成为焦点，宣布获得6亿美元融资，由Thrive Capital领投，GV和Alphabet参投，旨在进一步推动其下一代AI药物设计引擎进入临床阶段。 AlphaFold 3：AI驱动的生命科学新范式 理解生命",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_62bb85103450bc62",
+        "text": "AI 制药在靶点与分子发现端已获前瞻性实证——AlphaFold 结构可支撑与实验结构相当的虚拟筛选 ，临床前周期在标杆案例中压缩 50–70%；",
+        "task_id": "final_report",
+        "cited_indices": [
+          7,
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0372,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_edcbaeda87dae8e6",
+          "ev_3e64250ba520bb9f",
+          "ev_84697d8cdc3e5c0b"
+        ],
+        "source_ids": [
+          "src_1cdbff858a1e4c14",
+          "src_a4c9e9bbea763bea"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_edcbaeda87dae8e6",
+            "source_id": "src_1cdbff858a1e4c14",
+            "text": "In a landmark GPCR study, docking ultralarge libraries (up to 490 million molecules) against AlphaFold2 models of the sigma-2 and serotonin 5-HT receptors produced hit rates of 54% and 26%, respectively. These were statistically indistinguishable from the 51% and 23% rates achieved using experimental crystal and cryo-EM structures for the same targets (PMID: 38753765). For trace amine–associated receptor 1 (TAAR1) - a target with no experimental structure at the time - AlphaFold models identifie",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3e64250ba520bb9f",
+            "source_id": "src_a4c9e9bbea763bea",
+            "text": "A novel CDK20 small molecule inhibitor discovered by artificial intelligence based on an AlphaFold-predicted structure demonstrates the first application of AlphaFold in hit identification for efficient drug discovery.",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_44129bdffa5c1867",
+        "text": "在临床试验设计端，数字孪生对照、EHR 招募匹配和生物标志物分层已形成可操作的工具链 ，但量化收益与监管认可均未落定。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_8c85521f8452c1c9"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_daaad9994c179140",
+        "text": "对 Pharma 研发 ROI 的判断因此是分层的：发现端的效率改善已发生但财务弹性有限；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0312,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a66b0af519e9e317",
+          "ev_7642de8c195160ab",
+          "ev_9fee1c0b470f90f6"
+        ],
+        "source_ids": [
+          "src_c3fab60996d178bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a66b0af519e9e317",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Back to Articles Updated on 8/9/2026 35 min read Next Article More Download PDF IntuitionLabs Report Executive Summary The global pharmaceutical industry is undergoing a paradigm shift as artificial intelligence (AI) is integrated across the drug development lifecycle. Rising R&D costs and long development timelines have driven pharma companies to adopt AI tools in drug discovery clinical development commercial operations , and quality/manufacturing . AI promises to make each stage faster, cheap",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7642de8c195160ab",
+            "source_id": "src_c3fab60996d178bd",
+            "text": "Salesforce Life Sciences Cloud) now embedding AI-driven segmentation and content personalization ( ). Finally, in manufacturing/quality , AI enables predictive maintenance (reducing downtime 25–30% in one case ( digital twins of production processes (as Pfizer employed ( )), and AI-driven quality inspection. Market analysts forecast the overall pharma AI applications market growing at ~28% CAGR (2026–30) to over $21. 5 billion ( ). However, industry experts caution that no AI-only drug has yet b",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c3ee383520e7fbb2",
+        "text": "真正改变回报率的钥匙在于 AI 能否提升 II/III 期成功率，而这恰恰是目前证据最薄弱、需待 2028 年后临床后期数据验证的环节。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0167,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c051f111a85b754f",
+          "ev_8d874735eb1e5ea4",
+          "ev_925bee3064f76d57"
+        ],
+        "source_ids": [
+          "src_5d9e8b97b164a034",
+          "src_5a932ae29ec13756",
+          "src_909870c43f07440c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c051f111a85b754f",
+            "source_id": "src_5d9e8b97b164a034",
+            "text": "—Insilico Medicine创始人兼CEO Alex Zhavoronkov.INS018_055进入III期，无疑给了所有相信AI制药的人一支强心剂。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8d874735eb1e5ea4",
+            "source_id": "src_5a932ae29ec13756",
+            "text": "2. Clinical Trial Design and Patient Recruitment. Clinical trials are where most development costs concentrate. A Phase III trial for a single indication can cost $300 million to $600 million and take three to five years.",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 57,
+    "evidence_count": 81,
+    "supported_count": 1,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 35,
+    "coverage": 0.0278,
+    "primary_source_ratio": 0.0877,
+    "fulltext_source_ratio": 0.0877,
+    "verification_mode": "hybrid_unavailable",
+    "semantic_reviewed_count": 0,
+    "semantic_candidate_count": 34
+  },
+  "run_metadata": {
+    "final_report_sha256": "fcbbc34cd97ad2397a86906766d12f6c628cc6085e92b5cb047ba619ff41d737",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 36,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 35,
+        "coverage": 0.0278,
+        "verification_mode": "hybrid_unavailable",
+        "semantic_reviewed_count": 0,
+        "semantic_candidate_count": 34
+      },
+      "after": {
+        "claim_count": 36,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 35,
+        "coverage": 0.0278,
+        "verification_mode": "hybrid_unavailable",
+        "semantic_reviewed_count": 0,
+        "semantic_candidate_count": 34
+      }
+    }
+  }
+}

@@ -6,7 +6,8 @@ superseded results. See `../EXPERIMENTS.md` for interpretation and limitations.
 | Artifact | Evidence level | What it establishes |
 |---|---|---|
 | `demos/catalog.json` | Verified public demo | SHA-256-bound Kimi K3 report/evidence replay available in the UI without an API key |
-| `headtohead_v4_preregistration.json` | Preregistered protocol (pending execution) | Frozen n=15 sample, order, model/config identity, endpoints, and analysis plan across all 11 domains |
+| `headtohead_v5_preregistration.json` | Preregistered protocol (completed) | Frozen n=15 sample, order, model/config identity, endpoints, analysis plan, as-of date, and source hash across all 11 domains |
+| `artifacts/headtohead_v5/` | Reproducible confirmatory result (`n=15`) | Exact reports/evidence, raw Judge decisions, hashes, telemetry, and a portable result that passes the API-free auditor |
 | `artifacts/evidence_v2/` | Reproducible runtime/verifier evidence | Exact Kimi K3 report and evidence graph, deterministic replay, and source-bounded hybrid replay |
 | `artifacts/headtohead_v3/` | Development pilot (`n=1`) | Corrected Agent-versus-one-call protocol, retained reports, hashes, telemetry, and counterbalanced Judge output |
 | `artifacts/ablation_v3/` | Negative development diagnostic (`n=1`) | Real `full` versus `no_evidence` execution; no quality gain established |
@@ -32,14 +33,18 @@ every evidence chunk against the hash stored inside the graph.
 
 ## Preregistered Head-To-Head
 
-The committed v4 manifest was generated before the confirmatory run. The runner
-does not accept question-selection or Judge-order overrides:
+The v5 manifest was committed before the confirmatory run. The runner does not
+accept question-selection or Judge-order overrides. The published run completed
+all 15 pairs and is auditable directly from a clone:
 
 ```bash
-python scripts/run_headtohead.py
-python scripts/audit_headtohead.py outputs/evaluation/headtohead_v4.json
+python scripts/audit_headtohead.py \
+  docs/evaluation/artifacts/headtohead_v5/result.json \
+  --preregistration docs/evaluation/headtohead_v5_preregistration.json \
+  --require-complete
 ```
 
-The second command is API-free. It recomputes rule scores, evidence metrics, and
-paired statistics from retained artifacts and rejects hash, schedule, prompt,
-configuration, or implementation drift.
+The command is API-free. It recomputes rule scores, evidence metrics, and paired
+statistics from retained artifacts and rejects hash, schedule, prompt,
+configuration, or implementation drift. The committed result returns 15/15
+complete pairs, zero errors, and zero warnings.

@@ -1,0 +1,3125 @@
+{
+  "schema_version": "1.0",
+  "query": "分析中国光伏产业从硅料到组件的全产业链竞争力，评估美国《通胀削减法案》(IRA) 对中国光伏出口的影响。",
+  "created_at": "2026-08-13T21:36:50.543089+00:00",
+  "sources": [
+    {
+      "source_id": "src_3376a27ec5dd0ea4",
+      "url": "https://letschuhai.com/66de5400",
+      "title": "赴美建厂，中国光伏企业的动机与无奈 | 36氪出海",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.8378,
+        "host_domain": "letschuhai.com"
+      }
+    },
+    {
+      "source_id": "src_be6811883ef72ca8",
+      "url": "https://xueqiu.com/3039725947/370153193",
+      "title": "xueqiu.com/3039725947/370153193",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.8378,
+        "host_domain": "xueqiu.com"
+      }
+    },
+    {
+      "source_id": "src_54ac66cd62f5fb64",
+      "url": "https://h5.ifeng.com/c/vivoArticle/v002srMu9yqBOFb1vNDZLJfI8Y8Y1pfJ4sOPHQlSZsRDEtA__?isNews=1&showComments=0",
+      "title": "赴美建厂，中国光伏企业的动机与无奈",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.8017,
+        "host_domain": "h5.ifeng.com"
+      }
+    },
+    {
+      "source_id": "src_6c73c2d28a5f4286",
+      "url": "https://usmart.hk/zh-cn/news-detail/6868474435461038296",
+      "title": "中金：光伏装机需求大年要来了，看好全球光伏五年CAGR... | uSMART",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.7837,
+        "host_domain": "usmart.hk"
+      }
+    },
+    {
+      "source_id": "src_e848a17a1c67bea0",
+      "url": "https://acfic.org.cn/szyw/202507/t20260410_500063.html",
+      "title": "妓女直播-中华全国工商业联合会",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.7762,
+        "host_domain": "acfic.org.cn"
+      }
+    },
+    {
+      "source_id": "src_80b6b08e8bb7caee",
+      "url": "https://guangfu.bjx.com.cn/news/20240703/1386770-2.shtml",
+      "title": "guangfu.bjx.com.cn/news/20240703/1386770-2.shtml",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏 硅料 硅片 电池片 组件 产能 全球市占率 2025",
+        "retrieval_relevance": 0.7582,
+        "host_domain": "guangfu.bjx.com.cn"
+      }
+    },
+    {
+      "source_id": "src_60680872afed1e2d",
+      "url": "https://doi.org/10.46830/wrirpt.23.00161",
+      "title": "四川省晶硅光伏产业链生产阶段脱碳技术路径减排结果分析",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Haigang Pei, Liu Xiang, Xinru Wen",
+      "year": "2025",
+      "publisher": "World Resources Institute",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.46830/wrirpt.23.00161",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "中国光伏 硅料 组件 全球市占率 产能 调研中国光伏全产业链各环节（硅料、硅片、电池片、组件）的产能、全球市占率、成本与技术水平 academic paper survey benchmark",
+        "retrieval_relevance": 0.6828,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_552640cbca2c8722",
+      "url": "https://doi.org/10.26789/jnhb.v7i4.961",
+      "title": "基于快速并网发电的智能光伏组件的技术与产业化研究",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "程 建彬, 陆 海君, 罗 丽, 叶 荣生, 曾 燕平",
+      "year": "2022",
+      "publisher": "Urban Development Scientific Publishing Pte Ltd",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.26789/jnhb.v7i4.961",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "中国光伏 硅料 组件 全球市占率 产能 调研中国光伏全产业链各环节（硅料、硅片、电池片、组件）的产能、全球市占率、成本与技术水平 academic paper survey benchmark",
+        "retrieval_relevance": 0.6828,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_5882ecb4e87ea5d1",
+      "url": "https://doi.org/10.3788/lop20094609.0008b",
+      "title": "全球薄膜太阳能电池产能持续大幅增长",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "N/A N/A",
+      "year": "2009",
+      "publisher": "Shanghai Institute of Optics and Fine Mechanics",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.3788/lop20094609.0008b",
+        "citation_count": 0,
+        "provider": "crossref",
+        "retrieval_query": "中国光伏 硅料 组件 全球市占率 产能 调研中国光伏全产业链各环节（硅料、硅片、电池片、组件）的产能、全球市占率、成本与技术水平 academic paper survey benchmark",
+        "retrieval_relevance": 0.6697,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_8367eeadf665a14d",
+      "url": "https://energytrend.cn/news/20231113-131066.html",
+      "title": "Wood Mackenzie：到2026年，中国将拥有全球80...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "961fdf950a3a5d198e30a140bb8b74128c1262cbca8ec54dadc37c3ce57f983c",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.8415,
+        "host_domain": "energytrend.cn"
+      }
+    },
+    {
+      "source_id": "src_853162f4a2a9e81a",
+      "url": "https://assets.kpmg.com/content/dam/kpmgsites/cn/pdf/zh/2025/05/europe-and-america-new-energy-market.pdf",
+      "title": "新能源企业“出海”系列之启航欧美",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.7649,
+        "host_domain": "assets.kpmg.com"
+      }
+    },
+    {
+      "source_id": "src_5d93a5a2744000bb",
+      "url": "https://niumoney.com/news/notice_190685.html",
+      "title": "多晶硅产业深度分析：当过剩周期遇到“反内卷”- 牛钱网",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.7394,
+        "host_domain": "niumoney.com"
+      }
+    },
+    {
+      "source_id": "src_2f8834f39f3fc60c",
+      "url": "https://industry7view.com/research/photovoltaic",
+      "title": "光伏：不是没有需求，而是供给太多｜产业研究知识库",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.7394,
+        "host_domain": "industry7view.com"
+      }
+    },
+    {
+      "source_id": "src_ce20b3e9284fdacd",
+      "url": "https://news.pedaily.cn/202412/544403.shtml",
+      "title": "恶性内卷的光伏产业，还有未来吗？_ 投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.7138,
+        "host_domain": "news.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_febf8b2d4900e43f",
+      "url": "https://cn-google-google.com.cn/news/833935.docx",
+      "title": "工业硅&多晶硅：价格下方空间或已有限_新闻联播",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CPIA 2024 多晶硅 硅片 电池 组件 产量 GW 全球占比 IRA 通胀削减法案 光伏 出口 影响",
+        "retrieval_relevance": 0.7011,
+        "host_domain": "cn-google-google.com.cn"
+      }
+    },
+    {
+      "source_id": "src_2151d3302651b0e5",
+      "url": "https://laohu8.com/post/340404000194744",
+      "title": "特斯拉可从拜登的通胀削减法案中获得 410 亿美元 | 老虎社区",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "通胀削减法案 IRA 光伏 制造补贴 45X 本土含量 对华限制 条款",
+        "retrieval_relevance": 0.8125,
+        "host_domain": "laohu8.com"
+      }
+    },
+    {
+      "source_id": "src_25f42cb90e45d941",
+      "url": "https://solar.in-en.com/html/solar-2426343.shtml",
+      "title": "IRA附加条款：美国光伏本土制造还有很大问题-国际太阳能光伏网",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "98e0c7ae9c40f83f091ea95edf493184c24f42c1d8a177a4c86b12eb9b57c656",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "通胀削减法案 IRA 光伏 制造补贴 45X 本土含量 对华限制 条款",
+        "retrieval_relevance": 0.8125,
+        "host_domain": "solar.in-en.com"
+      }
+    },
+    {
+      "source_id": "src_27b32c29dbe9f33b",
+      "url": "https://theicct.org.cn/2024/06/20/低碳交通知享会｜第3期：美国《通胀削减法案",
+      "title": "“低碳交通”知享会｜第3期：美国《通胀削减法案（IRA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "通胀削减法案 IRA 光伏 制造补贴 45X 本土含量 对华限制 条款",
+        "retrieval_relevance": 0.7875,
+        "host_domain": "theicct.org.cn"
+      }
+    },
+    {
+      "source_id": "src_e1420d8aeb1aeb04",
+      "url": "https://jg-static.eeo.com.cn/article/info?id=efa55b96c4174cd6b79fbce11691680b&channelUuid=undefined",
+      "title": "IIGF观点|浅析美国《通胀削减法案》对气候投融资的影响 | 经观新闻",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "通胀削减法案 IRA 光伏 制造补贴 45X 本土含量 对华限制 条款",
+        "retrieval_relevance": 0.7625,
+        "host_domain": "jg-static.eeo.com.cn"
+      }
+    },
+    {
+      "source_id": "src_68ec59a2827ef0c4",
+      "url": "https://news.goalfore.cn/topstories/detail/79905.html",
+      "title": "Wood Mackenzie：未来十年 美国光伏年均新增45GW...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 通胀削减法案 中国光伏 出口美国 东南亚转口 反规避 关税 2024 2025",
+        "retrieval_relevance": 0.7205,
+        "host_domain": "news.goalfore.cn"
+      }
+    },
+    {
+      "source_id": "src_42d5ab08227ab746",
+      "url": "https://pv-magazine-usa.com/2026/03/05/u-s-solars-push-for-domestic-bliss",
+      "title": "U.S. solar’s push for domestic bliss – pv magazine USA",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.8066,
+        "host_domain": "pv-magazine-usa.com"
+      }
+    },
+    {
+      "source_id": "src_c911755cfd7929f7",
+      "url": "https://news.activ8insights.com/p/weekly-wrap-up-sunday-1-25-26",
+      "title": "3 New Short Reports: FFRI, T1 Energy, Affirm | Activ8Insights",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.8066,
+        "host_domain": "news.activ8insights.com"
+      }
+    },
+    {
+      "source_id": "src_7026a756c2314a9e",
+      "url": "https://sunpullwire.com/2026-itc-ptc-solar-credits",
+      "title": "Where Do ITC and PTC Solar Credits Stand in 2026? - Sun Pull Wire",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.8066,
+        "host_domain": "sunpullwire.com"
+      }
+    },
+    {
+      "source_id": "src_5a473aca9b5fae84",
+      "url": "https://solwel.com/blogs/news/ira-domestic-content-bonus-solar-panels-2026",
+      "title": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "1f235ce91a8cf78a1b69be519de8bae8a8db19f0e299b538948ddb48d78ab7ae",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.7805,
+        "host_domain": "solwel.com"
+      }
+    },
+    {
+      "source_id": "src_6ab66b99dceeea16",
+      "url": "https://powermag.com/feoc-may-expand-in-scope-and-application-for-inflation-reduction-act",
+      "title": "FEOC May Expand in Scope and Application for Inflation Reduction...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.7283,
+        "host_domain": "powermag.com"
+      }
+    },
+    {
+      "source_id": "src_3863acc9203db783",
+      "url": "https://canarymedia.com/articles/clean-energy/china-foreign-entity-rules-trump",
+      "title": "Anti-China rules make GOP megabill even worse for… | Canary Media",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Inflation Reduction Act Section 45X solar manufacturing tax credit domestic content bonus FEOC China",
+        "retrieval_relevance": 0.4855,
+        "host_domain": "canarymedia.com"
+      }
+    },
+    {
+      "source_id": "src_6a83ca273862b88d",
+      "url": "https://cj.sina.com.cn/articles/view/1030341137/3d69c21102701gp12",
+      "title": "cj.sina.com.cn/articles/view/1030341137/3d69c21102701gp12",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 中国光伏产业链 硅料 硅片 电池 组件 全球产能占比 成本竞争力",
+        "retrieval_relevance": 0.8106,
+        "host_domain": "cj.sina.com.cn"
+      }
+    },
+    {
+      "source_id": "src_e7166200ba0f53eb",
+      "url": "https://m.energytrend.cn/research/20250718-143927.html",
+      "title": "2025年全球光伏产业链深度解读_集邦新能源网",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "5af6d8bd244e4d84eda3c4b1d25dc0254b3d87d90dea24c2a3c0c0c0a6625b36",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 中国光伏产业链 硅料 硅片 电池 组件 全球产能占比 成本竞争力",
+        "retrieval_relevance": 0.7725,
+        "host_domain": "m.energytrend.cn"
+      }
+    },
+    {
+      "source_id": "src_02fbf7e0182da4e3",
+      "url": "https://ideesz.com/zhdt/hyzx1/202507/t20250721_805.html",
+      "title": "行业资讯:2025年全球光伏产业链进入深度调整期",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 中国光伏产业链 硅料 硅片 电池 组件 全球产能占比 成本竞争力",
+        "retrieval_relevance": 0.7725,
+        "host_domain": "ideesz.com"
+      }
+    },
+    {
+      "source_id": "src_35626c15e412dd94",
+      "url": "https://m.askci.com/news/chanye/20250922/172716275853323574121682.shtml",
+      "title": "m.askci.com/news/chanye/20250922/172716275853323574121682....",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 中国光伏产业链 硅料 硅片 电池 组件 全球产能占比 成本竞争力",
+        "retrieval_relevance": 0.7661,
+        "host_domain": "m.askci.com"
+      }
+    },
+    {
+      "source_id": "src_110628faed911a27",
+      "url": "https://xueqiu.com/7694597932/358847460",
+      "title": "光伏行业的潜力标的！ 光伏产业进入高质量发展新阶段2025...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "2025 中国光伏产业链 硅料 硅片 电池 组件 全球产能占比 成本竞争力",
+        "retrieval_relevance": 0.7391,
+        "host_domain": "xueqiu.com"
+      }
+    },
+    {
+      "source_id": "src_558848dceb15ef10",
+      "url": "https://myzaker.com/article/6a028faf8e9f0957960ff2f7",
+      "title": "myzaker.com/article/6a028faf8e9f0957960ff2f7",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 通胀削减法案 中国光伏 出口美国 东南亚转口 反规避 关税 2024 2025",
+        "retrieval_relevance": 0.8415,
+        "host_domain": "myzaker.com"
+      }
+    },
+    {
+      "source_id": "src_18f9a400617be708",
+      "url": "https://ajudaily.com/view/20230518075046275",
+      "title": "美IRA法案“拖累”韩车企销量 现代起亚扩大美电动汽车优惠力度 | 亚洲日报",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 通胀削减法案 中国光伏 出口美国 东南亚转口 反规避 关税 2024 2025",
+        "retrieval_relevance": 0.7755,
+        "host_domain": "ajudaily.com"
+      }
+    },
+    {
+      "source_id": "src_17837b0fd96af42f",
+      "url": "http://jingnongtong.com/index.php/xw/2172.html",
+      "title": "靴子正式落地，东南亚四国光伏行业难逃天价关税-365wm完美体育官网",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 通胀削减法案 中国光伏 出口美国 东南亚转口 反规避 关税 2024 2025",
+        "retrieval_relevance": 0.7425,
+        "host_domain": "jingnongtong.com"
+      }
+    },
+    {
+      "source_id": "src_94d818efe2131f49",
+      "url": "https://nz51.net/read/A0A7FAB8-9403-B47D-2D9C-6E009290DA13",
+      "title": "nz51.net/read/A0A7FAB8-9403-B47D-2D9C-6E009290DA13",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 通胀削减法案 中国光伏 出口美国 东南亚转口 反规避 关税 2024 2025",
+        "retrieval_relevance": 0.7031,
+        "host_domain": "nz51.net"
+      }
+    },
+    {
+      "source_id": "src_d02a2486aee2e29f",
+      "url": "https://indonesia-daily.com/page_36445.html",
+      "title": "云程光伏2.5GW工厂在印尼投产 | 每日印尼",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 中国光伏组件对美出口 东南亚产能 美国本土扩产 2024 2025",
+        "retrieval_relevance": 0.7547,
+        "host_domain": "indonesia-daily.com"
+      }
+    },
+    {
+      "source_id": "src_08934160261c633f",
+      "url": "https://m.21jingji.com/article/20240228/herald/63073aa5b3e31d40b1d2b24559a06372_zaker.html",
+      "title": "m.21jingji.com/article/20240228/herald/63073aa5b3e31d40...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 中国光伏组件对美出口 东南亚产能 美国本土扩产 2024 2025",
+        "retrieval_relevance": 0.7488,
+        "host_domain": "m.21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_9d28461656ed7a40",
+      "url": "http://dianzibao.cb.com.cn/images/2026-05/18/23/2652D03B.pdf",
+      "title": "CHINABUSINESSJOURNAL 编辑/董曙光",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 中国光伏组件对美出口 东南亚产能 美国本土扩产 2024 2025",
+        "retrieval_relevance": 0.7186,
+        "host_domain": "dianzibao.cb.com.cn"
+      }
+    },
+    {
+      "source_id": "src_0604a213d5b792a8",
+      "url": "https://irs.gov/retirement-plans/individual-retirement-arrangements-iras",
+      "title": "Individual retirement arrangements (IRAs) - Internal Revenue Service",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 中国光伏组件对美出口 东南亚产能 美国本土扩产 2024 2025",
+        "retrieval_relevance": 0.2267,
+        "host_domain": "irs.gov"
+      }
+    },
+    {
+      "source_id": "src_2eb755fa45240073",
+      "url": "https://en.wikipedia.org/wiki/Irish_Republican_Army",
+      "title": "Irish Republican Army - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 中国光伏组件对美出口 东南亚产能 美国本土扩产 2024 2025",
+        "retrieval_relevance": 0.2267,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_d057bfacc3b3a916",
+      "url": "https://new-energy.smm.cn/content/9014/102759260",
+      "title": "new-energy.smm.cn/content/9014/102759260",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏组件出口美国 数据 2023 2024 东南亚四国 反倾销 IRA 本土组件产能 GW",
+        "retrieval_relevance": 0.8648,
+        "host_domain": "new-energy.smm.cn"
+      }
+    },
+    {
+      "source_id": "src_4eebc84cebcf08cd",
+      "url": "https://aqfqjx.com/post/51591.html",
+      "title": "最高271.28%！美国出手 拟对东南亚四国光伏产品征收反倾销税",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏组件出口美国 数据 2023 2024 东南亚四国 反倾销 IRA 本土组件产能 GW",
+        "retrieval_relevance": 0.7889,
+        "host_domain": "aqfqjx.com"
+      }
+    },
+    {
+      "source_id": "src_9e96bfff22f785fc",
+      "url": "https://letschuhai.com/18e356f2",
+      "title": "letschuhai.com/18e356f2",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "194b51ee90f8fb989bc2c2c9b4e9a1191db23771fa25a845c78eb8c4e9bcde96",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏组件出口美国 数据 2023 2024 东南亚四国 反倾销 IRA 本土组件产能 GW",
+        "retrieval_relevance": 0.7837,
+        "host_domain": "letschuhai.com"
+      }
+    },
+    {
+      "source_id": "src_c694879c96a71231",
+      "url": "https://hmeonline.com/2024/41a1909019314238b1d7b2e877d4ef31.html",
+      "title": "hmeonline.com/2024/41a1909019314238b1d7b2e877d4ef31.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "中国光伏组件出口美国 数据 2023 2024 东南亚四国 反倾销 IRA 本土组件产能 GW",
+        "retrieval_relevance": 0.7582,
+        "host_domain": "hmeonline.com"
+      }
+    },
+    {
+      "source_id": "src_7d2ff647bbb517dd",
+      "url": "https://davia.ai/ru/stories/ef439add-4fb5-4d76-8bda-444a53e6bd3f",
+      "title": "WW2 European front | Davia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 45X 美国本土光伏组件产能 扩张 GW 2024 天合 晶科 隆基 美国建厂 出口美国占比",
+        "retrieval_relevance": 0.6788,
+        "host_domain": "davia.ai"
+      }
+    },
+    {
+      "source_id": "src_2091a885ca446929",
+      "url": "https://d3gbed2ley04jq.cloudfront.net/archives/71676",
+      "title": "d3gbed2ley04jq.cloudfront.net/archives/71676",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 45X 美国本土光伏组件产能 扩张 GW 2024 天合 晶科 隆基 美国建厂 出口美国占比",
+        "retrieval_relevance": 0.2263,
+        "host_domain": "d3gbed2ley04jq.cloudfront.net"
+      }
+    },
+    {
+      "source_id": "src_0a0162e8d415d8ee",
+      "url": "https://fidelity.com/learning-center/smart-money/what-is-an-ira",
+      "title": "What is an IRA and how does it work? | Fidelity",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "IRA 45X 美国本土光伏组件产能 扩张 GW 2024 天合 晶科 隆基 美国建厂 出口美国占比",
+        "retrieval_relevance": 0.2263,
+        "host_domain": "fidelity.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_216e9fe2c3170084",
+      "source_id": "src_3376a27ec5dd0ea4",
+      "text": "此外，美国目前几乎没有硅片和电池片产能。据杜加恩统计，2025年的电池规划产能中，44%为 HJT，34%为TOPCon，PERC 扩产则居少数，其余未公布技术路线。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "59e21ecbe806f32dd544c5427e83ee06da464fc2e83bafc8f3bdf30ba8504689"
+    },
+    {
+      "evidence_id": "ev_c55ebc3a7a56149f",
+      "source_id": "src_be6811883ef72ca8",
+      "text": "2025年，中国光伏产业继续保持全球主导地位，产业链各环节全球市场份额长期超过80%。2025年上半年，通威股份电池销量达到49.89GW，累计出货量突破300GW。 爱旭股份则在BC电池技术上独树一帜，其ABC组件在欧洲高端市场具有显著溢价。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "746a43017b4ecf4e9c0ad466c2a26797e986c14e866f12347704be09e9423d43"
+    },
+    {
+      "evidence_id": "ev_ed3526a348be7286",
+      "source_id": "src_54ac66cd62f5fb64",
+      "text": "从全球销售到全球制造，从产能外迁东南亚到赴美布局产能，中国光伏企业再一次被迫成长。据杜加恩统计，2025年的电池规划产能中，44%为HJT，34%为TOPCon，PERC扩产则居少数，其余未公布技术路线。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "507eea55a8456d5616b8546cf52d73f549ff5b6c988ed90b5eca7b2db28ba3c5"
+    },
+    {
+      "evidence_id": "ev_50367b937f21aa0d",
+      "source_id": "src_6c73c2d28a5f4286",
+      "text": "年11月初，法国宣布出台新的十项措施计划促进光伏装机，目标是到2025年底，支持全国每年新增超过3 GW的光伏装机容量。 中国光伏产能全球领先，有望充分受益于全球需求预期加强. 光伏产能持续本土化，规模+集群优势明显。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "34dfd8711196a10b162c6a8774b51ec84b7bc317c7729eb61d5ea6ae89ee94f8"
+    },
+    {
+      "evidence_id": "ev_5d31ba2e2ae60afc",
+      "source_id": "src_e848a17a1c67bea0",
+      "text": "TCL中环的硅片市占率占行业第一，亏损也在行业中领先。2025年财报显示，其在亚太、拉美、中东非等市场已获突破，电池组件业务的海外市场销量增长超2倍。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "96ff1c5df8d4694da33e0b515de8ad7d73b7368cd681a4a4c7356d48d0b21a0a"
+    },
+    {
+      "evidence_id": "ev_8fc22cafb467b1d3",
+      "source_id": "src_80b6b08e8bb7caee",
+      "text": "预计到2025年，我国HJT异质结电池技术在光伏电池技术中将占据10-15%左右的市场份额，并可能在2027-2030年之间，与钙钛矿优势结合，大幅提升市占率，从而可望. 成为下一阶段市场主流的光伏电池产品。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "bfa963521390f03f57e3bc827567e9da66bdc46ec9bc9db9364aaed55ae9ddc2"
+    },
+    {
+      "evidence_id": "ev_2914ced011f5e253",
+      "source_id": "src_60680872afed1e2d",
+      "text": "本研究围绕四川省晶硅光伏产业发展现状及其生产阶段碳排放展开分析与预测，通过评估不同情景下脱碳路径的减排效果，系统提出了推动该产业低碳发展的对策建议。",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "320db492803c1484fbae9f2f2db75a3fe71ab60871aa9d83979bc817f6a29bc9"
+    },
+    {
+      "evidence_id": "ev_476445aea8e52bee",
+      "source_id": "src_552640cbca2c8722",
+      "text": "虽然当前全球范围内的可再生能源的内容广泛，但是水电、风能等受自然条件限制较多，而太阳能相对可以利用的地区更加广阔。",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "3800536cceb2ffc67803a8c17a169b5a1c4e0b19b9f3260c1243af328cb6826c"
+    },
+    {
+      "evidence_id": "ev_38383903d92caefb",
+      "source_id": "src_8367eeadf665a14d",
+      "text": "自从2022年以来，受美国《通胀削减法案》(IRA)和印度《生产关联激励法案》(PLI)的推动，美国和印度宣布计划的光伏组件产能超过200GW。n型光伏电池是继p型光伏电池之后的下一代技术。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "60f1ea5bc9a501503e2eccc7bfee8b66a9ec7826bcf23b75358e60c07b41a07d"
+    },
+    {
+      "evidence_id": "ev_4eca43c9e90bb757",
+      "source_id": "src_853162f4a2a9e81a",
+      "text": "硅片+电池+组件. 塞尔维亚 诺诚光伏.2024年9月美国调整对中国301关税征收政策对光伏电池、组件税率关税 调整至50并且新增了中国出口的多晶硅与单晶硅片征收税率为50%。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "494dc1687e1814a2195311ab3948906dd80237b5299a58771b4dd0c6a1e12ffe"
+    },
+    {
+      "evidence_id": "ev_c8b011a7966c05ef",
+      "source_id": "src_5d93a5a2744000bb",
+      "text": "全球太阳能电池产量十年间增长17倍，年均增速超50%。2015年单晶PERC电池量产效率突破21%，隆基绿能凭借技术优势登顶全球单晶硅片龙头。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "000c96f2092fa91d2ce06b7c9b85459bd4b40f9e508ec900e7011759451e433c"
+    },
+    {
+      "evidence_id": "ev_48a7e31e71be9650",
+      "source_id": "src_2f8834f39f3fc60c",
+      "text": "技术上，光伏经历了多晶硅、单晶、PERC、TOPCon/HJT/BC、钙钛矿叠层几轮演进。硅料过剩持续. 隆基绿能. 硅片、组件、电池.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f0b1b40243971cd6200c09c9bbe305c02c38b5d9e5842dd821aec3ad2b37d9d0"
+    },
+    {
+      "evidence_id": "ev_38617e95c5afbafd",
+      "source_id": "src_ce20b3e9284fdacd",
+      "text": "2024年，预计新增装机450GW、占全球的54%； 随着光伏产业链成熟，原材料、组件成本持续下降，优质项目度电成本LCOE（平准化度电成本）低于火电。 04 展望：光伏治沙带来的增量需求.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "dc23caf5bd5fe3312b0a2238506c7cb0ef0050fa0e4cfb40e1b1cc7a4c51d299"
+    },
+    {
+      "evidence_id": "ev_d54d59288da056b3",
+      "source_id": "src_febf8b2d4900e43f",
+      "text": "伍 | 硅片企业多晶硅库存（SMM）：偏空 截至5月底，下游硅片企业的多晶硅库存达25.7万吨，月环比+0.6万吨。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d993aca0c1ce5fe9407f4593cfeb5c4a47300cf81dd6097ca852f3e912e34823"
+    },
+    {
+      "evidence_id": "ev_bc2617f3ca8815ef",
+      "source_id": "src_8367eeadf665a14d",
+      "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海外市场推出强有力的政策已经开始加强当地的光伏制造业，但与中国供应的光伏产品相比，仍然没有成本方面的竞争力。根据这份研究报告，中国制造的光伏组件与欧洲制造的光伏组件价格相比低50%，与美国制造的光伏组件价格相比低65%。 自从2022年以来，受美国《通胀削减法案》(IRA)和印度《生产关联激励法案》(PLI)的推动，美国和印度宣布计划的光伏组件产能超过200GW。 Huaiyan Sun说：“尽管海外市场有规模相当大的光伏组件扩张计划，但在未来三年内，海外市场仍无法消除对中国的硅片和光伏电池的依赖。” n型光伏电池是继p型光伏电池之后的下一代技术。而中国计划制造的n型光伏电池将达到1TW以上，将继续保持全球技术领先地位。这意味着中国的n型光伏电池产量是世界其他地区的17倍。 展望中国以外的地区，预计到2025年，印度将超过东南亚成为第二大光伏组件生产地区，这主要是受到印度《生产关联激励法案》激励措施的推动。 供过于求和激烈竞争将成为未来光伏产品供应链的特征，并已导致一些扩张计划被取消 生产效率较低的光伏产品的老旧生产线是行业人士对市场供过于求的担忧，例如p型光伏电池和M6光伏电池。对p型光伏电池的需求从2023年开始下降，而Huaiyan Sun预计，到2026年，p型光伏电池的需求将仅占供应的17%。 他补充说：“供过于求无疑会阻碍目前的一些扩张计划。在过去的三个月，中国有70GW以上的产能被终止或暂停。” 中国的光伏制造业正进入一个充满挑战的时期，一些光伏组件制造商可能被迫亏本接受订单、削减产能或完全关闭。 来源：Wood Mackenzie",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "68e1702a8119dc24362e751671d0c36b146c6d0879fc71553807df75bb6c8f89"
+    },
+    {
+      "evidence_id": "ev_e679bf6c1c56dc78",
+      "source_id": "src_2151d3302651b0e5",
+      "text": "彭博估计，到 2032 年底，特斯拉可以从拜登的通胀削减法案 (IRA) 中获得 410 亿美元的补贴。 消费者可获得 7,500 美元的电动汽车税收抵免，但对于美国生产的电池组，还可获得每千瓦时 (kWh) 45 美元的制造税收抵免：电池单元每千瓦时 35 美元，电池模.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6b28394cc840722dcb79c7210fe254a9f6d4f4376e639a0cd8e7c0aa6a29552d"
+    },
+    {
+      "evidence_id": "ev_2e09559e6313cb06",
+      "source_id": "src_25f42cb90e45d941",
+      "text": "北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "756ef8e836a2a731855e470fd2ce71c2334217a6e7e760302c145a2875e4334d"
+    },
+    {
+      "evidence_id": "ev_e8b84a35b90a90cd",
+      "source_id": "src_27b32c29dbe9f33b",
+      "text": "（P5）首先，IRA的第45V节对于氢能生产的过程提供了一个减税额度，此额度将从2023年开始生效。 根据规定，从2013年初到2032年底期间投入生产的制氢厂都具有资格申请减税，但是只有在投产后的第一个十年内可以享受到减税优惠。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "85d706edf4036313e7afb49776c33d8fcdce581c8157a943e370ec69d93cb151"
+    },
+    {
+      "evidence_id": "ev_af388aee666aa594",
+      "source_id": "src_e1420d8aeb1aeb04",
+      "text": "图表1：《通胀削减法案》与《重建美好未来法案》气候支出对比.Source: Summary of the Energy Security and Climate Change Investments in the IRA13.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "1e1e4ce563a13ec4e77c6a3dbfa9c5ae5d23daf4d311db8346a4319c2cb5dba5"
+    },
+    {
+      "evidence_id": "ev_b2a041f50ad0e257",
+      "source_id": "src_3376a27ec5dd0ea4",
+      "text": "美国联邦层面通过IRA给光伏制造方提供两种补贴——投资税收抵免（48C ITC）和生产制造补贴（45X MPTC），二者只能选择其一。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "87f091d5f7968b0b95ed3e90a3627ffcac1615131791fb118667f6d89e4ca4bc"
+    },
+    {
+      "evidence_id": "ev_c6c7508505dfc481",
+      "source_id": "src_68ec59a2827ef0c4",
+      "text": "未来十年年均新增装机有望达45GW，政策与经济因素影响行业预期.“去年创纪录的安装量得益于IRA法案中的多项太阳能政策和信贷支持，推动了太阳能市场的兴趣，”WoodMackenzie北美公用事业光伏首席分析师SylviaLevyaMartinez表示。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6a3fb81e9620b486dcd3aaa4152d954458c9387cda1cddb3451dce3408901a72"
+    },
+    {
+      "evidence_id": "ev_98059f57da298559",
+      "source_id": "src_42d5ab08227ab746",
+      "text": "The 45X tax credit, which offers a $0.07/W subsidy for U.S. solar manufacturing, has been key to the buildout of module capacity, and remains in place. Pierce noted that this support has become even more important as module capacity in the United States has grown and prices have fallen.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "629179cfd6aa89ec2325715d98b5558b7f94d153638a1b4b72a34f9a8eb107f0"
+    },
+    {
+      "evidence_id": "ev_8a15a3640fdc4e17",
+      "source_id": "src_c911755cfd7929f7",
+      "text": "The company positions itself as an American solar manufacturer eligible for valuable 45X manufacturing tax credits under the Inflation Reduction Act. T1 emerged from the failed EV battery SPAC FREYR, pivoting to solar after the battery business collapsed.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "99a591114bf3d07301a6a0b4d05c98094494f323f9d5a9ad118ee6237617a986"
+    },
+    {
+      "evidence_id": "ev_3c3f5e75e2eccbad",
+      "source_id": "src_7026a756c2314a9e",
+      "text": "Under the Inflation Reduction Act, homeowners were eligible for a 30% federal tax credit applied to the cost of their solar installations and battery storage projects. However, to receive the credit for a battery project, applicants had to meet several requirements, including",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d448f66b9396fe5560eab15d86528cfa96147757613302aa67c6985b08038f57"
+    },
+    {
+      "evidence_id": "ev_8a0aa842a7b94b61",
+      "source_id": "src_5a473aca9b5fae84",
+      "text": "Second, manufactured products — which include solar modules, inverters, and racking — must meet a minimum percentage of U.S.-manufactured content by cost. Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6b89f59e1e82640ac300c0292b7a78f4b2e645f4d8033796214e68d1401221aa"
+    },
+    {
+      "evidence_id": "ev_2c46ceac2ffb26cd",
+      "source_id": "src_6ab66b99dceeea16",
+      "text": "The ITC provides tax credits up to 30% of capital investment for advanced energy projects. The energy industry notes that “the FEOC rules affect supply-demand dynamics and prices of energy-storage cells” because demand may not catch up with supply if certain entities are...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "5c042c765993562c593e76cee0aa77071f1dfe853f1772580de696803ef344ef"
+    },
+    {
+      "evidence_id": "ev_1c1fe79a836beed2",
+      "source_id": "src_3863acc9203db783",
+      "text": "Tax credits for battery, geothermal, nuclear, and manufacturing projects survived — but restrictions on Chinese materials could make them near-impossible to use.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "02fedfb5a06c0e570294a9a6bba6076108c3fc2d6d2563a8ae17ea90fcf247a1"
+    },
+    {
+      "evidence_id": "ev_ab3c0bc43ffbfdf4",
+      "source_id": "src_25f42cb90e45d941",
+      "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻璃、封装材料和边框在内，太阳能组件及其部件都必须满足40%/55%的要求，跟踪支架和逆变器等部件也包括在内。 对于钢材产品，还有一个单独的标准，即必须100%由美国制造。 这适用于光伏阵列中的钢架，但不适用于组件部件中的钢材。 能源研究公司Wood Mackenzie高级研究分析师Sagar Chopra在接受 笔者 采访时指出：\"这个指导意见没有涉及变压器、开关设备和电缆等系统电气平衡部件，而这些关键制造产品是光伏系统要求的重要组成部分。 ” Woodmac表示，在美国有\"一些\"国内制造商生产这些系统平衡产品，但无法确认具体数量。 如果将这些产品纳入国内含量标准，那么从成本角度而言，达到40%的门槛可能会变得更容易，尤其是对开发商和项目业主而言。 Chopra还提到，系统杂件的电气平衡也是一个潜在因素，企业可能会找到使国内含量要求更容易实现的新方法，但这一点仍需澄清。 Martin Pochtaruk表示：\"重要的是，IRA的这一部分内容是如何吸引组件制造商在美国设厂，但这不仅仅是组件制造商的问题，我们还要思考如何激励更多的背板、封装材料、边框、焊带以及其他所有部件的生产？ ” 他强调了铝制造业在组件边框生产领域的潜在意义。 Heliene与一家在美国和加拿大生产边框的公司建立了合作关系，但 Pochtaruk称，整个行业还不具备大规模生产边框的能力。 \"美国和加拿大的铝业受到贸易行动的高度保护，因此美国和加拿大的铝价高于世界上大多数国家。 要找到有兴趣生产组件框架的铝挤压机公司非常困难。 这只是一公里又一公里的相同挤压，既没什么意思，价格也不贵，所以他们觉得没有必要接这单生意。 ” 通过Nextracker的钢部件工厂，跟踪支架生产在美国得以实现，但除了Enphase最近在南卡罗来纳州开设的工厂外，逆变器产能在一定程度上受到了限制。 从开发商的角度来看，美国开发商Silicon Ranch告诉笔者：\"最近发布的IRA指南提出了几个问题，特别是如何确定什么是国内制造的产品的问题。 这使得评估这些规则与在开发项目或在建项目的适用性变得具有挑战。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "5cba81a5d8804043cfacd2592477860f96c8e70e730236150fd2dd049eabc77e"
+    },
+    {
+      "evidence_id": "ev_82f272f6ba6afc45",
+      "source_id": "src_25f42cb90e45d941",
+      "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。 实际上，这意味着如果组件中的任何 \"制成品部件\"，包括电池、玻璃、封装材料、硅片、边框等是进口到美国的，那么该组件就不再被视为美国制造的产品。 在绝大多数情况下，完全由美国制造的组件目前是不可能的。 因此，制造商必须披露组件中每个部件的完整定价，以证明符合40%的门槛。 \" Sagar Chopra表示：\"要求制造商披露包括制造成本、管理费用和利润率在内的定价结构，这是一个很大的问题。 国内含量的计算是基于成本的，制造商必须提供完全透明的成本和利润水平，这对制造商来说既不切实际、又不方便透露。 \" 有一部分制造商(如Heliene)已经这样做了，但大多数公司是否会这样做还有待观察。 太阳能供应链正在经受越来越严格的审查，尽管制造商很可能会想方设法确保和清理供货，但采购和分解成本以将利益传递给客户的过程会很繁琐。 Pochtaruk 称：\"我们的销售方式是 '成本加成 '，因此我们向客户提供成本，我们唯一要解决的是利润问题。 要做到这一点，你就必须逐项披露你的确切成本，基本上就是把和服敞开了让大家看。 我们对此没意见。 \" 与中国的差距 Chopra认为：\"10%的奖励抵免是有吸引力的，但国内零部件对进口商品的竞争力如何，以及10%的奖励加成是否具备了抵消国内采购溢价的吸引力，还有待观察。 \" 总体而言，美国制造的产品将比进口产品更加昂贵。 大多数光伏组件(约占 80%)）是从东南亚进入美国的，主要是因为中国制造商在那里建立了工厂和供应链。 这些产品通常比美国国内产品便宜。 围绕反倾销和反补贴关税的长期争议正是源于这种差距，以及美国认为中国制造或拥有的组件不公平地操纵了价格，进而主导了市场。 \"你可以以每瓦特12/13美分的价格购买中国电池，但进口到美国的、使用非新疆多晶硅在中国境外生产的电池大约为20美分。 ” 那么问题就归结为，与国内产品溢价以及开发商为美国批准的进口产品所支付的、已经上涨的价格相比，这10%是否值得。 一般来说，项目越小，每瓦的安装和材料总价就越高。 因此，屋顶或社区太阳能项目可能会认为10%的价差幅度太大而无法被忽视。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "3513f31f83aa2a27f275af5c89ee835fcb812236ba02023038171dae6874c554"
+    },
+    {
+      "evidence_id": "ev_3e578e36dccbaf77",
+      "source_id": "src_25f42cb90e45d941",
+      "text": "Pochtaruk告诉笔者，Heliene发现，屋顶太阳能的平均装机成本约为每瓦1. 6美元，社区太阳能接近1. 2美元。 每瓦电力装机可节省12-16美分。 大型地面项目的每瓦成本低于1美元，因此，为了10%的折扣而在各个环节增加额外工作可能并不值得。 Pochtaruk 继续说道：\"我们看到，对于5MW以下的社区太阳能和屋顶项目(每年数GW)以及工商业太阳能开发商来说，暂时放一放意味着一笔不小的开支。 ” 国内附加条款最终与美国的供应情况挂钩，而供应情况目前受制于时间。 Silicon Ranch 解释了他们作为开发商的立场：\"从长远来看，我们公司完全有能力利用IRA，因为我们事先承诺尽可能在当地采购材料，这既是为了保证供应，也是为了优化我们的项目，对当地社区和地区产生积极的经济影响。 \" \"长期\"或是这里的关键。 就像 Heliene 规模相对较小的美国铝业合作伙伴关系一样，Silicon Ranch 公司也在协调一致，为建立国内合作和供应关系付出努力。 他们与 First Solar以及 Nextracker 签订了大量的组件供应协议。 但是，目前的国内含量指导意见还很不明确，而且美国太阳能价值链的产能上线还需要时间，这可能会使开发商和制造商难以参与其中并满足附加条款的要求。 国际太阳能光伏网 光伏资讯一手掌握，关注国际能源网 \" 光伏头条 \" 微信公众号 看资讯 / 读政策 / 找项目 / 推品牌 / 卖产品 / 招投标 / 招代理 / 发文章 扫码关注 免责声明：本文仅代表作者本人观点，与国际太阳能光伏网无关，文章内容仅供参考。 凡本网注明\"来源：国际太阳能光伏网\"的作品，均为本站原创，转载请注明“来源：国际太阳能光伏网”！ 凡本网注明“来源：XXX（非国际太阳能光伏网）”的作品，均转载自其它媒体，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。 如因作品内容、版权和其它问题需要同本网联系的，请在相关内容刊发之日起30日内进行，我们将第一时间进行删除处理 。 联系方式：400-8256-198 条 [查看全部] 相关评论 匿名发表 (内容限2至500字) 当前已经输入 推荐图片文章 更多>> 国家能源局：煤电发电量首次低于50%，全国每四度电中有一度是风光所发 2026-07-30 来源：光伏头条 可再生能源 光伏发电装机容量 光热发电新增装机 山西能源监管办积极协调解决分布式光伏并网难题 2026-07-30 来源：国家能源局山西监管办公室 分布式光伏 光伏发电项目 分布式光伏承载力 国网黄山供电公司：建成“5G+量子”双通道分布式光伏项目 2026-07-28 来源：国家电网 光伏发电装机 分布式光伏 光伏项目 7天暴涨94. 74%！ 这家光伏新能源公司被强加“算电协同”概念 2026-07-24 来源：光伏头条 立新能源 光伏电站 光伏发电量 中国能建中电工程多个新能源项目中标、投运 2026-07-24 来源：中国能建中电工程 中国能建 中电工程 光伏发电项目 CPIA：我国光伏应用市场发展概况 2026-07-21 来源：中国光伏行业协会CPIA 光伏装机容量 光伏发电量 集中式光伏 查看更多 > 正在加载. . . 太阳能光伏资讯热点排行 千亿逆变器巨头二次递表港交所 云南8.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "ec10ce4f5d7fb27786a5ae2169276addad55bc3f938138c50fb2f05c3da9ec71"
+    },
+    {
+      "evidence_id": "ev_20a8bf83f2bf8d40",
+      "source_id": "src_25f42cb90e45d941",
+      "text": "48GW光伏竞配：涉及华能、云南能源集团、中广核、三峡、大 110MW！ 内蒙古伊金霍洛旗2026年分散式风电、分布式光伏发电项目 高景、通威、正泰新能、天合等入围深圳能源1GW光伏组件集采供应 红区归零！ 天津公示Q3分布式接网承载力评估结果 成交持续清淡 本周多晶硅价格暂稳运行 下游需求疲软 本周单晶硅片价格继续下跌 1800亿新能源央企涨停！ 算电协同、绿电直连成重要规划方向 光伏人物 专家解读丨高纪凡：光伏行业低价恶性竞争对企业、行业、终端用户的三重伤害 新增装机1. 17亿千瓦！ 国家能源局公布2026年上半年可再生能源并网运行情况 季明彬任南方电网总经理 专家解读丨高纪凡：光伏行业低价恶性竞争对企业、行业、终端用户的三重伤害 新增装机1. 17亿千瓦！ 国家能源局公布2026年上半年可再生能源并网运行情况 光伏推荐文章 0. 654元/W刷新低位，876. 91MW光伏组件中标候选人公示 云南290MW风、光项目优选启动 光伏「周事迹」事关“十五五”规划/绿电直连/零碳园区/分布式光 7月48条政策落地：到2030年风光装机达到28亿千瓦以上；光伏电池 光伏价格趋势：组件最低0. 65元/W！ 大EPC分布式2. 83元/W，集中式2 热门标签 价格行情 招标采购 光伏企业 太阳能热水器 分布式电站 光伏政策 晶体硅组件",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "ccbd48213ed5cfb35e41bd415db774a42e1e810784ecd9e8fba2d896caabbfaa"
+    },
+    {
+      "evidence_id": "ev_f33847b925e6b42e",
+      "source_id": "src_5a473aca9b5fae84",
+      "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement around. What the Domestic Content Adder Is The Inflation Reduction Act established a domestic content bonus credit for solar energy systems that meet specific U. S. manufacturing thresholds. For residential and commercial systems, qualifying projects can claim an additional 10% adder on top of the base 30% ITC — bringing total federal tax credit eligibility to of system cost. For a $25,000 residential system, that difference is $2,500 in additional tax credit. For a commercial project in the hundreds of thousands of dollars, the stakes are considerably higher. FEOC Compliance: What It Means and Why It Matters The domestic content rules are tied to two criteria. First, all steel and iron components must be produced in the United States. Second, manufactured products — which include solar modules, inverters, and racking — must meet a minimum percentage of U. S. -manufactured content by cost.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "b51b1fe8692bba27ecfca14ac450649cb320f9cbc35d4948a6df7d35d60e412f"
+    },
+    {
+      "evidence_id": "ev_279a4103246d920b",
+      "source_id": "src_5a473aca9b5fae84",
+      "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically assembled outside China. For installers, this means you need to look beyond country of final assembly and understand the supply chain behind the cells and wafers in the modules you are specifying. Which Panels Qualify Panels that qualify for the domestic content adder in 2026 are typically those manufactured in the United States using domestically sourced or non-FEOC cells and wafers. The IRS has issued guidance (Notice 2023-29 and subsequent updates) that sets out safe harbor cost percentages for each component category. SEG Solar is one example of a FEOC-compliant panel available through Solwel. SEG manufactures modules at its facility in Texas, which addresses both the domestic manufacturing requirement and the FEOC supply chain concern.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "d196b1028d8e601c52293e2dad17fe8c93d2c5a25bbba8d61961741921911904"
+    },
+    {
+      "evidence_id": "ev_12359c97d5608a3d",
+      "source_id": "src_5a473aca9b5fae84",
+      "text": "For installers who want a straightforward path to the 40% credit without navigating complex supply chain attestations, panels like SEG's Texas-made lineup are the lowest-friction option. When evaluating any panel for domestic content eligibility, ask the manufacturer for a written attestation confirming FEOC compliance and U. S. content percentages. Do not rely on marketing language alone — the documentation burden falls on the taxpayer (your customer) and ultimately on you to provide the paperwork that supports the credit. Why It Matters for Project Economics The domestic content adder changes the competitive math on equipment selection. A FEOC-compliant panel may carry a modest premium over an imported alternative, but when that premium is offset by a 10-point increase in tax credit eligibility, the net-of-credit cost can be lower on the compliant module. Presenting this to a homeowner or commercial buyer requires a simple calculation: take the system cost, apply 40% vs. 30%, and show the net difference. In most cases, the domestic content path wins on total cost of ownership — and it is a differentiator that positions you as an advisor, not just an installer.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "db85abd996754f02cb3601cfb301359b77482c96fda5c0073a5b3d30fcfc7423"
+    },
+    {
+      "evidence_id": "ev_7ff743ce7d1ca8fb",
+      "source_id": "src_5a473aca9b5fae84",
+      "text": "How to Document the Bonus To support the domestic content adder on a customer's tax return, you should gather and retain: Manufacturer's written attestation of domestic content percentages by component FEOC compliance declaration from the manufacturer Itemized project cost breakdown separating eligible components IRS Form 3468 (Investment Credit), completed with the domestic content election indicated Advise your customers to work with a tax professional familiar with IRA energy credits. The credit is claimed by the taxpayer, not the installer — but the documentation you provide is what makes it defensible in an audit. The Bottom Line for Installers The domestic content adder is not theoretical — it is available now, and the panel manufacturers who qualify for it are actively selling through distributors. If you are not already asking your distributor which panels in their lineup carry FEOC-compliant documentation, that conversation is worth having before your next proposal goes out. Solwel stocks SEG Solar modules and can provide the compliance documentation you need to support your customers' tax credit claims.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "5e000053b101ad405de3ace7189fa0556cd96ac9912a76bca7daebe5c7254f36"
+    },
+    {
+      "evidence_id": "ev_2e81bc2728bc2d1f",
+      "source_id": "src_6a83ca273862b88d",
+      "text": "中国作为全球光伏制造中心，多晶硅、硅片、电池片、组件产量全球占比均超85%，但各环节产能利用率普遍不足。需求端：全球装机保持增长，产业链价格触底复苏. 全球光伏需求仍保持增长。 根据中国光伏行业协会预测，2025年全球光伏新增装机容量预计将达到570-630GW。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6ade70478a5327a90ebe6e5a7cc81c671e967c51394aa9af62141fc98caedbef"
+    },
+    {
+      "evidence_id": "ev_50ab8509a783217b",
+      "source_id": "src_e7166200ba0f53eb",
+      "text": "TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4867bf25b9bd73dda275f5ca9ee265a1cefacf5b7dfb55448cf16e159cc0ace2"
+    },
+    {
+      "evidence_id": "ev_93fa18894c2b64de",
+      "source_id": "src_02fbf7e0182da4e3",
+      "text": "TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4867bf25b9bd73dda275f5ca9ee265a1cefacf5b7dfb55448cf16e159cc0ace2"
+    },
+    {
+      "evidence_id": "ev_266d037c35617405",
+      "source_id": "src_35626c15e412dd94",
+      "text": "中国光伏电池产业区域竞争力深度透视：长三角全链领跑，珠三角应用突围，中西部资源筑基 中商产业研究院 2025-09-22 17:27.长三角地区光伏电池产业竞争力分析. 长三角地区光伏电池产业呈现三省协同发展、优势互补的格局。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "940badcb2ff76cd3ee718fd9104a4caec63d2f77be47429ef4ead20d5a6f65a7"
+    },
+    {
+      "evidence_id": "ev_23ba5685ca77fc20",
+      "source_id": "src_110628faed911a27",
+      "text": "喜欢：2. 光伏产业进入高质量发展新阶段. 2025年的全球光伏产业正经历从\"规模扩张\"向\"价值创造\"的关键转型。N型硅料通过TOPCon/HJT认证(大全、新特).",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "22dd3318c13d6b87efb7ebd142b43e82c1c1d4b22e434848854495c61805b4c3"
+    },
+    {
+      "evidence_id": "ev_394e28fbb6b132f2",
+      "source_id": "src_558848dceb15ef10",
+      "text": "IRA《通胀削减法案》 中清洁能源税收抵免资格。 而光伏行业一旦失去税收抵免，就意味着中资在美的工厂将毫无竞争力！双面组件以外，近些年我国大陆直接出口美国光伏电池产品基本归零！",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "edffe0b3c0d8fca1caef657925f5fb30a889af315b0378b14fea2de41945b681"
+    },
+    {
+      "evidence_id": "ev_16a0d8354cc31ff8",
+      "source_id": "src_18f9a400617be708",
+      "text": "2024-05-03 16:13:43.动力电池核心材料铜箔制造韩企或成为美国《通胀削减法案》（IRA）的意外赢家，与此前各界担心不同，铜箔无需在美国当地进行生产，投资风险大幅削弱，获得.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5819eab23eddc76cc40a5c63e9961f37beded4cb9c5576b6d257a53958071b9e"
+    },
+    {
+      "evidence_id": "ev_5af3f02e6e2e8800",
+      "source_id": "src_17837b0fd96af42f",
+      "text": "365wm完美体育官网-靴子正式落地，东南亚四国光伏行业难逃天价关税. 2025-08-12. 美国国际贸易委员会正式表决通过，东南亚四国的光伏组件将被征收天价关税.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "97489bdf14faf82bb983611c99132b2fc847c182b25efcdde3a8fb21e29fd25c"
+    },
+    {
+      "evidence_id": "ev_79bf1ac9d18ad558",
+      "source_id": "src_68ec59a2827ef0c4",
+      "text": "Wood Mackenzie：未来十年 美国光伏年均新增45GW装机. 北极星太阳能光伏网 2025-03-12 13:38:04.硅片制造仍是短板，2024年无新项目投产，多家厂商缩减或取消原定计划。 此前拜登政府已将光伏用硅片纳入48D CHIPS法案，预计将促进该领域的发展。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7d15faf673943029c401f9c0d29e1bef4fbd4d207ae5bf72540dde58dbe4fff1"
+    },
+    {
+      "evidence_id": "ev_0d5e532e00d773eb",
+      "source_id": "src_94d818efe2131f49",
+      "text": "有投资者提问公司对美国市场及中国企业对美国出口、在美国设厂的看法，晶澳科技表示，无论总统关税豁免令是否被废除，按照目前美国商务部初步决.在美国的2GW组件厂是否可以能享受IRA中制造环节补贴。 光伏需求有望超预期.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "97d340c3c210905ee8ce7a50b36cb5f5d84d6ad034ad2dc5456406d63c5dc457"
+    },
+    {
+      "evidence_id": "ev_2e080c4e6902baa1",
+      "source_id": "src_e7166200ba0f53eb",
+      "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，价格在3. 0-3. 5万元/吨的狭窄区间内震荡；四季度虽有年末装机需求支撑，但价格回暖的前提是过剩产能实质性出清。 全年价格难现V型反转，更可能呈漫长L型筑底，现金流成为企业存活关键。 硅片：产能首现收缩，N型与大尺寸主导 TrendForce集邦咨询数据显示，2025年硅片产能从2024年的1153GW下降至1088GW，同比减少5. 6%。 这是近四年来首次负增长，宣告行业从“增量扩张”进入“存量博弈”的产能出清阶段。 图：2022-2029年全球硅片产能、产出变化趋势分析Unit：GW，% 产能出清的背后，是技术迭代与尺寸升级的双重驱动。 在技术路线上，2025年N型硅片渗透率超九成，P型硅片正式退出主流舞台。 在尺寸方面，2025年大尺寸硅片占比进一步提升，210及210R尺寸合计占比近60%。 其中，210RN版型凭借功率优势，在国内分布式抢装潮推动下，渗透率加速提升，2025Q1排产占比已近50%。 随着210RN电池需求在2025Q2开始大规模放量及G10L尺寸的迭代升级，210及210R尺寸产品的渗透率将持续上升。 图：2022-2030年不同尺寸硅片产能占比趋势，Unit：% 电池片：技术分化明显，成本与创新成突围关键 2025年下半年，电池片环节仍面临价格压力，技术领先与现金流稳定成为企业突围的重点。 TrendForce集邦咨询预计，2025年年底电池片产能约1157GW，其中N型电池片产能约1172GW，占比约96%。 图：2022-2030年全球电池片产能发展趋势，单位：GW TOPCon：凭借综合优势仍居主导地位，预计到2025年年底，TOPCon电池产能约967GW（占比83%），产出约580GW（占比85%）。 在电池片环节持续亏损背景下，头部厂商通过0BB、边缘钝化等精细化升级维持优势，中小厂商则面临整合或关停风险。 HJT：因成本相对较高，渗透率提升困难，预计到2025年年底，HJT电池产能约74GW（占比6. 4%），产出约19GW（占比2. 7%）。 其突破关键在于银包铜浆料、0BB等金属化降本技术导入。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "f32661d1f892918d175e1fba7925a352368e0c326fa2826973c8423c35ef5014"
+    },
+    {
+      "evidence_id": "ev_c9e74e4ad6adc70b",
+      "source_id": "src_e7166200ba0f53eb",
+      "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW、BC产出47GW，合计占12. 5%的市场份额。 其中BC组件成为上半年“黑马”，招标规模突破2GW；HJT组件需求显现疲态。 除此之外，大尺寸组件占比突破95%，210及210R合计占比83. 8%，166及以下小尺寸组件基本退出市场。 双面组件渗透率在2025年或有所回落，预计占比71%左右。 海外布局迎来“地理大洗牌”。 传统东南亚制造基地风光不再，美国、印度崛起成为新的增长核心，中东（土耳其、埃及、沙特阿拉伯）成为新兴力量。 海外产能布局趋向多极化、区域化，贸易壁垒、激励政策成为企业投资决策的关键考量。 图：2022-2030年海外组件产能发展趋势（GW） 整体来看，2025年光伏产业链在产能过剩的重压下，各环节正经历深刻的调整与变革。 对于企业而言，成本控制、技术创新与全球化布局将成穿越周期的关键，而产业链的真正健康平衡，仍需等待过剩产能的实质性出清与需求的阶段性复苏。 本文内容由集邦光储观察原创，如需转载或引用数据，请标明出处。",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "4716534b282a83d5097aab215844ea45bb920b2adfc8970d51325ae31baa1512"
+    },
+    {
+      "evidence_id": "ev_d329b48d6d54970b",
+      "source_id": "src_d02a2486aee2e29f",
+      "text": "自2024年起，Thornova Solar不仅计划从印尼基地向全球市场供应组件，更着眼于在美国本土扩大产能，计划在美国建设3GW的产能基地。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1cbf3e4f0d08e3d64486f606a59627423dcafa2728a7e0b547475d6567566b9a"
+    },
+    {
+      "evidence_id": "ev_c406158b390a9c3c",
+      "source_id": "src_08934160261c633f",
+      "text": "中国有色金属工业协会硅业分会数据显示，2月份全市场组件排产约为35GW左右。 展望3月，光伏组件排产有望具备回升势能。太平洋证券指出，国内光伏企业出海势能仍将获益于美国本土光伏需求持续旺盛。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "102af9b79ef8e0357e2a8e692149fc79e0ee4942431ebc5905a57aa626f2e739"
+    },
+    {
+      "evidence_id": "ev_227b2867574093bf",
+      "source_id": "src_9d28461656ed7a40",
+      "text": "自 2024 年 以 来 头 部 光 伏 企 型也让施正荣阵营补齐美国光伏. 厂实属行业变局下的应对之举。便 2025 年 同 比 下 滑 10.17 个 百 分 让与租赁模式重构美国业务。 作为中国光伏产业的拓荒. 点依旧是公司盈利最强板块。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "cda2c526a5d4d102b68a573437a9e1b1dd9ff57110694d7a74dbee3110343901"
+    },
+    {
+      "evidence_id": "ev_23ee60cfe5a94918",
+      "source_id": "src_0604a213d5b792a8",
+      "text": "Jul 31, 2026 · A traditional IRA is a tax-advantaged personal savings plan where contributions may be tax deductible. A Roth IRA is a …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "12b1c30f88fa36fdffdac304ae75b4c788fe6ae7f7aae9a5ac0515a1cb1c07f9"
+    },
+    {
+      "evidence_id": "ev_32135aa0d420ebe9",
+      "source_id": "src_2eb755fa45240073",
+      "text": "In 1969 the IRA split into the Official IRA and the Provisional IRA. The latter then had its own breakaways, namely the Real IRA and …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0fef80420df5f232db9630476a5a6a5ed61435969fd3db12b41ab016e1f5bbfc"
+    },
+    {
+      "evidence_id": "ev_aaaa71a1a294661d",
+      "source_id": "src_d057bfacc3b3a916",
+      "text": "（1）启动针对东南亚四国光伏电池和光伏组件的新一轮双反调查.对于中国光伏企业东南亚产能，东南亚基地产制组件出口美国量可能被迫缩减，下半年东南亚产制组件可能将转出口去往其他国家，以中东、拉美地区为. 主。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6ca962cf075017a4b31100f92c3cd976766f5c23f2cc48bd65c1b8aa4a37488e"
+    },
+    {
+      "evidence_id": "ev_98ccc0b2888ac9e0",
+      "source_id": "src_4eebc84cebcf08cd",
+      "text": "最高271.28%！ 美国出手 拟对东南亚四国光伏产品征收反倾销税 第3张.以从美国组件工厂发货满足供应。 同时，公司也在考察美国和东南亚四国之外其他国家的产能投资机会。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "00511cb314f3cd4d661a035c0283c689355f7865fa08592643b3d0b00b761e80"
+    },
+    {
+      "evidence_id": "ev_b02b6dd77d996547",
+      "source_id": "src_9e96bfff22f785fc",
+      "text": "刚刚. 光伏出海进入2.0，未来或演变为“中国东南亚电池+中东北非组件”模式。据美国能源信息署（EIA）数据， 2024年美国光伏组件进口总量为48.7GW， 其中东南亚地区占比65%，而东南亚地区80%的产能是由中国企业投资建设。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "7e1416e2c34aea6c67f6ed2202bcf13637fe276ec17d6e8402e0d8d9828dfdf9"
+    },
+    {
+      "evidence_id": "ev_9c03b376845964d2",
+      "source_id": "src_c694879c96a71231",
+      "text": "小智搜. 海关数据. 展会数据.2023年，以出口额计，我国对印度共出口了22亿美元光伏组件，占组件出口总额约5.5%，在各出口国中排名第四；出口光伏电池片约9.7亿美元，在各国中排名.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "768dec5f2d00c116dc09f4fb08893bde4851055b27aa600f18a4320b3efe2d4c"
+    },
+    {
+      "evidence_id": "ev_73fa0fe5ba1c6a94",
+      "source_id": "src_54ac66cd62f5fb64",
+      "text": "美国可再生能源实验室（NREL）报告显示，截至2023上半年末，美国组件制造能力约10GW，而上半年出货量仅3.1GW，进口了25.1GW光伏组件。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "83fa1b0c1a7cc5ee748f582acc4a9950988164156f611e41e748d6e68ca11ad7"
+    },
+    {
+      "evidence_id": "ev_4b7473f083684303",
+      "source_id": "src_9e96bfff22f785fc",
+      "text": "中国公司全球化周报｜奇瑞7月出口首破20万辆 / 蚂蚁灵波首轮融资拟募资15亿元",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "194b51ee90f8fb989bc2c2c9b4e9a1191db23771fa25a845c78eb8c4e9bcde96"
+    },
+    {
+      "evidence_id": "ev_9a6195b8affccdd5",
+      "source_id": "src_7d2ff647bbb517dd",
+      "text": "1940年7月——法兰西国（维希政权）成立 如果停战协定生效，创建“French State”，即维希政权。 其统治未被占领的法国本土和忠于维希的殖民地。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "710a0409f67648c95895ce26baab942fc98357ea76c7f8dfef39754e3cf01457"
+    },
+    {
+      "evidence_id": "ev_e9ac5ef20cb3b1fb",
+      "source_id": "src_2091a885ca446929",
+      "text": "> 千禧年早期国模私拍 珠海... 千禧年早期国模私拍 珠海九州港 陆萍 早期绝版资源 很有年代感. 赛妹 •. 2024 年 08 月 31 日.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8431eb89f7f8ade79f97313d14b157acca6ee7e0ebbd1a1472557b954f2c4e49"
+    },
+    {
+      "evidence_id": "ev_1beb6a0d03532099",
+      "source_id": "src_0a0162e8d415d8ee",
+      "text": "Feb 20, 2026 · Learn about the types of IRAs, how they each work, their possible tax advantages, and how you can open an IRA …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ac4f7e58fcda1bf26183ded778b13e4294ab87e6c03cf92b7eb345732cf8a4f2"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_fc93789734b15cff",
+        "text": "中国光伏产业在硅料、硅片、电池片、组件四大环节均已建立全球绝对主导地位。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5625,
+        "support_evidence_ids": [
+          "ev_2e080c4e6902baa1"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_bc2617f3ca8815ef",
+          "ev_c55ebc3a7a56149f"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0161e05439784818",
+        "text": "》，中国在 2023 年向光伏产业投资超 1300 亿美元，2023–2026 年间拥有全球 80% 以上的多晶硅、硅片、电池和组件制造能力，并将继续扩大与竞争对手的技术和成本差距 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7395660dfcebed27",
+        "text": "与此同时，美国 2022 年通过的《通胀削减法案》(IRA) 通过\"补贴本土制造 + 封堵转口\"的双轨策略，试图重构光伏供应链。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.386,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_38383903d92caefb"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7d4c84f812708bd2",
+        "text": "截至 2026 年 8 月，IRA 已实质性地将中国组件挤出美国终端市场，但因美国上游环节（硅料、硅片、电池）产能严重缺失，短期内无法动摇中国在全球供应链中的核心地位。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2593,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_82f272f6ba6afc45",
+          "ev_ab3c0bc43ffbfdf4"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_727b0fa5720eafde",
+        "text": "TrendForce 集邦咨询《2025 年全球光伏产业链深度解读》显示，2025 年全球光伏产业链进入深度调整期，硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为全年主线 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "supported",
+        "verification_score": 0.8407,
+        "support_evidence_ids": [
+          "ev_2e080c4e6902baa1"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a368b1c2cc002fb9",
+        "text": "硅料环节，295 万吨有效产能对应约 130 万吨产量，供需严重错配源于需求增速放缓叠加前期过度建设 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6806,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4ae5a0c236dc8da2",
+        "text": "即便在产能过剩背景下，中国的产能规模仍意味着全球任何市场的装机需求都绕不开中国供应链。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3074,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_2e080c4e6902baa1",
+          "ev_82f272f6ba6afc45"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_e7166200ba0f53eb",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_47c73b2c857d2455",
+        "text": "中国凭借电价、能耗、设备折旧与规模效应，综合成本显著低于欧美；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1902,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c9e74e4ad6adc70b",
+          "ev_bc2617f3ca8815ef",
+          "ev_3e578e36dccbaf77"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb",
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1006796f1409e372",
+        "text": "Wood Mackenzie 测算中国组件价格比欧洲制造低约 50%、比美国低约 65% 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bc4b4c95c82b6e5c",
+        "text": "但另一面是，2025 年多晶硅行业成本线约 3.5–4.5 万元/吨，价格一度探底 3.3–3.4 万元/吨，呈 L 型筑底，意味着\"低成本 ≠ 高盈利\"，全行业处于亏损式运行，政策端已推动\"反内卷\"限产 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3723,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4529259aef17d48b",
+        "text": "n 型电池已成绝对主流：TOPCon 电池产能占比 83%、组件市占率 77.1%，大尺寸（210/210R）组件占比 83.8% 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5104,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c9e74e4ad6adc70b",
+          "ev_2e080c4e6902baa1"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4e5887db4eaf515b",
+        "text": "中国规划的 n 型电池（TOPCon/HJT/BC）产能超 1TW，为世界其他地区总和的 17 倍 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_31cb951eaf4a44d1",
+        "text": "同时，中国 p 型老旧产能加速退出，短期内超 70GW 产能被终止或暂停 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cc550e5d23a6fa73",
+        "text": "低碳制造方面，针对四川等晶硅光伏基地的生产阶段脱碳路径研究也表明产业正向低碳化升级 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3254,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2914ced011f5e253"
+        ],
+        "source_ids": [
+          "src_60680872afed1e2d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2914ced011f5e253",
+            "source_id": "src_60680872afed1e2d",
+            "text": "本研究围绕四川省晶硅光伏产业发展现状及其生产阶段碳排放展开分析与预测，通过评估不同情景下脱碳路径的减排效果，系统提出了推动该产业低碳发展的对策建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5e8f4aa8bed8def6",
+        "text": "45X 先进制造生产税收抵免。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4305,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e679bf6c1c56dc78",
+          "ev_b2a041f50ad0e257",
+          "ev_98059f57da298559"
+        ],
+        "source_ids": [
+          "src_2151d3302651b0e5",
+          "src_3376a27ec5dd0ea4",
+          "src_42d5ab08227ab746"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e679bf6c1c56dc78",
+            "source_id": "src_2151d3302651b0e5",
+            "text": "彭博估计，到 2032 年底，特斯拉可以从拜登的通胀削减法案 (IRA) 中获得 410 亿美元的补贴。 消费者可获得 7,500 美元的电动汽车税收抵免，但对于美国生产的电池组，还可获得每千瓦时 (kWh) 45 美元的制造税收抵免：电池单元每千瓦时 35 美元，电池模.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_b2a041f50ad0e257",
+            "source_id": "src_3376a27ec5dd0ea4",
+            "text": "美国联邦层面通过IRA给光伏制造方提供两种补贴——投资税收抵免（48C ITC）和生产制造补贴（45X MPTC），二者只能选择其一。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d32fbc6eb1117727",
+        "text": "对美国本土生产的光伏组件及部件按环节提供补贴，组件环节约 0.07 美元/W，覆盖电池、硅片、多晶硅、逆变器等环节，是推动美国组件产能扩张的核心工具（pv magazine USA，2026）[6 相关；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1651,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3e578e36dccbaf77",
+          "ev_bc2617f3ca8815ef",
+          "ev_ab3c0bc43ffbfdf4"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3e578e36dccbaf77",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "Pochtaruk告诉笔者，Heliene发现，屋顶太阳能的平均装机成本约为每瓦1. 6美元，社区太阳能接近1. 2美元。 每瓦电力装机可节省12-16美分。 大型地面项目的每瓦成本低于1美元，因此，为了10%的折扣而在各个环节增加额外工作可能并不值得。 Pochtaruk 继续说道：\"我们看到，对于5MW以下的社区太阳能和屋顶项目(每年数GW)以及工商业太阳能开发商来说，暂时放一放意味着一笔不小的开支。 ” 国内附加条款最终与美国的供应情况挂钩，而供应情况目前受制于时间。 Silicon Ranch 解释了他们作为开发商的立场：\"从长远来看，我们公司完全有能力利用IRA，因为我们事先承诺尽可能在当地采购材料，这既是为了保证供应，也是为了优化我们的项目，对当地社区和地区产生积极的经济影响。 \" \"长期\"或是这里的关键。 就像 Heliene 规模相对较小的美国铝业合作伙伴关系一样，Silicon Ranch 公司也在协调一致，为建立国内合作和供应关系付出努力。 他们与 First Solar以及 Nextracker 签订了大量的组件供应协议。 但是，目前的国内含量指导意见还很不明确，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_50c1ed6f40dccf06",
+        "text": "条款见 36氪出海转引]。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_3e578e36dccbaf77",
+          "ev_c406158b390a9c3c"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_08934160261c633f"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3e578e36dccbaf77",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "Pochtaruk告诉笔者，Heliene发现，屋顶太阳能的平均装机成本约为每瓦1. 6美元，社区太阳能接近1. 2美元。 每瓦电力装机可节省12-16美分。 大型地面项目的每瓦成本低于1美元，因此，为了10%的折扣而在各个环节增加额外工作可能并不值得。 Pochtaruk 继续说道：\"我们看到，对于5MW以下的社区太阳能和屋顶项目(每年数GW)以及工商业太阳能开发商来说，暂时放一放意味着一笔不小的开支。 ” 国内附加条款最终与美国的供应情况挂钩，而供应情况目前受制于时间。 Silicon Ranch 解释了他们作为开发商的立场：\"从长远来看，我们公司完全有能力利用IRA，因为我们事先承诺尽可能在当地采购材料，这既是为了保证供应，也是为了优化我们的项目，对当地社区和地区产生积极的经济影响。 \" \"长期\"或是这里的关键。 就像 Heliene 规模相对较小的美国铝业合作伙伴关系一样，Silicon Ranch 公司也在协调一致，为建立国内合作和供应关系付出努力。 他们与 First Solar以及 Nextracker 签订了大量的组件供应协议。 但是，目前的国内含量指导意见还很不明确，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_80fd1c7cd2fbb87f",
+        "text": "本土含量加成（Domestic Content Bonus）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3281,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_7ff743ce7d1ca8fb",
+          "ev_279a4103246d920b"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7ff743ce7d1ca8fb",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "How to Document the Bonus To support the domestic content adder on a customer's tax return, you should gather and retain: Manufacturer's written attestation of domestic content percentages by component FEOC compliance declaration from the manufacturer Itemized project cost breakdown separating eligible components IRS Form 3468 (Investment Credit), completed with the domestic content election indicated Advise your customers to work with a tax professional familiar with IRA energy credits. The cre",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9c4f4e5e4c9f91b8",
+        "text": "依据 IRS 2023 年 5 月指导意见，光伏项目材料成本中 40% 须为美国制造方可获得 10% 的额外 ITC 加成，2026 年起门槛提高至 55%；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5609,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_82f272f6ba6afc45",
+          "ev_f33847b925e6b42e"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5dc1abf13c7b3733",
+        "text": "钢铁产品单独要求 100% 美国制造 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5568,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_82f272f6ba6afc45",
+          "ev_3e578e36dccbaf77"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5ae7364ffa1800e4",
+        "text": "现实难点在于：美国本土电池、硅片、玻璃产能严重不足，完全美国制造的组件\"在绝大多数情况下目前不可能\"；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5203,
+        "support_evidence_ids": [
+          "ev_82f272f6ba6afc45"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_82f272f6ba6afc45",
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7b78ec3a8ee8fde2",
+        "text": "约 80% 输美组件来自东南亚（中国企业建厂），美国本土电池价格约 20 美分/W，而中国电池仅 12–13 美分/W，10% 加成未必能抵消本土采购溢价 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4055,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_82f272f6ba6afc45",
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_3e578e36dccbaf77"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_91b08d73f7c4855b",
+        "text": "PV-Tech 援引北美制造商 Heliene 总裁 Martin Pochtaruk 的观点指出，该指导\"使开发商很难尝试获得 10% 的税收抵免奖励\" 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2917,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_82f272f6ba6afc45",
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_3e578e36dccbaf77"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_46b11357edc26ec2",
+        "text": "FEOC（受关注外国实体）条款。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1094,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b",
+          "ev_12359c97d5608a3d"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_279a4103246d920b",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically as",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c6bd1e7ba12de4f",
+        "text": "IRA 引入 FEOC 限制，实际针对与中国、俄罗斯、朝鲜、伊朗有重大关联的制造商：即使组件在东南亚组装，若母公司为中资，也可能无法通过 FEOC 审查，安装商需追溯电池和硅片的供应链来源 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b",
+          "ev_7ff743ce7d1ca8fb"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Evidence directly states IRA introduced FEOC restrictions targeting manufacturers with ties to China, Russia, North Korea, Iran; that a Southeast-Asia-assembled panel with a Chinese-owned parent may not clear the FEOC bar; and that installers must look beyond final assembly to cell and wafer supply ",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_279a4103246d920b",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically as",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b8dcffc4b87fb3a0",
+        "text": "2025 年共和党\" megabill \"进一步收紧 FEOC 规则，使相关项目\"几乎无法使用\"税收抵免，且 FEOC 适用范围仍在讨论扩大 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b",
+          "ev_12359c97d5608a3d"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Evidence mentions only IRA-era FEOC restrictions; nothing about a 2025 Republican 'megabill', tightening rules making credits nearly unusable, or discussions to expand FEOC scope.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_279a4103246d920b",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically as",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9ab2f1c62689c847",
+        "text": "直接出口早已归零，转口路径被封堵。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2208,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_394e28fbb6b132f2",
+          "ev_2914ced011f5e253",
+          "ev_20a8bf83f2bf8d40"
+        ],
+        "source_ids": [
+          "src_558848dceb15ef10",
+          "src_60680872afed1e2d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_394e28fbb6b132f2",
+            "source_id": "src_558848dceb15ef10",
+            "text": "IRA《通胀削减法案》 中清洁能源税收抵免资格。 而光伏行业一旦失去税收抵免，就意味着中资在美的工厂将毫无竞争力！双面组件以外，近些年我国大陆直接出口美国光伏电池产品基本归零！",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2914ced011f5e253",
+            "source_id": "src_60680872afed1e2d",
+            "text": "本研究围绕四川省晶硅光伏产业发展现状及其生产阶段碳排放展开分析与预测，通过评估不同情景下脱碳路径的减排效果，系统提出了推动该产业低碳发展的对策建议。",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_66f2302c5fec876a",
+        "text": "在 201 关税、双反税及 2024 年 9 月对华光伏电池/组件 301 关税上调至 50% 之后，中国大陆组件直接出口美国基本归零。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2954,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_394e28fbb6b132f2",
+          "ev_4eca43c9e90bb757",
+          "ev_b02b6dd77d996547"
+        ],
+        "source_ids": [
+          "src_558848dceb15ef10",
+          "src_853162f4a2a9e81a",
+          "src_9e96bfff22f785fc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_394e28fbb6b132f2",
+            "source_id": "src_558848dceb15ef10",
+            "text": "IRA《通胀削减法案》 中清洁能源税收抵免资格。 而光伏行业一旦失去税收抵免，就意味着中资在美的工厂将毫无竞争力！双面组件以外，近些年我国大陆直接出口美国光伏电池产品基本归零！",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_4eca43c9e90bb757",
+            "source_id": "src_853162f4a2a9e81a",
+            "text": "硅片+电池+组件. 塞尔维亚 诺诚光伏.2024年9月美国调整对中国301关税征收政策对光伏电池、组件税率关税 调整至50并且新增了中国出口的多晶硅与单晶硅片征收税率为50%。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_36f7ce53ed9c4fe6",
+        "text": "此后美国需求主要靠东南亚产能满足——但东南亚约 80% 的产能由中国企业投资。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3029,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_82f272f6ba6afc45",
+          "ev_bc2617f3ca8815ef",
+          "ev_b02b6dd77d996547"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_8367eeadf665a14d",
+          "src_9e96bfff22f785fc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ee9834fbbdc408fa",
+        "text": "2024 年 5 月起，美国对越南、泰国、马来西亚、柬埔寨四国启动新一轮双反调查，初裁反倾销税率最高达 271.28%，2025 年 8 月美国 ITC 表决通过终裁，东南亚转口通道基本终结。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.066,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_227b2867574093bf",
+          "ev_b2a041f50ad0e257"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_9d28461656ed7a40",
+          "src_3376a27ec5dd0ea4"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_227b2867574093bf",
+            "source_id": "src_9d28461656ed7a40",
+            "text": "自 2024 年 以 来 头 部 光 伏 企 型也让施正荣阵营补齐美国光伏. 厂实属行业变局下的应对之举。便 2025 年 同 比 下 滑 10.17 个 百 分 让与租赁模式重构美国业务。 作为中国光伏产业的拓荒. 点依旧是公司盈利最强板块。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5bea58e6973651a4",
+        "text": "赴美建厂模式面临 FEOC 不确定性。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0795,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b",
+          "ev_12359c97d5608a3d"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_279a4103246d920b",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically as",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5def3dfc43603c2a",
+        "text": "隆基、天合、晶科、阿特斯等中国头部企业均在美设厂（以组件为主），但 IRA 修订后 FEOC 条款可能使中资控股的美国工厂失去 45X 税收抵免资格，且 45X 生产补贴与 48C 投资抵免（最高 30%）只能二选一，中企美国产能的竞争力存疑。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1144,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b2a041f50ad0e257",
+          "ev_f33847b925e6b42e",
+          "ev_e679bf6c1c56dc78"
+        ],
+        "source_ids": [
+          "src_3376a27ec5dd0ea4",
+          "src_5a473aca9b5fae84",
+          "src_2151d3302651b0e5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b2a041f50ad0e257",
+            "source_id": "src_3376a27ec5dd0ea4",
+            "text": "美国联邦层面通过IRA给光伏制造方提供两种补贴——投资税收抵免（48C ITC）和生产制造补贴（45X MPTC），二者只能选择其一。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c94b461793c4ec93",
+        "text": "美国本土供应链短期无法自立。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3646,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_82f272f6ba6afc45",
+          "ev_d329b48d6d54970b"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941",
+          "src_d02a2486aee2e29f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_54417d29351ec60b",
+        "text": "IRA 前美国组件制造能力约 10GW（NREL，2023 上半年），远低于装机需求；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_73fa0fe5ba1c6a94",
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_54ac66cd62f5fb64",
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_73fa0fe5ba1c6a94",
+            "source_id": "src_54ac66cd62f5fb64",
+            "text": "美国可再生能源实验室（NREL）报告显示，截至2023上半年末，美国组件制造能力约10GW，而上半年出货量仅3.1GW，进口了25.1GW光伏组件。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4b33ee41fbe0b609",
+        "text": "即便 IRA 驱动美印宣布规划组件产能合计超 200GW，Wood Mackenzie 判断海外三年内仍无法摆脱对中国硅片、电池的依赖——美国几乎无硅片/电池产能，2024 年无新硅片项目投产 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3797,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a8a9e6b41361a6bf",
+        "text": "中国企业的应对与出口重心转移。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2208,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d5e532e00d773eb",
+          "ev_227b2867574093bf",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_94d818efe2131f49",
+          "src_9d28461656ed7a40",
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d5e532e00d773eb",
+            "source_id": "src_94d818efe2131f49",
+            "text": "有投资者提问公司对美国市场及中国企业对美国出口、在美国设厂的看法，晶澳科技表示，无论总统关税豁免令是否被废除，按照目前美国商务部初步决.在美国的2GW组件厂是否可以能享受IRA中制造环节补贴。 光伏需求有望超预期.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_227b2867574093bf",
+            "source_id": "src_9d28461656ed7a40",
+            "text": "自 2024 年 以 来 头 部 光 伏 企 型也让施正荣阵营补齐美国光伏. 厂实属行业变局下的应对之举。便 2025 年 同 比 下 滑 10.17 个 百 分 让与租赁模式重构美国业务。 作为中国光伏产业的拓荒. 点依旧是公司盈利最强板块。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9e94f445bfcb17af",
+        "text": "东南亚产组件被迫转向中东、拉美市场，光伏出海演变为\"中国/东南亚电池 + 中东北非组件\"模式；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4252,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b02b6dd77d996547",
+          "ev_aaaa71a1a294661d",
+          "ev_bc2617f3ca8815ef"
+        ],
+        "source_ids": [
+          "src_9e96bfff22f785fc",
+          "src_d057bfacc3b3a916",
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b02b6dd77d996547",
+            "source_id": "src_9e96bfff22f785fc",
+            "text": "刚刚. 光伏出海进入2.0，未来或演变为“中国东南亚电池+中东北非组件”模式。据美国能源信息署（EIA）数据， 2024年美国光伏组件进口总量为48.7GW， 其中东南亚地区占比65%，而东南亚地区80%的产能是由中国企业投资建设。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_aaaa71a1a294661d",
+            "source_id": "src_d057bfacc3b3a916",
+            "text": "（1）启动针对东南亚四国光伏电池和光伏组件的新一轮双反调查.对于中国光伏企业东南亚产能，东南亚基地产制组件出口美国量可能被迫缩减，下半年东南亚产制组件可能将转出口去往其他国家，以中东、拉美地区为. 主。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_425ee616c02948e5",
+        "text": "TCL 中环等企业在亚太、拉美、中东非市场海外销量增长超 2 倍。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4783,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5d31ba2e2ae60afc",
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_e848a17a1c67bea0",
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5d31ba2e2ae60afc",
+            "source_id": "src_e848a17a1c67bea0",
+            "text": "TCL中环的硅片市占率占行业第一，亏损也在行业中领先。2025年财报显示，其在亚太、拉美、中东非等市场已获突破，电池组件业务的海外市场销量增长超2倍。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e246a2fc9045573c",
+        "text": "美国市场方面，中企仅能以小比例参股或技术授权方式有限分享。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.14,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_c9e74e4ad6adc70b",
+          "ev_ab3c0bc43ffbfdf4"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_e7166200ba0f53eb",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b50afab2cb8a9b6f",
+        "text": "竞争力本质未变：中国的优势是全链条（硅料→组件）规模 + 成本 + 技术迭代速度的三位一体，IRA 只能重构\"组件组装地\"的地理分布，无法在短期内重建上游环节。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2275,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_82f272f6ba6afc45",
+          "ev_3e578e36dccbaf77"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_82f272f6ba6afc45",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "对国内制造业和向可再生能源转型来说，IRA是最重要的立法之一。 虽然如此，这些挑战使制定者的初衷面临风险。 ” 为了达到指导配额要求，如果组件或系统中的任一部件不是美国制造的，那么制造商就必须披露其整个成本构成 成本测算 到目前为止，电池是太阳能组件中最昂贵的部分——Pochtaruk表示，电池平均约占组件价格的50%。 如果美国国内电池产能不足，太阳能光伏的国内附加内容可能就不会存在。 媒体研究主管Finlay Colville在过去几个月中发表了一系列专题文章，讨论了IRA优先发展太阳能电池制造的必要性，以及100GW电池代工厂是否可能是美国从中国手中夺回全球供应链控制权的一种方式。 Pochtaruk在谈到Heliene公司的运营时称：\"由于没有美国制造的太阳能电池或太阳能玻璃，即使所有其他组件的部件都是在国内生产和组装的，比如Heliene组件，在开发商为了满足40%的要求而增加的成本中，它们也只能提供其中的约17或18美分。 \" 根据指导意见，如果 \"制成品\"符合以下条件，则被视为 \"美国制造\"：\"(1)制成品的所有制造过程都在美国进行；(2)制成品的所有部件都原产于美国\"。",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e27215a6da60ef5c",
+        "text": "美国本土含量门槛（2026 年起 55%）与本土产能缺口之间的矛盾，决定了美国对中国上游供应链的隐性依赖将持续 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2468,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bc2617f3ca8815ef",
+          "ev_ab3c0bc43ffbfdf4",
+          "ev_82f272f6ba6afc45"
+        ],
+        "source_ids": [
+          "src_8367eeadf665a14d",
+          "src_25f42cb90e45d941"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ab3c0bc43ffbfdf4",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "IRA附加条款：美国光伏本土制造还有很大问题 日期：2023-07-24 来源：PV-Tech 国际太阳能光伏网 2023 07/24 14:02 手机扫码看资讯 关键词： 美国光伏市场 光伏发电 可再生能源项目 北美太阳能光伏制造商Heliene公司的总裁Martin Pochtaruk表示，美国国税局关于《通货膨胀削减法案》(IRA)下太阳能项目国内含量税收奖励的指导意见 \"使开发商很难尝试获得10%的投资税收抵免奖励\"。 今年5月，美国国内税收署发布IRA中投资税收抵免(ITC)所包含的\"国内含量\"附加条款指导。 包括太阳能 光伏发电 可再生能源项目 需要证明其材料成本的40%是由美国制造的产品构成，才有资格获得10%的额外税收抵免。 从2026年起，这一比例将提高至55%。 制造业：美国产能不足 目前，美国的组件产能相对不足。 虽然Qcells公司(其在佐治亚州的垂直一体化计划)、First Solar公司和Enel Green Power等公司都宣布了重大计划，但这些计划需要时间，而且无法满足美国2023年或达30-40GW的新增装机预期。 就指导意见而言，包括电池、硅片、玻",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_44ce1a00e89bec00",
+        "text": "中国的软肋在内部：产能过剩导致的全行业亏损比 IRA 更直接地威胁产业健康，\"反内卷\"限产与产能出清（硅片产能已现负增长）是 2025–2026 年的主线 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2917,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_972afcde66c65d5e",
+        "text": "不确定因素：IRA 经 2025 年修订后的抵免退坡节奏与 FEOC 中资持股认定细则尚未完全落地；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0282,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2e080c4e6902baa1",
+          "ev_c9e74e4ad6adc70b",
+          "ev_216e9fe2c3170084"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb",
+          "src_3376a27ec5dd0ea4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2e080c4e6902baa1",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "2025年全球光伏产业链深度解读 2025-07-18 2025年，全球光伏产业链进入深度调整期。 经历前几年的狂热扩张后，一场由严重产能过剩引发的残酷洗牌正席卷全产业链。 硅料、硅片、电池片、组件四大环节均承压运行，产能出清与技术迭代成为贯彻全年的主线，行业在阵痛中寻找新的平衡点。 硅料：深陷过剩泥潭，价格L型筑底 2025年多晶硅市场仍深陷产能过剩泥潭，TrendForce集邦咨询数据显示，2025年多晶硅有效产能约为295万吨，产量约130万吨，供需严重错配主要在于需求增速放缓叠加前期过度建设。 在投产即亏损的大环境下，新产能建设概率性延迟甚至取消，海外产能方面，阿曼联合进展或不及预期。 图：2022-2029年全球硅料产能产量变化趋势，Unit:万吨 价格方面，TrendForce集邦咨询分析师指出，2025年多晶硅价格呈现高开低走的趋势。 一季度行业在3. 5-4. 5万元/吨的成本线下减产自救，短暂的春节后反弹被高库存和疲软需求迅速扑灭；二季度需求旺季落空，引发价格“二次探底”，6月初下探至3. 3-3. 4万元/吨。 三季度将陷入“行业减产”与“低成本产能复产”的拉锯战，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9c623d56b58df536",
+        "text": "若 FEOC 全面封堵中资美国工厂的补贴资格，中国光伏将实质性退出美国终端市场，全球市场份额进一步向中东、拉美、非洲、欧洲集中。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2983,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c9e74e4ad6adc70b",
+          "ev_f33847b925e6b42e",
+          "ev_279a4103246d920b"
+        ],
+        "source_ids": [
+          "src_e7166200ba0f53eb",
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c9e74e4ad6adc70b",
+            "source_id": "src_e7166200ba0f53eb",
+            "text": "BC：在2025年迎来快速发展，产能约83GW（占比7. 1%），产出约60GW（占比9%）。 在隆基、爱旭等头部企业的推动下，BC电池加速放量。 隆基计划2025年底前建成约70GW HPBC产能，爱旭股份的三大基地建设也在稳步推进。 BC凭借转换效率优势，在分布式与高端市场（尤其欧洲）具有差异化优势。 组件：竞争格局重塑，全球布局迎新变 组件环节在2025年告别“规模扩张”时代，进入深度整合期。 TrendForce集邦咨询预计，2025年组件产能达1343GW，产出675GW，产能扩张周期终结，未来三年组件产能的CAGR将大幅下降。 图：2022-2029年组件产能、产量发展趋势（GW） 在竞争格局方面，价格战常态化，同质化产品利润被压缩；市场集中度有望进一步提升，拥有技术优势、规模效应、品牌渠道和稳健财务状况的头部一体化企业将在洗牌中扩大份额；企业发展战略重心从“扩张”转向“提质增效”，核心竞争力体现在技术创新、成本控制以及全球化市场布局上。 技术路线上，TOPCon主导，BC、HJT双翼并行。 TOPCon组件以77. 1%的市占率主导市场，产出521GW；HJT产出38GW",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f33847b925e6b42e",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "IRA Domestic Content Bonus: How FEOC-Compliant Solar Panels Increase Your Customer's Tax Credit Most installers and homeowners know about the 30% federal Investment Tax Credit (ITC). Fewer are taking full advantage of the domestic content adder — an additional 10 percentage points that can push a residential system's credit to 40%. In 2026, with ITC guidance more settled and manufacturers actively pursuing compliance, this bonus is real money and worth structuring your equipment procurement arou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d3884dc768613180",
+        "text": "证据缺口说明：本报告未能获得 CPIA 一手分环节精确数据、中国海关对美直接出口的精确数值，以及 IRA 修订后美国本土产能的权威最新统计；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1607,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3e578e36dccbaf77",
+          "ev_bc2617f3ca8815ef",
+          "ev_ab3c0bc43ffbfdf4"
+        ],
+        "source_ids": [
+          "src_25f42cb90e45d941",
+          "src_8367eeadf665a14d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3e578e36dccbaf77",
+            "source_id": "src_25f42cb90e45d941",
+            "text": "Pochtaruk告诉笔者，Heliene发现，屋顶太阳能的平均装机成本约为每瓦1. 6美元，社区太阳能接近1. 2美元。 每瓦电力装机可节省12-16美分。 大型地面项目的每瓦成本低于1美元，因此，为了10%的折扣而在各个环节增加额外工作可能并不值得。 Pochtaruk 继续说道：\"我们看到，对于5MW以下的社区太阳能和屋顶项目(每年数GW)以及工商业太阳能开发商来说，暂时放一放意味着一笔不小的开支。 ” 国内附加条款最终与美国的供应情况挂钩，而供应情况目前受制于时间。 Silicon Ranch 解释了他们作为开发商的立场：\"从长远来看，我们公司完全有能力利用IRA，因为我们事先承诺尽可能在当地采购材料，这既是为了保证供应，也是为了优化我们的项目，对当地社区和地区产生积极的经济影响。 \" \"长期\"或是这里的关键。 就像 Heliene 规模相对较小的美国铝业合作伙伴关系一样，Silicon Ranch 公司也在协调一致，为建立国内合作和供应关系付出努力。 他们与 First Solar以及 Nextracker 签订了大量的组件供应协议。 但是，目前的国内含量指导意见还很不明确，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bc2617f3ca8815ef",
+            "source_id": "src_8367eeadf665a14d",
+            "text": "研究表明，尽管海外市场推出本土制造政策，但中国仍将主导全球光伏供应链，并扩大技术和成本方面的差距。 Wood Mackenzie公司预计的世界各地2021～2026年的光伏组件产能(GW) 根据调研机构Wood Mackenzie公司最近发布的一份名为《中国的市场扩张将如何影响全球光伏组件供应链?》的研究报告，在2023年向光伏产业投资超过1300亿美元后，中国将在2023年至2026年期间拥有全球80%以上的多晶硅、硅片、光伏电池和光伏组件制造能力。 研究报告作者、Wood Mackenzie高级顾问Huaiyan Sun表示：“虽然中国光伏制造业的扩张一直受到多晶硅价格下降、技术升级以及在海外市场发展本土制造业的影响，但中国仍将主导全球光伏供应链，并继续扩大与竞争对手的技术和成本方面的差距。” 根据Wood Mackenzie公司对年度市场需求增长的预测，到2024年，预计中国的硅片、光伏电池和光伏组件产能将超过1TW，这意味着中国的产能足以满足从现在到2032年的全球年度需求。 中国的产能扩张将凭借其先进的技术、低成本和完整的供应链，使其在全球光伏产业中的主导地位一直持续下去 海",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_51c530eeff6c3385",
+        "text": "涉及 FEOC 细则的量化影响仍需跟踪 IRS/财政部官方文件。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0921,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_279a4103246d920b",
+          "ev_7ff743ce7d1ca8fb",
+          "ev_f33847b925e6b42e"
+        ],
+        "source_ids": [
+          "src_5a473aca9b5fae84"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_279a4103246d920b",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "Alongside domestic content, the IRA introduced Foreign Entity of Concern (FEOC) restrictions. Components from FEOC-designated countries and entities are excluded from qualifying for the bonus. In practice, this targets manufacturers with significant ties to China, Russia, North Korea, and Iran. As of 2026, the FEOC rules have material implications for module sourcing — a panel manufactured in Southeast Asia by a Chinese-owned parent company may not clear the FEOC bar even if it was physically as",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7ff743ce7d1ca8fb",
+            "source_id": "src_5a473aca9b5fae84",
+            "text": "How to Document the Bonus To support the domestic content adder on a customer's tax return, you should gather and retain: Manufacturer's written attestation of domestic content percentages by component FEOC compliance declaration from the manufacturer Itemized project cost breakdown separating eligible components IRS Form 3468 (Investment Credit), completed with the domestic content election indicated Advise your customers to work with a tax professional familiar with IRA energy credits. The cre",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 47,
+    "evidence_count": 61,
+    "supported_count": 4,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 42,
+    "coverage": 0.087,
+    "primary_source_ratio": 0.0851,
+    "fulltext_source_ratio": 0.1064,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 41
+  },
+  "run_metadata": {
+    "final_report_sha256": "1ab4660d3ea930851f49fb9bf0b3369d9fc12e59c5d722deacb323c493e80c62",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 46,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 42,
+        "coverage": 0.087,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 41
+      },
+      "after": {
+        "claim_count": 46,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 42,
+        "coverage": 0.087,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 41
+      }
+    }
+  }
+}

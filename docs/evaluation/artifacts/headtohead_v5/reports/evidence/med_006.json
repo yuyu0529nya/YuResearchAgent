@@ -1,0 +1,3546 @@
+{
+  "schema_version": "1.0",
+  "query": "评估数字疗法（Digital Therapeutics）在慢病管理（糖尿病、高血压、抑郁症）中的临床证据、监管路径和商业化挑战。",
+  "created_at": "2026-08-13T20:24:01.605478+00:00",
+  "sources": [
+    {
+      "source_id": "src_5cf4c203573db51f",
+      "url": "https://justhealth.cn/newsinfo/2094454.html",
+      "title": "justhealth.cn/newsinfo/2094454.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 Digital Therapeutics 糖尿病 RCT 临床试验 临床证据",
+        "retrieval_relevance": 0.8075,
+        "host_domain": "justhealth.cn"
+      }
+    },
+    {
+      "source_id": "src_12f237a666299bea",
+      "url": "https://myimm.net/xinyaoshiyan/953.html",
+      "title": "BGM0604治疗2型糖尿病免费临床试验",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 Digital Therapeutics 糖尿病 RCT 临床试验 临床证据",
+        "retrieval_relevance": 0.79,
+        "host_domain": "myimm.net"
+      }
+    },
+    {
+      "source_id": "src_0f9981300359e635",
+      "url": "https://alsolife.com/column/art/1535138147349757954",
+      "title": "孤独症家庭平均一个月花6950元干预，还能再低吗？ - ALSOLIFE",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 Digital Therapeutics 糖尿病 RCT 临床试验 临床证据",
+        "retrieval_relevance": 0.7725,
+        "host_domain": "alsolife.com"
+      }
+    },
+    {
+      "source_id": "src_efa87cb3897cdda0",
+      "url": "https://yumpu.com/fr/document/view/49588670/-global-health-trials",
+      "title": "临床试验审查： 伦理委员会指南 - Global Health Trials",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 Digital Therapeutics 糖尿病 RCT 临床试验 临床证据",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "yumpu.com"
+      }
+    },
+    {
+      "source_id": "src_a27aff3518363b8d",
+      "url": "https://endocrine.org/-/media/endocrine/files/cpg/diabetes-cpg-summary-mandarin_final.pdf",
+      "title": "Instituto Salud Carlos III; 15782 Santiago de Compostela",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 Digital Therapeutics 糖尿病 RCT 临床试验 临床证据",
+        "retrieval_relevance": 0.72,
+        "host_domain": "endocrine.org"
+      }
+    },
+    {
+      "source_id": "src_29489bb52e3f66d2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10354777",
+      "title": "Digital therapeutics in the clinic - PMC",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "prescription digital therapeutics depression CBT reSET Somryst hypertension HERB-DH1 trial",
+        "retrieval_relevance": 0.825,
+        "host_domain": "pmc.ncbi.nlm.nih.gov",
+        "fulltext_rejected": "content_mismatch"
+      }
+    },
+    {
+      "source_id": "src_39f8a2de95448438",
+      "url": "https://dtxalliance.org/products/somryst",
+      "title": "Somryst® - Digital Therapeutics Alliance",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "prescription digital therapeutics depression CBT reSET Somryst hypertension HERB-DH1 trial",
+        "retrieval_relevance": 0.79,
+        "host_domain": "dtxalliance.org"
+      }
+    },
+    {
+      "source_id": "src_a7505054d246037d",
+      "url": "https://repair-autism.com/index.php?c=show&id=36",
+      "title": "Digital Therapeutics empowers medical treatment - Digital...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "prescription digital therapeutics depression CBT reSET Somryst hypertension HERB-DH1 trial",
+        "retrieval_relevance": 0.79,
+        "host_domain": "repair-autism.com"
+      }
+    },
+    {
+      "source_id": "src_e970a07f3e250598",
+      "url": "https://jaeps.ewapub.com/article/view/17904",
+      "title": "The effectiveness and cost-effectiveness of digital therapeutics for...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "prescription digital therapeutics depression CBT reSET Somryst hypertension HERB-DH1 trial",
+        "retrieval_relevance": 0.79,
+        "host_domain": "jaeps.ewapub.com"
+      }
+    },
+    {
+      "source_id": "src_1bc9acc475b69862",
+      "url": "https://pmlive.com/pharma_news/pear_therapeutics_submits_latest_digital_therapeutic_insomnia_and_depression_treatment_1294880",
+      "title": "Pear Therapeutics submits latest digital therapeutic... - PMLiVE",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "prescription digital therapeutics depression CBT reSET Somryst hypertension HERB-DH1 trial",
+        "retrieval_relevance": 0.79,
+        "host_domain": "pmlive.com"
+      }
+    },
+    {
+      "source_id": "src_33a62923eed472ba",
+      "url": "https://edn.com/welldoc-and-samsung-collaborate-to-improve-the-lives-of-people-with-diabetes",
+      "title": "WellDoc And Samsung Collaborate To Improve The Lives Of... - EDN",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BlueStar Welldoc diabetes digital therapeutic randomized controlled trial HbA1c reduction results",
+        "retrieval_relevance": 0.8409,
+        "host_domain": "edn.com"
+      }
+    },
+    {
+      "source_id": "src_1b28dedb95790b7d",
+      "url": "https://dtxhub.com/digital-therapeutics-for-diabetes-management",
+      "title": "Digital Therapeutics For Diabetes Management - Digital...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BlueStar Welldoc diabetes digital therapeutic randomized controlled trial HbA1c reduction results",
+        "retrieval_relevance": 0.7773,
+        "host_domain": "dtxhub.com"
+      }
+    },
+    {
+      "source_id": "src_9b3a3cd06971ae0c",
+      "url": "https://diatribe.org/diabetes-technology/welldoc-announces-launch-bluestar-software-based-product-type-2-diabetes",
+      "title": "WellDoc Announces the Launch of BlueStar... | DiaTribe",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BlueStar Welldoc diabetes digital therapeutic randomized controlled trial HbA1c reduction results",
+        "retrieval_relevance": 0.7773,
+        "host_domain": "diatribe.org"
+      }
+    },
+    {
+      "source_id": "src_ff112844b281da25",
+      "url": "https://dtxalliance.org/products/welldoc-app",
+      "title": "Welldoc App - Digital Therapeutics Alliance",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BlueStar Welldoc diabetes digital therapeutic randomized controlled trial HbA1c reduction results",
+        "retrieval_relevance": 0.7455,
+        "host_domain": "dtxalliance.org"
+      }
+    },
+    {
+      "source_id": "src_c9dcc1ad4d423d05",
+      "url": "https://medium.com/nav-blog/digital-therapeutics-have-huge-promise-and-they-are-real-today-50804ff10a67",
+      "title": "Digital Therapeutics Have Huge Promise And They Are... | Medium",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "BlueStar Welldoc diabetes digital therapeutic randomized controlled trial HbA1c reduction results",
+        "retrieval_relevance": 0.7773,
+        "host_domain": "medium.com"
+      }
+    },
+    {
+      "source_id": "src_475f57065603ec03",
+      "url": "https://ah.chinanews.com.cn/news/2022/0418/301164.shtml",
+      "title": "游戏行业数字疗法首获NMPA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.8022,
+        "host_domain": "ah.chinanews.com.cn"
+      }
+    },
+    {
+      "source_id": "src_1a3ff30548ed70d6",
+      "url": "https://news.pedaily.cn/202304/511310.shtml",
+      "title": "NMPA最新分类界定汇总出炉，事关数字疗法_投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "ebad9efb8651e3d61185569e18f55677ae79cf38df3cbe06b389aea49e29cb9c",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.7565,
+        "host_domain": "news.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_634c0fda31542ef9",
+      "url": "https://gamerbbs.cn/archives/62001",
+      "title": "波克城市《快乐视界星球》通过NMPA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.7413,
+        "host_domain": "gamerbbs.cn"
+      }
+    },
+    {
+      "source_id": "src_8c7fe89101833acb",
+      "url": "https://blog.dgqrs.cn/ai-frontier/midjourney-medical-clinical-imaging",
+      "title": "Midjourney 切入临床医疗 | 千榕观察 | 千榕观察 · Qianrong Witness",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.7413,
+        "host_domain": "blog.dgqrs.cn"
+      }
+    },
+    {
+      "source_id": "src_1fe6041031e6ebe5",
+      "url": "https://huimei.com/news/1669788530863.html",
+      "title": "一文读懂 | 2022年数字疗法市场洞察",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.7261,
+        "host_domain": "huimei.com"
+      }
+    },
+    {
+      "source_id": "src_c79e7de85e91d4f0",
+      "url": "https://nl.wikipedia.org/wiki/Walloni%C3%AB",
+      "title": "Wallonië - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.2319,
+        "host_domain": "nl.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_9e073727fa91b333",
+      "url": "https://wallonie.be/nl/ontdek-wallonie",
+      "title": "Ontdek Wallonië - Le site officiel de la Wallonie",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.2319,
+        "host_domain": "wallonie.be"
+      }
+    },
+    {
+      "source_id": "src_7d87271a2574781a",
+      "url": "https://visitwallonia.be/nl",
+      "title": "Welkom in Wallonië en in de Ardennen | VISITWallonia.be",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 监管路径 FDA SaMD De Novo NMPA 处方数字疗法审批",
+        "retrieval_relevance": 0.2319,
+        "host_domain": "visitwallonia.be"
+      }
+    },
+    {
+      "source_id": "src_4ef8e1555a67fd72",
+      "url": "https://nature.com/articles/s41746-020-00370-8?error=cookies_not_supported&code=5e561c1e-d6c0-4e29-a968-8702fc3ce534",
+      "title": "Characteristics and challenges of the clinical pipeline of digital...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.7958,
+        "host_domain": "nature.com"
+      }
+    },
+    {
+      "source_id": "src_a252f6fe22a4d875",
+      "url": "https://bhbusiness.com/2022/10/26/clarity-on-digital-therapeutics-reimbursement-could-lead-to-more-behavioral-health-adoption",
+      "title": "Clarity on Digital Therapeutics Reimbursement Could Lead to More...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "bhbusiness.com"
+      }
+    },
+    {
+      "source_id": "src_1de658a46a2a0e56",
+      "url": "https://pmlive.com/blogs/fda_approves_first_substance_use_mobile_medical_application_1205435",
+      "title": "Pear Therapeutics' Reset device offers cognitive behavioural therapy",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "pmlive.com"
+      }
+    },
+    {
+      "source_id": "src_e7bfb689b5a0c24c",
+      "url": "https://mobihealthnews.com/news/pear-therapeutics-gets-de-novo-fda-clearance-reset-digital-therapeutic-substance-abuse",
+      "title": "Pear Therapeutics gets de novo FDA clearance for reSET, a digital...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.825,
+        "host_domain": "mobihealthnews.com"
+      }
+    },
+    {
+      "source_id": "src_688c2e2e65cc35d7",
+      "url": "https://sciencebusiness.net/news/prescription-medicine-meets-app-clinically-validated-digital-therapies-reach-market",
+      "title": "Prescription medicine meets the app as clinically-validated digital...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "sciencebusiness.net"
+      }
+    },
+    {
+      "source_id": "src_cc1879bc02403530",
+      "url": "https://intuitionlabs.ai/articles/digital-therapeutics-market-analysis",
+      "title": "Digital Therapeutics Market: 2025 Analysis & Growth... | IntuitionLabs",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "intuitionlabs.ai"
+      }
+    },
+    {
+      "source_id": "src_fb9f6e7a01c92a4e",
+      "url": "https://noconsensus.beehiiv.com/p/lessons-learned-digital-mental-health-trailblazer-didnt-make",
+      "title": "Lessons learned from a digital mental health trailblazer that...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "noconsensus.beehiiv.com"
+      }
+    },
+    {
+      "source_id": "src_9fb2bf1a6d900f31",
+      "url": "https://textbookofdigitalhealth.com/chapter/digital-therapeutics.html",
+      "title": "Digital Therapeutics · Textbook of Digital Health",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics FDA approval Pear Therapeutics reSET De Novo EU MDR classification DTx",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "textbookofdigitalhealth.com"
+      }
+    },
+    {
+      "source_id": "src_cd02cac2113c2a7b",
+      "url": "https://cnpharm.com/c/2021-06-21/793889.shtml",
+      "title": "欧盟医疗器械法规MDR正式执行，这些变化需关注 - 中国食品药品网",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟MDR Rule 11 数字疗法 软件医疗器械分类 IIa IIb 德国DiGA 审批",
+        "retrieval_relevance": 0.7926,
+        "host_domain": "cnpharm.com"
+      }
+    },
+    {
+      "source_id": "src_703857fb7efd12f5",
+      "url": "https://ofweek.com/medical/2021-06/ART-8500-1111-30503551.html",
+      "title": "3个月完成15... - OFweek医械科技网",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟MDR Rule 11 数字疗法 软件医疗器械分类 IIa IIb 德国DiGA 审批",
+        "retrieval_relevance": 0.7537,
+        "host_domain": "ofweek.com"
+      }
+    },
+    {
+      "source_id": "src_bcd25e8f8893f112",
+      "url": "https://static.cninfo.com.cn/finalpage/2024-12-12/1222006248.PDF",
+      "title": "Medical Devices Regulation EU 2017/745 MDR 是欧盟最新医疗器械法",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2017",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟MDR Rule 11 数字疗法 软件医疗器械分类 IIa IIb 德国DiGA 审批",
+        "retrieval_relevance": 0.7407,
+        "host_domain": "static.cninfo.com.cn"
+      }
+    },
+    {
+      "source_id": "src_bea698bbd0e1d82d",
+      "url": "https://flyingspd.com/news/basics/12101.html",
+      "title": "美国FDA和欧盟MDR...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟MDR Rule 11 数字疗法 软件医疗器械分类 IIa IIb 德国DiGA 审批",
+        "retrieval_relevance": 0.7278,
+        "host_domain": "flyingspd.com"
+      }
+    },
+    {
+      "source_id": "src_347c625f83beed3a",
+      "url": "https://bsigroup.com/zh-CN/medical-devices/our-services/MDR-revision",
+      "title": "MDR Medical Device Regulation medical devices | BSI",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟MDR Rule 11 数字疗法 软件医疗器械分类 IIa IIb 德国DiGA 审批",
+        "retrieval_relevance": 0.2296,
+        "host_domain": "bsigroup.com"
+      }
+    },
+    {
+      "source_id": "src_e904a0d11c10af33",
+      "url": "https://36kr.com/p/2349527698020872",
+      "title": "融资缩减、数字疗法降温：市场在等好项目跑出来-36氪",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 商业化 医保报销 支付模式 慢病管理 Pear Therapeutics 破产 教训",
+        "retrieval_relevance": 0.7692,
+        "host_domain": "36kr.com",
+        "fulltext_rejected": "content_mismatch"
+      }
+    },
+    {
+      "source_id": "src_69f1c57d52d7c9ba",
+      "url": "https://1980y.com/t-44332.html",
+      "title": "融资缩减、数字疗法降温：市场在等好项目跑出来 - 中医养生 彩虹邦",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 商业化 医保报销 支付模式 慢病管理 Pear Therapeutics 破产 教训",
+        "retrieval_relevance": 0.756,
+        "host_domain": "1980y.com"
+      }
+    },
+    {
+      "source_id": "src_a2b98d09982ecf78",
+      "url": "https://m.pedaily.cn/news/512018",
+      "title": "一家百亿医疗独角兽破产|投资界",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 商业化 医保报销 支付模式 慢病管理 Pear Therapeutics 破产 教训",
+        "retrieval_relevance": 0.756,
+        "host_domain": "m.pedaily.cn"
+      }
+    },
+    {
+      "source_id": "src_8e5ef85d1df5667b",
+      "url": "https://rfi.fr/cn/中国/20260812-费加罗报-中国ai产业突飞猛进，从芯片到机器人无不颠覆硅谷的格局",
+      "title": "费加罗报：中国AI... - RFI - 法国国际广播电台",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 商业化 医保报销 支付模式 慢病管理 Pear Therapeutics 破产 教训",
+        "retrieval_relevance": 0.6897,
+        "host_domain": "rfi.fr"
+      }
+    },
+    {
+      "source_id": "src_d2c59481b3bf49d2",
+      "url": "https://insights.wchsb.com/2025/09/08/digital-therapeutics-at-a-crossroads-why-cms-coverage-alone-wont-drive-adoption",
+      "title": "Navigating Digital Therapeutics: Challenges and Opportunities",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "dce5ff38d52522e0cbe829d3043729e978c0f9d4f25333e5eee2fef0e479e467",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.9563,
+        "host_domain": "insights.wchsb.com"
+      }
+    },
+    {
+      "source_id": "src_b032d7d56f166a16",
+      "url": "https://linkedin.com/pulse/when-digital-therapeutics-industry-bear-fruit-lessons-nasreen-hasan",
+      "title": "When will the Digital Therapeutics Industry Bear Fruit - Lessons from...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_c926e759dc1513f2",
+      "url": "https://modernhealthcare.com/digital-health/pear-therapeutics-bankruptcy-dariohealth-big-health",
+      "title": "Pear Therapeutics' bankruptcy puts industry at... - Modern Healthcare",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "modernhealthcare.com"
+      }
+    },
+    {
+      "source_id": "src_33530405d8a1da78",
+      "url": "https://darly.solutions/blog/choosing-the-business-models-that-work-for-digital-therapeutics",
+      "title": "Digital Therapeutics Business Models: What Actually Works",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "darly.solutions"
+      }
+    },
+    {
+      "source_id": "src_5ef959b6e7a85cae",
+      "url": "https://healthark.ai/wp-content/uploads/2023/11/The-Promise-Challenges-of-Digital-Therapeutics.pdf",
+      "title": "The Promise & Challenges of Digital Therapeutics",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.825,
+        "host_domain": "healthark.ai"
+      }
+    },
+    {
+      "source_id": "src_2618cba78f31089d",
+      "url": "https://managedhealthcareexecutive.com/view/what-does-pear-therapeutics-bankruptcy-mean-for-pdts-",
+      "title": "What Does Pear Therapeutics’ Bankruptcy Mean for PDTs?",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "digital therapeutics commercialization challenges reimbursement Pear Therapeutics bankruptcy lessons",
+        "retrieval_relevance": 0.825,
+        "host_domain": "managedhealthcareexecutive.com"
+      }
+    },
+    {
+      "source_id": "src_e2d2897b5c9278a3",
+      "url": "https://cniplan.com/cases/yi-liao-jian-kang/shuzi-liaofa-bp.html",
+      "title": "某数字疗法平台B轮融资BP - 商业计划书 | 广州中撰咨询",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.8194,
+        "host_domain": "cniplan.com"
+      }
+    },
+    {
+      "source_id": "src_0430e106da9b041c",
+      "url": "https://huacheng.gz-cmc.com/pages/2021/11/15/fc50092ed571466f83c1db2921329931.html",
+      "title": "人人享有糖尿病健康管理时不我待 数字疗法赋能糖尿病逆转标准化管理",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.7629,
+        "host_domain": "huacheng.gz-cmc.com"
+      }
+    },
+    {
+      "source_id": "src_a52e7c31275d081a",
+      "url": "https://11553875.com/thread-632534-1-1.html",
+      "title": "糖尿病 高血压 颈椎病 抑郁症 癌症的中医治疗 -凯发k8一触即发",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.7516,
+        "host_domain": "11553875.com"
+      }
+    },
+    {
+      "source_id": "src_1e60ed2549937e6e",
+      "url": "https://hjtdsm.com/sc/zhiliao/23773.html",
+      "title": "探索抑郁症的新疗法：干细胞治疗抑郁症临床进展-杭吉干细胞科技",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.7065,
+        "host_domain": "hjtdsm.com"
+      }
+    },
+    {
+      "source_id": "src_0723d146a004c48d",
+      "url": "https://tehdasnumerokolme.com/condition/depression",
+      "title": "抑郁症是什么?病因、症状、治疗和寻求帮助 - bob娱乐体育",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.6952,
+        "host_domain": "tehdasnumerokolme.com"
+      }
+    },
+    {
+      "source_id": "src_c923925fb8535796",
+      "url": "https://doc88.com/p-2314568673717.html",
+      "title": "益气养阴解郁法治疗糖尿病伴发抑郁症的临床研究进展 - 道客巴巴",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 慢病管理 糖尿病 高血压 抑郁症 临床证据 商业化挑战",
+        "retrieval_relevance": 0.729,
+        "host_domain": "doc88.com"
+      }
+    },
+    {
+      "source_id": "src_77d2a43a2a0dcfcc",
+      "url": "https://mhn24.com/25502.html",
+      "title": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.748,
+        "host_domain": "mhn24.com"
+      }
+    },
+    {
+      "source_id": "src_f4bcc5f3fd61afbb",
+      "url": "https://jiemodui.com/N/135105.html",
+      "title": "jiemodui.com/N/135105.html",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.748,
+        "host_domain": "jiemodui.com",
+        "fulltext_rejected": "content_mismatch"
+      }
+    },
+    {
+      "source_id": "src_d8599824d4dab00f",
+      "url": "https://ic.work/article/google-ai-io-singularity-foothills-agi-narrative",
+      "title": "Google 说要“解决所有疾病”：AI 医疗的大词，不能替代临床证据 - ic.work",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.748,
+        "host_domain": "ic.work"
+      }
+    },
+    {
+      "source_id": "src_90753ba1c61021d6",
+      "url": "https://rfi.fr/cn/中国/20260811-特朗普称与普京交涉成功-俄释放被关押美国前海军陆战队员",
+      "title": "特朗普称与普京交涉成功 俄释放被关押的美国前海军陆战队员",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.2307,
+        "host_domain": "rfi.fr"
+      }
+    },
+    {
+      "source_id": "src_16d87031d2e7ee51",
+      "url": "https://trae.ai/",
+      "title": "TRAE - Collaborate with Intelligence",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.1269,
+        "host_domain": "trae.ai"
+      }
+    },
+    {
+      "source_id": "src_c85875dd4d3714f7",
+      "url": "https://youtube.com/watch?v=vynIx4nB1VA",
+      "title": "【全程字幕】平均\"7秒\"站起來! 立法院展示\"踹倒機器狗\" 2024...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "数字疗法 DTx 监管审批 医保支付 商业化瓶颈 2024 2025",
+        "retrieval_relevance": 0.2307,
+        "host_domain": "youtube.com"
+      }
+    },
+    {
+      "source_id": "src_491fad13a98310b8",
+      "url": "https://linkedin.com/pulse/error-404-untold-story-digital-therapeutics-anca-petre-hksde",
+      "title": "Error 404: The Untold Story of Digital Therapeutics",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_b721783a6504e702",
+      "url": "https://pharmaphorum.com/news/fda-clears-first-dtx-depression-otsuka-click",
+      "title": "FDA clears first DTx for depression from Otsuka, Click | pharmaphorum",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.79,
+        "host_domain": "pharmaphorum.com"
+      }
+    },
+    {
+      "source_id": "src_1928aaa4a2b1f5f5",
+      "url": "https://psychiatryadvisor.com/features/prescription-digital-therapeutics",
+      "title": "Prescription Digital Therapeutics for Mental Health",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "psychiatryadvisor.com"
+      }
+    },
+    {
+      "source_id": "src_4e1c82654c5dfd96",
+      "url": "https://trial.medpath.com/news/fda-approves-rejoyn-first-prescription-digital-therapeutic-for-major-depressive-disorder",
+      "title": "FDA Approves Rejoyn, First Prescription Digital Therapeutic for...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "trial.medpath.com"
+      }
+    },
+    {
+      "source_id": "src_b41af85aa6a68637",
+      "url": "https://canaryiq.com/intelligence/biotechnology/digital-therapeutics",
+      "title": "Digital therapeutics — Biotechnology & Health | CanaryIQ",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "canaryiq.com"
+      }
+    },
+    {
+      "source_id": "src_94b7843aa413b5e3",
+      "url": "https://grokipedia.com/page/Digital_therapeutics",
+      "title": "Digital therapeutics",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Rejoyn BlueStar FDA cleared digital therapeutic diabetes depression hypertension RCT evidence reimbursement Pear Therapeutics bankruptcy",
+        "retrieval_relevance": 0.48,
+        "host_domain": "grokipedia.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_9863779117848627",
+      "source_id": "src_5cf4c203573db51f",
+      "text": "健海快讯丨妊娠糖尿病数字疗法成功入组受试者-获临床阶段性突破.目前为止，健海科技数字疗法开展的项目有妊娠糖尿病（GDM）数字疗法、多囊卵巢综合征（PCOS）数字疗法、脂肪肝数字疗法、乳腺癌数字疗法等。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "489f034c8cc721183db1175f9471f3e4e0dd6292d90940f426c41c37b4cfc11d"
+    },
+    {
+      "evidence_id": "ev_fd8a28c7060b4548",
+      "source_id": "src_12f237a666299bea",
+      "text": "医瘤界问答. 首页 > 新药试验. BGM0604治疗2型糖尿病免费临床试验.下一篇：THDB0206治疗2型糖尿病免费临床试验. 返回列表.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "aff89323f14367f3189e2c8500ce4fb9358c621051fd2b9b7864b8d2f64f9dab"
+    },
+    {
+      "evidence_id": "ev_8a0d75ae807fe557",
+      "source_id": "src_0f9981300359e635",
+      "text": "什么是数字疗法？ 作为新兴概念，国内对数字疗法（Digital Therapeutics，缩写“DTx”）并没有统一定义，比较主流的定义是：数字疗法是由软件程序驱动，以循证医学为基础的干预方案，用以治疗、管. 理或预防疾病。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4318310d028a0fd3252bcb6c2de808a0107210c9607d88d099ad8e0bfc22582a"
+    },
+    {
+      "evidence_id": "ev_ea20787b11edb0b2",
+      "source_id": "src_efa87cb3897cdda0",
+      "text": "13缩 写ADR 不 良 药 物 反 应AE 不 良 事 件CRA 临 床 研 究 助 理CRC 临 床 研 究 协 调 员CRFs 病 例 报 告 表CRO 临 床 研 究 组 织DSMC 数 据 安 全 和 监 察 委 员 会EC 伦 理 委 员 会EMEA 欧 洲.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2ed629d37285c0298a80dbc23fc14bd7369e2041892268106c646951ee6e3d37"
+    },
+    {
+      "evidence_id": "ev_fc64ba0fa126ca77",
+      "source_id": "src_a27aff3518363b8d",
+      "text": "写作委员会选择使用美国糖尿 病协会ADA对糖尿病和糖尿病前期的 定义。6. Guyatt GH, Schünemann HJ, Djulbegovic B, Akl EA. 指南小组不应分级良好实践声明。 临床流行 病学杂志 J Clin Epidemiol .",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "433d164f4ae5d88bf849caf8113ba6ac7d5acbeaab179dc17902e5d5e91d3a54"
+    },
+    {
+      "evidence_id": "ev_bd4840b122eb4857",
+      "source_id": "src_29489bb52e3f66d2",
+      "text": "Profile of Somryst prescription digital therapeutic for chronic insomnia: overview of safety and efficacy.Efficacy of a digital therapeutics system in the management of essential hypertension: the HERB‐DH1 pivotal trial.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "85f2e4fdbd9c538aead9c80eec5b59c3fcbba607f3365b7ba26f29bddb4c561d"
+    },
+    {
+      "evidence_id": "ev_81cb2ecc0ad2b393",
+      "source_id": "src_39f8a2de95448438",
+      "text": "Somryst delivers digital Cognitive Behavioral Therapy for Insomnia (CBT-I) therapeutic content.Somryst is a 9-week Prescription Digital Therapeutic (PDT) for chronic insomnia. Somryst can be used on a mobile device, such as a smartphone or tablet.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "abb6e5f54b79daada8a5dc8a34212b4a9f029bb4131c7baf22349ee55db979de"
+    },
+    {
+      "evidence_id": "ev_ad79c9afa0888bc6",
+      "source_id": "src_a7505054d246037d",
+      "text": "The intervention studied was Somryst, a prescription digital therapy product approved by the U.S. FDA, which provides digital CBT-I treatment to patients through smart mobile devices (smartphones or tablets).",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d5eee88b4e2b3456c7853d01e9a22c1abb620e41db6b66b3ed2703b629e04d97"
+    },
+    {
+      "evidence_id": "ev_c92fc6103cd1b186",
+      "source_id": "src_e970a07f3e250598",
+      "text": "Profile of Somryst prescription digital therapeutic for chronic insomnia: Overview of safety and efficacy.Insomnia as a mediating therapeutic target for depressive symptoms: A sub-analysis of participant data from two large randomized controlled trials of a digital sleep intervention.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9b735327b50a7b026b3c8522906929dd6939d5b447b1d0b7cc8bc92cd2ef6295"
+    },
+    {
+      "evidence_id": "ev_b6125f44c33a9ef1",
+      "source_id": "src_1bc9acc475b69862",
+      "text": "CBT-based treatment targets insomnia and depression. Pear. Patients with insomnia and depression could soon be prescribed Somryst, a ‘digital therapeutic’ to treat their conditions – potentially in place of medicines.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ff6b46c7a7293ecbc0afdaf720fdf0ae947a48c5efbbf22200e8a5bd314bdeb8"
+    },
+    {
+      "evidence_id": "ev_9050314c1c3f228c",
+      "source_id": "src_33a62923eed472ba",
+      "text": "In randomized controlled trials using a prior version of BlueStar, WellDoc demonstrated significant clinical outcomes, achieving a 1.9-point reduction in A1C, the gold standard for measuring whether a person's diabetes is in control.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f8224a94d05d380e2cbfe298768c1e930c40204578e284284e6cbb99081a0732"
+    },
+    {
+      "evidence_id": "ev_6c2b26ca24bfc68a",
+      "source_id": "src_1b28dedb95790b7d",
+      "text": "4. FDA-Cleared Digital Therapeutics for Diabetes. 5. Spotlight: BlueStar by Welldoc. 6. Spotlight: Virta Health. 7. Other Promising DTx Solutions in 2025. 8. Benefits Over Traditional Diabetes Care. 9. Clinical Results & Patient Outcomes.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "03637274321dd4e475e55feb23e65ccaac9dc36c0f9bb2b2a0975b23adeb9b67"
+    },
+    {
+      "evidence_id": "ev_f984d5337ca54217",
+      "source_id": "src_9b3a3cd06971ae0c",
+      "text": "WellDoc has published two randomized controlled trials of the software upon which BlueStar is built. These demonstrated significant 1.2-1.4% reductions in A1c levels with use of the software.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5cd839a6c8f78201104e910c0e011cc2c13734a313d89fe8055c8535200aaa79"
+    },
+    {
+      "evidence_id": "ev_6457203fab202104",
+      "source_id": "src_ff112844b281da25",
+      "text": "Welldoc’s comprehensive digital health platform provides cardiometabolic condition digital coaching across pre-diabetes, diabetes, hypertension, heart failure, weight and obesity management, with integrated mental wellbeing and sleep support. Target patient population",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c1cffa9fb2fa5e1cdeaa83a6e6b22150b7a18a43e96d75f4c404c3e00b9111e8"
+    },
+    {
+      "evidence_id": "ev_3051c6bcbb714546",
+      "source_id": "src_c9dcc1ad4d423d05",
+      "text": "BlueStar’s results are impressive: clinical trials showed that BlueStar produced reductions in A1c levels over 2x the reductions achieved by people using the usual standard of care, and 2x the threshold for approval for a new diabetes drug.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3bf65921f12533bee13f8861a2f1313755dac6016386c405529097edb9bb557e"
+    },
+    {
+      "evidence_id": "ev_b54e263e98dcc350",
+      "source_id": "src_475f57065603ec03",
+      "text": "游戏行业数字疗法首获NMPA审批，或将同时改变游戏与医疗.2020年6月，Akili的Endeavor以De Novo形式通过了FDA审批。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7df973fb9c6b831231c84c8c5910978637d01ce81d338d5a9ad6c8605417fd15"
+    },
+    {
+      "evidence_id": "ev_211c0a655656ec94",
+      "source_id": "src_1a3ff30548ed70d6",
+      "text": "NMPA最新分类界定汇总出炉，事关数字疗法.03 更明确的数字疗法监管正在路上.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fd7752e4b2dd93554f6faee7719079514431052760b78c96d08ef4a388bebc22"
+    },
+    {
+      "evidence_id": "ev_f870a4e54bfde076",
+      "source_id": "src_634c0fda31542ef9",
+      "text": "游戏成为数字疗法的重要手段. 波克城市斩获游戏产业数字疗法第一证并非偶然。中华医学会眼科学会分会角膜病学组委员，教授、主任医生、博导王勤美表示：“恭喜波克城市《快乐视界星球》软件获得NMPA批准成为首款游戏化AI的治疗软件。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "c564f9b9b8f9e49d685426e29c16921f5890c92c12c8d6e6c493b0b77de56f07"
+    },
+    {
+      "evidence_id": "ev_5eaf10c3c3d3d4e5",
+      "source_id": "src_8c7fe89101833acb",
+      "text": "FDA 把这类「影响医生决策」的工具归类为 SaMD（Software as a Medical Device），需要走 510(k) 或 De Novo 审批路径。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6779a183186f57eb565b9f008064b1ef682e03a0fad8f589f3cd3dd28a941749"
+    },
+    {
+      "evidence_id": "ev_80a71fd6fa7f182d",
+      "source_id": "src_1fe6041031e6ebe5",
+      "text": "01 数字疗法的概念及应用. 定义及范畴. 但从覆盖范围上看，数字疗法与数字健康和数字医疗不同，即关系为数字健康＞数字医疗＞数字疗法。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "1984ace4dcaf184b58418a66658de26c212b577c33e2aac85e2dc9be02eb1846"
+    },
+    {
+      "evidence_id": "ev_6a7433ea4743a9de",
+      "source_id": "src_c79e7de85e91d4f0",
+      "text": "Wallonië beslaat met 16.901 km² in oppervlakte ruim de helft van het land. Het is met 3.713.450 inwoners (220 inw./km²) – iets …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "bfbf8716333f7fe3f7b79ee8d53c4a098257121798f55053e7947ec931f0925f"
+    },
+    {
+      "evidence_id": "ev_4f3666c3a8986c92",
+      "source_id": "src_9e073727fa91b333",
+      "text": "Hoewel Wallonië beschouwd wordt als een van de kleinste regio’s van Europa, is het landschap heel divers. Dankzij zijn vele wegen, …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6cebc5de531d936c84c2dd30ff1471881b3981b1f9db3407d6c6dd098806d861"
+    },
+    {
+      "evidence_id": "ev_7d3bcce85f0b07fa",
+      "source_id": "src_7d87271a2574781a",
+      "text": "Reserveer je verblijf en toeristische activiteiten in Wallonië online! Wil je een gastenkamer, een vakantiehuis, een hotel, een camping …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "96dfdb9d549c30126b767ad54b3da6dcce3b128221b6517aaec6bead029e333f"
+    },
+    {
+      "evidence_id": "ev_fea5f03b61763252",
+      "source_id": "src_4ef8e1555a67fd72",
+      "text": "As of this writing, the FDA has cleared or approved multiple DTx on the basis of superiority trial data, such as Welldoc’s BlueStar for the management of Type II diabetes in 2010 and Pear Therapeutics’ reSET for the treatment of substance use disorder in 20172.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7bd358e95ff79f58318f2dfd757445bec3a2bb52b4a85b60f116807fa594889e"
+    },
+    {
+      "evidence_id": "ev_bc7d80b2d7ab6ef4",
+      "source_id": "src_a252f6fe22a4d875",
+      "text": "In 2017, Pear Therapeutics landed an FDA De Novo clearance for Pear ReSET, a digital therapeutic aimed at treating substance use disorder. Since then, scores of digital therapeutics have been cleared through the FDA’s 510(K) pathway.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d7224fcc18d5e599739d61da1c62e44e9f7ce69950dfa8a1ae608b9477bc4967"
+    },
+    {
+      "evidence_id": "ev_1ee5f689ecfd82cc",
+      "source_id": "src_1de658a46a2a0e56",
+      "text": "The Reset device was reviewed through the FDA’s de novo premarket review pathway for some low- to moderate-risk devices that are novel and for which there is no legally marketed equivalent. US firm Pear noted the approval was the first time the FDA had cleared a prescription ‘digital...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d2cd290c6c487dd23748067053c8829a0760f54b6188eb1f5591dda3506b8314"
+    },
+    {
+      "evidence_id": "ev_3486701d3eeb327c",
+      "source_id": "src_e7bfb689b5a0c24c",
+      "text": "In an FDA first, Boston- and San Francisco-based Pear Therapeutics' reSET system for the treatment of substance abuse has been granted a de novo clearance by the agency.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e299d556f1205b2422fcdc625bb968400f823f5e41d26914400796e948b9950e"
+    },
+    {
+      "evidence_id": "ev_53afdcacfeecb093",
+      "source_id": "src_688c2e2e65cc35d7",
+      "text": "The pioneer of the field is Pear Therapeutics, which lobbied a reluctant US Food & Drug Administration (FDA) to assess reSET, an app it has developed to treat addiction to alcohol or drugs, to the same standards of clinical evidence as traditional pharmaceuticals.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "3a492ccc919126f6b41577e826e5b17766c3ceb80f3398ff3d1c97165156bc16"
+    },
+    {
+      "evidence_id": "ev_9a49ccdcc32adbc9",
+      "source_id": "src_cc1879bc02403530",
+      "text": "Pear Therapeutics (USA) – Known for reSET (substance use disorder) and reSET-O (opioid use disorder), both FDA-authorized digital therapeutics ([12]) ([33]). They exemplify prescription DTx.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7f779de648bb71c648ad087c75adfd17479364a538fbb4583b3c0ff1a410cb57"
+    },
+    {
+      "evidence_id": "ev_8bd6ce6a16fc8ae8",
+      "source_id": "src_fb9f6e7a01c92a4e",
+      "text": "Pear Therapeutics RCT and RWE. If they had waited to go second, they could have saved time and resources. In 2017, the FDA announced the Pre-Cert program, a pilot program that eased the regulatory requirements for digital health companies with a history of high quality products.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e7383f206da8ee5e26125ecb4d97eeca8591de68085ca61710a735caa9034708"
+    },
+    {
+      "evidence_id": "ev_738e881d95236e4f",
+      "source_id": "src_9fb2bf1a6d900f31",
+      "text": "Define digital therapeutics and their classificationUnderstand regulatory pathways for DTxAnalyse the DTx business and reimbursement model",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "55c9811907116340f9694a6017125f6d394bdb5849fb93526e5f70738a9edd2a"
+    },
+    {
+      "evidence_id": "ev_2443cd40e084117d",
+      "source_id": "src_cd02cac2113c2a7b",
+      "text": "表为欧盟医疗器械分类。 表为欧盟医疗器械分类。 这次欧盟MDR新规中，对医疗器械的基础分类没有变化，但是对具体涉及产品的类目进行了进一步细化，特别是在对Ⅲ类医疗器械上进行了进一步完善。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "213a37a5c9a862e1499698ac225000795e369af4778453a274305302cb8a27a9"
+    },
+    {
+      "evidence_id": "ev_0c13dcc9a6bf7d93",
+      "source_id": "src_703857fb7efd12f5",
+      "text": "简单来说，BfArM认为DiGA是通过欧盟CE认证，且根据欧盟医疗器械法规（MDR，下文简称Medical Device Regulation）和欧盟医疗器械指令（下文简称MDD，Medical Device Directive）的Ⅰ类和Ⅱa类医疗器械，并.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6346e5d57f1b38162aa8d912a03666f71cb824340ad05c5df68a14b0c7210d47"
+    },
+    {
+      "evidence_id": "ev_3a4e7595c6e5748e",
+      "source_id": "src_bcd25e8f8893f112",
+      "text": "Medical Devices RegulationEU2017/745MDR是欧盟最新医疗器械法 规目前在欧盟国家新上市的医疗器械产品须通过 MDR 认证。 本次血浆分离器. 1.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "86600b9f00db064d1c9bba4f75d86fc67241a2f33649c8b686cd9f34c80eb8d6"
+    },
+    {
+      "evidence_id": "ev_d89dc6a075dd17fe",
+      "source_id": "src_bea698bbd0e1d82d",
+      "text": "美国FDA和欧盟的《医疗器械注册和登记条例》都规定了医疗器械的三个基本等级。根据 21CFR Part 814的规定，III 类的医疗器械必须通过 PMA 。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ab52df6438f9a7187aca54c3d1aa5f56e0a56abcc2214616167fa190efaa1e26"
+    },
+    {
+      "evidence_id": "ev_77069d4f70caa217",
+      "source_id": "src_347c625f83beed3a",
+      "text": "Transition to the EU MDR medical device regulation (EU) 2017/745 with a full scope notified body and the expertise and experience of our technical specialists.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "428bc5b087e4f40f095780bc250cbc24f009ca472a96c435e6d7ab99b84def25"
+    },
+    {
+      "evidence_id": "ev_5522798e46e22704",
+      "source_id": "src_1a3ff30548ed70d6",
+      "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但相应地，这部分医疗器械由于更为严格的监管，在产品上市乃至后续推广付出的成本就会更高。 2017年，NMPA发布了《医疗器械分类目录》，用于替换2000年发布的《医疗器械分类规则》，成为了我国制定医疗器械分类目录和确定新的医疗器械管理类别的指导。 《分类目录》将医疗器械分为三类。 *类（低风险）医疗器械是通过常规管理足以保证其安全性、有效性的医疗器械，目前由市局审批。 第二类（中风险）是对其安全性、有效性应当加以控制的医疗器械，目前由省局审批。 第三类（高风险）则是植入人体用于支持、维持生命；对人体具有潜在危险，对其安全性、有效性必须严格控制的医疗器械，目前由国家局审批。 基本而言，《分类目录》覆盖了当时市面上几乎所有的医疗器械。 不过，显而易见的是，任何目录都不可能覆盖源源不断涌现出来的新器械。 因此，NMPA也会不定期发布公告，对《分类目录》进行调整。 比如，在2022年3月对《分类目录》的调整中，之前一直被划入二类医疗器械管理的射频治疗（非消融）设备中的射频治疗仪、射频皮肤治疗仪类产品就被调整为三类医疗器械，并要求相关企业在2024年4月1日前根据新的规定获得新的医疗器械注册证，否则，将不得生产、进口和销售。 这一调整的初衷是对当时乱象频出的“热玛吉”医美项目进行规范管理。 同时，新规也使得市场准入门槛进一步提高，使得光电医美行业加速洗牌。 医疗器械分类调整的影响由此可见一斑。 不过，即使不定期的调整，依然无法满足蓬勃发展的医疗器械行业。 研发中的新产品可能在《分类目录》中无法找到，又或者在定义及分类上处于模糊状态，难以确定分类。 这会给产品上市和发展带来很大的阻力，甚至危及企业生死。 对于这种情况，NMPA也设定了专门的分类界定程序。 一旦难以界定当前产品的分类，则由NMPA国家局相关工作组对产品进行分类界定，从而明确产品的分类管理。 动脉网统计发现，自2018年开始，标管中心每年都会发布当年的医疗器械分类界定结果汇总。 近年来发布频次愈发密集，2022年共发布了三次结果汇总。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "cef3f4cd3942b572b1fb6e450d2833bc07248c0909d4df3afd01f95b5214c6d5"
+    },
+    {
+      "evidence_id": "ev_c92828065e00775a",
+      "source_id": "src_1a3ff30548ed70d6",
+      "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，分类汇总意见中的产品描述内容太少，并不足以判定是否为同类产品。 ” “只有国家药局发布的最新版的《分类目录》，以及相关的分类界定指南，才是药监机构用于器械分类界定的‘金标准’，”她补充道。 动脉网统计了2018年至今的分类界定结果汇总，以“认知功能”关键词为例，除了本次的“认知功能障碍评估与治疗软件”外，2022年也曾有一款“认知功能评估与训练软件”被分类界定为第三类医疗器械。 在更早的2020年，一款“认知功能障碍治疗软件”和一款“大脑生理与认知功能辅助评估系统”则被分类界定为第二类医疗器械。 同样在2022年，已经有两款医疗器械以“认知功能评估与训练软件”的名义已经拿下了第二类医疗器械注册证。 分类界定“一事一议”的特点由此可见一斑。 对于数字疗法来说，分类界定为三类并没有想象中那么严重。 02 为什么这些数字疗法 被分类界定为三类？ “产品预期风险是决定医疗器械被划分为二类或三类的关键因素。 比如，针对疾病种类、病程、目标人群是否具有较高风险，如危重期病人、急性发作等。 又比如，软件输出信息在临床中的作用。 此外，是否包含了人工智能或药品剂量功能等算法也是第三类医疗器械的特征点。 ”Anny向我们解释了医疗器械分类的原则。 根据汇总结果，“胰岛素计算软件”的产品描述为“从具备数据通讯功能的血糖仪中读取型糖尿病血糖控制不佳成人患者的血糖数据，结合录入的个人信息（包括年龄、身高、体重、C肽水平等），基于糖尿病指南/专家共识以及人工智能算法模型，得出使用胰岛素的时间和对应的胰岛素剂型。 用于推荐胰岛素剂型和剂量调整，医生可参考推荐的胰岛素剂量调整用药方案”。 其中，“人工智能”和“医生可参考推荐的胰岛素剂量调整用药方案”将该产品利用人工智能进行辅助决策的特点淋漓尽致地展现出来。 在《人工智能医用软件产品分类界定指导原则》中明确规定，用于给出诊断结论或药物计算等的医用软件，按照第三类医疗器械管理。 它的分类编码则被划入了21-04，即决策支持软件类别。 在《分类目录》中，药物计算软件和给出临床诊断治疗依据和/或建议的决策支持软件也明确规定按照第三类医疗器械管理。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "86ece3c9bbf85878edec3f5343fe1bc387c112052596e2a2448d5e3c46c04d83"
+    },
+    {
+      "evidence_id": "ev_3733fcbadd85f1d9",
+      "source_id": "src_1a3ff30548ed70d6",
+      "text": "而在“认知功能障碍评估与治疗软件”的描述中，也提到了通过对头颅磁共振图像数据进行分析，得出评估结果，并提供动态自适应训练治疗方案。 根据《分类目录》，计算机软件对病变进行自动识别，对病变的性质等给出临床诊断治疗依据和/或建议的决策支持软件也是按照第三类医疗器械管理。 此外，本期汇总还有一款“麻醉手术临床信息系统”划为第三类管理。 单从名称来看让人难以理解，但在产品描述中则出现了“对数据进行储存、记录、显示、处理和预警，并提供风险评估算法模型辅助医生对患者麻醉的风险评估。 软件采用人工智能算法实现系统自动化处理”及“辅助麻醉手术医护人员对患者的风险评估”等符合“人工智能+辅助决策”的特性描述。 动脉网统计历年分类界定汇总结果发现，一旦产品描述中体现了“人工智能+辅助决策”，基本将会被划入21-04决策支持软件。 在61款划为21-04决策支持软件的产品中，仅有5款风险明显较低的产品按照第二类医疗器械管理。 它们分别是干眼辅助诊断软件（2018）、视功能检测软件（2019）、骨密度计算机辅助检测软件（2020-2021）、中医舌诊体质健康状态筛查软件（2020-2021）和帕金森辅助评估软件（2022）。 此外，Anny表示，“认知功能障碍评估与治疗软件”被划入第三类管理也有我国对精神心理类器械管理较为严格的原因。 如前所述，分类界定具有“一事一议”的特点，仅对评定产品有强制效力。 因此，本次几款产品被划为第三类产品管理会对后续同类产品的分类界定有参考意义，但不能直接作为同类产品分类界定的判定依据。 “随着需要分类界定的同一类型器械逐渐变多，监管机构也会考虑对《分类目录》做正式的变更，或发布相应的分类界定指南。 只有在监管机构正式发文明确更改某类医疗器械的管理类别时，受影响的已获批产品才需要变更注册，满足新的监管要求。 这之间的过渡期通常都能满足企业注册变更所需的时间的，” Anny向动脉网解释道。 “如果并未发文，则这种分类界定汇总信息从合规角度来说，不会对其他已获批的同赛道二类证产生任何影响。 当然，从市场推广角度而言，如果被划分为三类证管理的产品最终拿证成功，肯定还是会对同类二类证产品有一些影响，比如在推广中强调三类证的权威性、产品临床有效性及安全性等。 ” 动脉网发现，通过分类界定被划入三类证管理的产品，多数最后都并未实际完成注册上市。 这并不意外，进入分类界定程序的医疗器械多少不同于已有产品，具有一定创新性。 但这种创新是不是能在有效性和安全性上达到医疗器械的要求，也仍未可知。 此外，无论需要的资金或是时间，三类证的门槛要比二类证高得多，对于原本计划获取二类证的初创企业而言可能不太现实。 在这种情况下，很可能对现有产品进行改进，放弃一些高风险的功能，从而使得产品能够更快获批。 03 更明确的数字疗法监管正在路上 对于医疗器械这样的强监管领域，任何不确定因素都将会拖慢上市时间。 因此，有一个相对完善的分类界定指南将会极大地改善这种情况。 以医疗AI为例，《人工智能医用软件产品分类界定指导原则》的发布使得人工智能医疗软件产品的界定、归类和监管更为明确，也更具操作性，对于行业中各企业产品定位、产品注册策略有了明确的指导意义。",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "a9839d4754c3bed795ad05ee5c4684e41672e823a367c1836d35aba956835f05"
+    },
+    {
+      "evidence_id": "ev_4788c5703762e302",
+      "source_id": "src_1a3ff30548ed70d6",
+      "text": "随后，《人工智能医疗器械注册审查指导原则》发布又事无巨细的描述了人工智能医疗器械的概念、注册基本原则、人工智能医疗器械生存周期过程、技术考量等部分，给予了注册企业明确的规定与标准。 这使得人工智能医疗器械在2022年实现了迅速的发展——当年共发出25张AI三类证，是历年来AI三类证获批最多的一年。 对于数字疗法行业来说，好消息是，相应的监管细则已在制定过程中。 目前，数字疗法医疗器械分类界定指导原则正在制定中，完成后将明确数字疗法医疗器械的界定、归类和监管，也将使数字疗法企业的产品定位、产品注册更为明晰。 【本文由投资界合作伙伴动脉网授权发布，本平台仅提供信息存储服务。 】如有任何疑问，请联系（editor@zero2ipo. com. cn）投资界处理。 数字疗法 监管细则 医疗器械 本文涉及 相关资讯 700起融资背后，医疗器械投资逻辑正悄然改变 2023/03/20 谁在支撑国产医疗器械的跨国巨头梦？ 2023/03/07 中金资本设立10亿元医疗器械产业基金 2023/02/07 「优适医疗」完成数千万新一轮融资，苏高新金控、苏州医疗器械产业发展集团联合领投 2023/02/06 眼视光AR/VR医疗器械公司「睿视科技」完成5000万人民币A轮融资，蓝驰创投领投 2022/12/15 「汇禾医疗」完成亿元C系列融资，专注于心血管介入医疗器械 2022/12/07",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "108e915cc01bc77ce0ad334ca5c423e9a078ac38d01dd881b8661913ffc04c5b"
+    },
+    {
+      "evidence_id": "ev_b375db80508e9015",
+      "source_id": "src_e904a0d11c10af33",
+      "text": "此外有企业提到，海外数字疗法龙头企业Pear Therapeutics破产，也在一定程度上影响了外界对数字疗法赛道的认知，“近来经常能听到唱衰行业的声音”。仅以支付环节为例，36氪了解到，数字疗法概念对国内保险业而言仍是新鲜事物。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "0b5b392cf93278fe781f6aa1302f767d2650d1d9c1531b0d813cf1bdaeb150a7"
+    },
+    {
+      "evidence_id": "ev_88d4cfbc5a5ee0d5",
+      "source_id": "src_69f1c57d52d7c9ba",
+      "text": "此外有企业提到，海外数字疗法龙头企业Pear Therapeutics破产，也在一定程度上影响了外界对数字疗法赛道的认知，“近来经常能听到唱衰行业的声音”。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "0f9f0862c08a60e04745ab7ff9997fe437acd63399fb9a22c87fc7f353cb8080"
+    },
+    {
+      "evidence_id": "ev_ec5a8bf5cac6bb3a",
+      "source_id": "src_a2b98d09982ecf78",
+      "text": "市值从110亿变1亿，数字疗法先驱破产. 在寻求战略替代方案不到一个月，“数字疗法*股”Pear Therapeutics于近日宣布申请破产保护，同日市值下跌超50%，约合1亿元。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "a5e904ad70d32bc87abaeb64038186bba85c0ccdb7450dad56c9fe5e85aa2b52"
+    },
+    {
+      "evidence_id": "ev_42a0f74d99635c13",
+      "source_id": "src_8e5ef85d1df5667b",
+      "text": "根据中国共产党的数据，截至2025年底，中国已有6.02亿人使用生成式AI，占网民总数的42.8%。 庞大的市场为本土企业提供了测试和改进模型的平台，并通过订阅服务实现部分模型的商业化。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "9f2fad777b9ab7447f45010a945349663fc7fa9091cc13b9ef8023a00edf2b7d"
+    },
+    {
+      "evidence_id": "ev_1941aa7d27c0d4ac",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Pear Therapeutics’ bankruptcy offers concrete lessons about DTx commercialization challenges. Despite FDA approvals for reSET (substance use disorder), reSET-O (opioid use disorder), and Somryst (chronic insomnia), the company struggled with three critical issues",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c0269386d18eee2210b4fba4f3834bd7f2cda587e898f0e957be2f1bbcddf5fd"
+    },
+    {
+      "evidence_id": "ev_8ae6b6918d01093c",
+      "source_id": "src_b032d7d56f166a16",
+      "text": "Digital therapeutics industry pioneer, Pear Therapeutics, filed for bankruptcy last week. Despite creating 3 FDA cleared evidence based prescription therapeutics for the treatment of substance use disorder, opioid use disorder and insomnia since its inception in 2013...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4ddf5860d4f3be7ce4d31154b037c68a3dad1ccbc8ae36eb1647c3cb7a99d601"
+    },
+    {
+      "evidence_id": "ev_5a352a584b39060b",
+      "source_id": "src_c926e759dc1513f2",
+      "text": "After Pear Therapeutics filed for Chapter 11 bankruptcy, the digital therapeutics industry is staring down a challenging reimbursement and funding environment.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5ef4dc3d63da2f5650125ac51d7790d4fdea7a77ddd532e092dd0ce9cc6ea9dd"
+    },
+    {
+      "evidence_id": "ev_60deece8458cc740",
+      "source_id": "src_33530405d8a1da78",
+      "text": "Explore the most effective digital therapeutics business models and learn how DTx companies turn clinical outcomes into sustainable commercialization strategies.Business model challenges were among the key causes of Pear Therapeutics’ bankruptcy.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7f762a74e7c222ff0d4d5caee9579bd6cee16bf9139aca8c448653f7c141ec18"
+    },
+    {
+      "evidence_id": "ev_ddc434fe26d69c34",
+      "source_id": "src_5ef959b6e7a85cae",
+      "text": "While digital therapeutics hold the potential to revolutionize healthcare, Pear Therapeutics serves as a cautionary tale for the DTx industry, revealing the significant challenges that must be overcome to achieve their full potential.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "1f2f40e99a20d66da9fab57abf598ad4e3e7c1e6c391fd0922fab7dcd437861f"
+    },
+    {
+      "evidence_id": "ev_7ab6af8b9bcba78a",
+      "source_id": "src_2618cba78f31089d",
+      "text": "Along with Pear, other digital therapeutics companies have gone public in recent years after mergers with SPACs that raise capital and then acquire or merge with an existing company. Akili Interactive merged with a SPAC last year and went public.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "5c771c50502ab9e0013961869cdb0f9a94ea01f4ce1c3f8eccf8c1e16359bf9d"
+    },
+    {
+      "evidence_id": "ev_fd40f49acb748a72",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Business View INSIGHTS Elina Sabilova, Billing specialist, WCH The digital therapeutics industry entered 2025 with cautious optimism following CMS’s introduction of dedicated reimbursement codes, but early adoption patterns suggest the path to mainstream integration remains challenging. Despite new coverage pathways taking effect January 1, 2025, initial implementation reveals a complex landscape where reimbursement availability doesn’t automatically translate to provider adoption or patient access. The contrast between industry projections and current reality is stark. Market forecasts show growth to $32. 5 billion by 2030. Yet, Pear Therapeutics’ bankruptcy in April 2023 – despite being the first company to secure FDA clearance for prescription digital therapeutics – highlighted fundamental business model challenges that persist industry-wide. The company’s assets sold for just $6 million at auction, down from its $1. 6 billion SPAC valuation two years earlier. CMS Reimbursement Reality: Early Implementation Challenges CMS established new coverage pathways for digital mental health treatments effective January 1, 2025, creating dedicated reimbursement mechanisms for the first time. The new framework includes codes for device supply, initial patient education, and ongoing treatment management, with estimated reimbursement rates ranging from $19 to $ 20 per treatment session.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "61ae76f448af92014c80efaea16f76ab074a840c9a79b6be23ba1d06a1f5ee7b"
+    },
+    {
+      "evidence_id": "ev_c93c87cb0b006c92",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "However, early implementation reveals limited provider uptake in the first half of 2025. Healthcare systems report challenges with contractor pricing variations, where identical digital therapeutic interventions receive different coverage determinations and payment rates depending on geographic region and the responsible Medicare Administrative Contractor (MAC), creating significant uncertainty for revenue planning and workflow investments. According to coverage policies reviewed by industry analysts as of mid-2025, major insurers maintain restrictive approaches. Coverage reviews suggest limited DTx formulary inclusion, with most plans requiring extensive prior authorization processes and demonstrated traditional therapy failures before approving digital interventions. What Pear’s Failure Teaches About Business Models Pear Therapeutics’ bankruptcy offers concrete lessons about DTx commercialization challenges. Despite FDA approvals for reSET (substance use disorder), reSET-O (opioid use disorder), and Somryst (chronic insomnia), the company struggled with three critical issues: Reimbursement gaps : Even with FDA approval, most insurers required extensive prior authorization processes. Pear spent months negotiating coverage decisions, often resulting in partial coverage or high patient copays that deterred usage.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "2c033ea4ee45ed3bfdefbba5b3f05e059c8ecab3532df4ef4d94be740a66ec50"
+    },
+    {
+      "evidence_id": "ev_9de222dfe41fd4c4",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Provider workflow integration : Clinicians reported difficulty incorporating DTx monitoring into existing patient care workflows. Unlike traditional medications with clear dosing protocols, DTx required ongoing patient engagement, tracking, and data interpretation that didn’t fit standard 15-minute appointment models. Patient adherence challenges : Real-world engagement rates fell significantly below clinical trial levels. While Pear’s products showed efficacy in controlled settings, maintaining patient engagement over 12-16 week treatment courses proved difficult without dedicated support staff. The company’s competitor, DynamiCare Health, analyzed Pear’s failure in a LinkedIn post by CEO Eric Gastfriend, attributing it partly to targeting difficult-to-treat conditions with high-priced solutions, rather than focusing on more common, easier-to-manage conditions where DTx could demonstrate clear value propositions. Provider Adoption: Beyond Reimbursement Barriers Healthcare provider adoption challenges extend beyond financial considerations, reflecting complex implementation science questions about workflow integration, staff training, and organizational change management.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "120c39cd4fd7b5ed40f998fac85280d1cf30d1002159cdd784b97e7d8fc43394"
+    },
+    {
+      "evidence_id": "ev_ad725a47654a7dec",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Provider surveys and health system reports reveal multiple barriers: Staff training requirements : Implementing DTx requires training clinical staff on device onboarding, patient monitoring protocols, and data interpretation. Healthcare systems report significant training investments, with estimates ranging from 4-6 hours of initial provider training plus ongoing support infrastructure. Technology integration gaps : Most DTx platforms don’t integrate seamlessly with major EHR systems. Providers report manually entering DTx-generated data or maintaining separate tracking systems, adding administrative burden without clear efficiency gains. Patient selection complexity : Identifying appropriate DTx candidates requires understanding patient technology literacy, motivation levels, and social support systems. Providers lack standardized assessment tools for these factors, leading to inconsistent patient selection and variable outcomes. Major health systems are experimenting with different implementation models. Intermountain Health piloted NeuroFlow’s behavioral health platform in five primary care locations in Colorado, focusing on integrating technology into Epic EHR and standardizing behavioral healthcare measurement.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "ea7ac1b7f1707f8880467217686d1198c8ef2467be2282e52819e122f9acb5f9"
+    },
+    {
+      "evidence_id": "ev_48ca1532f9f435c7",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Cleveland Clinic has collaborated with Ayble Health on digital health platforms for chronic gastrointestinal conditions, allowing patients to access content co-developed with the Clinic. However, these pilot programs reveal mixed results. While patient engagement and satisfaction metrics often show positive trends, demonstrating clear clinical outcome improvements compared to standard care remains challenging, raising questions about cost-effectiveness given workflow complexity. Technology Evolution: AI Integration and Next-Generation Capabilities The DTx sector is experiencing rapid technological advancement through artificial intelligence and machine learning integration. Next-generation platforms incorporate predictive analytics capabilities that adapt intervention protocols based on individual patient response patterns. These AI-enhanced systems move beyond static therapeutic content delivery toward dynamic, personalized treatment optimization. Virtual reality (VR) and augmented reality (AR) integration represents another significant development trajectory. VR-based DTx applications for pain management, phobia treatment, and rehabilitation demonstrate particular promise, offering immersive therapeutic environments that may enhance traditional cognitive behavioral therapy approaches.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "6d635b863dc893b77ca6e4b8a4ab6eaddc5a31af944d81249168383391899d0d"
+    },
+    {
+      "evidence_id": "ev_0dc4545731ce85d3",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Interoperability improvements are enabling DTx integration with electronic health record (EHR) systems and healthcare information exchanges. These developments address provider workflow concerns by incorporating DTx-generated data into existing clinical documentation and decision-support systems. Market Segmentation: Prescription vs. Consumer-Directed Models The DTx market operates through two distinct channels with different value propositions and business models. Prescription DTx applications targeting serious medical conditions require FDA clearance, clinical evidence demonstration, and a healthcare provider prescription. These applications typically address specific disease states with measurable clinical outcomes and established treatment protocols. Consumer-directed DTx applications focus on wellness, prevention, and health behavior modification without explicit regulatory requirements. These platforms often generate revenue through direct-pay subscriptions or employer wellness program partnerships, avoiding reimbursement complexity while accepting limited clinical validation requirements. The prescription model offers greater clinical credibility and potential reimbursement coverage but requires significant regulatory investment and longer market entry timelines.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-6",
+      "content_hash": "61af4414f0fd97825310ef9ad2d1372e664e55a7be43bd542e6df0abefe78974"
+    },
+    {
+      "evidence_id": "ev_2bf513c8855f2b11",
+      "source_id": "src_d2c59481b3bf49d2",
+      "text": "Consumer-directed approaches enable faster market entry and simpler business models but face challenges in demonstrating clinical value and achieving sustainable engagement rates. Economic Impact Analysis: Value-Based Care Alignment DTx soluti [CONTENT_TRUNCATED: 12846 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-7",
+      "content_hash": "dd7020ebde2263a10aa173f98aced693e51eb46a212c7212dad867e38cf6f6da"
+    },
+    {
+      "evidence_id": "ev_630776d899ec4c0f",
+      "source_id": "src_e2d2897b5c9278a3",
+      "text": "项目背景： 某数字疗法公司专注于慢性病数字疗法开发，已获批3款数字疗法产品（糖尿病管理、高血压管理、失眠干预），覆盖全国200家医院，累计服务患者50.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "09c6586296cd3677abc5e2ab352cf44eae6280760f478b1b4bc2c7e86a6f99c6"
+    },
+    {
+      "evidence_id": "ev_ef6a9071b4c58a41",
+      "source_id": "src_0430e106da9b041c",
+      "text": "数字疗法“云干预”让糖尿病患者院外管理高效而节省成本.基于循证医学RCT和RWE的糖尿病数字疗法(DTx)作为医学新类别，通过软件或应用程序向患者或用户提供有临床意义的干预措施。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9d0b9f03269448df8e90e7cec04b32e29e7fc09a43cbee49f143f2f825564d60"
+    },
+    {
+      "evidence_id": "ev_dd41144d8d971c6f",
+      "source_id": "src_a52e7c31275d081a",
+      "text": "糖尿病 高血压 颈椎病 抑郁症 癌症的中医治疗 -凯发k8一触即发.言归正传，我们先说糖尿病和高血压。 因为糖尿病和高血压看起来病不一样，但是得病机制和治疗相似。 1糖尿病，是气虚了。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4ceea705ba51d11d2efc4497731e7d4e2cf56aa59f12625952a0e7248f82252d"
+    },
+    {
+      "evidence_id": "ev_ed9b5cabea8b5b70",
+      "source_id": "src_1e60ed2549937e6e",
+      "text": "目录. 探索抑郁症的新疗法：干细胞治疗抑郁症临床进展. 什么是抑郁症? 抑郁症的症状和类型是什么样的?干细胞治疗抑郁症的临床研究进展. 治疗抑郁症的辅助疗法. 讨论.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0a892ed32caf8c99e0f98b6b2ca894f71e4a6f6bfe246ed8d309066a0466791f"
+    },
+    {
+      "evidence_id": "ev_5e4ac580fe25a1f2",
+      "source_id": "src_0723d146a004c48d",
+      "text": "我们来谈谈抑郁症.悲伤在季节性抑郁症(SAD)调节褪黑素可以缓解吗光线疗法。 产后抑郁症可以用Brexanolone.（Zulresso），IV版的身体自己的神经激素丙硝酸盐。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4230047dcfdff44cd53debf40c80f2eefec20bc338d222212828bce02ea2fbc6"
+    },
+    {
+      "evidence_id": "ev_66bb0a068119ed9d",
+      "source_id": "src_c923925fb8535796",
+      "text": "更多相关文档. 解 郁 方 治 疗 2型 糖 尿 病 抑 郁 症 的 临 床 观察.益气养阴解郁法治疗糖尿病伴发抑郁症的临床研究进展.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "a415f9d925b27ee3b28c3ada5ea0839d8f61263ca5abc22840b016e252bdeebe"
+    },
+    {
+      "evidence_id": "ev_aef5a246e0ca3330",
+      "source_id": "src_77d2a43a2a0dcfcc",
+      "text": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注.赛道，呈现高度看好态势。 目前，药企参与数字疗法的商业模式主要有B2C和B2B两种模式，价值侧重点及关键因素均有所不同。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ce4e8c2ac8b01f6bc7491415b4b6a548881f527172890972c818298d268564ad"
+    },
+    {
+      "evidence_id": "ev_8335f6cbb7628350",
+      "source_id": "src_f4bcc5f3fd61afbb",
+      "text": "数字疗法（DTx，Digital Therapeutics）被定义为“基于循证医学和高质量软件程序驱动的疾病干预方案”。截至2023年2月，共有44个项目通过NMPA审批医疗器械慢病方向数字疗法。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9c7cbaf815310e608cfd5f7707d16f0ea51bbe42eaf6279e2118978c5074448f"
+    },
+    {
+      "evidence_id": "ev_cbc219e4110bc1ad",
+      "source_id": "src_d8599824d4dab00f",
+      "text": "动物实验. 临床试验. 监管审批. 量产. 医保和支付.AI医疗Google DeepMindGemini for Science药物发现临床证据Demis HassabisAlphaFold临床试验监管审批生命科学.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6b43e9ebe264e807f42f2dcbe958a055627615e39f02e63f30fc40bd847385ed"
+    },
+    {
+      "evidence_id": "ev_f05072b9dc9a8a62",
+      "source_id": "src_90753ba1c61021d6",
+      "text": "2024年10月，俄罗斯一家法院在闭门审理后，以替乌克兰从事“雇佣兵活动”为由，判处他近七年监禁。 哈伯德否认有关指控。 电邮新闻头条新闻就在您的每日新闻信里.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "af7e31d432ea9bfcd92469edb317debcd7176016296503b5893898a80b9bb28b"
+    },
+    {
+      "evidence_id": "ev_b25054c4014e2465",
+      "source_id": "src_16d87031d2e7ee51",
+      "text": "TRAE Trae 是字节跳动于2025年1月推出的一款免费的AI原生集成开发环境...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c136dbf5f966be83447b8c0133d511766501b7668a33212df297f278ed0f020b"
+    },
+    {
+      "evidence_id": "ev_80c99de3f5fc9457",
+      "source_id": "src_c85875dd4d3714f7",
+      "text": "【全程字幕】平均\"7秒\"站起來! 立法院展示\"踹倒機器狗\" 2024年珠海航展 中國機器狗遭踹\"秒\"起身...網酸:台灣的十年前產物?!",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "2c86c5734952d00a26ff8452e1b1d9476cb4d283faf9dd0cdbe54590a7ecef2d"
+    },
+    {
+      "evidence_id": "ev_c84bdece2e0d6140",
+      "source_id": "src_491fad13a98310b8",
+      "text": "One year after Pear went bankrupt, the FDA cleared Rejoyn, from Otsuka and Click Therapeutics, the first prescription digital therapeutic authorized for major depressive disorder, a six-week adjunct for adults 22 and up already on antidepressants.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "a7df066308a8efa3e876f3e7e73f2b75dda39707a084110f761376dc38e3641d"
+    },
+    {
+      "evidence_id": "ev_9d3e62d35551fa3b",
+      "source_id": "src_b721783a6504e702",
+      "text": "Otsuka and Click Therapeutics’ Rejoyn has become the first prescription digital therapeutic (DTx) to be approved by the FDA for people with major depressive disorder.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "56f4b190b8e72161ed1a80820df7f8680c934b87c9bb965f753e31b4fde1652a"
+    },
+    {
+      "evidence_id": "ev_622bf585cee57298",
+      "source_id": "src_1928aaa4a2b1f5f5",
+      "text": "US Food and Drug Administration. FDA permits marketing of first game-based digital therapeutic to improve attention function in children with ADHD.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "aeab328f340a410f0496c24f9cedd64f80cb28d6797c7377be8bfbee96181292"
+    },
+    {
+      "evidence_id": "ev_d3e2baf8cd238e57",
+      "source_id": "src_4e1c82654c5dfd96",
+      "text": "The US Food and Drug Administration has approved RejoynSearch drug (CT-152Search drug), the first prescription digital therapeutic for major depressive disorderSearch disease, representing a breakthrough in evidence-based digital mental health interventions.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4484de963c4467bad1eed2e6b7e672b376f864275c4474d4a0633d0e14ac3f87"
+    },
+    {
+      "evidence_id": "ev_64c91f92c99a384e",
+      "source_id": "src_b41af85aa6a68637",
+      "text": "FDA-authorized digital therapeutics. Pear Therapeutics bankruptcy April 2023. Akili EndeavorRx + Click Therapeutics + Big Health revenue. Germany DiGA listed apps. Landscape map.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1261597d4694eda759a12f55d0e57227ee6fee15b37346527d310823265f992d"
+    },
+    {
+      "evidence_id": "ev_c88d5447a01ee71b",
+      "source_id": "src_94b7843aa413b5e3",
+      "text": "Digital therapeutics primarily address conditions responsive to behavioral, cognitive, or habit-based interventions, with mental health disorders comprising the largest category of FDA-cleared applications.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9911ca6628230ce7c24457bb9ac74e63a5b7df384e252d96dcba604fb838f4c4"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_564bf65e72ae8d45",
+        "text": "数字疗法（Digital Therapeutics, DTx）在糖尿病、高血压、抑郁症三个慢病领域已积累不同程度的临床证据和监管突破，但\"证据—监管—支付—收入\"的传导链条尚未完全打通。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1046,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8335f6cbb7628350",
+          "ev_8a0d75ae807fe557",
+          "ev_c93c87cb0b006c92"
+        ],
+        "source_ids": [
+          "src_f4bcc5f3fd61afbb",
+          "src_0f9981300359e635",
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8335f6cbb7628350",
+            "source_id": "src_f4bcc5f3fd61afbb",
+            "text": "数字疗法（DTx，Digital Therapeutics）被定义为“基于循证医学和高质量软件程序驱动的疾病干预方案”。截至2023年2月，共有44个项目通过NMPA审批医疗器械慢病方向数字疗法。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8a0d75ae807fe557",
+            "source_id": "src_0f9981300359e635",
+            "text": "什么是数字疗法？ 作为新兴概念，国内对数字疗法（Digital Therapeutics，缩写“DTx”）并没有统一定义，比较主流的定义是：数字疗法是由软件程序驱动，以循证医学为基础的干预方案，用以治疗、管. 理或预防疾病。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ca3a0fb8272332f0",
+        "text": "糖尿病是证据积累最早的领域。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2188,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_9863779117848627",
+          "ev_fd8a28c7060b4548"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_5cf4c203573db51f",
+          "src_12f237a666299bea"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9863779117848627",
+            "source_id": "src_5cf4c203573db51f",
+            "text": "健海快讯丨妊娠糖尿病数字疗法成功入组受试者-获临床阶段性突破.目前为止，健海科技数字疗法开展的项目有妊娠糖尿病（GDM）数字疗法、多囊卵巢综合征（PCOS）数字疗法、脂肪肝数字疗法、乳腺癌数字疗法等。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d2d0dd9b65cf1858",
+        "text": "Welldoc的BlueStar于2010年基于优效性试验数据获FDA批准，成为最早获批的处方DTx之一 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fea5f03b61763252"
+        ],
+        "source_ids": [
+          "src_4ef8e1555a67fd72"
+        ],
+        "reason": "证据支持BlueStar于2010年基于优效性试验数据获FDA批准/许可，但'成为最早获批的处方DTx之一'未被证据证实，部分支持不构成完全支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fea5f03b61763252",
+            "source_id": "src_4ef8e1555a67fd72",
+            "text": "As of this writing, the FDA has cleared or approved multiple DTx on the basis of superiority trial data, such as Welldoc’s BlueStar for the management of Type II diabetes in 2010 and Pear Therapeutics’ reSET for the treatment of substance use disorder in 20172.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fb038a6d67331016",
+        "text": "其随机对照试验（Quinn et al., 2011/2013）显示移动糖尿病管理系统可显著降低糖化血红蛋白（HbA1c），行业报道降幅约1.2–1.9个百分点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0167,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9050314c1c3f228c",
+          "ev_8ae6b6918d01093c",
+          "ev_c92828065e00775a"
+        ],
+        "source_ids": [
+          "src_33a62923eed472ba",
+          "src_b032d7d56f166a16",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9050314c1c3f228c",
+            "source_id": "src_33a62923eed472ba",
+            "text": "In randomized controlled trials using a prior version of BlueStar, WellDoc demonstrated significant clinical outcomes, achieving a 1.9-point reduction in A1C, the gold standard for measuring whether a person's diabetes is in control.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8ae6b6918d01093c",
+            "source_id": "src_b032d7d56f166a16",
+            "text": "Digital therapeutics industry pioneer, Pear Therapeutics, filed for bankruptcy last week. Despite creating 3 FDA cleared evidence based prescription therapeutics for the treatment of substance use disorder, opioid use disorder and insomnia since its inception in 2013...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_398c9b9bd5f175d8",
+        "text": "需注意该具体降幅数字来自行业媒体报道，属厂商相关披露，未在本次检索中取得原始论文全文验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_c92828065e00775a",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e684059d772a6b6c",
+        "text": "高血压的关键证据来自日本CureApp的HERB-DH1关键性试验，该多中心RCT评估了DTx系统在原发性高血压管理中的疗效，主要终点为24小时动态血压 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bd4840b122eb4857"
+        ],
+        "source_ids": [
+          "src_29489bb52e3f66d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bd4840b122eb4857",
+            "source_id": "src_29489bb52e3f66d2",
+            "text": "Profile of Somryst prescription digital therapeutic for chronic insomnia: overview of safety and efficacy.Efficacy of a digital therapeutics system in the management of essential hypertension: the HERB‐DH1 pivotal trial.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e27dbcedf859c618",
+        "text": "产品于2020年获批，2022年纳入日本医保，是目前全球唯一跑通\"监管批准+国家医保报销\"闭环的慢病DTx样板；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1856,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704",
+          "ev_aef5a246e0ca3330"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_77d2a43a2a0dcfcc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b328cd4489e798af",
+        "text": "但血压绝对降幅仅约2–5 mmHg量级，增量价值有限。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_3733fcbadd85f1d9",
+          "ev_fd8a28c7060b4548"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_12f237a666299bea"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3733fcbadd85f1d9",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "而在“认知功能障碍评估与治疗软件”的描述中，也提到了通过对头颅磁共振图像数据进行分析，得出评估结果，并提供动态自适应训练治疗方案。 根据《分类目录》，计算机软件对病变进行自动识别，对病变的性质等给出临床诊断治疗依据和/或建议的决策支持软件也是按照第三类医疗器械管理。 此外，本期汇总还有一款“麻醉手术临床信息系统”划为第三类管理。 单从名称来看让人难以理解，但在产品描述中则出现了“对数据进行储存、记录、显示、处理和预警，并提供风险评估算法模型辅助医生对患者麻醉的风险评估。 软件采用人工智能算法实现系统自动化处理”及“辅助麻醉手术医护人员对患者的风险评估”等符合“人工智能+辅助决策”的特性描述。 动脉网统计历年分类界定汇总结果发现，一旦产品描述中体现了“人工智能+辅助决策”，基本将会被划入21-04决策支持软件。 在61款划为21-04决策支持软件的产品中，仅有5款风险明显较低的产品按照第二类医疗器械管理。 它们分别是干眼辅助诊断软件（2018）、视功能检测软件（2019）、骨密度计算机辅助检测软件（2020-2021）、中医舌诊体质健康状态筛查软件（2020-2021）和帕金森辅助评估软",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cfea88b4105c12ab",
+        "text": "抑郁症方面，数字认知行为疗法（CBT）的RCT证据相对扎实。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1196,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ef6a9071b4c58a41",
+          "ev_3733fcbadd85f1d9",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_0430e106da9b041c",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ef6a9071b4c58a41",
+            "source_id": "src_0430e106da9b041c",
+            "text": "数字疗法“云干预”让糖尿病患者院外管理高效而节省成本.基于循证医学RCT和RWE的糖尿病数字疗法(DTx)作为医学新类别，通过软件或应用程序向患者或用户提供有临床意义的干预措施。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3733fcbadd85f1d9",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "而在“认知功能障碍评估与治疗软件”的描述中，也提到了通过对头颅磁共振图像数据进行分析，得出评估结果，并提供动态自适应训练治疗方案。 根据《分类目录》，计算机软件对病变进行自动识别，对病变的性质等给出临床诊断治疗依据和/或建议的决策支持软件也是按照第三类医疗器械管理。 此外，本期汇总还有一款“麻醉手术临床信息系统”划为第三类管理。 单从名称来看让人难以理解，但在产品描述中则出现了“对数据进行储存、记录、显示、处理和预警，并提供风险评估算法模型辅助医生对患者麻醉的风险评估。 软件采用人工智能算法实现系统自动化处理”及“辅助麻醉手术医护人员对患者的风险评估”等符合“人工智能+辅助决策”的特性描述。 动脉网统计历年分类界定汇总结果发现，一旦产品描述中体现了“人工智能+辅助决策”，基本将会被划入21-04决策支持软件。 在61款划为21-04决策支持软件的产品中，仅有5款风险明显较低的产品按照第二类医疗器械管理。 它们分别是干眼辅助诊断软件（2018）、视功能检测软件（2019）、骨密度计算机辅助检测软件（2020-2021）、中医舌诊体质健康状态筛查软件（2020-2021）和帕金森辅助评估软",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a52b5c804fbf6e90",
+        "text": "监管里程碑密集：2017年Pear Therapeutics的reSET成为首个以De Novo路径获FDA批准的处方DTx（物质使用障碍）；",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fea5f03b61763252"
+        ],
+        "source_ids": [
+          "src_4ef8e1555a67fd72"
+        ],
+        "reason": "证据证实reSET于2017年获批用于治疗物质使用障碍，但未提及其为'首个'处方DTx，也未提及De Novo路径。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fea5f03b61763252",
+            "source_id": "src_4ef8e1555a67fd72",
+            "text": "As of this writing, the FDA has cleared or approved multiple DTx on the basis of superiority trial data, such as Welldoc’s BlueStar for the management of Type II diabetes in 2010 and Pear Therapeutics’ reSET for the treatment of substance use disorder in 20172.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_29be31bd2fa962a5",
+        "text": "2024年FDA批准Rejoyn（Otsuka × Click Therapeutics）用于重度抑郁障碍患者的辅助治疗，成为首个针对MDD的处方DTx。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0239,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f05072b9dc9a8a62",
+          "ev_80c99de3f5fc9457",
+          "ev_9d3e62d35551fa3b"
+        ],
+        "source_ids": [
+          "src_90753ba1c61021d6",
+          "src_c85875dd4d3714f7",
+          "src_b721783a6504e702"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f05072b9dc9a8a62",
+            "source_id": "src_90753ba1c61021d6",
+            "text": "2024年10月，俄罗斯一家法院在闭门审理后，以替乌克兰从事“雇佣兵活动”为由，判处他近七年监禁。 哈伯德否认有关指控。 电邮新闻头条新闻就在您的每日新闻信里.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_80c99de3f5fc9457",
+            "source_id": "src_c85875dd4d3714f7",
+            "text": "【全程字幕】平均\"7秒\"站起來! 立法院展示\"踹倒機器狗\" 2024年珠海航展 中國機器狗遭踹\"秒\"起身...網酸:台灣的十年前產物?!",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7cb4816573aa85f5",
+        "text": "此外，Somryst（数字CBT-I）作为失眠处方DTx已有安全性与有效性综述文献 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0363,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bd4840b122eb4857"
+        ],
+        "source_ids": [
+          "src_29489bb52e3f66d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bd4840b122eb4857",
+            "source_id": "src_29489bb52e3f66d2",
+            "text": "Profile of Somryst prescription digital therapeutic for chronic insomnia: overview of safety and efficacy.Efficacy of a digital therapeutics system in the management of essential hypertension: the HERB‐DH1 pivotal trial.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d4663f3f1500b379",
+        "text": "共同的证据短板：多数DTx试验样本量小、随访期短（数周至6个月），缺乏心血管事件、死亡率等硬终点和长期卫生经济学数据，这直接制约了支付方的买单意愿。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0477,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_ad725a47654a7dec",
+          "ev_6c2b26ca24bfc68a"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_d2c59481b3bf49d2",
+          "src_1b28dedb95790b7d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ad725a47654a7dec",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "Provider surveys and health system reports reveal multiple barriers: Staff training requirements : Implementing DTx requires training clinical staff on device onboarding, patient monitoring protocols, and data interpretation. Healthcare systems report significant training investments, with estimates ranging from 4-6 hours of initial provider training plus ongoing support infrastructure. Technology integration gaps : Most DTx platforms don’t integrate seamlessly with major EHR systems. Providers ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_349a73f048574f9d",
+        "text": "国内方面，虽有企业启动妊娠糖尿病等DTx临床试验入组，但尚无公开发表的注册级RCT结果，中国临床证据的透明度明显不足。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1989,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_ef6a9071b4c58a41",
+          "ev_8a0d75ae807fe557"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_0430e106da9b041c",
+          "src_0f9981300359e635"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_ef6a9071b4c58a41",
+            "source_id": "src_0430e106da9b041c",
+            "text": "数字疗法“云干预”让糖尿病患者院外管理高效而节省成本.基于循证医学RCT和RWE的糖尿病数字疗法(DTx)作为医学新类别，通过软件或应用程序向患者或用户提供有临床意义的干预措施。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4d4f1a2ea0cff1a3",
+        "text": "美国FDA将DTx归入独立医疗软件（SaMD），按风险走510(k)、De Novo或PMA路径。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1993,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5eaf10c3c3d3d4e5",
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_8c7fe89101833acb",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5eaf10c3c3d3d4e5",
+            "source_id": "src_8c7fe89101833acb",
+            "text": "FDA 把这类「影响医生决策」的工具归类为 SaMD（Software as a Medical Device），需要走 510(k) 或 De Novo 审批路径。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d427523f876769a4",
+        "text": "2010年BlueStar获批与2017年reSET的De Novo批准确立了\"软件可作为处方治疗\"的监管先例 ，此后ADHD（EndeavorRx）、慢性失眠（Somryst）、MDD（Rejoyn）等相继获批，精神类已成为FDA获批DTx数量最多的类别。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fea5f03b61763252"
+        ],
+        "source_ids": [
+          "src_4ef8e1555a67fd72"
+        ],
+        "reason": "证据仅提及BlueStar（2010）和reSET（2017）获批，未提及'监管先例'的确立，也未提及EndeavorRx、Somryst、Rejoyn或精神类为获批DTx数量最多的类别。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fea5f03b61763252",
+            "source_id": "src_4ef8e1555a67fd72",
+            "text": "As of this writing, the FDA has cleared or approved multiple DTx on the basis of superiority trial data, such as Welldoc’s BlueStar for the management of Type II diabetes in 2010 and Pear Therapeutics’ reSET for the treatment of substance use disorder in 20172.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2c71b3ce17b68f55",
+        "text": "中国NMPA按医疗器械三类体系管理，此前DTx多以二类证获批。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.5687,
+        "support_evidence_ids": [
+          "ev_c92828065e00775a"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704",
+          "ev_8335f6cbb7628350"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_aa2ffe6e1f9b5d9f",
+        "text": "2023年3月，NMPA标管中心在分类界定结果汇总中，将\"认知功能障碍评估与治疗软件\"与\"胰岛素计算软件\"——分别对应精神心理和糖尿病管理两类典型DTx——界定为第三类医疗器械，原因是含人工智能辅助决策或药物剂量计算功能的产品按决策支持软件管理 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "supported",
+        "verification_score": 0.4273,
+        "support_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_c92828065e00775a"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_c92828065e00775a",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b28c4031b7f4f936",
+        "text": "这意味着这两类DTx的注册门槛（资金、时间、临床要求）显著抬升；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4145,
+        "support_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_13b4cf74ea3529ae",
+        "text": "但分类界定具\"一事一议\"性质，专门的数字疗法分类界定指导原则截至本次检索未见正式发布，政策走向仍存不确定性。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4695,
+        "support_evidence_ids": [
+          "ev_3733fcbadd85f1d9",
+          "ev_c92828065e00775a"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3733fcbadd85f1d9",
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3733fcbadd85f1d9",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "而在“认知功能障碍评估与治疗软件”的描述中，也提到了通过对头颅磁共振图像数据进行分析，得出评估结果，并提供动态自适应训练治疗方案。 根据《分类目录》，计算机软件对病变进行自动识别，对病变的性质等给出临床诊断治疗依据和/或建议的决策支持软件也是按照第三类医疗器械管理。 此外，本期汇总还有一款“麻醉手术临床信息系统”划为第三类管理。 单从名称来看让人难以理解，但在产品描述中则出现了“对数据进行储存、记录、显示、处理和预警，并提供风险评估算法模型辅助医生对患者麻醉的风险评估。 软件采用人工智能算法实现系统自动化处理”及“辅助麻醉手术医护人员对患者的风险评估”等符合“人工智能+辅助决策”的特性描述。 动脉网统计历年分类界定汇总结果发现，一旦产品描述中体现了“人工智能+辅助决策”，基本将会被划入21-04决策支持软件。 在61款划为21-04决策支持软件的产品中，仅有5款风险明显较低的产品按照第二类医疗器械管理。 它们分别是干眼辅助诊断软件（2018）、视功能检测软件（2019）、骨密度计算机辅助检测软件（2020-2021）、中医舌诊体质健康状态筛查软件（2020-2021）和帕金森辅助评估软",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a38ecc9bff24975b",
+        "text": "欧盟依据MDR (EU) 2017/745的Rule 11，提供诊疗决策信息的软件多被归为IIa类及以上，较旧指令明显趋严。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0652,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_77069d4f70caa217",
+          "ev_bc7d80b2d7ab6ef4",
+          "ev_8bd6ce6a16fc8ae8"
+        ],
+        "source_ids": [
+          "src_347c625f83beed3a",
+          "src_a252f6fe22a4d875",
+          "src_fb9f6e7a01c92a4e"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_77069d4f70caa217",
+            "source_id": "src_347c625f83beed3a",
+            "text": "Transition to the EU MDR medical device regulation (EU) 2017/745 with a full scope notified body and the expertise and experience of our technical specialists.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_bc7d80b2d7ab6ef4",
+            "source_id": "src_a252f6fe22a4d875",
+            "text": "In 2017, Pear Therapeutics landed an FDA De Novo clearance for Pear ReSET, a digital therapeutic aimed at treating substance use disorder. Since then, scores of digital therapeutics have been cleared through the FDA’s 510(K) pathway.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c558efe5fb939a5",
+        "text": "德国的DiGA快速通道允许I类和IIa类数字健康应用经BfArM快速评估后进入医保报销目录，是目前欧洲乃至全球最具参考价值的DTx报销制度设计，精神类应用在其中占比最高。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1335,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_0c13dcc9a6bf7d93",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_703857fb7efd12f5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0c13dcc9a6bf7d93",
+            "source_id": "src_703857fb7efd12f5",
+            "text": "简单来说，BfArM认为DiGA是通过欧盟CE认证，且根据欧盟医疗器械法规（MDR，下文简称Medical Device Regulation）和欧盟医疗器械指令（下文简称MDD，Medical Device Directive）的Ⅰ类和Ⅱa类医疗器械，并.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b977f7e82d4d5df5",
+        "text": "Pear Therapeutics的兴衰是最典型的反面教材：该公司2021年底以SPAC上市、估值约16亿美元，拥有reSET、reSET-O、Somryst三款FDA获批产品，却于2023年4月申请破产保护，资产最终仅售约600万美元。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1029,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c93c87cb0b006c92",
+          "ev_1941aa7d27c0d4ac",
+          "ev_fd40f49acb748a72"
+        ],
+        "source_ids": [
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c93c87cb0b006c92",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "However, early implementation reveals limited provider uptake in the first half of 2025. Healthcare systems report challenges with contractor pricing variations, where identical digital therapeutic interventions receive different coverage determinations and payment rates depending on geographic region and the responsible Medicare Administrative Contractor (MAC), creating significant uncertainty for revenue planning and workflow investments. According to coverage policies reviewed by industry ana",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1941aa7d27c0d4ac",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "Pear Therapeutics’ bankruptcy offers concrete lessons about DTx commercialization challenges. Despite FDA approvals for reSET (substance use disorder), reSET-O (opioid use disorder), and Somryst (chronic insomnia), the company struggled with three critical issues",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5108d41e56fd3252",
+        "text": "失败根源在于三点：一是报销缺口，商业保险普遍要求事前授权和传统疗法失败证明，谈判耗时且常仅获部分覆盖；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0833,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_4788c5703762e302",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4788c5703762e302",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "随后，《人工智能医疗器械注册审查指导原则》发布又事无巨细的描述了人工智能医疗器械的概念、注册基本原则、人工智能医疗器械生存周期过程、技术考量等部分，给予了注册企业明确的规定与标准。 这使得人工智能医疗器械在2022年实现了迅速的发展——当年共发出25张AI三类证，是历年来AI三类证获批最多的一年。 对于数字疗法行业来说，好消息是，相应的监管细则已在制定过程中。 目前，数字疗法医疗器械分类界定指导原则正在制定中，完成后将明确数字疗法医疗器械的界定、归类和监管，也将使数字疗法企业的产品定位、产品注册更为明晰。 【本文由投资界合作伙伴动脉网授权发布，本平台仅提供信息存储服务。 】如有任何疑问，请联系（editor@zero2ipo. com. cn）投资界处理。 数字疗法 监管细则 医疗器械 本文涉及 相关资讯 700起融资背后，医疗器械投资逻辑正悄然改变 2023/03/20 谁在支撑国产医疗器械的跨国巨头梦？ 2023/03/07 中金资本设立10亿元医疗器械产业基金 2023/02/07 「优适医疗」完成数千万新一轮融资，苏高新金控、苏州医疗器械产业发展集团联合领投 2023/02/0",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_883e5bdfad526f05",
+        "text": "二是医生工作流不兼容，DTx所需的参与度追踪无法嵌入标准门诊模式，且多数平台不能与电子病历系统对接；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_aef5a246e0ca3330",
+          "ev_c93c87cb0b006c92"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_77d2a43a2a0dcfcc",
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_aef5a246e0ca3330",
+            "source_id": "src_77d2a43a2a0dcfcc",
+            "text": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注.赛道，呈现高度看好态势。 目前，药企参与数字疗法的商业模式主要有B2C和B2B两种模式，价值侧重点及关键因素均有所不同。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_64fa37ba5053c573",
+        "text": "三是真实世界患者依从性远低于临床试验水平，3–6个月后使用率骤降，长期效果与复购均受损。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4788c5703762e302",
+          "ev_fc64ba0fa126ca77",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_a27aff3518363b8d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4788c5703762e302",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "随后，《人工智能医疗器械注册审查指导原则》发布又事无巨细的描述了人工智能医疗器械的概念、注册基本原则、人工智能医疗器械生存周期过程、技术考量等部分，给予了注册企业明确的规定与标准。 这使得人工智能医疗器械在2022年实现了迅速的发展——当年共发出25张AI三类证，是历年来AI三类证获批最多的一年。 对于数字疗法行业来说，好消息是，相应的监管细则已在制定过程中。 目前，数字疗法医疗器械分类界定指导原则正在制定中，完成后将明确数字疗法医疗器械的界定、归类和监管，也将使数字疗法企业的产品定位、产品注册更为明晰。 【本文由投资界合作伙伴动脉网授权发布，本平台仅提供信息存储服务。 】如有任何疑问，请联系（editor@zero2ipo. com. cn）投资界处理。 数字疗法 监管细则 医疗器械 本文涉及 相关资讯 700起融资背后，医疗器械投资逻辑正悄然改变 2023/03/20 谁在支撑国产医疗器械的跨国巨头梦？ 2023/03/07 中金资本设立10亿元医疗器械产业基金 2023/02/07 「优适医疗」完成数千万新一轮融资，苏高新金控、苏州医疗器械产业发展集团联合领投 2023/02/0",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_fc64ba0fa126ca77",
+            "source_id": "src_a27aff3518363b8d",
+            "text": "写作委员会选择使用美国糖尿 病协会ADA对糖尿病和糖尿病前期的 定义。6. Guyatt GH, Schünemann HJ, Djulbegovic B, Akl EA. 指南小组不应分级良好实践声明。 临床流行 病学杂志 J Clin Epidemiol .",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1764c6e1b0343771",
+        "text": "Pear选择成瘾这一难治适应症并定高价的策略，也被同业认为是战略性失误——对糖尿病、高血压等更常见、价值主张更清晰的慢病场景反而是启示。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0266,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ec5a8bf5cac6bb3a",
+          "ev_fd40f49acb748a72",
+          "ev_c93c87cb0b006c92"
+        ],
+        "source_ids": [
+          "src_a2b98d09982ecf78",
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ec5a8bf5cac6bb3a",
+            "source_id": "src_a2b98d09982ecf78",
+            "text": "市值从110亿变1亿，数字疗法先驱破产. 在寻求战略替代方案不到一个月，“数字疗法*股”Pear Therapeutics于近日宣布申请破产保护，同日市值下跌超50%，约合1亿元。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_fd40f49acb748a72",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "Business View INSIGHTS Elina Sabilova, Billing specialist, WCH The digital therapeutics industry entered 2025 with cautious optimism following CMS’s introduction of dedicated reimbursement codes, but early adoption patterns suggest the path to mainstream integration remains challenging. Despite new coverage pathways taking effect January 1, 2025, initial implementation reveals a complex landscape where reimbursement availability doesn’t automatically translate to provider adoption or patient acc",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_83245f5cea06f934",
+        "text": "支付端的最新进展喜忧参半。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1591,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_211c0a655656ec94",
+          "ev_3a4e7595c6e5748e"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_bcd25e8f8893f112"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_211c0a655656ec94",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "NMPA最新分类界定汇总出炉，事关数字疗法.03 更明确的数字疗法监管正在路上.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_45e00a8123508a3a",
+        "text": "美国CMS自2025年1月起设立数字精神健康治疗（DMHT）专门报销代码，但2025年上半年医生端实际采纳率很低：同一DTx干预在不同Medicare行政承包商辖区获得不同的覆盖决定和支付费率，造成收入规划的高度不确定性 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0365,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c93c87cb0b006c92",
+          "ev_fd40f49acb748a72",
+          "ev_9de222dfe41fd4c4"
+        ],
+        "source_ids": [
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c93c87cb0b006c92",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "However, early implementation reveals limited provider uptake in the first half of 2025. Healthcare systems report challenges with contractor pricing variations, where identical digital therapeutic interventions receive different coverage determinations and payment rates depending on geographic region and the responsible Medicare Administrative Contractor (MAC), creating significant uncertainty for revenue planning and workflow investments. According to coverage policies reviewed by industry ana",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_fd40f49acb748a72",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "Business View INSIGHTS Elina Sabilova, Billing specialist, WCH The digital therapeutics industry entered 2025 with cautious optimism following CMS’s introduction of dedicated reimbursement codes, but early adoption patterns suggest the path to mainstream integration remains challenging. Despite new coverage pathways taking effect January 1, 2025, initial implementation reveals a complex landscape where reimbursement availability doesn’t automatically translate to provider adoption or patient acc",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_53fd3918f33fa24a",
+        "text": "这表明报销代码的存在本身不足以驱动采纳，支付落地的\"最后一公里\"依赖执行层面的统一。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_8a0d75ae807fe557",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_0f9981300359e635"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8a0d75ae807fe557",
+            "source_id": "src_0f9981300359e635",
+            "text": "什么是数字疗法？ 作为新兴概念，国内对数字疗法（Digital Therapeutics，缩写“DTx”）并没有统一定义，比较主流的定义是：数字疗法是由软件程序驱动，以循证医学为基础的干预方案，用以治疗、管. 理或预防疾病。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_16712e6337137e16",
+        "text": "中国市场的支付通道则基本空白，基本医保未纳入DTx，企业主要依靠B2B模式（药企合作、商保、医院采购）维持，2023年后行业融资明显收缩，商业模式尚待标杆项目验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1134,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_aef5a246e0ca3330",
+          "ev_c92828065e00775a"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_77d2a43a2a0dcfcc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_aef5a246e0ca3330",
+            "source_id": "src_77d2a43a2a0dcfcc",
+            "text": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注.赛道，呈现高度看好态势。 目前，药企参与数字疗法的商业模式主要有B2C和B2B两种模式，价值侧重点及关键因素均有所不同。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_47b05d71b97788d4",
+        "text": "三种商业模式各有硬伤：处方模式（PDTx）证据与可信度最强，但监管投入大、报销复杂（Pear即败于此）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0282,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fd40f49acb748a72",
+          "ev_c93c87cb0b006c92",
+          "ev_9de222dfe41fd4c4"
+        ],
+        "source_ids": [
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fd40f49acb748a72",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "Business View INSIGHTS Elina Sabilova, Billing specialist, WCH The digital therapeutics industry entered 2025 with cautious optimism following CMS’s introduction of dedicated reimbursement codes, but early adoption patterns suggest the path to mainstream integration remains challenging. Despite new coverage pathways taking effect January 1, 2025, initial implementation reveals a complex landscape where reimbursement availability doesn’t automatically translate to provider adoption or patient acc",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c93c87cb0b006c92",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "However, early implementation reveals limited provider uptake in the first half of 2025. Healthcare systems report challenges with contractor pricing variations, where identical digital therapeutic interventions receive different coverage determinations and payment rates depending on geographic region and the responsible Medicare Administrative Contractor (MAC), creating significant uncertainty for revenue planning and workflow investments. According to coverage policies reviewed by industry ana",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e67a80223b1b2017",
+        "text": "B2B模式现金流较快但销售周期长、需向雇主与保险方证明ROI；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0624,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_aef5a246e0ca3330",
+          "ev_5522798e46e22704",
+          "ev_4788c5703762e302"
+        ],
+        "source_ids": [
+          "src_77d2a43a2a0dcfcc",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_aef5a246e0ca3330",
+            "source_id": "src_77d2a43a2a0dcfcc",
+            "text": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注.赛道，呈现高度看好态势。 目前，药企参与数字疗法的商业模式主要有B2C和B2B两种模式，价值侧重点及关键因素均有所不同。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_718ba4f49ca8b49c",
+        "text": "B2C模式上市快却临床可信度弱、用户留存率低。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0844,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_aef5a246e0ca3330",
+          "ev_c92828065e00775a",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_77d2a43a2a0dcfcc",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_aef5a246e0ca3330",
+            "source_id": "src_77d2a43a2a0dcfcc",
+            "text": "普华永道：数字疗法DTx逐步受到医疗医药行业的高度关注.赛道，呈现高度看好态势。 目前，药企参与数字疗法的商业模式主要有B2C和B2B两种模式，价值侧重点及关键因素均有所不同。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fed2663b1bc0d735",
+        "text": "高血压DTx因疾病无症状、患者主动付费意愿最低，几乎只能依赖医保渠道，C端不可行——这也解释了为何其商业化样板仅出现在医保制度配合的日本。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0991,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_8a0d75ae807fe557",
+          "ev_ef6a9071b4c58a41"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_0f9981300359e635",
+          "src_0430e106da9b041c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8a0d75ae807fe557",
+            "source_id": "src_0f9981300359e635",
+            "text": "什么是数字疗法？ 作为新兴概念，国内对数字疗法（Digital Therapeutics，缩写“DTx”）并没有统一定义，比较主流的定义是：数字疗法是由软件程序驱动，以循证医学为基础的干预方案，用以治疗、管. 理或预防疾病。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2029baffb3def264",
+        "text": "三病种的商业化可行性排序为：抑郁症 > 糖尿病 > 高血压。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2392,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_dd41144d8d971c6f",
+          "ev_630776d899ec4c0f",
+          "ev_66bb0a068119ed9d"
+        ],
+        "source_ids": [
+          "src_a52e7c31275d081a",
+          "src_e2d2897b5c9278a3",
+          "src_c923925fb8535796"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_dd41144d8d971c6f",
+            "source_id": "src_a52e7c31275d081a",
+            "text": "糖尿病 高血压 颈椎病 抑郁症 癌症的中医治疗 -凯发k8一触即发.言归正传，我们先说糖尿病和高血压。 因为糖尿病和高血压看起来病不一样，但是得病机制和治疗相似。 1糖尿病，是气虚了。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_630776d899ec4c0f",
+            "source_id": "src_e2d2897b5c9278a3",
+            "text": "项目背景： 某数字疗法公司专注于慢性病数字疗法开发，已获批3款数字疗法产品（糖尿病管理、高血压管理、失眠干预），覆盖全国200家医院，累计服务患者50.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4a0e2ef25649fe19",
+        "text": "抑郁症DTx胜在行为干预天然适配、精神科医生短缺放大替代需求、且监管路径（含2024年Rejoyn获批）已经打通；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1544,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_9d3e62d35551fa3b",
+          "ev_8a0d75ae807fe557"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_b721783a6504e702",
+          "src_0f9981300359e635"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_9d3e62d35551fa3b",
+            "source_id": "src_b721783a6504e702",
+            "text": "Otsuka and Click Therapeutics’ Rejoyn has become the first prescription digital therapeutic (DTx) to be approved by the FDA for people with major depressive disorder.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6688f68c2f5084d1",
+        "text": "糖尿病DTx临床证据最强，但在GLP-1等强效药物时代，支付方对DTx边际获益的态度趋于保守，\"证据—支付\"转化率低；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0448,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_dd41144d8d971c6f",
+          "ev_80a71fd6fa7f182d",
+          "ev_3a4e7595c6e5748e"
+        ],
+        "source_ids": [
+          "src_a52e7c31275d081a",
+          "src_1fe6041031e6ebe5",
+          "src_bcd25e8f8893f112"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_dd41144d8d971c6f",
+            "source_id": "src_a52e7c31275d081a",
+            "text": "糖尿病 高血压 颈椎病 抑郁症 癌症的中医治疗 -凯发k8一触即发.言归正传，我们先说糖尿病和高血压。 因为糖尿病和高血压看起来病不一样，但是得病机制和治疗相似。 1糖尿病，是气虚了。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_80a71fd6fa7f182d",
+            "source_id": "src_1fe6041031e6ebe5",
+            "text": "01 数字疗法的概念及应用. 定义及范畴. 但从覆盖范围上看，数字疗法与数字健康和数字医疗不同，即关系为数字健康＞数字医疗＞数字疗法。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1a302c8aba5bfa29",
+        "text": "高血压DTx受限于效应幅度小和付费场景窄。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0547,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_c93c87cb0b006c92",
+          "ev_9de222dfe41fd4c4"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c93c87cb0b006c92",
+            "source_id": "src_d2c59481b3bf49d2",
+            "text": "However, early implementation reveals limited provider uptake in the first half of 2025. Healthcare systems report challenges with contractor pricing variations, where identical digital therapeutic interventions receive different coverage determinations and payment rates depending on geographic region and the responsible Medicare Administrative Contractor (MAC), creating significant uncertainty for revenue planning and workflow investments. According to coverage policies reviewed by industry ana",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b892d096e21cb06a",
+        "text": "行业的共同出路包括：补齐长期硬终点与成本效益证据以支撑支付决策；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b375db80508e9015",
+          "ev_5522798e46e22704",
+          "ev_4788c5703762e302"
+        ],
+        "source_ids": [
+          "src_e904a0d11c10af33",
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b375db80508e9015",
+            "source_id": "src_e904a0d11c10af33",
+            "text": "此外有企业提到，海外数字疗法龙头企业Pear Therapeutics破产，也在一定程度上影响了外界对数字疗法赛道的认知，“近来经常能听到唱衰行业的声音”。仅以支付环节为例，36氪了解到，数字疗法概念对国内保险业而言仍是新鲜事物。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_96c6a8a7b8594dc5",
+        "text": "推动DTx专属报销编码的落地与执行统一（美国DMHT代码在2026年后的采纳效果尚待观察）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0583,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c92828065e00775a",
+          "ev_8a0d75ae807fe557",
+          "ev_c93c87cb0b006c92"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_0f9981300359e635",
+          "src_d2c59481b3bf49d2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8a0d75ae807fe557",
+            "source_id": "src_0f9981300359e635",
+            "text": "什么是数字疗法？ 作为新兴概念，国内对数字疗法（Digital Therapeutics，缩写“DTx”）并没有统一定义，比较主流的定义是：数字疗法是由软件程序驱动，以循证医学为基础的干预方案，用以治疗、管. 理或预防疾病。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_930fff760524041d",
+        "text": "以\"药物联合辅助\"而非\"替代治疗\"的定位降低证据门槛。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2059,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3733fcbadd85f1d9",
+          "ev_c92828065e00775a",
+          "ev_5522798e46e22704"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3733fcbadd85f1d9",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "而在“认知功能障碍评估与治疗软件”的描述中，也提到了通过对头颅磁共振图像数据进行分析，得出评估结果，并提供动态自适应训练治疗方案。 根据《分类目录》，计算机软件对病变进行自动识别，对病变的性质等给出临床诊断治疗依据和/或建议的决策支持软件也是按照第三类医疗器械管理。 此外，本期汇总还有一款“麻醉手术临床信息系统”划为第三类管理。 单从名称来看让人难以理解，但在产品描述中则出现了“对数据进行储存、记录、显示、处理和预警，并提供风险评估算法模型辅助医生对患者麻醉的风险评估。 软件采用人工智能算法实现系统自动化处理”及“辅助麻醉手术医护人员对患者的风险评估”等符合“人工智能+辅助决策”的特性描述。 动脉网统计历年分类界定汇总结果发现，一旦产品描述中体现了“人工智能+辅助决策”，基本将会被划入21-04决策支持软件。 在61款划为21-04决策支持软件的产品中，仅有5款风险明显较低的产品按照第二类医疗器械管理。 它们分别是干眼辅助诊断软件（2018）、视功能检测软件（2019）、骨密度计算机辅助检测软件（2020-2021）、中医舌诊体质健康状态筛查软件（2020-2021）和帕金森辅助评估软",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2f4d50a284a63052",
+        "text": "中国短期内将以\"医疗器械审批+医院/商保渠道\"渐进推进，全国性医保覆盖预计仍需数年的本土证据积累。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1419,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_c92828065e00775a",
+          "ev_8335f6cbb7628350"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6",
+          "src_f4bcc5f3fd61afbb"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6e71d2ebd1bc422d",
+        "text": "需要说明的是，本报告部分临床效应量数字依赖行业媒体转述，原始试验全文及中国支付端最新数据存在检索缺口，相关结论应作相应保留。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1134,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5522798e46e22704",
+          "ev_c92828065e00775a",
+          "ev_3733fcbadd85f1d9"
+        ],
+        "source_ids": [
+          "src_1a3ff30548ed70d6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5522798e46e22704",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "3月30日，国家药品监督管理局医疗器械标准管理中心（下文简称标管中心）发布了《2023年*次医疗器械产品分类界定结果汇总》。 其中，“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两类符合数字疗法定义的软件医疗器械被分类界定为第三类医疗器械。 这是否意味着这两类数字疗法的监管将趋严格？ 动脉网对业内专家进行了访谈，对个中原委进行了了解。 01 被分类界定为三类， 对数字疗法意味着什么？ 众所周知，根据不同的安全性和有效性，医疗器械需要实施分类管理。 IMDRF（国际医疗器械监管机构论坛）是包括全球各国医疗器械监管机构为主导的自愿性的法规协调组织，其中也包括了国家药品监督管理局（下文简称NMPA）。 IMDRF根据风险将医疗器械分为4类：低风险的A类，低中风险的B类、中高风险的C类以及高风险的D类。 除了照搬IMDRF的四类划分，也有一些国家和地区在IMDRF分类的基础上，根据国情及不同的目标进行相应的调整。 比如，我国和美国都将医疗器械分为了3类，不同的是，中高风险的医疗器械在美国被划入2类，而在我国则划入了3类。 由此也不难看出，单从医疗器械分类上而言，我国的分类标准更为严格。 但",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c92828065e00775a",
+            "source_id": "src_1a3ff30548ed70d6",
+            "text": "在3月30日发布的结果汇总中，赫然出现了“认知功能障碍评估与治疗软件”及“胰岛素计算软件”两款符合数字疗法定义的软件医疗器械，且代表了精神心理和糖尿病管理两类典型的数字疗法，均被划分为三类医疗器械管理。 一时间，业界议论纷纷，认为这或许意味着这两类软件未来将会被划分为三类医疗器械管理。 由于此前数字疗法在国内基本是以二类证获批，若被划为三类证则意味着迎来更为严格的监管。 这对于大多数处于初创阶段的数字疗法企业而言并不容易。 作为数字疗法专业CDMO及全流程服务平台，芝兰健康建立了DTx项目评估-综合设计及产研开发-中试转化-注册临床-产品注册-上市后支持-真实世界研究的全流程服务体系。 其注册法规负责人Anny对于注册事宜非常熟悉，她向动脉网表示：“分类界定程序具有‘一事一议’的特点。 每次分类界定评审，均由各类专家组成的分类评审委员会根据产品实际情况进行分类界定的讨论并最终确定分类界定意见。 标管中心的分类汇总只是将分类界定系统中一段时期内由各省和国家给出的分类界定意见进行了汇总，并不是法规文件。 所以，其对于后续同类产品分类界定虽然有一定参考意义，但并不*，也没有强制效力。 此外，",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 64,
+    "evidence_count": 75,
+    "supported_count": 4,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 40,
+    "coverage": 0.0909,
+    "primary_source_ratio": 0.0312,
+    "fulltext_source_ratio": 0.0312,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 36
+  },
+  "run_metadata": {
+    "final_report_sha256": "ec1896643bcfc68b3a1265e38600a34085c1a60776e7db66b3257a619273e66a",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 44,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 40,
+        "coverage": 0.0909,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 36
+      },
+      "after": {
+        "claim_count": 44,
+        "supported_count": 4,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 40,
+        "coverage": 0.0909,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 36
+      }
+    }
+  }
+}

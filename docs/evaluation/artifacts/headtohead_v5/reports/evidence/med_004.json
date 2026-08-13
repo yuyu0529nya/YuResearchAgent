@@ -1,0 +1,2887 @@
+{
+  "schema_version": "1.0",
+  "query": "评估 CRISPR 基因编辑疗法在镰状细胞病和 β 地中海贫血中的临床疗效与长期安全性数据。",
+  "created_at": "2026-08-13T21:41:07.664781+00:00",
+  "sources": [
+    {
+      "source_id": "src_515a25467ba5678f",
+      "url": "https://sicklecellanemianews.com/news/vaso-occlusive-crises-prevented-sickle-cell-patients-exa-cel-trial",
+      "title": "Exa-cel Prevents Vaso-occlusive Crises in Sickle Cell Patients in Trial",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel Casgevy CLIMB-121 sickle cell vaso-occlusive crises free proportion fetal hemoglobin follow-up",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "sicklecellanemianews.com"
+      }
+    },
+    {
+      "source_id": "src_89ebd1894ee1b20a",
+      "url": "https://medcentral.com/cancer-blood-disorders/fda-approves-two-novel-gene-therapies-for-sickle-cell-disease",
+      "title": "FDA Approves Two Novel Gene Therapies for Sickle Cell Disease",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel Casgevy CLIMB-121 sickle cell vaso-occlusive crises free proportion fetal hemoglobin follow-up",
+        "retrieval_relevance": 0.7958,
+        "host_domain": "medcentral.com"
+      }
+    },
+    {
+      "source_id": "src_b4fc391c74ab982d",
+      "url": "https://ahdbonline.com/issues/2023/december-2023-vol-16-payers-guide/exa-cel-and-lovo-cel-provide-potential-functional-cure-for-patients-with-scd-or-tdt",
+      "title": "Exa-cel and Lovo-cel Provide Potential Functional Cure for Patients...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel Casgevy CLIMB-121 sickle cell vaso-occlusive crises free proportion fetal hemoglobin follow-up",
+        "retrieval_relevance": 0.7958,
+        "host_domain": "ahdbonline.com"
+      }
+    },
+    {
+      "source_id": "src_dc58eae5fd3ec28b",
+      "url": "https://esanum.in/conferences/eha-2022-the-european-hematology-association-congress/feeds/today/posts/single-dosed-exa-cel-leads-to-early-and-durable-increase-of-foetal-haemoglobin",
+      "title": "Single-dosed exa-cel leads to early and durable increase of foetal...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel Casgevy CLIMB-121 sickle cell vaso-occlusive crises free proportion fetal hemoglobin follow-up",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "esanum.in"
+      }
+    },
+    {
+      "source_id": "src_98f413233458e9bf",
+      "url": "https://oligotherapeutics.org/exa-cel-a-potential-breakthrough-with-astounding-results",
+      "title": "Exa-cel: A Potential Breakthrough with Astounding Results...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CLIMB-121 CLIMB-111 exa-cel longer-term follow-up results 2024 2025 safety no malignancy off-target analysis",
+        "retrieval_relevance": 0.7628,
+        "host_domain": "oligotherapeutics.org"
+      }
+    },
+    {
+      "source_id": "src_ebfd2c826d45d942",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10428247",
+      "title": "S270: transfusion independence after exagamglogene autotemcel...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "exagamglogene autotemcel CLIMB-111 transfusion-dependent beta thalassemia transfusion independence NEJM",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "pmc.ncbi.nlm.nih.gov"
+      }
+    },
+    {
+      "source_id": "src_26f0acd058dbd334",
+      "url": "https://scholars.northwestern.edu/en/publications/exagamglogene-autotemcel-for-transfusion-dependent-β-thalassemia",
+      "title": "Exagamglogene Autotemcel for Transfusion-Dependent...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "exagamglogene autotemcel CLIMB-111 transfusion-dependent beta thalassemia transfusion independence NEJM",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "scholars.northwestern.edu"
+      }
+    },
+    {
+      "source_id": "src_c128218de761b304",
+      "url": "https://researchgate.net/publication/373287480_S270_TRANSFUSION_INDEPENDENCE_AFTER_EXAGAMGLOGENE_AUTOTEMCEL_IN_PATIENTS_WITH_TRANSFUSION-DEPENDENT_BETA-THALASSEMIA",
+      "title": "(PDF) S270: transfusion independence after exagamglogene...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "exagamglogene autotemcel CLIMB-111 transfusion-dependent beta thalassemia transfusion independence NEJM",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "researchgate.net"
+      }
+    },
+    {
+      "source_id": "src_f3171849ec99b6cc",
+      "url": "https://ash.confex.com/ash/2023/webprogram/Paper190534.html",
+      "title": "Paper: Exagamglogene Autotemcel for Transfusion-Dependent...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "exagamglogene autotemcel CLIMB-111 transfusion-dependent beta thalassemia transfusion independence NEJM",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "ash.confex.com"
+      }
+    },
+    {
+      "source_id": "src_66dfc969c916a41f",
+      "url": "https://fcshemoncreview.com/101056-nejmoa2309673-thalassemia",
+      "title": "Exagamglogene Autotemcel for Transfusion-Dependent...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "c23df1879e7691a208da62790bfe37568ae8fa9d8484f4cedfcd41c4c501d326",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex",
+        "retrieval_query": "exagamglogene autotemcel CLIMB-111 transfusion-dependent beta thalassemia transfusion independence NEJM",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "fcshemoncreview.com"
+      }
+    },
+    {
+      "source_id": "src_253e97914f73ca7c",
+      "url": "https://researchgate.net/publication/380089373_Exagamglogene_Autotemcel_for_Severe_Sickle_Cell_Disease",
+      "title": "(PDF) Exagamglogene Autotemcel for Severe Sickle Cell Disease",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM 2024 \"Exagamglogene Autotemcel for Severe Sickle Cell Disease\" 97% free vaso-occlusive 12 months HbF results",
+        "retrieval_relevance": 0.9125,
+        "host_domain": "researchgate.net"
+      }
+    },
+    {
+      "source_id": "src_c27148cc7e2a53fb",
+      "url": "https://medicine-opera.com/wp-content/uploads/2024/05/Exagamglogene-Autotemcel-for-Severe-Sickle-Cell-Disease.pdf",
+      "title": "Exagamglogene Autotemcel for Severe Sickle Cell Disease",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM 2024 \"Exagamglogene Autotemcel for Severe Sickle Cell Disease\" 97% free vaso-occlusive 12 months HbF results",
+        "retrieval_relevance": 0.9125,
+        "host_domain": "medicine-opera.com"
+      }
+    },
+    {
+      "source_id": "src_9a65a3d766566606",
+      "url": "https://nejm.org/doi/abs/10.1056/NEJMoa2309676",
+      "title": "Exagamglogene Autotemcel for Severe Sickle Cell Disease",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM 2024 \"Exagamglogene Autotemcel for Severe Sickle Cell Disease\" 97% free vaso-occlusive 12 months HbF results",
+        "retrieval_relevance": 0.8906,
+        "host_domain": "nejm.org"
+      }
+    },
+    {
+      "source_id": "src_1fa8c0256af2f785",
+      "url": "https://linkedin.com/pulse/sickle-cell-disease-entering-new-era-from-symptom-jennifer-6lfec",
+      "title": "Sickle Cell Disease Is Entering a New Era: From Symptom...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM 2024 \"Exagamglogene Autotemcel for Severe Sickle Cell Disease\" 97% free vaso-occlusive 12 months HbF results",
+        "retrieval_relevance": 0.8688,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_9d9ef332f9fe0752",
+      "url": "https://newswise.com/articles/researchers-publish-final-results-of-key-clinical-trial-for-gene-therapy-for-sickle-cell-disease",
+      "title": "Researchers Publish Final Results of Key Clinical Trial for... | Newswise",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM 2024 \"Exagamglogene Autotemcel for Severe Sickle Cell Disease\" 97% free vaso-occlusive 12 months HbF results",
+        "retrieval_relevance": 0.825,
+        "host_domain": "newswise.com"
+      }
+    },
+    {
+      "source_id": "src_71ec8f285f7c2baf",
+      "url": "https://id.life/news/10037",
+      "title": "CRISPR基因疗法：从实验室到临床的革命性进展 - Immortal Dragons",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CRISPR exa-cel Casgevy 镰状细胞病 β地中海贫血 长期安全性 脱靶 随访",
+        "retrieval_relevance": 0.8788,
+        "host_domain": "id.life"
+      }
+    },
+    {
+      "source_id": "src_013e93d19f2bbf4e",
+      "url": "https://pidrug.com/a/yiyaozixun/7736.html",
+      "title": "镰状细胞病基因疗法CASGEVY...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CRISPR exa-cel Casgevy 镰状细胞病 β地中海贫血 长期安全性 脱靶 随访",
+        "retrieval_relevance": 0.8654,
+        "host_domain": "pidrug.com"
+      }
+    },
+    {
+      "source_id": "src_321112c1b48eb7e3",
+      "url": "https://blyt.notion.site/CRISPR-72bd85f59aaf4c4f9805edfa9a34bb88",
+      "title": "全球首个基于CRISPR的基因治疗方法获批 | Notion",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CRISPR exa-cel Casgevy 镰状细胞病 β地中海贫血 长期安全性 脱靶 随访",
+        "retrieval_relevance": 0.8654,
+        "host_domain": "blyt.notion.site"
+      }
+    },
+    {
+      "source_id": "src_b92bdb9654c8e4ce",
+      "url": "https://bydrug.pharmcube.com/news/summary/tag/Casgevy",
+      "title": "#Casgevy-新闻标签聚合 - 共9条- 第1页-ByDrug...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CRISPR exa-cel Casgevy 镰状细胞病 β地中海贫血 长期安全性 脱靶 随访",
+        "retrieval_relevance": 0.8519,
+        "host_domain": "bydrug.pharmcube.com"
+      }
+    },
+    {
+      "source_id": "src_d5a57eae9914c6fe",
+      "url": "https://antpedia.com/news/22/n-3107057.html",
+      "title": "历史性时刻到来！ 全球首个CRISPR基因编辑疗法获批上市",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CRISPR exa-cel Casgevy 镰状细胞病 β地中海贫血 长期安全性 脱靶 随访",
+        "retrieval_relevance": 0.6904,
+        "host_domain": "antpedia.com"
+      }
+    },
+    {
+      "source_id": "src_e1086a598e165a88",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7c3e12ad-e2fe-4d3f-a630-ea7364d9e846",
+      "title": "DailyMed - CASGEVY- exagamglogene autotemcel injection...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "33b158aa159f95287b9a15f2d1cd5fbc40112f1b387ae8d2fd746fa901ddd9dc",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel long-term follow-up safety off-target clonal hematopoiesis malignancy myeloablation FDA label 15 years",
+        "retrieval_relevance": 0.775,
+        "host_domain": "dailymed.nlm.nih.gov"
+      }
+    },
+    {
+      "source_id": "src_55e69ea1b061de91",
+      "url": "https://medpagetoday.com/hematologyoncology/hematology/107751",
+      "title": "Milestone Gene Therapies for Sickle Cell Disease Greenlit by FDA",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel long-term follow-up safety off-target clonal hematopoiesis malignancy myeloablation FDA label 15 years",
+        "retrieval_relevance": 0.825,
+        "host_domain": "medpagetoday.com"
+      }
+    },
+    {
+      "source_id": "src_6bc1d32720235e21",
+      "url": "https://rarediseaseadvisor.com/therapies/casgevy-exagamglogene-autotemcel",
+      "title": "Casgevy (Exagamglogene Autotemcel) - Rare Disease Advisor",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel long-term follow-up safety off-target clonal hematopoiesis malignancy myeloablation FDA label 15 years",
+        "retrieval_relevance": 0.8,
+        "host_domain": "rarediseaseadvisor.com"
+      }
+    },
+    {
+      "source_id": "src_12e5ea6b839954e1",
+      "url": "https://int.livhospital.com/is-casgevy-fda-approval-safe-patient-questions",
+      "title": "Is Casgevy FDA Approval Safe? Patient Questions",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel long-term follow-up safety off-target clonal hematopoiesis malignancy myeloablation FDA label 15 years",
+        "retrieval_relevance": 0.75,
+        "host_domain": "int.livhospital.com"
+      }
+    },
+    {
+      "source_id": "src_f96977457890be8e",
+      "url": "https://drugs.com/history/casgevy.html",
+      "title": "Casgevy (exagamglogene autotemcel) FDA Approval... - Drugs.com",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel long-term follow-up safety off-target clonal hematopoiesis malignancy myeloablation FDA label 15 years",
+        "retrieval_relevance": 0.725,
+        "host_domain": "drugs.com"
+      }
+    },
+    {
+      "source_id": "src_aa0202a722aee28b",
+      "url": "https://clinicaltrialsarena.com/analyst-comment/cas9-therapy-exa-cel",
+      "title": "First-ever CRISPR-CAS9 therapy, exa-cel, shows promising results",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CLIMB-121 CLIMB-111 exa-cel longer-term follow-up results 2024 2025 safety no malignancy off-target analysis",
+        "retrieval_relevance": 0.791,
+        "host_domain": "clinicaltrialsarena.com"
+      }
+    },
+    {
+      "source_id": "src_76dfa29ead3fd35c",
+      "url": "https://medthority.com/news/2023/6/climb-111-and-climb-121-phase-iii-trials-of-exa-cel-meet-their-primary-endpoint-in-beta-thalassemia-or-severe-sickle-cell-disease.--vertex-pharma",
+      "title": "CLIMB-111 and CLIMB-121 phase III trials of Exa-Cel meet their...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "CLIMB-121 CLIMB-111 exa-cel longer-term follow-up results 2024 2025 safety no malignancy off-target analysis",
+        "retrieval_relevance": 0.7462,
+        "host_domain": "medthority.com"
+      }
+    },
+    {
+      "source_id": "src_e4d53b2c4adf4aff",
+      "url": "https://crisprtx.com/about-us/press-releases-and-presentations/positive-results-from-pivotal-trials-of-exa-cel-for-transfusion-dependent-beta-thalassemia-and-severe-sickle-cell-disease-presented-at-the-2023-annual-european-hematology-association-eha-congress",
+      "title": "Positive Results From Pivotal Trials of exa-cel… | CRISPR Therapeutics",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_3",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.79,
+        "host_domain": "crisprtx.com"
+      }
+    },
+    {
+      "source_id": "src_4fa9d14a8a743fca",
+      "url": "https://cda-amc.ca/sites/default/files/DRR/2025/SG0830_Casgevy_FINAL_Recommendation.pdf",
+      "title": "Exagamglogene Autotemcel (Casgevy)",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel Casgevy sickle cell CLIMB-121 long-term follow-up efficacy durability vaso-occlusive crises 2024 2025",
+        "retrieval_relevance": 0.85,
+        "host_domain": "cda-amc.ca"
+      }
+    },
+    {
+      "source_id": "src_6987dfc5646a80a2",
+      "url": "https://vrtx.gcs-web.com/news-releases/news-release-details/vertex-presents-longer-term-data-2025-european-hematology",
+      "title": "Vertex Presents Longer-Term Data at the 2025 European Hematology...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "44f07f5e3be6271e355cf8cf18189109f46a2d0ac5a4d0da85e04006d3b5b3cd",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel Casgevy sickle cell CLIMB-121 long-term follow-up efficacy durability vaso-occlusive crises 2024 2025",
+        "retrieval_relevance": 0.8,
+        "host_domain": "vrtx.gcs-web.com"
+      }
+    },
+    {
+      "source_id": "src_28ab960cc3b0d88c",
+      "url": "https://healio.com/news/hematology-oncology/20251206/extremely-encouraging-exacel-benefits-kids-with-sickle-cell-disease-beta-thalassemia",
+      "title": "Exa-cel benefits kids with sickle cell disease, beta thalassemia",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel Casgevy sickle cell CLIMB-121 long-term follow-up efficacy durability vaso-occlusive crises 2024 2025",
+        "retrieval_relevance": 0.8,
+        "host_domain": "healio.com"
+      }
+    },
+    {
+      "source_id": "src_a079c1ac6157292b",
+      "url": "https://synapse.patsnap.com/article/eha24-vertex-showcases-casgevys-long-term-benefits-in-blood-disorders",
+      "title": "EHA24: Vertex showcases Casgevy's long-term benefits in blood...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel Casgevy sickle cell CLIMB-121 long-term follow-up efficacy durability vaso-occlusive crises 2024 2025",
+        "retrieval_relevance": 0.75,
+        "host_domain": "synapse.patsnap.com"
+      }
+    },
+    {
+      "source_id": "src_0525b29e953986bf",
+      "url": "https://emedicine.medscape.com/article/205926-treatment",
+      "title": "Sickle Cell Disease (SCD) Treatment & Management: Approach...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exagamglogene autotemcel Casgevy sickle cell CLIMB-121 long-term follow-up efficacy durability vaso-occlusive crises 2024 2025",
+        "retrieval_relevance": 0.4833,
+        "host_domain": "emedicine.medscape.com"
+      }
+    },
+    {
+      "source_id": "src_39c0efc64e8d0467",
+      "url": "https://researchgate.net/publication/389368987_Durable_Clinical_Benefits_in_Transfusion-Dependent_B-Thalassemia_with_Exagamglogene_Autotemcel",
+      "title": "Durable Clinical Benefits in Transfusion-Dependent Β-Thalassemia...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel beta thalassemia CLIMB-111 transfusion independence durability safety follow-up results",
+        "retrieval_relevance": 0.755,
+        "host_domain": "researchgate.net"
+      }
+    },
+    {
+      "source_id": "src_b866d64c95a3723b",
+      "url": "https://cgtlive.com/view/most-patients-b-thalassemia-achieve-transfusion-independence-exa-cel",
+      "title": "Most Patients With β-Thalassemia Achieve Transfusion... | CGTlive",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel beta thalassemia CLIMB-111 transfusion independence durability safety follow-up results",
+        "retrieval_relevance": 0.79,
+        "host_domain": "cgtlive.com"
+      }
+    },
+    {
+      "source_id": "src_e451121eb27271cb",
+      "url": "https://synapse.patsnap.com/article/what-diseases-does-exagamglogene-autotemcel-treat",
+      "title": "What diseases does Exagamglogene Autotemcel treat?",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel beta thalassemia CLIMB-111 transfusion independence durability safety follow-up results",
+        "retrieval_relevance": 0.79,
+        "host_domain": "synapse.patsnap.com"
+      }
+    },
+    {
+      "source_id": "src_ee7a1f95853a0c32",
+      "url": "https://docwirenews.com/post/exa-cel-improves-health-related-quality-of-life-in-transfusion-dependent-β-thalassemia",
+      "title": "Exa-Cel Improves Health-Related Quality of Life in... | Docwire News",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel beta thalassemia CLIMB-111 transfusion independence durability safety follow-up results",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "docwirenews.com"
+      }
+    },
+    {
+      "source_id": "src_d0c3b6cf711c625b",
+      "url": "https://hematologyadvisor.com/reports/tdt-thalassemia-exa-cel-durable-response-age-categories-treatment",
+      "title": "Exa-Cel Achieves Durable Response in TDT... - Hematology Advisor",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "exa-cel beta thalassemia CLIMB-111 transfusion independence durability safety follow-up results",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "hematologyadvisor.com"
+      }
+    },
+    {
+      "source_id": "src_d361aeef308fdc6b",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10913280",
+      "title": "Editorial: First Regulatory Approvals for CRISPR-Cas9 Therapeutic...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "pmc.ncbi.nlm.nih.gov"
+      }
+    },
+    {
+      "source_id": "src_835c4288690c3866",
+      "url": "https://en.wikipedia.org/wiki/Exagamglogene_autotemcel",
+      "title": "Exagamglogene autotemcel - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.79,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_b7b23211305aad82",
+      "url": "https://medicalxpress.com/news/2024-01-fda-exagamglogene-autotemcel-beta-thalassemia.html",
+      "title": "FDA approves exagamglogene autotemcel to treat beta-thalassemia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.79,
+        "host_domain": "medicalxpress.com"
+      }
+    },
+    {
+      "source_id": "src_d15c7a50e25db8a6",
+      "url": "https://empr.com/news/casgevy-approved-children-sickle-cell-thalassemia",
+      "title": "Gene Therapy Casgevy Approved for Younger SCD and TDT Patients",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.79,
+        "host_domain": "empr.com"
+      }
+    },
+    {
+      "source_id": "src_28526bcb81d511a8",
+      "url": "https://gnhindia.com/products/casgevy-exagamglogene-autotemcel",
+      "title": "Buy CASGEVY (exagamglogene autotemcel)... | GNH India",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "gnhindia.com"
+      }
+    },
+    {
+      "source_id": "src_3f020c5b3db94950",
+      "url": "https://pharmacypracticenews.com/FDA-Approvals/Article/09-23/FDA-Approves-Casgevy-for-Beta-Thalassemia/72633",
+      "title": "FDA Approves Casgevy for Beta-Thalassemia",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "FDA EMA approval Casgevy exagamglogene autotemcel sickle cell beta thalassemia serious adverse events secondary malignancy",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "pharmacypracticenews.com"
+      }
+    },
+    {
+      "source_id": "src_b792f6ede1239875",
+      "url": "https://dovepress.com/article/download/108595",
+      "title": "Emerging Gene Therapies in Sickle Cell Disease: A Comparative Review of Efficacy and Safety Against Standard Treatments",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Saeed Kabrah",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4415917164",
+        "citation_count": 5,
+        "provider": "openalex",
+        "retrieval_query": "exagamglogene autotemcel CRISPR sickle cell disease beta thalassemia CLIMB-121 131 NEJM Frangoul",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "dovepress.com"
+      }
+    },
+    {
+      "source_id": "src_86dbadf3e527376c",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38661449",
+      "title": "Exagamglogene Autotemcel for Severe Sickle Cell Disease",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "f193d0de906419650acf171625dbd67f88f297290893b5473e1d8365c03d4b59",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.79,
+        "host_domain": "pubmed.ncbi.nlm.nih.gov"
+      }
+    },
+    {
+      "source_id": "src_c31c5da660a71f23",
+      "url": "https://ash.confex.com/ash/2024/webprogram/Paper204001.html",
+      "title": "Paper: Durable Clinical Benefits with Exagamglogene Autotemcel for...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "ash.confex.com"
+      }
+    },
+    {
+      "source_id": "src_67b7377738209082",
+      "url": "https://resources.massgeneralbrighamhealthplan.org/medicalpolicy/Casgevy.pdf",
+      "title": "Policy Number: 075",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.79,
+        "host_domain": "resources.massgeneralbrighamhealthplan.org"
+      }
+    },
+    {
+      "source_id": "src_3bc121682b67cb5a",
+      "url": "https://nejm.org/doi/full/10.1056/NEJMoa2309676",
+      "title": "nejm.org/doi/full/10.1056/NEJMoa2309676",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "nejm.org"
+      }
+    },
+    {
+      "source_id": "src_c75eff052ba78a94",
+      "url": "https://synapse.patsnap.com/article/vertex-shares-positive-long-term-data-on-casgevyE284A2-at-2024-eha-congress",
+      "title": "Vertex Shares Positive Long-Term Data on CASGEVY™ at 2024 EHA...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NEJM exagamglogene autotemcel CLIMB-121 131 pivotal trial number of patients follow-up months Frangoul Locatelli 2024",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "synapse.patsnap.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_c094193e01893961",
+      "source_id": "src_515a25467ba5678f",
+      "text": "Exagamglogene autotemcel (exa-cel), an experimental gene-editing cell therapy, increased fetal hemoglobin levels and prevented vaso-occlusive crises (VOCs) in 31 people with severe sickle cell disease (SCD), according to new data from the CLIMB-SCD-121 trial.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "75215089226db2f009deb0339a029a22df1b0b8af854f93cda5276f659c9ee5d"
+    },
+    {
+      "evidence_id": "ev_1290409cb62b4fde",
+      "source_id": "src_89ebd1894ee1b20a",
+      "text": "More on pain management in sickle cell disease, including acute sickle cell crises and ED visits.The ongoing CLIMB-131 extension study will further monitor and assess the long-term safety of Casgevy in patients from CLIMB-121 for up to 15 years.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "15fa4cd823ad29cd602373dc0211d77bc68f49c0d99ff3d717630a55a669e505"
+    },
+    {
+      "evidence_id": "ev_a4757ddf2e562fa8",
+      "source_id": "src_b4fc391c74ab982d",
+      "text": "The vaso-occlusive pain crisis in sickle cell disease: definition, pathophysiology, and management. Eur J Haematol.Relationship between vaso-occlusive crises and important complications in sickle cell disease patients.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "b33fc6ef8e4e8607f966f42bc3a0a68f91be96092c066d5b802ce5451dafca04"
+    },
+    {
+      "evidence_id": "ev_531e1db12475bf56",
+      "source_id": "src_dc58eae5fd3ec28b",
+      "text": "All patients in the CLIMB SCD-121 trial became free from vaso-occlusive crises after exa-cel therapy. In both trials, production of foetal Hb increased in time. In β-thalassemia patients, foetal Hb concentration was >9 g/dL by month 4 and thereafter further increased to 12 g/dL.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "af20b735096c25ad5647fe552cc2ce76d78699eff80b8aff583b404b453a4bce"
+    },
+    {
+      "evidence_id": "ev_360ecdfc7c8597f4",
+      "source_id": "src_98f413233458e9bf",
+      "text": "Exa-cel is an autologous, ex vivo CRISPR-Cas9 therapy that edits the patient’s blood stem cells to produce high levels of fetal hemoglobin (HbF) in red blood cells. The oxygen-carrying HbF is naturally present during fetal development but usually shuts down after birth.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "118c599484c54868f15983e548bc85ace4cb51d9f3765567c7bc16e2b6b05df9"
+    },
+    {
+      "evidence_id": "ev_c193f828c2d9c7e3",
+      "source_id": "src_ebfd2c826d45d942",
+      "text": "Background: Exagamglogene autotemcel (exa-cel) is a one-time, non-viral cell therapy designed to reactivate fetal hemoglobin (HbF) via ex vivo CRISPR/Cas9 gene-editing at the erythroid enhancer region of BCL11A in autologous CD34+ hematopoietic stem and progenitor cells.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2123428224b020bb08aa72269eede7d764793dfe06b8c7038803a24f85f7defa"
+    },
+    {
+      "evidence_id": "ev_6029cf43cae898d7",
+      "source_id": "src_26f0acd058dbd334",
+      "text": "Exagamglogene Autotemcel for Transfusion-Dependent β-Thalassemia. In: New England Journal of Medicine. 2024 ; Vol. 390, No. 18. pp. 1663-1676.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3034fb65014e0ad15dca6ded78f1c1af0cea94a6f84492dc3513d49c2c578883"
+    },
+    {
+      "evidence_id": "ev_ae62cd33ddb27d2d",
+      "source_id": "src_c128218de761b304",
+      "text": "S270: transfusion independence after exagamglogene autotemcel in patients with transfusion-dependent βeta-thalassemia. August 2023. HemaSphere 7(S3):e8473180.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a2cd0edf2e13b9c4442b838908436fb95d6a32cb798632f301b3ad39db50c0ef"
+    },
+    {
+      "evidence_id": "ev_399ab174bd7df76e",
+      "source_id": "src_f3171849ec99b6cc",
+      "text": "1053 Exagamglogene Autotemcel for Transfusion-Dependent β-Thalassemia. Program: Oral and Poster Abstracts Type: Oral Session: 801.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "aceb60e11701d1918aee5eb2ae5ad42283548a94be96950a60dea7ff600ed598"
+    },
+    {
+      "evidence_id": "ev_17fc5b3b2ec6c368",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "90% of patients achieved transfusion independence. Long-term risks and concern for off-target gene editing will remain a concern.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "bfd01973bb847d9bc216a3eb91e4ecf812ca9ad71fb021d219dc4d50a3b2723f"
+    },
+    {
+      "evidence_id": "ev_d12de01bc6a81113",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "Exagamglogene Autotemcel for Transfusion-Dependent β-Thalassemia Author(s): Franco Locatelli, M. D. , Ph. D. https://orcid. org/0000-0002-7976-3654, Peter Lang, M. D. , Donna Wall, M. D. , Roland Meisel, M. D. , Selim Corbacioglu, M. D. https://orcid. org/0000-0003-1070-8486, Amanda M. Li, M. D. , Josu de la Fuente, M. D. , Ph. D. , Ami J. Shah, M. D. , Ben Carpenter, M. D. , Ph. D. , Janet L. Kwiatkowski, M. D. , Markus Mapara, M. D. , Ph. D. , Robert I. Liem, M. D. , Maria Domenica Cappellini, M. D. , Mattia Algeri, M. D. , Antonis Kattamis, M. D. , Sujit Sheth, M. D. , Stephan Grupp, M. D. , Ph. D. , Rupert Handgretinger, M. D. , Puja Kohli, M. D. , Daoyuan Shi, Ph. D. , Leorah Ross, M. D. , Yael Bobruff, Ph. D. , Christopher Simard, M. D. , Lanju Zhang, Ph. D. , Phuong Khanh Morrow, M. D. , William E. Hobbs, M. D. , Ph. D. , and Haydar Frangoul, M. D. https://orcid. org/0000-0002-0590-2826, for the CLIMB THAL-111 Study Group* Source: DOI: 10. 1056/NEJMoa2309673 Original Article Dr. Anjan Patel's Thoughts Very exciting developments in CRISPR-based therapy for transfusion-dependent B-thal patients. >90% of patients achieved transfusion independence. Long-term risks and concern for off-target gene editing will remain a concern.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "dfcb544a92115088b4f491bd8d3bf4f16e95aea02c4c24ae23933ef128d67502"
+    },
+    {
+      "evidence_id": "ev_e21a77047cc2783d",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "BACKGROUND Exagamglogene autotemcel (exa-cel) is a nonviral cell therapy designed to reactivate fetal hemoglobin synthesis through ex vivo clustered regularly interspaced short palindromic repeats (CRISPR)–Cas9 gene editing of the erythroid-specific enhancer region of BCL11A in autologous CD34+ hematopoietic stem and progenitor cells (HSPCs). METHODS We conducted an open-label, single-group, phase 3 study of exa-cel in patients 12 to 35 years of age with transfusion-dependent β-thalassemia and a β0/β0, β0/β0-like, or non–β0/β0-like genotype. CD34+ HSPCs were edited by means of CRISPR-Cas9 with a guide mRNA. Before the exa-cel infusion, patients underwent myeloablative conditioning with pharmacokinetically dose-adjusted busulfan. The primary end point was transfusion independence, defined as a weighted average hemoglobin level of 9 g per deciliter or higher without red-cell transfusion for at least 12 consecutive months. Total and fetal hemoglobin concentrations and safety were also assessed. RESULTS A total of 52 patients with transfusion-dependent β-thalassemia received exa-cel and were included in this prespecified interim analysis; the median follow-up was 20. 4 months (range, 2. 1 to 48. 1). Neutrophils and platelets engrafted in each patient.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "3603d7567e2c4cbcd20b124003f19c2e0323810ac585826007d9dd32cbc1e592"
+    },
+    {
+      "evidence_id": "ev_a0941d385f62f569",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "Among the 35 patients with sufficient follow-up data for evaluation, transfusion independence occurred in 32 (91%; 95% confidence interval, 77 to 98; P<0. 001 against the null hypothesis of a 50% response). During transfusion independence, the mean total hemoglobin level was 13. 1 g per deciliter and the mean fetal hemoglobin level was 11. 9 g per deciliter, and fetal hemoglobin had a pancellular distribution (≥94% of red cells). The safety profile of exa-cel was generally consistent with that of myeloablative busulfan conditioning and autologous HSPC transplantation. No deaths or cancers occurred. CONCLUSIONS Treatment with exa-cel, preceded by myeloablation, resulted in transfusion independence in 91% of patients with transfusion-dependent β-thalassemia. (Supported by Vertex Pharmaceuticals and CRISPR Therapeutics; CLIMB THAL-111 ClinicalTrials. gov number, NCT03655678. ) Author Affiliations From IRCCS Ospedale Pediatrico Bambino Gesù (F. L. , M. A. ) and Catholic University of the Sacred Heart (F. L. ), Rome, Fondazione IRCCS Ca’ Granda Ospedale Maggiore Policlinico, Milan (M. D. C. ), and the Department of Health Sciences, Magna Graecia University, Catanzaro (M. A. ) — all in Italy; University Children’s Hospital Tübingen (R. H.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "1611e0c1714efdeafd0590cf46ed20e84d77c81aa9ddedb4679b1fb2fd80cfe7"
+    },
+    {
+      "evidence_id": "ev_9588f140293931e2",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "), and the Cluster of Excellence iFIT (EXC 2180) “Image-guided and Functionally Instructed Tumor Therapies” and the German Cancer Consortium, Partner Site Tübingen, University of Tübingen (P. L. ), Tübingen, the Division of Pediatric Stem Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical Immunology, Medical Faculty, Heinrich Heine University, Düsseldorf (R. M. ), and the University of Regensburg, Regensburg (S. C. ) — all in Germany; the Hospital for Sick Children and University of Toronto, Toronto (D. W. ), and BC Children’s Hospital, University of British Columbia, Vancouver (A. M. L. ) — all in Canada; Imperial College Healthcare NHS Trust, St. Mary’s Hospital (J. F. ), and University College London Hospitals NHS Foundation Trust (B. C. ) — both in London; Stanford University, Palo Alto, CA (A. J. S. ); Children’s Hospital of Philadelphia and Perlman School of Medicine, University of Pennsylvania, Philadelphia (J. L. K. , S. G. ); Herbert Irving Comprehensive Cancer Center, Columbia University (M. M. ), and Joan and Sanford I. Weill Medical College of Cornell University (S. S. ) — both in New York; Ann and Robert H. Lurie Children’s Hospital of Chicago, Chicago (R. I. L. ); National and Kapodistrian University of Athens, Athens (A. K. ); Vertex Pharmaceuticals, Boston (P. K. , D. S. , L. R. , Y. B. , C. S. , L. Z. , W. E. H.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "0acd797a4517d5449afe1b526275b6596a1bd17d98e613c9c76fb7f4a38d7e0b"
+    },
+    {
+      "evidence_id": "ev_d2e3482778b6927b",
+      "source_id": "src_66dfc969c916a41f",
+      "text": "), and CRISPR Therapeutics, Cambridge (P. K. M. ) — both in Massachusetts; and Sarah Cannon Research Institute at the Children’s Hospital at TriStar Centennial, Nashville (H. F. ). Leave a Comment Cancel Reply Your email address will not be published. Required fields are marked Type here. . Name* Email* Website Save my name, email, and website in this browser for the next time I comment. May 1, 2024 No Comments Thalassemia All Articles May 2024 Related Articles",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "df56738a92ceaa24522f31e2c4e84bcda1f3da5e374a561e17e2d358a6030808"
+    },
+    {
+      "evidence_id": "ev_7fe2e3dc414136c1",
+      "source_id": "src_253e97914f73ca7c",
+      "text": "11. Exaga mglogene Autotemcel for Severe Sickle Cell Disease. Disc ussion. This phase 3, single-group study of exa-cel met.hospitalization for severe vaso-occlusive crises. for at least 12 months, and 97% were free from.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5a1f4a26fcc803400aec22159d8095a61b991dcff9fa38a29e0e443fe4bc570a"
+    },
+    {
+      "evidence_id": "ev_466033eccbc465bc",
+      "source_id": "src_c27148cc7e2a53fb",
+      "text": "CONCLUSIONS Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov number, NCT03745287.)",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "85d2cc742ffd865f35aa8a933f8743b913c273b9dab47a715adfe3e14b742cba"
+    },
+    {
+      "evidence_id": "ev_033374f93155791d",
+      "source_id": "src_9a65a3d766566606",
+      "text": "The primary end point was freedom from severe vaso-occlusive crises for at least 12 consecutive months.Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "608a7d845c89de239cb91535a20d4a7d4291f17eb132c99e1dbc0c0b79512205"
+    },
+    {
+      "evidence_id": "ev_2075e0e75015352b",
+      "source_id": "src_1fa8c0256af2f785",
+      "text": "2024: Strong clinical results for exa-cel A 2024 New England Journal of Medicine publication reported that exa-cel eliminated vaso-occlusive crises in 97% of treated patients with severe sickle cell disease for at least 12 months.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "31f9686b3428a89e857b99cd3340311a20c6ddf3d2426a67ad17e86036fd09d8"
+    },
+    {
+      "evidence_id": "ev_a78c1fa82749bed4",
+      "source_id": "src_9d9ef332f9fe0752",
+      "text": "The preliminary results of the trial led to the FDA approval of CASGEVY for transfusion-dependent β-thalassemia in January 2024. Grupp was also one of the principal investigators for this clinical trial. Frangoul et al, “Exagamglogene Autotemcel for Severe Sickle Cell Disease.”",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "67b14bd74e33e04b571d5e20dffcd4512b186ad020df28184564ef11f4b0297a"
+    },
+    {
+      "evidence_id": "ev_33d185f380dd4b7c",
+      "source_id": "src_71ec8f285f7c2baf",
+      "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "df5af8dbb9f6d6ebad332b6004b727f78fe7b554cf208793fe1ec6411b22b6a0"
+    },
+    {
+      "evidence_id": "ev_d65454b9177f91bb",
+      "source_id": "src_013e93d19f2bbf4e",
+      "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "191b1fa217c1e4ac261ad6abd0c48394cd4fc595f670433c060d8b347c243682"
+    },
+    {
+      "evidence_id": "ev_0f6eaf7850d1c882",
+      "source_id": "src_321112c1b48eb7e3",
+      "text": "这种疗法名为Casgevy，由位于波士顿的制药公司Vertex Pharmaceuticals和位于瑞士楚格的生物技术公司CRISPR Therapeutics联合开发。 它的目标是治疗两种严重的遗传性血液疾病：镰状细胞病和β地中海贫血症。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a474c619d87cb09c878c4337ff9eb131c34fe41cf648f66f1e06350a879d38e5"
+    },
+    {
+      "evidence_id": "ev_3f89f302e277aa2d",
+      "source_id": "src_b92bdb9654c8e4ce",
+      "text": "Vertex：欧盟Okays Casgevy治疗镰状细胞病和输血依赖性β地中海贫血.海贫血。 当造血干细胞移植合适但没有匹配的供体时，该疗法被批准。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "721f2e4bbc9d234250355b4f37a95af1b750b7782afe7deaf03e02d34d954046"
+    },
+    {
+      "evidence_id": "ev_2765b9a74d2107cb",
+      "source_id": "src_d5a57eae9914c6fe",
+      "text": "当大家都在翘首企盼美国FDA揭晓“该疗法能否被批准上市”的答案时，没想到英国MHRA竟先为CRISPR带来了好消息，批准Casgevy上市。exa-cel被更名为Casgevy。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ea4b8cfb48f637a15546083c50a8bedd000b5557a230bec9cce9152866f383e5"
+    },
+    {
+      "evidence_id": "ev_c0a98eca8b1b7074",
+      "source_id": "src_e1086a598e165a88",
+      "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ebcfa696ee936c36d2f8416c47bcbdbd972bf2930733b75b91a32f2478199b91"
+    },
+    {
+      "evidence_id": "ev_bb57a2857efe3060",
+      "source_id": "src_55e69ea1b061de91",
+      "text": "FDA APPROVED exagamglogene autotemcel (Casgevy) and lovotibeglogene autotemcel (Lyfgenia) over an image of a sickle cell.Verdun said the drug sponsors have agreed to long-term follow-up of 15 years plus lifetime monitoring for malignancy.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "eca30e63c09550f25089140c318dc5d157984bef20b5002a56d2e8ecbb4f9050"
+    },
+    {
+      "evidence_id": "ev_3388eaa0c244e40a",
+      "source_id": "src_6bc1d32720235e21",
+      "text": "...long-term observational follow-up study (NCT04208529), which will follow patients for up to 15 years after Casgevy administration.3,7 Primary outcome measures of this study include the development of new malignancies and new or worsening hematologic disorders.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "2aded9b7aa8750be1b96679fc90cb32a8c35ebf02ace6aa0b193d335eb56c5f1"
+    },
+    {
+      "evidence_id": "ev_a2dc20e331ea21b4",
+      "source_id": "src_12e5ea6b839954e1",
+      "text": "Yes, the FDA closely watches Casgevy after approval. They check manufacturing and require long-term studies for up to 15 years. This ongoing monitoring is key to patient safety. re there concerns about “off-target” effects with CRISPR technology?",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "76abe766ec8b41cc5b465dbc9235b1f0681e506f7b3fe907f5d393d7322b8719"
+    },
+    {
+      "evidence_id": "ev_baa4794d824b2733",
+      "source_id": "src_f96977457890be8e",
+      "text": "FDA approval history for Casgevy (exagamglogene autotemcel) used to treat Beta Thalassemia, Sickle Cell Disease.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "59efc1655007d8893f89020865123c17c00948e896f69839a33bb57b516d3be8"
+    },
+    {
+      "evidence_id": "ev_b29efbb1b69e2d6b",
+      "source_id": "src_e1086a598e165a88",
+      "text": "View Package Photos Drug Label Info Safety Report Adverse Events FDA Safety Recalls Presence in Breast Milk Related Resources Medline Plus Clinical Trials PubMed Citations Adverse Effects Therapeutic Use Pharmacology Clinical Trials Biochemical Data Summary More Info For This Drug View Labeling Archives RxNorm Get Label RSS Feed View NDC Code(s) NEW!",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "74f830d6f69be303147f441a0dd802de882d534735647c904c04ac455d0b0d44"
+    },
+    {
+      "evidence_id": "ev_5ae9be56b89bc7bf",
+      "source_id": "src_aa0202a722aee28b",
+      "text": "CLIMB-131 is a long-term trial following patients for up to 15 years to assess the long-term effects of the therapy from the CLIMB-111, CLIMB-121, CLIMB-141, and CLIMB-151 trials.For TDT, exa-cel was granted standard review and a PDUFA target action date of 30 March 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a7a4dac1dce66e69ffc94db851af0631b79b4c1056351cf5168a4cb9c1d861f9"
+    },
+    {
+      "evidence_id": "ev_279501776d953d1b",
+      "source_id": "src_98f413233458e9bf",
+      "text": "The ongoing Phase III CLIMB-111 and CLIMB-121 trials are evaluating the efficacy and safety of a single dose of exa-cel in patients aged 12 to 35 in patients with TDT or SCD.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "f3cb187a358d8c20ae8581cb6dd5736e6d71e1e9b71b9c8af2534182198d69c0"
+    },
+    {
+      "evidence_id": "ev_fc823e027d2f4ee1",
+      "source_id": "src_76dfa29ead3fd35c",
+      "text": "Both CLIMB-111 and CLIMB-121 met their primary endpoint and key secondary endpoint at the pre-specified interim analysis for each trial.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "71702337161e850008f2485d936e73bc247beebbebbfcf59251da97d4487984d"
+    },
+    {
+      "evidence_id": "ev_3c33a6cfc3170897",
+      "source_id": "src_e4d53b2c4adf4aff",
+      "text": "These analyses evaluated the efficacy and safety of exa-cel in patients with TDT or SCD in the ongoing Phase 3 trials as well as in the long-term follow up trial CLIMB-131.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6deabce69f2ad0f9554182e8e579f93d89c0c796bcf1236aec2b10c67662e083"
+    },
+    {
+      "evidence_id": "ev_98feb886cf906578",
+      "source_id": "src_4fa9d14a8a743fca",
+      "text": "What Is the Reimbursement Recommendation for Casgevy? Canada’s Drug Agency (CDA-AMC) recommends that Casgevy be reimbursed by public drug plans for the treatment of sickle cell disease (SCD) with recurrent vaso-occlusive crises (VOCs), if certain conditions are met.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "16795048474ebb6659fe5be90fc49bc8a5e27f0292505cf445482e864c1b2df5"
+    },
+    {
+      "evidence_id": "ev_c366bffcf4e5d5e7",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "New longer-term follow-up data presented from the CASGEVY trials. In SCD, 43/45 (95.6%) evaluable patients (those with at least 16 months of follow-up) were free from vaso-occlusive crises (VOCs) for at least 12 consecutive months (VF12) in CLIMB-121 and...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "8f1ded5ee7a979d405ee2551de7aa1b2d07b0bfda0eebe75889bad29cb48b4b9"
+    },
+    {
+      "evidence_id": "ev_1a6b8f7b284a72d9",
+      "source_id": "src_28ab960cc3b0d88c",
+      "text": "Exagamglogene autotemcel helped children with beta thalassemia achieve transfusion independence and prevented vaso-occlusive crises among those with sickle cell disease in a pair of phase 3 trials.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "27ed5b6d47cec5feab8227971b5575bab7d38caf88713cb292d1c7cde3766e1b"
+    },
+    {
+      "evidence_id": "ev_240814f498c61222",
+      "source_id": "src_a079c1ac6157292b",
+      "text": "The data presented were derived from the CLIMB-111 and CLIMB-121 trials, alongside the CLIMB-131 long-term follow-up study, encompassing more than 100 patients treated with Casgevy. The longest follow-up period now surpasses five years.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "754583595c5795a4bc493dcf572a387b5e0fd35edc74fd56eab8c2307823c40b"
+    },
+    {
+      "evidence_id": "ev_e450ce964c0a414e",
+      "source_id": "src_89ebd1894ee1b20a",
+      "text": "More on pain management in sickle cell disease, including acute sickle cell crises and ED visits. Lyfgenia’s approval was supported by data from 36 patients in Group C of the Phase 1/2 HGB-206 trial following enhancements to the treatment and manufacturing processes.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c8e153f121f96c5e31a7b12b6e2e4ad98eff91d56512f189bc0c913ed4a02a4c"
+    },
+    {
+      "evidence_id": "ev_6ac447760b330a30",
+      "source_id": "src_0525b29e953986bf",
+      "text": "Treatment: Sickle cell disease (SCD) and its variants are genetic disorders resulting from the presence of a mutated form of hemoglobin, hemoglobin S (HbS) (see the image below).",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6c0ffad918f82b436875c31d3c55e170e71437dc94a17df2f0ce30329b62b6a5"
+    },
+    {
+      "evidence_id": "ev_54b09a96983a6889",
+      "source_id": "src_39c0efc64e8d0467",
+      "text": "Conclusion: Exa-cel demonstrated durable transfusion independence in >94% of participants that was maintained for up to 5 yrs. Durable increases in Hb and HbF levels and stable allelic editing were observed.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "146999154cbc5e66ccce589904e77a1def8269f6ad34abada287bb1d67f27cc8"
+    },
+    {
+      "evidence_id": "ev_144d2de30a6e2d03",
+      "source_id": "src_e4d53b2c4adf4aff",
+      "text": "Efficacy of exa-cel in Patients With Transfusion-Dependent Beta Thalassemia.This presentation will include updated pivotal trial data from patients treated with exa-cel in CLIMB-111 and CLIMB-121 and followed in CLIMB‑131. This abstract was chosen for the media briefing program.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2855de946b587bf06c37cba67b5c70c5cb97b4968d3dde81cc6baf475e2c293a"
+    },
+    {
+      "evidence_id": "ev_6ea341e08f9ab149",
+      "source_id": "src_b866d64c95a3723b",
+      "text": "“We observed transfusion independence in most patients given exa-cel...“At the end of this study, participants are offered to enter into the long-term follow-up study for 13 additional years, the CLIMB 131 study,” Locatelli said during his presentation.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "34db7b0fff6a08ac52257cae99d00b0ed0ea6763c07ce70ea34ba84b18bc196e"
+    },
+    {
+      "evidence_id": "ev_48974e192714c9d8",
+      "source_id": "src_e451121eb27271cb",
+      "text": "In patients with transfusion-dependent beta-thalassemia, exa-cel has shown the potential to induce transfusion independence.Extensive evaluation of the safety profile of exa-cel has been performed through both short-term and long-term follow-up studies. Common Side Effects.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "9ecfe27dfcc41236fa1bd2c0601cfbbf957d9d3ca0fb705fc1204c2d1f4489d8"
+    },
+    {
+      "evidence_id": "ev_d25bb72544e6aaf5",
+      "source_id": "src_ee7a1f95853a0c32",
+      "text": "Exagamglogene Autotemcel (exa-cel) improved overall health-related quality of life (HRQoL) in adolescent and adult patients with transfusion-dependent β-thalassemia (TDT), according to a study published in Blood.1.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4b8b4f248758e996ac857a1301ec7a09ba2dec066c65b07222bafdd5d683c495"
+    },
+    {
+      "evidence_id": "ev_9fad22ec5da139bd",
+      "source_id": "src_d0c3b6cf711c625b",
+      "text": "These results echoed findings in CLIMB THAL-111 or CLIMB-131, in which participants (evaluable adolescents and adults) achieved TI12, with the longest transfusion-independent duration reaching 6.3 years.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2d50396f7b493e71d583cc385fd50a8959afc967f5494a805674088a13fda4ba"
+    },
+    {
+      "evidence_id": "ev_9ad0fc06e465710e",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "Vertex Presents Longer-Term Data at the 2025 European Hematology Association (EHA) Congress Demonstrating Durability of CASGEVY® and Provides Update on Expanding Global Access to CASGEVY June 12, 2025 PDF Version - Data from longer-term follow-up of patients in clinical trials further demonstrate durability of the transformative benefits of CASGEVY - Multiple reimbursement agreements secured, expanding access to CASGEVY to more patients around the world - LONDON - June 12, 2025 - Vertex Pharmaceuticals (Nasdaq: VRTX) today announced positive longer-term data for CASGEVY (exagamglogene autotemcel) from global clinical trials in people with severe sickle cell disease (SCD) or transfusion-dependent beta thalassemia (TDT). The results, presented at the European Hematology Association (EHA) Congress, continue to demonstrate the transformative, durable clinical benefits of CASGEVY. The longest follow up in SCD patients now extends more than 5. 5 years and in TDT patients more than 6 years, with a mean of 39. 4 months and 43. 5 months, respectively. CASGEVY is the first and only approved CRISPR/Cas9 gene-edited therapy. “These longer-term data further confirm that CASGEVY can provide significant and durable clinical benefits to eligible people living with sickle cell disease or transfusion-dependent beta thalassemia,” said Franco Locatelli, M. D. , Ph. D.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "23c9f75cf7040e897650f81abac1352d6c3b5296f49d1642f5c25c2f8b470f7f"
+    },
+    {
+      "evidence_id": "ev_115a5c3802247fb7",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": ", Professor of Pediatrics at the Catholic University of the Sacred Heart of Rome, Director of the Department of Pediatric Hematology and Oncology at Bambino Gesù Children’s Hospital, Chair of Vertex’s TDT Program Steering Committee, and Presenting Author of the CASGEVY TDT clinical data at EHA. “Given the urgent and unmet need for new transformative treatments for these diseases, I am delighted by the strong progress that has been made to bring CASGEVY to eligible patients in the real world. ” New longer-term follow-up data presented from the CASGEVY trials In SCD, 43/45 (95. 6%) evaluable patients (those with at least 16 months of follow-up) were free from vaso-occlusive crises (VOCs) for at least 12 consecutive months (VF12) in CLIMB-121 and CLIMB-131 combined (95% CI: 84. 9%, 99. 5%). The mean duration of VOC-free was 35. 0 months (range 14. 4 to 66. 2 months). All evaluable patients (45/45 [100%]) achieved freedom from in-patient hospitalization for severe VOCs for at least 12 consecutive months (HF12) in CLIMB-121 and CLIMB-131 combined (95% CI: 92. 1%, 100%), with a mean hospitalization-free of 36. 1 months (range 14. 5 to 66. 2 months). In TDT, 54/55 (98.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "9a99584d3322cd652693017fd3196f69c1af62b66fbb0c154b6d58c9468c166c"
+    },
+    {
+      "evidence_id": "ev_d05faf420ed817dc",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "2%) evaluable patients (those with at least 16 months of follow-up) achieved transfusion-independence for at least 12 consecutive months with a weighted average hemoglobin (Hb) of at least 9 g/dL (TI12) in CLIMB-111 and CLIMB-131 combined (95% CI: 90. 3%, 100%). The mean duration of transfusion independence was 40. 5 months (range 13. 6 to 70. 8 months). The one evaluable patient who did not achieve TI12 has been transfusion free for 14. 8 months. Iron removal therapy has been stopped for more than 6 months in 39/56 (69. 6%) treated patients following infusion with CASGEVY, with sustained improvement in ferritin and liver iron content, suggesting that CASGEVY has the potential to correct ineffective erythropoiesis. Patients continue to demonstrate stable levels of fetal hemoglobin (HbF) and allelic editing. The safety profile of CASGEVY continues to be generally consistent with myeloablative conditioning with busulfan and autologous hematopoietic stem cell transplant. Progress in bringing CASGEVY to patients Through reimbursement agreements, Vertex has secured access for eligible SCD or TDT patients in multiple countries including Austria, Bahrain, England, the Kingdom of Saudi Arabia, Northern Ireland, Scotland, the United Arab Emirates, the United States and Wales.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "61867327daf8a93bdbdaee217b4b091676561c13fc7e960aafce68fe1e7eee97"
+    },
+    {
+      "evidence_id": "ev_8b9bcc0b4e652539",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "Vertex is continuing to work with government and reimbursement authorities globally to secure sustainable access for additional eligible patients. About Sickle Cell Disease (SCD) SCD is a debilitating, progressive, life-shortening genetic disease. SCD patients report health-related quality of life scores well below the general population and significant health care resource utilization. SCD affects the red blood cells, which are essential for carrying oxygen to all organs and tissues of the body. SCD causes severe pain, organ damage and shortened life span due to misshapen or “sickled” red blood cells. The clinical hallmark of SCD is vaso-occlusive crises (VOCs), which are caused by blockages of blood vessels by sickled red blood cells and result in severe and debilitating pain that can happen anywhere in the body at any time. SCD requires lifelong treatment and significant use of health care resources, and ultimately results in reduced life expectancy, decreased quality of life and reduced lifetime earnings and productivity. In Europe, the mean age of death for patients living with SCD is around 40 years. About Transfusion-Dependent Beta Thalassemia (TDT) TDT is a serious, life-threatening genetic disease. TDT patients report health-related quality of life scores below the general population and significant health care resource utilization.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "ce3e56dab4150d57092252d3f8811de4f3f497a79aeb69ccad31b1b12248f37b"
+    },
+    {
+      "evidence_id": "ev_8e1dab5e2cabf96e",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "TDT requires frequent blood transfusions and iron chelation therapy throughout a person’s life. Due to anemia, patients living with TDT may experience fatigue and shortness of breath, and infants may develop failure to thrive, jaundice and feeding problems. Complications of TDT can also include an enlarged spleen, liver and/or heart, misshapen bones and delayed puberty. TDT requires lifelong treatment and significant use of health care resources, and ultimately results in reduced life expectancy, decreased quality of life and reduced lifetime earnings and productivity. In Europe, the mean age of death for patients living with TDT is 50-55 years. About CASGEVY (exagamglogene autotemcel) CASGEVY is a non-viral, ex vivo CRISPR/Cas9 gene-edited cell therapy for eligible patients with SCD or TDT, in which a patient’s own hematopoietic stem and progenitor cells are edited at the erythroid specific enhancer region of the BCL11A gene through a precise double-strand break. This edit results in the production of high levels of fetal hemoglobin (HbF; hemoglobin F) in red blood cells. HbF is the form of the oxygen-carrying hemoglobin that is naturally present during fetal development, which then switches to the adult form of hemoglobin after birth. CASGEVY has been shown to reduce or eliminate VOCs for patients with SCD and transfusion requirements for patients with TDT.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-5",
+      "content_hash": "ab57479670dad3416ede564b7b0f7a04bd073d398c4fb2d09578b240d64b8f2f"
+    },
+    {
+      "evidence_id": "ev_7715a9539fd944e8",
+      "source_id": "src_6987dfc5646a80a2",
+      "text": "CASGEVY is approved for eligible SCD and TDT patients 12 years and older by multiple regulatory bodies around the world. About the CLIMB Trials The ongoing Phase 1/2/3 open-label trials, CLIMB-111 and CLIMB-121, are designed to assess the safety and efficacy of a single dose of CASGEVY in patients ages 12 to 35 years with TDT or with SCD and recurrent VOCs. The trials are closed for enrollment. Patients will be followed for approximate [CONTENT_TRUNCATED: 10632 chars total, showing first 7000]",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-6",
+      "content_hash": "b2c45e71b023bf19f82bff7c592832ffa48b816a7b0a00b6235d99da1b0a8ed8"
+    },
+    {
+      "evidence_id": "ev_9cca36bfec521b23",
+      "source_id": "src_d361aeef308fdc6b",
+      "text": "The FDA approval for Casgevy (exagamglogene autotemcel) was for the treatment of sickle cell disease in patients aged ≥12 years with recurrent vaso-occlusive crises [23].",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "4a662ee21cc9bdd2fafbc8b739c1c53e26922b2baddf8289e86ea387086f95ba"
+    },
+    {
+      "evidence_id": "ev_9995c4e47f4ca4d7",
+      "source_id": "src_835c4288690c3866",
+      "text": "Exagamglogene autotemcel, sold under the brand name Casgevy, is a gene therapy used for the treatment of sickle cell disease and transfusion-dependent beta thalassemia. It was developed by Vertex Pharmaceuticals and CRISPR Therapeutics.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "3f4a58bb7a5bcca83be4d38e2671e01ea386c8b94a53d3676086739a5e0d8aa4"
+    },
+    {
+      "evidence_id": "ev_829a57742b7901cc",
+      "source_id": "src_b7b23211305aad82",
+      "text": "After approving Casgevy (exagamglogene autotemcel) in December to treat sickle cell disease, the U.S. Food and Drug Administration announced Tuesday that the therapy has now been approved to treat patients older than 12 years with transfusion-dependent beta-thalassemia.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "7c7bac731e71cd1e2b1e37c0e473b941bcd794e73c72a65b94146ee7914b39b2"
+    },
+    {
+      "evidence_id": "ev_3ad8bc9d8a1cdb72",
+      "source_id": "src_d15c7a50e25db8a6",
+      "text": "FDA expands Casgevy approval to patients aged 2+ with sickle cell disease or transfusion-dependent beta thalassemia.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "727c839f1ee0a730b95fd8ec376918193525093e306f90bb21cc17f0ff7de0e2"
+    },
+    {
+      "evidence_id": "ev_9c13b91066e9236b",
+      "source_id": "src_28526bcb81d511a8",
+      "text": "CASGEVY (exagamglogene autotemcel) is an FDA-approved gene therapy developed by Vertex Pharmaceuticals for treating sickle cell disease and transfusion-dependent beta-thalassemia.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "5c6a303724d6ff676065430ff5ba2ea55869294ef7d0d535da3f20757609bb72"
+    },
+    {
+      "evidence_id": "ev_d7e35828ae3b369b",
+      "source_id": "src_3f020c5b3db94950",
+      "text": "The FDA approved the cell-based gene therapy exagamglogene autotemcel (exa-cel; Casgevy, Vertex Pharmaceuticals) for transfusion-dependent beta-thalassemia (TDT) in patients aged 12 years and older.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "5d39710e95e160a0286725af0aad3bbdfaead9a393c42550c6532b747377ca2c"
+    },
+    {
+      "evidence_id": "ev_dc46ed776b3e14e7",
+      "source_id": "src_b792f6ede1239875",
+      "text": "Sickle cell disease (SCD) is an inherited haemoglobinopathy caused by a point mutation in the β-globin gene, resulting in abnormal sickle haemoglobin (HbS) and variable clinical expression ranging from mild to severe. While individuals with sickle cell trait are usually asymptomatic, those with homozygous disease may experience chronic haemolytic anaemia, recurrent vaso-occlusive crises, and progressive organ injury. Current standards of care, including hydroxyurea therapy, chronic blood transfusions, and allogeneic haematopoietic stem cell transplantation (HSCT), have substantially improved survival and reduced complications. However, each approach has limitations, such as incomplete disease control, toxicity, and limited donor availability. Recent advances in non-myeloablative and haploidentical HSCT have expanded curative options, achieving high survival with minimal graft-versus-host disease, though accessibility and cost remain challenges. Emerging gene therapies, particularly lentiviral vector-mediated gene addition and CRISPR-Cas9 genome editing, represent major progress by directly targeting the underlying genetic defect. These autologous approaches eliminate donor-related immune risks and have demonstrated durable haemoglobin correction, near-complete resolution of vaso-occlusive events, and encouraging outcomes in stroke prevention. This review synthesises evidence comparing gene therapies with standard treatments, outlining molecular mechanisms, efficacy, safety, and long-term considerations. Key challenges include stem-cell mobilisation, fertility preservation, conditioning toxicity, and equitable access. Early trials show substantial clinical benefit, improved quality of life, and favourable safety profiles. Emerging in vivo editing technologies may further simplify delivery and enhance global accessibility. Integrating gene therapy into evolving standards of care could transform SCD management, offering realistic prospects for durable remission or cure.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "941c141eb8b8c7c40411eed80f0c879c7967febc32fb828a758131406d40a83c"
+    },
+    {
+      "evidence_id": "ev_67c87aed343286d6",
+      "source_id": "src_86dbadf3e527376c",
+      "text": "Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov number, NCT03745287.).",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "74134bd38cf880168dfc3fbeccaaba46c395b5800f555698c980a53ffbd9ed66"
+    },
+    {
+      "evidence_id": "ev_a47d2abe23afb7fc",
+      "source_id": "src_c31c5da660a71f23",
+      "text": "Participants evaluable for the primary and key secondary endpoints had ≥16 months of follow-up after exa-cel infusion. Participants who complete CLIMB-121 may enroll in the 13-year long-term extension study, CLIMB-131, where they will be followed for a total of 15 years.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6e779f779e51bea490411e6df5d1d23273a4a42f2b014f0a52748a81fda9b7f6"
+    },
+    {
+      "evidence_id": "ev_6e8d588c11c0fda8",
+      "source_id": "src_67b7377738209082",
+      "text": "Summary of Evidence The pivotal trials of exagamglogene autotemcel (Casgevy, exa-cel) were CLIMB SCD-121, for patients aged 12-35 with severe SCD, and CLIMB THAL-111, for patients aged 12-35 with TBT. Both were open-label, single-arm, phase 1/2/3 trials.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0abdd7578282e5ed22deb0fc09cbbf0895a3ed45265b62bd79e085013375de74"
+    },
+    {
+      "evidence_id": "ev_e354caad3b9b9ebf",
+      "source_id": "src_e4d53b2c4adf4aff",
+      "text": "This presentation will include updated pivotal trial data from patients treated with exa-cel in CLIMB-111 and CLIMB-121 and followed in CLIMB‑131. This abstract was chosen for the media briefing program.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1a59b54024f8998829786d7ffe0e731243eea167254ee47063cfe3a6430258ad"
+    },
+    {
+      "evidence_id": "ev_7115a8d04fb37d3d",
+      "source_id": "src_3bc121682b67cb5a",
+      "text": "Exagamglogene Autotemcel for Severe Sickle Cell Disease, NEJM 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9ece4766827a9f91702c335b1a42936ae8073b540f205fcb0ed111023bf28b59"
+    },
+    {
+      "evidence_id": "ev_ad495bad7fac7038",
+      "source_id": "src_c75eff052ba78a94",
+      "text": "The clinical trials, CLIMB-111, CLIMB-121, and CLIMB-131, involve more than 100 patients (46 with SCD and 56 with TDT). These trials have shown that the efficacy results are consistent with earlier analyses, extending the follow-up to over five years.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "72d2add1ca979ef4f20ca1a3b14853e3aad9ec041673be13354149ae534ae0f8"
+    },
+    {
+      "evidence_id": "ev_0ecc349d861fb71a",
+      "source_id": "src_86dbadf3e527376c",
+      "text": "Cookies must be enabled Enable cookies for pubmed.ncbi.nlm.nih.gov and reload this page to continue.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "3abc2df916e75899729230e4e377fdc8fad358b8fba60658b7ec46bbf40cee01"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_e183f05886fbee8d",
+        "text": "Exagamglogene autotemcel（exa-cel，商品名 Casgevy，Vertex/CRISPR Therapeutics）是一种一次性、非病毒载体的自体细胞疗法：体外用 CRISPR-Cas9 在患者自体 CD34+ 造血干/祖细胞（HSPC）的 BCL11A 红系增强子区域进行编辑，解除对 γ-珠蛋白的抑制，重新激活胎儿血红蛋白（HbF）表达，再经白消安清髓后回输 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0767,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c193f828c2d9c7e3"
+        ],
+        "source_ids": [
+          "src_ebfd2c826d45d942"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c193f828c2d9c7e3",
+            "source_id": "src_ebfd2c826d45d942",
+            "text": "Background: Exagamglogene autotemcel (exa-cel) is a one-time, non-viral cell therapy designed to reactivate fetal hemoglobin (HbF) via ex vivo CRISPR/Cas9 gene-editing at the erythroid enhancer region of BCL11A in autologous CD34+ hematopoietic stem and progenitor cells.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_df965586352a84b2",
+        "text": "这一策略在镰状细胞病（SCD）中通过提高抗镰刀化的 HbF 比例抑制红细胞镰变，在输血依赖型 β 地中海贫血（TDT）中则补偿 β-珠蛋白缺陷，恢复有效红细胞生成。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0525,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d05faf420ed817dc",
+          "ev_8e1dab5e2cabf96e",
+          "ev_9ad0fc06e465710e"
+        ],
+        "source_ids": [
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d05faf420ed817dc",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "2%) evaluable patients (those with at least 16 months of follow-up) achieved transfusion-independence for at least 12 consecutive months with a weighted average hemoglobin (Hb) of at least 9 g/dL (TI12) in CLIMB-111 and CLIMB-131 combined (95% CI: 90. 3%, 100%). The mean duration of transfusion independence was 40. 5 months (range 13. 6 to 70. 8 months). The one evaluable patient who did not achieve TI12 has been transfusion free for 14. 8 months. Iron removal therapy has been stopped for more t",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8e1dab5e2cabf96e",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "TDT requires frequent blood transfusions and iron chelation therapy throughout a person’s life. Due to anemia, patients living with TDT may experience fatigue and shortness of breath, and infants may develop failure to thrive, jaundice and feeding problems. Complications of TDT can also include an enlarged spleen, liver and/or heart, misshapen bones and delayed puberty. TDT requires lifelong treatment and significant use of health care resources, and ultimately results in reduced life expectancy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8a604eed2784a38d",
+        "text": "2023 年 12 月 FDA 的批准使 Casgevy 成为历史上首个获批的 CRISPR-Cas9 疗法 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9cca36bfec521b23"
+        ],
+        "source_ids": [
+          "src_d361aeef308fdc6b"
+        ],
+        "reason": "The evidence confirms FDA approval of Casgevy for sickle cell disease, and the source title ('First Regulatory Approvals for CRISPR-Cas9 Therapeutic...') suggests its first-in-class status, but the text does not explicitly state Casgevy was the first approved CRISPR-Cas9 therapy, and the December 20",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9cca36bfec521b23",
+            "source_id": "src_d361aeef308fdc6b",
+            "text": "The FDA approval for Casgevy (exagamglogene autotemcel) was for the treatment of sickle cell disease in patients aged ≥12 years with recurrent vaso-occlusive crises [23].",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3dd28cea334be039",
+        "text": "关键 III 期试验 CLIMB SCD-121（NCT03745287）的结果发表于 NEJM 2024（Frangoul 等）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_67c87aed343286d6",
+          "ev_0ecc349d861fb71a"
+        ],
+        "source_ids": [
+          "src_86dbadf3e527376c"
+        ],
+        "reason": "The evidence confirms that CLIMB SCD-121 (NCT03745287) reported results on exa-cel eliminating vaso-occlusive crises, and the source title matches the relevant exa-cel study. However, neither the evidence text nor source metadata verifies publication in NEJM, the year 2024, or Frangoul et al. as aut",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_67c87aed343286d6",
+            "source_id": "src_86dbadf3e527376c",
+            "text": "Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov number, NCT03745287.).",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0ecc349d861fb71a",
+            "source_id": "src_86dbadf3e527376c",
+            "text": "Cookies must be enabled Enable cookies for pubmed.ncbi.nlm.nih.gov and reload this page to continue.",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2e9554d645f750d1",
+        "text": "研究达到主要终点：可评估患者中 97% 实现连续 ≥12 个月无重度 VOC（P<0.001），且全部患者实现 ≥12 个月无 VOC 相关住院 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4,
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0533,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_67c87aed343286d6",
+          "ev_0ecc349d861fb71a"
+        ],
+        "source_ids": [
+          "src_86dbadf3e527376c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_67c87aed343286d6",
+            "source_id": "src_86dbadf3e527376c",
+            "text": "Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov number, NCT03745287.).",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0ecc349d861fb71a",
+            "source_id": "src_86dbadf3e527376c",
+            "text": "Cookies must be enabled Enable cookies for pubmed.ncbi.nlm.nih.gov and reload this page to continue.",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c22be8d54bef390d",
+        "text": "生物学效应方面，HbF 快速而持久地上升并呈全细胞性（pancellular）分布，总血红蛋白维持在正常或接近正常水平 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7fe2e3dc414136c1"
+        ],
+        "source_ids": [
+          "src_253e97914f73ca7c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7fe2e3dc414136c1",
+            "source_id": "src_253e97914f73ca7c",
+            "text": "11. Exaga mglogene Autotemcel for Severe Sickle Cell Disease. Disc ussion. This phase 3, single-group study of exa-cel met.hospitalization for severe vaso-occlusive crises. for at least 12 months, and 97% were free from.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_653a6e543576db78",
+        "text": "分析时中位随访约 19.3 个月，部分患者随访已超 4 年。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c0a98eca8b1b7074",
+          "ev_531e1db12475bf56",
+          "ev_33d185f380dd4b7c"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88",
+          "src_dc58eae5fd3ec28b",
+          "src_71ec8f285f7c2baf"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_531e1db12475bf56",
+            "source_id": "src_dc58eae5fd3ec28b",
+            "text": "All patients in the CLIMB SCD-121 trial became free from vaso-occlusive crises after exa-cel therapy. In both trials, production of foetal Hb increased in time. In β-thalassemia patients, foetal Hb concentration was >9 g/dL by month 4 and thereafter further increased to 12 g/dL.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_37264def73d51ad4",
+        "text": "CLIMB THAL-111 的 NEJM 2024 论文（Locatelli、Frangoul 等，NEJM 390(18):1663-1676）显示：52 例输注患者中 35 例可评估，32 例（91%）达到输血独立性，TI 期间平均总血红蛋白 13.1 g/dL、平均 HbF 11.9 g/dL，且 ≥94% 红细胞表达 HbF 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0858,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6029cf43cae898d7"
+        ],
+        "source_ids": [
+          "src_26f0acd058dbd334"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6029cf43cae898d7",
+            "source_id": "src_26f0acd058dbd334",
+            "text": "Exagamglogene Autotemcel for Transfusion-Dependent β-Thalassemia. In: New England Journal of Medicine. 2024 ; Vol. 390, No. 18. pp. 1663-1676.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2ea91c2ae28c17c6",
+        "text": "所有患者均实现中性粒细胞与血小板植入。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0844,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb",
+          "ev_0f6eaf7850d1c882"
+        ],
+        "source_ids": [
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e",
+          "src_321112c1b48eb7e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_15b45d69789d3458",
+        "text": "后续更新数据显示输血独立性在 >94% 受试者中维持最长 5 年，Hb/HbF 升高与等位基因编辑水平保持稳定 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0607,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_54b09a96983a6889"
+        ],
+        "source_ids": [
+          "src_39c0efc64e8d0467"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_54b09a96983a6889",
+            "source_id": "src_39c0efc64e8d0467",
+            "text": "Conclusion: Exa-cel demonstrated durable transfusion independence in >94% of participants that was maintained for up to 5 yrs. Durable increases in Hb and HbF levels and stable allelic editing were observed.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c2373c0b5a4cc66",
+        "text": "Vertex 在 2025 年 EHA 大会上报告了更长随访数据，公司新闻稿称疗效持久性得到进一步确认 ——需注意该来源为公司方发布，属于厂商报告的延续性数据而非独立同行评议验证。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0438,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ad0fc06e465710e",
+          "ev_115a5c3802247fb7",
+          "ev_d05faf420ed817dc"
+        ],
+        "source_ids": [
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ad0fc06e465710e",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "Vertex Presents Longer-Term Data at the 2025 European Hematology Association (EHA) Congress Demonstrating Durability of CASGEVY® and Provides Update on Expanding Global Access to CASGEVY June 12, 2025 PDF Version - Data from longer-term follow-up of patients in clinical trials further demonstrate durability of the transformative benefits of CASGEVY - Multiple reimbursement agreements secured, expanding access to CASGEVY to more patients around the world - LONDON - June 12, 2025 - Vertex Pharmace",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_115a5c3802247fb7",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": ", Professor of Pediatrics at the Catholic University of the Sacred Heart of Rome, Director of the Department of Pediatric Hematology and Oncology at Bambino Gesù Children’s Hospital, Chair of Vertex’s TDT Program Steering Committee, and Presenting Author of the CASGEVY TDT clinical data at EHA. “Given the urgent and unmet need for new transformative treatments for these diseases, I am delighted by the strong progress that has been made to bring CASGEVY to eligible patients in the real world. ” N",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d72f65b34fd3110c",
+        "text": "两项适应症的主要终点达成率均在 90% 以上，且效应具生物学一致性（全细胞 HbF 分布、稳定的等位基因编辑），提示功能性治愈而非暂时性改善。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0175,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d12de01bc6a81113",
+          "ev_17fc5b3b2ec6c368",
+          "ev_d05faf420ed817dc"
+        ],
+        "source_ids": [
+          "src_66dfc969c916a41f",
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d12de01bc6a81113",
+            "source_id": "src_66dfc969c916a41f",
+            "text": "Exagamglogene Autotemcel for Transfusion-Dependent β-Thalassemia Author(s): Franco Locatelli, M. D. , Ph. D. https://orcid. org/0000-0002-7976-3654, Peter Lang, M. D. , Donna Wall, M. D. , Roland Meisel, M. D. , Selim Corbacioglu, M. D. https://orcid. org/0000-0003-1070-8486, Amanda M. Li, M. D. , Josu de la Fuente, M. D. , Ph. D. , Ami J. Shah, M. D. , Ben Carpenter, M. D. , Ph. D. , Janet L. Kwiatkowski, M. D. , Markus Mapara, M. D. , Ph. D. , Robert I. Liem, M. D. , Maria Domenica Cappellini,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_17fc5b3b2ec6c368",
+            "source_id": "src_66dfc969c916a41f",
+            "text": "90% of patients achieved transfusion independence. Long-term risks and concern for off-target gene editing will remain a concern.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_aac37a9cba251453",
+        "text": "SCD 中总 Hb 恢复至近正常水平还提示溶血显著减轻，这对长期器官保护的意义有待更长期数据证实。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0257,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_dc46ed776b3e14e7",
+          "ev_9ad0fc06e465710e",
+          "ev_115a5c3802247fb7"
+        ],
+        "source_ids": [
+          "src_b792f6ede1239875",
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_dc46ed776b3e14e7",
+            "source_id": "src_b792f6ede1239875",
+            "text": "Sickle cell disease (SCD) is an inherited haemoglobinopathy caused by a point mutation in the β-globin gene, resulting in abnormal sickle haemoglobin (HbS) and variable clinical expression ranging from mild to severe. While individuals with sickle cell trait are usually asymptomatic, those with homozygous disease may experience chronic haemolytic anaemia, recurrent vaso-occlusive crises, and progressive organ injury. Current standards of care, including hydroxyurea therapy, chronic blood transfu",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_9ad0fc06e465710e",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "Vertex Presents Longer-Term Data at the 2025 European Hematology Association (EHA) Congress Demonstrating Durability of CASGEVY® and Provides Update on Expanding Global Access to CASGEVY June 12, 2025 PDF Version - Data from longer-term follow-up of patients in clinical trials further demonstrate durability of the transformative benefits of CASGEVY - Multiple reimbursement agreements secured, expanding access to CASGEVY to more patients around the world - LONDON - June 12, 2025 - Vertex Pharmace",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5aeb4d5fb803fa82",
+        "text": "短期安全性主要由清髓性预处理（白消安）驱动：骨髓抑制、感染、黏膜炎、可逆性肝毒性，与自体造血干细胞移植的预期毒性谱一致；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1001,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3f89f302e277aa2d",
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb"
+        ],
+        "source_ids": [
+          "src_b92bdb9654c8e4ce",
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3f89f302e277aa2d",
+            "source_id": "src_b92bdb9654c8e4ce",
+            "text": "Vertex：欧盟Okays Casgevy治疗镰状细胞病和输血依赖性β地中海贫血.海贫血。 当造血干细胞移植合适但没有匹配的供体时，该疗法被批准。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_89a7fb254e2eab28",
+        "text": "两项关键试验均未报告治疗相关死亡 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c0a98eca8b1b7074",
+          "ev_b29efbb1b69e2d6b",
+          "ev_9ad0fc06e465710e"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88",
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_b29efbb1b69e2d6b",
+            "source_id": "src_e1086a598e165a88",
+            "text": "View Package Photos Drug Label Info Safety Report Adverse Events FDA Safety Recalls Presence in Breast Milk Related Resources Medline Plus Clinical Trials PubMed Citations Adverse Effects Therapeutic Use Pharmacology Clinical Trials Biochemical Data Summary More Info For This Drug View Labeling Archives RxNorm Get Label RSS Feed View NDC Code(s) NEW!",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1e5629feaa9f4278",
+        "text": "脱靶编辑是 CRISPR 疗法的特有风险。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1957,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d65454b9177f91bb",
+          "ev_33d185f380dd4b7c",
+          "ev_0f6eaf7850d1c882"
+        ],
+        "source_ids": [
+          "src_013e93d19f2bbf4e",
+          "src_71ec8f285f7c2baf",
+          "src_321112c1b48eb7e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9656cba500da72db",
+        "text": "FDA 在 2023 年咨询会议中审查了基于 GUIDE-seq 等无偏体外检测的脱靶分析，认为检出的脱靶编辑风险极低，且患者中未观察到临床相关脱靶事件；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb",
+          "ev_b29efbb1b69e2d6b"
+        ],
+        "source_ids": [
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e",
+          "src_e1086a598e165a88"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d30d8a95cbe3951b",
+        "text": "Casgevy 标签未设黑框警告，但脱靶与克隆造血扩增仍是理论关注点 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0333,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c0a98eca8b1b7074",
+          "ev_b29efbb1b69e2d6b"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_b29efbb1b69e2d6b",
+            "source_id": "src_e1086a598e165a88",
+            "text": "View Package Photos Drug Label Info Safety Report Adverse Events FDA Safety Recalls Presence in Breast Milk Related Resources Medline Plus Clinical Trials PubMed Citations Adverse Effects Therapeutic Use Pharmacology Clinical Trials Biochemical Data Summary More Info For This Drug View Labeling Archives RxNorm Get Label RSS Feed View NDC Code(s) NEW!",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0d274e7692f835ca",
+        "text": "继发恶性肿瘤方面，截至各数据截止点，exa-cel 临床试验中无新发血液系统恶性肿瘤报告。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1237,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_33d185f380dd4b7c",
+          "ev_e21a77047cc2783d",
+          "ev_a0941d385f62f569"
+        ],
+        "source_ids": [
+          "src_71ec8f285f7c2baf",
+          "src_66dfc969c916a41f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_e21a77047cc2783d",
+            "source_id": "src_66dfc969c916a41f",
+            "text": "BACKGROUND Exagamglogene autotemcel (exa-cel) is a nonviral cell therapy designed to reactivate fetal hemoglobin synthesis through ex vivo clustered regularly interspaced short palindromic repeats (CRISPR)–Cas9 gene editing of the erythroid-specific enhancer region of BCL11A in autologous CD34+ hematopoietic stem and progenitor cells (HSPCs). METHODS We conducted an open-label, single-group, phase 3 study of exa-cel in patients 12 to 35 years of age with transfusion-dependent β-thalassemia and a",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a33e2c774ed88b13",
+        "text": "值得强调的是，FDA 对同期获批的慢病毒载体 SCD 疗法 Lyfgenia（lovo-cel）因出现 AML/MDS 病例附加了血液恶性肿瘤黑框警告，而 Casgevy 无此警告——两者机制不同（病毒随机整合 vs.",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0422,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bb57a2857efe3060",
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb"
+        ],
+        "source_ids": [
+          "src_55e69ea1b061de91",
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bb57a2857efe3060",
+            "source_id": "src_55e69ea1b061de91",
+            "text": "FDA APPROVED exagamglogene autotemcel (Casgevy) and lovotibeglogene autotemcel (Lyfgenia) over an image of a sickle cell.Verdun said the drug sponsors have agreed to long-term follow-up of 15 years plus lifetime monitoring for malignancy.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_77c5dd841683ce9b",
+        "text": "非病毒定点编辑），评估风险时不应混淆。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0512,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d65454b9177f91bb"
+        ],
+        "source_ids": [
+          "src_013e93d19f2bbf4e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8a11a307939156ff",
+        "text": "监管要求受试者转入 CLIMB-131 长期随访研究，输注后随访共 15 年，主要监测新发恶性肿瘤及新发/加重的血液学疾病 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_115a5c3802247fb7",
+          "ev_d05faf420ed817dc",
+          "ev_c0a98eca8b1b7074"
+        ],
+        "source_ids": [
+          "src_6987dfc5646a80a2",
+          "src_e1086a598e165a88"
+        ],
+        "reason": "The evidence mentions CLIMB-131 and longer-term follow-up data, but provides no information about a regulatory requirement to transfer subjects into CLIMB-131, a 15-year total follow-up period, or monitoring specifically for new malignancies or new/worsening hematologic diseases.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_115a5c3802247fb7",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": ", Professor of Pediatrics at the Catholic University of the Sacred Heart of Rome, Director of the Department of Pediatric Hematology and Oncology at Bambino Gesù Children’s Hospital, Chair of Vertex’s TDT Program Steering Committee, and Presenting Author of the CASGEVY TDT clinical data at EHA. “Given the urgent and unmet need for new transformative treatments for these diseases, I am delighted by the strong progress that has been made to bring CASGEVY to eligible patients in the real world. ” N",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d05faf420ed817dc",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "2%) evaluable patients (those with at least 16 months of follow-up) achieved transfusion-independence for at least 12 consecutive months with a weighted average hemoglobin (Hb) of at least 9 g/dL (TI12) in CLIMB-111 and CLIMB-131 combined (95% CI: 90. 3%, 100%). The mean duration of transfusion independence was 40. 5 months (range 13. 6 to 70. 8 months). The one evaluable patient who did not achieve TI12 has been transfusion free for 14. 8 months. Iron removal therapy has been stopped for more t",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_954f0a25e8e3e915",
+        "text": "目前同行评议的长期数据以最长约 5 年为限 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          6
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.044,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_54b09a96983a6889"
+        ],
+        "source_ids": [
+          "src_39c0efc64e8d0467"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_54b09a96983a6889",
+            "source_id": "src_39c0efc64e8d0467",
+            "text": "Conclusion: Exa-cel demonstrated durable transfusion independence in >94% of participants that was maintained for up to 5 yrs. Durable increases in Hb and HbF levels and stable allelic editing were observed.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9030524882661824",
+        "text": "白消安清髓的远期后果（不孕不育、内分泌功能、继发肿瘤）在年轻患者中缺乏确定性数据；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0231,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb"
+        ],
+        "source_ids": [
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_212cb84ee51e3164",
+        "text": "携带 DNMT3A/TET2 等突变的克隆造血在基因编辑 HSC 中是否扩增，需等待 CLIMB-131 的完整结果。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0324,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_115a5c3802247fb7",
+          "ev_d05faf420ed817dc",
+          "ev_1290409cb62b4fde"
+        ],
+        "source_ids": [
+          "src_6987dfc5646a80a2",
+          "src_89ebd1894ee1b20a"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_115a5c3802247fb7",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": ", Professor of Pediatrics at the Catholic University of the Sacred Heart of Rome, Director of the Department of Pediatric Hematology and Oncology at Bambino Gesù Children’s Hospital, Chair of Vertex’s TDT Program Steering Committee, and Presenting Author of the CASGEVY TDT clinical data at EHA. “Given the urgent and unmet need for new transformative treatments for these diseases, I am delighted by the strong progress that has been made to bring CASGEVY to eligible patients in the real world. ” N",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d05faf420ed817dc",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "2%) evaluable patients (those with at least 16 months of follow-up) achieved transfusion-independence for at least 12 consecutive months with a weighted average hemoglobin (Hb) of at least 9 g/dL (TI12) in CLIMB-111 and CLIMB-131 combined (95% CI: 90. 3%, 100%). The mean duration of transfusion independence was 40. 5 months (range 13. 6 to 70. 8 months). The one evaluable patient who did not achieve TI12 has been transfusion free for 14. 8 months. Iron removal therapy has been stopped for more t",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c44b3ee1563369c9",
+        "text": "英国 MHRA 于 2023 年 11 月全球首个批准 Casgevy；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2609,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2765b9a74d2107cb",
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb"
+        ],
+        "source_ids": [
+          "src_d5a57eae9914c6fe",
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2765b9a74d2107cb",
+            "source_id": "src_d5a57eae9914c6fe",
+            "text": "当大家都在翘首企盼美国FDA揭晓“该疗法能否被批准上市”的答案时，没想到英国MHRA竟先为CRISPR带来了好消息，批准Casgevy上市。exa-cel被更名为Casgevy。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cbc85a241cdfef3d",
+        "text": "FDA 于 2023 年 12 月 8 日批准用于 ≥12 岁伴复发性 VOC 的 SCD ，2024 年 1 月扩展至 TDT；",
+        "task_id": "final_report",
+        "cited_indices": [
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0799,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9cca36bfec521b23"
+        ],
+        "source_ids": [
+          "src_d361aeef308fdc6b"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9cca36bfec521b23",
+            "source_id": "src_d361aeef308fdc6b",
+            "text": "The FDA approval for Casgevy (exagamglogene autotemcel) was for the treatment of sickle cell disease in patients aged ≥12 years with recurrent vaso-occlusive crises [23].",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fa7eae0d57871a13",
+        "text": "EMA 于 2024 年 2 月给予两适应症有条件上市许可。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0547,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2e3482778b6927b",
+          "ev_d05faf420ed817dc",
+          "ev_7715a9539fd944e8"
+        ],
+        "source_ids": [
+          "src_66dfc969c916a41f",
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2e3482778b6927b",
+            "source_id": "src_66dfc969c916a41f",
+            "text": "), and CRISPR Therapeutics, Cambridge (P. K. M. ) — both in Massachusetts; and Sarah Cannon Research Institute at the Children’s Hospital at TriStar Centennial, Nashville (H. F. ). Leave a Comment Cancel Reply Your email address will not be published. Required fields are marked Type here. . Name* Email* Website Save my name, email, and website in this browser for the next time I comment. May 1, 2024 No Comments Thalassemia All Articles May 2024 Related Articles",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d05faf420ed817dc",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "2%) evaluable patients (those with at least 16 months of follow-up) achieved transfusion-independence for at least 12 consecutive months with a weighted average hemoglobin (Hb) of at least 9 g/dL (TI12) in CLIMB-111 and CLIMB-131 combined (95% CI: 90. 3%, 100%). The mean duration of transfusion independence was 40. 5 months (range 13. 6 to 70. 8 months). The one evaluable patient who did not achieve TI12 has been transfusion free for 14. 8 months. Iron removal therapy has been stopped for more t",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d59d1c2f64b98e2c",
+        "text": "Vertex 报告正在推进全球多国准入 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0729,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ad0fc06e465710e",
+          "ev_115a5c3802247fb7",
+          "ev_d05faf420ed817dc"
+        ],
+        "source_ids": [
+          "src_6987dfc5646a80a2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ad0fc06e465710e",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": "Vertex Presents Longer-Term Data at the 2025 European Hematology Association (EHA) Congress Demonstrating Durability of CASGEVY® and Provides Update on Expanding Global Access to CASGEVY June 12, 2025 PDF Version - Data from longer-term follow-up of patients in clinical trials further demonstrate durability of the transformative benefits of CASGEVY - Multiple reimbursement agreements secured, expanding access to CASGEVY to more patients around the world - LONDON - June 12, 2025 - Vertex Pharmace",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_115a5c3802247fb7",
+            "source_id": "src_6987dfc5646a80a2",
+            "text": ", Professor of Pediatrics at the Catholic University of the Sacred Heart of Rome, Director of the Department of Pediatric Hematology and Oncology at Bambino Gesù Children’s Hospital, Chair of Vertex’s TDT Program Steering Committee, and Presenting Author of the CASGEVY TDT clinical data at EHA. “Given the urgent and unmet need for new transformative treatments for these diseases, I am delighted by the strong progress that has been made to bring CASGEVY to eligible patients in the real world. ” N",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9ddcc963e8bdbc1e",
+        "text": "有报道称适应症后续扩展至更低年龄段，但具体批准细节应以 FDA 标签原文为准 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0325,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b29efbb1b69e2d6b",
+          "ev_c0a98eca8b1b7074"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b29efbb1b69e2d6b",
+            "source_id": "src_e1086a598e165a88",
+            "text": "View Package Photos Drug Label Info Safety Report Adverse Events FDA Safety Recalls Presence in Breast Milk Related Resources Medline Plus Clinical Trials PubMed Citations Adverse Effects Therapeutic Use Pharmacology Clinical Trials Biochemical Data Summary More Info For This Drug View Labeling Archives RxNorm Get Label RSS Feed View NDC Code(s) NEW!",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ee332262105ceadf",
+        "text": "高成本（约 220 万美元/次）、清髓毒性以及需要专业移植中心，是当前真实世界可及性的主要限制。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0224,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3f89f302e277aa2d"
+        ],
+        "source_ids": [
+          "src_b92bdb9654c8e4ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3f89f302e277aa2d",
+            "source_id": "src_b92bdb9654c8e4ce",
+            "text": "Vertex：欧盟Okays Casgevy治疗镰状细胞病和输血依赖性β地中海贫血.海贫血。 当造血干细胞移植合适但没有匹配的供体时，该疗法被批准。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b698eecd2edd207c",
+        "text": "截至 2026 年 8 月，exa-cel 在 SCD 与 TDT 中均展现出高比例、持久的疾病修饰性疗效（VOC 消除 97%；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.064,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_67c87aed343286d6",
+          "ev_7fe2e3dc414136c1",
+          "ev_466033eccbc465bc"
+        ],
+        "source_ids": [
+          "src_86dbadf3e527376c",
+          "src_253e97914f73ca7c",
+          "src_c27148cc7e2a53fb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_67c87aed343286d6",
+            "source_id": "src_86dbadf3e527376c",
+            "text": "Treatment with exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov number, NCT03745287.).",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7fe2e3dc414136c1",
+            "source_id": "src_253e97914f73ca7c",
+            "text": "11. Exaga mglogene Autotemcel for Severe Sickle Cell Disease. Disc ussion. This phase 3, single-group study of exa-cel met.hospitalization for severe vaso-occlusive crises. for at least 12 months, and 97% were free from.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_40db8c384ece51a2",
+        "text": "输血独立 91%–94% 并维持至 5 年），迄今未见脱靶相关临床事件或治疗后恶性肿瘤。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0625,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a0941d385f62f569",
+          "ev_54b09a96983a6889",
+          "ev_33d185f380dd4b7c"
+        ],
+        "source_ids": [
+          "src_66dfc969c916a41f",
+          "src_39c0efc64e8d0467",
+          "src_71ec8f285f7c2baf"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a0941d385f62f569",
+            "source_id": "src_66dfc969c916a41f",
+            "text": "Among the 35 patients with sufficient follow-up data for evaluation, transfusion independence occurred in 32 (91%; 95% confidence interval, 77 to 98; P<0. 001 against the null hypothesis of a 50% response). During transfusion independence, the mean total hemoglobin level was 13. 1 g per deciliter and the mean fetal hemoglobin level was 11. 9 g per deciliter, and fetal hemoglobin had a pancellular distribution (≥94% of red cells). The safety profile of exa-cel was generally consistent with that o",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_54b09a96983a6889",
+            "source_id": "src_39c0efc64e8d0467",
+            "text": "Conclusion: Exa-cel demonstrated durable transfusion independence in >94% of participants that was maintained for up to 5 yrs. Durable increases in Hb and HbF levels and stable allelic editing were observed.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_69fe1518cf5f2504",
+        "text": "其风险收益比明显优于对照获批的病毒载体疗法。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0359,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_33d185f380dd4b7c",
+          "ev_d65454b9177f91bb",
+          "ev_0f6eaf7850d1c882"
+        ],
+        "source_ids": [
+          "src_71ec8f285f7c2baf",
+          "src_013e93d19f2bbf4e",
+          "src_321112c1b48eb7e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_33d185f380dd4b7c",
+            "source_id": "src_71ec8f285f7c2baf",
+            "text": "2018年：首个针对遗传性疾病（镰状细胞贫血和β-地中海贫血）的CRISPR临床试验在欧美启动2020年：首批CRISPR治疗镰状细胞贫血的患者报告显著临床改善2023年：FDA批准首个CRISPR基因疗法Casgevy（exa-cel）用于治疗镰状细胞病",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d65454b9177f91bb",
+            "source_id": "src_013e93d19f2bbf4e",
+            "text": "镰状细胞病基因疗法CASGEVY扩大适用年龄用于2岁及以上患者_香港济民药业. 关于镰状细胞病和地中海贫血.首个地中海贫血症药物Reblozyl：患者输血负担显著减少. CRISPR基因编辑疗法Casgevy获FDA批准，治疗输血依赖性β地中海贫血.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_96022107a3714b4e",
+        "text": "但\"长期安全性\"的最终定论仍取决于 15 年随访计划的完成；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.04,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c0a98eca8b1b7074",
+          "ev_1290409cb62b4fde",
+          "ev_bb57a2857efe3060"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88",
+          "src_89ebd1894ee1b20a",
+          "src_55e69ea1b061de91"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1290409cb62b4fde",
+            "source_id": "src_89ebd1894ee1b20a",
+            "text": "More on pain management in sickle cell disease, including acute sickle cell crises and ED visits.The ongoing CLIMB-131 extension study will further monitor and assess the long-term safety of Casgevy in patients from CLIMB-121 for up to 15 years.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ecbca52ddb5ac149",
+        "text": "在此之前，15 年随访加终身肿瘤监测的监管框架是对残余不确定性（清髓远期毒性、克隆造血、理论脱靶风险）的审慎回应。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0186,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c0a98eca8b1b7074",
+          "ev_1290409cb62b4fde",
+          "ev_3f89f302e277aa2d"
+        ],
+        "source_ids": [
+          "src_e1086a598e165a88",
+          "src_89ebd1894ee1b20a",
+          "src_b92bdb9654c8e4ce"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c0a98eca8b1b7074",
+            "source_id": "src_e1086a598e165a88",
+            "text": "CASGEVY (exagamglogene autotemcel), suspension for intravenous infusion Initial U.S. Approval: 2023.Patients from Trial 1 or Trial 4 are eligible to enroll in an ongoing trial for long-term follow up for a total of 15 years after CASGEVY infusion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1290409cb62b4fde",
+            "source_id": "src_89ebd1894ee1b20a",
+            "text": "More on pain management in sickle cell disease, including acute sickle cell crises and ED visits.The ongoing CLIMB-131 extension study will further monitor and assess the long-term safety of Casgevy in patients from CLIMB-121 for up to 15 years.",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 50,
+    "evidence_count": 67,
+    "supported_count": 0,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 36,
+    "coverage": 0.0,
+    "primary_source_ratio": 0.12,
+    "fulltext_source_ratio": 0.08,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 24
+  },
+  "run_metadata": {
+    "final_report_sha256": "b25cef48bd41fb096b84234927ccc0754589084dd42e16490354496a70a2913b",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 36,
+        "supported_count": 0,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.0,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 24
+      },
+      "after": {
+        "claim_count": 36,
+        "supported_count": 0,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 36,
+        "coverage": 0.0,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 24
+      }
+    }
+  }
+}

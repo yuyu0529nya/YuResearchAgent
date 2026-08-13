@@ -1,0 +1,3245 @@
+{
+  "schema_version": "1.0",
+  "query": "探讨量子计算在密码学（后量子密码 PQC）和药物发现领域的应用前景，分析 NIST 标准化进程和当前技术瓶颈。",
+  "created_at": "2026-08-13T20:58:20.579622+00:00",
+  "sources": [
+    {
+      "source_id": "src_a36e495a968bcf4c",
+      "url": "https://github.com/emmansun/gmsm/blob/develop/docs/pqc.md",
+      "title": "gmsm/docs/pqc.md at develop · emmansun/gmsm · GitHub",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.8425,
+        "host_domain": "github.com"
+      }
+    },
+    {
+      "source_id": "src_444cf14dae48b379",
+      "url": "https://zyyx.cn/news/346",
+      "title": "后量子密码（PQC）-北京中域永信网络科技有限公司",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.86,
+        "host_domain": "zyyx.cn"
+      }
+    },
+    {
+      "source_id": "src_81404ea4108d2de9",
+      "url": "https://quant67.com/post/cryptography/57-pqc-overview/pqc-overview.html",
+      "title": "【密码学百科】后量子密码总览：NIST 标准化与五大技术路线",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.86,
+        "host_domain": "quant67.com"
+      }
+    },
+    {
+      "source_id": "src_c17d101ce89ed67e",
+      "url": "https://juejin.cn/post/7536118823205781554",
+      "title": "抗量子密码技术(PQC)...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.8425,
+        "host_domain": "juejin.cn"
+      }
+    },
+    {
+      "source_id": "src_b68ad64d2ed17264",
+      "url": "https://serverion.com/cn/uncategorized/nist-standards-for-post-quantum-cryptography",
+      "title": "NIST后量子密码学标准 | Serverion | 服务器",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.825,
+        "host_domain": "serverion.com"
+      }
+    },
+    {
+      "source_id": "src_74fb402c7c87f302",
+      "url": "https://blog.csdn.net/Vagrant_yuheng/article/details/151267425",
+      "title": "抗量子加密技术（PQC）-CSDN博客",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "后量子密码 PQC NIST 标准化 Shor算法 威胁 迁移现状",
+        "retrieval_relevance": 0.7725,
+        "host_domain": "blog.csdn.net"
+      }
+    },
+    {
+      "source_id": "src_8354a8d37691ae58",
+      "url": "https://zenodo.org/record/7276560",
+      "title": "Recent Advances in Post-Quantum Cryptography for Networks: A Survey",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Engin Zeydan, Yekta Türk, Berkin Aksoy, S. Bugrahan Ozturk",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4220877750",
+        "citation_count": 65,
+        "provider": "openalex",
+        "retrieval_query": "post-quantum cryptography lattice-based hash-based migration survey",
+        "retrieval_relevance": 0.825,
+        "host_domain": "zenodo.org"
+      }
+    },
+    {
+      "source_id": "src_a6579171d1d309be",
+      "url": "https://mdpi.com/2227-7080/12/12/241/pdf?version=1732363457",
+      "title": "Exploring Post-Quantum Cryptography: Review and Directions for the Transition Process",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Kanza Cherkaoui Dekkaki, Igor Tasic, Maria‐Dolores Cano",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4404699093",
+        "citation_count": 53,
+        "provider": "openalex",
+        "retrieval_query": "post-quantum cryptography lattice-based hash-based migration survey",
+        "retrieval_relevance": 0.8833,
+        "host_domain": "mdpi.com"
+      }
+    },
+    {
+      "source_id": "src_e749238bf1bb69df",
+      "url": "https://doi.org/10.6028/nist.ir.8105",
+      "title": "Report on Post-Quantum Cryptography",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Lily Chen, Stephen P. Jordan, Yi-Kai Liu, Dustin Moody, René Peralta, Ray Perlner, Daniel Smith-Tone",
+      "year": "2016",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W2895182117",
+        "citation_count": 968,
+        "provider": "openalex",
+        "retrieval_query": "post-quantum cryptography lattice-based hash-based migration survey",
+        "retrieval_relevance": 0.55,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_feb8491814b824fe",
+      "url": "https://doi.org/10.6028/nist.ir.8413",
+      "title": "Status report on the third round of the NIST Post-Quantum Cryptography Standardization process",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Gorjan Alagic, Daniel Apon, David A. Cooper, Quynh Dang, Thinh Dang, John Kelsey, Jacob Lichtinger, Yi-Kai Liu, Carl A. Miller, Dustin Moody",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4226075590",
+        "citation_count": 381,
+        "provider": "openalex",
+        "retrieval_query": "post-quantum cryptography lattice-based hash-based migration survey",
+        "retrieval_relevance": 0.55,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_46019ca6e7b0488c",
+      "url": "https://doi.org/10.6028/nist.ir.8413-upd1",
+      "title": "Status report on the third round of the NIST Post-Quantum Cryptography Standardization process",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Gorjan Alagic, Daniel Apon, David A. Cooper, Quynh Dang, Thinh Dang, John Kelsey, Jacob Lichtinger, Yi-Kai Liu, Carl C. Miller, Dustin Moody",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4296842505",
+        "citation_count": 267,
+        "provider": "openalex",
+        "retrieval_query": "post-quantum cryptography lattice-based hash-based migration survey",
+        "retrieval_relevance": 0.55,
+        "host_domain": "doi.org"
+      }
+    },
+    {
+      "source_id": "src_53ef03b60296e2b1",
+      "url": "https://whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+      "title": "Execution of the Migration to Post-Quantum Cryptography",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.48,
+        "host_domain": "whitehouse.gov"
+      }
+    },
+    {
+      "source_id": "src_2b89903c9e880a67",
+      "url": "https://securepeak.com/crypto/pqc.php.html",
+      "title": "Post-Quantum Cryptography Migration | SecurePeak",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.9067,
+        "host_domain": "securepeak.com"
+      }
+    },
+    {
+      "source_id": "src_a5dd74c181ac44c1",
+      "url": "https://quickztna.com/blog/post-quantum-migration-timeline",
+      "title": "The 2026 Post-Quantum Migration Timeline: Every... | QuickZTNA Blog",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.86,
+        "host_domain": "quickztna.com"
+      }
+    },
+    {
+      "source_id": "src_07390a7bb6ef69c7",
+      "url": "https://encryptionconsulting.com/pqc-migration-deadlines-by-country",
+      "title": "Post-Quantum Cryptography Migration Deadlines by Country...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.8367,
+        "host_domain": "encryptionconsulting.com"
+      }
+    },
+    {
+      "source_id": "src_fb489417455726f6",
+      "url": "https://tigertrust.io/blog/cnsa-2-pqc-migration-planning-guide",
+      "title": "CNSA 2.0 PQC Migration Guide: Start Planning for 2027 | TigerTrust",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2027",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "tigertrust.io"
+      }
+    },
+    {
+      "source_id": "src_c4456d751de3403e",
+      "url": "https://axelspire.com/business/pqc-timeline-mandates",
+      "title": "CNSA 2.0 & NIST PQC Deadlines 2026–2035: Free Migration Tool",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "PQC migration 2025 CNSA 2.0 timeline ML-KEM TLS hybrid HQC standard FIPS 203 204 205",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "axelspire.com"
+      }
+    },
+    {
+      "source_id": "src_cc4fa3d515cfce4e",
+      "url": "https://csrc.nist.gov/pubs/fips/203/final",
+      "title": "FIPS 203, Module-Lattice-Based Key-Encapsulation... | CSRC",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.95,
+      "is_primary": true,
+      "content_hash": "1fdb5aae889b68b2de8bf290fb26655ba3e7ebd9ab7cbdb5d502441cd2ca81e8",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 FIPS 203 204 205 ML-KEM ML-DSA SLH-DSA 发布时间线",
+        "retrieval_relevance": 0.7455,
+        "host_domain": "csrc.nist.gov"
+      }
+    },
+    {
+      "source_id": "src_f2251cef248d84fc",
+      "url": "https://cnblogs.com/informatics/p/19235979",
+      "title": "后量子密码学标准化进程：NIST最新标准解读与迁移策略 - warm3snow...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 FIPS 203 204 205 ML-KEM ML-DSA SLH-DSA 发布时间线",
+        "retrieval_relevance": 0.8091,
+        "host_domain": "cnblogs.com"
+      }
+    },
+    {
+      "source_id": "src_51063108d7e772be",
+      "url": "https://freecourse.io/courses/pqc-nist-techmaster-fips-203-204-205-practice-tests-2026",
+      "title": "PQC-NIST TechMaster: FIPS 203, 204, 205 Practice... | FreeCourse.io",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 FIPS 203 204 205 ML-KEM ML-DSA SLH-DSA 发布时间线",
+        "retrieval_relevance": 0.7614,
+        "host_domain": "freecourse.io"
+      }
+    },
+    {
+      "source_id": "src_746c56b97a0c43d9",
+      "url": "https://cursosdev.com/coupons-udemy/pqc-nist-techmaster-fips-203-204-205-practice-tests-2026",
+      "title": "Cupón Gratis! PQC-NIST TechMaster: FIPS 203, 204, 205... | Cursosdev",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 FIPS 203 204 205 ML-KEM ML-DSA SLH-DSA 发布时间线",
+        "retrieval_relevance": 0.7614,
+        "host_domain": "cursosdev.com"
+      }
+    },
+    {
+      "source_id": "src_dbea167f29d2222e",
+      "url": "https://nist.gov/video/nist-pqc-seminar-18-classic-mceliece-conservative-code-based-cryptography",
+      "title": "NIST PQC Seminar # 18: Classic McEliece: conservative code-based...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.95,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 后续轮次 候选算法 HQC BIKE Classic McEliece SIKE 全球采纳情况 2026",
+        "retrieval_relevance": 0.6818,
+        "host_domain": "nist.gov"
+      }
+    },
+    {
+      "source_id": "src_01cb22092242d456",
+      "url": "https://cnblogs.com/xdyixia/p/13967777.html",
+      "title": "NIST后量子密码征集 - xdyixia - 博客园",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 后续轮次 候选算法 HQC BIKE Classic McEliece SIKE 全球采纳情况 2026",
+        "retrieval_relevance": 0.8303,
+        "host_domain": "cnblogs.com"
+      }
+    },
+    {
+      "source_id": "src_c7dcafd3b6cfbb15",
+      "url": "https://nist.gov/about-nist",
+      "title": "About NIST - National Institute of Standards and Technology",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.95,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 后续轮次 候选算法 HQC BIKE Classic McEliece SIKE 全球采纳情况 2026",
+        "retrieval_relevance": 0.2273,
+        "host_domain": "nist.gov"
+      }
+    },
+    {
+      "source_id": "src_26cda9b4a294815a",
+      "url": "https://secrss.com/articles/92991",
+      "title": "secrss.com/articles/92991",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 后续轮次 候选算法 HQC BIKE Classic McEliece SIKE 全球采纳情况 2026",
+        "retrieval_relevance": 0.6924,
+        "host_domain": "secrss.com"
+      }
+    },
+    {
+      "source_id": "src_041f6b275fcecd66",
+      "url": "https://classic.mceliece.org/nist.html",
+      "title": "Classic McEliece: NIST",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST 后量子密码 后续轮次 候选算法 HQC BIKE Classic McEliece SIKE 全球采纳情况 2026",
+        "retrieval_relevance": 0.6818,
+        "host_domain": "classic.mceliece.org"
+      }
+    },
+    {
+      "source_id": "src_a1906e3cd681b576",
+      "url": "https://nsfc.gov.cn/csc/20345/20348/pdf/2025/202501-+122-131.pdf",
+      "title": "标题",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.95,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.7565,
+        "host_domain": "nsfc.gov.cn"
+      }
+    },
+    {
+      "source_id": "src_3b5e0de3ab15242a",
+      "url": "https://caict.ac.cn/kxyj/qwfb/ztbg/202509/P020250930364772523748.pdf",
+      "title": "量子计算 发展态势研究报告",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.7261,
+        "host_domain": "caict.ac.cn"
+      }
+    },
+    {
+      "source_id": "src_1ac18e85afab0de2",
+      "url": "https://m.21jingji.com/article/20260810/herald/129567862add73695a681ed7574bf1ad.html",
+      "title": "AI攻坚医药“研发黑洞”，神经药物临床迎来新范式 - 21财经",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.8174,
+        "host_domain": "m.21jingji.com"
+      }
+    },
+    {
+      "source_id": "src_dcae348b7b99a19b",
+      "url": "https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA",
+      "title": "量子 计算机 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.7261,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_f1b42f133320150a",
+      "url": "https://zhuanlan.zhihu.com/p/32485185125",
+      "title": "一文读懂： 量子计算 —未来的算力 - 知乎",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.7261,
+        "host_domain": "zhuanlan.zhihu.com"
+      }
+    },
+    {
+      "source_id": "src_964f6c3c5a9361d4",
+      "url": "https://ibm.com/cn-zh/think/topics/quantum-computing",
+      "title": "什么是 量子计算 ？ 量子计算 入门与前沿应用 | IBM",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子计算 药物发现 分子模拟 VQE 企业 临床试验 2025",
+        "retrieval_relevance": 0.7261,
+        "host_domain": "ibm.com"
+      }
+    },
+    {
+      "source_id": "src_71714c9327eff8bd",
+      "url": "https://ijsrmt.com/index.php/ijsrmt/article/download/502/134",
+      "title": "Harnessing Quantum Molecular Simulation for Accelerated Cancer Drug Screening",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Salvation Ifechukwude Atalor, Onuh Mathew Ijiga, Joy Onma Enyejo",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4410449415",
+        "citation_count": 47,
+        "provider": "openalex",
+        "retrieval_query": "quantum computing drug discovery molecular simulation VQE",
+        "retrieval_relevance": 0.95,
+        "host_domain": "ijsrmt.com"
+      }
+    },
+    {
+      "source_id": "src_5b58221907f7cb75",
+      "url": "https://nature.com/articles/s41598-024-67897-8.pdf",
+      "title": "A hybrid quantum computing pipeline for real world drug discovery",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Weitang Li, Zhi Yin, Xiaoran Li, Dongqiang Ma, Shuang Yi, Zhenxing Zhang, Chenji Zou, Kunliang Bu, Maochun Dai, Jie Yue",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4400965811",
+        "citation_count": 59,
+        "provider": "openalex",
+        "retrieval_query": "quantum computing drug discovery molecular simulation VQE",
+        "retrieval_relevance": 0.9,
+        "host_domain": "nature.com"
+      }
+    },
+    {
+      "source_id": "src_fa94c8b7e0a685d9",
+      "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10466774.pdf",
+      "title": "Recent Advances in Quantum Computing for Drug Discovery and Development",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Gautam Kumar, Sahil Yadav, Aniruddha Mukherjee, Vikas Hassija, Mohsen Guizani",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4392694268",
+        "citation_count": 75,
+        "provider": "openalex",
+        "retrieval_query": "quantum computing drug discovery molecular simulation VQE",
+        "retrieval_relevance": 0.85,
+        "host_domain": "ieeexplore.ieee.org"
+      }
+    },
+    {
+      "source_id": "src_cdb6edc62eb9dae3",
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/wcms.1481",
+      "title": "The prospects of quantum computing in computational molecular biology",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Carlos Outeiral, Martin Strahm, Jiye Shi, Garrett M. Morris, Simon C. Benjamin, Charlotte M. Deane",
+      "year": "2020",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3028293372",
+        "citation_count": 207,
+        "provider": "openalex",
+        "retrieval_query": "quantum computing drug discovery molecular simulation VQE",
+        "retrieval_relevance": 0.95,
+        "host_domain": "onlinelibrary.wiley.com"
+      }
+    },
+    {
+      "source_id": "src_2f54b88e1b9b1e66",
+      "url": "https://knowledge.uchicago.edu/communities/physical-sciences-division",
+      "title": "Quantum Computer Systems for Scientific Discovery",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Yuri Alexeev, Dave Bacon, Kenneth R. Brown, Robert Calderbank, Lincoln D. Carr, Frederic T. Chong, Brian DeMarco, Dirk Englund, Edward Farhi, Bill Fefferman",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3129777548",
+        "citation_count": 262,
+        "provider": "openalex",
+        "retrieval_query": "quantum computing drug discovery molecular simulation VQE",
+        "retrieval_relevance": 0.8,
+        "host_domain": "knowledge.uchicago.edu"
+      }
+    },
+    {
+      "source_id": "src_f5cc959f1067aaf4",
+      "url": "https://patientanalog.com/technology/quantum-drug-discovery",
+      "title": "Quantum Computing in Drug Discovery: Complete... | Patient Analog",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.86,
+        "host_domain": "patientanalog.com"
+      }
+    },
+    {
+      "source_id": "src_e0e2a13d1a606825",
+      "url": "https://github.com/markf94/quantum-computational-drug-discovery",
+      "title": "GitHub - markf94/quantum-computational-drug-discovery...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.72,
+        "host_domain": "github.com"
+      }
+    },
+    {
+      "source_id": "src_7a675cb524bbb6ab",
+      "url": "https://boehringer-ingelheim.com/science-innovation/cooperation-google-quantum-ai",
+      "title": "Cooperation with Google Quantum AI | Boehringer Ingelheim",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.8367,
+        "host_domain": "boehringer-ingelheim.com"
+      }
+    },
+    {
+      "source_id": "src_38c99dcee3c56300",
+      "url": "https://fiercebiotech.com/medtech/boehringer-partners-google-to-bring-quantum-computing-to-biopharma-r-d",
+      "title": "JPM: Boehringer partners with Google to bring quantum computing...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.79,
+        "host_domain": "fiercebiotech.com"
+      }
+    },
+    {
+      "source_id": "src_596b3a29ae30a2da",
+      "url": "https://pharmasalmanac.com/articles/quantum-computing-will-transform-drug-discovery-development-manufacturing-and-supply-chain-management",
+      "title": "Quantum Computing will Transform Drug Discovery, Development...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.7433,
+        "host_domain": "pharmasalmanac.com"
+      }
+    },
+    {
+      "source_id": "src_875e7a0a89e087b3",
+      "url": "https://articsledge.com/post/quantum-artificial-intelligence-ai",
+      "title": "What is Quantum AI? Complete Guide to Quantum Computing & AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "quantum computing pharma partnership Merck Boehringer Ingelheim Google Qubit Pharma drug discovery clinical trial quantum advantage evidence",
+        "retrieval_relevance": 0.48,
+        "host_domain": "articsledge.com"
+      }
+    },
+    {
+      "source_id": "src_38da5bfcc2cc2cf0",
+      "url": "http://aicms.08nm.com/2026/01/22/量子纠错新方案",
+      "title": "量子纠错新方案 – AI管家",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.9034,
+        "host_domain": "aicms.08nm.com"
+      }
+    },
+    {
+      "source_id": "src_549c35431bcfc6f5",
+      "url": "https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E7%BA%A0%E9%94%99",
+      "title": "量子纠错 - 维基百科，自由的百科全书",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.7828,
+        "host_domain": "zh.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_f09e9f6bf255c602",
+      "url": "https://171l.com/question/693",
+      "title": "量子计算距离实际商用还有多远？ 面临哪些技术瓶颈？ - AI问答社",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.831,
+        "host_domain": "171l.com"
+      }
+    },
+    {
+      "source_id": "src_1d4b1fda32a41d67",
+      "url": "https://spinq.cn/news-detail/tu-po-ping-jing-liang-zi-ji-suan-ji-de-guan-jian-ji-shu-jin-zhan202504221901",
+      "title": "突破瓶颈：量子计算机的关键技术进展 | 量旋科技",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.831,
+        "host_domain": "spinq.cn"
+      }
+    },
+    {
+      "source_id": "src_7c6392fa1ee1ddb8",
+      "url": "https://xueqiu.com/9886749338/383618728",
+      "title": "量子计算进展及相关影响分析 一、量子计算进展：从\"优越性\"...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.8069,
+        "host_domain": "xueqiu.com"
+      }
+    },
+    {
+      "source_id": "src_026eca9c2b7b70cd",
+      "url": "https://wap.stockstar.com/detail/IG2026042400049637",
+      "title": "从英伟达AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "量子纠错 容错量子计算 技术瓶颈 量子比特 噪声 退相干 2025 2026 进展",
+        "retrieval_relevance": 0.7707,
+        "host_domain": "wap.stockstar.com"
+      }
+    },
+    {
+      "source_id": "src_c5daffa5dc3f226c",
+      "url": "https://nanoconvergencejournal.springeropen.com/counter/pdf/10.1186/s40580-024-00418-5",
+      "title": "An elementary review on basic principles and developments of qubits for quantum computing",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Eunmi Chae, Joonhee Choi, Junki Kim",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "ee024ef9a4b422d8e85e1d0fde2a31f64e2792f0da1f0eb2853d1bce0377d1b6",
+      "metadata": {
+        "paper_id": "W4392907838",
+        "citation_count": 69,
+        "provider": "openalex",
+        "retrieval_query": "fault-tolerant quantum computing timeline logical qubits error correction scaling",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "nanoconvergencejournal.springeropen.com"
+      }
+    },
+    {
+      "source_id": "src_b7923210a7a6a99b",
+      "url": "http://hdl.handle.net/2324/7332376",
+      "title": "Q3DE: A fault-tolerant quantum computer architecture for multi-bit burst errors by cosmic rays",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Yasunari Suzuki, Takanori Sugiyama, Tomochika Arai, Wang Liao, Koji Inoue, Teruo Tanimoto",
+      "year": "2022",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4308083525",
+        "citation_count": 20,
+        "provider": "openalex",
+        "retrieval_query": "fault-tolerant quantum computing timeline logical qubits error correction scaling",
+        "retrieval_relevance": 0.9222,
+        "host_domain": "hdl.handle.net"
+      }
+    },
+    {
+      "source_id": "src_9866210283db3daa",
+      "url": "https://mdpi.com/2624-960X/6/4/39/pdf?version=1731750103",
+      "title": "Quantum Computing: Navigating the Future of Computation, Challenges, and Technological Breakthroughs",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Qurban A. Memon, Mahmoud Al Ahmad, Michael Pecht",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4404567563",
+        "citation_count": 76,
+        "provider": "openalex",
+        "retrieval_query": "fault-tolerant quantum computing timeline logical qubits error correction scaling",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "mdpi.com"
+      }
+    },
+    {
+      "source_id": "src_955f837b2fdf6d34",
+      "url": "https://nature.com/articles/s41467-020-20417-4.pdf",
+      "title": "Room-temperature photonic logical qubits via second-order nonlinearities",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Stefan Krastanov, Mikkel Heuck, Jeffrey H. Shapiro, Prineha Narang, Dirk Englund, Kurt Jacobs",
+      "year": "2021",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W3005685782",
+        "citation_count": 45,
+        "provider": "openalex",
+        "retrieval_query": "fault-tolerant quantum computing timeline logical qubits error correction scaling",
+        "retrieval_relevance": 0.8444,
+        "host_domain": "nature.com"
+      }
+    },
+    {
+      "source_id": "src_2001aae7efef946f",
+      "url": "http://link.aps.org/pdf/10.1103/PRXQuantum.5.010102",
+      "title": "Scalable Fault-Tolerant Quantum Technologies with Silicon Color Centers",
+      "source_type": "paper",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "Stephanie Simmons",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4392762455",
+        "citation_count": 53,
+        "provider": "openalex",
+        "retrieval_query": "fault-tolerant quantum computing timeline logical qubits error correction scaling",
+        "retrieval_relevance": 0.8056,
+        "host_domain": "link.aps.org"
+      }
+    },
+    {
+      "source_id": "src_51210555bcbb2d79",
+      "url": "https://entrust.cn/resources/learn/post-quantum-cryptography",
+      "title": "后量子密码学 (PQC)： 用途和加密标准 | Entrust",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST PQC 标准 迁移时间表 2035 量子威胁 RSA Shor 所需逻辑量子比特 药物发现 量子计算 落地时间",
+        "retrieval_relevance": 0.7802,
+        "host_domain": "entrust.cn"
+      }
+    },
+    {
+      "source_id": "src_c98b6e7c35454bea",
+      "url": "https://ssl.bjca.cn/blog/Google-has-set-the-migration-time-for-PQC-to-2029.html",
+      "title": "谷歌将后量子密码迁移时间定为2029...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST PQC 标准 迁移时间表 2035 量子威胁 RSA Shor 所需逻辑量子比特 药物发现 量子计算 落地时间",
+        "retrieval_relevance": 0.7477,
+        "host_domain": "ssl.bjca.cn"
+      }
+    },
+    {
+      "source_id": "src_669d4f309c62c137",
+      "url": "https://f5.com.cn/company/blog/understanding-pqc-standards-and-timelines",
+      "title": "了解 PQC 标准与时间进度 | F5 | F5, Inc.",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST PQC 标准 迁移时间表 2035 量子威胁 RSA Shor 所需逻辑量子比特 药物发现 量子计算 落地时间",
+        "retrieval_relevance": 0.7233,
+        "host_domain": "f5.com.cn"
+      }
+    },
+    {
+      "source_id": "src_5e0c27246bc79cdc",
+      "url": "https://friday-go.icu/security/offensive/post-quantum-cryptography-go-migration-2026",
+      "title": "Post-Quantum Cryptography 迁移实战：Go 开发者的 PQC 落地指南",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NIST PQC 标准 迁移时间表 2035 量子威胁 RSA Shor 所需逻辑量子比特 药物发现 量子计算 落地时间",
+        "retrieval_relevance": 0.7151,
+        "host_domain": "friday-go.icu"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_cb67e650a713e4f2",
+      "source_id": "src_a36e495a968bcf4c",
+      "text": "后量子密码（Post-Quantum Cryptography，PQC）是指能够抵御量子计算机攻击的密码算法。NIST 于 2024 年发布后量子密码系列联邦标准： FIPS 203（ML-KEM）：基于模格学习误差（Module-LWE）的密钥封装机制，前身为 Kyber。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "54a75a66398ee95b665d42c929db0ca170a00f4a9702744d44fc744d1d4cff4a"
+    },
+    {
+      "evidence_id": "ev_8840de31b3d46637",
+      "source_id": "src_444cf14dae48b379",
+      "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "adc19f446e10e260f72db077a60d30e65334095c4976d3d0e6a83dc59f93dabc"
+    },
+    {
+      "evidence_id": "ev_74f948ab818f12c0",
+      "source_id": "src_81404ea4108d2de9",
+      "text": "【密码学百科】后量子密码总览：NIST 标准化与五大技术路线. 2026-04-13 · cryptography · #post-quantum #PQC #NIST #lattice #code-based #multivariate #hash-based #isogeny #ML-KEM #ML-DSA #SLH-DSA #BIKE #HQC. 密码学系列导航.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "bf850ddc72ec18335ec3c79feb479e4607bc68c71b959f16a169f62d55b11638"
+    },
+    {
+      "evidence_id": "ev_4c3ddca93bed1470",
+      "source_id": "src_c17d101ce89ed67e",
+      "text": "Shor量子算法的理论突破，对这些基于大数分解和离散对数难题的算法构成了根本性威胁。Open Quantum Safe (OQS)：提供一个名为liboqs的C库，它封装了大量的PQC算法实现（包括NIST标准）。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ac95e007f24a316b2bbbbdde231947c056e0ea9884148280e87189cea86c699b"
+    },
+    {
+      "evidence_id": "ev_d8216e53a7f71c93",
+      "source_id": "src_b68ad64d2ed17264",
+      "text": "NIST后量子密码学更新. 美国国家标准与技术研究院. 为什么需要后量子密码学.随着 NIST 后量子密码 (PQC) 标准的出台，存储系统密码安全格局正在发生重大转变。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "bdc11b8f40b99285f7e4a555bf9c61bcbd89d73c06e000431fc44b2189309199"
+    },
+    {
+      "evidence_id": "ev_564005d6ba869bd9",
+      "source_id": "src_74fb402c7c87f302",
+      "text": "抗量子加密技术（Post-Quantum Cryptography, PQC）指能够抵御量子计算机攻击的加密算法。NIST PQC标准化文档：提供算法参数和测试用例。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5cb95cb308ccd8460d6f2913c623357b25f2aa45bb59adb093a7cb6e6a9654b7"
+    },
+    {
+      "evidence_id": "ev_8fed656c509ba48a",
+      "source_id": "src_8354a8d37691ae58",
+      "text": "The development of quantum computers poses a new security threat to network infrastructures and services, as they will be powerful enough to break the most common forms of digital encryption. Existing encryption services based on Rivest–Shamir–Adleman (RSA), Diffie-Hellman (DH), Elliptic Curve Cryptography (ECC) and so on are vulnerable to attacks by quantum computers. Although the gap between today’s quantum computers and the threats they pose to current public-key cryptography is large, the telecommunications landscape should begin planning for the transition to the post-quantum era as early as possible. In this paper, we examine recent advances in Post Quantum Cryptography (PQC) algorithms from the perspective of the networking and telecommunications industries. The efforts are categorized at three levels, namely communication, computation (consisting of design, implementation and Public Key System (PKS)), and network. Some of the existing challenges and future recommendations for securing communication networks in the post-quantum era are also listed at the end of the paper.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "ea0cd7c16d1fdcc2d26d9df2df841a8bedb1615b2866c164407ad6c329c6f57b"
+    },
+    {
+      "evidence_id": "ev_62dd1938c76f3f91",
+      "source_id": "src_a6579171d1d309be",
+      "text": "As quantum computing advances, current cryptographic protocols are increasingly vulnerable to quantum attacks, particularly those based on Public Key Infrastructure (PKI) like RSA or Elliptic Curve Cryptography (ECC). This paper presents a comprehensive review of Post-Quantum Cryptography (PQC) as a solution to protect digital systems in the quantum era. We provide an in-depth analysis of various quantum-resistant cryptographic algorithms, including lattice-based, code-based, hash-based, isogeny-based, and multivariate approaches. The review highlights the National Institute of Standards and Technology (NIST) PQC standardization process, highlighting key algorithms, such as CRYSTALS–Kyber, CRYSTALS–Dilithium, Falcon, and SPHINCS+, and discusses the strengths, vulnerabilities, and implementation challenges of the leading algorithms. In addition, we explore transition strategies for organizations, emphasizing hybrid cryptography to ensure backward compatibility during migration. This study offers key insights into the future of cryptographic standards and the critical steps necessary to prepare for the transition from classical to quantum-resistant systems.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "b281351b0105c9a27362201b0a5be3490d10abbad29773aa5f1b8054efe4451c"
+    },
+    {
+      "evidence_id": "ev_d6df0d32d8035e6f",
+      "source_id": "src_e749238bf1bb69df",
+      "text": "The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof of concept implementations, and technical analyses to advance the development and productive use of information technology. ITL's responsibilities include the development of management, administrative",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "0b237369268e52c2eb31f451c36c6aa951375b29519799fa4d67a7877f7ab5a3"
+    },
+    {
+      "evidence_id": "ev_a46e9867835f97ed",
+      "source_id": "src_feb8491814b824fe",
+      "text": "The National Institute of Standards and Technology is in the process of selecting public-key cryptographic algorithms through a public, competition-like process. The new public-key cryptography standards will specify additional digital signature, public-key encryption, and key-establishment algorithms to augment Federal Information Processing Standard (FIPS) 186-4, Digital Signature Standard (DSS), as well as NIST Special Publication (SP) 800-56A Revision 3, Recommendation for Pair-Wise Key-Establishment Schemes Using Discrete Logarithm Cryptography, and SP 800-56B Revision 2, Recommendation for Pair-Wise Key Establishment Using Integer Factorization Cryptography. It is intended that these algorithms will be capable of protecting sensitive information well into the foreseeable future, including after the advent of quantum computers. The first round of the NIST Post-Quantum Cryptography Standardization Process began in December 2017 with 69 candidate algorithms that met both the minimum acceptance criteria and submission requirements. The first round lasted until January 2019, during which candidate algorithms were evaluated based on their security, performance, and other characteristics. NIST selected 26 algorithms to advance to the second round for more analysis. The second round continued until July 2020, after which seven 'finalist' and eight 'alternate' candidate algorithms were selected to move into the third round. This report describes the evaluation and selection process, based on public feedback and internal review, of the third-round candidates. The report summarizes each of the 15 third-round candidate algorithms and identifies those selected for standardization, as well as those that will continue to be evaluated in a fourth round of analysis. The public-key encryption and key-establishment algorithm that will be standardized is CRYSTALS-Kyber. The digital signatures that will be standardized are CRYSTALS-Dilithium, Falcon, and SPHINCS+. While there are multiple signature algorithms selected, NIST recommends CRYSTALS-Dilithium as the primary algorithm to be implemented. In addition, four of the alternate key-establishment candidate algorithms will advance to a fourth round of evaluation: BIKE, Classic McEliece, HQC, and SIKE. These candidates are still being considered for future standardization. NIST will also issue a new Call for Proposals for public-key digital signature algorithms to augment and diversify its signature portfolio.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "52ed6df2677925bf4fe46c55bb9d86636d1837e05f4eef4ccabc76f01b6722cf"
+    },
+    {
+      "evidence_id": "ev_118a362f317b8b1d",
+      "source_id": "src_46019ca6e7b0488c",
+      "text": "The National Institute of Standards and Technology is in the process of selecting public-key cryptographic algorithms through a public, competition-like process. The new public-key cryptography standards will specify additional digital signature, public-key encryption, and key-establishment algorithms to augment Federal Information Processing Standard (FIPS) 186-4, Digital Signature Standard (DSS), as well as NIST Special Publication (SP) 800-56A Revision 3, Recommendation for Pair-Wise Key-Establishment Schemes Using Discrete Logarithm Cryptography, and SP 800-56B Revision 2, Recommendation for Pair-Wise Key Establishment Using Integer Factorization Cryptography. It is intended that these algorithms will be capable of protecting sensitive information well into the foreseeable future, including after the advent of quantum computers. The first round of the NIST Post-Quantum Cryptography Standardization Process began in December 2017 with 69 candidate algorithms that met both the minimum acceptance criteria and submission requirements. The first round lasted until January 2019, during which candidate algorithms were evaluated based on their security, performance, and other characteristics. NIST selected 26 algorithms to advance to the second round for more analysis. The second round continued until July 2020, after which seven 'finalist' and eight 'alternate' candidate algorithms were selected to move into the third round. This report describes the evaluation and selection process, based on public feedback and internal review, of the third-round candidates. The report summarizes each of the 15 third-round candidate algorithms and identifies those selected for standardization, as well as those that will continue to be evaluated in a fourth round of analysis. The public-key encryption and key-establishment algorithm that will be standardized is CRYSTALS-Kyber. The digital signatures that will be standardized are CRYSTALS-Dilithium, Falcon, and SPHINCS+. While there are multiple signature algorithms selected, NIST recommends CRYSTALS-Dilithium as the primary algorithm to be implemented. In addition, four of the alternate key-establishment candidate algorithms will advance to a fourth round of evaluation: BIKE, Classic McEliece, HQC, and SIKE. These candidates are still being considered for future standardization. NIST will also issue a new Call for Proposals for public-key digital signature algorithms to augment and diversify its signature portfolio.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "52ed6df2677925bf4fe46c55bb9d86636d1837e05f4eef4ccabc76f01b6722cf"
+    },
+    {
+      "evidence_id": "ev_e647d16a546f97fe",
+      "source_id": "src_53ef03b60296e2b1",
+      "text": "Jun 24, 2026 · Agencies must develop and submit a PQC Migration Plan to OMB and the Office of the National Cyber Director …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4cab8942f4466b95ea63030ed2a3be05a5b9cb38c4a93bbd4bf6e4a54e2f7d2e"
+    },
+    {
+      "evidence_id": "ev_7d62c22f268efce4",
+      "source_id": "src_2b89903c9e880a67",
+      "text": "FIPS 203 (ML-KEM) FIPS 204 (ML-DSA) FIPS 205 (SLH-DSA) NSA CNSA 2.0 Hybrid TLS Cryptographic Agility.Begin preferring CNSA 2.0 algorithms (ML-DSA-87 or SLH-DSA) for software and firmware signing. Dual-signing with legacy algorithms permitted. 2025–2027.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3e340b4179c4cfbabc07e2b34d2e8be457e312735dd05c8d4627622da9189ab2"
+    },
+    {
+      "evidence_id": "ev_7ef8208bb069ca2f",
+      "source_id": "src_a5dd74c181ac44c1",
+      "text": "NIST publishes the algorithm standards (FIPS 203, 204, 205 in 2024). Until these exist, nothing can be “PQ-compliant”. Regulator mandates.NIST FIPS 203 — ML-KEM. NSA CNSA 2.0 Advisory (2022). EU PQC Implementation Roadmap. UK NCSC PQC Guidance.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "18f3415825d1d4163ac98608361f2a2573c81d9ab982c7b265faffbd1178fd0b"
+    },
+    {
+      "evidence_id": "ev_30a283796f40f279",
+      "source_id": "src_07390a7bb6ef69c7",
+      "text": "Sovereign standard; incompatible with FIPS 203/204/205; no external enforcement timeline published.CNSA 2.0 requires ML-KEM-1024 and ML-DSA-87 specifically for National Security Systems, not the lower parameter sets that are sufficient for general enterprise use.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "da03dc5eb4ffd75ff6eeef34c149829f6d3db0fda1022bb5eb22fc444d159f28"
+    },
+    {
+      "evidence_id": "ev_4bcd4aef72b49896",
+      "source_id": "src_fb489417455726f6",
+      "text": "CNSA 2.0 and the 2027 Compliance Clock: Start Your PQC Migration Now. NSA's CNSA 2.0 requires National Security Systems to begin post-quantum cryptography migration by January 2027.NIST Standard. Key Establishment. ML-KEM (Kyber). FIPS 203. Digital Signatures.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ad7428d348094ceb8178f1d680d49b3463c034d462e5cd5e8e3bdbfd5f0245a8"
+    },
+    {
+      "evidence_id": "ev_41fa61cfdf7abaf2",
+      "source_id": "src_c4456d751de3403e",
+      "text": "Federal PQC deadlines (CNSA 2.0, NSM-10, EO 14144) by system type. Interactive timeline tool, 42-month enterprise migration phases, vendor support status.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ea39190866b66225f6d3abf2b0f4e322656b00977d64791eb0434edc2eddfd97"
+    },
+    {
+      "evidence_id": "ev_095c2d9b5eaf0446",
+      "source_id": "src_cc4fa3d515cfce4e",
+      "text": "The security of ML-KEM is related to the computational difficulty of the Module Learning with Errors problem. At present, ML-KEM is believed to be secure, even against adversaries who possess a quantum computer.Related NIST Publications: FIPS 204 FIPS 205 SP 800-227.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "69ecdbc1bd3541b8324338c6b1a23bae8f24d0d09360149e4ebcdb5bac12a8ec"
+    },
+    {
+      "evidence_id": "ev_b4b4e676417fc8bc",
+      "source_id": "src_81404ea4108d2de9",
+      "text": "FIPS 204：ML-DSA（Module-Lattice-Based Digital Signature Algorithm） 是基于模格上 Fiat-Shamir with Aborts 范式的数字签名算法，其前身为 CRYSTALS-Dilithium。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ef4504061742bc49051578aee6fb115d400945e5b9b545f4e96265723ed80e2d"
+    },
+    {
+      "evidence_id": "ev_f24462f31554d448",
+      "source_id": "src_f2251cef248d84fc",
+      "text": "ML-DSA (原CRYSTALS-Dilithium). 格密码学 (MLWE).3 全球后量子密码迁移策略与时间表. 3.1 全球迁移规划概览.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "247d43a57c4caa6ac3a7ee027708c716cb05646d72b956e8d2ca1fc118c22186"
+    },
+    {
+      "evidence_id": "ev_e228abe460a22f9f",
+      "source_id": "src_51063108d7e772be",
+      "text": "That is a big problem.To fix this, NIST spent years reviewing and testing new algorithms. In 2024, they officially released three new cryptography standards:FIPS 203 — ML-KEM (for key encapsulation)FIPS 204 — ML-DSA (for digital signatures using lattice math)FIPS 205 — SLH-DSA...",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "79d95fd1ce25db3c4a1a845552687b82382dd4410b6a2d53f5c8e96c592a8551"
+    },
+    {
+      "evidence_id": "ev_ec35e7141b9de214",
+      "source_id": "src_746c56b97a0c43d9",
+      "text": "Study FIPS 204 ML-DSA and FIPS 205 SLH-DSA — their designs, security levels, use cases, and how they differ from each other.FIPS 203 — ML-KEM (for key encapsulation). FIPS 204 — ML-DSA (for digital signatures using lattice math).",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "83aa63b2ff4cf8058240d843e1f4989e62ea4175e715a7df3393fb8e146ed590"
+    },
+    {
+      "evidence_id": "ev_6a98f1c306a25ceb",
+      "source_id": "src_cc4fa3d515cfce4e",
+      "text": "Publications FIPS 203 Module-Lattice-Based Key-Encapsulation Mechanism Standard Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 13, 2024 Planning Note ( 11/17/2025 We've identified an issue that will be corrected in a future update/revision of this publication. For details, see the \"Errata (potential updates)\" spreadsheet listed under \"Documentation. \" Author(s) National Institute of Standards and Technology Abstract A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to perform basic tasks in secure communications, such as encryption and authentication. This standard specifies a key-encapsulation mechanism called ML-KEM. The security of ML-KEM is related to the computational difficulty of the Module Learning with Errors problem. At present, ML-KEM is believed to be secure, even against adversaries who possess a quantum computer. This standard specifies three parameter sets for ML-KEM. In order of increasing security strength and decreasing performance, these are ML-KEM-512, ML-KEM-768, and ML-KEM-1024.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "06a7576b8162c8a2fcd8bded930398372bd243ba5926202af20c781fdc148188"
+    },
+    {
+      "evidence_id": "ev_7bdfc003f347dff0",
+      "source_id": "src_cc4fa3d515cfce4e",
+      "text": "A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to. . . See full abstract A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to perform basic tasks in secure communications, such as encryption and authentication. This standard specifies a key-encapsulation mechanism called ML-KEM. The security of ML-KEM is related to the computational difficulty of the Module Learning with Errors problem. At present, ML-KEM is believed to be secure, even against adversaries who possess a quantum computer. This standard specifies three parameter sets for ML-KEM. In order of increasing security strength and decreasing performance, these are ML-KEM-512, ML-KEM-768, and ML-KEM-1024.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "df765ab04b408e3129f6f5301d901514322ffd630da6ccd0ad5f342872ea387f"
+    },
+    {
+      "evidence_id": "ev_43cb0c13d374b3c4",
+      "source_id": "src_cc4fa3d515cfce4e",
+      "text": "Hide full abstract Keywords computer security cryptography encryption Federal Information Processing Standards key-encapsulation mechanism lattice-based cryptography post-quantum public-key cryptography Control Families None selected Documentation Publication: https://doi. org/10. 6028/NIST. FIPS. 203 Download URL Errata (potential updates) (xlsx) Supplemental Material: FAQ for PQC FIPS Federal Register Notice NIST News article PQC Standardization Project Related NIST Publications: FIPS 204 FIPS 205 SP 800-227 Document History: 08/24/23: FIPS 203 (Draft) 08/13/24: FIPS 203 (Final) Topics Security and Privacy key management post-quantum cryptography",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "31ac5eb9674a0fceb6c3bf82c904bd599cecd182a5207d93d7f979267c5f13ac"
+    },
+    {
+      "evidence_id": "ev_e776128757325e7f",
+      "source_id": "src_dbea167f29d2222e",
+      "text": "Daniel J. Bernstein, University of Illinois at Chicago, USAHost: Dr. Maxime Bros, NIST PQC Team Project Lead: Dr. Dustin Moody.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "787ad2b2d07ded652decf0933133d0eb7608ec162bdbde219564e6ccfbd1d166"
+    },
+    {
+      "evidence_id": "ev_afa4461c018232ec",
+      "source_id": "src_01cb22092242d456",
+      "text": "BIKE Classic McEliece HQC LEDAcrypt (LEDAkem/LEDApkc) NTS-KEM ROLLO (LAKE/LOCKER/Ouroboros-R) RQC.第三轮. NIST公布了第三轮的7个候选算法，它们分别是： 公钥加密/KEMs.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fa859868ab344fe1a7adc7e96cbfa7b7bd4d3395e64cf2e314994d5f9d99f8d0"
+    },
+    {
+      "evidence_id": "ev_4b0ea4cb9df4678a",
+      "source_id": "src_c7dcafd3b6cfbb15",
+      "text": "Jul 10, 2009 · The National Institute of Standards and Technology (NIST) was founded in 1901 and is now part of the U.S. …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "6a45d9bea8c1e37f6f0d5ad9727343b967bc5e1104a2c79a0c58e0676764a167"
+    },
+    {
+      "evidence_id": "ev_1c769565277f8e9e",
+      "source_id": "src_26cda9b4a294815a",
+      "text": "各组织在PQC标准化工作中持续强化技术路线的统一，ISO直接将NIST推荐的ML-KEM、Classic McEliece等公钥加密算法以及XMSS、LMS等签名算法纳入其标准ISO/IEC 18033-2、ISO/IEC 14888-4；",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "7684a506fb6df888043d1ce29a88d4eb035dba051a3b24d0cadf5005599db7b9"
+    },
+    {
+      "evidence_id": "ev_bbe1d05bd3db6d41",
+      "source_id": "src_041f6b275fcecd66",
+      "text": "Classic McEliece: NIST. Classic McEliece was submitted in 2017 to NIST's Post-Quantum Cryptography Standardization Project.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a8e6718ee22808f350e8f6faf4f9d5e0aba05f133a9ae18be21f071bc866bb8b"
+    },
+    {
+      "evidence_id": "ev_ff781860ff236ca2",
+      "source_id": "src_a1906e3cd681b576",
+      "text": "2 我国抗肿瘤药物临床试验研究的变革与 机遇.2.4 临床试验学科建设及人才体系建立.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "ace8f6438df1b209a2c16b26d8ccd3f52a898afec0ffc4b21442833e5ee341bf"
+    },
+    {
+      "evidence_id": "ev_d95e76d9f0d9c100",
+      "source_id": "src_3b5e0de3ab15242a",
+      "text": "本报告重点关注近一年来国内外量子计算关键技术研究、应用场景探索和产业生态培育的最新进展和热点事件,分析量子计算技术演进 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "9ad035e78bab5af45e2f8c52a8ab150a70e7a9b59db94eb270bfe557532a761f"
+    },
+    {
+      "evidence_id": "ev_0b0800c2657fcc34",
+      "source_id": "src_1ac18e85afab0de2",
+      "text": "在药物发现上游，国内AI制药头部企业英矽智能深度布局。CNS药物研发长期面临三重挑战：疾病机制不明导致临床转化率低；血脑屏障阻隔使药物难以入脑；症状评估主观性强，临床试验失败率高。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "affa7f94f6f8d2f155b8a670d2d7f2ce715a65e749255d3958a521629832b35f"
+    },
+    {
+      "evidence_id": "ev_668aa48c2a942bed",
+      "source_id": "src_dcae348b7b99a19b",
+      "text": "当对量子比特进行测量时，结果是一个经典比特的 概率性输出。 如果量子计算机以特定方式操控量子比特，就可以利用 波的干涉 效 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "713a9c58575adea34921329b449744fc201cca365a026f437112e5508020245a"
+    },
+    {
+      "evidence_id": "ev_db91e8649abe657b",
+      "source_id": "src_f1b42f133320150a",
+      "text": "先进半导体是传奇的过去，AI是浮躁的当下，量子是确定的未来。 我们对算力的要求越来越高，而量子计算是解决算力瓶颈的未来技 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "be44ae1fcf3d4802c23a61d39100c19651e6ab5e950dd65a250112c6af3cc1db"
+    },
+    {
+      "evidence_id": "ev_c04f2523f8ae5850",
+      "source_id": "src_964f6c3c5a9361d4",
+      "text": "什么是量子计算？ 量子计算是计算机科学与工程的新兴领域，利用量子力学特性解决即便最强大经典计算机也无法应对的问题。 量子 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "58bbba30991f96ca3201e495bd286720c06d09173beb81e640e41df854de33e4"
+    },
+    {
+      "evidence_id": "ev_56319cc722819911",
+      "source_id": "src_71714c9327eff8bd",
+      "text": "Cancer drug discovery is a resource-intensive process characterized by low success rates, protracted timelines, and significant cost implications. Conventional screening methods—including high-throughput assays and classical molecular modeling—struggle to capture the quantum nature of biomolecular interactions critical to binding affinity and drug specificity. In response, quantum molecular simulation (QMS) has emerged as a transformative approach that leverages the principles of quantum mechanics to enhance the accuracy and efficiency of drug-target interaction modeling. This review explores the theoretical foundations, computational methodologies, and real-world applications of QMS in cancer drug discovery. It discusses key quantum approaches such as Density Functional Theory (DFT), Hartree-Fock (HF), and hybrid QM/MM methods, while evaluating the role of quantum algorithms— including Variational Quantum Eigensolvers (VQE) and Quantum Phase Estimation (QPE)—in elucidating biomolecular structures and energetics. The integration of QMS with next-generation quantum hardware platforms (e.g., superconducting qubits and quantum annealers) and open-source software ecosystems is also reviewed. Comparative performance analyses highlight the advantages of QMS over classical methods in terms of precision, scalability, and its potential for personalized oncology applications. Nonetheless, significant challenges remain, including issues of decoherence, algorithmic noise, regulatory integration, and reproducibility. This paper presents a forward-looking perspective on how QMS, when synergized with artificial intelligence and omics data, could fundamentally reshape the paradigm of cancer therapeutic development by enabling faster, more accurate, and mechanism-driven drug discovery.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "ca4c00334147ca4f621b2fc41a31ff83e80b464a9606a0f399eeff48e4f68cb2"
+    },
+    {
+      "evidence_id": "ev_38561253b61b773d",
+      "source_id": "src_5b58221907f7cb75",
+      "text": "Quantum computing, with its superior computational capabilities compared to classical approaches, holds the potential to revolutionize numerous scientific domains, including pharmaceuticals. However, the application of quantum computing for drug discovery has primarily been limited to proof-of-concept studies, which often fail to capture the intricacies of real-world drug development challenges. In this study, we diverge from conventional investigations by developing a hybrid quantum computing pipeline tailored to address genuine drug design problems. Our approach underscores the application of quantum computation in drug discovery and propels it towards more scalable system. We specifically construct our versatile quantum computing pipeline to address two critical tasks in drug discovery: the precise determination of Gibbs free energy profiles for prodrug activation involving covalent bond cleavage, and the accurate simulation of covalent bond interactions. This work serves as a pioneering effort in benchmarking quantum computing against veritable scenarios encountered in drug design, especially the covalent bonding issue present in both of the case studies, thereby transitioning from theoretical models to tangible applications. Our results demonstrate the potential of a quantum computing pipeline for integration into real world drug design workflows.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "86da24501d50726bf5ae5431ac3e87d7b00fd94a78d13141c564656d0637f35c"
+    },
+    {
+      "evidence_id": "ev_464ed3bac8561882",
+      "source_id": "src_fa94c8b7e0a685d9",
+      "text": "The preservation of human health is of utmost importance, and unrestricted availability of medications is essential for the sustenance of overall wellness. Pharmaceuticals, which consist of a wide range of therapeutic substances utilized to diagnose, treat, and improve various diseases and conditions, play a crucial part in the field of healthcare. However, the drug research and development process is widely recognized for its lengthy duration, demanding nature, and substantial expenses. To enhance the effectiveness of this complex process, interdisciplinary groups have converged, giving rise to the field known as “Bioinformatics”. The emergence and future advancements of Quantum Computing (QC) technologies have the potential to significantly enhance and accelerate the complex process of drug discovery and development. This paper explores various disciplines, such as Computer-Aided Drug Design (CADD), quantum simulations, quantum chemistry, and clinical trials, that stand to gain significant advantages from the rapidly advancing field of quantum technology. This study aims to explore a range of fundamental quantum principles, intending to facilitate a thorough understanding of this revolutionary technology.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "4fca8553595a01628b9f11b7dea18bf0fff48273bf2d4729b2f7b55be79e99c9"
+    },
+    {
+      "evidence_id": "ev_bb46e7205382c589",
+      "source_id": "src_cdb6edc62eb9dae3",
+      "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run machine learning algorithms far more efficiently, to algorithms for quantum simulation that are poised to improve computational calculations in drug discovery, to quantum algorithms for optimization that may advance fields from protein structure prediction to network analysis. However, these exciting prospects are susceptible to “hype,” and it is also important to recognize the caveats and challenges in this new technology. Our aim is to introduce the promise and limitations of emerging quantum computing technologies in the areas of computational molecular biology and bioinformatics. This article is categorized under: Structure and Mechanism &gt; Computational Biochemistry and Biophysics Data Science &gt; Computer Algorithms and Programming Electronic Structure Theory &gt; Ab Initio Electronic Structure Methods",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "84637c849ce6215ba861b56431229bb6386d12c09bed836bf509f5cdb1e5a4d9"
+    },
+    {
+      "evidence_id": "ev_77e626f59ad06b0a",
+      "source_id": "src_2f54b88e1b9b1e66",
+      "text": "The great promise of quantum computers comes with the dual challenges of building them and finding their useful applications. We argue that these two challenges should be considered together, by codesigning full-stack quantum computer systems along with their applications in order to hasten their development and potential for scientific discovery. In this context, we identify scientific and community needs, opportunities, a sampling of a few use case studies, and significant challenges for the development of quantum computers for science over the next 2-10 years. This document is written by a community of university, national laboratory, and industrial researchers in the field of Quantum Information Science and Technology, and is based on a summary from a U.S. National Science Foundation workshop on Quantum Computing held on October 21-22, 2019 in Alexandria, VA.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "e7d704c1ddd5df9738d30e5f17c6b823313698a21503608d0470ddcac5fcf4ca"
+    },
+    {
+      "evidence_id": "ev_54b54ee830e12774",
+      "source_id": "src_f5cc959f1067aaf4",
+      "text": "Google Quantum AI. Leading quantum hardware with pharma collaborations: Boehringer Ingelheim: Multi-year partnership for molecular simulation research. Recent milestone: Quantum error correction breakthrough (2023) - key for drug discovery applications.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "15b5dc900de0bb324281be25423dd329bcea13f495f45b3e6c1cdbc6fdc0833d"
+    },
+    {
+      "evidence_id": "ev_9d969be1b26cc5d8",
+      "source_id": "src_e0e2a13d1a606825",
+      "text": "IBM Quantum - Superconducting quantum processors; pharma collaborations include Cleveland Clinic (Discovery Accelerator) and Moderna (mRNA design). IonQ - Trapped-ion quantum computers available via Amazon Braket and Azure Quantum.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "8188fa09ee654ef80def64856393e188670c2716fec6b54e7c789c05ee8135d0"
+    },
+    {
+      "evidence_id": "ev_cbe70b1bd104a7da",
+      "source_id": "src_7a675cb524bbb6ab",
+      "text": "Quantum Computing: Boehringer Ingelheim Pioneers with Google for Pharma R&D.Thanks to faster options for the analysis and application of research, quantum computing could potentially reduce the time between drug discovery and market launch.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "7fd77f0f0842e6574029a8f77e6db2e40146408681c19bf04688ddc45e217b43"
+    },
+    {
+      "evidence_id": "ev_ac31d4997e31dbbb",
+      "source_id": "src_38c99dcee3c56300",
+      "text": "Fierce Pharma.Quantum computing is quickly becoming more science than fiction, and Boehringer Ingelheim hopes to be out in front in bringing it to biopharma R&D. Through a new partnership with Google, the drugmaker hopes to harness its promised speeds and...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "4d1d5af51516e9d9c264867de3d2d6d96cd354532955ec4dec960143b53b0cd7"
+    },
+    {
+      "evidence_id": "ev_2defe6a3e5107d95",
+      "source_id": "src_596b3a29ae30a2da",
+      "text": "Several Quantum Computing Startups Focused on Pharma. Many startups specializing in quantum computing and its application to the pharmaceutical industry have emerged in recent years.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c6db844d53ca1d78f8e06209dd98277e6e549b7342a2543b76d40505a8e8c775"
+    },
+    {
+      "evidence_id": "ev_883a426e2584d94f",
+      "source_id": "src_875e7a0a89e087b3",
+      "text": "Quantum AI combines quantum computing with artificial intelligence to solve complex problems faster. Learn how it works, real applications, market size & future outlook.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d2085960f503e66243439a7a368372c53d17bf8dcef175b0b61bfae8b26c06b0"
+    },
+    {
+      "evidence_id": "ev_4e29bfdab23ffe08",
+      "source_id": "src_38da5bfcc2cc2cf0",
+      "text": "其从“有噪声中等规模量子（NISQ）”时代迈向“容错量子计算”时代的关键瓶颈。 量子纠错技术通过编码冗余量子比特来检测并纠正错误，是突破这一瓶颈的核心手段，而近年来涌现的量子纠错新方案，正为容错量子计算的实用化开.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "675e5f0615b9395fc5d5bd4fa7647a111cafab48858574d614e3cb692ceb57f9"
+    },
+    {
+      "evidence_id": "ev_a0313e59edb60782",
+      "source_id": "src_549c35431bcfc6f5",
+      "text": "量子纠错 量子纠错 （英語： Quantum error correction， QEC）是 量子计算 领域应用的一套关键技术，旨在保护 量子信息 免受 退相 …",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "49fd93e13ba7c1d46598a7edfb6895a2097ef947ba9111c9769199d8759e8237"
+    },
+    {
+      "evidence_id": "ev_c60f21534ad54b04",
+      "source_id": "src_f09e9f6bf255c602",
+      "text": "量子计算 技术瓶颈 商用 量子比特 纠错.量子计算商用化就像在造一台需要绝对零度的机器，乐观估计还需5-10年。 主要瓶颈是量子比特的稳定性，目前超过几百个量子比特的纠错成本呈指数级增长。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "6e5f72850b5f09ea7997679e4a8532332a119909e5ac23eee1a7693f0216362c"
+    },
+    {
+      "evidence_id": "ev_2c6aa1942eb2d36c",
+      "source_id": "src_1d4b1fda32a41d67",
+      "text": "突破瓶颈：量子计算机的关键技术进展. 2025.04.22 · 行业资讯 量子计算机发展量子比特量子计算机.相干时间的延长意味着量子比特能在更长时间内保持量子态，减少因退相干而产生的错误，从而提升了量子计算的可靠性。 此外，离子阱量子比特技术也在稳步发展。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9fb0cf3490fe19c8e2f34da4105a8d1bd10051cfc59a169263628dd1e578de11"
+    },
+    {
+      "evidence_id": "ev_521edac3e1a0eca9",
+      "source_id": "src_7c6392fa1ee1ddb8",
+      "text": "一、量子计算进展：从\"优越性\"向\"实用性\"的关键跨越 2025-2026年，量子计算领域出现了三个里程碑式突破，标志着行业从实验室概念验证加速迈向工程化实用阶.3. 纠错突破：容错量子计算所需资源大幅降低 这是当前最重要的进展。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "64ce83aaedd0e5d4e58bf267af2839a58c46a57c6e15b7688270262fe67e6ccf"
+    },
+    {
+      "evidence_id": "ev_797f94078ab4574b",
+      "source_id": "src_026eca9c2b7b70cd",
+      "text": "从英伟达AI纠错到思科剑指“量子互联”，量子狂潮再掀巨浪! 科技巨头们竞逐量子计算商业化. 来源：智通财经. 2026-04-24 15:41:34.GTC设置专门的Quantum Day，强调用GPU超算加速量子算法、量子纠错和量子模拟。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8877e9b4404494d907a6d2cdd49fd17910cb3ccd7cc07265be40447c8a70bcf9"
+    },
+    {
+      "evidence_id": "ev_11b7cff8f426730a",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "An elementary review on principles of qubits and their prospects for quantum computing is provided. Due to its rapid development, quantum computing has attracted considerable attention as a core technology for the next generation and has demonstrated its potential in simulations of exotic materials, molecular structures, and theoretical computer science. To achieve fully error-corrected quantum computers, building a logical qubit from multiple physical qubits is crucial. The number of physical qubits needed depends on their error rates, making error reduction in physical qubits vital. Numerous efforts to reduce errors are ongoing in both existing and emerging quantum systems. Here, the principle and development of qubits, as well as the current status of the field, are reviewed to provide information to researchers from various fields and give insights into this promising technology.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "7c48d238e520b0a8bb8d8f325623617b34f26180e439c3999a299c62ea0e03c7"
+    },
+    {
+      "evidence_id": "ev_a3c7225d92ceabad",
+      "source_id": "src_b7923210a7a6a99b",
+      "text": "Demonstrating small error rates by integrating quantum error correction (QEC) into an architecture of quantum computing is the next milestone towards scalable fault-tolerant quantum computing (FTQC). Encoding logical qubits with superconducting qubits and surface codes is considered a promising candidate for FTQC architectures. In this paper, we propose an FTQC architecture, which we call Q3DE, that enhances the tolerance to multi-bit burst errors (MBBEs) by cosmic rays with moderate changes and overhead. There are three core components in Q3DE: in-situ anomaly DEtection, dynamic code DEformation, and optimized error DEcoding. In this architecture, MBBEs are detected only from syndrome values for error correction. The effect of MBBEs is immediately mitigated by dynamically increasing the encoding level of logical qubits and re-estimating probable recovery operation with the rollback of the decoding process. We investigate the performance and overhead of the Q3DE architecture with quantum-error simulators and demonstrate that Q3DE effectively reduces the period of MBBEs by 1000 times and halves the size of their region. Therefore, Q3DE significantly relaxes the requirement of qubit density and qubit chip size to realize FTQC. Our scheme is versatile for mitigating MBBEs, i.e., temporal variations of error properties, on a wide range of physical devices and FTQC architectures since it relies only on the standard features of topological stabilizer codes.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "b8cb1216e201e10252f4d3ccd36d0a71e32d96d35783f4b8951896e8f1bb8e61"
+    },
+    {
+      "evidence_id": "ev_38dd28fc8d63af25",
+      "source_id": "src_9866210283db3daa",
+      "text": "Quantum computing stands at the precipice of technological revolution, promising unprecedented computational capabilities to tackle some of humanity’s most complex problems. The field is highly collaborative and recent developments such as superconducting qubits with increased scaling, reduced error rates, and improved cryogenic infrastructure, trapped-ion qubits with high-fidelity gates and reduced control hardware complexity, and photonic qubits with exploring room-temperature quantum computing are some of the key developments pushing the field closer to demonstrating real-world applications. However, the path to realizing this promise is fraught with significant obstacles across several key platforms, including sensitivity to errors, decoherence, scalability, and the need for new materials and technologies. Through an exploration of various quantum systems, this paper highlights both the potential and the challenges of quantum computing and discusses the essential role of middleware, quantum hardware development, and the strategic investments required to propel the field forward. With a focus on overcoming technical hurdles through innovation and interdisciplinary research, this review underscores the transformative impact quantum computing could have across diverse sectors.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "df6c42cf16ea4e5eb493f1cf81f601e7b65a93bf18f145e82ea1d91fad2dcdaa"
+    },
+    {
+      "evidence_id": "ev_769c57aba2476892",
+      "source_id": "src_955f837b2fdf6d34",
+      "text": "Abstract Recent progress in nonlinear optical materials and microresonators has brought quantum computing with bulk optical nonlinearities into the realm of possibility. This platform is of great interest, not only because photonics is an obvious choice for quantum networks, but also as a promising route to quantum information processing at room temperature. We propose an approach for reprogrammable room-temperature photonic quantum logic that significantly simplifies the realization of various quantum circuits, and in particular, of error correction. The key element is the programmable photonic multi-mode resonator that implements reprogrammable bosonic quantum logic gates, while using only the bulk χ (2) nonlinear susceptibility. We theoretically demonstrate that just two of these elements suffice for a complete, compact error-correction circuit on a bosonic code, without the need for measurement or feed-forward control. Encoding and logical operations on the code are also easily achieved with these reprogrammable quantum photonic processors. An extrapolation of current progress in nonlinear optical materials and photonic circuits indicates that such circuitry should be achievable within the next decade.",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "b80a765e03f2340f8c1eb6eb6a800d175ab5d6c61778a8a70bfaf637f2104368"
+    },
+    {
+      "evidence_id": "ev_94e84f62b573662d",
+      "source_id": "src_2001aae7efef946f",
+      "text": "The scaling barriers currently faced by both quantum networking and quantum computing technologies ultimately amount to the same core challenge of distributing high-quality entanglement at scale. In this Perspective, a novel quantum information-processing architecture based on optically active spins in silicon is proposed that offers a combined single technological platform for scalable fault-tolerant quantum computing and networking. The architecture is optimized for overall entanglement distribution and leverages color-center spins in silicon (T centers) for their manufacturability, photonic interface, and high-fidelity information-processing properties. Silicon nanophotonic optical circuits allow for photonic links between T centers, which are networked via telecom-band optical photons in a highly connected graph. This high connectivity unlocks the use of low-overhead quantum error-correcting codes, significantly accelerating the time line for modular scalable fault-tolerant quantum repeaters and quantum processors. Published by the American Physical Society 2024",
+      "kind": "abstract",
+      "task_id": "task_4",
+      "locator": "abstract",
+      "content_hash": "00f6c815be83fff779fbe254c06acaf0db884a55e4db026d9c32c5253704341f"
+    },
+    {
+      "evidence_id": "ev_311610eda45c2978",
+      "source_id": "src_51210555bcbb2d79",
+      "text": "后量子密码学 (PQC)： 用途和加密标准.迁移时间：安全迁移保护该信息的系统所需的年限. 威胁时间表：相关威胁行为体可能访问密码相关量子计算机之前的年数.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "36632a488c8c4e343c4e1b685dcbe4d74b54369d82cfca87a6b75ebf3bf90417"
+    },
+    {
+      "evidence_id": "ev_dfb750f25a061436",
+      "source_id": "src_c98b6e7c35454bea",
+      "text": "一、 全球PQC迁移的背景时间表. 谷歌此次宣布的2029年时间表，比美国国家标准与技术研究院（NIST）此前设定的2035年过渡目标更为紧迫。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "b708cf8c494cc9332a93543580874d6a7db24bfca16cf62baffee0534cc6dd03"
+    },
+    {
+      "evidence_id": "ev_4fae5cc6548d2d92",
+      "source_id": "src_669d4f309c62c137",
+      "text": "了解 PQC 标准与时间节点.标准与时间节点： 明确的框架. 美国国家标准与技术研究所（NIST）牵头的标准机构，致力于为组织提供防御量子威胁的路线图。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0b0f82e0531b20c47833a87d6ca0b19fd31e4e56b7ca004c4de2813d14d82542"
+    },
+    {
+      "evidence_id": "ev_08597691d3b3dfc7",
+      "source_id": "src_b68ad64d2ed17264",
+      "text": "NIST 正式发布了第一份 量子安全加密标准 防范量子计算机未来带来的风险。 这些标准——FIPS 203 (Kyber)、FIPS 204 (Dilithium) 和 FIPS 205 (SPHINCS+)——旨在取代 RSA 和 ECC 等易受攻击的加密方法。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ca70ee01f641e390ad224aad192c0d0d355516666cada9061473f30b3cbc6c42"
+    },
+    {
+      "evidence_id": "ev_2e3b947d01e95d44",
+      "source_id": "src_5e0c27246bc79cdc",
+      "text": "NIST FIPS 203/204/205 后量子密码标准已正式发布，企业需要将 RSA/ECDSA 迁移至 ML-KEM/ML-DSA。Bob 计算共享密钥 bobShared, _ := bobKey.ECDH(alicePub).",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8d28b1edb999f23bf4482b0c8d183ac7ee70bdf7078c63e484d032a195ec694a"
+    },
+    {
+      "evidence_id": "ev_c310903d3cda2fb5",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "Chae et al. Nano Convergence (2024) 11:11 https://doi. org/10. 1186/s40580-024-00418-5 REVIEW An elementary review on basic principles and developments of qubits for quantum computing Eunmi Chae1* , Joonhee Choi2* and Junki Kim3,4* Abstract An elementary review on principles of qubits and their prospects for quantum computing is provided. Due to its rapid development, quantum computing has attracted considerable attention as a core technology for the next generation and has demonstrated its potential in simulations of exotic materials, molecular structures, and theoretical computer science. To achieve fully error-corrected quantum computers, building a logical qubit from multiple physical qubits is crucial. The number of physical qubits needed depends on their error rates, making error reduction in physical qubits vital. Numerous efforts to reduce errors are ongoing in both existing and emerging quantum systems. Here, the principle and development of qubits, as well as the current status of the field, are reviewed to provide information to researchers from various fields and give insights into this promising technology. Keywords Qubits, Quantum operations, Quantum computers 1 Introduction Quantum computing is emerging as a ground break - ing technology that has attracted widespread attention as the next-generation frontier.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "a417885af5c54ef9176b289efb71aa8e10f738ae749efc073292f6c12970c034"
+    },
+    {
+      "evidence_id": "ev_fb71f6a3d1165da4",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "The growing complexity of modern technology challenges, particularly in fields such as chemistry, materials science, and finance, has surpassed the capabilities of conventional classical com - puters. Quantum computing is promising for addressing these challenges, which were previously considered nearly impossible to solve [1–13]. Its significance has become even more pronounced because quantum com - puters have the potential to revolutionize cryptography [14]. Consequently, numerous countries and organiza - tions are actively exploring and investing in this trans - formative technology. As a result, quantum computing has made significant strides over the past decade in dem - onstrating quantum advantages [15, 16], exploring new material phases [17–19], conducting molecular calcula - tions [20], and studying the quantum dynamics of exotic matters [21, 22]. If the physical realization of quantum computers was impossible, the theory of quantum computing and its algorithms would not have attracted much attention despite their high potential and promises [23]. The recent rapid development of quantum computing hardware has reached a stage where simple quantum algorithms and various proofs of concepts can be successfully imple - mented, which has further accelerated the expansion of the field.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "3a3b6493b9cbdcf12f61a8dd280a1b5c1f008fbbec8057de443829fa3bd0f14b"
+    },
+    {
+      "evidence_id": "ev_22151e2632304240",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "However, the successful implementation of practical quantum algorithms requires significantly Open Access © The Author(s) 2024. Open Access This article is licensed under a Creative Commons Attribution 4. 0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http:// creat iveco mmons. org/ licen ses/ by/4. 0/. Nano Convergence *Correspondence: Eunmi Chae echae@korea. ac. kr Joonhee Choi joonhee. choi@stanford. edu Junki Kim junki. kim. q@skku.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "ee952651bc9e572f90823a5637a0e07485ea2c06fe126ccc4776dcd14bc89434"
+    },
+    {
+      "evidence_id": "ev_c7a5fb5b69300d9c",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "edu 1 Department of Physics, Korea University, Seoul 02841, Republic of Korea 2 Department of Electrical Engineering, Stanford University, Stanford, CA 94305, USA 3 SKKU Advanced Institute of Nanotechnology (SAINT) & Department of Nano Science and Technology, Sungkyunkwan University, Suwon 16419, Republic of Korea 4 Department of Nano Engineering, Sungkyunkwan University, Suwon 16419, Republic of Korea Page 2 of 13Chae et al. Nano Convergence (2024) 11:11 more computing resources and demands substantial breakthroughs. Numerous qubit technologies have been proposed and experimentally studied to date, including superconduct - ing circuits [24–26], trapped ions [27–30], Rydberg atoms [31–35], dipolar molecules [36], semiconductors [37–41], nucleus spins [42–46],photons [47–52], etc. Significant progress has been made in pushing the system size and controllability limits, and state-of-the-art systems dem - onstrate middle-sized machines exhibiting small quan - tum algorithms [53, 54], quantum error corrections [55–62], and quantum advantages [15, 16]. Despite suc - cessful advancements in quantum computing hardware, recent research has uncovered critical challenges in real - izing fault-tolerant, scalable quantum computers [63].",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "5a07999542f400287bc317c1507870b6beed5761207040e3c0746e9b24b5e326"
+    },
+    {
+      "evidence_id": "ev_af5935507b123553",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "In the race to develop quantum computers over the past three decades, the leading platform has been chang - ing over time from one system to another. The question of which platform will be eventually used to implement a practical large-scale quantum computer remains unan - swered. It is possible that an entirely novel type of qubit, which has not yet been proposed or realized, could lead to substantial breakthroughs in quantum computing technology. Numerous efforts are ongoing to enhance existing quantum computing platforms, including strategies to minimize errors by creating logical qubits from multi - ple physical qubits or establishing quantum connections between quantum computers [59, 62, 64–66]. The over - head required to construct a logical qubit reduces when the error rates of physical qubits become low. For exam - ple, it is expected that a few thousands of physical qubits are required to create one logical qubit when their error rates are 0. 1% [63]. Therefore, it is crucial to properly engineer and develop physical qubits for constructing scalable and fully error-corrected quantum computers. Ongoing research is actively exploring new quantum computing platforms, including solid-based options comprising quantum dots and silicon, which are known for their seamless integration with existing technologies [67].",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "a452e12381f37d0e5e6f693939f390cf0093f02a3996ac5cbce3f4e4af03b592"
+    },
+    {
+      "evidence_id": "ev_f137d7e8a8246af9",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "Nanotechnology is pivotal for shaping and preserv - ing the delicate quantum properties essential for progress in this domain [68–70]. Numerous reviews have comprehensively detailed existing quantum computing systems [71–73], including articles about material challenges for quantum comput - ers [74, 75]. This review is intended to facilitate research - ers from a broad variety of fields, not only physics but also nanotechnology and material sciences, in developing physical qubit systems. In this regard, we summarize the fundamental quantum properties employed in quantum computing, including superposition and entanglement, and the requirements for qubits and quantum operations. In addition, we explore the current status of this field and its applications. 2 A brief review of unique features in quantum mechanics In this section, we provide a concise overview of the fundamental characteristics distinguishing quantum computers from classical computers (Fig. 1). Quantum computers differ from their classical counterparts by lev - eraging the principles of ‘superposition’ and ‘entangle - ment’ of quantum states. Superposition states excessively broaden the possible combinations of qubit states.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "2e6d3f7dbf7def9cd2eca42ceef88f1dbf1c47cc4d147cb38d80e8258b956b6e"
+    },
+    {
+      "evidence_id": "ev_83a4b017ea6dfbe4",
+      "source_id": "src_c5daffa5dc3f226c",
+      "text": "Cur - rently, typical qubit systems have errors at rates of 10−2 –10−4 due to temperature fluctuations, noises in micro - waves or lasers used for manipulating qubits, and envi - ronmental electromagnetic fields. These errors must be corrected in quantum computations. T o minimize errors, it is crucial to entangle multiple physical qubits and form a fault-tolerant ‘logical’ qubit because a quantum state cannot be [CONTENT_TRUNCATED: 17536 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "08a22cc896094c91e714ab99271d94be9f3276e9e111ec2f5333663c53ffc36e"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_ca108cf49ba9b9b5",
+        "text": "Shor 算法使足够规模的量子计算机能够破解 RSA、Diffie-Hellman 与椭圆曲线密码（ECC），对网络基础设施构成根本性威胁 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1,
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0712,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8fed656c509ba48a",
+          "ev_62dd1938c76f3f91"
+        ],
+        "source_ids": [
+          "src_8354a8d37691ae58",
+          "src_a6579171d1d309be"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8fed656c509ba48a",
+            "source_id": "src_8354a8d37691ae58",
+            "text": "The development of quantum computers poses a new security threat to network infrastructures and services, as they will be powerful enough to break the most common forms of digital encryption. Existing encryption services based on Rivest–Shamir–Adleman (RSA), Diffie-Hellman (DH), Elliptic Curve Cryptography (ECC) and so on are vulnerable to attacks by quantum computers. Although the gap between today’s quantum computers and the threats they pose to current public-key cryptography is large, the te",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_62dd1938c76f3f91",
+            "source_id": "src_a6579171d1d309be",
+            "text": "As quantum computing advances, current cryptographic protocols are increasingly vulnerable to quantum attacks, particularly those based on Public Key Infrastructure (PKI) like RSA or Elliptic Curve Cryptography (ECC). This paper presents a comprehensive review of Post-Quantum Cryptography (PQC) as a solution to protect digital systems in the quantum era. We provide an in-depth analysis of various quantum-resistant cryptographic algorithms, including lattice-based, code-based, hash-based, isogeny",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_be64effa9e5b12a4",
+        "text": "NIST 早在 2016 年的报告中即指出，需要遴选新型公钥算法以补充现行联邦标准 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0331,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d6df0d32d8035e6f"
+        ],
+        "source_ids": [
+          "src_e749238bf1bb69df"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d6df0d32d8035e6f",
+            "source_id": "src_e749238bf1bb69df",
+            "text": "The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof of concept implementations, and technical analyses to advance the development and productive use of information technology. ITL's responsibilities include the development of management, administrative",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3e7332433bf80d7f",
+        "text": "\"先存后解\"（harvest now, decrypt later）攻击模式意味着：数据的保密寿命加上迁移所需年限若超过密码相关量子计算机（CRQC）的出现时间，则今天加密的数据届时将被破解——这是迁移紧迫性的定量基础。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1413,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_311610eda45c2978",
+          "ev_2c6aa1942eb2d36c",
+          "ev_cb67e650a713e4f2"
+        ],
+        "source_ids": [
+          "src_51210555bcbb2d79",
+          "src_1d4b1fda32a41d67",
+          "src_a36e495a968bcf4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_311610eda45c2978",
+            "source_id": "src_51210555bcbb2d79",
+            "text": "后量子密码学 (PQC)： 用途和加密标准.迁移时间：安全迁移保护该信息的系统所需的年限. 威胁时间表：相关威胁行为体可能访问密码相关量子计算机之前的年数.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2c6aa1942eb2d36c",
+            "source_id": "src_1d4b1fda32a41d67",
+            "text": "突破瓶颈：量子计算机的关键技术进展. 2025.04.22 · 行业资讯 量子计算机发展量子比特量子计算机.相干时间的延长意味着量子比特能在更长时间内保持量子态，减少因退相干而产生的错误，从而提升了量子计算的可靠性。 此外，离子阱量子比特技术也在稳步发展。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dd4cf1ba9939445b",
+        "text": "NIST 经过三轮公开竞赛式评审（2016–2022），第三轮状态报告记录了 7 个决赛算法与 8 个备选算法的遴选过程 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          13
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0257,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a46e9867835f97ed"
+        ],
+        "source_ids": [
+          "src_feb8491814b824fe"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a46e9867835f97ed",
+            "source_id": "src_feb8491814b824fe",
+            "text": "The National Institute of Standards and Technology is in the process of selecting public-key cryptographic algorithms through a public, competition-like process. The new public-key cryptography standards will specify additional digital signature, public-key encryption, and key-establishment algorithms to augment Federal Information Processing Standard (FIPS) 186-4, Digital Signature Standard (DSS), as well as NIST Special Publication (SP) 800-56A Revision 3, Recommendation for Pair-Wise Key-Esta",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_05f5f7d77e3ed3b7",
+        "text": "FIPS 203（ML-KEM）：基于 CRYSTALS-Kyber 的模格密钥封装机制，安全性建立在 Module-LWE 困难问题上，规定 ML-KEM-512/768/1024 三个参数集 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          10,
+          20
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6a98f1c306a25ceb",
+          "ev_7bdfc003f347dff0",
+          "ev_cb67e650a713e4f2"
+        ],
+        "source_ids": [
+          "src_cc4fa3d515cfce4e",
+          "src_a36e495a968bcf4c"
+        ],
+        "reason": "Evidence confirms FIPS 203 specifies ML-KEM as a key-encapsulation mechanism whose security relates to the Module Learning with Errors problem. However, the evidence does not mention CRYSTALS-Kyber as its basis, nor does it list the ML-KEM-512/768/1024 parameter sets. Partial support of a compound c",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6a98f1c306a25ceb",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "Publications FIPS 203 Module-Lattice-Based Key-Encapsulation Mechanism Standard Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 13, 2024 Planning Note ( 11/17/2025 We've identified an issue that will be corrected in a future update/revision of this publication. For details, see the \"Errata (potential updates)\" spreadsheet listed under \"Documentation. \" Author(s) National Institute of Standards and Technology Abstract A key-encapsulation m",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7bdfc003f347dff0",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to. . . See full abstract A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A sh",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_aa274fc3cd50f3bf",
+        "text": "FIPS 204（ML-DSA）：基于 CRYSTALS-Dilithium 的格签名方案；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4305,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b4b4e676417fc8bc",
+          "ev_7d62c22f268efce4",
+          "ev_e228abe460a22f9f"
+        ],
+        "source_ids": [
+          "src_81404ea4108d2de9",
+          "src_2b89903c9e880a67",
+          "src_51063108d7e772be"
+        ],
+        "reason": "Only a secondary search snippet matched; full text, a paper abstract, or a primary-source snippet is required for support.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b4b4e676417fc8bc",
+            "source_id": "src_81404ea4108d2de9",
+            "text": "FIPS 204：ML-DSA（Module-Lattice-Based Digital Signature Algorithm） 是基于模格上 Fiat-Shamir with Aborts 范式的数字签名算法，其前身为 CRYSTALS-Dilithium。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7d62c22f268efce4",
+            "source_id": "src_2b89903c9e880a67",
+            "text": "FIPS 203 (ML-KEM) FIPS 204 (ML-DSA) FIPS 205 (SLH-DSA) NSA CNSA 2.0 Hybrid TLS Cryptographic Agility.Begin preferring CNSA 2.0 algorithms (ML-DSA-87 or SLH-DSA) for software and firmware signing. Dual-signing with legacy algorithms permitted. 2025–2027.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7d0eb860b3a0cfbe",
+        "text": "FIPS 205（SLH-DSA）：基于 SPHINCS+ 的无状态哈希签名，作为格算法之外的保守备份 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          20
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1029,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cb67e650a713e4f2"
+        ],
+        "source_ids": [
+          "src_a36e495a968bcf4c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cb67e650a713e4f2",
+            "source_id": "src_a36e495a968bcf4c",
+            "text": "后量子密码（Post-Quantum Cryptography，PQC）是指能够抵御量子计算机攻击的密码算法。NIST 于 2024 年发布后量子密码系列联邦标准： FIPS 203（ML-KEM）：基于模格学习误差（Module-LWE）的密钥封装机制，前身为 Kyber。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bb9ffeb78e2cb399",
+        "text": "这一\"格为主、哈希为备\"的结构反映了对密码分析不确定性的对冲：2022 年 SIDH 攻击攻破第四轮候选 SIKE 的事件表明，即使是进入标准化后期的算法也可能被颠覆。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0564,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cb67e650a713e4f2",
+          "ev_8840de31b3d46637",
+          "ev_564005d6ba869bd9"
+        ],
+        "source_ids": [
+          "src_a36e495a968bcf4c",
+          "src_444cf14dae48b379",
+          "src_74fb402c7c87f302"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cb67e650a713e4f2",
+            "source_id": "src_a36e495a968bcf4c",
+            "text": "后量子密码（Post-Quantum Cryptography，PQC）是指能够抵御量子计算机攻击的密码算法。NIST 于 2024 年发布后量子密码系列联邦标准： FIPS 203（ML-KEM）：基于模格学习误差（Module-LWE）的密钥封装机制，前身为 Kyber。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c8756220d7f627d2",
+        "text": "此后 NIST 在第四轮 KEM 附加轮中选择 HQC 作为补充方案，并启动附加签名征集（on-ramp）以丰富算法多样性；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_afa4461c018232ec",
+          "ev_a46e9867835f97ed",
+          "ev_118a362f317b8b1d"
+        ],
+        "source_ids": [
+          "src_01cb22092242d456",
+          "src_feb8491814b824fe",
+          "src_46019ca6e7b0488c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_afa4461c018232ec",
+            "source_id": "src_01cb22092242d456",
+            "text": "BIKE Classic McEliece HQC LEDAcrypt (LEDAkem/LEDApkc) NTS-KEM ROLLO (LAKE/LOCKER/Ouroboros-R) RQC.第三轮. NIST公布了第三轮的7个候选算法，它们分别是： 公钥加密/KEMs.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_a46e9867835f97ed",
+            "source_id": "src_feb8491814b824fe",
+            "text": "The National Institute of Standards and Technology is in the process of selecting public-key cryptographic algorithms through a public, competition-like process. The new public-key cryptography standards will specify additional digital signature, public-key encryption, and key-establishment algorithms to augment Federal Information Processing Standard (FIPS) 186-4, Digital Signature Standard (DSS), as well as NIST Special Publication (SP) 800-56A Revision 3, Recommendation for Pair-Wise Key-Esta",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_85bffb818d71dcce",
+        "text": "Classic McEliece 等基于编码的保守方案虽未入选标准，仍是重要的研讨与储备对象 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e776128757325e7f"
+        ],
+        "source_ids": [
+          "src_dbea167f29d2222e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e776128757325e7f",
+            "source_id": "src_dbea167f29d2222e",
+            "text": "Daniel J. Bernstein, University of Illinois at Chicago, USAHost: Dr. Maxime Bros, NIST PQC Team Project Lead: Dr. Dustin Moody.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_496d0b5d263f6114",
+        "text": "2026 年 6 月白宫管理与预算办公室（OMB）发布备忘录 M-26-15《后量子密码迁移执行》，要求各联邦机构制定并向 OMB 及国家网络总监办公室提交 PQC 迁移计划 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          14
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e647d16a546f97fe"
+        ],
+        "source_ids": [
+          "src_53ef03b60296e2b1"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e647d16a546f97fe",
+            "source_id": "src_53ef03b60296e2b1",
+            "text": "Jun 24, 2026 · Agencies must develop and submit a PQC Migration Plan to OMB and the Office of the National Cyber Director …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c71296ba6c827c2",
+        "text": "结合 CNSA 2.0 对国家安全系统 2027 年的要求与 2035 年联邦全面迁移的目标，以及 Google（2029 年内部目标）、Cloudflare、Apple iMessage PQ3、Signal PQXDH 等的混合模式部署，迁移已由标准发布阶段进入工程执行阶段。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0371,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7d62c22f268efce4",
+          "ev_4bcd4aef72b49896",
+          "ev_7ef8208bb069ca2f"
+        ],
+        "source_ids": [
+          "src_2b89903c9e880a67",
+          "src_fb489417455726f6",
+          "src_a5dd74c181ac44c1"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7d62c22f268efce4",
+            "source_id": "src_2b89903c9e880a67",
+            "text": "FIPS 203 (ML-KEM) FIPS 204 (ML-DSA) FIPS 205 (SLH-DSA) NSA CNSA 2.0 Hybrid TLS Cryptographic Agility.Begin preferring CNSA 2.0 algorithms (ML-DSA-87 or SLH-DSA) for software and firmware signing. Dual-signing with legacy algorithms permitted. 2025–2027.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_4bcd4aef72b49896",
+            "source_id": "src_fb489417455726f6",
+            "text": "CNSA 2.0 and the 2027 Compliance Clock: Start Your PQC Migration Now. NSA's CNSA 2.0 requires National Security Systems to begin post-quantum cryptography migration by January 2027.NIST Standard. Key Establishment. ML-KEM (Kyber). FIPS 203. Digital Signatures.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2828fcc48435fb31",
+        "text": "ISO/IEC 亦将 ML-KEM、XMSS/LMS 等纳入相应标准，全球技术路线趋同。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3776,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1c769565277f8e9e",
+          "ev_74f948ab818f12c0",
+          "ev_cb67e650a713e4f2"
+        ],
+        "source_ids": [
+          "src_26cda9b4a294815a",
+          "src_81404ea4108d2de9",
+          "src_a36e495a968bcf4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1c769565277f8e9e",
+            "source_id": "src_26cda9b4a294815a",
+            "text": "各组织在PQC标准化工作中持续强化技术路线的统一，ISO直接将NIST推荐的ML-KEM、Classic McEliece等公钥加密算法以及XMSS、LMS等签名算法纳入其标准ISO/IEC 18033-2、ISO/IEC 14888-4；",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_74f948ab818f12c0",
+            "source_id": "src_81404ea4108d2de9",
+            "text": "【密码学百科】后量子密码总览：NIST 标准化与五大技术路线. 2026-04-13 · cryptography · #post-quantum #PQC #NIST #lattice #code-based #multivariate #hash-based #isogeny #ML-KEM #ML-DSA #SLH-DSA #BIKE #HQC. 密码学系列导航.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e4ced75c9b2cdf7c",
+        "text": "主要难点包括：PQC 算法密钥与签名尺寸显著大于 ECC，对带宽受限协议（TLS 握手、固件签名）造成实现开销；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0545,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8fed656c509ba48a",
+          "ev_62dd1938c76f3f91",
+          "ev_4c3ddca93bed1470"
+        ],
+        "source_ids": [
+          "src_8354a8d37691ae58",
+          "src_a6579171d1d309be",
+          "src_c17d101ce89ed67e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8fed656c509ba48a",
+            "source_id": "src_8354a8d37691ae58",
+            "text": "The development of quantum computers poses a new security threat to network infrastructures and services, as they will be powerful enough to break the most common forms of digital encryption. Existing encryption services based on Rivest–Shamir–Adleman (RSA), Diffie-Hellman (DH), Elliptic Curve Cryptography (ECC) and so on are vulnerable to attacks by quantum computers. Although the gap between today’s quantum computers and the threats they pose to current public-key cryptography is large, the te",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_62dd1938c76f3f91",
+            "source_id": "src_a6579171d1d309be",
+            "text": "As quantum computing advances, current cryptographic protocols are increasingly vulnerable to quantum attacks, particularly those based on Public Key Infrastructure (PKI) like RSA or Elliptic Curve Cryptography (ECC). This paper presents a comprehensive review of Post-Quantum Cryptography (PQC) as a solution to protect digital systems in the quantum era. We provide an in-depth analysis of various quantum-resistant cryptographic algorithms, including lattice-based, code-based, hash-based, isogeny",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4f1df5e29dc151d0",
+        "text": "系统需具备\"密码敏捷性\"（crypto-agility）以应对未来算法替换；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1266,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8840de31b3d46637",
+          "ev_cb67e650a713e4f2",
+          "ev_d8216e53a7f71c93"
+        ],
+        "source_ids": [
+          "src_444cf14dae48b379",
+          "src_a36e495a968bcf4c",
+          "src_b68ad64d2ed17264"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_cb67e650a713e4f2",
+            "source_id": "src_a36e495a968bcf4c",
+            "text": "后量子密码（Post-Quantum Cryptography，PQC）是指能够抵御量子计算机攻击的密码算法。NIST 于 2024 年发布后量子密码系列联邦标准： FIPS 203（ML-KEM）：基于模格学习误差（Module-LWE）的密钥封装机制，前身为 Kyber。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c81e621b0cd5ff4",
+        "text": "格基方案的长期密码分析强度仍需时间检验 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          5
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_62dd1938c76f3f91"
+        ],
+        "source_ids": [
+          "src_a6579171d1d309be"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_62dd1938c76f3f91",
+            "source_id": "src_a6579171d1d309be",
+            "text": "As quantum computing advances, current cryptographic protocols are increasingly vulnerable to quantum attacks, particularly those based on Public Key Infrastructure (PKI) like RSA or Elliptic Curve Cryptography (ECC). This paper presents a comprehensive review of Post-Quantum Cryptography (PQC) as a solution to protect digital systems in the quantum era. We provide an in-depth analysis of various quantum-resistant cryptographic algorithms, including lattice-based, code-based, hash-based, isogeny",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6093f604b8b9596d",
+        "text": "药物发现的核心计算瓶颈是精确求解分子电子结构；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1708,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4e29bfdab23ffe08",
+          "ev_0b0800c2657fcc34",
+          "ev_c60f21534ad54b04"
+        ],
+        "source_ids": [
+          "src_38da5bfcc2cc2cf0",
+          "src_1ac18e85afab0de2",
+          "src_f09e9f6bf255c602"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4e29bfdab23ffe08",
+            "source_id": "src_38da5bfcc2cc2cf0",
+            "text": "其从“有噪声中等规模量子（NISQ）”时代迈向“容错量子计算”时代的关键瓶颈。 量子纠错技术通过编码冗余量子比特来检测并纠正错误，是突破这一瓶颈的核心手段，而近年来涌现的量子纠错新方案，正为容错量子计算的实用化开.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0b0800c2657fcc34",
+            "source_id": "src_1ac18e85afab0de2",
+            "text": "在药物发现上游，国内AI制药头部企业英矽智能深度布局。CNS药物研发长期面临三重挑战：疾病机制不明导致临床转化率低；血脑屏障阻隔使药物难以入脑；症状评估主观性强，临床试验失败率高。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_122f899de804843c",
+        "text": "经典方法（DFT、Hartree-Fock）在强关联电子体系和共价键断裂场景下精度系统性不足，而量子计算\"以量子系统模拟量子系统\"在原理上可提供指数加速 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          16
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bb46e7205382c589"
+        ],
+        "source_ids": [
+          "src_cdb6edc62eb9dae3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bb46e7205382c589",
+            "source_id": "src_cdb6edc62eb9dae3",
+            "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run m",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fe574765b585f474",
+        "text": "两条技术路线分工明确：VQE（变分量子本征求解器）适配当前 NISQ 含噪声设备，QPE（量子相位估计）精度更高但依赖容错量子计算机 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          16,
+          17
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bb46e7205382c589",
+          "ev_77e626f59ad06b0a"
+        ],
+        "source_ids": [
+          "src_cdb6edc62eb9dae3",
+          "src_2f54b88e1b9b1e66"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bb46e7205382c589",
+            "source_id": "src_cdb6edc62eb9dae3",
+            "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run m",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_77e626f59ad06b0a",
+            "source_id": "src_2f54b88e1b9b1e66",
+            "text": "The great promise of quantum computers comes with the dual challenges of building them and finding their useful applications. We argue that these two challenges should be considered together, by codesigning full-stack quantum computer systems along with their applications in order to hasten their development and potential for scientific discovery. In this context, we identify scientific and community needs, opportunities, a sampling of a few use case studies, and significant challenges for the d",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6100a2514d80ec50",
+        "text": "Li 等（2024）在 Scientific Reports 发表的混合量子计算管线是标志性工作：针对前药活化的 Gibbs 自由能剖面与共价键相互作用等真实药物设计任务，达到了与经典基准一致的精度 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0314,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_38561253b61b773d"
+        ],
+        "source_ids": [
+          "src_5b58221907f7cb75"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_38561253b61b773d",
+            "source_id": "src_5b58221907f7cb75",
+            "text": "Quantum computing, with its superior computational capabilities compared to classical approaches, holds the potential to revolutionize numerous scientific domains, including pharmaceuticals. However, the application of quantum computing for drug discovery has primarily been limited to proof-of-concept studies, which often fail to capture the intricacies of real-world drug development challenges. In this study, we diverge from conventional investigations by developing a hybrid quantum computing p",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9dfdc0d1ffdd9702",
+        "text": "Kumar 等（2024）的综述系统梳理了量子分子模拟在癌症药物筛选与计算机辅助药物设计中的潜力，同时指出退相干、算法噪声与可重复性等瓶颈 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          7
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_464ed3bac8561882"
+        ],
+        "source_ids": [
+          "src_fa94c8b7e0a685d9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_464ed3bac8561882",
+            "source_id": "src_fa94c8b7e0a685d9",
+            "text": "The preservation of human health is of utmost importance, and unrestricted availability of medications is essential for the sustenance of overall wellness. Pharmaceuticals, which consist of a wide range of therapeutic substances utilized to diagnose, treat, and improve various diseases and conditions, play a crucial part in the field of healthcare. However, the drug research and development process is widely recognized for its lengthy duration, demanding nature, and substantial expenses. To enha",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3fce23fd51eb1170",
+        "text": "Atalor 等（2023）探讨了量子分子模拟加速癌症药物筛选的路径，强调传统高通量筛选难以捕捉生物分子相互作用的量子本性 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          15
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_56319cc722819911"
+        ],
+        "source_ids": [
+          "src_71714c9327eff8bd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_56319cc722819911",
+            "source_id": "src_71714c9327eff8bd",
+            "text": "Cancer drug discovery is a resource-intensive process characterized by low success rates, protracted timelines, and significant cost implications. Conventional screening methods—including high-throughput assays and classical molecular modeling—struggle to capture the quantum nature of biomolecular interactions critical to binding affinity and drug specificity. In response, quantum molecular simulation (QMS) has emerged as a transformative approach that leverages the principles of quantum mechani",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7aab98700999f885",
+        "text": "企业层面，Boehringer Ingelheim 与 Google Quantum AI、IBM 与 Cleveland Clinic/Moderna 的合作均为厂商自述进展，尚缺独立验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1439,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9d969be1b26cc5d8",
+          "ev_54b54ee830e12774",
+          "ev_cbe70b1bd104a7da"
+        ],
+        "source_ids": [
+          "src_e0e2a13d1a606825",
+          "src_f5cc959f1067aaf4",
+          "src_7a675cb524bbb6ab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9d969be1b26cc5d8",
+            "source_id": "src_e0e2a13d1a606825",
+            "text": "IBM Quantum - Superconducting quantum processors; pharma collaborations include Cleveland Clinic (Discovery Accelerator) and Moderna (mRNA design). IonQ - Trapped-ion quantum computers available via Amazon Braket and Azure Quantum.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_54b54ee830e12774",
+            "source_id": "src_f5cc959f1067aaf4",
+            "text": "Google Quantum AI. Leading quantum hardware with pharma collaborations: Boehringer Ingelheim: Multi-year partnership for molecular simulation research. Recent milestone: Quantum error correction breakthrough (2023) - key for drug discovery applications.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2559130dc9901064",
+        "text": "必须强调：迄今没有公认的商业级\"量子优势\"实例——所有报道的用例或是概念验证，或与经典方法等效 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3,
+          16
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_38561253b61b773d",
+          "ev_bb46e7205382c589"
+        ],
+        "source_ids": [
+          "src_5b58221907f7cb75",
+          "src_cdb6edc62eb9dae3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_38561253b61b773d",
+            "source_id": "src_5b58221907f7cb75",
+            "text": "Quantum computing, with its superior computational capabilities compared to classical approaches, holds the potential to revolutionize numerous scientific domains, including pharmaceuticals. However, the application of quantum computing for drug discovery has primarily been limited to proof-of-concept studies, which often fail to capture the intricacies of real-world drug development challenges. In this study, we diverge from conventional investigations by developing a hybrid quantum computing p",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_bb46e7205382c589",
+            "source_id": "src_cdb6edc62eb9dae3",
+            "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run m",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_44707e5ca0f875ca",
+        "text": "Outeiral 等明确警告需警惕炒作 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          16
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bb46e7205382c589"
+        ],
+        "source_ids": [
+          "src_cdb6edc62eb9dae3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bb46e7205382c589",
+            "source_id": "src_cdb6edc62eb9dae3",
+            "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run m",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_42b6ff1f36dd6929",
+        "text": "临床试验设计优化的量子算法仍停留在论文阶段；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1215,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ff781860ff236ca2",
+          "ev_8840de31b3d46637",
+          "ev_4c3ddca93bed1470"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_444cf14dae48b379",
+          "src_c17d101ce89ed67e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ff781860ff236ca2",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "2 我国抗肿瘤药物临床试验研究的变革与 机遇.2.4 临床试验学科建设及人才体系建立.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_02726fd3c7405f93",
+        "text": "同时经典张量网络与 AI 方法的进步不断抬高量子优势的门槛。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0936,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8840de31b3d46637",
+          "ev_668aa48c2a942bed",
+          "ev_4c3ddca93bed1470"
+        ],
+        "source_ids": [
+          "src_444cf14dae48b379",
+          "src_dcae348b7b99a19b",
+          "src_c17d101ce89ed67e"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_668aa48c2a942bed",
+            "source_id": "src_dcae348b7b99a19b",
+            "text": "当对量子比特进行测量时，结果是一个经典比特的 概率性输出。 如果量子计算机以特定方式操控量子比特，就可以利用 波的干涉 效 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_598f072001f50475",
+        "text": "价值最可能首先体现在共价药物、金属酶活性中心等经典方法系统性失效的特定化学空间。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8840de31b3d46637",
+          "ev_668aa48c2a942bed",
+          "ev_311610eda45c2978"
+        ],
+        "source_ids": [
+          "src_444cf14dae48b379",
+          "src_dcae348b7b99a19b",
+          "src_51210555bcbb2d79"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_668aa48c2a942bed",
+            "source_id": "src_dcae348b7b99a19b",
+            "text": "当对量子比特进行测量时，结果是一个经典比特的 概率性输出。 如果量子计算机以特定方式操控量子比特，就可以利用 波的干涉 效 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e1cc9ffda92735cb",
+        "text": "纠错开销：当物理比特错误率约 0.1% 时，单个逻辑量子比特需数千个物理比特冗余编码；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0361,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_af5935507b123553",
+          "ev_4e29bfdab23ffe08",
+          "ev_c60f21534ad54b04"
+        ],
+        "source_ids": [
+          "src_c5daffa5dc3f226c",
+          "src_38da5bfcc2cc2cf0",
+          "src_f09e9f6bf255c602"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_af5935507b123553",
+            "source_id": "src_c5daffa5dc3f226c",
+            "text": "In the race to develop quantum computers over the past three decades, the leading platform has been chang - ing over time from one system to another. The question of which platform will be eventually used to implement a practical large-scale quantum computer remains unan - swered. It is possible that an entirely novel type of qubit, which has not yet been proposed or realized, could lead to substantial breakthroughs in quantum computing technology. Numerous efforts are ongoing to enhance existin",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_4e29bfdab23ffe08",
+            "source_id": "src_38da5bfcc2cc2cf0",
+            "text": "其从“有噪声中等规模量子（NISQ）”时代迈向“容错量子计算”时代的关键瓶颈。 量子纠错技术通过编码冗余量子比特来检测并纠正错误，是突破这一瓶颈的核心手段，而近年来涌现的量子纠错新方案，正为容错量子计算的实用化开.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_58879e14b9cb8b0c",
+        "text": "物理比特典型错误率为 10⁻²–10⁻⁴ 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_83a4b017ea6dfbe4",
+          "ev_11b7cff8f426730a"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_83a4b017ea6dfbe4",
+          "ev_11b7cff8f426730a",
+          "ev_c310903d3cda2fb5"
+        ],
+        "source_ids": [
+          "src_c5daffa5dc3f226c"
+        ],
+        "reason": "Evidence directly states 'typical qubit systems have errors at rates of 10−2–10−4', exactly matching the claimed physical qubit error rate range of 10⁻²–10⁻⁴.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_83a4b017ea6dfbe4",
+            "source_id": "src_c5daffa5dc3f226c",
+            "text": "Cur - rently, typical qubit systems have errors at rates of 10−2 –10−4 due to temperature fluctuations, noises in micro - waves or lasers used for manipulating qubits, and envi - ronmental electromagnetic fields. These errors must be corrected in quantum computations. T o minimize errors, it is crucial to entangle multiple physical qubits and form a fault-tolerant ‘logical’ qubit because a quantum state cannot be [CONTENT_TRUNCATED: 17536 chars total, showing first 8000]",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_11b7cff8f426730a",
+            "source_id": "src_c5daffa5dc3f226c",
+            "text": "An elementary review on principles of qubits and their prospects for quantum computing is provided. Due to its rapid development, quantum computing has attracted considerable attention as a core technology for the next generation and has demonstrated its potential in simulations of exotic materials, molecular structures, and theoretical computer science. To achieve fully error-corrected quantum computers, building a logical qubit from multiple physical qubits is crucial. The number of physical q",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e8a31b1c17ea5319",
+        "text": "工程挑战：宇宙射线引发的多比特突发错误可破坏表面码纠错，Q3DE 等架构改进属增量缓解而非根治 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          8
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0244,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a3c7225d92ceabad"
+        ],
+        "source_ids": [
+          "src_b7923210a7a6a99b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a3c7225d92ceabad",
+            "source_id": "src_b7923210a7a6a99b",
+            "text": "Demonstrating small error rates by integrating quantum error correction (QEC) into an architecture of quantum computing is the next milestone towards scalable fault-tolerant quantum computing (FTQC). Encoding logical qubits with superconducting qubits and surface codes is considered a promising candidate for FTQC architectures. In this paper, we propose an FTQC architecture, which we call Q3DE, that enhances the tolerance to multi-bit burst errors (MBBEs) by cosmic rays with moderate changes and",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9f206a7479d4ac2c",
+        "text": "各硬件平台（超导、离子阱、光量子、硅色心）在退相干与可扩展性上各有障碍 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          12,
+          18,
+          19
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_38dd28fc8d63af25",
+          "ev_769c57aba2476892",
+          "ev_94e84f62b573662d"
+        ],
+        "source_ids": [
+          "src_9866210283db3daa",
+          "src_955f837b2fdf6d34",
+          "src_2001aae7efef946f"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_38dd28fc8d63af25",
+            "source_id": "src_9866210283db3daa",
+            "text": "Quantum computing stands at the precipice of technological revolution, promising unprecedented computational capabilities to tackle some of humanity’s most complex problems. The field is highly collaborative and recent developments such as superconducting qubits with increased scaling, reduced error rates, and improved cryogenic infrastructure, trapped-ion qubits with high-fidelity gates and reduced control hardware complexity, and photonic qubits with exploring room-temperature quantum computin",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_769c57aba2476892",
+            "source_id": "src_955f837b2fdf6d34",
+            "text": "Abstract Recent progress in nonlinear optical materials and microresonators has brought quantum computing with bulk optical nonlinearities into the realm of possibility. This platform is of great interest, not only because photonics is an obvious choice for quantum networks, but also as a promising route to quantum information processing at room temperature. We propose an approach for reprogrammable room-temperature photonic quantum logic that significantly simplifies the realization of various ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_15d850ccea181439",
+        "text": "时间表分歧：破解 RSA-2048 需数千逻辑比特（数百万物理比特），主流估计 CRQC 不早于 2030 年代出现；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0531,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f24462f31554d448",
+          "ev_c60f21534ad54b04",
+          "ev_2c6aa1942eb2d36c"
+        ],
+        "source_ids": [
+          "src_f2251cef248d84fc",
+          "src_f09e9f6bf255c602",
+          "src_1d4b1fda32a41d67"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f24462f31554d448",
+            "source_id": "src_f2251cef248d84fc",
+            "text": "ML-DSA (原CRYSTALS-Dilithium). 格密码学 (MLWE).3 全球后量子密码迁移策略与时间表. 3.1 全球迁移规划概览.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c60f21534ad54b04",
+            "source_id": "src_f09e9f6bf255c602",
+            "text": "量子计算 技术瓶颈 商用 量子比特 纠错.量子计算商用化就像在造一台需要绝对零度的机器，乐观估计还需5-10年。 主要瓶颈是量子比特的稳定性，目前超过几百个量子比特的纠错成本呈指数级增长。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_14222b730330e753",
+        "text": "IBM 等厂商路线图指向 2029 年前后的容错节点，但属第一方声明，学界估计更保守。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0267,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9d969be1b26cc5d8",
+          "ev_4fae5cc6548d2d92",
+          "ev_74f948ab818f12c0"
+        ],
+        "source_ids": [
+          "src_e0e2a13d1a606825",
+          "src_669d4f309c62c137",
+          "src_81404ea4108d2de9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9d969be1b26cc5d8",
+            "source_id": "src_e0e2a13d1a606825",
+            "text": "IBM Quantum - Superconducting quantum processors; pharma collaborations include Cleveland Clinic (Discovery Accelerator) and Moderna (mRNA design). IonQ - Trapped-ion quantum computers available via Amazon Braket and Azure Quantum.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_4fae5cc6548d2d92",
+            "source_id": "src_669d4f309c62c137",
+            "text": "了解 PQC 标准与时间节点.标准与时间节点： 明确的框架. 美国国家标准与技术研究所（NIST）牵头的标准机构，致力于为组织提供防御量子威胁的路线图。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_aa8634c568580497",
+        "text": "这一估算本身依赖较早的资源分析，2025–2026 年的纠错突破是否实质压缩了窗口，缺乏同行评议一手数据的确认。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_521edac3e1a0eca9",
+          "ev_6a98f1c306a25ceb",
+          "ev_7d62c22f268efce4"
+        ],
+        "source_ids": [
+          "src_7c6392fa1ee1ddb8",
+          "src_cc4fa3d515cfce4e",
+          "src_2b89903c9e880a67"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_521edac3e1a0eca9",
+            "source_id": "src_7c6392fa1ee1ddb8",
+            "text": "一、量子计算进展：从\"优越性\"向\"实用性\"的关键跨越 2025-2026年，量子计算领域出现了三个里程碑式突破，标志着行业从实验室概念验证加速迈向工程化实用阶.3. 纠错突破：容错量子计算所需资源大幅降低 这是当前最重要的进展。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6a98f1c306a25ceb",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "Publications FIPS 203 Module-Lattice-Based Key-Encapsulation Mechanism Standard Share to Facebook Share to X Share to LinkedIn Share ia Email Documentation Topics Date Published: August 13, 2024 Planning Note ( 11/17/2025 We've identified an issue that will be corrected in a future update/revision of this publication. For details, see the \"Errata (potential updates)\" spreadsheet listed under \"Documentation. \" Author(s) National Institute of Standards and Technology Abstract A key-encapsulation m",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ee2f7d363310a96c",
+        "text": "由此得出分层判断：PQC 迁移紧迫性高且上升（纠错每前进一步，\"先存后解\"窗口就缩小一分，NIST 2035 与 Google 2029 构成双重锚点 ）；",
+        "task_id": "final_report",
+        "cited_indices": [
+          10,
+          14
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0494,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_43cb0c13d374b3c4",
+          "ev_095c2d9b5eaf0446",
+          "ev_e647d16a546f97fe"
+        ],
+        "source_ids": [
+          "src_cc4fa3d515cfce4e",
+          "src_53ef03b60296e2b1"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_43cb0c13d374b3c4",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "Hide full abstract Keywords computer security cryptography encryption Federal Information Processing Standards key-encapsulation mechanism lattice-based cryptography post-quantum public-key cryptography Control Families None selected Documentation Publication: https://doi. org/10. 6028/NIST. FIPS. 203 Download URL Errata (potential updates) (xlsx) Supplemental Material: FAQ for PQC FIPS Federal Register Notice NIST News article PQC Standardization Project Related NIST Publications: FIPS 204 FIPS",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_095c2d9b5eaf0446",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "The security of ML-KEM is related to the computational difficulty of the Module Learning with Errors problem. At present, ML-KEM is believed to be secure, even against adversaries who possess a quantum computer.Related NIST Publications: FIPS 204 FIPS 205 SP 800-227.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_04482eac98755647",
+        "text": "药物发现的实质性量子落地大概率在 2028–2032 年随数百逻辑比特级机器出现，并面临经典 AI 方法的持续竞争 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          17
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_77e626f59ad06b0a"
+        ],
+        "source_ids": [
+          "src_2f54b88e1b9b1e66"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_77e626f59ad06b0a",
+            "source_id": "src_2f54b88e1b9b1e66",
+            "text": "The great promise of quantum computers comes with the dual challenges of building them and finding their useful applications. We argue that these two challenges should be considered together, by codesigning full-stack quantum computer systems along with their applications in order to hasten their development and potential for scientific discovery. In this context, we identify scientific and community needs, opportunities, a sampling of a few use case studies, and significant challenges for the d",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5f8b8f714b93f5d0",
+        "text": "量子计算在密码学与药物发现两个领域呈现镜像关系：前者是防御性刚需——标准已定（FIPS 203/204/205）、政策已出（OMB M-26-15、CNSA 2.0），瓶颈在工程迁移而非科学原理 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          10,
+          14
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_43cb0c13d374b3c4",
+          "ev_095c2d9b5eaf0446",
+          "ev_6a98f1c306a25ceb"
+        ],
+        "source_ids": [
+          "src_cc4fa3d515cfce4e"
+        ],
+        "reason": "Evidence mentions FIPS 203 and related publications FIPS 204/205, but does not confirm those standards are finalized, makes no mention of OMB M-26-15 or CNSA 2.0 policies, and contains nothing about quantum computing in drug discovery, mirror relationships, defensive necessity, or engineering migrat",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_43cb0c13d374b3c4",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "Hide full abstract Keywords computer security cryptography encryption Federal Information Processing Standards key-encapsulation mechanism lattice-based cryptography post-quantum public-key cryptography Control Families None selected Documentation Publication: https://doi. org/10. 6028/NIST. FIPS. 203 Download URL Errata (potential updates) (xlsx) Supplemental Material: FAQ for PQC FIPS Federal Register Notice NIST News article PQC Standardization Project Related NIST Publications: FIPS 204 FIPS",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_095c2d9b5eaf0446",
+            "source_id": "src_cc4fa3d515cfce4e",
+            "text": "The security of ML-KEM is related to the computational difficulty of the Module Learning with Errors problem. At present, ML-KEM is believed to be secure, even against adversaries who possess a quantum computer.Related NIST Publications: FIPS 204 FIPS 205 SP 800-227.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_80490b82146b98fa",
+        "text": "后者是进攻性期权——物理依据扎实、管线已验证可行，但决定性优势依赖容错硬件，且需与快速进步的经典方法赛跑 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3,
+          16
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_38561253b61b773d",
+          "ev_bb46e7205382c589"
+        ],
+        "source_ids": [
+          "src_5b58221907f7cb75",
+          "src_cdb6edc62eb9dae3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_38561253b61b773d",
+            "source_id": "src_5b58221907f7cb75",
+            "text": "Quantum computing, with its superior computational capabilities compared to classical approaches, holds the potential to revolutionize numerous scientific domains, including pharmaceuticals. However, the application of quantum computing for drug discovery has primarily been limited to proof-of-concept studies, which often fail to capture the intricacies of real-world drug development challenges. In this study, we diverge from conventional investigations by developing a hybrid quantum computing p",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_bb46e7205382c589",
+            "source_id": "src_cdb6edc62eb9dae3",
+            "text": "Abstract Quantum computers can in principle solve certain problems exponentially more quickly than their classical counterparts. We have not yet reached the advent of useful quantum computation, but when we do, it will affect nearly all scientific disciplines. In this review, we examine how current quantum algorithms could revolutionize computational biology and bioinformatics. There are potential benefits across the entire field, from the ability to process vast amounts of information and run m",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_568f8b92e4ac0589",
+        "text": "两者共同的节拍器是纠错开销：它决定了 CRQC 的到来时点（从而决定 PQC 的死线），也决定了量子药物模拟从\"等效验证\"走向\"不可替代优势\"的时点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0367,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cb67e650a713e4f2",
+          "ev_8840de31b3d46637",
+          "ev_74f948ab818f12c0"
+        ],
+        "source_ids": [
+          "src_a36e495a968bcf4c",
+          "src_444cf14dae48b379",
+          "src_81404ea4108d2de9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cb67e650a713e4f2",
+            "source_id": "src_a36e495a968bcf4c",
+            "text": "后量子密码（Post-Quantum Cryptography，PQC）是指能够抵御量子计算机攻击的密码算法。NIST 于 2024 年发布后量子密码系列联邦标准： FIPS 203（ML-KEM）：基于模格学习误差（Module-LWE）的密钥封装机制，前身为 Kyber。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_8840de31b3d46637",
+            "source_id": "src_444cf14dae48b379",
+            "text": "后量子密码学 (PQC) 是指一组新的密码算法，旨在保护数据和系统免受能够运行 Shor 算法的量子计算机的威胁，而 Shor 算法可能会破坏经典的公钥密码算法。NIST 建议将 CRYSTALS-Dilithium 作为主要算法。",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 58,
+    "evidence_count": 70,
+    "supported_count": 1,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 39,
+    "coverage": 0.025,
+    "primary_source_ratio": 0.3793,
+    "fulltext_source_ratio": 0.0345,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 32
+  },
+  "run_metadata": {
+    "final_report_sha256": "8317fadd83db65eb6b2d59b8cfe1685e822d818ff908b1dffc8e8572f1aeac3b",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 40,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 39,
+        "coverage": 0.025,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 32
+      },
+      "after": {
+        "claim_count": 40,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 39,
+        "coverage": 0.025,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 32
+      }
+    }
+  }
+}

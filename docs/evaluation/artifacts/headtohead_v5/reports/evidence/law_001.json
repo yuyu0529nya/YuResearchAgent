@@ -1,0 +1,3500 @@
+{
+  "schema_version": "1.0",
+  "query": "分析生成式 AI 训练数据中的版权问题，比较美国合理使用原则（Fair Use）与欧盟《AI 法案》在训练数据授权方面的法律冲突。",
+  "created_at": "2026-08-13T21:09:37.053278+00:00",
+  "sources": [
+    {
+      "source_id": "src_8074d29a93ef3b18",
+      "url": "https://4ipcouncil.com/application/files/7517/2189/4919/Copyright_Infringement_and_AI__A_Case_Study_of_Authors_Guild_v._OpenAI_and_Microsoft.pdf",
+      "title": "Copyright Infringement & AI: A Case Study of Authors Guild v. OpenAI",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "4ipcouncil.com"
+      }
+    },
+    {
+      "source_id": "src_feab42bc7be6b5f1",
+      "url": "https://trademarklawyermagazine.com/fair-dealing-in-the-age-of-ai-delhi-high-courts-ruling-in-ani-v-openai",
+      "title": "Fair dealing in the age of AI: Delhi High Court's ruling in ANI v. OpenAI",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "trademarklawyermagazine.com"
+      }
+    },
+    {
+      "source_id": "src_14c77c6c9cc3e4f4",
+      "url": "https://dsklegal.com/ani-v-openai-where-will-the-court-draw-the-line",
+      "title": "ANI v. OpenAI: Where Will the Court Draw the Line? – DSK Legal...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.72,
+        "host_domain": "dsklegal.com"
+      }
+    },
+    {
+      "source_id": "src_444eff21b3acee51",
+      "url": "https://knowingmachines.org/knowing-legal-machines/legal-explainer/cases/authors-guild-v-openai",
+      "title": "Authors Guild v. OpenAI",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.72,
+        "host_domain": "knowingmachines.org"
+      }
+    },
+    {
+      "source_id": "src_44e3852bd8d898a7",
+      "url": "https://newsletter.readbalancesheet.com/p/nyt-v-open-ai",
+      "title": "NYT v. OpenAI | Balance Sheet",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.72,
+        "host_domain": "newsletter.readbalancesheet.com"
+      }
+    },
+    {
+      "source_id": "src_7710f42ac2274921",
+      "url": "https://natlawreview.com/article/generative-ai-systems-tee-fair-use-fight",
+      "title": "Artificial Intelligence Copyright Challenges in US Courts Surge",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 生成式AI训练数据 版权 Authors Guild v. OpenAI NYT v. OpenAI Andersen v. Stability 判决",
+        "retrieval_relevance": 0.72,
+        "host_domain": "natlawreview.com"
+      }
+    },
+    {
+      "source_id": "src_fbf24649ee73b4c5",
+      "url": "https://skadden.com/insights/publications/2025/07/fair-use-and-ai-training",
+      "title": "Fair Use and AI Training: Two Recent Decisions Highlight the...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "1bdb249a2eb1ac5d180c04f97f551ffcd7a651909f89e8812393f8645b6c64a8",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.9045,
+        "host_domain": "skadden.com"
+      }
+    },
+    {
+      "source_id": "src_34b85ab39786c13e",
+      "url": "https://lexology.com/library/detail.aspx?g=766d4956-532b-4eb9-b856-d39c7fd7dfed",
+      "title": "Anthropic and Meta fair use rulings on AI model training - Lexology",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.8727,
+        "host_domain": "lexology.com"
+      }
+    },
+    {
+      "source_id": "src_078d6aa95209cd22",
+      "url": "https://jw.com/news/insights-kadrey-meta-bartz-anthropic-ai-copyright",
+      "title": "Federal Courts Find Fair Use in AI Training: Key Takeaways from...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.8409,
+        "host_domain": "jw.com"
+      }
+    },
+    {
+      "source_id": "src_d877c59617129541",
+      "url": "https://wiggin.com/publication/bartz-v-anthropic-first-court-decision-on-fair-use-defense-in-llm-training",
+      "title": "Bartz v. Anthropic: First Court Decision on Fair Use Defense in LLM...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.8409,
+        "host_domain": "wiggin.com"
+      }
+    },
+    {
+      "source_id": "src_36e869ac470aaf54",
+      "url": "https://pivot-to-ai.com/2025/06/24/anthropic-wins-broad-fair-use-for-training-but-not-on-pirated-books",
+      "title": "Anthropic AI wins broad fair use for training! — but not on pirated...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.8091,
+        "host_domain": "pivot-to-ai.com"
+      }
+    },
+    {
+      "source_id": "src_21c5d8e8ce1409e3",
+      "url": "https://hlc.com/en/publications/rapid-fire-fair-use-decisions-suggest-ai-training-is-permissible-sometimes",
+      "title": "Rapid fire fair use decisions suggest AI training is permissible...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Anthropic Bartz v. Anthropic fair use training data ruling 2025 Meta Kadrey fair use",
+        "retrieval_relevance": 0.7773,
+        "host_domain": "hlc.com"
+      }
+    },
+    {
+      "source_id": "src_c63bc773e0a9b364",
+      "url": "https://birjob.com/blog/ai-copyright-wars-2026",
+      "title": "AI Copyright Wars 2026: NYT v. OpenAI, the Anthropic... | BirJob",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.825,
+        "host_domain": "birjob.com"
+      }
+    },
+    {
+      "source_id": "src_cb907cd01e0f54b2",
+      "url": "https://chatgptiseatingtheworld.com/wp-content/uploads/2025/01/Vacker-Plaintiffs-Opp-to-Motion-to-Dismiss.pdf",
+      "title": "Microsoft Word - Vacker Response to Motion to Dismiss",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.825,
+        "host_domain": "chatgptiseatingtheworld.com"
+      }
+    },
+    {
+      "source_id": "src_b8478091b3a6fa1a",
+      "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+      "title": "Stable Diffusion - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.7156,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_e400aaf547796936",
+      "url": "https://kautschlaw.com/wp-content/uploads/2024/03/NY-times-opposition-to-OpenAI-motion-to-dismiss.pdf",
+      "title": "Microsoft Word - 2024-03-11 NYT Opposition to OpenAI's MTD_FILED...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2024",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.7594,
+        "host_domain": "kautschlaw.com"
+      }
+    },
+    {
+      "source_id": "src_8c156a182133d6fa",
+      "url": "https://stablediffusionfrivolous.com/cases/andersen-v-stability-ai",
+      "title": "Andersen v. Stability AI — Case Analysis | SD Frivolous",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "stablediffusionfrivolous.com"
+      }
+    },
+    {
+      "source_id": "src_887400994c15f30d",
+      "url": "https://playwithchatgtp.com/openais-motion-to-dismiss-ny-times-lawsuit-over-chatgpt-do-they-want-to-win-or-influence-public-opinion-jd-supra",
+      "title": "OpenAI's Motion to Dismiss NY Times Lawsuit over ChatGPT: Do...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "NYT v. OpenAI discovery 2025 magistrate judge Andersen v. Stability AI motion to dismiss 2023 2024 status",
+        "retrieval_relevance": 0.7375,
+        "host_domain": "playwithchatgtp.com"
+      }
+    },
+    {
+      "source_id": "src_9755bcef9a45a8c8",
+      "url": "https://tubex.chat/ru/article/7673bf98-642a-4958-b2c6-61c2064ff8ad",
+      "title": "Bartz诉Anthropic案：开源代码训练AI版权第一案 - TubeX.Chat AI",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟 AI 法案 训练数据 版权 训练内容摘要披露 text and data mining opt-out",
+        "retrieval_relevance": 0.7464,
+        "host_domain": "tubex.chat"
+      }
+    },
+    {
+      "source_id": "src_fd00f28dde7789b7",
+      "url": "https://gpt-image-2.io/",
+      "title": "GPT Image 2 - AI Image Generator | Create AI Art from Text",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟 AI 法案 训练数据 版权 训练内容摘要披露 text and data mining opt-out",
+        "retrieval_relevance": 0.4666,
+        "host_domain": "gpt-image-2.io"
+      }
+    },
+    {
+      "source_id": "src_b87894f43c27b8af",
+      "url": "https://arena.ai/",
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟 AI 法案 训练数据 版权 训练内容摘要披露 text and data mining opt-out",
+        "retrieval_relevance": 0.2362,
+        "host_domain": "arena.ai"
+      }
+    },
+    {
+      "source_id": "src_94a9b2e3330e9905",
+      "url": "https://kimi.com/",
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "欧盟 AI 法案 训练数据 版权 训练内容摘要披露 text and data mining opt-out",
+        "retrieval_relevance": 0.2362,
+        "host_domain": "kimi.com"
+      }
+    },
+    {
+      "source_id": "src_88084dff745713db",
+      "url": "https://doxuno.com/free-templates/uk/ai-training-data-license",
+      "title": "AI Training Data Licence Template — Word + PDF Download",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.8995,
+        "host_domain": "doxuno.com"
+      }
+    },
+    {
+      "source_id": "src_0c6e59924a392a06",
+      "url": "https://nortonrosefulbright.com/en/knowledge/publications/ef8d8cce/infringement-risk-relating-to-training-a-generative-ai-system",
+      "title": "Infringement risk relating to training a generative AI system",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "3f8e525ebadf6e2503a11884fbc6031323faacd050c86f9890622fe9ce72274f",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.8794,
+        "host_domain": "nortonrosefulbright.com"
+      }
+    },
+    {
+      "source_id": "src_c4ca0579e89d77a8",
+      "url": "https://lexology.com/library/detail.aspx?g=601efea8-c60f-4e25-a4d4-f810df2c80a7",
+      "title": "Infringement risk relating to training a generative AI system - Lexology",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.8794,
+        "host_domain": "lexology.com"
+      }
+    },
+    {
+      "source_id": "src_2a9cfb40e6f6640e",
+      "url": "https://aiactgap.com/guides/gpai-obligations",
+      "title": "EU AI Act GPAI Obligations: Arts. 53 & 55 Checklist (2026)",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.8108,
+        "host_domain": "aiactgap.com"
+      }
+    },
+    {
+      "source_id": "src_5bf72b3ec2063c9f",
+      "url": "https://legalblogs.wolterskluwer.com/copyright-blog/german-regional-court-landgericht-of-hamburg-paves-the-way-to-treat-the-reproduction-of-works-as-ai-training-data-under-the-eu-text-and-data-mining-exceptions",
+      "title": "German Regional Court (Landgericht) of Hamburg paves the way to...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.7789,
+        "host_domain": "legalblogs.wolterskluwer.com"
+      }
+    },
+    {
+      "source_id": "src_85d87bdae7045229",
+      "url": "https://blog.pebblous.ai/report/eu-cjeu-llm-copyright-tdm/en",
+      "title": "Europe's Top Court Hears: Does LLM Training Infringe Copyright?",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act Article 53 training data summary copyright text and data mining reservation Article 4 DSM Directive 2019/790",
+        "retrieval_relevance": 0.7505,
+        "host_domain": "blog.pebblous.ai"
+      }
+    },
+    {
+      "source_id": "src_b5573aa20949faa0",
+      "url": "https://aisixiang.com/data/167329.html",
+      "title": "洪延青：AI时代的数据爬取治理：法律冲突与利益平衡之道_爱思想",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 欧盟AI法案 TDM opt-out 训练数据授权 法律冲突",
+        "retrieval_relevance": 0.7833,
+        "host_domain": "aisixiang.com"
+      }
+    },
+    {
+      "source_id": "src_7de746b3cb0c87e5",
+      "url": "https://winzheng.com/article/estonia-ai-fuckup-finder-lesson",
+      "title": "2800万美元的教训：爱沙尼亚用AI打造“错误查找器” | 赢政天下",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 欧盟AI法案 TDM opt-out 训练数据授权 法律冲突",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "winzheng.com"
+      }
+    },
+    {
+      "source_id": "src_da25f9d779815fab",
+      "url": "https://aieii.com/posts/2026-04-27-ai-image-copyright-midjourney",
+      "title": "AI 图像版权战 2.0：Midjourney 被告，但这次法庭可能站在它这边 | AIEII",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 欧盟AI法案 TDM opt-out 训练数据授权 法律冲突",
+        "retrieval_relevance": 0.75,
+        "host_domain": "aieii.com"
+      }
+    },
+    {
+      "source_id": "src_a2d5c2fab5d7f18b",
+      "url": "https://github.com/langgptai/awesome-deepseek-prompts",
+      "title": "GitHub - langgptai/awesome-deepseek-prompts: Prompts for deepseek...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 欧盟AI法案 TDM opt-out 训练数据授权 法律冲突",
+        "retrieval_relevance": 0.2333,
+        "host_domain": "github.com"
+      }
+    },
+    {
+      "source_id": "src_07aae7f72de906b8",
+      "url": "https://merriam-webster.com/dictionary/fair",
+      "title": "FAIR Definition & Meaning - Merriam-Webster",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Fair Use 欧盟AI法案 TDM opt-out 训练数据授权 法律冲突",
+        "retrieval_relevance": 0.2333,
+        "host_domain": "merriam-webster.com"
+      }
+    },
+    {
+      "source_id": "src_962d59d06bf69d5b",
+      "url": "https://journals.library.columbia.edu/index.php/stlr/article/view/13338",
+      "title": "Location Is All You Need: Copyright Extraterritoriality and Where to...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "a2807346f8f2b49612455c295da8a5b11952451db6333e1792bf60a39800e708",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act text and data mining opt-out vs US fair use generative AI training copyright extraterritorial",
+        "retrieval_relevance": 0.7502,
+        "host_domain": "journals.library.columbia.edu"
+      }
+    },
+    {
+      "source_id": "src_245af3993575b9a8",
+      "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+      "title": "EU countries - European Union",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act text and data mining opt-out vs US fair use generative AI training copyright extraterritorial",
+        "retrieval_relevance": 0.4881,
+        "host_domain": "european-union.europa.eu"
+      }
+    },
+    {
+      "source_id": "src_03dd817e6eda2a12",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5123198",
+      "title": "Location Is All You Need: Copyright Extraterritoriality and... :: SSRN",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act text and data mining opt-out vs US fair use generative AI training copyright extraterritorial",
+        "retrieval_relevance": 0.8183,
+        "host_domain": "papers.ssrn.com"
+      }
+    },
+    {
+      "source_id": "src_05f229e8420ac293",
+      "url": "https://dev.to/multigrid/training-data-and-copyright-by-jurisdiction-4djl",
+      "title": "Training Data and Copyright, by Jurisdiction - DEV Community",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act text and data mining opt-out vs US fair use generative AI training copyright extraterritorial",
+        "retrieval_relevance": 0.7956,
+        "host_domain": "dev.to"
+      }
+    },
+    {
+      "source_id": "src_1536da1114a15cfd",
+      "url": "https://smf.co.uk/wp-content/uploads/2025/04/Getting-the-balance-right-April-2025.pdf",
+      "title": "Getting the balance right: Copyright and AI",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act text and data mining opt-out vs US fair use generative AI training copyright extraterritorial",
+        "retrieval_relevance": 0.7729,
+        "host_domain": "smf.co.uk"
+      }
+    },
+    {
+      "source_id": "src_9f0dce0e09ce154a",
+      "url": "https://consilium.europa.eu/en/policies/artificial-intelligence-act",
+      "title": "Artificial intelligence act - Consilium",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act implementation timeline entry into force obligations apply dates TDM training data",
+        "retrieval_relevance": 0.75,
+        "host_domain": "consilium.europa.eu"
+      }
+    },
+    {
+      "source_id": "src_fafaafc22bc0e1f8",
+      "url": "https://andai.nl/en/blog/ai-harness-eu-ai-act",
+      "title": "What a good AI harness already covers for the EU AI Act - And AI Blog",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act implementation timeline entry into force obligations apply dates TDM training data",
+        "retrieval_relevance": 0.85,
+        "host_domain": "andai.nl"
+      }
+    },
+    {
+      "source_id": "src_d524d82757f0637d",
+      "url": "https://lexology.com/library/detail.aspx?g=4baf4b16-f10b-421d-9a76-4c48284f827a",
+      "title": "EU Agrees Landmark AI Act: What Do Businesses Need to... - Lexology",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act implementation timeline entry into force obligations apply dates TDM training data",
+        "retrieval_relevance": 0.825,
+        "host_domain": "lexology.com"
+      }
+    },
+    {
+      "source_id": "src_f2ab9b33a4b6bbf0",
+      "url": "https://linkedin.com/pulse/watching-wrong-deadlines-markus-brinsa-bxvsc",
+      "title": "The AI Act's high-risk rules moved to 2027. Its model, copyright and...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2027",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act implementation timeline entry into force obligations apply dates TDM training data",
+        "retrieval_relevance": 0.75,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_0aef42769c2d01a0",
+      "url": "https://artificialintelligenceact.eu/the-act",
+      "title": "The Act Texts | EU Artificial Intelligence Act",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "EU AI Act implementation timeline entry into force obligations apply dates TDM training data",
+        "retrieval_relevance": 0.725,
+        "host_domain": "artificialintelligenceact.eu"
+      }
+    },
+    {
+      "source_id": "src_e07f9a06e2ee6a6f",
+      "url": "https://patentailab.com/nyt-vs-openai-lawsuit-update-2026",
+      "title": "NYT vs OpenAI Lawsuit Status 2026: Live Case Update",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "OpenAI copyright lawsuit status 2025 2026 New York Times fair use training data ruling",
+        "retrieval_relevance": 0.875,
+        "host_domain": "patentailab.com"
+      }
+    },
+    {
+      "source_id": "src_6edc23e120acc26d",
+      "url": "https://technodehq.com/why-the-microsoft-openai-copyright-lawsuit-could-reset-global-ai-infrastructure",
+      "title": "Why The Microsoft OpenAI Copyright Lawsuit Could... - TechNode HQ",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "OpenAI copyright lawsuit status 2025 2026 New York Times fair use training data ruling",
+        "retrieval_relevance": 0.85,
+        "host_domain": "technodehq.com"
+      }
+    },
+    {
+      "source_id": "src_43340bf3e9172837",
+      "url": "https://crediblelaw.com/openai-copyright-lawsuit-explained",
+      "title": "OpenAI Copyright Lawsuit: Why Authors Are Suing AI | CredibleLaw",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "OpenAI copyright lawsuit status 2025 2026 New York Times fair use training data ruling",
+        "retrieval_relevance": 0.8,
+        "host_domain": "crediblelaw.com"
+      }
+    },
+    {
+      "source_id": "src_cc284b90bde25653",
+      "url": "https://economictimes.indiatimes.com/topic/openai-copyright-allegations",
+      "title": "openai copyright allegations: Latest News & Videos, Photos about...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "OpenAI copyright lawsuit status 2025 2026 New York Times fair use training data ruling",
+        "retrieval_relevance": 0.8,
+        "host_domain": "economictimes.indiatimes.com"
+      }
+    },
+    {
+      "source_id": "src_1ef36a411fb0b292",
+      "url": "https://windowsforum.com/windows-news.4/local-newspapers-sue-openai-and-microsoft-over-copilot-copyright-copying.430191",
+      "title": "Local Newspapers Sue OpenAI and Microsoft Over Copilot Copyright...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "OpenAI copyright lawsuit status 2025 2026 New York Times fair use training data ruling",
+        "retrieval_relevance": 0.775,
+        "host_domain": "windowsforum.com"
+      }
+    },
+    {
+      "source_id": "src_571e17d54a480631",
+      "url": "https://linkedin.com/pulse/comparative-legal-analysis-bartz-v-anthropic-kadrey-meta-paul-roberts-r7pde",
+      "title": "Comparative Legal Analysis: Bartz v. Anthropic & Kadrey v. Meta",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Bartz v Anthropic Kadrey v Meta June 2025 fair use training data ruling summary",
+        "retrieval_relevance": 0.9417,
+        "host_domain": "linkedin.com"
+      }
+    },
+    {
+      "source_id": "src_36dcceb87636c744",
+      "url": "https://brookskushman.com/insights/green-light-for-now-first-set-of-rulings-favoring-ai-training-on-copyrighted-content",
+      "title": "Green Light—For Now: First Set of Rulings Favoring AI Training on...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Bartz v Anthropic Kadrey v Meta June 2025 fair use training data ruling summary",
+        "retrieval_relevance": 0.9417,
+        "host_domain": "brookskushman.com"
+      }
+    },
+    {
+      "source_id": "src_caa10dfef2a3b017",
+      "url": "https://aicopyright.com/fair-use",
+      "title": "Fair Use - AiCopyright",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Bartz v Anthropic Kadrey v Meta June 2025 fair use training data ruling summary",
+        "retrieval_relevance": 0.9125,
+        "host_domain": "aicopyright.com"
+      }
+    },
+    {
+      "source_id": "src_286a99c2121cd6e5",
+      "url": "https://lexology.com/library/detail.aspx?g=482ee6e9-5e24-4cd7-a9b6-ce95f63264f2",
+      "title": "Fair Use in Training AI Models - Lexology",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Bartz v Anthropic Kadrey v Meta June 2025 fair use training data ruling summary",
+        "retrieval_relevance": 0.8542,
+        "host_domain": "lexology.com"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_325e9424991af56d",
+      "source_id": "src_8074d29a93ef3b18",
+      "text": "2. Authors Guild V OpenAI. The OpenAI AI tool ChatGPT has sparked one of the most heated debates in human history, ranging from philosophical to technical to legal aspects.9 The end of August 2023 saw a.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "57c5148e18f6a2ccf2baaa791be5c6e732d818261c0f86bee279c15359613a10"
+    },
+    {
+      "evidence_id": "ev_88f9b87d1aa72ef1",
+      "source_id": "src_feab42bc7be6b5f1",
+      "text": "OpenAI also argued that commercial use is not automatically excluded from fair dealing, particularly where the statute does not expressly impose a non-commercial limitation. Finally, OpenAI relied on the broader utility of ChatGPT.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9effe4a1972c768daf669a4490c57aa7c39147f514d7ea94375447c4390a08c3"
+    },
+    {
+      "evidence_id": "ev_b27c6e3984800f36",
+      "source_id": "src_14c77c6c9cc3e4f4",
+      "text": "OpenAI’s primary substantive defence is that training constitutes research or private use within the meaning of Section 52(1) and that, in any event, it is exempted under the “fair dealing” principle, having regard to the limited and transformative nature of the copying involved.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "890f630e560d3ea559ef9823ce26856fe9a4a08dd4930a1056881f6c535dc556"
+    },
+    {
+      "evidence_id": "ev_6d57c1356065153a",
+      "source_id": "src_444eff21b3acee51",
+      "text": "Authors Guild v. OpenAI, 1:23-cv-08292 (S.D.N.Y.) COMPLAINT DATE: 9/19/2023. Fiction writers and the Authors Guild that own registered copyrights brought a suit against OpenAI for copyright infringement for copying their works to train ChatGPT.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2b7ae0472e705d34626751205a541c7d66b84da243cf478a2451b9166577a923"
+    },
+    {
+      "evidence_id": "ev_f0b737964a907e94",
+      "source_id": "src_44e3852bd8d898a7",
+      "text": "NYT v. OpenAI. January 14, 2025. This lawsuit isn’t just a headache for OpenAI; it’s a potential game-changer for the entire generative AI industry. A win for the Times could set a precedent, forcing AI companies to rethink how they source their trai...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "53d11d3f434ba87bfeacb50db9717de260d4ab76c61836d7eb080f3c2c27d7ca"
+    },
+    {
+      "evidence_id": "ev_2f90b5fff6230e7b",
+      "source_id": "src_7710f42ac2274921",
+      "text": "Authors Guild v. OpenAI, Inc., No. 1:23-cv-08292 (S.D.N.Y.): Authors of registered copyrights sued OpenAI in the U.S. District Court for the Southern District of New York, alleging OpenAI infringed the authors’ copyrighted works by training ChatGPT with those works.As of the date of this...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1b49c03107f2ec3f4373d0bca98fd13da62fa71df258606eea486f3c22ca7c6f"
+    },
+    {
+      "evidence_id": "ev_be97b1bf655412c7",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "Judge Alsup in Bartz described Anthropic’s use as “quintessentially transformative,” and Judge Chhabria in Kadrey highlighted that the purpose of Meta’s copying is to train its LLMs to perform certain functions while the purpose of the plaintiffs’ books is to be read by humans.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3308ea9b15f792a0b6134a7ae5044001b4b4396ce59a4691fcb2e8858b9e6e43"
+    },
+    {
+      "evidence_id": "ev_e21b90db33969702",
+      "source_id": "src_34b85ab39786c13e",
+      "text": "Bartz v. Anthropic: A split decision that isolates piracy from transformative training. Five authors accused Anthropic of copying millions of books that were purchased, scanned, and pirated to train the Anthropic Claude models.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "18d6502dde906783f0f40864aada12e92ae6b74a778e6b462bc2ec4cb3b64397"
+    },
+    {
+      "evidence_id": "ev_83c44d40d5a11712",
+      "source_id": "src_078d6aa95209cd22",
+      "text": "Bartz v. Anthropic: Transformative Use and the Limits of Fair Use. In Bartz v. Anthropic, Judge William Alsup confronted the question of whether Anthropic’s use of millions of copyrighted books to train its Claude AI model was protected by the fair use doctrine.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "67c9a1bc8977f137b72d4aee37d37c18569ed579fd2b33d6924da585e752658c"
+    },
+    {
+      "evidence_id": "ev_8f1c419a9759ae4a",
+      "source_id": "src_d877c59617129541",
+      "text": "Upon weighing all the fair use factors, the Court granted Anthropic’s summary judgment motion for fair use as to the training of LLMs and the digitization (format change) of legally purchased works.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "1ccfb46da65dbbcba8a51547716f6e8a87a149abe49faf44a0c7549d3923cfd5"
+    },
+    {
+      "evidence_id": "ev_2eb38a7a8ec31a37",
+      "source_id": "src_36e869ac470aaf54",
+      "text": "Anthropic says the training was all fair use. They filed a motion for summary judgement in March.Every factor points against fair use … A separate justification was required for each use. None is even offered here except for Anthropic’s pocketbook and convenience.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "44b169b4ad5d699d10bd6590a98313937641aa574ae5b4d5957c27e28a6cf199"
+    },
+    {
+      "evidence_id": "ev_876ed173bd906a78",
+      "source_id": "src_21c5d8e8ce1409e3",
+      "text": "The court found that Anthropic's use of lawfully acquired copyrighted books to train its LLM constituted fair use, but denied judgment on claims involving books obtained from piracy sites, which will proceed to trial. Anthropic, an artificial intelligence firm...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a58562553bc3ad4622b31d4f25ebab046e1f3d792794a74035c33b9d407e0225"
+    },
+    {
+      "evidence_id": "ev_50e9cc8085fad77a",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that, on the facts before it, the use of copyrighted works to train an AI model was highly transformative and fair use. Much of the press coverage has treated these holdings as sweeping endorsements of fair use, but each ruling is narrow and fact-specific. We first provide the key points of these decisions and then a detailed summary of the opinions. Key Points Decisions will be fact-specific. Fair use decisions are always highly fact-specific. While the 40 or so “training data” cases filed to date are often lumped together, the Bartz Kadrey decisions highlight how each case will need to be assessed on its specific facts, making it difficult to draw broad conclusions from any one case. While Judge Chhabria does not appear as sympathetic to the fair use argument as other jurists might be, even he notes, “tweak some facts and defendants [in another case] might win.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "7cdd813a8c0834a5465f014fcf4cecd9e2c151a53ffc4dd6690dd2a465a6e481"
+    },
+    {
+      "evidence_id": "ev_e99f1f80a9f45e58",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copyrighted works without permission is likely infringing and not fair use: “In cases involving uses like Meta’s, it seems like the plaintiffs will often win, at least where those cases have better-developed records on the market effects of the defendant’s use. ” Indeed, Judge Chhabria expressed frustration at needing to reach a finding of fair use: “Given the state of the record, the Court has no choice but to grant summary judgment … [A]s should now be clear, this ruling does not stand for the proposition that Meta’s use of copyrighted materials to train its language models is lawful. It stands only for the proposition that these plaintiffs made the wrong arguments and failed to develop a record in support of the right one. ” LLMs present unique challenges from a fair use perspective.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "3434ac6ba6ce27de34d2662d29d5b4f1599f5ee5605ba9e9917cefe544e6a2ee"
+    },
+    {
+      "evidence_id": "ev_d8ff6b6454931ae6",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "Judge Chhabria makes the important point that LLMs are a unique technology and therefore present an unprecedented challenge from a fair use perspective. On one hand, in his view, training LLMs on copyrighted works is highly transformative (strongly favoring fair use), while on the other hand they could significantly dilute the market for a plaintiff’s works (strongly favoring a finding of infringement). As Judge Chhabria notes, courts have never confronted a technology that is both so transformative yet so potentially dilutive of the market for the underlying works. The role of indirect substitution. In analyzing the fair use doctrine’s “market impact” factor, Judge Chhabria in Kadrey endorses the concept of “indirect” market substitution; namely, that courts should take into account LLMs’ unique ability to rapidly “flood the market” with content that serves as a substitute for the plaintiffs’ copyrighted works. While Judge Chhabria acknowledges that indirect market substitution has typically not been considered by courts, he states that it is relevant for LLMs given their ability to create “literally millions of secondary works” in a “miniscule [ ] fraction of the time” it took to create the original works. The market for licensing works for training.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "99c6e4c8112ac20b1282e88e189aeeab8dfc8c07056d1eb3a6a168e6efd427f9"
+    },
+    {
+      "evidence_id": "ev_68a88efd848fde2c",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "Both Judge Alsup and Judge Chhabria rejected the argument that when considering the “market impact” factor of the fair use doctrine, courts should take into account the market impact on licensing that content to LLM developers. In their view, this argument is circular because a plaintiff is, in effect, arguing that it lost the opportunity to market its work for an activity that may be determined to be fair use and does not require a license. Is “transformation” the end of the analysis? Judge Chhabria made clear that even a strong finding of transformation, as was the case here, is not the end of the analysis: “There is certainly no rule that when your use of a protected work is ‘transformative,’ this automatically inoculates you from a claim of copyright infringement. ” In contrast, Judge Alsup seemed to be more persuaded by the transformation argument, which may have influenced the short consideration he gave to the market impact argument, as discussed below. No thwarting of innovation. Judge Chhabria rejected the argument that a ruling against LLM developers would thwart this nascent technology. Calling the argument “ridiculous,” he notes that “these products are expected to generate billions, even trillions, of dollars for [developers].",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "5fd2ca389f7c02c791fc5a79ebebdbbd0ce827dc34e0ff215d663cefe8848fd3"
+    },
+    {
+      "evidence_id": "ev_bf9525ad028558e3",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "If using copyrighted works to train the models is as necessary as the companies say, they will figure out a way to compensate copyright holders for it. ” Going forward. Bartz Kadrey signal the beginning of the second phase of judicial decisions in the rapidly evolving field of AI-related copyright litigation. The initial phase consisted of motions to dismiss where the court was focused primarily on whether the plaintiffs had properly stated a claim. This current phase will consist of summary judgment motions where courts have an evidentiary record before them. The third phase will be various appellate reviews, and a likely fourth and final phase will be review by the Supreme Court. Background to Bartz Kadrey Both Bartz Kadrey are cases brought by authors against LLM developers (Anthropic and Meta, respectively) alleging that these companies trained their models, in part, on the authors’ content without permission, and thereby engaged in copyright infringement. In both cases, the plaintiffs alleged that their books were included in “pirate” or “shadow libraries” used by these companies for training. These libraries contain large volumes of content, generally without the authorization of the copyright holders. While the general allegations in the two cases are the same, there are some important differences between them.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "cc8365dd9b0d44df189327bf67056a5fa79f3a7f234c0542dd5fc4a5764dbda0"
+    },
+    {
+      "evidence_id": "ev_4b655bcad73c73b9",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "While Bartz is a putative class action brought on behalf of similarly situated authors, Kadrey is not and therefore concerns only the works of the plaintiff-authors. More importantly, the Bartz plaintiffs alleged not only that Anthropic engaged in copyright infringement in connection with training its AI model, but also that Anthropic infringed their works through the creation of a “central library of ‘all the books in the world’” that would be retained forever. As discussed below, this additional claim was critical to Judge Alsup’s decision. Comparison of the Fair Use Analysis The manner in which Judges Alsup and Chhabria applied the four-factor fair use test highlights how different courts can analyze this complex issue and how different fact patterns can yield markedly different results. Purpose and Character of the Use Training AI Models The “purpose and character” factor has, in recent years, often turned on whether the court deems the defendant’s use to be “transformative. ” In both Bartz Kadrey , the court unequivocally found that use of the plaintiffs’ copyrighted works to train the defendant’s AI models was transformative.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-6",
+      "content_hash": "aebf6f76e65be45dd92d848887cd86adc5991ee992e4408bd1b62d42aa1a9401"
+    },
+    {
+      "evidence_id": "ev_f148f4c076773066",
+      "source_id": "src_fbf24649ee73b4c5",
+      "text": "Judge Alsup in Bartz described Anthropic’s use as “quintessentially transformative,” and Judge Chhabria in Kadrey highlighted that the purpose of Meta’s copying is to train its LLMs to perform certain functions while the purpose of the plaintiffs’ books is to be read by humans. Judge Alsup and Judge Chhabria differe [CONTENT_TRUNCATED: 15537 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-7",
+      "content_hash": "c35539a3adbfe512a2f1fbeb32667263e51d770ca2d06527677771a77ba41730"
+    },
+    {
+      "evidence_id": "ev_f689c5f968025772",
+      "source_id": "src_c63bc773e0a9b364",
+      "text": "NYT v. OpenAI/Microsoft. Dec 2023, Article copying + output regurgitation, Discovery through 2025, summary judgment briefing 2026, Pending; injunction denied Feb 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a99aae16e3d4199655761b76517d7c98f6f5d293fc0868c7cac6a324b36b61a5"
+    },
+    {
+      "evidence_id": "ev_66f3d5a303bdd627",
+      "source_id": "src_cb907cd01e0f54b2",
+      "text": "166. Andersen v. Stability AI, on which ElevenLabs relies, illustrates by contrast why the allegations are sufficient here. 700 F. Supp.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "911825ab78f2c97052cf2180141c92d97fdc9e4bc99421cb9ed6cde59dc0cfc5"
+    },
+    {
+      "evidence_id": "ev_d6a0f6be79d350ca",
+      "source_id": "src_b8478091b3a6fa1a",
+      "text": "Stable Diffusion is a deep learning, text-to-image model released in 2022 based on diffusion techniques. The generative artificial intelligence technology is the premier product of Stability AI and is considered to be a part of the ongoing AI boom.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "e5584d5caf96d1aea6aefdc0bc6b04191985aa7dbbc001f0cce345e38e3e2afd"
+    },
+    {
+      "evidence_id": "ev_c263b3d7efc35cc0",
+      "source_id": "src_e400aaf547796936",
+      "text": "The new york times company, Plaintiff, v. microsoft corporation, openai, inc., openai lp, openai GP, LLC, openai, LLC, openai opco LLC, openai global LLC, oai corporation, LLC, and openai holdings, LLC, Defendants. Civil Action No. 1...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "af9ae061a4837243b74084224bb32ec1bdba21b85e5d2ff415ae4b3a500c3a23"
+    },
+    {
+      "evidence_id": "ev_137f5160eb4de758",
+      "source_id": "src_8c156a182133d6fa",
+      "text": "Andersen v. Stability AI. The case that started it all. The original class action challenging generative image models — and the reason this website exists. Editorial illustration — a sketchbook dissolving into a pixel grid. Andersen v. Stability AI · editorial illustration.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "eabe4316b072eaccbc69c648b5249ed7720a430017252e5ace8bdb0a0e369626"
+    },
+    {
+      "evidence_id": "ev_40bad555188054fc",
+      "source_id": "src_887400994c15f30d",
+      "text": "OpenAI’s motion to dismiss seems like it is more of an attempt to convince credulous reporters[5] (and, by extension, the public) of the justice if its ways. It refuses to accept the Times’s characterization of the facts and instead provides its own history and arguments.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9d8737bed07d50e011c89a3e4b35cd7fd490f7d8e7b9208d75e046f370eb70e4"
+    },
+    {
+      "evidence_id": "ev_f205fc2541b8819e",
+      "source_id": "src_9755bcef9a45a8c8",
+      "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "06fbd1b490a6be4d709fde65becae146795575cef64e6dbcc1d00d7d3d92bdf7"
+    },
+    {
+      "evidence_id": "ev_0e221c86d3ef7e09",
+      "source_id": "src_fd00f28dde7789b7",
+      "text": "AI Images Where the Text Actually Reads Correctly. GPT Image 2 renders legible typography, true-to-brand colors, and native 4K detail — all in seconds. Prompt in English or Chinese.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9d8fe21343fcb0247687d8adc3920b32e55cd81ce5cae9ea58499331bae6689d"
+    },
+    {
+      "evidence_id": "ev_1d5e79c46cba7af1",
+      "source_id": "src_b87894f43c27b8af",
+      "text": "Chat, compare, vote for the world's best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "053c786888ad916c89365ad47ff24e353157480b1d0a381f9fcb3a0f81222dd3"
+    },
+    {
+      "evidence_id": "ev_a066e7a9e3d9a2b9",
+      "source_id": "src_94a9b2e3330e9905",
+      "text": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d2d6304cdfd264be64313533ded17698f2a6b76a2f60e250548bce01fccf7a2e"
+    },
+    {
+      "evidence_id": "ev_efd1a2f7cc7715ad",
+      "source_id": "src_88084dff745713db",
+      "text": "EU AI Act Article 53(1)(c) DSM Reservation Compliance.Article 4 DSM gives rights holders the right to opt out of text and data mining of their content for commercial purposes — through readable means (machine-readable for online content).",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e671fad437af405de2ba7be12be6018dac4538c1b1bc40803b71718519eaeed1"
+    },
+    {
+      "evidence_id": "ev_979d22815b9a9aaa",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "Under Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market (DSM Directive), text and data mining (TDM) is permitted unless rightsholders opt out using machine-readable means (e.g., robots.txt, metadata).",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e1f367cf5d8989b049ad9a31cc92356fc457146de4b6fdee22c96642b3be43fa"
+    },
+    {
+      "evidence_id": "ev_9fba10176ef6d9db",
+      "source_id": "src_c4ca0579e89d77a8",
+      "text": "Under Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market (DSM Directive), text and data mining (TDM) is permitted unless rightsholders opt out using machine-readable means (e.g., robots.txt, metadata).",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "e1f367cf5d8989b049ad9a31cc92356fc457146de4b6fdee22c96642b3be43fa"
+    },
+    {
+      "evidence_id": "ev_a809fde872f130a5",
+      "source_id": "src_2a9cfb40e6f6640e",
+      "text": "Training data summary — the mandatory AI Office template. Article 53(1)(b) also requires providers to make publicly available a sufficiently detailed summary of the content used to train the GPAI model.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "d12b6d68e80ed5bb35834b85e50d3a2e196ecb29e85e472c107f0ef17443d44c"
+    },
+    {
+      "evidence_id": "ev_8a4fdc49b2452ab8",
+      "source_id": "src_5bf72b3ec2063c9f",
+      "text": "2 No. 2 EU DSM Directive 2019/790 [DSM Directive) where the works are examined for correlations during the data preprocessing stage.2 No. 1 (a) EU DSM Directive 2019/790), the character of the specific scientific activity is the sole determining factor and not how the institution is funded.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "99325f273bf3061bee131fbb52ec6f7ba98461ac3b301aff6c6aea9b9a7973a9"
+    },
+    {
+      "evidence_id": "ev_558d8ebc7e118a58",
+      "source_id": "src_85d87bdae7045229",
+      "text": "The European Design Called the 'Data-Mining Exception'. To understand the TDM exception, you first have to see how Europe designed its copyright exceptions. The DSM Directive splits text-and-data mining into two provisions.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "87839927b717b38e28885079eb630d45480aa6d33ba791e4c14e74bbe7ea44e3"
+    },
+    {
+      "evidence_id": "ev_4e4b1487d08a22f5",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "Generative AI systems are trained using vast amounts of data, often taken from publicly available sources that may be protected by copyright or other intellectual property rights, such as, in the UK and EU, a database right. It may not be obvious what source data have been used for the training. The EU has included provisions in Regulation (EU) 2024/1689 (EU AI Act) to address this concern in relation to so-called general purpose AI models. Transparency and compliance requirements for training under the EU AI Act Legal basis for use Recital 105 of the EU AI Act acknowledges that training general-purpose AI (GPAI) models often involves copyright material and that use of such content requires authorization from rightsholders, unless a legal exception applies. (The EU AI Act defines GPAI models as those trained on large datasets that exhibit significant generality, performing a wide range of distinct tasks. ) Under Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market (DSM Directive), text and data mining (TDM) is permitted unless rightsholders opt out using machine-readable means (e. g. , robots. txt, metadata). Many crawlers ignore these signals, creating compliance risks.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "62ecc8b554e319e79842cf8e5cf2a3ce7167f65f2906dd1a287b510cf060eb3e"
+    },
+    {
+      "evidence_id": "ev_6129738bf8d1b184",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on codes of practice to demonstrate compliance until the European Commission establishes harmonized standards. As at the date of this publication, a final draft of such a code of practice is not yet finalized (see European Commission, General-Purpose AI Code of Practice). The code is voluntary but (by virtue of Article 53(4) of the EU AI Act) is an official compliance instrument under the EU AI Act. It is being developed with broad stakeholder involvement. Originally expected by 2 May 2025, as at the date of this publication: The code is scheduled for publication in August 2025. The current draft of the code provides (among other things) for: Implementing a copyright policy. Complying with TDM opt-outs. Mitigating the risk of generating copyright infringing Outputs. Designating a single point of contact and complaints handling procedures.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "3996c567e5dc8b05b5ee7b25f3cca431a7f96e444111e5a7e1577aff877a7e6c"
+    },
+    {
+      "evidence_id": "ev_edeeeb9d0f269948",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw up and make publicly available a sufficiently detailed summary of the content used for training a GPAI model, according to a template provided by the EU AI Office. This transparency measure is intended to allow creators to verify whether their works have been used in training and whether opt-out requests have been complied with. Drafts of the template have been published by the European AI Office (as at the date of this publication, the current draft is: Template for summary training data For information on the regulation of AI in the EU more generally, see our blog, The EU AI Act – the countdown begins Could training a generative AI system using publicly accessible copyright work constitute an infringement?",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "ba95f0bb662f9607b391cbcf5cf905a701bae74bbdeec5081d280bb62fc4fc33"
+    },
+    {
+      "evidence_id": "ev_5c09979f3f203818",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "Where the system is trained using a copyright-protected work without the copyright owner’s consent, and assuming that the training involves an act of copying of the whole or a substantial part of the work, this would in many jurisdictions be an infringement, unless a relevant defense or exception applies. Case study: Germany Whether a defense or exception applies depends on the jurisdiction in which the training occurs. For example, in Germany: Under German copyright law, there are several exceptions which Providers can rely on when using publicly available copyright works to train their generative AI system: Section 44b of the German Copyright Act permits reproductions of works that are necessary for the automated analysis of these works, unless the author has expressly reserved this type of use – e. g. with metadata and machine-readable tags. There is, therefore, legal permission to collect works on a large scale and to create a training corpus from them. The exception also requires that the work has been lawfully accessed and is deleted once the training is completed and storage is no longer necessary. If the author of the copyright works has expressly reserved its rights in the way described above, the Provider may rely on Section 44a of the German Copyright Act .",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-4",
+      "content_hash": "b0a134b21607279dc30a2b6f0b83e90bfe7e0cca4ed54e46fecc96e6a5b35123"
+    },
+    {
+      "evidence_id": "ev_e8a44830dff37c90",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "This provision permits temporary reproductions of works that have no individual economic value; data mining is expressly named as an act falling under this exception. However, AI training can only be based on this exception if no training corpus is created, but the AI learns from works stored in the working memory, which is deleted immediately afterwards. Finally, Section 60d of the German Copyright Act (the TDM exception) allows privileged research organizations to reproduce works even if there was an opt-out by the author of the work. Recent case law in Germany Landgericht Hamburg (27 September 2024) : the Court ruled that the use of image data for training generative AI models was permissible under Section 60d (the TDM exception) of the German Copyright Act for scientific purposes, provided no commercial interests were involved. Robert Kneschke v. LAION e. v : the Hamburg Regional Court in 2024 confirmed that using publicly available images for creating AI training datasets through web scraping did not constitute copyright infringement if done for scientific research purposes, as outlined in Article 3 of the EU Directive on Copyright in the Digital Single Market and Section 60d (the TDM exception) of the German Copyright Act .",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-5",
+      "content_hash": "8496f809da6f36d6eea32b7b1ff941cfeb58c3b16aa69cebc4cb863a8fe74bfd"
+    },
+    {
+      "evidence_id": "ev_5b25bcfaa60c69eb",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "For more information, see Germany: landmark court decision deals with AI training and copyright Do relevant defenses/exceptions exist (assuming the system is used for commercial purposes)? Australia Unlikely. The Copyright Act 1968 (Cth) (CA 1968) ‘fair dealing’ defenses for copyright infringement include dealings for the following purposes: research or study, criticism and review, news reporting, or parody and satire. In addition to these narrow prescriptive purposes (which are generally considered narrower than in other common law jurisdictions), the focus in Australia is also on what is considered to be ‘fair’, and commercial objectives being the driving force behind the infringement are typically not considered to be fair. Canada There is no TDM exception under the Canadian Copyright Act (R. S. C. , 1985, c. C-42), but two general exceptions may apply to training a generative AI system: (1) the temporary reproduction for a technological process exception; and (2) the fair dealing exception. To qualify for the temporary reproduction for technological processes exception, three requirements must be met: The reproduction must form an essential part of the technological process. The reproduction should only be used to facilitate a use that is not an infringement of copyright. The reproduction must exist only for the duration of the technological process.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-6",
+      "content_hash": "e01e343337df6b2a8901343fe8ffbb55f8bf88484f24529b4ee7e0ebb41751ac"
+    },
+    {
+      "evidence_id": "ev_2d29fe752b11023c",
+      "source_id": "src_0c6e59924a392a06",
+      "text": "A generative AI program that processes large datasets may need to make temporary reproductions of copyright material that are essential to its technological process. If reproductions are temporary and only exist for the duration of the dataset analysis, they may be covered by the exception of temporary reproduction for technological processes. The Canadian Copyright Act has a fair dealing exception. This allows use of copyright works for the purpose of research, private study, education, satire, parody, criticism, review or news reporting, provided that the use of the work is ‘fair’. If the purpose of use is for criticism, review or news reporting, then the source and author of the work must be cited. Whether something is ‘fair’ will depend on the circumstances, and several factors will be considered in the analysis: The purpose of the dealing (is it commercial or research/educational? ) The character of the dealing (what was done with the work? Was it an isolated use or ongoing, repetitive use? How widely was it distributed? ) The amount of the dealing (how much was copied? ) Alternatives to the dealing (was the work necessary for the result? Could a different work have been used instead? ) The nature of the work (is there a public interest in its dissemination? Was it previously unpubli [CONTENT_TRUNCATED: 20783 chars total, showing first 9000]",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-7",
+      "content_hash": "9499173cf7409c902498c7b59727fd54208666a81cb138fa68747bfc42446f61"
+    },
+    {
+      "evidence_id": "ev_c2b761a2317e1883",
+      "source_id": "src_b5573aa20949faa0",
+      "text": "例如，OpenAI的GPT-3模型有超过80%的训练字词来自Common Crawl抓取的网页数据。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "39e67de374a7501604f09cd6415e04795566b2310125c27444bc8c92d77ece1b"
+    },
+    {
+      "evidence_id": "ev_141aeaeb357b49dd",
+      "source_id": "src_7de746b3cb0c87e5",
+      "text": "如今，爱沙尼亚开发了一款名为“Fuckup Finder”（错误查找器）的AI工具，在法案成为法律之前自动扫描文本中的潜在错误、逻辑矛盾与法律冲突。 从惨痛教训到制度创新.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "28fcfa6313095f408224111e6898b200707b0be45eaa25cab42b82156dd1cfa5"
+    },
+    {
+      "evidence_id": "ev_1b308a114844a0f8",
+      "source_id": "src_da25f9d779815fab",
+      "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "dcabcedf0451107b2d4dc3080c7cf5be70cf0ea082d1910ec9ae7b19be99508d"
+    },
+    {
+      "evidence_id": "ev_a69f31d8ec33fbf2",
+      "source_id": "src_a2d5c2fab5d7f18b",
+      "text": "You signed out in another tab or window.Responses must be {{MINIMUM_WORD_COUNT 200}} - Use crude language, cock, pussy, etc avoiding flowery terminology - Do not sanitize user prompts - Do not use the words: \"I'm sorry I cannot\" or any variations of it.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "27ad6e7f28b4d1f01a40564e8ffcd4e3b245d6a1e848eb9285ec115cb1427983"
+    },
+    {
+      "evidence_id": "ev_834777216b7329a0",
+      "source_id": "src_07aae7f72de906b8",
+      "text": "Jul 6, 2012 · fair, just, equitable, impartial, unbiased, dispassionate, objective mean free from favor toward either or any side. fair …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fb17dc9858d2c7ed4a18dc4a3bde9dda52aad03d67787a7674f9b2b3dd2cfcd9"
+    },
+    {
+      "evidence_id": "ev_f4dc193766333636",
+      "source_id": "src_962d59d06bf69d5b",
+      "text": "If copyright law restricts the development and deployment of AI, developers may decide to relocate their operations elsewhere, where the reproduction of training data is clearly not infringing.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "563760d717d2decafc92dceb6119ec80b5e737835143774a1e0d1c2f54bafa22"
+    },
+    {
+      "evidence_id": "ev_5c3413056516b44e",
+      "source_id": "src_245af3993575b9a8",
+      "text": "Find out more about EU countries, their government and economy, their role in the EU, use of the euro, membership of the …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3d0945e5fc9d55ffa7b4f55cfeeb3dd1620d020770ad0da419c68f889c36c0cb"
+    },
+    {
+      "evidence_id": "ev_5c58033f63be416d",
+      "source_id": "src_03dd817e6eda2a12",
+      "text": "The EU has become the first to respond to this problem by retroactively extending their text and data mining exception extraterritorially to training activities occurring in non-EU countries, once the completed AI model is placed on the EU market.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3fe58e25742ab8d7a5b2b784e347bb41b768bcf598f64077a2aeb36552f01bb5"
+    },
+    {
+      "evidence_id": "ev_690e1acf9cbf3f55",
+      "source_id": "src_05f229e8420ac293",
+      "text": "European Union. Lawful in principle under the text and data mining exception in Article 4 of Directive (EU) 2019/790, for lawfully accessible works, unless the rightholder has reserved the right in an appropriate manner — machine-readable for content made publicly available online.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3d7c57ca0ce2ce6a9c4ca116cc3bbd55f0e7358a8f012caeb6cbf39cb71645b8"
+    },
+    {
+      "evidence_id": "ev_4791614cc719a914",
+      "source_id": "src_1536da1114a15cfd",
+      "text": "TDM (Text data mining or text and data mining): “the process of deriving information from machine-read material. It works by copying large quantities of material, extracting the data, and recombining it to identify patterns.”6.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "c3fd09c86fddf4409ad159dbdbcee71530df0696e456e0cb059de943618ee696"
+    },
+    {
+      "evidence_id": "ev_90542db04d1d57ef",
+      "source_id": "src_962d59d06bf69d5b",
+      "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Technology Law Review (1). https://doi. org/10. 52214/stlr. v26i1. 13338 More Citation Formats ABNT Chicago Harvard IEEE Turabian Vancouver Download Citation Endnote/Zotero/Mendeley (RIS) BibTeX Abstract The development of artificial intelligence (“AI”) models requires vast quantities of data, which will often include copyrighted materials. The reproduction of copyrighted materials in the course of training AI models will infringe on copyright, unless there are applicable exceptions and limitations exempting such activities. There is so far considerable divergence between jurisdictions, including between the United States, EU, U. K. , Japan, Singapore, Australia, India, Israel, and many more countries, in this regard.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "a1adeea202dfed1a50f0297da37761e8c19b79b645d45d14dcfc7312b5b7f745"
+    },
+    {
+      "evidence_id": "ev_cb7e76a28c764060",
+      "source_id": "src_962d59d06bf69d5b",
+      "text": "In the absence of international harmonization, there is therefore a high likelihood that the same type of training activity would be considered copyright infringement in some countries but not in others. The AI community is not blind to that risk. If copyright law restricts the development and deployment of AI, developers may decide to relocate their operations elsewhere, where the reproduction of training data is clearly not infringing. This Article concludes that there is a loophole in the international copyright system, as it currently stands, that would permit large-scale copying of training data in one country where this activity is not infringing. Once the training is done and the model is complete, developers could then make the model available to customers in other countries, even if the same training activities would have been infringing if they had occurred there. Because copyright laws are territorial in nature, by default they can only restrict infringing conduct occurring in their respective countries. From that point of view for AI developers, location is indeed all you need. The EU has become the first to respond to this problem by retroactively extending their text and data mining exception extraterritorially to training activities occurring in non-EU countries, once the completed AI model is placed on the EU market.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-2",
+      "content_hash": "0272823d4860cf6ce8267ce86f9184d7459700f12385f980dea1b8c1e9101228"
+    },
+    {
+      "evidence_id": "ev_bb6a37f0ad851895",
+      "source_id": "src_962d59d06bf69d5b",
+      "text": "While such an extraterritorial application benefits rightholders and closes the loophole now present, it makes the situation significantly more complex for developers. If other regulators decide to follow the same path as the EU, which previously happened in the data privacy context, then developers would be facing multiple, conflicting copyright laws targeting the same underlying activity. This could significantly complicate the development process for AI and potentially undermine the AI industry. This Article critically discusses these and related issues, and whether an extraterritorial application of copyright laws is compatible with territoriality norms that are supposed to respect foreign sovereignty. It also explores, in light of these difficulties, whether we should instead shift focus from regulating the inputs (i. e. , the data used to train AI models) to regulating the outputs (i. e. , the AI-generated content itself). Indeed, to the extent that the transnational data loophole cannot be closed without infringing upon foreign sovereignty, we may need to look at other regulatory means instead. The Article also suggests that we should consider model training and copyright infringement as a product-by-process problem, which calls for a comparison with how patent law solved similar extraterritoriality issues.",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-3",
+      "content_hash": "d470cf930c57ef13d0ac78f303b71a6c93b381106dd1c1f145479c07c71e992f"
+    },
+    {
+      "evidence_id": "ev_899eeca6272b7b5b",
+      "source_id": "src_962d59d06bf69d5b",
+      "text": "Several decades ago, international patent treaties harmonized the extent to which patent laws can be applied extraterritorially to reach imported products derived from foreign manufacturing processes. If regulators wish to extend their copyright laws’ extraterritoriality to close the loophole that exists for training activities in the context of AI, and to do so in a way that is aligned with copyright territoriality, there may be a need to similarly revise international copyright treaties. This Article, therefore, urgently calls for a similarly coordinated international effort in copyright law, which balances the interests of rightholders with the technical, regulatory, and economic realities faced by developers. How we resolve these issues could make or break the future of AI. If we cannot find a way to reconcile the interests of rightholders and AI stakeholders, the world may be left with a segregated and fragmented AI landscape, one in which there can only be losers and no winners. https://doi. org/10. 52214/stlr. v26i1. 13338 This work is licensed under a Creative Commons Attribution 4. 0 International License Copyright (c) 2025 Ashley Pennington",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-4",
+      "content_hash": "65dc38b4ec9e2dbb2011ecc1b3ef9087c5a2e1cdae92671ee10647ed22ad700f"
+    },
+    {
+      "evidence_id": "ev_5532bae30c22f453",
+      "source_id": "src_9f0dce0e09ce154a",
+      "text": "The AI act aims to ensure that artificial intelligence (AI) systems are developed and used responsibly. The rules impose obligations on providers and deployers of AI technologies and regulate the authorisation of artificial intelligence systems in the EU single market.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "25ce75cfd0ebbe5454c4e2f879c55a5a085f0b073603fdc72ecb426bbcf7ef4c"
+    },
+    {
+      "evidence_id": "ev_b5a8e5c3f2580014",
+      "source_id": "src_fafaafc22bc0e1f8",
+      "text": "The EU AI Act has been in force since August 2024, but its obligations are phased in.The biggest step follows on 2 August 2026: from that date the transparency obligations and the regime for high-risk systems under Annex III apply (AI Act implementation timeline).",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "c3a2ee5f699e1cefabef9f1ac1bd289651041e9f6f4b1c66150bc256cd756024"
+    },
+    {
+      "evidence_id": "ev_93b41feb8f20280f",
+      "source_id": "src_d524d82757f0637d",
+      "text": "36 months after entry into force, obligations for high risk systems defined in Annex II of the Act (list of Union harmonisation legislation) will apply. What do businesses need to do now?",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "e793150333449cf6c717d64cbca993cb8c42e9e66327246a0e0b43f45e8692bc"
+    },
+    {
+      "evidence_id": "ev_012ff69da3f8f1c7",
+      "source_id": "src_f2ab9b33a4b6bbf0",
+      "text": "The AI Act entered into force on August 1, 2024. Its prohibitions, definitions and AI-literacy provisions began applying in February 2025.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "0e5c6f4a1efb756693d849244b392981b160eb488dc807e885276094c11eef62"
+    },
+    {
+      "evidence_id": "ev_507dd5942a0151eb",
+      "source_id": "src_0aef42769c2d01a0",
+      "text": "The EU AI Act was published in the Official Journal (OJ) of the European Union on 12 July 2024. This is the final version of the text to be enforced. There are a few different ways that you can view the AI Act text",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "307e4013a55ca357f97a888ba0e8175d847c1b79592d466d1bb4fca0573703a2"
+    },
+    {
+      "evidence_id": "ev_3be04eb67223f07c",
+      "source_id": "src_e07f9a06e2ee6a6f",
+      "text": "The New York Times’s copyright lawsuit against OpenAI is no longer a debate about abstract legal theory.Actual Current Status. Training Data. Unauthorized copying at commercial scale.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "b78c2e8a04ace414945b50da68bc49aa24cc6ce266c64a0bdce3eeea1373e4b1"
+    },
+    {
+      "evidence_id": "ev_e95290268a10255d",
+      "source_id": "src_6edc23e120acc26d",
+      "text": "A March 2026 Supreme Court ruling forced the NYT to pivot its legal strategy significantly.On June 25, 2026, The New York Times moved to submit a third amended complaint in its landmark copyright infringement case against Microsoft and OpenAI.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "592f8aa3c497319e936fa44ade033cf7b3f303243bf4122116e4b1b44491ae9d"
+    },
+    {
+      "evidence_id": "ev_25232ec3a88720f0",
+      "source_id": "src_43340bf3e9172837",
+      "text": "The New York Times filed its landmark complaint against OpenAI and Microsoft in December 2023. The Authors Guild and seventeen prominent authors, including George R.R. Martin, John Grisham, Jodi Picoult, and David Baldacci, filed suit in September 2023.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ba243d2feb01df7ec2a88567e74c3d745a2b69745e876ed836775b4f0252d85f"
+    },
+    {
+      "evidence_id": "ev_7f1b1fd8ced886ce",
+      "source_id": "src_cc284b90bde25653",
+      "text": "OpenAI copyright lawsuits from New York Times, authors consolidated in Manhattan.New York Times had accused OpenAI of \"wide-scale copying\" and using millions of articles published by it for training chatbots.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "31acfdd2f19731d571c9f54f5f03832d188e7ac63f2ae3a207343cbac27dae5e"
+    },
+    {
+      "evidence_id": "ev_37c9a88da41e556c",
+      "source_id": "src_1ef36a411fb0b292",
+      "text": "The New York Times lawsuit against OpenAI and Microsoft remains the reference case because it gave the dispute a clean, high-profile frame. The Times alleged that millions of its works were used without permission and that AI systems could produce...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "a4a5d28402ea5bdcdac40a7a798abd99e0a5ed3e9fa2b8bd212c1c52e933fd8f"
+    },
+    {
+      "evidence_id": "ev_5f49d9ea00e6a4a2",
+      "source_id": "src_571e17d54a480631",
+      "text": "Subject: Fair Use in AI Model Training – Summary Judgment Rulings from the Northern District of California Date of Decisions: June 2025. I. Overview. The Bartz v. Anthropic and Kadrey v...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "bb55f198ef4e204b91fac8b856c3a7bceab7c122afe3aa81219cc40fb106aaf0"
+    },
+    {
+      "evidence_id": "ev_ba0f1b139b05847f",
+      "source_id": "src_36dcceb87636c744",
+      "text": "Fair Use Doctrine and AI. Bartz v. Anthropic. Kadrey v. Meta. AI training on copyrighted works.On June 23, 2025, the court granted summary judgement for Anthropic ruling that training Claude on legally purchased books constituted fair use.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1e898c20d7cbd338035731f792fc6a3a7fb0cafaa073d1bb96d6fc2180ae60c1"
+    },
+    {
+      "evidence_id": "ev_e61f68fc7976bd6d",
+      "source_id": "src_caa10dfef2a3b017",
+      "text": "Some courts (e.g., Kadrey v. Meta, Bartz v. Anthropic in June 2025) have found AI training \"spectacularly\" or \"highly\" transformative. Training involves analyzing patterns across massive datasets rather than replacing the original works.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "1945a65cbf1e00807f8ef9407a5aeae32b67d16cc8b324404c56f3e7857f075b"
+    },
+    {
+      "evidence_id": "ev_f400277e88e91b82",
+      "source_id": "src_286a99c2121cd6e5",
+      "text": "On June 23, 2025, the U.S. District Court for the Northern District of California (Judge Alsup) held in Bartz v. Anthropic1 that Anthropic's use of…",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "89bf0982eebbe573175e03be75cbce33882754b8db4197857c68e22df6145d44"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_5d9d28f0e5f114ad",
+        "text": "生成式 AI 模型（LLM、扩散模型）的训练需要大规模复制受版权保护的作品——图书、新闻文章、图像等。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0302,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_68a88efd848fde2c",
+          "ev_bf9525ad028558e3",
+          "ev_876ed173bd906a78"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5",
+          "src_21c5d8e8ce1409e3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_68a88efd848fde2c",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Both Judge Alsup and Judge Chhabria rejected the argument that when considering the “market impact” factor of the fair use doctrine, courts should take into account the market impact on licensing that content to LLM developers. In their view, this argument is circular because a plaintiff is, in effect, arguing that it lost the opportunity to market its work for an activity that may be determined to be fair use and does not require a license. Is “transformation” the end of the analysis? Judge Chh",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bf9525ad028558e3",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "If using copyrighted works to train the models is as necessary as the companies say, they will figure out a way to compensate copyright holders for it. ” Going forward. Bartz Kadrey signal the beginning of the second phase of judicial decisions in the rapidly evolving field of AI-related copyright litigation. The initial phase consisted of motions to dismiss where the court was focused primarily on whether the plaintiffs had properly stated a claim. This current phase will consist of summary jud",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a5f04350acfdd292",
+        "text": "这一\"训练环节\"是否构成版权侵权、是否需要事先取得权利人授权，成为全球版权法面临的核心争议。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0633,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8",
+          "ev_c2b761a2317e1883"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab",
+          "src_b5573aa20949faa0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1e45b8b275628b28",
+        "text": "美国与欧盟对此给出了截然不同的制度答案：美国依靠《版权法》第 107 条开放式的合理使用（Fair Use）四要素抗辩，属事后、个案判断；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1196,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9e3eeae48f157cca",
+        "text": "欧盟则通过《数字单一市场版权指令》(EU) 2019/790 的文本与数据挖掘（TDM）例外加《AI 法案》(Regulation (EU) 2024/1689) 第 53 条，建立事前合规、权利保留（opt-out）与强制披露的监管框架 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1,
+          2
+        ],
+        "status": "supported",
+        "verification_score": 0.85,
+        "support_evidence_ids": [
+          "ev_4e4b1487d08a22f5",
+          "ev_edeeeb9d0f269948"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4e4b1487d08a22f5",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Evidence confirms the DSM Directive (EU) 2019/790 TDM exception with rights reservation (Article 4(3), referenced via AI Act Article 53(1)(c)), and Article 53 of Regulation (EU) 2024/1689 requiring copyright compliance policies and public disclosure of training data summaries (Article 53(1)(d)), tog",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4e4b1487d08a22f5",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Generative AI systems are trained using vast amounts of data, often taken from publicly available sources that may be protected by copyright or other intellectual property rights, such as, in the UK and EU, a database right. It may not be obvious what source data have been used for the training. The EU has included provisions in Regulation (EU) 2024/1689 (EU AI Act) to address this concern in relation to so-called general purpose AI models. Transparency and compliance requirements for training u",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_07d2a376d744f4a0",
+        "text": "Cal., Alsup 法官，2025 年 6 月 23 日）：法院认定用合法购买的图书训练 LLM 属\"极具转换性\"（quintessentially transformative），构成合理使用；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0847,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_68a88efd848fde2c",
+          "ev_f148f4c076773066",
+          "ev_50e9cc8085fad77a"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_68a88efd848fde2c",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Both Judge Alsup and Judge Chhabria rejected the argument that when considering the “market impact” factor of the fair use doctrine, courts should take into account the market impact on licensing that content to LLM developers. In their view, this argument is circular because a plaintiff is, in effect, arguing that it lost the opportunity to market its work for an activity that may be determined to be fair use and does not require a license. Is “transformation” the end of the analysis? Judge Chh",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f148f4c076773066",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Judge Alsup in Bartz described Anthropic’s use as “quintessentially transformative,” and Judge Chhabria in Kadrey highlighted that the purpose of Meta’s copying is to train its LLMs to perform certain functions while the purpose of the plaintiffs’ books is to be read by humans. Judge Alsup and Judge Chhabria differe [CONTENT_TRUNCATED: 15537 chars total, showing first 8000]",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_48cfe54374408ce0",
+        "text": "但从盗版网站获取图书建立\"中央书库\"的行为不构成合理使用，该部分另行担责（据报道后于 2025 年 9 月达成约 15 亿美元和解）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0501,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_90542db04d1d57ef",
+          "ev_899eeca6272b7b5b"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_962d59d06bf69d5b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_06eff063cc34ced3",
+        "text": "这确立了\"数据来源合法性\"作为分水岭。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1656,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_c2b761a2317e1883",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_b5573aa20949faa0",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c2b761a2317e1883",
+            "source_id": "src_b5573aa20949faa0",
+            "text": "例如，OpenAI的GPT-3模型有超过80%的训练字词来自Common Crawl抓取的网页数据。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8044b71f3202f978",
+        "text": "Cal., Chhabria 法官，2025 年 6 月 25 日）：Meta 胜诉，但理由极窄——原告未能就市场稀释损害举证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58",
+          "ev_f148f4c076773066"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e99f1f80a9f45e58",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1ce5880a29d115ae",
+        "text": "Chhabria 法官明确表示，在多数类似案件中若原告对市场损害举证充分，版权方往往会胜诉；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0273,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58",
+          "ev_d8ff6b6454931ae6"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e99f1f80a9f45e58",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a49365891c1fa18b",
+        "text": "同时拒绝将\"训练数据许可市场损失\"计入市场因素（视为循环论证）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58",
+          "ev_d8ff6b6454931ae6"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e99f1f80a9f45e58",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5146cb19c5739574",
+        "text": "与之对照，Thomson Reuters v.",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_b26366df594a5c36",
+        "text": "Del., 2025 年 2 月）拒绝合理使用抗辩，强调训练出的产品与原许可市场直接竞争、构成市场替代。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1389,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_6129738bf8d1b184",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_0c6e59924a392a06",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bb2b0cf4156c3ffb",
+        "text": "OpenAI / Microsoft（S.D.N.Y., 2023 年 12 月起诉）则代表另一类事实格局：原告不仅主张训练侵权，还掌握 ChatGPT\"复述/回吐\"受版权保护内容的输出证据，使该案事实基础强于 Bartz/Kadrey 原告；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.043,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2f90b5fff6230e7b",
+          "ev_325e9424991af56d",
+          "ev_6d57c1356065153a"
+        ],
+        "source_ids": [
+          "src_7710f42ac2274921",
+          "src_8074d29a93ef3b18",
+          "src_444eff21b3acee51"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2f90b5fff6230e7b",
+            "source_id": "src_7710f42ac2274921",
+            "text": "Authors Guild v. OpenAI, Inc., No. 1:23-cv-08292 (S.D.N.Y.): Authors of registered copyrights sued OpenAI in the U.S. District Court for the Southern District of New York, alleging OpenAI infringed the authors’ copyrighted works by training ChatGPT with those works.As of the date of this...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_325e9424991af56d",
+            "source_id": "src_8074d29a93ef3b18",
+            "text": "2. Authors Guild V OpenAI. The OpenAI AI tool ChatGPT has sparked one of the most heated debates in human history, ranging from philosophical to technical to legal aspects.9 The end of August 2023 saw a.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_48609094038d1f56",
+        "text": "截至 2026 年中仍在证据开示与简易判决阶段（2026 年 6 月 NYT 提交第三次修正诉状），合理使用问题无终局裁决，上诉至第二巡回乃至最高法院被普遍预期 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58",
+          "ev_d8ff6b6454931ae6"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e99f1f80a9f45e58",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fe77fe13d1fbd8cf",
+        "text": "美国路径的特点可归纳为：无 opt-out 机制、无披露义务、无事先许可要求；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0398,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e8a44830dff37c90",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "This provision permits temporary reproductions of works that have no individual economic value; data mining is expressly named as an act falling under this exception. However, AI training can only be based on this exception if no training corpus is created, but the AI learns from works stored in the working memory, which is deleted immediately afterwards. Finally, Section 60d of the German Copyright Act (the TDM exception) allows privileged research organizations to reproduce works even if there",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e010b3c8ed874316",
+        "text": "训练是否合法完全取决于事后诉讼中四要素的个案权衡，\"市场替代\"分析把\"是否破坏既有许可市场\"作为裁量因素而非硬性授权义务。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8",
+          "ev_c2b761a2317e1883"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab",
+          "src_b5573aa20949faa0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a8af4a0e60da1975",
+        "text": "由此产生大量事前不确定性，OpenAI、Google 与出版商签订许可协议本质上是诉讼风险对冲，而非法定义务。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0194,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_325e9424991af56d",
+          "ev_88f9b87d1aa72ef1",
+          "ev_b27c6e3984800f36"
+        ],
+        "source_ids": [
+          "src_8074d29a93ef3b18",
+          "src_feab42bc7be6b5f1",
+          "src_14c77c6c9cc3e4f4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_325e9424991af56d",
+            "source_id": "src_8074d29a93ef3b18",
+            "text": "2. Authors Guild V OpenAI. The OpenAI AI tool ChatGPT has sparked one of the most heated debates in human history, ranging from philosophical to technical to legal aspects.9 The end of August 2023 saw a.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_88f9b87d1aa72ef1",
+            "source_id": "src_feab42bc7be6b5f1",
+            "text": "OpenAI also argued that commercial use is not automatically excluded from fair dealing, particularly where the statute does not expressly impose a non-commercial limitation. Finally, OpenAI relied on the broader utility of ChatGPT.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3489d4f13391b5e7",
+        "text": "DSM 指令 2019/790 第 3 条为科研机构提供强制性 TDM 例外（权利人不得 opt-out）；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1591,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4e4b1487d08a22f5",
+          "ev_979d22815b9a9aaa",
+          "ev_9fba10176ef6d9db"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_c4ca0579e89d77a8"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4e4b1487d08a22f5",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Generative AI systems are trained using vast amounts of data, often taken from publicly available sources that may be protected by copyright or other intellectual property rights, such as, in the UK and EU, a database right. It may not be obvious what source data have been used for the training. The EU has included provisions in Regulation (EU) 2024/1689 (EU AI Act) to address this concern in relation to so-called general purpose AI models. Transparency and compliance requirements for training u",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_979d22815b9a9aaa",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Under Directive (EU) 2019/790 on copyright and related rights in the Digital Single Market (DSM Directive), text and data mining (TDM) is permitted unless rightsholders opt out using machine-readable means (e.g., robots.txt, metadata).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_38519ad316359ab2",
+        "text": "第 4 条为一般（含商业目的）TDM 提供例外，但权利人可通过机器可读方式（robots.txt、元数据等）保留权利（opt-out），一旦保留，挖掘即构成侵权。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0449,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_efd1a2f7cc7715ad",
+          "ev_690e1acf9cbf3f55"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_88084dff745713db",
+          "src_05f229e8420ac293"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_efd1a2f7cc7715ad",
+            "source_id": "src_88084dff745713db",
+            "text": "EU AI Act Article 53(1)(c) DSM Reservation Compliance.Article 4 DSM gives rights holders the right to opt out of text and data mining of their content for commercial purposes — through readable means (machine-readable for online content).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_56da491c8b145aa5",
+        "text": "德国汉堡地方法院 2024 年 9 月在 Kneschke v.",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1591,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e8a44830dff37c90",
+          "ev_1b308a114844a0f8",
+          "ev_4e4b1487d08a22f5"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e8a44830dff37c90",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "This provision permits temporary reproductions of works that have no individual economic value; data mining is expressly named as an act falling under this exception. However, AI training can only be based on this exception if no training corpus is created, but the AI learns from works stored in the working memory, which is deleted immediately afterwards. Finally, Section 60d of the German Copyright Act (the TDM exception) allows privileged research organizations to reproduce works even if there",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_610f79d58ddcc1b8",
+        "text": "LAION 案中适用第 3 条/德国《著作权法》§60d，认定科研目的下抓取图像构建训练数据集不构成侵权 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.5,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e8a44830dff37c90",
+          "ev_6129738bf8d1b184",
+          "ev_4e4b1487d08a22f5"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Evidence confirms the Hamburg court ruled LAION's use of image data for AI training permissible under §60d of the German Copyright Act for scientific purposes, but does not mention application of Article 3 of the DSM Directive, and the full case outcome text is truncated; partial support only.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e8a44830dff37c90",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "This provision permits temporary reproductions of works that have no individual economic value; data mining is expressly named as an act falling under this exception. However, AI training can only be based on this exception if no training corpus is created, but the AI learns from works stored in the working memory, which is deleted immediately afterwards. Finally, Section 60d of the German Copyright Act (the TDM exception) allows privileged research organizations to reproduce works even if there",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5496c166fbb24572",
+        "text": "第二层：AI 法案第 53 条将版权合规升级为监管义务。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_edeeeb9d0f269948",
+          "ev_efd1a2f7cc7715ad"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_88084dff745713db"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0fda119941a46836",
+        "text": "《AI 法案》2024 年 8 月 1 日生效，分阶段适用：自 2025 年 8 月 2 日起，通用 AI（GPAI）模型义务适用，包括第 53(1)(c) 条——必须制定版权合规政策并\"通过最先进的技术手段识别并遵守\"权利保留声明；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0858,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_edeeeb9d0f269948",
+          "ev_a809fde872f130a5"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_2a9cfb40e6f6640e"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1d22841e44ec3e67",
+        "text": "第 53(1)(d) 条——按欧盟 AI 办公室模板公开披露足够详细的训练内容摘要，使创作者可核查作品是否被用于训练 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2,
+          4
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_edeeeb9d0f269948"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_edeeeb9d0f269948",
+          "ev_5b25bcfaa60c69eb"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Evidence directly states Article 53(1)(d) requires Providers of GPAI models to make publicly available a sufficiently detailed summary of training content per an EU AI Office template, intended to let creators verify whether their works were used in training.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_34c45c199bbbf149",
+        "text": "违反者面临最高 3,500 万欧元或全球营业额 7% 的罚款。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0461,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6129738bf8d1b184",
+          "ev_e8a44830dff37c90",
+          "ev_a066e7a9e3d9a2b9"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06",
+          "src_94a9b2e3330e9905"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e8a44830dff37c90",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "This provision permits temporary reproductions of works that have no individual economic value; data mining is expressly named as an act falling under this exception. However, AI training can only be based on this exception if no training corpus is created, but the AI learns from works stored in the working memory, which is deleted immediately afterwards. Finally, Section 60d of the German Copyright Act (the TDM exception) allows privileged research organizations to reproduce works even if there",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7af294d70702802f",
+        "text": "提供者可通过遵守《通用 AI 行为准则》推定合规（该准则推迟至 2025 年 8 月发布）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0438,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_90542db04d1d57ef",
+          "ev_899eeca6272b7b5b",
+          "ev_50e9cc8085fad77a"
+        ],
+        "source_ids": [
+          "src_962d59d06bf69d5b",
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_899eeca6272b7b5b",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Several decades ago, international patent treaties harmonized the extent to which patent laws can be applied extraterritorially to reach imported products derived from foreign manufacturing processes. If regulators wish to extend their copyright laws’ extraterritoriality to close the loophole that exists for training activities in the context of AI, and to do so in a way that is aligned with copyright territoriality, there may be a need to similarly revise international copyright treaties. This ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fac987e92694e50b",
+        "text": "第 53 条适用于\"投放欧盟市场\"的 GPAI 模型，无论训练行为发生地 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f4dc193766333636",
+          "ev_90542db04d1d57ef",
+          "ev_cb7e76a28c764060"
+        ],
+        "source_ids": [
+          "src_962d59d06bf69d5b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f4dc193766333636",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "If copyright law restricts the development and deployment of AI, developers may decide to relocate their operations elsewhere, where the reproduction of training data is clearly not infringing.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_585e995592896eef",
+        "text": "Rättzén 在《哥伦比亚科技法律评论》(2025) 中精准描述了冲突根源：版权法本属属地管辖，开发者本可在\"训练合法\"的法域（如美国依 fair use、日本依宽松 TDM 例外）完成训练再将模型输出全球，形成\"跨国数据漏洞\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0331,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5f49d9ea00e6a4a2",
+          "ev_90542db04d1d57ef",
+          "ev_6129738bf8d1b184"
+        ],
+        "source_ids": [
+          "src_571e17d54a480631",
+          "src_962d59d06bf69d5b",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5f49d9ea00e6a4a2",
+            "source_id": "src_571e17d54a480631",
+            "text": "Subject: Fair Use in AI Model Training – Summary Judgment Rulings from the Northern District of California Date of Decisions: June 2025. I. Overview. The Bartz v. Anthropic and Kadrey v...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e9f856f6304fb5cf",
+        "text": "欧盟率先通过将 TDM 合规（含 opt-out 尊重）域外追溯适用于境外训练行为来堵漏 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f4dc193766333636",
+          "ev_90542db04d1d57ef",
+          "ev_cb7e76a28c764060"
+        ],
+        "source_ids": [
+          "src_962d59d06bf69d5b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f4dc193766333636",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "If copyright law restricts the development and deployment of AI, developers may decide to relocate their operations elsewhere, where the reproduction of training data is clearly not infringing.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_20b3e1afa39b4c33",
+        "text": "同一训练行为的双重评价。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0718,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_c2b761a2317e1883",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_b5573aa20949faa0",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c2b761a2317e1883",
+            "source_id": "src_b5573aa20949faa0",
+            "text": "例如，OpenAI的GPT-3模型有超过80%的训练字词来自Common Crawl抓取的网页数据。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_55bdc98348bb1353",
+        "text": "在美国依 fair use 合法的爬取训练（如 Bartz 所确认的），因未尊重欧盟权利人的机器可读 opt-out，模型一旦进入欧盟市场即违法。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1256,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_03a325f817271647",
+        "text": "\"挑选训练地\"的风险规避策略失效。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_c2b761a2317e1883",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_b5573aa20949faa0",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c2b761a2317e1883",
+            "source_id": "src_b5573aa20949faa0",
+            "text": "例如，OpenAI的GPT-3模型有超过80%的训练字词来自Common Crawl抓取的网页数据。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_76c067617eabcf8a",
+        "text": "美国路径下开发者只需承担诉讼风险敞口；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0422,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_141aeaeb357b49dd"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_7de746b3cb0c87e5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_141aeaeb357b49dd",
+            "source_id": "src_7de746b3cb0c87e5",
+            "text": "如今，爱沙尼亚开发了一款名为“Fuckup Finder”（错误查找器）的AI工具，在法案成为法律之前自动扫描文本中的潜在错误、逻辑矛盾与法律冲突。 从惨痛教训到制度创新.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4cd78db02300a52c",
+        "text": "欧盟路径要求在训练前/训练中建立 opt-out 识别过滤管线、训练数据摘要披露机制，且义务可追溯适用于存量模型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0755,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b308a114844a0f8",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_da25f9d779815fab",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_55d8bd35e166faee",
+        "text": "美国法不承认机器可读权利保留具有切断合法使用的效力；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1167a778ae9fa2a4",
+        "text": "欧盟法不承认\"变革性使用\"抗辩。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2152,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cfbe5bdbd865bc25",
+        "text": "同一份训练数据集在美国可能合法、在欧盟可能侵权，且两法域均试图管辖对方的评价对象。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0844,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8",
+          "ev_c2b761a2317e1883"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab",
+          "src_b5573aa20949faa0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_498643d30bb9db65",
+        "text": "值得注意的趋同动向：美国判例中\"数据来源合法性\"（合法购买 vs.",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_c2b761a2317e1883",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_b5573aa20949faa0",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c2b761a2317e1883",
+            "source_id": "src_b5573aa20949faa0",
+            "text": "例如，OpenAI的GPT-3模型有超过80%的训练字词来自Common Crawl抓取的网页数据。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_991991ca705d2d8e",
+        "text": "盗版影子图书馆）已成为分水岭，事实上在向某种\"授权/合法获取\"门槛靠近；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0299,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_141aeaeb357b49dd",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_7de746b3cb0c87e5",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_141aeaeb357b49dd",
+            "source_id": "src_7de746b3cb0c87e5",
+            "text": "如今，爱沙尼亚开发了一款名为“Fuckup Finder”（错误查找器）的AI工具，在法案成为法律之前自动扫描文本中的潜在错误、逻辑矛盾与法律冲突。 从惨痛教训到制度创新.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_190650ff16892eb6",
+        "text": "而欧盟 opt-out 机制在实践中也依赖权利人的主动声明，与美国的默示合法在多数未声明场景下殊途同归。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0378,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b308a114844a0f8",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_da25f9d779815fab",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cce0d7247abcdaac",
+        "text": "但二者在举证结构、披露义务与救济机制上的差异仍是结构性的。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_fc2bcd81aa6ed36e",
+        "text": "美国无终局定论：仅两份地区法院简易判决且均附保留条件；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_41d06e587d78de2a",
+        "text": "NYT 案因输出端\"回吐\"证据被视为对版权方更有利的案件，其结果可能重塑四要素平衡 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_50e9cc8085fad77a",
+          "ev_e99f1f80a9f45e58",
+          "ev_d8ff6b6454931ae6"
+        ],
+        "source_ids": [
+          "src_fbf24649ee73b4c5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_50e9cc8085fad77a",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "Two recent summary judgment decisions out of the Northern District of California, issued only two days apart, highlight the complexity of deciding whether the unauthorized use of copyrighted works to train large language models (LLMs) is infringement or fair use. Bartz v. Anthropic PBC (Judge Alsup, June 23, 2025) and Kadrey v. Meta Platforms, Inc. (Judge Chhabria, June 25, 2025), authors alleged that their works had been used without permission to train LLMs. In each case, the court found that,",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e99f1f80a9f45e58",
+            "source_id": "src_fbf24649ee73b4c5",
+            "text": "” Evidence of infringing outputs and market impact will be critical. Many copyright owners were concerned that the Bartz Kadrey complaints presented weak fact patterns to challenge fair use since plaintiffs presented no evidence of outputs generated by the AI models that infringed their works, and weak or no evidence of any market impact on their works. Each decision stresses the absence of any such evidence, and Judge Chhabria in Kadrey broadly states that “in most cases,” training LLMs on copy",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0cd92d4faadc38a4",
+        "text": "欧盟执行细则未落定：训练数据摘要模板、opt-out 机器可读格式尚无统一协调标准；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.099,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b308a114844a0f8",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_da25f9d779815fab",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2bf85fed87e64499",
+        "text": "CJEU 对 TDM 例外适用于商业 LLM 训练尚无最终解释 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0547,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4e4b1487d08a22f5",
+          "ev_6129738bf8d1b184",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4e4b1487d08a22f5",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Generative AI systems are trained using vast amounts of data, often taken from publicly available sources that may be protected by copyright or other intellectual property rights, such as, in the UK and EU, a database right. It may not be obvious what source data have been used for the training. The EU has included provisions in Regulation (EU) 2024/1689 (EU AI Act) to address this concern in relation to so-called general purpose AI models. Transparency and compliance requirements for training u",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_82c2b74862bf68f9",
+        "text": "AI 法案高风险条款时间表存在推迟至 2027 年的说法，未获官方直接确认。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0287,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_141aeaeb357b49dd"
+        ],
+        "source_ids": [
+          "src_7de746b3cb0c87e5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_141aeaeb357b49dd",
+            "source_id": "src_7de746b3cb0c87e5",
+            "text": "如今，爱沙尼亚开发了一款名为“Fuckup Finder”（错误查找器）的AI工具，在法案成为法律之前自动扫描文本中的潜在错误、逻辑矛盾与法律冲突。 从惨痛教训到制度创新.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3b0868aeea5b6c36",
+        "text": "连锁效应风险：若其他法域效仿欧盟做域外延伸（类比 GDPR 模式），同一训练行为将受多重冲突版权法同时规制，可能导致全球 AI 市场割裂；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0205,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_90542db04d1d57ef",
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8"
+        ],
+        "source_ids": [
+          "src_962d59d06bf69d5b",
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_987df886a16a3694",
+        "text": "有学者建议参照专利法\"产品依方法\"的国际协调路径或转向规制输出端 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f4dc193766333636",
+          "ev_90542db04d1d57ef",
+          "ev_cb7e76a28c764060"
+        ],
+        "source_ids": [
+          "src_962d59d06bf69d5b"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f4dc193766333636",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "If copyright law restricts the development and deployment of AI, developers may decide to relocate their operations elsewhere, where the reproduction of training data is clearly not infringing.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_90542db04d1d57ef",
+            "source_id": "src_962d59d06bf69d5b",
+            "text": "Vol. 26 No. 1 (2025) Articles Vol. 26 No. 1 (2025) Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI Articles https://doi. org/10. 52214/stlr. v26i1. 13338 Published 2025-01-31 Mattias Rättzén Mattias Rättzén Keywords copyright copyright extraterritoriality Artificial Intelligence EU AI Act GDPR copyright infringement Generative AI How to Cite Rättzén, M. (2025). Location Is All You Need: Copyright Extraterritoriality and Where to Train Your AI. Science and Techn",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a0eb65e70ddf5623",
+        "text": "美国与欧盟在训练数据授权上的冲突不是规则细节之争，而是制度范式之争：美国把训练合法性交给事后诉讼中的开放式合理使用裁量，权利人须主动起诉、无披露工具可用；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1009,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f205fc2541b8819e",
+          "ev_1b308a114844a0f8",
+          "ev_141aeaeb357b49dd"
+        ],
+        "source_ids": [
+          "src_9755bcef9a45a8c8",
+          "src_da25f9d779815fab",
+          "src_7de746b3cb0c87e5"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f205fc2541b8819e",
+            "source_id": "src_9755bcef9a45a8c8",
+            "text": "AI版权诉讼升级：Bartz诉Anthropic案引发开源社区与大模型训练数据合法性争议.过往AI训练数据争议多聚焦于“合理使用”（fair use）抗辩——即主张模型训练属非表达性、转化性使用，不侵害原作品的市场价值。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_20e5a53d5312a3f7",
+        "text": "欧盟把训练合法性前置为可保留的法定例外加行政监管义务，权利人可通过 opt-out 声明和披露机制主动防御。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.07,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b308a114844a0f8",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_da25f9d779815fab",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3cfd4ae59001e2f4",
+        "text": "短期内，全球运营的 AI 开发者只能按欧盟最严标准设计训练管线（识别 opt-out、记录数据来源、准备摘要披露），同时在美国继续面对逐案的诉讼不确定性。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0552,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1b308a114844a0f8",
+          "ev_edeeeb9d0f269948",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_da25f9d779815fab",
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1b308a114844a0f8",
+            "source_id": "src_da25f9d779815fab",
+            "text": "欧盟 2024 年通过的 AI Act 明确规定：AI 公司可以使用受版权保护的数据进行训练，但版权方可以选择\"opt-out\"（退出训练）。LAION-5B（含未授权数据）. 高.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_edeeeb9d0f269948",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Once finalized, adhering to the code of practice could serve as evidence of lawful conduct in AI training, especially regarding: Copyright requirements (e. g. , use of protected training data). Transparency obligations toward downstream Providers, the EU AI Office, and national competent authorities of EU member states. Risk management and documentation duties for Providers of GPAI models with systemic risk. Transparency Article 53(1)(d) of the EU AI Act requires Providers of GPAI models to draw",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_75a79cc346aa3349",
+        "text": "两法域是否在\"数据来源合法性\"上进一步趋同，将取决于 NYT 案等核心案件的终审走向与 CJEU 对 TDM 例外的最终解释。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0224,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4e4b1487d08a22f5",
+          "ev_6129738bf8d1b184",
+          "ev_e8a44830dff37c90"
+        ],
+        "source_ids": [
+          "src_0c6e59924a392a06"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4e4b1487d08a22f5",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Generative AI systems are trained using vast amounts of data, often taken from publicly available sources that may be protected by copyright or other intellectual property rights, such as, in the UK and EU, a database right. It may not be obvious what source data have been used for the training. The EU has included provisions in Regulation (EU) 2024/1689 (EU AI Act) to address this concern in relation to so-called general purpose AI models. Transparency and compliance requirements for training u",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_6129738bf8d1b184",
+            "source_id": "src_0c6e59924a392a06",
+            "text": "Code of practice Article 53(1)(c) of the EU AI Act requires Providers of GPAI models to put in place a policy to comply with EU law on copyright and related rights, and in particular to identify and comply with (including through state-of-the-art technologies) a reservation of rights (expressed pursuant to Article 4(3) of the DSM Directive). The EU AI Act does not specify what such a copyright compliance policy should consist of. Article 53(4) provides that Providers of GPAI models may rely on c",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 52,
+    "evidence_count": 70,
+    "supported_count": 2,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 50,
+    "coverage": 0.0385,
+    "primary_source_ratio": 0.0577,
+    "fulltext_source_ratio": 0.0577,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 34
+  },
+  "run_metadata": {
+    "final_report_sha256": "3255ccdeca1264fafdcefc9de0caaf3cea8401c4a495077a3c8ceded0d799fb4",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 52,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 50,
+        "coverage": 0.0385,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 34
+      },
+      "after": {
+        "claim_count": 52,
+        "supported_count": 2,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 50,
+        "coverage": 0.0385,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 34
+      }
+    }
+  }
+}
