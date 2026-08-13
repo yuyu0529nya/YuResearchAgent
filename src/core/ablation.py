@@ -20,7 +20,7 @@ import logging
 import os
 import time
 from datetime import datetime
-from typing import Any
+from typing import Any, Callable
 
 from .runner import initialize_modules, run_research
 
@@ -36,7 +36,15 @@ class AblationStudy:
         "no_adversarial": ("关闭对抗降噪", {"adversarial": {"enabled": False}}),
         "no_compressor": ("关闭上下文压缩", {"compressor": {"enable_multilevel": False}}),
         "no_memory": ("关闭记忆存储", {"memory": {"enabled": False}}),
-        "no_evolution": ("关闭进化学习", {"evolution": {"enabled": False}}),
+        "no_evidence": ("关闭 Claim-Evidence 证据图", {"evidence": {"enabled": False}}),
+        "heuristic_verifier": (
+            "仅使用确定性启发式证据核验",
+            {"evidence": {"verification_mode": "heuristic"}},
+        ),
+        "no_gap_research": (
+            "关闭证据缺口补充检索",
+            {"planner": {"enable_completeness_check": False}},
+        ),
     }
 
     @staticmethod
@@ -63,6 +71,7 @@ class AblationStudy:
         config: dict,
         questions: list[dict[str, Any]],
         systems: dict[str, tuple[str, dict]] | None = None,
+        evaluator: Callable[[str, dict[str, Any]], float | dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
         """
         运行模块消融实验。
@@ -91,6 +100,7 @@ class AblationStudy:
 
             scores: list[float] = []
             details: list[dict[str, Any]] = []
+            successful_runs = 0
 
             for q in questions:
                 qid = q.get("id", "unknown")
@@ -102,17 +112,27 @@ class AblationStudy:
                     report = asyncio.run(run_research(query, cfg, modules))
                     elapsed = time.time() - start
 
-                    # 评分由外部调用方注入（避免 evaluation/ 反向依赖）
-                    # 这里只记录原始报告和元信息
-                    details.append({
+                    successful_runs += 1
+                    detail = {
                         "question_id": qid,
                         "query": query,
                         "elapsed_seconds": elapsed,
                         "report_length": len(report),
                         "system": name,
-                    })
-                    scores.append(1.0)  # 占位，实际分数由外部 evaluator 填充
-                    logger.info(f"    → 成功, time={elapsed:.1f}s, len={len(report)}")
+                    }
+                    if evaluator is not None:
+                        evaluation = evaluator(report, q)
+                        score = cls._extract_score(evaluation)
+                        scores.append(score)
+                        detail["composite_score"] = score
+                        detail["evaluation"] = evaluation
+                    else:
+                        detail["composite_score"] = None
+                    details.append(detail)
+                    logger.info(
+                        f"    → 成功, time={elapsed:.1f}s, len={len(report)}, "
+                        f"score={detail['composite_score']}"
+                    )
 
                 except Exception as e:
                     logger.warning(f"    → 失败: {e}")
@@ -122,13 +142,15 @@ class AblationStudy:
                         "error": str(e),
                         "system": name,
                     })
-                    scores.append(0.0)
+                    if evaluator is not None:
+                        scores.append(0.0)
 
             results.append({
                 "system_name": name,
                 "description": desc,
                 "num_questions": len(questions),
-                "average_composite_score": sum(scores) / len(scores) if scores else 0.0,
+                "average_composite_score": sum(scores) / len(scores) if scores else None,
+                "execution_success_rate": successful_runs / len(questions) if questions else 0.0,
                 "details": details,
             })
 
@@ -149,6 +171,7 @@ class AblationStudy:
         config: dict,
         questions: list[dict[str, Any]],
         max_rounds: int = 3,
+        evaluator: Callable[[str, dict[str, Any]], float | dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
         """
         在不同对抗轮数下运行评测。
@@ -161,7 +184,7 @@ class AblationStudy:
         Returns:
             键为 adv_0 / adv_1 / ... / adv_N 的结果字典。
         """
-        summary: dict[str, float] = {}
+        summary: dict[str, float | None] = {}
         full_details: dict[str, Any] = {}
 
         for rounds in range(max_rounds + 1):
@@ -188,16 +211,25 @@ class AblationStudy:
 
                 try:
                     report = asyncio.run(run_research(query, cfg, modules))
-                    scores.append(1.0)  # 占位
-                    details.append({
+                    detail = {
                         "question_id": qid,
                         "query": query,
                         "rounds": rounds,
                         "report_length": len(report),
-                    })
+                    }
+                    if evaluator is not None:
+                        evaluation = evaluator(report, q)
+                        score = cls._extract_score(evaluation)
+                        scores.append(score)
+                        detail["composite_score"] = score
+                        detail["evaluation"] = evaluation
+                    else:
+                        detail["composite_score"] = None
+                    details.append(detail)
                 except Exception as e:
                     logger.warning(f"    → 失败: {e}")
-                    scores.append(0.0)
+                    if evaluator is not None:
+                        scores.append(0.0)
                     details.append({
                         "question_id": qid,
                         "query": query,
@@ -205,11 +237,14 @@ class AblationStudy:
                         "error": str(e),
                     })
 
-            avg_score = sum(scores) / len(scores) if scores else 0.0
+            avg_score = sum(scores) / len(scores) if scores else None
             key = f"adv_{rounds}"
             summary[key] = avg_score
             full_details[key] = details
-            logger.info(f"对抗轮数 {rounds} 平均得分: {avg_score:.4f}")
+            if avg_score is None:
+                logger.info(f"对抗轮数 {rounds} 已运行，但未提供 evaluator，质量分未计算")
+            else:
+                logger.info(f"对抗轮数 {rounds} 平均得分: {avg_score:.4f}")
 
         return {
             "evaluation_name": "YuResearchAgent 对抗轮数消融实验",
@@ -218,6 +253,15 @@ class AblationStudy:
             "details": full_details,
             "config": config,
         }
+
+    @staticmethod
+    def _extract_score(evaluation: float | dict[str, Any]) -> float:
+        """Normalize evaluator output and reject ambiguous fake scores."""
+        if isinstance(evaluation, (int, float)):
+            return float(evaluation)
+        if isinstance(evaluation, dict) and "composite_score" in evaluation:
+            return float(evaluation["composite_score"])
+        raise ValueError("evaluator must return a number or a dict containing 'composite_score'")
 
     # -----------------------------------------------------------------------
     # 结果保存

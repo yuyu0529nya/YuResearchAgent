@@ -122,6 +122,10 @@ class ResearchReport:
         num_replan: 重规划次数。
         adversarial_rounds: 对抗验证轮数。
         final_score: 最终综合评分（由外部评测模块写入）。
+        evidence_audit: claim 级证据覆盖与三态核验结果。
+        evidence_artifact: 可复现的证据图 JSON 路径。
+        evidence_gap_rounds: 因证据不足触发的补充检索轮数。
+        run_status: complete / partial_timeout / partial_failure / failed，区分完整与降级输出。
     """
     query: str
     content: str
@@ -131,6 +135,10 @@ class ResearchReport:
     num_replan: int = 0
     adversarial_rounds: int = 0
     final_score: float = 0.0
+    evidence_audit: dict[str, Any] = field(default_factory=dict)
+    evidence_artifact: str = ""
+    evidence_gap_rounds: int = 0
+    run_status: str = "complete"
 
 
 @dataclass
@@ -149,5 +157,15 @@ class RunConfig:
     global_timeout_seconds: int = 600
     max_replan_rounds: int = 3
     max_sub_questions: int = 8
+    max_subagent_retries: int = 1
+    enable_replan: bool = True
+    enable_completeness_check: bool = True
     enable_adversarial: bool = True
     enable_evolution: bool = False
+    enable_evidence: bool = True
+    max_evidence_gap_rounds: int = 1
+    max_evidence_gap_tasks: int = 2
+    min_evidence_coverage: float = 0.55
+    synthesis_reserve_seconds: float = 110.0
+    evidence_gap_min_seconds: float = 100.0
+    final_audit_reserve_seconds: float = 35.0

@@ -9,11 +9,13 @@
 """
 from __future__ import annotations
 
+import asyncio
 import json
 import re
 from typing import Any
 
 from .base_agent import BaseAgent
+from ..evidence.store import canonicalize_source_url
 from ..orchestrator.schemas import SubTask, AgentResult, AgentStatus, ResearchReport
 from ..utils.tracing import trace_agent
 
@@ -46,6 +48,9 @@ class SummarizerAgent(BaseAgent):
         """
         query = context.get("query", "")
         results: list[AgentResult] = context.get("results", [])
+        evidence_audit: dict = context.get("evidence_audit", {}) or {}
+        evidence_sources: list[dict] = context.get("evidence_sources", []) or []
+        evidence_sources = self._prioritize_evidence_sources(evidence_sources, evidence_audit)
 
         if not results:
             report = ResearchReport(
@@ -63,7 +68,12 @@ class SummarizerAgent(BaseAgent):
             )
 
         # 构建 synthesis prompt
-        prompt = self._build_synthesis_prompt(query, results)
+        prompt = self._build_synthesis_prompt(
+            query,
+            results,
+            evidence_audit=evidence_audit,
+            evidence_sources=evidence_sources,
+        )
         messages = [
             {"role": "system", "content": self._system_prompt()},
             {"role": "user", "content": prompt},
@@ -73,8 +83,10 @@ class SummarizerAgent(BaseAgent):
             # 合成任务不需要工具调用，临时禁用 tools 避免模型进入 tool-calling 模式
             old_tools = getattr(self.policy, "tools", None)
             self.policy.tools = None
-            response = self.policy(messages)
-            self.policy.tools = old_tools
+            try:
+                response = await asyncio.to_thread(self.policy, messages)
+            finally:
+                self.policy.tools = old_tools
         except RuntimeError as e:
             return AgentResult(
                 task_id=task.task_id,
@@ -86,10 +98,19 @@ class SummarizerAgent(BaseAgent):
             )
 
         content = response.get("content", "") or ""
+        if content.strip().lower().startswith("error:"):
+            return AgentResult(
+                task_id=task.task_id,
+                status=AgentStatus.FAILED,
+                output=content,
+                trajectory=[{"error": content}],
+                token_usage=0,
+                confidence=0.0,
+            )
         token_usage = len(content) // 3  # 简化估算
 
         # 解析报告内容，提取来源和置信度
-        report = self._parse_report(query, content, results)
+        report = self._parse_report(query, content, results, evidence_sources=evidence_sources)
 
         return AgentResult(
             task_id=task.task_id,
@@ -105,15 +126,19 @@ class SummarizerAgent(BaseAgent):
             "You are an expert research synthesizer. "
             "Your task is to integrate multiple research findings into a coherent, well-structured report. "
             "Use Markdown formatting. Cite sources explicitly. "
-            "The report body MUST be at least 3000 Chinese characters (or 2000 English words) long. "
-            "Write in depth: include background, key findings, detailed analysis, comparisons, and implications. "
+            "Respect the requested level of detail; normally write 1500-3000 Chinese characters "
+            "or 1000-2000 English words. Include background, key findings, analysis, comparisons, and implications. "
             "DO NOT describe what you will do — directly output the synthesized report. "
             "At the end, provide an overall confidence score (0-1) and a summary of key sources."
         )
 
-    def _collect_sources(self, results: list[AgentResult]) -> list[dict]:
+    def _collect_sources(
+        self,
+        results: list[AgentResult],
+        evidence_sources: list[dict] | None = None,
+    ) -> list[dict]:
         """从子结果轨迹提取去重来源：web(url/title) + arxiv 论文(含作者/年份)。"""
-        sources: list[dict] = []
+        sources: list[dict] = [dict(source) for source in (evidence_sources or [])]
         for r in results:
             if r.status != AgentStatus.SUCCESS:
                 continue
@@ -153,15 +178,54 @@ class SummarizerAgent(BaseAgent):
                                 "task_id": r.task_id,
                             }
                         )
-        seen, unique = set(), []
+        seen: dict[str, dict] = {}
+        unique: list[dict] = []
         for s in sources:
-            key = s["url"] or s["title"]
-            if key and key not in seen:
-                seen.add(key)
-                unique.append(s)
+            normalized = canonicalize_source_url(str(s.get("url", "")))
+            if normalized:
+                s["url"] = normalized
+            key = normalized or str(s.get("title", "")).strip().lower()
+            if not key:
+                continue
+            if key in seen:
+                existing = seen[key]
+                for field in ("title", "snippet", "authors", "year", "source_id"):
+                    if not existing.get(field) and s.get(field):
+                        existing[field] = s[field]
+                continue
+            seen[key] = s
+            unique.append(s)
         return unique
 
-    def _build_synthesis_prompt(self, query: str, results: list[AgentResult]) -> str:
+    @staticmethod
+    def _prioritize_evidence_sources(
+        evidence_sources: list[dict],
+        evidence_audit: dict,
+    ) -> list[dict]:
+        """Place sources used by supported claims first while preserving stable order."""
+        preferred_ids: list[str] = []
+        for claim in evidence_audit.get("claims", []):
+            if claim.get("status") != "supported":
+                continue
+            preferred_ids.extend(claim.get("source_ids", []))
+        rank = {source_id: index for index, source_id in enumerate(dict.fromkeys(preferred_ids))}
+        indexed = list(enumerate(evidence_sources))
+        indexed.sort(
+            key=lambda item: (
+                0 if item[1].get("source_id") in rank else 1,
+                rank.get(item[1].get("source_id"), len(rank)),
+                item[0],
+            )
+        )
+        return [dict(source) for _, source in indexed]
+
+    def _build_synthesis_prompt(
+        self,
+        query: str,
+        results: list[AgentResult],
+        evidence_audit: dict | None = None,
+        evidence_sources: list[dict] | None = None,
+    ) -> str:
         """构建合成 prompt，按置信度降序排列结果。"""
         sorted_results = sorted(results, key=lambda r: r.confidence, reverse=True)
 
@@ -177,7 +241,7 @@ class SummarizerAgent(BaseAgent):
                 f"Output:\n{r.output}\n"
             )
 
-        sources = self._collect_sources(results)
+        sources = self._collect_sources(results, evidence_sources)
         if sources:
             parts.append("\n# 可用来源（引用时用这些编号 [N]，正文末尾参考文献也用它们）")
             for i, s in enumerate(sources[:25], 1):
@@ -190,12 +254,55 @@ class SummarizerAgent(BaseAgent):
                     line += f" — {s['url']}"
                 parts.append(line)
 
+        audit = evidence_audit or {}
+        claims = audit.get("claims", []) if isinstance(audit, dict) else []
+        if claims:
+            source_numbers = {
+                source.get("source_id"): index
+                for index, source in enumerate(sources[:25], 1)
+                if source.get("source_id")
+            }
+            parts.append(
+                "\n# Claim-level Evidence Audit\n"
+                f"Coverage: {audit.get('coverage', 0.0):.1%}; "
+                f"Supported: {audit.get('supported_count', 0)}; "
+                f"Refuted: {audit.get('refuted_count', 0)}; "
+                f"Not enough evidence: {audit.get('not_enough_evidence_count', 0)}."
+            )
+            supported = [claim for claim in claims if claim.get("status") == "supported"]
+            unresolved = [claim for claim in claims if claim.get("status") != "supported"]
+            if supported:
+                parts.append("\n## Verified claims (safe to state when cited)")
+                for claim in supported[:25]:
+                    refs = [
+                        source_numbers[source_id]
+                        for source_id in claim.get("source_ids", [])
+                        if source_id in source_numbers
+                    ]
+                    ref_text = " ".join(f"[{number}]" for number in refs[:3])
+                    excerpts = claim.get("evidence_excerpts", [])
+                    excerpt = excerpts[0].get("text", "")[:260] if excerpts else ""
+                    parts.append(f"- {claim.get('text', '')} {ref_text}\n  Evidence: {excerpt}")
+            if unresolved:
+                parts.append("\n## Claims requiring caution (do not present as established fact)")
+                for claim in unresolved[:15]:
+                    parts.append(
+                        f"- [{claim.get('status', 'not_enough_evidence')}] {claim.get('text', '')} "
+                        f"— {claim.get('reason', '')}"
+                    )
+
         parts.append(
             "\n# Instructions\n"
             "1. Directly write the synthesized report based on the findings above. Do NOT say 'I will synthesize'.\n"
-            "2. The report MUST be comprehensive and detailed (at least 3000 Chinese characters or 2000 English words).\n"
+            "2. Respect the user's requested length. Otherwise target 1500-3000 Chinese characters or 1000-2000 English words.\n"
             "3. Structure: Executive Summary → Background → Key Findings (with details) → Analysis → Comparisons → Implications → Conclusion.\n"
             "4. Resolve any contradictions between sources.\n"
+            "4b. Treat the Claim-level Evidence Audit as a hard constraint: state SUPPORTED claims as facts only with "
+            "their mapped source numbers; qualify or omit NOT_ENOUGH_EVIDENCE claims; explicitly report material "
+            "REFUTED claims. Never upgrade a search snippet into stronger evidence than it provides.\n"
+            "4c. Keep claims atomic: each sentence or semicolon-separated clause should contain one independently "
+            "verifiable factual assertion. Do not describe tool failures, sub-task agreement, internal confidence, "
+            "or what the evidence audit did; report the external findings and their limitations directly.\n"
             "5. 引用要**具体可验证**：关键论断后用上面「可用来源」里的**编号 [N]** 标注"
             "（如 [3]、[7]）；每个主要段落至少一处引用，**禁止用笼统的 [Result N]**。"
             "正文末尾必须有「## 参考来源」，把正文用到的每个 [N] 按"
@@ -204,7 +311,13 @@ class SummarizerAgent(BaseAgent):
         )
         return "\n".join(parts)
 
-    def _parse_report(self, query: str, content: str, results: list[AgentResult]) -> ResearchReport:
+    def _parse_report(
+        self,
+        query: str,
+        content: str,
+        results: list[AgentResult],
+        evidence_sources: list[dict] | None = None,
+    ) -> ResearchReport:
         """从 LLM 输出中解析 ResearchReport，并基于子任务成功率校准置信度。"""
         # 1. 从文本中提取 LLM 自评置信度
         llm_confidence = 0.5
@@ -225,7 +338,7 @@ class SummarizerAgent(BaseAgent):
         confidence = round(max(0.0, min(1.0, confidence)), 2)
 
         # 收集去重后的来源（含 arxiv 论文的作者/年份）
-        unique_sources = self._collect_sources(results)
+        unique_sources = self._collect_sources(results, evidence_sources)
 
         # 统计实际工具调用次数（遍历所有子任务的 trajectory）
         num_searches = sum(len([t for t in r.trajectory if t.get("role") == "tool"]) for r in results)

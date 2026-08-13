@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import threading
 from typing import Optional
 
 from openai import OpenAI
@@ -47,6 +48,15 @@ class VLLMPolicy:
       - 错误分类处理（上下文超限抛异常，其他错误返回假 assistant）
     """
 
+    _global_usage_lock = threading.Lock()
+    _global_usage = {
+        "api_calls": 0,
+        "failed_calls": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+    }
+
     def __init__(
         self,
         model_name: str = "Qwen/Qwen2.5-7B-Instruct",
@@ -73,6 +83,30 @@ class VLLMPolicy:
         self.extra_body = extra_body
         # [污染标记] 一旦发生过主动截断，整条 trajectory 作废
         self.was_truncated = False
+        self._usage_lock = threading.Lock()
+        self._usage = {key: 0 for key in self._global_usage}
+
+    @classmethod
+    def global_usage_snapshot(cls) -> dict[str, int]:
+        """Return process-wide API usage counters for experiment telemetry."""
+        with cls._global_usage_lock:
+            return dict(cls._global_usage)
+
+    def usage_snapshot(self) -> dict[str, int]:
+        """Return counters for this policy instance."""
+        with self._usage_lock:
+            return dict(self._usage)
+
+    def _record_usage(self, **increments: int) -> None:
+        clean = {key: max(0, int(value or 0)) for key, value in increments.items()}
+        with self._usage_lock:
+            for key, value in clean.items():
+                if key in self._usage:
+                    self._usage[key] += value
+        with self._global_usage_lock:
+            for key, value in clean.items():
+                if key in self._global_usage:
+                    self._global_usage[key] += value
 
     def set_tools(self, tools: list[dict]) -> None:
         """注册可用工具（OpenAI function calling schema）。"""
@@ -213,8 +247,15 @@ class VLLMPolicy:
         if self.extra_body:
             kwargs["extra_body"] = self.extra_body
 
+        self._record_usage(api_calls=1)
         try:
             resp = self.client.chat.completions.create(**kwargs)
+            usage = getattr(resp, "usage", None)
+            self._record_usage(
+                prompt_tokens=getattr(usage, "prompt_tokens", 0),
+                completion_tokens=getattr(usage, "completion_tokens", 0),
+                total_tokens=getattr(usage, "total_tokens", 0),
+            )
             raw_msg = resp.choices[0].message
             content = raw_msg.content or ""
 
@@ -252,6 +293,7 @@ class VLLMPolicy:
             return result
 
         except Exception as e:
+            self._record_usage(failed_calls=1)
             err_str = str(e)
             err_lower = err_str.lower()
             logger.error(f"Policy Error: {err_str}")

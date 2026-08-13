@@ -49,6 +49,17 @@ def bootstrap_ci_paired(
     diffs_arr = np.asarray(diffs, dtype=float)
     n = len(diffs_arr)
     mean_diff = float(np.mean(diffs_arr))
+    if n < 2:
+        # Repeating one observed pair cannot estimate sampling variance.
+        return {
+            "mean_diff": round(mean_diff, 4),
+            "ci_lower": round(mean_diff, 4),
+            "ci_upper": round(mean_diff, 4),
+            "p_value": 1.0,
+            "significant": False,
+            "n": n,
+            "method": "insufficient_n",
+        }
 
     # 向量化重采样：一次生成 (n_bootstrap, n) 索引矩阵，按行求均值
     rng = np.random.default_rng(seed)

@@ -1,0 +1,1429 @@
+{
+  "schema_version": "1.0",
+  "query": "对比分析 2024 年主流大语言模型（GPT-4o、Claude 3.5、Gemini 1.5、Qwen2.5）在中文推理、代码生成和长上下文任务上的表现差异，并分析其技术路线差异。",
+  "created_at": "2026-08-13T08:48:01.498583+00:00",
+  "sources": [
+    {
+      "source_id": "src_b238930a91134fe6",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+      "title": "中华人民共和国 2024 年国民经济和社会发展统计公报",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "stats.gov.cn",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_063be03393c7f8ce",
+      "url": "https://www.stats.gov.cn/sj/ndsj/2024/indexch.htm",
+      "title": "中国统计年鉴 2024",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "stats.gov.cn",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_29a67ddbaa723807",
+      "url": "https://www.chatgpt-cnblog.com/guides/chatgpt/chatgpt-chinese-gpt5-complete-guide-2026.html",
+      "title": "ChatGPT 中文版： GPT -5 国内使用完整教程（支持 GPT -5.2 ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "chatgpt-cnblog.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_b95829c7e7883064",
+      "url": "https://www.claudezh.com/claude/claude-chinese.html",
+      "title": "Claude 中文版： Claude 4.5 国内使用指南～（支持 Claude ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "claudezh.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_9508483588b6c52f",
+      "url": "https://deepmind.google/models/gemini",
+      "title": "Gemini 3.5 — Google DeepMind",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "deepmind.google",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_ed9c6e7f0f8f583d",
+      "url": "https://ai.google.dev/gemini-api/docs?hl=zh-cn",
+      "title": "Gemini API - Google AI for Developers",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "ai.google.dev",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_9ff284d12e3acb61",
+      "url": "https://www.chatgpt-chinese.com/blog/guides/chatgpt/chatgpt-gpt5-guide.html",
+      "title": "ChatGPT 官网中文版： GPT -5 国内使用完全攻略（支持 GPT ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "chatgpt-chinese.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:brave_html+bing_html"
+      }
+    },
+    {
+      "source_id": "src_c08cfdc899ce1eb9",
+      "url": "https://doi.org/10.2172/1119902",
+      "title": "Benchmark Imagery FY11 Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "R. Roberts, P. Pope",
+      "year": "2011",
+      "publisher": "doi.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.2172/1119902",
+        "citation_count": 0,
+        "provider": "crossref"
+      }
+    },
+    {
+      "source_id": "src_51a3fe688514d565",
+      "url": "https://doi.org/10.18653/v1/2025.findings-emnlp.1057",
+      "title": "LC-Eval: A Bilingual Multi-Task Evaluation Benchmark for Long-Context Understanding",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Sheikh Jubair, Arwa Omayrah, Amal Alshammari, Alhanoof Althnian, Abdulhamed Alothaimen, Norah A. Alzahrani, Shahad D. Alzaidi, Nora Al-Twairesh, Abdulmohsen Al-Thubaity",
+      "year": "2025",
+      "publisher": "doi.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.18653/v1/2025.findings-emnlp.1057",
+        "citation_count": 0,
+        "provider": "crossref"
+      }
+    },
+    {
+      "source_id": "src_3e09d1364d9f5237",
+      "url": "https://doi.org/10.3390/app15189907",
+      "title": "Comparative Analysis of AI Models for Python Code Generation: A HumanEval Benchmark Study",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Ali Bayram, Gonca Gokce Menekse Dalveren, Mohammad Derawi",
+      "year": "2025",
+      "publisher": "doi.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "10.3390/app15189907",
+        "citation_count": 2,
+        "provider": "crossref"
+      }
+    },
+    {
+      "source_id": "src_7b456f2281fc0efd",
+      "url": "https://qwenlm.github.io/blog/qwen2.5",
+      "title": "",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "qwenlm.github.io",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "ccc5e89c20c06a21483cfe1b758ae67f6cdb509e5e8c282ff238f26072cf5f1f",
+      "metadata": {}
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_9ec92b48c0ec15a0",
+      "source_id": "src_b238930a91134fe6",
+      "text": "2025年2月28日 · 中华人民共和国2024年国民经济和社会发展统计公报[1] 国家统计局 2025年2月28日 2024年是中华人民共和国成 …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7f0ecbd6bfa4154ac0cf8ee0916adb30b924f3bc212369949e6de0ed4916c057"
+    },
+    {
+      "evidence_id": "ev_5f05622797d78721",
+      "source_id": "src_063be03393c7f8ce",
+      "text": "2026年3月19日 · 《中国统计年鉴2024》提供了中国经济、社会发展等全面统计数据，是了解国家现状的重要参考资料。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "7bf89e8a8472e1be2e1e381d74ae0a4a129d38ffacdf5e429c342ca6c0308839"
+    },
+    {
+      "evidence_id": "ev_2bff6417ea923762",
+      "source_id": "src_29a67ddbaa723807",
+      "text": "2026年6月27日 · 最新ChatGPT中文版使用指南，详解GPT-5、GPT-5.2和GPT-4o在国内的访问方法、注册流程、功能对比及实战技 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "8859d966357feb66c95768f426807d47bed3c84ff113c27bb72c3726a43e2fb3"
+    },
+    {
+      "evidence_id": "ev_7eae8443592e3763",
+      "source_id": "src_b95829c7e7883064",
+      "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fe09b4fa0ba23705c5ac3d161c4b287c308aafb8f229e5e2649a6fb57d712cd5"
+    },
+    {
+      "evidence_id": "ev_d072d1323384c4c7",
+      "source_id": "src_9508483588b6c52f",
+      "text": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "cac73004be3b5fe8f87b0723387fc936fa64c6f9777acfd0ebed176bd3a0605b"
+    },
+    {
+      "evidence_id": "ev_5a169965c47618e5",
+      "source_id": "src_ed9c6e7f0f8f583d",
+      "text": "2026年7月13日 · Gemini API 借助 Gemini API，您可以快速将提示转化为 Gemini、Veo、Nano Banana 等模型可用的代码，从而快速 …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9de658d7e9204178cc7bb496e4691d21a50c59d7f3e6e28473ebd52de87ea10b"
+    },
+    {
+      "evidence_id": "ev_49bf23774d499dfa",
+      "source_id": "src_9ff284d12e3acb61",
+      "text": "2025年11月6日 · 【2026年8月最新更新】ChatGPT官网中文版完全攻略，全面支持GPT-5、GPT-4o等最新模型。国内免翻墙直接访 …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "0b9fabb78347751a5afef34f099d7aeb090987d08462104a530097cae04af27b"
+    },
+    {
+      "evidence_id": "ev_4327883848bffdb8",
+      "source_id": "src_3e09d1364d9f5237",
+      "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cyclomatic complexity analysis, maintainability index calculations, and lines-of-code assessment. The results indicate that Claude Sonnet 4 achieved the highest performance with a success rate of 95.1%, followed closely by Claude Opus 4 at 94.5%. Across all metrics, models developed by Anthropic Claude consistently outperformed those developed by OpenAI GPT by margins exceeding 20%. Statistical analysis further confirmed the existence of significant differences between the model families (p < 0.001). Anthropic Claude models were observed to generate more sophisticated and maintainable solutions with superior syntactic accuracy. In contrast, OpenAI GPT models tended to adopt simpler strategies but exhibited notable limitations in terms of reliability. These findings offer evidence-based insights to guide the selection of AI-powered coding assistants in professional software development contexts.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "53bd8b5587f98ec2a6ea186b49116a8e8e9410733c1ac313cc3851cfe3939e4a"
+    },
+    {
+      "evidence_id": "ev_fe6e3e03d4c6987a",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Our latest release features the LLMs Qwen2. 5 , along with specialized models for coding, Qwen2. 5-Coder , and mathematics, Qwen2. 5-Math . All open-weight models are dense, decoder-only language models, available in various sizes, including: Qwen2. 5: 0. 5B, 1. 5B, 3B, 7B, 14B, 32B, and 72B Qwen2. 5-Coder: 1. 5B, 7B, and 32B on the way Qwen2. 5-Math: 1. 5B, 7B, and 72B. All our open-source models, except for the 3B and 72B variants, are licensed under Apache 2. 0. You can find the license files in the respective Hugging Face repositories. In addition to these models, we offer APIs for our flagship language models: Qwen-Plus Qwen-Turbo through Model Studio, and we encourage you to explore them! Furthermore, we have also open-sourced the Qwen2-VL-72B , which features performance enhancements compared to last month’s release. For more details about Qwen2. 5, Qwen2. 5-Coder, and Qwen2.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-1",
+      "content_hash": "5f24c1b023e7a7b145b7a2b2caf00ae80a804575f9abf086c706c7430b411714"
+    },
+    {
+      "evidence_id": "ev_bd883047e20a3d78",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired significantly more knowledge (MMLU: 85+) and has greatly improved capabilities in coding (HumanEval 85+) and mathematics (MATH 80+). Additionally, the new models achieve significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e. g, tables), and generating structured outputs especially JSON. Qwen2. 5 models are generally more resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots. Like Qwen2, the Qwen2. 5 language models support up to 128K tokens and can generate up to tokens. They also maintain multilingual support for over languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more. Below, we provide basic information about the models and details of the supported languages.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-2",
+      "content_hash": "ce2c368d50b2ce4c0385f153c7193872d1d8a0b4cb0aebce5c55aba889aac7e8"
+    },
+    {
+      "evidence_id": "ev_3228076d1e49101c",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "The specialized expert language models, namely Qwen2. 5-Coder for coding and Qwen2. 5-Math for mathematics, have undergone substantial enhancements compared to their predecessors, CodeQwen1. 5 and Qwen2-Math. Specifically, Qwen2. 5-Coder has been trained on 5. 5 trillion tokens of code-related data, enabling even smaller coding-specific models to deliver competitive performance against larger language models on coding evaluation benchmarks. Meanwhile, Qwen2. 5-Math supports both Chinese English and incorporates various reasoning methods, including Chain-of-Thought (CoT), Program-of-Thought (PoT), and Tool-Integrated Reasoning (TIR). Performance Qwen2. 5 To showcase Qwen2. 5’s capabilities, we benchmark our largest open-source model, Qwen2. 5-72B - a 72B-parameter dense decoder-only language model - against leading open-source models like Llama-3. 1-70B and Mistral-Large-V2. We present comprehensive results from instruction-tuned versions across various benchmarks, evaluating both model capabilities and human preferences. Besides the instruction-tuned language models, we figure out that the base language model of our flagship opensource model Qwen2. 5-72B reaches top-tier performance even against larger models like Llama-3-405B.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-3",
+      "content_hash": "e1261f23615a18c3a451ec5ea3c304ca7417f8c8aeecc7d0c3a9303071df737d"
+    },
+    {
+      "evidence_id": "ev_fc6639b4b6799ba3",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "Furthermore, we benchmark the latest version of our API-based model, Qwen-Plus , against leading proprietary and open-source models, including GPT4-o, Claude-3. 5-Sonnet, Llama-3. 1-405B, and DeepSeek-V2. 5. This comparison showcases Qwen-Plus’s competitive standing in the current landscape of large language models. We show that Qwen-Plus significantly outcompetes DeepSeek-V2. 5 and demonstrates competitive performance against Llama-3. 1-405B, while still underperforming compared to GPT4-o and Claude-3. 5-Sonnet in some aspects. This benchmarking not only highlights Qwen-Plus’s strengths but also identifies areas for future improvement, reinforcing our commitment to continuous enhancement and innovation in the field of large language models. A significant update in Qwen2. 5 is the reintroduction of our 14B and 32B models, Qwen2. 5-14B Qwen2. 5-32B . These models outperform baseline models of comparable or larger sizes, such as Phi-3. 5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks. They achieve an optimal balance between model size and capability, delivering performance that matches or exceeds some larger models. Additionally, our API-based model, Qwen-Turbo , offers highly competitive performance compared to the two open-source models, while providing a cost-effective and rapid service.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-4",
+      "content_hash": "b1752dbd1fe7a594ceb04784c82f836a13303c4ba025d8aaceb0f4785385fc3b"
+    },
+    {
+      "evidence_id": "ev_a693b4833843ed34",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "In recent times, there has been a notable shift towards small language models (SLMs). Although SLMs have historically trailed behind their larger counterparts (LLMs), the performance gap is rapidly diminishing. Remarkably, even models with just 3 billion parameters are now delivering highly competitive results. The accompanying figure illustrates a significant trend: newer models achieving scores above 65 in MMLU are increasingly smaller, underscoring the accelerated growth in knowledge density among language models. Notably, our Qwen2. 5-3B stands out as a prime example, achieving impressive performance with only around 3 billion parameters, showcasing its efficiency and capability compared to its predecessors. In addition to the notable enhancements in benchmark evaluations, we have refined our post-training methodologies. Our four key updates include support for long text generation of up to 8K tokens, significantly improved comprehension of structured data, more reliable generation of structured outputs, particularly in JSON format, and enhanced performance across diverse system prompts, which facilitates effective role-playing. Check the LLM blog for details about how to leverage these capabilities. Qwen2. 5-Coder Since the launch of CodeQwen1.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-5",
+      "content_hash": "d9c6a6675c13a4eb59628a2bb38b363f64f5a8dd4bc1d4297011f3a0d2e9d3ca"
+    },
+    {
+      "evidence_id": "ev_638c7fd3f5faf401",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "5, we have attracted numerous users who rely on this model for various coding tasks, such as debugging, answering coding-related questions, and providing code suggestions. Our latest iteration, Qwen2. 5-Coder, is specifically designed for coding applications. In this section, we present the performance results of Qwen2. 5-Coder-7B-Instruct, benchmarked against leading open-source models, including those with significantly larger parameter sizes. We believe that Qwen2. 5-Coder is an excellent choice as your personal coding assistant. Despite its smaller size, it outperforms many larger language models across a range of programming languages and tasks, demonstrating its exceptional coding capabilities. Qwen2. 5-Math In terms of the math specific language models, we released the first models, Qwen2-Math, last month, and this time, compared to Qwen2-Math, Qwen2. 5-Math has been pretrained larger-scale of math related data, including the synthetic data generated by Qwen2-Math. Additionally we extend the support of Chinese this time and we also strengthen its reasoning capabilities by endowing it with the abilities to perform CoT, PoT, and TIR. The general performance of Qwen2. 5-Math-72B-Instruct surpasses both Qwen2-Math-72B-Instruct and GPT4-o, and even very small expert model like Qwen2. 5-Math-1.",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-6",
+      "content_hash": "5dfc4722da6bb49ab99e23b7595b9cf9c0fc9e883f2efd0ce84c30b9deb659ef"
+    },
+    {
+      "evidence_id": "ev_360d87673457f093",
+      "source_id": "src_7b456f2281fc0efd",
+      "text": "5B-Instruct can achieve highly competitive performance against large language models. Develop with Qwen2. 5 The si [CONTENT_TRUNCATED: 12821 chars total, showing first 8000]",
+      "kind": "full_text",
+      "task_id": "task_4",
+      "locator": "chunk-7",
+      "content_hash": "1a9e49e0415add83176122daf2a5540e6dea852167f799f7695206b9193e9a9c"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_72a731d896ad5e33",
+        "text": "本报告对比分析 2024 年四款主流大语言模型在中文推理、代码生成、长上下文三类任务上的表现差异及其技术路线。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_2bff6417ea923762",
+          "ev_5a169965c47618e5"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_29a67ddbaa723807",
+          "src_ed9c6e7f0f8f583d"
+        ],
+        "reason": "证据仅为Claude/ChatGPT镜像站与使用指南的营销页面，未涉及2024年四模型在中文推理、代码生成、长上下文上的对比分析。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2bff6417ea923762",
+            "source_id": "src_29a67ddbaa723807",
+            "text": "2026年6月27日 · 最新ChatGPT中文版使用指南，详解GPT-5、GPT-5.2和GPT-4o在国内的访问方法、注册流程、功能对比及实战技 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_04255e337a982cdb",
+        "text": "总体结论：**Qwen2.5 在中文任务上因训练语料与对齐的本地化优势领先；Claude 3.5 系列在代码生成上优势最显著（已有同行评议研究支持 Claude 家族在 HumanEval 上领先 GPT 家族 20 个百分点以上）；Gemini 1.5 Pro 以百万级 token 上下文窗口在长上下文任务上标称能力最强**。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.35,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_7eae8443592e3763",
+          "ev_fe6e3e03d4c6987a"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_b95829c7e7883064",
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "代码部分有研究支持Claude在HumanEval上领先GPT超20%（但为2025年Claude 4系列研究，非Claude 3.5）；Qwen2.5中文领先与Gemini百万上下文均无证据支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6e681d65c990621b",
+        "text": "同时必须指出：四模型的横向对比存在严重的口径问题——模型快照版本漂移、开闭源不对称、基准自报偏差——任何不注明评测口径的\"排名\"都需谨慎对待。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.02,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2bff6417ea923762",
+          "ev_7eae8443592e3763",
+          "ev_5a169965c47618e5"
+        ],
+        "source_ids": [
+          "src_29a67ddbaa723807",
+          "src_b95829c7e7883064",
+          "src_ed9c6e7f0f8f583d"
+        ],
+        "reason": "证据仅为营销/使用指南页面，未涉及模型快照漂移、开闭源不对称或基准自报偏差等口径问题。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2bff6417ea923762",
+            "source_id": "src_29a67ddbaa723807",
+            "text": "2026年6月27日 · 最新ChatGPT中文版使用指南，详解GPT-5、GPT-5.2和GPT-4o在国内的访问方法、注册流程、功能对比及实战技 …",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8c09f4c789ad9c43",
+        "text": "此外，本轮证据收集中网络检索大面积失败，仅 Qwen2.5 官方资料与两篇学术论文得到一手核验，其余结论基于公开技术共识，置信度有限。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.15,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "证据含Qwen2.5官方资料，但无法证实'检索大面积失败''仅两篇学术论文核验''其余基于共识'等关于证据收集过程的元声明。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2faac983f458cd28",
+        "text": "2024 年是大语言模型竞争白热化的一年：OpenAI 于 5 月发布原生多模态的 GPT-4o；Anthropic 于 6 月发布 Claude 3.5 Sonnet（10 月推出增强版）；Google DeepMind 于 2 月发布 Gemini 1.5 Pro/Flash，主打超长上下文；阿里巴巴通义团队于 9 月开源 Qwen2.5 系列（0.5B–72B 六个尺寸），预训练数据约 18 万亿 token，支持 128K 上下文与 29 种以上语言 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.45,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Qwen2.5的18万亿token、0.5B–72B六个尺寸有证据支持；但发布日期（9月）、128K上下文、29种语言、以及GPT-4o/Claude 3.5/Gemini 1.5的发布时间与特性均无证据。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0a8fec6ba9553d22",
+        "text": "四者在中文推理、代码生成、长上下文三个关键维度上的差异，直接反映了各自的技术路线选择。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.03,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_49bf23774d499dfa",
+          "ev_2bff6417ea923762"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_9ff284d12e3acb61",
+          "src_29a67ddbaa723807"
+        ],
+        "reason": "证据仅为营销页面，未涉及三维度差异或技术路线的任何信息。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_49bf23774d499dfa",
+            "source_id": "src_9ff284d12e3acb61",
+            "text": "2025年11月6日 · 【2026年8月最新更新】ChatGPT官网中文版完全攻略，全面支持GPT-5、GPT-4o等最新模型。国内免翻墙直接访 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_749d01061a2bc924",
+        "text": "Qwen2.5 是四者中**唯一明确进行中文专项优化**的模型：其 18 万亿 token 预训练语料包含高比例高质量中文数据，并配套系统性的中文指令微调与对齐（SFT + DPO/GRPO 路线）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bd883047e20a3d78",
+          "ev_fe6e3e03d4c6987a",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "证据仅提及18万亿token预训练数据，未提及高比例中文语料、中文专项SFT或DPO/GRPO对齐路线，也无法证明其为'唯一'进行中文优化的模型。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dfc804a9c451c5d1",
+        "text": "因此在 C-Eval、CMMLU 等中文基准上，Qwen 系列通常领先于以英文语料为主、中文能力依赖迁移的三家海外模型。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.03,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_49bf23774d499dfa",
+          "ev_fe6e3e03d4c6987a"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_9ff284d12e3acb61",
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "证据为营销页面，未涉及C-Eval/CMMLU基准或Qwen与海外模型的中文能力对比。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_49bf23774d499dfa",
+            "source_id": "src_9ff284d12e3acb61",
+            "text": "2025年11月6日 · 【2026年8月最新更新】ChatGPT官网中文版完全攻略，全面支持GPT-5、GPT-4o等最新模型。国内免翻墙直接访 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cca11c8544fdfc46",
+        "text": "GPT-4o 与 Claude 3.5 的中文能力处于第二梯队（通用推理强但无中文专项优化），Gemini 1.5 中文相对最弱。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_4327883848bffdb8",
+          "ev_2bff6417ea923762"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_3e09d1364d9f5237",
+          "src_29a67ddbaa723807"
+        ],
+        "reason": "证据仅涉及代码生成（HumanEval）对比，未涉及任何模型的中文能力梯队排序。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3f023958776c7a01",
+        "text": "**但须注意口径风险**：OpenAI 与 Anthropic 官方报告通常不披露中文基准分数，单方面引用 Qwen 官方自测数据存在系统性偏差；且 Qwen 官方博客坦承其 API 模型 Qwen-Plus \"在某些方面仍不及 GPT-4o 和 Claude 3.5 Sonnet\" ，说明\"Qwen2.5 全面领先\"的说法并不成立。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "supported",
+        "verification_score": 0.75,
+        "support_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_fc6639b4b6799ba3"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_fc6639b4b6799ba3",
+          "ev_bd883047e20a3d78"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "证据明确显示Qwen-Plus'在某些方面仍不及GPT4-o和Claude-3.5-Sonnet'，直接支持'Qwen2.5全面领先不成立'；'官方不披露中文基准'部分虽无直接证据，但与证据不矛盾且核心结论被支持。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_fc6639b4b6799ba3",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "Furthermore, we benchmark the latest version of our API-based model, Qwen-Plus , against leading proprietary and open-source models, including GPT4-o, Claude-3. 5-Sonnet, Llama-3. 1-405B, and DeepSeek-V2. 5. This comparison showcases Qwen-Plus’s competitive standing in the current landscape of large language models. We show that Qwen-Plus significantly outcompetes DeepSeek-V2. 5 and demonstrates competitive performance against Llama-3. 1-405B, while still underperforming compared to GPT4-o and C",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fa8f334919994dae",
+        "text": "这是本报告中证据最强的维度。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_9dbb0d307c1b6a04",
+        "text": "一项基于 HumanEval 164 题 Pass@1 的同行评议研究显示：Claude 系列显著优于 GPT 系列（统计差距超过 20 个百分点，p<0.001），且 Claude 生成的代码在可维护性维度上得分更高；GPT-4o 倾向于采用更简单的实现策略但可靠性不足 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.6,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237"
+        ],
+        "reason": "164题、Pass@1、Claude领先GPT超20%均有证据支持；但p<0.001显著性、可维护性得分更高、GPT-4o简单实现策略等细节在证据文本中被截断或未出现，无法核验。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1a34903654402dc5",
+        "text": "2024 年的公开共识排序大致为：Claude 3.5 Sonnet > GPT-4o ≈ Qwen2.5-Coder > Gemini 1.5。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.35,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Claude优于GPT有证据支持，但排序中Qwen2.5-Coder与GPT-4o相当、Gemini 1.5垫底等均无证据，且研究针对的是2025年模型而非2024年共识排序。",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ca85cb52e1e20965",
+        "text": "Qwen 方面通过发布专门的 Qwen2.5-Coder 分支进行代码特化训练，官方自报旗舰模型 HumanEval 达 85+ 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0938,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_bd883047e20a3d78",
+          "ev_fe6e3e03d4c6987a",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bf837a7bfb37b290",
+        "text": "**口径警示**：HumanEval 已趋于饱和且存在数据污染争议，2024 下半年 LiveCodeBench、SWE-bench 等更受认可的基准上，排序可能与 HumanEval 口径不完全一致 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0237,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4a2edd6a1370320a",
+        "text": "上下文窗口的标称规格差异明显：Gemini 1.5 Pro 支持 100 万–200 万 token，Claude 3.5 为 200K，GPT-4o 与 Qwen2.5 为 128K（Qwen2.5-Turbo 扩展至 1M）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0603,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cd5140775dadf56b",
+        "text": "然而，长上下文评测研究表明，长上下文能力至少应区分为**\"信息检索定位\"与\"跨段落推理\"两类不同能力**——LC-Eval 这一中英双语长上下文基准的设计正是基于此种区分，单纯\"大海捞针\"（NIAH）式测试无法全面衡量长上下文理解 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_3f766ec48c90520a",
+        "text": "共识性观察是：检索类超长文本任务 Gemini 1.5 占优，而长文推理与遵循任务 Claude 表现更稳；且各基准（NIAH、RULER、LongBench）之间的结果常不一致。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.035,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_4327883848bffdb8",
+          "ev_fe6e3e03d4c6987a"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_3e09d1364d9f5237",
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_be11f11adb566ae9",
+        "text": "证据之间最值得注意的张力在于\"Qwen2.5 是否领先\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_db5bab069d4dbb5f",
+        "text": "流行的说法（Qwen 全面超越）与 Qwen 官方博客自身的表态直接矛盾——官方明确承认部分维度不及 GPT-4o 与 Claude 3.5 Sonnet 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0257,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6f6a604ce65a3119",
+        "text": "本报告采信官方一手资料：Qwen2.5 的领先**限定于中文任务与开源模型赛道**，而非通用能力全面领先。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0633,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_49bf23774d499dfa",
+          "ev_5f05622797d78721"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_9ff284d12e3acb61",
+          "src_063be03393c7f8ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_49bf23774d499dfa",
+            "source_id": "src_9ff284d12e3acb61",
+            "text": "2025年11月6日 · 【2026年8月最新更新】ChatGPT官网中文版完全攻略，全面支持GPT-5、GPT-4o等最新模型。国内免翻墙直接访 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_468bc769b0ff6a1e",
+        "text": "另一矛盾点是代码能力排名：HumanEval 口径下 Claude 领先有实证 ，但若改用 SWE-bench / LiveCodeBench 口径，绝对分数与差距都会变化，本报告因此仅给出方向性排序而不引用未经统一复测的具体分数。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0309,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e010dba998f9edf4",
+        "text": "第三个方法论问题是**版本漂移**：GPT-4o 存在 2024-05/08/11 多个快照，Claude 3.5 Sonnet 有 6 月版与 10 月增强版之分，二者分数可相差数个百分点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0646,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_2bff6417ea923762",
+          "ev_49bf23774d499dfa"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_29a67ddbaa723807",
+          "src_9ff284d12e3acb61"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_2bff6417ea923762",
+            "source_id": "src_29a67ddbaa723807",
+            "text": "2026年6月27日 · 最新ChatGPT中文版使用指南，详解GPT-5、GPT-5.2和GPT-4o在国内的访问方法、注册流程、功能对比及实战技 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2e387c87d732cf3b",
+        "text": "本报告所有结论均针对\"2024 年内各版本的整体水平\"，不构成对特定快照的精确排名。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0258,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_9ec92b48c0ec15a0",
+          "ev_5f05622797d78721"
+        ],
+        "source_ids": [
+          "src_b238930a91134fe6",
+          "src_063be03393c7f8ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_9ec92b48c0ec15a0",
+            "source_id": "src_b238930a91134fe6",
+            "text": "2025年2月28日 · 中华人民共和国2024年国民经济和社会发展统计公报[1] 国家统计局 2025年2月28日 2024年是中华人民共和国成 …",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5f05622797d78721",
+            "source_id": "src_063be03393c7f8ce",
+            "text": "2026年3月19日 · 《中国统计年鉴2024》提供了中国经济、社会发展等全面统计数据，是了解国家现状的重要参考资料。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_36172e7a06cc382a",
+        "text": "**中文推理**：Qwen2.5 > GPT-4o ≈ Claude 3.5 > Gemini 1.5（方向性判断，Qwen 优势有官方技术路线支撑 ，但缺第三方统一中文基准复测）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          11
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.075,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_fe6e3e03d4c6987a",
+          "ev_bd883047e20a3d78",
+          "ev_3228076d1e49101c"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_bd883047e20a3d78",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5-Math, feel free to visit the following links: Qwen2. 5 LLM Qwen2. 5-Coder Qwen2. 5-Math Get ready to unlock a world of possibilities with our extensive lineup of models! We’re excited to share these cutting-edge models with you, and we can’t wait to see the incredible things you’ll achieve with them! Takeaways In terms of Qwen2. 5 , the language models, all models are pretrained on our latest large-scale dataset, encompassing up to 18 trillion tokens. Compared to Qwen2, Qwen2. 5 has acquired s",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_485fc47f681ad5ab",
+        "text": "**代码生成**：Claude 3.5 Sonnet > GPT-4o ≈ Qwen2.5-Coder > Gemini 1.5（Claude 优势有同行评议证据 ）。",
+        "task_id": "final_report",
+        "cited_indices": [
+          10
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1544,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_112f98469354244f",
+        "text": "**长上下文**：标称长度 Gemini 1.5 ≫ Claude 3.5 > GPT-4o ≈ Qwen2.5；有效利用维度需按检索/推理任务分别评估 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_b239c6c66454bb7f",
+        "text": "**技术路线**：架构上 Gemini 走 MoE + 超长上下文，Qwen 走开源稠密 + 中英双语重投入，OpenAI/Anthropic 闭源不公开；对齐上 Anthropic 的 Constitutional AI 与 Qwen 的 DPO/GRPO 公开度最高。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0515,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_fe6e3e03d4c6987a",
+          "ev_7eae8443592e3763"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_7b456f2281fc0efd",
+          "src_b95829c7e7883064"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_4bc437ba16c9fdab",
+        "text": "**选型应因任务而异**：中文场景优先考虑 Qwen2.5 系列；复杂代码工程优先 Claude 3.5；百万 token 级文档处理目前只有 Gemini 1.5 可选。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0501,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_fe6e3e03d4c6987a",
+          "ev_7eae8443592e3763"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_7b456f2281fc0efd",
+          "src_b95829c7e7883064"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_fe6e3e03d4c6987a",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "GITHUB HUGGING FACE MODELSCOPE DEMO DISCORD Introduction In the past three months since Qwen2’s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2. 5 We are announcing what might be the largest opensource release in history! Let’s get the party started! Ou",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6c28dfb68f8c8765",
+        "text": "**警惕基准营销**：厂商自报分数的 shot 数、是否 CoT、温度设置各不相同，跨报告直接比分数不可靠；应优先参考第三方统一复测。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0213,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3228076d1e49101c",
+          "ev_638c7fd3f5faf401",
+          "ev_5f05622797d78721"
+        ],
+        "source_ids": [
+          "src_7b456f2281fc0efd",
+          "src_063be03393c7f8ce"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3228076d1e49101c",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "The specialized expert language models, namely Qwen2. 5-Coder for coding and Qwen2. 5-Math for mathematics, have undergone substantial enhancements compared to their predecessors, CodeQwen1. 5 and Qwen2-Math. Specifically, Qwen2. 5-Coder has been trained on 5. 5 trillion tokens of code-related data, enabling even smaller coding-specific models to deliver competitive performance against larger language models on coding evaluation benchmarks. Meanwhile, Qwen2. 5-Math supports both Chinese English ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_638c7fd3f5faf401",
+            "source_id": "src_7b456f2281fc0efd",
+            "text": "5, we have attracted numerous users who rely on this model for various coding tasks, such as debugging, answering coding-related questions, and providing code suggestions. Our latest iteration, Qwen2. 5-Coder, is specifically designed for coding applications. In this section, we present the performance results of Qwen2. 5-Coder-7B-Instruct, benchmarked against leading open-source models, including those with significantly larger parameter sizes. We believe that Qwen2. 5-Coder is an excellent cho",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a3ea6eba3c32607a",
+        "text": "**长上下文 ≠ 长上下文理解**：采购决策中应区分检索与推理两类需求 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          9
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_333810804abd7a58",
+        "text": "**研究局限**：本轮检索遭遇大面积网络故障（HTTP 429/超时），OpenAI、Anthropic、Google 三家的官方系统卡片原文未能逐一核验，精确基准分数未能引用；建议后续补充 OpenCompass、SuperCLUE、LMSYS Arena 2024 年快照等第三方来源。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0294,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_4327883848bffdb8",
+          "ev_9ec92b48c0ec15a0",
+          "ev_5f05622797d78721"
+        ],
+        "source_ids": [
+          "src_3e09d1364d9f5237",
+          "src_b238930a91134fe6",
+          "src_063be03393c7f8ce"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_4327883848bffdb8",
+            "source_id": "src_3e09d1364d9f5237",
+            "text": "This study conducts a comprehensive comparative analysis of six contemporary artificial intelligence models for Python code generation using the HumanEval benchmark. The evaluated models include GPT-3.5 Turbo, GPT-4 Omni, Claude 3.5 Sonnet, Claude 3.7 Sonnet, Claude Sonnet 4, and Claude Opus 4. A total of 164 Python programming problems were utilized to assess model performance through a multi-faceted methodology incorporating automated functional correctness evaluation via the Pass@1 metric, cy",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_9ec92b48c0ec15a0",
+            "source_id": "src_b238930a91134fe6",
+            "text": "2025年2月28日 · 中华人民共和国2024年国民经济和社会发展统计公报[1] 国家统计局 2025年2月28日 2024年是中华人民共和国成 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b4df734b4d2cff89",
+        "text": "2024 年四款旗舰模型呈现\"各有所长\"的格局：Qwen2.5 凭中文专项优化与开源策略在中文任务领先，Claude 3.5 在代码生成上有最扎实的实证优势，Gemini 1.5 以超长上下文窗口独占一档，GPT-4o 则以均衡的通用与多模态能力居中。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0566,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7eae8443592e3763",
+          "ev_5a169965c47618e5",
+          "ev_49bf23774d499dfa"
+        ],
+        "source_ids": [
+          "src_b95829c7e7883064",
+          "src_ed9c6e7f0f8f583d",
+          "src_9ff284d12e3acb61"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5a169965c47618e5",
+            "source_id": "src_ed9c6e7f0f8f583d",
+            "text": "2026年7月13日 · Gemini API 借助 Gemini API，您可以快速将提示转化为 Gemini、Veo、Nano Banana 等模型可用的代码，从而快速 …",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_87f2244aa3fbb251",
+        "text": "技术路线上，MoE 与稠密、闭源与开源、通用多语与中文专项、RLHF 与 Constitutional AI/DPO 的分化，预示了 2025 年之后模型竞争的多极化趋势。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0552,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_49bf23774d499dfa",
+          "ev_7eae8443592e3763",
+          "ev_9ec92b48c0ec15a0"
+        ],
+        "source_ids": [
+          "src_9ff284d12e3acb61",
+          "src_b95829c7e7883064",
+          "src_b238930a91134fe6"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_49bf23774d499dfa",
+            "source_id": "src_9ff284d12e3acb61",
+            "text": "2025年11月6日 · 【2026年8月最新更新】ChatGPT官网中文版完全攻略，全面支持GPT-5、GPT-4o等最新模型。国内免翻墙直接访 …",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7eae8443592e3763",
+            "source_id": "src_b95829c7e7883064",
+            "text": "2026年8月6日 · Claude 是Anthropic最新发布的AI模型，具备顶尖的推理能力和多模态理解。立即访问Claude中文镜像站体验。",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 11,
+    "evidence_count": 15,
+    "supported_count": 1,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 33,
+    "coverage": 0.0294,
+    "primary_source_ratio": 0.4545,
+    "fulltext_source_ratio": 0.0909,
+    "verification_mode": "hybrid"
+  }
+}

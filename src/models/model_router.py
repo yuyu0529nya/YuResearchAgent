@@ -2,6 +2,7 @@
 多后端 LLM 路由器 (Model Router)
 
 支持通过环境变量 (.env) 配置多个 LLM 后端，运行时动态切换：
+  - Kimi Code / Moonshot API
   - DeepSeek API
   - 本地 vLLM
   - OpenAI / 任何 OpenAI 兼容 API
@@ -45,6 +46,8 @@ class ModelRouter:
     @staticmethod
     def create_backend(
         backend_name: str | None = None,
+        *,
+        use_cache: bool = True,
         **override_kwargs,
     ) -> VLLMPolicy:
         """创建指定名称的 LLM Backend（返回 VLLMPolicy 实例）。
@@ -52,6 +55,8 @@ class ModelRouter:
         Args:
             backend_name: 后端名称，对应 .env 中的前缀。
                           为 None 时使用 DEFAULT_LLM_BACKEND。
+            use_cache: 是否复用同配置 policy。并发 worker 应设为 False，
+                       避免共享 tools / was_truncated 等可变运行状态。
             **override_kwargs: 覆盖 .env 中任何参数（如 temperature, max_tokens）。
 
         Returns:
@@ -66,16 +71,18 @@ class ModelRouter:
 
         # 检查缓存
         cache_key = f"{name}:{hash(tuple(sorted(override_kwargs.items())))}"
-        if cache_key in _BACKEND_CACHE:
+        if use_cache and cache_key in _BACKEND_CACHE:
             return _BACKEND_CACHE[cache_key]
 
         # 根据名称读取 .env 配置
         config = ModelRouter._load_backend_config(name)
         config.update(override_kwargs)
+        config = ModelRouter._normalize_backend_config(name, config)
 
         # 创建 VLLMPolicy 实例
         policy = VLLMPolicy(**config)
-        _BACKEND_CACHE[cache_key] = policy
+        if use_cache:
+            _BACKEND_CACHE[cache_key] = policy
         return policy
 
     @staticmethod
@@ -84,7 +91,7 @@ class ModelRouter:
 
         Args:
             backend_names: 指定要扫描的后端名称列表。为 None 时扫描全部已知后端
-                          （deepseek, vllm, openai, mimo 及任何自定义前缀）。
+                          （kimi, qwen, glm, deepseek, vllm, openai, mimo 及任何自定义前缀）。
 
         常用于"主模型用 DeepSeek，Red Agent 用 MiMo"的场景。
         """
@@ -93,7 +100,7 @@ class ModelRouter:
 
         # 默认扫描所有已知内置后端 + 环境变量中发现的自定义后端
         if backend_names is None:
-            backend_names = ["deepseek", "vllm", "openai", "mimo"]
+            backend_names = ["kimi", "qwen", "glm", "deepseek", "vllm", "openai", "mimo"]
             # 自动发现 .env 中其他以 _API_KEY 结尾的自定义后端
             for key in os.environ:
                 if key.endswith("_API_KEY"):
@@ -119,6 +126,19 @@ class ModelRouter:
         """检查某个后端是否已在 .env 中配置。"""
         prefix = name.upper()
         return get_env(f"{prefix}_API_KEY") is not None or get_env(f"{prefix}_BASE_URL") is not None
+
+    @staticmethod
+    def _normalize_backend_config(name: str, config: dict) -> dict:
+        """Apply provider constraints after environment and module overrides are merged."""
+        normalized = dict(config)
+        model_name = str(normalized.get("model_name", "")).lower()
+
+        # Kimi Code K3 currently accepts only this sampling pair.
+        if name == "kimi" and model_name in {"k3", "k3-256k"}:
+            normalized["temperature"] = 1.0
+            normalized["top_p"] = 0.95
+
+        return normalized
 
     @staticmethod
     def _load_backend_config(name: str) -> dict:
@@ -158,9 +178,19 @@ class ModelRouter:
         if max_tok is not None:
             config["max_tokens"] = int(max_tok)
 
+        extra_body: dict = {}
+
         # 推理模型（GLM-4.5/4.6 等）：关闭思考以加速、并确保 content 字段非空
         if (get_env(f"{prefix}_DISABLE_THINKING") or "").lower() in ("true", "1", "yes"):
-            config["extra_body"] = {"thinking": {"type": "disabled"}}
+            extra_body["thinking"] = {"type": "disabled"}
+
+        # Kimi K3 等推理模型支持 low/high/max；作为 extra_body 透传给兼容 API。
+        reasoning_effort = get_env(f"{prefix}_REASONING_EFFORT")
+        if reasoning_effort:
+            extra_body["reasoning_effort"] = reasoning_effort.lower().strip()
+
+        if extra_body:
+            config["extra_body"] = extra_body
 
         # 为 vllm 提供默认值（如果用户没配 model）
         if name == "vllm" and "model_name" not in config:
@@ -181,6 +211,12 @@ class ModelRouter:
             config["model_name"] = "gpt-4o"
         if name == "openai" and "base_url" not in config:
             config["base_url"] = "https://api.openai.com/v1"
+
+        # Kimi Code 会员 API（K3）
+        if name == "kimi" and "model_name" not in config:
+            config["model_name"] = "k3"
+        if name == "kimi" and "base_url" not in config:
+            config["base_url"] = "https://api.kimi.com/coding/v1"
 
         # 为 qwen / DashScope OpenAI 兼容接口提供默认值
         if name == "qwen" and "model_name" not in config:

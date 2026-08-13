@@ -1,0 +1,1557 @@
+{
+  "schema_version": "1.0",
+  "query": "仅依据 Qwen2.5 技术报告等一手来源，核验并说明 Qwen2.5 的预训练 token 规模、上下文窗口和后训练方法；不讨论其他模型。",
+  "created_at": "2026-08-13T09:50:48.600663+00:00",
+  "sources": [
+    {
+      "source_id": "src_82c677aa28ff9115",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "title": "Qwen2.5 Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Qwen, :, Yang An, Baosong Yang, Beichen Zhang, Binyuan Hui, B. Zheng, Bowen Yu, Chengyuan Li, Dayiheng Liu",
+      "year": "2024",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "a8ddbe9adf970f92be7d08a6c6ebb01e4e55f64af4e0741c95d7f60eab26c9d0",
+      "metadata": {
+        "paper_id": "W4405655184",
+        "citation_count": 97,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_23da1ab84bd518e2",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "title": "Qwen2.5-VL Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang, Jun Tang",
+      "year": "2025",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4407794264",
+        "citation_count": 74,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_053019c1b3a58533",
+      "url": "https://arxiv.org/abs/2409.12186",
+      "title": "Qwen2.5-Coder Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "Binyuan Hui, Jian Yang, Cui, Zeyu, Jiaxi Yang, Dayiheng Liu, Lei Zhang, Tianyu Liu, Jiajun Zhang, Bowen Yu, Lu, Keming",
+      "year": "2024",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4403796339",
+        "citation_count": 45,
+        "provider": "openalex"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_7fc1446f9ab4a622",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms of post-training, we implement intricate supervised finetuning with over 1 million samples, as well as multistage reinforcement learning. Post-training techniques enhance human preference, and notably improve long text generation, structural data analysis, and instruction following. To handle diverse and varied use cases effectively, we present Qwen2.5 LLM series in rich sizes. Open-weight offerings include base and instruction-tuned models, with quantized versions available. In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2.5-Turbo and Qwen2.5-Plus, both available from Alibaba Cloud Model Studio. Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger. Qwen2.5-Turbo and Qwen2.5-Plus offer superior cost-effectiveness while performing competitively against GPT-4o-mini and GPT-4o respectively. Additionally, as the foundation, Qwen2.5 models have been instrumental in training specialized models such as Qwen2.5-Math, Qwen2.5-Coder, QwQ, and multimodal models.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "0483dfb40c1b12ba064371da9f8497b97a1701ab940150cd93e63d7b6f59c580"
+    },
+    {
+      "evidence_id": "ev_3993fdd4f2a7298f",
+      "source_id": "src_23da1ab84bd518e2",
+      "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or points accurately. It provides robust structured data extraction from invoices, forms, and tables, as well as detailed analysis of charts, diagrams, and layouts. To handle complex inputs, Qwen2.5-VL introduces dynamic resolution processing and absolute time encoding, enabling it to process images of varying sizes and videos of extended durations (up to hours) with second-level event localization. This allows the model to natively perceive spatial scales and temporal dynamics without relying on traditional normalization techniques. By training a native dynamic-resolution Vision Transformer (ViT) from scratch and incorporating Window Attention, we reduce computational overhead while maintaining native resolution. As a result, Qwen2.5-VL excels not only in static image and document understanding but also as an interactive visual agent capable of reasoning, tool usage, and task execution in real-world scenarios such as operating computers and mobile devices. Qwen2.5-VL is available in three sizes, addressing diverse use cases from edge AI to high-performance computing. The flagship Qwen2.5-VL-72B model matches state-of-the-art models like GPT-4o and Claude 3.5 Sonnet, particularly excelling in document and diagram understanding. Additionally, Qwen2.5-VL maintains robust linguistic performance, preserving the core language competencies of the Qwen2.5 LLM.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "da29b5cb2aa57ccdde2a365faa41657e05d0017ea0f932664f3a06a6dcdfb8c6"
+    },
+    {
+      "evidence_id": "ev_e7c13be33f27e0e0",
+      "source_id": "src_053019c1b3a58533",
+      "text": "In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes six models: Qwen2.5-Coder-(0.5B/1.5B/3B/7B/14B/32B). As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math skills. These models have been evaluated on a wide range of code-related tasks, achieving state-of-the-art (SOTA) performance across more than 10 benchmarks, including code generation, completion, reasoning, and repair, consistently outperforming larger models of the same model size. We believe that the release of the Qwen2.5-Coder series will advance research in code intelligence and, with its permissive licensing, support wider adoption by developers in real-world applications.",
+      "kind": "abstract",
+      "task_id": "task_1",
+      "locator": "abstract",
+      "content_hash": "6e64bc0ee284e84b736e323797fa711ee8dac2328140fc648ec92816285751d9"
+    },
+    {
+      "evidence_id": "ev_e315dae0445d4fb9",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms of post-training, we implement intricate supervised finetuning with over 1 million samples, as well as multistage reinforcement learning, including offline learning DPO and online learning GRPO. Post-training techniques significantly enhance human preference, and notably improve long text generation, structural data analysis, and instruction following. To handle diverse and varied use cases effectively, we present Qwen2. 5 LLM series in rich configurations. The open-weight offerings include base models and instruction-tuned models in sizes of 0. 5B, 1. 5B, 3B, 7B, 14B, 32B, and 72B parameters. Quantized versions of the instruction-tuned models are also provided. Over 100 models can be accessed from Hugging Face Hub, ModelScope, and Kaggle.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "c7d32bce892dd503fcd3db8714295b98c285e209f4d6d917550d9e28dd7335e3"
+    },
+    {
+      "evidence_id": "ev_f031129647fa206e",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger. Qwen2. 5-Turbo and Qwen2. 5-Plus offer superior cost-effectiveness while performing competitively against GPT-4o-mini and GPT-4o respectively. Additionally, as the foundation, Qwen2. 5 models have been instrumental in training specialized models such as Qwen2. 5-Math Yang et al. 2024b , Qwen2. 5-Coder Hui et al. 2024 , QwQ Qwen Team 2024d , and multimodal models. Figure 1: In the iterative development of the Qwen series, data scaling has played a crucial role. Qwen 2. 5, which leverages 18 trillion tokens for pre-training, has demonstrated the most advanced capabilities within the Qwen series, especially in terms of domain expertise, underscoring the importance of scale together with mixture in enhancing the model’s capabilities.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "a64c39c88c89b3b7ddd7cb7bd87b37fa23c38862ac41cdbc26bbb5216c20f1d3"
+    },
+    {
+      "evidence_id": "ev_71706487370670dd",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Introduction The sparks of artificial general intelligence (AGI) are increasingly visible through the fast development of large foundation models, notably large language models (LLMs) Brown et al. 2020 OpenAI 2023 OpenAI 2024a Gemini Team 2024 Anthropic 2023a Anthropic 2023b Anthropic 2024 Bai et al. 2023 Yang et al. 2024a Touvron et al. 2023a Touvron et al. 2023b Dubey et al. 2024 . The continuous advancement in model and data scaling, combined with the paradigm of large-scale pre-training followed by high-quality supervised fine-tuning (SFT) and reinforcement learning from human feedback (RLHF) Ouyang et al. 2022 , has enabled large language models (LLMs) to develop emergent capabilities in language understanding, generation, and reasoning. Building on this foundation, recent breakthroughs in inference time scaling, particularly demonstrated by o1 OpenAI 2024b , have enhanced LLMs’ capacity for deep thinking through step-by-step reasoning and reflection. These developments have elevated the potential of language models, suggesting they may achieve significant breakthroughs in scientific exploration as they continue to demonstrate emergent capabilities indicative of more general artificial intelligence.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "749a7c86c60300192f46ea82d579a2a066c2a61da0e8dc8914dbf97d514cad91"
+    },
+    {
+      "evidence_id": "ev_50966dc738546eaf",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Besides the fast development of model capabilities, the recent two years have witnessed a burst of open (open-weight) large language models in the LLM community, for example, the Llama series Touvron et al. 2023a Touvron et al. 2023b Dubey et al. 2024 , Mistral series Jiang et al. 2023a Jiang et al. 2024a , and our Qwen series Bai et al. 2023 Yang et al. 2024a Qwen Team 2024a Hui et al. 2024 Qwen Team 2024c Yang et al. 2024b . The open-weight models have democratized the access of large language models to common users and developers, enabling broader research participation, fostering innovation through community collaboration, and accelerating the development of AI applications across diverse domains. Recently, we release the details of our latest version of the Qwen series, Qwen2. 5. In terms of the open-weight part, we release pre-trained and instruction-tuned models of 7 sizes, including 0. 5B, 1. 5B, 3B, 7B, 14B, 32B, and 72B, and we provide not only the original models in bfloat16 precision but also the quantized models in different precisions. Specifically, the flagship model Qwen2. 5-72B-Instruct demonstrates competitive performance against the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger. Additionally, we also release the proprietary models of Mixture-of-Experts (MoE, Lepikhin et al. 2020 Fedus et al. 2022 Zoph et al.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "0bf360e2260fb4c89022b2eaf8283fdd10ec8334e7396c68052be64711773d68"
+    },
+    {
+      "evidence_id": "ev_8cae5fee08114c8a",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5B, 7B, and 72B models, Qwen2. 5 brings back the 3B, 14B, and 32B models, which are more cost-effective for resource-limited scenarios and are under-represented in the current field of open foundation models. Qwen2. 5-Turbo and Qwen2. 5-Plus offer a great balance among accuracy, latency, and cost. Better in Data : The pre-training and post-training data have been improved significantly. The pre-training data increased from 7 trillion tokens to 18 trillion tokens, with focus on knowledge, coding, and mathematics. The pre-training is staged to allow transitions among different mixtures. The post-training data amounts to 1 million examples, across the stage of supervised finetuning (SFT, Ouyang et al. 2022 ), direct preference optimization (DPO, Rafailov et al. 2023 ), and group relative policy optimization (GRPO, Shao et al.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-5",
+      "content_hash": "801f74befecce9403cf529a880c4fe5fe9f55a41688be40880c74599a8f1b29e"
+    },
+    {
+      "evidence_id": "ev_52032d3be6b3d105",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API service, namely Qwen2. 5-Turbo and Qwen2. 5-Plus. Below, we provide details about the architecture of models. For dense models, we maintain the Transformer-based decoder architecture Vaswani et al. 2017 Radford et al. 2018 as Qwen2 Yang et al. 2024a . The architecture incorporates several key components: Grouped Query Attention (GQA, Ainslie et al. 2023 ) for efficient KV cache utilization, SwiGLU activation function Dauphin et al. 2017 for non-linear activation, Rotary Positional Embeddings (RoPE, Su et al. 2024 ) for encoding position information, QKV bias Su 2023 in the attention mechanism and RMSNorm Jiang et al. 2023b with pre-normalization to ensure stable training. Building upon the dense model architectures, we extend it to MoE model architectures.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-6",
+      "content_hash": "4f4a57bf60b5a9326f682bf349894978a06a36397d4469d0f253bbe73cd155c6"
+    },
+    {
+      "evidence_id": "ev_f7a93dc1afeac91e",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in model performance across downstream tasks. For tokenization, we utilize Qwen’s tokenizer Bai et al. 2023 , which implements byte-level byte-pair encoding (BBPE, Brown et al. 2020 Wang et al. 2020 Sennrich et al. 2016 ) with a vocabulary of 151,643 regular tokens. We have expanded the set of control tokens from 3 to 22 compared to previous Qwen versions, adding two new tokens for tool functionality and allocating the remainder for other model capabilities. This expansion establishes a unified vocabulary across all Qwen2. 5 models, enhancing consistency and reducing potential compatibility issues. Table 1: Model architecture and license of Qwen2. 5 open-weight models. Models Layers Heads (Q / KV) Tie Embedding Context / Generation Length License 0. 5B 14 / 2 32K / 8K Apache 2. 0 1. 5B 12 / 2 32K / 8K Apache 2. 0 16 / 2 32K / 8K Qwen Research 28 / 4 128K / 8K Apache 2.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-7",
+      "content_hash": "caedda9ba0fd095191680d74b075facd000a69cd476de1ce6985527ded948135"
+    },
+    {
+      "evidence_id": "ev_ff790f7655dbc287",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "0 40 / 8 128K / 8K Apache 2. 0 40 / 8 128K / 8K Apache 2. 0 64 / 8 128K / 8K Qwen Pre-training Our language model pre-training process consists of several key components. First, we carefully curate high-quality training data through sophisticated filtering and scoring mechanisms, combined with strategic data mixture. Second, we conduct extensive research on hyperparameter optimization to effectively train models at various scales. Finally, we incorporate specialized long-context pre-training to enhance the model’s ability to process and understand extended sequences. Below, we detail our approaches to data preparation, hyperparameter selection, and long-context training. Pre-training Data Qwen2. 5 demonstrates significant enhancements in pre-training data quality compared to its predecessor Qwen2. These improvements stem from several key aspects: Better data filtering . High-quality pre-training data is crucial for model performance, making data quality assessment and filtering a critical component of our pipeline. We leverage Qwen2-Instruct models as data quality filters that perform comprehensive, multi-dimensional analysis to evaluate and score training samples. The filtering method represents a significant advancement over our previous approach used for Qwen2, as it benefits from Qwen2’s expanded pre-training on a larger multilingual corpus.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-8",
+      "content_hash": "4e45f993cbf86e03301c7d445b731f02abfb658cd1ae897b97df7e47b865d866"
+    },
+    {
+      "evidence_id": "ev_6e9ed780aad75eae",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "The enhanced capabilities enable more nuanced quality assessment, resulting in both improved retention of high-quality training data and more effective filtering of low-quality samples across multiple languages. Better math and code data . During the pre-training phase of Qwen2. 5, we incorporate training data from Qwen2. 5-Math Yang et al. 2024b and Qwen2. 5-Coder Hui et al. 2024 . This data integration strategy proves highly effective, as these specialized datasets are instrumental in achieving state-of-the-art performance on mathematical and coding tasks. By leveraging these high-quality domain-specific datasets during pre-training, Qwen2. 5 inherits strong capabilities in both mathematical reasoning and code generation. Better synthetic data . To generate high-quality synthetic data, particularly in mathematics, code, and knowledge domains, we leverage both Qwen2-72B-Instruct Yang et al. 2024a and Qwen2-Math-72B-Instruct Qwen Team 2024c . The quality of this synthesized data is further enhanced through rigorous filtering using our proprietary general reward model and the specialized Qwen2-Math-RM-72B Qwen Team 2024c model. Better data mixture . To optimize the pre-training data distribution, we employ Qwen2-Instruct models to classify and balance content across different domains.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-9",
+      "content_hash": "9f7d41b8c83edd16a433b9a8e06ec07e0823d4c705b261dff2c29e43cb9d1292"
+    },
+    {
+      "evidence_id": "ev_0bf7e8b4147e9a95",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Our analysis revealed that domains like e-commerce, social media, and entertainment are significantly overrepresented in web-scale data, often containing repetitive, template-based, or machine-generated content. Conversely, domains such as technology, science, and academic research, while containing higher-quality information, are traditionally underrepresented. Through strategic down-sampling of overrepresented domains and up-sampling of high-value domains, we ensure a more balanced and information-rich training dataset that better serves our model’s learning objectives. Building on these techniques, we have developed a larger and higher-quality pre-training dataset, expanding from the 7 trillion tokens used in Qwen2 Yang et al. 2024a 18 trillion tokens. Scaling Law for Hyper-parameters We develop scaling laws for hyper-parameter based on the pre-training data of Qwen2. 5 Hoffmann et al. 2022 Kaplan et al. 2020 . While previous studies Dubey et al. 2024 Almazrouei et al. 2023 Hoffmann et al. 2022 primarily used scaling laws to determine optimal model sizes given compute budgets, we leverage them to identify optimal hyperparameters across model architectures. Specifically, our scaling laws help determine key training parameters like batch size and learning rate for both dense models and MoE models of varying sizes.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-10",
+      "content_hash": "4d7f9fff2758e1053969d936ec3ecf7a4582684647a1b14fd45eebcbe30e6e88"
+    },
+    {
+      "evidence_id": "ev_e6079f71d3cb0041",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Through extensive experimentation, we systematically study the relationship between model architecture and optimal training hyper-parameters. Specifically, we analyze how the optimal learning rate \\mu_{\\textrm{opt}} and batch size B_{\\textrm{opt}} vary with model size and pre-training data size . Our experiments cover a comprehensive range of architectures, including dense models with 44M to 14B parameters and MoE models with 44M to 1B activated parameters, trained on datasets ranging from 0. 8B to 600B tokens. Using these optimal hyper-parameter predictions, we then model the final loss as a function of model architecture and training data scale. Additionally, we leverage scaling laws to predict and compare the performance of MoE models with varying parameter counts against their dense counterparts. This analysis guides our hyper-parameter configuration for MoE models, enabling us to achieve performance parity with specific dense model variants (such as Qwen2. 5-72B and Qwen2. 5-14B) through careful tuning of both activated and total parameters. Long-context Pre-training For optimal training efficiency, Qwen2. 5 employs a two-phase pre-training approach: an initial phase with a 4,096-token context length, followed by an extension phase for longer sequences.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-11",
+      "content_hash": "ab11de70df06193470bc6b1dcfe7132e88fc30e5ab0bbfcaf7f84ee0dd619ea5"
+    },
+    {
+      "evidence_id": "ev_7837f492625dc83b",
+      "source_id": "src_82c677aa28ff9115",
+      "text": "Following the strategy used in Qwen2, we extend the context length from 4,096 to 32,768 tokens during the final pre-training stage for all model variants except Qwen2. 5-Turbo. Concurrently, we increase the base frequency of RoPEfrom 10,000 to 1,000,000 using the ABF technique Xiong et al. 2023 For Qwen2. 5-Turbo, we implement a progressive context length expansion strategy during training, advancing through four stages: 32,768 tokens, 65,536 tokens, 131,072 tokens, and ultimately 262,144 tokens, with a RoPE b [CONTENT_TRUNCATED: 95653 chars total, showing first 15000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-12",
+      "content_hash": "e50332ed38e33cd60dda9d89e783ea34104b995b5be89c0151e7679008c4686f"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_4f8e0b1a97cdfa87",
+        "text": "本报告仅依据 Qwen2.5 官方技术报告（arXiv:2412.15115）等一手来源，对 Qwen2.5 的三项关键技术事实进行核验。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0361,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8d5ec9b2e8c7fd1e",
+        "text": "结论如下：**(1) 预训练 token 规模——已确认**：官方报告摘要与引言明确记载预训练数据从前代（Qwen2）的 7 万亿 token 扩展至 **18 万亿 token**，重点覆盖知识、代码与数学领域 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0867,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_52032d3be6b3d105"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a6dbd0f97adfe0a5",
+        "text": "**(2) 上下文窗口——部分确认**：报告 Table 1 及正文给出各规模模型的上下文与生成长度配置，主流开源规格支持 128K token 上下文 （分档细节见下文，部分数字在当前证据粒度下需谨慎对待）；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0672,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f7a93dc1afeac91e",
+          "ev_52032d3be6b3d105",
+          "ev_e6079f71d3cb0041"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5562589a8d846f05",
+        "text": "**(3) 后训练方法——已确认**：报告摘要明确记载采用**超过 100 万条样本的精细监督微调（SFT）**，以及包含**离线 DPO 与在线 GRPO** 的多阶段强化学习 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0886,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_71706487370670dd"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_236037f6c8743356",
+        "text": "Qwen2.5 是阿里巴巴 Qwen 团队于 2024 年发布的大语言模型系列，其官方技术报告（Qwen Team, An Yang 等，2024 年 12 月，arXiv:2412.15115）是唯一被本文用作核验基准的一手来源 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.106,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f031129647fa206e",
+          "ev_f7a93dc1afeac91e",
+          "ev_6e9ed780aad75eae"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_66631f349846d536",
+        "text": "该报告系统介绍了 Qwen2.5 在预训练数据规模、模型架构与后训练管线上的改进，涵盖开源稠密模型（0.5B 至 72B）及专有 API 模型 Qwen2.5-Turbo / Qwen2.5-Plus。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1219,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_52032d3be6b3d105",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8831ef5069406f90",
+        "text": "研究问题要求核验三项具体事实：预训练 token 规模、上下文窗口长度、后训练方法，且不得混用其他模型的信息。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0264,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e6079f71d3cb0041"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e6079f71d3cb0041",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Through extensive experimentation, we systematically study the relationship between model architecture and optimal training hyper-parameters. Specifically, we analyze how the optimal learning rate \\mu_{\\textrm{opt}} and batch size B_{\\textrm{opt}} vary with model size and pre-training data size . Our experiments cover a comprehensive range of architectures, including dense models with 44M to 14B parameters and MoE models with 44M to 1B activated parameters, trained on datasets ranging from 0. 8B",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2b2f2e7119490b66",
+        "text": "一手来源中的原始表述可直接引用：",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_a3fe01b8ff2d42b0",
+        "text": "> \"we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to **18 trillion tokens**.\"（摘要）",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.8864,
+        "support_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_7fc1446f9ab4a622"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_7fc1446f9ab4a622",
+          "ev_0bf7e8b4147e9a95"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7fc1446f9ab4a622",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1b85f3140343f21a",
+        "text": "> \"The pre-training data increased from 7 trillion tokens to 18 trillion tokens, with focus on knowledge, coding, and mathematics.\"（引言）",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.8937,
+        "support_evidence_ids": [
+          "ev_8cae5fee08114c8a"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_7fc1446f9ab4a622",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7ee75460b4d05bf2",
+        "text": "即预训练语料从 Qwen2 的 7 万亿 token 扩展至 **18 万亿（18T）token**，扩充方向聚焦于知识、编程与数学。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.117,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_0bf7e8b4147e9a95",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0bf7e8b4147e9a95",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Our analysis revealed that domains like e-commerce, social media, and entertainment are significantly overrepresented in web-scale data, often containing repetitive, template-based, or machine-generated content. Conversely, domains such as technology, science, and academic research, while containing higher-quality information, are traditionally underrepresented. Through strategic down-sampling of overrepresented domains and up-sampling of high-value domains, we ensure a more balanced and informa",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3b7ee8dd14a28d13",
+        "text": "两份子任务核验结果在该数字上完全一致，且证据审计中该表述获得检索证据的直接支持。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_ab49b8c023f34881",
+        "text": "关于数据工程细节（如使用 Qwen2-Instruct 进行数据质量过滤、融入 Qwen2.5-Math 与 Qwen2.5-Coder 的数据及合成数据），子任务报告中有所提及，与  及 Qwen2.5-Coder 技术报告  所述方向一致；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1,
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0731,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6e9ed780aad75eae",
+          "ev_f031129647fa206e",
+          "ev_7fc1446f9ab4a622"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6e9ed780aad75eae",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "The enhanced capabilities enable more nuanced quality assessment, resulting in both improved retention of high-quality training data and more effective filtering of low-quality samples across multiple languages. Better math and code data . During the pre-training phase of Qwen2. 5, we incorporate training data from Qwen2. 5-Math Yang et al. 2024b and Qwen2. 5-Coder Hui et al. 2024 . This data integration strategy proves highly effective, as these specialized datasets are instrumental in achievin",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_54d2d5fbd7a44ada",
+        "text": "但这些细节在当前证据审计中未被逐条独立证实，建议以 arXiv 原文预训练章节复核后再作强断言。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_ff1b8b9a3d0b610b",
+        "text": "技术报告 Table 1（Context / Generation Length 列）及正文给出了分档配置 ：",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f7a93dc1afeac91e",
+          "ev_52032d3be6b3d105",
+          "ev_e6079f71d3cb0041"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Neither evidence snippet mentions Table 1 nor Context/Generation Length columns or tiered configuration.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_28a69b2b898c387b",
+        "text": "**开源稠密模型**：7B、14B、32B、72B 规格支持 **128K token** 上下文，生成长度上限 **8K token**；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2216,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_52032d3be6b3d105",
+          "ev_e315dae0445d4fb9",
+          "ev_50966dc738546eaf"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c0ab06bec14ace22",
+        "text": "小规格（0.5B/1.5B/3B）为 32K 上下文。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4875,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_50966dc738546eaf",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_50966dc738546eaf",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Besides the fast development of model capabilities, the recent two years have witnessed a burst of open (open-weight) large language models in the LLM community, for example, the Llama series Touvron et al. 2023a Touvron et al. 2023b Dubey et al. 2024 , Mistral series Jiang et al. 2023a Jiang et al. 2024a , and our Qwen series Bai et al. 2023 Yang et al. 2024a Qwen Team 2024a Hui et al. 2024 Qwen Team 2024c Yang et al. 2024b . The open-weight models have democratized the access of large language",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_20da1e7b787c7218",
+        "text": "**长上下文预训练**：采用渐进式扩展策略，初始阶段为 4,096 token，最终阶段扩展至 32,768 token，并通过 ABF 技术将 RoPE 基频从 10,000 提升至 1,000,000 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.7,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7837f492625dc83b",
+          "ev_e6079f71d3cb0041",
+          "ev_52032d3be6b3d105"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Numbers (4,096→32,768; RoPE 10,000→1,000,000 via ABF) match, but the 4,096→32,768 extension occurred in a single final pre-training stage, not via a 'progressive expansion strategy' (which applies only to Qwen2.5-Turbo). Compound claim not fully entailed.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7837f492625dc83b",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Following the strategy used in Qwen2, we extend the context length from 4,096 to 32,768 tokens during the final pre-training stage for all model variants except Qwen2. 5-Turbo. Concurrently, we increase the base frequency of RoPEfrom 10,000 to 1,000,000 using the ABF technique Xiong et al. 2023 For Qwen2. 5-Turbo, we implement a progressive context length expansion strategy during training, advancing through four stages: 32,768 tokens, 65,536 tokens, 131,072 tokens, and ultimately 262,144 tokens",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e6079f71d3cb0041",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Through extensive experimentation, we systematically study the relationship between model architecture and optimal training hyper-parameters. Specifically, we analyze how the optimal learning rate \\mu_{\\textrm{opt}} and batch size B_{\\textrm{opt}} vary with model size and pre-training data size . Our experiments cover a comprehensive range of architectures, including dense models with 44M to 14B parameters and MoE models with 44M to 1B activated parameters, trained on datasets ranging from 0. 8B",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_76505b0434dc7319",
+        "text": "**Qwen2.5-Turbo**（专有 MoE 模型）：训练中经 32K→65,536→131,072→262,144 的渐进扩展，最终支持最长 **100 万（1M）token** 上下文 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_7837f492625dc83b",
+          "ev_52032d3be6b3d105",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_7837f492625dc83b",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Following the strategy used in Qwen2, we extend the context length from 4,096 to 32,768 tokens during the final pre-training stage for all model variants except Qwen2. 5-Turbo. Concurrently, we increase the base frequency of RoPEfrom 10,000 to 1,000,000 using the ABF technique Xiong et al. 2023 For Qwen2. 5-Turbo, we implement a progressive context length expansion strategy during training, advancing through four stages: 32,768 tokens, 65,536 tokens, 131,072 tokens, and ultimately 262,144 tokens",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_23fd04372ac51129",
+        "text": "生成长度整体从前代 Qwen2 的 2K 提升至 8K 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 1.0,
+        "support_evidence_ids": [
+          "ev_52032d3be6b3d105",
+          "ev_f7a93dc1afeac91e"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_52032d3be6b3d105",
+          "ev_f7a93dc1afeac91e",
+          "ev_ff790f7655dbc287"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Evidence directly states generation length increased from 2K tokens to 8K tokens compared to Qwen2.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e584df9c70f0bc3a",
+        "text": "**证据约束说明**：上下文窗口的\"128K 主流规格\"这一主结论可由 Table 1 的检索证据支持，但具体到\"小模型 32K\"\"ABF 基频 1,000,000\"\"Turbo 1M\"等数值，当前证据审计未能从检索片段中逐条独立核实，故本报告将其作为\"技术报告记载、待原文复核\"的内容呈现，不作为无条件事实断言。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.047,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f7a93dc1afeac91e",
+          "ev_7837f492625dc83b",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7837f492625dc83b",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Following the strategy used in Qwen2, we extend the context length from 4,096 to 32,768 tokens during the final pre-training stage for all model variants except Qwen2. 5-Turbo. Concurrently, we increase the base frequency of RoPEfrom 10,000 to 1,000,000 using the ABF technique Xiong et al. 2023 For Qwen2. 5-Turbo, we implement a progressive context length expansion strategy during training, advancing through four stages: 32,768 tokens, 65,536 tokens, 131,072 tokens, and ultimately 262,144 tokens",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_619a54c124396ed2",
+        "text": "> \"we implement intricate supervised finetuning with over 1 million samples, as well as multistage reinforcement learning, including offline learning **DPO** and online learning **GRPO**.\"（摘要）",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.8667,
+        "support_evidence_ids": [
+          "ev_e315dae0445d4fb9"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_7fc1446f9ab4a622",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7a885ac24456e1ba",
+        "text": "即后训练管线包含两大部分：",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_7ec094677b93a0cf",
+        "text": "**精细监督微调（SFT）**：使用**超过 100 万条样本**构建的高质量指令数据；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0464,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_71706487370670dd",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_71706487370670dd",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Introduction The sparks of artificial general intelligence (AGI) are increasingly visible through the fast development of large foundation models, notably large language models (LLMs) Brown et al. 2020 OpenAI 2023 OpenAI 2024a Gemini Team 2024 Anthropic 2023a Anthropic 2023b Anthropic 2024 Bai et al. 2023 Yang et al. 2024a Touvron et al. 2023a Touvron et al. 2023b Dubey et al. 2024 . The continuous advancement in model and data scaling, combined with the paradigm of large-scale pre-training foll",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_044c0fe2489af7fe",
+        "text": "**多阶段强化学习**：包括**离线强化学习 DPO**（Direct Preference Optimization，直接偏好优化）与**在线强化学习 GRPO**（Group Relative Policy Optimization，组相对策略优化）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2786,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3cf396a384f9d1e4",
+        "text": "该两项方法名称（DPO、GRPO）及 SFT 样本规模（>1M）均在证据审计中获得直接支持 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_71706487370670dd"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Evidence explicitly mentions supervised finetuning with over 1 million samples, offline learning DPO, and online learning GRPO.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9241e1e61e6302ff",
+        "text": "报告称该管线显著增强了人类偏好对齐、长文本生成、结构化数据分析与指令遵循能力——此效果性表述方向与报告一致，但当前无独立检索片段逐字支持，宜视为报告的自我陈述而非外部验证结论。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_f4a4cee35ac62f7c",
+        "text": "三项核验事实之间存在内在技术逻辑：",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_f05e9f9e70f72fcc",
+        "text": "**数据规模扩充（7T→18T）** 是能力提升的基础，且扩充重点（知识、代码、数学）与 Qwen 团队同期发布的 Qwen2.5-Coder 、Qwen2.5-Math 专项模型的数据资产直接相关，体现\"专项模型反哺通用基座\"的数据复用策略。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0363,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e7c13be33f27e0e0"
+        ],
+        "source_ids": [
+          "src_053019c1b3a58533"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e7c13be33f27e0e0",
+            "source_id": "src_053019c1b3a58533",
+            "text": "In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes six models: Qwen2.5-Coder-(0.5B/1.5B/3B/7B/14B/32B). As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities w",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bd80d53d70fc9491",
+        "text": "**上下文窗口** 的扩展依赖预训练阶段的位置编码改造（RoPE 基频调整、渐进式长度训练），说明 128K/1M 并非推理期外推的权宜手段，而是训练内建能力 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0398,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_52032d3be6b3d105",
+          "ev_f7a93dc1afeac91e",
+          "ev_7837f492625dc83b"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f8bd6f82caa30322",
+        "text": "**后训练管线（SFT→DPO→GRPO）** 代表 2024 年业界主流的\"离线偏好优化 + 在线强化学习\"混合范式：DPO 以较低算力成本完成偏好对齐，GRPO 则通过在线采样进一步优化生成质量。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0574,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_71706487370670dd",
+          "ev_e315dae0445d4fb9"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_71706487370670dd",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Introduction The sparks of artificial general intelligence (AGI) are increasingly visible through the fast development of large foundation models, notably large language models (LLMs) Brown et al. 2020 OpenAI 2023 OpenAI 2024a Gemini Team 2024 Anthropic 2023a Anthropic 2023b Anthropic 2024 Bai et al. 2023 Yang et al. 2024a Touvron et al. 2023a Touvron et al. 2023b Dubey et al. 2024 . The continuous advancement in model and data scaling, combined with the paradigm of large-scale pre-training foll",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0b487126f6b0a25f",
+        "text": "摘要中\"over 1 million samples\"的 SFT 规模也反映了数据驱动的指令微调思路 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.85,
+        "support_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_7fc1446f9ab4a622"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_7fc1446f9ab4a622",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Abstract directly states supervised finetuning with over 1 million samples; the interpretive framing about data-driven instruction tuning is a reasonable characterization supported by the evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_7fc1446f9ab4a622",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c886cb8c6975d3c3",
+        "text": "需要指出：**Qwen2.5-VL 技术报告 ** 属于多模态视觉语言模型，与本次语言模型核验问题无直接关系，本文未将其作为事实依据。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0237,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3993fdd4f2a7298f"
+        ],
+        "source_ids": [
+          "src_23da1ab84bd518e2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3993fdd4f2a7298f",
+            "source_id": "src_23da1ab84bd518e2",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_56d0fdb114fb0b28",
+        "text": "两份子任务核验结果在核心事实上**无矛盾**：18T token、128K 上下文、SFT + DPO + GRPO 三项结论完全一致。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1258,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dc2d895dd4eb1faf",
+        "text": "差异仅在于证据强度：子任务 1 自称直接读取 arXiv 全文（自评置信度 0.98），子任务 2 因检索工具超时未能当场比对原文（自评 0.8）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_52032d3be6b3d105",
+          "ev_f7a93dc1afeac91e",
+          "ev_e6079f71d3cb0041"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_52032d3be6b3d105",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2024 Better in Use : Several key limitations of Qwen2 in use have been eliminated, including larger generation length (from 2K tokens to 8K tokens), better support for structured input and output, (e. g. , tables and JSON), and easier tool use. In addition, Qwen2. 5-Turbo supports a context length of up to 1 million tokens. Architecture & Tokenizer Basically, the Qwen2. 5 series include dense models for opensource, namely Qwen2. 5-0. 5B / 1. 5B / 3B / 7B / 14B / 32B / 72B, and MoE models for API",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cff3e2cc1836e8d0",
+        "text": "结合证据审计结果，18T 与后训练管线两项有检索片段直接支持，置信度高；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0361,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b25a0c2f5955d383",
+        "text": "上下文窗口的分档数值细节证据较弱，故本报告对后者采取保守表述。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_2a27bb3ca06112e1",
+        "text": "这是两个来源之间的主要张力，已通过区分\"已核实事实\"与\"报告记载待复核细节\"予以消解。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_9966963acaa57359",
+        "text": "**可引用的硬事实**：若需在后续工作中引用 Qwen2.5 的规格，\"18T 预训练 token\"与\"SFT（>1M 样本）+ DPO + GRPO\"两条可放心引用 arXiv:2412.15115 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.8,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "18T pre-training tokens, SFT >1M samples, DPO, and GRPO are all supported, but the arXiv:2412.15115 identifier does not appear in the evidence, so the full claim is not entailed.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fc90929bd3a9fae5",
+        "text": "**上下文窗口需注明规格档位**：Qwen2.5 不同参数规模与专有版的上下文长度不同（32K/128K/1M），引用时应明确所指具体模型变体，避免笼统表述。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.083,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f7a93dc1afeac91e",
+          "ev_e315dae0445d4fb9",
+          "ev_8cae5fee08114c8a"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f7a93dc1afeac91e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "This is achieved by replacing standard feed-forward network (FFN) layers with specialized MoE layers, where each layer comprises multiple FFN experts and a routing mechanism that dispatches tokens to the top-K experts. Following the approaches demonstrated in Qwen1. 5-MoE Yang et al. 2024a , we implement fine-grained expert segmentation Dai et al. 2024 and shared experts routing Rajbhandari et al. 2022 Dai et al. 2024 . These architectural innovations have yielded substantial improvements in mod",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d1a484f108405302",
+        "text": "**方法论意义**：Qwen2.5 报告展示了\"大规模数据扩充 + 训练内建长上下文 + 混合式强化学习\"的完整工程路线，是理解 2024 年开源 LLM 技术演进的代表性一手文献。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0382,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_f031129647fa206e",
+          "ev_50966dc738546eaf"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a53024dcd1dbfba1",
+        "text": "仅依据一手来源核验：Qwen2.5 的预训练数据规模为 **18 万亿 token**（较前代 7 万亿大幅扩充，聚焦知识、代码、数学）；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e315dae0445d4fb9",
+          "ev_8cae5fee08114c8a",
+          "ev_0bf7e8b4147e9a95"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_426e2c916302c61e",
+        "text": "上下文窗口按模型规格分档，主流开源模型支持 128K token、专有版 Qwen2.5-Turbo 支持最长 1M token（主结论可靠，分档数值细节建议原文复核）；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f031129647fa206e",
+          "ev_8cae5fee08114c8a",
+          "ev_52032d3be6b3d105"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f031129647fa206e",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2. 5-Turbo and Qwen2. 5-Plus, both available from Alibaba Cloud Model Studio Qwen2. 5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2. 5-72B-Instruct outperforms a number of open and proprietary models and demonstrat",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_aca7d004207c9921",
+        "text": "后训练方法为**超 100 万样本的 SFT + 离线 DPO + 在线 GRPO 的多阶段管线** 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.95,
+        "support_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8cae5fee08114c8a",
+          "ev_e315dae0445d4fb9",
+          "ev_71706487370670dd"
+        ],
+        "source_ids": [
+          "src_82c677aa28ff9115"
+        ],
+        "reason": "Abstract directly states intricate SFT with over 1 million samples plus multistage RL including offline DPO and online GRPO.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8cae5fee08114c8a",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "2022 ), namely Qwen2. 5-Turbo and Qwen2. 5-Plus Qwen2. 5-Turbo is identified as qwen-turbo-2024-11-01 and Qwen2. 5-Plus is identified as qwen-plus-2024-xx-xx (to be released) in the API. , which performs competitively against GPT-4o-mini and GPT-4o respectively. In this technical report, we introduce Qwen2. 5, the result of our continuous endeavor to create better LLMs. Below, we show the key features of the latest version of Qwen: Better in Size : Compared with Qwen2, in addition to 0. 5B, 1. 5",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_e315dae0445d4fb9",
+            "source_id": "src_82c677aa28ff9115",
+            "text": "Qwen2. 5 Technical Report Qwen Team Abstract In this report, we introduce Qwen2. 5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2. 5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert k",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_96d6d48ede3b5c85",
+        "text": "无与其他模型混淆之处，证据审计中无任何被驳斥（refuted）的主张。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      }
+    ],
+    "source_count": 3,
+    "evidence_count": 15,
+    "supported_count": 7,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 38,
+    "coverage": 0.1556,
+    "primary_source_ratio": 1.0,
+    "fulltext_source_ratio": 0.3333,
+    "verification_mode": "hybrid"
+  }
+}

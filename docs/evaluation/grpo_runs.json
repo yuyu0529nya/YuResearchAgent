@@ -1,0 +1,74 @@
+{
+  "artifact_schema": "grpo-local-artifact-manifest-v1",
+  "generated_at": "2026-08-13",
+  "scope": "Four local single-GPU TRL + LoRA + GRPO runs on GSM8K",
+  "raw_artifacts_committed": false,
+  "hash_algorithm": "sha256",
+  "runs": [
+    {
+      "id": "qwen25-7b-instruct",
+      "model": "Qwen2.5-7B-Instruct",
+      "train_steps": 300,
+      "evaluation_n": 100,
+      "baseline_correct": 89,
+      "post_correct": 91,
+      "baseline_accuracy": 0.89,
+      "post_accuracy": 0.91,
+      "significance": "not_reconstructable_without_paired_predictions",
+      "artifacts": {
+        "adapter_model.safetensors": "c72ef3e9365b21c9b4d1a54190cb1073460700309ffd63553a2138dd2c17c37b",
+        "train.log": "2ad776772c513906757fddabdb40ffb681b1b559158e5feb2209b482d59ee45c",
+        "eval_base.log": "80bb28587679b4e1e45fcaa21a6ae2e7fea3a12248d2c6dacef693dfe779484c",
+        "eval_post.log": "919cac8aa95f5e5d62aa7129472b8272688099a47ab7a2fa62b34a21586c1c65"
+      }
+    },
+    {
+      "id": "qwen25-1.5b-instruct",
+      "model": "Qwen2.5-1.5B-Instruct",
+      "train_steps": 400,
+      "evaluation_n": 500,
+      "baseline_correct": 333,
+      "post_correct": 347,
+      "baseline_accuracy": 0.666,
+      "post_accuracy": 0.694,
+      "approx_independent_p_value": 0.34,
+      "artifacts": {
+        "adapter_model.safetensors": "0495d94a950b5d108629f9abac70b43281497d9d7a3d1989f269439326a6478d",
+        "train.log": "da275b02bfcd55ce836b59b20275d63e3a5addd051d2bb03ae8aa87df8840b4e",
+        "eval_base_full.log": "8466aa49dc12dce111f5d7e9f373227d7c06005220f3130202961ff468973ce1",
+        "eval_post_full.log": "2711de62ae6f134e1df6093e30dc2ef3d027085c8f3ceb14ec2ccbc4e5d445d6"
+      }
+    },
+    {
+      "id": "qwen25-1.5b-instruct-v2",
+      "model": "Qwen2.5-1.5B-Instruct",
+      "train_steps": 500,
+      "evaluation_n": 500,
+      "baseline_reference": "qwen25-1.5b-instruct",
+      "post_correct": 347,
+      "post_accuracy": 0.694,
+      "artifacts": {
+        "adapter_model.safetensors": "37aab64bee83b746fd4d99fb33ef2253c95daee067dc445142fe94215fe0a61f",
+        "train_v2.log": "aa16050de34bbd08e3f1783eb8d26b56a08d216dbc35fe3bbf5c8c13b01bd3e9",
+        "eval_post_v2.log": "ba58bb5a9dd226596c257f1b0bddbca204127e9d8ee980accbbd495fffd255a3"
+      }
+    },
+    {
+      "id": "qwen25-1.5b-base",
+      "model": "Qwen2.5-1.5B",
+      "train_steps": 500,
+      "evaluation_n": 300,
+      "baseline_correct": 165,
+      "post_correct": 180,
+      "baseline_accuracy": 0.55,
+      "post_accuracy": 0.60,
+      "approx_independent_p_value": 0.21,
+      "artifacts": {
+        "adapter_model.safetensors": "629ccdfcedd1c7fbfc578d4125f38a262da55233780952377502ee4d4d805728",
+        "train_base.log": "576bf6e027b36c305d793e7a383372e3a03842a864ea005c11890b30648e6bd6",
+        "eval_base_basemodel.log": "3ee51d923c0c7535a2f72b3f8c981a753a780d70c3722609704c05a649f1be9b",
+        "eval_post_base.log": "9de301c53ccbe4249335dbcf178b14caf7e23b9fe21c5b74fb8755513db0130b"
+      }
+    }
+  ]
+}

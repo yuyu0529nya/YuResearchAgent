@@ -42,6 +42,14 @@ def test_bootstrap_empty_input():
     assert r["n"] == 0
 
 
+def test_bootstrap_single_pair_is_not_significant():
+    r = S.bootstrap_ci_paired([0.25], seed=1)
+    assert r["mean_diff"] == 0.25
+    assert r["significant"] is False
+    assert r["p_value"] == 1.0
+    assert r["method"] == "insufficient_n"
+
+
 def test_two_sample_reproducible_with_seed():
     assert S.bootstrap_ci_two_sample(_A, _B, seed=3) == S.bootstrap_ci_two_sample(_A, _B, seed=3)
 

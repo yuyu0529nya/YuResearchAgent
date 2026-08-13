@@ -1,22 +1,22 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=77.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "yu-research-agent"
-version = "0.1.0"
-description = "基于自进化+对抗降噪的 YuResearchAgent"
+version = "0.2.0"
+description = "Evidence-grounded multi-agent deep research system"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 authors = [
     {name = "yuyu0529nya", email = "yuyu0529nya@gmail.com"},
 ]
-keywords = ["deep-research", "agent", "llm", "self-evolution", "adversarial", "multi-agent"]
+keywords = ["deep-research", "agent", "llm", "evidence", "citation", "multi-agent"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -26,46 +26,43 @@ classifiers = [
 ]
 
 dependencies = [
-    # 核心依赖
     "openai>=1.0",
-    "transformers>=4.40",
-    "torch>=2.0",
-    "numpy",
-    "aiohttp",
-    "pyyaml",
-    "python-dotenv>=1.0",  # 多后端 .env 配置支持
-    "sentence-transformers",
-    "networkx",           # 用于 TextRank 等图算法
-    "scikit-learn",
-    "tqdm",
-    "datasets",
-    "pandas",
-    "matplotlib",
+    "numpy>=1.24",
+    "aiohttp>=3.8",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
     "beautifulsoup4>=4.12",
-    # vLLM 推理服务（可选，本地部署时安装）
-    # "vllm",
-    # PEFT / LoRA 微调（自进化模块需要）
-    # "peft",
-    # "accelerate",
-    # "deepspeed",
+    "pypdf>=5.0",
+    "ddgs>=9.0",
 ]
 
 [project.optional-dependencies]
 web = [
     "gradio>=4.0",
 ]
-# vLLM 推理服务依赖
+semantic = [
+    "sentence-transformers>=2.5",
+]
+analysis = [
+    "datasets>=2.14",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+observability = [
+    "langsmith>=0.1.0",
+]
 serve = [
     "vllm>=0.4.0",
 ]
-# 自进化训练依赖
 train = [
+    "torch>=2.0",
+    "transformers>=4.40",
+    "datasets>=2.14",
+    "trl>=0.16",
     "peft>=0.11.0",
     "accelerate>=0.30.0",
-    "deepspeed>=0.14.0",
     "wandb",
 ]
-# 开发依赖
 dev = [
     "pytest>=7.0",
     "pytest-asyncio",
@@ -74,9 +71,26 @@ dev = [
     "mypy",
     "flake8",
 ]
-# 全部可选依赖
 all = [
-    "yu-research-agent[web,serve,train,dev]",
+    "gradio>=4.0",
+    "sentence-transformers>=2.5",
+    "datasets>=2.14",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "langsmith>=0.1.0",
+    "vllm>=0.4.0",
+    "torch>=2.0",
+    "transformers>=4.40",
+    "trl>=0.16",
+    "peft>=0.11.0",
+    "accelerate>=0.30.0",
+    "wandb",
+    "pytest>=7.0",
+    "pytest-asyncio",
+    "black",
+    "isort",
+    "mypy",
+    "flake8",
 ]
 
 [project.scripts]
@@ -84,17 +98,20 @@ all = [
 run-research = "scripts.run_single:main"
 run-eval = "scripts.run_eval:main"
 run-ablation = "scripts.run_ablation:main"
-run-benchmark = "scripts.run_benchmark:main"
+run-benchmark = "scripts.run_benchmark:cli"
 run-judge = "scripts.run_judge:main"
 run-evolution = "scripts.run_evolution:main"
+replay-evidence = "scripts.replay_evidence:main"
 
 [project.urls]
 Homepage = "https://github.com/yuyu0529nya/YuResearchAgent"
 Repository = "https://github.com/yuyu0529nya/YuResearchAgent"
 Issues = "https://github.com/yuyu0529nya/YuResearchAgent/issues"
 
-[tool.setuptools]
-packages = ["src", "evaluation", "scripts", "configs"]
+[tool.setuptools.packages.find]
+include = ["src*", "evaluation*", "scripts*", "configs*"]
+exclude = ["scripts.grpo_poc.results*"]
+namespaces = true
 
 [tool.setuptools.package-data]
 configs = ["*.yaml", "**/*.yaml"]

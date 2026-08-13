@@ -1,0 +1,2756 @@
+{
+  "schema_version": "1.0",
+  "query": "对比分析 2024 年主流大语言模型（GPT-4o、Claude 3.5、Gemini 1.5、Qwen2.5）在中文推理、代码生成和长上下文任务上的表现差异，并分析其技术路线差异。",
+  "created_at": "2026-08-13T09:15:36.074657+00:00",
+  "sources": [
+    {
+      "source_id": "src_56a4b18e6d493df8",
+      "url": "https://arxiv.org/pdf/2412.15115v2",
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_72287b4069d726b9",
+      "url": "https://github.com/QwenLM/Qwen/blob/main/eval/evaluate_cmmlu.py",
+      "title": "Qwen/eval/evaluate_cmmlu.py at main · QwenLM/Qwen · GitHub",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "github.com",
+      "quality_score": 0.8,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_19e559f747c1a2b0",
+      "url": "https://qwen.readthedocs.io/en/latest/getting_started/quantization_benchmark.html",
+      "title": "Performance of Quantized Models - Qwen",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "qwen.readthedocs.io",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_1d8486f4e6d61588",
+      "url": "https://llm-stats.com/benchmarks/mmlu",
+      "title": "MMLU Leaderboard - llm-stats.com",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "llm-stats.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_11a175deb0699be8",
+      "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%B1%B3MiMo",
+      "title": "小米MiMo",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "zh.wikipedia.org",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+brave_html+wikipedia_api"
+      }
+    },
+    {
+      "source_id": "src_cefdaa90162510da",
+      "url": "https://arxiv.org/pdf/2412.15115",
+      "title": "Qwen2.5 Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Qwen, :, Yang An, Baosong Yang, Beichen Zhang, Binyuan Hui, B. Zheng, Bowen Yu, Chengyuan Li, Dayiheng Liu",
+      "year": "2024",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4405655184",
+        "citation_count": 97,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_753808342024103d",
+      "url": "https://arxiv.org/pdf/2502.13923",
+      "title": "Qwen2.5-VL Technical Report",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang, Jun Tang",
+      "year": "2025",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4407794264",
+        "citation_count": 74,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_b578bae9441845da",
+      "url": "https://arxiv.org/abs/2403.05530",
+      "title": "[2403.05530] Gemini 1.5: Unlocking multimodal understanding ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_590c60c32b341deb",
+      "url": "https://arxiv.org/html/2403.05530v2",
+      "title": "Gemini 1.5: Unlocking multimodal understanding across ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_142c1efe3008f74d",
+      "url": "https://storage.googleapis.com/cloud-samples-data/generative-ai/pdf/2403.05530.pdf",
+      "title": "Gemini_1_5_Pro_Technical_Report_Arxiv_1805",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "storage.googleapis.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_ddf5101716e33e57",
+      "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
+      "title": "Gemini1.5:Unlockingmultimodal ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "storage.googleapis.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_1941e73c7d3b1243",
+      "url": "https://www.emergentmind.com/topics/gemini-1-5",
+      "title": "Gemini-1.5: Multimodal Long-Context Model",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "emergentmind.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_8549bffa2f8a5ed4",
+      "url": "https://arxiv.org/pdf/2403.05530",
+      "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Gemini Robotics Team, Petko Georgiev, Ving Ian Lei, Ryan Burnell, Libin Bai, Anmol Gulati, Garrett Tanzer, Damien Vincent, Zhufeng Pan, Wang, Shibo",
+      "year": "2024",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4392679398",
+        "citation_count": 294,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_e0707e953e72cc6d",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11604-024-01619-y.pdf",
+      "title": "Diagnostic performances of GPT-4o, Claude 3 Opus, and Gemini 1.5 Pro in “Diagnosis Please” cases",
+      "source_type": "paper",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "Yuki Sonoda, Ryo Kurokawa, Yuta Nakamura, Jun Kanzawa, Mariko Kurokawa, Yuji Ohizumi, Wataru Gonoi, Osamu Abe",
+      "year": "2024",
+      "publisher": "link.springer.com",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "paper_id": "W4400260578",
+        "citation_count": 89,
+        "provider": "openalex"
+      }
+    },
+    {
+      "source_id": "src_0b73209e8c8a1000",
+      "url": "https://arxiv.org/html/2406.16772v2",
+      "title": "OlympicArena Finals: Claude 3.5 Sonnet vs. GPT-4o - arXiv.org",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "arxiv.org",
+      "quality_score": 0.9,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_61222487ea8e09ff",
+      "url": "https://www.panoramicsoft.com/blog/claude-vs-chatgpt-vs-gemini-coding",
+      "title": "Claude 3.5 Sonnet vs. GPT-4o vs. Gemini 1.5 Pro: The Ultimate ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "panoramicsoft.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_66523f41496d5453",
+      "url": "https://explore.n1n.ai/blog/gpt-4o-vs-claude-3-5-sonnet-vs-gemini-1-5-pro-comparison-2026-03-01",
+      "title": "GPT-4o vs Claude 3.5 Sonnet vs Gemini 1.5 Pro: Best AI Model ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "explore.n1n.ai",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_56bc36249f2d6c4e",
+      "url": "https://baeseokjae.github.io/posts/gpt4o-vs-claude-vs-gemini-developer-2026",
+      "title": "GPT-4o vs Claude 3.5 Sonnet vs Gemini 1.5 Pro: Developer ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "baeseokjae.github.io",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_cb483b57df58eee3",
+      "url": "https://pristren.com/blog/llm-comparison-guide-2026",
+      "title": "GPT-4o vs Claude 3.5 Sonnet vs Gemini Pro vs Deepseek V3 ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "pristren.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_4deb80c1fac63336",
+      "url": "https://www.learnaiforge.com/articles/gpt-4o-vs-claude-sonnet-vs-gemini-pro-comparison",
+      "title": "GPT-4o vs Claude 3.5 Sonnet vs Gemini 1.5 Pro: Which One ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "learnaiforge.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_c1d718e383834bbd",
+      "url": "https://www.cnblogs.com/freedom-w/p/19138021",
+      "title": "Qwen2.5技术报告 - piggy侠 - 博客园",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "cnblogs.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_1bd57011194523f8",
+      "url": "https://hyper.ai/cn/papers/2412.15115",
+      "title": "Qwen2.5 技术报告 | Papers | HyperAI超神经",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "hyper.ai",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_f6f112b7fea47bb2",
+      "url": "https://blog.csdn.net/2401_85343303/article/details/144833024",
+      "title": "【技术解读】Qwen2.5：基于18万亿Token训练的技术报告全解析_qwen2.5...",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "blog.csdn.net",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_6142f74a3caf0a90",
+      "url": "https://zhuanlan.zhihu.com/p/14710836610",
+      "title": "Qwen 2.5 技术报告（中文速通版） - 知乎",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "zhuanlan.zhihu.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_5332457c39111432",
+      "url": "https://zhuanlan.zhihu.com/p/13936916587",
+      "title": "【LLM技术报告】Qwen2.5技术报告（全文） - 知乎",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "zhuanlan.zhihu.com",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    },
+    {
+      "source_id": "src_51ce4721a0d11e58",
+      "url": "https://zhang-ren.github.io/Qwen-Technical-Report/report.html",
+      "title": "Qwen 系列完整技术演进深度调研报告 | Qwen 系列技术演进",
+      "source_type": "web",
+      "task_ids": [
+        "task_4"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "zhang-ren.github.io",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_b522223d3a82cc02",
+      "source_id": "src_56a4b18e6d493df8",
+      "text": "Jan 6, 2025 · Qwen2 . 5 has demonstrated top-tier performance on a wide range of benchmarks eval -uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B -Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "10e58d4ad07744e934ea78f77e2256f0bfae24c2458a937509b989a49bbb770a"
+    },
+    {
+      "evidence_id": "ev_3a03424030487c4d",
+      "source_id": "src_72287b4069d726b9",
+      "text": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/ eval /evaluate_ cmmlu .py at main · QwenLM/Qwen",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a9438be1991dedd7d6b964766467fa3fd6064f39813862d0e9e11f16ec5643fe"
+    },
+    {
+      "evidence_id": "ev_ffc03d65f79782bb",
+      "source_id": "src_19e559f747c1a2b0",
+      "text": "This section reports the generation performance of quantized models (including GPTQ and AWQ) of the Qwen2 series. Specifically, we report: MMLU (Accuracy) C-Eval (Accuracy) IFEval (Strict Prompt-Level Accuracy) We use greedy decoding in evaluating all models.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "733428fa89f15a1f7798998d353ce55c7dc6e3610b8b28d353488079d4b8b2d2"
+    },
+    {
+      "evidence_id": "ev_1c0756e431579fc8",
+      "source_id": "src_1d8486f4e6d61588",
+      "text": "9 hours ago · MMLU leaderboard — GPT - 5 leads 100 AI models at 0.925. Massive Multitask Language Understanding benchmark testing knowledge across 57 diverse subjects includin…",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c17086cdfa139226fad6f17aba9e3e14933ee42def817fcf96bb6c659d2436d2"
+    },
+    {
+      "evidence_id": "ev_f6590e256cf30b38",
+      "source_id": "src_11a175deb0699be8",
+      "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "f41c244e65c4ffebbf1566b852409d6de8d818d4f1622ae0ee385e3bbee821dd"
+    },
+    {
+      "evidence_id": "ev_e79dcfec5c476900",
+      "source_id": "src_cefdaa90162510da",
+      "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms of post-training, we implement intricate supervised finetuning with over 1 million samples, as well as multistage reinforcement learning. Post-training techniques enhance human preference, and notably improve long text generation, structural data analysis, and instruction following. To handle diverse and varied use cases effectively, we present Qwen2.5 LLM series in rich sizes. Open-weight offerings include base and instruction-tuned models, with quantized versions available. In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2.5-Turbo and Qwen2.5-Plus, both available from Alibaba Cloud Model Studio. Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger. Qwen2.5-Turbo and Qwen2.5-Plus offer superior cost-effectiveness while performing competitively against GPT-4o-mini and GPT-4o respectively. Additionally, as the foundation, Qwen2.5 models have been instrumental in training specialized models such as Qwen2.5-Math, Qwen2.5-Coder, QwQ, and multimodal models.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "0483dfb40c1b12ba064371da9f8497b97a1701ab940150cd93e63d7b6f59c580"
+    },
+    {
+      "evidence_id": "ev_41878e1a83f0f093",
+      "source_id": "src_753808342024103d",
+      "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or points accurately. It provides robust structured data extraction from invoices, forms, and tables, as well as detailed analysis of charts, diagrams, and layouts. To handle complex inputs, Qwen2.5-VL introduces dynamic resolution processing and absolute time encoding, enabling it to process images of varying sizes and videos of extended durations (up to hours) with second-level event localization. This allows the model to natively perceive spatial scales and temporal dynamics without relying on traditional normalization techniques. By training a native dynamic-resolution Vision Transformer (ViT) from scratch and incorporating Window Attention, we reduce computational overhead while maintaining native resolution. As a result, Qwen2.5-VL excels not only in static image and document understanding but also as an interactive visual agent capable of reasoning, tool usage, and task execution in real-world scenarios such as operating computers and mobile devices. Qwen2.5-VL is available in three sizes, addressing diverse use cases from edge AI to high-performance computing. The flagship Qwen2.5-VL-72B model matches state-of-the-art models like GPT-4o and Claude 3.5 Sonnet, particularly excelling in document and diagram understanding. Additionally, Qwen2.5-VL maintains robust linguistic performance, preserving the core language competencies of the Qwen2.5 LLM.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "da29b5cb2aa57ccdde2a365faa41657e05d0017ea0f932664f3a06a6dcdfb8c6"
+    },
+    {
+      "evidence_id": "ev_aaf7e511a6d06105",
+      "source_id": "src_b578bae9441845da",
+      "text": "Mar 8, 2024 · In this report , we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context , including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the ...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "6e28dd76068daf7044238dd65d8181a8b7705065c8069b3cbfe822609cd64594"
+    },
+    {
+      "evidence_id": "ev_a59ab9aefdb32ff7",
+      "source_id": "src_590c60c32b341deb",
+      "text": "In this report , we present the latest model of the Gemini family, Gemini 1.5 Pro, a highly compute-efficient multimodal mixture-of-experts model capable of recalling and reasoning over fine-grained information from millions of tokens of context , including multiple long documents and hours of video and audio.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "86aafb0be7d5c0e38afd39b91df82c5d94c09bee804a9f09c4923737f11c17c5"
+    },
+    {
+      "evidence_id": "ev_492a66c75ade44a7",
+      "source_id": "src_142c1efe3008f74d",
+      "text": "Gemini Team, Google1 In this report , we present the latest model of the Gemini family, Gemini 1.5 Pro, a highly compute-e cient multimodal mixture-of-experts model capable of recalling and reasoning over fine-grained information from millions of tokens of context , including multiple long documents and hours of video and audio.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "debc0bc38b5074783b62c7df7f09714d200c402bbee68780b3d251100829dcf3"
+    },
+    {
+      "evidence_id": "ev_99e6876e1a5b53cb",
+      "source_id": "src_ddf5101716e33e57",
+      "text": "In this report , we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context , including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the ...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "40bf290595435a017682d25d6ea399bfb358691e7bd60522be902735d81e053a"
+    },
+    {
+      "evidence_id": "ev_4ee6182d90cffd6d",
+      "source_id": "src_1941e73c7d3b1243",
+      "text": "Gemini - 1.5 is a family of compute-efficient multimodal models that process millions of tokens from text, audio, and video using a sparse Mixture-of-Experts Transformer architecture . The model demonstrates near-perfect recall (>99%) in long- context retrieval tasks, outperforming previous versions and competitors on diverse benchmarks. Gemini - 1.5 supports mixed-modality processing for practical ...",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "08a2a3f2454d4b927d813f8b4f051ca9e2bc49721c51eb9213cd52fe4ddcbb26"
+    },
+    {
+      "evidence_id": "ev_6d2d8f5cc1600fd8",
+      "source_id": "src_8549bffa2f8a5ed4",
+      "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweight variant designed for efficiency with minimal regression in quality. Gemini 1.5 models achieve near-perfect recall on long-context retrieval tasks across modalities, improve the state-of-the-art in long-document QA, long-video QA and long-context ASR, and match or surpass Gemini 1.0 Ultra's state-of-the-art performance across a broad set of benchmarks. Studying the limits of Gemini 1.5's long-context ability, we find continued improvement in next-token prediction and near-perfect retrieval (&gt;99%) up to at least 10M tokens, a generational leap over existing models such as Claude 3.0 (200k) and GPT-4 Turbo (128k). Finally, we highlight real-world use cases, such as Gemini 1.5 collaborating with professionals on completing their tasks achieving 26 to 75% time savings across 10 different job categories, as well as surprising new capabilities of large language models at the frontier; when given a grammar manual for Kalamang, a language with fewer than 200 speakers worldwide, the model learns to translate English to Kalamang at a similar level to a person who learned from the same content.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "fac0a83d4dc3798f9e2d459378a8f916893cdb67db29490b24f42ab43ed82c39"
+    },
+    {
+      "evidence_id": "ev_c38ee2ee0a70c097",
+      "source_id": "src_e0707e953e72cc6d",
+      "text": "PURPOSE: Large language models (LLMs) are rapidly advancing and demonstrating high performance in understanding textual information, suggesting potential applications in interpreting patient histories and documented imaging findings. As LLMs continue to improve, their diagnostic abilities are expected to be enhanced further. However, there is a lack of comprehensive comparisons between LLMs from different manufacturers. In this study, we aimed to test the diagnostic performance of the three latest major LLMs (GPT-4o, Claude 3 Opus, and Gemini 1.5 Pro) using Radiology Diagnosis Please Cases, a monthly diagnostic quiz series for radiology experts. MATERIALS AND METHODS: Clinical history and imaging findings, provided textually by the case submitters, were extracted from 324 quiz questions originating from Radiology Diagnosis Please cases published between 1998 and 2023. The top three differential diagnoses were generated by GPT-4o, Claude 3 Opus, and Gemini 1.5 Pro, using their respective application programming interfaces. A comparative analysis of diagnostic performance among these three LLMs was conducted using Cochrane's Q and post hoc McNemar's tests. RESULTS: The respective diagnostic accuracies of GPT-4o, Claude 3 Opus, and Gemini 1.5 Pro for primary diagnosis were 41.0%, 54.0%, and 33.9%, which further improved to 49.4%, 62.0%, and 41.0%, when considering the accuracy of any of the top three differential diagnoses. Significant differences in the diagnostic performance were observed among all pairs of models. CONCLUSION: Claude 3 Opus outperformed GPT-4o and Gemini 1.5 Pro in solving radiology quiz cases. These models appear capable of assisting radiologists when supplied with accurate evaluations and worded descriptions of imaging findings.",
+      "kind": "abstract",
+      "task_id": "task_3",
+      "locator": "abstract",
+      "content_hash": "830637549309ec583b52d8bff61041e5315cf48991a7a1b7c2982f493a8755a7"
+    },
+    {
+      "evidence_id": "ev_f560f72eb4916882",
+      "source_id": "src_0b73209e8c8a1000",
+      "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "51abeb3aec21d5ddc0b813a62f95baec9eb4fbb6e2b6594f80b5e4ab97e867e6"
+    },
+    {
+      "evidence_id": "ev_ac5da9d6e84c2edb",
+      "source_id": "src_61222487ea8e09ff",
+      "text": "Feb 2, 2026 · A comprehensive, 2000-word deep dive comparing the top AI models for software engineering. We benchmark reasoning , context windows, and real-world coding performance .",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "9762f2edb3035fc05daeaa76d9c1e9936ee229c2aac99737766f96d4b4f49140"
+    },
+    {
+      "evidence_id": "ev_925b87a7b6a0397a",
+      "source_id": "src_66523f41496d5453",
+      "text": "Mar 1 , 2026 · An in-depth technical comparison of the industry's leading LLMs— GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro—evaluating coding performance , context windows, and multimodal capabilities for developers.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "3dcc95d83d1de1eb5cd84a2319858e8594b80e72f76b72bd67d7268256327b7e"
+    },
+    {
+      "evidence_id": "ev_3e3f5f6c5e95cb1a",
+      "source_id": "src_56bc36249f2d6c4e",
+      "text": "Apr 17, 2026 · Real benchmark data comparing GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro on coding , speed, cost, and developer experience in 2026.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "041910ebcd51fa3ae741077228ae46c81429ea84f8de938edfaed115ec961ed6"
+    },
+    {
+      "evidence_id": "ev_b2fef0f9ec3abbc9",
+      "source_id": "src_cb483b57df58eee3",
+      "text": "May 14, 2026 · Real benchmark scores, exact pricing, and honest assessments of GPT-4o , Claude 3.5 Sonnet , Gemini 1.5 Pro, and Deepseek V3 in 2026. Find which model fits your use case.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "a48db2048ee197e0346656653fe2d92c3d8819ac73b3ade14bbb57ff562872e3"
+    },
+    {
+      "evidence_id": "ev_20c71637ff4efcc8",
+      "source_id": "src_4deb80c1fac63336",
+      "text": "May 19, 2026 · GPT-4o vs Claude 3.5 Sonnet vs Gemini 1.5 Pro: Which One Should You Use? A practical comparison of the three most widely used LLMs in 2025. No marketing benchmarks : what each model does well, where it falls short, and how to choose for your use case.",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "d778abae9c9a980edec243ebe9db7d8ed6072af5d4bac758552dc3db2369ec6b"
+    },
+    {
+      "evidence_id": "ev_0d57142530ba239c",
+      "source_id": "src_c1d718e383834bbd",
+      "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "8e4e07ae932e4612bf019fee547257b051d2138312f40c7d89224ddaa1bf9d0f"
+    },
+    {
+      "evidence_id": "ev_39423474c49d8c7a",
+      "source_id": "src_1bd57011194523f8",
+      "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "96373391d2be8d8c20b537d57fb7891745267c42f19738a29e729435e8c64da0"
+    },
+    {
+      "evidence_id": "ev_6f81dfe2f6f9b659",
+      "source_id": "src_f6f112b7fea47bb2",
+      "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "ddc26874b0df3e3763c9f40078a62b1730e669904d4b82c5a04241427cdd15ee"
+    },
+    {
+      "evidence_id": "ev_2076666b780c7a33",
+      "source_id": "src_6142f74a3caf0a90",
+      "text": "引入 稀疏注意力机制，显著提高了推理速度，对处理长文时用户体验至关重要。对于1M token的序列，这种方法将注意力机制的计算负载减少了12. 5 倍。图3展示了 Qwen2.5 -Turbo在不同硬件配置下的首个token生成时间（TTFT），实现了3.2到4.3倍的速度提升。 结论 Qwen2.5 代表了 大型语言模型（LLMs） 的重要进步 ...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "5e1e438b4e77c06961bcf238d4028f64fbd48080602098badb1b8ce7210b7cb8"
+    },
+    {
+      "evidence_id": "ev_24d67bba76f7056b",
+      "source_id": "src_5332457c39111432",
+      "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "f889788e6e8debdde9a03003e6363f94aeae40091f60934d806920c5b0e5602b"
+    },
+    {
+      "evidence_id": "ev_d2706adbd74976b9",
+      "source_id": "src_51ce4721a0d11e58",
+      "text": "Qwen 系列完整技术演进深度调研报告 ← 返回演示文稿 Qwen 系列完整技术演进深度调研报告 从 LLaMA 追随者到全模态 架构 创新者的进化之路 报告日期: 2026 年 4 月 12 日 调研范围: Qwen-1 → Qwen2 → Qwen-VL → Qwen2 -VL → Qwen2.5 → Qwen2.5 -VL → Qwen2.5 -Omni → Qwen3 → Qwen3-VL → ...",
+      "kind": "search_snippet",
+      "task_id": "task_4",
+      "locator": "",
+      "content_hash": "f0433a9add15ff16f5662a1e59587a1817821fcc3c105ae715c6113fa25a97c3"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_9587045d7112d5ff",
+        "text": "由于多次检索遇到网络超时（Brave 429、Yahoo 超时、arXiv PDF 超时），仅获得有限的可验证结果，以下为核实情况：",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0673,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_452ce2d2b516decd",
+        "text": "**Qwen2.5 技术报告（arXiv:2412.15115，Qwen Team / Alibaba，2024年12月发布，2025年1月更新）** 是最权威的一手来源。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2009,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24d67bba76f7056b",
+          "ev_e79dcfec5c476900",
+          "ev_d2706adbd74976b9"
+        ],
+        "source_ids": [
+          "src_5332457c39111432",
+          "src_cefdaa90162510da",
+          "src_51ce4721a0d11e58"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e1560100b4f4b969",
+        "text": "该报告明确指出 Qwen2.5-72B-Instruct 在语言理解、推理、数学、代码等广泛基准上达到顶级水平，性能可与 Llama-3-405B-Instruct 竞争，并包含与 GPT-4o 等闭源模型的对比表格（含 C-Eval、CMMLU）。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.078,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_39423474c49d8c7a",
+          "ev_6f81dfe2f6f9b659",
+          "ev_24d67bba76f7056b"
+        ],
+        "source_ids": [
+          "src_1bd57011194523f8",
+          "src_f6f112b7fea47bb2",
+          "src_5332457c39111432"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e03e441bf5b7c617",
+        "text": "**Qwen 官方仓库（GitHub: QwenLM/Qwen）** 提供官方 CMMLU 评测脚本（evaluate_cmmlu.py），说明 CMMLU 是 Qwen 系列官方采用的标准中文评测集。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0935,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3a03424030487c4d",
+          "ev_0d57142530ba239c",
+          "ev_d2706adbd74976b9"
+        ],
+        "source_ids": [
+          "src_72287b4069d726b9",
+          "src_c1d718e383834bbd",
+          "src_51ce4721a0d11e58"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3a03424030487c4d",
+            "source_id": "src_72287b4069d726b9",
+            "text": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/ eval /evaluate_ cmmlu .py at main · QwenLM/Qwen",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_90f7bba6e3599671",
+        "text": "**Qwen 官方文档（qwen.readthedocs.io）** 报告了 Qwen2 系列量化模型在 C-Eval、MMLU、IFEval 上的准确率，确认 C-Eval 为其常规评测维度。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.099,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_ffc03d65f79782bb",
+          "ev_39423474c49d8c7a",
+          "ev_d2706adbd74976b9"
+        ],
+        "source_ids": [
+          "src_19e559f747c1a2b0",
+          "src_1bd57011194523f8",
+          "src_51ce4721a0d11e58"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_ffc03d65f79782bb",
+            "source_id": "src_19e559f747c1a2b0",
+            "text": "This section reports the generation performance of quantized models (including GPTQ and AWQ) of the Qwen2 series. Specifically, we report: MMLU (Accuracy) C-Eval (Accuracy) IFEval (Strict Prompt-Level Accuracy) We use greedy decoding in evaluating all models.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_50280bfb015c53a6",
+        "text": "GPT-4o、Claude 3.5 Sonnet、Gemini 1.5 Pro 在 C-Eval / CMMLU 上的具体分数未能在本次检索中获取原文数据。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1794,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_925b87a7b6a0397a",
+          "ev_3e3f5f6c5e95cb1a",
+          "ev_b2fef0f9ec3abbc9"
+        ],
+        "source_ids": [
+          "src_66523f41496d5453",
+          "src_56bc36249f2d6c4e",
+          "src_cb483b57df58eee3"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_925b87a7b6a0397a",
+            "source_id": "src_66523f41496d5453",
+            "text": "Mar 1 , 2026 · An in-depth technical comparison of the industry's leading LLMs— GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro—evaluating coding performance , context windows, and multimodal capabilities for developers.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3e3f5f6c5e95cb1a",
+            "source_id": "src_56bc36249f2d6c4e",
+            "text": "Apr 17, 2026 · Real benchmark data comparing GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro on coding , speed, cost, and developer experience in 2026.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1231c499cba38e4c",
+        "text": "已知公开报道中的常见数值（如 GPT-4o C-Eval 约 76–80 分、Qwen2.5-72B CMMLU 领先等）**本次未能验证**，不建议直接引用。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0309,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e79dcfec5c476900",
+          "ev_41878e1a83f0f093",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_cefdaa90162510da",
+          "src_753808342024103d",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_11dd0eea69daf876",
+        "text": "Claude 3.5 官方（Anthropic）基本未发布 C-Eval/CMMLU 成绩，数据多来自第三方评测（如 SuperCLUE、AGI-Eval 榜单），本次亦未能获取。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0639,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_41878e1a83f0f093",
+          "ev_f560f72eb4916882",
+          "ev_925b87a7b6a0397a"
+        ],
+        "source_ids": [
+          "src_753808342024103d",
+          "src_0b73209e8c8a1000",
+          "src_66523f41496d5453"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f21019b8d5a9e091",
+        "text": "直接阅读 arXiv:2412.15115 中的 Table（含 GPT-4o-mini/GPT-4o 对比）；",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1852,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e79dcfec5c476900",
+          "ev_41878e1a83f0f093",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_cefdaa90162510da",
+          "src_753808342024103d",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ab54e3500f54a4b3",
+        "text": "SuperCLUE 2024 中文大模型排行榜（cluebenchmarks.com）；",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2152,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6f81dfe2f6f9b659",
+          "ev_24d67bba76f7056b",
+          "ev_aaf7e511a6d06105"
+        ],
+        "source_ids": [
+          "src_f6f112b7fea47bb2",
+          "src_5332457c39111432",
+          "src_b578bae9441845da"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c150cde5958efc3f",
+        "text": "OpenCompass 司南榜单（opencompass.org.cn）覆盖四款模型的 C-Eval/CMMLU 成绩。",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0556,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3a03424030487c4d",
+          "ev_f6590e256cf30b38",
+          "ev_ffc03d65f79782bb"
+        ],
+        "source_ids": [
+          "src_72287b4069d726b9",
+          "src_11a175deb0699be8",
+          "src_19e559f747c1a2b0"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3a03424030487c4d",
+            "source_id": "src_72287b4069d726b9",
+            "text": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/ eval /evaluate_ cmmlu .py at main · QwenLM/Qwen",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b7f670262ae28655",
+        "text": "**置信度：0.35**（来源权威但因网络故障仅获取摘要级信息，具体分数未能核实）",
+        "task_id": "task_1",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0266,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c4cb7c9a513dfb94",
+        "text": "**检索情况说明**：本次任务中 web_search 工具两次调用均因后端超时（Brave/Yahoo/Wikipedia 均 HTTP 000）未返回任何结果，系统要求停止调用。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0194,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_6f81dfe2f6f9b659",
+          "ev_d2706adbd74976b9"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_f6f112b7fea47bb2",
+          "src_51ce4721a0d11e58"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_855019c17b87c160",
+        "text": "以下数字为各模型官方发布时广泛报道的公开评测数据，但本次未能通过工具在线核验，请视作\"待核实\"信息。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0538,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659",
+          "ev_39423474c49d8c7a"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2",
+          "src_1bd57011194523f8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_20aadb48648b38dc",
+        "text": "要点：2024 年中后代码生成头部是 Claude 3.5 Sonnet，普遍超过 GPT-4o；Qwen2.5-Coder 系列在开源模型中代码能力突出（Coder-32B HumanEval 报道约 92%）。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.111,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f560f72eb4916882",
+          "ev_41878e1a83f0f093",
+          "ev_925b87a7b6a0397a"
+        ],
+        "source_ids": [
+          "src_0b73209e8c8a1000",
+          "src_753808342024103d",
+          "src_66523f41496d5453"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bea543c80ac05756",
+        "text": "要点：长上下文是 Gemini 1.5 的差异化优势（原生 1M+ token 训练）；Claude 在 200K 内稳定性最佳；GPT-4o 与 Qwen2.5 主要覆盖 128K 场景。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1852,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_c38ee2ee0a70c097",
+          "ev_f6590e256cf30b38"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_e0707e953e72cc6d",
+          "src_11a175deb0699be8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_c38ee2ee0a70c097",
+            "source_id": "src_e0707e953e72cc6d",
+            "text": "PURPOSE: Large language models (LLMs) are rapidly advancing and demonstrating high performance in understanding textual information, suggesting potential applications in interpreting patient histories and documented imaging findings. As LLMs continue to improve, their diagnostic abilities are expected to be enhanced further. However, there is a lack of comprehensive comparisons between LLMs from different manufacturers. In this study, we aimed to test the diagnostic performance of the three late",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_33efe9173285db64",
+        "text": "**GPT-4o**：原生多模态端到端 Transformer，统一音频/视觉/文本 token 化。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1235,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_41878e1a83f0f093",
+          "ev_e79dcfec5c476900",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_753808342024103d",
+          "src_cefdaa90162510da",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_60f34b205e16ac0f",
+        "text": "**Claude 3.5**：强调 Constitutional AI 与安全对齐，推理与代码（agentic coding）优先。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1435,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_925b87a7b6a0397a",
+          "ev_3e3f5f6c5e95cb1a",
+          "ev_41878e1a83f0f093"
+        ],
+        "source_ids": [
+          "src_66523f41496d5453",
+          "src_56bc36249f2d6c4e",
+          "src_753808342024103d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_925b87a7b6a0397a",
+            "source_id": "src_66523f41496d5453",
+            "text": "Mar 1 , 2026 · An in-depth technical comparison of the industry's leading LLMs— GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro—evaluating coding performance , context windows, and multimodal capabilities for developers.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3e3f5f6c5e95cb1a",
+            "source_id": "src_56bc36249f2d6c4e",
+            "text": "Apr 17, 2026 · Real benchmark data comparing GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro on coding , speed, cost, and developer experience in 2026.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_528b6a704d545040",
+        "text": "**Gemini 1.5**：稀疏 MoE 架构 + 超长上下文训练，长文检索为核心卖点。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1942,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_6d2d8f5cc1600fd8",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_8549bffa2f8a5ed4",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a3b305d2f53a5122",
+        "text": "**Qwen2.5**：开源 dense 模型（0.5B–72B），18T tokens 训练，中文能力与代码专项（Coder）优化。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2266,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_39423474c49d8c7a",
+          "ev_e79dcfec5c476900"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_1bd57011194523f8",
+          "src_cefdaa90162510da"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a7e7892f45e612c0",
+        "text": "**已核实事实**：无（搜索工具全部超时失败）。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_ce8d40703aa3550d",
+        "text": "**未核实/冲突项**：以上所有具体分数；不同来源对同一模型 HumanEval 等分数存在口径差异（采样方式、prompt 设置不同）。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0435,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2076666b780c7a33",
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_6142f74a3caf0a90",
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2076666b780c7a33",
+            "source_id": "src_6142f74a3caf0a90",
+            "text": "引入 稀疏注意力机制，显著提高了推理速度，对处理长文时用户体验至关重要。对于1M token的序列，这种方法将注意力机制的计算负载减少了12. 5 倍。图3展示了 Qwen2.5 -Turbo在不同硬件配置下的首个token生成时间（TTFT），实现了3.2到4.3倍的速度提升。 结论 Qwen2.5 代表了 大型语言模型（LLMs） 的重要进步 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_30f5dd13da08b46b",
+        "text": "**置信度：0.35** —— 数字方向与相对排名（Claude 代码领先、Gemini 长上下文领先、Qwen2.5 开源最强之一）大致可信，但所有具体数值未经本次工具核验，建议后续重试检索官方技术报告确认。",
+        "task_id": "task_2",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0619,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24d67bba76f7056b",
+          "ev_f6590e256cf30b38",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_5332457c39111432",
+          "src_11a175deb0699be8",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b0548db756b17506",
+        "text": "**架构**：未公开技术报告，参数规模保密；关键创新是**端到端原生多模态**——文本、视觉、音频由单一模型统一处理，替代了 GPT-4 的\"ASR→LLM→TTS\"级联流水线，显著降低语音延迟。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.069,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659",
+          "ev_24d67bba76f7056b"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2",
+          "src_5332457c39111432"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a0933502fa04ba31",
+        "text": "**训练**：强化数据规模与多模态联合训练，沿用 RLHF 路线；细节未公开。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1076,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_39423474c49d8c7a",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_1bd57011194523f8",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_10d0a863b453a256",
+        "text": "**上下文**：128K tokens，未做超长上下文扩展。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1852,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_f6590e256cf30b38",
+          "ev_e79dcfec5c476900"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_11a175deb0699be8",
+          "src_cefdaa90162510da"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2b2e18fdbe6ce805",
+        "text": "**技术取向**：重\"全能型实时交互\"，而非长上下文。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1054,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b6f6b54a6d0c78ec",
+        "text": "**架构**：未公开架构细节，一般认为为稠密 Transformer；Anthropic 强调 **Constitutional AI（宪法式对齐）** 训练路线。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0624,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6f81dfe2f6f9b659",
+          "ev_41878e1a83f0f093",
+          "ev_f6590e256cf30b38"
+        ],
+        "source_ids": [
+          "src_f6f112b7fea47bb2",
+          "src_753808342024103d",
+          "src_11a175deb0699be8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a3b2abdf61ce046a",
+        "text": "**训练方法**：公开资料侧重 RLHF/RLAIF（基于 AI 反馈的强化学习）与安全对齐，而非架构披露；官方宣称 Sonnet 以中等规模超越 Claude 3 Opus（更大模型），推测有显著的数据/训练效率改进。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1083,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659",
+          "ev_39423474c49d8c7a"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2",
+          "src_1bd57011194523f8"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_082a90e48af83e08",
+        "text": "**上下文**：200K tokens，强调\"有效上下文\"与高召回准确率。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1425,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_f6590e256cf30b38",
+          "ev_e79dcfec5c476900"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_11a175deb0699be8",
+          "src_cefdaa90162510da"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8479f87025c76857",
+        "text": "**技术取向**：代码与代理（agentic）能力突出（SWE-bench 领先），长上下文保持中等规模但注重召回质量。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0742,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_f6590e256cf30b38",
+          "ev_39423474c49d8c7a"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_11a175deb0699be8",
+          "src_1bd57011194523f8"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f94968f4f5371104",
+        "text": "**架构**：公开为**稀疏 MoE（Mixture-of-Experts）多模态 Transformer**，高计算效率设计；Flash 为蒸馏轻量版（后续报告披露 Flash 由 Pro 蒸馏而来）。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1018,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_6f81dfe2f6f9b659",
+          "ev_d2706adbd74976b9"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_f6f112b7fea47bb2",
+          "src_51ce4721a0d11e58"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6964dd8033eb067c",
+        "text": "**上下文扩展技术（其最大亮点）**：支持 **100 万–1000 万 tokens** 上下文，长文本检索召回率 >99%（直至至少 10M tokens），远超同期 Claude 3（200K）与 GPT-4 Turbo（128K）；通过 MoE 稀疏激活 + 长上下文训练数据工程实现。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1512,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_680e577daaaf002b",
+        "text": "**技术取向**：长上下文 + 全模态（文档/视频/音频）统一推理。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1537,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d2706adbd74976b9",
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_51ce4721a0d11e58",
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d2706adbd74976b9",
+            "source_id": "src_51ce4721a0d11e58",
+            "text": "Qwen 系列完整技术演进深度调研报告 ← 返回演示文稿 Qwen 系列完整技术演进深度调研报告 从 LLaMA 追随者到全模态 架构 创新者的进化之路 报告日期: 2026 年 4 月 12 日 调研范围: Qwen-1 → Qwen2 → Qwen-VL → Qwen2 -VL → Qwen2.5 → Qwen2.5 -VL → Qwen2.5 -Omni → Qwen3 → Qwen3-VL → ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e7c4cffe5735049b",
+        "text": "**架构**：开源稠密模型系列（0.5B–72B）；闭源两款 **MoE**：Qwen2.5-Turbo 与 Qwen2.5-Plus（分别对标 GPT-4o-mini 与 GPT-4o）。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2205,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_e79dcfec5c476900",
+          "ev_0d57142530ba239c",
+          "ev_f6590e256cf30b38"
+        ],
+        "source_ids": [
+          "src_cefdaa90162510da",
+          "src_c1d718e383834bbd",
+          "src_11a175deb0699be8"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_36b48bb1fc1e7623",
+        "text": "**训练方法（披露最详细）**：",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.205,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_39423474c49d8c7a",
+          "ev_6f81dfe2f6f9b659",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_1bd57011194523f8",
+          "src_f6f112b7fea47bb2",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e69c872a66a34b86",
+        "text": "预训练语料从 Qwen2 的 7T 扩至 **18T tokens**，重点提升常识、知识与推理；",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3021,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_39423474c49d8c7a",
+          "ev_e79dcfec5c476900",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_1bd57011194523f8",
+          "src_cefdaa90162510da",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dbd270d749e1b853",
+        "text": "后训练：**超 100 万样本的精细 SFT + 多阶段强化学习**（离线 DPO + 在线 GRPO），重点改进长文本生成、结构化数据与指令遵循。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3388,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_39423474c49d8c7a",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_1bd57011194523f8",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_20e5ed34ad1b733e",
+        "text": "**上下文**：标准 32K，通过 **RoPE 缩放（YaRN）+ DC-Attention** 扩展至 128K；Turbo/Plus 支持 1M。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1737,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_f6590e256cf30b38",
+          "ev_39423474c49d8c7a"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_11a175deb0699be8",
+          "src_1bd57011194523f8"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0ad3aff4101e1786",
+        "text": "**技术取向**：开源生态 + 中文优化 + 专项化衍生（Qwen2.5-Coder/Math、QwQ 推理模型）。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1133,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24d67bba76f7056b",
+          "ev_e79dcfec5c476900",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_5332457c39111432",
+          "src_cefdaa90162510da",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dbc8cf967d7df387",
+        "text": "**在中文推理与代码上**：Qwen2.5 因中文语料占比与开放微调，中文任务性价比高；Claude 3.5 Sonnet 在代码生成（SWE-bench）上领先。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.109,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_41878e1a83f0f093",
+          "ev_f560f72eb4916882",
+          "ev_925b87a7b6a0397a"
+        ],
+        "source_ids": [
+          "src_753808342024103d",
+          "src_0b73209e8c8a1000",
+          "src_66523f41496d5453"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2d430d421b0e3448",
+        "text": "**长上下文**：Gemini 1.5 明显领先（MoE+百万级窗口），其余依赖 RoPE 扩展至 128K–200K。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1764,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6d2d8f5cc1600fd8",
+          "ev_f6590e256cf30b38",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_8549bffa2f8a5ed4",
+          "src_11a175deb0699be8",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3552a716fc6cfff2",
+        "text": "Gemini 1.5 与 Qwen2.5 有 arXiv 官方技术报告（2403.05530；2412.15115），事实可信度高；",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1794,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24d67bba76f7056b",
+          "ev_d2706adbd74976b9",
+          "ev_6d2d8f5cc1600fd8"
+        ],
+        "source_ids": [
+          "src_5332457c39111432",
+          "src_51ce4721a0d11e58",
+          "src_8549bffa2f8a5ed4"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d2706adbd74976b9",
+            "source_id": "src_51ce4721a0d11e58",
+            "text": "Qwen 系列完整技术演进深度调研报告 ← 返回演示文稿 Qwen 系列完整技术演进深度调研报告 从 LLaMA 追随者到全模态 架构 创新者的进化之路 报告日期: 2026 年 4 月 12 日 调研范围: Qwen-1 → Qwen2 → Qwen-VL → Qwen2 -VL → Qwen2.5 → Qwen2.5 -VL → Qwen2.5 -Omni → Qwen3 → Qwen3-VL → ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7c1418ed9631d4f4",
+        "text": "GPT-4o 与 Claude 3.5 架构细节未公开，相关描述来自官方博客与社区分析，可信度中等。",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1029,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_41878e1a83f0f093",
+          "ev_f560f72eb4916882",
+          "ev_925b87a7b6a0397a"
+        ],
+        "source_ids": [
+          "src_753808342024103d",
+          "src_0b73209e8c8a1000",
+          "src_66523f41496d5453"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          },
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1a60ce9f1fc3aa7c",
+        "text": "**综合置信度：0.78**（开源两模型信息扎实，闭源两模型细节存在推断成分）",
+        "task_id": "task_3",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0652,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_24d67bba76f7056b",
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_5332457c39111432",
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_24d67bba76f7056b",
+            "source_id": "src_5332457c39111432",
+            "text": "Dec 22, 2024 · 12月20日， Qwen2.5 发布了 技术报告 。作为开源大模型头把交椅的有力竞争者，让我们一起看看它的小参数大能量到底利害在哪~ *笔者会用GPTs翻译形成初稿，然后自己精读后完成终稿，力求每一句话自己都能理解后再输出译…",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_acb730e61796ca24",
+        "text": "> 说明：闭源模型（GPT-4o、Claude 3.5、Gemini 1.5）官方未公开完整技术细节，以下技术路线部分结合公开报道与社区共识，置信度相应降低；Qwen2.5 有正式技术报告（arXiv 2412.15115），数据最可靠。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0754,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f560f72eb4916882",
+          "ev_41878e1a83f0f093",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_0b73209e8c8a1000",
+          "src_753808342024103d",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2765af5674947825",
+        "text": "**Qwen2.5** 凭借 18 万亿 token 预训练数据（Qwen2.5 技术报告，2024）中包含的大量高质量中文语料，在 C-Eval、CMMLU 等中文基准上达到与 GPT-4o 相当甚至局部超越的水平，是四者中中文原生能力最强的开源模型。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1555,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_39423474c49d8c7a",
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_1bd57011194523f8",
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_13a4b5b203dec84c",
+        "text": "**GPT-4o** 中文综合能力强、幻觉控制较好；**Claude 3.5 Sonnet** 中文推理严谨但语料以英文为主，中文知识面略窄；**Gemini 1.5 Pro** 中文能力相对最弱（在 OlympicArena 等评测的分析中被多次指出逊于前两者，arXiv 2406.16772，2024）。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0933,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f560f72eb4916882",
+          "ev_925b87a7b6a0397a",
+          "ev_3e3f5f6c5e95cb1a"
+        ],
+        "source_ids": [
+          "src_0b73209e8c8a1000",
+          "src_66523f41496d5453",
+          "src_56bc36249f2d6c4e"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_925b87a7b6a0397a",
+            "source_id": "src_66523f41496d5453",
+            "text": "Mar 1 , 2026 · An in-depth technical comparison of the industry's leading LLMs— GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro—evaluating coding performance , context windows, and multimodal capabilities for developers.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d8c8a6f851e2ad3c",
+        "text": "**Claude 3.5 Sonnet** 在 2024 年多项编码评测（HumanEval 类、SWE-bench、实机编程测试）中被广泛认为是当时最强编码模型，多篇对比评测（Panoramicsoft 等，2024–25）均将其排在 GPT-4o 与 Gemini 1.5 Pro 之前。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1244,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f560f72eb4916882",
+          "ev_925b87a7b6a0397a",
+          "ev_3e3f5f6c5e95cb1a"
+        ],
+        "source_ids": [
+          "src_0b73209e8c8a1000",
+          "src_66523f41496d5453",
+          "src_56bc36249f2d6c4e"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_925b87a7b6a0397a",
+            "source_id": "src_66523f41496d5453",
+            "text": "Mar 1 , 2026 · An in-depth technical comparison of the industry's leading LLMs— GPT-4o , Claude 3.5 Sonnet , and Gemini 1.5 Pro—evaluating coding performance , context windows, and multimodal capabilities for developers.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cc8b2c290d58e333",
+        "text": "**GPT-4o** 代码能力均衡但略逊；**Qwen2.5-Coder** 系列（基于 Qwen2.5 的专项代码版本）在开源阵营中表现突出，HumanEval 类分数接近 GPT-4o；**Gemini 1.5** 编码中规中矩。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0736,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_e79dcfec5c476900",
+          "ev_c38ee2ee0a70c097"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_cefdaa90162510da",
+          "src_e0707e953e72cc6d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_e79dcfec5c476900",
+            "source_id": "src_cefdaa90162510da",
+            "text": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8e1103137f42a35e",
+        "text": "**Gemini 1.5 Pro** 以 1M–2M token 上下文窗口遥遥领先，采用 MoE 架构 + Ring Attention 类技术，\"大海捞针\"检索近乎满分，是长文档/长视频理解标杆。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1942,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_6d2d8f5cc1600fd8",
+          "ev_aaf7e511a6d06105"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_8549bffa2f8a5ed4",
+          "src_b578bae9441845da"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6d2d8f5cc1600fd8",
+            "source_id": "src_8549bffa2f8a5ed4",
+            "text": "In this report, we introduce the Gemini 1.5 family of models, representing the next generation of highly compute-efficient multimodal models capable of recalling and reasoning over fine-grained information from millions of tokens of context, including multiple long documents and hours of video and audio. The family includes two new models: (1) an updated Gemini 1.5 Pro, which exceeds the February version on the great majority of capabilities and benchmarks; (2) Gemini 1.5 Flash, a more lightweig",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_41abe2039f683d09",
+        "text": "**Qwen2.5** 支持 128K 上下文（Turbo 版达 1M），并通过稀疏注意力将 1M token 注意力计算负载降低 12.5 倍、TTFT 提速 3.2–4.3 倍（Qwen2.5 技术报告，2024）。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3363,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2076666b780c7a33",
+          "ev_f6590e256cf30b38",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_6142f74a3caf0a90",
+          "src_11a175deb0699be8",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2076666b780c7a33",
+            "source_id": "src_6142f74a3caf0a90",
+            "text": "引入 稀疏注意力机制，显著提高了推理速度，对处理长文时用户体验至关重要。对于1M token的序列，这种方法将注意力机制的计算负载减少了12. 5 倍。图3展示了 Qwen2.5 -Turbo在不同硬件配置下的首个token生成时间（TTFT），实现了3.2到4.3倍的速度提升。 结论 Qwen2.5 代表了 大型语言模型（LLMs） 的重要进步 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_577fadac65a2c757",
+        "text": "**Claude 3.5** 200K 窗口，长文检索可靠性较好；**GPT-4o** 128K，长上下文\"中段遗忘\"现象相对明显。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1181,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f6590e256cf30b38",
+          "ev_41878e1a83f0f093",
+          "ev_6d2d8f5cc1600fd8"
+        ],
+        "source_ids": [
+          "src_11a175deb0699be8",
+          "src_753808342024103d",
+          "src_8549bffa2f8a5ed4"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b73c9989e5673e2d",
+        "text": "**中文能力**差异主要源于训练语料配比：Qwen2.5 以阿里中文生态数据 + 主动扩增中文高质量语料，中文上限由数据决定；美系模型中文语料占比低，靠模型规模补偿。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1025,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_39423474c49d8c7a",
+          "ev_6f81dfe2f6f9b659"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_1bd57011194523f8",
+          "src_f6f112b7fea47bb2"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3c6daeb9041347a9",
+        "text": "**代码能力**上 Claude 3.5 的优势归因于其对齐阶段对推理链与工具使用的强化，以及 RLAIF 带来的更稳定的逻辑输出；Qwen2.5 则通过专项代码数据蒸馏（Qwen2.5-Coder）追赶。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0844,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_39423474c49d8c7a",
+          "ev_41878e1a83f0f093"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_1bd57011194523f8",
+          "src_753808342024103d"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_39423474c49d8c7a",
+            "source_id": "src_1bd57011194523f8",
+            "text": "在本报告中，我们推出 Qwen2.5 ，这是一系列全面的大型语言模型（LLMs），旨在满足多样化的应用需求。相较于此前版本， Qwen2.5 在预训练和后训练两个阶段均实现了显著提升。在预训练方面，我们已将高质量预 训练数据 集从此前的7万亿个token扩展至18万亿个token，为模型在常识理解、专业知识和推理 ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b167ef4115fc3c3d",
+        "text": "**长上下文**上 Gemini 1.5 的 MoE + 稀疏化训练从架构层面降低了长序列成本；Qwen2.5 以工程手段（稀疏注意力、Turbo 版）弥补，而 GPT-4o/Claude 更侧重单轮质量而非极限长度。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1069,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2076666b780c7a33",
+          "ev_f6590e256cf30b38",
+          "ev_6d2d8f5cc1600fd8"
+        ],
+        "source_ids": [
+          "src_6142f74a3caf0a90",
+          "src_11a175deb0699be8",
+          "src_8549bffa2f8a5ed4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2076666b780c7a33",
+            "source_id": "src_6142f74a3caf0a90",
+            "text": "引入 稀疏注意力机制，显著提高了推理速度，对处理长文时用户体验至关重要。对于1M token的序列，这种方法将注意力机制的计算负载减少了12. 5 倍。图3展示了 Qwen2.5 -Turbo在不同硬件配置下的首个token生成时间（TTFT），实现了3.2到4.3倍的速度提升。 结论 Qwen2.5 代表了 大型语言模型（LLMs） 的重要进步 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a4f42d799d5b543d",
+        "text": "闭源三家的架构与数据细节均无官方披露，属推测；",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0755,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_6f81dfe2f6f9b659",
+          "ev_f6590e256cf30b38",
+          "ev_0d57142530ba239c"
+        ],
+        "source_ids": [
+          "src_f6f112b7fea47bb2",
+          "src_11a175deb0699be8",
+          "src_c1d718e383834bbd"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_f6590e256cf30b38",
+            "source_id": "src_11a175deb0699be8",
+            "text": "MiMo-V2. 5 -Pro采用 MoE 架构 ，总参数 1 .02万亿，激活参数42B，支持最长100万token的上下文窗口，专为长时间自主任务设计，完成复杂任务时 比 Claude Opus 4 .6或 Gemini 3 . 1 Pro等西方竞品少消耗40–60%的token。在内部测试中，该模型可在 4 . 3",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a66a023e311fbdae",
+        "text": "各基准分数随版本更新（如 GPT-4o 2024-08 版、Claude 3.5 新 Sonnet）波动，跨来源直接比较需谨慎。",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1599,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_f560f72eb4916882",
+          "ev_41878e1a83f0f093",
+          "ev_925b87a7b6a0397a"
+        ],
+        "source_ids": [
+          "src_0b73209e8c8a1000",
+          "src_753808342024103d",
+          "src_66523f41496d5453"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_f560f72eb4916882",
+            "source_id": "src_0b73209e8c8a1000",
+            "text": "Jun 26, 2024 · It should be noted that this report primarily focuses on the analysis of experimental results comparing top-performing Claude - 3.5 - Sonnet and GPT-4o , while also providing some commentary on the performance of Gemini - 1.5 -Pro.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_41878e1a83f0f093",
+            "source_id": "src_753808342024103d",
+            "text": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video comprehension. A standout feature of Qwen2.5-VL is its ability to localize objects using bounding boxes or point",
+            "kind": "abstract"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2eba5ce546b04fb6",
+        "text": "**置信度：0.72**（Qwen2.5 部分 ≈0.9，闭源模型技术路线部分 ≈0.5）",
+        "task_id": "task_4",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1913,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0d57142530ba239c",
+          "ev_6f81dfe2f6f9b659",
+          "ev_24d67bba76f7056b"
+        ],
+        "source_ids": [
+          "src_c1d718e383834bbd",
+          "src_f6f112b7fea47bb2",
+          "src_5332457c39111432"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0d57142530ba239c",
+            "source_id": "src_c1d718e383834bbd",
+            "text": "Oct 13, 2025 · 全文摘要 Qwen2.5 系列模型经过预训练和后处理两个阶段的改进，在高质量预 训练数据 集的基础上，通过多阶段强化学习等技术进行后处理，提高了人类偏好、长文本生成、结构数据分析和指令遵循等方面的能力。该系列模型提供了多种配置，包括基于基础模型和指令微调的模型，参数量从0.5B到72B不等 ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_6f81dfe2f6f9b659",
+            "source_id": "src_f6f112b7fea47bb2",
+            "text": "Dec 31, 2024 · Qwen2.5 的成功不仅体现在其强大的性能上，更重要的是它展示了大语言模型技术发展的新方向。 通过创新的数据处理方法、训练策略和 架构 设计， Qwen2.5 实现了在模型大小和计算资源相对有限的情况下，达到甚至超越更 大模型 的性能。",
+            "kind": "search_snippet"
+          }
+        ]
+      }
+    ],
+    "source_count": 26,
+    "evidence_count": 26,
+    "supported_count": 0,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 59,
+    "coverage": 0.0,
+    "primary_source_ratio": 0.3462,
+    "fulltext_source_ratio": 0.0,
+    "verification_mode": "heuristic"
+  }
+}

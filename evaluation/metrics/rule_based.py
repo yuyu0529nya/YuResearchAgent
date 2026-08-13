@@ -281,12 +281,28 @@ class RuleBasedMetrics:
             "comprehensiveness": 0.15,
         }
 
+        # 早期 ResearchBench 同时产出 factual_accuracy_str / factual_accuracy_sem，
+        # 但默认权重读取 factual_accuracy，导致该维度静默按 0 分计算。这里保留
+        # 向后兼容：调用方未显式提供规范键时，按 40/60 合并两种事实指标。
+        normalized_metrics = dict(metrics)
+        if "factual_accuracy" not in normalized_metrics:
+            factual_parts: list[tuple[float, float]] = []
+            if "factual_accuracy_str" in normalized_metrics:
+                factual_parts.append((normalized_metrics["factual_accuracy_str"], 0.4))
+            if "factual_accuracy_sem" in normalized_metrics:
+                factual_parts.append((normalized_metrics["factual_accuracy_sem"], 0.6))
+            if factual_parts:
+                weight_sum = sum(weight for _, weight in factual_parts)
+                normalized_metrics["factual_accuracy"] = sum(
+                    value * weight for value, weight in factual_parts
+                ) / weight_sum
+
         w = weights if weights is not None else default_weights
         total_score = 0.0
         total_weight = 0.0
 
         for key, weight in w.items():
-            value = metrics.get(key, 0.0)
+            value = normalized_metrics.get(key, 0.0)
             total_score += value * weight
             total_weight += weight
 

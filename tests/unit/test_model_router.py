@@ -1,12 +1,15 @@
 """
 tests/unit/test_model_router.py
-src/models/model_router.py 的后端配置逻辑测试（坐实"4 后端热切换"）。
+src/models/model_router.py 的多后端配置与兼容性逻辑测试。
 
-只测 _load_backend_config / _is_backend_configured 的纯配置解析（不实例化
+只测 _load_backend_config / _is_backend_configured / provider 约束的纯配置解析（不实例化
 VLLMPolicy、不发起网络请求）。用 monkeypatch 控制环境变量。
 """
+from types import SimpleNamespace
+
 import pytest
 
+import src.models.model_router as router_module
 from src.models.model_router import ModelRouter
 
 
@@ -27,6 +30,37 @@ def test_openai_defaults(monkeypatch):
     cfg = ModelRouter._load_backend_config("openai")
     assert cfg["model_name"] == "gpt-4o"
     assert "api.openai.com" in cfg["base_url"]
+
+
+def test_kimi_k3_defaults(monkeypatch):
+    monkeypatch.setenv("KIMI_API_KEY", "sk-kimi-test")
+    monkeypatch.delenv("KIMI_BASE_URL", raising=False)
+    monkeypatch.delenv("KIMI_MODEL", raising=False)
+    cfg = ModelRouter._load_backend_config("kimi")
+    assert cfg["model_name"] == "k3"
+    assert cfg["base_url"] == "https://api.kimi.com/coding/v1"
+
+
+def test_reasoning_effort_is_forwarded(monkeypatch):
+    monkeypatch.setenv("KIMI_API_KEY", "sk-kimi-test")
+    monkeypatch.setenv("KIMI_REASONING_EFFORT", "LOW")
+    cfg = ModelRouter._load_backend_config("kimi")
+    assert cfg["extra_body"]["reasoning_effort"] == "low"
+
+
+def test_kimi_k3_forces_supported_temperature():
+    cfg = ModelRouter._normalize_backend_config(
+        "kimi", {"model_name": "k3", "temperature": 0.3, "top_p": 1.0}
+    )
+    assert cfg["temperature"] == 1.0
+    assert cfg["top_p"] == 0.95
+
+
+def test_non_kimi_temperature_is_unchanged():
+    cfg = ModelRouter._normalize_backend_config(
+        "qwen", {"model_name": "qwen-plus", "temperature": 0.3}
+    )
+    assert cfg["temperature"] == 0.3
 
 
 def test_mimo_defaults(monkeypatch):
@@ -69,3 +103,23 @@ def test_is_backend_configured(monkeypatch):
     monkeypatch.delenv("BAR_BASE_URL", raising=False)
     assert ModelRouter._is_backend_configured("foo") is True
     assert ModelRouter._is_backend_configured("bar") is False
+
+
+def test_create_backend_can_bypass_mutable_policy_cache(monkeypatch):
+    monkeypatch.setenv("KIMI_API_KEY", "sk-kimi-test")
+    monkeypatch.setattr(
+        router_module,
+        "VLLMPolicy",
+        lambda **config: SimpleNamespace(**config),
+    )
+    ModelRouter.clear_cache()
+
+    cached_a = ModelRouter.create_backend("kimi")
+    cached_b = ModelRouter.create_backend("kimi")
+    worker_a = ModelRouter.create_backend("kimi", use_cache=False)
+    worker_b = ModelRouter.create_backend("kimi", use_cache=False)
+
+    assert cached_a is cached_b
+    assert worker_a is not worker_b
+    assert worker_a is not cached_a
+    ModelRouter.clear_cache()

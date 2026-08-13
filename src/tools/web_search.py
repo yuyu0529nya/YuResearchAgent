@@ -1,10 +1,11 @@
 """
-网页搜索工具 — 支持多后端：SerpAPI / Bing / 博查AI / 秘塔AI
+网页搜索工具 — 支持 Yahoo/Brave/Wikipedia 自动级联及多种显式后端
 
 设计理由：
   通过 .env 中的 SEARCH_BACKEND 切换后端，零源码修改。
 
 后端对比：
+  - auto:    Yahoo -> Brave -> Wikipedia，无 Key，并做相关性重排
   - serpapi: 每月 100 次免费，结果最全（Google 数据），国内可访问
   - bing:    微软搜索 API，国内稳定，需 Azure 订阅 Key
   - bocha:   博查AI搜索，国内索引最全，面向 AI Agent 优化
@@ -16,10 +17,16 @@ import asyncio
 import json
 import os
 import random
+import base64
+import re
+import threading
+import time
 from abc import ABC, abstractmethod
 from typing import Any
+from urllib.parse import parse_qs, quote, unquote, urlencode, urlsplit
 
 import aiohttp
+from bs4 import BeautifulSoup
 
 from ..utils.env_config import get_env
 
@@ -32,7 +39,7 @@ class BaseWebSearchTool(ABC):
     name: str = "web_search"
     description: str = (
         "Search the web for information. "
-        "Supports SerpAPI / Bing / 博查AI(bocha) / 秘塔AI(metaso) backends. "
+        "Supports automatic keyless Yahoo/Brave/Wikipedia search, SerpAPI, Bing API, 博查AI(bocha), and 秘塔AI(metaso) backends. "
         "Input: {'query': str, 'top_n': int(optional, default=5)}. "
         "Output: list of {'title': str, 'url': str, 'snippet': str}."
     )
@@ -134,18 +141,21 @@ class MockWebSearchTool(BaseWebSearchTool):
 
 
 class WebSearchTool(BaseWebSearchTool):
-    """真实网页搜索工具：支持 SerpAPI 和 Bing Search API 双后端。
+    """真实网页搜索工具：支持 keyless 与 API 搜索后端。
 
     配置优先从 .env / .env.local 读取：
-      - SEARCH_BACKEND: 后端选择，可选 "serpapi" | "bing"（默认 serpapi）
+      - SEARCH_BACKEND: auto | yahoo_html | brave_html | wikipedia | bing_html | duckduckgo | serpapi | bing | bocha | metaso
+        （默认 auto）
       - SERPAPI_KEY / SERPAPI_ENDPOINT: SerpAPI 配置
       - BING_SEARCH_KEY / BING_SEARCH_ENDPOINT: Bing API 配置
     """
 
     _session: aiohttp.ClientSession | None = None
+    _brave_lock = threading.Lock()
+    _brave_last_request = 0.0
 
     def __init__(self, backend: str | None = None, api_key: str | None = None, api_endpoint: str | None = None) -> None:
-        self.backend = (backend or get_env("SEARCH_BACKEND", "serpapi")).lower().strip()
+        self.backend = (backend or get_env("SEARCH_BACKEND", "auto")).lower().strip()
 
         # SerpAPI 配置
         self.serpapi_key = api_key or get_env("SERPAPI_KEY")
@@ -189,6 +199,16 @@ class WebSearchTool(BaseWebSearchTool):
                 pass
 
     async def execute(self, query: str, top_n: int = 5) -> dict[str, Any]:
+        if self.backend in ("auto", "keyless", "keyless_auto"):
+            return await self._auto_execute(query, top_n)
+        if self.backend in ("brave_html", "keyless_brave", "brave_web"):
+            return await self._brave_html_execute(query, top_n)
+        if self.backend in ("yahoo_html", "keyless_yahoo", "yahoo_web"):
+            return await self._yahoo_html_execute(query, top_n)
+        if self.backend in ("bing_html", "keyless_bing", "bing_web"):
+            return await self._bing_html_execute(query, top_n)
+        if self.backend in ("wikipedia", "wikipedia_api", "wiki"):
+            return await self._wikipedia_execute(query, top_n)
         if self.backend == "bing":
             return await self._bing_execute(query, top_n)
         if self.backend == "bocha":
@@ -199,6 +219,411 @@ class WebSearchTool(BaseWebSearchTool):
             return await self._duckduckgo_execute(query, top_n)
         return await self._serpapi_execute(query, top_n)
 
+    async def _auto_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Cascade across keyless engines and rerank their organic results."""
+        yahoo = await self._yahoo_html_execute(query, max(top_n, 5))
+        yahoo_results = self._rank_results(query, yahoo.get("results", []), top_n)
+        if len(yahoo_results) >= min(2, top_n):
+            yahoo["results"] = yahoo_results
+            yahoo["total"] = len(yahoo_results)
+            yahoo["source"] = "auto:yahoo_html"
+            return yahoo
+
+        brave = await self._brave_html_execute(query, top_n)
+        combined = yahoo_results + brave.get("results", [])
+        ranked = self._rank_results(query, combined, top_n)
+        if len(ranked) >= min(2, top_n):
+            return {
+                "query": query,
+                "results": ranked,
+                "total": len(ranked),
+                "source": "auto:yahoo_html+brave_html",
+                **(
+                    {"warning": str(yahoo.get("warning"))}
+                    if yahoo.get("warning")
+                    else {}
+                ),
+            }
+
+        wikipedia = await self._wikipedia_execute(query, max(top_n, 5))
+        combined += wikipedia.get("results", [])
+        ranked = self._rank_results(query, combined, top_n)
+        payload: dict[str, Any] = {
+            "query": query,
+            "results": ranked,
+            "total": len(ranked),
+            "source": "auto:yahoo_html+brave_html+wikipedia_api",
+        }
+        warnings = [
+            warning
+            for warning in (
+                brave.get("warning") or brave.get("error"),
+                yahoo.get("warning"),
+                wikipedia.get("warning"),
+            )
+            if warning
+        ]
+        if warnings:
+            payload["warning"] = "; ".join(warnings)
+        return payload
+
+    async def _wikipedia_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Last-resort, explicitly labeled encyclopedia search fallback."""
+        configured_language = get_env("WIKIPEDIA_LANGUAGE", "auto").lower().strip()
+        if configured_language == "auto":
+            language = "zh" if re.search(r"[\u4e00-\u9fff]", query or "") else "en"
+        else:
+            language = configured_language if re.fullmatch(r"[a-z-]{2,12}", configured_language) else "en"
+        endpoint = f"https://{language}.wikipedia.org/w/api.php"
+        url = f"{endpoint}?{urlencode({'action': 'query', 'list': 'search', 'srsearch': query, 'format': 'json', 'srlimit': max(1, min(top_n, 10))})}"
+        marker = b"\n__YURA_HTTP_STATUS__:"
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl",
+                "--location",
+                "--compressed",
+                "--silent",
+                "--show-error",
+                "--max-time",
+                "12",
+                "--user-agent",
+                "YuResearchAgent/0.1",
+                "--write-out",
+                "\n__YURA_HTTP_STATUS__:%{http_code}",
+                url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=15)
+        except FileNotFoundError:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": "Wikipedia API transport unavailable because curl is not installed",
+            }
+        except (asyncio.TimeoutError, OSError) as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Wikipedia API network error: {type(exc).__name__}: {exc}",
+            }
+
+        body, separator, status_bytes = stdout.rpartition(marker)
+        status = status_bytes.decode("ascii", errors="ignore").strip() if separator else ""
+        if process.returncode != 0 or status != "200":
+            error = stderr.decode("utf-8", errors="ignore").strip()
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Wikipedia API returned HTTP {status or 'unknown'}: {error[:200]}",
+            }
+        try:
+            data = json.loads(body.decode("utf-8", errors="ignore"))
+        except json.JSONDecodeError as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Wikipedia API returned invalid JSON: {exc}",
+            }
+        results = self._parse_wikipedia_response(data, language, top_n)
+        payload: dict[str, Any] = {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": f"wikipedia_api:{language}",
+        }
+        if not results:
+            payload["warning"] = "Wikipedia API returned no results"
+        return payload
+
+    @staticmethod
+    def _parse_wikipedia_response(
+        data: dict[str, Any],
+        language: str,
+        top_n: int,
+    ) -> list[dict[str, str]]:
+        results: list[dict[str, str]] = []
+        for item in data.get("query", {}).get("search", [])[:top_n]:
+            if not isinstance(item, dict) or not item.get("title"):
+                continue
+            title = str(item["title"])
+            snippet = BeautifulSoup(str(item.get("snippet", "")), "html.parser").get_text(
+                " ", strip=True
+            )
+            results.append(
+                {
+                    "title": title,
+                    "url": f"https://{language}.wikipedia.org/wiki/{quote(title.replace(' ', '_'))}",
+                    "snippet": snippet,
+                }
+            )
+        return results
+
+    async def _brave_html_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Serialize keyless requests so parallel workers do not trigger 429s."""
+        await asyncio.to_thread(self._brave_lock.acquire)
+        try:
+            delay = 1.5 - (time.monotonic() - self._brave_last_request)
+            if delay > 0:
+                await asyncio.sleep(delay)
+            return await self._brave_html_execute_unlocked(query, top_n)
+        finally:
+            type(self)._brave_last_request = time.monotonic()
+            self._brave_lock.release()
+
+    async def _brave_html_execute_unlocked(self, query: str, top_n: int) -> dict[str, Any]:
+        """Fetch Brave HTML through bounded curl when Python TLS is challenged.
+
+        Brave currently returns a bot challenge to aiohttp/httpx in some regions,
+        while the system curl TLS stack receives the public result page. The
+        subprocess is argument-only (no shell), time-bounded, and output-capped.
+        """
+        endpoint = get_env("BRAVE_HTML_ENDPOINT", "https://search.brave.com/search")
+        url = f"{endpoint}?{urlencode({'q': query, 'source': 'web'})}"
+        marker = b"\n__YURA_HTTP_STATUS__:"
+        user_agent = (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+        )
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl",
+                "--location",
+                "--compressed",
+                "--silent",
+                "--show-error",
+                "--max-time",
+                "12",
+                "--user-agent",
+                user_agent,
+                "--header",
+                "Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8",
+                "--write-out",
+                "\n__YURA_HTTP_STATUS__:%{http_code}",
+                url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=15)
+        except FileNotFoundError:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": "Brave HTML fallback unavailable because curl is not installed",
+            }
+        except (asyncio.TimeoutError, OSError) as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Brave HTML network error: {type(exc).__name__}: {exc}",
+            }
+
+        body, separator, status_bytes = stdout.rpartition(marker)
+        status = status_bytes.decode("ascii", errors="ignore").strip() if separator else ""
+        if process.returncode != 0 or status != "200":
+            error = stderr.decode("utf-8", errors="ignore").strip()
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Brave HTML returned HTTP {status or 'unknown'}: {error[:200]}",
+            }
+        if len(body) > 2_000_000:
+            body = body[:2_000_000]
+        results = self._parse_brave_html(body.decode("utf-8", errors="ignore"), top_n)
+        return {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": "brave_html",
+        }
+
+    @staticmethod
+    def _parse_brave_html(html: str, top_n: int) -> list[dict[str, str]]:
+        soup = BeautifulSoup(html or "", "html.parser")
+        results: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for item in soup.select(".snippet"):
+            title_node = item.select_one(".title")
+            if title_node is None:
+                continue
+            link = title_node.find_parent("a") or item.select_one("a[href]")
+            if link is None:
+                continue
+            url = str(link.get("href", ""))
+            if not url.startswith(("http://", "https://")) or url in seen:
+                continue
+            snippet_node = item.select_one(".generic-snippet")
+            seen.add(url)
+            results.append(
+                {
+                    "title": title_node.get_text(" ", strip=True),
+                    "url": url,
+                    "snippet": snippet_node.get_text(" ", strip=True) if snippet_node else "",
+                }
+            )
+            if len(results) >= top_n:
+                break
+        return results
+
+    async def _yahoo_html_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Keyless Yahoo search through a bounded, argument-only curl process."""
+        endpoint = get_env("YAHOO_HTML_ENDPOINT", "https://search.yahoo.com/search")
+        url = f"{endpoint}?{urlencode({'p': query, 'n': max(1, min(top_n, 10))})}"
+        marker = b"\n__YURA_HTTP_STATUS__:"
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl",
+                "--location",
+                "--compressed",
+                "--silent",
+                "--show-error",
+                "--max-time",
+                "12",
+                "--user-agent",
+                (
+                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+                ),
+                "--header",
+                "Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8",
+                "--write-out",
+                "\n__YURA_HTTP_STATUS__:%{http_code}",
+                url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=15)
+        except FileNotFoundError:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": "Yahoo HTML transport unavailable because curl is not installed",
+            }
+        except (asyncio.TimeoutError, OSError) as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Yahoo HTML network error: {type(exc).__name__}: {exc}",
+            }
+
+        body, separator, status_bytes = stdout.rpartition(marker)
+        status = status_bytes.decode("ascii", errors="ignore").strip() if separator else ""
+        if process.returncode != 0 or status != "200":
+            error = stderr.decode("utf-8", errors="ignore").strip()
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Yahoo HTML returned HTTP {status or 'unknown'}: {error[:200]}",
+            }
+        if len(body) > 2_000_000:
+            body = body[:2_000_000]
+        results = self._parse_yahoo_html(body.decode("utf-8", errors="ignore"), top_n)
+        payload: dict[str, Any] = {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": "yahoo_html",
+        }
+        if not results:
+            payload["warning"] = "Yahoo HTML returned no organic results"
+        return payload
+
+    @classmethod
+    def _parse_yahoo_html(cls, html: str, top_n: int) -> list[dict[str, str]]:
+        soup = BeautifulSoup(html or "", "html.parser")
+        results: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for item in soup.select(".algo"):
+            link = item.select_one(".compTitle a[href]") or item.select_one("h3 a[href]")
+            title_node = item.select_one("h3")
+            if link is None or title_node is None:
+                continue
+            url = cls._unwrap_yahoo_url(str(link.get("href", "")))
+            if not url.startswith(("http://", "https://")) or url in seen:
+                continue
+            snippet_node = item.select_one(".compText p") or item.select_one(".compText")
+            seen.add(url)
+            results.append(
+                {
+                    "title": title_node.get_text(" ", strip=True),
+                    "url": url,
+                    "snippet": snippet_node.get_text(" ", strip=True) if snippet_node else "",
+                }
+            )
+            if len(results) >= top_n:
+                break
+        return results
+
+    @staticmethod
+    def _unwrap_yahoo_url(url: str) -> str:
+        match = re.search(r"/RU=([^/]+)/RK=", url)
+        if match:
+            target = unquote(match.group(1))
+            if target.startswith(("http://", "https://")):
+                return target
+        return url
+
+    @classmethod
+    def _rank_results(
+        cls,
+        query: str,
+        results: list[dict[str, Any]],
+        top_n: int,
+    ) -> list[dict[str, str]]:
+        """Deduplicate and suppress results with no lexical relation to the query."""
+        query_tokens = cls._search_tokens(query)
+        ranked: list[tuple[float, int, dict[str, str]]] = []
+        seen: set[str] = set()
+        for index, item in enumerate(results):
+            url = str(item.get("url", ""))
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            text = f"{item.get('title', '')} {item.get('snippet', '')} {url}"
+            result_tokens = cls._search_tokens(text)
+            overlap = len(query_tokens & result_tokens) / max(1, len(query_tokens))
+            trusted = any(
+                domain in urlsplit(url).netloc.lower()
+                for domain in (
+                    "arxiv.org", "openai.com", "anthropic.com", "deepmind.google",
+                    "ai.google.dev", "github.com", "huggingface.co", ".gov", ".edu",
+                )
+            )
+            if query_tokens and overlap < 0.08:
+                continue
+            score = overlap + (0.20 if trusted else 0.0)
+            ranked.append(
+                (
+                    score,
+                    -index,
+                    {
+                        "title": str(item.get("title", "")),
+                        "url": url,
+                        "snippet": str(item.get("snippet", "")),
+                    },
+                )
+            )
+        ranked.sort(key=lambda entry: (entry[0], entry[1]), reverse=True)
+        return [item for _, _, item in ranked[:top_n]]
+
+    @staticmethod
+    def _search_tokens(text: str) -> set[str]:
+        lowered = (text or "").lower()
+        tokens = set(re.findall(r"[a-z][a-z0-9_.+-]+|\d+(?:\.\d+)?", lowered))
+        for sequence in re.findall(r"[\u4e00-\u9fff]{2,}", lowered):
+            tokens.update(sequence[index : index + 2] for index in range(len(sequence) - 1))
+        return tokens
+
     async def _duckduckgo_execute(self, query: str, top_n: int) -> dict[str, Any]:
         """DuckDuckGo 搜索（免费、无需 API Key）。依赖 ddgs 包：pip install ddgs"""
         def _search() -> list[dict]:
@@ -206,8 +631,10 @@ class WebSearchTool(BaseWebSearchTool):
                 from ddgs import DDGS
             except ImportError:
                 from duckduckgo_search import DDGS  # 旧包名兼容
-            with DDGS() as ddgs:
-                return list(ddgs.text(query, max_results=top_n))
+            timeout = float(get_env("DDGS_TIMEOUT_SECONDS", "6") or 6)
+            engines = get_env("DDGS_ENGINES", "duckduckgo") or "duckduckgo"
+            with DDGS(timeout=timeout) as ddgs:
+                return list(ddgs.text(query, max_results=top_n, backend=engines))
 
         try:
             raw = await asyncio.to_thread(_search)
@@ -216,7 +643,7 @@ class WebSearchTool(BaseWebSearchTool):
                     "error": "DuckDuckGo 后端需要 ddgs 包：pip install ddgs"}
         except Exception as e:
             return {"query": query, "results": [], "total": 0,
-                    "error": f"DuckDuckGo 搜索错误: {type(e).__name__}: {e}"}
+                    "warning": f"DuckDuckGo 搜索无结果: {type(e).__name__}: {e}"}
 
         results = [
             {
@@ -227,6 +654,169 @@ class WebSearchTool(BaseWebSearchTool):
             for r in raw[:top_n]
         ]
         return {"query": query, "results": results, "total": len(results)}
+
+    async def _bing_html_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Keyless Bing result-page search with a strict network timeout.
+
+        This backend is intended as a zero-configuration fallback. It parses only
+        the stable organic-result structure and never treats an empty page as a
+        fatal tool error, allowing the agent to switch to academic search.
+        """
+        curl_result = await self._bing_html_curl_execute(query, top_n)
+        if curl_result.get("results"):
+            return curl_result
+
+        endpoint = get_env("BING_HTML_ENDPOINT", "https://cn.bing.com/search")
+        params = {"q": query, "count": max(1, min(top_n, 10))}
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+            ),
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        }
+        try:
+            session = self._get_session()
+            async with session.get(
+                endpoint,
+                params=params,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=10),
+            ) as response:
+                html = await response.text(errors="ignore")
+                if response.status != 200:
+                    return {
+                        "query": query,
+                        "results": [],
+                        "total": 0,
+                        "warning": f"Bing HTML returned HTTP {response.status}",
+                    }
+        except Exception as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Bing HTML network error: {type(exc).__name__}: {exc}",
+            }
+
+        results = self._parse_bing_html(html, top_n)
+        payload: dict[str, Any] = {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": "bing_html",
+        }
+        if not results:
+            warnings = [
+                curl_result.get("warning"),
+                "Bing HTML returned no organic results",
+            ]
+            payload["warning"] = "; ".join(str(item) for item in warnings if item)
+        return payload
+
+    async def _bing_html_curl_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Use the system TLS stack when Bing challenges Python HTTP clients."""
+        endpoint = get_env("BING_HTML_CURL_ENDPOINT", "https://www.bing.com/search")
+        url = f"{endpoint}?{urlencode({'q': query, 'count': max(1, min(top_n, 10))})}"
+        marker = b"\n__YURA_HTTP_STATUS__:"
+        user_agent = (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+        )
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl",
+                "--location",
+                "--compressed",
+                "--silent",
+                "--show-error",
+                "--max-time",
+                "12",
+                "--user-agent",
+                user_agent,
+                "--header",
+                "Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8",
+                "--write-out",
+                "\n__YURA_HTTP_STATUS__:%{http_code}",
+                url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=15)
+        except FileNotFoundError:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": "Bing HTML curl transport unavailable because curl is not installed",
+            }
+        except (asyncio.TimeoutError, OSError) as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Bing HTML curl error: {type(exc).__name__}: {exc}",
+            }
+
+        body, separator, status_bytes = stdout.rpartition(marker)
+        status = status_bytes.decode("ascii", errors="ignore").strip() if separator else ""
+        if process.returncode != 0 or status != "200":
+            error = stderr.decode("utf-8", errors="ignore").strip()
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "warning": f"Bing HTML curl returned HTTP {status or 'unknown'}: {error[:200]}",
+            }
+        if len(body) > 2_000_000:
+            body = body[:2_000_000]
+        results = self._parse_bing_html(body.decode("utf-8", errors="ignore"), top_n)
+        payload: dict[str, Any] = {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": "bing_html:curl",
+        }
+        if not results:
+            payload["warning"] = "Bing HTML curl returned no organic results"
+        return payload
+
+    @classmethod
+    def _parse_bing_html(cls, html: str, top_n: int) -> list[dict[str, str]]:
+        soup = BeautifulSoup(html or "", "html.parser")
+        results: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for item in soup.select("li.b_algo"):
+            link = item.select_one("h2 a")
+            if link is None:
+                continue
+            url = cls._unwrap_bing_url(str(link.get("href", "")))
+            title = link.get_text(" ", strip=True)
+            caption = item.select_one(".b_caption p")
+            snippet = caption.get_text(" ", strip=True) if caption else ""
+            if not url.startswith(("http://", "https://")) or url in seen:
+                continue
+            seen.add(url)
+            results.append({"title": title, "url": url, "snippet": snippet})
+            if len(results) >= top_n:
+                break
+        return results
+
+    @staticmethod
+    def _unwrap_bing_url(url: str) -> str:
+        """Decode Bing's ``u=a1<base64>`` redirect when present."""
+        try:
+            parsed = urlsplit(url)
+            encoded = parse_qs(parsed.query).get("u", [""])[0]
+            if encoded.startswith("a1"):
+                payload = encoded[2:]
+                payload += "=" * (-len(payload) % 4)
+                decoded = base64.urlsafe_b64decode(payload).decode("utf-8")
+                if decoded.startswith(("http://", "https://")):
+                    return decoded
+        except (ValueError, UnicodeDecodeError):
+            pass
+        return url
 
     async def _serpapi_execute(self, query: str, top_n: int) -> dict[str, Any]:
         if not self.serpapi_key:

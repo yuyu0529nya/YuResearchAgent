@@ -19,9 +19,11 @@
 from __future__ import annotations
 
 import asyncio
+import io
 import re
 from abc import ABC, abstractmethod
 from typing import Any
+from urllib.parse import urlsplit
 
 import aiohttp
 
@@ -110,32 +112,121 @@ class BrowserTool(BaseBrowserTool):
         if not url.startswith(("http://", "https://")):
             return f"[Browser Error] Invalid URL: {url}. URL must start with http:// or https://"
 
+        errors: list[str] = []
+        for candidate_url, evidence_level in self._candidate_urls(url):
+            try:
+                payload, content_type = await self._fetch(candidate_url)
+                if "application/pdf" in content_type.lower() or payload.startswith(b"%PDF"):
+                    text = self._extract_pdf_text(payload)
+                else:
+                    html = payload.decode("utf-8", errors="ignore")
+                    text = self._clean_text(self._extract_text(html))
+
+                if not text:
+                    errors.append(f"{candidate_url}: no meaningful content")
+                    continue
+                if len(text) > max_chars:
+                    text = text[:max_chars] + (
+                        f"\n\n[CONTENT_TRUNCATED: {len(text)} chars total, "
+                        f"showing first {max_chars}]"
+                    )
+                if evidence_level == "abstract":
+                    return f"[ABSTRACT_ONLY]\n{text}"
+                return text
+            except Exception as exc:
+                errors.append(f"{candidate_url}: {type(exc).__name__}: {exc}")
+
+        return "[Browser Error] " + "; ".join(errors[:3])
+
+    @staticmethod
+    def _candidate_urls(url: str) -> list[tuple[str, str]]:
+        """Prefer arXiv HTML/PDF full text and label abstract-only fallback."""
+        parsed = urlsplit(url)
+        domain = parsed.netloc.lower().removeprefix("www.")
+        if domain != "arxiv.org":
+            return [(url, "fulltext")]
+        match = re.match(r"/(?:abs|pdf|html)/([^/]+?)(?:\.pdf)?$", parsed.path, re.IGNORECASE)
+        if not match:
+            return [(url, "fulltext")]
+        raw_id = match.group(1)
+        arxiv_id = re.sub(r"v\d+$", "", raw_id, flags=re.IGNORECASE)
+        candidates = [(f"https://arxiv.org/html/{arxiv_id}", "fulltext")]
+        if parsed.path.lower().startswith("/pdf/"):
+            candidates.append((f"https://arxiv.org/pdf/{arxiv_id}.pdf", "fulltext"))
+        else:
+            candidates.append((f"https://arxiv.org/abs/{arxiv_id}", "abstract"))
+        return candidates
+
+    async def _fetch(self, url: str) -> tuple[bytes, str]:
+        """Fetch bytes through bounded curl, then aiohttp as transport fallback."""
+        curl_error: Exception | None = None
         try:
-            html = await self._fetch(url)
-            text = self._extract_text(html)
-            text = self._clean_text(text)
+            return await self._fetch_with_curl(url)
+        except Exception as exc:
+            curl_error = exc
 
-            if len(text) > max_chars:
-                text = text[:max_chars] + f"\n\n[CONTENT_TRUNCATED: {len(text)} chars total, showing first {max_chars}]"
+        try:
+            async with aiohttp.ClientSession(
+                timeout=aiohttp.ClientTimeout(total=self.timeout),
+                headers={"User-Agent": self.user_agent},
+            ) as session:
+                async with session.get(url, allow_redirects=True) as resp:
+                    resp.raise_for_status()
+                    return await resp.read(), resp.headers.get("Content-Type", "")
+        except Exception as aiohttp_error:
+            raise RuntimeError(
+                f"curl={curl_error}; aiohttp={type(aiohttp_error).__name__}: {aiohttp_error}"
+            ) from aiohttp_error
 
-            return text if text else "[Browser Warning] No meaningful content extracted from the page."
+    async def _fetch_with_curl(self, url: str) -> tuple[bytes, str]:
+        marker = b"\n__YURA_BROWSER_META__:"
+        process = await asyncio.create_subprocess_exec(
+            "curl",
+            "--location",
+            "--compressed",
+            "--silent",
+            "--show-error",
+            "--max-time",
+            str(max(3, self.timeout)),
+            "--user-agent",
+            self.user_agent,
+            "--write-out",
+            "\n__YURA_BROWSER_META__:%{http_code}\t%{content_type}",
+            url,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        stdout, stderr = await asyncio.wait_for(
+            process.communicate(), timeout=max(5, self.timeout + 3)
+        )
+        body, separator, metadata = stdout.rpartition(marker)
+        status, _, content_type = metadata.partition(b"\t") if separator else (b"", b"", b"")
+        if process.returncode != 0 or status.strip() != b"200":
+            detail = stderr.decode("utf-8", errors="ignore").strip()
+            raise RuntimeError(
+                f"HTTP {status.decode('ascii', errors='ignore') or 'unknown'}: {detail[:200]}"
+            )
+        if len(body) > 12_000_000:
+            raise RuntimeError(f"response exceeds 12 MB ({len(body)} bytes)")
+        return body, content_type.decode("utf-8", errors="ignore")
 
-        except aiohttp.ClientError as e:
-            return f"[Browser Error] Network error: {type(e).__name__}: {e}"
-        except Exception as e:
-            return f"[Browser Error] Unexpected: {type(e).__name__}: {e}"
-
-    async def _fetch(self, url: str) -> str:
-        """异步获取网页 HTML。"""
-        async with aiohttp.ClientSession(
-            timeout=aiohttp.ClientTimeout(total=self.timeout),
-            headers={"User-Agent": self.user_agent},
-        ) as session:
-            async with session.get(url, allow_redirects=True) as resp:
-                resp.raise_for_status()
-                # 尝试自动检测编码
-                charset = resp.charset or "utf-8"
-                return await resp.text(encoding=charset)
+    @staticmethod
+    def _extract_pdf_text(payload: bytes) -> str:
+        try:
+            from pypdf import PdfReader
+        except ImportError as exc:
+            raise RuntimeError("PDF extraction requires the pypdf dependency") from exc
+        reader = PdfReader(io.BytesIO(payload))
+        pages: list[str] = []
+        total_chars = 0
+        for page in reader.pages[:20]:
+            text = page.extract_text() or ""
+            if text.strip():
+                pages.append(text)
+                total_chars += len(text)
+            if total_chars >= 16000:
+                break
+        return BrowserTool._clean_text("\n\n".join(pages))
 
     def _extract_text(self, html: str) -> str:
         """从 HTML 中提取正文。"""

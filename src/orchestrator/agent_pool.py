@@ -37,10 +37,14 @@ class AgentPool:
         policy_factory,
         tools_factory=None,
         max_idle: int = 3,
+        researcher_max_turns: int = 10,
+        researcher_max_tool_calls: int = 4,
     ) -> None:
         self.policy_factory = policy_factory
         self.tools_factory = tools_factory
         self.max_idle = max(max_idle, 1)
+        self.researcher_max_turns = max(2, researcher_max_turns)
+        self.researcher_max_tool_calls = max(1, researcher_max_tool_calls)
 
         # 类型 -> 空闲 Agent 列表
         self._idle: dict[str, list[BaseAgent]] = {}
@@ -77,12 +81,14 @@ class AgentPool:
                 self._degraded_count[type_key] += 1
                 continue  # 丢弃，尝试下一个
             self._active_count[type_key] += 1
+            setattr(agent, "_pool_type_key", type_key)
             return agent
 
         # 新建 Agent
         agent = self._create_agent(type_key)
         self._created_count[type_key] += 1
         self._active_count[type_key] += 1
+        setattr(agent, "_pool_type_key", type_key)
         return agent
 
     async def release_agent(self, agent: "BaseAgent") -> None:
@@ -94,7 +100,7 @@ class AgentPool:
             return
 
         # 推断类型（从 agent 名称或类名推断）
-        type_key = self._infer_type_key(agent)
+        type_key = getattr(agent, "_pool_type_key", None) or self._infer_type_key(agent)
 
         self._active_count[type_key] = max(0, self._active_count.get(type_key, 0) - 1)
 
@@ -134,17 +140,23 @@ class AgentPool:
         from ..agents.summarizer import SummarizerAgent
         from .schemas import TaskType
 
+        researcher_kwargs = {
+            "policy": policy,
+            "tools": tools,
+            "max_turns": self.researcher_max_turns,
+            "max_tool_calls": self.researcher_max_tool_calls,
+        }
         if type_key == TaskType.SEARCH.value:
-            return ResearcherAgent(name=f"researcher_{type_key}", policy=policy, tools=tools)
+            return ResearcherAgent(name=f"researcher_{type_key}", **researcher_kwargs)
         elif type_key == TaskType.ANALYZE.value:
-            return ResearcherAgent(name=f"analyzer_{type_key}", policy=policy, tools=tools)
+            return ResearcherAgent(name=f"analyzer_{type_key}", **researcher_kwargs)
         elif type_key == TaskType.VERIFY.value:
-            return ResearcherAgent(name=f"verifier_{type_key}", policy=policy, tools=tools)
+            return ResearcherAgent(name=f"verifier_{type_key}", **researcher_kwargs)
         elif type_key == "synthesize":
             return SummarizerAgent(name="summarizer", policy=policy, tools=tools)
         else:
             # 默认降级为 Researcher
-            return ResearcherAgent(name=f"researcher_default", policy=policy, tools=tools)
+            return ResearcherAgent(name="researcher_default", **researcher_kwargs)
 
     def _infer_type_key(self, agent: "BaseAgent") -> str:
         """从 Agent 实例推断其类型键。"""

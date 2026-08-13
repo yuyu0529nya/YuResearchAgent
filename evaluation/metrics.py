@@ -244,12 +244,25 @@ class ResearchMetrics:
             "comprehensiveness": 0.15,
         }
 
+        normalized_metrics = dict(metrics)
+        if "factual_accuracy" not in normalized_metrics:
+            factual_parts: list[tuple[float, float]] = []
+            if "factual_accuracy_str" in normalized_metrics:
+                factual_parts.append((normalized_metrics["factual_accuracy_str"], 0.4))
+            if "factual_accuracy_sem" in normalized_metrics:
+                factual_parts.append((normalized_metrics["factual_accuracy_sem"], 0.6))
+            if factual_parts:
+                denominator = sum(weight for _, weight in factual_parts)
+                normalized_metrics["factual_accuracy"] = sum(
+                    value * weight for value, weight in factual_parts
+                ) / denominator
+
         w = weights if weights is not None else default_weights
         total_score = 0.0
         total_weight = 0.0
 
         for key, weight in w.items():
-            value = metrics.get(key, 0.0)
+            value = normalized_metrics.get(key, 0.0)
             total_score += value * weight
             total_weight += weight
 
@@ -298,6 +311,7 @@ class ResearchMetrics:
         import json
         import re
 
+        from evaluation.report_sampling import balanced_report_excerpt
         from src.models.model_router import ModelRouter
 
         gt_section = ""
@@ -305,13 +319,14 @@ class ResearchMetrics:
             gt_lines = "\n".join(f"- {k}: {v}" for k, v in ground_truth.items())
             gt_section = f"期望包含的关键事实：\n{gt_lines}\n"
 
+        report_excerpt = balanced_report_excerpt(report, max_chars=12000)
         prompt = f"""你是一位严谨的研究报告评审专家。请对以下研究报告进行评分。
 
 研究问题：{query}
 
 {gt_section}
 --- 研究报告 ---
-{report[:4000]}
+{report_excerpt}
 
 请从以下维度评分（每项 0-10 分，10 分为最高）：
 1. factual_accuracy: 事实准确性（数字、日期、人名、机构名是否正确）

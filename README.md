@@ -2,132 +2,178 @@
 
 # YuResearchAgent
 
-### 从复杂 Query 到可验证深度研究报告的多智能体系统
+### Evidence-grounded multi-agent deep research
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Async](https://img.shields.io/badge/Async-asyncio-orange.svg)](https://docs.python.org/3/library/asyncio.html)
-[![Tests](https://img.shields.io/badge/tests-167%20passing-brightgreen.svg)](tests/unit)
+[![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
+[![Version](https://img.shields.io/badge/version-0.2.0-2f855a.svg)](pyproject.toml)
+[![Tests](https://img.shields.io/badge/tests-242%20passing-brightgreen.svg)](tests/unit)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 </div>
 
-YuResearchAgent 是一个面向长问题、强证据和可复现评测的 Deep Research Agent。它把复杂研究问题拆成 DAG 子任务，并通过多 Agent 并发检索、共享记忆、上下文压缩、报告合成、对抗审查和统计评测，生成结构化 Markdown 研究报告。
+YuResearchAgent is a long-form research system in which citations are runtime
+data, not post-processing decoration. It decomposes a question into a dependency
+DAG, executes tool-using workers concurrently, records retrieved material in a
+typed Claim-Evidence-Source graph, identifies unsupported claims, and synthesizes
+a report under an explicit global time budget.
 
-## Highlights
+The default model is **Kimi Code K3** through its OpenAI-compatible endpoint.
+Zero-key retrieval cascades through Yahoo, Brave, and Wikipedia; scholarly
+metadata cascades through OpenAlex and Crossref. The browser can extract arXiv
+HTML or PDF full text rather than treating an abstract as a complete paper.
 
-- **多智能体显著优于单轮 LLM**：在 ResearchBench 15 题头对头评测中，Agent 平均综合分 `0.6034` vs 单轮 LLM `0.5586`，相对提升约 **+8.0%**，配对 bootstrap `95% CI=[+0.0134,+0.0761]`，`p=0.0021`，`Cohen's d=0.83`。结果见 [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json)。
-- **完整评测体系**：自建 ResearchBench 35 题 × 11 领域，规则指标覆盖事实、引用、幻觉、逻辑和完备性；LLM-as-Judge 用于专家抽查；统计层提供 bootstrap CI、p-value、Cohen's d 和配对 t-test。
-- **工程化 Agent 内核**：自研 9 状态 Orchestrator、DAG 拓扑并发、失败重规划、全局超时降级、AgentPool 复用、多后端模型路由。
-- **质量与鲁棒性优化**：引用质量从 `4/10` 提升到 `7/10`，LLM-Judge overall 从 `6/10` 提升到 `8/10`；合成器不再只看到 `[Result N]`，而是接收标题/作者/年份/链接结构化来源并生成规范参考文献表。统一 JSON fallback 解析器把畸形 LLM 输出恢复率从 `1/9` 提升到 `9/9`；修复上下文截断、工具失败误判、路径沙箱、统计退化输入等真实问题。
-- **真实 GRPO 训练闭环**：在单卡 RTX 5090 上完成 4 组 TRL + LoRA + GRPO 训练实验，覆盖 Qwen2.5-7B-Instruct、Qwen2.5-1.5B-Instruct 和 Qwen2.5-1.5B base，打通 rollout → reward → gradient update → LoRA adapter → held-out eval 的完整链路。
-- **可用界面**：提供 CLI、REPL 和 Gradio 流式 Web UI；Web UI 实时展示 planning → dispatching → synthesizing → done 的状态机进度，长任务不再黑盒等待。
+## Technical Core
+
+- **Typed EvidenceGraph**: stable SHA-256-derived IDs connect report claims to
+  exact evidence chunks and normalized source records. Verdicts are
+  `SUPPORTED`, `REFUTED`, or `NOT_ENOUGH_EVIDENCE`.
+- **Gap-driven retrieval**: low evidence coverage becomes bounded `VERIFY`
+  tasks prioritized by contradiction, numeric specificity, and uncertainty.
+- **Strict hybrid verification**: deterministic lexical, numeric, source-quality,
+  and polarity checks are followed by batched LLM entailment checks only for
+  ambiguous pairs. Compound claims require every material clause to be supported.
+- **Evidence-constrained synthesis**: the writer receives source title, authors,
+  year, URL, source ID, and claim verdicts; it must use mapped `[N]` citations and
+  generate a normalized bibliography.
+- **Long-horizon runtime**: a 9-state async orchestrator provides DAG scheduling,
+  worker isolation, bounded retries, replanning, partial-report fallback, and
+  separate reserves for synthesis and final audit.
+- **Auditable evaluation**: paired generation, exact report retention, SHA-256
+  integrity checks, counterbalanced LLM-as-Judge, bootstrap intervals, effect
+  sizes, token/latency telemetry, resume-safe checkpoints, and real config ablations.
+- **Streaming observability**: the Gradio UI exposes run state, tool events,
+  evidence coverage, unresolved claims, and high-value sources as research runs.
 
 ## Architecture
 
-```raw
-User Query
-    |
-    v
-Planner: JSON DAG decomposition
-    |
-    v
-Orchestrator: 9-state async scheduler + replan
-    |
-    v
-Worker Agents: web / paper / browser / file / calculator / sandbox tools
-    |
-    v
-Memory + Compressor: SQLite vector memory + semantic context compression
-    |
-    v
-Summarizer: cited Markdown report
-    |
-    v
-Optional Red-Blue Adversarial Review
-    |
-    v
-Evaluation: rules + LLM judge + statistical significance
+```mermaid
+flowchart LR
+    Q["Research query"] --> P["Planner: dependency DAG"]
+    P --> O["Async orchestrator"]
+    O --> W["Isolated research workers"]
+    W --> T["Search, papers, browser, files, code"]
+    T --> E["EvidenceStore"]
+    E --> V["Three-way ClaimVerifier"]
+    V -->|"coverage below threshold"| G["Targeted VERIFY tasks"]
+    G --> O
+    V --> S["Evidence-constrained synthesis"]
+    S --> A["Final report audit"]
+    A --> R["Report + evidence artifact"]
 ```
 
-| 模块 | 职责 | 关键实现 |
+| Layer | Implementation |
+|---|---|
+| Orchestration | DAG layers, `asyncio`, bounded concurrency, retries, replan, hard deadline |
+| Retrieval | Yahoo/Brave/Wikipedia, OpenAlex/Crossref, arXiv HTML/PDF, files, calculator, sandbox |
+| Evidence | typed schemas, canonical URLs, source dedupe, hashes, claim attribution edges |
+| Verification | lexical/numeric/polarity pass plus strict, source-bounded LLM entailment |
+| Context | feature-hash fallback, query-biased filtering, TextRank, hierarchical summary |
+| Synthesis | structured source catalog, verdict constraints, normalized references, final audit |
+| Evaluation | rule metrics, balanced Judge sampling, paired statistics, executable ablations |
+
+## Paper-Grounded Design
+
+The project adapts research ideas without claiming paper-equivalent reproduction:
+
+| Research idea | Concrete implementation | Boundary |
 |---|---|---|
-| M1 Orchestrator | 多 Agent 调度 | 9 状态状态机、DAG 层级并发、Semaphore、replan、全局超时 |
-| M2 Planner | 复杂问题拆解 | LLM 生成 JSON DAG，强约束子任务相关性和依赖合法性 |
-| M3 Compressor | 长上下文压缩 | Embedding 粗筛、TextRank 关键句、query-biased 过滤 |
-| M4 Memory Store | 跨 Agent 记忆 | SQLite + numpy 向量索引、session 隔离、去重、矛盾检测 |
-| M5 Adversarial Loop | Red-Blue 审查 | 五维 Red verdict、Blue 定点编辑、self-verify、截断保护 |
-| M6 Evolution | 自进化实验 | GRPO 数据/训练接口 + 独立 TRL/LoRA 真训练 PoC |
-| Evaluation | 质量度量 | ResearchBench、HotpotQA variant、规则指标、LLM-Judge、bootstrap |
+| [CAGE: Cognitive Attribution Graphs](https://arxiv.org/abs/2607.24236) | explicit Claim-Evidence-Source graph and citation alignment | independent graph implementation; no CAGE model training |
+| [WebWeaver](https://arxiv.org/abs/2509.13312) | evidence acquisition followed by coverage-triggered plan expansion | no learned dynamic-outline controller |
+| [A-RAG](https://arxiv.org/abs/2602.03442) | search, paper metadata, full-text reading, chunk-level verification | no learned retrieval policy |
+| [FS-Researcher](https://arxiv.org/abs/2602.01566) | persistent SQLite memory and hashed evidence artifacts | not a full file-system agent |
+| [ReSum](https://arxiv.org/abs/2509.13313) | budget-triggered multilevel context compression | no periodic ReSum-GRPO policy update |
+| [DeepResearch Bench II](https://arxiv.org/abs/2601.08536) | atomic claim diagnosis and separate rule/Judge layers | local suite is not benchmark-equivalent |
 
-## Evaluation Results
+The exact algorithm-to-code mapping is documented in
+[docs/ALGORITHMS.md](docs/ALGORITHMS.md). The
+[artifact index](docs/evaluation/README.md) labels every retained result by
+evidence level.
 
-### Agent vs Single-Shot LLM
+## Reproducible Evidence
 
-`scripts/run_headtohead.py` 用同一批 ResearchBench 题目比较完整 Agent 流程和单轮 LLM 直答，使用规则综合分做配对统计。
+### Real Kimi K3 Run And Evidence Replay
 
-| Setting | Agent | Single-shot LLM | Delta |
+A live run on 2026-08-13 queried first-party Qwen2.5 technical reports through
+Kimi K3, keyless scholarly retrieval, PDF extraction, synthesis, and final audit.
+
+| Runtime measure | Result |
+|---|---:|
+| Run status | complete |
+| API calls / total tokens | 11 / 41,267 |
+| Search calls | 3 |
+| Sources / evidence chunks | 3 / 15 |
+| Primary-source ratio | 100% |
+| Full-text-source ratio | 33.3% |
+| Wall time | 352.76 s |
+
+The exact [report](docs/evaluation/artifacts/evidence_v2/qwen25_agent.md) and
+[evidence graph](docs/evaluation/artifacts/evidence_v2/qwen25_evidence.json) are
+committed. Replaying the current verifier over those immutable inputs produces:
+
+| Audit mode | Supported | Unresolved | Coverage | API calls |
+|---|---:|---:|---:|---:|
+| deterministic heuristic | 3/30 | 27/30 | 10.0% | 0 |
+| independent hybrid Judge | 13/30 | 17/30 | 43.3% | 3 |
+
+The low heuristic score is intentional: Chinese claims do not receive semantic
+credit from English evidence by string proximity alone. The hybrid pass can
+resolve cross-language entailment, while unsupported compound claims remain NEI.
+Both complete replay artifacts are retained under
+[docs/evaluation/artifacts/evidence_v2](docs/evaluation/artifacts/evidence_v2).
+The [runtime manifest](docs/evaluation/artifacts/evidence_v2/runtime_manifest.json)
+pins every input and replay hash. This is a runtime and verifier test, not a
+population-level quality benchmark.
+
+### Corrected Head-To-Head Development Pilot
+
+The current v3 protocol compares the same base model on the same question:
+full Agent versus one Kimi K3 call, with exact reports and two counterbalanced
+DeepSeek Judge presentation orders.
+
+| n=1 development result | Agent | One-call baseline | Delta |
 |---|---:|---:|---:|
-| ResearchBench n=15 | 0.6034 | 0.5586 | +0.0448 |
+| ResearchBench v2 rule composite | 0.7182 | 0.6430 | +0.0753 |
+| Counterbalanced Judge mean, 1-5 | 4.50 | 3.25 | +1.25 |
+| Wall time | 447.70 s | 52.04 s | +395.66 s |
+| API tokens | 54,305 | 1,739 | +52,566 |
 
-Statistical test:
+With one pair, significance is undefined for practical purposes; the artifact
+therefore reports `p=1.0`, `method=insufficient_n`, and makes no general lift
+claim. Reports, evidence, hashes, telemetry, and raw Judge verdicts are in the
+[v3 pilot artifact](docs/evaluation/artifacts/headtohead_v3/headtohead_v3_pilot.json).
 
-- `95% CI = [+0.0134, +0.0761]`
-- `p = 0.0021`
-- `Cohen's d = 0.83`
-- Relative lift over baseline: about `+8.0%`
+### Real Module Ablation Diagnostic
 
-Raw summary: [docs/evaluation/headtohead_n15.json](docs/evaluation/headtohead_n15.json).
+The executable `full` versus `no_evidence` smoke ablation did **not** show a
+quality gain on its one question: rule composite `0.7289` versus `0.7405`, while
+the full system used 25,027 more tokens and 103.76 more seconds. This is retained
+as a negative result, not hidden as a successful ablation. The run predates the
+latest full-text and verifier fixes and is only a development diagnostic.
+[Exact artifact and reports](docs/evaluation/artifacts/ablation_v3/ablation_v3_smoke.json).
 
-### Rule Metrics + LLM-as-Judge
+### Evaluation Integrity Correction
 
-The evaluation stack is deliberately two-layered:
+An older n=15 artifact reported a significant gain, but audit found that a metric
+name mismatch silently removed the intended 25% factuality weight. It is marked
+`superseded_pending_rerun`; its compact reports were insufficient to recompute
+the corrected score. ResearchBench v2 now emits canonical factual accuracy and
+stores its metric contract in every artifact. See
+[docs/EXPERIMENTS.md](docs/EXPERIMENTS.md).
 
-- **Rule-based metrics** are cheap and reproducible: semantic/factual coverage, hallucination risk, citation coverage, logical consistency, comprehensiveness, efficiency.
-- **LLM-as-Judge** is used for expert-style audit: factuality, logic, citation quality and confidence, then aggregated with rule scores when needed.
+### Citation And GRPO Studies
 
-This avoids relying only on subjective judge output while still catching qualitative issues that string rules miss.
+- A fixed citation-development case moved from `4/10` to `7/10` after source
+  title/author/year/URL metadata was made available to synthesis. It is labeled
+  a development trace, not a general benchmark.
+- Four real TRL + LoRA + GRPO runs covered Qwen2.5 7B/1.5B instruct and 1.5B base.
+  Small held-out improvements were not statistically significant; higher train
+  reward did not improve one held-out result. The value is the complete training
+  pipeline and the documented negative finding, not an inflated capability claim.
 
-### Citation Quality Validation
-
-The strongest recent quality work is a citation upgrade: structured source metadata flows into
-the synthesis prompt, so the final report can cite concrete papers and generate a normalized
-bibliography with title, author, year, and URL provenance.
-
-| Version | Citation quality | Overall Judge score | Change |
-|---|---:|---:|---|
-| Baseline | 4/10 | 6/10 | generic `[Result N]` references |
-| v1 | 5/10 | - | researcher prompt prefers academic sources |
-| v2 | 6/10 | 7/10 | summarizer asks for real source citations |
-| v3 | 7/10 | 8/10 | structured source list with title/author/year/link |
-
-Compact evidence: [docs/evaluation/citation_quality_v3.json](docs/evaluation/citation_quality_v3.json).
-
-### GRPO Training System
-
-The project includes a real GRPO training pipeline on RTX 5090: rollout collection, reward scoring,
-LoRA updates, adapter export, and held-out evaluation. The experiments were used to validate the
-training infrastructure and compare how model size, initialization, and headroom affect observed
-RL gains.
-
-| Experiment | Model | Setup | Baseline | After GRPO | Finding |
-|---|---|---|---:|---:|---|
-| 1 | Qwen2.5-7B-Instruct | LoRA, 400 steps | 89% | 91% | Full 7B rollout/update/eval loop |
-| 2 | Qwen2.5-1.5B-Instruct | LoRA, 400 steps | 66.6% | 69.4% | Measured held-out lift at larger n |
-| 3 | Qwen2.5-1.5B-Instruct | tuned accumulation/temp/500 steps | 66.6% | 69.4% | Reward and eval dynamics audit |
-| 4 | Qwen2.5-1.5B base | R1-Zero-style cold start | 55% | 60% | Larger headroom produces larger lift |
-
-See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) and [scripts/grpo_poc/SUMMARY.md](scripts/grpo_poc/SUMMARY.md).
-
-## Engineering Work
-
-- **Robust JSON parser**: one shared parser handles markdown fences, trailing commas, line comments, balanced braces and noisy prefixes. Tests quantify `json.loads` baseline `1/9` vs fallback parser `9/9`.
-- **Citation quality**: researcher and summarizer prompts force source title + author/org + year, prefer academic/primary sources for technical tasks, and feed numbered structured sources into synthesis to avoid generic `[Result N]` references.
-- **Blue targeted edits**: adversarial repair no longer rewrites the whole report by default; it applies exact `before -> after` replacements to avoid truncating long reports.
-- **Timeout control**: OpenAI-compatible client uses explicit request timeout/retry bounds; adversarial stage is wrapped by remaining global timeout.
-- **Memory hygiene**: low-quality greetings/errors are rejected before entering long-term memory; session scoped vector retrieval prevents stale cross-run contamination.
-- **File sandboxing**: FileReader uses `Path.resolve()` + `is_relative_to()` instead of string-prefix checks.
-- **CI and tests**: 167 unit tests run without API keys or GPU; CI covers Python 3.10-3.13.
+Artifacts: [citation trace](docs/evaluation/citation_quality_v3.json),
+[GRPO manifest](docs/evaluation/grpo_runs.json), and
+[training summary](scripts/grpo_poc/SUMMARY.md).
 
 ## Quick Start
 
@@ -135,92 +181,131 @@ See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) and [scripts/grpo_poc/SUMMARY.md]
 git clone https://github.com/yuyu0529nya/YuResearchAgent.git
 cd YuResearchAgent
 
-uv venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-cp .env.template .env
-# Fill one OpenAI-compatible backend, for example QWEN_API_KEY or GLM_API_KEY.
+cp .env.template .env.local
+# Set KIMI_API_KEY in .env.local. Never commit this file.
 ```
 
-Run one research query:
+Run one query:
 
 ```bash
 python scripts/run_single.py \
-  --query "2024-2025年大模型Agent技术趋势与落地案例研究" \
+  --query "对比 2025-2026 年深度研究 Agent 的证据归因方法" \
   --config configs/default.yaml
 ```
 
-Interactive REPL:
+Start the streaming UI:
 
 ```bash
-python scripts/run_repl.py
-```
-
-Streaming Web UI:
-
-```bash
-pip install gradio
 python scripts/run_webui.py
-# http://localhost:7860
+# http://127.0.0.1:7860
 ```
 
-Unit tests:
+Optional heavy features are explicit: `pip install -e '.[web]'` for Gradio,
+`.[semantic]` for sentence-transformers, `.[analysis]` for evaluation analysis,
+and `.[train]` for TRL/LoRA. The default core path does not install Torch.
+
+## Evaluation Workflows
+
+Run the API-free suite:
 
 ```bash
 pip install -r requirements-test.txt
 pytest tests/unit -q
 ```
 
-Head-to-head benchmark:
+Run the corrected, resume-safe paired protocol:
 
 ```bash
-python scripts/run_headtohead.py --num_questions 15 --config configs/default.yaml
+python scripts/run_headtohead.py \
+  --num_questions 15 \
+  --judge_backend deepseek \
+  --output outputs/evaluation/headtohead_v3.json
 ```
 
-## Repository Structure
+Replay an exact report/evidence pair without an LLM:
 
-```raw
+```bash
+python scripts/replay_evidence.py \
+  --report docs/evaluation/artifacts/evidence_v2/qwen25_agent.md \
+  --evidence docs/evaluation/artifacts/evidence_v2/qwen25_evidence.json \
+  --output outputs/evaluation/evidence_replay.json
+```
+
+Add `--verifier-backend deepseek` for source-bounded semantic verification.
+
+## Configuration
+
+Core switches live in [configs/default.yaml](configs/default.yaml):
+
+```yaml
+orchestrator:
+  max_concurrent: 2
+  global_timeout_seconds: 480
+  synthesis_reserve_seconds: 110
+  final_audit_reserve_seconds: 35
+
+evidence:
+  enabled: true
+  verification_mode: hybrid
+  min_coverage: 0.55
+  max_gap_rounds: 1
+  max_gap_tasks: 2
+```
+
+`memory.enabled`, `compressor.enable_multilevel`, `planner.enable_replan`,
+`planner.enable_completeness_check`, and `evidence.enabled` are executable
+ablation switches. Red-Blue review is disabled by default because retained A/B
+evidence did not establish a quality gain.
+
+## Reliability
+
+- Independent mutable model policies prevent worker tool schemas and truncation
+  flags from leaking across concurrent trajectories.
+- Every network tool has a bounded timeout and returns a recoverable observation;
+  completed work survives global timeout or synthesis failure as a partial report.
+- Search snippets, abstracts, and full text remain distinct evidence types;
+  browser errors cannot become evidence.
+- arXiv PDF/HTML URLs and versions canonicalize to one source; DOI URLs receive
+  equivalent normalization.
+- Exact reports and evidence graphs are retained with integrity hashes; resume
+  rejects missing or modified report artifacts.
+- Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
+  A/B ordering is counterbalanced.
+- `242` API-free unit tests cover orchestration, parsing, retrieval, evidence,
+  metrics, replay integrity, provider compatibility, and regressions. CI runs on
+  Python 3.10, 3.11, 3.12, and 3.13.
+
+## Repository Layout
+
+```text
 YuResearchAgent/
-├── configs/                  # YAML config center
-├── src/                      # core source, 11.8k LOC
-│   ├── orchestrator/         # M1 scheduler and schemas
-│   ├── planner/              # M2 DAG planner
-│   ├── compressor/           # M3 context compression
-│   ├── memory/               # M4 SQLite + vector memory
-│   ├── adversarial/          # M5 Red-Blue loop
-│   ├── evolution/            # M6 evolution interfaces
-│   ├── agents/               # researcher / summarizer agents
-│   ├── models/               # OpenAI-compatible model router
-│   ├── tools/                # search, browser, file, calculator, sandbox
-│   └── utils/                # JSON parsing, tracing, env
-├── evaluation/               # ResearchBench, metrics, reports
-├── scripts/                  # CLI, benchmark, Web UI, GRPO PoC
-├── docs/                     # summarized experiment evidence
-└── tests/                    # 167 unit tests
+├── configs/                  # runtime and module configuration
+├── src/
+│   ├── orchestrator/         # state machine, DAG execution, AgentPool
+│   ├── evidence/             # typed store, verifier, gap planner
+│   ├── planner/              # planning and replanning
+│   ├── agents/               # researcher and constrained synthesizer
+│   ├── tools/                # search, papers, browser, files, code
+│   ├── compressor/           # multilevel long-context control
+│   ├── memory/               # scoped SQLite/vector memory
+│   └── models/               # OpenAI-compatible backend router
+├── evaluation/               # benchmark contracts, metrics, Judge, statistics
+├── scripts/                  # CLI, UI, evaluation, replay, GRPO PoC
+├── docs/                     # algorithm mapping and experiment ledger
+└── tests/unit/               # deterministic API-free suite
 ```
 
-## Tech Stack
+## Current Boundary
 
-| Layer | Stack |
-|---|---|
-| Language | Python 3.10+ |
-| Concurrency | asyncio, Semaphore, background thread for Web UI streaming |
-| LLM Backends | Qwen / GLM / DeepSeek / MiMo / OpenAI / vLLM-compatible APIs |
-| Retrieval | Web search, browser extraction, ArXiv/Semantic Scholar/OpenAlex |
-| Memory | SQLite, numpy vector index, sentence-transformers |
-| Training PoC | TRL GRPOTrainer, LoRA, PEFT, RTX 5090 |
-| Evaluation | ResearchBench, HotpotQA variant, bootstrap, Cohen's d, LLM-as-Judge |
-| UI | CLI, REPL, Gradio streaming Web UI |
-
-## Resume Bullets
-
-- Built a deep-research multi-agent system with DAG planning, async orchestration, shared vector memory, citation-aware synthesis, adversarial review, and statistical evaluation.
-- Demonstrated significant lift over single-shot LLM baseline on ResearchBench (`+8.0%`, n=15, `p=0.0021`, `d=0.83`) using paired bootstrap testing.
-- Designed a reproducible evaluation stack combining rule-based metrics, LLM-as-Judge audit, ResearchBench 35-question suite, and head-to-head benchmarking.
-- Improved citation quality from `4/10` to `7/10` and overall Judge score from `6/10` to `8/10` by passing structured source metadata into the synthesis prompt and producing normalized references.
-- Implemented and analyzed 4 real GRPO training runs on RTX 5090 with TRL + LoRA across 7B/1.5B/base models, covering rollout collection, reward scoring, LoRA updates, adapter export, and held-out evaluation.
-- Hardened production reliability with robust JSON parsing, timeout boundaries, memory quality filters, path sandboxing, targeted report repair, and 167 API-free unit tests in CI.
+The engineering system is complete enough to run and audit, but the strongest
+scientific claim is still pending: a corrected, report-retaining n=15 rerun has
+not yet established that multi-agent execution beats the one-call baseline.
+The repository treats that as the next experiment rather than reusing an invalid
+historical significance result.
 
 ## License
 

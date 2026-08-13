@@ -1,5 +1,5 @@
 """
-论文阅读工具 (ArxivReaderTool) — 支持多后端：ArXiv / Semantic Scholar / OpenAlex
+论文阅读工具 (ArxivReaderTool) — 支持自动级联 / Crossref / ArXiv / Semantic Scholar / OpenAlex
 
 设计理由：
   ArXiv API 在中国大陆访问不稳定（经常超时/断开）。
@@ -8,6 +8,7 @@
   通过 .env 中的 ARXIV_READER_BACKEND 切换后端，零源码修改。
 
 后端对比：
+  - crossref:           DOI 元数据稳定，免费无需 Key，但不保证提供摘要
   - arxiv:              论文库最全，但国内需 VPN
   - semantic_scholar:   国内可达，覆盖 2 亿+ 论文，含引用数据
   - openalex:           国内可达，完全免费无需 Key，元数据丰富
@@ -15,23 +16,38 @@
 from __future__ import annotations
 
 import asyncio
+import re
 import json
 import random
 import xml.etree.ElementTree as ET
 from typing import Any
+from urllib.parse import urlencode
 
 import aiohttp
+from bs4 import BeautifulSoup
 
 from ..utils.env_config import get_env
 
 __all__ = ["ArxivReaderTool"]
 
 
+_GENERIC_ACADEMIC_TERMS = {
+    "academic", "algorithm", "analysis", "architecture", "benchmark", "citation",
+    "comparison", "evaluation", "framework", "large", "language", "llm", "model",
+    "paper", "publication", "report", "research", "study", "survey", "system",
+    "technical", "technology", "the", "and", "for", "with", "using",
+}
+
+
+def _academic_tokens(text: str) -> set[str]:
+    return set(re.findall(r"[a-z][a-z0-9_.+-]*|\d+(?:\.\d+)?", (text or "").lower()))
+
+
 class ArxivReaderTool:
     """论文读取工具：支持 ArXiv / Semantic Scholar / OpenAlex 三后端。
 
     配置优先从 .env / .env.local 读取：
-      - ARXIV_READER_BACKEND: 后端选择，可选 "arxiv" | "semantic_scholar" | "openalex"（默认 semantic_scholar）
+      - ARXIV_READER_BACKEND: "auto" | "openalex" | "crossref" | "arxiv" | "semantic_scholar"（默认 auto）
       - ARXIV_API_ENDPOINT:    ArXiv API 端点（一般不需要改）
       - SEMANTIC_SCHOLAR_API_KEY: Semantic Scholar API Key（免费申请，可选）
       - OPENALEX_EMAIL:        OpenAlex 可选邮箱（提高 rate limit，建议填写）
@@ -40,13 +56,13 @@ class ArxivReaderTool:
     name: str = "arxiv_reader"
     description: str = (
         "Read paper metadata from academic databases. "
-        "Supports ArXiv, Semantic Scholar, and OpenAlex backends. "
+        "Supports Crossref, ArXiv, Semantic Scholar, and OpenAlex backends. "
         "Input: {'paper_id': str(optional), 'query': str(optional), 'max_results': int(default=3)}. "
         "Output: list of paper metadata dicts."
     )
 
     def __init__(self, backend: str | None = None, use_mock: bool = False, delay_ms: tuple[int, int] = (50, 200)) -> None:
-        self.backend = (backend or get_env("ARXIV_READER_BACKEND", "semantic_scholar")).lower().strip()
+        self.backend = (backend or get_env("ARXIV_READER_BACKEND", "auto")).lower().strip()
         self.use_mock = use_mock
         self.delay_ms = delay_ms
 
@@ -61,6 +77,10 @@ class ArxivReaderTool:
         self.openalex_email = get_env("OPENALEX_EMAIL", "")
         self.openalex_base_url = "https://api.openalex.org"
 
+        # Crossref 配置（免费无需 Key，部分网络环境比 ArXiv/OpenAlex 稳定）
+        self.crossref_email = get_env("CROSSREF_EMAIL", "")
+        self.crossref_base_url = "https://api.crossref.org"
+
     def get_openai_tool_schema(self) -> dict:
         return {
             "type": "function",
@@ -69,6 +89,7 @@ class ArxivReaderTool:
                 "description": self.description,
                 "parameters": {
                     "type": "object",
+                    "description": "Provide either paper_id for lookup or query for search.",
                     "properties": {
                         "paper_id": {
                             "type": "string",
@@ -84,7 +105,6 @@ class ArxivReaderTool:
                             "default": 3,
                         },
                     },
-                    "anyOf": [{"required": ["paper_id"]}, {"required": ["query"]}],
                 },
             },
         }
@@ -95,11 +115,289 @@ class ArxivReaderTool:
         if self.use_mock:
             return await self._mock_execute(paper_id, query, max_results)
 
+        if self.backend == "auto":
+            return await self._auto_execute(paper_id, query, max_results)
+        if self.backend == "crossref":
+            return await self._crossref_execute(paper_id, query, max_results)
         if self.backend == "semantic_scholar":
             return await self._semantic_scholar_execute(paper_id, query, max_results)
         if self.backend == "openalex":
             return await self._openalex_execute(paper_id, query, max_results)
         return await self._arxiv_execute(paper_id, query, max_results)
+
+    async def _auto_execute(
+        self,
+        paper_id: str | None,
+        query: str | None,
+        max_results: int,
+    ) -> dict[str, Any]:
+        """Use OpenAlex for scholarly relevance, with bounded retry and DOI fallback."""
+        # OpenAlex direct work IDs accept OpenAlex IDs and DOI URLs, not arXiv IDs.
+        openalex_id = paper_id
+        openalex_query = query
+        if paper_id and not (paper_id.upper().startswith("W") or paper_id.startswith("10.")):
+            openalex_id = None
+            openalex_query = paper_id
+
+        fetch_limit = max_results if paper_id else min(10, max(max_results * 3, max_results))
+        attempts: list[dict[str, Any]] = []
+        raw_result = await self._openalex_curl_execute(openalex_id, openalex_query, fetch_limit)
+        result = self._filter_search_result(raw_result, openalex_query, max_results)
+        attempts.append(result)
+        if result.get("papers"):
+            result["source"] = "auto:openalex"
+            result["transport"] = "curl"
+            return result
+
+        # A second transport is useful for a network failure, but not when the
+        # first transport already returned the same irrelevant ranking.
+        if not raw_result.get("papers"):
+            raw_result = await self._openalex_execute(openalex_id, openalex_query, fetch_limit)
+            result = self._filter_search_result(raw_result, openalex_query, max_results)
+            attempts.append(result)
+            if result.get("papers"):
+                result["source"] = "auto:openalex"
+                result["transport"] = "aiohttp"
+                return result
+
+        crossref_id = paper_id if paper_id and paper_id.startswith("10.") else None
+        raw_crossref = await self._crossref_execute(
+            crossref_id,
+            query or (paper_id if crossref_id is None else None),
+            fetch_limit,
+        )
+        crossref = self._filter_search_result(
+            raw_crossref,
+            query or (paper_id if crossref_id is None else None),
+            max_results,
+        )
+        if crossref.get("papers"):
+            crossref["source"] = "auto:crossref"
+            crossref["warning"] = "OpenAlex returned no papers; Crossref fallback used"
+            return crossref
+        return {
+            "source": "auto:openalex+crossref",
+            "query": query or paper_id,
+            "papers": [],
+            "error": "; ".join(
+                str(result.get("error"))
+                for result in [*attempts, crossref]
+                if result.get("error")
+            )
+            or "Academic search returned no relevant papers",
+        }
+
+    @classmethod
+    def _filter_search_result(
+        cls,
+        result: dict[str, Any],
+        query: str | None,
+        max_results: int,
+    ) -> dict[str, Any]:
+        """Filter metadata-only fallbacks that match generic academic terms only.
+
+        OpenAlex and Crossref occasionally rank an unrelated item because both
+        the query and title contain words such as "technical report" or
+        "benchmark". Named model/version tokens are therefore treated as the
+        discriminating part of the query. Direct ID lookups pass ``query=None``
+        and remain untouched.
+        """
+        payload = dict(result)
+        papers = [paper for paper in result.get("papers", []) if isinstance(paper, dict)]
+        if not query:
+            payload["papers"] = papers[:max_results]
+            return payload
+
+        query_tokens = {
+            token
+            for token in _academic_tokens(query)
+            if token not in _GENERIC_ACADEMIC_TERMS
+            and not (token.isdigit() and 1900 <= int(token) <= 2100)
+        }
+        if not query_tokens:
+            payload["papers"] = papers[:max_results]
+            return payload
+
+        ranked: list[tuple[float, int, dict[str, Any]]] = []
+        for index, paper in enumerate(papers):
+            title_tokens = _academic_tokens(str(paper.get("title", "")))
+            content_tokens = title_tokens | _academic_tokens(str(paper.get("summary", ""))[:2000])
+            overlap = query_tokens & content_tokens
+            if not overlap:
+                continue
+            ratio = len(overlap) / len(query_tokens)
+            has_identifier = any(
+                any(char.isdigit() for char in token) or any(char in token for char in ".+-")
+                for token in overlap
+            )
+            if len(overlap) < 2 and ratio < 0.25 and not has_identifier:
+                continue
+            title_ratio = len(query_tokens & title_tokens) / len(query_tokens)
+            ranked.append((title_ratio * 0.7 + ratio * 0.3, -index, paper))
+
+        ranked.sort(key=lambda item: (item[0], item[1]), reverse=True)
+        payload["papers"] = [paper for _, _, paper in ranked[:max_results]]
+        filtered_count = len(papers) - len(payload["papers"])
+        if filtered_count:
+            payload["filtered_irrelevant"] = filtered_count
+        return payload
+
+    async def _openalex_curl_execute(
+        self,
+        paper_id: str | None,
+        query: str | None,
+        max_results: int,
+    ) -> dict[str, Any]:
+        """OpenAlex transport fallback for networks that reset aiohttp TLS."""
+        if paper_id:
+            url = f"{self.openalex_base_url}/works/{paper_id}"
+        else:
+            url = f"{self.openalex_base_url}/works?{urlencode({'search': query or '', 'per-page': max_results})}"
+        marker = b"\n__YURA_HTTP_STATUS__:"
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl",
+                "--location",
+                "--compressed",
+                "--silent",
+                "--show-error",
+                "--max-time",
+                "12",
+                "--user-agent",
+                "YuResearchAgent/0.1",
+                "--write-out",
+                "\n__YURA_HTTP_STATUS__:%{http_code}",
+                url,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, stderr = await asyncio.wait_for(process.communicate(), timeout=15)
+        except FileNotFoundError:
+            return {"source": "openalex", "query": query or paper_id, "papers": []}
+        except (asyncio.TimeoutError, OSError) as exc:
+            return {
+                "source": "openalex",
+                "query": query or paper_id,
+                "papers": [],
+                "error": f"OpenAlex curl error: {type(exc).__name__}: {exc}",
+            }
+
+        body, separator, status_bytes = stdout.rpartition(marker)
+        status = status_bytes.decode("ascii", errors="ignore").strip() if separator else ""
+        if process.returncode != 0 or status != "200":
+            return {
+                "source": "openalex",
+                "query": query or paper_id,
+                "papers": [],
+                "error": "OpenAlex curl HTTP "
+                f"{status or 'unknown'}: {stderr.decode('utf-8', errors='ignore')[:200]}",
+            }
+        try:
+            data = json.loads(body.decode("utf-8", errors="ignore"))
+        except json.JSONDecodeError as exc:
+            return {
+                "source": "openalex",
+                "query": query or paper_id,
+                "papers": [],
+                "error": f"OpenAlex returned invalid JSON: {exc}",
+            }
+        items = [data] if paper_id else data.get("results", [])
+        return {
+            "source": "openalex",
+            "query": query or paper_id,
+            "papers": [
+                self._openalex_paper_to_dict(item)
+                for item in items[:max_results]
+                if isinstance(item, dict)
+            ],
+        }
+
+    async def _crossref_execute(
+        self, paper_id: str | None, query: str | None, max_results: int
+    ) -> dict[str, Any]:
+        """Search Crossref for DOI-backed scholarly metadata."""
+        headers = {
+            "User-Agent": (
+                f"YuResearchAgent/0.1 (mailto:{self.crossref_email})"
+                if self.crossref_email
+                else "YuResearchAgent/0.1"
+            )
+        }
+        if paper_id:
+            url = f"{self.crossref_base_url}/works/{paper_id}"
+            params = None
+        else:
+            url = f"{self.crossref_base_url}/works"
+            params = {
+                "query.bibliographic": query or "",
+                "rows": max(1, min(max_results, 10)),
+            }
+        try:
+            async with aiohttp.ClientSession(headers=headers) as session:
+                async with session.get(
+                    url,
+                    params=params,
+                    timeout=aiohttp.ClientTimeout(total=15),
+                ) as response:
+                    data = await response.json(content_type=None)
+                    if response.status != 200:
+                        return {
+                            "source": "crossref",
+                            "query": query or paper_id,
+                            "papers": [],
+                            "error": f"Crossref API error: HTTP {response.status}",
+                        }
+        except Exception as exc:
+            return {
+                "source": "crossref",
+                "query": query or paper_id,
+                "papers": [],
+                "error": f"Crossref network error: {type(exc).__name__}: {exc}",
+            }
+
+        message = data.get("message", {})
+        items = [message] if paper_id and isinstance(message, dict) else message.get("items", [])
+        papers = [self._crossref_paper_to_dict(item) for item in items if isinstance(item, dict)]
+        return {
+            "source": "crossref",
+            "query": query or paper_id,
+            "papers": papers[:max_results],
+        }
+
+    @staticmethod
+    def _crossref_paper_to_dict(data: dict[str, Any]) -> dict[str, Any]:
+        title_value = data.get("title", "")
+        title = title_value[0] if isinstance(title_value, list) and title_value else str(title_value or "")
+        authors = []
+        for author in data.get("author", [])[:10]:
+            name = " ".join(
+                part for part in (str(author.get("given", "")), str(author.get("family", ""))) if part
+            )
+            if name:
+                authors.append(name)
+        date_parts = (
+            data.get("published", {}).get("date-parts")
+            or data.get("published-online", {}).get("date-parts")
+            or data.get("created", {}).get("date-parts")
+            or []
+        )
+        published = "-".join(str(part) for part in date_parts[0]) if date_parts else ""
+        abstract_html = str(data.get("abstract", ""))
+        abstract = BeautifulSoup(abstract_html, "html.parser").get_text(" ", strip=True)
+        abstract = re.sub(r"\s+", " ", abstract)
+        doi = str(data.get("DOI", ""))
+        return {
+            "id": doi,
+            "title": title,
+            "authors": authors,
+            "summary": abstract,
+            "published": published,
+            "pdf_url": str(data.get("URL") or (f"https://doi.org/{doi}" if doi else "")),
+            "source": "crossref",
+            "citation_count": data.get("is-referenced-by-count"),
+            "publisher": data.get("publisher", ""),
+            "container_title": (data.get("container-title") or [""])[0],
+        }
 
     # ------------------------------------------------------------------
     # Mock 模式

@@ -53,3 +53,10 @@ def test_get_task_map_preserves_subtask_fields():
     task_map = p.get_task_map_from_dag(dag, raw)
     assert "t1" in task_map
     assert task_map["t1"].description == "desc-1"
+
+
+def test_build_prompt_uses_configured_subtask_limit():
+    planner = Planner(policy=None, max_sub_questions=5)
+    prompt = planner._build_prompt("test query", "")
+    assert "no more than 5 sub_tasks" in prompt
+    assert "up to 5 focused sub_tasks" in prompt
