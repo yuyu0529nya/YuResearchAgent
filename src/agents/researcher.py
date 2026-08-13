@@ -16,7 +16,7 @@ import json
 from typing import Any
 
 from .base_agent import BaseAgent
-from ..orchestrator.schemas import SubTask, AgentResult, AgentStatus
+from ..orchestrator.schemas import SubTask, AgentResult, AgentStatus, TaskType
 from ..utils.tracing import trace_agent
 
 
@@ -46,9 +46,11 @@ class ResearcherAgent(BaseAgent):
         policy,
         tools: list | None = None,
         max_turns: int = 10,
+        max_tool_calls: int = 4,
     ) -> None:
         super().__init__(name, policy, tools)
         self.max_turns = max_turns
+        self.max_tool_calls = max(1, max_tool_calls)
         self.tool_map: dict[str, Any] = {t.name: t for t in (tools or [])}
 
     @trace_agent(name="researcher.run", tags=["agent", "researcher"])
@@ -66,6 +68,42 @@ class ResearcherAgent(BaseAgent):
 
         # 构建任务描述
         task_desc = self._build_task_prompt(task, context)
+
+        # ANALYZE nodes should consume completed dependency evidence instead of
+        # starting a second, disconnected search trajectory. VERIFY nodes still
+        # use tools to independently check claims.
+        if self._is_dependency_analysis_task(task, context):
+            messages = [
+                {"role": "system", "content": self._system_prompt_dependency_analysis()},
+                {"role": "user", "content": task_desc},
+            ]
+            old_tools = getattr(self.policy, "tools", None)
+            try:
+                if hasattr(self.policy, "tools"):
+                    self.policy.tools = None
+                response = await asyncio.to_thread(self.policy, messages)
+                content = response.get("content", "") or ""
+                if self._is_tool_failure_explanation(content):
+                    raise RuntimeError(content)
+                return AgentResult(
+                    task_id=task.task_id,
+                    status=AgentStatus.SUCCESS,
+                    output=content,
+                    trajectory=[{"role": "assistant", "content": content}],
+                    token_usage=(len(task_desc) + len(content)) // 3,
+                    confidence=self._extract_confidence(content),
+                )
+            except Exception as exc:
+                return AgentResult(
+                    task_id=task.task_id,
+                    status=AgentStatus.FAILED,
+                    output=f"Dependency analysis failed: {exc}",
+                    trajectory=[{"error": str(exc)}],
+                    confidence=0.0,
+                )
+            finally:
+                if hasattr(self.policy, "tools"):
+                    self.policy.tools = old_tools
 
         # 查询可行性判断：如果任务明显无法通过网络搜索获得答案，直接基于已知信息分析
         if self._is_non_searchable(task, context):
@@ -106,7 +144,10 @@ class ResearcherAgent(BaseAgent):
 
         # 根据任务类型确定 fallback 工具
         desc_lower = (task.description or "").lower()
-        academic_keywords = ["论文", "paper", "publication", "学术", "arxiv", "neurips", "icml", "iclr", "scholar", "citation", "文献"]
+        academic_keywords = [
+            "论文", "paper", "publication", "学术", "arxiv", "neurips", "icml", "iclr", "scholar", "citation", "文献",
+            "算法", "benchmark", "architecture", "llm", "agent", "模型", "技术框架",
+        ]
         fallback_tool = "arxiv_reader" if any(kw in desc_lower for kw in academic_keywords) else "web_search"
         
         for turn in range(self.max_turns):
@@ -140,6 +181,16 @@ class ResearcherAgent(BaseAgent):
 
             content = response.get("content", "") or ""
             tool_calls = response.get("tool_calls", []) or []
+            used_tool_calls = sum(1 for step in trajectory if step.get("role") == "tool")
+            remaining_tool_calls = self.max_tool_calls - used_tool_calls
+            if tool_calls and remaining_tool_calls <= 0:
+                messages.append({
+                    "role": "user",
+                    "content": "The tool budget is exhausted. Write the evidence-based final summary now.",
+                })
+                continue
+            if len(tool_calls) > remaining_tool_calls:
+                tool_calls = tool_calls[:remaining_tool_calls]
 
             trajectory.append({
                 "turn": turn,
@@ -185,24 +236,24 @@ class ResearcherAgent(BaseAgent):
 
                 result = await self._execute_tool(tool_name, args)
 
-                # B方案：检测工具返回结果是否包含 error 字段
+                # 单个工具失败不应判死整个子任务；把错误写回模型，让它在剩余
+                # 工具预算内切换检索后端或策略。
                 if isinstance(result, dict) and result.get("error"):
                     error_msg = result["error"]
+                    tool_results.append({
+                        "tool_call_id": tc.get("id", ""),
+                        "name": tool_name,
+                        "result": {"error": error_msg},
+                    })
                     trajectory.append({
                         "turn": turn,
                         "role": "tool",
                         "tool_call_id": tc.get("id", ""),
                         "name": tool_name,
+                        "arguments": args,
                         "error": error_msg,
                     })
-                    return AgentResult(
-                        task_id=task.task_id,
-                        status=AgentStatus.FAILED,
-                        output=f"Tool '{tool_name}' failed: {error_msg}",
-                        trajectory=trajectory,
-                        token_usage=total_tokens,
-                        confidence=0.0,
-                    )
+                    continue
 
                 tool_results.append({
                     "tool_call_id": tc.get("id", ""),
@@ -214,10 +265,12 @@ class ResearcherAgent(BaseAgent):
                     "role": "tool",
                     "tool_call_id": tc.get("id", ""),
                     "name": tool_name,
+                    "arguments": args,
                     "result": result,
                 })
 
-            # 检测搜索结果是否全为空（工具返回了但无有效内容）
+            # 检测工具结果是否全为空。旧逻辑只识别 web_search，导致有效的
+            # arxiv/browser 结果也被误判为空并提前结束。
             all_empty = True
             for tr in tool_results:
                 if tr["name"] == "web_search":
@@ -227,14 +280,21 @@ class ResearcherAgent(BaseAgent):
                             if r.get("snippet", "").strip():
                                 all_empty = False
                                 break
+                elif tr["name"] == "arxiv_reader":
+                    res = tr["result"]
+                    if isinstance(res, dict) and res.get("papers"):
+                        all_empty = False
+                elif isinstance(tr["result"], str) and tr["result"].strip():
+                    normalized_result = tr["result"].lstrip().lower()
+                    if not normalized_result.startswith(
+                        ("[browser error]", "[browser warning]", "error:")
+                    ):
+                        all_empty = False
+                elif isinstance(tr["result"], dict) and tr["result"]:
+                    all_empty = False
             
-            # 如果已搜索 2+ 轮或搜索结果全空，强制要求总结
-            search_count = sum(1 for t in trajectory if t.get("role") == "tool" and t.get("name") == "web_search")
-            force_summary = False
-            if search_count >= 2:
-                force_summary = True
-            if all_empty and tool_results:
-                force_summary = True
+            tool_call_count = sum(1 for t in trajectory if t.get("role") == "tool")
+            force_summary = tool_call_count >= self.max_tool_calls or (all_empty and bool(tool_results))
 
             # 将 assistant message 和 tool results 追加到 messages
             assistant_msg = {
@@ -253,6 +313,8 @@ class ResearcherAgent(BaseAgent):
                 # 如果强制总结，给工具结果附加提示
                 if force_summary:
                     msg_content += "\n\n[SYSTEM NOTICE] You have already searched enough. Write your final summary NOW. Do NOT call any more tools."
+                elif isinstance(tr["result"], dict) and tr["result"].get("error"):
+                    msg_content += "\n\n[SYSTEM NOTICE] This tool failed. Try a different tool or query. Do not fabricate evidence."
                 messages.append({
                     "role": "tool",
                     "tool_call_id": tr["tool_call_id"],
@@ -297,10 +359,10 @@ class ResearcherAgent(BaseAgent):
             "3b. For EACH key fact, record its source title + author/org + year so it can be cited precisely.\n"
             "4. If search results are too short, use browser to read the full article.\n"
             "5. If the task involves numbers/calculations, use calculator or code_sandbox.\n"
-            "6. You may call tools AT MOST 2 times total. After that you MUST summarize.\n"
+            f"6. You may call tools AT MOST {self.max_tool_calls} times total. After that you MUST summarize.\n"
             "7. Only after gathering information, provide a concise summary with a confidence score (0-1).\n"
             "8. NEVER greet the user or ask what they want to search — just execute immediately.\n"
-            "9. If you have already performed 2 tool calls, do NOT call more — write the final summary now."
+            f"9. If you have already performed {self.max_tool_calls} tool calls, do NOT call more — write the final summary now."
         )
 
     def _system_prompt_direct_analysis(self) -> str:
@@ -311,6 +373,53 @@ class ResearcherAgent(BaseAgent):
             "Your job is to provide a reasoned analysis based ONLY on the information already provided in the context. "
             "Do NOT make up facts. Clearly state what is known, what can be reasonably inferred, and what remains unknown. "
             "End with a confidence score (0-1)."
+        )
+
+    def _system_prompt_dependency_analysis(self) -> str:
+        return (
+            "You are an evidence synthesis analyst. Use ONLY the original question and dependency outputs "
+            "provided by upstream research nodes. Do not search, invent facts, silently replace named entities, "
+            "or treat unresolved statements as verified. Preserve source titles, URLs, authors, years, and "
+            "citation markers. Explicitly separate supported findings, conflicts, and missing evidence. "
+            "Write a concise Chinese analysis ending with a confidence score from 0 to 1."
+        )
+
+    @staticmethod
+    def _dependency_evidence(context: dict) -> list[tuple[str, str]]:
+        evidence: list[tuple[str, str]] = []
+        for key, value in sorted(context.items()):
+            if not key.startswith("dep:"):
+                continue
+            output = getattr(value, "output", value)
+            if output:
+                evidence.append((key, str(output)))
+        return evidence
+
+    def _is_dependency_analysis_task(self, task: SubTask, context: dict) -> bool:
+        """Recover dependency-analysis intent when Planner mislabels it SEARCH.
+
+        The Planner output is generated text, so task type is not a hard trust
+        boundary. A dependent node that explicitly asks to synthesize upstream
+        findings should not launch another disconnected search trajectory.
+        Verification language remains tool-backed even when dependencies exist.
+        """
+        if not self._dependency_evidence(context):
+            return False
+        if task.task_type == TaskType.ANALYZE:
+            return True
+        description = (task.description or "").lower()
+        if any(
+            marker in description
+            for marker in ("核验", "验证", "查证", "反驳", "verify", "validate", "fact-check")
+        ):
+            return False
+        return any(
+            marker in description
+            for marker in (
+                "基于前序", "基于上述", "基于已有", "汇总", "综合", "整合",
+                "对比分析", "比较分析", "归因", "synthesize", "synthesise",
+                "aggregate", "based on the preceding", "based on upstream",
+            )
         )
 
     def _is_non_searchable(self, task: SubTask, context: dict) -> bool:
@@ -376,6 +485,7 @@ class ResearcherAgent(BaseAgent):
         
         lines = [
             f"## Task: {task.description}",
+            f"Original research question: {context.get('query', '')}",
             f"Type: {task.task_type.value}",
             f"Expected output: {task.expected_type}",
             "",
@@ -392,11 +502,10 @@ class ResearcherAgent(BaseAgent):
             "## INSTRUCTIONS:",
             f"1. First, call the '{primary_tool}' tool with a relevant query to gather information.",
             "2. Review the results.",
-            f"3. If needed, call '{primary_tool}' ONE MORE time with a refined query.",
-            "   You may call tools AT MOST 2 times total. After the 2nd call, you MUST write the final summary.",
-            "4. If search results are too short, you may use 'browser' to read the full article (counts as 1 tool call).",
+            f"3. Refine the search when needed; the total tool-call budget is {self.max_tool_calls}.",
+            "4. Open at least one high-value result with 'browser' when a full-text URL is available.",
             "5. If calculations are needed, use 'calculator' or 'code_sandbox' (counts as 1 tool call).",
-            "6. Finally, summarize your findings in Chinese with a confidence score (0-1).",
+            "6. Separate verified facts from unresolved or conflicting evidence, then summarize in Chinese with a confidence score (0-1).",
             "7. DO NOT greet the user or ask clarifying questions — just execute immediately.",
             "8. IMPORTANT: Your query MUST directly address the task description.",
         ])
@@ -410,6 +519,16 @@ class ResearcherAgent(BaseAgent):
             if ctx_parts:
                 lines.append("\n## Context:")
                 lines.extend(ctx_parts)
+        dependencies = self._dependency_evidence(context)
+        if dependencies:
+            lines.append("\n## Upstream dependency evidence:")
+            remaining = 14000
+            for key, output in dependencies:
+                if remaining <= 0:
+                    break
+                excerpt = output[: min(7000, remaining)]
+                lines.append(f"\n### {key}\n{excerpt}")
+                remaining -= len(excerpt)
         return "\n".join(lines)
 
     async def _execute_tool(self, tool_name: str, args: dict) -> dict:
@@ -429,7 +548,9 @@ class ResearcherAgent(BaseAgent):
         """
         if not content:
             return False
-        c = content.lower()
+        c = content.strip().lower()
+        if c.startswith("error:"):
+            return True
         failure_keywords = [
             "无法通过", "无法执行", "无法使用", "无法获取", "无法访问",
             "额度已用尽", "配额已用完", "额度已用完", "搜索配额",

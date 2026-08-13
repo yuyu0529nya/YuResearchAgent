@@ -1,0 +1,429 @@
+{
+  "artifact_schema": "headtohead-v3-auditable",
+  "status": "complete",
+  "evaluation_version": "researchbench-v2-factual-weight-fix",
+  "metric_weights": {
+    "factual_accuracy": 0.25,
+    "logical_consistency": 0.2,
+    "citation_coverage": 0.2,
+    "bias": 0.2,
+    "comprehensiveness": 0.15
+  },
+  "protocol": {
+    "pairing": "same ResearchBench questions",
+    "agent": "full orchestrated retrieval and evidence pipeline",
+    "baseline": "same base model, one API call, no tools or retrieval",
+    "report_retention": "exact Markdown reports and SHA-256 hashes",
+    "execution_failures": "excluded from quality pairs and reported separately",
+    "judge": "deepseek, 2 counterbalanced presentation order(s)",
+    "bootstrap_seed": 42
+  },
+  "models": {
+    "agent_backend": "kimi",
+    "agent_model": "k3",
+    "baseline_backend": "kimi",
+    "baseline_model": "k3",
+    "baseline_sampling": {
+      "temperature": 0.5,
+      "max_tokens": 4000
+    },
+    "judge_backend": "deepseek"
+  },
+  "question_ids": [
+    "tech_001"
+  ],
+  "started_at": "2026-08-13T08:40:33.775851+00:00",
+  "updated_at": "2026-08-13T09:05:41.686567+00:00",
+  "completed_questions": 1,
+  "num_questions": 1,
+  "rows": [
+    {
+      "qid": "tech_001",
+      "domain": "科技",
+      "query": "对比分析 2024 年主流大语言模型（GPT-4o、Claude 3.5、Gemini 1.5、Qwen2.5）在中文推理、代码生成和长上下文任务上的表现差异，并分析其技术路线差异。",
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "errors": [],
+      "agent": {
+        "rule": {
+          "question_id": "tech_001",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.37777777777777777,
+            "bias": 0.9634146341463414,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.7182384823848239,
+          "hallucination_rate": 0.036585365853658534
+        },
+        "runtime": {
+          "run_status": "complete",
+          "elapsed_seconds": 447.7011,
+          "confidence": 0.39,
+          "num_searches": 15,
+          "num_replan": 0,
+          "evidence_gap_rounds": 0,
+          "adversarial_rounds": 0,
+          "source_count": 12,
+          "estimated_worker_tokens": 26154
+        },
+        "usage": {
+          "api_calls": 16,
+          "completion_tokens": 8589,
+          "failed_calls": 0,
+          "prompt_tokens": 45716,
+          "total_tokens": 54305
+        },
+        "evidence_metrics": {
+          "claim_count": 34,
+          "claim_support_coverage": 0.0294,
+          "claim_citation_rate": 0.4118,
+          "cited_claim_support_precision": 0.0714,
+          "supported_claim_citation_rate": 1.0,
+          "attribution_coverage": 0.0294,
+          "refuted_rate": 0.0,
+          "nei_rate": 0.9706,
+          "source_count": 11,
+          "evidence_count": 15,
+          "primary_source_ratio": 0.4545,
+          "fulltext_source_ratio": 0.0909
+        },
+        "report": {
+          "path": "docs/evaluation/artifacts/headtohead_v3/tech_001_agent.md",
+          "sha256": "e45243b5809befc16933cec4bcdb9c16de0521ccbf2fa9bafdfe863baf8483c1",
+          "characters": 5624
+        },
+        "evidence_artifact": {
+          "path": "docs/evaluation/artifacts/headtohead_v3/evidence/tech_001.json",
+          "sha256": "afd240fca23f87321b1d35f670057073e011ce8141c3b0e1bb0d19fee1758f40"
+        }
+      },
+      "baseline": {
+        "rule": {
+          "question_id": "tech_001",
+          "domain": "科技",
+          "evaluation_version": "researchbench-v2-factual-weight-fix",
+          "metric_weights": {
+            "factual_accuracy": 0.25,
+            "logical_consistency": 0.2,
+            "citation_coverage": 0.2,
+            "bias": 0.2,
+            "comprehensiveness": 0.15
+          },
+          "metrics": {
+            "factual_accuracy": 0.4,
+            "factual_accuracy_str": 1.0,
+            "factual_accuracy_sem": 0.0,
+            "logical_consistency": 1.0,
+            "citation_coverage": 0.0,
+            "bias": 0.9649122807017544,
+            "comprehensiveness": 1.0
+          },
+          "composite_score": 0.642982456140351,
+          "hallucination_rate": 0.03508771929824561
+        },
+        "runtime": {
+          "elapsed_seconds": 52.0406
+        },
+        "usage": {
+          "api_calls": 1,
+          "completion_tokens": 1537,
+          "failed_calls": 0,
+          "prompt_tokens": 202,
+          "total_tokens": 1739
+        },
+        "report": {
+          "path": "docs/evaluation/artifacts/headtohead_v3/tech_001_baseline.md",
+          "sha256": "f23721acc16b4908bde3ab01b9b96d2d0e97662b3b33f0568546a59b91a901a4",
+          "characters": 2930
+        }
+      },
+      "judge": {
+        "dimensions": {
+          "comprehensiveness": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "accuracy": {
+            "agent": 4.0,
+            "baseline": 3.0,
+            "delta": 1.0
+          },
+          "structure": {
+            "agent": 5.0,
+            "baseline": 4.0,
+            "delta": 1.0
+          },
+          "sources": {
+            "agent": 4.0,
+            "baseline": 2.0,
+            "delta": 2.0
+          }
+        },
+        "agent_mean": 4.5,
+        "baseline_mean": 3.25,
+        "delta": 1.25,
+        "orders_completed": 2,
+        "raw": [
+          {
+            "order": {
+              "A": "agent",
+              "B": "baseline"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A全面覆盖了研究问题的所有子维度，包括中文推理、代码生成、长上下文任务，并深入分析了技术路线差异，还讨论了版本漂移、基准口径等细节；报告B覆盖了主要维度，但技术路线分析相对简略，缺乏对矛盾证据的深入探讨。"
+              },
+              "accuracy": {
+                "A": 4.0,
+                "B": 3.0,
+                "reason": "报告A基于核验的官方资料和同行评议研究，对不确定信息明确标注置信度，并指出基准口径问题，准确性较高；报告B包含具体基准分数（如HumanEval 92%），但未提供来源，且部分数据可能不准确，存在幻觉风险。"
+              },
+              "structure": {
+                "A": 5.0,
+                "B": 4.0,
+                "reason": "报告A结构清晰，包含执行摘要、背景、关键发现、矛盾消解、结论等部分，逻辑连贯；报告B结构合理，但部分内容重复，且缺乏对矛盾证据的讨论，整体逻辑性稍弱。"
+              },
+              "sources": {
+                "A": 4.0,
+                "B": 2.0,
+                "reason": "报告A引用了官方博客和同行评议论文，并提供了DOI链接，但部分来源未核验，且引用数量有限；报告B未提供任何具体引用来源，仅提及公开评测，引用质量低。"
+              },
+              "judge_backend": "deepseek"
+            }
+          },
+          {
+            "order": {
+              "A": "baseline",
+              "B": "agent"
+            },
+            "result": {
+              "comprehensiveness": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "A覆盖了三个任务维度和技术路线，但缺少对评测口径的讨论；B不仅覆盖全面，还深入分析了版本漂移、基准偏差等元问题，并给出了选型启示。"
+              },
+              "accuracy": {
+                "A": 3.0,
+                "B": 4.0,
+                "reason": "A引用了一些具体分数（如HumanEval 92%），但未注明来源，且部分数据（如Gemini 1.5上下文200万）与参考事实有出入；B对数据持谨慎态度，明确标注了未核验部分，并引用了同行评议研究，但部分结论仍依赖未验证的公开共识。"
+              },
+              "structure": {
+                "A": 4.0,
+                "B": 5.0,
+                "reason": "A结构清晰，有表格和结论，但逻辑跳跃（如技术路线分析较浅）；B结构严谨，从执行摘要到结论层层递进，并包含矛盾消解和启示，逻辑性强。"
+              },
+              "sources": {
+                "A": 2.0,
+                "B": 4.0,
+                "reason": "A未提供任何引用来源，数据可信度低；B提供了具体参考文献（如LC-Eval、HumanEval研究），并明确说明证据局限性，但部分关键来源（如OpenAI官方文档）未能核验。"
+              },
+              "judge_backend": "deepseek"
+            }
+          }
+        ]
+      },
+      "judge_usage": {
+        "api_calls": 2,
+        "completion_tokens": 652,
+        "failed_calls": 0,
+        "prompt_tokens": 9984,
+        "total_tokens": 10636
+      },
+      "status": "complete"
+    }
+  ],
+  "summary": {
+    "rule_composite": {
+      "left_mean": 0.7182,
+      "right_mean": 0.643,
+      "cohens_d": 0.0,
+      "bootstrap": {
+        "mean_diff": 0.0753,
+        "ci_lower": 0.0753,
+        "ci_upper": 0.0753,
+        "p_value": 1.0,
+        "significant": false,
+        "n": 1,
+        "method": "insufficient_n"
+      },
+      "paired_t_test": {
+        "mean_diff": 0.0753,
+        "n": 1,
+        "t_statistic": 0.0,
+        "p_value": 1.0,
+        "method": "insufficient_n"
+      },
+      "n_pairs": 1
+    },
+    "rule_metrics": {
+      "factual_accuracy": {
+        "left_mean": 0.4,
+        "right_mean": 0.4,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 0.0,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "logical_consistency": {
+        "left_mean": 1.0,
+        "right_mean": 1.0,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 0.0,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "citation_coverage": {
+        "left_mean": 0.3778,
+        "right_mean": 0.0,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 0.3778,
+          "ci_lower": 0.3778,
+          "ci_upper": 0.3778,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 0.3778,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "bias": {
+        "left_mean": 0.9634,
+        "right_mean": 0.9649,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": -0.0015,
+          "ci_lower": -0.0015,
+          "ci_upper": -0.0015,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": -0.0015,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "comprehensiveness": {
+        "left_mean": 1.0,
+        "right_mean": 1.0,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 0.0,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      }
+    },
+    "llm_judge": {
+      "left_mean": 4.5,
+      "right_mean": 3.25,
+      "cohens_d": 0.0,
+      "bootstrap": {
+        "mean_diff": 1.25,
+        "ci_lower": 1.25,
+        "ci_upper": 1.25,
+        "p_value": 1.0,
+        "significant": false,
+        "n": 1,
+        "method": "insufficient_n"
+      },
+      "paired_t_test": {
+        "mean_diff": 1.25,
+        "n": 1,
+        "t_statistic": 0.0,
+        "p_value": 1.0,
+        "method": "insufficient_n"
+      },
+      "n_pairs": 1
+    },
+    "agent_evidence": {
+      "claim_support_coverage": 0.0294,
+      "claim_citation_rate": 0.4118,
+      "cited_claim_support_precision": 0.0714,
+      "attribution_coverage": 0.0294,
+      "primary_source_ratio": 0.4545,
+      "fulltext_source_ratio": 0.0909
+    },
+    "latency_seconds": {
+      "agent_mean": 447.7011,
+      "baseline_mean": 52.0406
+    },
+    "api_total_tokens": {
+      "agent_mean": 54305.0,
+      "baseline_mean": 1739.0,
+      "judge_mean": 10636.0
+    },
+    "failed_questions": []
+  }
+}

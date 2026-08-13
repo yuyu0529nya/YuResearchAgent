@@ -7,7 +7,9 @@ src/orchestrator/orchestrator.py 的纯决策逻辑单元测试。
 """
 import asyncio
 import time
+from types import SimpleNamespace
 
+from src.evidence import ClaimVerifier, EvidenceKind, EvidenceStore
 from src.orchestrator.orchestrator import Orchestrator
 from src.orchestrator.schemas import AgentResult, AgentStatus, ResearchReport, RunConfig
 
@@ -105,3 +107,117 @@ def test_looks_like_error_filters_llm_and_tool_errors():
     assert _looks_like_error("[Calculator Error] Division by zero") is True
     assert _looks_like_error("2024 年 LLM Agent 的关键趋势是工具使用与多智能体协作。") is False
     assert _looks_like_error("") is False
+
+
+def test_timeout_report_preserves_successful_partial_results():
+    o = _orch(timeout=1)
+    o._query = "q"
+    o._all_results = [
+        AgentResult(
+            task_id="t1",
+            status=S,
+            output="A completed evidence-based finding.",
+            confidence=0.8,
+            trajectory=[{"role": "tool"}],
+        ),
+        AgentResult(task_id="t2", status=T, output="timeout"),
+    ]
+
+    report = o._build_timeout_report()
+
+    assert "A completed evidence-based finding" in report.content
+    assert report.confidence == 0.56
+    assert report.num_searches == 1
+    assert report.run_status == "partial_timeout"
+
+
+def test_gap_research_preserves_synthesis_time_budget():
+    o = _orch(timeout=480)
+    o._config.synthesis_reserve_seconds = 110
+    o._config.evidence_gap_min_seconds = 100
+    o._config.enable_evidence = True
+    o._config.enable_completeness_check = True
+    o._config.max_evidence_gap_rounds = 1
+    o._config.min_evidence_coverage = 0.55
+    o._evidence_audit = SimpleNamespace(
+        coverage=0.1,
+        claims=[SimpleNamespace(status=SimpleNamespace(value="not_enough_evidence"))],
+    )
+    o.evidence_store = object()
+
+    o._start_time = time.monotonic() - 330  # 150 seconds remain; synthesis wins.
+    assert o._should_fill_evidence_gaps() is False
+
+    o._start_time = time.monotonic() - 180  # 300 seconds remain; one gap round fits.
+    assert o._should_fill_evidence_gaps() is True
+
+
+def test_synthesis_compressor_changes_long_context_without_mutating_raw_results():
+    class _Compressor:
+        available_budget = 10
+        l1_threshold = 0.6
+
+        @staticmethod
+        def calculate_tokens(texts):
+            return 100
+
+        @staticmethod
+        def compress(texts, query, system_prompt_tokens):
+            return ["compressed"]
+
+    o = Orchestrator(planner=None, agent_pool=None, compressor=_Compressor())
+    o._query = "q"
+    raw = AgentResult(task_id="t1", status=S, output="raw evidence " * 20, confidence=0.8)
+
+    prepared = o._prepare_synthesis_results([raw])
+
+    assert prepared[0].output == "compressed"
+    assert raw.output.startswith("raw evidence")
+
+
+def test_final_evidence_audits_report_even_after_global_budget_expires():
+    store = EvidenceStore(persist_enabled=False)
+    source = store.upsert_source(url="https://example.com/model", title="Model card")
+    store.add_evidence(
+        source.source_id,
+        "The model supports a context window of 128K tokens.",
+        EvidenceKind.FULL_TEXT,
+    )
+    o = Orchestrator(
+        planner=None,
+        agent_pool=None,
+        evidence_store=store,
+        evidence_verifier=ClaimVerifier(support_threshold=0.2),
+    )
+    o._query = "q"
+    o._config = RunConfig(global_timeout_seconds=1, enable_evidence=True)
+    o._start_time = time.monotonic() - 10
+    o._evidence_audit = SimpleNamespace(
+        coverage=0.0,
+        claims=[],
+        to_dict=lambda _: {"coverage": 0.0, "claims": []},
+    )
+    report = ResearchReport(
+        query="q",
+        content="The model supports a context window of 128K tokens [1].",
+        sources=[{"source_id": source.source_id, "url": source.url}],
+        confidence=0.8,
+    )
+
+    asyncio.run(o._finalize_evidence(report))
+
+    assert report.evidence_audit["coverage"] == 1.0
+    assert report.evidence_audit["claims"][0]["cited_indices"] == [1]
+
+
+def test_run_config_has_final_audit_reserve() -> None:
+    from src.core.runner import build_run_config
+
+    run_config = build_run_config(
+        {
+            "orchestrator": {"final_audit_reserve_seconds": 27},
+            "evidence": {"enabled": True},
+        }
+    )
+
+    assert run_config.final_audit_reserve_seconds == 27

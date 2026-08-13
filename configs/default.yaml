@@ -8,7 +8,7 @@
 system:
   # 系统名称与版本号
   name: "YuResearchAgent"
-  version: "0.1.0"
+  version: "0.2.0"
   # 日志级别: DEBUG / INFO / WARNING / ERROR
   log_level: "INFO"
   # 工作目录，用于存放临时文件与输出报告
@@ -19,6 +19,9 @@ model:
   # 多后端 LLM 配置
   # ---------------------------------------------------------------------------
   # 后端选择策略:
+  #   - "kimi"      : 使用 Kimi Code API（需配置 .env 中的 KIMI_API_KEY）
+  #   - "qwen"      : 使用 DashScope Qwen API（需配置 .env 中的 QWEN_API_KEY）
+  #   - "glm"       : 使用智谱 GLM API（需配置 .env 中的 GLM_API_KEY）
   #   - "deepseek"  : 使用 DeepSeek API（需配置 .env 中的 DEEPSEEK_API_KEY）
   #   - "vllm"      : 使用本地 vLLM 服务（默认 http://localhost:8000/v1）
   #   - "openai"    : 使用 OpenAI API（需配置 .env 中的 OPENAI_API_KEY）
@@ -27,7 +30,7 @@ model:
   # 所有敏感信息（API Key、URL）均从 .env / .env.local 读取，
   # 修改此 YAML 即可切换后端，无需改动源码。
   # ---------------------------------------------------------------------------
-  backend: "qwen"              # 默认后端名称（通义千问 Qwen，限流更宽）
+  backend: "kimi"              # 默认后端名称（Kimi Code K3）
 
   # 以下为向后兼容的显式配置（优先级低于 .env）。
   # 推荐做法：在 .env 中配置，此处留空或注释掉。
@@ -79,7 +82,7 @@ model:
         max_tokens: 4000
       summarizer:
         temperature: 0.5       # 合成报告：流畅但不发散
-        max_tokens: 8000       # glm-4.6 输出上限更高，给报告更足的空间
+        max_tokens: 4000       # 兼顾完整报告与交互等待时间
       red_agent:
         temperature: 0.1       # 攻击必须严谨，几乎不需要随机性
         max_tokens: 4000
@@ -97,16 +100,16 @@ model:
   # 后端分工映射（哪个模块用哪个后端）
   # ---------------------------------------------------------------------------
   # 全部模块指向单一后端：这样每个模块才能拿到 backend_sampling.modules 里的专属采样参数
-  # （planner 4000 / summarizer 8000 等）。若留空 {}，所有模块会退回 default_policy 的全局
+  # （planner 4000 / summarizer 4000 等）。若留空 {}，所有模块会退回 default_policy 的全局
   # 默认 max_tokens=1024，导致 planner 的 JSON DAG 被截断、解析失败。
   backend_mapping:
-    solver: "qwen"
-    planner: "qwen"
-    summarizer: "qwen"
-    judge: "qwen"
-    red_agent: "qwen"
-    blue_agent: "qwen"
-    compressor: "qwen"
+    solver: "kimi"
+    planner: "kimi"
+    summarizer: "kimi"
+    judge: "kimi"
+    red_agent: "kimi"
+    blue_agent: "kimi"
+    compressor: "kimi"
 
 orchestrator:
   # M1: Multi-Agent Orchestrator 配置
@@ -115,16 +118,20 @@ orchestrator:
   # 全局超时时间（秒），超过则强制终止整个研究流程
   global_timeout_seconds: 480
   # 最大重规划（replan）轮数，防止无限循环
-  max_replan_rounds: 3
+  max_replan_rounds: 1
   # 单次规划最多拆分的子问题数量
-  max_sub_questions: 10
+  max_sub_questions: 4
   # 子 Agent 执行失败后的最大重试次数
-  max_subagent_retries: 2
+  max_subagent_retries: 1
+  # 证据补检不得侵占最终合成和终审的保留时间
+  synthesis_reserve_seconds: 110
+  # 最终报告的 claim-citation 审计使用独立预算；会从合成 timeout 中预留
+  final_audit_reserve_seconds: 35
 
 planner:
   # M2: Adaptive Planner 配置
   # 每个子 Agent 最多允许的搜索/执行轮数
-  max_search_rounds_per_subagent: 2
+  max_search_rounds_per_subagent: 4
   # 是否启用动态计划调整（replan）
   enable_replan: true
   # 计划执行完成后是否自动进行完整性检查
@@ -136,11 +143,11 @@ compressor:
   max_context_length: 16000
   # 为输出保留的 token 预算（避免压缩后无法生成回答）
   output_reserve_tokens: 2048
-  # L1 粗过滤阈值：低于此相似度的文档直接丢弃
+  # 上下文预算使用率超过该值时触发 L1 粗过滤
   l1_threshold: 0.6
-  # L2 细过滤阈值：中等相似度，进入摘要候选池
+  # 上下文预算使用率超过该值时触发 L2 关键句提取
   l2_threshold: 0.8
-  # L3 保留阈值：高于此相似度的原始文本完整保留
+  # 上下文预算使用率超过该值时触发 L3 层级摘要
   l3_threshold: 0.95
   # 用于语义相似度计算的 embedding 模型
   embedding_model: "all-MiniLM-L6-v2"
@@ -149,6 +156,8 @@ compressor:
 
 memory:
   # M4: Shared Memory Store 配置
+  # 总开关；消融实验会显式关闭
+  enabled: true
   # SQLite 数据库文件路径
   db_path: "data/memory.db"
   # 内存表中最大条目数，超过则触发淘汰
@@ -161,6 +170,22 @@ memory:
   evict_interval: 100
   # 是否启用向量化索引（加速相似度检索）
   enable_vector_index: true
+
+evidence:
+  # Claim → Evidence → Source 证据图与缺口驱动补充检索
+  enabled: true
+  artifact_dir: "outputs/evidence"
+  persist: true
+  # heuristic 可完全复现；hybrid 会让 Judge LLM 复核模糊的 claim-evidence 对
+  verification_mode: "hybrid"
+  support_threshold: 0.38
+  max_claims: 60
+  max_llm_claims: 12
+  min_coverage: 0.55
+  max_gap_rounds: 1
+  max_gap_tasks: 2
+  # 一轮缺口检索的最低预算；还需额外保留 orchestrator.synthesis_reserve_seconds
+  gap_min_seconds: 100
 
 adversarial:
   # M5: Red-Blue Adversarial Loop 配置
@@ -205,6 +230,8 @@ tools:
   # 工具模块全局配置
   web_search:
     enabled: true
+    # auto 依次尝试 keyless Yahoo、Brave、Wikipedia，并做相关性重排
+    backend: "auto"
     # mock_mode: 无真实搜索 API 时返回模拟结果，用于快速调试
     mock_mode: false
     # 单次搜索返回的最大结果数

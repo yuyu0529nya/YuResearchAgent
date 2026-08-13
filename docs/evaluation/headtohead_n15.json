@@ -1,4 +1,7 @@
 {
+  "artifact_schema": "headtohead-v1-legacy",
+  "status": "superseded_pending_rerun",
+  "superseded_reason": "The legacy evaluator emitted factual_accuracy_str and factual_accuracy_sem, while the composite expected factual_accuracy. This silently zeroed the 25% factuality weight. The paired reports are not stored, so corrected scores cannot be reconstructed from this compact artifact.",
   "rows": [
     {"qid": "tech_001", "agent": 0.6537037037037038, "baseline": 0.5857954545454546},
     {"qid": "tech_002", "agent": 0.5433333333333333, "baseline": 0.5633333333333334},

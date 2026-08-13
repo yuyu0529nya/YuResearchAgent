@@ -1,0 +1,494 @@
+{
+  "artifact_schema": "ablation-v3-auditable",
+  "status": "complete",
+  "evaluation_name": "YuResearchAgent paired module ablation",
+  "evaluation_version": "researchbench-v2-factual-weight-fix",
+  "metric_weights": {
+    "factual_accuracy": 0.25,
+    "logical_consistency": 0.2,
+    "citation_coverage": 0.2,
+    "bias": 0.2,
+    "comprehensiveness": 0.15
+  },
+  "mode": "module",
+  "reference_system": "full",
+  "question_ids": [
+    "tech_001"
+  ],
+  "num_questions": 1,
+  "started_at": "2026-08-13T09:06:56.931457+00:00",
+  "updated_at": "2026-08-13T09:22:31.415259+00:00",
+  "protocol": {
+    "pairing": "same question set for every system",
+    "memory_isolation": "fresh module graph and session per question",
+    "report_retention": "exact Markdown and SHA-256",
+    "execution_failures": "excluded from quality statistics",
+    "bootstrap_seed": 42
+  },
+  "systems": [
+    {
+      "system_name": "full",
+      "description": "完整系统",
+      "overrides": {},
+      "execution_success_rate": 1.0,
+      "average_composite_score": 0.7289,
+      "details": [
+        {
+          "question_id": "tech_001",
+          "query": "对比分析 2024 年主流大语言模型（GPT-4o、Claude 3.5、Gemini 1.5、Qwen2.5）在中文推理、代码生成和长上下文任务上的表现差异，并分析其技术路线差异。",
+          "status": "complete",
+          "rule": {
+            "question_id": "tech_001",
+            "domain": "科技",
+            "evaluation_version": "researchbench-v2-factual-weight-fix",
+            "metric_weights": {
+              "factual_accuracy": 0.25,
+              "logical_consistency": 0.2,
+              "citation_coverage": 0.2,
+              "bias": 0.2,
+              "comprehensiveness": 0.15
+            },
+            "metrics": {
+              "factual_accuracy": 0.4,
+              "factual_accuracy_str": 1.0,
+              "factual_accuracy_sem": 0.0,
+              "logical_consistency": 1.0,
+              "citation_coverage": 0.4264705882352941,
+              "bias": 0.9680851063829787,
+              "comprehensiveness": 1.0
+            },
+            "composite_score": 0.7289111389236547,
+            "hallucination_rate": 0.031914893617021274
+          },
+          "runtime": {
+            "run_status": "complete",
+            "elapsed_seconds": 519.0778,
+            "confidence": 0.48,
+            "num_searches": 12,
+            "num_replan": 0,
+            "evidence_gap_rounds": 0,
+            "adversarial_rounds": 0,
+            "source_count": 28,
+            "estimated_worker_tokens": 27776
+          },
+          "usage": {
+            "api_calls": 19,
+            "completion_tokens": 10097,
+            "failed_calls": 0,
+            "prompt_tokens": 56959,
+            "total_tokens": 67056
+          },
+          "evidence_metrics": {
+            "claim_count": 59,
+            "claim_support_coverage": 0.0,
+            "claim_citation_rate": 0.0,
+            "cited_claim_support_precision": 0.0,
+            "supported_claim_citation_rate": 0.0,
+            "attribution_coverage": 0.0,
+            "refuted_rate": 0.0,
+            "nei_rate": 1.0,
+            "source_count": 26,
+            "evidence_count": 26,
+            "primary_source_ratio": 0.3462,
+            "fulltext_source_ratio": 0.0
+          },
+          "report": {
+            "path": "docs/evaluation/artifacts/ablation_v3/full/tech_001_full.md",
+            "sha256": "1186ba2921178d47859ac23d58d5f8b846111bab5e847987b0b7215edeac2da3",
+            "characters": 6714
+          },
+          "evidence_artifact": {
+            "path": "docs/evaluation/artifacts/ablation_v3/full/evidence/tech_001.json",
+            "sha256": "6d8c17562686341f6973d741635dcfbb4841512698afa7c02203036952f63e02"
+          }
+        }
+      ]
+    },
+    {
+      "system_name": "no_evidence",
+      "description": "关闭 Claim-Evidence 证据图",
+      "overrides": {
+        "evidence": {
+          "enabled": false
+        }
+      },
+      "execution_success_rate": 1.0,
+      "average_composite_score": 0.7405,
+      "details": [
+        {
+          "question_id": "tech_001",
+          "query": "对比分析 2024 年主流大语言模型（GPT-4o、Claude 3.5、Gemini 1.5、Qwen2.5）在中文推理、代码生成和长上下文任务上的表现差异，并分析其技术路线差异。",
+          "status": "complete",
+          "rule": {
+            "question_id": "tech_001",
+            "domain": "科技",
+            "evaluation_version": "researchbench-v2-factual-weight-fix",
+            "metric_weights": {
+              "factual_accuracy": 0.25,
+              "logical_consistency": 0.2,
+              "citation_coverage": 0.2,
+              "bias": 0.2,
+              "comprehensiveness": 0.15
+            },
+            "metrics": {
+              "factual_accuracy": 0.4,
+              "factual_accuracy_str": 1.0,
+              "factual_accuracy_sem": 0.0,
+              "logical_consistency": 1.0,
+              "citation_coverage": 0.46875,
+              "bias": 0.9838709677419355,
+              "comprehensiveness": 1.0
+            },
+            "composite_score": 0.7405241935483872,
+            "hallucination_rate": 0.016129032258064516
+          },
+          "runtime": {
+            "run_status": "complete",
+            "elapsed_seconds": 415.3195,
+            "confidence": 0.6,
+            "num_searches": 11,
+            "num_replan": 0,
+            "evidence_gap_rounds": 0,
+            "adversarial_rounds": 0,
+            "source_count": 10,
+            "estimated_worker_tokens": 24131
+          },
+          "usage": {
+            "api_calls": 12,
+            "completion_tokens": 7628,
+            "failed_calls": 0,
+            "prompt_tokens": 34401,
+            "total_tokens": 42029
+          },
+          "evidence_metrics": {},
+          "report": {
+            "path": "docs/evaluation/artifacts/ablation_v3/no_evidence/tech_001_no_evidence.md",
+            "sha256": "30dbaf816c6cbc5bbacbc3a79f0c7d5e080758149c54dc93edbbc2b30baac6d4",
+            "characters": 3941
+          },
+          "evidence_artifact": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "full": {
+      "average_composite_score": 0.7289,
+      "execution_success_rate": 1.0
+    },
+    "no_evidence": {
+      "average_composite_score": 0.7405,
+      "execution_success_rate": 1.0
+    }
+  },
+  "paired_statistics": {
+    "no_evidence": {
+      "rule_composite": {
+        "left_mean": 0.7289,
+        "right_mean": 0.7405,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": -0.0116,
+          "ci_lower": -0.0116,
+          "ci_upper": -0.0116,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": -0.0116,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "rule_metrics": {
+        "factual_accuracy": {
+          "left_mean": 0.4,
+          "right_mean": 0.4,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 1,
+            "method": "insufficient_n"
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 1,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 1
+        },
+        "logical_consistency": {
+          "left_mean": 1.0,
+          "right_mean": 1.0,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 1,
+            "method": "insufficient_n"
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 1,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 1
+        },
+        "citation_coverage": {
+          "left_mean": 0.4265,
+          "right_mean": 0.4688,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": -0.0423,
+            "ci_lower": -0.0423,
+            "ci_upper": -0.0423,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 1,
+            "method": "insufficient_n"
+          },
+          "paired_t_test": {
+            "mean_diff": -0.0423,
+            "n": 1,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 1
+        },
+        "bias": {
+          "left_mean": 0.9681,
+          "right_mean": 0.9839,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": -0.0158,
+            "ci_lower": -0.0158,
+            "ci_upper": -0.0158,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 1,
+            "method": "insufficient_n"
+          },
+          "paired_t_test": {
+            "mean_diff": -0.0158,
+            "n": 1,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 1
+        },
+        "comprehensiveness": {
+          "left_mean": 1.0,
+          "right_mean": 1.0,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 1,
+            "method": "insufficient_n"
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 1,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 1
+        }
+      },
+      "evidence_metrics": {
+        "claim_support_coverage": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        },
+        "claim_citation_rate": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        },
+        "cited_claim_support_precision": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        },
+        "attribution_coverage": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        },
+        "primary_source_ratio": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        },
+        "fulltext_source_ratio": {
+          "left_mean": null,
+          "right_mean": null,
+          "cohens_d": 0.0,
+          "bootstrap": {
+            "mean_diff": 0.0,
+            "ci_lower": 0.0,
+            "ci_upper": 0.0,
+            "p_value": 1.0,
+            "significant": false,
+            "n": 0
+          },
+          "paired_t_test": {
+            "mean_diff": 0.0,
+            "n": 0,
+            "t_statistic": 0.0,
+            "p_value": 1.0,
+            "method": "insufficient_n"
+          },
+          "n_pairs": 0
+        }
+      },
+      "latency": {
+        "left_mean": 519.0778,
+        "right_mean": 415.3195,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 103.7583,
+          "ci_lower": 103.7583,
+          "ci_upper": 103.7583,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 103.7583,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      },
+      "api_tokens": {
+        "left_mean": 67056.0,
+        "right_mean": 42029.0,
+        "cohens_d": 0.0,
+        "bootstrap": {
+          "mean_diff": 25027.0,
+          "ci_lower": 25027.0,
+          "ci_upper": 25027.0,
+          "p_value": 1.0,
+          "significant": false,
+          "n": 1,
+          "method": "insufficient_n"
+        },
+        "paired_t_test": {
+          "mean_diff": 25027.0,
+          "n": 1,
+          "t_statistic": 0.0,
+          "p_value": 1.0,
+          "method": "insufficient_n"
+        },
+        "n_pairs": 1
+      }
+    }
+  }
+}

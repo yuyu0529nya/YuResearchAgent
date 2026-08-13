@@ -248,5 +248,10 @@ async def main() -> None:
     print(f"\n[Benchmark] 结果已保存: {args.output}")
 
 
-if __name__ == "__main__":
+def cli() -> None:
+    """Synchronous console-script entry point."""
     asyncio.run(main())
+
+
+if __name__ == "__main__":
+    cli()

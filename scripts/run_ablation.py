@@ -1,24 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-scripts/run_ablation.py
-================================================================================
-消融实验入口脚本（合并了原 run_baseline.py + run_adversarial_ablation.py）。
-
-支持两种消融模式:
-  --mode module : 模块消融 (full / no_adversarial / no_compressor / no_memory / no_evolution)
-  --mode rounds : 对抗轮数消融 (0/1/2/3 轮)
-
-统计增强:
-  - 每道题保留配对分数
-  - full vs 消融配置输出 bootstrap 95% CI + p-value
-  - 输出 Cohen's d 效应量
-
-Usage:
-    python scripts/run_ablation.py --mode module --questions 10
-    python scripts/run_ablation.py --mode rounds --questions 10 --max_rounds 3
-================================================================================
-"""
+"""Paired, resumable module ablations with retained reports and evidence metrics."""
 
 from __future__ import annotations
 
@@ -26,9 +7,10 @@ import argparse
 import asyncio
 import json
 import logging
-import os
+import shutil
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -36,282 +18,358 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.core.runner import initialize_modules, load_config, run_research, setup_logging
+from evaluation.benchmarks.research_bench import (
+    RESEARCHBENCH_EVALUATION_VERSION,
+    RESEARCHBENCH_METRIC_WEIGHTS,
+    ResearchBench,
+)
+from evaluation.evidence_metrics import evidence_quality_metrics
+from evaluation.protocol import (
+    atomic_write_json,
+    paired_summary,
+    save_report_artifact,
+    sha256_text,
+    usage_delta,
+)
 from src.core.ablation import AblationStudy
-from evaluation.benchmarks.research_bench import ResearchBench
-from evaluation.metrics.rule_based import RuleBasedMetrics
-from evaluation.metrics.stats import bootstrap_ci_paired, cohens_d
+from src.core.runner import (
+    initialize_modules,
+    load_config,
+    run_research_with_metadata,
+    setup_logging,
+)
+from src.models.vllm_policy import VLLMPolicy
 
 
-def evaluate_with_rules(report: str, qid: str, bench: ResearchBench) -> dict[str, Any]:
-    """用规则指标对单篇报告评分。"""
-    q = next((x for x in bench.questions if x["id"] == qid), None)
-    if q is None:
-        raise ValueError(f"未找到题目 ID: {qid}")
-
-    expected_topics = q.get("expected_topics", [])
-    ground_truth = q.get("ground_truth", {})
-
-    factual = RuleBasedMetrics.fact_accuracy(report, ground_truth)
-    hallucination = RuleBasedMetrics.hallucination_rate(report)
-    citation = RuleBasedMetrics.citation_coverage(report)
-    logic = RuleBasedMetrics.logical_consistency(report)
-    comprehensive = RuleBasedMetrics.comprehensiveness(report, expected_topics)
-    bias_score = max(0.0, 1.0 - hallucination)
-
-    metrics = {
-        "factual_accuracy": factual,
-        "logical_consistency": logic,
-        "citation_coverage": citation,
-        "bias": bias_score,
-        "comprehensiveness": comprehensive,
-    }
-    composite = RuleBasedMetrics.composite_score(metrics)
-
-    return {
-        "question_id": qid,
-        "metrics": metrics,
-        "composite_score": composite,
-        "hallucination_rate": hallucination,
-    }
+ARTIFACT_SCHEMA = "ablation-v3-auditable"
 
 
-def run_single_system(
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _copy_evidence_artifact(
+    source_path: str,
+    reports_dir: Path,
     system_name: str,
-    desc: str,
-    config: dict,
-    overrides: dict,
+    question_id: str,
+) -> dict[str, Any] | None:
+    source = Path(source_path)
+    if not source.is_file():
+        return None
+    target = reports_dir / system_name / "evidence" / f"{question_id}.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, target)
+    payload = target.read_text(encoding="utf-8")
+    try:
+        portable_path = target.resolve().relative_to(Path.cwd().resolve()).as_posix()
+    except ValueError:
+        portable_path = target.resolve().as_posix()
+    return {"path": portable_path, "sha256": sha256_text(payload)}
+
+
+def _system_map(args: argparse.Namespace) -> dict[str, tuple[str, dict[str, Any]]]:
+    if args.mode == "rounds":
+        return {
+            f"adv_{rounds}": (
+                f"对抗轮数={rounds}",
+                {"adversarial": {"max_rounds": rounds, "enabled": rounds > 0}},
+            )
+            for rounds in range(args.max_rounds + 1)
+        }
+
+    requested = [name.strip() for name in args.systems.split(",") if name.strip()]
+    if "full" not in requested:
+        requested.insert(0, "full")
+    unknown = [name for name in requested if name not in AblationStudy.DEFAULT_MODULE_ABLATIONS]
+    if unknown:
+        available = ", ".join(AblationStudy.DEFAULT_MODULE_ABLATIONS)
+        raise ValueError(f"Unknown systems: {', '.join(unknown)}. Available: {available}")
+    return {name: AblationStudy.DEFAULT_MODULE_ABLATIONS[name] for name in requested}
+
+
+def _run_system(
+    *,
+    name: str,
+    description: str,
+    overrides: dict[str, Any],
+    config: dict[str, Any],
     questions: list[dict[str, Any]],
     bench: ResearchBench,
+    reports_dir: Path,
+    existing: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    """跑单个系统配置，返回每道题的评分结果。"""
-    print(f"\n{'='*60}")
-    print(f"[消融] {system_name}: {desc}")
-    print(f"{'='*60}")
-
     cfg = AblationStudy.override_config(config, overrides)
-    modules = initialize_modules(cfg)
+    details_by_id = {
+        detail["question_id"]: detail for detail in (existing or {}).get("details", [])
+    }
+    print(f"\n[Ablation] {name}: {description}")
 
-    per_question_scores: dict[str, float] = {}
-    details: list[dict[str, Any]] = []
-
-    for q in questions:
-        qid = q["id"]
-        query = q["query"]
-        print(f"  [{qid}] {query[:60]}...")
-
-        start = time.time()
+    for question in questions:
+        qid, query = question["id"], question["query"]
+        if details_by_id.get(qid, {}).get("status") == "complete":
+            print(f"  [{qid}] resumed")
+            continue
+        before = VLLMPolicy.global_usage_snapshot()
         try:
-            report = asyncio.run(run_research(query, cfg, modules))
-            elapsed = time.time() - start
-            eval_result = evaluate_with_rules(report, qid, bench)
-            composite = eval_result["composite_score"]
-            per_question_scores[qid] = composite
-            details.append({
+            # One module graph and one memory namespace per question prevents
+            # cross-question memory leakage from contaminating paired scores.
+            modules = initialize_modules(
+                cfg,
+                session_id=f"ablation_{name}_{qid}_{time.time_ns()}",
+            )
+            report, metadata = asyncio.run(run_research_with_metadata(query, cfg, modules))
+            audit = metadata.pop("evidence_audit", {})
+            evidence_path = metadata.pop("evidence_artifact", "")
+            rule = bench.evaluate_report(report, qid)
+            run_status = metadata.get("run_status", "complete")
+            details_by_id[qid] = {
                 "question_id": qid,
                 "query": query,
-                "composite_score": composite,
-                "metrics": eval_result["metrics"],
-                "elapsed_seconds": elapsed,
-            })
-            print(f"    → composite={composite:.3f}, time={elapsed:.1f}s")
-        except Exception as e:
-            print(f"    → FAILED: {e}")
-            per_question_scores[qid] = 0.0
-            details.append({
+                "status": run_status,
+                "rule": rule,
+                "runtime": metadata,
+                "usage": usage_delta(before, VLLMPolicy.global_usage_snapshot()),
+                "evidence_metrics": evidence_quality_metrics(audit),
+                "report": save_report_artifact(
+                    report,
+                    reports_dir=reports_dir / name,
+                    question_id=qid,
+                    system_name=name,
+                ),
+                "evidence_artifact": _copy_evidence_artifact(
+                    evidence_path,
+                    reports_dir,
+                    name,
+                    qid,
+                ),
+            }
+            print(
+                f"  [{qid}] score={rule['composite_score']:.4f} "
+                f"confidence={metadata.get('confidence', 0):.2f} "
+                f"status={run_status} "
+                f"time={metadata['elapsed_seconds']:.1f}s"
+            )
+        except Exception as exc:
+            details_by_id[qid] = {
                 "question_id": qid,
                 "query": query,
-                "error": str(e),
-                "composite_score": 0.0,
-            })
+                "status": "failed",
+                "error": f"{type(exc).__name__}: {exc}",
+                "usage": usage_delta(before, VLLMPolicy.global_usage_snapshot()),
+            }
+            print(f"  [{qid}] FAILED: {exc}")
 
-    scores = list(per_question_scores.values())
-    avg = sum(scores) / len(scores) if scores else 0.0
+    details = [details_by_id[q["id"]] for q in questions if q["id"] in details_by_id]
+    scores = [
+        detail["rule"]["composite_score"]
+        for detail in details
+        if detail.get("status") == "complete"
+    ]
     return {
-        "system_name": system_name,
-        "description": desc,
-        "average_composite_score": avg,
-        "per_question_scores": per_question_scores,
+        "system_name": name,
+        "description": description,
+        "overrides": overrides,
+        "execution_success_rate": round(
+            sum(detail.get("status") == "complete" for detail in details) / len(questions), 4
+        )
+        if questions
+        else 0.0,
+        "average_composite_score": round(sum(scores) / len(scores), 4) if scores else None,
         "details": details,
     }
 
 
-def compute_ablation_stats(
-    full_result: dict[str, Any],
-    ablation_result: dict[str, Any],
+def _paired_rows(
+    reference: dict[str, Any],
+    candidate: dict[str, Any],
+) -> list[dict[str, Any]]:
+    left = {detail["question_id"]: detail for detail in reference["details"]}
+    right = {detail["question_id"]: detail for detail in candidate["details"]}
+    return [
+        {"reference": left[qid], "candidate": right[qid]}
+        for qid in left
+        if qid in right
+        and left[qid].get("status") == "complete"
+        and right[qid].get("status") == "complete"
+    ]
+
+
+def _statistics(
+    systems: dict[str, dict[str, Any]],
+    reference_name: str,
+    seed: int,
 ) -> dict[str, Any]:
-    """计算 full vs 消融配置的统计显著性（配对差异）。"""
-    full_scores = []
-    ablation_scores = []
-
-    for qid in full_result["per_question_scores"]:
-        if qid in ablation_result["per_question_scores"]:
-            full_scores.append(full_result["per_question_scores"][qid])
-            ablation_scores.append(ablation_result["per_question_scores"][qid])
-
-    diffs = [f - a for f, a in zip(full_scores, ablation_scores)]
-    stats = bootstrap_ci_paired(diffs)
-    effect = cohens_d(full_scores, ablation_scores)
-
-    return {
-        **stats,
-        "cohens_d": round(effect, 4),
-        "full_mean": round(sum(full_scores) / len(full_scores), 4) if full_scores else 0.0,
-        "ablation_mean": round(sum(ablation_scores) / len(ablation_scores), 4) if ablation_scores else 0.0,
-    }
-
-
-def run_module_ablation(config: dict, questions: list[dict[str, Any]], output_dir: str) -> None:
-    """运行模块消融实验，输出统计显著性。"""
-    bench = ResearchBench()
-    systems = AblationStudy.DEFAULT_MODULE_ABLATIONS
-
-    # 跑所有配置
-    all_results: dict[str, dict[str, Any]] = {}
-    for name, (desc, overrides) in systems.items():
-        result = run_single_system(name, desc, config, overrides, questions, bench)
-        all_results[name] = result
-
-    # 以 full 为基准，计算统计显著性
-    full_result = all_results["full"]
-    stats_report: dict[str, Any] = {}
-    for name, result in all_results.items():
-        if name == "full":
+    reference = systems[reference_name]
+    output: dict[str, Any] = {}
+    evidence_metrics = (
+        "claim_support_coverage",
+        "claim_citation_rate",
+        "cited_claim_support_precision",
+        "attribution_coverage",
+        "primary_source_ratio",
+        "fulltext_source_ratio",
+    )
+    for name, candidate in systems.items():
+        if name == reference_name:
             continue
-        stats_report[name] = compute_ablation_stats(full_result, result)
-
-    # 组装输出
-    report = {
-        "evaluation_name": "YuResearchAgent 模块消融实验（含统计显著性）",
-        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
-        "num_questions": len(questions),
-        "systems": [
-            {
-                "system_name": r["system_name"],
-                "description": r["description"],
-                "average_composite_score": r["average_composite_score"],
-                "details": r["details"],
-            }
-            for r in all_results.values()
-        ],
-        "summary": {r["system_name"]: r["average_composite_score"] for r in all_results.values()},
-        "statistical_tests": stats_report,
-    }
-
-    filepath = AblationStudy.save_results(report, output_dir, prefix="module_ablation")
-
-    # 打印摘要
-    print(f"\n{'='*60}")
-    print("模块消融摘要 + 统计显著性")
-    print(f"{'='*60}")
-    for name, score in report["summary"].items():
-        print(f"  {name:20s}: {score:.4f}")
-
-    print(f"\n统计检验 (full vs 消融, 配对 bootstrap 95% CI):")
-    for name, st in stats_report.items():
-        sig = "✓ 显著" if st["significant"] else "✗ 不显著"
-        print(f"  {name:20s}: Δ={st['mean_diff']:+.4f} "
-              f"CI=[{st['ci_lower']:+.4f}, {st['ci_upper']:+.4f}] "
-              f"p={st['p_value']:.4f} d={st['cohens_d']:.3f} {sig}")
-    print(f"\n结果已保存: {filepath}")
-
-
-def run_rounds_ablation(config: dict, questions: list[dict[str, Any]], max_rounds: int, output_dir: str) -> None:
-    """运行对抗轮数消融实验，输出统计显著性。"""
-    bench = ResearchBench()
-
-    all_results: dict[str, dict[str, Any]] = {}
-    for rounds in range(max_rounds + 1):
-        desc = f"对抗轮数={rounds}"
-        overrides = {
-            "adversarial": {"max_rounds": rounds, "enabled": rounds > 0}
+        pairs = _paired_rows(reference, candidate)
+        output[name] = {
+            "rule_composite": paired_summary(
+                pairs,
+                left_path="reference.rule.composite_score",
+                right_path="candidate.rule.composite_score",
+                seed=seed,
+            ),
+            "rule_metrics": {
+                metric: paired_summary(
+                    pairs,
+                    left_path=f"reference.rule.metrics.{metric}",
+                    right_path=f"candidate.rule.metrics.{metric}",
+                    seed=seed,
+                )
+                for metric in RESEARCHBENCH_METRIC_WEIGHTS
+            },
+            "evidence_metrics": {
+                metric: paired_summary(
+                    pairs,
+                    left_path=f"reference.evidence_metrics.{metric}",
+                    right_path=f"candidate.evidence_metrics.{metric}",
+                    seed=seed,
+                )
+                for metric in evidence_metrics
+            },
+            "latency": paired_summary(
+                pairs,
+                left_path="reference.runtime.elapsed_seconds",
+                right_path="candidate.runtime.elapsed_seconds",
+                seed=seed,
+            ),
+            "api_tokens": paired_summary(
+                pairs,
+                left_path="reference.usage.total_tokens",
+                right_path="candidate.usage.total_tokens",
+                seed=seed,
+            ),
         }
-        result = run_single_system(f"adv_{rounds}", desc, config, overrides, questions, bench)
-        all_results[f"adv_{rounds}"] = result
+    return output
 
-    # 以 adv_0 为基准，计算与 adv_N 的差异
-    base_result = all_results["adv_0"]
-    stats_report: dict[str, Any] = {}
-    for name, result in all_results.items():
-        if name == "adv_0":
-            continue
-        stats_report[name] = compute_ablation_stats(base_result, result)
 
-    report = {
-        "evaluation_name": "YuResearchAgent 对抗轮数消融实验（含统计显著性）",
-        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+def _build_artifact(
+    *,
+    mode: str,
+    systems: dict[str, dict[str, Any]],
+    questions: list[dict[str, Any]],
+    reference_name: str,
+    seed: int,
+    started_at: str,
+) -> dict[str, Any]:
+    return {
+        "artifact_schema": ARTIFACT_SCHEMA,
+        "status": "complete"
+        if all(system["execution_success_rate"] == 1.0 for system in systems.values())
+        else "in_progress",
+        "evaluation_name": "YuResearchAgent paired module ablation",
+        "evaluation_version": RESEARCHBENCH_EVALUATION_VERSION,
+        "metric_weights": RESEARCHBENCH_METRIC_WEIGHTS,
+        "mode": mode,
+        "reference_system": reference_name,
+        "question_ids": [question["id"] for question in questions],
         "num_questions": len(questions),
-        "systems": [
-            {
-                "system_name": r["system_name"],
-                "description": r["description"],
-                "average_composite_score": r["average_composite_score"],
-                "details": r["details"],
+        "started_at": started_at,
+        "updated_at": _utc_now(),
+        "protocol": {
+            "pairing": "same question set for every system",
+            "memory_isolation": "fresh module graph and session per question",
+            "report_retention": "exact Markdown and SHA-256",
+            "execution_failures": "excluded from quality statistics",
+            "bootstrap_seed": seed,
+        },
+        "systems": list(systems.values()),
+        "summary": {
+            name: {
+                "average_composite_score": system["average_composite_score"],
+                "execution_success_rate": system["execution_success_rate"],
             }
-            for r in all_results.values()
-        ],
-        "summary": {r["system_name"]: r["average_composite_score"] for r in all_results.values()},
-        "statistical_tests": stats_report,
+            for name, system in systems.items()
+        },
+        "paired_statistics": _statistics(systems, reference_name, seed)
+        if reference_name in systems
+        else {},
     }
-
-    filepath = AblationStudy.save_results(report, output_dir, prefix="rounds_ablation")
-
-    # 同时保存 summary 扁平格式
-    summary_path = os.path.join(output_dir, "adv_results_summary.json")
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(report["summary"], f, ensure_ascii=False, indent=2)
-
-    print(f"\n{'='*60}")
-    print("对抗轮数消融摘要 + 统计显著性")
-    print(f"{'='*60}")
-    for k, v in report["summary"].items():
-        print(f"  {k:10s}: {v:.4f}")
-
-    print(f"\n统计检验 (adv_0 vs adv_N, 配对 bootstrap 95% CI):")
-    for name, st in stats_report.items():
-        sig = "✓ 显著" if st["significant"] else "✗ 不显著"
-        print(f"  {name:10s}: Δ={st['mean_diff']:+.4f} "
-              f"CI=[{st['ci_lower']:+.4f}, {st['ci_upper']:+.4f}] "
-              f"p={st['p_value']:.4f} d={st['cohens_d']:.3f} {sig}")
-    print(f"\n结果已保存: {filepath}")
-    print(f"Summary 已保存: {summary_path}")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="YuResearchAgent 消融实验脚本",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-示例:
-  python scripts/run_ablation.py --mode module --questions 10
-  python scripts/run_ablation.py --mode rounds --questions 10 --max_rounds 3
-        """,
-    )
-    parser.add_argument("--mode", type=str, choices=["module", "rounds"], default="module",
-                        help="消融模式: module=模块消融, rounds=对抗轮数消融")
-    parser.add_argument("--questions", type=int, default=10, help="评测题目数量（默认 10）")
-    parser.add_argument("--domain", type=str, default=None, choices=["tech", "med", "fin"],
-                        help="按领域过滤题目（仅 module 模式）")
-    parser.add_argument("--max_rounds", type=int, default=3, help="最大对抗轮数（仅 rounds 模式）")
-    parser.add_argument("--config", type=str, default=None, help="配置文件路径")
-    parser.add_argument("--output_dir", type=str, default="outputs/evaluation", help="输出目录")
-    parser.add_argument("--log_level", type=str, default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"])
+    parser = argparse.ArgumentParser(description="Auditable YuResearchAgent ablation study")
+    parser.add_argument("--mode", choices=("module", "rounds"), default="module")
+    parser.add_argument("--questions", type=int, default=5)
+    parser.add_argument("--domain", type=str, default=None)
+    parser.add_argument("--systems", default="full,heuristic_verifier,no_gap_research,no_evidence")
+    parser.add_argument("--max_rounds", type=int, default=3)
+    parser.add_argument("--config", type=str, default=None)
+    parser.add_argument("--output", default="outputs/evaluation/ablation_v3.json")
+    parser.add_argument("--reports_dir", default=None)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--log_level", choices=("DEBUG", "INFO", "WARNING", "ERROR"), default="INFO")
     args = parser.parse_args()
 
     setup_logging(args.log_level)
-    logger = logging.getLogger("main")
-
+    logger = logging.getLogger("ablation")
     config = load_config(args.config)
-    logger.info(f"配置加载完成: {args.config or 'configs/default.yaml'}")
-
     bench = ResearchBench()
     questions = bench.get_questions(domain=args.domain, n=args.questions)
-    logger.info(f"加载 {len(questions)} 道评测题")
+    definitions = _system_map(args)
+    reference_name = "full" if args.mode == "module" else "adv_0"
+    output_path = Path(args.output)
+    reports_dir = Path(args.reports_dir or output_path.with_suffix(""))
+    started_at = _utc_now()
+    systems: dict[str, dict[str, Any]] = {}
 
-    if args.mode == "module":
-        run_module_ablation(config, questions, args.output_dir)
-    elif args.mode == "rounds":
-        run_rounds_ablation(config, questions, args.max_rounds, args.output_dir)
+    if args.resume and output_path.is_file():
+        previous = json.loads(output_path.read_text(encoding="utf-8"))
+        if previous.get("artifact_schema") != ARTIFACT_SCHEMA:
+            raise ValueError(f"Cannot resume incompatible artifact: {output_path}")
+        started_at = previous.get("started_at", started_at)
+        systems = {system["system_name"]: system for system in previous.get("systems", [])}
+
+    logger.info("Running %d systems on %d paired questions", len(definitions), len(questions))
+    for name, (description, overrides) in definitions.items():
+        systems[name] = _run_system(
+            name=name,
+            description=description,
+            overrides=overrides,
+            config=config,
+            questions=questions,
+            bench=bench,
+            reports_dir=reports_dir,
+            existing=systems.get(name),
+        )
+        artifact = _build_artifact(
+            mode=args.mode,
+            systems=systems,
+            questions=questions,
+            reference_name=reference_name,
+            seed=args.seed,
+            started_at=started_at,
+        )
+        atomic_write_json(output_path, artifact)
+
+    artifact = _build_artifact(
+        mode=args.mode,
+        systems=systems,
+        questions=questions,
+        reference_name=reference_name,
+        seed=args.seed,
+        started_at=started_at,
+    )
+    atomic_write_json(output_path, artifact)
+    print(f"\n[Ablation] saved: {output_path}")
+    for name, summary in artifact["summary"].items():
+        print(
+            f"  {name}: score={summary['average_composite_score']} "
+            f"success={summary['execution_success_rate']:.1%}"
+        )
 
 
 if __name__ == "__main__":

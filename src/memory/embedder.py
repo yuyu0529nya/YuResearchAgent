@@ -4,7 +4,7 @@ Embedder 模块：文本向量化封装
 设计决策：
 1. 主模型使用 all-MiniLM-L6-v2（轻量、384维、效果足够）
 2. 提供 graceful fallback：当 sentence-transformers 未安装时，
-   返回 deterministic random embedding（基于文本hash），确保测试可复现
+   使用 feature hashing 编码词与中英文 n-gram，保证相似文本仍有可解释的重叠
 3. 单例模型加载 + lazy init，避免重复初始化开销
 """
 
@@ -13,7 +13,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import os
-import random
+import re
 from typing import Optional
 
 import numpy as np
@@ -31,7 +31,7 @@ try:
 except ImportError:
     _SENTENCE_TRANSFORMERS_AVAILABLE = False
     logger.warning(
-        "sentence-transformers not installed. Embedder will use deterministic random fallback."
+        "sentence-transformers not installed. Embedder will use lexical feature-hashing fallback."
     )
 
 
@@ -94,21 +94,40 @@ class Embedder:
                 embedding = model.encode(text, normalize_embeddings=True)
                 return embedding.tolist()
             except Exception as e:
-                logger.warning(f"Model encode failed, fallback to random: {e}")
+                logger.warning(f"Model encode failed, fallback to feature hashing: {e}")
 
         # Fallback: deterministic random embedding（基于文本 hash）
         return self._fallback_embedding(text)
 
     def _fallback_embedding(self, text: str) -> list[float]:
         """
-        确定性随机 embedding fallback。
+        确定性 feature-hashing embedding fallback。
 
-        使用文本 MD5 hash 作为随机种子，确保相同文本始终产生相同向量，
-        便于测试和去重逻辑的一致性验证。
+        英文按单词与相邻词组编码，中文按 2/3-gram 编码。每个 feature
+        通过 SHA-256 映射到固定维度并带符号累加；与随机向量不同，文本
+        共享词项时会共享维度，因此可作为无模型环境下的词法相似度降级。
         """
-        seed = int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16) % (2**31)
-        rng = random.Random(seed)
-        vec = [rng.gauss(0.0, 1.0) for _ in range(self._embedding_dim)]
+        normalized = re.sub(r"\s+", " ", text.lower()).strip()
+        english_words = re.findall(r"[a-z0-9][a-z0-9_.+-]*", normalized)
+        features = [f"w:{word}" for word in english_words]
+        features.extend(
+            f"b:{left}_{right}" for left, right in zip(english_words, english_words[1:])
+        )
+        for sequence in re.findall(r"[\u4e00-\u9fff]+", normalized):
+            for ngram_size in (2, 3):
+                features.extend(
+                    f"c{ngram_size}:{sequence[index:index + ngram_size]}"
+                    for index in range(max(0, len(sequence) - ngram_size + 1))
+                )
+        if not features:
+            features = [f"raw:{normalized}"]
+
+        vec = [0.0] * self._embedding_dim
+        for feature in features:
+            digest = hashlib.sha256(feature.encode("utf-8")).digest()
+            index = int.from_bytes(digest[:4], "big") % self._embedding_dim
+            sign = 1.0 if digest[4] & 1 else -1.0
+            vec[index] += sign
         # L2 归一化
         norm = float(np.linalg.norm(vec))
         if norm > 1e-9:

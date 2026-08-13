@@ -1,0 +1,53 @@
+{
+  "artifact_schema": "evidence-runtime-smoke-v2",
+  "kind": "runtime_smoke_with_immutable_replay",
+  "not_a_statistical_benchmark": true,
+  "completed_at": "2026-08-13T09:50:48.600663+00:00",
+  "query": "仅依据 Qwen2.5 技术报告等一手来源，核验并说明 Qwen2.5 的预训练 token 规模、上下文窗口和后训练方法；不讨论其他模型。",
+  "runtime": {
+    "backend": "kimi",
+    "model": "k3",
+    "run_status": "complete",
+    "live_retrieval": true,
+    "elapsed_seconds": 352.7568,
+    "api_calls": 11,
+    "prompt_tokens": 35624,
+    "completion_tokens": 5643,
+    "total_tokens": 41267,
+    "search_calls": 3,
+    "source_count": 3,
+    "evidence_count": 15,
+    "primary_source_ratio": 1.0,
+    "fulltext_source_ratio": 0.3333
+  },
+  "immutable_inputs": {
+    "report": {
+      "path": "docs/evaluation/artifacts/evidence_v2/qwen25_agent.md",
+      "sha256": "88ceae351a6c4077585121130a495bdf61c48f9c479f8af17d843b42ac202e79"
+    },
+    "evidence": {
+      "path": "docs/evaluation/artifacts/evidence_v2/qwen25_evidence.json",
+      "sha256": "cf1f7fd4cf8876c049b87bebf395160e14dd494af44c822b4b53ea6ec2aca09a"
+    }
+  },
+  "current_replays": {
+    "heuristic": {
+      "path": "docs/evaluation/artifacts/evidence_v2/qwen25_replay_heuristic.json",
+      "sha256": "6dc37c7319547f4ea6f5498cea37779369e27d122f332462183b794736631d4c",
+      "supported": 3,
+      "claim_count": 30,
+      "coverage": 0.1,
+      "api_calls": 0
+    },
+    "hybrid": {
+      "path": "docs/evaluation/artifacts/evidence_v2/qwen25_replay_hybrid.json",
+      "sha256": "8edc9b2b83ec25006f8bd7d3bc5529c8a02369b2a65f6f5f7a89b38794e5555a",
+      "verifier_backend": "deepseek",
+      "supported": 13,
+      "claim_count": 30,
+      "coverage": 0.4333,
+      "api_calls": 3
+    }
+  },
+  "interpretation": "This artifact verifies runtime completion and replay integrity. It is not evidence of population-level report quality or a multi-agent performance lift."
+}

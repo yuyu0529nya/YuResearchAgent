@@ -51,6 +51,9 @@ class ContextCompressor:
         embedder: Optional[Embedder] = None,
         budget: int = 16000,
         output_reserve: int = _OUTPUT_RESERVE,
+        l1_threshold: float = _L1_THRESHOLD,
+        l2_threshold: float = _L2_THRESHOLD,
+        l3_threshold: float = _L3_THRESHOLD,
     ) -> None:
         """
         初始化上下文压缩器。
@@ -66,6 +69,8 @@ class ContextCompressor:
         self.budget = budget
         self.output_reserve = output_reserve
         self.available_budget = budget - output_reserve
+        thresholds = sorted((float(l1_threshold), float(l2_threshold), float(l3_threshold)))
+        self.l1_threshold, self.l2_threshold, self.l3_threshold = thresholds
 
         # 子压缩器
         self.sliding = SlidingWindowCompressor(max_tokens=self.available_budget)
@@ -122,11 +127,11 @@ class ContextCompressor:
 
         # 确定压缩级别
         if level is None:
-            if usage_ratio > _L3_THRESHOLD:
+            if usage_ratio > self.l3_threshold:
                 level = 3
-            elif usage_ratio > _L2_THRESHOLD:
+            elif usage_ratio > self.l2_threshold:
                 level = 2
-            elif usage_ratio > _L1_THRESHOLD:
+            elif usage_ratio > self.l1_threshold:
                 level = 1
             else:
                 # 无需压缩

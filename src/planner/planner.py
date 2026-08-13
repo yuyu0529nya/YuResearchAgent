@@ -59,7 +59,7 @@ Return a JSON object with this exact structure (no markdown, no extra text):
 1. task_type must be one of: search, analyze, verify
 2. dependencies must reference existing task_id values
 3. The graph must be a DAG (no cycles)
-4. Generate 3 to 8 sub_tasks
+4. Generate no more than {max_sub_questions} sub_tasks
 5. More fundamental/information-gathering tasks should have fewer dependencies
 6. Verification tasks should depend on analysis tasks
 7. Use concise but clear descriptions
@@ -114,9 +114,15 @@ class Planner:
         budget_tracker: 可选的预算追踪器，监控 planning 阶段的 token 消耗。
     """
 
-    def __init__(self, policy, budget_tracker: BudgetTracker | None = None) -> None:
+    def __init__(
+        self,
+        policy,
+        budget_tracker: BudgetTracker | None = None,
+        max_sub_questions: int = 8,
+    ) -> None:
         self.policy = policy
         self.budget_tracker = budget_tracker or BudgetTracker()
+        self.max_sub_questions = max(1, max_sub_questions)
         self._last_raw_json: str = ""
 
     # ------------------------------------------------------------------
@@ -226,8 +232,8 @@ class Planner:
             extra_hint = (
                 "\n## Note\n"
                 "No previous research memory is available for this topic. "
-                "Please be MORE AGGRESSIVE in decomposition: generate 6-10 sub_tasks to thoroughly cover the topic, "
-                "rather than the usual 3-5. Each sub-task should focus on a distinct angle or data source.\n"
+                f"Generate up to {self.max_sub_questions} focused sub_tasks. Each sub-task should cover a distinct "
+                "angle or data source without duplicating work.\n"
                 "IMPORTANT: Each sub-task description must directly reflect the user's original intent. "
                 "If the user asks about 'internship application strategies', do NOT generate tasks about '2025 tech trends' or 'annual science summary'."
             )
@@ -237,7 +243,11 @@ class Planner:
                 "Use the preserved successful results above to inform new sub-tasks. "
                 "New tasks should fill gaps and avoid duplicating existing coverage."
             )
-        return INITIAL_PLAN_PROMPT.format(query=query, memory_context=memory or "None") + extra_hint
+        return INITIAL_PLAN_PROMPT.format(
+            query=query,
+            memory_context=memory or "None",
+            max_sub_questions=self.max_sub_questions,
+        ) + extra_hint
 
     def _parse_plan(self, json_str: str) -> DAG:
         """解析 planner 输出并构建 DAG。

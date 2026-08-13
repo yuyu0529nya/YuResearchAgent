@@ -12,6 +12,7 @@ YuResearchAgent 核心运行逻辑。
     - load_config(config_path) -> dict
     - initialize_modules(config) -> dict
     - run_research(query, config, modules) -> str
+    - run_research_with_metadata(query, config, modules) -> tuple[str, dict]
     - save_report(report, query, output_dir) -> str
 ================================================================================
 """
@@ -94,7 +95,12 @@ def _create_tools_factory(config: dict):
     if mock_mode:
         tools["web_search"] = MockWebSearchTool()
     else:
-        tools["web_search"] = WebSearchTool()
+        from src.utils.env_config import get_env
+
+        configured_backend = tools_cfg.get("web_search", {}).get("backend", "auto")
+        tools["web_search"] = WebSearchTool(
+            backend=get_env("SEARCH_BACKEND", configured_backend)
+        )
 
     # 2. browser
     if mock_mode:
@@ -165,13 +171,20 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
     default_kwargs = _get_sampling_kwargs("default", default_backend)
     default_policy = ModelRouter.create_backend(default_backend, **default_kwargs)
     modules["default_policy"] = default_policy
-    logger.info(f"[LLM] 默认后端已加载: {default_backend} ({default_kwargs})")
+    logger.info(
+        f"[LLM] 默认后端已加载: {default_backend} | 模型={default_policy.model_name} | "
+        f"temperature={default_policy.temperature} | max_tokens={default_policy.max_tokens}"
+    )
 
     # 多后端分工：不同模块用不同后端 + 不同采样参数
     for module_name, backend_name in backend_mapping.items():
         kwargs = _get_sampling_kwargs(module_name, backend_name)
-        modules[f"{module_name}_policy"] = ModelRouter.create_backend(backend_name, **kwargs)
-        logger.info(f"[LLM] {module_name} → 后端={backend_name}, 采样={kwargs}")
+        policy = ModelRouter.create_backend(backend_name, **kwargs)
+        modules[f"{module_name}_policy"] = policy
+        logger.info(
+            f"[LLM] {module_name} → 后端={backend_name} | 模型={policy.model_name} | "
+            f"temperature={policy.temperature} | max_tokens={policy.max_tokens}"
+        )
 
     # 若未配置分工，所有模块回退到 default_policy
     # ------------------------------------------------------------------
@@ -182,33 +195,50 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
 
     planner_policy = modules.get("planner_policy", default_policy)
     budget_tracker = BudgetTracker()
-    planner = Planner(policy=planner_policy, budget_tracker=budget_tracker)
+    planner = Planner(
+        policy=planner_policy,
+        budget_tracker=budget_tracker,
+        max_sub_questions=config.get("orchestrator", {}).get("max_sub_questions", 8),
+    )
     modules["planner"] = planner
     logger.info("[M2] Planner 模块已初始化")
 
     # M3: Context Compressor
     from src.compressor.compressor import ContextCompressor
+    from src.memory.embedder import Embedder
 
     compressor_policy = modules.get("compressor_policy", default_policy)
     compressor_cfg = config.get("compressor", {})
-    compressor = ContextCompressor(
-        llm_policy=compressor_policy,
-        budget=compressor_cfg.get("max_context_length", 16000),
-        output_reserve=compressor_cfg.get("output_reserve_tokens", 2048),
-    )
+    compressor = None
+    if compressor_cfg.get("enable_multilevel", True):
+        compressor = ContextCompressor(
+            llm_policy=compressor_policy,
+            embedder=Embedder(compressor_cfg.get("embedding_model")),
+            budget=compressor_cfg.get("max_context_length", 16000),
+            output_reserve=compressor_cfg.get("output_reserve_tokens", 2048),
+            l1_threshold=compressor_cfg.get("l1_threshold", 0.6),
+            l2_threshold=compressor_cfg.get("l2_threshold", 0.8),
+            l3_threshold=compressor_cfg.get("l3_threshold", 0.95),
+        )
     modules["compressor"] = compressor
-    logger.info("[M3] Compressor 模块已初始化")
+    logger.info("[M3] Compressor 模块%s", "已初始化" if compressor is not None else "已关闭")
 
     # M4: Shared Memory Store
     from src.memory.memory_store import SharedMemoryStore
 
     memory_cfg = config.get("memory", {})
-    memory_store = SharedMemoryStore(
-        db_path=memory_cfg.get("db_path", "data/memory.db"),
-        session_id=session_id,
-    )
+    memory_store = None
+    if memory_cfg.get("enabled", True):
+        memory_store = SharedMemoryStore(
+            db_path=memory_cfg.get("db_path", "data/memory.db"),
+            session_id=session_id,
+        )
     modules["memory_store"] = memory_store
-    logger.info(f"[M4] Memory Store 模块已初始化 (session={session_id})")
+    logger.info(
+        "[M4] Memory Store 模块%s%s",
+        "已初始化" if memory_store is not None else "已关闭",
+        f" (session={session_id})" if memory_store is not None else "",
+    )
 
     # Tools（真实工具或 Mock 工具）
     tools_list = _create_tools_factory(config)
@@ -241,12 +271,46 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
     from src.orchestrator.orchestrator import Orchestrator
     from src.orchestrator.agent_pool import AgentPool
 
+    solver_backend = backend_mapping.get("solver", default_backend)
+    solver_kwargs = _get_sampling_kwargs("solver", solver_backend)
     agent_pool = AgentPool(
-        policy_factory=lambda: modules.get("solver_policy", default_policy),
+        # Worker policies contain mutable tool/truncation state. Each pooled agent
+        # owns one policy instance so concurrent trajectories cannot contaminate
+        # each other; AgentPool still reuses that instance across sequential jobs.
+        policy_factory=lambda: ModelRouter.create_backend(
+            solver_backend,
+            use_cache=False,
+            **solver_kwargs,
+        ),
         tools_factory=lambda: list(modules["tools"]),
         max_idle=3,
+        researcher_max_turns=max(
+            6,
+            config.get("planner", {}).get("max_search_rounds_per_subagent", 4) * 2 + 2,
+        ),
+        researcher_max_tool_calls=config.get("planner", {}).get("max_search_rounds_per_subagent", 4),
     )
     modules["agent_pool"] = agent_pool
+
+    evidence_cfg = config.get("evidence", {})
+    evidence_store = None
+    evidence_verifier = None
+    if evidence_cfg.get("enabled", True):
+        from src.evidence import ClaimVerifier, EvidenceStore
+
+        evidence_store = EvidenceStore(
+            artifact_dir=evidence_cfg.get("artifact_dir", "outputs/evidence"),
+            session_id=session_id,
+            persist_enabled=evidence_cfg.get("persist", True),
+        )
+        evidence_verifier = ClaimVerifier(
+            policy=modules.get("judge_policy", default_policy),
+            mode=evidence_cfg.get("verification_mode", "heuristic"),
+            support_threshold=evidence_cfg.get("support_threshold", 0.38),
+            max_claims=evidence_cfg.get("max_claims", 60),
+            max_llm_claims=evidence_cfg.get("max_llm_claims", 12),
+        )
+        logger.info("[Evidence] Claim-Evidence graph 已启用 (%s)", evidence_verifier.mode)
 
     orchestrator = Orchestrator(
         planner=planner,
@@ -256,6 +320,8 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
         adversarial_loop=adversarial_loop,
         memory_store=memory_store,
         summarizer_policy=modules.get("summarizer_policy", default_policy),
+        evidence_store=evidence_store,
+        evidence_verifier=evidence_verifier,
     )
     modules["orchestrator"] = orchestrator
     logger.info("[M1] Orchestrator 模块已初始化")
@@ -272,7 +338,41 @@ def initialize_modules(config: dict, session_id: str = "") -> dict[str, Any]:
 # ---------------------------------------------------------------------------
 # 研究流程主函数
 # ---------------------------------------------------------------------------
-async def run_research(query: str, config: dict, modules: dict[str, Any]) -> str:
+def build_run_config(config: dict):
+    """Build the typed runtime config from the public YAML-shaped mapping."""
+    from src.orchestrator.schemas import RunConfig
+
+    return RunConfig(
+        max_concurrent=config.get("orchestrator", {}).get("max_concurrent", 5),
+        global_timeout_seconds=config.get("orchestrator", {}).get("global_timeout_seconds", 600),
+        max_replan_rounds=config.get("orchestrator", {}).get("max_replan_rounds", 3),
+        max_sub_questions=config.get("orchestrator", {}).get("max_sub_questions", 8),
+        max_subagent_retries=config.get("orchestrator", {}).get("max_subagent_retries", 1),
+        enable_replan=config.get("planner", {}).get("enable_replan", True),
+        enable_completeness_check=config.get("planner", {}).get("enable_completeness_check", True),
+        enable_adversarial=config.get("adversarial", {}).get("enabled", True),
+        enable_evolution=config.get("evolution", {}).get("enabled", False),
+        enable_evidence=config.get("evidence", {}).get("enabled", True),
+        max_evidence_gap_rounds=config.get("evidence", {}).get("max_gap_rounds", 1),
+        max_evidence_gap_tasks=config.get("evidence", {}).get("max_gap_tasks", 2),
+        min_evidence_coverage=config.get("evidence", {}).get("min_coverage", 0.55),
+        synthesis_reserve_seconds=config.get("orchestrator", {}).get(
+            "synthesis_reserve_seconds", 110
+        ),
+        final_audit_reserve_seconds=config.get("orchestrator", {}).get(
+            "final_audit_reserve_seconds", 35
+        ),
+        evidence_gap_min_seconds=config.get("evidence", {}).get(
+            "gap_min_seconds", 100
+        ),
+    )
+
+
+async def run_research_with_metadata(
+    query: str,
+    config: dict,
+    modules: dict[str, Any],
+) -> tuple[str, dict[str, Any]]:
     """
     执行完整的研究流程。
 
@@ -293,8 +393,6 @@ async def run_research(query: str, config: dict, modules: dict[str, Any]) -> str
     Returns:
         最终研究报告文本（Markdown 格式）。
     """
-    import asyncio
-
     logger = logging.getLogger("runner")
     logger.info(f"开始研究，查询: {query[:80]}...")
 
@@ -302,18 +400,16 @@ async def run_research(query: str, config: dict, modules: dict[str, Any]) -> str
 
     # Step 1-3: Orchestrator 内部完成规划、调度、收集、合成
     orchestrator = modules["orchestrator"]
-    from src.orchestrator.schemas import RunConfig
+    run_cfg = build_run_config(config)
 
-    run_cfg = RunConfig(
-        max_concurrent=config.get("orchestrator", {}).get("max_concurrent", 5),
-        global_timeout_seconds=config.get("orchestrator", {}).get("global_timeout_seconds", 600),
-        max_replan_rounds=config.get("orchestrator", {}).get("max_replan_rounds", 3),
-        max_sub_questions=config.get("orchestrator", {}).get("max_sub_questions", 8),
-        enable_adversarial=config.get("adversarial", {}).get("enabled", True),
-        enable_evolution=config.get("evolution", {}).get("enabled", False),
-    )
+    try:
+        report = await orchestrator.run(query, config=run_cfg)
+    finally:
+        # The search client is process-wide. Always close it after a top-level run,
+        # including failures, so batch experiments do not leak connections.
+        from src.tools.web_search import WebSearchTool
 
-    report = await orchestrator.run(query, config=run_cfg)
+        await WebSearchTool.close_session()
     logger.info(
         f"[Orchestrator] 报告生成完成 | 置信度={report.confidence:.2f} | "
         f"搜索轮数={report.num_searches} | 重规划={report.num_replan} | 对抗轮数={report.adversarial_rounds}"
@@ -325,16 +421,35 @@ async def run_research(query: str, config: dict, modules: dict[str, Any]) -> str
     else:
         logger.info("[Evolution] 进化优化已跳过")
 
-    # 关闭 WebSearchTool 连接池
-    from src.tools.web_search import WebSearchTool
-    await WebSearchTool.close_session()
-
     elapsed = time.time() - start_time
     logger.info(f"研究完成，耗时: {elapsed:.2f} 秒")
 
     # 组装最终输出
     final_report = _format_report(report, elapsed)
-    return final_report
+    audit = report.evidence_audit or {}
+    metadata = {
+        "run_status": report.run_status,
+        "elapsed_seconds": round(elapsed, 4),
+        "confidence": report.confidence,
+        "num_searches": report.num_searches,
+        "num_replan": report.num_replan,
+        "evidence_gap_rounds": report.evidence_gap_rounds,
+        "adversarial_rounds": report.adversarial_rounds,
+        "source_count": len(report.sources),
+        "estimated_worker_tokens": sum(
+            max(0, int(getattr(result, "token_usage", 0) or 0))
+            for result in getattr(orchestrator, "_all_results", [])
+        ),
+        "evidence_artifact": report.evidence_artifact,
+        "evidence_audit": audit,
+    }
+    return final_report, metadata
+
+
+async def run_research(query: str, config: dict, modules: dict[str, Any]) -> str:
+    """Execute the full research workflow and return its Markdown report."""
+    report, _ = await run_research_with_metadata(query, config, modules)
+    return report
 
 
 def _format_report(report, elapsed: float) -> str:
@@ -363,19 +478,60 @@ def _format_report(report, elapsed: float) -> str:
         f"- **置信度**: {report.confidence:.2f}",
         f"- **搜索轮数**: {report.num_searches}",
         f"- **重规划次数**: {report.num_replan}",
+        f"- **证据补充轮数**: {report.evidence_gap_rounds}",
         f"- **对抗轮数**: {report.adversarial_rounds}",
         f"- **总耗时**: {elapsed:.2f} 秒",
         "",
     ]
 
-    if report.sources:
+    audit = report.evidence_audit or {}
+    if audit:
+        total_claims = len(audit.get("claims", []))
+        lines.extend([
+            "## 证据审计",
+            "",
+            f"- **Claim 覆盖率**: {audit.get('coverage', 0.0):.1%}",
+            f"- **核验结果**: {audit.get('supported_count', 0)} supported / "
+            f"{audit.get('refuted_count', 0)} refuted / "
+            f"{audit.get('not_enough_evidence_count', 0)} NEI（共 {total_claims} 条）",
+            f"- **原始/权威来源占比**: {audit.get('primary_source_ratio', 0.0):.1%}",
+            f"- **全文证据来源占比**: {audit.get('fulltext_source_ratio', 0.0):.1%}",
+        ])
+        if report.evidence_artifact:
+            lines.append(f"- **审计文件**: `{report.evidence_artifact}`")
+        unresolved = [
+            claim
+            for claim in audit.get("claims", [])
+            if claim.get("status") != "supported"
+        ]
+        if unresolved:
+            lines.extend(["", "### 仍需谨慎的陈述", ""])
+            for claim in unresolved[:5]:
+                lines.append(
+                    f"- `{claim.get('status', 'not_enough_evidence')}` "
+                    f"{claim.get('text', '')}"
+                )
+        lines.append("")
+
+    has_reference_section = re.search(
+        r"^#{1,4}\s*(参考来源|参考文献|引用|references|bibliography|sources)\s*$",
+        content,
+        flags=re.I | re.M,
+    )
+    if report.sources and not has_reference_section:
         lines.append("## 参考来源")
         lines.append("")
         for i, src in enumerate(report.sources, 1):
             title = src.get("title", "未知标题")
             url = src.get("url", "")
             snippet = src.get("snippet", "")
-            lines.append(f"{i}. [{title}]({url}) — {snippet}")
+            authors = src.get("authors", "")
+            year = src.get("year", "")
+            attribution = " · ".join(str(value) for value in (authors, year) if value)
+            suffix = f" — {attribution}" if attribution else ""
+            if snippet:
+                suffix += f" — {snippet}"
+            lines.append(f"{i}. [{title}]({url}){suffix}")
         lines.append("")
 
     return "\n".join(lines)

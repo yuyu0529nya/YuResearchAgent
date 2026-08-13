@@ -17,6 +17,16 @@ import os
 from typing import Any
 
 
+RESEARCHBENCH_EVALUATION_VERSION = "researchbench-v2-factual-weight-fix"
+RESEARCHBENCH_METRIC_WEIGHTS: dict[str, float] = {
+    "factual_accuracy": 0.25,
+    "logical_consistency": 0.20,
+    "citation_coverage": 0.20,
+    "bias": 0.20,
+    "comprehensiveness": 0.15,
+}
+
+
 class ResearchBench:
     """
     自建深度研究评测集。
@@ -479,6 +489,9 @@ class ResearchBench:
 
         factual_str = RuleBasedMetrics.fact_accuracy(report, ground_truth)
         factual_sem = RuleBasedMetrics.semantic_fact_accuracy(report, ground_truth, threshold=0.65)
+        # 字符串命中可复现但较粗糙，语义匹配更灵活但依赖 embedding；组合后作为
+        # composite_score 的规范输入，同时保留两个子指标供诊断。
+        factual = 0.4 * factual_str + 0.6 * factual_sem
         hallucination = RuleBasedMetrics.hallucination_rate(report)
         citation = RuleBasedMetrics.citation_coverage(report)
         logic = RuleBasedMetrics.logical_consistency(report)
@@ -488,6 +501,7 @@ class ResearchBench:
         bias_score = max(0.0, 1.0 - hallucination)
 
         metrics = {
+            "factual_accuracy": factual,
             "factual_accuracy_str": factual_str,
             "factual_accuracy_sem": factual_sem,
             "logical_consistency": logic,
@@ -496,11 +510,14 @@ class ResearchBench:
             "comprehensiveness": comprehensive,
         }
 
-        composite = RuleBasedMetrics.composite_score(metrics, metrics_weights)
+        resolved_weights = dict(metrics_weights or RESEARCHBENCH_METRIC_WEIGHTS)
+        composite = RuleBasedMetrics.composite_score(metrics, resolved_weights)
 
         return {
             "question_id": question_id,
             "domain": q.get("domain", ""),
+            "evaluation_version": RESEARCHBENCH_EVALUATION_VERSION,
+            "metric_weights": resolved_weights,
             "metrics": metrics,
             "composite_score": composite,
             "hallucination_rate": hallucination,

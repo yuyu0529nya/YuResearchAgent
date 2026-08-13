@@ -14,6 +14,7 @@ YuResearchAgent — 核心编排器 (M1: Multi-Agent Orchestrator)
 from __future__ import annotations
 
 import asyncio
+import copy
 import logging
 import time
 from typing import Any, Callable
@@ -69,6 +70,8 @@ class Orchestrator:
         adversarial_loop: Any | None = None,
         memory_store: Any | None = None,
         summarizer_policy: Any | None = None,
+        evidence_store: Any | None = None,
+        evidence_verifier: Any | None = None,
     ) -> None:
         self.planner = planner
         self.agent_pool = agent_pool
@@ -77,10 +80,13 @@ class Orchestrator:
         self.adversarial_loop = adversarial_loop
         self.memory_store = memory_store
         self.summarizer_policy = summarizer_policy
+        self.evidence_store = evidence_store
+        self.evidence_verifier = evidence_verifier
 
         # 运行时状态（保留 dict 作为快速缓存，M4 提供持久化 + 语义检索）
         self._memory_store: dict[str, Any] = {}
         self._results: list[AgentResult] = []
+        self._all_results: list[AgentResult] = []
         self._dag: DAG | None = None
         self._task_map: dict[str, SubTask] = {}
         self._current_state = OrchestratorState.IDLE
@@ -89,6 +95,8 @@ class Orchestrator:
         self._start_time: float = 0.0
         self._replan_count: int = 0
         self._adversarial_count: int = 0
+        self._evidence_gap_rounds: int = 0
+        self._evidence_audit: Any | None = None
 
         # 状态机处理器映射
         self._state_handlers: dict[OrchestratorState, Callable[[], asyncio.Future[OrchestratorState]]] = {
@@ -123,23 +131,24 @@ class Orchestrator:
         self._start_time = time.monotonic()
         self._replan_count = 0
         self._adversarial_count = 0
+        self._evidence_gap_rounds = 0
+        self._evidence_audit = None
         self._memory_store.clear()
         self._results.clear()
+        self._all_results.clear()
         self._dag = None
         self._task_map.clear()
         self._current_state = OrchestratorState.IDLE
+        if self.evidence_store is not None:
+            self.evidence_store.reset(query)
 
         # 状态机主循环
         while self._current_state not in (OrchestratorState.DONE, OrchestratorState.FAILED):
             # 全局超时检查
             if self._is_global_timeout():
-                if self._current_state in (
-                    OrchestratorState.COLLECTING,
-                    OrchestratorState.SYNTHESIZING,
-                    OrchestratorState.ADVERSARIAL,
-                ):
-                    # 强制合成：用已有结果生成报告
-                    self._current_state = OrchestratorState.SYNTHESIZING
+                if self._all_results or self._results:
+                    self._memory_store["final_report"] = self._build_timeout_report()
+                    self._current_state = OrchestratorState.DONE
                 else:
                     self._current_state = OrchestratorState.FAILED
                 break
@@ -161,6 +170,9 @@ class Orchestrator:
                 report = ResearchReport(query=query, content="Report generation failed unexpectedly.")
             report.num_replan = self._replan_count
             report.adversarial_rounds = self._adversarial_count
+            report.evidence_gap_rounds = self._evidence_gap_rounds
+            if self._config.enable_evidence:
+                await self._finalize_evidence(report)
 
             # M4: 将最终报告存入 SharedMemoryStore
             if self.memory_store is not None:
@@ -195,7 +207,19 @@ class Orchestrator:
             content="Research failed due to persistent errors or global timeout.",
             num_replan=self._replan_count,
             adversarial_rounds=self._adversarial_count,
+            run_status="failed",
         )
+
+    def get_evidence_snapshot(self) -> dict[str, Any]:
+        """Return a read-only UI/observability snapshot of the current evidence graph."""
+        if self._evidence_audit is None or self.evidence_store is None:
+            return {}
+        snapshot = self._evidence_audit.to_dict(self.evidence_store.evidence)
+        snapshot["sources"] = self.evidence_store.to_source_dicts()
+        snapshot["gap_rounds"] = self._evidence_gap_rounds
+        report = self._memory_store.get("final_report")
+        snapshot["artifact"] = getattr(report, "evidence_artifact", "") if report is not None else ""
+        return snapshot
 
     # ------------------------------------------------------------------
     # 状态机处理器
@@ -266,29 +290,46 @@ class Orchestrator:
                     # 准备上下文：先执行依赖任务的结果
                     context = self._build_task_context(subtask)
 
-                    # 获取 Agent
-                    agent = await self.agent_pool.get_agent(subtask.task_type)
-                    try:
-                        # 设置单任务超时
-                        result = await asyncio.wait_for(
-                            agent.run(subtask, context),
-                            timeout=subtask.timeout_seconds,
-                        )
-                    except asyncio.TimeoutError:
-                        result = AgentResult(
-                            task_id=task_id,
-                            status=AgentStatus.TIMEOUT,
-                            output=f"Task timed out after {subtask.timeout_seconds}s",
-                        )
-                    except Exception as e:
-                        result = AgentResult(
-                            task_id=task_id,
-                            status=AgentStatus.FAILED,
-                            output=f"Exception: {type(e).__name__}: {e}",
-                        )
-                    finally:
-                        await self.agent_pool.release_agent(agent)
+                    result = AgentResult(
+                        task_id=task_id,
+                        status=AgentStatus.FAILED,
+                        output="Task did not start",
+                    )
+                    attempts = max(1, self._config.max_subagent_retries + 1)
+                    for attempt in range(1, attempts + 1):
+                        remaining = self._remaining_seconds()
+                        if remaining <= 0:
+                            return AgentResult(
+                                task_id=task_id,
+                                status=AgentStatus.TIMEOUT,
+                                output="Global time budget exhausted before task execution",
+                            )
+                        agent = await self.agent_pool.get_agent(subtask.task_type)
+                        try:
+                            result = await asyncio.wait_for(
+                                agent.run(subtask, context),
+                                timeout=min(subtask.timeout_seconds, remaining),
+                            )
+                        except asyncio.TimeoutError:
+                            result = AgentResult(
+                                task_id=task_id,
+                                status=AgentStatus.TIMEOUT,
+                                output=f"Task timed out after {min(subtask.timeout_seconds, remaining):.1f}s",
+                            )
+                        except Exception as e:
+                            result = AgentResult(
+                                task_id=task_id,
+                                status=AgentStatus.FAILED,
+                                output=f"Exception: {type(e).__name__}: {e}",
+                            )
+                        finally:
+                            await self.agent_pool.release_agent(agent)
 
+                        if result.status == AgentStatus.SUCCESS or attempt >= attempts:
+                            return result
+                        logger.warning(
+                            f"[Dispatch] {task_id} attempt {attempt}/{attempts} failed; retrying"
+                        )
                     return result
 
             # 并发执行本层
@@ -308,6 +349,7 @@ class Orchestrator:
                     all_results.append(lr)
 
         self._results = all_results
+        self._record_result_history(all_results)
         return OrchestratorState.COLLECTING
 
     async def _do_collecting(self) -> OrchestratorState:
@@ -328,6 +370,31 @@ class Orchestrator:
                 if r.status == AgentStatus.SUCCESS and r.output and not _looks_like_error(str(r.output)):
                     self._sync_result_to_memory_store(r)
 
+        if (
+            self._config.enable_evidence
+            and self.evidence_store is not None
+            and self.evidence_verifier is not None
+        ):
+            self.evidence_store.ingest_results(self._results)
+            self._evidence_audit = await asyncio.to_thread(
+                self.evidence_verifier.audit_results,
+                self._all_results,
+                self.evidence_store,
+                use_llm=False,
+            )
+            audit = self._evidence_audit
+            logger.info(
+                "[Evidence] coverage=%.1f%% | claims=%d | supported=%d | NEI=%d | "
+                "sources=%d | fulltext=%.1f%% | primary=%.1f%%",
+                audit.coverage * 100,
+                len(audit.claims),
+                audit.supported_count,
+                audit.nei_count,
+                audit.source_count,
+                audit.fulltext_source_ratio * 100,
+                audit.primary_source_ratio * 100,
+            )
+
         success_count = sum(1 for r in self._results if r.status == AgentStatus.SUCCESS)
         total_count = len(self._results)
         fail_count = total_count - success_count
@@ -338,13 +405,17 @@ class Orchestrator:
             logger.info(f"[Collect] {status_icon} 子任务完成: {success_count}/{total_count} 成功")
 
         # 检查是否需要重规划
-        if self._should_replan(self._results):
+        if self._config.enable_replan and self._should_replan(self._results):
             if self._replan_count < self._config.max_replan_rounds:
                 self._replan_count += 1
                 return OrchestratorState.REPLANNING
             else:
                 logger.warning("[Collect] Max replan rounds reached, proceeding with partial results")
                 # 超过最大重规划次数，继续合成（用已有结果）
+
+        if self._should_fill_evidence_gaps():
+            self._prepare_evidence_gap_round()
+            return OrchestratorState.DISPATCHING
 
         return OrchestratorState.SYNTHESIZING
 
@@ -387,24 +458,48 @@ class Orchestrator:
             timeout_seconds=300,
         )
 
+        synthesis_results = self._prepare_synthesis_results(self._all_results or self._results)
         context = {
             "query": self._query,
-            "results": self._results,
+            "results": synthesis_results,
+            "evidence_audit": (
+                self._evidence_audit.to_dict(self.evidence_store.evidence)
+                if self._evidence_audit is not None and self.evidence_store is not None
+                else {}
+            ),
+            "evidence_sources": (
+                self.evidence_store.to_source_dicts() if self.evidence_store is not None else []
+            ),
         }
 
         agent = await self.agent_pool.get_agent(TaskType.ANALYZE)
+        pooled_agent = agent
+        release_pooled = True
         # 需要 SummarizerAgent，但 agent_pool 可能返回 ResearcherAgent
         # 这里我们通过类型检查或强制创建 SummarizerAgent
         from ..agents.summarizer import SummarizerAgent
         if not isinstance(agent, SummarizerAgent):
             # 优先使用配置的 summarizer_policy（更大的 max_tokens），fallback 到 agent.policy
             policy = self.summarizer_policy or agent.policy
-            agent = SummarizerAgent(name="summarizer", policy=policy, tools=agent.tools)
+            tools = agent.tools
+            await self.agent_pool.release_agent(pooled_agent)
+            release_pooled = False
+            agent = SummarizerAgent(name="summarizer", policy=policy, tools=tools)
 
+        remaining = self._remaining_seconds()
+        final_audit_reserve = (
+            self._config.final_audit_reserve_seconds
+            if self._config.enable_evidence
+            else 8.0
+        )
+        synthesis_timeout = min(
+            synth_task.timeout_seconds,
+            max(1.0, remaining - final_audit_reserve),
+        )
         try:
             result = await asyncio.wait_for(
                 agent.run(synth_task, context),
-                timeout=synth_task.timeout_seconds,
+                timeout=synthesis_timeout,
             )
         except asyncio.TimeoutError:
             result = AgentResult(
@@ -419,21 +514,20 @@ class Orchestrator:
                 output=f"Synthesis error: {type(e).__name__}: {e}",
             )
         finally:
-            await self.agent_pool.release_agent(agent)
+            if release_pooled:
+                await self.agent_pool.release_agent(pooled_agent)
 
         if result.status == AgentStatus.SUCCESS and isinstance(result.output, ResearchReport):
             self._memory_store["final_report"] = result.output
         else:
-            # 合成失败但已有结果，生成降级报告
-            self._memory_store["final_report"] = ResearchReport(
-                query=self._query,
-                content=str(result.output) if result.output else "Synthesis failed.",
-                confidence=0.0,
-                num_searches=sum(
-                    len([t for t in r.trajectory if t.get("role") == "tool"])
-                    for r in self._results
-                ),
+            # 合成失败时仍保留已完成子任务，而不是只返回错误字符串。
+            fallback = self._build_timeout_report()
+            fallback.run_status = (
+                "partial_timeout"
+                if result.status == AgentStatus.TIMEOUT
+                else "partial_failure"
             )
+            self._memory_store["final_report"] = fallback
 
         if self._config.enable_adversarial:
             logger.info("[Synthesize] ✓ 报告合成完成，进入对抗优化")
@@ -518,7 +612,7 @@ class Orchestrator:
             new_dag = self.planner.replan(
                 query=self._query,
                 failed_tasks=failed_tasks,
-                existing_results=self._results,
+                existing_results=self._all_results or self._results,
                 reason=reason,
             )
             self._dag = new_dag
@@ -530,12 +624,12 @@ class Orchestrator:
         except PlanParseError as e:
             logger.warning(f"[Replan] Failed: {e}")
             # 重规划失败，如果已有部分成功结果，尝试直接合成
-            if any(r.status == AgentStatus.SUCCESS for r in self._results):
+            if any(r.status == AgentStatus.SUCCESS for r in self._all_results or self._results):
                 return OrchestratorState.SYNTHESIZING
             return OrchestratorState.FAILED
         except Exception as e:
             logger.warning(f"[Replan] Unexpected error: {e}")
-            if any(r.status == AgentStatus.SUCCESS for r in self._results):
+            if any(r.status == AgentStatus.SUCCESS for r in self._all_results or self._results):
                 return OrchestratorState.SYNTHESIZING
             return OrchestratorState.FAILED
 
@@ -573,6 +667,53 @@ class Orchestrator:
             return True
         return False
 
+    def _should_fill_evidence_gaps(self) -> bool:
+        if not (
+            self._config.enable_evidence
+            and self._config.enable_completeness_check
+            and self._evidence_audit is not None
+            and self.evidence_store is not None
+        ):
+            return False
+        if self._evidence_gap_rounds >= self._config.max_evidence_gap_rounds:
+            return False
+        if self._evidence_audit.coverage >= self._config.min_evidence_coverage:
+            return False
+        required_seconds = (
+            self._config.synthesis_reserve_seconds
+            + self._config.evidence_gap_min_seconds
+        )
+        if not self._evidence_audit.claims or self._remaining_seconds() < required_seconds:
+            return False
+        return any(
+            claim.status.value in {"refuted", "not_enough_evidence"}
+            for claim in self._evidence_audit.claims
+        )
+
+    def _prepare_evidence_gap_round(self) -> None:
+        from ..evidence import build_evidence_gap_tasks
+
+        round_index = self._evidence_gap_rounds + 1
+        tasks = build_evidence_gap_tasks(
+            self._evidence_audit,
+            round_index=round_index,
+            max_tasks=self._config.max_evidence_gap_tasks,
+        )
+        dag = DAG()
+        for task in tasks:
+            dag.add_node(task.task_id)
+        self._dag = dag
+        self._task_map = {task.task_id: task for task in tasks}
+        self._results = []
+        self._evidence_gap_rounds = round_index
+        logger.info(
+            "[Evidence] coverage %.1f%% < %.1f%%; launching gap round %d with %d verification tasks",
+            self._evidence_audit.coverage * 100,
+            self._config.min_evidence_coverage * 100,
+            round_index,
+            len(tasks),
+        )
+
     # ------------------------------------------------------------------
     # 辅助方法
     # ------------------------------------------------------------------
@@ -581,6 +722,172 @@ class Orchestrator:
         """检查是否超过全局超时。"""
         elapsed = time.monotonic() - self._start_time
         return elapsed > self._config.global_timeout_seconds
+
+    def _remaining_seconds(self) -> float:
+        return max(0.0, self._config.global_timeout_seconds - (time.monotonic() - self._start_time))
+
+    def _record_result_history(self, results: list[AgentResult]) -> None:
+        positions = {result.task_id: index for index, result in enumerate(self._all_results)}
+        for result in results:
+            if result.task_id not in positions:
+                positions[result.task_id] = len(self._all_results)
+                self._all_results.append(result)
+                continue
+            index = positions[result.task_id]
+            previous = self._all_results[index]
+            if previous.status != AgentStatus.SUCCESS or result.status == AgentStatus.SUCCESS:
+                self._all_results[index] = result
+
+    def _build_timeout_report(self) -> ResearchReport:
+        successful = [
+            result
+            for result in (self._all_results or self._results)
+            if result.status == AgentStatus.SUCCESS and result.output
+        ]
+        if successful:
+            sections = [
+                "## Partial results",
+                "",
+                "The global time budget expired before full synthesis. The following completed sub-task outputs are preserved.",
+            ]
+            for result in successful:
+                sections.extend(["", f"### {result.task_id}", "", str(result.output)])
+            content = "\n".join(sections)
+            confidence = round(
+                sum(result.confidence for result in successful) / len(successful) * 0.7,
+                2,
+            )
+        else:
+            content = "Research timed out before any sub-task completed successfully."
+            confidence = 0.0
+        sources = self.evidence_store.to_source_dicts() if self.evidence_store is not None else []
+        return ResearchReport(
+            query=self._query,
+            content=content,
+            sources=sources,
+            confidence=confidence,
+            num_searches=sum(
+                len([step for step in result.trajectory if step.get("role") == "tool"])
+                for result in successful
+            ),
+            run_status="partial_timeout",
+        )
+
+    def _prepare_synthesis_results(self, results: list[AgentResult]) -> list[AgentResult]:
+        """Compress long worker outputs before synthesis while preserving raw evidence."""
+        if self.compressor is None or not results:
+            return results
+        eligible = [
+            result
+            for result in results
+            if result.status == AgentStatus.SUCCESS and isinstance(result.output, str)
+        ]
+        if not eligible:
+            return results
+        texts = [result.output for result in eligible]
+        calculate_tokens = getattr(self.compressor, "calculate_tokens", None)
+        available_budget = getattr(self.compressor, "available_budget", 0)
+        l1_threshold = getattr(self.compressor, "l1_threshold", 0.6)
+        if callable(calculate_tokens) and available_budget:
+            if calculate_tokens(texts) <= available_budget * l1_threshold:
+                return results
+        try:
+            compressed = self.compressor.compress(texts=texts, query=self._query, system_prompt_tokens=1000)
+        except Exception as exc:
+            logger.warning("[M3] Synthesis compression failed, using raw results: %s", exc)
+            return results
+        if not compressed:
+            return results
+
+        if len(compressed) == len(eligible):
+            replacements = dict(zip((result.task_id for result in eligible), compressed))
+            prepared = []
+            for result in results:
+                cloned = copy.copy(result)
+                if result.task_id in replacements:
+                    cloned.output = replacements[result.task_id]
+                prepared.append(cloned)
+        else:
+            prepared = [result for result in results if result.status != AgentStatus.SUCCESS]
+            prepared.extend(
+                AgentResult(
+                    task_id=f"compressed_context_{index}",
+                    status=AgentStatus.SUCCESS,
+                    output=text,
+                    confidence=0.7,
+                )
+                for index, text in enumerate(compressed, 1)
+            )
+        logger.info(
+            "[M3] Prepared synthesis context: %d raw chars -> %d compressed chars",
+            sum(len(text) for text in texts),
+            sum(len(text) for text in compressed),
+        )
+        return prepared
+
+    async def _finalize_evidence(self, report: ResearchReport) -> None:
+        if self.evidence_store is None or self.evidence_verifier is None:
+            return
+        audit = None
+        remaining = self._remaining_seconds()
+        if report.content:
+            try:
+                # Always audit the text users actually receive. The heuristic
+                # pass is local and bounded, so it remains valid even when the
+                # network/LLM budget was exhausted during synthesis. Hybrid
+                # refinement is enabled only when enough global budget remains.
+                audit = await asyncio.to_thread(
+                    self.evidence_verifier.audit_text,
+                    report.content,
+                    self.evidence_store,
+                    "final_report",
+                    [source.get("source_id", "") for source in report.sources],
+                    use_llm=False,
+                )
+                if (
+                    self.evidence_verifier.mode == "hybrid"
+                    and self.evidence_verifier.policy is not None
+                    and remaining > 5
+                ):
+                    hybrid_timeout = min(60.0, max(1.0, remaining - 2.0))
+                    audit = await asyncio.wait_for(
+                        asyncio.to_thread(
+                            self.evidence_verifier.audit_text,
+                            report.content,
+                            self.evidence_store,
+                            "final_report",
+                            [source.get("source_id", "") for source in report.sources],
+                            use_llm=True,
+                        ),
+                        timeout=hybrid_timeout,
+                    )
+            except asyncio.TimeoutError:
+                logger.warning("[Evidence] hybrid final audit timed out; using heuristic final audit")
+            except Exception as exc:
+                logger.warning("[Evidence] final report audit failed: %s", exc)
+        if audit is None and self._evidence_audit is not None:
+            logger.warning(
+                "[Evidence] no final-text audit available; falling back to pre-synthesis audit"
+            )
+            audit = self._evidence_audit
+        if audit is None:
+            return
+        self._evidence_audit = audit
+        report.evidence_audit = audit.to_dict(self.evidence_store.evidence)
+        if audit.claims:
+            evidence_factor = 0.7 + 0.3 * audit.coverage
+            report.confidence = round(report.confidence * evidence_factor, 2)
+        try:
+            report.evidence_artifact = self.evidence_store.persist(audit, query=self._query)
+        except Exception as exc:
+            logger.warning("[Evidence] failed to persist evidence artifact: %s", exc)
+        logger.info(
+            "[Evidence] final audit: coverage=%.1f%%, supported=%d/%d, artifact=%s",
+            audit.coverage * 100,
+            audit.supported_count,
+            len(audit.claims),
+            report.evidence_artifact or "disabled",
+        )
 
     def _build_memory_context(self) -> str:
         """构建给 planner 的上下文摘要。
