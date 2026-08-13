@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import base64
 
 from src.tools.web_search import WebSearchTool
@@ -68,6 +69,135 @@ def test_result_ranking_removes_irrelevant_bing_noise() -> None:
     ranked = WebSearchTool._rank_results("Qwen2.5 Technical Report 2412.15115", results, 5)
 
     assert [item["url"] for item in ranked] == ["https://arxiv.org/abs/2412.15115"]
+
+
+def test_result_ranking_prefers_primary_source_over_republisher() -> None:
+    results = [
+        {
+            "title": "双减政策解读",
+            "url": "https://www.sohu.com/a/123",
+            "snippet": "双减政策对校外培训的要求",
+        },
+        {
+            "title": "关于进一步减轻义务教育阶段学生负担的意见",
+            "url": "https://www.gov.cn/zhengce/2021-07/24/content_5627132.htm",
+            "snippet": "双减政策规范校外培训",
+        },
+    ]
+
+    ranked = WebSearchTool._rank_results("双减 政策 校外培训", results, 5)
+
+    assert ranked[0]["url"].startswith("https://www.gov.cn/")
+
+
+def test_official_search_intent_rejects_generic_and_low_quality_results() -> None:
+    results = [
+        {
+            "title": "中华人民共和国教育部政府门户网站",
+            "url": "https://www.moe.gov.cn/",
+            "snippet": "教育新闻与政务服务",
+        },
+        {
+            "title": "双减政策解读视频",
+            "url": "https://www.bilibili.com/video/BV1example",
+            "snippet": "双减政策和校外培训解读",
+        },
+        {
+            "title": "关于进一步减轻义务教育阶段学生作业负担和校外培训负担的意见",
+            "url": "https://www.gov.cn/zhengce/2021-07/24/content_5627132.htm",
+            "snippet": "双减政策官方原文，规范校外培训",
+        },
+    ]
+
+    ranked = WebSearchTool._rank_results("双减 政策文件 官方原文", results, 5)
+
+    assert [item["url"] for item in ranked] == [
+        "https://www.gov.cn/zhengce/2021-07/24/content_5627132.htm"
+    ]
+
+
+def test_auto_search_stops_after_authoritative_ddgs_results(monkeypatch) -> None:
+    tool = WebSearchTool("auto")
+    calls: list[str] = []
+
+    async def fake_ddgs(_query, _top_n, *, backend):
+        calls.append(backend)
+        return {
+            "source": f"ddgs:{backend}",
+            "results": [
+                {
+                    "title": "双减政策官方文件",
+                    "url": "https://www.gov.cn/zhengce/example",
+                    "snippet": "双减政策与校外培训",
+                },
+                {
+                    "title": "教育部政策",
+                    "url": "https://www.moe.gov.cn/srcsite/example",
+                    "snippet": "科技教育与校外培训",
+                },
+                {
+                    "title": "高校研究",
+                    "url": "https://example.edu.cn/stem",
+                    "snippet": "STEM 教育研究",
+                },
+            ],
+        }
+
+    async def unexpected_html(*_args, **_kwargs):
+        raise AssertionError("authoritative DDGS results should avoid HTML fallbacks")
+
+    monkeypatch.setattr(tool, "_ddgs_execute", fake_ddgs)
+    monkeypatch.setattr(tool, "_yahoo_html_execute", unexpected_html)
+    monkeypatch.setattr(tool, "_brave_html_execute", unexpected_html)
+    monkeypatch.setattr(tool, "_bing_html_execute", unexpected_html)
+
+    result = asyncio.run(tool.execute("双减 STEM 教育 校外培训", 5))
+
+    assert calls == ["yandex"]
+    assert result["source"] == "auto:ddgs:yandex"
+    assert len(result["results"]) == 3
+
+
+def test_auto_search_retries_official_domain_when_initial_results_are_weak(monkeypatch) -> None:
+    tool = WebSearchTool("auto")
+    calls: list[tuple[str, str]] = []
+
+    async def fake_ddgs(query, _top_n, *, backend):
+        calls.append((query, backend))
+        if query.startswith("site:moe.gov.cn"):
+            return {
+                "source": "ddgs:yandex",
+                "results": [
+                    {
+                        "title": "教育部印发义务教育课程方案和课程标准（2022年版）",
+                        "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202204/example.html",
+                        "snippet": "义务教育科学课程标准由教育部发布",
+                    }
+                ],
+            }
+        return {"source": f"ddgs:{backend}", "results": []}
+
+    async def unexpected_html(*_args, **_kwargs):
+        raise AssertionError("official-domain retry should avoid HTML fallbacks")
+
+    monkeypatch.setattr(tool, "_ddgs_execute", fake_ddgs)
+    monkeypatch.setattr(tool, "_yahoo_html_execute", unexpected_html)
+    monkeypatch.setattr(tool, "_brave_html_execute", unexpected_html)
+    monkeypatch.setattr(tool, "_bing_html_execute", unexpected_html)
+
+    result = asyncio.run(tool.execute("义务教育科学课程标准 2022 官方原文", 5))
+
+    assert calls[-1][0].startswith("site:moe.gov.cn")
+    assert result["results"][0]["url"].startswith("https://www.moe.gov.cn/")
+
+
+def test_ddgs_rejects_unknown_backend_without_silent_auto_fallback() -> None:
+    tool = WebSearchTool("auto")
+
+    result = asyncio.run(tool._ddgs_execute("query", 5, backend="removed-engine"))
+
+    assert result["results"] == []
+    assert result["error"] == "Unsupported DDGS text backend(s): removed-engine"
 
 
 def test_parse_yahoo_html_extracts_and_unwraps_results() -> None:

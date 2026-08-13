@@ -409,7 +409,7 @@ def build_run_config(config: dict):
         ).get("min_coverage_gain", 0.03),
         evidence_revision_min_claim_retention=config.get("evidence", {}).get(
             "revision", {}
-        ).get("min_claim_retention", 0.60),
+        ).get("min_claim_retention", 0.40),
         evidence_revision_timeout_seconds=config.get("evidence", {}).get(
             "revision", {}
         ).get("timeout_seconds", 40.0),
@@ -420,6 +420,8 @@ async def run_research_with_metadata(
     query: str,
     config: dict,
     modules: dict[str, Any],
+    *,
+    as_of_date: str = "",
 ) -> tuple[str, dict[str, Any]]:
     """
     执行完整的研究流程。
@@ -449,6 +451,7 @@ async def run_research_with_metadata(
     # Step 1-3: Orchestrator 内部完成规划、调度、收集、合成
     orchestrator = modules["orchestrator"]
     run_cfg = build_run_config(config)
+    run_cfg.as_of_date = str(as_of_date or datetime.now().date().isoformat()).strip()
 
     try:
         report = await orchestrator.run(query, config=run_cfg)
@@ -478,6 +481,7 @@ async def run_research_with_metadata(
     metadata = {
         "run_id": getattr(orchestrator, "run_id", ""),
         "run_status": report.run_status,
+        "as_of_date": run_cfg.as_of_date,
         "elapsed_seconds": round(elapsed, 4),
         "confidence": report.confidence,
         "num_searches": report.num_searches,

@@ -37,6 +37,23 @@ def test_policy_records_provider_token_usage() -> None:
     assert global_after["total_tokens"] - global_before["total_tokens"] == 14
 
 
+def test_policy_uses_configured_input_character_budget() -> None:
+    captured = {}
+    policy = VLLMPolicy(api_key="test", max_input_chars=80_000)
+    policy.client = SimpleNamespace(
+        chat=SimpleNamespace(
+            completions=SimpleNamespace(
+                create=lambda **kwargs: (captured.update(kwargs) or _response())
+            )
+        )
+    )
+
+    policy([{"role": "user", "content": "x" * 50_000}])
+
+    assert len(captured["messages"][0]["content"]) == 50_000
+    assert policy.was_truncated is False
+
+
 def test_policy_records_failed_calls() -> None:
     policy = VLLMPolicy(api_key="test")
 

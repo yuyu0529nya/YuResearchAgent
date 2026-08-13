@@ -97,6 +97,15 @@ def test_optional_sampling_params_parsed(monkeypatch):
     assert cfg["max_tokens"] == 2048
 
 
+def test_optional_input_budget_is_parsed(monkeypatch):
+    monkeypatch.setenv("KIMI_API_KEY", "k")
+    monkeypatch.setenv("KIMI_MAX_INPUT_CHARS", "120000")
+
+    cfg = ModelRouter._load_backend_config("kimi")
+
+    assert cfg["max_input_chars"] == 120000
+
+
 def test_is_backend_configured(monkeypatch):
     monkeypatch.setenv("FOO_API_KEY", "k")
     monkeypatch.delenv("BAR_API_KEY", raising=False)

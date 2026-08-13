@@ -30,6 +30,17 @@ def main() -> None:
     parser.add_argument("--judge-backend", default="deepseek")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
+        "--as-of-date",
+        default=None,
+        help="Freeze the shared Agent/baseline/Judge knowledge cutoff (YYYY-MM-DD).",
+    )
+    parser.add_argument(
+        "--question-id",
+        action="append",
+        dest="question_ids",
+        help="Freeze only the named ResearchBench question; repeat for multiple IDs.",
+    )
+    parser.add_argument(
         "--output",
         default="docs/evaluation/headtohead_v4_preregistration.json",
     )
@@ -48,7 +59,9 @@ def main() -> None:
         judge_backend=args.judge_backend,
         judge_model_name=judge.model_name,
         judge_sampling=policy_identity(judge),
+        question_ids=args.question_ids,
         seed=args.seed,
+        as_of_date=args.as_of_date,
         agent_configuration=evaluation_config_snapshot(
             config,
             backend,

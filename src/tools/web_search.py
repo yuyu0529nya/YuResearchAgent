@@ -1,11 +1,11 @@
 """
-网页搜索工具 — 支持 Yahoo/Brave/Wikipedia 自动级联及多种显式后端
+网页搜索工具 — 支持 DDGS/HTML 多引擎自动级联及多种显式后端
 
 设计理由：
   通过 .env 中的 SEARCH_BACKEND 切换后端，零源码修改。
 
 后端对比：
-  - auto:    Yahoo -> Brave -> Wikipedia，无 Key，并做相关性重排
+  - auto:    DDGS Yandex/DuckDuckGo -> HTML engines -> Wikipedia，无 Key，并做质量重排
   - serpapi: 每月 100 次免费，结果最全（Google 数据），国内可访问
   - bing:    微软搜索 API，国内稳定，需 Azure 订阅 Key
   - bocha:   博查AI搜索，国内索引最全，面向 AI Agent 优化
@@ -28,6 +28,12 @@ from urllib.parse import parse_qs, quote, unquote, urlencode, urlsplit
 import aiohttp
 from bs4 import BeautifulSoup
 
+from ..evidence.store import (
+    canonicalize_source_url,
+    relevance_tokens,
+    source_quality,
+    source_relevance,
+)
 from ..utils.env_config import get_env
 
 __all__ = ["WebSearchTool", "MockWebSearchTool", "BaseWebSearchTool"]
@@ -153,6 +159,19 @@ class WebSearchTool(BaseWebSearchTool):
     _session: aiohttp.ClientSession | None = None
     _brave_lock = threading.Lock()
     _brave_last_request = 0.0
+    _known_ddgs_text_backends = frozenset(
+        {
+            "brave",
+            "duckduckgo",
+            "google",
+            "grokipedia",
+            "mojeek",
+            "startpage",
+            "wikipedia",
+            "yahoo",
+            "yandex",
+        }
+    )
 
     def __init__(self, backend: str | None = None, api_key: str | None = None, api_endpoint: str | None = None) -> None:
         self.backend = (backend or get_env("SEARCH_BACKEND", "auto")).lower().strip()
@@ -220,52 +239,124 @@ class WebSearchTool(BaseWebSearchTool):
         return await self._serpapi_execute(query, top_n)
 
     async def _auto_execute(self, query: str, top_n: int) -> dict[str, Any]:
-        """Cascade across keyless engines and rerank their organic results."""
-        yahoo = await self._yahoo_html_execute(query, max(top_n, 5))
-        yahoo_results = self._rank_results(query, yahoo.get("results", []), top_n)
-        if len(yahoo_results) >= min(2, top_n):
-            yahoo["results"] = yahoo_results
-            yahoo["total"] = len(yahoo_results)
-            yahoo["source"] = "auto:yahoo_html"
-            return yahoo
+        """Search stable keyless providers, then rerank for authority and relevance."""
+        target = max(top_n, 5)
+        contains_chinese = bool(re.search(r"[\u4e00-\u9fff]", query or ""))
+        ddgs_order = ("yandex", "duckduckgo") if contains_chinese else ("yandex", "duckduckgo")
+        combined: list[dict[str, Any]] = []
+        sources: list[str] = []
+        warnings: list[str] = []
 
-        brave = await self._brave_html_execute(query, top_n)
-        combined = yahoo_results + brave.get("results", [])
-        ranked = self._rank_results(query, combined, top_n)
-        if len(ranked) >= min(2, top_n):
-            return {
-                "query": query,
-                "results": ranked,
-                "total": len(ranked),
-                "source": "auto:yahoo_html+brave_html",
-                **(
-                    {"warning": str(yahoo.get("warning"))}
-                    if yahoo.get("warning")
-                    else {}
-                ),
-            }
+        for backend in ddgs_order:
+            response = await self._ddgs_execute(query, target, backend=backend)
+            combined.extend(response.get("results", []))
+            if response.get("results"):
+                sources.append(str(response.get("source", f"ddgs:{backend}")))
+            if response.get("warning") or response.get("error"):
+                warnings.append(str(response.get("warning") or response.get("error")))
+            ranked = self._rank_results(query, combined, top_n)
+            if len(ranked) >= min(3, top_n) and self._has_authoritative_result(ranked):
+                return self._search_payload(query, ranked, sources, warnings)
 
-        wikipedia = await self._wikipedia_execute(query, max(top_n, 5))
-        combined += wikipedia.get("results", [])
+        if self._has_official_intent(query) and not self._has_authoritative_result(ranked):
+            for constrained_query in self._official_query_variants(query):
+                response = await self._ddgs_execute(constrained_query, target, backend="yandex")
+                combined.extend(response.get("results", []))
+                if response.get("results"):
+                    sources.append(str(response.get("source", "ddgs:yandex")))
+                if response.get("warning") or response.get("error"):
+                    warnings.append(str(response.get("warning") or response.get("error")))
+                ranked = self._rank_results(query, combined, top_n)
+                if self._has_authoritative_result(ranked, minimum=1):
+                    return self._search_payload(query, ranked, sources, warnings)
+
+        # HTML providers are independent enough to run concurrently. This keeps
+        # the worst-case fallback bounded by one network timeout instead of three.
+        yahoo, brave, bing = await asyncio.gather(
+            self._yahoo_html_execute(query, target),
+            self._brave_html_execute(query, target),
+            self._bing_html_execute(query, target),
+        )
+        for response in (yahoo, brave, bing):
+            combined.extend(response.get("results", []))
+            if response.get("results"):
+                sources.append(str(response.get("source", "html")))
+            if response.get("warning") or response.get("error"):
+                warnings.append(str(response.get("warning") or response.get("error")))
+
         ranked = self._rank_results(query, combined, top_n)
+        if len(ranked) < min(2, top_n):
+            wikipedia = await self._wikipedia_execute(query, target)
+            combined.extend(wikipedia.get("results", []))
+            if wikipedia.get("results"):
+                sources.append(str(wikipedia.get("source", "wikipedia_api")))
+            if wikipedia.get("warning"):
+                warnings.append(str(wikipedia["warning"]))
+            ranked = self._rank_results(query, combined, top_n)
+
+        return self._search_payload(query, ranked, sources, warnings)
+
+    @staticmethod
+    def _search_payload(
+        query: str,
+        results: list[dict[str, str]],
+        sources: list[str],
+        warnings: list[str],
+    ) -> dict[str, Any]:
         payload: dict[str, Any] = {
             "query": query,
-            "results": ranked,
-            "total": len(ranked),
-            "source": "auto:yahoo_html+brave_html+wikipedia_api",
+            "results": results,
+            "total": len(results),
+            "source": "auto:" + "+".join(dict.fromkeys(sources or ["no_results"])),
         }
-        warnings = [
-            warning
-            for warning in (
-                brave.get("warning") or brave.get("error"),
-                yahoo.get("warning"),
-                wikipedia.get("warning"),
-            )
-            if warning
-        ]
         if warnings:
-            payload["warning"] = "; ".join(warnings)
+            payload["warning"] = "; ".join(dict.fromkeys(warnings))
         return payload
+
+    @staticmethod
+    def _has_authoritative_result(
+        results: list[dict[str, Any]],
+        minimum: int = 2,
+    ) -> bool:
+        authoritative = [
+            item
+            for item in results
+            if source_quality(str(item.get("url", "")))[1]
+            and float(item.get("_relevance_score", 0.0) or 0.0) >= 0.10
+        ]
+        return len(authoritative) >= minimum
+
+    @staticmethod
+    def _has_official_intent(query: str) -> bool:
+        return bool(
+            re.search(
+                r"(?:\bofficial\b|\boriginal\b|\bsite:|官网|官方|原文|政策文件)",
+                query or "",
+                re.IGNORECASE,
+            )
+        )
+
+    @classmethod
+    def _official_query_variants(cls, query: str) -> list[str]:
+        """Build narrow institutional retries for explicit official-source requests."""
+        if re.search(r"\bsite:", query or "", re.IGNORECASE):
+            return []
+        cleaned = re.sub(
+            r"(?:\bofficial\b|\boriginal\b|官网|官方|原文|政策文件)",
+            " ",
+            query or "",
+            flags=re.IGNORECASE,
+        )
+        cleaned = " ".join(cleaned.split())
+        lowered = cleaned.lower()
+        variants: list[str] = []
+        if re.search(r"教育|课程|学校|双减|校外培训|教师", cleaned):
+            variants.append(f"site:moe.gov.cn {cleaned}")
+        if "next generation science standards" in lowered or re.search(r"\bngss\b", lowered):
+            variants.append(f"site:nextgenscience.org {cleaned}")
+        if "federal" in lowered and "stem" in lowered and "education" in lowered:
+            variants.append(f"site:ed.gov {cleaned}")
+        return list(dict.fromkeys(variant for variant in variants if variant.strip()))
 
     async def _wikipedia_execute(self, query: str, top_n: int) -> dict[str, Any]:
         """Last-resort, explicitly labeled encyclopedia search fallback."""
@@ -580,28 +671,30 @@ class WebSearchTool(BaseWebSearchTool):
         results: list[dict[str, Any]],
         top_n: int,
     ) -> list[dict[str, str]]:
-        """Deduplicate and suppress results with no lexical relation to the query."""
-        query_tokens = cls._search_tokens(query)
+        """Deduplicate results and rank lexical relevance plus source authority."""
         ranked: list[tuple[float, int, dict[str, str]]] = []
+        official_intent = cls._has_official_intent(query)
         seen: set[str] = set()
         for index, item in enumerate(results):
             url = str(item.get("url", ""))
-            if not url or url in seen:
+            dedupe_key = canonicalize_source_url(url)
+            if not url or dedupe_key in seen:
                 continue
-            seen.add(url)
+            seen.add(dedupe_key)
             text = f"{item.get('title', '')} {item.get('snippet', '')} {url}"
-            result_tokens = cls._search_tokens(text)
-            overlap = len(query_tokens & result_tokens) / max(1, len(query_tokens))
-            trusted = any(
-                domain in urlsplit(url).netloc.lower()
-                for domain in (
-                    "arxiv.org", "openai.com", "anthropic.com", "deepmind.google",
-                    "ai.google.dev", "github.com", "huggingface.co", ".gov", ".edu",
-                )
-            )
-            if query_tokens and overlap < 0.08:
+            relevance, anchor_hits = source_relevance(query, text)
+            query_tokens = cls._search_tokens(query)
+            quality, is_primary, _ = source_quality(url)
+            if official_intent and not (is_primary or quality >= 0.75):
                 continue
-            score = overlap + (0.20 if trusted else 0.0)
+            if cls._is_generic_landing_page(query, str(item.get("title", "")), url):
+                if official_intent:
+                    continue
+                relevance *= 0.55
+            if query_tokens and (relevance < 0.07 or anchor_hits == 0):
+                continue
+            authority_bonus = max(-0.15, (quality - 0.5) * 0.8)
+            score = relevance + authority_bonus + (0.12 if is_primary else 0.0)
             ranked.append(
                 (
                     score,
@@ -610,6 +703,7 @@ class WebSearchTool(BaseWebSearchTool):
                         "title": str(item.get("title", "")),
                         "url": url,
                         "snippet": str(item.get("snippet", "")),
+                        "_relevance_score": round(relevance, 4),
                     },
                 )
             )
@@ -617,24 +711,52 @@ class WebSearchTool(BaseWebSearchTool):
         return [item for _, _, item in ranked[:top_n]]
 
     @staticmethod
-    def _search_tokens(text: str) -> set[str]:
-        lowered = (text or "").lower()
-        tokens = set(re.findall(r"[a-z][a-z0-9_.+-]+|\d+(?:\.\d+)?", lowered))
-        for sequence in re.findall(r"[\u4e00-\u9fff]{2,}", lowered):
-            tokens.update(sequence[index : index + 2] for index in range(len(sequence) - 1))
-        return tokens
+    def _is_generic_landing_page(query: str, title: str, url: str) -> bool:
+        try:
+            path = urlsplit(url).path.strip("/").lower()
+        except ValueError:
+            path = ""
+        generic_title = bool(
+            re.search(
+                r"(?:政府门户网站|政务服务平台|教育\s*要闻|official\s+(?:site|website)|homepage)",
+                title or "",
+                re.IGNORECASE,
+            )
+        )
+        root_like = path in {"", "index", "index.html", "index.htm", "home"}
+        _, title_hits = source_relevance(query, title)
+        return generic_title or (root_like and title_hits == 0)
 
-    async def _duckduckgo_execute(self, query: str, top_n: int) -> dict[str, Any]:
-        """DuckDuckGo 搜索（免费、无需 API Key）。依赖 ddgs 包：pip install ddgs"""
+    @staticmethod
+    def _search_tokens(text: str) -> set[str]:
+        return relevance_tokens(text)
+
+    async def _ddgs_execute(
+        self,
+        query: str,
+        top_n: int,
+        *,
+        backend: str,
+    ) -> dict[str, Any]:
+        """Run one DDGS provider so a failing engine cannot mask a healthy one."""
+        requested_backends = {item.strip() for item in backend.split(",") if item.strip()}
+        unsupported = requested_backends - self._known_ddgs_text_backends
+        if unsupported:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "error": "Unsupported DDGS text backend(s): " + ", ".join(sorted(unsupported)),
+            }
+
         def _search() -> list[dict]:
             try:
                 from ddgs import DDGS
             except ImportError:
                 from duckduckgo_search import DDGS  # 旧包名兼容
             timeout = float(get_env("DDGS_TIMEOUT_SECONDS", "6") or 6)
-            engines = get_env("DDGS_ENGINES", "duckduckgo") or "duckduckgo"
             with DDGS(timeout=timeout) as ddgs:
-                return list(ddgs.text(query, max_results=top_n, backend=engines))
+                return list(ddgs.text(query, max_results=top_n, backend=backend))
 
         try:
             raw = await asyncio.to_thread(_search)
@@ -643,7 +765,7 @@ class WebSearchTool(BaseWebSearchTool):
                     "error": "DuckDuckGo 后端需要 ddgs 包：pip install ddgs"}
         except Exception as e:
             return {"query": query, "results": [], "total": 0,
-                    "warning": f"DuckDuckGo 搜索无结果: {type(e).__name__}: {e}"}
+                    "warning": f"DDGS {backend} 搜索无结果: {type(e).__name__}: {e}"}
 
         results = [
             {
@@ -653,7 +775,17 @@ class WebSearchTool(BaseWebSearchTool):
             }
             for r in raw[:top_n]
         ]
-        return {"query": query, "results": results, "total": len(results)}
+        return {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": f"ddgs:{backend}",
+        }
+
+    async def _duckduckgo_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """DDGS search (free and keyless), with an explicitly configurable engine."""
+        backend = get_env("DDGS_ENGINES", "duckduckgo") or "duckduckgo"
+        return await self._ddgs_execute(query, top_n, backend=backend)
 
     async def _bing_html_execute(self, query: str, top_n: int) -> dict[str, Any]:
         """Keyless Bing result-page search with a strict network timeout.

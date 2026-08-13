@@ -39,6 +39,57 @@ def test_direct_paper_lookup_is_not_relevance_filtered() -> None:
     assert ArxivReaderTool._filter_search_result(result, None, 3)["papers"] == result["papers"]
 
 
+def test_academic_filter_handles_chinese_topic_anchors() -> None:
+    result = {
+        "papers": [
+            {
+                "title": "STEM 课程设计与教师培养研究",
+                "summary": "讨论跨学科课程和科学教师专业发展。",
+            },
+            {
+                "title": "文莱与中国的外国投资关系",
+                "summary": "分析油气产业和国有资本。",
+            },
+        ]
+    }
+
+    filtered = ArxivReaderTool._filter_search_result(
+        result,
+        "中美 STEM 教育课程设计与师资培养模式",
+        3,
+    )
+
+    assert [paper["title"] for paper in filtered["papers"]] == [
+        "STEM 课程设计与教师培养研究"
+    ]
+    assert filtered["papers"][0]["_relevance_score"] > 0.1
+
+
+def test_academic_filter_requires_topic_anchor_in_title() -> None:
+    result = {
+        "papers": [
+            {
+                "title": "Personalized Education and Artificial Intelligence",
+                "summary": "A broad review of machine learning in education around the world.",
+            },
+            {
+                "title": "Tactile Sensing for Embodied Robot Learning",
+                "summary": "A survey of touch sensing for dexterous robot manipulation.",
+            },
+        ]
+    }
+
+    filtered = ArxivReaderTool._filter_search_result(
+        result,
+        "world model tactile sensing embodied robot learning 2025",
+        3,
+    )
+
+    assert [paper["title"] for paper in filtered["papers"]] == [
+        "Tactile Sensing for Embodied Robot Learning"
+    ]
+
+
 def test_crossref_metadata_normalization() -> None:
     paper = ArxivReaderTool._crossref_paper_to_dict(
         {

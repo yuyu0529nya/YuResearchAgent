@@ -523,15 +523,17 @@ class Orchestrator:
                                 status=AgentStatus.CANCELLED,
                                 output=self.cancellation_token.reason,
                             )
-                        remaining = self._remaining_seconds()
-                        if remaining <= 0:
+                        task_timeout = self._task_execution_seconds(
+                            task_id,
+                            subtask.timeout_seconds,
+                        )
+                        if task_timeout <= 0.25:
                             return AgentResult(
                                 task_id=task_id,
                                 status=AgentStatus.TIMEOUT,
-                                output="Global time budget exhausted before task execution",
+                                output="No execution budget remained before task execution",
                             )
                         agent = await self.agent_pool.get_agent(subtask.task_type)
-                        task_timeout = min(subtask.timeout_seconds, remaining)
                         context["_request_deadline_monotonic"] = (
                             time.monotonic() + max(0.25, task_timeout - 0.5)
                         )
@@ -656,6 +658,38 @@ class Orchestrator:
                 self.evidence_store,
                 use_llm=False,
             )
+            remaining = self._remaining_seconds()
+            hybrid_budget = min(
+                20.0,
+                max(
+                    0.0,
+                    remaining
+                    - self._effective_synthesis_reserve_seconds()
+                    - self._effective_final_audit_reserve_seconds()
+                    - 2.0,
+                ),
+            )
+            if (
+                self.evidence_verifier.mode == "hybrid"
+                and self.evidence_verifier.policy is not None
+                and hybrid_budget >= 3.0
+            ):
+                try:
+                    self._evidence_audit = await asyncio.wait_for(
+                        asyncio.to_thread(
+                            self.evidence_verifier.audit_results,
+                            self._all_results,
+                            self.evidence_store,
+                            use_llm=True,
+                            timeout_seconds=max(0.25, hybrid_budget - 1.0),
+                        ),
+                        timeout=hybrid_budget,
+                    )
+                except asyncio.TimeoutError:
+                    logger.warning(
+                        "[Evidence] hybrid pre-synthesis audit timed out; using heuristic audit"
+                    )
+                    self._evidence_audit.verification_mode = "hybrid_unavailable"
             audit = self._evidence_audit
             logger.info(
                 "[Evidence] coverage=%.1f%% | claims=%d | supported=%d | NEI=%d | "
@@ -762,11 +796,7 @@ class Orchestrator:
 
         raw_synthesis_results = self._all_results or self._results
         remaining = self._remaining_seconds()
-        final_audit_reserve = (
-            self._config.final_audit_reserve_seconds
-            if self._config.enable_evidence
-            else 8.0
-        )
+        final_audit_reserve = self._effective_final_audit_reserve_seconds()
         compression_window = min(
             30.0,
             max(0.25, (remaining - final_audit_reserve - 2.0) * 0.20),
@@ -817,6 +847,7 @@ class Orchestrator:
             return OrchestratorState.DONE
         context = {
             "query": self._query,
+            "as_of_date": self._config.as_of_date,
             "results": synthesis_results,
             "evidence_audit": (
                 self._evidence_audit.to_dict(self.evidence_store.evidence)
@@ -1023,7 +1054,14 @@ class Orchestrator:
             return OrchestratorState.DONE
         if self._is_cancelled():
             return OrchestratorState.DONE
-        before_audit = await self._audit_report_text(report, use_hybrid=True) or before_gate_audit
+        is_complete_report = report.run_status == "complete"
+        if is_complete_report:
+            before_audit = (
+                await self._audit_report_text(report, use_hybrid=True)
+                or before_gate_audit
+            )
+        else:
+            before_audit = before_gate_audit
 
         report.evidence_audit = before_audit.to_dict(self.evidence_store.evidence)
         self._evidence_audit = before_audit
@@ -1045,10 +1083,34 @@ class Orchestrator:
         )
         if self._is_cancelled():
             return OrchestratorState.DONE
+        if not is_complete_report:
+            reason = f"Revision is disabled for {report.run_status} reports."
+            report.evidence_revision = {
+                "attempted": False,
+                "accepted": False,
+                "reason": reason,
+                "before": self._audit_metrics(before_audit),
+                "after": self._audit_metrics(before_audit),
+            }
+            await self._commit_evidence_audit(report, before_audit)
+            self._emit_event(
+                "revision_skipped",
+                reason,
+                {
+                    "coverage": before_audit.coverage,
+                    "unresolved_count": before_audit.refuted_count + before_audit.nei_count,
+                },
+                state=OrchestratorState.EVIDENCE_REFINING,
+            )
+            return OrchestratorState.DONE
         should_revise = (
             self._config.enable_evidence_revision
             and self.evidence_reviser is not None
             and before_audit.claims
+            and before_audit.verification_mode not in {
+                "hybrid_unavailable",
+                "hybrid_partial",
+            }
             and before_audit.coverage < self._config.evidence_revision_trigger_coverage
             and (before_audit.refuted_count > 0 or before_audit.nei_count > 0)
         )
@@ -1231,8 +1293,8 @@ class Orchestrator:
                 state=OrchestratorState.EVIDENCE_REFINING,
             )
 
-        if not self._is_cancelled():
-            accepted_audit = await self._audit_report_text(report, use_hybrid=True) or accepted_audit
+        # The accepted candidate has already passed a deterministic re-audit.
+        # A second hybrid pass adds latency and noise without affecting the gate.
         await self._commit_evidence_audit(report, accepted_audit)
         return OrchestratorState.DONE
 
@@ -1342,10 +1404,19 @@ class Orchestrator:
             return False
         if self._evidence_gap_rounds >= self._config.max_evidence_gap_rounds:
             return False
+        if getattr(self._evidence_audit, "verification_mode", "") in {
+            "hybrid_unavailable",
+            "hybrid_partial",
+        }:
+            # A failed semantic audit does not establish an evidence gap. In
+            # particular, cross-language claim/evidence pairs often have zero
+            # lexical support until the hybrid verifier can adjudicate them.
+            return False
         if self._evidence_audit.coverage >= self._config.min_evidence_coverage:
             return False
         required_seconds = (
-            self._config.synthesis_reserve_seconds
+            self._effective_synthesis_reserve_seconds()
+            + self._effective_final_audit_reserve_seconds()
             + self._config.evidence_gap_min_seconds
         )
         if not self._evidence_audit.claims or self._remaining_seconds() < required_seconds:
@@ -1353,6 +1424,29 @@ class Orchestrator:
         return any(
             claim.status.value in {"refuted", "not_enough_evidence"}
             for claim in self._evidence_audit.claims
+        )
+
+    def _task_execution_seconds(self, task_id: str, requested_seconds: float) -> float:
+        """Keep every pre-synthesis task outside the final-report reserve."""
+        available = self._remaining_seconds() - (
+            self._effective_synthesis_reserve_seconds()
+            + self._effective_final_audit_reserve_seconds()
+        )
+        return max(0.0, min(float(requested_seconds), available))
+
+    def _effective_synthesis_reserve_seconds(self) -> float:
+        """Scale configured reserves down for intentionally short smoke runs."""
+        return min(
+            float(self._config.synthesis_reserve_seconds),
+            max(1.0, float(self._config.global_timeout_seconds) * 0.30),
+        )
+
+    def _effective_final_audit_reserve_seconds(self) -> float:
+        configured = self._config.final_audit_reserve_seconds if self._config.enable_evidence else 8.0
+        fraction = 0.15 if self._config.enable_evidence else 0.05
+        return min(
+            float(configured),
+            max(1.0, float(self._config.global_timeout_seconds) * fraction),
         )
 
     def _prepare_evidence_gap_round(self) -> None:
@@ -1363,6 +1457,7 @@ class Orchestrator:
             self._evidence_audit,
             round_index=round_index,
             max_tasks=self._config.max_evidence_gap_tasks,
+            query=self._query,
         )
         dag = DAG()
         for task in tasks:
@@ -1541,7 +1636,10 @@ class Orchestrator:
     async def _finalize_evidence(self, report: ResearchReport) -> None:
         if self.evidence_store is None or self.evidence_verifier is None:
             return
-        audit = await self._audit_report_text(report, use_hybrid=True)
+        audit = await self._audit_report_text(
+            report,
+            use_hybrid=report.run_status == "complete",
+        )
         if audit is None and self._evidence_audit is not None:
             logger.warning(
                 "[Evidence] no final-text audit available; falling back to pre-synthesis audit"
@@ -1615,6 +1713,7 @@ class Orchestrator:
                     )
                 except asyncio.TimeoutError:
                     logger.warning("[Evidence] hybrid final audit timed out; using heuristic audit")
+                    audit.verification_mode = "hybrid_unavailable"
             return audit
         except Exception as exc:
             logger.warning("[Evidence] report audit failed: %s", exc)
@@ -1712,6 +1811,7 @@ class Orchestrator:
         """为单个 SubTask 构建执行上下文。"""
         ctx = dict(self._memory_store)
         ctx["query"] = self._query
+        ctx["as_of_date"] = self._config.as_of_date
         ctx["_cancellation_token"] = self.cancellation_token
         # 注入依赖任务的结果
         for dep_id in subtask.dependencies:

@@ -62,6 +62,19 @@ def test_build_prompt_uses_configured_subtask_limit():
     assert "up to 5 focused sub_tasks" in prompt
 
 
+def test_build_prompt_reserves_explicit_dimensions_for_research_tasks():
+    planner = Planner(policy=None, max_sub_questions=4)
+
+    prompt = planner._build_prompt(
+        "Analyze world models, tactile sensing, and task planning.",
+        "",
+    )
+
+    assert "dedicated final Summarizer" in prompt
+    assert "distinct evidence-gathering sub-task" in prompt
+    assert "Do not merge two named dimensions" in prompt
+
+
 def test_planner_forwards_provider_deadline():
     class _Policy:
         timeout = None

@@ -2,6 +2,46 @@
 
 from __future__ import annotations
 
+import re
+
+
+_NONCOMPARABLE_SECTION_TITLES = {
+    "元信息",
+    "证据审计",
+    "证据约束修订",
+    "metadata",
+    "evidence audit",
+    "evidence-constrained revision",
+    "evidence constrained revision",
+}
+
+
+def strip_noncomparable_appendices(report: str) -> str:
+    """Remove system-generated runtime sections while retaining report references.
+
+    Agent reports include execution telemetry and an evidence audit after their
+    substantive answer. A one-call baseline has no equivalent machinery, so
+    exposing those appendices to a pairwise judge leaks system identity and lets
+    self-reported audit outcomes influence content scoring. Sections are removed
+    structurally because a generated reference list may follow the runtime blocks.
+    """
+    output: list[str] = []
+    skip_level: int | None = None
+    heading_pattern = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
+    for line in (report or "").splitlines():
+        match = heading_pattern.match(line.strip())
+        if match:
+            level = len(match.group(1))
+            title = re.sub(r"[`*_]", "", match.group(2)).strip().lower()
+            if title in _NONCOMPARABLE_SECTION_TITLES:
+                skip_level = level
+                continue
+            if skip_level is not None and level <= skip_level:
+                skip_level = None
+        if skip_level is None:
+            output.append(line)
+    return "\n".join(output).strip()
+
 
 def balanced_report_excerpt(report: str, max_chars: int = 12000, segments: int = 4) -> str:
     """Return a length-bounded excerpt sampled across the entire report.
@@ -46,4 +86,4 @@ def balanced_report_excerpt(report: str, max_chars: int = 12000, segments: int =
     return excerpt[:max_chars]
 
 
-__all__ = ["balanced_report_excerpt"]
+__all__ = ["balanced_report_excerpt", "strip_noncomparable_appendices"]

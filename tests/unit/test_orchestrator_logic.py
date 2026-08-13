@@ -152,6 +152,114 @@ def test_gap_research_preserves_synthesis_time_budget():
     assert o._should_fill_evidence_gaps() is True
 
 
+def test_partial_hybrid_audit_cannot_trigger_gap_research() -> None:
+    o = _orch(timeout=480)
+    o._config.enable_evidence = True
+    o._config.enable_completeness_check = True
+    o._config.max_evidence_gap_rounds = 1
+    o._evidence_audit = SimpleNamespace(
+        verification_mode="hybrid_partial",
+        coverage=0.1,
+        claims=[SimpleNamespace(status=SimpleNamespace(value="not_enough_evidence"))],
+    )
+    o.evidence_store = object()
+    o._start_time = time.monotonic()
+
+    assert o._should_fill_evidence_gaps() is False
+
+
+def test_gap_task_runtime_is_hard_capped_by_final_reserves():
+    o = _orch(timeout=480)
+    o._config.synthesis_reserve_seconds = 130
+    o._config.final_audit_reserve_seconds = 70
+    o._start_time = time.monotonic() - 180  # about 300 seconds remain
+
+    timeout = o._task_execution_seconds("evidence_gap_r1_1", 240)
+
+    assert 99 <= timeout <= 101
+    assert 99 <= o._task_execution_seconds("ordinary_task", 240) <= 101
+
+
+def test_non_evidence_task_still_preserves_synthesis_budget() -> None:
+    o = _orch(timeout=480)
+    o._config.enable_evidence = False
+    o._config.synthesis_reserve_seconds = 130
+    o._start_time = time.monotonic() - 180
+
+    timeout = o._task_execution_seconds("ordinary_task", 240)
+
+    assert 161 <= timeout <= 163
+
+
+def test_short_run_scales_final_stage_reserves() -> None:
+    o = _orch(timeout=20)
+    o._config.enable_evidence = True
+    o._config.synthesis_reserve_seconds = 130
+    o._config.final_audit_reserve_seconds = 70
+    o._start_time = time.monotonic()
+
+    assert o._effective_synthesis_reserve_seconds() == 6
+    assert o._effective_final_audit_reserve_seconds() == 3
+    assert 10 <= o._task_execution_seconds("ordinary_task", 120) <= 11
+
+
+def test_partial_report_skips_hybrid_audit_and_revision() -> None:
+    class _NoNetworkPolicy:
+        tools = None
+
+        def __call__(self, _messages):
+            raise AssertionError("partial reports must not invoke hybrid verification")
+
+    class _NoRevision:
+        @staticmethod
+        def revise(**_kwargs):
+            raise AssertionError("partial reports must not invoke revision")
+
+    store = EvidenceStore(persist_enabled=False)
+    source = store.upsert_source(
+        url="https://example.com/model",
+        title="Model card",
+        source_type="paper",
+    )
+    store.add_evidence(
+        source.source_id,
+        "The model supports a context window of 128K tokens.",
+        EvidenceKind.ABSTRACT,
+    )
+    o = Orchestrator(
+        planner=None,
+        agent_pool=None,
+        evidence_store=store,
+        evidence_verifier=ClaimVerifier(
+            policy=_NoNetworkPolicy(), mode="hybrid", support_threshold=0.2
+        ),
+        evidence_reviser=_NoRevision(),
+    )
+    o._query = "q"
+    o._config = RunConfig(
+        global_timeout_seconds=60,
+        enable_evidence=True,
+        enable_evidence_revision=True,
+        evidence_revision_trigger_coverage=0.9,
+    )
+    o._start_time = time.monotonic()
+    report = ResearchReport(
+        query="q",
+        content="The model supports a context window of 128K tokens [1].",
+        sources=[{"source_id": source.source_id, "url": source.url}],
+        confidence=0.8,
+        run_status="partial_failure",
+    )
+    o._memory_store["final_report"] = report
+
+    asyncio.run(o._do_evidence_refining())
+
+    assert report.evidence_revision["attempted"] is False
+    assert report.evidence_revision["reason"] == (
+        "Revision is disabled for partial_failure reports."
+    )
+
+
 def test_synthesis_compressor_changes_long_context_without_mutating_raw_results():
     class _Compressor:
         available_budget = 10

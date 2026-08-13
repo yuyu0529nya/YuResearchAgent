@@ -31,15 +31,79 @@ _PRIMARY_DOMAINS = {
     "deepmind.google",
     "ai.google.dev",
     "qwenlm.github.io",
+    "nextgenscience.org",
+    "federalregister.gov",
+    "eric.ed.gov",
+    "europa.eu",
+    "icmagroup.org",
+    "dodstem.us",
+    "ed.gov",
+    "nist.gov",
+    "nsf.gov",
+    # First-party research/product announcements. These establish what the
+    # issuing organization released; they do not independently validate vendor
+    # performance claims.
+    "nvidia.com",
+    "pi.website",
+    "dyna.co",
+    "xenserobotics.com",
 }
 _HIGH_QUALITY_DOMAINS = {
     "docs.python.org",
-    "github.com",
     "semanticscholar.org",
     "openalex.org",
     "reuters.com",
     "apnews.com",
+    "sinoss.net",
+    "edu.cn",
 }
+_SECONDARY_REPOSITORY_DOMAINS = {
+    "academia.edu",
+    "github.com",
+    "researchgate.net",
+}
+_LOW_QUALITY_DOMAINS = {
+    "baidu.com",
+    "baike.baidu.com",
+    "blog.csdn.net",
+    "chinabaogao.com",
+    "medium.com",
+    "sohu.com",
+    "douyin.com",
+    "t.me",
+    "tom.com",
+    "youtube.com",
+    "doc88.com",
+    "fenbi.com",
+    "renrendoc.com",
+    "bilibili.com",
+    "docin.com",
+    "wenku.baidu.com",
+    "360doc.com",
+}
+
+_RELEVANCE_STOPWORDS = {
+    "about", "analysis", "and", "china", "chinese", "compare", "comparison",
+    "education", "effect", "evaluation", "impact", "policy", "report", "research",
+    "study", "the", "united", "with", "official", "original", "or", "site",
+    "gov.cn", "moe.gov.cn",
+    "中国", "中美", "两国", "分析", "发展", "影响", "政策", "教育", "模式",
+    "相关", "研究", "美国", "评估", "进行", "对比", "差异", "官网", "官方",
+    "原文", "网站", "教育部",
+}
+
+_CANONICAL_INSTITUTION_DOMAINS = {
+    "gov.cn",
+    "moe.gov.cn",
+    "ed.gov",
+    "nist.gov",
+    "nsf.gov",
+}
+
+_GOVERNMENT_MEDIA_PATH = re.compile(
+    r"/(?:rmtzx|rmzx|rongmeiti(?:zhongxin)?|media[-_]?center)(?:/|$)",
+    re.IGNORECASE,
+)
 
 
 def _stable_id(prefix: str, *parts: str) -> str:
@@ -79,32 +143,162 @@ def _domain_matches(domain: str, candidates: set[str]) -> bool:
     return any(domain == item or domain.endswith(f".{item}") for item in candidates)
 
 
-def _source_quality(url: str, source_type: str) -> tuple[float, bool, str]:
+def relevance_tokens(text: str) -> set[str]:
+    """Return mixed-language lexical units for retrieval relevance checks."""
+    lowered = (text or "").lower()
+    tokens = set(re.findall(r"[a-z][a-z0-9_.+-]+|\d+(?:\.\d+)?", lowered))
+    for sequence in re.findall(r"[\u4e00-\u9fff]{2,}", lowered):
+        for size in (2, 3):
+            if len(sequence) >= size:
+                tokens.update(sequence[index : index + size] for index in range(len(sequence) - size + 1))
+    return tokens
+
+
+def source_relevance(query: str, text: str) -> tuple[float, int]:
+    """Score lexical relevance and count discriminating query-term matches."""
+    query_tokens = relevance_tokens(query)
+    if not query_tokens:
+        return 0.0, 0
+    result_tokens = relevance_tokens(text)
+    overlap = query_tokens & result_tokens
+    discriminating = query_tokens - _RELEVANCE_STOPWORDS
+    discriminating_overlap = discriminating & result_tokens
+    broad_coverage = len(overlap) / len(query_tokens)
+    focused_coverage = (
+        len(discriminating_overlap) / len(discriminating)
+        if discriminating
+        else broad_coverage
+    )
+    # Sources normally cover one sub-question, not every term in a broad query.
+    # Reward a small number of discriminating anchors while retaining query
+    # coverage as a tie-breaker.
+    anchor_strength = min(1.0, len(discriminating_overlap) / 3.0)
+    score = min(
+        1.0,
+        anchor_strength * 0.65 + broad_coverage * 0.15 + focused_coverage * 0.20,
+    )
+    return score, len(discriminating_overlap)
+
+
+def infer_source_year(url: str = "", *texts: str) -> str:
+    """Infer a conservative publication year without confusing upload dates.
+
+    A dated HTML path is usually the page publication date. For downloadable
+    files, however, a parent directory often reflects a later migration or
+    upload date, so only a year embedded in the filename is accepted.
+    """
+    upper_bound = datetime.now(timezone.utc).year + 1
+    try:
+        path = unquote(urlsplit(url or "").path)
+    except ValueError:
+        path = ""
+    is_download = bool(
+        re.search(r"\.(?:pdf|docx?|xlsx?|pptx?|zip|csv)$", path, re.IGNORECASE)
+    )
+    if not is_download:
+        for raw in re.findall(r"(?<!\d)(19\d{2}|20\d{2})(?!\d)", path):
+            year = int(raw)
+            if 1900 <= year <= upper_bound:
+                return str(year)
+    for value in texts:
+        for raw in re.findall(r"(?<!\d)(19\d{2}|20\d{2})(?!\d)", value or ""):
+            year = int(raw)
+            if 1900 <= year <= upper_bound:
+                return str(year)
+    filename = path.rsplit("/", 1)[-1]
+    for raw in re.findall(r"(?<!\d)(19\d{2}|20\d{2})(?!\d)", filename):
+        year = int(raw)
+        if 1900 <= year <= upper_bound:
+            return str(year)
+    if is_download:
+        return ""
+    return ""
+
+
+def fulltext_matches_source(
+    text: str,
+    *,
+    title: str = "",
+    query: str = "",
+) -> bool:
+    """Reject successful HTTP fetches whose body is unrelated to the target.
+
+    Redirects, anti-bot pages, and PDF viewer fallbacks can return substantial
+    text while silently landing on a site homepage. When search context exists,
+    require at least one discriminating title or retrieval-query anchor.
+    """
+    body = re.sub(r"\s+", " ", text or "").strip()
+    if len(body) < 40:
+        return False
+    contexts = []
+    clean_title = re.sub(r"https?://\S+", " ", title or "").strip()
+    if clean_title:
+        contexts.append(clean_title)
+    if query:
+        contexts.append(query)
+    if not contexts:
+        return True
+    for context in contexts:
+        relevance, anchor_hits = source_relevance(context, body)
+        if anchor_hits > 0 and relevance >= 0.07:
+            return True
+        discriminating = relevance_tokens(context) - _RELEVANCE_STOPWORDS
+        if not discriminating and relevance >= 0.20:
+            return True
+    return False
+
+
+def source_quality(url: str, source_type: str = "web") -> tuple[float, bool, str]:
+    """Classify a source using its registrable institutional domain.
+
+    The checks intentionally cover exact public-sector roots such as ``gov.cn``
+    as well as their subdomains. The previous suffix-only checks missed the
+    Chinese central-government portal and most ``*.edu.cn`` institutions.
+    """
     domain = _domain(url)
     try:
         path = urlsplit(url).path.lower()
     except ValueError:
         path = ""
     is_academic = source_type == "paper" or _domain_matches(domain, _PRIMARY_DOMAINS)
-    is_government = domain.endswith(".gov") or domain.endswith(".gov.cn")
-    is_education = domain.endswith(".edu") or domain.endswith(".ac.uk")
+    is_government = any(
+        domain == suffix or domain.endswith(f".{suffix}")
+        for suffix in ("gov", "gov.cn", "gov.uk", "gc.ca", "gouv.fr")
+    ) or _domain_matches(domain, {"europa.eu"})
+    is_education = not _domain_matches(domain, _SECONDARY_REPOSITORY_DOMAINS) and any(
+        domain == suffix or domain.endswith(f".{suffix}")
+        for suffix in ("edu", "edu.cn", "ac.cn", "ac.uk", "edu.au")
+    )
     is_official_docs = (
         domain.startswith(("docs.", "developer.", "developers.", "platform."))
         or any(segment in path for segment in ("/docs/", "/documentation/", "/developers/"))
     )
+    # A government domain establishes who hosts a page, not that every page is
+    # a primary document. Local integrated-media sections republish reporting
+    # and should not make a search snippet sufficient to prove a factual claim.
+    if is_government and _GOVERNMENT_MEDIA_PATH.search(path):
+        return 0.75, False, domain
+    if _domain_matches(domain, _CANONICAL_INSTITUTION_DOMAINS):
+        return 0.95, True, domain
     if is_academic or is_government:
         return 0.9, True, domain
     if is_official_docs:
         return 0.85, True, domain
     if is_education:
         return 0.85, True, domain
-    if domain == "github.com":
-        return 0.8, True, domain
     if _domain_matches(domain, _HIGH_QUALITY_DOMAINS):
         return 0.75, False, domain
+    if _domain_matches(domain, _SECONDARY_REPOSITORY_DOMAINS):
+        return 0.65, False, domain
     if domain.endswith("wikipedia.org"):
         return 0.6, False, domain
+    if _domain_matches(domain, _LOW_QUALITY_DOMAINS):
+        return 0.35, False, domain
     return (0.5 if domain else 0.35), False, domain
+
+
+# Backward-compatible private alias for older integrations.
+_source_quality = source_quality
 
 
 class EvidenceStore:
@@ -231,7 +425,11 @@ class EvidenceStore:
                 title=str(item.get("title", "")),
                 source_type="web",
                 task_id=task_id,
-                metadata={"search_backend": payload.get("source", "")},
+                metadata={
+                    "search_backend": payload.get("source", ""),
+                    "retrieval_query": payload.get("query", ""),
+                    "retrieval_relevance": item.get("_relevance_score", 0.0),
+                },
             )
             snippet = str(item.get("snippet", "")).strip()
             if snippet:
@@ -252,10 +450,13 @@ class EvidenceStore:
                 task_id=task_id,
                 authors=str(authors),
                 year=year,
+                publisher=str(paper.get("publisher", "")),
                 metadata={
                     "paper_id": paper.get("id", ""),
                     "citation_count": paper.get("citation_count"),
                     "provider": paper.get("source") or payload.get("source", ""),
+                    "retrieval_query": payload.get("query", ""),
+                    "retrieval_relevance": paper.get("_relevance_score", 0.0),
                 },
             )
             abstract = str(paper.get("summary", "")).strip()
@@ -273,6 +474,15 @@ class EvidenceStore:
             text = re.sub(r"^\s*\[ABSTRACT_ONLY\]\s*", "", text, flags=re.IGNORECASE)
             evidence_kind = EvidenceKind.ABSTRACT
         source = self.upsert_source(url=url, source_type="web", task_id=task_id)
+        retrieval_query = str(source.metadata.get("retrieval_query", ""))
+        if not fulltext_matches_source(
+            text,
+            title=source.title,
+            query=retrieval_query,
+        ):
+            source.metadata["fulltext_rejected"] = "content_mismatch"
+            return
+        source.metadata.pop("fulltext_rejected", None)
         source.content_hash = hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
         for index, chunk in enumerate(self._chunk_text(text)):
             self.add_evidence(
@@ -303,9 +513,17 @@ class EvidenceStore:
         task_id: str = "",
         authors: str = "",
         year: str = "",
+        publisher: str = "",
         metadata: dict[str, Any] | None = None,
     ) -> SourceRecord:
         normalized_url = canonicalize_source_url(url)
+        year = year or infer_source_year(normalized_url, title)
+        quality, primary, host_domain = source_quality(normalized_url, source_type)
+        source_metadata = {
+            key: value for key, value in (metadata or {}).items() if value not in (None, "")
+        }
+        if host_domain:
+            source_metadata.setdefault("host_domain", host_domain)
         key = normalized_url or title.strip().lower()
         source_id = self._source_keys.get(key) if key else None
         if source_id and source_id in self.sources:
@@ -313,19 +531,23 @@ class EvidenceStore:
             source.title = source.title or title
             source.authors = source.authors or authors
             source.year = source.year or year
+            source.publisher = source.publisher or publisher.strip()
             if task_id and task_id not in source.task_ids:
                 source.task_ids.append(task_id)
             if source_type == "paper":
                 source.source_type = source_type
-                quality, primary, publisher = _source_quality(normalized_url, source_type)
                 source.quality_score = max(source.quality_score, quality)
                 source.is_primary = source.is_primary or primary
-                source.publisher = source.publisher or publisher
-            if metadata:
-                source.metadata.update({k: v for k, v in metadata.items() if v not in (None, "")})
+            if source_metadata:
+                cleaned_metadata = dict(source_metadata)
+                old_relevance = float(source.metadata.get("retrieval_relevance", 0.0) or 0.0)
+                new_relevance = float(cleaned_metadata.get("retrieval_relevance", 0.0) or 0.0)
+                if new_relevance < old_relevance:
+                    cleaned_metadata.pop("retrieval_relevance", None)
+                    cleaned_metadata.pop("retrieval_query", None)
+                source.metadata.update(cleaned_metadata)
             return source
 
-        quality, primary, publisher = _source_quality(normalized_url, source_type)
         source_id = _stable_id("src", normalized_url, title.lower())
         source = SourceRecord(
             source_id=source_id,
@@ -335,10 +557,10 @@ class EvidenceStore:
             task_ids=[task_id] if task_id else [],
             authors=authors,
             year=year,
-            publisher=publisher,
+            publisher=publisher.strip(),
             quality_score=quality,
             is_primary=primary,
-            metadata={k: v for k, v in (metadata or {}).items() if v not in (None, "")},
+            metadata=source_metadata,
         )
         self.sources[source_id] = source
         if key:
@@ -366,6 +588,18 @@ class EvidenceStore:
                 locator=locator,
                 content_hash=content_hash,
             )
+        else:
+            existing = self.evidence[evidence_id]
+            strength = {
+                EvidenceKind.SEARCH_SNIPPET: 0,
+                EvidenceKind.ABSTRACT: 1,
+                EvidenceKind.FULL_TEXT: 2,
+                EvidenceKind.FILE: 3,
+            }
+            if strength[kind] > strength[existing.kind]:
+                existing.kind = kind
+                existing.task_id = task_id or existing.task_id
+                existing.locator = locator or existing.locator
         return self.evidence[evidence_id]
 
     @staticmethod
@@ -399,11 +633,44 @@ class EvidenceStore:
     def to_source_dicts(self) -> list[dict[str, Any]]:
         result: list[dict[str, Any]] = []
         first_evidence: dict[str, str] = {}
+        evidence_by_source: dict[str, list[EvidenceChunk]] = {}
+        evidence_kinds: dict[str, set[str]] = {}
+        evidence_counts: dict[str, int] = {}
         for chunk in self.evidence.values():
             first_evidence.setdefault(chunk.source_id, chunk.text[:240])
+            evidence_by_source.setdefault(chunk.source_id, []).append(chunk)
+            evidence_kinds.setdefault(chunk.source_id, set()).add(chunk.kind.value)
+            evidence_counts[chunk.source_id] = evidence_counts.get(chunk.source_id, 0) + 1
         for source in self.source_list():
             data = source.to_dict()
             data["snippet"] = first_evidence.get(source.source_id, "")
+            chunks = evidence_by_source.get(source.source_id, [])
+            if chunks:
+                query = str(source.metadata.get("retrieval_query", ""))
+                kind_strength = {
+                    EvidenceKind.SEARCH_SNIPPET: 0,
+                    EvidenceKind.ABSTRACT: 1,
+                    EvidenceKind.FULL_TEXT: 2,
+                    EvidenceKind.FILE: 3,
+                }
+                best = max(
+                    chunks,
+                    key=lambda chunk: (
+                        kind_strength[chunk.kind],
+                        source_relevance(
+                            query or source.title,
+                            chunk.text,
+                        )[0],
+                    ),
+                )
+                data["evidence_excerpt"] = best.text[:500]
+                data["evidence_kind"] = best.kind.value
+            kinds = sorted(evidence_kinds.get(source.source_id, set()))
+            data["evidence_kinds"] = kinds
+            data["evidence_count"] = evidence_counts.get(source.source_id, 0)
+            data["has_fulltext"] = bool(
+                {EvidenceKind.FULL_TEXT.value, EvidenceKind.FILE.value}.intersection(kinds)
+            )
             result.append(data)
         return result
 

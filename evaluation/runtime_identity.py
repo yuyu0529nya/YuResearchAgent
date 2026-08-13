@@ -52,6 +52,7 @@ def policy_identity(policy: Any) -> dict[str, Any]:
         "temperature": policy.temperature,
         "top_p": policy.top_p,
         "max_tokens": policy.max_tokens,
+        "max_input_chars": getattr(policy, "max_input_chars", 35_000),
         "extra_body": dict(getattr(policy, "extra_body", None) or {}),
     }
 

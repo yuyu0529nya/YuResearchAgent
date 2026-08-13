@@ -30,6 +30,7 @@ def _manifest(question_id: str) -> dict:
             "temperature": 0.2,
             "top_p": 1.0,
             "max_tokens": 100,
+            "max_input_chars": 35000,
             "extra_body": {},
         },
         judge_backend="test-judge",
@@ -40,10 +41,12 @@ def _manifest(question_id: str) -> dict:
             "temperature": 0.0,
             "top_p": 1.0,
             "max_tokens": 100,
+            "max_input_chars": 35000,
             "extra_body": {},
         },
         question_ids=[question_id],
         agent_configuration={"frozen": True},
+        as_of_date="2026-08-14",
     )
 
 
@@ -100,7 +103,11 @@ def _valid_artifact(tmp_path: Path) -> tuple[dict, dict, Path]:
         "errors": [],
         "agent": {
             "rule": bench.evaluate_report(agent_text, "tech_001"),
-            "runtime": {"run_status": "complete", "elapsed_seconds": 1.0},
+            "runtime": {
+                "run_status": "complete",
+                "elapsed_seconds": 1.0,
+                "as_of_date": manifest["temporal_context"]["as_of_date"],
+            },
             "usage": {"total_tokens": 10},
             "evidence_metrics": evidence_quality_metrics(audit_payload),
             "report": agent_report,
@@ -108,7 +115,10 @@ def _valid_artifact(tmp_path: Path) -> tuple[dict, dict, Path]:
         },
         "baseline": {
             "rule": bench.evaluate_report(baseline_text, "tech_001"),
-            "runtime": {"elapsed_seconds": 0.5},
+            "runtime": {
+                "elapsed_seconds": 0.5,
+                "as_of_date": manifest["temporal_context"]["as_of_date"],
+            },
             "usage": {"total_tokens": 5},
             "report": baseline_report,
         },
@@ -147,6 +157,22 @@ def test_preregistration_fingerprint_rejects_tampering(tmp_path: Path) -> None:
         raise AssertionError("tampered preregistration should fail")
 
 
+def test_preregistration_freezes_shared_temporal_context(tmp_path: Path) -> None:
+    manifest = _manifest("tech_001")
+    assert manifest["temporal_context"]["as_of_date"]
+
+    manifest["temporal_context"]["as_of_date"] = "2099-01-01"
+    path = tmp_path / "manifest.json"
+    path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+
+    try:
+        load_preregistration(path)
+    except ValueError as exc:
+        assert "fingerprint mismatch" in str(exc)
+    else:
+        raise AssertionError("tampered temporal context should fail")
+
+
 def test_offline_audit_recomputes_scores_and_detects_report_tampering(
     tmp_path: Path,
 ) -> None:
@@ -170,3 +196,18 @@ def test_offline_audit_detects_judge_order_tampering(tmp_path: Path) -> None:
 
     assert result["valid"] is False
     assert any("Judge order" in error for error in result["errors"])
+
+
+def test_offline_audit_detects_runtime_temporal_context_tampering(tmp_path: Path) -> None:
+    artifact, manifest, _ = _valid_artifact(tmp_path)
+    artifact["rows"][0]["baseline"]["runtime"]["as_of_date"] = "2099-01-01"
+
+    result = audit_headtohead_artifact(
+        artifact,
+        manifest,
+        project_root=tmp_path,
+        require_complete=True,
+    )
+
+    assert result["valid"] is False
+    assert any("baseline temporal context differs" in error for error in result["errors"])

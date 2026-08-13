@@ -12,7 +12,7 @@ from evaluation.protocol import (
     paired_summary,
     save_report_artifact,
 )
-from evaluation.report_sampling import balanced_report_excerpt
+from evaluation.report_sampling import balanced_report_excerpt, strip_noncomparable_appendices
 from src.core.ablation import AblationStudy
 from src.core.judge import LLMJudge
 
@@ -51,6 +51,39 @@ def test_balanced_excerpt_keeps_beginning_middle_and_bibliography() -> None:
     assert "## References" in excerpt
     assert "END" in excerpt
     assert "omitted" in excerpt
+
+
+def test_judge_view_removes_runtime_appendices_but_keeps_later_references() -> None:
+    report = """# Report
+
+Substantive finding [1].
+
+## 元信息
+
+- elapsed: 10s
+
+## 证据审计
+
+### 仍需谨慎的陈述
+
+- internal audit detail
+
+## 证据约束修订
+
+- internal revision detail
+
+## 参考来源
+
+[1] Official source — https://example.gov/report
+"""
+
+    cleaned = strip_noncomparable_appendices(report)
+
+    assert "Substantive finding" in cleaned
+    assert "elapsed" not in cleaned
+    assert "internal audit detail" not in cleaned
+    assert "internal revision detail" not in cleaned
+    assert "Official source" in cleaned
 
 
 def test_ablation_score_extraction_requires_real_evaluator_output() -> None:
@@ -171,3 +204,11 @@ def test_judge_comparison_validation_rejects_out_of_range_scores() -> None:
     invalid = dict(valid)
     invalid["accuracy"] = {"A": 8, "B": 3}
     assert LLMJudge._validate_comparison_result(invalid) is None
+
+
+def test_judge_temporal_context_prevents_pretraining_cutoff_assumption() -> None:
+    section = LLMJudge._temporal_section("2026-08-14")
+
+    assert "2026-08-14" in section
+    assert "预训练知识" in section
+    assert LLMJudge._temporal_section(None) == ""

@@ -27,6 +27,7 @@ from evaluation.evidence_metrics import evidence_quality_metrics
 from evaluation.preregistration import (
     BASELINE_SYSTEM_PROMPT,
     HEADTOHEAD_ARTIFACT_SCHEMA,
+    TEMPORAL_CONTEXT_TEMPLATE,
     audit_headtohead_artifact,
     canonical_json,
     evaluation_config_snapshot,
@@ -62,10 +63,13 @@ def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def run_baseline(query: str, policy: Any) -> str:
+def run_baseline(query: str, policy: Any, as_of_date: str = "") -> str:
+    system_prompt = BASELINE_SYSTEM_PROMPT
+    if as_of_date:
+        system_prompt += "\n" + TEMPORAL_CONTEXT_TEMPLATE.format(as_of_date=as_of_date)
     response = policy(
         [
-            {"role": "system", "content": BASELINE_SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": query},
         ]
     )
@@ -102,6 +106,7 @@ def _counterbalanced_judge(
     query: str,
     ground_truth: dict[str, Any],
     presentation_orders: list[dict[str, str]],
+    as_of_date: str = "",
 ) -> dict[str, Any]:
     reports = {"agent": agent_report, "baseline": baseline_report}
     judgments = []
@@ -114,6 +119,7 @@ def _counterbalanced_judge(
                     reports[order["B"]],
                     query,
                     ground_truth,
+                    as_of_date,
                 ),
             }
         )
@@ -215,6 +221,7 @@ def _build_artifact(
             "stopping_rule": analysis["stopping_rule"],
             "primary_endpoint": analysis["primary_endpoint"],
             "secondary_endpoint": analysis["secondary_endpoint"],
+            "temporal_context": preregistration["temporal_context"],
         },
         "models": {
             "agent_backend": systems["backend"],
@@ -329,6 +336,7 @@ async def main() -> None:
     if policy_identity(judge_policy) != judge_spec["effective_sampling"]:
         raise ValueError("Current Judge sampling differs from preregistration")
     judge = LLMJudge(str(judge_spec["backend"]), policy=judge_policy)
+    as_of_date = str(preregistration.get("temporal_context", {}).get("as_of_date", ""))
 
     bench = ResearchBench()
     bench.questions = copy.deepcopy(preregistration["questions"])
@@ -351,7 +359,7 @@ async def main() -> None:
         rows_by_id = {row["qid"]: row for row in existing.get("rows", [])}
 
     print(
-        f"[H2H v4] {len(questions)} frozen questions | {backend}/{systems['model']} | "
+        f"[H2H v5] {len(questions)} frozen questions | {backend}/{systems['model']} | "
         f"judge={judge_spec['backend']}/{judge_spec['model']}"
     )
 
@@ -379,6 +387,7 @@ async def main() -> None:
                 query=query,
                 ground_truth=question.get("ground_truth", {}),
                 presentation_orders=schedule["judge_orders"],
+                as_of_date=as_of_date,
             )
             existing_row["judge_usage"] = usage_delta(before, VLLMPolicy.global_usage_snapshot())
             agent_status = existing_row.get("agent", {}).get("runtime", {}).get("run_status")
@@ -427,7 +436,12 @@ async def main() -> None:
                         config,
                         session_id=f"h2h_v4_{qid}_{time.time_ns()}",
                     )
-                    agent_report, metadata = await run_research_with_metadata(query, config, modules)
+                    agent_report, metadata = await run_research_with_metadata(
+                        query,
+                        config,
+                        modules,
+                        as_of_date=as_of_date,
+                    )
                     audit = metadata.pop("evidence_audit", {})
                     evidence_path = metadata.pop("evidence_artifact", "")
                     row["agent"] = {
@@ -444,10 +458,18 @@ async def main() -> None:
                         "evidence_artifact": _copy_evidence_artifact(evidence_path, reports_dir, qid),
                     }
                 else:
-                    baseline_report = await asyncio.to_thread(run_baseline, query, baseline_policy)
+                    baseline_report = await asyncio.to_thread(
+                        run_baseline,
+                        query,
+                        baseline_policy,
+                        as_of_date,
+                    )
                     row["baseline"] = {
                         "rule": bench.evaluate_report(baseline_report, qid),
-                        "runtime": {"elapsed_seconds": round(time.monotonic() - started, 4)},
+                        "runtime": {
+                            "elapsed_seconds": round(time.monotonic() - started, 4),
+                            "as_of_date": as_of_date,
+                        },
                         "usage": usage_delta(before, VLLMPolicy.global_usage_snapshot()),
                         "report": save_report_artifact(
                             baseline_report,
@@ -475,6 +497,7 @@ async def main() -> None:
                 query=query,
                 ground_truth=question.get("ground_truth", {}),
                 presentation_orders=schedule["judge_orders"],
+                as_of_date=as_of_date,
             )
             row["judge_usage"] = usage_delta(before, VLLMPolicy.global_usage_snapshot())
 
@@ -512,7 +535,7 @@ async def main() -> None:
     summary = artifact["summary"]["rule_composite"]
     randomization = summary["paired_randomization_test"]
     print(
-        f"[H2H v4] complete={artifact['completed_questions']}/{artifact['num_questions']} | "
+        f"[H2H v5] complete={artifact['completed_questions']}/{artifact['num_questions']} | "
         f"delta={summary['bootstrap']['mean_diff']:+.4f} | "
         f"95% CI=[{summary['bootstrap']['ci_lower']:+.4f}, "
         f"{summary['bootstrap']['ci_upper']:+.4f}] | "

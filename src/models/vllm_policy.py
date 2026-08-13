@@ -65,6 +65,7 @@ class VLLMPolicy:
         temperature: float = 0.0,
         top_p: float = 1.0,
         max_tokens: int = 1024,
+        max_input_chars: int = 35_000,
         tools: Optional[list[dict]] = None,
         extra_body: Optional[dict] = None,
         usage_tracker: Any | None = None,
@@ -79,6 +80,7 @@ class VLLMPolicy:
         self.temperature = temperature
         self.top_p = top_p
         self.max_tokens = max_tokens
+        self.max_input_chars = max(4_000, int(max_input_chars))
         self.tools = tools
         # 透传给 chat.completions.create 的额外参数（如 GLM 推理模型的 thinking 开关）
         self.extra_body = extra_body
@@ -256,9 +258,8 @@ class VLLMPolicy:
             else:
                 sanitized.append(new_msg)
 
-        # 2. 主动截断（16K 约束下的质量过滤器）
-        # 阈值 12-13K content tokens ≈ 40000 字符（ratio 2.8-3.2 + overhead）
-        sanitized = self._truncate_messages(sanitized, max_chars=35000)
+        # 2. Apply the provider-specific, preregistered input budget.
+        sanitized = self._truncate_messages(sanitized, max_chars=self.max_input_chars)
 
         # 3. 发送请求
         kwargs = dict(

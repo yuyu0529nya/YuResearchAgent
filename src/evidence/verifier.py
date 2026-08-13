@@ -11,7 +11,7 @@ from typing import Any, Iterable
 from ..orchestrator.schemas import AgentResult, AgentStatus
 from ..utils.json_parsing import extract_json_object
 from .schemas import ClaimRecord, EvidenceAudit, EvidenceChunk, EvidenceKind, VerificationStatus
-from .store import EvidenceStore, _stable_id
+from .store import EvidenceStore, _stable_id, source_relevance
 
 
 _REFERENCE_HEADING = re.compile(
@@ -41,6 +41,16 @@ _PROCESS_WITHOUT_CITATION = re.compile(
 )
 _DISCOURSE_PREFIX = re.compile(
     r"^(?:以下为|结论如下|原始表述可直接引用|需要说明的是|需要指出)\s*[:：]\s*",
+    re.IGNORECASE,
+)
+_CITATION_FRAGMENT = re.compile(
+    r"^(?:[A-Z][A-Za-z'.-]+(?:\s+et\s+al\.)?\s*[,，].*(?:19|20)\d{2}"
+    r"|[^。！？.!?]{1,60}《[^》]{3,160}》(?:教程|综述|论文|报告)?)"
+    r"[）)]?[。.]?$",
+    re.IGNORECASE,
+)
+_TEMPORAL_LABEL = re.compile(
+    r"^[（(].*(?:信息截至|截至|as[- ]of|updated|报告日期|report date).*[）)]$",
     re.IGNORECASE,
 )
 
@@ -181,7 +191,15 @@ class ClaimVerifier:
                 continue
             if re.match(r"^(overall confidence|整体置信度|置信度)\s*[:：]", line, re.I):
                 continue
-            body_lines.append(re.sub(r"^(?:[-*+] |\d+[.)]\s*)", "", line))
+            if _TEMPORAL_LABEL.match(line):
+                continue
+            unbulleted = re.sub(r"^(?:[-*+] |\d+[.)]\s*)", "", line)
+            if (
+                not _CITATION_RE.search(unbulleted)
+                and re.fullmatch(r"\*{1,2}[^*]{1,100}\*{1,2}[。.!]?", unbulleted)
+            ):
+                continue
+            body_lines.append(unbulleted)
 
         sentences = re.split(
             r"(?<=[。！？；;])|(?<=[.!?])\s+|\n+",
@@ -196,12 +214,15 @@ class ClaimVerifier:
                 "",
                 plain,
             )
+            plain = re.sub(r"[*_`]", "", plain).strip()
             cited = sorted({int(value) for value in _CITATION_RE.findall(cleaned)})
             if (
                 len(plain) < 12
                 or len(plain) > 500
                 or plain.endswith(("?", "？", ":", "："))
             ):
+                continue
+            if len(_tokens(plain)) < 3 and not _numbers(plain):
                 continue
             if self._is_process_claim(plain, cited=bool(cited)):
                 continue
@@ -222,6 +243,8 @@ class ClaimVerifier:
     def _is_process_claim(text: str, *, cited: bool = False) -> bool:
         """Exclude run/report narration that external sources cannot entail."""
         normalized = re.sub(r"^[>*\s]+", "", text).strip()
+        if _CITATION_FRAGMENT.match(normalized):
+            return True
         if any(re.search(pattern, normalized, re.IGNORECASE) for pattern in _PROCESS_CLAIM_PATTERNS):
             return True
         return not cited and bool(_PROCESS_WITHOUT_CITATION.search(normalized))
@@ -236,7 +259,8 @@ class ClaimVerifier:
     ) -> EvidenceAudit:
         evidence = list(store.evidence.values())
         for claim in claims:
-            if citation_source_ids is None:
+            has_global_citation_map = citation_source_ids is not None
+            if not has_global_citation_map:
                 # Sub-agent reports do not share a global citation numbering scheme.
                 # Apply citation constraints only for final synthesis, where the
                 # orchestrator supplies the exact ordered source list.
@@ -260,15 +284,45 @@ class ClaimVerifier:
                 key=lambda item: item[0],
                 reverse=True,
             )
+            support_grade = [
+                item for item in ranked_all if self._is_support_grade(item[1], store)
+            ]
             # A numbered citation is an explicit attribution edge. Preserve its
             # evidence candidates even when a Chinese claim and English paper
             # have zero lexical overlap; hybrid verification can adjudicate the
             # cross-language entailment. Uncited claims still require overlap.
-            ranked = (
-                ranked_all[:3]
-                if cited_source_ids
-                else [(score, chunk) for score, chunk in ranked_all if score > 0][:3]
-            )
+            if cited_source_ids:
+                ranked = (support_grade or ranked_all)[:3]
+            else:
+                ranked = [(score, chunk) for score, chunk in ranked_all if score > 0][:3]
+                if not has_global_citation_map and claim.task_id:
+                    # Research-agent prose and its tool evidence share a task ID.
+                    # Preserve that provenance edge as a *candidate* when lexical
+                    # overlap is zero (for example, a Chinese claim backed by an
+                    # English abstract). Only the strict hybrid verifier may turn
+                    # this edge into support.
+                    provenance = sorted(
+                        (
+                            (self._provenance_rank(claim.text, chunk, store), chunk)
+                            for _, chunk in support_grade
+                            if self._shares_task_provenance(claim, chunk, store)
+                        ),
+                        key=lambda item: item[0],
+                        reverse=True,
+                    )
+                    lexical = list(ranked)
+                    ranked = lexical[:1]
+                    seen_evidence = {chunk.evidence_id for _, chunk in ranked}
+                    for item in provenance[:2]:
+                        if item[1].evidence_id not in seen_evidence:
+                            ranked.append(item)
+                            seen_evidence.add(item[1].evidence_id)
+                    for item in lexical[1:]:
+                        if item[1].evidence_id not in seen_evidence:
+                            ranked.append(item)
+                            seen_evidence.add(item[1].evidence_id)
+                        if len(ranked) >= 3:
+                            break
             claim.candidate_evidence_ids = [chunk.evidence_id for _, chunk in ranked]
             best_chunk = ranked[0][1] if ranked else None
             best_score = self._score_pair(claim.text, best_chunk, store) if best_chunk else 0.0
@@ -282,31 +336,71 @@ class ClaimVerifier:
             number_conflict = self._number_conflict(claim.text, best_chunk.text)
             negation_conflict = _negated(claim.text) != _negated(best_chunk.text)
             if best_score >= 0.62 and negation_conflict and not number_conflict:
-                claim.status = VerificationStatus.REFUTED
-                claim.contradiction_evidence_ids = [best_chunk.evidence_id]
-                claim.reason = "High-overlap evidence expresses the opposite polarity."
+                # Surface polarity as an ambiguous pair, not a deterministic
+                # contradiction. Lexical negation is brittle ("not only",
+                # quoted denials, and unresolved-problem wording all caused
+                # false REFUTED labels in real reports). The hybrid verifier may
+                # still establish a contradiction from the complete clauses.
+                claim.reason = "A possible polarity conflict requires semantic verification."
             elif best_score >= self.support_threshold and not number_conflict:
-                claim.status = VerificationStatus.SUPPORTED
-                claim.support_evidence_ids = [
-                    chunk.evidence_id
-                    for _, chunk in ranked
-                    if self._score_pair(claim.text, chunk, store)
-                    >= max(self.support_threshold * 0.85, best_score - 0.12)
-                ][:2]
-                claim.reason = "Claim terms and numeric details are covered by retrieved evidence."
+                if self._is_support_grade(best_chunk, store):
+                    claim.status = VerificationStatus.SUPPORTED
+                    claim.support_evidence_ids = [
+                        chunk.evidence_id
+                        for _, chunk in ranked
+                        if self._is_support_grade(chunk, store)
+                        and self._score_pair(claim.text, chunk, store)
+                        >= max(self.support_threshold * 0.85, best_score - 0.12)
+                    ][:2]
+                    claim.reason = "Claim terms and numeric details are covered by retrieved evidence."
+                    claim.source_ids = list(
+                        dict.fromkeys(
+                            store.evidence[evidence_id].source_id
+                            for evidence_id in claim.support_evidence_ids
+                            if evidence_id in store.evidence
+                        )
+                    )
+                else:
+                    claim.reason = (
+                        "Only a secondary search snippet matched; full text, a paper abstract, "
+                        "or a primary-source snippet is required for support."
+                    )
             elif number_conflict:
                 claim.reason = "Related evidence was found, but numeric details do not match."
             else:
                 claim.reason = "Related evidence was found, but entailment was too weak."
 
-        if self.mode == "hybrid" and use_llm and self.policy is not None:
-            self._apply_llm_verdicts(
-                claims,
-                store,
-                timeout_seconds=timeout_seconds,
-            )
-        verification_mode = self.mode if use_llm else "heuristic"
-        return self._build_audit(claims, store, verification_mode=verification_mode)
+        verification_mode = "heuristic"
+        semantic_reviewed_count = 0
+        semantic_candidate_count = 0
+        if self.mode == "hybrid" and use_llm:
+            if self.policy is None:
+                verification_mode = "hybrid_unavailable"
+            else:
+                hybrid_result = self._apply_llm_verdicts(
+                    claims,
+                    store,
+                    timeout_seconds=timeout_seconds,
+                )
+                if hybrid_result is None:
+                    verification_mode = "hybrid"
+                else:
+                    semantic_reviewed_count, semantic_candidate_count = hybrid_result
+                    if semantic_reviewed_count == 0:
+                        verification_mode = "hybrid_unavailable"
+                    elif semantic_reviewed_count < semantic_candidate_count:
+                        verification_mode = "hybrid_partial"
+                    else:
+                        verification_mode = "hybrid"
+        elif use_llm:
+            verification_mode = self.mode
+        return self._build_audit(
+            claims,
+            store,
+            verification_mode=verification_mode,
+            semantic_reviewed_count=semantic_reviewed_count,
+            semantic_candidate_count=semantic_candidate_count,
+        )
 
     def _score_pair(self, claim: str, chunk: EvidenceChunk, store: EvidenceStore) -> float:
         claim_tokens = _tokens(claim)
@@ -347,6 +441,82 @@ class ClaimVerifier:
         )
         return lexical + 0.55 * numeric + 0.20 * entity
 
+    def _provenance_rank(
+        self,
+        claim: str,
+        chunk: EvidenceChunk,
+        store: EvidenceStore,
+    ) -> float:
+        """Rank same-task candidates without treating provenance as entailment."""
+        source = store.sources.get(chunk.source_id)
+        if source is None:
+            return self._candidate_rank(claim, chunk, store)
+        title_tokens = _tokens(source.title)
+        claim_tokens = _tokens(claim)
+        title_overlap = (
+            len(title_tokens & claim_tokens) / len(claim_tokens)
+            if claim_tokens
+            else 0.0
+        )
+        try:
+            retrieval_relevance = float(source.metadata.get("retrieval_relevance", 0.0) or 0.0)
+        except (TypeError, ValueError):
+            retrieval_relevance = 0.0
+        retrieval_query = str(source.metadata.get("retrieval_query", ""))
+        context_relevance = max(
+            source_relevance(claim, f"{source.title} {source.authors}")[0],
+            source_relevance(claim, retrieval_query)[0],
+        )
+        kind_bonus = {
+            EvidenceKind.SEARCH_SNIPPET: 0.0,
+            EvidenceKind.ABSTRACT: 0.02,
+            EvidenceKind.FULL_TEXT: 0.04,
+            EvidenceKind.FILE: 0.04,
+        }[chunk.kind]
+        return (
+            self._candidate_rank(claim, chunk, store)
+            + 0.20 * title_overlap
+            + 0.35 * context_relevance
+            + 0.10
+            * max(0.0, min(1.0, retrieval_relevance))
+            * max(context_relevance, title_overlap)
+            + 0.02 * source.quality_score
+            + kind_bonus
+        )
+
+    @staticmethod
+    def _shares_task_provenance(
+        claim: ClaimRecord,
+        chunk: EvidenceChunk,
+        store: EvidenceStore,
+    ) -> bool:
+        if not claim.task_id:
+            return False
+        source = store.sources.get(chunk.source_id)
+        return bool(
+            chunk.task_id == claim.task_id
+            or (source is not None and claim.task_id in source.task_ids)
+        )
+
+    @staticmethod
+    def _is_support_grade(chunk: EvidenceChunk, store: EvidenceStore) -> bool:
+        """Require inspectable evidence before a lexical match can establish a claim."""
+        source = store.sources.get(chunk.source_id)
+        quality = source.quality_score if source else 0.0
+        if chunk.kind == EvidenceKind.FILE:
+            return True
+        if chunk.kind == EvidenceKind.FULL_TEXT:
+            return quality >= 0.5
+        if chunk.kind == EvidenceKind.ABSTRACT:
+            return bool(
+                source
+                and (
+                    source.source_type == "paper"
+                    or (source.is_primary and source.quality_score >= 0.85)
+                )
+            )
+        return bool(source and source.is_primary and quality >= 0.85)
+
     @staticmethod
     def _number_conflict(claim: str, evidence: str) -> bool:
         claim_numbers = _numbers(claim)
@@ -359,19 +529,44 @@ class ClaimVerifier:
         store: EvidenceStore,
         *,
         timeout_seconds: float | None = None,
-    ) -> None:
+    ) -> tuple[int, int] | None:
         ambiguous = [
             claim
             for claim in claims
-            if claim.status == VerificationStatus.NOT_ENOUGH_EVIDENCE and claim.candidate_evidence_ids
+            if claim.status == VerificationStatus.NOT_ENOUGH_EVIDENCE
+            and any(
+                evidence_id in store.evidence
+                and self._is_support_grade(store.evidence[evidence_id], store)
+                for evidence_id in claim.candidate_evidence_ids
+            )
         ]
         ambiguous.sort(
-            key=lambda claim: (bool(claim.cited_indices), claim.verification_score),
+            key=lambda claim: (
+                bool(claim.cited_indices),
+                self._has_cross_language_candidate(claim, store),
+                self._hybrid_candidate_priority(claim, store),
+            ),
             reverse=True,
         )
-        ambiguous = ambiguous[: self.max_llm_claims]
+        semantic_candidate_count = len(ambiguous)
+        # Give each research task one audit slot before filling the remainder.
+        # This avoids spending every hybrid verdict on the first sub-agent.
+        selected: list[ClaimRecord] = []
+        seen_tasks: set[str] = set()
+        for claim in ambiguous:
+            if claim.task_id and claim.task_id not in seen_tasks:
+                selected.append(claim)
+                seen_tasks.add(claim.task_id)
+            if len(selected) >= self.max_llm_claims:
+                break
+        for claim in ambiguous:
+            if claim not in selected:
+                selected.append(claim)
+            if len(selected) >= self.max_llm_claims:
+                break
+        ambiguous = selected
         if not ambiguous:
-            return
+            return None
         items = []
         for claim in ambiguous:
             clauses = self._material_clauses(claim.text)
@@ -406,11 +601,11 @@ class ClaimVerifier:
                 self.policy.tools = None
             # Keep each request below the policy's message truncation threshold.
             # A truncated JSON evidence payload cannot be audited reliably.
-            for offset in range(0, len(items), 8):
+            for offset in range(0, len(items), 3):
                 remaining = deadline - time.monotonic() if deadline is not None else None
                 if remaining is not None and remaining <= 0.25:
                     break
-                batch = items[offset : offset + 8]
+                batch = items[offset : offset + 3]
                 prompt = (
                     "Verify each claim using ONLY its supplied evidence. Labels: SUPPORTED when evidence directly "
                     "entails the claim; REFUTED when it directly contradicts it; NOT_ENOUGH_EVIDENCE otherwise. "
@@ -445,6 +640,7 @@ class ClaimVerifier:
                 self.policy.tools = old_tools
 
         by_id = {claim.claim_id: claim for claim in ambiguous}
+        reviewed_ids: set[str] = set()
         for verdict in verdicts:
             if not isinstance(verdict, dict) or verdict.get("claim_id") not in by_id:
                 continue
@@ -458,6 +654,9 @@ class ClaimVerifier:
             }
             if label not in status_map:
                 continue
+            if claim.claim_id in reviewed_ids:
+                continue
+            reviewed_ids.add(claim.claim_id)
             claim.status = status_map[label]
             claim.verification_score = max(0.0, min(1.0, float(verdict.get("score", 0.0))))
             claim.reason = str(verdict.get("reason", ""))[:300]
@@ -488,9 +687,22 @@ class ClaimVerifier:
                     )
                     claim.support_evidence_ids = []
                 else:
-                    claim.support_evidence_ids = claim.candidate_evidence_ids[:2]
+                    claim.support_evidence_ids = [
+                        evidence_id
+                        for evidence_id in claim.candidate_evidence_ids
+                        if evidence_id in store.evidence
+                        and self._is_support_grade(store.evidence[evidence_id], store)
+                    ][:2]
+                    claim.source_ids = list(
+                        dict.fromkeys(
+                            store.evidence[evidence_id].source_id
+                            for evidence_id in claim.support_evidence_ids
+                            if evidence_id in store.evidence
+                        )
+                    )
             elif claim.status == VerificationStatus.REFUTED:
                 claim.contradiction_evidence_ids = claim.candidate_evidence_ids[:1]
+        return len(reviewed_ids), semantic_candidate_count
 
     @staticmethod
     def _source_context(store: EvidenceStore, source_id: str) -> dict[str, Any]:
@@ -506,6 +718,28 @@ class ClaimVerifier:
             "source_type": source.source_type,
             "is_primary": source.is_primary,
         }
+
+    @staticmethod
+    def _has_cross_language_candidate(claim: ClaimRecord, store: EvidenceStore) -> bool:
+        claim_has_cjk = bool(re.search(r"[\u4e00-\u9fff]", claim.text))
+        return any(
+            evidence_id in store.evidence
+            and claim_has_cjk
+            != bool(re.search(r"[\u4e00-\u9fff]", store.evidence[evidence_id].text))
+            for evidence_id in claim.candidate_evidence_ids
+        )
+
+    def _hybrid_candidate_priority(
+        self,
+        claim: ClaimRecord,
+        store: EvidenceStore,
+    ) -> float:
+        scores = [
+            self._provenance_rank(claim.text, store.evidence[evidence_id], store)
+            for evidence_id in claim.candidate_evidence_ids
+            if evidence_id in store.evidence
+        ]
+        return max([claim.verification_score, *scores])
 
     @staticmethod
     def _material_clauses(claim: str) -> list[str]:
@@ -543,7 +777,11 @@ class ClaimVerifier:
         if claim_has_cjk != evidence_has_cjk:
             # Cross-language lexical overlap is not meaningful. Numeric checks
             # and the strict per-clause LLM verdict remain mandatory.
-            return True
+            return bool(
+                isinstance(clause_labels, list)
+                and len(clause_labels) == len(clauses)
+                and all(str(label).upper() == "SUPPORTED" for label in clause_labels)
+            )
         material = [_tokens(clause) for clause in clauses]
         return all(
             len(clause_tokens & evidence_tokens) / len(clause_tokens) >= 0.45
@@ -556,6 +794,8 @@ class ClaimVerifier:
         store: EvidenceStore,
         *,
         verification_mode: str | None = None,
+        semantic_reviewed_count: int = 0,
+        semantic_candidate_count: int = 0,
     ) -> EvidenceAudit:
         supported = sum(claim.status == VerificationStatus.SUPPORTED for claim in claims)
         refuted = sum(claim.status == VerificationStatus.REFUTED for claim in claims)
@@ -574,4 +814,6 @@ class ClaimVerifier:
             primary_source_ratio=round(primary / len(sources), 4) if sources else 0.0,
             fulltext_source_ratio=round(fulltext / len(sources), 4) if sources else 0.0,
             verification_mode=verification_mode or self.mode,
+            semantic_reviewed_count=semantic_reviewed_count,
+            semantic_candidate_count=semantic_candidate_count,
         )

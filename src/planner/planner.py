@@ -66,6 +66,15 @@ Return a JSON object with this exact structure (no markdown, no extra text):
 8. CRITICAL — RELEVANCE CONSTRAINT: Each sub-task description MUST directly address the research question. If the user asks about 'internship/job application', do NOT generate tasks about 'technology trends', 'annual news summary', or 'science breakthroughs'.
 9. The search_hints field MUST contain keywords directly from the query. Do NOT invent unrelated keywords.
 10. Prefer specific, actionable queries over broad, vague ones.
+11. The runtime has a dedicated final Summarizer. Do NOT spend a sub-task on a generic synthesis, summary, or
+    "combine all findings" node; use the available slots for evidence gathering or targeted verification.
+12. Treat every top-level request as a deliverable. When the question asks for an overall landscape/latest progress
+    AND analysis of named dimensions, reserve one evidence-gathering task for the overall landscape (representative
+    systems, milestones, benchmarks, or deployments) plus one distinct evidence-gathering sub-task for each named
+    dimension whenever the task limit permits. Do not mistake the named dimensions for a complete answer to the
+    overarching request. Do not merge two named dimensions merely to reserve a slot for generic analysis.
+13. Do not replace a requested deliverable with generic cross-validation. Add a verification task only when the user
+    explicitly requests fact-checking or when every requested deliverable already has an evidence-gathering task.
 
 ## Anti-examples (DO NOT do this)
 - Query: "How to find an internship at a big tech company" → BAD tasks: "2025 technology trends", "annual science news", "latest AI breakthroughs"

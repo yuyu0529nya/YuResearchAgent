@@ -17,6 +17,7 @@ import time
 from typing import Any
 
 from .base_agent import BaseAgent
+from ..evidence.store import canonicalize_source_url, fulltext_matches_source, source_quality
 from ..orchestrator.schemas import SubTask, AgentResult, AgentStatus, TaskType
 from ..utils.tracing import trace_agent
 
@@ -221,6 +222,24 @@ class ResearcherAgent(BaseAgent):
             tool_calls = response.get("tool_calls", []) or []
             used_tool_calls = sum(1 for step in trajectory if step.get("role") == "tool")
             remaining_tool_calls = self.max_tool_calls - used_tool_calls
+            requires_academic = self._requires_academic_search(task, context)
+            academic_missing = requires_academic and not any(
+                step.get("role") == "tool" and step.get("name") == "arxiv_reader"
+                for step in trajectory
+            )
+
+            # Search snippets are discovery evidence, not a substitute for the
+            # underlying document. If the model tries to finish before reading
+            # any candidate, deterministically spend one remaining tool call on
+            # the best unread source. This turns the prompt-level instruction
+            # into an enforceable research invariant.
+            if not tool_calls and remaining_tool_calls > 0:
+                if academic_missing and "arxiv_reader" in self.tool_map:
+                    tool_calls = [self._academic_tool_call(task, turn)]
+                elif "browser" in self.tool_map:
+                    candidate_url = self._required_fulltext_url(trajectory)
+                    if candidate_url:
+                        tool_calls = [self._browser_tool_call(candidate_url, turn)]
             if tool_calls and remaining_tool_calls <= 0:
                 messages.append({
                     "role": "user",
@@ -229,6 +248,44 @@ class ResearcherAgent(BaseAgent):
                 continue
             if len(tool_calls) > remaining_tool_calls:
                 tool_calls = tool_calls[:remaining_tool_calls]
+            if tool_calls:
+                proposed_names = {
+                    str((call.get("function") or {}).get("name", "")) for call in tool_calls
+                }
+                required_calls: list[dict[str, Any]] = []
+                if (
+                    academic_missing
+                    and "arxiv_reader" in self.tool_map
+                    and "arxiv_reader" not in proposed_names
+                ):
+                    required_calls.append(self._academic_tool_call(task, turn))
+                candidate_url = (
+                    self._required_fulltext_url(trajectory)
+                    if "browser" in self.tool_map
+                    else ""
+                )
+                will_exhaust_budget = (
+                    len(tool_calls) + len(required_calls) >= remaining_tool_calls
+                )
+                if (
+                    candidate_url
+                    and "browser" not in proposed_names
+                    and will_exhaust_budget
+                ):
+                    required_calls.append(self._browser_tool_call(candidate_url, turn))
+                reserve_future_browser = bool(
+                    "browser" in self.tool_map
+                    and "browser" not in proposed_names
+                    and not candidate_url
+                    and remaining_tool_calls > len(required_calls)
+                )
+                reserved_slots = len(required_calls) + int(reserve_future_browser)
+                proposed_budget = max(0, remaining_tool_calls - reserved_slots)
+                if required_calls or len(tool_calls) > proposed_budget:
+                    tool_calls = (
+                        tool_calls[:proposed_budget]
+                        + required_calls[: remaining_tool_calls - proposed_budget]
+                    )
 
             trajectory.append({
                 "turn": turn,
@@ -533,6 +590,15 @@ class ResearcherAgent(BaseAgent):
             "",
             f"## RECOMMENDED TOOLS (in priority order): {', '.join(tool_recommendations)}",
         ]
+        as_of_date = str(context.get("as_of_date", "") or "").strip()
+        if as_of_date:
+            lines.insert(
+                2,
+                (
+                    f"Research as-of date: {as_of_date}. Treat this as the knowledge cutoff: "
+                    "exclude later publications/events and preserve exact source dates."
+                ),
+            )
         
         if secondary_tools:
             lines.append(f"Start with '{primary_tool}'. If the task involves numbers/calculations, also use {', '.join(secondary_tools)}.")
@@ -551,6 +617,15 @@ class ResearcherAgent(BaseAgent):
             "7. DO NOT greet the user or ask clarifying questions — just execute immediately.",
             "8. IMPORTANT: Your query MUST directly address the task description.",
         ])
+        if self._requires_academic_search(task, context):
+            lines.extend(
+                [
+                    "9. This is a technical/scientific task: use BOTH web_search for current developments and "
+                    "arxiv_reader for peer-reviewed or preprint evidence before finishing.",
+                    "10. For product or deployment claims, prefer the issuing organization's first-party page and "
+                    "attribute vendor-reported performance rather than presenting it as independent validation.",
+                ]
+            )
         if task.search_hints:
             lines.insert(1, f"Search hints (MUST use these as primary keywords): {', '.join(task.search_hints)}")
         if task.context_keys:
@@ -582,6 +657,140 @@ class ResearcherAgent(BaseAgent):
             return await tool.execute(**args)
         except Exception as e:
             return {"error": f"{type(e).__name__}: {e}"}
+
+    @staticmethod
+    def _has_successful_fulltext(trajectory: list[dict[str, Any]]) -> bool:
+        return ResearcherAgent._has_successful_fulltext_at_quality(trajectory, 0.0)
+
+    @staticmethod
+    def _has_successful_fulltext_at_quality(
+        trajectory: list[dict[str, Any]],
+        minimum_quality: float,
+    ) -> bool:
+        for step in trajectory:
+            if step.get("role") != "tool" or step.get("name") != "browser":
+                continue
+            result = step.get("result")
+            if not isinstance(result, str) or not result.strip():
+                continue
+            normalized = result.lstrip().lower()
+            if not normalized.startswith(
+                ("error:", "[browser error]", "[browser warning]", "[abstract_only]")
+            ):
+                url = canonicalize_source_url(str((step.get("arguments") or {}).get("url", "")))
+                title, query = ResearcherAgent._source_context_for_url(trajectory, url)
+                if not fulltext_matches_source(result, title=title, query=query):
+                    continue
+                quality, _, _ = source_quality(url, "web")
+                if quality >= minimum_quality:
+                    return True
+        return False
+
+    @staticmethod
+    def _source_context_for_url(
+        trajectory: list[dict[str, Any]],
+        normalized_url: str,
+    ) -> tuple[str, str]:
+        for step in trajectory:
+            if step.get("role") != "tool" or step.get("name") != "web_search":
+                continue
+            result = step.get("result")
+            if not isinstance(result, dict):
+                continue
+            for item in result.get("results", []):
+                if not isinstance(item, dict):
+                    continue
+                item_url = canonicalize_source_url(str(item.get("url", "")))
+                if item_url == normalized_url:
+                    return str(item.get("title", "")), str(result.get("query", ""))
+        return "", ""
+
+    @staticmethod
+    def _required_fulltext_url(trajectory: list[dict[str, Any]]) -> str:
+        candidate_url = ResearcherAgent._best_unread_source_url(trajectory)
+        if not candidate_url:
+            return ""
+        quality, _, _ = source_quality(candidate_url, "web")
+        minimum_quality = 0.75 if quality >= 0.75 else 0.0
+        if ResearcherAgent._has_successful_fulltext_at_quality(trajectory, minimum_quality):
+            return ""
+        return candidate_url
+
+    @staticmethod
+    def _browser_tool_call(url: str, turn: int) -> dict[str, Any]:
+        return {
+            "id": f"auto_browser_{turn}",
+            "type": "function",
+            "function": {
+                "name": "browser",
+                "arguments": json.dumps(
+                    {"url": url, "max_chars": 8000},
+                    ensure_ascii=False,
+                ),
+            },
+        }
+
+    @staticmethod
+    def _academic_tool_call(task: SubTask, turn: int) -> dict[str, Any]:
+        hints = " ".join(str(hint) for hint in task.search_hints if hint)
+        query = f"{hints} {task.description} academic paper survey benchmark".strip()
+        return {
+            "id": f"auto_academic_{turn}",
+            "type": "function",
+            "function": {
+                "name": "arxiv_reader",
+                "arguments": json.dumps(
+                    {"query": query[:500], "max_results": 3},
+                    ensure_ascii=False,
+                ),
+            },
+        }
+
+    @staticmethod
+    def _requires_academic_search(task: SubTask, context: dict[str, Any]) -> bool:
+        combined = f"{task.description} {context.get('query', '')}".lower()
+        markers = (
+            "academic", "algorithm", "architecture", "benchmark", "embodied ai",
+            "foundation model", "llm", "machine learning", "paper", "robot",
+            "scientific", "sim-to-real", "world model", "人工智能", "具身智能",
+            "医疗", "学术", "技术", "机器人", "模型", "科学", "算法", "论文",
+        )
+        return any(marker in combined for marker in markers)
+
+    @staticmethod
+    def _best_unread_source_url(trajectory: list[dict[str, Any]]) -> str:
+        attempted = {
+            canonicalize_source_url(str((step.get("arguments") or {}).get("url", "")))
+            for step in trajectory
+            if step.get("role") == "tool" and step.get("name") == "browser"
+        }
+        candidates: list[tuple[int, float, int, str]] = []
+        seen: set[str] = set()
+        sequence = 0
+        for step in trajectory:
+            if step.get("role") != "tool":
+                continue
+            result = step.get("result")
+            raw_sources: list[dict[str, Any]] = []
+            if step.get("name") == "web_search" and isinstance(result, dict):
+                raw_sources = [item for item in result.get("results", []) if isinstance(item, dict)]
+            elif step.get("name") == "arxiv_reader" and isinstance(result, dict):
+                raw_sources = [item for item in result.get("papers", []) if isinstance(item, dict)]
+            for source in raw_sources:
+                url = str(source.get("url") or source.get("pdf_url") or "").strip()
+                normalized = canonicalize_source_url(url)
+                if not normalized or normalized in attempted or normalized in seen:
+                    continue
+                seen.add(normalized)
+                quality, is_primary, _ = source_quality(
+                    normalized,
+                    "paper" if step.get("name") == "arxiv_reader" else "web",
+                )
+                candidates.append((1 if is_primary else 0, quality, -sequence, url))
+                sequence += 1
+        if not candidates:
+            return ""
+        return max(candidates)[3]
 
     def _is_tool_failure_explanation(self, content: str) -> bool:
         """检测 LLM 回复是否是工具失败的解释说明而非真实研究结果。

@@ -178,5 +178,6 @@ class RunConfig:
     enable_evidence_revision: bool = True
     evidence_revision_trigger_coverage: float = 0.80
     evidence_revision_min_coverage_gain: float = 0.03
-    evidence_revision_min_claim_retention: float = 0.60
-    evidence_revision_timeout_seconds: float = 40.0
+    evidence_revision_min_claim_retention: float = 0.40
+    evidence_revision_timeout_seconds: float = 60.0
+    as_of_date: str = ""

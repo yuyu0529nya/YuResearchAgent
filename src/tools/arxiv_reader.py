@@ -26,6 +26,7 @@ from urllib.parse import urlencode
 import aiohttp
 from bs4 import BeautifulSoup
 
+from ..evidence.store import source_relevance
 from ..utils.env_config import get_env
 
 __all__ = ["ArxivReaderTool"]
@@ -34,7 +35,7 @@ __all__ = ["ArxivReaderTool"]
 _GENERIC_ACADEMIC_TERMS = {
     "academic", "algorithm", "analysis", "architecture", "benchmark", "citation",
     "comparison", "evaluation", "framework", "large", "language", "llm", "model",
-    "paper", "publication", "report", "research", "study", "survey", "system",
+    "learning", "paper", "publication", "report", "research", "study", "survey", "system",
     "technical", "technology", "the", "and", "for", "with", "using",
 }
 
@@ -208,32 +209,39 @@ class ArxivReaderTool:
             payload["papers"] = papers[:max_results]
             return payload
 
-        query_tokens = {
+        ranked: list[tuple[float, int, dict[str, Any]]] = []
+        named_query_tokens = {
             token
             for token in _academic_tokens(query)
             if token not in _GENERIC_ACADEMIC_TERMS
             and not (token.isdigit() and 1900 <= int(token) <= 2100)
         }
-        if not query_tokens:
-            payload["papers"] = papers[:max_results]
-            return payload
-
-        ranked: list[tuple[float, int, dict[str, Any]]] = []
+        query_identifiers = {
+            token
+            for token in _academic_tokens(query)
+            if any(char.isdigit() for char in token) or any(char in token for char in ".+-")
+            if not (token.isdigit() and 1900 <= int(token) <= 2100)
+        }
+        query_identifiers.update(
+            token.lower() for token in re.findall(r"\b[A-Z]{2,10}\b", query)
+        )
         for index, paper in enumerate(papers):
-            title_tokens = _academic_tokens(str(paper.get("title", "")))
-            content_tokens = title_tokens | _academic_tokens(str(paper.get("summary", ""))[:2000])
-            overlap = query_tokens & content_tokens
-            if not overlap:
+            title = str(paper.get("title", ""))
+            content = f"{title} {str(paper.get('summary', ''))[:2000]}"
+            relevance, anchor_hits = source_relevance(query, content)
+            content_tokens = _academic_tokens(content)
+            title_tokens = _academic_tokens(title)
+            identifier_match = bool(query_identifiers & content_tokens)
+            if named_query_tokens and not (named_query_tokens & content_tokens):
                 continue
-            ratio = len(overlap) / len(query_tokens)
-            has_identifier = any(
-                any(char.isdigit() for char in token) or any(char in token for char in ".+-")
-                for token in overlap
-            )
-            if len(overlap) < 2 and ratio < 0.25 and not has_identifier:
+            if named_query_tokens and not (named_query_tokens & title_tokens) and not identifier_match:
                 continue
-            title_ratio = len(query_tokens & title_tokens) / len(query_tokens)
-            ranked.append((title_ratio * 0.7 + ratio * 0.3, -index, paper))
+            if relevance < 0.07 or (anchor_hits == 0 and not identifier_match):
+                continue
+            normalized = dict(paper)
+            normalized["_relevance_score"] = round(relevance, 4)
+            title_relevance, _ = source_relevance(query, title)
+            ranked.append((title_relevance * 0.7 + relevance * 0.3, -index, normalized))
 
         ranked.sort(key=lambda item: (item[0], item[1]), reverse=True)
         payload["papers"] = [paper for _, _, paper in ranked[:max_results]]

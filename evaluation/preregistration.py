@@ -6,6 +6,7 @@ import hashlib
 import inspect
 import json
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -21,12 +22,16 @@ from evaluation.protocol import (
     sha256_text,
 )
 
-PREREGISTRATION_SCHEMA = "headtohead-preregistration-v1"
-HEADTOHEAD_ARTIFACT_SCHEMA = "headtohead-v4-preregistered"
+PREREGISTRATION_SCHEMA = "headtohead-preregistration-v2"
+HEADTOHEAD_ARTIFACT_SCHEMA = "headtohead-v5-preregistered"
 BASELINE_SYSTEM_PROMPT = (
     "你是一位研究助手。针对用户问题，直接写一份全面、结构化的 Markdown 研究报告。"
     "回答必须独立完成，不得声称已经联网或调用外部工具；只引用你确实知道的来源。"
     "结尾给出 Overall Confidence: X.XX。"
+)
+TEMPORAL_CONTEXT_TEMPLATE = (
+    "Evaluation knowledge cutoff: {as_of_date}. Answer using only information available on or before "
+    "this date, and preserve exact publication/event dates."
 )
 
 # Allocate every domain at least one question, then allocate the four remaining
@@ -45,14 +50,17 @@ DEFAULT_DOMAIN_QUOTAS = {
     "传媒": 1,
     "交叉": 1,
 }
+# Questions used during iterative development are excluded from the confirmatory
+# suite. This keeps the final n=15 estimate honest after repeated smoke testing.
+DEFAULT_DEVELOPMENT_QUESTION_IDS = ["tech_001", "tech_003", "edu_002"]
 DEFAULT_QUESTION_IDS = [
-    "edu_002",
-    "tech_001",
     "med_006",
+    "edu_001",
     "fin_006",
     "auto_001",
     "cross_002",
     "tech_002",
+    "tech_005",
     "tech_007",
     "game_002",
     "law_001",
@@ -99,10 +107,15 @@ def source_tree_sha256() -> str:
 
 def judge_implementation_sha256() -> str:
     """Fingerprint the exact pairwise Judge and report-sampling implementations."""
-    from evaluation.report_sampling import balanced_report_excerpt
+    from evaluation.report_sampling import balanced_report_excerpt, strip_noncomparable_appendices
     from src.core.judge import LLMJudge
 
-    source = inspect.getsource(LLMJudge.compare_two) + inspect.getsource(balanced_report_excerpt)
+    source = (
+        inspect.getsource(LLMJudge.compare_two)
+        + inspect.getsource(LLMJudge._temporal_section)
+        + inspect.getsource(strip_noncomparable_appendices)
+        + inspect.getsource(balanced_report_excerpt)
+    )
     return sha256_text(source)
 
 
@@ -158,12 +171,18 @@ def deterministic_stratified_question_ids(
     *,
     seed: int = 42,
     quotas: dict[str, int] | None = None,
+    excluded_ids: list[str] | None = None,
 ) -> list[str]:
     """Select a reproducible, domain-stratified suite without mutable RNG state."""
     selected: list[str] = []
     requested = dict(quotas or DEFAULT_DOMAIN_QUOTAS)
+    excluded = set(excluded_ids or DEFAULT_DEVELOPMENT_QUESTION_IDS)
     for domain, quota in requested.items():
-        candidates = [str(question["id"]) for question in questions if question.get("domain") == domain]
+        candidates = [
+            str(question["id"])
+            for question in questions
+            if question.get("domain") == domain and str(question["id"]) not in excluded
+        ]
         ordered = sorted(
             candidates,
             key=lambda question_id: sha256_text(f"{seed}:question:{question_id}"),
@@ -209,6 +228,7 @@ def build_preregistration(
     question_ids: list[str] | None = None,
     seed: int = 42,
     agent_configuration: dict[str, Any] | None = None,
+    as_of_date: str | None = None,
 ) -> dict[str, Any]:
     bench = ResearchBench()
     population = [_question_snapshot(question) for question in bench.questions]
@@ -221,6 +241,13 @@ def build_preregistration(
         raise ValueError("Preregistered question IDs must be unique")
     questions = [by_id[question_id] for question_id in selected_ids]
     agent_config = dict(agent_configuration or {})
+    frozen_as_of_date = str(
+        as_of_date or datetime.now(timezone.utc).date().isoformat()
+    ).strip()
+    try:
+        datetime.strptime(frozen_as_of_date, "%Y-%m-%d")
+    except ValueError as exc:
+        raise ValueError("as_of_date must use YYYY-MM-DD format") from exc
     manifest = {
         "artifact_schema": PREREGISTRATION_SCHEMA,
         "evaluation_version": RESEARCHBENCH_EVALUATION_VERSION,
@@ -231,10 +258,15 @@ def build_preregistration(
             "selection_method": "domain quotas plus SHA-256 ordering",
             "selection_seed": seed,
             "domain_quotas": DEFAULT_DOMAIN_QUOTAS,
+            "development_question_ids_excluded": DEFAULT_DEVELOPMENT_QUESTION_IDS,
         },
         "questions": questions,
         "question_ids": selected_ids,
         "domain_counts": dict(sorted(Counter(question["domain"] for question in questions).items())),
+        "temporal_context": {
+            "as_of_date": frozen_as_of_date,
+            "policy": "same frozen knowledge cutoff for Agent, baseline, and Judge",
+        },
         "systems": {
             "agent": "full orchestrated retrieval and evidence pipeline",
             "baseline": "same model, one API call, no tools or retrieval",
@@ -242,7 +274,11 @@ def build_preregistration(
             "model": model_name,
             "implementation_sha256": source_tree_sha256(),
             "effective_sampling": dict(sampling),
-            "baseline_prompt_sha256": sha256_text(BASELINE_SYSTEM_PROMPT),
+            "baseline_prompt_sha256": sha256_text(
+                BASELINE_SYSTEM_PROMPT
+                + "\n"
+                + TEMPORAL_CONTEXT_TEMPLATE.format(as_of_date=frozen_as_of_date)
+            ),
             "agent_configuration": agent_config,
             "agent_configuration_sha256": sha256_text(canonical_json(agent_config)),
         },
@@ -321,7 +357,7 @@ def audit_headtohead_artifact(
     if preregistration.get("fingerprint_sha256") != expected_fingerprint:
         errors.append("preregistration fingerprint is invalid")
     if artifact.get("artifact_schema") != HEADTOHEAD_ARTIFACT_SCHEMA:
-        errors.append("artifact schema is not the preregistered v4 schema")
+        errors.append("artifact schema is not the preregistered v5 schema")
     if artifact.get("preregistration_sha256") != expected_fingerprint:
         errors.append("preregistration fingerprint does not match")
     if artifact.get("question_ids") != preregistration.get("question_ids"):
@@ -330,6 +366,10 @@ def audit_headtohead_artifact(
         errors.append("evaluation version differs from preregistration")
     if artifact.get("metric_weights") != preregistration.get("analysis", {}).get("metric_weights"):
         errors.append("metric weights differ from preregistration")
+    if artifact.get("protocol", {}).get("temporal_context") != preregistration.get(
+        "temporal_context"
+    ):
+        errors.append("temporal context differs from preregistration")
     if preregistration.get("benchmark", {}).get("implementation_sha256") != _benchmark_implementation_sha256():
         errors.append("ResearchBench implementation changed after preregistration")
 
@@ -388,6 +428,10 @@ def audit_headtohead_artifact(
                 recomputed = bench.evaluate_report(report_texts[role], question_id)
                 if not _same(recomputed, row[role].get("rule")):
                     raise ValueError(f"{role} rule score cannot be reproduced")
+                if row[role].get("runtime", {}).get("as_of_date") != preregistration.get(
+                    "temporal_context", {}
+                ).get("as_of_date"):
+                    raise ValueError(f"{role} temporal context differs")
 
             evidence_path = _verify_file(row["agent"]["evidence_artifact"], root)
             evidence_payload = json.loads(evidence_path.read_text(encoding="utf-8"))
@@ -454,10 +498,12 @@ def audit_headtohead_artifact(
 
 __all__ = [
     "BASELINE_SYSTEM_PROMPT",
+    "DEFAULT_DEVELOPMENT_QUESTION_IDS",
     "DEFAULT_DOMAIN_QUOTAS",
     "DEFAULT_QUESTION_IDS",
     "HEADTOHEAD_ARTIFACT_SCHEMA",
     "PREREGISTRATION_SCHEMA",
+    "TEMPORAL_CONTEXT_TEMPLATE",
     "audit_headtohead_artifact",
     "build_preregistration",
     "canonical_json",

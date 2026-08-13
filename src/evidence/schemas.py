@@ -87,6 +87,8 @@ class EvidenceAudit:
     primary_source_ratio: float = 0.0
     fulltext_source_ratio: float = 0.0
     verification_mode: str = "heuristic"
+    semantic_reviewed_count: int = 0
+    semantic_candidate_count: int = 0
 
     def to_dict(self, evidence_lookup: dict[str, EvidenceChunk] | None = None) -> dict[str, Any]:
         lookup = evidence_lookup or {}
@@ -116,4 +118,6 @@ class EvidenceAudit:
             "primary_source_ratio": self.primary_source_ratio,
             "fulltext_source_ratio": self.fulltext_source_ratio,
             "verification_mode": self.verification_mode,
+            "semantic_reviewed_count": self.semantic_reviewed_count,
+            "semantic_candidate_count": self.semantic_candidate_count,
         }

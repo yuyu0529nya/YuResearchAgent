@@ -45,7 +45,8 @@ def _claims_preserved(
             shared_evidence = bool(
                 set(original.support_evidence_ids) & set(candidate.support_evidence_ids)
             )
-            if lexical_overlap >= 0.55 and (
+            minimum_overlap = 0.30 if shared_evidence else 0.55
+            if lexical_overlap >= minimum_overlap and (
                 shared_evidence
                 or not require_shared_evidence
                 or not original.support_evidence_ids
@@ -109,6 +110,8 @@ def audit_summary(audit: EvidenceAudit) -> dict[str, Any]:
         "not_enough_evidence_count": audit.nei_count,
         "coverage": audit.coverage,
         "verification_mode": audit.verification_mode,
+        "semantic_reviewed_count": audit.semantic_reviewed_count,
+        "semantic_candidate_count": audit.semantic_candidate_count,
     }
 
 
@@ -242,7 +245,8 @@ class EvidenceReviser:
         if not content.strip() or not audit.get("claims") or not sources:
             return RevisionDraft(reason="Report, audited claims, or sources are missing.")
 
-        prompt = self._build_prompt(query, content, audit, sources)
+        source_catalog = self._select_source_catalog(content, audit, sources)
+        prompt = self._build_prompt(query, content, audit, source_catalog)
         if len(prompt) > self.max_prompt_chars:
             return RevisionDraft(
                 reason=(
@@ -286,7 +290,7 @@ class EvidenceReviser:
 
         raw = response.get("content", "") if isinstance(response, dict) else ""
         candidate = self._strip_fence(str(raw or ""))
-        reason = self._validate_candidate(content, candidate, sources)
+        reason = self._validate_candidate(content, candidate, source_catalog)
         if reason:
             return RevisionDraft(content=candidate, reason=reason)
         return RevisionDraft(content=candidate, valid=True, reason="Draft passed structural validation.")
@@ -296,11 +300,11 @@ class EvidenceReviser:
         query: str,
         content: str,
         audit: dict[str, Any],
-        sources: list[dict[str, Any]],
+        source_catalog: list[tuple[int, dict[str, Any]]],
     ) -> str:
         source_numbers = {
-            str(source.get("source_id", "")): index
-            for index, source in enumerate(sources, 1)
+            str(source.get("source_id", "")): number
+            for number, source in source_catalog
             if source.get("source_id")
         }
         lines = [
@@ -316,17 +320,24 @@ class EvidenceReviser:
             "5. Do not add factual claims absent from the audit or evidence excerpts.",
             "6. Use only [N] citations from the catalog and retain a complete normalized reference section.",
             "7. Output the full revised report as Markdown, without commentary or code fences.",
+            "8. The audit below is a whitelist: any factual assertion in the original report that is not explicitly "
+            "listed as SUPPORTED or REFUTED must be treated as NOT_ENOUGH_EVIDENCE.",
             "",
             "# Numbered source catalog (untrusted JSON records)",
         ]
-        for index, source in enumerate(sources[:30], 1):
+        for number, source in source_catalog:
             record = {
-                "number": index,
+                "number": number,
                 "source_id": self._one_line(source.get("source_id", ""), 80),
                 "title": self._one_line(source.get("title") or source.get("url") or "Untitled", 160),
                 "authors": self._one_line(source.get("authors") or source.get("publisher") or "", 100),
                 "year": self._one_line(source.get("year") or "", 16),
                 "url": self._one_line(source.get("url") or "", 260),
+                "evidence_kind": self._one_line(source.get("evidence_kind") or "", 24),
+                "evidence_excerpt": self._one_line(
+                    source.get("evidence_excerpt") or source.get("snippet") or "",
+                    180,
+                ),
             }
             lines.append(json.dumps(record, ensure_ascii=False))
 
@@ -339,12 +350,16 @@ class EvidenceReviser:
             return "\n".join(lines + suffix)
 
         lines.extend(["", "# Claim audit (untrusted JSON records)"])
-        claims = list(audit.get("claims", []))
+        claims = [
+            claim
+            for claim in audit.get("claims", [])
+            if str(claim.get("status", "")) in {"supported", "refuted"}
+        ]
         status_rank = {"refuted": 0, "supported": 1, "not_enough_evidence": 2}
         claims.sort(key=lambda claim: status_rank.get(str(claim.get("status", "")), 3))
         available = self.max_prompt_chars - fixed_size - 200
         used = 0
-        for claim in claims[:40]:
+        for claim in claims:
             status = str(claim.get("status", "not_enough_evidence")).upper()
             mapped = [
                 source_numbers[source_id]
@@ -358,7 +373,7 @@ class EvidenceReviser:
             ]
             record = {
                 "status": status,
-                "claim": self._one_line(claim.get("text", ""), 520),
+                "claim": self._one_line(claim.get("text", ""), 420),
                 "source_numbers": mapped[:3],
                 "evidence_excerpts": excerpts,
             }
@@ -375,7 +390,7 @@ class EvidenceReviser:
         self,
         original: str,
         candidate: str,
-        sources: list[dict[str, Any]],
+        source_catalog: list[tuple[int, dict[str, Any]]],
     ) -> str:
         if not candidate.strip():
             return "The revision model returned empty content."
@@ -390,22 +405,22 @@ class EvidenceReviser:
             return "The revision used an internal result label as a citation."
 
         citations = [int(value) for value in _CITATION.findall(candidate)]
-        catalog_size = min(len(sources), 30)
-        invalid = sorted({value for value in citations if value < 1 or value > catalog_size})
+        catalog_by_number = dict(source_catalog)
+        invalid = sorted({value for value in citations if value not in catalog_by_number})
         if invalid:
             return f"The revision used out-of-range citations: {invalid}."
         heading = _REFERENCE_HEADING.search(candidate)
         if not heading:
             return "The revision omitted the normalized reference section."
         body_citations = {int(value) for value in _CITATION.findall(candidate[: heading.start()])}
-        if sources and not body_citations:
+        if source_catalog and not body_citations:
             return "The revised report contains no in-text source citations."
         references = candidate[heading.end() :]
         missing = [number for number in sorted(body_citations) if not re.search(rf"^\s*(?:[-*]\s*)?\[{number}\]", references, re.MULTILINE)]
         if missing:
             return f"The reference section is missing cited entries: {missing}."
         for number in sorted(body_citations):
-            source = sources[number - 1]
+            source = catalog_by_number[number]
             source_url = str(source.get("url", "")).strip()
             if not source_url:
                 continue
@@ -417,6 +432,44 @@ class EvidenceReviser:
             if entry is None or source_url not in entry.group(1):
                 return f"Reference [{number}] does not preserve its catalog URL."
         return ""
+
+    @staticmethod
+    def _select_source_catalog(
+        content: str,
+        audit: dict[str, Any],
+        sources: list[dict[str, Any]],
+        limit: int = 24,
+    ) -> list[tuple[int, dict[str, Any]]]:
+        """Keep report numbering while dropping sources irrelevant to revision."""
+        heading = _REFERENCE_HEADING.search(content)
+        body = content[: heading.start()] if heading else content
+        cited_numbers = [
+            number
+            for number in dict.fromkeys(int(value) for value in _CITATION.findall(body))
+            if 0 < number <= len(sources)
+        ]
+        source_number = {
+            str(source.get("source_id", "")): index
+            for index, source in enumerate(sources, 1)
+            if source.get("source_id")
+        }
+        claims = list(audit.get("claims", []))
+        status_rank = {"refuted": 0, "supported": 1, "not_enough_evidence": 2}
+        claims.sort(key=lambda claim: status_rank.get(str(claim.get("status", "")), 3))
+        mapped_numbers: list[int] = []
+        for claim in claims:
+            for source_id in claim.get("source_ids", []):
+                number = source_number.get(str(source_id))
+                if number is not None and number not in mapped_numbers:
+                    mapped_numbers.append(number)
+        ordered = list(dict.fromkeys(cited_numbers + mapped_numbers))
+        if not ordered:
+            ordered = list(range(1, min(len(sources), 12) + 1))
+        # All existing body citations must remain available, even if an unusual
+        # report exceeds the ordinary catalog limit.
+        minimum = len(cited_numbers)
+        keep = ordered[: max(minimum, limit)]
+        return [(number, sources[number - 1]) for number in keep]
 
     @staticmethod
     def _strip_fence(text: str) -> str:

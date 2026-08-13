@@ -180,11 +180,13 @@ evidence:
   verification_mode: "hybrid"
   support_threshold: 0.38
   max_claims: 60
-  max_llm_claims: 12
+  # 仅把最高价值的模糊 claim 交给 LLM 复核；其余保留可复现的 heuristic 结果
+  # 一批最多 3 条，避免推理模型第二批超时；未覆盖候选显式记为 hybrid_partial。
+  max_llm_claims: 3
   min_coverage: 0.55
   max_gap_rounds: 1
   max_gap_tasks: 2
-  # 一轮缺口检索的最低预算；还需额外保留 orchestrator.synthesis_reserve_seconds
+  # 一轮缺口检索的最低预算；还需额外保留合成和终审预算
   gap_min_seconds: 100
   # 终审发现未决 claim 后，执行一次 evidence-bounded revision；候选只有在
   # 确定性复审覆盖率提升且信息保留/矛盾门控通过时才会替换原报告。
@@ -192,10 +194,13 @@ evidence:
     enabled: true
     trigger_coverage: 0.80
     min_coverage_gain: 0.03
-    min_claim_retention: 0.60
+    # 至少保留 40% 可审计 claim；另有 50% 正文长度门槛、逐条 supported
+    # claim 保留门槛，以及不得新增 NEI/refuted claim，防止靠删稿刷覆盖率。
+    min_claim_retention: 0.40
     min_length_ratio: 0.50
-    max_prompt_chars: 32000
-    timeout_seconds: 40
+    # 保留完整报告，压缩来源/claim 包装，避免 Kimi 在终审编辑阶段超时
+    max_prompt_chars: 20000
+    timeout_seconds: 60
 
 adversarial:
   # M5: Red-Blue Adversarial Loop 配置
@@ -240,7 +245,7 @@ tools:
   # 工具模块全局配置
   web_search:
     enabled: true
-    # auto 依次尝试 keyless Yahoo、Brave、Wikipedia，并做相关性重排
+    # auto 优先使用 DDGS（Yandex、DuckDuckGo），再聚合 HTML 后端并按来源质量重排
     backend: "auto"
     # mock_mode: 无真实搜索 API 时返回模拟结果，用于快速调试
     mock_mode: false

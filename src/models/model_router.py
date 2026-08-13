@@ -178,6 +178,10 @@ class ModelRouter:
         if max_tok is not None:
             config["max_tokens"] = int(max_tok)
 
+        max_input_chars = get_env(f"{prefix}_MAX_INPUT_CHARS")
+        if max_input_chars is not None:
+            config["max_input_chars"] = int(max_input_chars)
+
         extra_body: dict = {}
 
         # 推理模型（GLM-4.5/4.6 等）：关闭思考以加速、并确保 content 字段非空
