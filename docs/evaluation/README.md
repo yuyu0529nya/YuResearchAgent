@@ -13,6 +13,7 @@ superseded results. See `../EXPERIMENTS.md` for interpretation and limitations.
 | `headtohead_v7_resilience_dev_preregistration.json` | Frozen development protocol | Same three questions and scoring protocol; evaluates four-worker startup with provider-level DDGS throttling after the v6 infrastructure failure |
 | `headtohead_v8_resilience_retry_dev_preregistration.json` | Frozen development protocol | Same three questions and scoring protocol; evaluates the concurrency, search-throttling, and bounded-retry resilience stack |
 | `headtohead_v9_parallel_resilience_dev_preregistration.json` | Frozen development protocol | Same three questions and scoring protocol; adds the independent-search DAG constraint to the resilience stack |
+| `headtohead_v10_openrouter_search_dev_preregistration.json` | Frozen development protocol | Same three questions and scoring protocol; records the effective OpenRouter server-side search backend and proxy-aware runtime |
 | `artifacts/evidence_v2/` | Reproducible runtime/verifier evidence | Exact Kimi K3 report and evidence graph, deterministic replay, and source-bounded hybrid replay |
 | `artifacts/headtohead_v3/` | Development pilot (`n=1`) | Corrected Agent-versus-one-call protocol, retained reports, hashes, telemetry, and counterbalanced Judge output |
 | `artifacts/ablation_v3/` | Negative development diagnostic (`n=1`) | Real `full` versus `no_evidence` execution; no quality gain established |
