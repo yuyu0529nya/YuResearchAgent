@@ -113,8 +113,8 @@ model:
 
 orchestrator:
   # M1: Multi-Agent Orchestrator 配置
-  # 同时运行的最大子 Agent 数量
-  max_concurrent: 2
+  # 与默认的四维研究计划对齐，避免后续维度因排队耗尽研究预算。
+  max_concurrent: 4
   # 全局超时时间（秒），超过则强制终止整个研究流程
   global_timeout_seconds: 480
   # 最大重规划（replan）轮数，防止无限循环

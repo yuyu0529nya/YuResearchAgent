@@ -374,6 +374,15 @@ def test_run_config_has_final_audit_reserve() -> None:
     assert run_config.final_audit_reserve_seconds == 27
 
 
+def test_default_config_starts_all_planned_dimensions_concurrently() -> None:
+    from src.core.runner import build_run_config, load_config
+
+    run_config = build_run_config(load_config())
+
+    assert run_config.max_sub_questions == 4
+    assert run_config.max_concurrent == 4
+
+
 def test_run_config_maps_evidence_revision_controls() -> None:
     from src.core.runner import build_run_config
 

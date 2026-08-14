@@ -342,7 +342,7 @@ Core switches live in [configs/default.yaml](configs/default.yaml):
 
 ```yaml
 orchestrator:
-  max_concurrent: 2
+  max_concurrent: 4
   global_timeout_seconds: 480
   synthesis_reserve_seconds: 130
   final_audit_reserve_seconds: 70
