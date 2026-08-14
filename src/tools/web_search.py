@@ -201,7 +201,9 @@ class WebSearchTool(BaseWebSearchTool):
         self.openrouter_endpoint = get_env(
             "OPENROUTER_SEARCH_ENDPOINT", "https://openrouter.ai/api/v1/chat/completions"
         )
-        self.openrouter_model = get_env("OPENROUTER_SEARCH_MODEL", "perplexity/sonar")
+        self.openrouter_model = (
+            get_env("OPENROUTER_SEARCH_MODEL") or "openai/gpt-4.1-mini"
+        )
 
     def _get_session(self) -> aiohttp.ClientSession:
         """获取复用的 ClientSession，避免每次搜索新建连接。"""

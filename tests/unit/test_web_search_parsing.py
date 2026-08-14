@@ -265,6 +265,14 @@ def test_openrouter_citations_map_to_search_results() -> None:
     ]
 
 
+def test_openrouter_search_defaults_to_a_tool_capable_model(monkeypatch) -> None:
+    monkeypatch.setenv("OPENROUTER_SEARCH_MODEL", "")
+
+    tool = WebSearchTool("openrouter")
+
+    assert tool.openrouter_model == "openai/gpt-4.1-mini"
+
+
 def test_parse_yahoo_html_extracts_and_unwraps_results() -> None:
     html = """
     <div class="dd algo algo-sr">
