@@ -141,6 +141,38 @@ class _WeakBrowserFirstPolicy(_Policy):
         return {"content": "Evidence-backed final summary. Confidence: 0.8", "tool_calls": []}
 
 
+class _SkipsInitialToolPolicy(_Policy):
+    def __call__(self, _messages):
+        self.calls += 1
+        if self.calls == 1:
+            return {"content": "Unsourced answer.", "tool_calls": []}
+        return {"content": "Evidence-backed final summary. Confidence: 0.8", "tool_calls": []}
+
+
+def test_researcher_forces_initial_retrieval_when_model_skips_tool_use() -> None:
+    policy = _SkipsInitialToolPolicy()
+    agent = ResearcherAgent(
+        name="researcher",
+        policy=policy,
+        tools=[_SearchTool()],
+        max_turns=4,
+        max_tool_calls=1,
+    )
+
+    result = asyncio.run(
+        agent.run(
+            SubTask(task_id="search", task_type=TaskType.SEARCH, description="research policy"),
+            {"query": "research policy"},
+        )
+    )
+
+    assert result.status == AgentStatus.SUCCESS
+    assert policy.calls == 2
+    assert [step.get("name") for step in result.trajectory if step.get("role") == "tool"] == [
+        "web_search"
+    ]
+
+
 def test_researcher_reads_best_primary_source_before_finishing() -> None:
     browser = _BrowserTool()
     policy = _Policy()

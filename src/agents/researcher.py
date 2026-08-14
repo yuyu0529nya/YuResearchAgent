@@ -234,7 +234,9 @@ class ResearcherAgent(BaseAgent):
             # the best unread source. This turns the prompt-level instruction
             # into an enforceable research invariant.
             if not tool_calls and remaining_tool_calls > 0:
-                if academic_missing and "arxiv_reader" in self.tool_map:
+                if used_tool_calls == 0 and fallback_tool in self.tool_map:
+                    tool_calls = [self._fallback_search_tool_call(task, fallback_tool, turn)]
+                elif academic_missing and "arxiv_reader" in self.tool_map:
                     tool_calls = [self._academic_tool_call(task, turn)]
                 elif "browser" in self.tool_map:
                     candidate_url = self._required_fulltext_url(trajectory)
@@ -743,6 +745,23 @@ class ResearcherAgent(BaseAgent):
                     {"query": query[:500], "max_results": 3},
                     ensure_ascii=False,
                 ),
+            },
+        }
+
+    @staticmethod
+    def _fallback_search_tool_call(task: SubTask, tool_name: str, turn: int) -> dict[str, Any]:
+        """Create a minimal first retrieval call when a model skips tool use."""
+        hints = " ".join(str(hint) for hint in task.search_hints if hint)
+        query = f"{hints} {task.description}".strip()[:500]
+        arguments: dict[str, Any] = {"query": query}
+        if tool_name == "arxiv_reader":
+            arguments["max_results"] = 3
+        return {
+            "id": f"auto_{tool_name}_{turn}",
+            "type": "function",
+            "function": {
+                "name": tool_name,
+                "arguments": json.dumps(arguments, ensure_ascii=False),
             },
         }
 
