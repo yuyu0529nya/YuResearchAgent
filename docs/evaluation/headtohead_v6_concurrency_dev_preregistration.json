@@ -1,0 +1,431 @@
+{
+  "artifact_schema": "headtohead-preregistration-v2",
+  "evaluation_version": "researchbench-v2-factual-weight-fix",
+  "benchmark": {
+    "population_size": 35,
+    "population_sha256": "09b9cc7d53084149995aa71cc4eafd4647d825a50fe22c7bb924d3dfae90a196",
+    "implementation_sha256": "95e9e0b882caf0abe0ef2e350c7a834f1413787f9e4739fb51f7f58874fef721",
+    "selection_method": "domain quotas plus SHA-256 ordering",
+    "selection_seed": 614,
+    "domain_quotas": {
+      "科技": 3,
+      "医疗": 2,
+      "金融": 2,
+      "教育": 1,
+      "法律": 1,
+      "能源": 1,
+      "消费": 1,
+      "汽车": 1,
+      "游戏": 1,
+      "传媒": 1,
+      "交叉": 1
+    },
+    "development_question_ids_excluded": [
+      "tech_001",
+      "tech_003",
+      "edu_002"
+    ]
+  },
+  "questions": [
+    {
+      "id": "edu_001",
+      "domain": "教育",
+      "query": "评估自适应学习系统（如 Khan Academy、松鼠 AI）在 K-12 数学教育中的效果，分析其个性化推荐算法、学习效果量化指标和师生接受度。",
+      "expected_topics": [
+        "自适应学习",
+        "K-12",
+        "数学教育",
+        "个性化推荐",
+        "学习效果",
+        "Khan Academy",
+        "松鼠AI"
+      ],
+      "ground_truth": {
+        "Khan Academy": "非营利性教育平台，提供免费个性化练习",
+        "松鼠 AI": "中国自适应学习公司，智适应教育系统",
+        "效果": "自适应学习平均提升成绩 10-20%"
+      }
+    },
+    {
+      "id": "cross_002",
+      "domain": "交叉",
+      "query": "评估 AI 制药（AlphaFold、Atomwise 等）在靶点发现和临床试验设计中的进展，分析其对传统 Pharma 研发投入回报率的潜在改变。",
+      "expected_topics": [
+        "AI制药",
+        "AlphaFold",
+        "靶点发现",
+        "临床试验",
+        "Pharma",
+        "研发回报率"
+      ],
+      "ground_truth": {
+        "AlphaFold": "DeepMind 开发的蛋白质结构预测系统",
+        "AI制药": "可缩短药物发现周期 30-50%",
+        "Atomwise": "AI 驱动的虚拟筛选平台"
+      }
+    },
+    {
+      "id": "tech_005",
+      "domain": "科技",
+      "query": "探讨空间计算（Spatial Computing）和 Apple Vision Pro 对混合现实产业生态的影响，分析内容创作、企业应用和消费级落地的关键障碍。",
+      "expected_topics": [
+        "空间计算",
+        "Apple Vision Pro",
+        "混合现实",
+        "内容创作",
+        "企业应用"
+      ],
+      "ground_truth": {
+        "Vision Pro": "苹果首款空间计算设备，2024 年发售",
+        "passthrough": "VST 视频透视技术"
+      }
+    }
+  ],
+  "question_ids": [
+    "edu_001",
+    "cross_002",
+    "tech_005"
+  ],
+  "domain_counts": {
+    "交叉": 1,
+    "教育": 1,
+    "科技": 1
+  },
+  "temporal_context": {
+    "as_of_date": "2026-08-14",
+    "policy": "same frozen knowledge cutoff for Agent, baseline, and Judge"
+  },
+  "systems": {
+    "agent": "full orchestrated retrieval and evidence pipeline",
+    "baseline": "same model, one API call, no tools or retrieval",
+    "backend": "kimi",
+    "model": "k3",
+    "implementation_sha256": "46b78035076a4c99ac45cd3e6268d355a08331ca1d25e49d8c818137ce69175e",
+    "effective_sampling": {
+      "model": "k3",
+      "endpoint": "https://api.kimi.com/coding/v1",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "max_tokens": 4000,
+      "max_input_chars": 35000,
+      "extra_body": {
+        "reasoning_effort": "low"
+      }
+    },
+    "baseline_prompt_sha256": "0a58a50ab997bbb0f7019c6d3763064b357100c29444048adf56a9c6726b8ecf",
+    "agent_configuration": {
+      "model": {
+        "backend": "kimi",
+        "backend_mapping": {
+          "solver": "kimi",
+          "planner": "kimi",
+          "summarizer": "kimi",
+          "judge": "kimi",
+          "red_agent": "kimi",
+          "blue_agent": "kimi",
+          "compressor": "kimi"
+        },
+        "backend_sampling": {
+          "deepseek": {
+            "temperature": 0.7,
+            "max_tokens": 4096,
+            "top_p": 1.0
+          },
+          "mimo": {
+            "temperature": 0.3,
+            "max_tokens": 4096,
+            "top_p": 1.0
+          },
+          "modules": {
+            "planner": {
+              "temperature": 0.3,
+              "max_tokens": 4000
+            },
+            "solver": {
+              "temperature": 0.7,
+              "max_tokens": 4000
+            },
+            "summarizer": {
+              "temperature": 0.5,
+              "max_tokens": 4000
+            },
+            "red_agent": {
+              "temperature": 0.1,
+              "max_tokens": 4000
+            },
+            "blue_agent": {
+              "temperature": 0.3,
+              "max_tokens": 4000
+            },
+            "judge": {
+              "temperature": 0.1,
+              "max_tokens": 2048
+            },
+            "compressor": {
+              "temperature": 0.1,
+              "max_tokens": 2048
+            }
+          }
+        },
+        "effective_module_policies": {
+          "default": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 1024,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "solver": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 4000,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "planner": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 4000,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "summarizer": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 4000,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "judge": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 2048,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "red_agent": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 4000,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "blue_agent": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 4000,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          },
+          "compressor": {
+            "model": "k3",
+            "endpoint": "https://api.kimi.com/coding/v1",
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "max_tokens": 2048,
+            "max_input_chars": 35000,
+            "extra_body": {
+              "reasoning_effort": "low"
+            }
+          }
+        }
+      },
+      "orchestrator": {
+        "max_concurrent": 4,
+        "global_timeout_seconds": 480,
+        "max_replan_rounds": 1,
+        "max_sub_questions": 4,
+        "max_subagent_retries": 1,
+        "synthesis_reserve_seconds": 130,
+        "final_audit_reserve_seconds": 70
+      },
+      "planner": {
+        "max_search_rounds_per_subagent": 4,
+        "enable_replan": true,
+        "enable_completeness_check": true
+      },
+      "compressor": {
+        "max_context_length": 16000,
+        "output_reserve_tokens": 2048,
+        "l1_threshold": 0.6,
+        "l2_threshold": 0.8,
+        "l3_threshold": 0.95,
+        "embedding_model": "all-MiniLM-L6-v2",
+        "enable_multilevel": true
+      },
+      "memory": {
+        "enabled": true,
+        "max_entries": 10000,
+        "similarity_threshold_dup": 0.92,
+        "similarity_threshold_conflict": 0.65,
+        "evict_interval": 100,
+        "enable_vector_index": true,
+        "evaluation_scope": "unique empty session per question"
+      },
+      "evidence": {
+        "enabled": true,
+        "artifact_dir": "outputs/evidence",
+        "persist": true,
+        "verification_mode": "hybrid",
+        "support_threshold": 0.38,
+        "max_claims": 60,
+        "max_llm_claims": 3,
+        "min_coverage": 0.55,
+        "max_gap_rounds": 1,
+        "max_gap_tasks": 2,
+        "gap_min_seconds": 100,
+        "revision": {
+          "enabled": true,
+          "trigger_coverage": 0.8,
+          "min_coverage_gain": 0.03,
+          "min_claim_retention": 0.4,
+          "min_length_ratio": 0.5,
+          "max_prompt_chars": 20000,
+          "timeout_seconds": 60
+        }
+      },
+      "adversarial": {
+        "enabled": false,
+        "max_rounds": 1,
+        "score_threshold": 9.5,
+        "delta_threshold": 0.2,
+        "save_logs": true
+      },
+      "tools": {
+        "web_search": {
+          "enabled": true,
+          "backend": "auto",
+          "mock_mode": false,
+          "max_results": 10,
+          "snippet_max_tokens": 512
+        },
+        "arxiv_reader": {
+          "enabled": true,
+          "max_papers": 5,
+          "abstract_max_tokens": 1024
+        },
+        "code_sandbox": {
+          "enabled": false,
+          "timeout_seconds": 30,
+          "memory_limit_mb": 512
+        }
+      }
+    },
+    "agent_configuration_sha256": "b4c6c18255faae97d110715345777eebd2388d4116038b8af64cb7468d8cd863"
+  },
+  "judge": {
+    "backend": "deepseek",
+    "model": "deepseek-chat",
+    "effective_sampling": {
+      "model": "deepseek-chat",
+      "endpoint": "https://api.deepseek.com/v1",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 1024,
+      "max_input_chars": 35000,
+      "extra_body": {}
+    },
+    "implementation_sha256": "49af706a8090af2ac161c000a44dcbaefb99ea72a0cbd6cd934f8eafed431f6e",
+    "orders_per_pair": 2,
+    "presentation": "counterbalanced A/B order"
+  },
+  "schedule": {
+    "edu_001": {
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "judge_orders": [
+        {
+          "A": "agent",
+          "B": "baseline"
+        },
+        {
+          "A": "baseline",
+          "B": "agent"
+        }
+      ]
+    },
+    "cross_002": {
+      "generation_order": [
+        "baseline",
+        "agent"
+      ],
+      "judge_orders": [
+        {
+          "A": "baseline",
+          "B": "agent"
+        },
+        {
+          "A": "agent",
+          "B": "baseline"
+        }
+      ]
+    },
+    "tech_005": {
+      "generation_order": [
+        "agent",
+        "baseline"
+      ],
+      "judge_orders": [
+        {
+          "A": "agent",
+          "B": "baseline"
+        },
+        {
+          "A": "baseline",
+          "B": "agent"
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "primary_endpoint": "rule_composite_agent_minus_baseline",
+    "secondary_endpoint": "counterbalanced_judge_agent_minus_baseline",
+    "metric_weights": {
+      "factual_accuracy": 0.25,
+      "logical_consistency": 0.2,
+      "citation_coverage": 0.2,
+      "bias": 0.2,
+      "comprehensiveness": 0.15
+    },
+    "bootstrap_seed": 614,
+    "bootstrap_confidence": 0.95,
+    "effect_size": "paired Cohen's dz",
+    "randomization_test": "exact paired sign flip, one-sided agent > baseline",
+    "minimum_complete_pairs": 3,
+    "missing_pair_policy": "report failures; do not impute or replace questions",
+    "run_level_retry_policy": "do not regenerate a recorded pair; resume missing Judge orders only",
+    "stopping_rule": "run every frozen question; no early stopping on significance",
+    "multiplicity": "secondary endpoints are descriptive"
+  },
+  "fingerprint_sha256": "81c64af7c5a667adacfff2974f653bae70cc3e458590f1e448ef5e394f4bedae"
+}
