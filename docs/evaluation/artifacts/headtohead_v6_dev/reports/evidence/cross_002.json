@@ -1,0 +1,2665 @@
+{
+  "schema_version": "1.0",
+  "query": "评估 AI 制药（AlphaFold、Atomwise 等）在靶点发现和临床试验设计中的进展，分析其对传统 Pharma 研发投入回报率的潜在改变。",
+  "created_at": "2026-08-14T05:58:02.974248+00:00",
+  "sources": [
+    {
+      "source_id": "src_e49acef8bf2c78ef",
+      "url": "http://www4.tokai.or.jp/office.m/roumu365-2?live-blog-21174944-2026-08-11-da-kai-wang-yi-xin-wen-cha-kan-jing-cai-tu-pian-guo-qu-ji-nian-cong-alphafold-da",
+      "title": "打开网易新闻 查看精彩图片 过去几年，从 AlphaFold...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI制药 AlphaFold Atomwise 里程碑 药物研发 管线 进展",
+        "retrieval_relevance": 0.825,
+        "host_domain": "www4.tokai.or.jp"
+      }
+    },
+    {
+      "source_id": "src_1c5b4da35079209c",
+      "url": "https://163.com/dy/article/L424FKR005118DFD.html",
+      "title": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI制药 AlphaFold Atomwise 里程碑 药物研发 管线 进展",
+        "retrieval_relevance": 0.75,
+        "host_domain": "163.com"
+      }
+    },
+    {
+      "source_id": "src_9b028146a2310dea",
+      "url": "https://alphafold.ebi.ac.uk/?ref=ourbrew.ph",
+      "title": "AlphaFold Protein Structure Database",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI制药 AlphaFold Atomwise 里程碑 药物研发 管线 进展",
+        "retrieval_relevance": 0.2417,
+        "host_domain": "alphafold.ebi.ac.uk"
+      }
+    },
+    {
+      "source_id": "src_739c2baec34c8a80",
+      "url": "https://globaleventscommunity.com/news/2026-06-27_e9166d.html",
+      "title": "从AlphaFold到临床前候选分子：AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI制药 AlphaFold Atomwise 里程碑 药物研发 管线 进展",
+        "retrieval_relevance": 0.2417,
+        "host_domain": "globaleventscommunity.com"
+      }
+    },
+    {
+      "source_id": "src_c31f5265792f7329",
+      "url": "https://52kaoya.com/news/2026-06-27_a11ba7.html",
+      "title": "从AlphaFold到临床前候选分子：AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI制药 AlphaFold Atomwise 里程碑 药物研发 管线 进展",
+        "retrieval_relevance": 0.2417,
+        "host_domain": "52kaoya.com"
+      }
+    },
+    {
+      "source_id": "src_d2564078ac7c6d18",
+      "url": "https://chatgpt.com/",
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "AI clinical trial design patient stratification adaptive trial success rate evidence 2025",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "chatgpt.com"
+      }
+    },
+    {
+      "source_id": "src_404c2f5fe4c884b5",
+      "url": "https://pharmaphorum.com/news/diving-deeper-into-ai-discovery-sanofi-signs-5-drug-deal-with-atomwise",
+      "title": "Diving deeper into AI discovery, Sanofi signs 5-drug deal ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+bing_html:curl",
+        "retrieval_query": "Atomwise drug discovery pipeline partnership clinical milestone Enamine",
+        "retrieval_relevance": 0.825,
+        "host_domain": "pharmaphorum.com"
+      }
+    },
+    {
+      "source_id": "src_2f03bb688c1cd4e5",
+      "url": "https://in.marketscreener.com/news/latest/Atomwise-and-Enamine-to-Advance-Pediatric-Oncology-With-the-World-s-First-and-Largest-Ten-Billion-28802997",
+      "title": "Atomwise and Enamine to Advance Pediatric Oncology With the ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+bing_html:curl",
+        "retrieval_query": "Atomwise drug discovery pipeline partnership clinical milestone Enamine",
+        "retrieval_relevance": 0.825,
+        "host_domain": "in.marketscreener.com"
+      }
+    },
+    {
+      "source_id": "src_cbbcbe14a95cf357",
+      "url": "https://enamine.net/news-press-releases/press-releases/enamine-and-chemspace-join-ihi-project-ligand-ai-to-advance-artificial-intelligence-ai-driven-drug-discovery",
+      "title": "Enamine and Chemspace Join IHI Project LIGAND-AI to Advance ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+bing_html:curl",
+        "retrieval_query": "Atomwise drug discovery pipeline partnership clinical milestone Enamine",
+        "retrieval_relevance": 0.825,
+        "host_domain": "enamine.net"
+      }
+    },
+    {
+      "source_id": "src_630e33f74671937e",
+      "url": "https://enamine.net/news-press-releases",
+      "title": "News & Press Releases - Enamine",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+bing_html:curl",
+        "retrieval_query": "Atomwise drug discovery pipeline partnership clinical milestone Enamine",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "enamine.net"
+      }
+    },
+    {
+      "source_id": "src_4eec37bd0defd0ac",
+      "url": "https://numerionlabs.ai/",
+      "title": "Atomwise - Innovative Approaches in Drug Discovery Using ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:yahoo_html+bing_html:curl",
+        "retrieval_query": "Atomwise drug discovery pipeline partnership clinical milestone Enamine",
+        "retrieval_relevance": 0.7812,
+        "host_domain": "numerionlabs.ai"
+      }
+    },
+    {
+      "source_id": "src_98d7158b6511f142",
+      "url": "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials?_hsenc=p2ANqtz--7YZoXqevPwRQNsJIjo_51-QL8HWebsXuUYfftKc8w69rP7VCbFyEw47rSMpsp7n6MOs4f",
+      "title": "Isomorphic Labs has grand ambitions to 'solve all diseases... | Fortune",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+yahoo_html+bing_html:curl",
+        "retrieval_query": "AlphaFold 3 Isomorphic Labs drug discovery pipeline Novartis Eli Lilly collaboration 2024 2025",
+        "retrieval_relevance": 0.8923,
+        "host_domain": "fortune.com"
+      }
+    },
+    {
+      "source_id": "src_a66a6ac22f60bef3",
+      "url": "https://trial.medpath.com/news/ai-designed-drug-discovery-reaches-3-billion-milestone-as-isomorphic-labs-partners-with-eli-lilly-and-novartis",
+      "title": "AI-Designed Drug Discovery Reaches $3 Billion Milestone as ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+yahoo_html+bing_html:curl",
+        "retrieval_query": "AlphaFold 3 Isomorphic Labs drug discovery pipeline Novartis Eli Lilly collaboration 2024 2025",
+        "retrieval_relevance": 0.8923,
+        "host_domain": "trial.medpath.com"
+      }
+    },
+    {
+      "source_id": "src_18165169b55410fc",
+      "url": "https://pharmaphorum.com/news/isomorphic-signs-lilly-novartis-3bn-ai-drug-hunt",
+      "title": "Isomorphic signs up Lilly, Novartis for $3bn AI drug hunt",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+yahoo_html+bing_html:curl",
+        "retrieval_query": "AlphaFold 3 Isomorphic Labs drug discovery pipeline Novartis Eli Lilly collaboration 2024 2025",
+        "retrieval_relevance": 0.8923,
+        "host_domain": "pharmaphorum.com"
+      }
+    },
+    {
+      "source_id": "src_039272b229392a82",
+      "url": "https://implicator.ai/when-google-locked-the-door-three-mit-students-picked-the-lock",
+      "title": "Boltz: Open-Source AI vs AlphaFold 3 | The Bet",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+yahoo_html+bing_html:curl",
+        "retrieval_query": "AlphaFold 3 Isomorphic Labs drug discovery pipeline Novartis Eli Lilly collaboration 2024 2025",
+        "retrieval_relevance": 0.8654,
+        "host_domain": "implicator.ai"
+      }
+    },
+    {
+      "source_id": "src_d5ead3c9be4cecd7",
+      "url": "https://drugdiscoverytrends.com/the-latest-on-isomorphic-labs-plans-to-use-ai-models-to-revamp-drug-discovery",
+      "title": "Google DeepMind and Isomorphic Labs' AlphaFold 3 slashes ...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+yahoo_html+bing_html:curl",
+        "retrieval_query": "AlphaFold 3 Isomorphic Labs drug discovery pipeline Novartis Eli Lilly collaboration 2024 2025",
+        "retrieval_relevance": 0.8654,
+        "host_domain": "drugdiscoverytrends.com"
+      }
+    },
+    {
+      "source_id": "src_c4d73bca45793074",
+      "url": "https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials",
+      "title": "",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "963509a1f70d9c4d2f10d8e271cd0b899851fb87db1bbc73d26f5c591efda705",
+      "metadata": {
+        "host_domain": "fortune.com"
+      }
+    },
+    {
+      "source_id": "src_a1906e3cd681b576",
+      "url": "https://nsfc.gov.cn/csc/20345/20348/pdf/2025/202501-+122-131.pdf",
+      "title": "标题",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.95,
+      "is_primary": true,
+      "content_hash": "0621d4cdce8fbb75f71c59af29453bdec3b704301d4c7300fa2fdf441a75447a",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 临床试验设计 患者分层 适应性设计 成功率 提升 证据",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "nsfc.gov.cn"
+      }
+    },
+    {
+      "source_id": "src_809b999f9a4f0ab4",
+      "url": "https://researchgate.net/publication/402054683_Clinical_Landscape_of_Therapeutic_Cancer_Vaccines_Challenges_and_Opportunities",
+      "title": "(PDF) Clinical Landscape of Therapeutic Cancer Vaccines: Challenges...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.65,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 临床试验设计 患者分层 适应性设计 成功率 提升 证据",
+        "retrieval_relevance": 0.8519,
+        "host_domain": "researchgate.net"
+      }
+    },
+    {
+      "source_id": "src_b48c3f663e908cd1",
+      "url": "https://aidaoke.com/blog/1775380063240",
+      "title": "临床试验招不到人、做不完、等太久？ AI... | 企业",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 临床试验设计 患者分层 适应性设计 成功率 提升 证据",
+        "retrieval_relevance": 0.7308,
+        "host_domain": "aidaoke.com"
+      }
+    },
+    {
+      "source_id": "src_c919d06c2cce4a4c",
+      "url": "https://163.com/dy/article/L41V4IF705119734.html",
+      "title": "机器学习先驱Daphne Koller警告：AI...",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 临床试验设计 患者分层 适应性设计 成功率 提升 证据",
+        "retrieval_relevance": 0.7038,
+        "host_domain": "163.com"
+      }
+    },
+    {
+      "source_id": "src_0a8bdae347b7b947",
+      "url": "https://google-gemini.cc/gemini_142.html",
+      "title": "谷歌Med-Gemini，当医学遇上AI大模型，医疗行业的未来已来",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "AI 临床试验设计 患者分层 适应性设计 成功率 提升 证据",
+        "retrieval_relevance": 0.2301,
+        "host_domain": "google-gemini.cc"
+      }
+    },
+    {
+      "source_id": "src_c0d76294282b78bf",
+      "url": "https://ai.google/",
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "AI clinical trial design patient stratification adaptive trial success rate evidence 2025",
+        "retrieval_relevance": 0.2485,
+        "host_domain": "ai.google"
+      }
+    },
+    {
+      "source_id": "src_fc0785e3059e42ee",
+      "url": "https://gemini.google.com/",
+      "title": "Google Gemini",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "AI clinical trial design patient stratification adaptive trial success rate evidence 2025",
+        "retrieval_relevance": 0.1367,
+        "host_domain": "gemini.google.com"
+      }
+    },
+    {
+      "source_id": "src_1549ba4116c0cbe1",
+      "url": "https://deepai.org/",
+      "title": "DeepAI",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "AI clinical trial design patient stratification adaptive trial success rate evidence 2025",
+        "retrieval_relevance": 0.1367,
+        "host_domain": "deepai.org"
+      }
+    },
+    {
+      "source_id": "src_de52acee2e4e7e90",
+      "url": "https://en.wikipedia.org/wiki/January%E2%80%93March_2023_in_science",
+      "title": "January–March 2023 in science",
+      "source_type": "web",
+      "task_ids": [
+        "task_3"
+      ],
+      "authors": "",
+      "year": "2023",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl+wikipedia_api:en",
+        "retrieval_query": "AI-discovered drugs clinical trial success rate phase 1 80-90% BCG study Insilico",
+        "retrieval_relevance": 0.4897,
+        "host_domain": "en.wikipedia.org"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_14ccdcf03343ca6c",
+      "source_id": "src_e49acef8bf2c78ef",
+      "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4998df00897f17ede465025c232346e82d778088908b7b4163e5b755e3730f8f"
+    },
+    {
+      "evidence_id": "ev_cb5f845d578ccfcc",
+      "source_id": "src_1c5b4da35079209c",
+      "text": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板.2025年，创新药管线BD授权交易浪潮，让投资机构看到了AI在制药领域完成商业闭环、资本退出的机会。 暗涌Waves：AI技术突破，让大药企更愿意和AI Native公司合作？",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9d4af8f03fc6ca5591c35c29510b62d6da083124401d2118bf1b77510432c43d"
+    },
+    {
+      "evidence_id": "ev_a055ed8fe3ac0cb9",
+      "source_id": "src_9b028146a2310dea",
+      "text": "AlphaFold Protein Structure Database...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "05f9323449c68a688dca61df7c3a02ce68d288e8cce9b6f7181be0e83aa20b92"
+    },
+    {
+      "evidence_id": "ev_9ba483534d9b0647",
+      "source_id": "src_739c2baec34c8a80",
+      "text": "2022年1月，ued官网的团队在《Nature Communications》发表报告，利用AlphaFold2预测了SARS-CoV-2五个突变株的刺突蛋白受体结合域（RBD）结构，包括Delta（B.1.617.2）株的L452R和T478K...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "2641c01d77532b29f48996ce1e66d9296fbb4ea250f97ff7c706b8c6a20a0ab5"
+    },
+    {
+      "evidence_id": "ev_3bc44936550d4ad4",
+      "source_id": "src_c31f5265792f7329",
+      "text": "2022年1月，j9九游的团队在《Nature Communications》发表报告，利用AlphaFold2预测了SARS-CoV-2五个突变株的刺突蛋白受体结合域（RBD）结构，包括Delta（B.1.617.2）株的L452R和T478K突.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "fdac843f937418886506834cd494f5a5683fd231d2804fd3dad2fdec7f0bf389"
+    },
+    {
+      "evidence_id": "ev_3abeb847c0894b3c",
+      "source_id": "src_d2564078ac7c6d18",
+      "text": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "0cdfc9098397f56e52010a3502212c529944df2844803fc7ca00314ef1021f4a"
+    },
+    {
+      "evidence_id": "ev_62f15b9ff7644700",
+      "source_id": "src_404c2f5fe4c884b5",
+      "text": "1 day ago · Sanofi is tapping San Francisco-based Atomwise for a new AI-fuelled drug discovery deal, paying $20 million for five new drug targets — and possibly spending more than a billion in milestone ...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f7892e4bc8872704f937805d0113effb4f2abc82f87d2e52330ec40a4fd8cc90"
+    },
+    {
+      "evidence_id": "ev_707a0cdfa1b48eaf",
+      "source_id": "src_2f03bb688c1cd4e5",
+      "text": "Jun 24, 2019 · Atomwise , Inc. today announced the launch of a 10 billion compound AI-powered virtual drug screening initiative, the 10-to-the-10 program, in collaboration with Enamine Ltd., the world’s largest chemical supplier. The initiative aims to dramatically increase the discovery of safer small molecule drugs to treat pediatric cancers.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "22f8088a05f93e35d8c2fe3dd9b3336fcd235702f622d8069a6a405fbd55a596"
+    },
+    {
+      "evidence_id": "ev_7c3fdae45b215386",
+      "source_id": "src_cbbcbe14a95cf357",
+      "text": "Jan 28, 2026 · Early drug discovery is a long, expensive, and uncertain process. Scientists spend years testing thousands of molecules to find just one that binds to a disease-related protein. LIGAND-AI aims to change this by combining advanced laboratory technologies with computational methods to create a seamless pipeline from experiment to prediction.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "28159addc8a44e2ba54ca380c6e4d4d9c5dba9095c922b58ae23963cc7fcf5a4"
+    },
+    {
+      "evidence_id": "ev_7bd443ef0441ff17",
+      "source_id": "src_630e33f74671937e",
+      "text": "Jul 23, 2026 · Enamine , the leading provider of chemical compounds and drug discovery services, today announced certain reference compounds from Pfizer are now available through Enamine `s marketplace and Enamine `s integration capabilities (i.e. punchout site, hosted catalogs, and API solutions).",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9f25971fbf804e8100f59eaaa78f3e7cd3f4a7e4fd4e8efdc8eb0a0ed9ee93b0"
+    },
+    {
+      "evidence_id": "ev_ae982816bf17e166",
+      "source_id": "src_4eec37bd0defd0ac",
+      "text": "Our AI superplatform explores chemical space for novel molecules, enhancing drug discovery using machine learning to uncover unseen potential.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "89dabefe721dab69bb8791e84950803204e17d6cb22583f3f7c68ba4e0eb1052"
+    },
+    {
+      "evidence_id": "ev_c413ca8c72ba9329",
+      "source_id": "src_98d7158b6511f142",
+      "text": "In April 2025, Isomorphic Labs raised a $600 million in its first-ever external funding round, led by Thrive Capital.In 2024, the same year it released AlphaFold 3, Isomorphic signed major research collaborations with pharma companies Novartis and Eli Lilly .",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "a2ab1c2fbc6109c82a4e87c747f0af0c156055ca9ae3acc6f8ff0197807d443b"
+    },
+    {
+      "evidence_id": "ev_c91c56361fc46053",
+      "source_id": "src_a66a6ac22f60bef3",
+      "text": "Jan 2, 2026 · Isomorphic Labs , the London-based drug discovery arm of Alphabet Inc., has fundamentally reshaped the pharmaceutical landscape through landmark strategic partnerships with Eli Lilly and Company and Novartis valued at nearly $ 3 billion. The DeepMind spin-off is leveraging Nobel Prize-winning AlphaFold 3 technology to move beyond theoretical protein folding to the industrial-scale design of ...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "4139b61345a4b2fe59d578291e21b6b3e403040b86ab1a60631046c56e6a1671"
+    },
+    {
+      "evidence_id": "ev_3d211f14cce10733",
+      "source_id": "src_18165169b55410fc",
+      "text": "Jan 8, 2024 · Alphabet’s AI in drug discovery start-up Isomorphic Labs signs collaborations with Eli Lilly and Novartis worth up to $3bn, its first two pharma partnerships",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "ed40768efd666b792e5a918f79090d88c383bbbd768427b2abe3e7a13b0b6afc"
+    },
+    {
+      "evidence_id": "ev_2cb18efb31670b1c",
+      "source_id": "src_039272b229392a82",
+      "text": "Isomorphic Labs has the original AlphaFold 3, $600 million in fresh funding from Thrive Capital, and those Eli Lilly and Novartis partnerships potentially worth $3 billion. Hassabis runs both DeepMind and Isomorphic. Shared the 2024 Nobel Prize in Chemistry for the AlphaFold work.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "182bc8c3419185e40d6c3cb7bc7ed0a1def4ad60a6b5c7c129e7b940c05aa80d"
+    },
+    {
+      "evidence_id": "ev_1f0fce0200b1b8d6",
+      "source_id": "src_d5ead3c9be4cecd7",
+      "text": "Aug 30, 2024 · At the beginning of the year, Isomorphic Labs announced its major partnerships with Eli Lilly and Novartis in January 2024 , securing deals jointly worth nearly $ 3 billion.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f0de89726068a76e297d19366966dcc6ed423712242b97427886ca7372cac05b"
+    },
+    {
+      "evidence_id": "ev_5819fd9bbf347c83",
+      "source_id": "src_c4d73bca45793074",
+      "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business officer, told Fortune. Recommended Video “There are people sitting in our office in King’s Cross, London, working, and collaborating with AI to design drugs for cancer,” Murdoch said during an interview in Paris. “That’s happening right now. ” After years in development, Murdoch says human clinical trials for Isomorphic’s AI-assisted drugs are finally in sight. “The next big milestone is actually going out to clinical trials, starting to put these things into human beings,” he said. “We’re staffing up now. We’re getting very close. ” The company, which was spun out of DeepMind in 2021, was born from one of DeepMind’s most celebrated breakthroughs, AlphaFold, an AI system capable of predicting protein structures with a high level of accuracy.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "7b2eb3f226136555c6605bab3d887f48e0d6e38dbdc9501d572553f687b951c1"
+    },
+    {
+      "evidence_id": "ev_b06339737c751669",
+      "source_id": "src_c4d73bca45793074",
+      "text": "Interactions of AlphaFold progressed from being able to accurately predict individual protein structures to modeling how proteins interact with other molecules like DNA and drugs. These leaps made it far more useful for drug discovery, helping researchers design medicines faster and more precisely, turning the tool into a launchpad for a much larger ambition. “This was the inspiration for Isomorphic Labs,” Murdoch said of AlphaFold. “It really demonstrates that we could do something very foundational in AI that could help unlock drug discovery. ” In 2024, the same year it released AlphaFold 3, Isomorphic signed major research collaborations with pharma companies Novartis Eli Lilly A year later, in April 2025, Isomorphic Labs raised $600 million in its first-ever external funding round, led by Thrive Capital. The deals are part of Isomorphic’s plan to build a “world-class drug design engine,” a system that combines machine learning researchers with pharma veterans to design new medicines faster, more cheaply, and with a higher chance of success. As part of the deals with major pharma players, Isomorphic supports existing drug programs, but it also designs its own internal drug candidates in areas such as oncology and immunology, with the aim of eventually licensing them out after early-stage trials. “We identify an unmet need, and we start our own drug design programs.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "3bb04164fd823cd95f520667a1303c19610ffd14e9c69dd0dc48c7bf94707bff"
+    },
+    {
+      "evidence_id": "ev_d1bbebf0b491b02f",
+      "source_id": "src_c4d73bca45793074",
+      "text": "We develop those, put them into human clinical trials… we haven’t got that yet, but we’re making good progress,” he said. Today, pharma companies often spend millions attempting to bring a single drug to market, sometimes with just a 10% chance of success once trials begin. Murdoch believes Isomorphic’s tech could radically improve those odds. “We’re trying to do all these things: speed them up, reduce the cost, but also really improve the chance that we can be successful,” he says. He wants to harness AlphaFold’s technology to get to a point where researchers have 100% conviction that the drugs they are developing are going to work in human trials. “One day we hope to be able to say — well, here’s a disease, and then click a button and out pops the design for a drug to address that disease,” Murdoch said. “All powered by these amazing AI tools. ” Fortune Daily breaks the traditional barrier between audience and newsroom. The show transforms Fortune ’s trusted reporting into actionable, conversational, and entertaining insights for an emerging class of business leaders. Watch here.",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "c58dcffe3b7745bf773d58813c2c2ad6e80d0e0c0f2c255e80c37119e2dac6c3"
+    },
+    {
+      "evidence_id": "ev_3578b442971df22f",
+      "source_id": "src_a1906e3cd681b576",
+      "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "e0bf01bca80ddd200eee84a80041091b395d2ea320648b2e5ed63065d244d3f4"
+    },
+    {
+      "evidence_id": "ev_2552379551949a05",
+      "source_id": "src_809b999f9a4f0ab4",
+      "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "2d08d938206a4a2e5b30c56524ef68dd4d48b88135c364d82fc022202cf58d6b"
+    },
+    {
+      "evidence_id": "ev_aa700470c5efbf3d",
+      "source_id": "src_b48c3f663e908cd1",
+      "text": "分类: AI临床试验.AI在临床试验中另一个革命性的应用是\"合成对照组\"（Synthetic Control Arm, SCA）。",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "fc35b4a8b75aaec42d4a40d1c3a98509ea1ceb2b93bc98eb9d2f662bc7514cde"
+    },
+    {
+      "evidence_id": "ev_97b5d93e71ff47ec",
+      "source_id": "src_c919d06c2cce4a4c",
+      "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "b16f6aa67e1f2c429635f9731ffb430ce74d42ede814aa78be1022098a7a7869"
+    },
+    {
+      "evidence_id": "ev_c26588fcaf666261",
+      "source_id": "src_0a8bdae347b7b947",
+      "text": "腺癌筛查等场景中表现超越传统方法，医疗AI的黄金时代正在到来。 ，（注：此为模拟摘要，实际内容需根据谷歌官方发布信息调整，当前Med-Gemini为假设性案例，截. 至2023年10月未获官方证实。）",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "d278cabed02850d1924213860fa3f7a426468ebb0ef3d27a26910d89e7f3fce4"
+    },
+    {
+      "evidence_id": "ev_d9318eae256ccb9a",
+      "source_id": "src_c0d76294282b78bf",
+      "text": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "df0ecb0aabfe95e4b38afcfbe7e554371e6ae0db777da70f877500c683efb5a4"
+    },
+    {
+      "evidence_id": "ev_09fd33b62bf0977e",
+      "source_id": "src_fc0785e3059e42ee",
+      "text": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI.",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "ac7869ce93c7778f64187ba8847bee7e0324413ae6f1fdc13d53e0d8587c8219"
+    },
+    {
+      "evidence_id": "ev_76bed67a4d1f4219",
+      "source_id": "src_1549ba4116c0cbe1",
+      "text": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "3a0196cbd9bfcd6530705e6fd1f445b31e8f9048732a7feea3dc8119343d37d7"
+    },
+    {
+      "evidence_id": "ev_8ff88bd2980490e9",
+      "source_id": "src_de52acee2e4e7e90",
+      "text": "first COVID-19 drug designed by generative AI is approved for human use, with clinical trials expected to begin in China. The new drug , ISM3312, is developed",
+      "kind": "search_snippet",
+      "task_id": "task_3",
+      "locator": "",
+      "content_hash": "25187617c4f84b73fed9e65239a67ceac39a7fc4f0c43df2a719def02da11e77"
+    },
+    {
+      "evidence_id": "ev_60829d2c1978993d",
+      "source_id": "src_a1906e3cd681b576",
+      "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、行人等独立实例。实验结果表明，该方法在 SemanticKITTI 和 nuScenes 两个主流数据集上都取得了优于已有先进方法的表现，尤其在“车辆、行人等目标实例”的分割上提升更明显，说明它更擅长把相邻、重叠或 08-07 邢卫红等：面向石油化工烃分离与转化的膜技术 08-06 吕欣、张笑宇等：果蝇脑启示录：功能不只靠神经元，更靠“线路图” 08-06 周菁、刘佳钰等：细胞如何“感知”力？揭开DDR1作为新型机械力感受器的秘密 08-05",
+      "kind": "full_text",
+      "task_id": "task_3",
+      "locator": "chunk-1",
+      "content_hash": "ce67b076920069c9b5f610bd5be0b630c6b61240107060ed3a43f668d0b3e778"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_b07162aa7c29b6c0",
+        "text": "AI 制药在 2024–2026 年间完成了从\"学术工具\"到\"数十亿美元级商业 BD 资产\"的跃迁，标志性事件包括：AlphaFold 结构预测数据库的规模化开放，覆盖数亿级蛋白质结构预测，已成为全球结构生物学与药物发现的基础设施 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a055ed8fe3ac0cb9"
+        ],
+        "source_ids": [
+          "src_9b028146a2310dea"
+        ],
+        "reason": "Evidence is only a page title; it does not substantiate the 2024–2026 transition to billion-dollar BD assets, the scale of structure predictions, or the claim of becoming global infrastructure for structural biology and drug discovery.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a055ed8fe3ac0cb9",
+            "source_id": "src_9b028146a2310dea",
+            "text": "AlphaFold Protein Structure Database...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5851890090dafbc0",
+        "text": "AlphaFold 相关研究获得 2024 年诺贝尔化学奖；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1346,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b06339737c751669",
+          "ev_c413ca8c72ba9329",
+          "ev_2cb18efb31670b1c"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074",
+          "src_98d7158b6511f142",
+          "src_039272b229392a82"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b06339737c751669",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Interactions of AlphaFold progressed from being able to accurately predict individual protein structures to modeling how proteins interact with other molecules like DNA and drugs. These leaps made it far more useful for drug discovery, helping researchers design medicines faster and more precisely, turning the tool into a launchpad for a much larger ambition. “This was the inspiration for Isomorphic Labs,” Murdoch said of AlphaFold. “It really demonstrates that we could do something very foundat",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c413ca8c72ba9329",
+            "source_id": "src_98d7158b6511f142",
+            "text": "In April 2025, Isomorphic Labs raised a $600 million in its first-ever external funding round, led by Thrive Capital.In 2024, the same year it released AlphaFold 3, Isomorphic signed major research collaborations with pharma companies Novartis and Eli Lilly .",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c6b06b24a26d7c62",
+        "text": "DeepMind 商业化分拆公司 Isomorphic Labs 与礼来、诺华等大型药企达成合作（公开报道的潜在总价值接近 30 亿美元，为行业媒体转述的数字，未经一手核验），并于 2025–2026 年完成多轮大额融资。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0478,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_c91c56361fc46053",
+          "ev_2cb18efb31670b1c",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_a66a6ac22f60bef3",
+          "src_039272b229392a82",
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_c91c56361fc46053",
+            "source_id": "src_a66a6ac22f60bef3",
+            "text": "Jan 2, 2026 · Isomorphic Labs , the London-based drug discovery arm of Alphabet Inc., has fundamentally reshaped the pharmaceutical landscape through landmark strategic partnerships with Eli Lilly and Company and Novartis valued at nearly $ 3 billion. The DeepMind spin-off is leveraging Nobel Prize-winning AlphaFold 3 technology to move beyond theoretical protein folding to the industrial-scale design of ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2cb18efb31670b1c",
+            "source_id": "src_039272b229392a82",
+            "text": "Isomorphic Labs has the original AlphaFold 3, $600 million in fresh funding from Thrive Capital, and those Eli Lilly and Novartis partnerships potentially worth $3 billion. Hassabis runs both DeepMind and Isomorphic. Shared the 2024 Nobel Prize in Chemistry for the AlphaFold work.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_dff7c2e4187f8c16",
+        "text": "同期，Atomwise 代表的虚拟筛选路线通过与 Enamine 的\"百亿级化合物库 AI 筛选\"计划和与赛诺菲的多靶点合作（公开报道：2000 万美元预付款、覆盖 5 个靶点、潜在里程碑总额超 10 亿美元）完成了商业化定价。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.012,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_62f15b9ff7644700",
+          "ev_707a0cdfa1b48eaf",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_404c2f5fe4c884b5",
+          "src_2f03bb688c1cd4e5",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_62f15b9ff7644700",
+            "source_id": "src_404c2f5fe4c884b5",
+            "text": "1 day ago · Sanofi is tapping San Francisco-based Atomwise for a new AI-fuelled drug discovery deal, paying $20 million for five new drug targets — and possibly spending more than a billion in milestone ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_707a0cdfa1b48eaf",
+            "source_id": "src_2f03bb688c1cd4e5",
+            "text": "Jun 24, 2019 · Atomwise , Inc. today announced the launch of a 10 billion compound AI-powered virtual drug screening initiative, the 10-to-the-10 program, in collaboration with Enamine Ltd., the world’s largest chemical supplier. The initiative aims to dramatically increase the discovery of safer small molecule drugs to treat pediatric cancers.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8d6cea3af1d0133d",
+        "text": "此外，Insilico Medicine 的生成式 AI 设计药物 ISM3312 已获批进入临床试验，是\"AI 原生分子进入人体试验\"的早期案例。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1548,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_3578b442971df22f",
+          "ev_8ff88bd2980490e9"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576",
+          "src_de52acee2e4e7e90"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_13e14a3f1b4d3430",
+        "text": "需要强调的证据边界：截至 2026 年 8 月，尚无任何 AI 全流程设计的药物获批上市，也缺乏大规模、前瞻性的临床对照数据证明 AI 系统性提高了研发成功率。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1027,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_14ccdcf03343ca6c",
+          "ev_aa700470c5efbf3d"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_e49acef8bf2c78ef",
+          "src_b48c3f663e908cd1"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3bb886b25dda642b",
+        "text": "insitro 创始人 Daphne Koller 曾公开指出，AI 制药\"没有魔法棒\"，其公司运营多年仍无关键临床读出，这一批评与行业整体证据状态一致。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0342,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_14ccdcf03343ca6c",
+          "ev_97b5d93e71ff47ec",
+          "ev_cb5f845d578ccfcc"
+        ],
+        "source_ids": [
+          "src_e49acef8bf2c78ef",
+          "src_c919d06c2cce4a4c",
+          "src_1c5b4da35079209c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_97b5d93e71ff47ec",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_c93ddc87fe720ff9",
+        "text": "AlphaFold 数据库是目前 AI 制药证据最扎实的一环：它向全球免费开放数亿级蛋白质结构预测，已被广泛整合进药企与学术界的靶点评估、变构口袋识别和晶体结构补全流程 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.05,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a055ed8fe3ac0cb9"
+        ],
+        "source_ids": [
+          "src_9b028146a2310dea"
+        ],
+        "reason": "Evidence contains only the title 'AlphaFold Protein Structure Database' with no content about free access, hundreds of millions of predictions, or integration into target assessment, allosteric pocket identification, or crystallography workflows.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a055ed8fe3ac0cb9",
+            "source_id": "src_9b028146a2310dea",
+            "text": "AlphaFold Protein Structure Database...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_29a457bc22ac271f",
+        "text": "其后继版本（AlphaFold 3，2024）据公开报道将能力扩展到蛋白质与 DNA、配体/药物分子的相互作用建模，直接面向药物发现场景；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0854,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_b06339737c751669",
+          "ev_c413ca8c72ba9329",
+          "ev_2cb18efb31670b1c"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074",
+          "src_98d7158b6511f142",
+          "src_039272b229392a82"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_b06339737c751669",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Interactions of AlphaFold progressed from being able to accurately predict individual protein structures to modeling how proteins interact with other molecules like DNA and drugs. These leaps made it far more useful for drug discovery, helping researchers design medicines faster and more precisely, turning the tool into a launchpad for a much larger ambition. “This was the inspiration for Isomorphic Labs,” Murdoch said of AlphaFold. “It really demonstrates that we could do something very foundat",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_c413ca8c72ba9329",
+            "source_id": "src_98d7158b6511f142",
+            "text": "In April 2025, Isomorphic Labs raised a $600 million in its first-ever external funding round, led by Thrive Capital.In 2024, the same year it released AlphaFold 3, Isomorphic signed major research collaborations with pharma companies Novartis and Eli Lilly .",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_292575bc08f21588",
+        "text": "但这类\"相互作用建模精度足以替代实验结构\"的说法目前主要来自开发者一方的发布，缺乏大规模独立复现基准，应视为方向性进展而非已验证能力。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1559,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f",
+          "ev_9ba483534d9b0647"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_739c2baec34c8a80"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3c9ae4949c70d7f0",
+        "text": "Isomorphic Labs 是 AlphaFold 能力向制药转化的载体。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2188,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669",
+          "ev_c413ca8c72ba9329"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074",
+          "src_98d7158b6511f142"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b06339737c751669",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Interactions of AlphaFold progressed from being able to accurately predict individual protein structures to modeling how proteins interact with other molecules like DNA and drugs. These leaps made it far more useful for drug discovery, helping researchers design medicines faster and more precisely, turning the tool into a launchpad for a much larger ambition. “This was the inspiration for Isomorphic Labs,” Murdoch said of AlphaFold. “It really demonstrates that we could do something very foundat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_45952048ff1f18ba",
+        "text": "其总裁 Colin Murdoch 于 2025 年 7 月向 Fortune 表示，公司正准备启动 AI 设计药物的首次人体试验，内部管线聚焦肿瘤与免疫学，策略是推进至早期临床后对外授权 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0525,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5819fd9bbf347c83",
+          "ev_d1bbebf0b491b02f",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_d1bbebf0b491b02f",
+            "source_id": "src_c4d73bca45793074",
+            "text": "We develop those, put them into human clinical trials… we haven’t got that yet, but we’re making good progress,” he said. Today, pharma companies often spend millions attempting to bring a single drug to market, sometimes with just a 10% chance of success once trials begin. Murdoch believes Isomorphic’s tech could radically improve those odds. “We’re trying to do all these things: speed them up, reduce the cost, but also really improve the chance that we can be successful,” he says. He wants to ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a8587682947cb292",
+        "text": "Murdoch 明确表示目标是改善传统临床试验约 10% 的综合成功率，实现\"更快、更便宜、更准确\"的药物设计 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "supported",
+        "verification_score": 0.8,
+        "support_evidence_ids": [
+          "ev_d1bbebf0b491b02f",
+          "ev_5819fd9bbf347c83"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d1bbebf0b491b02f",
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Evidence states trials begin with about a 10% chance of success, that Murdoch believes Isomorphic's tech could radically improve those odds, and quotes him: 'speed them up, reduce the cost, but also really improve the chance that we can be successful.' The '更准确' phrasing is only loosely entailed (ar",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d1bbebf0b491b02f",
+            "source_id": "src_c4d73bca45793074",
+            "text": "We develop those, put them into human clinical trials… we haven’t got that yet, but we’re making good progress,” he said. Today, pharma companies often spend millions attempting to bring a single drug to market, sometimes with just a 10% chance of success once trials begin. Murdoch believes Isomorphic’s tech could radically improve those odds. “We’re trying to do all these things: speed them up, reduce the cost, but also really improve the chance that we can be successful,” he says. He wants to ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_2dc98273b5fa2126",
+        "text": "但需注意：这是公司管理层在试验启动前的前瞻性声明，截至 2026 年 8 月尚无\"AI 设计药物已进入人体试验\"的第三方确证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0748,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_60829d2c1978993d",
+          "ev_14ccdcf03343ca6c"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576",
+          "src_e49acef8bf2c78ef"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_888af301ba9f2edd",
+        "text": "其与礼来、诺华的合作金额（近 30 亿美元）为\"潜在里程碑总额\"口径，预付款部分未公开，不能等同于已实现收入。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0205,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_1f0fce0200b1b8d6",
+          "ev_c91c56361fc46053",
+          "ev_3d211f14cce10733"
+        ],
+        "source_ids": [
+          "src_d5ead3c9be4cecd7",
+          "src_a66a6ac22f60bef3",
+          "src_18165169b55410fc"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_1f0fce0200b1b8d6",
+            "source_id": "src_d5ead3c9be4cecd7",
+            "text": "Aug 30, 2024 · At the beginning of the year, Isomorphic Labs announced its major partnerships with Eli Lilly and Novartis in January 2024 , securing deals jointly worth nearly $ 3 billion.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_c91c56361fc46053",
+            "source_id": "src_a66a6ac22f60bef3",
+            "text": "Jan 2, 2026 · Isomorphic Labs , the London-based drug discovery arm of Alphabet Inc., has fundamentally reshaped the pharmaceutical landscape through landmark strategic partnerships with Eli Lilly and Company and Novartis valued at nearly $ 3 billion. The DeepMind spin-off is leveraging Nobel Prize-winning AlphaFold 3 technology to move beyond theoretical protein folding to the industrial-scale design of ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_729585e4d80b26bd",
+        "text": "Atomwise 的 AtomNet 平台代表了另一条路线：用卷积神经网络预测小分子-蛋白结合，将筛选空间扩展到传统高通量筛选无法企及的化学库。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0156,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_62f15b9ff7644700",
+          "ev_707a0cdfa1b48eaf",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_404c2f5fe4c884b5",
+          "src_2f03bb688c1cd4e5",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_62f15b9ff7644700",
+            "source_id": "src_404c2f5fe4c884b5",
+            "text": "1 day ago · Sanofi is tapping San Francisco-based Atomwise for a new AI-fuelled drug discovery deal, paying $20 million for five new drug targets — and possibly spending more than a billion in milestone ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_707a0cdfa1b48eaf",
+            "source_id": "src_2f03bb688c1cd4e5",
+            "text": "Jun 24, 2019 · Atomwise , Inc. today announced the launch of a 10 billion compound AI-powered virtual drug screening initiative, the 10-to-the-10 program, in collaboration with Enamine Ltd., the world’s largest chemical supplier. The initiative aims to dramatically increase the discovery of safer small molecule drugs to treat pediatric cancers.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d66a830b078616d0",
+        "text": "其与 Enamine 的合作公开宣称可筛选 10¹⁰ 级化合物，与赛诺菲的合作覆盖 5 个靶点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0598,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_707a0cdfa1b48eaf",
+          "ev_60829d2c1978993d",
+          "ev_7bd443ef0441ff17"
+        ],
+        "source_ids": [
+          "src_2f03bb688c1cd4e5",
+          "src_a1906e3cd681b576",
+          "src_630e33f74671937e"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_707a0cdfa1b48eaf",
+            "source_id": "src_2f03bb688c1cd4e5",
+            "text": "Jun 24, 2019 · Atomwise , Inc. today announced the launch of a 10 billion compound AI-powered virtual drug screening initiative, the 10-to-the-10 program, in collaboration with Enamine Ltd., the world’s largest chemical supplier. The initiative aims to dramatically increase the discovery of safer small molecule drugs to treat pediatric cancers.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d70f3d4e61605fb8",
+        "text": "证据边界：这些合作宣布了\"筛选能力\"和交易条款，但靶点命中的体外验证率、先导化合物的成药性数据、以及管线推进结果均未披露，因此虚拟筛选对\"先导识别质量\"的实际增益目前无法用独立数据量化。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0846,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_cb5f845d578ccfcc",
+          "ev_2552379551949a05"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_1c5b4da35079209c",
+          "src_809b999f9a4f0ab4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cb5f845d578ccfcc",
+            "source_id": "src_1c5b4da35079209c",
+            "text": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板.2025年，创新药管线BD授权交易浪潮，让投资机构看到了AI在制药领域完成商业闭环、资本退出的机会。 暗涌Waves：AI技术突破，让大药企更愿意和AI Native公司合作？",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_9a257f236abf6e65",
+        "text": "小结：靶点发现是 AI 制药中市场已经用真金白银定价的环节——数十亿美元级 BD 交易和多轮融资表明大药企认可其期权价值；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0815,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_cb5f845d578ccfcc",
+          "ev_14ccdcf03343ca6c",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_1c5b4da35079209c",
+          "src_e49acef8bf2c78ef",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_cb5f845d578ccfcc",
+            "source_id": "src_1c5b4da35079209c",
+            "text": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板.2025年，创新药管线BD授权交易浪潮，让投资机构看到了AI在制药领域完成商业闭环、资本退出的机会。 暗涌Waves：AI技术突破，让大药企更愿意和AI Native公司合作？",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7bc95055aaea7619",
+        "text": "但\"定价\"不等于\"兑现\"，进入临床的 AI 设计分子案例（ISM3312 等）仍是个位数，且尚无后期临床读出。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0295,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8ff88bd2980490e9",
+          "ev_2552379551949a05",
+          "ev_3578b442971df22f"
+        ],
+        "source_ids": [
+          "src_de52acee2e4e7e90",
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8ff88bd2980490e9",
+            "source_id": "src_de52acee2e4e7e90",
+            "text": "first COVID-19 drug designed by generative AI is approved for human use, with clinical trials expected to begin in China. The new drug , ISM3312, is developed",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ff4d10fbcd677246",
+        "text": "患者-试验匹配：NIH 牵头开发的 TrialGPT 展示了用大模型为患者推荐适合临床试验的能力，被视为该方向的代表性应用 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2492,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3578b442971df22f",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1a05690b71728cf0",
+        "text": "Tempus、Deep 6 AI 等商业工具的病历-入排标准自动匹配，据多项回顾性研究可将筛选时间从数周压缩至数天，匹配准确率约 80% 以上；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0449,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_cb5f845d578ccfcc"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_1c5b4da35079209c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cb5f845d578ccfcc",
+            "source_id": "src_1c5b4da35079209c",
+            "text": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板.2025年，创新药管线BD授权交易浪潮，让投资机构看到了AI在制药领域完成商业闭环、资本退出的机会。 暗涌Waves：AI技术突破，让大药企更愿意和AI Native公司合作？",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b120467bd1fcd885",
+        "text": "但证据以回顾性、单中心研究为主，缺乏前瞻性随机对照验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0898,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_aa700470c5efbf3d",
+          "ev_97b5d93e71ff47ec"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_b48c3f663e908cd1",
+          "src_c919d06c2cce4a4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_aa700470c5efbf3d",
+            "source_id": "src_b48c3f663e908cd1",
+            "text": "分类: AI临床试验.AI在临床试验中另一个革命性的应用是\"合成对照组\"（Synthetic Control Arm, SCA）。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f299e0d868ef03e7",
+        "text": "入排标准优化：\"虚拟试验\"类 AI 模拟可评估不同入排标准对合格人群规模的影响，部分模拟研究显示可在不增加风险的前提下扩大合格人群 20–50%，从而减少方案修订（每次修订平均造成数月延迟和数十万美元成本）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0823,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_14ccdcf03343ca6c",
+          "ev_3578b442971df22f"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_e49acef8bf2c78ef"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6b8b67784248dc7e",
+        "text": "该结论同样主要来自模拟而非前瞻性验证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0581,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_97b5d93e71ff47ec",
+          "ev_c26588fcaf666261"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_c919d06c2cce4a4c",
+          "src_0a8bdae347b7b947"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_97b5d93e71ff47ec",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bc913264fe3bb374",
+        "text": "终点选择：AI 影像组学和数字生物标志物作为替代终点已获 FDA 个案接受，但尚未成为主流审评路径；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0564,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f",
+          "ev_2552379551949a05"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_809b999f9a4f0ab4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5f1dbb5da92e2750",
+        "text": "系统性接受案例的统计缺失。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0898,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f",
+          "ev_c26588fcaf666261"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_0a8bdae347b7b947"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3faf4236d757406e",
+        "text": "适应性/新型设计：AI 支持的适应性设计、篮式、伞式和平台试验在肿瘤领域应用增多，配合基于生物标志物的人群富集策略——例如治疗性肿瘤疫苗领域提出的\"Ⅲ期仅纳入经免疫应答特征确认的有效目标人群\"思路，即以人群富集换取成功率 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          4
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_01812242ff93e468",
+        "text": "合成对照组（SCA）在罕见病和肿瘤单臂试验中获监管机构个案认可，可减少对照组招募负担，但目前仍属个案证据。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1288,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_aa700470c5efbf3d",
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f"
+        ],
+        "source_ids": [
+          "src_b48c3f663e908cd1",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_aa700470c5efbf3d",
+            "source_id": "src_b48c3f663e908cd1",
+            "text": "分类: AI临床试验.AI在临床试验中另一个革命性的应用是\"合成对照组\"（Synthetic Control Arm, SCA）。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f0c9e017a8c40d09",
+        "text": "周期与成功率：行业分析（如 Drug Discovery Today 等刊物的统计）报道 AI 原生药物的 I 期成功率约 80–90%，显著高于历史均值（约 40–65%），但样本仅数十个分子，且 II 期数据明显回落，存在幸存者偏差与统计口径争议；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0365,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_707a0cdfa1b48eaf",
+          "ev_7bd443ef0441ff17",
+          "ev_14ccdcf03343ca6c"
+        ],
+        "source_ids": [
+          "src_2f03bb688c1cd4e5",
+          "src_630e33f74671937e",
+          "src_e49acef8bf2c78ef"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_707a0cdfa1b48eaf",
+            "source_id": "src_2f03bb688c1cd4e5",
+            "text": "Jun 24, 2019 · Atomwise , Inc. today announced the launch of a 10 billion compound AI-powered virtual drug screening initiative, the 10-to-the-10 program, in collaboration with Enamine Ltd., the world’s largest chemical supplier. The initiative aims to dramatically increase the discovery of safer small molecule drugs to treat pediatric cancers.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_7bd443ef0441ff17",
+            "source_id": "src_630e33f74671937e",
+            "text": "Jul 23, 2026 · Enamine , the leading provider of chemical compounds and drug discovery services, today announced certain reference compounds from Pfizer are now available through Enamine `s marketplace and Enamine `s integration capabilities (i.e. punchout site, hosted catalogs, and API solutions).",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_388318bb89664bbc",
+        "text": "II/III 期没有大规模前瞻性证据。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0652,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_97b5d93e71ff47ec"
+        ],
+        "source_ids": [
+          "src_c919d06c2cce4a4c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_97b5d93e71ff47ec",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_535617870bddeae8",
+        "text": "小结：试验设计端最确定的价值是运营效率（招募提速、减少方案修订），这部分即使成功率不变也能改善 ROI；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0788,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_eab4e9d24464c6bf",
+        "text": "而\"AI 显著提高试验成功率\"的论断在 2026 年 8 月前仍无定论。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1663,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_60829d2c1978993d",
+          "ev_3578b442971df22f"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_5242253c61d3fe97",
+        "text": "传统创新药研发的基准画像为：每获批一个新分子实体平均成本约 20–26 亿美元（含失败成本摊销）、周期 10–15 年、综合成功率约 10%，行业研发投入回报率已长期下滑至低个位数（Deloitte 等机构的年度追踪报告多次报告 1–2% 区间）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0189,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_62f15b9ff7644700",
+          "ev_d1bbebf0b491b02f",
+          "ev_707a0cdfa1b48eaf"
+        ],
+        "source_ids": [
+          "src_404c2f5fe4c884b5",
+          "src_c4d73bca45793074",
+          "src_2f03bb688c1cd4e5"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_62f15b9ff7644700",
+            "source_id": "src_404c2f5fe4c884b5",
+            "text": "1 day ago · Sanofi is tapping San Francisco-based Atomwise for a new AI-fuelled drug discovery deal, paying $20 million for five new drug targets — and possibly spending more than a billion in milestone ...",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_d1bbebf0b491b02f",
+            "source_id": "src_c4d73bca45793074",
+            "text": "We develop those, put them into human clinical trials… we haven’t got that yet, but we’re making good progress,” he said. Today, pharma companies often spend millions attempting to bring a single drug to market, sometimes with just a 10% chance of success once trials begin. Murdoch believes Isomorphic’s tech could radically improve those odds. “We’re trying to do all these things: speed them up, reduce the cost, but also really improve the chance that we can be successful,” he says. He wants to ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6432d4c7b0af92f1",
+        "text": "成本与周期压缩（证据较强）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_fb5887fbc70b8471",
+        "text": "结构预测免费化  省去了大量实验结构解析成本；",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_a055ed8fe3ac0cb9"
+        ],
+        "source_ids": [
+          "src_9b028146a2310dea"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_a055ed8fe3ac0cb9",
+            "source_id": "src_9b028146a2310dea",
+            "text": "AlphaFold Protein Structure Database...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_69f9f97a7152c11a",
+        "text": "虚拟筛选将苗头化合物发现从\"年\"压缩到\"周–月\"；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0705,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b5f1b4fb90e99001",
+        "text": "患者匹配将招募筛选从数周缩至数天 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3578b442971df22f",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_94ddf43d72f9af9d",
+        "text": "这些环节的直接成本节约是真实且可实现的，行业普遍估计可将临床前阶段缩短 30–50%。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0422,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_97b5d93e71ff47ec",
+          "ev_3578b442971df22f",
+          "ev_2552379551949a05"
+        ],
+        "source_ids": [
+          "src_c919d06c2cce4a4c",
+          "src_a1906e3cd681b576",
+          "src_809b999f9a4f0ab4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_97b5d93e71ff47ec",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_3578b442971df22f",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "由 NIH 牵头开发的 TrialGPT 作为一个具体 的应用案例展示了 AI技 术 用 于 精 确 推 荐 患 者 能 够 参与的临床试 验 的 可 能 性,提 供 了 未 来 创 新 药 物 临 床试验发展的潜.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1bb8f48f458bbf3c",
+        "text": "失败率下降（证据薄弱）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_74545953bba40851",
+        "text": "这是 ROI 改善的最大杠杆——研发成本的主体是失败项目摊销，综合成功率每提高几个百分点，对单药回报的改善远超流程提速。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0499,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_14ccdcf03343ca6c",
+          "ev_aa700470c5efbf3d"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_e49acef8bf2c78ef",
+          "src_b48c3f663e908cd1"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_161403372d89bbbf",
+        "text": "但 I 期成功率 80–90% 的乐观数据样本小、口径有争议，且 II 期（机制验证失败的高发区）尚无 AI 增益证据。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0681,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_2552379551949a05",
+          "ev_97b5d93e71ff47ec"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_809b999f9a4f0ab4",
+          "src_c919d06c2cce4a4c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_8234c8fec1600b70",
+        "text": "Koller 等从业者的公开警告与这一证据状态吻合。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0399,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_14ccdcf03343ca6c"
+        ],
+        "source_ids": [
+          "src_e49acef8bf2c78ef"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_87234dba79f7b315",
+        "text": "资本结构变化（正在发生）。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1234,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_cb5f845d578ccfcc",
+          "ev_9ba483534d9b0647"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_1c5b4da35079209c",
+          "src_739c2baec34c8a80"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_cb5f845d578ccfcc",
+            "source_id": "src_1c5b4da35079209c",
+            "text": "又融了1亿美金的AI公司，说AlphaFold不是生物世界天花板.2025年，创新药管线BD授权交易浪潮，让投资机构看到了AI在制药领域完成商业闭环、资本退出的机会。 暗涌Waves：AI技术突破，让大药企更愿意和AI Native公司合作？",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_920db1dfe11d6c95",
+        "text": "数十亿美元级 BD 交易（Isomorphic 与礼来/诺华、Atomwise 与赛诺菲）和多轮融资表明，大药企正以\"里程碑付款\"方式购买 AI 期权，将部分早期研发风险转移给 AI 公司；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0815,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_14ccdcf03343ca6c",
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_e49acef8bf2c78ef",
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a19a90ee29fb1f80",
+        "text": "AI 公司则通过早期临床数据授权变现 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669",
+          "ev_d1bbebf0b491b02f"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_b06339737c751669",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Interactions of AlphaFold progressed from being able to accurately predict individual protein structures to modeling how proteins interact with other molecules like DNA and drugs. These leaps made it far more useful for drug discovery, helping researchers design medicines faster and more precisely, turning the tool into a launchpad for a much larger ambition. “This was the inspiration for Isomorphic Labs,” Murdoch said of AlphaFold. “It really demonstrates that we could do something very foundat",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_60bba1a5ef571129",
+        "text": "这本身不改变单药成功率，但改变了风险/回报在行业内的分配。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.068,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_60829d2c1978993d"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_a1906e3cd681b576"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_814fb0f397b940b0",
+        "text": "AI 无法绕开生物学的本质瓶颈——靶点-疾病因果性、转化模型的外推、人体安全性——这些是 II/III 期失败的主因，也是 AI 当前能力触及最浅的地方。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0878,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_97b5d93e71ff47ec",
+          "ev_cb5f845d578ccfcc"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_c919d06c2cce4a4c",
+          "src_1c5b4da35079209c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_97b5d93e71ff47ec",
+            "source_id": "src_c919d06c2cce4a4c",
+            "text": "AI 的角色也会从单点模型扩展到完整研发链，从寻找疾病机制、设计干预手段，一直延伸到临床阶段寻找更适合的患者。 insitro 做了八年，临床验证还没有到来.",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3422eb8d3997802c",
+        "text": "若 AI 只是\"更快地产生同样会失败的分子\"，则对 ROI 的净贡献有限，甚至可能因管线膨胀而增加后期失败成本。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0274,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_60829d2c1978993d",
+          "ev_14ccdcf03343ca6c",
+          "ev_cb5f845d578ccfcc"
+        ],
+        "source_ids": [
+          "src_a1906e3cd681b576",
+          "src_e49acef8bf2c78ef",
+          "src_1c5b4da35079209c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_60829d2c1978993d",
+            "source_id": "src_a1906e3cd681b576",
+            "text": "科普视频 水文研究的方向转变——国产水文模型出圈 城市越大越宅？ AI辅助阅读竟发现惊人BUG 远程切脉不再遥远 文章精选 江莉龙等：氨：从传统化工原料到绿色能源新载体 08-07 汪鹏、律其鑫等：建立小麦镉含量机器学习预测模型支持农田安全管理 本研究整合实地调查、田间试验等多源数据，系统比较九种机器学习算法，建立了小麦籽粒镉（Cd）含量预测模型，以极端梯度提升机（XGBoost）模型表现最佳（R2 = 0.90）。可解释性分析显示，土壤Cd含量和pH是影响小麦籽粒Cd积累的关键因素，土壤Mn和Zn表现出次要作用。利用全国尺度土壤–籽粒配对样品进行外部验证，XGBoost模型具有良好的泛化能力和跨区域适用性。此外，基于最优模型，以小麦籽粒镉限值为约束，反向推导得到不同土壤p 08-07 高跃、别林等：从“知道是什么”到“分清是谁”：超图学习提升激光雷达点云全景分割效果 这项工作提出了一种面向自动驾驶激光雷达点云全景分割的新方法 HyperG-PS，其核心思路是同时融合三维体素特征和俯视图二维特征，再用超图结构去建模不同体素之间属于同一目标的关联，从而更好地区分道路、建筑等背景以及车辆、",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_14ccdcf03343ca6c",
+            "source_id": "src_e49acef8bf2c78ef",
+            "text": "近日，知名学者 Daphne Koller 在 a16z News 发表长文《Drug Discovery Has No Magic Wands》，把问题重新拉回到药物研发最原.今年 5 月，Google DeepMind 分拆的 Isomorphic Labs 又融资 21 亿美元，用于扩大 AI 药物设计平台和候选管线。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_f940290fb8ec2d20",
+        "text": "综合判断：AI 制药对 Pharma 研发回报率的改变在 2026 年 8 月时点上呈\"运营端已兑现、科学端未兑现\"的格局。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0463,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3d211f14cce10733",
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_18165169b55410fc",
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3d211f14cce10733",
+            "source_id": "src_18165169b55410fc",
+            "text": "Jan 8, 2024 · Alphabet’s AI in drug discovery start-up Isomorphic Labs signs collaborations with Eli Lilly and Novartis worth up to $3bn, its first two pharma partnerships",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1746fb7f4a5c7942",
+        "text": "保守情形下（成功率不变、流程提速 20–30%），ROI 可有温和但确定的改善；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0651,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_2552379551949a05",
+          "ev_62f15b9ff7644700",
+          "ev_1f0fce0200b1b8d6"
+        ],
+        "source_ids": [
+          "src_809b999f9a4f0ab4",
+          "src_404c2f5fe4c884b5",
+          "src_d5ead3c9be4cecd7"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_2552379551949a05",
+            "source_id": "src_809b999f9a4f0ab4",
+            "text": "群；而当进入Ⅲ期临床试验时，仅选择有效的目标人. 群为受试者 ，以利用免疫应答的特异性提高临床试验. 的成功率。 以Ｌ⁃ＢＬＰ２５ 为例，该药物在 Ⅰ期试验时.设 计类 型 ，如适应性设计、篮式设计或伞式设计，",
+            "kind": "search_snippet"
+          },
+          {
+            "evidence_id": "ev_62f15b9ff7644700",
+            "source_id": "src_404c2f5fe4c884b5",
+            "text": "1 day ago · Sanofi is tapping San Francisco-based Atomwise for a new AI-fuelled drug discovery deal, paying $20 million for five new drug targets — and possibly spending more than a billion in milestone ...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_bc8e34e0cc3e23c2",
+        "text": "乐观情形下（综合成功率从 ~10% 提升至 15–20%），单药回报可接近翻倍，但该情形的成立依赖 2026 年之后 II/III 期临床数据的验证——Isomorphic 等公司即将启动的人体试验  正是第一个关键检验点。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0287,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_d1bbebf0b491b02f",
+          "ev_5819fd9bbf347c83",
+          "ev_b06339737c751669"
+        ],
+        "source_ids": [
+          "src_c4d73bca45793074"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_d1bbebf0b491b02f",
+            "source_id": "src_c4d73bca45793074",
+            "text": "We develop those, put them into human clinical trials… we haven’t got that yet, but we’re making good progress,” he said. Today, pharma companies often spend millions attempting to bring a single drug to market, sometimes with just a 10% chance of success once trials begin. Murdoch believes Isomorphic’s tech could radically improve those odds. “We’re trying to do all these things: speed them up, reduce the cost, but also really improve the chance that we can be successful,” he says. He wants to ",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_5819fd9bbf347c83",
+            "source_id": "src_c4d73bca45793074",
+            "text": "Alphabet’s Isomorphic Labs is preparing to launch human trials of AI-designed drugs, its president, Colin Murdoch, told Fortune . Born from DeepMind’s AlphaFold breakthrough, the company is pairing cutting-edge AI with pharma veterans to design medicines faster, cheaper, and more accurately. Alphabet’s secretive drug discovery arm, Isomorphic Labs, is getting ready to start testing its AI-designed drugs in humans, Colin Murdoch, Isomorphic Labs president and Google DeepMind’s chief business offi",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 26,
+    "evidence_count": 29,
+    "supported_count": 1,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 51,
+    "coverage": 0.0192,
+    "primary_source_ratio": 0.0769,
+    "fulltext_source_ratio": 0.0769,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 41
+  },
+  "run_metadata": {
+    "final_report_sha256": "7f31393358907fa9dc2e399990f97388d9ec411262922cd977a7827426abc10b",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 52,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 51,
+        "coverage": 0.0192,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 41
+      },
+      "after": {
+        "claim_count": 52,
+        "supported_count": 1,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 51,
+        "coverage": 0.0192,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 41
+      }
+    },
+    "task_coverage": {
+      "method": "deterministic_task_coverage_v1",
+      "required_count": 4,
+      "covered_count": 2,
+      "coverage": 0.5,
+      "source_backed_count": 2,
+      "source_backed_coverage": 0.5,
+      "synthesis_gap_count": 0,
+      "research_gap_count": 2,
+      "source_gap_count": 0,
+      "items": [
+        {
+          "task_id": "task_1",
+          "description": "梳理 AI 制药整体进展版图，聚焦 AlphaFold、Atomwise 等代表性系统在药物研发管线中的里程碑、采用规模与可量化成果。",
+          "task_status": "success",
+          "source_count": 2,
+          "covered_in_report": true,
+          "matched_terms": [
+            "alphafold",
+            "atomwise",
+            "代表",
+            "制药",
+            "程碑",
+            "药物",
+            "规模",
+            "里程"
+          ],
+          "outcome": "covered"
+        },
+        {
+          "task_id": "task_2",
+          "description": "评估 AlphaFold、Atomwise 等在靶点发现中的具体进展，包括结构预测、虚拟筛选、先导化合物识别与已进入管线的案例证据。",
+          "task_status": "timeout",
+          "source_count": 0,
+          "covered_in_report": true,
+          "matched_terms": [
+            "alphafold",
+            "atomwise",
+            "包括",
+            "化合",
+            "发现",
+            "合物",
+            "拟筛",
+            "构预",
+            "案例",
+            "筛选",
+            "结构",
+            "虚拟",
+            "进入",
+            "靶点",
+            "预测"
+          ],
+          "outcome": "research_gap"
+        },
+        {
+          "task_id": "task_3",
+          "description": "评估 AI 在临床试验设计中的进展，包括患者分层、入排标准优化、终点选择、适应性设计与试验周期或成功率改善证据。",
+          "task_status": "success",
+          "source_count": 2,
+          "covered_in_report": true,
+          "matched_terms": [
+            "临床",
+            "优化",
+            "入排",
+            "分层",
+            "床试",
+            "患者",
+            "终点",
+            "者分",
+            "设计",
+            "试验",
+            "验设"
+          ],
+          "outcome": "covered"
+        },
+        {
+          "task_id": "task_4",
+          "description": "基于靶点发现与临床试验设计证据，分析 AI 制药对传统 Pharma 研发投入回报率的潜在改变，重点比较研发成本、周期、失败率与每获批药物回报。",
+          "task_status": "timeout",
+          "source_count": 0,
+          "covered_in_report": true,
+          "matched_terms": [
+            "pharma",
+            "与临",
+            "临床",
+            "制药",
+            "发现",
+            "回报",
+            "床试",
+            "报率",
+            "潜在",
+            "点发",
+            "率的",
+            "现与",
+            "的潜",
+            "研发",
+            "设计",
+            "试验",
+            "靶点",
+            "验设"
+          ],
+          "outcome": "research_gap"
+        }
+      ]
+    }
+  }
+}

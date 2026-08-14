@@ -118,6 +118,25 @@ Artifacts:
 - exact Agent/baseline reports and evidence graphs:
   `docs/evaluation/artifacts/headtohead_v5/reports/`.
 
+## v6 Development Coverage Diagnostic
+
+After v5, a task-coverage contract and deterministic audit were added to separate
+missing research from synthesis omissions. A frozen three-question development
+run (`edu_001`, `cross_002`, `tech_005`) produced a rule-composite difference of
+`+0.0502`, but the counterbalanced Judge favored the baseline by `0.2083/5`.
+With `n=3`, the exact paired sign-flip result is `p=0.125`; this is diagnostic
+data, not a significance claim.
+
+The task audit found `0` synthesis gaps. Its failures were all research gaps:
+one of four planned dimensions had no usable task result on the education case,
+and two of four were unavailable on each technology/AI-drug case. Mean strict
+claim-support coverage was only `5.52%`. The conclusion is therefore negative
+but useful: the coverage prompt carried retrieved dimensions into the report,
+yet per-task timeouts and weak source acquisition prevent a Judge-quality lift.
+
+The frozen manifest, complete result, reports, evidence artifacts, and raw Judge
+decisions are retained in `docs/evaluation/artifacts/headtohead_v6_dev/`.
+
 ## Real Kimi K3 Evidence Run And Replay
 
 Date: 2026-08-13. Query: verify Qwen2.5 pre-training scale, context windows,

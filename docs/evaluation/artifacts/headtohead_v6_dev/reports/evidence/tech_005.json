@@ -1,0 +1,2221 @@
+{
+  "schema_version": "1.0",
+  "query": "探讨空间计算（Spatial Computing）和 Apple Vision Pro 对混合现实产业生态的影响，分析内容创作、企业应用和消费级落地的关键障碍。",
+  "created_at": "2026-08-14T06:04:11.027878+00:00",
+  "sources": [
+    {
+      "source_id": "src_0285d71b80498f16",
+      "url": "https://pbcsf.tsinghua.edu.cn/__local/2/EE/A0/687B96FC94E48CA445B7B9EACEC_70CBA5AB_255DA6.pdf",
+      "title": "Atlas of the Spatial Computing Industry 3",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.85,
+      "is_primary": true,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.787,
+        "host_domain": "pbcsf.tsinghua.edu.cn"
+      }
+    },
+    {
+      "source_id": "src_e646223fbec4a036",
+      "url": "https://gartner.com/cn/newsroom/press-releases/2025-top-strategic-tech-trends",
+      "title": "Gartner发布2025 年十大战略技术趋势 | Gartner中国",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.7717,
+        "host_domain": "gartner.com"
+      }
+    },
+    {
+      "source_id": "src_f78dc54a89bb233a",
+      "url": "https://apple.com/apple-vision-pro",
+      "title": "Apple Vision Pro - Apple",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.7109,
+        "host_domain": "apple.com"
+      }
+    },
+    {
+      "source_id": "src_950a5f1837d8d4dc",
+      "url": "https://bilibili.com/video/BV1uZ421T7cm",
+      "title": "空中手势交互+AI混音 Apple设计奖得主重塑DJ... | 哔哩哔哩",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.35,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.7565,
+        "host_domain": "bilibili.com"
+      }
+    },
+    {
+      "source_id": "src_746e3fd1c7cb87d8",
+      "url": "https://en.m.wikipedia.org/wiki/Apple_Inc.",
+      "title": "Apple Inc. - Wikipedia",
+      "source_type": "web",
+      "task_ids": [
+        "task_1",
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.2319,
+        "host_domain": "en.m.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_795f408163c7dd47",
+      "url": "https://pvision.ru/",
+      "title": "Программные продукты Professional Vision",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 混合现实 产业生态 出货量 2024 2025",
+        "retrieval_relevance": 0.2319,
+        "host_domain": "pvision.ru"
+      }
+    },
+    {
+      "source_id": "src_e557f4a978416193",
+      "url": "https://en.wikipedia.org/wiki/Internet_of_things",
+      "title": "Internet of things",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl+wikipedia_api:en",
+        "retrieval_query": "Vision Pro developer ecosystem spatial apps enterprise adoption obstacles 2025",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_6ffdc1b83e8fa621",
+      "url": "https://en.wikipedia.org/wiki/Kinect",
+      "title": "Kinect",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.6,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl+wikipedia_api:en",
+        "retrieval_query": "Vision Pro developer ecosystem spatial apps enterprise adoption obstacles 2025",
+        "retrieval_relevance": 0.5033,
+        "host_domain": "en.wikipedia.org"
+      }
+    },
+    {
+      "source_id": "src_17da69e43b9ec31f",
+      "url": "https://wd0aacz6.cn/zeng-qiang-xian-shi-ar/456.html",
+      "title": "iPhone 16e加入空间音视频苹果一直还在为Vision pro...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.86,
+        "host_domain": "wd0aacz6.cn"
+      }
+    },
+    {
+      "source_id": "src_2abe49acdf22cdf7",
+      "url": "https://m.jiemian.com/article/10686866_microcontent.html",
+      "title": "苹果Vision Pro应用商店上线，它的应用数量能赶上iOS吗？ | 界面新闻",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.86,
+        "host_domain": "m.jiemian.com"
+      }
+    },
+    {
+      "source_id": "src_02e77d2d896cdfdb",
+      "url": "https://nmsoyi.com/news/2026-06-10_2164c5.html",
+      "title": "NG大舞台：苹果Vision Pro...",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "2026",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "nmsoyi.com"
+      }
+    },
+    {
+      "source_id": "src_96ee1c81f0c5910c",
+      "url": "https://tuoluo.cn/article/detail-10128828.html",
+      "title": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？_ 陀螺科技",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "f43da274894ccbd4d4b6384b6b47eb82381c64453254f6450e252e5444d2312d",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.8133,
+        "host_domain": "tuoluo.cn"
+      }
+    },
+    {
+      "source_id": "src_422b51b5f05e44f4",
+      "url": "https://52telegram.com/?p=1202",
+      "title": "Telegram 演示 VisionOS 应用程序Telegram电报",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.79,
+        "host_domain": "52telegram.com"
+      }
+    },
+    {
+      "source_id": "src_8623f037d1b5d5cc",
+      "url": "https://cloud.tencent.com/developer/news/1217730",
+      "title": "为建立Vision Pro应用生态，苹果公司再出手 - 腾讯云开发者社区-腾讯云",
+      "source_type": "web",
+      "task_ids": [
+        "task_1"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html:curl",
+        "retrieval_query": "Vision Pro 出货量 2024 销量 苹果 visionOS 应用数量 IDC",
+        "retrieval_relevance": 0.7667,
+        "host_domain": "cloud.tencent.com"
+      }
+    },
+    {
+      "source_id": "src_df95c4ca73692ad4",
+      "url": "https://apple.com/",
+      "title": "Apple",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html",
+        "retrieval_query": "Apple Vision Pro content creation barriers spatial video production cost immersive format standards 2025",
+        "retrieval_relevance": 0.725,
+        "host_domain": "apple.com"
+      }
+    },
+    {
+      "source_id": "src_3e4ae657e794f971",
+      "url": "https://apple.com/store",
+      "title": "Apple Store Online",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 内容创作 空间视频 关键障碍 创作者",
+        "retrieval_relevance": 0.2313,
+        "host_domain": "apple.com"
+      }
+    },
+    {
+      "source_id": "src_f01715bd08ce2a9e",
+      "url": "https://account.apple.com/",
+      "title": "Manage your Apple Account",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 内容创作 空间视频 关键障碍 创作者",
+        "retrieval_relevance": 0.2313,
+        "host_domain": "account.apple.com"
+      }
+    },
+    {
+      "source_id": "src_5ad0da014a0de9d6",
+      "url": "https://support.apple.com/",
+      "title": "Official Apple Support",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:bing_html:curl",
+        "retrieval_query": "Apple Vision Pro 空间计算 内容创作 空间视频 关键障碍 创作者",
+        "retrieval_relevance": 0.2313,
+        "host_domain": "support.apple.com"
+      }
+    },
+    {
+      "source_id": "src_4501591a15a295a5",
+      "url": "https://newsletter.vp-land.com/p/inside-the-ursa-cine-immersive-blackmagic-s-answer-to-spatial-video-production",
+      "title": "Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial...",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "81eb4e75ff19411ecb3d3811c18eaeb57fdd55229df9b41e9c9e06b75dba2ead",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html",
+        "retrieval_query": "Apple Vision Pro content creation barriers spatial video production cost immersive format standards 2025",
+        "retrieval_relevance": 0.8,
+        "host_domain": "newsletter.vp-land.com"
+      }
+    },
+    {
+      "source_id": "src_8e40192b71f62db9",
+      "url": "https://tiktok.com/discover/apple-vidion-pro-immersive-video",
+      "title": "Apple Vidion Pro Immersive Video | TikTok",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html",
+        "retrieval_query": "Apple Vision Pro content creation barriers spatial video production cost immersive format standards 2025",
+        "retrieval_relevance": 0.775,
+        "host_domain": "tiktok.com"
+      }
+    },
+    {
+      "source_id": "src_cc1c48985692b218",
+      "url": "https://macrumors.com/2025/03/22/apple-still-exploring-airpods-with-cameras",
+      "title": "Apple Still Planning AirPods With Tiny Cameras - MacRumors",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "2025",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html",
+        "retrieval_query": "Apple Vision Pro content creation barriers spatial video production cost immersive format standards 2025",
+        "retrieval_relevance": 0.775,
+        "host_domain": "macrumors.com"
+      }
+    },
+    {
+      "source_id": "src_a70d7f0d2d5098a1",
+      "url": "https://apple.com.cn/",
+      "title": "Apple (中国大陆) - 官方网站",
+      "source_type": "web",
+      "task_ids": [
+        "task_2"
+      ],
+      "authors": "",
+      "year": "",
+      "publisher": "",
+      "quality_score": 0.5,
+      "is_primary": false,
+      "content_hash": "",
+      "metadata": {
+        "search_backend": "auto:ddgs:yandex+bing_html",
+        "retrieval_query": "Apple Vision Pro content creation barriers spatial video production cost immersive format standards 2025",
+        "retrieval_relevance": 0.2417,
+        "host_domain": "apple.com.cn"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_8904cb14a815b71e",
+      "source_id": "src_0285d71b80498f16",
+      "text": "此外我们有必要厘清空间计算、虚拟现实、增强现实、元宇 宙和物理现实的关系。 空间计算基于虚拟现实、增强现实、混合现 实、物联网、数字孪生、环境计算...",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "9f080fc979e8fcfed8bcc5ebcf79f7a8d62863beb5f0148891c2e4200861ae71"
+    },
+    {
+      "evidence_id": "ev_66ae2a301b134eef",
+      "source_id": "src_e646223fbec4a036",
+      "text": "混合计算（Hybrid Computing）.空间计算（Spatial Computing）. 空间计算利用增强现实和虚拟现实等技术，以数字方式增强物理世界。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "8be41722d6eef46f206ce73d1b3b5d5408a02b066bef5d9c9fc2aab0b8bd4fb3"
+    },
+    {
+      "evidence_id": "ev_402caf2c8000129c",
+      "source_id": "src_f78dc54a89bb233a",
+      "text": "More from Vision. Apple Vision Pro Support. AppleCare.Testing conducted by Apple in September 2025 using preproduction Apple Vision Pro (M5) and production Apple Vision Pro (M2) units.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "5bf76f133953610200866a079f5940cbc125d536d9ee5c066451fce603975df2"
+    },
+    {
+      "evidence_id": "ev_cc4b7639e37ac024",
+      "source_id": "src_950a5f1837d8d4dc",
+      "text": "荣获2024年Apple设计奖（空间计算类别）2D与3D交互模型的融合-互动便利性：djay巧妙地结合了2D界面的直观性和3D界面的沉浸感。全球创意工作室Studio Tendril谈品牌表达和设计创新_Microsoft Design Week 2024.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "f0ad8951c34f0053ab189a9518eb7ba56238419ea00dd8e8f5b17d2642463c94"
+    },
+    {
+      "evidence_id": "ev_c08705f4a1c18c5e",
+      "source_id": "src_746e3fd1c7cb87d8",
+      "text": "Nevertheless, the company has a large following and enjoys a high level of customer loyalty. Apple has consistently been ranked as …",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "068c0eaa00323a2a59fb85296b9554919a2ef681b953b5eaa56f56507f315e61"
+    },
+    {
+      "evidence_id": "ev_157288f8b582a0a3",
+      "source_id": "src_795f408163c7dd47",
+      "text": "Доступно в ПРО-версии: https://pvision.ru/bp-promo-pro. Для обновления используйте кнопку «Сервис» → Проверить обновление.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "c0ebd52212b38d55aa82694a72dfaa5237add99582093df1ccf2ef43b2f0031f"
+    },
+    {
+      "evidence_id": "ev_b875bf51bea8bba7",
+      "source_id": "src_e557f4a978416193",
+      "text": "central role in this information ecosystem . Just as standards play a key role on the Internet and the Web, geo- spatial standards will play a key role on",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "b4bc8c1966dc0353a0b97715e08a5ebe471ad35e7c6bf3e67cd49a4db4eba4b0"
+    },
+    {
+      "evidence_id": "ev_74a91fdfebd41f98",
+      "source_id": "src_6ffdc1b83e8fa621",
+      "text": "Retrieved February 16, 2013. \"Microsoft's Azure Kinect Developer Kit Technology Transfers to Partner Ecosystem \". TECHCOMMUNITY.MICROSOFT.COM. Retrieved November",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "adb2b4c7679fd2b9d388bdc00b9a6cfec2200122ee6a8205ac7a028865796402"
+    },
+    {
+      "evidence_id": "ev_8b30290bf50efe83",
+      "source_id": "src_17da69e43b9ec31f",
+      "text": "Vision OS App Store目前已经提供了超过2500款原生应用。 相较于6月份的2000个visionOS应用而言，在短短两个月的时间里，Vision Pro原生应用数量增加了500个，Vision Pro还兼容了150万款iPhone和iPad的应用程序。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "22102f1bc3481aef9f3597a3d7a9778ec378f739fe82282470be6c373a7bdc7e"
+    },
+    {
+      "evidence_id": "ev_55eb6f421d7941e5",
+      "source_id": "src_2abe49acdf22cdf7",
+      "text": "iPad应用，其可以作为原生visionOS应用程序运行，第三则是全新开发的visionOS应用。 苹果表示，大多数iPadOS和iOS应用程序都可以在Vision Pro上直接运行，因此开发者可将其应用程序扩展到这个新的平台。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d7d61364130498339ab82a7a09662126d3b9f2509f25274209016ebd2222da44"
+    },
+    {
+      "evidence_id": "ev_d1d4e02b52d8f43d",
+      "source_id": "src_02e77d2d896cdfdb",
+      "text": "这对于产品经理而言，意味着一片蓝海：2024年全球空间计算市场规模预计达到$128亿（IDC数据），而visionOS应用的平均开发成本仅为$15万，低于移动端$20-30万的门槛。Vision Pro的红利依赖于苹果构建的完整生态。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "6788a8979ccabaa72b4122253317dba58b49e686dfa764f355fbb84dc09174b7"
+    },
+    {
+      "evidence_id": "ev_7215d0032e96cd95",
+      "source_id": "src_96ee1c81f0c5910c",
+      "text": "英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4.5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。苹果 VisionPro 空间计算.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "3d909ce866ac5be991fddd05c16ce8a141f807f42d19b942ba7813da5991cd7e"
+    },
+    {
+      "evidence_id": "ev_b59532e1af53b4a7",
+      "source_id": "src_422b51b5f05e44f4",
+      "text": "在Telegram 上发布的视频中，9to5Mac首先注意到，Telegram 应用程序采用半透明设计，融入周围区域，这是苹果在 visionOS 中使用的设计语言。苹果预计将于 2024 年初推出 Vision Pro，即 4 月份或之前。",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "377a28553d79211d603c73eda250cce5f467cf6d3bdcd93d63e94254effc601d"
+    },
+    {
+      "evidence_id": "ev_5fb3af77f376fb48",
+      "source_id": "src_8623f037d1b5d5cc",
+      "text": "为建立Vision Pro应用生态，苹果公司再出手. 文章来源：企鹅号 - IT小埋. 举报.双剑合璧：苹果发布 VisionOS 与 Reality Composer Pro. 2023-08-14.",
+      "kind": "search_snippet",
+      "task_id": "task_1",
+      "locator": "",
+      "content_hash": "d17b345b260ef1edbb558762ea3bcce678f7fb343e8eef8a7a2b257ff567ba4d"
+    },
+    {
+      "evidence_id": "ev_0338f78aa07e652d",
+      "source_id": "src_96ee1c81f0c5910c",
+      "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就如雨后春笋般冒出，AI眼镜赛道正变得越来越拥挤。 详情可阅读： 《2026年AI眼镜盘点：新品井喷，巨头混战》 可见苹果此时再向智能眼镜产品发力也已经落后其他厂商一大截，不难理解苹果对产品研发优先级的判断和转移重心的举措。 然而实际情况却与文章传递出的Vision Pro“停止开发”“团队解散”等信息有较大出入，也许我们可以梳理一下Vision Pro的现状，看看苹果是否真的要就此“斩断”Vision Pro这三年的行业积累。 项目被传“关停”？ 苹果的空间计算平台尚未走到终局 早在2015年就有消息传出，苹果就挖来前杜比执行总裁迈克·罗克韦尔（Mike Rockwell）开始组建AR/VR研发团队，并在随后的几年间不断挖掘人才，调整其他部门高管及主管级的负责人至AR/VR设备研发部门，扩大团队规模；同时通过投资或并购活动不断扩大VR领域的布局版图。 经过多年研发测试，苹果首款MR头显终于在2023年的苹果全球开发者大会上亮相。 苹果于2024年正式发售了Vision Pro，它搭载两块1. 42英寸Micro-OLED屏幕，像素达2300万，单眼分辨率达到4K，清晰度和沉浸感是它的优势。 尽管Vision Pro是苹果全新的产品类别，但它体积笨重，需外接电池，起售价为3500美元，Vision Pro注定不可能像iPad那样一上市就大获成功。 此前9to5Mac曾在2024年的一篇关于显示屏的文章中提到： “Vision Pro的3500美元的起售价中，大约20%（约600美元）都用于支付显示屏的成本。 （这还不包括EyeSight外屏的成本）。 Omdia表示，苹果最初开始量产Vision Pro时，1. 42英寸Micro-OLED面板的成本约为每块350美元，到我们预计第二代Apple Vision Pro上市时，这些关键组件的成本可能会降低33%。 ” “目前，这些面板结构极其复杂精密，只有索尼能够生产。 此前的一些报道指出，索尼的年产能仅为100万块面板左右，因此Vision Pro的年销量潜力被限制在50万台左右。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-1",
+      "content_hash": "c20bb78a4b86d9fb7b9de0bd38c16258e77ca7708f4732e61b632d2c0abde454"
+    },
+    {
+      "evidence_id": "ev_35c4170644d4a3d4",
+      "source_id": "src_96ee1c81f0c5910c",
+      "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍是未来三年内的标杆，Vision Pro M5版上手体验》 Vision Pro M5版（图源：VR陀螺） 十月份的这次升级本来就没打算带来巨大的改变，它只是表明苹果仍在努力。 迄今为止，Vision Pro硬件产品只有一款，分别为M2和M5版。 苹果对初代硬件进行一次升级是可以接受的，但长远来看，他们显然需要在下一代硬件上做出一些重大改进。 要么推出一款在价格上更亲民的Vision Pro，要么推出配置更高的产品重新进军高端市场。 在新一款更低价更轻便的Vision Pro推出之前，苹果首要目标是尽快在智能眼镜领域站稳脚跟，加快研发“利用AI辅助人们日常生活的轻便可穿戴设备”。 这一动向也是2025年初就已决定的事实。 同时，这并不意味着苹果已经停止了对Vision Pro的所有开发工作。 最新消息指出，苹果仍在为visionOS招募开发人员，而且这款产品在市场上仍然有需求。 2025年WWDC大会上发布的visionOS 26更新 很快，苹果将在北京时间6月9日至13日在线举行年度全球开发者大会（WWDC），届时我们将看到苹果更新visionOS 27版本，加上苹果传言中研发的AI眼镜也有可能采用该系统，他们内部团队或许正在各自全力推进项目。 前不久苹果下一任CEO John Ternus和营销负责人Greg Joswiak才刚接受采访，两人都对沉浸式内容和空间计算的未来表达了信心。 VR陀螺曾整理了过去三年间，WWDC大会上公布过的Vision Pro开发教程，详情可阅读： Vision Pro中文开发教程系列视频汇总（全73课） 如果说苹果目前完全放弃了这个平台，未免过于武断。 正如开发了Markdown语言并撰写了知名科技博客《Daring Fireball》的John Gruber所指出的那样：2024年苹果宣布放弃Titan（汽车项目）时，在公司召开了一次全体员工大会来宣布这一决定，当时的首席运营官Jeff Williams和Titan项目负责人Kevin Lynch主持了12分钟的会议。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-2",
+      "content_hash": "3e82c58f88a341439907f4e82590bba3e1fef0f68503aa8f5775f7ff1ac8ced7"
+    },
+    {
+      "evidence_id": "ev_222d17d68ef2cda0",
+      "source_id": "src_96ee1c81f0c5910c",
+      "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式视频《New York City》 在Vision Pro发布之初，苹果便将沉浸式视频视为核心内容形态之一：先是宣布与迪士尼达成内容合作，并引入多个IP的3D空间电影内容；而后推出了新的视频文件格式、播放规范和分发平台，以及探索“沉浸式直播”的多视角赛事转播。 在苹果空间视频生态中，iPhone支持拍摄空间视频并在Vision Pro上查看，还与Blackmagic Design合作开发沉浸式视频拍摄设备，并更新剪辑系统。 一个月前，Blackmagic刚刚发布了售价29145美元的URSA Cine Immersive 100G，支持苹果沉浸式视频的SMPTE-2110实时输出。 从拍摄、制作、后期到分发与观看，内容生产链路开始形成闭环。 值得注意的是，目前苹果提供的沉浸式内容大多以免费形式呈现，这意味着短期目标并非直接盈利，而是验证体验、培养观看习惯，并为未来更广泛的头显生态铺路。 随着显示、拍摄与传输技术持续演进，沉浸式观赛所能带来的临场感与可接受度，只会不断提高。 高精度操作/模拟需求为主的B端场景 根据调研公司Research and Markets的一份报告显示，医疗保健领域的VR/AR市场有望在2027年内达到97. 9亿美元。 无论是实际应用渗透率还是长期市场观望，这项技术与医疗领域的融合都成为了颇为让人兴奋的点。 对于VR/AR来说，B端则是目前最好的落地场景之一。 2024年初，苹果负责Vision Pro产品线的副总裁迈克·罗克韦尔在被问及Vision Pro有哪些更“酷”的使用方式时，还特别提到了医疗、培训和教育等关键领域。 而Vision Pro的交互方式也特别适合无菌的手术台场景。 2024年，在Vision Pro的加入后，XR医疗的潜力更是被进一步挖掘了出来，海内外使用Vision Pro介入医疗手术的案例层出不穷。 2025年10月起，更有外科医生开始佩戴Vision Pro进行白内障手术。 不仅在手术室，Vision Pro也成为航空培训的得力助手。",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-3",
+      "content_hash": "99a9ea77e82bb3244ce4b54754a02583cef5245c13f15ae6f36863b212888c4d"
+    },
+    {
+      "evidence_id": "ev_3a08f3036d106d88",
+      "source_id": "src_96ee1c81f0c5910c",
+      "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未来，Vision Pro原本也有可预见的长期战略，目前，整个生态仍处于早期阶段：开发者社区正在形成，交互模式不断迭代，硬件性能验证了空间计算的可行性，只是还很难真正走向大众。 虽然销量有限，但Vision Pro的存在本身就是空间计算稳步推进的标志。 对苹果自身而言，入局AI眼镜也是寻找下一个增长引擎的重要举措。 苹果将更多资源投入更符合大众消费习惯的轻量眼镜并有意深入融合Apple Intelligence，比起更重的Vision Pro，AI眼镜有望更快普及市场。 根据陀螺研究院数据，全球AI眼镜出货量达到870万台，同比大幅增长322%；到2026年有望突破1000 万台。 苹果入局AI眼镜，空间计算的未来将越来越近。 VisionPro 空间计算 陀螺科技现已开放专栏入驻，详情请见入驻指南： https://www. tuoluo. cn/article/detail-27547. html VR陀螺专栏： https://www. tuoluo. cn/columns/a [CONTENT_TRUNCATED: 5398 chars total, showing first 5000]",
+      "kind": "full_text",
+      "task_id": "task_1",
+      "locator": "chunk-4",
+      "content_hash": "3ce4cdc02df79db679d33ffe0dc7c861d7699479e9e5b06009d195c7e5b7b405"
+    },
+    {
+      "evidence_id": "ev_cc27395fa3304769",
+      "source_id": "src_df95c4ca73692ad4",
+      "text": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fd799c67a5d0925005388073ed39f6dca6338c8c0bbd79e43f53287ba9c7e061"
+    },
+    {
+      "evidence_id": "ev_737116ff13ca668c",
+      "source_id": "src_3e4ae657e794f971",
+      "text": "Shop the latest Apple products, accessories and offers. Compare models, get expert shopping help, plus flexible payment and …",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "a8e00f95791bdf2dc84dead8b92c23ae4501b1905cf0719410a2468f481380e6"
+    },
+    {
+      "evidence_id": "ev_3934555f3a4e2ddc",
+      "source_id": "src_f01715bd08ce2a9e",
+      "text": "Your Apple Account is the account you use for all Apple services.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "ec89d2c7b7876f9ed30f2084c4499e3ad2c42641f74fda535bfa2b817f2bb61e"
+    },
+    {
+      "evidence_id": "ev_fe33cbdf78a04c40",
+      "source_id": "src_5ad0da014a0de9d6",
+      "text": "Learn more about popular features and topics, and find resources that will help you with all of your Apple products.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "fa2c17334146bfa0481e1aafb28825f8033d838f1dcada52b993915633187e64"
+    },
+    {
+      "evidence_id": "ev_c48a14bde32fd48d",
+      "source_id": "src_4501591a15a295a5",
+      "text": "Blackmagic showcased the URSA Cine Immersive camera, designed specifically for Apple Vision Pro content creation with dual 12K sensors capturing 8K per eye at 90fps through a streamlined lens space workflow.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "18c1cd2c0ca9cac11bc3ad6ba172c71e869c6b96784ea2427b530d6cf904f49b"
+    },
+    {
+      "evidence_id": "ev_51724140a1b414c1",
+      "source_id": "src_8e40192b71f62db9",
+      "text": "Apple vision Pro Immersive video footage! #learn #clip #iphone #apple #space Apple Vision Pro: Immersive Experience in Wildlife.The Apple Vision Pro transforms the way we watch motorsports, like Formula One, by creating an immersive and interactive viewing experience.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "9e1182cdeda24af81a2839f9af8b9a95c122dc2e1a8fbb4fc6d2b2ac7bab634a"
+    },
+    {
+      "evidence_id": "ev_1092284b3a215382",
+      "source_id": "src_cc1c48985692b218",
+      "text": "Apple continues to explore the idea of adding tiny cameras to future AirPods, according to Bloomberg's Mark Gurman.Kuo said the new AirPods with infrared cameras would provide an enhanced spatial audio experience with Apple's Vision Pro headset.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "69dd7a7a8f61e2d47c450c5ccc3ac0db8daf86443ec0b2aa6dc01bcd029da6ba"
+    },
+    {
+      "evidence_id": "ev_6be02b706c8d282b",
+      "source_id": "src_df95c4ca73692ad4",
+      "text": "More from Vision. Apple Vision Pro Support. AppleCare. visionOS 27 Preview.Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad (“Eligible Product”) at a Qualifying Location through September 24, 2026.",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "3a34f7c4898007f53b8a6c746107b4ec0667652f51d59b49f44c3f6af2121479"
+    },
+    {
+      "evidence_id": "ev_6b432898fc6c8826",
+      "source_id": "src_a70d7f0d2d5098a1",
+      "text": "探索 Apple 的创新世界，选购各式 iPhone、iPad、Apple Watch 和 Mac，浏览各类配件、娱乐产品，并获得相关产品的专家服务支持。",
+      "kind": "search_snippet",
+      "task_id": "task_2",
+      "locator": "",
+      "content_hash": "879e4d1bd28dbd104d644c7eac4e793eae12274e1104d76a775ef8731b097118"
+    },
+    {
+      "evidence_id": "ev_293aaecfadfaeec4",
+      "source_id": "src_4501591a15a295a5",
+      "text": "Home Posts Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Apr 15, 2025 Blackmagic showcased the URSA Cine Immersive camera, designed specifically for Apple Vision Pro content creation with dual 12K sensors capturing 8K per eye at 90fps through a streamlined lens space workflow. Camera Architecture Details The system leverages existing URSA technology with significant modifications for immersive capture. Built on the URSA 12K LF platform but utilizes two 12K sensors instead of one Custom fixed-focus, fixed-iris lens system with 180+ degree field of view Maintains full 16 stops of dynamic range at 90fps to meet Apple's Vision Pro specifications Includes built-in ND filters (2, 4, 6, and 8 stops) for exposure control Lens Space Advantage This approach maintains image quality while simplifying the post-production process significantly.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-1",
+      "content_hash": "2da7274633af5b1b98f5a217dc8b01b3df425c97a9b94b516eab147a072c6033"
+    },
+    {
+      "evidence_id": "ev_892e00512f285d96",
+      "source_id": "src_4501591a15a295a5",
+      "text": "Footage remains in circular fisheye format throughout editing and color grading Unwrapping happens in the headset rather than during post-production Factory calibration data embeds within the Blackmagic RAW file Eliminates traditional VR production steps like stereo alignment and equirectangular mapping Preserves pixel efficiency by avoiding unnecessary stretching and compression DaVinci Resolve Integration The post workflow has been designed for minimal additional steps compared to traditional video. Simple activation through the Pro Immersive Workflow feature Dedicated 3D panel allows toggling between left/right eye views Option to unlink eyes for independent color correction when needed Direct Vision OS export preset on the delivery page Works with Apple Immersive Utility for playback and sideloading Production Perspective Blackmagic’s approach represents a shift toward treating immersive content as standard production rather than specialized projects.",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-2",
+      "content_hash": "1bd440795b43126d53bc6fbca7e2bc28707a2d07f34352c1b5054206d8c556b5"
+    },
+    {
+      "evidence_id": "ev_960d48da1ceac073",
+      "source_id": "src_4501591a15a295a5",
+      "text": "The camera operates similarly to traditional cameras, with static positioning preferred Limited camera movement recommendations (one or two axes only) for viewer comfort Compatible DIT cart workflow allows simultaneous recording and playback Future updates planned for transitions, titles, power windows and spatial audio Potential applications extend beyond Vision Pro to other platforms and displays Reply Login Subscribe to participate Keep Reading View more",
+      "kind": "full_text",
+      "task_id": "task_2",
+      "locator": "chunk-3",
+      "content_hash": "492e3867f2f8e1f0498b6618e8e4936e042a3b7ccf0ee73b69787ca4db6f82ea"
+    }
+  ],
+  "audit": {
+    "claims": [
+      {
+        "claim_id": "claim_45647e9bf217ad68",
+        "text": "自 2023 年 WWDC 亮相、2024 年 2 月正式发售以来，Apple Vision Pro 以\"空间计算（Spatial Computing）\"而非\"VR/元宇宙\"的叙事切入市场，试图为混合现实产业确立一个新的平台范式。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2473,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_d1d4e02b52d8f43d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c",
+          "src_02e77d2d896cdfdb"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a1ffab88b26acad8",
+        "text": "学术层面，清华五道口相关报告将空间计算界定为基于虚拟现实、增强现实、混合现实、物联网、数字孪生与环境计算等技术融合而成的计算范式，其外延大于单一头显设备 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2542,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8904cb14a815b71e"
+        ],
+        "source_ids": [
+          "src_0285d71b80498f16"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8904cb14a815b71e",
+            "source_id": "src_0285d71b80498f16",
+            "text": "此外我们有必要厘清空间计算、虚拟现实、增强现实、元宇 宙和物理现实的关系。 空间计算基于虚拟现实、增强现实、混合现 实、物联网、数字孪生、环境计算...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e3bfae892af50a17",
+        "text": "然而两年半后的市场表现显示，该平台尚未跨越早期采用者阶段：据《金融时报》援引 IDC 数据，Vision Pro 2024 年上市首年销量约 39 万台，截至 2025 年第四季度单季出货仅约 4.5 万台，累计总销量预估约 60 万台 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.4444,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_0db11440b4321634",
+        "text": "同期苹果始终未公布官方销量与退货率，外界难以准确判断产品真实市场表现 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.5927,
+        "support_evidence_ids": [
+          "ev_35c4170644d4a3d4"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_adf62ad3172132a3",
+        "text": "以下从四个维度展开分析。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [],
+        "source_ids": [],
+        "reason": "No matching evidence chunk was retrieved.",
+        "evidence_excerpts": []
+      },
+      {
+        "claim_id": "claim_0137d6b1b9cd5949",
+        "text": "Vision Pro 的核心生态贡献在于三点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3646,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7337dbda86f56a43",
+        "text": "其一，叙事重构：苹果刻意以\"空间计算\"取代\"元宇宙\"话语，使行业关注点从虚拟世界投机转向现实空间的数字增强，这一框架已被行业报告采纳为统摄性概念 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1191,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8904cb14a815b71e"
+        ],
+        "source_ids": [
+          "src_0285d71b80498f16"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8904cb14a815b71e",
+            "source_id": "src_0285d71b80498f16",
+            "text": "此外我们有必要厘清空间计算、虚拟现实、增强现实、元宇 宙和物理现实的关系。 空间计算基于虚拟现实、增强现实、混合现 实、物联网、数字孪生、环境计算...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7b37d6ba028276aa",
+        "text": "其二，技术标杆：其双目 Micro-OLED 近 4K 级显示树立了消费级头显的画质上限，但也因此成本难以压低——苹果的策略被观察人士概括为\"不追求销量，以高价提供高品质体验\"，某种程度上更接近面向 B 端的设备，销量不佳在预期之内 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.403,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_70a6f292d6f065fc",
+        "text": "其三，生态联动：Vision Pro 可直接运行大量既有 iPhone/iPad 应用，降低了开发者的冷启动门槛，同时 iPhone 拍摄空间视频的能力将内容生产端与消费端打通。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2857,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d",
+          "ev_35c4170644d4a3d4"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_27619a2e615e98d2",
+        "text": "内容生产工具链在 2025–2026 年显著成熟。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3365,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d",
+          "ev_402caf2c8000129c"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c",
+          "src_f78dc54a89bb233a"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_230e81332ac4992c",
+        "text": "标志性事件是 Blackmagic Design 推出专为 Apple Vision Pro 内容创作设计的 URSA Cine Immersive 摄影机，采用双 12K 传感器、单眼 8K、90fps 采集规格，并于 2025 年 4 月公开展示 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.49,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_293aaecfadfaeec4",
+          "ev_892e00512f285d96",
+          "ev_960d48da1ceac073"
+        ],
+        "source_ids": [
+          "src_4501591a15a295a5"
+        ],
+        "reason": "Hybrid SUPPORTED verdict was downgraded because at least one material clause or numeric detail is absent from the supplied evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_293aaecfadfaeec4",
+            "source_id": "src_4501591a15a295a5",
+            "text": "Home Posts Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Apr 15, 2025 Blackmagic showcased the URSA Cine Immersive camera, designed specifically for Apple Vision Pro content creation with dual 12K sensors capturing 8K per eye at 90fps through a streamlined lens space workflow. Camera Architecture Details The system leverages existing URSA technology with significant modifications for",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_892e00512f285d96",
+            "source_id": "src_4501591a15a295a5",
+            "text": "Footage remains in circular fisheye format throughout editing and color grading Unwrapping happens in the headset rather than during post-production Factory calibration data embeds within the Blackmagic RAW file Eliminates traditional VR production steps like stereo alignment and equirectangular mapping Preserves pixel efficiency by avoiding unnecessary stretching and compression DaVinci Resolve Integration The post workflow has been designed for minimal additional steps compared to traditional ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_93cb3bcd2aa9d3bb",
+        "text": "苹果侧则以 Apple Immersive Video 格式和官方沉浸式内容（多与迪士尼等内容方合作）培育市场。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4375,
+        "support_evidence_ids": [
+          "ev_222d17d68ef2cda0"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_293aaecfadfaeec4",
+          "ev_35c4170644d4a3d4"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_a5c2991aa64bb18f",
+        "text": "这表明\"拍摄—制作—分发—播放\"的空间内容闭环在技术上已经跑通。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.3937,
+        "support_evidence_ids": [
+          "ev_222d17d68ef2cda0"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7d351dd9aa950fd4",
+        "text": "出货数据是生态评估中最刺眼的部分：首年 39 万台、单季滑落至 4.5 万台 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2283,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_78419b2505da9fb2",
+        "text": "值得注意的是，有分析指出其硬件年产能上限约 45 万台，若以 39 万台首年销量计，销售率约 87%，即苹果实际上接近\"产能售罄\"——供应约束与需求疲软并存 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.315,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_fe03d4a4d2729add",
+        "text": "与此同时，Mark Gurman 等报道称苹果已停止 Vision Pro 后续研发、团队转投 AI 智能眼镜，M5 版更新亦未能重振消费者兴趣；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "supported",
+        "verification_score": 0.4493,
+        "support_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_35c4170644d4a3d4"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_1d2b840a50246f5c",
+        "text": "但 VR 陀螺及 John Gruber 等指出\"停止研发\"证据不足，苹果仍在为 visionOS 招聘并推进后续系统版本 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.4537,
+        "support_evidence_ids": [
+          "ev_35c4170644d4a3d4"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Claim terms and numeric details are covered by retrieved evidence.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_750e7f6fca5489ab",
+        "text": "可以确定的是，苹果的公司重心已部分转向 AI 智能眼镜，叠加 Meta 于 2026 年初裁撤 Reality Labs 相关工作室，行业整体情绪趋于谨慎，开发者观望情绪加剧 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "supported",
+        "verification_score": 0.75,
+        "support_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0"
+        ],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0",
+          "ev_35c4170644d4a3d4"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Evidence states Apple's team was redirected toward AI smart glasses and that Meta laid off Reality Labs staff and closed VR studios earlier that year (article dated 2026), with negative sentiment spreading among developers and studios. Note the article disputes the extent of the Vision Pro shutdown ",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_19fe6d82a357ef20",
+        "text": "现有证据较明确的落地方向包括：消费端的沉浸式影视与赛事直播、企业端的医疗手术辅助与航空/工业培训模拟。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88",
+          "ev_35c4170644d4a3d4"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_57db1726efea82f4",
+        "text": "这些场景的共同特征是对显示精度敏感、对价格不敏感，恰好匹配 Vision Pro 的\"高价高质\"定位 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.181,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_edd6f079bce51302",
+        "text": "URSA Cine Immersive 这类专业级双目 8K/90fps 摄影机代表当前最高规格，但其定位是专业影视制作，个人与中小创作者难以负担 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          2
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_293aaecfadfaeec4",
+          "ev_892e00512f285d96",
+          "ev_960d48da1ceac073"
+        ],
+        "source_ids": [
+          "src_4501591a15a295a5"
+        ],
+        "reason": "Evidence confirms the URSA Cine Immersive's dual 12K sensors and 8K/90fps specs, but never claims it 'represents the current highest specification' among such cameras, and says nothing about pricing or affordability for individuals and small creators.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_293aaecfadfaeec4",
+            "source_id": "src_4501591a15a295a5",
+            "text": "Home Posts Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Apr 15, 2025 Blackmagic showcased the URSA Cine Immersive camera, designed specifically for Apple Vision Pro content creation with dual 12K sensors capturing 8K per eye at 90fps through a streamlined lens space workflow. Camera Architecture Details The system leverages existing URSA technology with significant modifications for",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_892e00512f285d96",
+            "source_id": "src_4501591a15a295a5",
+            "text": "Footage remains in circular fisheye format throughout editing and color grading Unwrapping happens in the headset rather than during post-production Factory calibration data embeds within the Blackmagic RAW file Eliminates traditional VR production steps like stereo alignment and equirectangular mapping Preserves pixel efficiency by avoiding unnecessary stretching and compression DaVinci Resolve Integration The post workflow has been designed for minimal additional steps compared to traditional ",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6ee83dbb9c41af02",
+        "text": "低端路径（iPhone 空间视频）画质与沉浸感有限，形成\"两极分化、中间缺失\"的工具格局。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.21,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_8b30290bf50efe83",
+          "ev_cc27395fa3304769"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c",
+          "src_17da69e43b9ec31f",
+          "src_df95c4ca73692ad4"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_8b30290bf50efe83",
+            "source_id": "src_17da69e43b9ec31f",
+            "text": "Vision OS App Store目前已经提供了超过2500款原生应用。 相较于6月份的2000个visionOS应用而言，在短短两个月的时间里，Vision Pro原生应用数量增加了500个，Vision Pro还兼容了150万款iPhone和iPad的应用程序。",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_3ba5c2a27db344c3",
+        "text": "内容成本与盈利闭环缺失。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2625,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e505fdde1ff7cfc0",
+        "text": "苹果官方沉浸式内容多数免费或以平台补贴形式提供，属于市场培育性质；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.3017,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ab871ac13c50eb2b",
+        "text": "第三方创作者缺乏成熟的分成与变现模式，难以覆盖双目高规格内容的制作成本。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.082,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_6240992fda38c406",
+        "text": "Apple Immersive Video 是相对封闭的自有格式，与 OpenXR 等开放标准及 Meta 生态的内容并不互通，创作者面临\"为单一低基数平台定制内容\"的风险。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1424,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_293aaecfadfaeec4",
+          "ev_51724140a1b414c1"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c",
+          "src_4501591a15a295a5",
+          "src_8e40192b71f62db9"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_293aaecfadfaeec4",
+            "source_id": "src_4501591a15a295a5",
+            "text": "Home Posts Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Inside the URSA Cine Immersive: Blackmagic's Answer to Spatial Video Production Apr 15, 2025 Blackmagic showcased the URSA Cine Immersive camera, designed specifically for Apple Vision Pro content creation with dual 12K sensors capturing 8K per eye at 90fps through a streamlined lens space workflow. Camera Architecture Details The system leverages existing URSA technology with significant modifications for",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_ecc47384140576e7",
+        "text": "出货量级（数十万台 ）决定了受众天花板，无法吸引大规模创作者进入，形成\"内容少→用户少→内容更少\"的冷启动循环。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3a08f3036d106d88",
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_cc07d621cfc97e4c",
+        "text": "场景价值验证周期长：医疗、航空培训等高价值场景已有示范案例，但多为单点试点，缺乏大规模横向复制的证据；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1795,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_d9d8cbadf8e3bee1",
+        "text": "集成成本高：将空间计算应用嵌入企业现有 IT 系统（PLM、EHR、培训管理系统）需要定制开发，而 visionOS 开发者供给有限；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2574,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_3a08f3036d106d88",
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_78826f29481a5128",
+        "text": "设备管理与合规：头显类设备涉及企业数据安全、个人隐私（眼动、空间扫描数据）及医疗等行业的监管合规，相关管理框架尚不成熟；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.125,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_db6cbdb50745afdc",
+        "text": "ROI 证据薄弱：单台 3499 美元级别的硬件投入叠加定制开发成本，需要明确的效率提升数据支撑采购决策，而目前公开的量化 ROI 研究仍属稀缺。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1225,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_15144ebd07fe126b",
+        "text": "需要说明的局限：现有可用来源对企业端的集成成本、安全合规细节与 ROI 量化数据覆盖有限，本部分后三点主要基于行业结构性分析，缺乏一手数据佐证。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1094,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_0338f78aa07e652d",
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_df0f17824b139f6a",
+        "text": "价格：3499 美元起售的定价将设备锁定在发烧友与开发者群体，大众市场渗透无从谈起；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1914,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but numeric details do not match.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_224871094b9a80b3",
+        "text": "苹果自身亦采取\"不追求销量\"的高价策略 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.375,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7dacb07e1b076e47",
+        "text": "形态与舒适度：机身重量与外接电池设计对长时间佩戴构成约束，是消费者反馈中的高频痛点。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1458,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_b8c2a87ecbd800ea",
+        "text": "杀手级应用缺失：沉浸式视频虽体验出色，但属于\"看完即走\"的被动消费，缺乏驱动日活的社交、游戏或生产力刚需应用；",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.175,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_222d17d68ef2cda0",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_7e7bc6c75bc5e5c4",
+        "text": "用户留存与退货率因苹果不公开数据而无法准确评估 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1591,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_958ad21617f02f75",
+        "text": "平台承诺的不确定性：公司重心转向 AI 眼镜及\"停止研发\"传闻（尽管存疑）直接打击消费者购买信心与开发者投入意愿 。",
+        "task_id": "final_report",
+        "cited_indices": [
+          1
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.2625,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_35c4170644d4a3d4",
+          "ev_0338f78aa07e652d",
+          "ev_222d17d68ef2cda0"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_35c4170644d4a3d4",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "” 英国《金融时报》援引的IDC数据显示，截至2025年Q4，Vision Pro仅出货4. 5万台，而2024年上市首年，Apple Vision Pro全年销量为39万台，总销量预估仅约60万台。 但假设39万台为第一年发售的实际销量，而硬件产能上限约为45万台，这意味着销售率达到了87%，超过了实际可生产的最大数量。 苹果始终未公布销量、退货率等信息，外界难以判断产品真实市场表现。 正因为Vision Pro发布初期的定位是提供高品质画面和体验的空间计算设备，成本难以压低，苹果决定不追求销量，而是以高价提供，对比其他苹果产品，销量不佳也是板上钉钉的事实。 虽然它某种程度上属于面向B端的设备，但普通消费者也能直接购买，苹果或许是期待着消费者的反馈和市场的变化。 而苹果的M5版Vision Pro则在2025年10月以一种“低调”的方式发布：产品名称不变，售价不变，外观不变，还多了双圈编织头带的新配件，佩戴体验会更加舒适，当然最大的升级无疑是M5芯片，基于Geekbench 6实测，其CPU单核跑分3128，多核跑分11151，相较于老款分别提升36%以及73%。 详情可阅读： 《仍",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_0338f78aa07e652d",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "空间计算的故事才刚开场，Vision Pro就传出“讣告”？ VR陀螺 2026-05-19 09:58 热度 6474 微信扫一扫：分享 微信里点“发现”，扫一下 二维码便可将本文分享至朋友圈 IP归属：广东 文章AI导读 一键萃取文章精髓，核心观点即刻呈现 梳理该事件的完整脉络 该文章有哪些有意思的观点或数据 大家对该事件的态度表现如何？ 文/VR陀螺 最近外媒围绕苹果Vision Pro的话题有不少，大部分讨论都直指马克·古尔曼的一篇文章。 文中提到Vision Pro的M5版本未能重振消费者对Vision Pro的兴趣，而“苹果显然已经停止了Vision Pro的研发工作，其团队也已被重新分配到苹果内部的其他团队。 团队将重点研发AI智能眼镜，最终将集成AR功能。 ” 负面的消息总是传播得很快，再结合今年年初Meta大幅裁员Reality Labs员工、关闭旗下多家VR游戏工作室和第一方VR游戏/应用项目，消极的情绪继续蔓延到开发者、工作室、企业用户和普通XR消费者。 另一方面，科技巨头纷纷入局AI眼镜、AR眼镜赛道，并加大对新品研发的投入力度，2026年才过去三分之一，新品就",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_10d0db8235d5caef",
+        "text": "空间计算作为技术范式的长期价值并不依赖于 Vision Pro 一代产品的成败 ；",
+        "task_id": "final_report",
+        "cited_indices": [
+          3
+        ],
+        "status": "not_enough_evidence",
+        "verification_score": 0.0877,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_8904cb14a815b71e"
+        ],
+        "source_ids": [
+          "src_0285d71b80498f16"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_8904cb14a815b71e",
+            "source_id": "src_0285d71b80498f16",
+            "text": "此外我们有必要厘清空间计算、虚拟现实、增强现实、元宇 宙和物理现实的关系。 空间计算基于虚拟现实、增强现实、混合现 实、物联网、数字孪生、环境计算...",
+            "kind": "search_snippet"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_36103a1b19a7d37e",
+        "text": "但短期内，混合现实产业生态的重心正在从头显向轻量化 AI 眼镜迁移，Vision Pro 的历史角色更可能定格为\"定义了体验上限的技术灯塔\"，而非引爆大众市场的\"iPhone 时刻\"。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1358,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88",
+          "ev_35c4170644d4a3d4"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      },
+      {
+        "claim_id": "claim_e154322a1e56b902",
+        "text": "对产业参与者而言，理性的策略是：企业端深耕医疗、培训等高价值垂直场景积累案例，内容端关注跨平台开放标准以对冲单一平台风险。",
+        "task_id": "final_report",
+        "cited_indices": [],
+        "status": "not_enough_evidence",
+        "verification_score": 0.1575,
+        "support_evidence_ids": [],
+        "contradiction_evidence_ids": [],
+        "candidate_evidence_ids": [
+          "ev_222d17d68ef2cda0",
+          "ev_3a08f3036d106d88",
+          "ev_0338f78aa07e652d"
+        ],
+        "source_ids": [
+          "src_96ee1c81f0c5910c"
+        ],
+        "reason": "Related evidence was found, but entailment was too weak.",
+        "evidence_excerpts": [
+          {
+            "evidence_id": "ev_222d17d68ef2cda0",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "即便真的要抛弃Vision Pro项目，更应该正式公开消息，而不是以匿名人士透露的消息泄露出来。 Vision Pro的市场会在哪里？ 尽管Vision Pro笨重的机身和昂贵的价格劝退了大部分用户，但仍有几十万用户购买了这款设备，他们又是看中了Vision Pro的哪些应用场景。 其实在实际体验中也能发现Vision Pro并非在盲目堆砌硬件，它所带来的顶级视听和高精度交互，已经击中了部分用户的刚需。 其中最直观的便是它对沉浸式视频和影视娱乐体验的巨大革新。 而在娱乐之外，高昂的客单价并未阻碍它在更具价值的B端市场落地生根，Vision Pro在医疗、企业协作等领域正展现出令人瞩目的商业潜力。 这里可以举例比较具有代表性的沉浸式视频和B端场景。 沉浸式视频为主的娱乐场景 苹果Vision Pro发布两周年，沉浸式视频一直是该平台的核心业务。 根据VR陀螺的不完全统计，截至2026年2月3日，Apple TV上的沉浸式视频（Apple Immersive Video）总数为40部，包含已预告但尚未发布的视频。 2025年内发布的苹果沉浸式视频有13部。 2026年4月新上线的苹果沉浸式",
+            "kind": "full_text"
+          },
+          {
+            "evidence_id": "ev_3a08f3036d106d88",
+            "source_id": "src_96ee1c81f0c5910c",
+            "text": "Loft Dynamics、Cineon、汉莎航空、日本航空等纷纷将VR飞行员培训扩展至Vision Pro，这款设备的高清晰度为沉浸式培训带来了更高的沉浸感。 普渡大学启用围绕苹果Vision Pro技术为主的空间计算中心，试图将该技术融入课堂和实验室，以增强学习、研究和协作，从而为半导体和制药制造等关键领域提供创新培训和劳动力发展。 前不久的NVIDIA GTC大会期间，英伟达与苹果正式公布了一项重要合作：visionOS将原生支持英伟达CloudXR。 在CloudXR 6. 0的支持下，飞行模拟器《X-Plane 12》以及赛车模拟应用《iRacing》在今年春天登陆Vision Pro，C端用户将首次在无线一体式的Vision Pro上体验原本仅高端PC可运行的硬核模拟内容，彻底告别“有线束缚+画质阉割”。 显然，这些来自医疗、航空和高校的真实反馈证明，Vision Pro绝非无人问津的“失败产品”，它在高端专业领域仍有市场。 还有成千上万的Vision Pro开发者、B端企业客户和对沉浸式体验有高需求的普通用户，他们的需求也是真实的。 写在最后 苹果似乎从不怀疑空间计算的未",
+            "kind": "full_text"
+          }
+        ]
+      }
+    ],
+    "source_count": 22,
+    "evidence_count": 30,
+    "supported_count": 6,
+    "refuted_count": 0,
+    "not_enough_evidence_count": 35,
+    "coverage": 0.1463,
+    "primary_source_ratio": 0.0455,
+    "fulltext_source_ratio": 0.0909,
+    "verification_mode": "hybrid_partial",
+    "semantic_reviewed_count": 3,
+    "semantic_candidate_count": 35
+  },
+  "run_metadata": {
+    "final_report_sha256": "740f760a322b567f190ba3e1e1bfeddbade2dedf83678c94b6e4819683339baa",
+    "evidence_revision": {
+      "attempted": false,
+      "accepted": false,
+      "reason": "Revision trigger was not met.",
+      "before": {
+        "claim_count": 41,
+        "supported_count": 6,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 35,
+        "coverage": 0.1463,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 35
+      },
+      "after": {
+        "claim_count": 41,
+        "supported_count": 6,
+        "refuted_count": 0,
+        "not_enough_evidence_count": 35,
+        "coverage": 0.1463,
+        "verification_mode": "hybrid_partial",
+        "semantic_reviewed_count": 3,
+        "semantic_candidate_count": 35
+      }
+    },
+    "task_coverage": {
+      "method": "deterministic_task_coverage_v1",
+      "required_count": 4,
+      "covered_count": 2,
+      "coverage": 0.5,
+      "source_backed_count": 2,
+      "source_backed_coverage": 0.5,
+      "synthesis_gap_count": 0,
+      "research_gap_count": 2,
+      "source_gap_count": 0,
+      "items": [
+        {
+          "task_id": "task_1",
+          "description": "梳理空间计算与 Apple Vision Pro 对混合现实产业生态的整体影响，包括平台定位、开发者生态、硬件出货与代表性应用进展。",
+          "task_status": "success",
+          "source_count": 2,
+          "covered_in_report": true,
+          "matched_terms": [
+            "apple",
+            "pro",
+            "vision",
+            "业生",
+            "产业",
+            "合现",
+            "实产",
+            "混合",
+            "现实",
+            "生态",
+            "空间",
+            "算与",
+            "计算",
+            "间计"
+          ],
+          "outcome": "covered"
+        },
+        {
+          "task_id": "task_2",
+          "description": "调研空间计算与 Apple Vision Pro 在内容创作环节的关键障碍，如 3D/空间视频生产工具、内容成本、格式标准与创作者供给。",
+          "task_status": "success",
+          "source_count": 1,
+          "covered_in_report": true,
+          "matched_terms": [
+            "apple",
+            "pro",
+            "vision",
+            "产工",
+            "创作",
+            "容创",
+            "工具",
+            "格式",
+            "生产",
+            "空间"
+          ],
+          "outcome": "covered"
+        },
+        {
+          "task_id": "task_3",
+          "description": "调研 Apple Vision Pro 与空间计算在企业应用落地中的关键障碍，包括场景价值、集成成本、安全合规、设备管理与 ROI 证据。",
+          "task_status": "timeout",
+          "source_count": 0,
+          "covered_in_report": true,
+          "matched_terms": [
+            "业应",
+            "企业",
+            "关键",
+            "应用",
+            "用落",
+            "的关",
+            "落地",
+            "键障",
+            "障碍"
+          ],
+          "outcome": "research_gap"
+        },
+        {
+          "task_id": "task_4",
+          "description": "调研 Apple Vision Pro 与空间计算在消费级落地中的关键障碍，包括价格、佩戴舒适度、续航、杀手级应用缺失与用户留存。",
+          "task_status": "timeout",
+          "source_count": 0,
+          "covered_in_report": true,
+          "matched_terms": [
+            "应用",
+            "户留",
+            "手级",
+            "杀手",
+            "消费",
+            "用户",
+            "用缺",
+            "留存",
+            "级应",
+            "缺失"
+          ],
+          "outcome": "research_gap"
+        }
+      ]
+    }
+  }
+}

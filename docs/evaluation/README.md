@@ -8,6 +8,7 @@ superseded results. See `../EXPERIMENTS.md` for interpretation and limitations.
 | `demos/catalog.json` | Verified public demo | SHA-256-bound Kimi K3 report/evidence replay available in the UI without an API key |
 | `headtohead_v5_preregistration.json` | Preregistered protocol (completed) | Frozen n=15 sample, order, model/config identity, endpoints, analysis plan, as-of date, and source hash across all 11 domains |
 | `artifacts/headtohead_v5/` | Reproducible confirmatory result (`n=15`) | Exact reports/evidence, raw Judge decisions, hashes, telemetry, and a portable result that passes the API-free auditor |
+| `artifacts/headtohead_v6_dev/` | Development coverage diagnostic (`n=3`) | Frozen three-question diagnostic for task coverage; rule gain retained, Judge regression and worker timeout bottleneck documented |
 | `artifacts/evidence_v2/` | Reproducible runtime/verifier evidence | Exact Kimi K3 report and evidence graph, deterministic replay, and source-bounded hybrid replay |
 | `artifacts/headtohead_v3/` | Development pilot (`n=1`) | Corrected Agent-versus-one-call protocol, retained reports, hashes, telemetry, and counterbalanced Judge output |
 | `artifacts/ablation_v3/` | Negative development diagnostic (`n=1`) | Real `full` versus `no_evidence` execution; no quality gain established |
