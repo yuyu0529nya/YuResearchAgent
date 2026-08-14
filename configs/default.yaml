@@ -245,7 +245,8 @@ tools:
   # 工具模块全局配置
   web_search:
     enabled: true
-    # auto 优先使用 DDGS（Yandex、DuckDuckGo），再聚合 HTML 后端并按来源质量重排
+    # auto 优先使用 DDGS（Yandex、DuckDuckGo），再聚合 HTML 后端并按来源质量重排。
+    # 可设为 openrouter，使用 OPENROUTER_API_KEY 的服务端联网检索。
     backend: "auto"
     # mock_mode: 无真实搜索 API 时返回模拟结果，用于快速调试
     mock_mode: false

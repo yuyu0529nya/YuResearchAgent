@@ -10,6 +10,7 @@
   - bing:    微软搜索 API，国内稳定，需 Azure 订阅 Key
   - bocha:   博查AI搜索，国内索引最全，面向 AI Agent 优化
   - metaso:  秘塔AI搜索，中文语义强，有 research 多轮模式
+  - openrouter: OpenRouter server-side web search, with cited source snippets
 """
 from __future__ import annotations
 
@@ -150,7 +151,7 @@ class WebSearchTool(BaseWebSearchTool):
     """真实网页搜索工具：支持 keyless 与 API 搜索后端。
 
     配置优先从 .env / .env.local 读取：
-      - SEARCH_BACKEND: auto | yahoo_html | brave_html | wikipedia | bing_html | duckduckgo | serpapi | bing | bocha | metaso
+      - SEARCH_BACKEND: auto | yahoo_html | brave_html | wikipedia | bing_html | duckduckgo | serpapi | bing | bocha | metaso | openrouter
         （默认 auto）
       - SERPAPI_KEY / SERPAPI_ENDPOINT: SerpAPI 配置
       - BING_SEARCH_KEY / BING_SEARCH_ENDPOINT: Bing API 配置
@@ -194,6 +195,14 @@ class WebSearchTool(BaseWebSearchTool):
         self.metaso_key = api_key or get_env("METASO_API_KEY")
         self.metaso_endpoint = api_endpoint or get_env("METASO_API_ENDPOINT", "https://metaso.cn/api/open/search/v2")
 
+        # OpenRouter server-side web search configuration. This reuses the
+        # existing OpenRouter account instead of requiring a separate search key.
+        self.openrouter_key = api_key or get_env("OPENROUTER_API_KEY")
+        self.openrouter_endpoint = get_env(
+            "OPENROUTER_SEARCH_ENDPOINT", "https://openrouter.ai/api/v1/chat/completions"
+        )
+        self.openrouter_model = get_env("OPENROUTER_SEARCH_MODEL", "perplexity/sonar")
+
     def _get_session(self) -> aiohttp.ClientSession:
         """获取复用的 ClientSession，避免每次搜索新建连接。"""
         if WebSearchTool._session is None or WebSearchTool._session.closed:
@@ -236,9 +245,100 @@ class WebSearchTool(BaseWebSearchTool):
             return await self._bocha_execute(query, top_n)
         if self.backend == "metaso":
             return await self._metaso_execute(query, top_n)
+        if self.backend in ("openrouter", "openrouter_web", "openrouter_search"):
+            return await self._openrouter_execute(query, top_n)
         if self.backend in ("duckduckgo", "ddg", "ddgs"):
             return await self._duckduckgo_execute(query, top_n)
         return await self._serpapi_execute(query, top_n)
+
+    async def _openrouter_execute(self, query: str, top_n: int) -> dict[str, Any]:
+        """Use OpenRouter's server-side web search and retain cited source snippets."""
+        if not self.openrouter_key:
+            raise RuntimeError(
+                "WebSearchTool (openrouter 后端) 需要 OPENROUTER_API_KEY。"
+            )
+
+        payload = {
+            "model": self.openrouter_model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "Search the web before answering. Use the retrieved sources and provide citations."
+                    ),
+                },
+                {"role": "user", "content": query},
+            ],
+            "tools": [
+                {
+                    "type": "openrouter:web_search",
+                    "parameters": {"max_results": max(1, min(top_n, 10)), "engine": "auto"},
+                }
+            ],
+            "temperature": 0,
+            "max_tokens": 1200,
+        }
+        headers = {
+            "Authorization": f"Bearer {self.openrouter_key}",
+            "Content-Type": "application/json",
+        }
+        try:
+            session = self._get_session()
+            async with session.post(
+                self.openrouter_endpoint,
+                json=payload,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=45),
+            ) as resp:
+                data = await resp.json(content_type=None)
+                if resp.status != 200:
+                    return {
+                        "query": query,
+                        "results": [],
+                        "total": 0,
+                        "error": f"OpenRouter search error: {data.get('error', resp.status)}",
+                    }
+        except Exception as exc:
+            return {
+                "query": query,
+                "results": [],
+                "total": 0,
+                "error": f"OpenRouter search network error: {type(exc).__name__}: {exc}",
+            }
+
+        results = self._openrouter_citation_results(data, top_n)
+        return {
+            "query": query,
+            "results": results,
+            "total": len(results),
+            "source": f"openrouter:{self.openrouter_model}",
+        }
+
+    @staticmethod
+    def _openrouter_citation_results(data: dict[str, Any], top_n: int) -> list[dict[str, str]]:
+        """Map OpenRouter URL-citation annotations to the common search result schema."""
+        choices = data.get("choices") or []
+        if not choices:
+            return []
+        message = choices[0].get("message") or {}
+        results: list[dict[str, str]] = []
+        seen_urls: set[str] = set()
+        for annotation in message.get("annotations") or []:
+            citation = annotation.get("url_citation") or {}
+            url = str(citation.get("url") or "").strip()
+            if not url or url in seen_urls:
+                continue
+            seen_urls.add(url)
+            results.append(
+                {
+                    "title": str(citation.get("title") or url),
+                    "url": url,
+                    "snippet": str(citation.get("content") or ""),
+                }
+            )
+            if len(results) >= top_n:
+                break
+        return results
 
     async def _auto_execute(self, query: str, top_n: int) -> dict[str, Any]:
         """Search stable keyless providers, then rerank for authority and relevance."""

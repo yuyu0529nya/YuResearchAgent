@@ -228,6 +228,43 @@ def test_ddgs_requests_are_serialized_across_parallel_workers(monkeypatch) -> No
     assert peak_active == 1
 
 
+def test_openrouter_citations_map_to_search_results() -> None:
+    payload = {
+        "choices": [
+            {
+                "message": {
+                    "annotations": [
+                        {
+                            "type": "url_citation",
+                            "url_citation": {
+                                "title": "Primary study",
+                                "url": "https://example.edu/study",
+                                "content": "A controlled evaluation of adaptive learning.",
+                            },
+                        },
+                        {
+                            "type": "url_citation",
+                            "url_citation": {
+                                "title": "Duplicate",
+                                "url": "https://example.edu/study",
+                                "content": "ignored",
+                            },
+                        },
+                    ]
+                }
+            }
+        ]
+    }
+
+    assert WebSearchTool._openrouter_citation_results(payload, 3) == [
+        {
+            "title": "Primary study",
+            "url": "https://example.edu/study",
+            "snippet": "A controlled evaluation of adaptive learning.",
+        }
+    ]
+
+
 def test_parse_yahoo_html_extracts_and_unwraps_results() -> None:
     html = """
     <div class="dd algo algo-sr">
