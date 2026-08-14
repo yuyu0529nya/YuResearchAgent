@@ -294,6 +294,7 @@ class Orchestrator:
         report = self._memory_store.get("final_report")
         snapshot["artifact"] = getattr(report, "evidence_artifact", "") if report is not None else ""
         snapshot["revision"] = getattr(report, "evidence_revision", {}) if report is not None else {}
+        snapshot["task_coverage"] = getattr(report, "task_coverage", {}) if report is not None else {}
         return snapshot
 
     def _emit_event(
@@ -1545,6 +1546,7 @@ class Orchestrator:
                 {
                     "task_id": task_id,
                     "description": str(task.description),
+                    "status": result.status.value,
                 }
             )
         return requirements
@@ -1753,8 +1755,29 @@ class Orchestrator:
             return None
 
     async def _commit_evidence_audit(self, report: ResearchReport, audit: Any) -> None:
+        from ..evidence import audit_task_coverage
+
         self._evidence_audit = audit
         report.evidence_audit = audit.to_dict(self.evidence_store.evidence)
+        report.task_coverage = audit_task_coverage(
+            report.content,
+            self._synthesis_coverage_requirements(self._all_results or self._results),
+            report.sources,
+        )
+        task_coverage = report.task_coverage
+        self._emit_event(
+            "task_coverage_snapshot",
+            f"Planned-dimension coverage is {task_coverage.get('coverage', 0.0):.1%}.",
+            {
+                "coverage": task_coverage.get("coverage", 0.0),
+                "required_count": task_coverage.get("required_count", 0),
+                "covered_count": task_coverage.get("covered_count", 0),
+                "synthesis_gap_count": task_coverage.get("synthesis_gap_count", 0),
+                "research_gap_count": task_coverage.get("research_gap_count", 0),
+                "source_gap_count": task_coverage.get("source_gap_count", 0),
+            },
+            state=OrchestratorState.EVIDENCE_REFINING,
+        )
         if audit.claims:
             evidence_factor = 0.7 + 0.3 * audit.coverage
             report.confidence = round(report.confidence * evidence_factor, 2)
@@ -1765,6 +1788,7 @@ class Orchestrator:
                 metadata={
                     "final_report_sha256": self._text_sha256(report.content),
                     "evidence_revision": report.evidence_revision,
+                    "task_coverage": report.task_coverage,
                 },
             )
         except Exception as exc:

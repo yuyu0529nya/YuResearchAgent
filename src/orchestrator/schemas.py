@@ -129,6 +129,7 @@ class ResearchReport:
         evidence_artifact: 可复现的证据图 JSON 路径。
         evidence_revision: 终审驱动修订的前后指标、哈希和验收结果。
         evidence_gap_rounds: 因证据不足触发的补充检索轮数。
+        task_coverage: 规划维度是否被来源支撑并写入报告的确定性诊断。
         run_status: complete / partial_timeout / partial_failure /
             cancelled_partial / cancelled / failed，区分完整与降级输出。
     """
@@ -144,6 +145,7 @@ class ResearchReport:
     evidence_artifact: str = ""
     evidence_revision: dict[str, Any] = field(default_factory=dict)
     evidence_gap_rounds: int = 0
+    task_coverage: dict[str, Any] = field(default_factory=dict)
     run_status: str = "complete"
 
 

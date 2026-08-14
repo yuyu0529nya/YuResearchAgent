@@ -10,6 +10,7 @@ from .schemas import (
     VerificationStatus,
 )
 from .store import EvidenceStore
+from .task_coverage import audit_task_coverage
 from .verifier import ClaimVerifier
 from .reviser import (
     EvidenceReviser,
@@ -32,6 +33,7 @@ __all__ = [
     "SourceRecord",
     "VerificationStatus",
     "audit_summary",
+    "audit_task_coverage",
     "build_evidence_gap_tasks",
     "evaluate_revision",
 ]

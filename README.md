@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-343%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-345%20passing-brightgreen.svg)](tests/unit)
 [![Evaluation](https://img.shields.io/badge/audited%20evaluation-n%3D15-2f855a.svg)](docs/evaluation/artifacts/headtohead_v5/result.json)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -64,6 +64,9 @@ a blanket claim that multi-agent reports are better on every quality dimension.
 - **Evidence-constrained synthesis**: the writer receives source title, authors,
   year, URL, source ID, and claim verdicts; it must use mapped `[N]` citations and
   generate a normalized bibliography.
+- **Planned-dimension coverage audit**: every original research task is tracked
+  through execution, source availability, and final-report coverage, separating
+  retrieval gaps from synthesis omissions.
 - **Audited revision loop**: final `REFUTED`/`NEI` claims can trigger one
   evidence-bounded edit. A deterministic gate rejects citation rebinding,
   supported-claim loss, contradiction growth, deletion gaming, or no measurable
@@ -125,7 +128,7 @@ flowchart LR
 | Synthesis | structured source catalog, verdict constraints, normalized references |
 | Post-generation | final audit, evidence-bounded revision, deterministic accept/rollback gate |
 | Runtime control | typed events, SQLite/WAL run ledger, recovery, history replay, per-run token telemetry |
-| Evaluation | rule metrics, balanced Judge sampling, paired statistics, executable ablations |
+| Evaluation | rule metrics, task-coverage diagnostics, balanced Judge sampling, paired statistics, executable ablations |
 
 ## Paper-Grounded Design
 
@@ -388,7 +391,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `343` API-free tests cover orchestration, cancellation, deadline propagation,
+- `345` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.

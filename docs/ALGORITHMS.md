@@ -196,6 +196,14 @@ Module ablations execute real configuration switches and require an evaluator
 for quality scores. Execution success is reported separately; an absent evaluator
 never produces a synthetic score of `1.0`.
 
+Each final report also receives a deterministic planned-dimension coverage audit.
+For every original planner task, it records whether the task completed, whether a
+source from that task reached the report catalog, and whether task-specific terms
+appear in the report body (excluding the bibliography). Outcomes distinguish a
+`research_gap`, `source_gap`, and `synthesis_gap`. This is an operational
+diagnostic for follow-up retrieval and report structure, not a semantic quality
+score or a replacement for the evidence verifier and counterbalanced Judge.
+
 Exact report/evidence pairs can be re-audited with `scripts/replay_evidence.py`.
 The loader verifies every retained evidence chunk against its content hash and
 the CLI can pin the SHA-256 of both input files before recomputing verdicts.

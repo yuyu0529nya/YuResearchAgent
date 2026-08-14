@@ -511,6 +511,7 @@ async def run_research_with_metadata(
         "evidence_artifact": report.evidence_artifact,
         "evidence_audit": audit,
         "evidence_revision": report.evidence_revision,
+        "task_coverage": report.task_coverage,
     }
     return final_report, metadata
 
@@ -548,6 +549,8 @@ def _format_report(report, elapsed: float) -> str:
         f"- **搜索轮数**: {report.num_searches}",
         f"- **重规划次数**: {report.num_replan}",
         f"- **证据补充轮数**: {report.evidence_gap_rounds}",
+        f"- **规划维度覆盖**: {report.task_coverage.get('coverage', 0.0):.1%} "
+        f"({report.task_coverage.get('covered_count', 0)}/{report.task_coverage.get('required_count', 0)})",
         f"- **对抗轮数**: {report.adversarial_rounds}",
         f"- **总耗时**: {elapsed:.2f} 秒",
         "",

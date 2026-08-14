@@ -117,6 +117,7 @@ class ResearchRunService:
         audit["sources"] = list(payload.get("sources") or [])
         audit["artifact"] = str(path)
         audit["revision"] = dict(payload.get("run_metadata", {}).get("evidence_revision") or {})
+        audit["task_coverage"] = dict(payload.get("run_metadata", {}).get("task_coverage") or {})
         return audit
 
     def list_history(self, limit: int = 50) -> list[dict[str, Any]]:
@@ -137,6 +138,7 @@ class ResearchRunService:
             evidence = dict(row.get("metadata", {}).get("evidence_summary") or {})
             evidence["source_count"] = int(row.get("source_count", 0) or 0)
             evidence["revision"] = dict(row.get("metadata", {}).get("evidence_revision") or {})
+            evidence["task_coverage"] = dict(row.get("metadata", {}).get("task_coverage") or {})
         return HistoryArtifact(
             row=row,
             events=events,

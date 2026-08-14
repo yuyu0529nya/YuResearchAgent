@@ -271,6 +271,13 @@ def render_evidence(evidence: dict[str, Any] | None) -> str:
         f"| 全文证据来源 | {float(evidence.get('fulltext_source_ratio', 0.0) or 0.0):.1%} |",
         f"| 缺口补充轮数 | {int(evidence.get('gap_rounds', 0) or 0)} |",
     ]
+    task_coverage = evidence.get("task_coverage") or {}
+    if task_coverage:
+        lines.append(
+            f"| 规划维度覆盖 | **{float(task_coverage.get('coverage', 0.0) or 0.0):.1%}** "
+            f"({int(task_coverage.get('covered_count', 0) or 0)}/"
+            f"{int(task_coverage.get('required_count', 0) or 0)}) |"
+        )
     unresolved = [claim for claim in claims if claim.get("status") != "supported"]
     if unresolved:
         lines.extend(["", "#### 未决 Claim", ""])
