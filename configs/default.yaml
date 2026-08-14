@@ -120,7 +120,8 @@ model:
 
 orchestrator:
   # M1: Multi-Agent Orchestrator 配置
-  # 与默认的四维研究计划对齐，避免后续维度因排队耗尽研究预算。
+  # 四维独立检索同时启动，避免前两项耗尽研究预算，导致后续维度没有执行窗口。
+  # 失败重试会使用下方的确定性退避，避免对同一 API 形成二次突发。
   max_concurrent: 4
   # 全局超时时间（秒），超过则强制终止整个研究流程
   global_timeout_seconds: 480
@@ -130,6 +131,8 @@ orchestrator:
   max_sub_questions: 4
   # 子 Agent 执行失败后的最大重试次数
   max_subagent_retries: 1
+  # 重试采用指数退避与确定性 task jitter，避免失败任务再次同时撞向同一 API。
+  subagent_retry_backoff_seconds: 1.5
   # 证据补检不得侵占最终合成和终审的保留时间
   synthesis_reserve_seconds: 130
   # 最终报告的 claim-citation 审计使用独立预算；会从合成 timeout 中预留

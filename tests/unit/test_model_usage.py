@@ -71,7 +71,7 @@ def test_policy_records_failed_calls() -> None:
     assert policy.usage_snapshot()["failed_calls"] == 1
 
 
-def test_policy_applies_request_deadline_and_allows_one_transient_retry() -> None:
+def test_policy_applies_request_deadline_and_allows_two_transient_retries() -> None:
     class _Client:
         def __init__(self) -> None:
             self.options = None
@@ -101,7 +101,7 @@ def test_policy_applies_request_deadline_and_allows_one_transient_retry() -> Non
     )
 
     assert result["content"] == "ok"
-    assert client.options == {"timeout": 7.5, "max_retries": 1}
+    assert client.options == {"timeout": 7.5, "max_retries": 2}
 
 
 def test_policy_deadline_fails_closed_when_client_cannot_enforce_it() -> None:

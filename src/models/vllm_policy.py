@@ -285,9 +285,10 @@ class VLLMPolicy:
                     raise RuntimeError(
                         "Policy client cannot enforce a request-level timeout."
                     )
-                # A bounded call must still recover from one transient transport
-                # failure. The configured request timeout remains the hard cap.
-                request_client = with_options(timeout=timeout, max_retries=1)
+                # A bounded call must still recover from brief proxy/provider
+                # transport failures. The configured request timeout remains
+                # the hard cap even when both retries are attempted.
+                request_client = with_options(timeout=timeout, max_retries=2)
             resp = request_client.chat.completions.create(**kwargs)
             usage = getattr(resp, "usage", None)
             self._record_usage(

@@ -383,6 +383,19 @@ def test_default_config_starts_all_planned_dimensions_concurrently() -> None:
     assert run_config.max_concurrent == 4
 
 
+def test_subagent_retry_delay_is_deterministic_and_bounded() -> None:
+    o = _orch()
+    o._config.subagent_retry_backoff_seconds = 1.5
+
+    first = o._subagent_retry_delay_seconds("task_1", 1)
+    second = o._subagent_retry_delay_seconds("task_1", 2)
+
+    assert first == o._subagent_retry_delay_seconds("task_1", 1)
+    assert 1.5 <= first < 1.6
+    assert second > first
+    assert second <= 12
+
+
 def test_run_config_maps_evidence_revision_controls() -> None:
     from src.core.runner import build_run_config
 

@@ -381,6 +381,9 @@ def build_run_config(config: dict):
         max_replan_rounds=config.get("orchestrator", {}).get("max_replan_rounds", 3),
         max_sub_questions=config.get("orchestrator", {}).get("max_sub_questions", 8),
         max_subagent_retries=config.get("orchestrator", {}).get("max_subagent_retries", 1),
+        subagent_retry_backoff_seconds=config.get("orchestrator", {}).get(
+            "subagent_retry_backoff_seconds", 1.5
+        ),
         enable_replan=config.get("planner", {}).get("enable_replan", True),
         enable_completeness_check=config.get("planner", {}).get("enable_completeness_check", True),
         enable_adversarial=config.get("adversarial", {}).get("enabled", True),

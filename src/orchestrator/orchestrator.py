@@ -587,6 +587,11 @@ class Orchestrator:
                                     for step in result.trajectory
                                     if step.get("role") == "tool"
                                 ),
+                                "failure_reason": (
+                                    str(result.output or "")[:300]
+                                    if result.status != AgentStatus.SUCCESS
+                                    else ""
+                                ),
                             },
                             state=OrchestratorState.DISPATCHING,
                         )
@@ -600,6 +605,12 @@ class Orchestrator:
                         logger.warning(
                             f"[Dispatch] {task_id} attempt {attempt}/{attempts} failed; retrying"
                         )
+                        # Keep retries from recreating the same burst of provider requests.
+                        # The task-specific jitter is deterministic, so test and evaluation
+                        # runs remain reproducible while concurrent workers desynchronize.
+                        retry_delay = self._subagent_retry_delay_seconds(task_id, attempt)
+                        if retry_delay > 0:
+                            await asyncio.sleep(min(retry_delay, self._remaining_seconds()))
                     return result
 
             # 并发执行本层
@@ -1442,6 +1453,15 @@ class Orchestrator:
             + self._effective_final_audit_reserve_seconds()
         )
         return max(0.0, min(float(requested_seconds), available))
+
+    def _subagent_retry_delay_seconds(self, task_id: str, attempt: int) -> float:
+        """Return bounded exponential backoff with deterministic per-task jitter."""
+        base = max(0.0, float(self._config.subagent_retry_backoff_seconds))
+        if base <= 0:
+            return 0.0
+        exponent = max(0, int(attempt) - 1)
+        jitter = int(hashlib.sha256(task_id.encode("utf-8")).hexdigest()[:2], 16) / 2550
+        return min(12.0, base * (2 ** exponent) + jitter)
 
     def _effective_synthesis_reserve_seconds(self) -> float:
         """Scale configured reserves down for intentionally short smoke runs."""
