@@ -200,6 +200,34 @@ def test_ddgs_rejects_unknown_backend_without_silent_auto_fallback() -> None:
     assert result["error"] == "Unsupported DDGS text backend(s): removed-engine"
 
 
+def test_ddgs_requests_are_serialized_across_parallel_workers(monkeypatch) -> None:
+    tool = WebSearchTool("auto")
+    active = 0
+    peak_active = 0
+
+    async def fake_unlocked(_query, _top_n, *, backend):
+        nonlocal active, peak_active
+        active += 1
+        peak_active = max(peak_active, active)
+        await asyncio.sleep(0.01)
+        active -= 1
+        return {"query": "q", "results": [], "total": 0, "source": f"ddgs:{backend}"}
+
+    monkeypatch.setattr(tool, "_ddgs_execute_unlocked", fake_unlocked)
+    monkeypatch.setenv("DDGS_MIN_INTERVAL_SECONDS", "0")
+    WebSearchTool._ddgs_last_request = 0.0
+
+    async def run_parallel() -> None:
+        await asyncio.gather(
+            tool._ddgs_execute("first", 5, backend="yandex"),
+            tool._ddgs_execute("second", 5, backend="duckduckgo"),
+        )
+
+    asyncio.run(run_parallel())
+
+    assert peak_active == 1
+
+
 def test_parse_yahoo_html_extracts_and_unwraps_results() -> None:
     html = """
     <div class="dd algo algo-sr">

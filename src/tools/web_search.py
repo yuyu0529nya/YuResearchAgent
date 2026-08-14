@@ -159,6 +159,8 @@ class WebSearchTool(BaseWebSearchTool):
     _session: aiohttp.ClientSession | None = None
     _brave_lock = threading.Lock()
     _brave_last_request = 0.0
+    _ddgs_lock = threading.Lock()
+    _ddgs_last_request = 0.0
     _known_ddgs_text_backends = frozenset(
         {
             "brave",
@@ -748,6 +750,28 @@ class WebSearchTool(BaseWebSearchTool):
                 "total": 0,
                 "error": "Unsupported DDGS text backend(s): " + ", ".join(sorted(unsupported)),
             }
+
+        # DDGS public engines throttle concurrent requests aggressively. Keep
+        # research workers concurrent, but serialize this shared provider.
+        await asyncio.to_thread(self._ddgs_lock.acquire)
+        try:
+            min_interval = float(get_env("DDGS_MIN_INTERVAL_SECONDS", "0.75") or 0.75)
+            delay = min_interval - (time.monotonic() - self._ddgs_last_request)
+            if delay > 0:
+                await asyncio.sleep(delay)
+            return await self._ddgs_execute_unlocked(query, top_n, backend=backend)
+        finally:
+            type(self)._ddgs_last_request = time.monotonic()
+            self._ddgs_lock.release()
+
+    async def _ddgs_execute_unlocked(
+        self,
+        query: str,
+        top_n: int,
+        *,
+        backend: str,
+    ) -> dict[str, Any]:
+        """Execute one DDGS request while the provider-wide rate-limit lock is held."""
 
         def _search() -> list[dict]:
             try:
