@@ -60,20 +60,24 @@ Return a JSON object with this exact structure (no markdown, no extra text):
 2. dependencies must reference existing task_id values
 3. The graph must be a DAG (no cycles)
 4. Generate no more than {max_sub_questions} sub_tasks
-5. More fundamental/information-gathering tasks should have fewer dependencies
-6. Verification tasks should depend on analysis tasks
-7. Use concise but clear descriptions
-8. CRITICAL — RELEVANCE CONSTRAINT: Each sub-task description MUST directly address the research question. If the user asks about 'internship/job application', do NOT generate tasks about 'technology trends', 'annual news summary', or 'science breakthroughs'.
-9. The search_hints field MUST contain keywords directly from the query. Do NOT invent unrelated keywords.
-10. Prefer specific, actionable queries over broad, vague ones.
-11. The runtime has a dedicated final Summarizer. Do NOT spend a sub-task on a generic synthesis, summary, or
+5. Default all search tasks to "dependencies": []. Distinct research dimensions (landscape, mechanism,
+   outcomes, adoption, risks, etc.) must start in parallel; do not make a broad landscape search a prerequisite
+   for other searches.
+6. Add a dependency only when an analyze or verify task must consume a specific completed upstream finding.
+   A search task must never depend on another task merely for ordering or context.
+7. Verification tasks may depend on analysis tasks when they verify their concrete claims.
+8. Use concise but clear descriptions
+9. CRITICAL — RELEVANCE CONSTRAINT: Each sub-task description MUST directly address the research question. If the user asks about 'internship/job application', do NOT generate tasks about 'technology trends', 'annual news summary', or 'science breakthroughs'.
+10. The search_hints field MUST contain keywords directly from the query. Do NOT invent unrelated keywords.
+11. Prefer specific, actionable queries over broad, vague ones.
+12. The runtime has a dedicated final Summarizer. Do NOT spend a sub-task on a generic synthesis, summary, or
     "combine all findings" node; use the available slots for evidence gathering or targeted verification.
-12. Treat every top-level request as a deliverable. When the question asks for an overall landscape/latest progress
+13. Treat every top-level request as a deliverable. When the question asks for an overall landscape/latest progress
     AND analysis of named dimensions, reserve one evidence-gathering task for the overall landscape (representative
     systems, milestones, benchmarks, or deployments) plus one distinct evidence-gathering sub-task for each named
     dimension whenever the task limit permits. Do not mistake the named dimensions for a complete answer to the
     overarching request. Do not merge two named dimensions merely to reserve a slot for generic analysis.
-13. Do not replace a requested deliverable with generic cross-validation. Add a verification task only when the user
+14. Do not replace a requested deliverable with generic cross-validation. Add a verification task only when the user
     explicitly requests fact-checking or when every requested deliverable already has an evidence-gathering task.
 
 ## Anti-examples (DO NOT do this)
@@ -98,6 +102,10 @@ You are an expert research planner. Some sub-tasks failed and need to be re-plan
 
 ## Reason for Failure
 {reason}
+
+## Scheduling Rule
+Failed search tasks that cover distinct research dimensions must be replanned with empty dependencies so they can
+start together. Only analyze or verify tasks may depend on a completed task whose concrete findings they consume.
 
 ## Output Format
 Return a JSON object with new sub_tasks. You may:

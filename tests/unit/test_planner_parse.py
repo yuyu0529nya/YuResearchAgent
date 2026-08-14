@@ -46,6 +46,13 @@ def test_parse_plan_tolerates_trailing_comma():
     assert len(dag) == 1
 
 
+def test_initial_prompt_requires_independent_search_dimensions() -> None:
+    prompt = _planner()._build_prompt("Compare adoption, outcomes, and risks.", "")
+
+    assert 'Default all search tasks to "dependencies": []' in prompt
+    assert "A search task must never depend on another task merely for ordering or context." in prompt
+
+
 def test_get_task_map_preserves_subtask_fields():
     raw = '{"sub_tasks":[{"task_id":"t1","task_type":"search","description":"desc-1","dependencies":[]}]}'
     p = _planner()
