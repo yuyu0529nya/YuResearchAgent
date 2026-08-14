@@ -11,6 +11,7 @@ from evaluation.preregistration import (
     audit_headtohead_artifact,
     build_preregistration,
     deterministic_stratified_question_ids,
+    evaluation_config_snapshot,
     load_preregistration,
 )
 from evaluation.protocol import (
@@ -171,6 +172,17 @@ def test_preregistration_freezes_shared_temporal_context(tmp_path: Path) -> None
         assert "fingerprint mismatch" in str(exc)
     else:
         raise AssertionError("tampered temporal context should fail")
+
+
+def test_evaluation_snapshot_records_effective_search_backend(monkeypatch) -> None:
+    monkeypatch.setenv("SEARCH_BACKEND", "openrouter")
+
+    snapshot = evaluation_config_snapshot(
+        {"tools": {"web_search": {"backend": "auto"}}},
+        "kimi",
+    )
+
+    assert snapshot["tools"]["web_search"]["effective_backend"] == "openrouter"
 
 
 def test_offline_audit_recomputes_scores_and_detects_report_tampering(

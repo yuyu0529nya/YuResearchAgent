@@ -209,7 +209,8 @@ class WebSearchTool(BaseWebSearchTool):
         """获取复用的 ClientSession，避免每次搜索新建连接。"""
         if WebSearchTool._session is None or WebSearchTool._session.closed:
             WebSearchTool._session = aiohttp.ClientSession(
-                headers={"Accept-Encoding": "gzip, deflate"}
+                headers={"Accept-Encoding": "gzip, deflate"},
+                trust_env=True,
             )
         return WebSearchTool._session
 

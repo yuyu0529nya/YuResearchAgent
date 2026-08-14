@@ -21,6 +21,7 @@ from evaluation.protocol import (
     paired_summary,
     sha256_text,
 )
+from src.utils.env_config import get_env
 
 PREREGISTRATION_SCHEMA = "headtohead-preregistration-v2"
 HEADTOHEAD_ARTIFACT_SCHEMA = "headtohead-v5-preregistered"
@@ -139,6 +140,13 @@ def evaluation_config_snapshot(
     memory = dict(config.get("memory") or {})
     memory.pop("db_path", None)
     memory["evaluation_scope"] = "unique empty session per question"
+    tools = dict(config.get("tools") or {})
+    web_search = dict(tools.get("web_search") or {})
+    configured_search_backend = str(web_search.get("backend", "auto"))
+    web_search["effective_backend"] = get_env(
+        "SEARCH_BACKEND", configured_search_backend
+    ) or configured_search_backend
+    tools["web_search"] = web_search
     return {
         "model": {
             "backend": backend,
@@ -152,7 +160,7 @@ def evaluation_config_snapshot(
         "memory": memory,
         "evidence": config.get("evidence", {}),
         "adversarial": config.get("adversarial", {}),
-        "tools": config.get("tools", {}),
+        "tools": tools,
     }
 
 
