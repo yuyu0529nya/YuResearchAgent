@@ -25,12 +25,13 @@ model:
   #   - "deepseek"  : 使用 DeepSeek API（需配置 .env 中的 DEEPSEEK_API_KEY）
   #   - "vllm"      : 使用本地 vLLM 服务（默认 http://localhost:8000/v1）
   #   - "openai"    : 使用 OpenAI API（需配置 .env 中的 OPENAI_API_KEY）
+  #   - "openrouter": 使用 OpenRouter（需配置 .env 中的 OPENROUTER_API_KEY）
   #   - "auto"      : 自动检测，优先使用已配置 API Key 的远程后端
   #
   # 所有敏感信息（API Key、URL）均从 .env / .env.local 读取，
   # 修改此 YAML 即可切换后端，无需改动源码。
   # ---------------------------------------------------------------------------
-  backend: "kimi"              # 默认后端名称（Kimi Code K3）
+  backend: "openrouter"        # 默认后端名称（OpenRouter / DeepSeek V3.1）
 
   # 以下为向后兼容的显式配置（优先级低于 .env）。
   # 推荐做法：在 .env 中配置，此处留空或注释掉。
@@ -59,6 +60,12 @@ model:
   #     避免 configs/agents/*.yaml 与此处不一致导致的配置漂移。
   # ---------------------------------------------------------------------------
   backend_sampling:
+    # OpenRouter 主模型（默认 deepseek/deepseek-chat-v3.1）
+    openrouter:
+      temperature: 0.7
+      max_tokens: 4096
+      top_p: 1.0
+
     # DeepSeek 后端的全局默认采样参数
     deepseek:
       temperature: 0.7
@@ -103,13 +110,13 @@ model:
   # （planner 4000 / summarizer 4000 等）。若留空 {}，所有模块会退回 default_policy 的全局
   # 默认 max_tokens=1024，导致 planner 的 JSON DAG 被截断、解析失败。
   backend_mapping:
-    solver: "kimi"
-    planner: "kimi"
-    summarizer: "kimi"
-    judge: "kimi"
-    red_agent: "kimi"
-    blue_agent: "kimi"
-    compressor: "kimi"
+    solver: "openrouter"
+    planner: "openrouter"
+    summarizer: "openrouter"
+    judge: "openrouter"
+    red_agent: "openrouter"
+    blue_agent: "openrouter"
+    compressor: "openrouter"
 
 orchestrator:
   # M1: Multi-Agent Orchestrator 配置

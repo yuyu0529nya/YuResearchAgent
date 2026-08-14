@@ -91,7 +91,7 @@ class ModelRouter:
 
         Args:
             backend_names: 指定要扫描的后端名称列表。为 None 时扫描全部已知后端
-                          （kimi, qwen, glm, deepseek, vllm, openai, mimo 及任何自定义前缀）。
+                          （kimi, qwen, glm, deepseek, openrouter, vllm, openai, mimo 及任何自定义前缀）。
 
         常用于"主模型用 DeepSeek，Red Agent 用 MiMo"的场景。
         """
@@ -100,7 +100,7 @@ class ModelRouter:
 
         # 默认扫描所有已知内置后端 + 环境变量中发现的自定义后端
         if backend_names is None:
-            backend_names = ["kimi", "qwen", "glm", "deepseek", "vllm", "openai", "mimo"]
+            backend_names = ["kimi", "qwen", "glm", "deepseek", "openrouter", "vllm", "openai", "mimo"]
             # 自动发现 .env 中其他以 _API_KEY 结尾的自定义后端
             for key in os.environ:
                 if key.endswith("_API_KEY"):
@@ -215,6 +215,13 @@ class ModelRouter:
             config["model_name"] = "gpt-4o"
         if name == "openai" and "base_url" not in config:
             config["base_url"] = "https://api.openai.com/v1"
+
+        # OpenRouter is OpenAI-compatible. Use a tool-capable, economical
+        # default for the multi-agent runtime; callers can override the model.
+        if name == "openrouter" and "model_name" not in config:
+            config["model_name"] = "deepseek/deepseek-chat-v3.1"
+        if name == "openrouter" and "base_url" not in config:
+            config["base_url"] = "https://openrouter.ai/api/v1"
 
         # Kimi Code 会员 API（K3）
         if name == "kimi" and "model_name" not in config:

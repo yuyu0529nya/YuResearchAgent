@@ -32,6 +32,18 @@ def test_openai_defaults(monkeypatch):
     assert "api.openai.com" in cfg["base_url"]
 
 
+def test_openrouter_defaults(monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test")
+    monkeypatch.delenv("OPENROUTER_BASE_URL", raising=False)
+    monkeypatch.delenv("OPENROUTER_MODEL", raising=False)
+
+    cfg = ModelRouter._load_backend_config("openrouter")
+
+    assert cfg["model_name"] == "deepseek/deepseek-chat-v3.1"
+    assert cfg["base_url"] == "https://openrouter.ai/api/v1"
+    assert cfg["api_key"] == "sk-or-test"
+
+
 def test_kimi_k3_defaults(monkeypatch):
     monkeypatch.setenv("KIMI_API_KEY", "sk-kimi-test")
     monkeypatch.delenv("KIMI_BASE_URL", raising=False)
