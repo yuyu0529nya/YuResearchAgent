@@ -58,6 +58,7 @@ class SummarizerAgent(BaseAgent):
         results: list[AgentResult] = context.get("results", [])
         evidence_audit: dict = context.get("evidence_audit", {}) or {}
         evidence_sources: list[dict] = context.get("evidence_sources", []) or []
+        coverage_requirements: list[dict] = context.get("coverage_requirements", []) or []
         evidence_sources = self._prioritize_evidence_sources(evidence_sources, evidence_audit)
         evidence_sources = self._select_synthesis_sources(query, evidence_sources, evidence_audit)
         cancellation_token = context.get("_cancellation_token")
@@ -104,6 +105,7 @@ class SummarizerAgent(BaseAgent):
             results,
             evidence_audit=evidence_audit,
             evidence_sources=evidence_sources,
+            coverage_requirements=coverage_requirements,
             as_of_date=as_of_date,
         )
         messages = [
@@ -445,6 +447,7 @@ class SummarizerAgent(BaseAgent):
         results: list[AgentResult],
         evidence_audit: dict | None = None,
         evidence_sources: list[dict] | None = None,
+        coverage_requirements: list[dict] | None = None,
         as_of_date: str = "",
     ) -> str:
         """构建合成 prompt，按置信度降序排列结果。"""
@@ -475,6 +478,20 @@ class SummarizerAgent(BaseAgent):
                 f"Task: {r.task_id}\n"
                 f"Output:\n{output}\n"
             )
+
+        requirements = coverage_requirements or []
+        if requirements:
+            parts.append(
+                "\n# Required Coverage Contract\n"
+                "Each item is an original research dimension. Address every item explicitly in the final report "
+                "with a dedicated section, table row, or clearly labeled paragraph. If the supplied evidence cannot "
+                "answer an item, state one concise limitation instead of silently omitting it or filling the gap from memory. "
+                "Do not render this contract in the final report."
+            )
+            for index, requirement in enumerate(requirements, 1):
+                description = re.sub(r"\s+", " ", str(requirement.get("description", ""))).strip()
+                if description:
+                    parts.append(f"{index}. {description}")
 
         sources = self._collect_sources(results, evidence_sources)
         if sources:
@@ -564,8 +581,9 @@ class SummarizerAgent(BaseAgent):
             "1. Directly write the synthesized report based on the findings above. Do NOT say 'I will synthesize'.\n"
             "2. Respect the user's requested length. Otherwise target 2200-3500 Chinese characters or 1200-1800 English words.\n"
             "3. Mirror every explicit dimension in the question. For comparison questions, give one concise side-by-side "
-            "table near the start, then analyze the causes and implications without repeating the table. Prefer direct, "
-            "specific findings over generic background.\n"
+            "table near the start, then analyze the causes and implications without repeating the table. Satisfy every "
+            "item in the Required Coverage Contract before adding generic background. Prefer direct, specific findings "
+            "over generic background.\n"
             "4. Resolve any contradictions between sources.\n"
             "4b. When the semantic Claim-level Evidence Audit is available, treat it as a hard constraint: state "
             "SUPPORTED claims as facts only with their mapped source numbers; qualify or omit NOT_ENOUGH_EVIDENCE "

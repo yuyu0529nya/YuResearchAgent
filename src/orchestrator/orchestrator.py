@@ -104,6 +104,10 @@ class Orchestrator:
         self._all_results: list[AgentResult] = []
         self._dag: DAG | None = None
         self._task_map: dict[str, SubTask] = {}
+        # Plans are replaced during gap filling and replanning. Keep the original
+        # task descriptions so synthesis can still account for every requested
+        # research dimension.
+        self._task_history: dict[str, SubTask] = {}
         self._current_state = OrchestratorState.IDLE
         self._query: str = ""
         self._config: RunConfig = RunConfig()
@@ -154,6 +158,7 @@ class Orchestrator:
         self._all_results.clear()
         self._dag = None
         self._task_map.clear()
+        self._task_history.clear()
         self._current_state = OrchestratorState.IDLE
         with self._event_lock:
             self._event_sequence = 0
@@ -427,6 +432,7 @@ class Orchestrator:
             if not self._task_map:
                 # 降级：如果解析失败，使用占位符
                 self._task_map = self._rebuild_task_map_from_dag()
+            self._task_history.update(self._task_map)
         except PlanParseError as e:
             logger.warning(f"[Planning] Failed: {e}")
             return OrchestratorState.FAILED
@@ -849,6 +855,7 @@ class Orchestrator:
             "query": self._query,
             "as_of_date": self._config.as_of_date,
             "results": synthesis_results,
+            "coverage_requirements": self._synthesis_coverage_requirements(raw_synthesis_results),
             "evidence_audit": (
                 self._evidence_audit.to_dict(self.evidence_store.evidence)
                 if self._evidence_audit is not None and self.evidence_store is not None
@@ -1346,6 +1353,7 @@ class Orchestrator:
             self._task_map = self.planner.get_task_map_from_dag(self._dag, self.planner._last_raw_json)
             if not self._task_map:
                 self._task_map = self._rebuild_task_map_from_dag()
+            self._task_history.update(self._task_map)
             # 清空上一轮结果（保留在 memory 中，新任务可通过 context_keys 引用）
             self._results = []
         except PlanParseError as e:
@@ -1464,6 +1472,7 @@ class Orchestrator:
             dag.add_node(task.task_id)
         self._dag = dag
         self._task_map = {task.task_id: task for task in tasks}
+        self._task_history.update(self._task_map)
         self._results = []
         self._evidence_gap_rounds = round_index
         logger.info(
@@ -1515,6 +1524,30 @@ class Orchestrator:
             for result in (self._all_results or self._results)
             if result.status == AgentStatus.SUCCESS and result.output
         ]
+
+    def _synthesis_coverage_requirements(
+        self,
+        results: list[AgentResult],
+    ) -> list[dict[str, str]]:
+        """Return original research tasks that the final report must address."""
+
+        requirements: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for result in results:
+            task_id = str(result.task_id or "")
+            if not task_id or task_id in seen or task_id.startswith("evidence_gap_"):
+                continue
+            task = self._task_history.get(task_id)
+            if task is None or not task.description:
+                continue
+            seen.add(task_id)
+            requirements.append(
+                {
+                    "task_id": task_id,
+                    "description": str(task.description),
+                }
+            )
+        return requirements
 
     def _build_partial_report(
         self,

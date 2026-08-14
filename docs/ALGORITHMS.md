@@ -233,8 +233,10 @@ not store API keys or report bodies. On process restart, nonterminal rows become
   task-general tool loop.
 - ReSum-GRPO or an online update from research trajectories to the live policy.
 - DeepResearch Bench II's 9,430 expert-reviewed binary rubrics.
-- A statistically valid rerun of Agent versus single-shot under the corrected
-  ResearchBench v2 metric contract.
+- A new preregistered confirmatory rerun after post-v5 improvements. The
+  corrected ResearchBench v2 Agent-versus-single-shot comparison is complete
+  (`n=15`) and independently audited; its remaining limitation is weak strict
+  claim support rather than an absent statistical rerun.
 
 These boundaries are intentional: they define the next experiments instead of
 being hidden behind architecture labels.

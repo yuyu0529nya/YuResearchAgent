@@ -62,6 +62,22 @@ def test_synthesis_prompt_includes_bounded_source_evidence_without_guessing_host
     assert "A hosting domain is not necessarily" in prompt
 
 
+def test_synthesis_prompt_includes_required_coverage_contract() -> None:
+    prompt = _agent()._build_synthesis_prompt(
+        "Compare retrieval systems by accuracy and latency",
+        [_result([], tid="task_1")],
+        coverage_requirements=[
+            {"task_id": "task_1", "description": "Compare answer accuracy across the requested systems."},
+            {"task_id": "task_2", "description": "Compare latency and operating trade-offs."},
+        ],
+    )
+
+    assert "# Required Coverage Contract" in prompt
+    assert "Compare answer accuracy across the requested systems." in prompt
+    assert "Compare latency and operating trade-offs." in prompt
+    assert "Satisfy every item in the Required Coverage Contract" in prompt
+
+
 def test_collect_paper_keeps_authors_and_year():
     r = _result([{"role": "tool", "result": {"papers": [
         {"title": "Attention Is All You Need",
