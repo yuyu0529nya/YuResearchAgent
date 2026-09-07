@@ -54,3 +54,18 @@ The command is API-free. It recomputes rule scores, evidence metrics, and paired
 statistics from retained artifacts and rejects hash, schedule, prompt,
 configuration, or implementation drift. The committed result returns 15/15
 complete pairs, zero errors, and zero warnings.
+
+## Matched-Budget Baseline
+
+The historical v5 baseline is a one-call model without retrieval. To isolate
+orchestration from tool access, run the single retrieval-equipped worker below
+with the same model backend, tool budget, timeout, question set, and as-of date
+as the multi-agent system. This is an evaluation endpoint, not a new quality
+claim; results must be preregistered before paid execution.
+
+```bash
+python scripts/run_matched_budget_baseline.py \
+  --query "your frozen research question" \
+  --max-tool-calls 4 \
+  --timeout 240
+```

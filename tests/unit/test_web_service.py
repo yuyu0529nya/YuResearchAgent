@@ -85,3 +85,17 @@ def test_research_service_streams_and_persists_without_gradio(tmp_path: Path) ->
     history = service.load_history(row["run_id"])
     assert history is not None
     assert history.report == "# test query"
+
+
+def test_research_service_scopes_history_and_cancellation_by_owner(tmp_path: Path) -> None:
+    service = ResearchRunService(tmp_path)
+    service.store.create_run(
+        "alice-run", query="a", backend="kimi", adversarial=False, owner_id="alice"
+    )
+    service.store.create_run(
+        "bob-run", query="b", backend="kimi", adversarial=False, owner_id="bob"
+    )
+
+    assert [row["run_id"] for row in service.list_history(owner_id="alice")] == ["alice-run"]
+    assert service.load_history("bob-run", owner_id="alice") is None
+    assert service.request_cancel("bob-run", owner_id="alice") == "missing"

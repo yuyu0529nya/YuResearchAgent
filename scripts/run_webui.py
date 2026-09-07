@@ -13,6 +13,7 @@ if str(PROJECT_ROOT) not in sys.path:
 import gradio as gr
 
 from src.core.runner import setup_logging
+from src.utils.env_config import get_env, get_env_bool
 from src.runtime.presentation import (
     history_choices,
     render_evidence,
@@ -28,6 +29,17 @@ _DEMOS = DemoCatalog(
     PROJECT_ROOT,
     "docs/evaluation/demos/catalog.json",
 )
+
+
+def _owner_id(request=None) -> str:
+    """Derive a stable history/cancellation scope from Gradio's request."""
+    username = getattr(request, "username", None)
+    if username:
+        return f"user:{str(username)[:160]}"
+    session_hash = getattr(request, "session_hash", None)
+    if session_hash:
+        return f"session:{str(session_hash)[:160]}"
+    return "local"
 
 _APP_CSS = """
 .gradio-container { max-width: 1480px !important; }
@@ -54,8 +66,8 @@ button, textarea, input { border-radius: 6px !important; }
 """
 
 
-def _request_cancel(run_id: str):
-    outcome = _SERVICE.request_cancel(run_id)
+def _request_cancel(run_id: str, request: gr.Request | None = None):
+    outcome = _SERVICE.request_cancel(run_id, owner_id=_owner_id(request))
     if outcome == "requested":
         return "`STOPPING` 当前调用结束后停止，并保留已完成结果。", gr.update(interactive=False)
     if outcome == "terminal":
@@ -63,7 +75,12 @@ def _request_cancel(run_id: str):
     return "没有可停止的运行。", gr.update(interactive=False)
 
 
-def do_research_stream(query: str, backend: str, use_adversarial: bool):
+def do_research_stream(
+    query: str,
+    backend: str,
+    use_adversarial: bool,
+    request: gr.Request | None = None,
+):
     """Project framework-neutral run updates into Gradio component values."""
     query = str(query or "").strip()
     if not query:
@@ -79,7 +96,12 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
         )
         return
 
-    for update in _SERVICE.stream(query, backend, bool(use_adversarial)):
+    for update in _SERVICE.stream(
+        query,
+        backend,
+        bool(use_adversarial),
+        owner_id=_owner_id(request),
+    ):
         status = str(update.view.get("status") or "running")
         stopping = status == "cancelling"
         notice = ""
@@ -105,8 +127,8 @@ def do_research_stream(query: str, backend: str, use_adversarial: bool):
         )
 
 
-def _load_history_run(run_id: str):
-    artifact = _SERVICE.load_history(str(run_id or ""))
+def _load_history_run(run_id: str, request: gr.Request | None = None):
+    artifact = _SERVICE.load_history(str(run_id or ""), owner_id=_owner_id(request))
     if artifact is None:
         return "暂无运行记录。", "", _EVIDENCE_INIT, None
     return (
@@ -117,11 +139,24 @@ def _load_history_run(run_id: str):
     )
 
 
-def _refresh_history(selected_run_id: str = ""):
-    choices = history_choices(_SERVICE.list_history(limit=50))
+def _refresh_history(
+    selected_run_id: str = "",
+    request: gr.Request | None = None,
+):
+    owner_id = _owner_id(request)
+    choices = history_choices(_SERVICE.list_history(limit=50, owner_id=owner_id))
     available = {value for _, value in choices}
     selected = selected_run_id if selected_run_id in available else (choices[0][1] if choices else None)
-    summary, report, evidence, download = _load_history_run(selected or "")
+    artifact = _SERVICE.load_history(selected or "", owner_id=owner_id)
+    if artifact is None:
+        summary, report, evidence, download = "暂无运行记录。", "", _EVIDENCE_INIT, None
+    else:
+        summary, report, evidence, download = (
+            render_history_summary(artifact.row, artifact.events),
+            artifact.report,
+            render_evidence(artifact.evidence),
+            artifact.download_path,
+        )
     return gr.update(choices=choices, value=selected), summary, report, evidence, download
 
 
@@ -350,9 +385,21 @@ if __name__ == "__main__":
     recovered = _SERVICE.recover_interrupted()
     if recovered:
         print(f"Recovered {recovered} interrupted run(s) in the local ledger.")
+    public_mode = get_env_bool("GRADIO_PUBLIC", False)
+    username = get_env("GRADIO_USERNAME")
+    password = get_env("GRADIO_PASSWORD")
+    if public_mode and not (username and password):
+        raise RuntimeError(
+            "GRADIO_PUBLIC=true requires GRADIO_USERNAME and GRADIO_PASSWORD"
+        )
+    launch_kwargs = {
+        "server_name": "127.0.0.1",
+        "server_port": 7860,
+        "theme": gr.themes.Soft(primary_hue="emerald", neutral_hue="gray"),
+        "css": _APP_CSS,
+    }
+    if username and password:
+        launch_kwargs["auth"] = (username, password)
     build_ui().queue(default_concurrency_limit=4).launch(
-        server_name="127.0.0.1",
-        server_port=7860,
-        theme=gr.themes.Soft(primary_hue="emerald", neutral_hue="gray"),
-        css=_APP_CSS,
+        **launch_kwargs,
     )

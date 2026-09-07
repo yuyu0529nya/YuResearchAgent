@@ -157,7 +157,6 @@ class WebSearchTool(BaseWebSearchTool):
       - BING_SEARCH_KEY / BING_SEARCH_ENDPOINT: Bing API 配置
     """
 
-    _session: aiohttp.ClientSession | None = None
     _brave_lock = threading.Lock()
     _brave_last_request = 0.0
     _ddgs_lock = threading.Lock()
@@ -204,26 +203,30 @@ class WebSearchTool(BaseWebSearchTool):
         self.openrouter_model = (
             get_env("OPENROUTER_SEARCH_MODEL") or "openai/gpt-4.1-mini"
         )
+        # Each WebSearchTool is owned by one asyncio.run() lifecycle. A
+        # class-level session can be attached to a different event loop and
+        # can be closed by an unrelated concurrent run.
+        self._session: aiohttp.ClientSession | None = None
 
     def _get_session(self) -> aiohttp.ClientSession:
         """获取复用的 ClientSession，避免每次搜索新建连接。"""
-        if WebSearchTool._session is None or WebSearchTool._session.closed:
-            WebSearchTool._session = aiohttp.ClientSession(
+        if self._session is None or self._session.closed:
+            self._session = aiohttp.ClientSession(
                 headers={"Accept-Encoding": "gzip, deflate"},
                 trust_env=True,
             )
-        return WebSearchTool._session
+        return self._session
 
-    @classmethod
-    async def close_session(cls) -> None:
-        """关闭类级别的共享 session。应在程序退出前调用。"""
-        if cls._session is not None and not cls._session.closed:
-            await cls._session.close()
-            cls._session = None
+    async def close_session(self) -> None:
+        """关闭当前工具实例的 session。应在运行结束前调用。"""
+        if self._session is not None and not self._session.closed:
+            await self._session.close()
+        self._session = None
 
     def __del__(self):
         """析构时尝试关闭 session（同步环境回退）。"""
-        if WebSearchTool._session is not None and not WebSearchTool._session.closed:
+        session = getattr(self, "_session", None)
+        if session is not None and not session.closed:
             try:
                 loop = asyncio.get_running_loop()
                 loop.create_task(self.close_session())

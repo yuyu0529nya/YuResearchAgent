@@ -72,7 +72,9 @@ class VLLMPolicy:
     ):
         # 显式设置每次请求超时与重试上限：防止单个调用卡在限流重试中无限挂起
         # （此前无超时 → 配合"全局超时仅在状态间检查"会导致整轮跑失控）
-        raw_client = OpenAI(base_url=base_url, api_key=api_key, timeout=120.0, max_retries=2)
+        # Retries belong to the orchestrator, which owns the total task
+        # deadline. SDK-level retries would silently multiply that budget.
+        raw_client = OpenAI(base_url=base_url, api_key=api_key, timeout=120.0, max_retries=0)
         # 如果 LangSmith 追踪开启，自动包装 client 以追踪所有 LLM 调用
         from ..utils.tracing import maybe_wrap_openai_client
         self.client = maybe_wrap_openai_client(raw_client)
@@ -206,8 +208,8 @@ class VLLMPolicy:
         """Call the provider with a request-level deadline and no SDK retries.
 
         ``asyncio.wait_for(asyncio.to_thread(...))`` stops awaiting a sync call
-        but cannot stop its worker thread. Callers with a state-machine budget
-        use this method so the underlying HTTP request also terminates.
+        but cannot stop its worker thread. The OpenAI client still enforces the
+        request timeout; retry ownership remains with the state machine.
         """
         return self._call(messages, request_timeout_seconds=timeout_seconds)
 
@@ -285,10 +287,9 @@ class VLLMPolicy:
                     raise RuntimeError(
                         "Policy client cannot enforce a request-level timeout."
                     )
-                # A bounded call must still recover from brief proxy/provider
-                # transport failures. The configured request timeout remains
-                # the hard cap even when both retries are attempted.
-                request_client = with_options(timeout=timeout, max_retries=2)
+                # Retry decisions stay in the orchestrator so one request
+                # cannot consume the same deadline multiple times.
+                request_client = with_options(timeout=timeout, max_retries=0)
             resp = request_client.chat.completions.create(**kwargs)
             usage = getattr(resp, "usage", None)
             self._record_usage(

@@ -47,6 +47,11 @@ class _BrowserTool:
         return "Official full policy text with sufficient evidence."[:max_chars]
 
 
+class _EmptySearchTool(_SearchTool):
+    async def execute(self, query: str) -> dict:
+        return {"query": query, "results": [{"title": "No excerpt", "url": "https://example.com"}]}
+
+
 class _AcademicTool:
     name = "arxiv_reader"
 
@@ -171,6 +176,57 @@ def test_researcher_forces_initial_retrieval_when_model_skips_tool_use() -> None
     assert [step.get("name") for step in result.trajectory if step.get("role") == "tool"] == [
         "web_search"
     ]
+
+
+def test_researcher_keeps_last_slot_for_initial_search_when_browser_is_available() -> None:
+    policy = _SkipsInitialToolPolicy()
+    agent = ResearcherAgent(
+        name="researcher",
+        policy=policy,
+        tools=[_SearchTool(), _BrowserTool()],
+        max_turns=4,
+        max_tool_calls=1,
+    )
+
+    result = asyncio.run(
+        agent.run(
+            SubTask(task_id="search", task_type=TaskType.SEARCH, description="research policy"),
+            {"query": "research policy"},
+        )
+    )
+
+    assert result.status == AgentStatus.SUCCESS
+    assert [step.get("name") for step in result.trajectory if step.get("role") == "tool"] == [
+        "web_search"
+    ]
+
+
+def test_researcher_rejects_empty_search_as_success() -> None:
+    policy = _SkipsInitialToolPolicy()
+    agent = ResearcherAgent(
+        name="researcher",
+        policy=policy,
+        tools=[_EmptySearchTool()],
+        max_turns=4,
+        max_tool_calls=1,
+    )
+
+    result = asyncio.run(
+        agent.run(
+            SubTask(task_id="search", task_type=TaskType.SEARCH, description="research policy"),
+            {"query": "research policy"},
+        )
+    )
+
+    assert result.status == AgentStatus.FAILED
+    assert [step.get("name") for step in result.trajectory if step.get("role") == "tool"] == [
+        "web_search"
+    ]
+
+
+def test_researcher_parses_markdown_and_fullwidth_confidence() -> None:
+    agent = ResearcherAgent(name="researcher", policy=_Policy())
+    assert agent._extract_confidence("**置信度：0.25**") == 0.25
 
 
 def test_researcher_reads_best_primary_source_before_finishing() -> None:

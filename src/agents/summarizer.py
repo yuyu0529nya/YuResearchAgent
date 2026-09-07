@@ -541,7 +541,7 @@ class SummarizerAgent(BaseAgent):
                 "claims directly entailed by the supplied metadata/excerpts, cite them precisely, and qualify "
                 "anything else."
             )
-        elif claims:
+        if claims:
             source_numbers = {
                 source.get("source_id"): index
                 for index, source in enumerate(sources[:25], 1)

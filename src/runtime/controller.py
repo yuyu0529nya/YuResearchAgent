@@ -15,6 +15,7 @@ from .run_store import RunStore
 @dataclass
 class RunHandle:
     run_id: str
+    owner_id: str
     token: CancellationToken
     events: "queue.Queue[RunEvent]"
     created_at: float
@@ -28,11 +29,19 @@ class RunController:
         self._lock = threading.RLock()
         self._active: dict[str, RunHandle] = {}
 
-    def create_run(self, *, query: str, backend: str, adversarial: bool) -> RunHandle:
+    def create_run(
+        self,
+        *,
+        query: str,
+        backend: str,
+        adversarial: bool,
+        owner_id: str = "local",
+    ) -> RunHandle:
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         run_id = f"web_{stamp}_{uuid.uuid4().hex[:8]}"
         handle = RunHandle(
             run_id=run_id,
+            owner_id=str(owner_id or "local")[:200],
             token=CancellationToken(),
             events=queue.Queue(),
             created_at=time.time(),
@@ -42,6 +51,7 @@ class RunController:
             query=query,
             backend=backend,
             adversarial=adversarial,
+            owner_id=owner_id,
         )
         with self._lock:
             self._active[run_id] = handle
@@ -56,12 +66,17 @@ class RunController:
             if handle is not None:
                 handle.events.put_nowait(event)
 
-    def cancel(self, run_id: str, reason: str = "Cancelled by user.") -> bool:
+    def cancel(
+        self,
+        run_id: str,
+        reason: str = "Cancelled by user.",
+        owner_id: str = "local",
+    ) -> bool:
         if not run_id:
             return False
         with self._lock:
             handle = self._active.get(run_id)
-        if handle is None:
+        if handle is None or handle.owner_id != str(owner_id or "local")[:200]:
             return False
         requested = handle.token.request(reason)
         if requested:

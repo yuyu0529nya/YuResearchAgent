@@ -165,7 +165,7 @@ class RunConfig:
     global_timeout_seconds: int = 600
     max_replan_rounds: int = 3
     max_sub_questions: int = 8
-    max_subagent_retries: int = 1
+    max_subagent_retries: int = 3
     subagent_retry_backoff_seconds: float = 1.5
     enable_replan: bool = True
     enable_completeness_check: bool = True

@@ -111,8 +111,17 @@ def _create_tools_factory(config: dict):
     # 3. arxiv_reader
     tools["arxiv_reader"] = ArxivReaderTool(use_mock=mock_mode)
 
-    # 4. file_reader（不限制目录）
-    tools["file_reader"] = FileReaderTool(allowed_base_dir=None)
+    # 4. file_reader: fail closed to a dedicated local upload directory.
+    # Callers that intentionally need another directory must configure it
+    # explicitly through tools.file_reader.allowed_base_dir or the env var.
+    from src.utils.env_config import get_env
+    file_reader_cfg = tools_cfg.get("file_reader", {})
+    configured_dir = file_reader_cfg.get("allowed_base_dir") or get_env(
+        "FILE_READER_ALLOWED_BASE_DIR"
+    )
+    allowed_dir = Path(configured_dir).expanduser().resolve() if configured_dir else PROJECT_ROOT / "uploads"
+    allowed_dir.mkdir(parents=True, exist_ok=True)
+    tools["file_reader"] = FileReaderTool(allowed_base_dir=str(allowed_dir))
 
     # 5. code_sandbox
     tools["code_sandbox"] = CodeSandboxTool(use_mock=mock_mode)
@@ -380,7 +389,7 @@ def build_run_config(config: dict):
         global_timeout_seconds=config.get("orchestrator", {}).get("global_timeout_seconds", 600),
         max_replan_rounds=config.get("orchestrator", {}).get("max_replan_rounds", 3),
         max_sub_questions=config.get("orchestrator", {}).get("max_sub_questions", 8),
-        max_subagent_retries=config.get("orchestrator", {}).get("max_subagent_retries", 1),
+        max_subagent_retries=config.get("orchestrator", {}).get("max_subagent_retries", 3),
         subagent_retry_backoff_seconds=config.get("orchestrator", {}).get(
             "subagent_retry_backoff_seconds", 1.5
         ),
@@ -459,11 +468,12 @@ async def run_research_with_metadata(
     try:
         report = await orchestrator.run(query, config=run_cfg)
     finally:
-        # The search client is process-wide. Always close it after a top-level run,
-        # including failures, so batch experiments do not leak connections.
-        from src.tools.web_search import WebSearchTool
-
-        await WebSearchTool.close_session()
+        # Close only this run's search clients. They are instance-owned because
+        # each Web UI worker has its own asyncio event loop.
+        for tool in modules.get("tools", []):
+            close_session = getattr(tool, "close_session", None)
+            if callable(close_session):
+                await close_session()
     logger.info(
         f"[Orchestrator] 报告生成完成 | 置信度={report.confidence:.2f} | "
         f"搜索轮数={report.num_searches} | 重规划={report.num_replan} | 对抗轮数={report.adversarial_rounds}"

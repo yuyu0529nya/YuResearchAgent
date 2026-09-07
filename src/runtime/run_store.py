@@ -91,6 +91,14 @@ class RunStore:
                     ON run_events(run_id, sequence DESC);
                 """
             )
+            columns = {
+                row["name"]
+                for row in connection.execute("PRAGMA table_info(runs)").fetchall()
+            }
+            if "owner_id" not in columns:
+                connection.execute(
+                    "ALTER TABLE runs ADD COLUMN owner_id TEXT NOT NULL DEFAULT 'local'"
+                )
 
     def create_run(
         self,
@@ -99,17 +107,26 @@ class RunStore:
         query: str,
         backend: str,
         adversarial: bool,
+        owner_id: str = "local",
     ) -> None:
         now = _utc_iso()
         with self._connect() as connection:
             connection.execute(
                 """
                 INSERT INTO runs (
-                    run_id, query, backend, adversarial, status,
+                    run_id, query, backend, adversarial, owner_id, status,
                     current_state, created_at, updated_at
-                ) VALUES (?, ?, ?, ?, 'queued', 'idle', ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, 'queued', 'idle', ?, ?)
                 """,
-                (run_id, query.strip(), backend.strip(), int(adversarial), now, now),
+                (
+                    run_id,
+                    query.strip(),
+                    backend.strip(),
+                    int(adversarial),
+                    str(owner_id or "local")[:200],
+                    now,
+                    now,
+                ),
             )
 
     def record_event(self, event: RunEvent) -> None:
@@ -261,20 +278,20 @@ class RunStore:
             )
             return cursor.rowcount
 
-    def list_runs(self, limit: int = 30) -> list[dict[str, Any]]:
+    def list_runs(self, limit: int = 30, owner_id: str = "local") -> list[dict[str, Any]]:
         safe_limit = max(1, min(200, int(limit)))
         with self._connect() as connection:
             rows = connection.execute(
-                "SELECT * FROM runs ORDER BY created_at DESC LIMIT ?",
-                (safe_limit,),
+                "SELECT * FROM runs WHERE owner_id = ? ORDER BY created_at DESC LIMIT ?",
+                (str(owner_id or "local")[:200], safe_limit),
             ).fetchall()
         return [self._run_row(row) for row in rows]
 
-    def get_run(self, run_id: str) -> dict[str, Any] | None:
+    def get_run(self, run_id: str, owner_id: str = "local") -> dict[str, Any] | None:
         with self._connect() as connection:
             row = connection.execute(
-                "SELECT * FROM runs WHERE run_id = ?",
-                (run_id,),
+                "SELECT * FROM runs WHERE run_id = ? AND owner_id = ?",
+                (run_id, str(owner_id or "local")[:200]),
             ).fetchone()
         return self._run_row(row) if row is not None else None
 

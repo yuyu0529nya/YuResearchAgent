@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+import asyncio
+
+import pytest
+
 from src.tools.browser import BrowserTool
 
 
@@ -21,3 +25,10 @@ def test_regular_page_has_single_fulltext_candidate() -> None:
     assert BrowserTool._candidate_urls("https://example.com/article") == [
         ("https://example.com/article", "fulltext")
     ]
+
+
+def test_browser_rejects_private_and_credential_bearing_targets() -> None:
+    with pytest.raises(ValueError, match="private or non-public"):
+        asyncio.run(BrowserTool._validate_public_url("http://127.0.0.1:7860/"))
+    with pytest.raises(ValueError, match="credentials"):
+        asyncio.run(BrowserTool._validate_public_url("https://user:pass@example.com/"))

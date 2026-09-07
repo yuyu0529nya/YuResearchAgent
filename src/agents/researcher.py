@@ -54,6 +54,9 @@ class ResearcherAgent(BaseAgent):
         self.max_turns = max_turns
         self.max_tool_calls = max(1, max_tool_calls)
         self.tool_map: dict[str, Any] = {t.name: t for t in (tools or [])}
+        self.last_trajectory: list[dict[str, Any]] = []
+        self.last_token_usage = 0
+        self.last_output = ""
 
     @trace_agent(name="researcher.run", tags=["agent", "researcher"])
     async def run(self, task: SubTask, context: dict) -> AgentResult:
@@ -67,6 +70,9 @@ class ResearcherAgent(BaseAgent):
         """
         trajectory: list[dict] = []
         total_tokens: int = 0
+        self.last_trajectory = trajectory
+        self.last_token_usage = 0
+        self.last_output = ""
         cancellation_token = context.get("_cancellation_token")
         request_deadline = context.get("_request_deadline_monotonic")
 
@@ -219,6 +225,7 @@ class ResearcherAgent(BaseAgent):
                 )
 
             content = response.get("content", "") or ""
+            self.last_output = content
             tool_calls = response.get("tool_calls", []) or []
             used_tool_calls = sum(1 for step in trajectory if step.get("role") == "tool")
             remaining_tool_calls = self.max_tool_calls - used_tool_calls
@@ -279,7 +286,10 @@ class ResearcherAgent(BaseAgent):
                     "browser" in self.tool_map
                     and "browser" not in proposed_names
                     and not candidate_url
-                    and remaining_tool_calls > len(required_calls)
+                    # Keep the current retrieval call when it is the last
+                    # available slot; there is no slot left for a follow-up
+                    # browser read in that case.
+                    and remaining_tool_calls > len(required_calls) + 1
                 )
                 reserved_slots = len(required_calls) + int(reserve_future_browser)
                 proposed_budget = max(0, remaining_tool_calls - reserved_slots)
@@ -298,11 +308,16 @@ class ResearcherAgent(BaseAgent):
 
             # 估算 token（简化：字符数 / 3）
             total_tokens += len(json.dumps(messages, ensure_ascii=False)) // 3
+            self.last_token_usage = total_tokens
 
             # 无工具调用 → 任务完成
             if not tool_calls:
                 # B方案：检测 LLM 回复是否包含明显的工具失败说明
-                if self._is_tool_failure_explanation(content):
+                if self._is_tool_failure_explanation(content) or (
+                    task.task_type in {TaskType.SEARCH, TaskType.VERIFY}
+                    and self.tools
+                    and not self._has_usable_evidence(trajectory)
+                ):
                     return AgentResult(
                         task_id=task.task_id,
                         status=AgentStatus.FAILED,
@@ -421,6 +436,7 @@ class ResearcherAgent(BaseAgent):
                     "tool_call_id": tr["tool_call_id"],
                     "content": msg_content,
                 })
+            self.last_token_usage = total_tokens
 
         # 达到 max_turns
         return AgentResult(
@@ -431,6 +447,35 @@ class ResearcherAgent(BaseAgent):
             token_usage=total_tokens,
             confidence=0.0,
         )
+
+    @staticmethod
+    def _has_usable_evidence(trajectory: list[dict[str, Any]]) -> bool:
+        """Return whether a tool produced evidence suitable for a research result."""
+        for step in trajectory:
+            if step.get("role") != "tool" or step.get("error"):
+                continue
+            tool_name = step.get("name")
+            result = step.get("result")
+            if isinstance(result, dict):
+                if result.get("error"):
+                    continue
+                if tool_name == "web_search" and any(
+                    isinstance(item, dict)
+                    and str(item.get("snippet") or "").strip()
+                    for item in result.get("results", [])
+                ):
+                    return True
+                if tool_name == "arxiv_reader" and any(
+                    isinstance(item, dict)
+                    and (str(item.get("summary") or "").strip() or str(item.get("title") or "").strip())
+                    for item in result.get("papers", [])
+                ):
+                    return True
+            elif isinstance(result, str):
+                normalized = result.strip().lower()
+                if normalized and not normalized.startswith(("[browser error]", "[browser warning]", "error:")):
+                    return True
+        return False
 
     def _system_prompt(self) -> str:
         return (
@@ -835,8 +880,8 @@ class ResearcherAgent(BaseAgent):
         import re
         # 匹配 "Confidence: 0.85" 或 "置信度: 0.85"
         patterns = [
-            r"[Cc]onfidence[:\s]+(0\.\d+|1\.0|1)",
-            r"置信度[:\s]+(0\.\d+|1\.0|1)",
+            r"[Cc]onfidence\s*[:：]\s*(0\.\d+|1\.0|1)",
+            r"置信度\s*[:：]\s*(0\.\d+|1\.0|1)",
         ]
         for pat in patterns:
             m = re.search(pat, content)

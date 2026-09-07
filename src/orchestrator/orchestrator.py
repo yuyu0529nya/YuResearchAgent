@@ -497,9 +497,34 @@ class Orchestrator:
                 state=OrchestratorState.DISPATCHING,
             )
 
+            class _SemaphoreLease:
+                """Allow retry backoff without leaking or double-releasing a permit."""
+
+                def __init__(self, value: asyncio.Semaphore) -> None:
+                    self.value = value
+                    self.held = False
+
+                async def __aenter__(self):
+                    await self.value.acquire()
+                    self.held = True
+                    return self
+
+                def release(self) -> None:
+                    if self.held:
+                        self.value.release()
+                        self.held = False
+
+                async def reacquire(self) -> None:
+                    if not self.held:
+                        await self.value.acquire()
+                        self.held = True
+
+                async def __aexit__(self, *_exc) -> None:
+                    self.release()
+
             # 构建本层的 coroutine 列表
             async def _run_one(task_id: str) -> AgentResult:
-                async with semaphore:
+                async with _SemaphoreLease(semaphore) as lease:
                     if self._is_cancelled():
                         return AgentResult(
                             task_id=task_id,
@@ -564,7 +589,16 @@ class Orchestrator:
                             result = AgentResult(
                                 task_id=task_id,
                                 status=AgentStatus.TIMEOUT,
-                                output=f"Task timed out after {task_timeout:.1f}s",
+                                output=(
+                                    f"Task timed out after {task_timeout:.1f}s; "
+                                    "partial evidence was retained."
+                                ),
+                                trajectory=[
+                                    dict(step)
+                                    for step in getattr(agent, "last_trajectory", [])
+                                ],
+                                token_usage=int(getattr(agent, "last_token_usage", 0) or 0),
+                                confidence=0.0,
                             )
                         except Exception as e:
                             result = AgentResult(
@@ -610,7 +644,11 @@ class Orchestrator:
                         # runs remain reproducible while concurrent workers desynchronize.
                         retry_delay = self._subagent_retry_delay_seconds(task_id, attempt)
                         if retry_delay > 0:
-                            await asyncio.sleep(min(retry_delay, self._remaining_seconds()))
+                            lease.release()
+                            try:
+                                await asyncio.sleep(min(retry_delay, self._remaining_seconds()))
+                            finally:
+                                await lease.reacquire()
                     return result
 
             # 并发执行本层

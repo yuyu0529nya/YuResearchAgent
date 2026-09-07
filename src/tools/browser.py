@@ -20,7 +20,9 @@ from __future__ import annotations
 
 import asyncio
 import io
+import ipaddress
 import re
+import socket
 from abc import ABC, abstractmethod
 from typing import Any
 from urllib.parse import urlsplit
@@ -109,12 +111,15 @@ class BrowserTool(BaseBrowserTool):
         )
 
     async def execute(self, url: str, max_chars: int = _DEFAULT_MAX_CHARS) -> str:
-        if not url.startswith(("http://", "https://")):
-            return f"[Browser Error] Invalid URL: {url}. URL must start with http:// or https://"
+        try:
+            await self._validate_public_url(url)
+        except ValueError as exc:
+            return f"[Browser Error] {exc}"
 
         errors: list[str] = []
         for candidate_url, evidence_level in self._candidate_urls(url):
             try:
+                await self._validate_public_url(candidate_url)
                 payload, content_type = await self._fetch(candidate_url)
                 if "application/pdf" in content_type.lower() or payload.startswith(b"%PDF"):
                     text = self._extract_pdf_text(payload)
@@ -137,6 +142,38 @@ class BrowserTool(BaseBrowserTool):
                 errors.append(f"{candidate_url}: {type(exc).__name__}: {exc}")
 
         return "[Browser Error] " + "; ".join(errors[:3])
+
+    @staticmethod
+    async def _validate_public_url(url: str) -> None:
+        """Reject local, private, credential-bearing, and non-HTTP targets."""
+        parsed = urlsplit(str(url or ""))
+        if parsed.scheme not in {"http", "https"}:
+            raise ValueError("URL must use http:// or https://")
+        if parsed.username or parsed.password:
+            raise ValueError("URLs containing user credentials are not allowed")
+        host = parsed.hostname
+        if not host:
+            raise ValueError("URL has no hostname")
+        host = host.rstrip(".").lower()
+        if host in {"localhost", "localhost.localdomain"} or host.endswith(".local"):
+            raise ValueError("local hostnames are not allowed")
+        try:
+            port = parsed.port or (443 if parsed.scheme == "https" else 80)
+        except ValueError as exc:
+            raise ValueError("URL has an invalid port") from exc
+
+        def resolve() -> list[str]:
+            try:
+                return [item[4][0] for item in socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)]
+            except OSError as exc:
+                raise ValueError(f"hostname could not be resolved: {host}") from exc
+
+        try:
+            addresses = [str(ipaddress.ip_address(host))]
+        except ValueError:
+            addresses = await asyncio.to_thread(resolve)
+        if not addresses or any(not ipaddress.ip_address(address).is_global for address in addresses):
+            raise ValueError("private or non-public network targets are not allowed")
 
     @staticmethod
     def _candidate_urls(url: str) -> list[tuple[str, str]]:
@@ -170,7 +207,7 @@ class BrowserTool(BaseBrowserTool):
                 timeout=aiohttp.ClientTimeout(total=self.timeout),
                 headers={"User-Agent": self.user_agent},
             ) as session:
-                async with session.get(url, allow_redirects=True) as resp:
+                async with session.get(url, allow_redirects=False) as resp:
                     resp.raise_for_status()
                     return await resp.read(), resp.headers.get("Content-Type", "")
         except Exception as aiohttp_error:
@@ -182,7 +219,6 @@ class BrowserTool(BaseBrowserTool):
         marker = b"\n__YURA_BROWSER_META__:"
         process = await asyncio.create_subprocess_exec(
             "curl",
-            "--location",
             "--compressed",
             "--silent",
             "--show-error",

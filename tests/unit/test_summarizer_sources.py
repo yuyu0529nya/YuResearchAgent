@@ -78,6 +78,42 @@ def test_synthesis_prompt_includes_required_coverage_contract() -> None:
     assert "Satisfy every item in the Required Coverage Contract" in prompt
 
 
+def test_partial_hybrid_audit_keeps_supported_claims_and_marks_unreviewed_claims() -> None:
+    source = {
+        "source_id": "src_1",
+        "title": "Primary source",
+        "url": "https://example.org/source",
+        "quality_score": 0.9,
+        "is_primary": True,
+        "has_fulltext": True,
+        "evidence_kind": "full_text",
+        "evidence_excerpt": "The source directly states the verified fact.",
+    }
+    prompt = _agent()._build_synthesis_prompt(
+        "research question",
+        [_result([], tid="task_1")],
+        evidence_sources=[source],
+        evidence_audit={
+            "verification_mode": "hybrid_partial",
+            "semantic_reviewed_count": 1,
+            "semantic_candidate_count": 3,
+            "claims": [
+                {
+                    "text": "Verified fact",
+                    "status": "supported",
+                    "source_ids": ["src_1"],
+                    "evidence_excerpts": [{"text": "The source directly states the verified fact."}],
+                },
+                {"text": "Unreviewed fact", "status": "not_enough_evidence", "reason": "not reviewed"},
+            ],
+        },
+    )
+
+    assert "Verified claims (safe to state when cited)" in prompt
+    assert "Verified fact [1]" in prompt
+    assert "Claims requiring caution" in prompt
+
+
 def test_collect_paper_keeps_authors_and_year():
     r = _result([{"role": "tool", "result": {"papers": [
         {"title": "Attention Is All You Need",

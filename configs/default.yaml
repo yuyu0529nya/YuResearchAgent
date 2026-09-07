@@ -129,9 +129,9 @@ orchestrator:
   max_replan_rounds: 1
   # 单次规划最多拆分的子问题数量
   max_sub_questions: 4
-  # 子 Agent 执行失败后的最大重试次数
-  max_subagent_retries: 1
-  # 重试采用指数退避与确定性 task jitter，避免失败任务再次同时撞向同一 API。
+  # 子 Agent 执行失败后的最大重试次数（首次执行失败后最多再试 3 次）
+  max_subagent_retries: 3
+  # 重试采用指数退避与确定性 task jitter：约 1.5s、3s、6s，避免失败任务再次同时撞向同一 API。
   subagent_retry_backoff_seconds: 1.5
   # 证据补检不得侵占最终合成和终审的保留时间
   synthesis_reserve_seconds: 130

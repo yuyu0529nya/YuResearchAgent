@@ -84,10 +84,20 @@ class ResearchRunService:
     def recover_interrupted(self) -> int:
         return self.store.recover_interrupted()
 
-    def request_cancel(self, run_id: str, reason: str = "Cancelled from the Web UI.") -> str:
-        if self.controller.cancel(str(run_id or ""), reason):
+    @staticmethod
+    def _owner_key(owner_id: str | None) -> str:
+        return str(owner_id or "local")[:200]
+
+    def request_cancel(
+        self,
+        run_id: str,
+        reason: str = "Cancelled from the Web UI.",
+        owner_id: str = "local",
+    ) -> str:
+        owner = self._owner_key(owner_id)
+        if self.controller.cancel(str(run_id or ""), reason, owner):
             return "requested"
-        if run_id and self.store.get_run(run_id):
+        if run_id and self.store.get_run(run_id, owner):
             return "terminal"
         return "missing"
 
@@ -120,11 +130,11 @@ class ResearchRunService:
         audit["task_coverage"] = dict(payload.get("run_metadata", {}).get("task_coverage") or {})
         return audit
 
-    def list_history(self, limit: int = 50) -> list[dict[str, Any]]:
-        return self.store.list_runs(limit=limit)
+    def list_history(self, limit: int = 50, owner_id: str = "local") -> list[dict[str, Any]]:
+        return self.store.list_runs(limit=limit, owner_id=self._owner_key(owner_id))
 
-    def load_history(self, run_id: str) -> HistoryArtifact | None:
-        row = self.store.get_run(str(run_id or ""))
+    def load_history(self, run_id: str, owner_id: str = "local") -> HistoryArtifact | None:
+        row = self.store.get_run(str(run_id or ""), self._owner_key(owner_id))
         if not row:
             return None
         events = self.store.get_events(row["run_id"])
@@ -147,7 +157,13 @@ class ResearchRunService:
             download_path=str(report_path) if report_path else None,
         )
 
-    def stream(self, query: str, backend: str, adversarial: bool) -> Iterator[RunUpdate]:
+    def stream(
+        self,
+        query: str,
+        backend: str,
+        adversarial: bool,
+        owner_id: str = "local",
+    ) -> Iterator[RunUpdate]:
         query = str(query or "").strip()
         if not query:
             raise ValueError("Research query cannot be empty")
@@ -161,6 +177,7 @@ class ResearchRunService:
             query=query,
             backend=backend,
             adversarial=bool(adversarial),
+            owner_id=self._owner_key(owner_id),
         )
         holder: dict[str, Any] = {}
 
