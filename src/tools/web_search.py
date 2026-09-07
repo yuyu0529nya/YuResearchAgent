@@ -201,7 +201,9 @@ class WebSearchTool(BaseWebSearchTool):
             "OPENROUTER_SEARCH_ENDPOINT", "https://openrouter.ai/api/v1/chat/completions"
         )
         self.openrouter_model = (
-            get_env("OPENROUTER_SEARCH_MODEL") or "openai/gpt-4.1-mini"
+            get_env("OPENROUTER_SEARCH_MODEL")
+            or get_env("OPENROUTER_MODEL")
+            or "openai/gpt-4.1-mini"
         )
         # Each WebSearchTool is owned by one asyncio.run() lifecycle. A
         # class-level session can be attached to a different event loop and
@@ -304,7 +306,13 @@ class WebSearchTool(BaseWebSearchTool):
                         "total": 0,
                         "error": f"OpenRouter search error: {data.get('error', resp.status)}",
                     }
-        except Exception as exc:
+        except (aiohttp.ClientConnectorError, asyncio.TimeoutError, OSError) as exc:
+            # Some proxy setups support curl but reject aiohttp TLS/connect
+            # negotiation. Retry the same request through the system transport
+            # before declaring search unavailable.
+            fallback = await self._openrouter_curl_execute(payload, headers)
+            if fallback is not None:
+                return fallback
             return {
                 "query": query,
                 "results": [],
@@ -318,6 +326,42 @@ class WebSearchTool(BaseWebSearchTool):
             "results": results,
             "total": len(results),
             "source": f"openrouter:{self.openrouter_model}",
+        }
+
+    async def _openrouter_curl_execute(
+        self, payload: dict[str, Any], headers: dict[str, str]
+    ) -> dict[str, Any] | None:
+        """Use curl as a proxy-compatible transport fallback."""
+        marker = b"\n__YURA_SEARCH_META__:"
+        try:
+            process = await asyncio.create_subprocess_exec(
+                "curl", "--compressed", "--silent", "--show-error",
+                "--max-time", "45", "-X", "POST", self.openrouter_endpoint,
+                "-H", f"Authorization: {headers['Authorization']}",
+                "-H", "Content-Type: application/json",
+                "--data-raw", json.dumps(payload, ensure_ascii=False),
+                "--write-out", "\n__YURA_SEARCH_META__:%{http_code}",
+                stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE,
+            )
+            stdout, _ = await asyncio.wait_for(process.communicate(), timeout=50)
+        except (OSError, asyncio.TimeoutError):
+            if 'process' in locals() and process.returncode is None:
+                process.kill()
+                await process.communicate()
+            return None
+        body, separator, status = stdout.rpartition(marker)
+        if process.returncode != 0 or not separator or status.strip() != b"200":
+            return None
+        try:
+            data = json.loads(body.decode("utf-8", errors="ignore"))
+        except json.JSONDecodeError:
+            return None
+        results = self._openrouter_citation_results(data, payload["tools"][0]["parameters"]["max_results"])
+        return {
+            "query": payload["messages"][-1]["content"],
+            "results": results,
+            "total": len(results),
+            "source": f"openrouter:{self.openrouter_model}:curl",
         }
 
     @staticmethod

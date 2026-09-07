@@ -663,7 +663,7 @@ class EvidenceStore:
                         )[0],
                     ),
                 )
-                data["evidence_excerpt"] = best.text[:500]
+                data["evidence_excerpt"] = best.text[:1600]
                 data["evidence_kind"] = best.kind.value
             kinds = sorted(evidence_kinds.get(source.source_id, set()))
             data["evidence_kinds"] = kinds

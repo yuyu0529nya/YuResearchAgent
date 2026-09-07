@@ -1,0 +1,18 @@
+{
+  "schema": "retrieval-repair-manifest-v1",
+  "status": "development_diagnostics_only",
+  "artifacts": [
+    {
+      "path": "outputs/live_repair/report_20260907_104935_660117_比较_RAG_与长上下文方法在企业知识库.json",
+      "sha256": "08a5ce95c47c060494d471f4c16333aab613e36cdc528810eb9220c3c0c1a4d5"
+    },
+    {
+      "path": "outputs/evidence/evidence_live_repair_20260907_20260907T024932Z.json",
+      "sha256": "b74e58d70b44433958be80d5722a634a510f02462013bdb59d4a0ec80e651c74"
+    },
+    {
+      "path": "outputs/live_repair_search/worker_deadline_probe.json",
+      "sha256": "f9d2512c2877ae9f31f171078ee9394fa6bbe92429e4da89e507631758046db1"
+    }
+  ]
+}

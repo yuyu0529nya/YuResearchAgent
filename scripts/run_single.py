@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import logging
+import json
 import os
 import sys
 from pathlib import Path
@@ -22,7 +23,7 @@ from pathlib import Path
 # 确保项目根目录在 sys.path 上，使 `python scripts/run_single.py` 可直接运行
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.core.runner import initialize_modules, load_config, run_research, save_report, setup_logging
+from src.core.runner import initialize_modules, load_config, run_research_with_metadata, save_report, setup_logging
 
 
 def main() -> None:
@@ -78,9 +79,12 @@ def main() -> None:
         logger.info(f"配置加载完成: {args.config or 'configs/default.yaml'}")
 
         modules = initialize_modules(config, session_id=args.session_id)
-        report = asyncio.run(run_research(args.query, config, modules))
+        report, metadata = asyncio.run(run_research_with_metadata(args.query, config, modules))
 
         filepath = save_report(report, args.query, args.output_dir)
+        Path(filepath).with_suffix(".json").write_text(
+            json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
         logger.info(f"报告已保存: {filepath}")
 
         print("\n" + "=" * 60)

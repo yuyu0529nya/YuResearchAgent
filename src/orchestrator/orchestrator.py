@@ -548,6 +548,8 @@ class Orchestrator:
                         output="Task did not start",
                     )
                     attempts = max(1, self._config.max_subagent_retries + 1)
+                    retained_trajectory: list[dict] = []
+                    retained_tokens = 0
                     for attempt in range(1, attempts + 1):
                         if self._is_cancelled():
                             return AgentResult(
@@ -560,6 +562,8 @@ class Orchestrator:
                             subtask.timeout_seconds,
                         )
                         if task_timeout <= 0.25:
+                            if retained_trajectory:
+                                return result
                             return AgentResult(
                                 task_id=task_id,
                                 status=AgentStatus.TIMEOUT,
@@ -609,6 +613,13 @@ class Orchestrator:
                         finally:
                             await self.agent_pool.release_agent(agent)
 
+                        retained_trajectory.extend(
+                            {**step, "attempt": attempt} for step in result.trajectory
+                        )
+                        retained_tokens += result.token_usage
+                        result.trajectory = list(retained_trajectory)
+                        result.token_usage = retained_tokens
+
                         self._emit_event(
                             "task_completed",
                             f"{task_id} finished with status {result.status.value}.",
@@ -631,7 +642,11 @@ class Orchestrator:
                         )
 
                         if (
-                            result.status in {AgentStatus.SUCCESS, AgentStatus.CANCELLED}
+                            result.status in {
+                                AgentStatus.SUCCESS,
+                                AgentStatus.TIMEOUT,
+                                AgentStatus.CANCELLED,
+                            }
                             or attempt >= attempts
                             or self._is_cancelled()
                         ):
@@ -968,6 +983,8 @@ class Orchestrator:
                 await self.agent_pool.release_agent(pooled_agent)
 
         if result.status == AgentStatus.SUCCESS and isinstance(result.output, ResearchReport):
+            if self.evidence_store is not None and not result.output.sources:
+                result.output.run_status = "partial_evidence"
             self._memory_store["final_report"] = result.output
         else:
             # 合成失败时仍保留已完成子任务，而不是只返回错误字符串。
@@ -1575,6 +1592,9 @@ class Orchestrator:
             index = positions[result.task_id]
             previous = self._all_results[index]
             if previous.status != AgentStatus.SUCCESS or result.status == AgentStatus.SUCCESS:
+                if previous is not result and previous.trajectory:
+                    result.trajectory = list(previous.trajectory) + list(result.trajectory)
+                    result.token_usage += previous.token_usage
                 self._all_results[index] = result
 
     def _successful_results(self) -> list[AgentResult]:

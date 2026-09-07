@@ -223,6 +223,10 @@ online policy updates in the research-agent runtime.
 
 ## Next Required Experiments
 
+The [2026-09-07 retrieval repair diagnostic](evaluation/RETRIEVAL_REPAIR_20260907.md)
+tracks a live failure investigation and its retained reruns. These are single-query
+development traces, not replacements for the confirmatory results above.
+
 1. Compare `evidence.enabled`, evidence-gap rounds, and verification modes on a
    fixed set with source/citation precision, claim coverage, latency, and cost.
 2. Ablate evidence-bounded revision on that fixed set, retaining every original,

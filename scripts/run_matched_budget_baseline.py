@@ -21,7 +21,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.core.runner import initialize_modules, load_config
-from src.orchestrator.schemas import SubTask, TaskType
+from src.orchestrator.schemas import AgentResult, AgentStatus, SubTask, TaskType
 
 
 async def run_baseline(query: str, config: dict, timeout_seconds: float) -> dict:
@@ -48,6 +48,13 @@ async def run_baseline(query: str, config: dict, timeout_seconds: float) -> dict
             agent.run(task, context),
             timeout=timeout_seconds,
         )
+    except asyncio.TimeoutError:
+        result = AgentResult(
+            task_id=task.task_id, status=AgentStatus.TIMEOUT,
+            output="Diagnostic timed out; completed tool evidence retained.",
+            trajectory=list(getattr(agent, "last_trajectory", [])),
+            token_usage=int(getattr(agent, "last_token_usage", 0)),
+        )
     finally:
         await pool.release_agent(agent)
         for tool in modules.get("tools", []):
@@ -61,6 +68,9 @@ async def run_baseline(query: str, config: dict, timeout_seconds: float) -> dict
         "output": result.output,
         "trajectory": result.trajectory,
         "token_usage": result.token_usage,
+        "estimated_worker_tokens": result.token_usage,
+        "model_usage": modules["usage_tracker"].snapshot(),
+        "not_a_quality_benchmark": True,
         "tool_calls": sum(step.get("role") == "tool" for step in result.trajectory),
     }
 
@@ -71,6 +81,7 @@ def main() -> None:
     parser.add_argument("--config", default="configs/default.yaml")
     parser.add_argument("--timeout", type=float, default=240.0)
     parser.add_argument("--max-tool-calls", type=int, default=None)
+    parser.add_argument("--output", type=Path, help="Persist the diagnostic, including provider usage")
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -88,7 +99,13 @@ def main() -> None:
         "max_tool_calls": config.get("planner", {}).get("max_search_rounds_per_subagent"),
         "timeout_seconds": args.timeout,
     }
-    print(json.dumps(result, ensure_ascii=False, indent=2, default=str))
+    serialized = json.dumps(result, ensure_ascii=False, indent=2, default=str)
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(serialized, encoding="utf-8")
+        print(json.dumps({key: value for key, value in result.items() if key not in {"output", "trajectory"}}, indent=2))
+    else:
+        print(serialized)
 
 
 if __name__ == "__main__":

@@ -525,6 +525,23 @@ async def run_research_with_metadata(
         "evidence_audit": audit,
         "evidence_revision": report.evidence_revision,
         "task_coverage": report.task_coverage,
+        "tool_diagnostics": [
+            {
+                "task_id": result.task_id,
+                "tool": step.get("name", ""),
+                "arguments": step.get("arguments", {}),
+                "error": step.get("error") or (
+                    str(step.get("result", ""))[:500]
+                    if isinstance(step.get("result"), str)
+                    and str(step["result"]).lower().startswith(("[browser error]", "error:"))
+                    else ""
+                ),
+                "result_chars": len(str(step.get("result", ""))),
+            }
+            for result in getattr(orchestrator, "_all_results", [])
+            for step in result.trajectory
+            if step.get("role") == "tool"
+        ],
     }
     return final_report, metadata
 
@@ -558,6 +575,7 @@ def _format_report(report, elapsed: float) -> str:
         "",
         "## 元信息",
         "",
+        f"- **运行状态**: {report.run_status}",
         f"- **置信度**: {report.confidence:.2f}",
         f"- **搜索轮数**: {report.num_searches}",
         f"- **重规划次数**: {report.num_replan}",
@@ -576,6 +594,9 @@ def _format_report(report, elapsed: float) -> str:
             "## 证据审计",
             "",
             f"- **Claim 覆盖率**: {audit.get('coverage', 0.0):.1%}",
+            f"- **语义审查状态**: {audit.get('verification_mode', 'heuristic')}，已审查 "
+            f"{audit.get('semantic_reviewed_count', 0)}/{audit.get('semantic_candidate_count', 0)} 条候选；"
+            "未审查的 NEI 不等于判定错误",
             f"- **核验结果**: {audit.get('supported_count', 0)} supported / "
             f"{audit.get('refuted_count', 0)} refuted / "
             f"{audit.get('not_enough_evidence_count', 0)} NEI（共 {total_claims} 条）",

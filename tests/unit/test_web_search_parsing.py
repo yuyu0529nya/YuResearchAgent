@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import json
 
 from src.tools.web_search import WebSearchTool
 
@@ -266,11 +267,46 @@ def test_openrouter_citations_map_to_search_results() -> None:
 
 
 def test_openrouter_search_defaults_to_a_tool_capable_model(monkeypatch) -> None:
+    monkeypatch.delenv("OPENROUTER_MODEL", raising=False)
     monkeypatch.setenv("OPENROUTER_SEARCH_MODEL", "")
 
     tool = WebSearchTool("openrouter")
 
     assert tool.openrouter_model == "openai/gpt-4.1-mini"
+
+
+def test_openrouter_search_inherits_main_model_unless_overridden(monkeypatch) -> None:
+    monkeypatch.setenv("OPENROUTER_SEARCH_MODEL", "")
+    monkeypatch.setenv("OPENROUTER_MODEL", "deepseek/test-model")
+    assert WebSearchTool("openrouter").openrouter_model == "deepseek/test-model"
+    monkeypatch.setenv("OPENROUTER_SEARCH_MODEL", "custom/search-model")
+    assert WebSearchTool("openrouter").openrouter_model == "custom/search-model"
+
+
+def test_openrouter_curl_fallback_maps_citations(monkeypatch):
+    import asyncio
+
+    class Process:
+        returncode = 0
+
+        async def communicate(self):
+            payload = {
+                "choices": [{"message": {"annotations": [{
+                    "type": "url_citation",
+                    "url_citation": {"url": "https://example.com/paper", "title": "Paper", "content": "excerpt"},
+                }]}}]
+            }
+            return (json.dumps(payload).encode() + b"\n__YURA_SEARCH_META__:200"), b""
+
+    async def spawn(*args, **kwargs):
+        return Process()
+
+    monkeypatch.setattr(asyncio, "create_subprocess_exec", spawn)
+    tool = WebSearchTool("openrouter")
+    payload = {"messages": [{"role": "user", "content": "query"}], "tools": [{"parameters": {"max_results": 5}}]}
+    result = asyncio.run(tool._openrouter_curl_execute(payload, {"Authorization": "Bearer test"}))
+    assert result["results"][0]["title"] == "Paper"
+    assert result["source"].endswith(":curl")
 
 
 def test_parse_yahoo_html_extracts_and_unwraps_results() -> None:

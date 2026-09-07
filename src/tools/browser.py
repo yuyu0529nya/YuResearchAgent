@@ -25,7 +25,7 @@ import re
 import socket
 from abc import ABC, abstractmethod
 from typing import Any
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 import aiohttp
 
@@ -34,6 +34,12 @@ __all__ = ["BrowserTool", "MockBrowserTool"]
 
 # 默认保留的正文字数上限（防止超长网页占满上下文）
 _DEFAULT_MAX_CHARS = 8000
+_MAX_RESPONSE_BYTES = 12_000_000
+
+
+class _Redirect(Exception):
+    def __init__(self, location: str) -> None:
+        self.location = location
 
 # HTML 中通常包含正文的标签
 _CONTENT_TAGS = ["article", "main", "section", "div"]
@@ -186,19 +192,33 @@ class BrowserTool(BaseBrowserTool):
         if not match:
             return [(url, "fulltext")]
         raw_id = match.group(1)
-        arxiv_id = re.sub(r"v\d+$", "", raw_id, flags=re.IGNORECASE)
+        arxiv_id = raw_id
         candidates = [(f"https://arxiv.org/html/{arxiv_id}", "fulltext")]
-        if parsed.path.lower().startswith("/pdf/"):
-            candidates.append((f"https://arxiv.org/pdf/{arxiv_id}.pdf", "fulltext"))
-        else:
-            candidates.append((f"https://arxiv.org/abs/{arxiv_id}", "abstract"))
+        candidates.append((f"https://arxiv.org/pdf/{arxiv_id}.pdf", "fulltext"))
+        candidates.append((f"https://arxiv.org/abs/{arxiv_id}", "abstract"))
         return candidates
 
     async def _fetch(self, url: str) -> tuple[bytes, str]:
+        return await asyncio.wait_for(self._fetch_redirect_chain(url), timeout=self.timeout)
+
+    async def _fetch_redirect_chain(self, url: str) -> tuple[bytes, str]:
+        for _ in range(6):
+            await self._validate_public_url(url)
+            try:
+                return await self._fetch_once(url)
+            except _Redirect as redirect:
+                if not redirect.location:
+                    raise ValueError("redirect has no Location")
+                url = urljoin(url, redirect.location)
+        raise ValueError("too many redirects")
+
+    async def _fetch_once(self, url: str) -> tuple[bytes, str]:
         """Fetch bytes through bounded curl, then aiohttp as transport fallback."""
         curl_error: Exception | None = None
         try:
             return await self._fetch_with_curl(url)
+        except _Redirect:
+            raise
         except Exception as exc:
             curl_error = exc
 
@@ -206,10 +226,20 @@ class BrowserTool(BaseBrowserTool):
             async with aiohttp.ClientSession(
                 timeout=aiohttp.ClientTimeout(total=self.timeout),
                 headers={"User-Agent": self.user_agent},
+                trust_env=True,
             ) as session:
                 async with session.get(url, allow_redirects=False) as resp:
+                    if 300 <= resp.status < 400:
+                        raise _Redirect(resp.headers.get("Location", ""))
                     resp.raise_for_status()
-                    return await resp.read(), resp.headers.get("Content-Type", "")
+                    body = bytearray()
+                    async for chunk in resp.content.iter_chunked(65536):
+                        body.extend(chunk)
+                        if len(body) > _MAX_RESPONSE_BYTES:
+                            raise ValueError("response exceeds 12 MB")
+                    return bytes(body), resp.headers.get("Content-Type", "")
+        except _Redirect:
+            raise
         except Exception as aiohttp_error:
             raise RuntimeError(
                 f"curl={curl_error}; aiohttp={type(aiohttp_error).__name__}: {aiohttp_error}"
@@ -222,21 +252,33 @@ class BrowserTool(BaseBrowserTool):
             "--compressed",
             "--silent",
             "--show-error",
+            "--proto",
+            "=http,https",
+            "--max-filesize",
+            str(_MAX_RESPONSE_BYTES),
             "--max-time",
             str(max(3, self.timeout)),
             "--user-agent",
             self.user_agent,
             "--write-out",
-            "\n__YURA_BROWSER_META__:%{http_code}\t%{content_type}",
+            "\n__YURA_BROWSER_META__:%{http_code}\t%{content_type}\t%{redirect_url}",
             url,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
-        stdout, stderr = await asyncio.wait_for(
-            process.communicate(), timeout=max(5, self.timeout + 3)
-        )
+        try:
+            stdout, stderr = await asyncio.wait_for(
+                process.communicate(), timeout=max(5, self.timeout + 3)
+            )
+        finally:
+            if process.returncode is None:
+                process.kill()
+                await process.communicate()
         body, separator, metadata = stdout.rpartition(marker)
-        status, _, content_type = metadata.partition(b"\t") if separator else (b"", b"", b"")
+        fields = metadata.split(b"\t", 2) if separator else []
+        status, content_type, location = (fields + [b"", b"", b""])[:3]
+        if process.returncode == 0 and status.strip() in {b"301", b"302", b"303", b"307", b"308"}:
+            raise _Redirect(location.decode("utf-8", errors="replace"))
         if process.returncode != 0 or status.strip() != b"200":
             detail = stderr.decode("utf-8", errors="ignore").strip()
             raise RuntimeError(

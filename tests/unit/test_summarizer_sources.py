@@ -25,6 +25,58 @@ def _result(traj, status=AgentStatus.SUCCESS, tid="t1"):
     return AgentResult(task_id=tid, status=status, output="x", confidence=0.8, trajectory=traj)
 
 
+def test_references_are_rebuilt_from_catalog_not_truncated_model_urls():
+    sources = [
+        {"title": "Unused", "url": "https://example.com/unused"},
+        {"title": "Paper", "authors": "Author", "year": "2024", "url": "https://example.com/paper.pdf"},
+    ]
+    text = "A factual statement [2]. Another claim [99].\n\n## 参考来源\n[2] Fake - https://doi.org/10."
+    rendered = _agent()._render_references(text, sources)
+    assert "[2] Paper - Author - (2024) - https://example.com/paper.pdf" in rendered
+    assert "Fake" not in rendered and "Unused" not in rendered
+    assert "[99]" in rendered  # Keep invalid citations visible; never invent a source.
+    assert rendered.count("## 参考来源") == 1
+
+
+def test_truncated_synthesis_is_not_marked_complete():
+    class Policy(_P):
+        def __call__(self, messages):
+            return {"content": "A partial factual report.", "finish_reason": "length"}
+
+    result = asyncio.run(SummarizerAgent("sum", Policy()).run(
+        SubTask(task_id="sum", task_type=TaskType.ANALYZE, description="summarize"),
+        {"query": "test", "results": [_result([])]},
+    ))
+    assert result.output.run_status == "partial_truncated"
+
+
+def test_all_failed_without_evidence_never_generates_unsourced_report():
+    class Policy(_P):
+        def __call__(self, messages):
+            raise AssertionError("no evidence is available for synthesis")
+
+    result = asyncio.run(SummarizerAgent("sum", Policy()).run(
+        SubTask(task_id="sum", task_type=TaskType.ANALYZE, description="summarize"),
+        {"query": "test", "results": [_result([], status=AgentStatus.TIMEOUT)]},
+    ))
+    assert result.status == AgentStatus.FAILED
+    assert result.output.run_status == "partial_failure"
+
+
+def test_mixed_task_results_are_marked_partial_failure():
+    class Policy(_P):
+        def __call__(self, messages):
+            return {"content": "A sufficiently detailed synthesized factual statement."}
+
+    result = asyncio.run(SummarizerAgent("sum", Policy()).run(
+        SubTask(task_id="sum", task_type=TaskType.ANALYZE, description="summarize"),
+        {"query": "test", "results": [
+            _result([], tid="ok"), _result([], status=AgentStatus.TIMEOUT, tid="late")
+        ]},
+    ))
+    assert result.output.run_status == "partial_failure"
+
+
 def test_collect_web_sources():
     r = _result([{"role": "tool", "result": {"results": [
         {"url": "https://a.com", "title": "A", "snippet": "s"},

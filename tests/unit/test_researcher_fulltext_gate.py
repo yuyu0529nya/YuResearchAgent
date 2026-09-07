@@ -280,6 +280,73 @@ def test_researcher_reserves_last_tool_slot_for_fulltext() -> None:
     ]
 
 
+def test_early_read_leaves_budget_to_recover_from_blocked_source() -> None:
+    class Browser(_BrowserTool):
+        async def execute(self, url, max_chars=8000):
+            self.urls.append(url)
+            if len(self.urls) == 1:
+                return "[Browser Error] HTTP 403"
+            return "Republished explanation of the policy with sufficient evidence to read."
+
+    browser = Browser()
+    agent = ResearcherAgent(
+        name="researcher", policy=_SearchUntilBudgetPolicy(),
+        tools=[_SearchTool(), browser], max_turns=6, max_tool_calls=4,
+    )
+    result = asyncio.run(agent.run(
+        SubTask(task_id="search", task_type=TaskType.SEARCH, description="research policy"),
+        {"query": "research policy"},
+    ))
+    assert result.status == AgentStatus.SUCCESS
+    assert browser.urls == ["https://www.gov.cn/zhengce/example", "https://www.sohu.com/a/123"]
+    assert sum(step.get("role") == "tool" for step in result.trajectory) == 4
+
+
+def test_paper_context_and_selection_use_same_fulltext_url() -> None:
+    trajectory = [{"role": "tool", "name": "arxiv_reader", "result": {
+        "query": "robotics benchmark", "papers": [{
+            "title": "Robotics benchmark", "url": "https://example.org/landing",
+            "pdf_url": "https://example.org/paper.pdf",
+        }],
+    }}]
+    assert ResearcherAgent._best_unread_source_url(trajectory) == "https://example.org/paper.pdf"
+    assert ResearcherAgent._source_context_for_url(
+        trajectory, "https://example.org/paper.pdf"
+    ) == ("Robotics benchmark", "robotics benchmark")
+
+
+def test_researcher_closes_retrieval_before_summary_deadline(monkeypatch) -> None:
+    import src.agents.researcher as module
+    from types import SimpleNamespace
+
+    clock = [0.0]
+    monkeypatch.setattr(module, "time", SimpleNamespace(monotonic=lambda: clock[0]))
+
+    class Search(_SearchTool):
+        async def execute(self, query):
+            result = await super().execute(query)
+            clock[0] = 96.0
+            return result
+
+    class Policy(_Policy):
+        def __call__(self, messages):
+            if self.calls:
+                assert self.tools is None
+                assert "Retrieval is closed" in messages[-1]["content"]
+            return super().__call__(messages)
+
+    browser = _BrowserTool()
+    policy = Policy()
+    agent = ResearcherAgent("researcher", policy, [Search(), browser], max_tool_calls=4)
+    result = asyncio.run(agent.run(
+        SubTask(task_id="search", task_type=TaskType.SEARCH, description="research policy"),
+        {"query": "research policy", "_request_deadline_monotonic": 120.0},
+    ))
+    assert result.status == AgentStatus.SUCCESS
+    assert browser.urls == []
+    assert policy.tools is not None
+
+
 def test_researcher_reserves_slot_when_model_proposes_parallel_searches() -> None:
     class _ParallelPolicy(_Policy):
         def __call__(self, _messages):

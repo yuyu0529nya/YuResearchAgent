@@ -86,7 +86,9 @@ model:
         max_tokens: 4000
       solver:
         temperature: 0.7       # 研究需要一定创造性
-        max_tokens: 4000
+        # Worker needs enough room for tool selection and a concise evidence
+        # summary; a large reasoning budget can starve the task timeout.
+        max_tokens: 2400
       summarizer:
         temperature: 0.5       # 合成报告：流畅但不发散
         max_tokens: 4000       # 兼顾完整报告与交互等待时间

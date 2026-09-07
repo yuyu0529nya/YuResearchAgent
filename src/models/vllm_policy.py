@@ -329,6 +329,7 @@ class VLLMPolicy:
 
             # 6. 返回万能对象
             result = OpenAICompatibleDict(role="assistant", content=content, tool_calls=final_tool_calls)
+            result["finish_reason"] = getattr(resp.choices[0], "finish_reason", None)
             if getattr(raw_msg, "reasoning_content", None):
                 result["reasoning_content"] = raw_msg.reasoning_content
             return result

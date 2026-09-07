@@ -75,6 +75,15 @@ class ResearcherAgent(BaseAgent):
         self.last_output = ""
         cancellation_token = context.get("_cancellation_token")
         request_deadline = context.get("_request_deadline_monotonic")
+        summary_reserve = (
+            min(25.0, max(0.0, float(request_deadline) - time.monotonic()) * 0.25)
+            if request_deadline is not None else 0.0
+        )
+
+        def _retrieval_seconds() -> float:
+            if request_deadline is None:
+                return float("inf")
+            return float(request_deadline) - time.monotonic() - summary_reserve
 
         def _cancelled() -> bool:
             return bool(
@@ -207,6 +216,17 @@ class ResearcherAgent(BaseAgent):
                         ),
                     })
 
+            finish_now = _retrieval_seconds() <= 0 or sum(
+                step.get("role") == "tool" for step in trajectory
+            ) >= self.max_tool_calls
+            if finish_now:
+                messages.append({"role": "user", "content": (
+                    "Retrieval is closed. Write a concise final summary of the evidence already obtained. "
+                    "Do not call tools; distinguish supported findings from missing evidence."
+                )})
+            old_tools = getattr(self.policy, "tools", None)
+            if finish_now and hasattr(self.policy, "tools"):
+                self.policy.tools = None
             try:
                 # 使用线程池执行同步 policy，避免阻塞 asyncio 事件循环
                 response = await _call_policy(messages)
@@ -223,12 +243,17 @@ class ResearcherAgent(BaseAgent):
                     token_usage=total_tokens,
                     confidence=0.0,
                 )
+            finally:
+                if finish_now and hasattr(self.policy, "tools"):
+                    self.policy.tools = old_tools
 
             content = response.get("content", "") or ""
             self.last_output = content
             tool_calls = response.get("tool_calls", []) or []
             used_tool_calls = sum(1 for step in trajectory if step.get("role") == "tool")
             remaining_tool_calls = self.max_tool_calls - used_tool_calls
+            if finish_now or _retrieval_seconds() <= 0:
+                remaining_tool_calls = 0
             requires_academic = self._requires_academic_search(task, context)
             academic_missing = requires_academic and not any(
                 step.get("role") == "tool" and step.get("name") == "arxiv_reader"
@@ -273,14 +298,12 @@ class ResearcherAgent(BaseAgent):
                     if "browser" in self.tool_map
                     else ""
                 )
-                will_exhaust_budget = (
-                    len(tool_calls) + len(required_calls) >= remaining_tool_calls
-                )
                 if (
                     candidate_url
                     and "browser" not in proposed_names
-                    and will_exhaust_budget
                 ):
+                    # Read while there is still budget to recover from a failed
+                    # fetch, instead of spending every earlier slot on discovery.
                     required_calls.append(self._browser_tool_call(candidate_url, turn))
                 reserve_future_browser = bool(
                     "browser" in self.tool_map
@@ -348,7 +371,17 @@ class ResearcherAgent(BaseAgent):
                 except json.JSONDecodeError:
                     args = {}
 
-                result = await self._execute_tool(tool_name, args)
+                if request_deadline is None:
+                    result = await self._execute_tool(tool_name, args)
+                elif _retrieval_seconds() <= 0:
+                    result = {"error": "Retrieval deadline reached; summarize retained evidence."}
+                else:
+                    try:
+                        result = await asyncio.wait_for(
+                            self._execute_tool(tool_name, args), timeout=_retrieval_seconds()
+                        )
+                    except asyncio.TimeoutError:
+                        result = {"error": "Tool timed out; remaining time is reserved for synthesis."}
                 if _cancelled():
                     return _cancelled_result()
 
@@ -385,32 +418,9 @@ class ResearcherAgent(BaseAgent):
                     "result": result,
                 })
 
-            # 检测工具结果是否全为空。旧逻辑只识别 web_search，导致有效的
-            # arxiv/browser 结果也被误判为空并提前结束。
-            all_empty = True
-            for tr in tool_results:
-                if tr["name"] == "web_search":
-                    res = tr["result"]
-                    if isinstance(res, dict) and res.get("results"):
-                        for r in res["results"]:
-                            if r.get("snippet", "").strip():
-                                all_empty = False
-                                break
-                elif tr["name"] == "arxiv_reader":
-                    res = tr["result"]
-                    if isinstance(res, dict) and res.get("papers"):
-                        all_empty = False
-                elif isinstance(tr["result"], str) and tr["result"].strip():
-                    normalized_result = tr["result"].lstrip().lower()
-                    if not normalized_result.startswith(
-                        ("[browser error]", "[browser warning]", "error:")
-                    ):
-                        all_empty = False
-                elif isinstance(tr["result"], dict) and tr["result"]:
-                    all_empty = False
-            
+            # An empty/failed fetch must leave room for a different source.
             tool_call_count = sum(1 for t in trajectory if t.get("role") == "tool")
-            force_summary = tool_call_count >= self.max_tool_calls or (all_empty and bool(tool_results))
+            force_summary = tool_call_count >= self.max_tool_calls
 
             # 将 assistant message 和 tool results 追加到 messages
             assistant_msg = {
@@ -663,6 +673,10 @@ class ResearcherAgent(BaseAgent):
             "6. Separate verified facts from unresolved or conflicting evidence, then summarize in Chinese with a confidence score (0-1).",
             "7. DO NOT greet the user or ask clarifying questions — just execute immediately.",
             "8. IMPORTANT: Your query MUST directly address the task description.",
+            "8a. Use short topic-focused English queries for academic search (2-6 key terms). "
+            "For comparisons search each approach and then both together; avoid appending generic "
+            "terms such as advantages disadvantages enterprise knowledge base to every query. "
+            "A failed or empty search does not establish that no studies exist.",
         ])
         if self._requires_academic_search(task, context):
             lines.extend(
@@ -739,15 +753,15 @@ class ResearcherAgent(BaseAgent):
         normalized_url: str,
     ) -> tuple[str, str]:
         for step in trajectory:
-            if step.get("role") != "tool" or step.get("name") != "web_search":
+            if step.get("role") != "tool" or step.get("name") not in {"web_search", "arxiv_reader"}:
                 continue
             result = step.get("result")
             if not isinstance(result, dict):
                 continue
-            for item in result.get("results", []):
+            for item in result.get("results", result.get("papers", [])):
                 if not isinstance(item, dict):
                     continue
-                item_url = canonicalize_source_url(str(item.get("url", "")))
+                item_url = canonicalize_source_url(str(item.get("pdf_url") or item.get("url", "")))
                 if item_url == normalized_url:
                     return str(item.get("title", "")), str(result.get("query", ""))
         return "", ""
@@ -841,7 +855,7 @@ class ResearcherAgent(BaseAgent):
             elif step.get("name") == "arxiv_reader" and isinstance(result, dict):
                 raw_sources = [item for item in result.get("papers", []) if isinstance(item, dict)]
             for source in raw_sources:
-                url = str(source.get("url") or source.get("pdf_url") or "").strip()
+                url = str(source.get("pdf_url") or source.get("url") or "").strip()
                 normalized = canonicalize_source_url(url)
                 if not normalized or normalized in attempted or normalized in seen:
                     continue

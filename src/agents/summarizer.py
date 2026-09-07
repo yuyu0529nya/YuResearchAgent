@@ -84,11 +84,15 @@ class SummarizerAgent(BaseAgent):
         if _is_cancelled():
             return _cancelled_result()
 
-        if not results:
+        if not results or (
+            not any(result.status == AgentStatus.SUCCESS for result in results)
+            and not evidence_sources
+        ):
             report = ResearchReport(
                 query=query,
-                content="No sub-task results available to synthesize.",
+                content="No successful sub-task results or source evidence available to synthesize.",
                 confidence=0.0,
+                run_status="partial_failure",
             )
             return AgentResult(
                 task_id=task.task_id,
@@ -159,12 +163,15 @@ class SummarizerAgent(BaseAgent):
 
         # 解析报告内容，提取来源和置信度
         report = self._parse_report(query, content, results, evidence_sources=evidence_sources)
+        if response.get("finish_reason") == "length":
+            report.run_status = "partial_truncated"
 
         return AgentResult(
             task_id=task.task_id,
             status=AgentStatus.SUCCESS,
             output=report,
-            trajectory=[{"role": "assistant", "content": content}],
+            trajectory=[{"role": "assistant", "content": content,
+                         "finish_reason": response.get("finish_reason")}],
             token_usage=token_usage,
             confidence=report.confidence,
         )
@@ -525,7 +532,7 @@ class SummarizerAgent(BaseAgent):
                     str(s.get("evidence_excerpt") or s.get("snippet") or ""),
                 ).strip()
                 if excerpt:
-                    parts.append(f"  Evidence ({s.get('evidence_kind') or 'snippet'}): {excerpt[:360]}")
+                    parts.append(f"  Evidence ({s.get('evidence_kind') or 'snippet'}): {excerpt[:1200]}")
 
         audit = evidence_audit or {}
         claims = audit.get("claims", []) if isinstance(audit, dict) else []
@@ -579,7 +586,8 @@ class SummarizerAgent(BaseAgent):
         parts.append(
             "\n# Instructions\n"
             "1. Directly write the synthesized report based on the findings above. Do NOT say 'I will synthesize'.\n"
-            "2. Respect the user's requested length. Otherwise target 2200-3500 Chinese characters or 1200-1800 English words.\n"
+            "2. Respect the user's requested length and the output-token budget. Otherwise target 1500-2200 Chinese "
+            "characters or 800-1200 English words; prioritize findings over background.\n"
             "3. Mirror every explicit dimension in the question. For comparison questions, give one concise side-by-side "
             "table near the start, then analyze the causes and implications without repeating the table. Satisfy every "
             "item in the Required Coverage Contract before adding generic background. Prefer direct, specific findings "
@@ -606,11 +614,13 @@ class SummarizerAgent(BaseAgent):
             "4g. A first-party company page can establish what that organization announced or released, but it is not "
             "independent validation of performance. Attribute vendor-reported metrics and distinguish them from "
             "peer-reviewed or independently reproduced results.\n"
+            "4h. Not finding a study is not evidence that no study exists. Describe search limitations narrowly. "
+            "Do not extrapolate results from one domain to all enterprises. Separate measured costs from "
+            "algorithmic complexity; do not assert quadratic billed costs from attention complexity alone.\n"
             "5. 引用要**具体可验证**：关键论断后用上面「可用来源」里的**编号 [N]** 标注"
             "（如 [3]、[7]）；每个主要段落至少一处引用，**禁止用笼统的 [Result N]**。"
-            "正文末尾必须有「## 参考来源」，把正文用到的每个 [N] 按"
-            "「[N] 标题 — 作者/机构（年份） — 链接」完整、统一地列出（直接复用上面「可用来源」的条目）；"
-            "不要列出正文未引用的来源，也不要猜测缺失的作者、机构或年份。\n"
+            "只生成正文及编号引用，不要生成参考文献表；系统会按来源库自动补全。"
+            "不要猜测缺失的作者、机构或年份。\n"
             "6. End with: Overall Confidence: X.XX"
         )
         return "\n".join(parts)
@@ -643,6 +653,7 @@ class SummarizerAgent(BaseAgent):
 
         # 收集去重后的来源（含 arxiv 论文的作者/年份）
         unique_sources = self._collect_sources(results, evidence_sources)
+        content = self._render_references(content, unique_sources)
 
         # 统计实际工具调用次数（遍历所有子任务的 trajectory）
         num_searches = sum(len([t for t in r.trajectory if t.get("role") == "tool"]) for r in results)
@@ -653,4 +664,33 @@ class SummarizerAgent(BaseAgent):
             sources=unique_sources,
             confidence=confidence,
             num_searches=num_searches,
+            run_status="complete" if total > 0 and success == total else "partial_failure",
         )
+
+    @staticmethod
+    def _render_references(content: str, sources: list[dict]) -> str:
+        """Render citation metadata without spending model tokens retyping it."""
+        if not sources:
+            return content
+        body = re.split(
+            r"^#{1,4}\s*(?:参考来源|参考文献|引用|references|bibliography|sources)\s*$",
+            content, maxsplit=1, flags=re.I | re.M,
+        )[0].rstrip()
+        cited = sorted({int(n) for n in re.findall(r"\[(\d+)\]", body)})
+        entries = []
+        for number in cited:
+            if not 1 <= number <= len(sources):
+                continue
+            source = sources[number - 1]
+            parts = [str(source.get("title") or source.get("url") or "")]
+            author = source.get("authors") or source.get("publisher")
+            if author:
+                parts.append(str(author))
+            if source.get("year"):
+                parts.append(f"({source['year']})")
+            if source.get("url"):
+                parts.append(str(source["url"]))
+            entries.append(f"[{number}] " + " - ".join(parts))
+        if not entries:
+            return body
+        return body + "\n\n## 参考来源\n" + "\n".join(entries)

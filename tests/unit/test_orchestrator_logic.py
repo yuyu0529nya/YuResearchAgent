@@ -42,6 +42,51 @@ def test_should_not_replan_empty():
     assert _orch()._should_replan([]) is False
 
 
+def test_replan_without_budget_does_not_erase_prior_tool_evidence():
+    orchestrator = _orch()
+    step = {"role": "tool", "name": "browser", "result": "retained document"}
+    prior = AgentResult(task_id="t", status=T, trajectory=[step], token_usage=123)
+    orchestrator._record_result_history([prior])
+    orchestrator._record_result_history([AgentResult(task_id="t", status=T)])
+    assert orchestrator._all_results[0].trajectory == [step]
+    assert orchestrator._all_results[0].token_usage == 123
+
+
+def test_retry_without_budget_preserves_failed_attempt_evidence(monkeypatch):
+    from src.orchestrator.schemas import SubTask, TaskType
+
+    class Dag:
+        def __len__(self):
+            return 1
+
+        def get_parallel_groups(self):
+            return [["t"]]
+
+    step = {"role": "tool", "name": "browser", "result": "retained document"}
+
+    class Agent:
+        async def run(self, task, context):
+            return AgentResult(task_id="t", status=F, trajectory=[step], token_usage=12)
+
+    class Pool:
+        async def get_agent(self, task_type):
+            return Agent()
+
+        async def release_agent(self, agent):
+            pass
+
+    orchestrator = _orch()
+    orchestrator.agent_pool = Pool()
+    orchestrator._dag = Dag()
+    orchestrator._task_map = {"t": SubTask(task_id="t", task_type=TaskType.SEARCH, description="test")}
+    budgets = iter([1.0, 0.0])
+    monkeypatch.setattr(orchestrator, "_task_execution_seconds", lambda *args: next(budgets))
+    monkeypatch.setattr(orchestrator, "_subagent_retry_delay_seconds", lambda *args: 0)
+    asyncio.run(orchestrator._do_dispatching())
+    assert orchestrator._results[0].trajectory == [{**step, "attempt": 1}]
+    assert orchestrator._results[0].token_usage == 12
+
+
 def test_timeout_counts_as_failure_for_replan():
     assert _orch()._should_replan([_res(T), _res(T), _res(S)]) is True  # 2/3 > 0.5
 
