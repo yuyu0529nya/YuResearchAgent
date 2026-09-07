@@ -178,6 +178,7 @@ class RunConfig:
     synthesis_reserve_seconds: float = 130.0
     evidence_gap_min_seconds: float = 100.0
     final_audit_reserve_seconds: float = 70.0
+    hybrid_audit_timeout_seconds: float = 45.0
     enable_evidence_revision: bool = True
     evidence_revision_trigger_coverage: float = 0.80
     evidence_revision_min_coverage_gain: float = 0.03

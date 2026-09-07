@@ -731,7 +731,7 @@ class Orchestrator:
             )
             remaining = self._remaining_seconds()
             hybrid_budget = min(
-                20.0,
+                self._config.hybrid_audit_timeout_seconds,
                 max(
                     0.0,
                     remaining
@@ -1855,7 +1855,10 @@ class Orchestrator:
                 and remaining > 5
                 and not self._is_cancelled()
             ):
-                hybrid_timeout = min(20.0, max(1.0, remaining - 2.0))
+                hybrid_timeout = min(
+                    self._config.hybrid_audit_timeout_seconds,
+                    max(1.0, remaining - 2.0),
+                )
                 try:
                     audit = await asyncio.wait_for(
                         asyncio.to_thread(

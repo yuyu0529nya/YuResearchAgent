@@ -137,6 +137,27 @@ def test_policy_deadline_fails_closed_when_client_cannot_enforce_it() -> None:
     assert called is False
 
 
+def test_policy_caps_provider_request_timeout() -> None:
+    class _Client:
+        def __init__(self) -> None:
+            self.options = None
+            self.chat = SimpleNamespace(
+                completions=SimpleNamespace(create=lambda **_: _response())
+            )
+
+        def with_options(self, **options):
+            self.options = options
+            return self
+
+    policy = VLLMPolicy(api_key="test", request_timeout_cap_seconds=30)
+    client = _Client()
+    policy.client = client
+
+    policy.call_with_timeout([{"role": "user", "content": "hello"}], 120)
+
+    assert client.options == {"timeout": 30, "max_retries": 0}
+
+
 def test_usage_tracker_aggregates_multiple_policy_instances() -> None:
     tracker = UsageTracker()
     first = VLLMPolicy(api_key="test", usage_tracker=tracker)

@@ -66,6 +66,7 @@ class VLLMPolicy:
         top_p: float = 1.0,
         max_tokens: int = 1024,
         max_input_chars: int = 35_000,
+        request_timeout_cap_seconds: float = 90.0,
         tools: Optional[list[dict]] = None,
         extra_body: Optional[dict] = None,
         usage_tracker: Any | None = None,
@@ -74,7 +75,13 @@ class VLLMPolicy:
         # （此前无超时 → 配合"全局超时仅在状态间检查"会导致整轮跑失控）
         # Retries belong to the orchestrator, which owns the total task
         # deadline. SDK-level retries would silently multiply that budget.
-        raw_client = OpenAI(base_url=base_url, api_key=api_key, timeout=120.0, max_retries=0)
+        self.request_timeout_cap_seconds = max(1.0, float(request_timeout_cap_seconds))
+        raw_client = OpenAI(
+            base_url=base_url,
+            api_key=api_key,
+            timeout=self.request_timeout_cap_seconds,
+            max_retries=0,
+        )
         # 如果 LangSmith 追踪开启，自动包装 client 以追踪所有 LLM 调用
         from ..utils.tracing import maybe_wrap_openai_client
         self.client = maybe_wrap_openai_client(raw_client)
@@ -281,7 +288,10 @@ class VLLMPolicy:
         try:
             request_client = self.client
             if request_timeout_seconds is not None:
-                timeout = max(0.25, float(request_timeout_seconds))
+                timeout = min(
+                    self.request_timeout_cap_seconds,
+                    max(0.25, float(request_timeout_seconds)),
+                )
                 with_options = getattr(self.client, "with_options", None)
                 if not callable(with_options):
                     raise RuntimeError(

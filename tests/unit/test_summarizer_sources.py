@@ -164,6 +164,8 @@ def test_partial_hybrid_audit_keeps_supported_claims_and_marks_unreviewed_claims
     assert "Verified claims (safe to state when cited)" in prompt
     assert "Verified fact [1]" in prompt
     assert "Claims requiring caution" in prompt
+    assert "Treat the Claim-level Evidence Audit as an allowlist" in prompt
+    assert "exact number must appear in the excerpt" in prompt
 
 
 def test_collect_paper_keeps_authors_and_year():

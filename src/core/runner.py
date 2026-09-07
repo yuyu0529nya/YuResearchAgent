@@ -414,6 +414,9 @@ def build_run_config(config: dict):
         final_audit_reserve_seconds=config.get("orchestrator", {}).get(
             "final_audit_reserve_seconds", 70
         ),
+        hybrid_audit_timeout_seconds=config.get("evidence", {}).get(
+            "hybrid_timeout_seconds", 45
+        ),
         evidence_gap_min_seconds=config.get("evidence", {}).get(
             "gap_min_seconds", 100
         ),

@@ -202,6 +202,10 @@ class ModelRouter:
         if max_input_chars is not None:
             config["max_input_chars"] = int(max_input_chars)
 
+        request_timeout = get_env(f"{prefix}_REQUEST_TIMEOUT_SECONDS")
+        if request_timeout is not None:
+            config["request_timeout_cap_seconds"] = float(request_timeout)
+
         extra_body: dict = {}
 
         # 推理模型（GLM-4.5/4.6 等）：关闭思考以加速、并确保 content 字段非空

@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-379%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-380%20passing-brightgreen.svg)](tests/unit)
 [![Evaluation](https://img.shields.io/badge/audited%20evaluation-n%3D15-2f855a.svg)](docs/evaluation/artifacts/headtohead_v5/result.json)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -357,11 +357,13 @@ orchestrator:
   max_concurrent: 4
   global_timeout_seconds: 480
   synthesis_reserve_seconds: 130
-  final_audit_reserve_seconds: 35
+  final_audit_reserve_seconds: 70
 
 evidence:
   enabled: true
   verification_mode: hybrid
+  hybrid_timeout_seconds: 45
+  max_llm_claims: 6
   min_coverage: 0.55
   max_gap_rounds: 1
   max_gap_tasks: 2
@@ -383,6 +385,9 @@ evidence did not establish a quality gain.
   flags from leaking across concurrent trajectories.
 - Every network tool has a bounded timeout and returns a recoverable observation;
   completed work survives global timeout or synthesis failure as a partial report.
+- Provider requests have a bounded SDK-level timeout cap; set
+  `OPENROUTER_REQUEST_TIMEOUT_SECONDS` or the corresponding backend variable to
+  tune it without allowing cancelled worker threads to hold the process open.
 - Planning, worker, compression, synthesis, adversarial, verifier, and revision
   model calls share the run's remaining deadline. A user stop is cooperative:
   the current HTTP request finishes or reaches its provider timeout, and no new
@@ -403,7 +408,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `379` API-free tests cover orchestration, cancellation, deadline propagation,
+- `380` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.
