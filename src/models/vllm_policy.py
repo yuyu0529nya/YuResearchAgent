@@ -212,13 +212,55 @@ class VLLMPolicy:
         messages: list,
         timeout_seconds: float,
     ) -> OpenAICompatibleDict:
-        """Call the provider with a request-level deadline and no SDK retries.
+        """Call the provider with a hard wall-clock deadline and no SDK retries.
 
-        ``asyncio.wait_for(asyncio.to_thread(...))`` stops awaiting a sync call
-        but cannot stop its worker thread. The OpenAI client still enforces the
-        request timeout; retry ownership remains with the state machine.
+        The OpenAI SDK call is synchronous. An outer ``asyncio.wait_for`` can
+        stop awaiting its worker thread, but cannot stop that thread itself.
+        Run the bounded request in a daemon thread as a final guard so a stuck
+        transport cannot keep the process alive after the orchestrator's
+        deadline. The SDK timeout remains enabled for normal cleanup.
         """
-        return self._call(messages, request_timeout_seconds=timeout_seconds)
+        timeout = min(
+            self.request_timeout_cap_seconds,
+            max(0.25, float(timeout_seconds)),
+        )
+        result: dict[str, Any] = {}
+        finished = threading.Event()
+
+        def _run_request() -> None:
+            try:
+                result["value"] = self._call(
+                    messages,
+                    request_timeout_seconds=timeout,
+                )
+            except BaseException as exc:  # propagate RuntimeError from context guards
+                result["error"] = exc
+            finally:
+                finished.set()
+
+        worker = threading.Thread(
+            target=_run_request,
+            name="llm-request",
+            daemon=True,
+        )
+        worker.start()
+        if not finished.wait(timeout):
+            logger.error("Policy Error: hard request deadline exceeded after %.2fs", timeout)
+            return OpenAICompatibleDict(
+                role="assistant",
+                content=f"Error: Request deadline exceeded after {timeout:.2f}s",
+                tool_calls=[],
+            )
+        if "error" in result:
+            raise result["error"]
+        return result.get(
+            "value",
+            OpenAICompatibleDict(
+                role="assistant",
+                content="Error: bounded request returned no result",
+                tool_calls=[],
+            ),
+        )
 
     def _call(
         self,

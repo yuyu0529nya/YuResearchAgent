@@ -158,6 +158,42 @@ def test_policy_caps_provider_request_timeout() -> None:
     assert client.options == {"timeout": 30, "max_retries": 0}
 
 
+def test_policy_hard_deadline_returns_without_waiting_for_stuck_transport() -> None:
+    import threading
+    import time
+
+    release = threading.Event()
+
+    class _Client:
+        def with_options(self, **_options):
+            return self
+
+        class _Chat:
+            class _Completions:
+                @staticmethod
+                def create(**_kwargs):
+                    release.wait(5)
+                    return _response()
+
+            completions = _Completions()
+
+        chat = _Chat()
+
+    policy = VLLMPolicy(api_key="test", request_timeout_cap_seconds=1)
+    policy.client = _Client()
+
+    started = time.monotonic()
+    result = policy.call_with_timeout(
+        [{"role": "user", "content": "hello"}],
+        timeout_seconds=0.25,
+    )
+    elapsed = time.monotonic() - started
+    release.set()
+
+    assert elapsed < 0.8
+    assert result["content"].startswith("Error: Request deadline exceeded")
+
+
 def test_usage_tracker_aggregates_multiple_policy_instances() -> None:
     tracker = UsageTracker()
     first = VLLMPolicy(api_key="test", usage_tracker=tracker)
