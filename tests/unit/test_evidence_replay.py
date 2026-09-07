@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 
 from scripts.replay_evidence import replay_evidence
-from src.evidence import EvidenceKind, EvidenceStore
+from src.evidence import ClaimVerifier, EvidenceKind, EvidenceStore
 
 
 def test_replay_evidence_records_verified_inputs_and_audit(tmp_path) -> None:
@@ -33,6 +33,40 @@ def test_replay_evidence_records_verified_inputs_and_audit(tmp_path) -> None:
     assert result["audit"]["supported_count"] == 1
     assert result["inputs"]["report"]["sha256"]
     assert result["inputs"]["evidence"]["source_count"] == 1
+
+
+def test_replay_uses_persisted_citation_source_order(tmp_path) -> None:
+    report_path = tmp_path / "report.md"
+    report_path.write_text(
+        "The Transformer architecture relies entirely on attention mechanisms [1].\n\n"
+        "## References\n[1] Attention Is All You Need.",
+        encoding="utf-8",
+    )
+    store = EvidenceStore(artifact_dir=str(tmp_path), session_id="ordered", persist_enabled=True)
+    unrelated = store.upsert_source(url="https://example.com/unrelated", title="Unrelated")
+    target = store.upsert_source(
+        url="https://arxiv.org/abs/1706.03762",
+        title="Attention Is All You Need",
+        source_type="paper",
+    )
+    store.add_evidence(unrelated.source_id, "A different article.", EvidenceKind.FULL_TEXT)
+    store.add_evidence(
+        target.source_id,
+        "The Transformer architecture relies entirely on attention mechanisms.",
+        EvidenceKind.ABSTRACT,
+    )
+    audit = ClaimVerifier().audit_text(
+        report_path.read_text(encoding="utf-8"),
+        store,
+        citation_source_ids=[target.source_id],
+        use_llm=False,
+    )
+    evidence_path = store.persist(audit, query="How does Transformer work?")
+
+    result = replay_evidence(report_path, evidence_path)
+
+    assert result["audit"]["supported_count"] == 1
+    assert result["audit"]["citation_source_ids"] == [target.source_id]
 
 
 def test_replay_evidence_rejects_wrong_expected_hash(tmp_path) -> None:

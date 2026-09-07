@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-380%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-383%20passing-brightgreen.svg)](tests/unit)
 [![Evaluation](https://img.shields.io/badge/audited%20evaluation-n%3D15-2f855a.svg)](docs/evaluation/artifacts/headtohead_v5/result.json)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -19,7 +19,8 @@ DAG, executes tool-using workers concurrently, records retrieved material in a
 typed Claim-Evidence-Source graph, identifies unsupported claims, and synthesizes
 a report under an explicit global time budget.
 
-The default model is **Kimi Code K3** through its OpenAI-compatible endpoint.
+The current quality profile routes every runtime LLM role through **Qwen3.8 Max**
+on OpenRouter; provider keys and model overrides remain environment-configurable.
 Zero-key retrieval starts with Yandex/DuckDuckGo and falls back through Yahoo,
 Brave, and Wikipedia; scholarly metadata cascades through OpenAlex and Crossref.
 The browser can extract arXiv HTML or PDF full text rather than treating an
@@ -357,12 +358,12 @@ orchestrator:
   max_concurrent: 4
   global_timeout_seconds: 480
   synthesis_reserve_seconds: 130
-  final_audit_reserve_seconds: 70
+  final_audit_reserve_seconds: 90
 
 evidence:
   enabled: true
   verification_mode: hybrid
-  hybrid_timeout_seconds: 45
+  hybrid_timeout_seconds: 80
   max_llm_claims: 6
   min_coverage: 0.55
   max_gap_rounds: 1
@@ -403,12 +404,14 @@ evidence did not establish a quality gain.
   equivalent normalization.
 - Exact reports and evidence graphs are retained with integrity hashes; resume
   rejects missing or modified report artifacts.
+- Evidence artifacts retain the final report's citation-to-source ordering, so
+  offline replay interprets `[N]` exactly as the synthesizer did.
 - Revision acceptance uses deterministic pre/post audits and rejects source-number
   rebinding, unsupported-claim growth, supported-finding loss, and excessive
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `380` API-free tests cover orchestration, cancellation, deadline propagation,
+- `383` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.

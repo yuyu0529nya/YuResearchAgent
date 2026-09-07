@@ -53,6 +53,8 @@ _TEMPORAL_LABEL = re.compile(
     r"^[（(].*(?:信息截至|截至|as[- ]of|updated|报告日期|report date).*[）)]$",
     re.IGNORECASE,
 )
+_TABLE_SEPARATOR = re.compile(r"^:?-{3,}:?$")
+_TABLE_HEADERS = {"维度", "核心发现", "来源", "场景特征", "推荐方法", "依据", "source", "evidence"}
 
 
 def _normalize_numeric_spacing(text: str) -> str:
@@ -187,7 +189,24 @@ class ClaimVerifier:
             line = raw_line.strip()
             if _REFERENCE_HEADING.match(line):
                 break
-            if not line or line.startswith("#") or line.startswith("|") or line.startswith("```"):
+            if not line or line.startswith("#") or line.startswith("```"):
+                continue
+            if line.startswith("|"):
+                # Tables carry many of the report's most important comparisons.
+                # Keep the dimension and finding columns as one atomic claim and
+                # retain citations from the row so the final audit can bind them.
+                cells = [cell.strip() for cell in line.strip("|").split("|")]
+                if len(cells) < 2 or all(_TABLE_SEPARATOR.fullmatch(cell) for cell in cells):
+                    continue
+                if all(cell.lower() in _TABLE_HEADERS for cell in cells if cell):
+                    continue
+                finding = "：".join(cell for cell in cells[:2] if cell)
+                if finding:
+                    row_citations = "".join(
+                        f"[{number}]"
+                        for number in sorted(set(_CITATION_RE.findall(line)), key=int)
+                    )
+                    body_lines.append(f"{finding} {row_citations}")
                 continue
             if re.match(r"^(overall confidence|整体置信度|置信度)\s*[:：]", line, re.I):
                 continue
@@ -394,13 +413,15 @@ class ClaimVerifier:
                         verification_mode = "hybrid"
         elif use_llm:
             verification_mode = self.mode
-        return self._build_audit(
+        audit = self._build_audit(
             claims,
             store,
             verification_mode=verification_mode,
             semantic_reviewed_count=semantic_reviewed_count,
             semantic_candidate_count=semantic_candidate_count,
         )
+        audit.citation_source_ids = list(citation_source_ids or [])
+        return audit
 
     def _score_pair(self, claim: str, chunk: EvidenceChunk, store: EvidenceStore) -> float:
         claim_tokens = _tokens(claim)

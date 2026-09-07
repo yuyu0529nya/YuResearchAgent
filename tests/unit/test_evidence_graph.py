@@ -328,6 +328,7 @@ def test_citation_restricts_verification_to_attributed_source() -> None:
     )
 
     assert audit.claims[0].status == VerificationStatus.NOT_ENOUGH_EVIDENCE
+    assert audit.citation_source_ids == [first.source_id, second.source_id]
 
 
 def test_reference_list_is_not_extracted_as_claims() -> None:
@@ -341,6 +342,19 @@ def test_reference_list_is_not_extracted_as_claims() -> None:
 
     assert len(claims) == 1
     assert "bibliography" not in claims[0].text
+
+
+def test_markdown_table_rows_are_auditable_claims() -> None:
+    claims = ClaimVerifier().extract_claims(
+        "| 维度 | 核心发现 | 来源 |\n"
+        "|------|----------|------|\n"
+        "| 成本 | RAG 的查询成本低于长上下文方法 [2] | [2] |\n"
+    )
+
+    assert len(claims) == 1
+    assert claims[0].cited_indices == [2]
+    assert "成本" in claims[0].text
+    assert "长上下文" in claims[0].text
 
 
 def test_process_narration_is_not_counted_as_external_claim() -> None:
@@ -433,13 +447,18 @@ def test_store_persists_auditable_json(tmp_path) -> None:
     store = EvidenceStore(artifact_dir=str(tmp_path), session_id="test", persist_enabled=True)
     result = _result()
     store.ingest_results([result])
-    audit = ClaimVerifier().audit_results([result], store)
+    audit = ClaimVerifier().audit_text(
+        "The Transformer architecture relies entirely on attention mechanisms [1].",
+        store,
+        citation_source_ids=[store.source_list()[0].source_id],
+    )
 
     path = store.persist(audit, query="How does Transformer work?")
     payload = json.loads(open(path, encoding="utf-8").read())
 
     assert payload["schema_version"] == "1.0"
     assert payload["audit"]["coverage"] == 1.0
+    assert payload["audit"]["citation_source_ids"] == [store.source_list()[0].source_id]
     assert payload["sources"][0]["source_id"].startswith("src_")
     assert payload["evidence"][0]["evidence_id"].startswith("ev_")
 

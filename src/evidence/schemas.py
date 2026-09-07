@@ -89,6 +89,9 @@ class EvidenceAudit:
     verification_mode: str = "heuristic"
     semantic_reviewed_count: int = 0
     semantic_candidate_count: int = 0
+    # Final report citations use the synthesizer's selected-source ordering,
+    # which can differ from the evidence store insertion order.
+    citation_source_ids: list[str] = field(default_factory=list)
 
     def to_dict(self, evidence_lookup: dict[str, EvidenceChunk] | None = None) -> dict[str, Any]:
         lookup = evidence_lookup or {}
@@ -120,4 +123,5 @@ class EvidenceAudit:
             "verification_mode": self.verification_mode,
             "semantic_reviewed_count": self.semantic_reviewed_count,
             "semantic_candidate_count": self.semantic_candidate_count,
+            "citation_source_ids": list(self.citation_source_ids),
         }

@@ -1915,6 +1915,7 @@ class Orchestrator:
                     "final_report_sha256": self._text_sha256(report.content),
                     "evidence_revision": report.evidence_revision,
                     "task_coverage": report.task_coverage,
+                    "citation_source_ids": list(audit.citation_source_ids),
                 },
             )
         except Exception as exc:

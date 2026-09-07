@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import sys
 import time
 from datetime import datetime, timezone
@@ -55,6 +56,16 @@ def replay_evidence(
         raise ValueError("Evidence SHA-256 does not match --expect-evidence-sha256")
 
     store = EvidenceStore.load_artifact(evidence_file)
+    # New artifacts persist the synthesizer's citation ordering. Older
+    # artifacts do not have it, so retain the historical store-order fallback.
+    try:
+        artifact_payload = json.loads(evidence_file.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        artifact_payload = {}
+    artifact_audit = artifact_payload.get("audit", {})
+    if not isinstance(artifact_audit, dict):
+        artifact_audit = {}
+    citation_source_ids = list(artifact_audit.get("citation_source_ids") or store.sources)
     policy = None
     mode = "heuristic"
     if verifier_backend:
@@ -78,7 +89,7 @@ def replay_evidence(
     audit = verifier.audit_text(
         report,
         store,
-        citation_source_ids=list(store.sources),
+        citation_source_ids=citation_source_ids,
         use_llm=policy is not None,
     )
     elapsed = time.perf_counter() - started
