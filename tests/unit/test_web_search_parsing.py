@@ -283,6 +283,15 @@ def test_openrouter_search_inherits_main_model_unless_overridden(monkeypatch) ->
     assert WebSearchTool("openrouter").openrouter_model == "custom/search-model"
 
 
+def test_openrouter_search_constructor_model_has_highest_priority(monkeypatch) -> None:
+    monkeypatch.setenv("OPENROUTER_SEARCH_MODEL", "env/search-model")
+    monkeypatch.setenv("OPENROUTER_MODEL", "env/main-model")
+
+    tool = WebSearchTool("openrouter", model="openai/gpt-5.6-sol-pro")
+
+    assert tool.openrouter_model == "openai/gpt-5.6-sol-pro"
+
+
 def test_openrouter_curl_fallback_maps_citations(monkeypatch):
     import asyncio
 

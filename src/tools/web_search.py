@@ -175,7 +175,13 @@ class WebSearchTool(BaseWebSearchTool):
         }
     )
 
-    def __init__(self, backend: str | None = None, api_key: str | None = None, api_endpoint: str | None = None) -> None:
+    def __init__(
+        self,
+        backend: str | None = None,
+        api_key: str | None = None,
+        api_endpoint: str | None = None,
+        model: str | None = None,
+    ) -> None:
         self.backend = (backend or get_env("SEARCH_BACKEND", "auto")).lower().strip()
 
         # SerpAPI 配置
@@ -201,7 +207,8 @@ class WebSearchTool(BaseWebSearchTool):
             "OPENROUTER_SEARCH_ENDPOINT", "https://openrouter.ai/api/v1/chat/completions"
         )
         self.openrouter_model = (
-            get_env("OPENROUTER_SEARCH_MODEL")
+            model
+            or get_env("OPENROUTER_SEARCH_MODEL")
             or get_env("OPENROUTER_MODEL")
             or "openai/gpt-4.1-mini"
         )
@@ -283,6 +290,9 @@ class WebSearchTool(BaseWebSearchTool):
                     "parameters": {"max_results": max(1, min(top_n, 10)), "engine": "auto"},
                 }
             ],
+            # Search needs cited content, not a long hidden reasoning trace.
+            # Keep the response budget available for source annotations.
+            "reasoning": {"effort": "minimal"},
             "temperature": 0,
             "max_tokens": 1200,
         }

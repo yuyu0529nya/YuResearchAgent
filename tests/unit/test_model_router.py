@@ -144,3 +144,21 @@ def test_create_backend_can_bypass_mutable_policy_cache(monkeypatch):
     assert worker_a is not worker_b
     assert worker_a is not cached_a
     ModelRouter.clear_cache()
+
+
+def test_create_backend_accepts_nested_extra_body_override(monkeypatch):
+    monkeypatch.setenv("KIMI_API_KEY", "sk-kimi-test")
+    monkeypatch.setattr(
+        router_module,
+        "VLLMPolicy",
+        lambda **config: SimpleNamespace(**config),
+    )
+    ModelRouter.clear_cache()
+
+    policy = ModelRouter.create_backend(
+        "kimi",
+        extra_body={"reasoning": {"effort": "none"}},
+        use_cache=False,
+    )
+
+    assert policy.extra_body["reasoning"]["effort"] == "none"

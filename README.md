@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://python.org)
 [![Version](https://img.shields.io/badge/version-0.5.0-2f855a.svg)](pyproject.toml)
-[![Tests](https://img.shields.io/badge/tests-345%20passing-brightgreen.svg)](tests/unit)
+[![Tests](https://img.shields.io/badge/tests-379%20passing-brightgreen.svg)](tests/unit)
 [![Evaluation](https://img.shields.io/badge/audited%20evaluation-n%3D15-2f855a.svg)](docs/evaluation/artifacts/headtohead_v5/result.json)
 [![CI](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml/badge.svg)](https://github.com/yuyu0529nya/YuResearchAgent/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -340,12 +340,24 @@ Add `--verifier-backend deepseek` for source-bounded semantic verification.
 
 Core switches live in [configs/default.yaml](configs/default.yaml):
 
+The default quality profile routes every LLM role through OpenRouter's
+`qwen/qwen3.8-max-0902`, which was selected after an actual availability probe
+from the configured environment. GPT-5.6 and Claude Opus are supported by the
+same adapter, but may be unavailable in some regions. The project also supports
+the configured DeepSeek, Qwen/DashScope, Kimi, and other OpenAI-compatible
+backends. Role-level routing is controlled by `model.module_models`; this makes
+model comparisons explicit in the run metadata instead of hiding a model change
+inside application code.
+
+For a lower-cost local demo, set the role values to empty strings and configure
+`OPENROUTER_MODEL` in `.env.local`. Do not commit API keys or proxy credentials.
+
 ```yaml
 orchestrator:
   max_concurrent: 4
   global_timeout_seconds: 480
   synthesis_reserve_seconds: 130
-  final_audit_reserve_seconds: 70
+  final_audit_reserve_seconds: 35
 
 evidence:
   enabled: true
@@ -391,7 +403,7 @@ evidence did not establish a quality gain.
   deletion. The artifact records both content hashes and the gate decision.
 - Long Judge inputs use balanced beginning/middle/end/bibliography sampling, and
   A/B ordering is counterbalanced.
-- `345` API-free tests cover orchestration, cancellation, deadline propagation,
+- `379` API-free tests cover orchestration, cancellation, deadline propagation,
   run-ledger recovery, event projection, parsing, retrieval, evidence, metrics,
   replay integrity, provider compatibility, and regressions. CI runs on
   Python 3.10, 3.11, 3.12, and 3.13.

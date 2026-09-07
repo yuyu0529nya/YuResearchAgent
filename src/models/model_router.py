@@ -70,7 +70,7 @@ class ModelRouter:
         name = (backend_name or get_env("DEFAULT_LLM_BACKEND", "vllm")).lower().strip()
 
         # 检查缓存
-        cache_key = f"{name}:{hash(tuple(sorted(override_kwargs.items())))}"
+        cache_key = f"{name}:{hash(ModelRouter._freeze_for_cache(override_kwargs))}"
         if use_cache and cache_key in _BACKEND_CACHE:
             return _BACKEND_CACHE[cache_key]
 
@@ -84,6 +84,26 @@ class ModelRouter:
         if use_cache:
             _BACKEND_CACHE[cache_key] = policy
         return policy
+
+    @staticmethod
+    def _freeze_for_cache(value):
+        """Convert nested override values into a deterministic hashable shape."""
+        if isinstance(value, dict):
+            return tuple(
+                sorted(
+                    (str(key), ModelRouter._freeze_for_cache(item))
+                    for key, item in value.items()
+                )
+            )
+        if isinstance(value, (list, tuple)):
+            return tuple(ModelRouter._freeze_for_cache(item) for item in value)
+        if isinstance(value, set):
+            return tuple(sorted(ModelRouter._freeze_for_cache(item) for item in value))
+        try:
+            hash(value)
+        except TypeError:
+            return repr(value)
+        return value
 
     @staticmethod
     def get_all_backends(backend_names: list[str] | None = None) -> dict[str, VLLMPolicy]:

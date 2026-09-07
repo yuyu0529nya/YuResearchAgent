@@ -31,7 +31,7 @@ model:
   # 所有敏感信息（API Key、URL）均从 .env / .env.local 读取，
   # 修改此 YAML 即可切换后端，无需改动源码。
   # ---------------------------------------------------------------------------
-  backend: "openrouter"        # 默认后端名称（OpenRouter / DeepSeek V3.1）
+  backend: "openrouter"        # 默认后端名称（OpenRouter）
 
   # 以下为向后兼容的显式配置（优先级低于 .env）。
   # 推荐做法：在 .env 中配置，此处留空或注释掉。
@@ -84,14 +84,23 @@ model:
       planner:
         temperature: 0.3       # 生成 JSON DAG 需要确定性
         max_tokens: 4000
+        extra_body:
+          reasoning:
+            effort: "minimal"
       solver:
         temperature: 0.7       # 研究需要一定创造性
         # Worker needs enough room for tool selection and a concise evidence
-        # summary; a large reasoning budget can starve the task timeout.
-        max_tokens: 2400
+        # summary; keep this configurable because provider latency varies.
+        max_tokens: 5000
+        extra_body:
+          reasoning:
+            effort: "low"
       summarizer:
         temperature: 0.5       # 合成报告：流畅但不发散
-        max_tokens: 4000       # 兼顾完整报告与交互等待时间
+        max_tokens: 8000       # 给完整正文和参考来源留足空间；reasoning 使用 minimal
+        extra_body:
+          reasoning:
+            effort: "minimal"
       red_agent:
         temperature: 0.1       # 攻击必须严谨，几乎不需要随机性
         max_tokens: 4000
@@ -100,16 +109,22 @@ model:
         max_tokens: 4000
       judge:
         temperature: 0.1       # 评分标准必须一致，避免漂移
-        max_tokens: 2048
+        max_tokens: 6000
+        extra_body:
+          reasoning:
+            effort: "medium"
       compressor:
         temperature: 0.1       # 摘要是结构化任务
-        max_tokens: 2048
+        max_tokens: 4000
+        extra_body:
+          reasoning:
+            effort: "minimal"
 
   # ---------------------------------------------------------------------------
   # 后端分工映射（哪个模块用哪个后端）
   # ---------------------------------------------------------------------------
   # 全部模块指向单一后端：这样每个模块才能拿到 backend_sampling.modules 里的专属采样参数
-  # （planner 4000 / summarizer 4000 等）。若留空 {}，所有模块会退回 default_policy 的全局
+  # （planner 4000 / summarizer 8000 等）。若留空 {}，所有模块会退回 default_policy 的全局
   # 默认 max_tokens=1024，导致 planner 的 JSON DAG 被截断、解析失败。
   backend_mapping:
     solver: "openrouter"
@@ -119,6 +134,18 @@ model:
     red_agent: "openrouter"
     blue_agent: "openrouter"
     compressor: "openrouter"
+
+  # 质量优先配置：所有角色统一使用当前地区与 key 可调用的 Qwen3.8 Max
+  # 旗舰快照，保证一次头对头测试的模型变量一致。若需要切换供应商，
+  # 只需替换这些公开的模型 slug，无需修改源码。
+  module_models:
+    solver: "qwen/qwen3.8-max-0902"
+    planner: "qwen/qwen3.8-max-0902"
+    summarizer: "qwen/qwen3.8-max-0902"
+    judge: "qwen/qwen3.8-max-0902"
+    red_agent: "qwen/qwen3.8-max-0902"
+    blue_agent: "qwen/qwen3.8-max-0902"
+    compressor: "qwen/qwen3.8-max-0902"
 
 orchestrator:
   # M1: Multi-Agent Orchestrator 配置
@@ -138,7 +165,7 @@ orchestrator:
   # 证据补检不得侵占最终合成和终审的保留时间
   synthesis_reserve_seconds: 130
   # 最终报告的 claim-citation 审计使用独立预算；会从合成 timeout 中预留
-  final_audit_reserve_seconds: 70
+  final_audit_reserve_seconds: 35
 
 planner:
   # M2: Adaptive Planner 配置
@@ -260,6 +287,8 @@ tools:
     # auto 优先使用 DDGS（Yandex、DuckDuckGo），再聚合 HTML 后端并按来源质量重排。
     # 可设为 openrouter，使用 OPENROUTER_API_KEY 的服务端联网检索。
     backend: "auto"
+    # OpenRouter server-side search follows the quality profile as well.
+    openrouter_model: "qwen/qwen3.8-max-0902"
     # mock_mode: 无真实搜索 API 时返回模拟结果，用于快速调试
     mock_mode: false
     # 单次搜索返回的最大结果数

@@ -982,6 +982,47 @@ class Orchestrator:
             if release_pooled:
                 await self.agent_pool.release_agent(pooled_agent)
 
+        # A transient provider failure after successful retrieval should not
+        # discard the evidence graph. Retry synthesis once inside the original
+        # deadline, but never retry malformed output or evidence failures.
+        retry_text = str(result.output or "").lower()
+        retryable = not release_pooled and result.status == AgentStatus.FAILED and any(
+            marker in retry_text
+            for marker in ("connection error", "rate limit", "429", "502", "503", "504")
+        )
+        if retryable:
+            retry_remaining = min(
+                90.0,
+                max(0.0, context["_request_deadline_monotonic"] - time.monotonic()),
+            )
+            if retry_remaining >= 5.0 and not self._is_cancelled():
+                logger.warning(
+                    "[Synthesize] transient provider failure; retrying with %.1fs remaining",
+                    retry_remaining,
+                )
+                self._emit_event(
+                    "synthesis_retry_started",
+                    "Retrying synthesis after a transient provider failure.",
+                    {"timeout_seconds": retry_remaining},
+                    state=OrchestratorState.SYNTHESIZING,
+                )
+                try:
+                    result = await asyncio.wait_for(
+                        agent.run(synth_task, context),
+                        timeout=retry_remaining,
+                    )
+                except asyncio.TimeoutError:
+                    result = AgentResult(
+                        task_id="synthesize_final",
+                        status=AgentStatus.TIMEOUT,
+                        output="Synthesis retry timed out",
+                    )
+                except Exception as e:
+                    result = AgentResult(
+                        task_id="synthesize_final",
+                        status=AgentStatus.FAILED,
+                        output=f"Synthesis retry error: {type(e).__name__}: {e}",
+                    )
         if result.status == AgentStatus.SUCCESS and isinstance(result.output, ResearchReport):
             if self.evidence_store is not None and not result.output.sources:
                 result.output.run_status = "partial_evidence"
@@ -1129,7 +1170,11 @@ class Orchestrator:
         if self._is_cancelled():
             return OrchestratorState.DONE
         is_complete_report = report.run_status == "complete"
-        if is_complete_report:
+        # Partial reports can still contain useful, explicitly cited evidence.
+        # Run semantic verification for diagnosis, while keeping revision
+        # disabled below so an incomplete run is never presented as complete.
+        allow_hybrid_audit = report.run_status in {"complete", "partial_failure"}
+        if allow_hybrid_audit:
             before_audit = (
                 await self._audit_report_text(report, use_hybrid=True)
                 or before_gate_audit
@@ -1751,7 +1796,7 @@ class Orchestrator:
             return
         audit = await self._audit_report_text(
             report,
-            use_hybrid=report.run_status == "complete",
+            use_hybrid=report.run_status in {"complete", "partial_failure"},
         )
         if audit is None and self._evidence_audit is not None:
             logger.warning(

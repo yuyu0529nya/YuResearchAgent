@@ -99,7 +99,8 @@ def _create_tools_factory(config: dict):
 
         configured_backend = tools_cfg.get("web_search", {}).get("backend", "auto")
         tools["web_search"] = WebSearchTool(
-            backend=get_env("SEARCH_BACKEND", configured_backend)
+            backend=get_env("SEARCH_BACKEND", configured_backend),
+            model=tools_cfg.get("web_search", {}).get("openrouter_model"),
         )
 
     # 2. browser
@@ -171,6 +172,7 @@ def initialize_modules(
     default_backend = model_cfg.get("backend", "vllm")
     backend_mapping = model_cfg.get("backend_mapping", {})
     backend_sampling = model_cfg.get("backend_sampling", {})
+    module_models = model_cfg.get("module_models", {}) or {}
     usage_tracker = UsageTracker()
     modules["usage_tracker"] = usage_tracker
 
@@ -184,6 +186,11 @@ def initialize_modules(
         # 2. 模块级覆盖（优先级更高）
         module_overrides = backend_sampling.get("modules", {}).get(module_name, {})
         kwargs.update(module_overrides)
+        # Role-based routing keeps expensive reasoning roles on a stronger
+        # model while high-volume retrieval workers can remain economical.
+        model_override = module_models.get(module_name)
+        if model_override:
+            kwargs["model_name"] = str(model_override)
         return kwargs
 
     # 默认后端（所有模块共用）
