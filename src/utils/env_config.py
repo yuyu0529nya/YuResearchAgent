@@ -31,6 +31,24 @@ def ensure_env_loaded() -> None:
     if _ENV_LOADED:
         return
 
+    # Preserve proxy variables supplied by the current process. A migrated
+    # .env.local often contains a stale localhost proxy and should not
+    # silently override a working shell/session configuration.
+    process_proxy = {
+        key: os.environ[key]
+        for key in (
+            "HTTP_PROXY",
+            "HTTPS_PROXY",
+            "ALL_PROXY",
+            "NO_PROXY",
+            "http_proxy",
+            "https_proxy",
+            "all_proxy",
+            "no_proxy",
+        )
+        if key in os.environ
+    }
+
     # 1. 加载项目级 .env
     env_path = os.path.join(os.getcwd(), ".env")
     if os.path.exists(env_path):
@@ -40,6 +58,18 @@ def ensure_env_loaded() -> None:
     local_env = os.path.join(os.getcwd(), ".env.local")
     if os.path.exists(local_env):
         load_dotenv(dotenv_path=local_env, override=True)
+
+    os.environ.update(process_proxy)
+    # aiohttp may prefer lowercase names on POSIX. Mirror an explicitly
+    # supplied uppercase value and discard lowercase values that came only
+    # from a stale dotenv file.
+    for lower_key in ("http_proxy", "https_proxy", "all_proxy", "no_proxy"):
+        upper_key = lower_key.upper()
+        if lower_key not in process_proxy:
+            if upper_key in process_proxy:
+                os.environ[lower_key] = process_proxy[upper_key]
+            else:
+                os.environ.pop(lower_key, None)
 
     _ENV_LOADED = True
 
